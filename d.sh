@@ -1,3 +1,4 @@
+rm -rf public
 # 更新 main
 git add .
 git config --global core.autocrlf true
