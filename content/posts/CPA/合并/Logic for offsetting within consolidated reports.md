@@ -1,6 +1,6 @@
 ---
 title: "合并报表内部抵消的逻辑"
-categories: ["Audit"]
+categories: ["审计"]
 tags: ["合并"]
 date: 2023-08-01
 ---

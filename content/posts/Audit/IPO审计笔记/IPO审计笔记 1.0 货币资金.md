@@ -1,7 +1,7 @@
 ---
 title: 'IPO审计笔记 1.0 货币资金'
 date: 2023-09-22
-categories: ["Audit"]
+categories: ["审计"]
 tags:  ['IPO审计笔记']
 ---
 

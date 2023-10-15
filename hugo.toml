@@ -302,7 +302,7 @@ theme = "fixIt"
     Gitea = ""
     XMPP = ""
     Matrix = ""
-    Bilibili = ""
+    Bilibili = "357338380"
     ORCID = ""
     Liberapay = ""
     Ko-Fi = ""
@@ -452,10 +452,10 @@ theme = "fixIt"
     #  文章页面的分享信息设置
     [params.page.share]
       enable = true
-      Twitter = true
-      Facebook = true
+      Twitter = false
+      Facebook = false
       Linkedin = false
-      Whatsapp = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -463,7 +463,7 @@ theme = "fixIt"
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
@@ -471,11 +471,11 @@ theme = "fixIt"
       Flipboard = false
       Weibo = true
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false
@@ -846,7 +846,7 @@ theme = "fixIt"
   name = "richfan"
   email = "richffan@outlook.com"
   link = "https://richfan.site/"
-  avatar = "/avatar.webp" # 
+  avatar = "/avatar.webp"
 
 # 网站地图配置
 [sitemap]

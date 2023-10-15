@@ -1,7 +1,7 @@
 ---
 title: 审计技能|Python语句（四）：常用查询函数
 date: 2023-08-15 17:56:00
-categories: ["Audit"]
+categories: ["审计"]
 tags:  ['python']
 ---
 ## 1.分组聚合函数（groupby）

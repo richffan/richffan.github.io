@@ -1,6 +1,6 @@
 ---
 title: "xbase讲义"
-categories: ["Audit"]
+categories: ["审计"]
 tags: ["合并"]
 date: 2023-08-01
 ---

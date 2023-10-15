@@ -1,6 +1,6 @@
 ---
 title: "长期股权投资转换本质"
-categories: ["Audit"]
+categories: ["审计"]
 tags: ["合并"]
 date: 2023-08-01
 ---
