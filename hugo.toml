@@ -17,7 +17,7 @@ theme = "fixIt"
     url = "/posts/"
     weight = 1
     [menu.main.params]
-      icon = "fa-solid fa-folder-open"
+      icon = "fa-solid fa-archive"
   [[menu.main]]
     identifier = "categories"
     name = "分类"
@@ -25,7 +25,7 @@ theme = "fixIt"
     title = ""
     weight = 2
     [menu.main.params]
-      icon = "fa-solid fa-archive"
+      icon = "fa-solid fa-folder-open"
   [[menu.main]]
     identifier = "tags"
     name = "标签"
@@ -261,7 +261,7 @@ theme = "fixIt"
     FreeCodeCamp = ""
     Bitbucket = ""
     Stackoverflow = ""
-    Weibo = ""
+    Weibo = "u/6067824622"
     Odnoklassniki = ""
     VK = ""
     Flickr = ""
@@ -309,7 +309,7 @@ theme = "fixIt"
     BuyMeaCoffee = ""
     Linktree = ""
     QQ = ""
-    QQGroup = "awbwdTtSQ_-H5QGzeJxdWgv6JMbNehNM" # https://qun.qq.com/join.html
+    QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
     CSDN = ""
     Discord = ""
