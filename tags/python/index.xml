@@ -6,82 +6,82 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/python/" rel="self" type="application/rss+xml" /><item>
   <title>1 顺序表</title>
-  <link>http://richfan.site/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
+  <link>http://richfan.site/2023/09/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
+  <guid>http://richfan.site/2023/09/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
   <description><![CDATA[突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，]]></description>
 </item>
 <item>
   <title>2 单链表</title>
-  <link>http://richfan.site/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+  <link>http://richfan.site/2023/09/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+  <guid>http://richfan.site/2023/09/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
   <description><![CDATA[单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。 链表的基本元素有： 节点：包括数]]></description>
 </item>
 <item>
   <title>3 栈</title>
-  <link>http://richfan.site/3-%E6%A0%88/</link>
+  <link>http://richfan.site/2023/09/3-%E6%A0%88/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/3-%E6%A0%88/</guid>
+  <guid>http://richfan.site/2023/09/3-%E6%A0%88/</guid>
   <description><![CDATA[栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。 3.1 栈的初始化 1 2 3 4 def __init__(self): self.stack = [] # 栈列表 self.size = 20 # 栈大小 self.top = -1 # 栈顶位置]]></description>
 </item>
 <item>
   <title>6 小时 Python 入门</title>
-  <link>http://richfan.site/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
+  <link>http://richfan.site/2023/09/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
+  <guid>http://richfan.site/2023/09/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
   <description><![CDATA[以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python 1、官网下载 Python 进入官网（https://www.python.org），点击 Downlo]]></description>
 </item>
 <item>
   <title>Anaconda 入门指南</title>
-  <link>http://richfan.site/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+  <link>http://richfan.site/2023/09/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+  <guid>http://richfan.site/2023/09/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
   <description><![CDATA[一、下载安装 Anaconda 1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好了, 安装完成之]]></description>
 </item>
 <item>
   <title>Jupyter notebook 使用指南</title>
-  <link>http://richfan.site/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+  <link>http://richfan.site/2023/09/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+  <guid>http://richfan.site/2023/09/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
   <description><![CDATA[前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，]]></description>
 </item>
 <item>
   <title>Jupyter添加目录toc</title>
-  <link>http://richfan.site/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
+  <link>http://richfan.site/2023/09/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
+  <guid>http://richfan.site/2023/09/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
   <description><![CDATA[最近在使用Jupyter notebook的时候感觉到，没有个目录真心难受，当想查找需要的函数的时候，不能很快速的找到，这个时候，要是有个目录]]></description>
 </item>
 <item>
   <title>Pandas常用操作</title>
-  <link>http://richfan.site/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+  <link>http://richfan.site/2023/09/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+  <guid>http://richfan.site/2023/09/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>PyCharm 优化使用</title>
-  <link>http://richfan.site/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
+  <link>http://richfan.site/2023/09/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
+  <guid>http://richfan.site/2023/09/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
   <description><![CDATA[设置 Python 路径（解释器设置） 1、打开设置对话框 点击File &ndash;&gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &ndash;&gt; Project Interpr]]></description>
 </item>
 <item>
   <title>Python 王国 ✨</title>
-  <link>http://richfan.site/readme/</link>
+  <link>http://richfan.site/2023/09/readme/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/readme/</guid>
+  <guid>http://richfan.site/2023/09/readme/</guid>
   <description><![CDATA[Python 入门学习笔记 对于还没入门的小伙伴们，推荐先跟6 小时 Python 入门学习笔记这篇文档敲一遍，行云流水之后对 Python 有了初步的认识，继而根据下面章节深入学习：]]></description>
 </item>
 </channel>
