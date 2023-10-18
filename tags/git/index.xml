@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/git/" rel="self" type="application/rss+xml" /><item>
   <title>Git 的使用</title>
-  <link>http://richfan.site/2023/09/git/</link>
+  <link>http://richfan.site/posts/program/git/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/2023/09/git/</guid>
+  <guid>http://richfan.site/posts/program/git/</guid>
   <description><![CDATA[1 前言 1.1 Git 与 GitHub 的来历 Linux 之父 Linus 在 1991 年创建开源的 Linux 操作系统之后，多年来依靠全世界广大热心志愿者的共同建设，经过长足发展，现已成为世界上最大的服务]]></description>
 </item>
 </channel>
