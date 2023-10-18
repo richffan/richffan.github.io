@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>qemu - 标签 - 樊刹</title>
+    <link>http://richfan.site/tags/qemu/</link>
+    <description>qemu - 标签 - 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sun, 06 Aug 2023 18:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/qemu/" rel="self" type="application/rss+xml" /><item>
+  <title>QEMU - QuickStart</title>
+  <link>http://richfan.site/qemu-quickstart/</link>
+  <pubDate>Sun, 06 Aug 2023 18:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/qemu-quickstart/</guid>
+  <description><![CDATA[https://cyan-io.github.io/ Intro QEMU是一款跨平台的开源虚拟机工具，因为无GUI配置工具，有一定使用门槛 根据冯诺依曼结构，一个计算机可分为： 运算器 控制器 存储器 输入设备]]></description>
+</item>
+</channel>
+</rss>

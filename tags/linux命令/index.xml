@@ -1,0 +1,89 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>linux命令 - 标签 - 樊刹</title>
+    <link>http://richfan.site/tags/linux%E5%91%BD%E4%BB%A4/</link>
+    <description>linux命令 - 标签 - 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Fri, 25 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/linux%E5%91%BD%E4%BB%A4/" rel="self" type="application/rss+xml" /><item>
+  <title>每天一个linux命令（25）: gzip</title>
+  <link>http://richfan.site/linux-command-25-gzip/</link>
+  <pubDate>Fri, 25 Dec 2020 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-25-gzip/</guid>
+  <description><![CDATA[减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。gzip是在Linux系统中经常使用的一个对]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（58）: sort</title>
+  <link>http://richfan.site/linux-command-58-sort/</link>
+  <pubDate>Tue, 23 May 2017 11:44:12 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-58-sort/</guid>
+  <description><![CDATA[<p>sort是在Linux里非常常用的一个命令，管排序的。</p>]]></description>
+</item>
+<item>
+  <title>解决linux下zip文件解压乱码</title>
+  <link>http://richfan.site/%E8%A7%A3%E5%86%B3linux%E4%B8%8Bzip%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B9%B1%E7%A0%81/</link>
+  <pubDate>Tue, 25 Apr 2017 09:10:40 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/%E8%A7%A3%E5%86%B3linux%E4%B8%8Bzip%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B9%B1%E7%A0%81/</guid>
+  <description><![CDATA[<h3 id="原因">原因</h3>
+<p>由于zip格式并没有指定编码格式，Windows下生成的zip文件中的编码是GBK/GB2312等，因此，导致这些zip文件在Linux下解压时出现乱码问题，因为Linux下的默认编码是UTF8。</p>]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（57）: sftp</title>
+  <link>http://richfan.site/linux-command-57-sftp/</link>
+  <pubDate>Sun, 05 Mar 2017 16:29:38 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-57-sftp/</guid>
+  <description><![CDATA[<p>sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。</p>]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（56）: tailf</title>
+  <link>http://richfan.site/linux-command-56-tailf/</link>
+  <pubDate>Mon, 20 Feb 2017 15:11:06 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-56-tailf/</guid>
+  <description><![CDATA[tailf 一个实时监听文件或日志的强大的命令 命令格式 1 $ tailf [option] file 命令描述 tailf 将会打印出一个文件的最后10行,等待并持续输出此文件的增长，它和tail -f]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（55）: crontab</title>
+  <link>http://richfan.site/linux-command-55-crontab/</link>
+  <pubDate>Mon, 23 Jan 2017 10:44:50 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-55-crontab/</guid>
+  <description><![CDATA[前一天学习了 at 命令是针对仅运行一次的任务，循环运行的例行性计划任务，linux系统则是由 cron (crond) 这个系统服务来控制的。Linux 系统上面原本就有]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（54）: at</title>
+  <link>http://richfan.site/linux-command-54-at/</link>
+  <pubDate>Sun, 22 Jan 2017 10:23:44 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-54-at/</guid>
+  <description><![CDATA[在windows系统中，windows提供了计划任务这一功能，在控制面板 -&gt; 性能与维护 -&gt; 任务计划， 它的功能就是安排自动运行的任务。 通过&rsq]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（53）: watch</title>
+  <link>http://richfan.site/linux-command-53-watch/</link>
+  <pubDate>Sat, 21 Jan 2017 10:12:30 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-53-watch/</guid>
+  <description><![CDATA[watch是一个非常实用的命令，基本所有的Linux发行版都带有这个小工具，如同名字一样，watch可以帮你监测一个命令的运行结果，省得你一]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（52）: ps</title>
+  <link>http://richfan.site/linux-command-52-ps/</link>
+  <pubDate>Fri, 20 Jan 2017 09:46:16 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-52-ps/</guid>
+  <description><![CDATA[Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是]]></description>
+</item>
+<item>
+  <title>每天一个linux命令（51）: wc</title>
+  <link>http://richfan.site/linux-command-51-wc/</link>
+  <pubDate>Thu, 19 Jan 2017 09:33:59 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/linux-command-51-wc/</guid>
+  <description><![CDATA[Linux系统中的wc(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出。 命令格式 1 $ wc [选项]文件]]></description>
+</item>
+</channel>
+</rss>

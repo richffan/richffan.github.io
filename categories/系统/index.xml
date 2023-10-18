@@ -1,0 +1,40 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>系统 - 分类 - 樊刹</title>
+    <link>http://richfan.site/categories/%E7%B3%BB%E7%BB%9F/</link>
+    <description>系统 - 分类 - 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sun, 06 Aug 2023 18:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/%E7%B3%BB%E7%BB%9F/" rel="self" type="application/rss+xml" /><item>
+  <title>QEMU - QuickStart</title>
+  <link>http://richfan.site/qemu-quickstart/</link>
+  <pubDate>Sun, 06 Aug 2023 18:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/qemu-quickstart/</guid>
+  <description><![CDATA[https://cyan-io.github.io/ Intro QEMU是一款跨平台的开源虚拟机工具，因为无GUI配置工具，有一定使用门槛 根据冯诺依曼结构，一个计算机可分为： 运算器 控制器 存储器 输入设备]]></description>
+</item>
+<item>
+  <title>WSL（适用于 Linux 的 Windows 子系统）Kali在线安装</title>
+  <link>http://richfan.site/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
+  <pubDate>Thu, 27 Jul 2023 18:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
+  <description><![CDATA[WSL-Kali安装说明：https://www.kali.org/docs/wsl/win-kex/ WSL-Kali软件安装：https:]]></description>
+</item>
+<item>
+  <title>Linux</title>
+  <link>http://richfan.site/archlinux/</link>
+  <pubDate>Wed, 01 Jan 2020 10:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/archlinux/</guid>
+  <description><![CDATA[安装 ARCHLINUX官网 ARCOLINUX官网 UBUNTU官网 DEBIAN官网 使用 总结]]></description>
+</item>
+<item>
+  <title>windows重装</title>
+  <link>http://richfan.site/windows%E9%87%8D%E8%A3%85/</link>
+  <pubDate>Wed, 01 Jan 2020 10:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/windows%E9%87%8D%E8%A3%85/</guid>
+  <description><![CDATA[更新 软件 日常 WinRAR 7ZIP 微信 office 编程 vscode Dbeaver duckdb 设计 Photoshop Acrobat Illustrator 图压 审计 鼎信诺 悦审 云审 新纪元 魔法 clash for windows]]></description>
+</item>
+</channel>
+</rss>
