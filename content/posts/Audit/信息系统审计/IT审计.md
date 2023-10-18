@@ -1,9 +1,8 @@
 ---
 title: IT审计
-date: 2023-08-15 00:00:00
-categories: ["审计"]
-tags:
-  - IT审计
+date: 2023-08-15
+categories: [审计]
+tags: [IT审计]
 ---
 ## 1. 到底什么是IT审计？
 
