@@ -33,9 +33,9 @@
 哥随机找了一个披露存单的上市公司公告：浙江国祥：浙江国祥首次公开发行股票并在主板上市招股意向书附录 2023-09-21 公司通过质押银行理财产品及大额可转让存单作为担保，向子公司开具银行承兑汇票，子公司将银行承兑汇票进行贴现所支付的贴现息。购买银行理财产品及大额可转让存单并进 行质押和开具银行承兑汇票并贴现共同构成了一项融资活动，在该融资活动中，质押的银行 理财产品及大额可转让存单所产生的投资收益已界定为非经常性损益（委托他人投资或管理 资产的损益等），为体现配比性，该票据贴现息也界定为非经常性损益。
 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/存单质押查询_1.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/存单质押查询_2.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/存单质押查询_3.webp)
+![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/存单质押查询_1.webp)
+![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/存单质押查询_2.webp)
+![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/存单质押查询_3.webp)
 
 
 ## 2.2 批量查询视频教程
