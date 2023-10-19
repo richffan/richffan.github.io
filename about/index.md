@@ -1,10 +1,6 @@
 # 关于 樊刹
 
 
-<i class='fa-solid fa-old-republic fa-fw'></i>
-
-<i class='fa-solid fa-hand-holding-heart fa-fw'></i>
-
 
 ---
 
