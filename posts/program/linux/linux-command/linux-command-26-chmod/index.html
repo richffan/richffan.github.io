@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2016-12-26 20:22:43"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-26">2016-12-26</time></span>&nbsp;<span title="更新于 2016-12-26 20:22:43"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-26">2016-12-26</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1894 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-26-chmod/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（26）: chmod">
+      <div class="post-meta-line"><span title="发布于 2016-12-26 20:22:43"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-26">2016-12-26</time></span>&nbsp;<span title="更新于 2016-12-26 20:22:43"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-26">2016-12-26</time></span>&nbsp;<span title="1894 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-26-chmod/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（26）: chmod">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（26）: chmod">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/linux-command/linux-command-26-chmod/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -209,36 +209,33 @@
 <p>　　文件或目录的访问权限分为只读，只写和可执行三种。以文件为例，只读权限表示只允许读其内容，而禁止对其做任何的更改操作。可执行权限表示允许将该文件作为一个程序执行。文件被创建时，文件所有者自动拥有对该文件的读、写和可执行权限，以便于对文件的阅读和修改。用户也可根据需要把访问权限设置为需要的任何组合。</p>
 <p>　　有三种不同类型的用户可对文件或目录进行访问：文件所有者，同组用户、其他用户。所有者一般是文件的创建者。所有者可以允许同组用户有权访问文件，还可以将文件的访问权限赋予系统中的其他用户。在这种情况下，系统中每一位用户都能访问该用户拥有的文件或目录。</p>
 <p>　　每一文件或目录的访问权限都有三组，每组用三位表示，分别为文件属主的读、写和执行权限；与属主同组的用户的读、写和执行权限；系统中其他用户的读、写和执行权限。当用ls -l命令显示文件或目录的详细信息时，最左边的一列为文件的访问权限。 例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls -al
-</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> root root 296K 11-13 06:03 log2012.log
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> root root 296K 11-13 06:03 log2012.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p>　　第一列共有10个位置，第一个字符指定了文件类型。在通常意义上，一个目录也是一个文件。如果第一个字符是横线，表示是一个非目录的文件。如果是d，表示是一个目录。从第二个字符开始到第十个共9个字符，3个字符一组，分别表示了3组用户对文件或者目录的权限。权限字符用横线代表空许可，r代表只读，w代表写，x代表可执行。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- rw- r-- r--
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- rw- r-- r--</span></span></code></pre></td></tr></table>
 </div>
 </div><p>　　表示log2012.log是一个普通文件；log2012.log的属主有读写权限；与log2012.log属主同组的用户只有读权限；其他用户也只有读权限。</p>
 <p>　　确定了一个文件的访问权限后，用户可以利用Linux系统提供的chmod命令来重新设定不同的访问权限。也可以利用chown命令来更改某个文件或目录的所有者。利用chgrp命令来更改某个文件或目录的用户组。</p>
 <p>　　chmod命令是非常重要的，用于改变文件或目录的访问权限。用户用它控制文件或目录的访问权限。chmod命令详细情况如下。</p>
 <h4 id="命令格式">命令格式</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod <span class="o">[</span>-cfvR<span class="o">]</span> <span class="o">[</span>--help<span class="o">]</span> <span class="o">[</span>--version<span class="o">]</span> mode file
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod <span class="o">[</span>-cfvR<span class="o">]</span> <span class="o">[</span>--help<span class="o">]</span> <span class="o">[</span>--version<span class="o">]</span> mode file</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="命令功能">命令功能</h4>
 <p>用于改变文件或目录的访问权限，用它控制文件或目录的访问权限。</p>
@@ -362,13 +359,12 @@
 <blockquote>
 <p><strong>文字设定法</strong></p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod ［who］ ［+ <span class="p">|</span> - <span class="p">|</span> <span class="o">=</span>］ ［mode］ 文件名
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod ［who］ ［+ <span class="p">|</span> - <span class="p">|</span> <span class="o">=</span>］ ［mode］ 文件名</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>数字设定法</strong>
 　　我们必须首先了解用数字表示的属性的含义：0表示没有权限，1表示可执行权限，2表示可写权限，4表示可读权限，然后将其相加。所以数字属性的格式应为3个从0到7的八进制数，其顺序是（u）（g）（o）。
@@ -382,43 +378,39 @@ r=4，w=2，x=1
 若要r-x属性则4+1=7。</p>
 <h4 id="命令实例">命令实例</h4>
 <p><strong><code>例一</code>：增加文件所有用户组可执行权限</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod a+x log2012.log
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod a+x log2012.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例二</code>：同时修改不同用户权限</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod ug+w,o-x log2012.log
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod ug+w,o-x log2012.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例三</code>：删除文件权限</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod a-x log2012.log
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod a-x log2012.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例四</code>：使用“=”设置权限</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod <span class="nv">u</span><span class="o">=</span>x log2012.log
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chmod <span class="nv">u</span><span class="o">=</span>x log2012.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例五</code>：其他</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -449,8 +441,7 @@ r=4，w=2，x=1
 </span></span><span class="line"><span class="cl">$ chmod <span class="m">444</span> file
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">## 同上例</span>
-</span></span><span class="line"><span class="cl">$ chmod a-wx,a+r   file
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ chmod a-wx,a+r   file</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E8%AE%A1/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审计</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="更新于 2023-05-05 14:19:09"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1374 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/audit/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="leancloud_visitors comment-visitors" data-flag-title="duckdb从入门到精通：数据导入">
+      <div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="更新于 2023-05-05 14:19:09"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="1374 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/audit/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="leancloud_visitors comment-visitors" data-flag-title="duckdb从入门到精通：数据导入">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="duckdb从入门到精通：数据导入">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/audit/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -219,49 +219,45 @@
 <p>实际上，duckdb 可以不导入到数据库中，就可以直接查询。</p>
 <p>我们先“新建 SQL 编辑器”，这样我们就可以在里面写 SQL 语句了。</p>
 <p>我们使用一个电商数据集<a href="#citeproc_bib_item_1">[1]</a>，在编辑器中输入代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="s2">&#34;C:\Users\data.csv&#34;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="s2">&#34;C:\Users\data.csv&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>直接可以查询出数据结果，而不需要像一般数据库需要先建表、导入数据后才能查询。</p>
 <p>从这一点可以看出是非常简洁、方便的。</p>
 <h4 id="智能导数-read_csv_auto">智能导数 read_csv_auto</h4>
 <p>一般来说，如果一张表我们要经常查询还是需要将其导入到数据库中。</p>
 <p>这时我们可以使用read_csv_auto函数，智能创建表并导入到数据库中。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">ecommerce</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">read_csv_auto</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">ecommerce</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">read_csv_auto</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">);</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们打开数据库，可以看到出现了刚新建的表<code>ecommerce</code>，双击后，点击<code>数据</code>选项卡，能够查看导入的数据。</p>
 <p>这个导数的过程非常智能，快速，比 mysql 导入速度快了不少。</p>
 <h5 id="导入报错解决方法">导入报错解决方法</h5>
 <p>由于它是根据前面几行自动判断数据类型，可能会出现后面的数据不符合数据类型而导致出错的情况。</p>
 <p>如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SQL</span><span class="w"> </span><span class="n">Error</span><span class="p">:</span><span class="w"> </span><span class="n">Invalid</span><span class="w"> </span><span class="k">Input</span><span class="w"> </span><span class="n">Error</span><span class="p">:</span><span class="w"> </span><span class="n">Could</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">convert</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="s1">&#39;2.03.19&#39;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">DOUBLE</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">column</span><span class="w"> </span><span class="s2">&#34;物料编码&#34;</span><span class="p">,</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">577268</span><span class="p">.</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SQL</span><span class="w"> </span><span class="n">Error</span><span class="p">:</span><span class="w"> </span><span class="n">Invalid</span><span class="w"> </span><span class="k">Input</span><span class="w"> </span><span class="n">Error</span><span class="p">:</span><span class="w"> </span><span class="n">Could</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">convert</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="s1">&#39;2.03.19&#39;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">DOUBLE</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">column</span><span class="w"> </span><span class="s2">&#34;物料编码&#34;</span><span class="p">,</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">577268</span><span class="p">.</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个报错就是第 577268 行，不符合智能创建的表的该字段的数据类型。</p>
 <p>这里我们可以参考官方文档的<a href="https://duckdb.org/docs/data/csv/overview.html"target="_blank" rel="external nofollow noopener noreferrer">参数列表</a>中的sample_size参数 <a href="#citeproc_bib_item_2">[2]</a>，让智能判断时参考多一些行数。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">new_tbl</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">read_csv_auto</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">sample_size</span><span class="o">=</span><span class="mi">600000</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">new_tbl</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">read_csv_auto</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">sample_size</span><span class="o">=</span><span class="mi">600000</span><span class="p">);</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这就会参考 60 万行数据，来创建合适的数据类型。或者设置<code>sample_size=-1</code>，这样可以参数数据中的所有行，来创建适当的数据类型。</p>
 <p>当然也可以使用参数<code>all_varchar=1</code>，让所有数据以 varchar 的文本类型导入数据库，不过不建议这样做，因为无法对数字和日期进行计算。</p>
@@ -270,13 +266,12 @@
 <p>( 注：linux,mac 终端中可以使用 sed 命令，Windows 可以安装wsl linux子系统使用终端 sed 命令）</p>
 <h5 id="删除引号内数字中逗号">删除引号内数字中逗号</h5>
 <p>如果你想替换原文件，你可以使用 -i 选项来实现原地修改，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sed -i <span class="s1">&#39;s/\(&#34;\)\([^&#34;,]\+\),\([^&#34;]\+\)\(&#34;\)/\1\2\3\4/g&#39;</span> file
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sed -i <span class="s1">&#39;s/\(&#34;\)\([^&#34;,]\+\),\([^&#34;]\+\)\(&#34;\)/\1\2\3\4/g&#39;</span> file</span></span></code></pre></td></tr></table>
 </div>
 </div><p>例如，将1,2,3,&ldquo;45,678.00&rdquo; 转换成1,2,3,&ldquo;45678.00&rdquo;</p>
 <p>这个命令会在修改data.csv文件的同时，生成一个data.csv.bak文件作为备份。</p>
@@ -284,42 +279,38 @@
 <h4 id="安装">安装</h4>
 <p>xlsx2csv 是一个将 excel 文件转 csv 文件的 python 包。</p>
 <p>安装方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install xlsx2csv
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install xlsx2csv</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="基础使用">基础使用</h4>
 <p>在终端中将<code>input_name.xlsx</code>转换成<code>output_name.csv</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv input_name.xlsx output_name.csv
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv input_name.xlsx output_name.csv</span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述命令只会转换工作簿的第一张表，如果你需要转换的 xlsx 中是有多个表，那么可以使用<code>-a</code>参数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv -a input_name.xlsx output_dir_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv -a input_name.xlsx output_dir_name</span></span></code></pre></td></tr></table>
 </div>
 </div><p>将会把<code>input_name.xlsx</code>文件所以表转换输出到<code>output_dir_name</code>文件夹下。</p>
 <p>如果你要将一个文件夹下所有的工作簿转换成 csv 可以使用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv /path/to/input/dir /path/to/output/dir
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv /path/to/input/dir /path/to/output/dir</span></span></code></pre></td></tr></table>
 </div>
 </div><p>同样的，如果文件中有多个工作表，需要使用<code>-a</code>参数将所有的工作表转出。</p>
 <h3 id="参考资料">参考资料</h3>

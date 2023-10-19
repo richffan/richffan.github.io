@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2016-12-21 11:08:01"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-21">2016-12-21</time></span>&nbsp;<span title="更新于 2016-12-21 11:08:01"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-21">2016-12-21</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 946 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-21-find-xargs/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（21）: find命令之xargs">
+      <div class="post-meta-line"><span title="发布于 2016-12-21 11:08:01"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-21">2016-12-21</time></span>&nbsp;<span title="更新于 2016-12-21 11:08:01"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-21">2016-12-21</time></span>&nbsp;<span title="946 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-21-find-xargs/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（21）: find命令之xargs">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（21）: find命令之xargs">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/linux-command/linux-command-21-find-xargs/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -206,91 +206,82 @@
 <p>　　在有些系统中，使用-exec选项会为处理每一个匹配到的文件而发起一个相应的进程，并非将匹配到的文件全部作为参数一次执行；这样在有些情况下就会出现进程过多，系统性能下降的问题，因而效率不高； 而使用xargs命令则只有一个进程。另外，在使用xargs命令时，究竟是一次获取所有的参数，还是分批取得参数，以及每一次获取参数的数目都会根据该命令的选项及系统内核中相应的可调参数来确定。</p>
 <h4 id="使用实例">使用实例</h4>
 <p><strong><code>例一</code>：查找系统中的每一个普通文件，然后使用xargs命令来测试它们分别属于哪类文件</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -type f -print <span class="p">|</span> xargs file
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -type f -print <span class="p">|</span> xargs file</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例二</code>：在整个系统中查找内存信息转储文件(core dump) ，然后把结果保存到/tmp/core.log 文件中</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find / -name <span class="s2">&#34;core&#34;</span> -print <span class="p">|</span> xargs <span class="nb">echo</span> <span class="s2">&#34;&#34;</span> &gt;/tmp/core.log
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find / -name <span class="s2">&#34;core&#34;</span> -print <span class="p">|</span> xargs <span class="nb">echo</span> <span class="s2">&#34;&#34;</span> &gt;/tmp/core.log</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例三</code>：在当前目录下查找所有用户具有读、写和执行权限的文件，并收回相应的写权限</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -perm -7 -print <span class="p">|</span> xargs chmod o-w
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -perm -7 -print <span class="p">|</span> xargs chmod o-w</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例四</code>：用grep命令在所有的普通文件中搜索hostname这个词</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -type f -print <span class="p">|</span> xargs grep <span class="s2">&#34;hostname&#34;</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -type f -print <span class="p">|</span> xargs grep <span class="s2">&#34;hostname&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例五</code>：用grep命令在当前目录下的所有普通文件中搜索hostnames这个词</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## \用来取消find命令中的*在shell中的特殊含义</span>
-</span></span><span class="line"><span class="cl">$ find . -name <span class="se">\*</span> -type f -print <span class="p">|</span> xargs grep <span class="s2">&#34;hostnames&#34;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ find . -name <span class="se">\*</span> -type f -print <span class="p">|</span> xargs grep <span class="s2">&#34;hostnames&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例六</code>：使用xargs执行mv</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -name <span class="s2">&#34;*.log&#34;</span> <span class="p">|</span> xargs -i mv <span class="o">{}</span> test4
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find . -name <span class="s2">&#34;*.log&#34;</span> <span class="p">|</span> xargs -i mv <span class="o">{}</span> test4</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例七</code>：find后执行xargs提示xargs: argument line too long解决方法</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## -l1是一次处理一个；-t是处理之前打印出命令</span>
-</span></span><span class="line"><span class="cl">$ find . -type f -atime +0 -print0 <span class="p">|</span> xargs -0 -l1 -t rm -f
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ find . -type f -atime +0 -print0 <span class="p">|</span> xargs -0 -l1 -t rm -f</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例八</code>：使用-i参数默认的前面输出用{}代替，-I参数可以指定其他代替字符，如例子中的[]</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  find . -name <span class="s2">&#34;file&#34;</span> <span class="p">|</span> xargs -I <span class="o">[]</span> cp <span class="o">[]</span> ..
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  find . -name <span class="s2">&#34;file&#34;</span> <span class="p">|</span> xargs -I <span class="o">[]</span> cp <span class="o">[]</span> ..</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例九</code>：xargs的-p参数的使用</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## -p参数会提示让你确认是否执行后面的命令,y执行，n不执行</span>
-</span></span><span class="line"><span class="cl">$ find . -name <span class="s2">&#34;*.log&#34;</span> <span class="p">|</span> xargs -p -i mv <span class="o">{}</span> ..
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ find . -name <span class="s2">&#34;*.log&#34;</span> <span class="p">|</span> xargs -p -i mv <span class="o">{}</span> ..</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4427 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="4427 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -234,7 +234,7 @@
 <p>常量是一种特殊的变量，被初始化之后就无法再改变。</p>
 <p>Go 语言中，常量的类型只能是<strong>布尔型</strong>，<strong>数字型（整型、浮点型和复数）<strong>和</strong>字符串型</strong>。</p>
 <p>常量可以使用关键字 <code>const</code> 来定义，定义格式为 <code>const variable [type] = value</code>。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -245,7 +245,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>常量的值必须在编译时能确定，给常量赋值时可以涉及表达式的计算，但计算值必须能在编译时确定。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -260,7 +260,7 @@
 <blockquote>
 <p>Unknown 表示未知性别，Female 表示女性，Male 表示男性。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -273,11 +273,10 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">Unknown</span> <span class="p">=</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">Female</span> <span class="p">=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">Male</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>itoa</code> 是一个特殊的常量，<code>itoa</code> 在 <code>const</code> 关键字出现时被重置为 <code>0</code>；<code>const </code> 中每多声明一行常量，<code>itos</code> 会自动加 <code>1</code>（<code> itoa</code> 可理解成常量的<strong>行索引</strong>）。如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -290,11 +289,10 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">a</span> <span class="p">=</span> <span class="nx">itoa</span> <span class="c1">// a 的值为 0
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">b</span> <span class="p">=</span> <span class="nx">itoa</span> <span class="c1">// b 的值为 1
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">c</span> <span class="p">=</span> <span class="nx">itoa</span> <span class="c1">// c 的值为 2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当声明多行常量时，若不指定常量的值和类型，那么该常量的类型和值与<strong>上一个常量相同</strong>。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -305,10 +303,9 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">a</span> <span class="p">=</span> <span class="mi">100</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">b</span> <span class="c1">// b 的值为 100
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -321,11 +318,10 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">a</span> <span class="p">=</span> <span class="nx">itoa</span> <span class="c1">// a 的值为 0
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">b</span> <span class="c1">// b 的值为 1
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">c</span> <span class="c1">// c 的值为 2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -366,17 +362,15 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">e</span><span class="p">,</span> <span class="nx">f</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">h</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">0</span> <span class="m">1</span> <span class="m">2</span> ha ha <span class="m">100</span> <span class="m">100</span> <span class="m">7</span> <span class="m">8</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">0</span> <span class="m">1</span> <span class="m">2</span> ha ha <span class="m">100</span> <span class="m">100</span> <span class="m">7</span> <span class="m">8</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="2-变量">2. 变量</h2>
 <h3 id="21-定义变量">2.1 定义变量</h3>
@@ -387,7 +381,7 @@
 <p>Go 语言中可以通过 <code>&amp;</code> 来获取变量的内存地址，如获取变量 <code>i</code> 的内存地址：<code>&amp;i</code>。</p>
 <p>若一个变量被引用，那么当该变量发生变化时，该变量的引用都会指向被修改后的内容。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -420,11 +414,10 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">a</span> <span class="p">=</span> <span class="mi">2</span> <span class="c1">// 修改 a 的值，引用类型变量 c 与 d 会指向修改后的 a
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;c = &#34;</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="s">&#34;, d = &#34;</span><span class="p">,</span> <span class="nx">d</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;*c = &#34;</span><span class="p">,</span> <span class="o">*</span><span class="nx">c</span><span class="p">,</span> <span class="s">&#34;, *d = &#34;</span><span class="p">,</span> <span class="o">*</span><span class="nx">d</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -435,14 +428,13 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">c</span> <span class="o">=</span>  0xc00000a0a0 , <span class="nv">d</span> <span class="o">=</span>  0xc00000a0a0
 </span></span><span class="line"><span class="cl">*c <span class="o">=</span>  <span class="m">1</span> , *d <span class="o">=</span>  <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="nv">c</span> <span class="o">=</span>  0xc00000a0a0 , <span class="nv">d</span> <span class="o">=</span>  0xc00000a0a0
-</span></span><span class="line"><span class="cl">*c <span class="o">=</span>  <span class="m">2</span> , *d <span class="o">=</span>  <span class="m">2</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">*c <span class="o">=</span>  <span class="m">2</span> , *d <span class="o">=</span>  <span class="m">2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="3-基本类型和运算符">3. 基本类型和运算符</h2>
 <h3 id="31-基本类型">3.1 基本类型</h3>
 <h4 id="311-布尔类型">3.1.1 布尔类型</h4>
 <p>定义 <code>bool</code> 类型的变量：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -451,12 +443,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">b1</span> <span class="kt">bool</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">b2</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl"><span class="nx">b3</span> <span class="o">:=</span> <span class="kc">false</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">b3</span> <span class="o">:=</span> <span class="kc">false</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>bool</code> 类型的值只能是 <code>true</code> 或 <code>false</code>。</p>
 <p>可以通过运算符等于 <code>==</code> 或不等于 <code>!=</code> 得到 <code>bool</code> 类型的值，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -478,7 +469,7 @@
 <blockquote>
 <p>Go 语言中，<code>&amp;&amp;</code> 和 <code>||</code> 具有<strong>快捷性质</strong>，当 <code>&amp;&amp;</code> 和 <code>||</code> 左边的表达式已经能够决定整个表达式结果时（当 <code>&amp;&amp;</code> 左边值为 <code>false</code> 或 <code>||</code> 左边值为 <code>true</code> 时），右边的表达式不会被执行。因此，我们应尽量将复杂的表达式放在右边，以减少运算量。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -516,7 +507,7 @@
 <ul>
 <li>
 <p>解释字符串用<strong>双引号</strong>包裹起来，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -537,19 +528,17 @@
 </span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">s</span> <span class="p">=</span> <span class="s">&#34;abc\nefg&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;s: &#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">s:  abc
-</span></span><span class="line"><span class="cl">efg
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">efg</span></span></code></pre></td></tr></table>
 </div>
 </div><p>同时，以下这些字符串将被转义：</p>
 <ul>
@@ -563,7 +552,7 @@
 <li>
 <p>非解释字符串</p>
 <p>非解释字符串用<strong>反引号</strong>包裹起来，与解释字符串不同，非解释字符串会按照用户的输入形式保存起来，且 <code>\n</code>，<code>\r</code> 等字符串不会被转义， 如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -588,11 +577,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="s">    		I am a gopher!
 </span></span></span><span class="line"><span class="cl"><span class="s">	`</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;s: &#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -601,15 +589,14 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">s:  
 </span></span><span class="line"><span class="cl">		Hello World!<span class="se">\n</span>
-</span></span><span class="line"><span class="cl">    		I am a gopher!
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    		I am a gopher!</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
 <p>Go 语言中的字符串和 C/C++ 不一样，不以 <code>\0</code> 表示结尾，而是以长度限定。</p>
 <p>长度为 0 的字符串是空字符串 <code>&quot;&quot;</code>。</p>
 <p>可以通过 <code>len()</code> 来获取字符串的长度，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -620,7 +607,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过数组下标获取字符串中的字符，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -633,7 +620,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过 <code>+</code> 进行字符串拼接 ：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -654,8 +641,7 @@
 </span></span><span class="line"><span class="cl"><span class="nx">s4</span> <span class="o">+=</span> <span class="s">&#34;World&#34;</span> <span class="c1">// 等同于 s4 = s4 + &#34;World&#34;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="nx">s5</span> <span class="o">:=</span> <span class="s">&#34;Hello &#34;</span> <span class="o">+</span>  <span class="c1">// 多行拼接 +　必须放在上一行
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="s">&#34;World&#34;</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="s">&#34;World&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>用 <code>+</code> 来拼接字符串效率并不是太高，后续我们会讲到使用字节缓冲 <code>bytes.Buffer</code> 来进行字符串拼接。</p>
 <h4 id="313-整型">3.1.3 整型</h4>
@@ -688,7 +674,7 @@
 <ul>
 <li>
 <p>int 和 int64 <strong>不是同类型</strong>，以下代码是<strong>错误</strong>的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -703,7 +689,7 @@
 </div></li>
 <li>
 <p>声明整型变量时，若不指定类型，默认为 <code>int</code> ：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -716,7 +702,7 @@
 </div></li>
 <li>
 <p>短变量声明中可以通过<strong>指定类型</strong>来定义变量：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -742,13 +728,12 @@
 <li><code>complex128</code>（64 位实数和虚数）</li>
 </ul>
 <p>我们可以通过 <code>a + bi</code> 的方式来定义复数，<code>a</code> 表示<strong>实部</strong>，<code>b</code> 表示<strong>虚部</strong>，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">c</span> <span class="kt">complex64</span> <span class="p">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="m">2i</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">c</span> <span class="kt">complex64</span> <span class="p">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="m">2i</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过 <code>real(c)</code> 和 <code>imag(c)</code> 函数来获取复数变量 <code>c</code> 的<strong>实部</strong>和<strong>虚部</strong>。</p>
 <p>复数和其他数据类型一样，支持 <code>==</code> 和 <code>!=</code> 的比较，比较时需注意复数<strong>精确度</strong>。若对性能没有太高要求，建议使用精确度更高的 <code>complex128</code> 。</p>
@@ -763,7 +748,7 @@
 <li>
 <p>按位与 <code>&amp;</code></p>
 <p>当两位都为 1 时，值才为 1，否则值为 0：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -781,7 +766,7 @@
 <li>
 <p>按位或 <code>|</code></p>
 <p>两位中有一个为 1，值即为 1,否则，值为 0：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -799,7 +784,7 @@
 <li>
 <p>按位异或 <code>^</code></p>
 <p>若两位的值相同，值为 0，若不相同，值为 1：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -817,7 +802,7 @@
 <li>
 <p>按位置零 <code>&amp;^</code></p>
 <p><code>p &amp;^ q</code>：当 <code>q</code> 为 0 时，则结果为 <code>p</code>；否则，结果为 0：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -835,7 +820,7 @@
 <li>
 <p>位左移 <code>&lt;&lt;</code></p>
 <p>用法：<code>a &lt;&lt; n</code>，将 <code>a</code> 左移 <code>n</code> 位，右侧部分用 0 填充。相当于 <code>a</code> 乘以 2 的 <code>n</code> 次方。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -851,7 +836,7 @@
 <li>
 <p>位右移 <code>&gt;&gt;</code></p>
 <p>用法：<code>a &gt;&gt; n</code>，将 <code>a</code> 右移 <code>n</code> 位，左侧部分用 0 填充。相当于 <code>a</code> 除以 2 的 <code>n</code> 次方。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -884,7 +869,7 @@
 <ul>
 <li>
 <p><code>+</code> 加法</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -899,7 +884,7 @@
 </div></li>
 <li>
 <p><code>-</code> 减法</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -914,7 +899,7 @@
 </div></li>
 <li>
 <p><code>*</code> 乘法</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -929,7 +914,7 @@
 </div></li>
 <li>
 <p><code>/</code> 除法</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -944,7 +929,7 @@
 </div></li>
 <li>
 <p><code>%</code> 求余</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -960,7 +945,7 @@
 <li>
 <p><code>++</code> 自增</p>
 <p>变量自增 1。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -974,7 +959,7 @@
 <li>
 <p><code>--</code> 自减</p>
 <p>变量自减 1。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -990,7 +975,7 @@
 <ul>
 <li>
 <p>Go 语言中，<code>++</code> 和 <code>--</code> 仅仅是<strong>语句</strong>，不能作为<strong>表达式</strong>，以下写法是<strong>错误</strong>的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1003,7 +988,7 @@
 </div></li>
 <li>
 <p>运算符的优先级</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1022,8 +1007,7 @@
 </span></span><span class="line"><span class="cl"> <span class="mi">4</span>      <span class="o">==</span> <span class="o">!=</span> <span class="p">&lt;</span> <span class="o">&lt;=</span> <span class="o">&gt;=</span> <span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"> <span class="mi">3</span>      <span class="o">&lt;-</span>
 </span></span><span class="line"><span class="cl"> <span class="mi">2</span>      <span class="o">&amp;&amp;</span>
-</span></span><span class="line"><span class="cl"> <span class="mi">1</span>      <span class="o">||</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>      <span class="o">||</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -1038,7 +1022,7 @@
 <p>一个<strong>指针变量</strong>可以指向<strong>任意</strong>一个值的<strong>地址</strong>，它所指向的值的内存地址在 32 位和 64 位计算机上分别占用 4 个字节和 8 个字节。（占用字节大小与值大小无关）</p>
 <p>当一个指针被定义后，若没有被分配变量，则它的默认值为 <code>nil</code>（相当于于 C 语言中的 <code>null</code>）。</p>
 <p>每一个变量都有一个地址，Go 语言中可以通过取址符号 <code>&amp;</code> 来获取一个变量的内存地址：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1049,7 +1033,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们通过一个例子来了解地址：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1072,22 +1056,20 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">s</span> <span class="o">:=</span> <span class="s">&#34;abc&#34;</span> <span class="c1">// 定义 string 型变量 s
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%p %p&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">s</span><span class="p">)</span> <span class="c1">// 打印 a 和 s 的内存地址
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">0xc00000a0a0 0xc00003c1f0
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">0xc00000a0a0 0xc00003c1f0</span></span></code></pre></td></tr></table>
 </div>
 </div><p>任意变量都有地址，指针变量保存的就是地址。</p>
 <h3 id="42-获取指针指向的值">4.2 获取指针指向的值</h3>
 <p>可以对指针使用 <code>*</code> 操作符来获取指针指向的值，例如我们定义了指针变量 <code>p</code>，可以通过 <code>*p</code> 来获取指针 <code>p</code> 指向的值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1116,11 +1098,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;p -&gt; value %p\n&#34;</span><span class="p">,</span> <span class="nx">p</span><span class="p">)</span>   <span class="c1">// p 的值
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;*p -&gt; type %T\n&#34;</span><span class="p">,</span> <span class="o">*</span><span class="nx">p</span><span class="p">)</span>   <span class="c1">// *p 的类型
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;*p -&gt;　value %v\n&#34;</span><span class="p">,</span> <span class="o">*</span><span class="nx">p</span><span class="p">)</span> <span class="c1">// *p 的值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1131,12 +1112,11 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">p -&gt; <span class="nb">type</span> *int
 </span></span><span class="line"><span class="cl">p -&gt; value 0xc00000a0a0
 </span></span><span class="line"><span class="cl">*p -＞type int
-</span></span><span class="line"><span class="cl">*p -&gt; value <span class="m">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">*p -&gt; value <span class="m">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="43-通过指针修改值">4.3 通过指针修改值</h3>
 <p>指针也可以修改值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1177,29 +1157,26 @@
 </span></span><span class="line"><span class="cl">	<span class="nf">swap</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">m</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">n</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">m</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">2</span> <span class="m">1</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">2</span> <span class="m">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>*</code> 指针操作符作为右值时，如 <code>t := *a</code> ，表示取指针指向的变量的值；作为左值时，如 <code>*b = t</code>，表示指针指向的变量。</p>
 <p>我们还可以通过 <code>new</code> 函数来创建指针变量，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">s</span> <span class="o">:=</span> <span class="nb">new</span><span class="p">(</span><span class="kt">string</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="nx">s</span> <span class="p">=</span> <span class="s">&#34;Hello World&#34;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="nx">s</span> <span class="p">=</span> <span class="s">&#34;Hello World&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>new()</code> 函数可以创建一个对应类型的指针，创建时会分配内存，创建完成后指针指向默认值。</p>
 <p><em><strong>注意</strong></em>：</p>

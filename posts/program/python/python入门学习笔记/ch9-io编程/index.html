@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7371 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第九章 IO 编程">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="7371 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第九章 IO 编程">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第九章 IO 编程">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -235,17 +235,16 @@
 <p>读写文件前，我们先必须了解一下，在磁盘上读写文件的功能都是由操作系统提供的，现代操作系统不允许普通的程序直接操作磁盘，所以，读写文件就是请求操作系统打开一个文件对象（通常称为文件描述符），然后，通过操作系统提供的接口从这个文件对象中读取数据（读文件），或者把数据写入这个文件对象（写文件）。</p>
 <h3 id="911-读文件">9.1.1 读文件</h3>
 <p>要以读文件的模式打开一个文件对象，使用Python内置的<code>open()</code>函数，传入文件名和标示符：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>标示符&rsquo;r&rsquo;表示读，这样，我们就成功地打开了一个文件。</p>
 <p>如果文件不存在，<code>open()</code>函数就会抛出一个<code>IOError</code>的错误，并且给出错误码和详细的信息告诉你文件不存在：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -256,31 +255,28 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/notfound.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">  <span class="n">File</span> <span class="s2">&#34;&lt;stdin&gt;&#34;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="ne">FileNotFoundError</span><span class="p">:</span> <span class="p">[</span><span class="n">Errno</span> <span class="mi">2</span><span class="p">]</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">directory</span><span class="p">:</span> <span class="s1">&#39;/Users/michael/notfound.txt&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="ne">FileNotFoundError</span><span class="p">:</span> <span class="p">[</span><span class="n">Errno</span> <span class="mi">2</span><span class="p">]</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">directory</span><span class="p">:</span> <span class="s1">&#39;/Users/michael/notfound.txt&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果文件打开成功，接下来，调用<code>read()</code>方法可以一次读取文件的全部内容，Python把内容读到内存，用一个<code>str</code>对象表示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="s1">&#39;Hello, world!&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;Hello, world!&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后一步是调用<code>close()</code>方法关闭文件。文件使用完毕后必须关闭，因为文件对象会占用操作系统的资源，并且操作系统同一时间能打开的文件数量也是有限的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于文件读写时都有可能产生<code>IOError</code>，一旦出错，后面的<code>f.close()</code>就不会调用。所以，为了保证无论是否出错都能正确地关闭文件，我们可以使用<code>try ... finally</code>来实现：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -295,39 +291,36 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl"><span class="k">finally</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>但是每次都这么写实在太繁琐，所以，Python引入了<code>with</code>语句来自动帮我们调用<code>close()</code>方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这和前面的<code>try ... finally</code>是一样的，但是代码更佳简洁，并且不必调用<code>f.close()</code>方法。</p>
 <p>调用<code>read()</code>会一次性读取文件的全部内容，如果文件有10G，内存就爆了，所以，要保险起见，可以反复调用<code>read(size)</code>方法，每次最多读取size个字节的内容。另外，调用<code>readline()</code>可以每次读取一行内容，调用<code>readlines()</code>一次读取所有内容并按行返回<code>list</code>。因此，要根据需要决定怎么调用。</p>
 <p>如果文件很小，<code>read()</code>一次性读取最方便；如果不能确定文件大小，反复调用<code>read(size)</code>比较保险；如果是配置文件，调用<code>readlines()</code>最方便：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="c1"># 把末尾的&#39;\n&#39;删掉</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="c1"># 把末尾的&#39;\n&#39;删掉</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="912-file-like-object">9.1.2 file-like Object</h3>
 <p>像<code>open()</code>函数返回的这种有个<code>read()</code>方法的对象，在Python中统称为file-like Object。除了file外，还可以是内存的字节流，网络流，自定义流等等。file-like Object不要求从特定类继承，只要写个<code>read()</code>方法就行。</p>
 <p><code>StringIO</code>就是在内存中创建的file-like Object，常用作临时缓冲。</p>
 <h3 id="913-二进制文件">9.1.3 二进制文件</h3>
 <p>前面讲的默认都是读取文本文件，并且是UTF-8编码的文本文件。要读取二进制文件，比如图片、视频等等，用<code>'rb'</code>模式打开文件即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -336,12 +329,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/test.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xff\xd8\xff\xe1\x00\x18</span><span class="s1">Exif</span><span class="se">\x00\x00</span><span class="s1">...&#39;</span> <span class="c1"># 十六进制表示的字节</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xff\xd8\xff\xe1\x00\x18</span><span class="s1">Exif</span><span class="se">\x00\x00</span><span class="s1">...&#39;</span> <span class="c1"># 十六进制表示的字节</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="914-字符编码">9.1.4 字符编码</h3>
 <p>要读取非UTF-8编码的文本文件，需要给<code>open()</code>函数传入<code>encoding</code>参数，例如，读取GBK编码的文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -350,21 +342,19 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/gbk.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="s1">&#39;测试&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;测试&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>遇到有些编码不规范的文件，你可能会遇到<code>UnicodeDecodeError</code>，因为在文本文件中可能夹杂了一些非法编码的字符。遇到这种情况，<code>open()</code>函数还接收一个<code>errors</code>参数，表示如果遇到编码错误后如何处理。最简单的方式是直接忽略：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/gbk.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/gbk.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="915-写文件">9.1.5 写文件</h3>
 <p>写文件和读文件是一样的，唯一区别是调用<code>open()</code>函数时，传入标识符<code>'w'</code>或者<code>'wb'</code>表示写文本文件或写二进制文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -373,19 +363,17 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello, world!&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可以反复调用<code>write()</code>来写入文件，但是务必要调用<code>f.close()</code>来关闭文件。当我们写文件时，操作系统往往不会立刻把数据写入磁盘，而是放到内存缓存起来，空闲的时候再慢慢写入。只有调用<code>close()</code>方法时，操作系统才保证把没有写入的数据全部写入磁盘。忘记调用<code>close()</code>的后果是数据可能只写了一部分到磁盘，剩下的丢失了。所以，还是用<code>with</code>语句来得保险：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/michael/test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello, world!&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello, world!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要写入特定编码的文本文件，请给<code>open()</code>函数传入<code>encoding</code>参数，将字符串自动转换成指定编码。</p>
 <p>细心的童鞋会发现，以<code>'w'</code>模式写入文件时，如果文件已存在，会直接覆盖（相当于删掉后新写入一个文件）。如果我们希望追加到文件末尾怎么办？可以传入<code>'a'</code>以追加（append）模式写入。</p>
@@ -395,7 +383,7 @@
 <p>很多时候，数据读写不一定是文件，也可以在内存中读写。</p>
 <p>StringIO顾名思义就是在内存中读写str。</p>
 <p>要把str写入StringIO，我们需要先创建一个StringIO，然后，像文件一样写入即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -418,12 +406,11 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;world!&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="n">hello</span> <span class="n">world</span><span class="err">!</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">hello</span> <span class="n">world</span><span class="err">!</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>getvalue()</code>方法用于获得写入后的str。</p>
 <p>要读取StringIO，可以用一个str初始化StringIO，然后，像读文件一样读取：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -448,13 +435,12 @@
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="n">Hello</span><span class="err">!</span>
 </span></span><span class="line"><span class="cl"><span class="n">Hi</span><span class="err">!</span>
-</span></span><span class="line"><span class="cl"><span class="n">Goodbye</span><span class="err">!</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Goodbye</span><span class="err">!</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="922-bytesio">9.2.2 BytesIO</h3>
 <p>StringIO操作的只能是str，如果要操作二进制数据，就需要使用BytesIO。</p>
 <p>BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写入一些bytes：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -469,12 +455,11 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;中文&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>请注意，写入的不是str，而是经过UTF-8编码的bytes。</p>
 <p>和StringIO类似，可以用一个bytes初始化BytesIO，然后，像读文件一样读取：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -485,12 +470,11 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>请注意，写入的不是str，而是经过UTF-8编码的bytes。</p>
 <p>和StringIO类似，可以用一个bytes初始化BytesIO，然后，像读文件一样读取：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -501,8 +485,7 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe4\xb8\xad\xe6\x96\x87</span><span class="s1">&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>小结：</p>
@@ -512,7 +495,7 @@
 <p>如果我们要操作文件、目录，可以在命令行下面输入操作系统提供的各种命令来完成。比如<code>dir</code>、<code>cp</code>等命令。</p>
 <p>如果要在Python程序中执行这些目录和文件的操作怎么办？其实操作系统提供的命令只是简单地调用了操作系统提供的接口函数，Python内置的<code>os</code>模块也可以直接调用操作系统提供的接口函数。</p>
 <p>打开Python交互式命令行，我们来看看如何使用<code>os</code>模块的基本功能：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -521,36 +504,33 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="c1"># 操作系统类型</span>
-</span></span><span class="line"><span class="cl"><span class="s1">&#39;posix&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;posix&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果是<code>posix</code>，说明系统是<code>Linux</code>、<code>Unix</code>或<code>Mac OS X</code>，如果是<code>nt</code>，就是<code>Windows</code>系统。</p>
 <p>要获取详细的系统信息，可以调用<code>uname()</code>函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">uname</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">posix</span><span class="o">.</span><span class="n">uname_result</span><span class="p">(</span><span class="n">sysname</span><span class="o">=</span><span class="s1">&#39;Darwin&#39;</span><span class="p">,</span> <span class="n">nodename</span><span class="o">=</span><span class="s1">&#39;MichaelMacPro.local&#39;</span><span class="p">,</span> <span class="n">release</span><span class="o">=</span><span class="s1">&#39;14.3.0&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64&#39;</span><span class="p">,</span> <span class="n">machine</span><span class="o">=</span><span class="s1">&#39;x86_64&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">posix</span><span class="o">.</span><span class="n">uname_result</span><span class="p">(</span><span class="n">sysname</span><span class="o">=</span><span class="s1">&#39;Darwin&#39;</span><span class="p">,</span> <span class="n">nodename</span><span class="o">=</span><span class="s1">&#39;MichaelMacPro.local&#39;</span><span class="p">,</span> <span class="n">release</span><span class="o">=</span><span class="s1">&#39;14.3.0&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64&#39;</span><span class="p">,</span> <span class="n">machine</span><span class="o">=</span><span class="s1">&#39;x86_64&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意<code>uname()</code>函数在Windows上不提供，也就是说，<code>os</code>模块的某些函数是跟操作系统相关的。</p>
 <h3 id="931-环境变量">9.3.1 环境变量</h3>
 <p>在操作系统中定义的环境变量，全部保存在<code>os.environ</code>这个变量中，可以直接查看：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span>
-</span></span><span class="line"><span class="cl"><span class="n">environ</span><span class="p">({</span><span class="s1">&#39;VERSIONER_PYTHON_PREFER_32_BIT&#39;</span><span class="p">:</span> <span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;TERM_PROGRAM_VERSION&#39;</span><span class="p">:</span> <span class="s1">&#39;326&#39;</span><span class="p">,</span> <span class="s1">&#39;LOGNAME&#39;</span><span class="p">:</span> <span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="s1">&#39;PATH&#39;</span><span class="p">:</span> <span class="s1">&#39;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">})</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">environ</span><span class="p">({</span><span class="s1">&#39;VERSIONER_PYTHON_PREFER_32_BIT&#39;</span><span class="p">:</span> <span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;TERM_PROGRAM_VERSION&#39;</span><span class="p">:</span> <span class="s1">&#39;326&#39;</span><span class="p">,</span> <span class="s1">&#39;LOGNAME&#39;</span><span class="p">:</span> <span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;michael&#39;</span><span class="p">,</span> <span class="s1">&#39;PATH&#39;</span><span class="p">:</span> <span class="s1">&#39;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">})</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要获取某个环境变量的值，可以调用<code>os.environ.get('key')</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -561,12 +541,11 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;PATH&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="s1">&#39;default&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;default&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="932-操作文件和目录">9.3.2 操作文件和目录</h3>
 <p>操作文件和目录的函数一部分放在<code>os</code>模块中，一部分放在<code>os.path</code>模块中，这一点要注意一下。查看、创建和删除目录可以这么调用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -589,52 +568,47 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 然后创建一个目录:</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 删掉一个目录:</span>
-</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>把两个路径合成一个时，不要直接拼字符串，而要通过<code>os.path.join()</code>函数，这样可以正确处理不同操作系统的路径分隔符。在Linux/Unix/Mac下，<code>os.path.join()</code>返回这样的字符串：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">part</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">part</span><span class="o">-</span><span class="mi">2</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">part</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">part</span><span class="o">-</span><span class="mi">2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>而Windows下会返回这样的字符串：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">part</span><span class="o">-</span><span class="mi">1</span>\<span class="n">part</span><span class="o">-</span><span class="mi">2</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">part</span><span class="o">-</span><span class="mi">1</span>\<span class="n">part</span><span class="o">-</span><span class="mi">2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>同样的道理，要拆分路径时，也不要直接去拆字符串，而要通过<code>os.path.split()</code>函数，这样可以把一个路径拆分为两部分，后一部分总是最后级别的目录或文件名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir/file.txt&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir&#39;</span><span class="p">,</span> <span class="s1">&#39;file.txt&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s1">&#39;/Users/michael/testdir&#39;</span><span class="p">,</span> <span class="s1">&#39;file.txt&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>os.path.splitext()</code>可以直接让你得到文件扩展名，很多时候非常方便：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;/path/to/file.txt&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span> <span class="s1">&#39;.txt&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s1">&#39;/path/to/file&#39;</span><span class="p">,</span> <span class="s1">&#39;.txt&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这些合并、拆分路径的函数并不要求目录和文件要真实存在，它们只对字符串进行操作。</p>
 <p>文件操作使用下面的函数。假定当前目录下有一个<code>test.txt</code>文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -645,32 +619,29 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 对文件重命名:</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;test.py&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 删掉文件:</span>
-</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;test.py&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;test.py&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>但是复制文件的函数居然在<code>os</code>模块中不存在！原因是复制文件并非由操作系统提供的系统调用。理论上讲，我们通过上一节的读写文件可以完成文件复制，只不过要多写很多代码。</p>
 <p>幸运的是<code>shutil</code>模块提供了<code>copyfile()</code>的函数，你还可以在<code>shutil</code>模块中找到很多实用函数，它们可以看做是<code>os</code>模块的补充。</p>
 <p>最后看看如何利用Python的特性来过滤文件。比如我们要列出当前目录下的所有目录，只需要一行代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;.lein&#39;</span><span class="p">,</span> <span class="s1">&#39;.local&#39;</span><span class="p">,</span> <span class="s1">&#39;.m2&#39;</span><span class="p">,</span> <span class="s1">&#39;.npm&#39;</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;.Trash&#39;</span><span class="p">,</span> <span class="s1">&#39;.vim&#39;</span><span class="p">,</span> <span class="s1">&#39;Applications&#39;</span><span class="p">,</span> <span class="s1">&#39;Desktop&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;.lein&#39;</span><span class="p">,</span> <span class="s1">&#39;.local&#39;</span><span class="p">,</span> <span class="s1">&#39;.m2&#39;</span><span class="p">,</span> <span class="s1">&#39;.npm&#39;</span><span class="p">,</span> <span class="s1">&#39;.ssh&#39;</span><span class="p">,</span> <span class="s1">&#39;.Trash&#39;</span><span class="p">,</span> <span class="s1">&#39;.vim&#39;</span><span class="p">,</span> <span class="s1">&#39;Applications&#39;</span><span class="p">,</span> <span class="s1">&#39;Desktop&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要列出所有的<code>.py</code>文件，也只需一行代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;.py&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;apis.py&#39;</span><span class="p">,</span> <span class="s1">&#39;config.py&#39;</span><span class="p">,</span> <span class="s1">&#39;models.py&#39;</span><span class="p">,</span> <span class="s1">&#39;pymonitor.py&#39;</span><span class="p">,</span> <span class="s1">&#39;test_db.py&#39;</span><span class="p">,</span> <span class="s1">&#39;urls.py&#39;</span><span class="p">,</span> <span class="s1">&#39;wsgiapp.py&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;apis.py&#39;</span><span class="p">,</span> <span class="s1">&#39;config.py&#39;</span><span class="p">,</span> <span class="s1">&#39;models.py&#39;</span><span class="p">,</span> <span class="s1">&#39;pymonitor.py&#39;</span><span class="p">,</span> <span class="s1">&#39;test_db.py&#39;</span><span class="p">,</span> <span class="s1">&#39;urls.py&#39;</span><span class="p">,</span> <span class="s1">&#39;wsgiapp.py&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>是不是非常简洁？</p>
 <blockquote>
@@ -679,13 +650,12 @@
 <p>Python的<code>os</code>模块封装了操作系统的目录和文件操作，要注意这些函数有的在<code>os</code>模块中，有的在<code>os.path</code>模块中。</p>
 <h2 id="94-序列化">9.4 序列化</h2>
 <p>在程序运行的过程中，所有的变量都是在内存中，比如，定义一个dict：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">88</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">88</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以随时修改变量，比如把<code>name</code>改成<code>'Bill'</code>，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的<code>'Bill'</code>存储到磁盘上，下次重新运行程序，变量又被初始化为<code>'Bob'</code>。</p>
 <p>我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。</p>
@@ -693,7 +663,7 @@
 <p>反过来，把变量内容从序列化的对象重新读到内存里称之为反序列化，即unpickling。</p>
 <p>Python提供了<code>pickle</code>模块来实现序列化。</p>
 <p>首先，我们尝试把一个对象序列化并写入文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -704,11 +674,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">pickle</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">88</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x80\x03</span><span class="s1">}q</span><span class="se">\x00</span><span class="s1">(X</span><span class="se">\x03\x00\x00\x00</span><span class="s1">ageq</span><span class="se">\x01</span><span class="s1">K</span><span class="se">\x14</span><span class="s1">X</span><span class="se">\x05\x00\x00\x00</span><span class="s1">scoreq</span><span class="se">\x02</span><span class="s1">KXX</span><span class="se">\x04\x00\x00\x00</span><span class="s1">nameq</span><span class="se">\x03</span><span class="s1">X</span><span class="se">\x03\x00\x00\x00</span><span class="s1">Bobq</span><span class="se">\x04</span><span class="s1">u.&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x80\x03</span><span class="s1">}q</span><span class="se">\x00</span><span class="s1">(X</span><span class="se">\x03\x00\x00\x00</span><span class="s1">ageq</span><span class="se">\x01</span><span class="s1">K</span><span class="se">\x14</span><span class="s1">X</span><span class="se">\x05\x00\x00\x00</span><span class="s1">scoreq</span><span class="se">\x02</span><span class="s1">KXX</span><span class="se">\x04\x00\x00\x00</span><span class="s1">nameq</span><span class="se">\x03</span><span class="s1">X</span><span class="se">\x03\x00\x00\x00</span><span class="s1">Bobq</span><span class="se">\x04</span><span class="s1">u.&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>pickle.dumps()</code>方法把任意对象序列化成一个<code>bytes</code>，然后，就可以把这个<code>bytes</code>写入文件。或者用另一个方法<code>pickle.dump()</code>直接把对象序列化后写入一个file-like Object：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -717,12 +686,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dump.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>看看写入的<code>dump.txt</code>文件，一堆乱七八糟的内容，这些都是Python保存的对象内部信息。</p>
 <p>当我们要把对象从磁盘读到内存时，可以先把内容读到一个<code>bytes</code>，然后用<code>pickle.loads()</code>方法反序列化出对象，也可以直接用<code>pickle.load()</code>方法从一个<code>file-like Object</code>中直接反序列化出对象。我们打开另一个Python命令行来反序列化刚才保存的对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -735,8 +703,7 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>变量的内容又回来了！</p>
 <p>当然，这个变量和原来的变量是完全不相干的对象，它们只是内容相同而已。</p>
@@ -746,7 +713,7 @@
 <p>JSON表示的对象就是标准的JavaScript语言的对象，JSON和Python内置的数据类型对应如下：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821082804.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821082804.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821082804.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821082804.png 2x" sizes="auto" data-title="image-20200821082756404" data-alt="image-20200821082756404" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>Python内置的<code>json</code>模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -757,12 +724,11 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">json</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">88</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="s1">&#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>dumps()</code>方法返回一个<code>str</code>，内容就是标准的JSON。类似的，<code>dump()</code>方法可以直接把JSON写入一个<code>file-like Object</code>。</p>
 <p>要把JSON反序列化为Python对象，用<code>loads()</code>或者对应的<code>load()</code>方法，前者把JSON的字符串反序列化，后者从<code>file-like Object</code>中读取字符串并反序列化：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -771,13 +737,12 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">json_str</span> <span class="o">=</span> <span class="s1">&#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的<code>str</code>与JSON的字符串之间转换。</p>
 <h3 id="942-json-进阶">9.4.2 JSON 进阶</h3>
 <p>Python的<code>dict</code>对象可以直接序列化为JSON的<code>{}</code>，不过，很多时候，我们更喜欢用<code>class</code>表示对象，比如定义<code>Student</code>类，然后序列化：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -800,11 +765,10 @@
 </span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">88</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">s</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行代码，毫不留情地得到一个<code>TypeError</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -813,8 +777,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">  <span class="o">...</span>
-</span></span><span class="line"><span class="cl"><span class="ne">TypeError</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x10603cc50</span><span class="o">&gt;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">JSON</span> <span class="n">serializable</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="ne">TypeError</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x10603cc50</span><span class="o">&gt;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">JSON</span> <span class="n">serializable</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>错误的原因是<code>Student</code>对象不是一个可序列化为JSON的对象。</p>
 <p>如果连<code>class</code>的实例对象都无法序列化为JSON，这肯定不合理！</p>
@@ -822,7 +785,7 @@
 <p><a href="https://docs.python.org/3/library/json.html#json.dumps"target="_blank" rel="external nofollow noopener noreferrer">https://docs.python.org/3/library/json.html#json.dumps</a></p>
 <p>这些可选参数就是让我们来定制JSON序列化。前面的代码之所以无法把<code>Student</code>类实例序列化为JSON，是因为默认情况下，<code>dumps()</code>方法不知道如何将<code>Student</code>实例变为一个JSON的<code>{}</code>对象。</p>
 <p>可选参数<code>default</code>就是把任意一个对象变成一个可序列为JSON的对象，我们只需要为<code>Student</code>专门写一个转换函数，再把函数传进去即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -837,43 +800,39 @@
 </span></span><span class="line"><span class="cl">        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">std</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">        <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="n">std</span><span class="o">.</span><span class="n">age</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">        <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="n">std</span><span class="o">.</span><span class="n">score</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样，<code>Student</code>实例首先被<code>student2dict()</code>函数转换成<code>dict</code>，然后再被顺利序列化为JSON：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">student2dict</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s2">&#34;age&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Bob&#34;</span><span class="p">,</span> <span class="s2">&#34;score&#34;</span><span class="p">:</span> <span class="mi">88</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s2">&#34;age&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Bob&#34;</span><span class="p">,</span> <span class="s2">&#34;score&#34;</span><span class="p">:</span> <span class="mi">88</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>不过，下次如果遇到一个<code>Teacher</code>类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意<code>class</code>的实例变为<code>dict</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="k">lambda</span> <span class="n">obj</span><span class="p">:</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="k">lambda</span> <span class="n">obj</span><span class="p">:</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为通常<code>class</code>的实例都有一个<code>__dict__</code>属性，它就是一个<code>dict</code>，用来存储实例变量。也有少数例外，比如定义了<code>__slots__</code>的class。</p>
 <p>同样的道理，如果我们要把JSON反序列化为一个<code>Student</code>对象实例，<code>loads()</code>方法首先转换出一个<code>dict</code>对象，然后，我们传入的<code>object_hook</code>函数负责把<code>dict</code>转换为<code>Student</code>实例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ef</span> <span class="n">dict2student</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Student</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Student</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -882,8 +841,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">json_str</span> <span class="o">=</span> <span class="s1">&#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="n">dict2student</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x10cd3c190</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x10cd3c190</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>打印出的是反序列化的<code>Student</code>实例对象。</p>
 <blockquote>

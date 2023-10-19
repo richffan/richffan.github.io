@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2455 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="2455 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -223,34 +223,31 @@
 <p>数组可以保存<strong>指定长度</strong>的多个数据，且这些数据的类型都<strong>相同</strong>，数据类型可以是原始类型，如整型和字符串等，也可以是自定义类型。</p>
 <p>数组通过<strong>索引</strong>来访问元素，索引从 <code>0</code> 开始，第一个元素的索引为 <code>0</code>，第二个为 <code>1</code>，依此类推。</p>
 <p>在 Go 语言中声明数组的格式为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="p">[</span><span class="nx">len</span><span class="p">]</span><span class="kd">type</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="p">[</span><span class="nx">len</span><span class="p">]</span><span class="kd">type</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>例如，声明名称为<code>arr1</code>，长度和类型分别为<code>5</code>和 <code>int</code> 的数组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr1</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们可以让编译器根据元素个数<strong>自动推断</strong>数组长度，只需要在声明长度时用 <code>...</code> 替代：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">numArray</span> <span class="p">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">numArray</span> <span class="p">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们还可以根据<strong>索引</strong>来声明数组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -267,7 +264,7 @@
 <ul>
 <li>
 <p>普通 for 循环</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -292,13 +289,12 @@
 </span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
 <p>for-range 循环</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -323,8 +319,7 @@
 </span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="nx">k</span><span class="p">,</span> <span class="nx">v</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">a</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">v</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -335,25 +330,23 @@
 <p>可以通过 <code>cap()</code> 函数来获取切片的<strong>容量</strong>，而 <code>len()</code> 函数获取的是切片的<strong>长度</strong>（切片保存的元素个数），对于切片 <code>s</code> ，存在这样的数量关系：</p>
 <p><code>0 &lt;= len(s) &lt;= cap(s)</code></p>
 <p>声明切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="p">[]</span><span class="kd">type</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="p">[]</span><span class="kd">type</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过类似数组的声明方式来声明切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">s</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">s</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>若 <code>arr</code> 是数组，可以通过<strong>切割数组</strong>来声明切片 <code>s</code>，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -371,17 +364,16 @@
 </div>
 </div><h4 id="用-make-创建切片">用 make() 创建切片</h4>
 <p>我们可以通过 <code>make()</code> 来创建一个切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">s</span> <span class="p">[]</span><span class="kd">type</span> <span class="p">=</span> <span class="nb">make</span><span class="p">([]</span><span class="kd">type</span><span class="p">,</span> <span class="nx">len</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">s</span> <span class="p">[]</span><span class="kd">type</span> <span class="p">=</span> <span class="nb">make</span><span class="p">([]</span><span class="kd">type</span><span class="p">,</span> <span class="nx">len</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中，<code>type</code>是类型，<code>len</code> 是切片的长度。</p>
 <p>我们来演示下切片的内存结构：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -416,11 +408,10 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;\nThe length of slice1 is %d\n&#34;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;The capacity of slice1 is %d\n&#34;</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="nx">slice1</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -447,11 +438,10 @@
 </span></span><span class="line"><span class="cl">Slice at <span class="m">8</span> is <span class="m">40</span>  
 </span></span><span class="line"><span class="cl">Slice at <span class="m">9</span> is <span class="m">45</span>  
 </span></span><span class="line"><span class="cl">The length of slice1 is <span class="m">10</span>  
-</span></span><span class="line"><span class="cl">The capacity of slice1 is <span class="m">10</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">The capacity of slice1 is <span class="m">10</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们可以在初始化切片时候，指定切片<strong>初始长度</strong>和<strong>切片容量</strong>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -461,16 +451,15 @@
 </div>
 </div><h4 id="切片重组">切片重组</h4>
 <p>切片会<strong>自动扩容</strong>，我们也可以手动进行扩容，比如将切片 <code>s1</code> 扩展 <code>1</code> 位：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">sl</span> <span class="p">=</span> <span class="nx">sl</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="nx">sl</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">sl</span> <span class="p">=</span> <span class="nx">sl</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="nx">sl</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>切片可以反复扩容直至切片长度到达切片容量：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -507,11 +496,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">slice1</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Slice at %d is %d\n&#34;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">slice1</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -554,12 +542,11 @@
 </span></span><span class="line"><span class="cl">Slice at <span class="m">6</span> is <span class="m">6</span>
 </span></span><span class="line"><span class="cl">Slice at <span class="m">7</span> is <span class="m">7</span>
 </span></span><span class="line"><span class="cl">Slice at <span class="m">8</span> is <span class="m">8</span>
-</span></span><span class="line"><span class="cl">Slice at <span class="m">9</span> is <span class="m">9</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Slice at <span class="m">9</span> is <span class="m">9</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="切片的复制与追加">切片的复制与追加</h4>
 <p>我们可以通过 <code>copy</code> 函数和 <code>append</code> 函数实现切片元素的<strong>复制</strong>和<strong>追加</strong>，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -592,22 +579,20 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">sl3</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">sl3</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">sl3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">sl3</span><span class="p">)</span> <span class="c1">// 1, 2, 3, 4, 5, 6
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>append</code> 函数可以将多个<strong>相同类型</strong>的元素追加到切片后面，同时返回新的切片。若切片的容量不够，<code>append</code> 会分配新的切片保证能存储原切片和新元素。</p>
 <p>如果想将切片 <code>y</code> 追加到 <code>x</code> 后面，只需将在 <code>y</code>后面添加 <code>..</code> 将其扩展成列表即可，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">x</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="o">...</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">x</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="o">...</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><em><strong>注意</strong></em>：<code>append</code> 虽然很好用，但是如果想要理解切片追加元素的原理，可以自己来实现一个 <code>AppendByte</code> 方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -636,8 +621,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">slice</span> <span class="p">=</span> <span class="nx">slice</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nx">n</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">copy</span><span class="p">(</span><span class="nx">slice</span><span class="p">[</span><span class="nx">m</span><span class="p">:</span><span class="nx">n</span><span class="p">],</span> <span class="nx">data</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">slice</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></blockquote>
 <h3 id="字符串数组和切片的应用">字符串、数组和切片的应用</h3>
@@ -652,17 +636,16 @@
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png 2x" sizes="auto" data-title="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png" data-alt="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/9/28/20200928121535.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h4 id="修改字符串的字符">修改字符串的字符</h4>
 <p>Go 语言的字符串是<strong>不可变</strong>的，对于 <code>str[index]</code>，我们不能执行这样的语句：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">str</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="p">=</span> <span class="sc">&#39;A&#39;</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">str</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="p">=</span> <span class="sc">&#39;A&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>编译器会报 <code>cannot assign to str[i]</code> 错误。</p>
 <p>因此，如果要修改字符串中的字符，需要先将<strong>字符串</strong>转换成<strong>字节数组</strong>，然后修改<strong>字节数组</strong>中的元素来实现修改字符串字符的目的，最后再将<strong>字节数组</strong>转换成<strong>字符串</strong>。例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -683,15 +666,14 @@
 </li>
 <li>
 <p>复制切片 <code>a</code> 的元素到新的切片 <code>b</code> 上：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">b</span> <span class="p">=</span> <span class="nb">make</span><span class="p">([]</span><span class="nx">T</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">a</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="nb">copy</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">copy</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
@@ -723,7 +705,7 @@
 <p>切片的底层指向一个数组，该数组的实际容量可能大于切片的长度。只有没有任何切片指向该数组时，底层数组才会被释放，这有可能会导致占用多余内存。</p>
 <p><em><strong>示例</strong></em> ：</p>
 <p>函数 <code>FindDigits</code> 将一个文件加载到内存，然后搜索其中所有的数字并返回一个切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -738,11 +720,10 @@
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">FindDigits</span><span class="p">(</span><span class="nx">filename</span> <span class="kt">string</span><span class="p">)</span> <span class="p">[]</span><span class="kt">byte</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">b</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="nx">filename</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">digitRegexp</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码中返回了 <code>[]byte</code>，它指向底层整个文件的数据。若该切片不被释放，垃圾回收器就不能释放整个文件所占用的内存。为了避免这个问题，可以复制我们需要的部分到一个新切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -759,8 +740,7 @@
 </span></span><span class="line"><span class="cl">   <span class="nx">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">byte</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">b</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">   <span class="nb">copy</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">   <span class="k">return</span> <span class="nx">c</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

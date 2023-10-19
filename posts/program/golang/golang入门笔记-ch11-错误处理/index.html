@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1814 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="1814 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -209,7 +209,7 @@
 <blockquote>
 <p><code>Func1</code>返回了两个值，一个 <code>value</code>和 <code>err</code>，<code>err</code> 是错误对象，若 <code>err</code> 不为 <code>nil</code>（<code>nil</code> 是<strong>空</strong>的意思，类似于 <code>Java</code> 中的 <code>null</code>），则进行错误处理，打印出具体错误信息。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -220,11 +220,10 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">pack1</span><span class="p">.</span><span class="nf">Func1</span><span class="p">(</span><span class="nx">param1</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Error %s in pack1.Func1 with parameter %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nf">Error</span><span class="p">(),</span> <span class="nx">param1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span>    <span class="c1">// or: return err
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Go 有一个预先定义的 error 接口类型 ：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -233,22 +232,20 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="kt">error</span> <span class="kd">interface</span> <span class="p">{</span> 
 </span></span><span class="line"><span class="cl">    <span class="nf">Error</span><span class="p">()</span> <span class="kt">string</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="错误处理">错误处理</h3>
 <h4 id="定义错误">定义错误</h4>
 <p>可以通过 <code>errors</code> 包中 <code>New()</code> 函数传递错误信息，从而自定义错误，如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">err</span> <span class="o">:=</span> <span class="nx">errors</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="s">&#34;square root of negative number&#34;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">err</span> <span class="o">:=</span> <span class="nx">errors</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="s">&#34;square root of negative number&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -275,13 +272,12 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Error: %v&#34;</span><span class="p">,</span> <span class="nx">errNotFound</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>我们通过测试平方根函数，来了解错误处理机制：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -354,8 +350,7 @@
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;error: %v\n&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nf">Error</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -363,7 +358,7 @@
 <p><em><strong>注意</strong></em>：一般错误信息都会有 <code>Error</code> 前缀，因此错误信息不要以大写字母开头。</p>
 </blockquote>
 <p>自定义错误类型中可以包含错误信息以外的其他信息，我们来看下 <code>os.Open</code> 操作触发的 <code>PathError</code> 错误：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -386,11 +381,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">e</span> <span class="o">*</span><span class="nx">PathError</span><span class="p">)</span> <span class="nf">String</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Op</span> <span class="o">+</span> <span class="s">&#34; &#34;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Path</span> <span class="o">+</span> <span class="s">&#34;: &#34;</span><span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Err</span><span class="p">.</span><span class="nf">Error</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果在一个操作中会发生多种错误，可以用<strong>类型断言</strong>或者<strong>类型判断</strong>对错误进行判断：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -399,11 +393,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">err</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">err</span><span class="p">.(</span><span class="o">*</span><span class="nx">os</span><span class="p">.</span><span class="nx">PathError</span><span class="p">);</span> <span class="nx">ok</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>或：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -422,12 +415,11 @@
 </span></span><span class="line"><span class="cl">        <span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">default</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;not a special error, just %v\n&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="用-fmt-创建错误对象">用 fmt 创建错误对象</h4>
 <p>可以通过 <code>fmt.Errorf()</code> 来创建错误对象，用法类似于 <code>fmt.Printf()</code>，可以用占位符来格式化输出，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -436,14 +428,13 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">f</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;math: square root of negative number %g&#34;</span><span class="p">,</span> <span class="nx">f</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="运行时异常和-panic">运行时异常和 panic</h3>
 <p>当发生<strong>数组下标越界</strong>等运行错误时，会触发 panic，程序会崩溃并抛出一个 <code>runtime.Error</code> 接口类型值。</p>
 <p><code>panic</code> 一般用在<strong>错误条件很苛刻</strong>且<strong>不可恢复</strong>时，当程序无法继续运行时，比如连接数据库时密码错误，可以使用 <code>panic</code> 函数产生一个中止运行的错误。</p>
 <p><code>panic</code> 可以接收一个任意类型的参数，一般是字符串，当程序执行到 <code>panic</code> 时，会打印出来，同时 <code>panic</code> 之后的语句将不会被执行， 我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -464,8 +455,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Starting the program&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">panic</span><span class="p">(</span><span class="s">&#34;A severe error occurred: stopping the program!&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Ending the program&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -474,7 +464,7 @@
 <p><code>recover</code> 函数可以让程序从 <code>panic</code> 场景下恢复，停止终止过程而恢复正常。</p>
 <p><code>recover</code> 只能在 <code>defer</code> 修饰的函数中使用，可以获取从 <code>panic</code> 中传递过来的错误信息，若是正常调用 <code>recover</code> 只返回 <code>nil</code>。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -531,14 +521,13 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Calling test\r\n&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">test</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Test completed\r\n&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="闭包处理错误">闭包处理错误</h3>
 <p>每当函数返回错误时，我们都应该去处理，但这样会导致代码重复。结合 <code>defer/panic/recover</code> 机制和闭包我们可以创造一种更优雅的错误处理模式。但是这个模式只适用于函数签名相同的情况，一个很好的例子就是在 Web 应用中的处理函数，它的一般形式如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -547,32 +536,29 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">handler</span><span class="p">(</span><span class="nx">w</span> <span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span> <span class="nx">r</span> <span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span> <span class="p">{</span> 
 </span></span><span class="line"><span class="cl">    <span class="c1">// ... 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设所有函数都是这样的签名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">f</span><span class="p">(</span><span class="nx">a</span> <span class="nx">type1</span><span class="p">,</span> <span class="nx">b</span> <span class="nx">type2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">f</span><span class="p">(</span><span class="nx">a</span> <span class="nx">type1</span><span class="p">,</span> <span class="nx">b</span> <span class="nx">type2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>给这个函数类型一个名称：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">fType1</span> <span class="p">=</span> <span class="kd">func</span> <span class="nf">f</span><span class="p">(</span><span class="nx">a</span> <span class="nx">type1</span><span class="p">,</span> <span class="nx">b</span> <span class="nx">type2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">fType1</span> <span class="p">=</span> <span class="kd">func</span> <span class="nf">f</span><span class="p">(</span><span class="nx">a</span> <span class="nx">type1</span><span class="p">,</span> <span class="nx">b</span> <span class="nx">type2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在该模式中使用两个帮助函数：</p>
 <ul>
 <li>
 <p><code>check</code>：用来检查是否有错误和 panic 发生。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -585,13 +571,12 @@
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span> 
 </span></span><span class="line"><span class="cl">        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> 
 </span></span><span class="line"><span class="cl">    <span class="p">}</span> 
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
 <p><code>errorhandler</code>：一个包装函数，接收一个 <code>fType1</code> 类型的函数并返回一个 <code> fType1</code> 类型的函数，在其中包含 <code>defer/recover</code> 机制。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -614,13 +599,12 @@
 </span></span><span class="line"><span class="cl">        <span class="p">}()</span>
 </span></span><span class="line"><span class="cl">        <span class="nf">fn</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> 
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
 <p>当有错误时会 <code>recover</code> 并打印日志，<code>check</code> 函数会在所有的被调函数中调用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -643,8 +627,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">_</span><span class="p">,</span> <span class="nx">err2</span> <span class="o">:=</span> <span class="nf">handler3</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">check</span><span class="p">(</span><span class="nx">err2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这种机制下，所有的错误都会被 <code>recover</code>，且错误处理代码也简化为调用 <code>check(err)</code> 。在这种模式下，不同的错误处理必须对应不同的函数类型；错误处理可能被隐藏在处理包内部。</p>
 </div><div class="post-footer" id="post-footer">

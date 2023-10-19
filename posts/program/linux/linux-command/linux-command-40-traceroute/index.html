@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-01-09 10:56:53"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-09">2017-01-09</time></span>&nbsp;<span title="更新于 2017-01-09 10:56:53"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-09">2017-01-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2748 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-40-traceroute/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（40）: traceroute">
+      <div class="post-meta-line"><span title="发布于 2017-01-09 10:56:53"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-09">2017-01-09</time></span>&nbsp;<span title="更新于 2017-01-09 10:56:53"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-09">2017-01-09</time></span>&nbsp;<span title="2748 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-40-traceroute/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（40）: traceroute">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（40）: traceroute">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/linux-command/linux-command-40-traceroute/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -211,13 +211,12 @@
 　　而在Windows系统下是执行tracert的命令：
 　　　　<code>tracert hostname</code></p>
 <h4 id="命令格式">命令格式</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute <span class="o">[</span>参数<span class="o">]</span> <span class="o">[</span>主机<span class="o">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute <span class="o">[</span>参数<span class="o">]</span> <span class="o">[</span>主机<span class="o">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="命令功能">命令功能</h4>
 <p>　　traceroute指令让你追踪网络数据包的路由途径，预设数据包大小是40Bytes，用户可另行设置。
@@ -295,7 +294,7 @@
 </table>
 <h4 id="使用实例">使用实例</h4>
 <p><strong><code>例一</code>：traceroute 用法简单、最常用的用法</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -322,8 +321,7 @@
 </span></span><span class="line"><span class="cl"> <span class="m">7</span>  las-b3-link.telia.net <span class="o">(</span>62.115.13.128<span class="o">)</span>  198.546 ms  190.829 ms  191.039 ms
 </span></span><span class="line"><span class="cl"> <span class="m">8</span>  las-b21-link.telia.net <span class="o">(</span>213.155.131.82<span class="o">)</span>  194.301 ms las-b21-link.telia.net <span class="o">(</span>62.115.116.179<span class="o">)</span>  191.927 ms las-b21-link.telia.net <span class="o">(</span>213.155.131.84<span class="o">)</span>  194.433 ms
 </span></span><span class="line"><span class="cl"> <span class="m">9</span>  * * *
-</span></span><span class="line"><span class="cl"><span class="m">10</span>  * * *
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="m">10</span>  * * *</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><strong>说明：</strong>
@@ -333,58 +331,52 @@
 　　如果在局域网中的不同网段之间，我们可以通过traceroute 来排查问题所在，是主机的问题还是网关的问题。如果我们通过远程来访问某台服务器遇到问题时，我们用到traceroute 追踪数据包所经过的网关，提交IDC服务商，也有助于解决问题；但目前看来在国内解决这样的问题是比较困难的，就是我们发现问题所在，IDC服务商也不可能帮助我们解决。</p>
 </blockquote>
 <p><strong><code>例二</code>：跳数设置</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -m <span class="m">10</span> www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -m <span class="m">10</span> www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例三</code>：显示IP地址，不查主机名</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -n www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -n www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例四</code>：探测包使用的基本UDP端口设置6888</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -p <span class="m">6888</span> www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -p <span class="m">6888</span> www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例五</code>：把探测包的个数设置为值4</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -q <span class="m">4</span> www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -q <span class="m">4</span> www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例六</code>：绕过正常的路由表，直接发送到网络相连的主机</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -r www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -r www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例七</code>：把对外发探测包的等待响应时间设置为3秒</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -w <span class="m">3</span> www.baidu.com
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ traceroute -w <span class="m">3</span> www.baidu.com</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><strong>Traceroute的工作原理</strong>
@@ -397,13 +389,12 @@
 <blockquote>
 <p><strong>格式：</strong></p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tracert <span class="o">[</span>-d<span class="o">]</span> <span class="o">[</span>-h maximum_hops<span class="o">]</span> <span class="o">[</span>-j host-list<span class="o">]</span> <span class="o">[</span>-w timeout<span class="o">]</span> target_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tracert <span class="o">[</span>-d<span class="o">]</span> <span class="o">[</span>-h maximum_hops<span class="o">]</span> <span class="o">[</span>-j host-list<span class="o">]</span> <span class="o">[</span>-w timeout<span class="o">]</span> target_name</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><strong>参数说明</strong>

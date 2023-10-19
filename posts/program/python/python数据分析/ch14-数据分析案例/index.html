@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 14344 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 29 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第十四章 数据分析案例">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="14344 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 14400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 29 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第十四章 数据分析案例">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十四章 数据分析案例">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -223,7 +223,7 @@
 <h2 id="141-来自bitly的usagov数据">14.1 来自Bitly的USA.gov数据</h2>
 <p>2011年，URL缩短服务Bitly跟美国政府网站USA.gov合作，提供了一份从生成.gov或.mil短链接的用户那里收集来的匿名数据。在2011年，除实时数据之外，还可以下载文本文件形式的每小时快照。写作此书时（2017年），这项服务已经关闭，但我们保存一份数据用于本书的案例。</p>
 <p>以每小时快照为例，文件中各行的格式为JSON（即JavaScript Object Notation，这是一种常用的Web数据格式）。例如，如果我们只读取某个文件中的第一行，那么所看到的结果应该是下面这样：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -246,11 +246,10 @@
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;orofrog&#34;</span><span class="p">,</span> <span class="s2">&#34;al&#34;</span><span class="p">:</span> <span class="s2">&#34;en-US,en;q=0.8&#34;</span><span class="p">,</span> <span class="s2">&#34;hh&#34;</span><span class="p">:</span> <span class="s2">&#34;1.usa.gov&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;http:</span><span class="se">\\</span><span class="s2">/</span><span class="se">\\</span><span class="s2">/www.facebook.com</span><span class="se">\\</span><span class="s2">/l</span><span class="se">\\</span><span class="s2">/7AQEFzjSi</span><span class="se">\\</span><span class="s2">/1.usa.gov</span><span class="se">\\</span><span class="s2">/wfLQtf&#34;</span><span class="p">,</span> <span class="s2">&#34;u&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;http:</span><span class="se">\\</span><span class="s2">/</span><span class="se">\\</span><span class="s2">/www.ncbi.nlm.nih.gov</span><span class="se">\\</span><span class="s2">/pubmed</span><span class="se">\\</span><span class="s2">/22415991&#34;</span><span class="p">,</span> <span class="s2">&#34;t&#34;</span><span class="p">:</span> <span class="mi">1331923247</span><span class="p">,</span> <span class="s2">&#34;hc&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1331822918</span><span class="p">,</span> <span class="s2">&#34;cy&#34;</span><span class="p">:</span> <span class="s2">&#34;Danvers&#34;</span><span class="p">,</span> <span class="s2">&#34;ll&#34;</span><span class="p">:</span> <span class="p">[</span> <span class="mf">42.576698</span><span class="p">,</span> <span class="o">-</span><span class="mf">70.954903</span> <span class="p">]</span> <span class="p">}</span>\<span class="n">n</span><span class="s1">&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1331822918</span><span class="p">,</span> <span class="s2">&#34;cy&#34;</span><span class="p">:</span> <span class="s2">&#34;Danvers&#34;</span><span class="p">,</span> <span class="s2">&#34;ll&#34;</span><span class="p">:</span> <span class="p">[</span> <span class="mf">42.576698</span><span class="p">,</span> <span class="o">-</span><span class="mf">70.954903</span> <span class="p">]</span> <span class="p">}</span>\<span class="n">n</span><span class="s1">&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Python有内置或第三方模块可以将JSON字符串转换成Python字典对象。这里，我将使用json模块及其loads函数逐行加载已经下载好的数据文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -259,11 +258,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
 </span></span><span class="line"><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;datasets/bitly_usagov/example.txt&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">records</span> <span class="o">=</span> <span class="p">[</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">records</span> <span class="o">=</span> <span class="p">[</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，records对象就成为一组Python字典了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -304,12 +302,11 @@
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="s1">&#39;http://www.facebook.com/l/7AQEFzjSi/1.usa.gov/wfLQtf&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="mi">1331923247</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;tz&#39;</span><span class="p">:</span> <span class="s1">&#39;America/New_York&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="s1">&#39;u&#39;</span><span class="p">:</span> <span class="s1">&#39;http://www.ncbi.nlm.nih.gov/pubmed/22415991&#39;</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="s1">&#39;u&#39;</span><span class="p">:</span> <span class="s1">&#39;http://www.ncbi.nlm.nih.gov/pubmed/22415991&#39;</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>##用纯Python代码对时区进行计数</p>
 <p>假设我们想要知道该数据集中最常出现的是哪个时区（即tz字段），得到答案的办法有很多。首先，我们用列表推导式取出一组时区：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -328,11 +325,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">time_zones</span> <span class="o">=</span> <span class="p">[</span><span class="n">rec</span><span class="p">[</span><span class="s1">&#39;tz&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">rec</span> <span class="ow">in</span> <span class="n">records</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="n">db4fbd348da9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">listcomp</span><span class="o">&gt;</span><span class="p">(</span><span class="mf">.0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">time_zones</span> <span class="o">=</span> <span class="p">[</span><span class="n">rec</span><span class="p">[</span><span class="s1">&#39;tz&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">rec</span> <span class="ow">in</span> <span class="n">records</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="ne">KeyError</span><span class="p">:</span> <span class="s1">&#39;tz&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="ne">KeyError</span><span class="p">:</span> <span class="s1">&#39;tz&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>晕！原来并不是所有记录都有时区字段。这个好办，只需在列表推导式末尾加上一个if &rsquo;tz&rsquo;in rec判断即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -363,11 +359,10 @@
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;Europe/Warsaw&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="s1">&#39;&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="s1">&#39;&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>只看前10个时区，我们发现有些是未知的（即空的）。虽然可以将它们过滤掉，但现在暂时先留着。接下来，为了对时区进行计数，这里介绍两个办法：一个较难（只使用标准Python库），另一个较简单（使用pandas）。计数的办法之一是在遍历时区的过程中将计数值保存在字典中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -386,11 +381,10 @@
 </span></span><span class="line"><span class="cl">            <span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">counts</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">counts</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果使用Python标准库的更高级工具，那么你可能会将代码写得更简洁一些：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -407,11 +401,10 @@
 </span></span><span class="line"><span class="cl">    <span class="n">counts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="c1"># values will initialize to 0</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">counts</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">counts</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我将逻辑写到函数中是为了获得更高的复用性。要用它对时区进行处理，只需将time_zones传入即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -428,11 +421,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">18</span><span class="p">]:</span> <span class="mi">1251</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="nb">len</span><span class="p">(</span><span class="n">time_zones</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="mi">3440</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="mi">3440</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果想要得到前10位的时区及其计数值，我们需要用到一些有关字典的处理技巧：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -443,11 +435,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">top_counts</span><span class="p">(</span><span class="n">count_dict</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">value_key_pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="n">count</span><span class="p">,</span> <span class="n">tz</span><span class="p">)</span> <span class="k">for</span> <span class="n">tz</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">count_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
 </span></span><span class="line"><span class="cl">    <span class="n">value_key_pairs</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">value_key_pairs</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="p">:]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">value_key_pairs</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="p">:]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -474,11 +465,10 @@
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="mi">382</span><span class="p">,</span> <span class="s1">&#39;America/Los_Angeles&#39;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s1">&#39;America/Chicago&#39;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="mi">521</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="mi">1251</span><span class="p">,</span> <span class="s1">&#39;America/New_York&#39;</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="mi">1251</span><span class="p">,</span> <span class="s1">&#39;America/New_York&#39;</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你搜索Python的标准库，你能找到collections.Counter类，它可以使这项工作更简单：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -513,12 +503,11 @@
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Asia/Tokyo&#39;</span><span class="p">,</span> <span class="mi">37</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Pacific/Honolulu&#39;</span><span class="p">,</span> <span class="mi">36</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Europe/Madrid&#39;</span><span class="p">,</span> <span class="mi">35</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1411-用pandas对时区进行计数">14.1.1 用pandas对时区进行计数</h3>
 <p>从原始记录的集合创建DateFrame，与将记录列表传递到pandas.DataFrame一样简单：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -605,11 +594,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>                     
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>                     
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>                     
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里frame的输出形式是摘要视图（summary view），主要用于较大的DataFrame对象。我们然后可以对Series使用value_counts方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -642,11 +630,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Pacific</span><span class="o">/</span><span class="n">Honolulu</span>         <span class="mi">36</span>
 </span></span><span class="line"><span class="cl"><span class="n">Europe</span><span class="o">/</span><span class="n">Madrid</span>            <span class="mi">35</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Sao_Paulo</span>        <span class="mi">33</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们可以用matplotlib可视化这个数据。为此，我们先给记录中未知或缺失的时区填上一个替代值。fillna函数可以替换缺失值（NA），而未知值（空字符串）则可以通过布尔型数组索引加以替换：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -687,11 +674,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Asia</span><span class="o">/</span><span class="n">Tokyo</span>               <span class="mi">37</span>
 </span></span><span class="line"><span class="cl"><span class="n">Pacific</span><span class="o">/</span><span class="n">Honolulu</span>         <span class="mi">36</span>
 </span></span><span class="line"><span class="cl"><span class="n">Europe</span><span class="o">/</span><span class="n">Madrid</span>            <span class="mi">35</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">tz</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时，我们可以用seaborn包创建水平柱状图（结果见图14-1）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -704,12 +690,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">37</span><span class="p">]:</span> <span class="n">subset</span> <span class="o">=</span> <span class="n">tz_counts</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">values</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png 2x" sizes="auto" data-title="图14-1 usa.gov示例数据中最常出现的时区" data-alt="图14-1 usa.gov示例数据中最常出现的时区" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>a字段含有执行URL短缩操作的浏览器、设备、应用程序的相关信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -730,11 +715,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Gecko</span><span class="o">/</span><span class="mi">20100101</span> <span class="n">Firefox</span><span class="o">/</span><span class="mf">10.0.2</span><span class="s1">&#39;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">41</span><span class="p">]:</span> <span class="n">frame</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="mi">51</span><span class="p">][:</span><span class="mi">50</span><span class="p">]</span>  <span class="c1"># long line</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">41</span><span class="p">]:</span> <span class="s1">&#39;Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; LG-P9&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">41</span><span class="p">]:</span> <span class="s1">&#39;Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; LG-P9&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>将这些&quot;agent&quot;字符串中的所有信息都解析出来是一件挺郁闷的工作。一种策略是将这种字符串的第一节（与浏览器大致对应）分离出来并得到另外一份用户行为摘要：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -781,20 +765,18 @@
 </span></span><span class="line"><span class="cl"><span class="n">GoogleProducer</span>                <span class="mi">21</span>
 </span></span><span class="line"><span class="cl"><span class="n">Mozilla</span><span class="o">/</span><span class="mf">6.0</span>                    <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="n">BlackBerry8520</span><span class="o">/</span><span class="mf">5.0.0.681</span>       <span class="mi">4</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，假设你想按Windows和非Windows用户对时区统计信息进行分解。为了简单起见，我们假定只要agent字符串中含有&quot;Windows&quot;就认为该用户为Windows用户。由于有的agent缺失，所以首先将它们从数据中移除：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">45</span><span class="p">]:</span> <span class="n">cframe</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[</span><span class="n">frame</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">45</span><span class="p">]:</span> <span class="n">cframe</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[</span><span class="n">frame</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后计算出各行是否含有Windows的值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -819,20 +801,18 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>        <span class="n">Windows</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>    <span class="n">Not</span> <span class="n">Windows</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>        <span class="n">Windows</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">os</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">os</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来就可以根据时区和新得到的操作系统列表对数据进行分组了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">49</span><span class="p">]:</span> <span class="n">by_tz_os</span> <span class="o">=</span> <span class="n">cframe</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="s1">&#39;os&#39;</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">49</span><span class="p">]:</span> <span class="n">by_tz_os</span> <span class="o">=</span> <span class="n">cframe</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="s1">&#39;os&#39;</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>分组计数，类似于value_counts函数，可以用size来计算。并利用unstack对计数结果进行重塑：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -867,11 +847,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Anchorage</span>                       <span class="mf">4.0</span>      <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Buenos_Aires</span>          <span class="mf">1.0</span>      <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Cordoba</span>               <span class="mf">0.0</span>      <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Mendoza</span>               <span class="mf">0.0</span>      <span class="mf">1.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Mendoza</span>               <span class="mf">0.0</span>      <span class="mf">1.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后，我们来选取最常出现的时区。为了达到这个目的，我根据agg_counts中的行数构造了一个间接索引数组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -908,11 +887,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Buenos_Aires</span>    <span class="mi">57</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Cordoba</span>         <span class="mi">26</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Argentina</span><span class="o">/</span><span class="n">Mendoza</span>         <span class="mi">55</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后我通过take按照这个顺序截取了最后10行最大值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -947,11 +925,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Los_Angeles</span>        <span class="mf">130.0</span>    <span class="mf">252.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Chicago</span>            <span class="mf">115.0</span>    <span class="mf">285.0</span>
 </span></span><span class="line"><span class="cl">                           <span class="mf">245.0</span>    <span class="mf">276.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">New_York</span>           <span class="mf">339.0</span>    <span class="mf">912.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">New_York</span>           <span class="mf">339.0</span>    <span class="mf">912.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pandas有一个简便方法nlargest，可以做同样的工作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -982,11 +959,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Pacific</span><span class="o">/</span><span class="n">Honolulu</span>         <span class="mf">36.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">Europe</span><span class="o">/</span><span class="n">Madrid</span>            <span class="mf">35.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">America</span><span class="o">/</span><span class="n">Sao_Paulo</span>        <span class="mf">33.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，如这段代码所示，可以用柱状图表示。我传递一个额外参数到seaborn的barpolt函数，来画一个堆积条形图（见图14-2）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1033,12 +1009,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>      <span class="n">Europe</span><span class="o">/</span><span class="n">London</span>  <span class="n">Not</span> <span class="n">Windows</span>   <span class="mf">43.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="n">Europe</span><span class="o">/</span><span class="n">London</span>      <span class="n">Windows</span>   <span class="mf">31.0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">62</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">count_subset</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">62</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">count_subset</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png 2x" sizes="auto" data-title="图14-2 最常出现时区的Windows和非Windows用户" data-alt="图14-2 最常出现时区的Windows和非Windows用户" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>这张图不容易看出Windows用户在小分组中的相对比例，因此标准化分组百分比之和为1：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1051,21 +1026,19 @@
 </span></span><span class="line"><span class="cl">    <span class="n">group</span><span class="p">[</span><span class="s1">&#39;normed_total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">total</span> <span class="o">/</span> <span class="n">group</span><span class="o">.</span><span class="n">total</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">group</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">results</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;tz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">norm_total</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">results</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;tz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">norm_total</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>再次画图，见图14-3：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;normed_total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">results</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;normed_total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">results</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png 2x" sizes="auto" data-title="图14-3 最常出现时区的Windows和非Windows用户的百分比" data-alt="图14-3 最常出现时区的Windows和非Windows用户的百分比" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>我们还可以用groupby的transform方法，更高效的计算标准化的和：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1074,13 +1047,12 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">66</span><span class="p">]:</span> <span class="n">g</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;tz&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">results2</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">total</span> <span class="o">/</span> <span class="n">g</span><span class="o">.</span><span class="n">total</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">results2</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">total</span> <span class="o">/</span> <span class="n">g</span><span class="o">.</span><span class="n">total</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="142-movielens-1m数据集">14.2 MovieLens 1M数据集</h2>
 <p>GroupLens Research（http://www.grouplens.org/node/73）采集了一组从20世纪90年末到21世纪初由MovieLens用户提供的电影评分数据。这些数据中包括电影评分、电影元数据（风格类型和年代）以及关于用户的人口统计学数据（年龄、邮编、性别和职业等）。基于机器学习算法的推荐系统一般都会对此类数据感兴趣。虽然我不会在本书中详细介绍机器学习技术，但我会告诉你如何对这种数据进行切片切块以满足实际需求。</p>
 <p>MovieLens 1M数据集含有来自6000名用户对4000部电影的100万条评分数据。它分为三个表：评分、用户信息和电影信息。将该数据从zip文件中解压出来之后，可以通过pandas.read_table将各个表分别读到一个pandas DataFrame对象中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1113,11 +1085,10 @@
 </span></span><span class="line"><span class="cl">                        <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">rnames</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">mnames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;movie_id&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;genres&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">movies</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;datasets/movielens/movies.dat&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;::&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                       <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">mnames</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                       <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">mnames</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>利用Python的切片语法，通过查看每个DataFrame的前几行即可验证数据加载工作是否一切顺利：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1204,11 +1175,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1000206</span>     <span class="mi">6040</span>       <span class="mi">562</span>       <span class="mi">5</span>  <span class="mi">956704746</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1000207</span>     <span class="mi">6040</span>      <span class="mi">1096</span>       <span class="mi">4</span>  <span class="mi">956715648</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1000208</span>     <span class="mi">6040</span>      <span class="mi">1097</span>       <span class="mi">4</span>  <span class="mi">956715569</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1000209</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1000209</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意，其中的年龄和职业是以编码形式给出的，它们的具体含义请参考该数据集的README文件。分析散布在三个表中的数据可不是一件轻松的事情。假设我们想要根据性别和年龄计算某部电影的平均得分，如果将所有数据都合并到一个表中的话问题就简单多了。我们先用pandas的merge函数将ratings跟users合并到一起，然后再将movies也合并进去。pandas会根据列名的重叠情况推断出哪些列是合并（或连接）键：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1297,11 +1267,10 @@
 </span></span><span class="line"><span class="cl"><span class="nb">zip</span>                                            <span class="mi">48067</span>
 </span></span><span class="line"><span class="cl"><span class="n">title</span>         <span class="n">One</span> <span class="n">Flew</span> <span class="n">Over</span> <span class="n">the</span> <span class="n">Cuckoo</span><span class="s1">&#39;s Nest (1975)</span>
 </span></span><span class="line"><span class="cl"><span class="n">genres</span>                                         <span class="n">Drama</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>为了按性别计算每部电影的平均得分，我们可以使用pivot_table方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1328,11 +1297,10 @@
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;Night Mother (1986)           3.388889  3.352941</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;Til There Was You (1997)      2.675676  2.733333</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;burbs, The (1989)             2.793478  2.962085</span>
-</span></span><span class="line"><span class="cl"><span class="o">...</span><span class="n">And</span> <span class="n">Justice</span> <span class="k">for</span> <span class="n">All</span> <span class="p">(</span><span class="mi">1979</span><span class="p">)</span>  <span class="mf">3.828571</span>  <span class="mf">3.689024</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">...</span><span class="n">And</span> <span class="n">Justice</span> <span class="k">for</span> <span class="n">All</span> <span class="p">(</span><span class="mi">1979</span><span class="p">)</span>  <span class="mf">3.828571</span>  <span class="mf">3.689024</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>该操作产生了另一个DataFrame，其内容为电影平均得分，行标为电影名称（索引），列标为性别。现在，我打算过滤掉评分数据不够250条的电影（随便选的一个数字）。为了达到这个目的，我先对title进行分组，然后利用size()得到一个含有各电影分组大小的Series对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1401,11 +1369,10 @@
 </span></span><span class="line"><span class="cl">       <span class="s1">&#39;Young Frankenstein (1974)&#39;</span><span class="p">,</span> <span class="s1">&#39;Young Guns (1988)&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">       <span class="s1">&#39;Young Guns II (1990)&#39;</span><span class="p">,</span> <span class="s1">&#39;Young Sherlock Holmes (1985)&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">       <span class="s1">&#39;Zero Effect (1998)&#39;</span><span class="p">,</span> <span class="s1">&#39;eXistenZ (1999)&#39;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">1216</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">1216</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>标题索引中含有评分数据大于250条的电影名称，然后我们就可以据此从前面的mean_ratings中选取所需的行了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1446,11 +1413,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Young</span> <span class="n">Sherlock</span> <span class="n">Holmes</span> <span class="p">(</span><span class="mi">1985</span><span class="p">)</span>       <span class="mf">3.514706</span>  <span class="mf">3.363344</span>
 </span></span><span class="line"><span class="cl"><span class="n">Zero</span> <span class="n">Effect</span> <span class="p">(</span><span class="mi">1998</span><span class="p">)</span>                 <span class="mf">3.864407</span>  <span class="mf">3.723140</span>
 </span></span><span class="line"><span class="cl"><span class="n">eXistenZ</span> <span class="p">(</span><span class="mi">1999</span><span class="p">)</span>                    <span class="mf">3.098592</span>  <span class="mf">3.289086</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1216</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">2</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1216</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">2</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>为了了解女性观众最喜欢的电影，我们可以对F列降序排列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1485,21 +1451,19 @@
 </span></span><span class="line"><span class="cl"><span class="n">Grand</span> <span class="n">Day</span> <span class="n">Out</span><span class="p">,</span> <span class="n">A</span> <span class="p">(</span><span class="mi">1992</span><span class="p">)</span>                             <span class="mf">4.537879</span>  <span class="mf">4.293255</span>
 </span></span><span class="line"><span class="cl"><span class="n">To</span> <span class="n">Kill</span> <span class="n">a</span> <span class="n">Mockingbird</span> <span class="p">(</span><span class="mi">1962</span><span class="p">)</span>                        <span class="mf">4.536667</span>  <span class="mf">4.372611</span>
 </span></span><span class="line"><span class="cl"><span class="n">Creature</span> <span class="n">Comforts</span> <span class="p">(</span><span class="mi">1990</span><span class="p">)</span>                            <span class="mf">4.513889</span>  <span class="mf">4.272277</span>
-</span></span><span class="line"><span class="cl"><span class="n">Usual</span> <span class="n">Suspects</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1995</span><span class="p">)</span>                          <span class="mf">4.513317</span>  <span class="mf">4.518248</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Usual</span> <span class="n">Suspects</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1995</span><span class="p">)</span>                          <span class="mf">4.513317</span>  <span class="mf">4.518248</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1421-计算评分分歧">14.2.1 计算评分分歧</h3>
 <p>假设我们想要找出男性和女性观众分歧最大的电影。一个办法是给mean_ratings加上一个用于存放平均得分之差的列，并对其进行排序：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">87</span><span class="p">]:</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;diff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">87</span><span class="p">]:</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;diff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_ratings</span><span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>按&quot;diff&quot;排序即可得到分歧最大且女性观众更喜欢的电影：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1534,11 +1498,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Rocky</span> <span class="n">Horror</span> <span class="n">Picture</span> <span class="n">Show</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1975</span><span class="p">)</span>  <span class="mf">3.673016</span>  <span class="mf">3.160131</span> <span class="o">-</span><span class="mf">0.512885</span>
 </span></span><span class="line"><span class="cl"><span class="n">Color</span> <span class="n">Purple</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1985</span><span class="p">)</span>               <span class="mf">4.158192</span>  <span class="mf">3.659341</span> <span class="o">-</span><span class="mf">0.498851</span>
 </span></span><span class="line"><span class="cl"><span class="n">Age</span> <span class="n">of</span> <span class="n">Innocence</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1993</span><span class="p">)</span>           <span class="mf">3.827068</span>  <span class="mf">3.339506</span> <span class="o">-</span><span class="mf">0.487561</span>
-</span></span><span class="line"><span class="cl"><span class="n">Free</span> <span class="n">Willy</span> <span class="p">(</span><span class="mi">1993</span><span class="p">)</span>                      <span class="mf">2.921348</span>  <span class="mf">2.438776</span> <span class="o">-</span><span class="mf">0.482573</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Free</span> <span class="n">Willy</span> <span class="p">(</span><span class="mi">1993</span><span class="p">)</span>                      <span class="mf">2.921348</span>  <span class="mf">2.438776</span> <span class="o">-</span><span class="mf">0.482573</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对排序结果反序并取出前10行，得到的则是男性观众更喜欢的电影：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1571,11 +1534,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Hidden</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1987</span><span class="p">)</span>                      <span class="mf">3.137931</span>  <span class="mf">3.745098</span>  <span class="mf">0.607167</span>
 </span></span><span class="line"><span class="cl"><span class="n">Rocky</span> <span class="n">III</span> <span class="p">(</span><span class="mi">1982</span><span class="p">)</span>                        <span class="mf">2.361702</span>  <span class="mf">2.943503</span>  <span class="mf">0.581801</span>
 </span></span><span class="line"><span class="cl"><span class="n">Caddyshack</span> <span class="p">(</span><span class="mi">1980</span><span class="p">)</span>                       <span class="mf">3.396135</span>  <span class="mf">3.969737</span>  <span class="mf">0.573602</span>
-</span></span><span class="line"><span class="cl"><span class="n">For</span> <span class="n">a</span> <span class="n">Few</span> <span class="n">Dollars</span> <span class="n">More</span> <span class="p">(</span><span class="mi">1965</span><span class="p">)</span>           <span class="mf">3.409091</span>  <span class="mf">3.953795</span>  <span class="mf">0.544704</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">For</span> <span class="n">a</span> <span class="n">Few</span> <span class="n">Dollars</span> <span class="n">More</span> <span class="p">(</span><span class="mi">1965</span><span class="p">)</span>           <span class="mf">3.409091</span>  <span class="mf">3.953795</span>  <span class="mf">0.544704</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果只是想要找出分歧最大的电影（不考虑性别因素），则可以计算得分数据的方差或标准差：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1620,14 +1582,13 @@
 </span></span><span class="line"><span class="cl"><span class="n">Billy</span> <span class="n">Madison</span> <span class="p">(</span><span class="mi">1995</span><span class="p">)</span>                     <span class="mf">1.249970</span>
 </span></span><span class="line"><span class="cl"><span class="n">Fear</span> <span class="ow">and</span> <span class="n">Loathing</span> <span class="ow">in</span> <span class="n">Las</span> <span class="n">Vegas</span> <span class="p">(</span><span class="mi">1998</span><span class="p">)</span>    <span class="mf">1.246408</span>
 </span></span><span class="line"><span class="cl"><span class="n">Bicentennial</span> <span class="n">Man</span> <span class="p">(</span><span class="mi">1999</span><span class="p">)</span>                  <span class="mf">1.245533</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">rating</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">rating</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可能你已经注意到了，电影分类是以竖线（|）分隔的字符串形式给出的。如果想对电影分类进行分析的话，就需要先将其转换成更有用的形式才行。</p>
 <h2 id="143-1880-2010年间全美婴儿姓名">14.3 1880-2010年间全美婴儿姓名</h2>
 <p>美国社会保障总署（SSA）提供了一份从1880年到现在的婴儿名字频率数据。Hadley Wickham（许多流行R包的作者）经常用这份数据来演示R的数据处理功能。</p>
 <p>我们要做一些数据规整才能加载这个数据集，这么做就会产生一个如下的DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1656,8 +1617,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>        <span class="n">Ida</span>   <span class="n">F</span>    <span class="mi">1472</span>  <span class="mi">1880</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>      <span class="n">Alice</span>   <span class="n">F</span>    <span class="mi">1414</span>  <span class="mi">1880</span>
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>     <span class="n">Bertha</span>   <span class="n">F</span>    <span class="mi">1320</span>  <span class="mi">1880</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="n">Sarah</span>   <span class="n">F</span>    <span class="mi">1288</span>  <span class="mi">1880</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="n">Sarah</span>   <span class="n">F</span>    <span class="mi">1288</span>  <span class="mi">1880</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可以用这个数据集做很多事，例如：</p>
 <ul>
@@ -1671,7 +1631,7 @@
 <p>到编写本书时为止，美国社会保障总署将该数据库按年度制成了多个数据文件，其中给出了每个性别/名字组合的出生总数。这些文件的原始档案可以在这里获取：<a href="http://www.ssa.gov/oact/babynames/limits.html"target="_blank" rel="external nofollow noopener noreferrer">http://www.ssa.gov/oact/babynames/limits.html</a>。</p>
 <p>如果你在阅读本书的时候这个页面已经不见了，也可以用搜索引擎找找。</p>
 <p>下载&quot;National data&quot;文件names.zip，解压后的目录中含有一组文件（如yob1880.txt）。我用UNIX的head命令查看了其中一个文件的前10行（在Windows上，你可以用more命令，或直接在文本编辑器中打开）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1696,11 +1656,10 @@
 </span></span><span class="line"><span class="cl">Ida,F,1472
 </span></span><span class="line"><span class="cl">Alice,F,1414
 </span></span><span class="line"><span class="cl">Bertha,F,1320
-</span></span><span class="line"><span class="cl">Sarah,F,1288
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Sarah,F,1288</span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于这是一个非常标准的以逗号隔开的格式，所以可以用pandas.read_csv将其加载到DataFrame中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1745,11 +1704,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1997</span>     <span class="n">Wright</span>   <span class="n">M</span>       <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1998</span>       <span class="n">York</span>   <span class="n">M</span>       <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1999</span>  <span class="n">Zachariah</span>   <span class="n">M</span>       <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">2000</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">2000</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这些文件中仅含有当年出现超过5次的名字。为了简单起见，我们可以用births列的sex分组小计表示该年度的births总计：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1764,11 +1722,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">sex</span>
 </span></span><span class="line"><span class="cl"><span class="n">F</span>     <span class="mi">90993</span>
 </span></span><span class="line"><span class="cl"><span class="n">M</span>    <span class="mi">110493</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">births</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">births</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于该数据集按年度被分隔成了多个文件，所以第一件事情就是要将所有数据都组装到一个DataFrame里面，并加上一个year字段。使用pandas.concat即可达到这个目的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1799,11 +1756,10 @@
 </span></span><span class="line"><span class="cl">    <span class="n">pieces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Concatenate everything into a single DataFrame</span>
-</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里需要注意几件事情。第一，concat默认是按行将多个DataFrame组合到一起的；第二，必须指定ignore_index=True，因为我们不希望保留read_csv所返回的原始行号。现在我们得到了一个非常大的DataFrame，它含有全部的名字数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1836,11 +1792,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1690781</span>  <span class="n">Zyquarius</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1690782</span>      <span class="n">Zyran</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1690783</span>      <span class="n">Zzyzx</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1690784</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1690784</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>有了这些数据之后，我们就可以利用groupby或pivot_table在year和sex级别上对其进行聚合了，如图14-4所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1871,12 +1826,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span>  <span class="mi">1827643</span>  <span class="mi">1973359</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2010</span>  <span class="mi">1759010</span>  <span class="mi">1898382</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">103</span><span class="p">]:</span> <span class="n">total_births</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total births by sex and year&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">103</span><span class="p">]:</span> <span class="n">total_births</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total births by sex and year&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png 2x" sizes="auto" data-title="图14-4 按性别和年度统计的总出生数" data-alt="图14-4 按性别和年度统计的总出生数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>下面我们来插入一个prop列，用于存放指定名字的婴儿数相对于总出生数的比例。prop值为0.02表示每100名婴儿中有2名取了当前这个名字。因此，我们先按year和sex分组，然后再将新列加到各个分组上：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1887,11 +1841,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add_prop</span><span class="p">(</span><span class="n">group</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">group</span><span class="p">[</span><span class="s1">&#39;prop&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">births</span> <span class="o">/</span> <span class="n">group</span><span class="o">.</span><span class="n">births</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">group</span>
-</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">add_prop</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">add_prop</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，完整的数据集就有了下面这些列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1924,11 +1877,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1690781</span>  <span class="n">Zyquarius</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>  <span class="mf">0.000003</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1690782</span>      <span class="n">Zyran</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>  <span class="mf">0.000003</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1690783</span>      <span class="n">Zzyzx</span>   <span class="n">M</span>       <span class="mi">5</span>  <span class="mi">2010</span>  <span class="mf">0.000003</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1690784</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1690784</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在执行这样的分组处理时，一般都应该做一些有效性检查，比如验证所有分组的prop的总和是否为1：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1961,11 +1913,10 @@
 </span></span><span class="line"><span class="cl">      <span class="n">M</span>      <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2010</span>  <span class="n">F</span>      <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl">      <span class="n">M</span>      <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">prop</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">262</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">prop</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">262</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>工作完成。为了便于实现更进一步的分析，我需要取出该数据的一个子集：每对sex/year组合的前1000个名字。这又是一个分组操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1980,11 +1931,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">grouped</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">top1000</span> <span class="o">=</span> <span class="n">grouped</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_top1000</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Drop the group index, not needed</span>
-</span></span><span class="line"><span class="cl"><span class="n">top1000</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">top1000</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你喜欢DIY的话，也可以这样：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1995,11 +1945,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pieces</span> <span class="o">=</span> <span class="p">[]</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">year</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">names</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">]):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">pieces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">group</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;births&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="mi">1000</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">top1000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">top1000</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在的结果数据集就小多了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2032,13 +1981,12 @@
 </span></span><span class="line"><span class="cl"><span class="mi">261874</span>     <span class="n">Jaquan</span>   <span class="n">M</span>     <span class="mi">194</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
 </span></span><span class="line"><span class="cl"><span class="mi">261875</span>     <span class="n">Jaydan</span>   <span class="n">M</span>     <span class="mi">194</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
 </span></span><span class="line"><span class="cl"><span class="mi">261876</span>     <span class="n">Maxton</span>   <span class="n">M</span>     <span class="mi">193</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">261877</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">261877</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来的数据分析工作就针对这个top1000数据集了。</p>
 <h3 id="1431-分析命名趋势">14.3.1 分析命名趋势</h3>
 <p>有了完整的数据集和刚才生成的top1000数据集，我们就可以开始分析各种命名趋势了。首先将前1000个名字分为男女两个部分：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2047,11 +1995,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">109</span><span class="p">]:</span> <span class="n">boys</span> <span class="o">=</span> <span class="n">top1000</span><span class="p">[</span><span class="n">top1000</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">110</span><span class="p">]:</span> <span class="n">girls</span> <span class="o">=</span> <span class="n">top1000</span><span class="p">[</span><span class="n">top1000</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">110</span><span class="p">]:</span> <span class="n">girls</span> <span class="o">=</span> <span class="n">top1000</span><span class="p">[</span><span class="n">top1000</span><span class="o">.</span><span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这是两个简单的时间序列，只需稍作整理即可绘制出相应的图表（比如每年叫做John和Mary的婴儿数）。我们先生成一张按year和name统计的总出生数透视表：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2060,11 +2007,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">111</span><span class="p">]:</span> <span class="n">total_births</span> <span class="o">=</span> <span class="n">top1000</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s1">&#39;births&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>                                    <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>                                    <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>                                    <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，我们用DataFrame的plot方法绘制几个名字的曲线图（见图14-5）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2089,14 +2035,13 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">subset</span> <span class="o">=</span> <span class="n">total_births</span><span class="p">[[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Harry&#39;</span><span class="p">,</span> <span class="s1">&#39;Mary&#39;</span><span class="p">,</span> <span class="s1">&#39;Marilyn&#39;</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">114</span><span class="p">]:</span> <span class="n">subset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of births per year&#34;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of births per year&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png 2x" sizes="auto" data-title="图14-5 几个男孩和女孩名字随时间变化的使用数量" data-alt="图14-5 几个男孩和女孩名字随时间变化的使用数量" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>从图中可以看出，这几个名字在美国人民的心目中已经风光不再了。但事实并非如此简单，我们在下一节中就能知道是怎么一回事了。</p>
 <h3 id="1432-评估命名多样性的增长">14.3.2 评估命名多样性的增长</h3>
 <p>一种解释是父母愿意给小孩起常见的名字越来越少。这个假设可以从数据中得到验证。一个办法是计算最流行的1000个名字所占的比例，我按year和sex进行聚合并绘图（见图14-6）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2111,12 +2056,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">117</span><span class="p">]:</span> <span class="n">table</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Sum of table1000.prop by year and sex&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>            <span class="n">yticks</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mi">13</span><span class="p">),</span> <span class="n">xticks</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1880</span><span class="p">,</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png 2x" sizes="auto" data-title="图14-6 分性别统计的前1000个名字在总出生人数中的比例" data-alt="图14-6 分性别统计的前1000个名字在总出生人数中的比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>从图中可以看出，名字的多样性确实出现了增长（前1000项的比例降低）。另一个办法是计算占总出生人数前50%的不同名字的数量，这个数字不太好计算。我们只考虑2010年男孩的名字：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2153,11 +2097,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">261874</span>   <span class="n">Jaquan</span>   <span class="n">M</span>     <span class="mi">194</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
 </span></span><span class="line"><span class="cl"><span class="mi">261875</span>   <span class="n">Jaydan</span>   <span class="n">M</span>     <span class="mi">194</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
 </span></span><span class="line"><span class="cl"><span class="mi">261876</span>   <span class="n">Maxton</span>   <span class="n">M</span>     <span class="mi">193</span>  <span class="mi">2010</span>  <span class="mf">0.000102</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1000</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1000</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在对prop降序排列之后，我们想知道前面多少个名字的人数加起来才够50%。虽然编写一个for循环确实也能达到目的，但NumPy有一种更聪明的矢量方式。先计算prop的累计和cumsum，然后再通过searchsorted方法找出0.5应该被插入在哪个位置才能保证不破坏顺序：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2196,11 +2139,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">prop</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">122</span><span class="p">]:</span> <span class="n">prop_cumsum</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">122</span><span class="p">]:</span> <span class="mi">116</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">122</span><span class="p">]:</span> <span class="mi">116</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于数组索引是从0开始的，因此我们要给这个结果加1，即最终结果为117。拿1900年的数据来做个比较，这个数字要小得多：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2215,11 +2157,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">124</span><span class="p">]:</span> <span class="n">in1900</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;prop&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">prop</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">125</span><span class="p">]:</span> <span class="n">in1900</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">125</span><span class="p">]:</span> <span class="mi">25</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">125</span><span class="p">]:</span> <span class="mi">25</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在就可以对所有year/sex组合执行这个计算了。按这两个字段进行groupby处理，然后用一个函数计算各分组的这个值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-60"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2234,11 +2175,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">group</span><span class="o">.</span><span class="n">prop</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">diversity</span> <span class="o">=</span> <span class="n">top1000</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_quantile_count</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">diversity</span> <span class="o">=</span> <span class="n">diversity</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="s1">&#39;sex&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">diversity</span> <span class="o">=</span> <span class="n">diversity</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="s1">&#39;sex&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，diversity这个DataFrame拥有两个时间序列（每个性别各一个，按年度索引）。通过IPython，你可以查看其内容，还可以像之前那样绘制图表（如图14-7所示）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-61"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2263,14 +2203,13 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1883</span>  <span class="mi">39</span>  <span class="mi">15</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1884</span>  <span class="mi">39</span>  <span class="mi">16</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">129</span><span class="p">]:</span> <span class="n">diversity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of popular names in top 50%&#34;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">129</span><span class="p">]:</span> <span class="n">diversity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of popular names in top 50%&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png 2x" sizes="auto" data-title="图14-7 按年度统计的密度表" data-alt="图14-7 按年度统计的密度表" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>从图中可以看出，女孩名字的多样性总是比男孩的高，而且还在变得越来越高。读者们可以自己分析一下具体是什么在驱动这个多样性（比如拼写形式的变化）。</p>
 <h3 id="1433-最后一个字母的变革">14.3.3 “最后一个字母”的变革</h3>
 <p>2007年，一名婴儿姓名研究人员Laura Wattenberg在她自己的网站上指出（http://www.babynamewizard.com）：近百年来，男孩名字在最后一个字母上的分布发生了显著的变化。为了了解具体的情况，我首先将全部出生数据在年度、性别以及末字母上进行了聚合：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2287,11 +2226,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">last_letters</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;last_letter&#39;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">table</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s1">&#39;births&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">last_letters</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                          <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                          <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，我选出具有一定代表性的三年，并输出前面几行：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2318,11 +2256,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">b</span>                 <span class="n">NaN</span>     <span class="mf">694.0</span>     <span class="mf">450.0</span>    <span class="mf">411.0</span>    <span class="mf">3912.0</span>   <span class="mf">38859.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>                 <span class="mf">5.0</span>      <span class="mf">49.0</span>     <span class="mf">946.0</span>    <span class="mf">482.0</span>   <span class="mf">15476.0</span>   <span class="mf">23125.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>              <span class="mf">6750.0</span>    <span class="mf">3729.0</span>    <span class="mf">2607.0</span>  <span class="mf">22111.0</span>  <span class="mf">262112.0</span>   <span class="mf">44398.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">e</span>            <span class="mf">133569.0</span>  <span class="mf">435013.0</span>  <span class="mf">313833.0</span>  <span class="mf">28655.0</span>  <span class="mf">178823.0</span>  <span class="mf">129012.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">e</span>            <span class="mf">133569.0</span>  <span class="mf">435013.0</span>  <span class="mf">313833.0</span>  <span class="mf">28655.0</span>  <span class="mf">178823.0</span>  <span class="mf">129012.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来我们需要按总出生数对该表进行规范化处理，以便计算出各性别各末字母占总出生人数的比例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-64"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2387,11 +2324,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">x</span>            <span class="mf">0.000015</span>  <span class="mf">0.000037</span>  <span class="mf">0.000727</span>  <span class="mf">0.003965</span>  <span class="mf">0.001851</span>  <span class="mf">0.008614</span>
 </span></span><span class="line"><span class="cl"><span class="n">y</span>            <span class="mf">0.110972</span>  <span class="mf">0.152569</span>  <span class="mf">0.116828</span>  <span class="mf">0.077349</span>  <span class="mf">0.160987</span>  <span class="mf">0.058168</span>
 </span></span><span class="line"><span class="cl"><span class="n">z</span>            <span class="mf">0.002439</span>  <span class="mf">0.000659</span>  <span class="mf">0.000704</span>  <span class="mf">0.000170</span>  <span class="mf">0.000184</span>  <span class="mf">0.001831</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">26</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">6</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">26</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">6</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>有了这个字母比例数据之后，就可以生成一张各年度各性别的条形图了，如图14-8所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-65"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2406,12 +2342,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">letter_prop</span><span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Male&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">letter_prop</span><span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Female&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                      <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                      <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png 2x" sizes="auto" data-title="图14-8 男孩女孩名字中各个末字母的比例" data-alt="图14-8 男孩女孩名字中各个末字母的比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>可以看出，从20世纪60年代开始，以字母&quot;n&quot;结尾的男孩名字出现了显著的增长。回到之前创建的那个完整表，按年度和性别对其进行规范化处理，并在男孩名字中选取几个字母，最后进行转置以便将各个列做成一个时间序列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2440,22 +2375,20 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1881</span>         <span class="mf">0.083247</span>  <span class="mf">0.153214</span>  <span class="mf">0.077451</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1882</span>         <span class="mf">0.085340</span>  <span class="mf">0.149560</span>  <span class="mf">0.077537</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1883</span>         <span class="mf">0.084066</span>  <span class="mf">0.151646</span>  <span class="mf">0.079144</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1884</span>         <span class="mf">0.086120</span>  <span class="mf">0.149915</span>  <span class="mf">0.080405</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1884</span>         <span class="mf">0.086120</span>  <span class="mf">0.149915</span>  <span class="mf">0.080405</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>有了这个时间序列的DataFrame之后，就可以通过其plot方法绘制出一张趋势图了（如图14-9所示）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-67"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">143</span><span class="p">]:</span> <span class="n">dny_ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">143</span><span class="p">]:</span> <span class="n">dny_ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png 2x" sizes="auto" data-title="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" data-alt="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="1434-变成女孩名字的男孩名字以及相反的情况">14.3.4 变成女孩名字的男孩名字（以及相反的情况）</h3>
 <p>另一个有趣的趋势是，早年流行于男孩的名字近年来“变性了”，例如Lesley或Leslie。回到top1000数据集，找出其中以&quot;lesl&quot;开头的一组名字：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2482,11 +2415,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4262</span>    <span class="n">Leslee</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4728</span>     <span class="n">Lesli</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6103</span>     <span class="n">Lesly</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后利用这个结果过滤其他的名字，并按名字分组计算出生数以查看相对频率：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-69"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2511,11 +2443,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Lesli</span>        <span class="mi">929</span>
 </span></span><span class="line"><span class="cl"><span class="n">Leslie</span>    <span class="mi">370429</span>
 </span></span><span class="line"><span class="cl"><span class="n">Lesly</span>      <span class="mi">10067</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">births</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">births</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来，我们按性别和年度进行聚合，并按年度进行规范化处理：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-70"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2546,22 +2477,20 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2007</span>  <span class="mf">1.0</span> <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2008</span>  <span class="mf">1.0</span> <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span>  <span class="mf">1.0</span> <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2010</span>  <span class="mf">1.0</span> <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2010</span>  <span class="mf">1.0</span> <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后，就可以轻松绘制一张分性别的年度曲线图了（如图2-10所示）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-71"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">153</span><span class="p">]:</span> <span class="n">table</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;M&#39;</span><span class="p">:</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="s1">&#39;k--&#39;</span><span class="p">})</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">153</span><span class="p">]:</span> <span class="n">table</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;M&#39;</span><span class="p">:</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="s1">&#39;k--&#39;</span><span class="p">})</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png 2x" sizes="auto" data-title="图14-10 各年度使用“Lesley型”名字的男女比例" data-alt="图14-10 各年度使用“Lesley型”名字的男女比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h2 id="144-usda食品数据库">14.4 USDA食品数据库</h2>
 <p>美国农业部（USDA）制作了一份有关食物营养信息的数据库。Ashley Williams制作了该数据的JSON版（http://ashleyw.co.uk/project/food-nutrient-database）。其中的记录如下所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2618,12 +2547,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="o">...</span>
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>每种食物都带有若干标识性属性以及两个有关营养成分和分量的列表。这种形式的数据不是很适合分析工作，因此我们需要做一些规整化以使其具有更好用的形式。</p>
 <p>从上面列举的那个网址下载并解压数据之后，你可以用任何喜欢的JSON库将其加载到Python中。我用的是Python内置的json模块：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-73"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2638,11 +2566,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">155</span><span class="p">]:</span> <span class="n">db</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;datasets/usda_food/database.json&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">156</span><span class="p">]:</span> <span class="nb">len</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">156</span><span class="p">]:</span> <span class="mi">6636</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">156</span><span class="p">]:</span> <span class="mi">6636</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>db中的每个条目都是一个含有某种食物全部数据的字典。nutrients字段是一个字典列表，其中的每个字典对应一种营养成分：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-74"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2691,11 +2618,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>                          <span class="n">Ash</span>        <span class="n">Other</span>     <span class="n">g</span>     <span class="mf">3.28</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>                       <span class="n">Energy</span>       <span class="n">Energy</span>  <span class="n">kcal</span>   <span class="mf">376.00</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>                        <span class="n">Water</span>  <span class="n">Composition</span>     <span class="n">g</span>    <span class="mf">39.28</span>
-</span></span><span class="line"><span class="cl"><span class="mi">6</span>                       <span class="n">Energy</span>       <span class="n">Energy</span>    <span class="n">kJ</span>  <span class="mf">1573.00</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>                       <span class="n">Energy</span>       <span class="n">Energy</span>    <span class="n">kJ</span>  <span class="mf">1573.00</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在将字典列表转换为DataFrame时，可以只抽取其中的一部分字段。这里，我们将取出食物的名称、分类、编号以及制造商等信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-75"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2756,11 +2682,10 @@
 </span></span><span class="line"><span class="cl"><span class="nb">id</span>              <span class="mi">6636</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
 </span></span><span class="line"><span class="cl"><span class="n">manufacturer</span>    <span class="mi">5195</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtypes</span><span class="p">:</span> <span class="n">int64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">207.5</span><span class="o">+</span> <span class="n">KB</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">207.5</span><span class="o">+</span> <span class="n">KB</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>通过value_counts，你可以查看食物类别的分布情况：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-76"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2789,12 +2714,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Sweets</span>                               <span class="mi">341</span>
 </span></span><span class="line"><span class="cl"><span class="n">Pork</span> <span class="n">Products</span>                        <span class="mi">328</span>
 </span></span><span class="line"><span class="cl"><span class="n">Fruits</span> <span class="ow">and</span> <span class="n">Fruit</span> <span class="n">Juices</span>              <span class="mi">328</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">group</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">group</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，为了对全部营养数据做一些分析，最简单的办法是将所有食物的营养成分整合到一个大表中。我们分几个步骤来实现该目的。首先，将各食物的营养成分列表转换为一个DataFrame，并添加一个表示编号的列，然后将该DataFrame添加到一个列表中。最后通过concat将这些东西连接起来就可以了：</p>
 <p>顺利的话，nutrients的结果是：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-77"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2829,11 +2753,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">389352</span>        <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">saturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.072</span>  <span class="mi">43546</span>
 </span></span><span class="line"><span class="cl"><span class="mi">389353</span>  <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">monounsaturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.028</span>  <span class="mi">43546</span>
 </span></span><span class="line"><span class="cl"><span class="mi">389354</span>  <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">polyunsaturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.041</span>  <span class="mi">43546</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">389355</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">389355</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我发现这个DataFrame中无论如何都会有一些重复项，所以直接丢弃就可以了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-78"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2844,11 +2767,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">168</span><span class="p">]:</span> <span class="n">nutrients</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>  <span class="c1"># number of duplicates</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">168</span><span class="p">]:</span> <span class="mi">14179</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">169</span><span class="p">]:</span> <span class="n">nutrients</span> <span class="o">=</span> <span class="n">nutrients</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">169</span><span class="p">]:</span> <span class="n">nutrients</span> <span class="o">=</span> <span class="n">nutrients</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于两个DataFrame对象中都有&quot;group&quot;和&quot;description&quot;，所以为了明确到底谁是谁，我们需要对它们进行重命名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-79"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2921,11 +2843,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">389352</span>        <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">saturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.072</span>  <span class="mi">43546</span>
 </span></span><span class="line"><span class="cl"><span class="mi">389353</span>  <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">monounsaturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.028</span>  <span class="mi">43546</span>
 </span></span><span class="line"><span class="cl"><span class="mi">389354</span>  <span class="n">Fatty</span> <span class="n">acids</span><span class="p">,</span> <span class="n">total</span> <span class="n">polyunsaturated</span>        <span class="n">Other</span>     <span class="n">g</span>    <span class="mf">0.041</span>  <span class="mi">43546</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">375176</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">375176</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>做完这些，就可以将info跟nutrients合并起来：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-80"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2984,11 +2905,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">food</span>            <span class="n">Soup</span><span class="p">,</span> <span class="n">tomato</span> <span class="n">bisque</span><span class="p">,</span> <span class="n">canned</span><span class="p">,</span> <span class="n">condensed</span>
 </span></span><span class="line"><span class="cl"><span class="n">fgroup</span>                      <span class="n">Soups</span><span class="p">,</span> <span class="n">Sauces</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Gravies</span>
 </span></span><span class="line"><span class="cl"><span class="n">manufacturer</span>                                          
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">30000</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">30000</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们现在可以根据食物分类和营养类型画出一张中位值图（如图14-11所示）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-81"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2997,12 +2917,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">180</span><span class="p">]:</span> <span class="n">result</span> <span class="o">=</span> <span class="n">ndata</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;nutrient&#39;</span><span class="p">,</span> <span class="s1">&#39;fgroup&#39;</span><span class="p">])[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">181</span><span class="p">]:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;Zinc, Zn&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">181</span><span class="p">]:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;Zinc, Zn&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png 2x" sizes="auto" data-title="图片14-11 根据营养分类得出的锌中位值" data-alt="图片14-11 根据营养分类得出的锌中位值" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>只要稍微动一动脑子，就可以发现各营养成分最为丰富的食物是什么了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-82"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -3023,11 +2942,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">max_foods</span> <span class="o">=</span> <span class="n">by_nutrient</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_maximum</span><span class="p">)[[</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># make the food a little smaller</span>
-</span></span><span class="line"><span class="cl"><span class="n">max_foods</span><span class="o">.</span><span class="n">food</span> <span class="o">=</span> <span class="n">max_foods</span><span class="o">.</span><span class="n">food</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">max_foods</span><span class="o">.</span><span class="n">food</span> <span class="o">=</span> <span class="n">max_foods</span><span class="o">.</span><span class="n">food</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于得到的DataFrame很大，所以不方便在书里面全部打印出来。这里只给出&quot;Amino Acids&quot;营养分组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-83"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3060,12 +2978,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Tryptophan</span>        <span class="n">Sea</span> <span class="n">lion</span><span class="p">,</span> <span class="n">Steller</span><span class="p">,</span> <span class="n">meat</span> <span class="k">with</span> <span class="n">fat</span> <span class="p">(</span><span class="n">Alaska</span> <span class="n">Native</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Tyrosine</span>         <span class="n">Soy</span> <span class="n">protein</span> <span class="n">isolate</span><span class="p">,</span> <span class="n">PROTEIN</span> <span class="n">TECHNOLOGIES</span> <span class="n">INTE</span><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="n">Valine</span>           <span class="n">Soy</span> <span class="n">protein</span> <span class="n">isolate</span><span class="p">,</span> <span class="n">PROTEIN</span> <span class="n">TECHNOLOGIES</span> <span class="n">INTE</span><span class="o">...</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">food</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">food</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="145-2012联邦选举委员会数据库">14.5 2012联邦选举委员会数据库</h2>
 <p>美国联邦选举委员会发布了有关政治竞选赞助方面的数据。其中包括赞助者的姓名、职业、雇主、地址以及出资额等信息。我们对2012年美国总统大选的数据集比较感兴趣（http://www.fec.gov/disclosurep/PDownload.do）。我在2012年6月下载的数据集是一个150MB的CSV文件（P00000001-ALL.csv），我们先用pandas.read_csv将其加载进来：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3116,11 +3033,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">form_tp</span>              <span class="mi">1001731</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
 </span></span><span class="line"><span class="cl"><span class="n">file_num</span>             <span class="mi">1001731</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">122.3</span><span class="o">+</span> <span class="n">MB</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">122.3</span><span class="o">+</span> <span class="n">MB</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>该DataFrame中的记录如下所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-85"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3151,12 +3067,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">memo_text</span>                 <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">form_tp</span>                 <span class="n">SA17A</span>
 </span></span><span class="line"><span class="cl"><span class="n">file_num</span>               <span class="mi">772372</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">123456</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="mi">123456</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可能已经想出了许多办法从这些竞选赞助数据中抽取有关赞助人和赞助模式的统计信息。我将在接下来的内容中介绍几种不同的分析工作（运用到目前为止已经学到的方法）。</p>
 <p>不难看出，该数据中没有党派信息，因此最好把它加进去。通过unique，你可以获取全部的候选人名单：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-86"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3183,11 +3098,10 @@
 </span></span><span class="line"><span class="cl">       <span class="s1">&#39;Perry, Rick&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">189</span><span class="p">]:</span> <span class="n">unique_cands</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">189</span><span class="p">]:</span> <span class="s1">&#39;Obama, Barack&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">189</span><span class="p">]:</span> <span class="s1">&#39;Obama, Barack&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>指明党派信息的方法之一是使用字典：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-87"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3216,11 +3130,10 @@
 </span></span><span class="line"><span class="cl">           <span class="s1">&#39;Perry, Rick&#39;</span><span class="p">:</span> <span class="s1">&#39;Republican&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">           <span class="s2">&#34;Roemer, Charles E. &#39;Buddy&#39; III&#34;</span><span class="p">:</span> <span class="s1">&#39;Republican&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">           <span class="s1">&#39;Romney, Mitt&#39;</span><span class="p">:</span> <span class="s1">&#39;Republican&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">           <span class="s1">&#39;Santorum, Rick&#39;</span><span class="p">:</span> <span class="s1">&#39;Republican&#39;</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;Santorum, Rick&#39;</span><span class="p">:</span> <span class="s1">&#39;Republican&#39;</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，通过这个映射以及Series对象的map方法，你可以根据候选人姓名得到一组党派信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-88"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3275,11 +3188,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">194</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="n">Democrat</span>      <span class="mi">593746</span>
 </span></span><span class="line"><span class="cl"><span class="n">Republican</span>    <span class="mi">407985</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">party</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">party</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里有两个需要注意的地方。第一，该数据既包括赞助也包括退款（负的出资额）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-89"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -3292,30 +3204,27 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">195</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="kc">True</span>     <span class="mi">991475</span>
 </span></span><span class="line"><span class="cl"><span class="kc">False</span>     <span class="mi">10256</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contb_receipt_amt</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contb_receipt_amt</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>为了简化分析过程，我限定该数据集只能有正的出资额：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-90"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">196</span><span class="p">]:</span> <span class="n">fec</span> <span class="o">=</span> <span class="n">fec</span><span class="p">[</span><span class="n">fec</span><span class="o">.</span><span class="n">contb_receipt_amt</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">196</span><span class="p">]:</span> <span class="n">fec</span> <span class="o">=</span> <span class="n">fec</span><span class="p">[</span><span class="n">fec</span><span class="o">.</span><span class="n">contb_receipt_amt</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于Barack Obama和Mitt Romney是最主要的两名候选人，所以我还专门准备了一个子集，只包含针对他们两人的竞选活动的赞助信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-91"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">197</span><span class="p">]:</span> <span class="n">fec_mrbo</span> <span class="o">=</span> <span class="n">fec</span><span class="p">[</span><span class="n">fec</span><span class="o">.</span><span class="n">cand_nm</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Obama, Barack&#39;</span><span class="p">,</span><span class="s1">&#39;Romney, Mitt&#39;</span><span class="p">])]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">197</span><span class="p">]:</span> <span class="n">fec_mrbo</span> <span class="o">=</span> <span class="n">fec</span><span class="p">[</span><span class="n">fec</span><span class="o">.</span><span class="n">cand_nm</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Obama, Barack&#39;</span><span class="p">,</span><span class="s1">&#39;Romney, Mitt&#39;</span><span class="p">])]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1451-根据职业和雇主统计赞助信息">14.5.1 根据职业和雇主统计赞助信息</h3>
 <p>基于职业的赞助信息统计是另一种经常被研究的统计任务。例如，律师们更倾向于资助民主党，而企业主则更倾向于资助共和党。你可以不相信我，自己看那些数据就知道了。首先，根据职业计算出资总额，这很简单：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-92"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3344,11 +3253,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">TEACHER</span>                                    <span class="mi">13990</span>
 </span></span><span class="line"><span class="cl"><span class="n">CONSULTANT</span>                                 <span class="mi">13273</span>
 </span></span><span class="line"><span class="cl"><span class="n">PROFESSOR</span>                                  <span class="mi">12555</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contbr_occupation</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contbr_occupation</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>不难看出，许多职业都涉及相同的基本工作类型，或者同一样东西有多种变体。下面的代码片段可以清理一些这样的数据（将一个职业信息映射到另一个）。注意，这里巧妙地利用了dict.get，它允许没有映射关系的职业也能“通过”：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-93"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3371,11 +3279,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If no mapping provided, return x</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">occ_mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">fec</span><span class="o">.</span><span class="n">contbr_occupation</span> <span class="o">=</span> <span class="n">fec</span><span class="o">.</span><span class="n">contbr_occupation</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">fec</span><span class="o">.</span><span class="n">contbr_occupation</span> <span class="o">=</span> <span class="n">fec</span><span class="o">.</span><span class="n">contbr_occupation</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我对雇主信息也进行了同样的处理：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-94"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3398,11 +3305,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If no mapping provided, return x</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">emp_mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">fec</span><span class="o">.</span><span class="n">contbr_employer</span> <span class="o">=</span> <span class="n">fec</span><span class="o">.</span><span class="n">contbr_employer</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">fec</span><span class="o">.</span><span class="n">contbr_employer</span> <span class="o">=</span> <span class="n">fec</span><span class="o">.</span><span class="n">contbr_employer</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，你可以通过pivot_table根据党派和职业对数据进行聚合，然后过滤掉总出资额不足200万美元的数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-95"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3449,21 +3355,19 @@
 </span></span><span class="line"><span class="cl"><span class="n">REAL</span> <span class="n">ESTATE</span>          <span class="mf">528902.09</span>  <span class="mf">1.625902e+06</span>
 </span></span><span class="line"><span class="cl"><span class="n">RETIRED</span>            <span class="mf">25305116.38</span>  <span class="mf">2.356124e+07</span>
 </span></span><span class="line"><span class="cl"><span class="n">SELF</span><span class="o">-</span><span class="n">EMPLOYED</span>        <span class="mf">672393.40</span>  <span class="mf">1.640253e+06</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">17</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">2</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">17</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">2</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>把这些数据做成柱状图看起来会更加清楚（&lsquo;barh&rsquo;表示水平柱状图，如图14-12所示）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-96"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">205</span><span class="p">]:</span> <span class="n">over_2mm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">205</span><span class="p">]:</span> <span class="n">over_2mm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png 2x" sizes="auto" data-title="图14-12 对各党派总出资额最高的职业" data-alt="图14-12 对各党派总出资额最高的职业" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>你可能还想了解一下对Obama和Romney总出资额最高的职业和企业。为此，我们先对候选人进行分组，然后使用本章前面介绍的类似top的方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-97"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -3472,11 +3376,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_top_amounts</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">totals</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">key</span><span class="p">)[</span><span class="s1">&#39;contb_receipt_amt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">totals</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">totals</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后根据职业和雇主进行聚合：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-98"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3545,12 +3448,11 @@
 </span></span><span class="line"><span class="cl">               <span class="n">GOLDMAN</span> <span class="n">SACH</span> <span class="o">&amp;</span> <span class="n">CO</span><span class="o">.</span>         <span class="mf">238250.00</span>
 </span></span><span class="line"><span class="cl">               <span class="n">BARCLAYS</span> <span class="n">CAPITAL</span>           <span class="mf">162750.00</span>
 </span></span><span class="line"><span class="cl">               <span class="n">H</span><span class="o">.</span><span class="n">I</span><span class="o">.</span><span class="n">G</span><span class="o">.</span> <span class="n">CAPITAL</span>             <span class="mf">139500.00</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contb_receipt_amt</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contb_receipt_amt</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1452-对出资额分组">14.5.2 对出资额分组</h3>
 <p>还可以对该数据做另一种非常实用的分析：利用cut函数根据出资额的大小将数据离散化到多个面元中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3599,11 +3501,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">interval</span><span class="p">[</span><span class="n">int64</span><span class="p">]):</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]</span> <span class="o">&lt;</span>
 </span></span><span class="line"><span class="cl">                                  <span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">100000</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1000000</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="mi">10000000</span><span class="p">]]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="mi">10000000</span><span class="p">]]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在可以根据候选人姓名以及面元标签对奥巴马和罗姆尼数据进行分组，以得到一个柱状图：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-100"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3634,11 +3535,10 @@
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]</span>              <span class="mf">22284.0</span>       <span class="mf">26186.0</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">100000</span><span class="p">]</span>                <span class="mf">2.0</span>           <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">]</span>              <span class="mf">3.0</span>           <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">]</span>            <span class="mf">4.0</span>           <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">]</span>            <span class="mf">4.0</span>           <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>从这个数据中可以看出，在小额赞助方面，Obama获得的数量比Romney多得多。你还可以对出资额求和并在面元内规格化，以便图形化显示两位候选人各种赞助额度的比例（见图14-13）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-101"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3677,15 +3577,14 @@
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">]</span>         <span class="mf">1.000000</span>           <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span> <span class="mi">10000000</span><span class="p">]</span>       <span class="mf">1.000000</span>           <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">219</span><span class="p">]:</span> <span class="n">normed_sums</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">219</span><span class="p">]:</span> <span class="n">normed_sums</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png 2x" sizes="auto" data-title="图14-13 两位候选人收到的各种捐赠额度的总额比例" data-alt="图14-13 两位候选人收到的各种捐赠额度的总额比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>我排除了两个最大的面元，因为这些不是由个人捐赠的。</p>
 <p>还可以对该分析过程做许多的提炼和改进。比如说，可以根据赞助人的姓名和邮编对数据进行聚合，以便找出哪些人进行了多次小额捐款，哪些人又进行了一次或多次大额捐款。我强烈建议你下载这些数据并自己摸索一下。</p>
 <h3 id="1453-根据州统计赞助信息">14.5.3 根据州统计赞助信息</h3>
 <p>根据候选人和州对数据进行聚合是常规操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-102"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3728,11 +3627,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">CT</span>            <span class="mf">2068291.26</span>    <span class="mf">3499475.45</span>
 </span></span><span class="line"><span class="cl"><span class="n">DC</span>            <span class="mf">4373538.80</span>    <span class="mf">1025137.50</span>
 </span></span><span class="line"><span class="cl"><span class="n">DE</span>             <span class="mf">336669.14</span>      <span class="mf">82712.00</span>
-</span></span><span class="line"><span class="cl"><span class="n">FL</span>            <span class="mf">7318178.58</span>    <span class="mf">8338458.81</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">FL</span>            <span class="mf">7318178.58</span>    <span class="mf">8338458.81</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果对各行除以总赞助额，就会得到各候选人在各州的总赞助额比例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-103"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -3767,8 +3665,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">CT</span>              <span class="mf">0.371476</span>      <span class="mf">0.628524</span>
 </span></span><span class="line"><span class="cl"><span class="n">DC</span>              <span class="mf">0.810113</span>      <span class="mf">0.189887</span>
 </span></span><span class="line"><span class="cl"><span class="n">DE</span>              <span class="mf">0.802776</span>      <span class="mf">0.197224</span>
-</span></span><span class="line"><span class="cl"><span class="n">FL</span>              <span class="mf">0.467417</span>      <span class="mf">0.532583</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">FL</span>              <span class="mf">0.467417</span>      <span class="mf">0.532583</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="146-总结">14.6 总结</h2>
 <p>我们已经完成了正文的最后一章。附录中有一些额外的内容，可能对你有用。</p>

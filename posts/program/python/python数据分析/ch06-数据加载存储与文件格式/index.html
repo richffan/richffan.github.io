@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9858 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="leancloud_visitors comment-visitors" data-flag-title="第六章 数据加载、存储与文件格式">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9858 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="leancloud_visitors comment-visitors" data-flag-title="第六章 数据加载、存储与文件格式">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第六章 数据加载、存储与文件格式">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -226,7 +226,7 @@
 <p>因为工作中实际碰到的数据可能十分混乱，一些数据加载函数（尤其是read_csv）的选项逐渐变得复杂起来。面对不同的参数，感到头痛很正常（read_csv有超过50个参数）。pandas文档有这些参数的例子，如果你感到阅读某个文件很难，可以通过相似的足够多的例子找到正确的参数。</p>
 <p>其中一些函数，比如pandas.read_csv，有类型推断功能，因为列数据的类型不属于数据类型。也就是说，你不需要指定列的类型到底是数值、整数、布尔值，还是字符串。其它的数据格式，如HDF5、Feather和msgpack，会在格式中存储数据类型。</p>
 <p>日期和其他自定义类型的处理需要多花点工夫才行。首先我们来看一个以逗号分隔的（CSV）文本文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -239,14 +239,13 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>笔记：这里，我用的是Unix的cat shell命令将文件的原始内容打印到屏幕上。如果你用的是Windows，你可以使用type达到同样的效果。</p>
 </blockquote>
 <p>由于该文件以逗号分隔，所以我们可以使用read_csv将其读入一个DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -265,11 +264,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们还可以使用read_table，并指定分隔符：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -284,11 +282,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>并不是所有文件都有标题行。看看下面这个文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -299,11 +296,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="err">!</span><span class="n">cat</span> <span class="n">examples</span><span class="o">/</span><span class="n">ex2</span><span class="o">.</span><span class="n">csv</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>读入该文件的办法有两个。你可以让pandas为其分配默认的列名，也可以自己定义列名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -332,11 +328,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设你希望将message列做成DataFrame的索引。你可以明确表示要将该列放到索引4的位置上，也可以通过index_col参数指定&quot;message&quot;：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -357,11 +352,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">message</span>               
 </span></span><span class="line"><span class="cl"><span class="n">hello</span>    <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="n">world</span>    <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>
-</span></span><span class="line"><span class="cl"><span class="n">foo</span>      <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">foo</span>      <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果希望将多个列做成一个层次化索引，只需传入由列编号或列名组成的列表即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -416,11 +410,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">two</span>  <span class="n">a</span>          <span class="mi">9</span>      <span class="mi">10</span>
 </span></span><span class="line"><span class="cl">     <span class="n">b</span>         <span class="mi">11</span>      <span class="mi">12</span>
 </span></span><span class="line"><span class="cl">     <span class="n">c</span>         <span class="mi">13</span>      <span class="mi">14</span>
-</span></span><span class="line"><span class="cl">     <span class="n">d</span>         <span class="mi">15</span>      <span class="mi">16</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="n">d</span>         <span class="mi">15</span>      <span class="mi">16</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>有些情况下，有些表格可能不是用固定的分隔符去分隔字段的（比如空白符或其它模式）。看看下面这个文本文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -437,11 +430,10 @@
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;aaa -0.264438 -1.026059 -0.619500</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;bbb  0.927272  0.302904 -0.032399</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;ccc -0.264273 -0.386314 -0.217601</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"> <span class="s1">&#39;ddd -0.871858 -0.348382  1.100491</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="s1">&#39;ddd -0.871858 -0.348382  1.100491</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>虽然可以手动对数据进行规整，这里的字段是被数量不同的空白字符间隔开的。这种情况下，你可以传递一个正则表达式作为read_table的分隔符。可以用正则表达式表达为\s+，于是有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -462,12 +454,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">aaa</span> <span class="o">-</span><span class="mf">0.264438</span> <span class="o">-</span><span class="mf">1.026059</span> <span class="o">-</span><span class="mf">0.619500</span>
 </span></span><span class="line"><span class="cl"><span class="n">bbb</span>  <span class="mf">0.927272</span>  <span class="mf">0.302904</span> <span class="o">-</span><span class="mf">0.032399</span>
 </span></span><span class="line"><span class="cl"><span class="n">ccc</span> <span class="o">-</span><span class="mf">0.264273</span> <span class="o">-</span><span class="mf">0.386314</span> <span class="o">-</span><span class="mf">0.217601</span>
-</span></span><span class="line"><span class="cl"><span class="n">ddd</span> <span class="o">-</span><span class="mf">0.871858</span> <span class="o">-</span><span class="mf">0.348382</span>  <span class="mf">1.100491</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">ddd</span> <span class="o">-</span><span class="mf">0.871858</span> <span class="o">-</span><span class="mf">0.348382</span>  <span class="mf">1.100491</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，由于列名比数据行的数量少，所以read_table推断第一列应该是DataFrame的索引。</p>
 <p>这些解析器函数还有许多参数可以帮助你处理各种各样的异形文件格式（表6-2列出了一些）。比如说，你可以用skiprows跳过文件的第一行、第三行和第四行：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -498,11 +489,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>缺失值处理是文件解析任务中的一个重要组成部分。缺失数据经常是要么没有（空字符串），要么用某个标记值表示。默认情况下，pandas会用一组经常出现的标记值进行识别，比如NA及NULL：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -545,11 +535,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">something</span>      <span class="n">a</span>      <span class="n">b</span>      <span class="n">c</span>      <span class="n">d</span>  <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>      <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>     <span class="kc">True</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>      <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>   <span class="kc">True</span>  <span class="kc">False</span>    <span class="kc">False</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>    <span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>    <span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>na_values可以用一个列表或集合的字符串表示缺失值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -568,11 +557,10 @@
 </span></span><span class="line"><span class="cl">  <span class="n">something</span>  <span class="n">a</span>   <span class="n">b</span>     <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>       <span class="n">one</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mf">3.0</span>   <span class="mi">4</span>     <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>       <span class="n">two</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="n">NaN</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>字典的各列可以使用不同的NA标记值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -591,8 +579,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">something</span>  <span class="n">a</span>   <span class="n">b</span>     <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>       <span class="n">one</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mf">3.0</span>   <span class="mi">4</span>     <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>       <span class="n">NaN</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="n">NaN</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表6-2列出了pandas.read_csv和pandas.read_table常用的选项。</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -601,16 +588,15 @@
 <h3 id="611-逐块读取文本文件">6.1.1 逐块读取文本文件</h3>
 <p>在处理很大的文件时，或找出大文件中的参数集以便于后续处理时，你可能只想读取文件的一小部分或逐块对文件进行迭代。</p>
 <p>在看大文件之前，我们先设置pandas显示地更紧些：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">33</span><span class="p">]:</span> <span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="mi">10</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">33</span><span class="p">]:</span> <span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="mi">10</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -649,11 +635,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9998</span> <span class="o">-</span><span class="mf">0.362559</span>  <span class="mf">0.598894</span> <span class="o">-</span><span class="mf">1.843201</span>  <span class="mf">0.887292</span>   <span class="n">G</span>
 </span></span><span class="line"><span class="cl"><span class="mi">9999</span> <span class="o">-</span><span class="mf">0.096376</span> <span class="o">-</span><span class="mf">1.012999</span> <span class="o">-</span><span class="mf">0.657431</span> <span class="o">-</span><span class="mf">0.573315</span>   <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">10000</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">only</span> <span class="n">read</span> <span class="n">a</span> <span class="n">small</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">only</span> <span class="n">read</span> <span class="n">a</span> <span class="n">small</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果只想读取几行（避免读取整个文件），通过nrows进行指定即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -672,11 +657,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="o">-</span><span class="mf">0.358893</span>  <span class="mf">1.404453</span>  <span class="mf">0.704965</span> <span class="o">-</span><span class="mf">0.200638</span>   <span class="n">B</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="o">-</span><span class="mf">0.501840</span>  <span class="mf">0.659254</span> <span class="o">-</span><span class="mf">0.421691</span> <span class="o">-</span><span class="mf">0.057688</span>   <span class="n">G</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="mf">0.204886</span>  <span class="mf">1.074134</span>  <span class="mf">1.388361</span> <span class="o">-</span><span class="mf">0.982404</span>   <span class="n">R</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">0.354628</span> <span class="o">-</span><span class="mf">0.133116</span>  <span class="mf">0.283763</span> <span class="o">-</span><span class="mf">0.837063</span>   <span class="n">Q</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">0.354628</span> <span class="o">-</span><span class="mf">0.133116</span>  <span class="mf">0.283763</span> <span class="o">-</span><span class="mf">0.837063</span>   <span class="n">Q</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要逐块读取文件，可以指定chunksize（行数）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -687,11 +671,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">874</span><span class="p">]:</span> <span class="n">chunker</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ch06/ex6.csv&#39;</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">875</span><span class="p">]:</span> <span class="n">chunker</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">875</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">pandas</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">parsers</span><span class="o">.</span><span class="n">TextParser</span> <span class="n">at</span> <span class="mh">0x8398150</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">875</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">pandas</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">parsers</span><span class="o">.</span><span class="n">TextParser</span> <span class="n">at</span> <span class="mh">0x8398150</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>read_csv所返回的这个TextParser对象使你可以根据chunksize对文件进行逐块迭代。比如说，我们可以迭代处理ex6.csv，将值计数聚合到&quot;key&quot;列中，如下所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -708,11 +691,10 @@
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">piece</span> <span class="ow">in</span> <span class="n">chunker</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">tot</span> <span class="o">=</span> <span class="n">tot</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">piece</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(),</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">tot</span> <span class="o">=</span> <span class="n">tot</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">tot</span> <span class="o">=</span> <span class="n">tot</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -741,13 +723,12 @@
 </span></span><span class="line"><span class="cl"><span class="n">F</span>    <span class="mf">335.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">K</span>    <span class="mf">334.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">H</span>    <span class="mf">330.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>TextParser还有一个get_chunk方法，它使你可以读取任意大小的块。</p>
 <h3 id="612-将数据写出到文本格式">6.1.2 将数据写出到文本格式</h3>
 <p>数据也可以被输出为<code>分隔符</code>格式的文本。我们再来看看之前读过的一个CSV文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -766,11 +747,10 @@
 </span></span><span class="line"><span class="cl">  <span class="n">something</span>  <span class="n">a</span>   <span class="n">b</span>     <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>       <span class="n">one</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mf">3.0</span>   <span class="mi">4</span>     <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>       <span class="n">two</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="n">NaN</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>利用DataFrame的<code>to_csv</code>方法，我们可以将数据写到一个以<code>逗号</code>分隔的文件中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -787,11 +767,10 @@
 </span></span><span class="line"><span class="cl"><span class="p">,</span><span class="n">something</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span><span class="n">one</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span><span class="n">two</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,,</span><span class="mi">8</span><span class="p">,</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="p">,</span><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="p">,</span><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当然，还可以使用其他分隔符（由于这里直接写出到sys.stdout，所以仅仅是打印出文本结果而已）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -808,11 +787,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">|</span><span class="n">something</span><span class="o">|</span><span class="n">a</span><span class="o">|</span><span class="n">b</span><span class="o">|</span><span class="n">c</span><span class="o">|</span><span class="n">d</span><span class="o">|</span><span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="o">|</span><span class="n">one</span><span class="o">|</span><span class="mi">1</span><span class="o">|</span><span class="mi">2</span><span class="o">|</span><span class="mf">3.0</span><span class="o">|</span><span class="mi">4</span><span class="o">|</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">|</span><span class="n">two</span><span class="o">|</span><span class="mi">5</span><span class="o">|</span><span class="mi">6</span><span class="o">||</span><span class="mi">8</span><span class="o">|</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">|</span><span class="n">three</span><span class="o">|</span><span class="mi">9</span><span class="o">|</span><span class="mi">10</span><span class="o">|</span><span class="mf">11.0</span><span class="o">|</span><span class="mi">12</span><span class="o">|</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">|</span><span class="n">three</span><span class="o">|</span><span class="mi">9</span><span class="o">|</span><span class="mi">10</span><span class="o">|</span><span class="mf">11.0</span><span class="o">|</span><span class="mi">12</span><span class="o">|</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>缺失值在输出结果中会被表示为空字符串。你可能希望将其表示为别的标记值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -825,11 +803,10 @@
 </span></span><span class="line"><span class="cl"><span class="p">,</span><span class="n">something</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span><span class="n">one</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">NULL</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span><span class="n">two</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="n">NULL</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="p">,</span><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="p">,</span><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果没有设置其他选项，则会写出行和列的标签。当然，它们也都可以被禁用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -840,11 +817,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">48</span><span class="p">]:</span> <span class="n">data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">one</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="n">two</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,,</span><span class="mi">8</span><span class="p">,</span><span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">three</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>此外，你还可以只写出一部分的列，并以你指定的顺序排列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -857,11 +833,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">11.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Series也有一个to_csv方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -892,12 +867,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">04</span><span class="p">,</span><span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">05</span><span class="p">,</span><span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">06</span><span class="p">,</span><span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">07</span><span class="p">,</span><span class="mi">6</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">07</span><span class="p">,</span><span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="613-处理分隔符格式">6.1.3 处理分隔符格式</h3>
 <p>大部分存储在磁盘上的表格型数据都能用pandas.read_table进行加载。然而，有时还是需要做一些手工处理。由于接收到含有畸形行的文件而使read_table出毛病的情况并不少见。为了说明这些基本工具，看看下面这个简单的CSV文件：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -908,11 +882,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">54</span><span class="p">]:</span> <span class="err">!</span><span class="n">cat</span> <span class="n">examples</span><span class="o">/</span><span class="n">ex7</span><span class="o">.</span><span class="n">csv</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">,</span><span class="s2">&#34;c&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;1&#34;</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">,</span><span class="s2">&#34;3&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="s2">&#34;1&#34;</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">,</span><span class="s2">&#34;3&#34;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;1&#34;</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">,</span><span class="s2">&#34;3&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于<strong>任何单字符分隔符文件</strong>，可以直接使用Python内置的<code>csv</code>模块。将任意已打开的文件或文件型的对象传给csv.reader：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -923,11 +896,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">csv</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;examples/ex7.csv&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对这个reader进行迭代将会为每行产生一个元组（并移除了所有的引号）：对这个reader进行迭代将会为每行产生一个元组（并移除了所有的引号）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -940,31 +912,28 @@
 </span></span><span class="line"><span class="cl">   <span class="o">....</span><span class="p">:</span>     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，为了使数据格式合乎要求，你需要对其做一些整理工作。我们一步一步来做。首先，读取文件到一个多行的列表中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">57</span><span class="p">]:</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;examples/ex7.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">   <span class="o">....</span><span class="p">:</span>     <span class="n">lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">   <span class="o">....</span><span class="p">:</span>     <span class="n">lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，我们将这些行分为<code>标题行</code>和<code>数据行</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="n">header</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="n">header</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，我们可以用字典构造式和zip(*values)，后者将行转置为列，创建数据列的字典：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -975,11 +944,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">59</span><span class="p">]:</span> <span class="n">data_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">h</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">h</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">values</span><span class="p">))}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">60</span><span class="p">]:</span> <span class="n">data_dict</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">60</span><span class="p">]:</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">),</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">),</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">)}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">60</span><span class="p">]:</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">),</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">),</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">)}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>CSV文件的形式有很多。只需定义csv.Dialect的一个子类即可定义出新格式（如专门的分隔符、字符串引用约定、行结束符等）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -994,17 +962,15 @@
 </span></span><span class="line"><span class="cl">    <span class="n">delimiter</span> <span class="o">=</span> <span class="s1">&#39;;&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">quotechar</span> <span class="o">=</span> <span class="s1">&#39;&#34;&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">quoting</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">QUOTE_MINIMAL</span>
-</span></span><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">dialect</span><span class="o">=</span><span class="n">my_dialect</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">dialect</span><span class="o">=</span><span class="n">my_dialect</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>各个CSV语支的参数也可以用关键字的形式提供给csv.reader，而无需定义子类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可用的选项（csv.Dialect的属性）及其功能如表6-3所示。</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -1012,7 +978,7 @@
 <p>笔记：对于那些使用复杂分隔符或多字符分隔符的文件，csv模块就无能为力了。这种情况下，你就只能使用字符串的split方法或正则表达式方法re.split进行行拆分和其他整理工作了。</p>
 </blockquote>
 <p>要手工输出分隔符文件，你可以使用csv.writer。它接受一个已打开且可写的文件对象以及跟csv.reader相同的那些语支和格式化选项：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1027,12 +993,11 @@
 </span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="614-json数据">6.1.4 JSON数据</h3>
 <p>JSON（JavaScript Object Notation的简称）已经成为通过HTTP请求在Web浏览器和其他应用程序之间发送数据的标准格式之一。它是一种比表格型文本格式（如CSV）灵活得多的数据格式。下面是一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1053,11 +1018,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="s2">              {&#34;name&#34;: &#34;Katie&#34;, &#34;age&#34;: 38,
 </span></span></span><span class="line"><span class="cl"><span class="s2">               &#34;pets&#34;: [&#34;Sixes&#34;, &#34;Stache&#34;, &#34;Cisco&#34;]}]
 </span></span></span><span class="line"><span class="cl"><span class="s2">}
-</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>除其空值null和一些其他的细微差别（如列表末尾不允许存在多余的逗号）之外，JSON非常接近于有效的Python代码。基本类型有对象（字典）、数组（列表）、字符串、数值、布尔值以及null。对象中所有的键都必须是字符串。许多Python库都可以读写JSON数据。我将使用json，因为它是构建于Python标准库中的。通过<code>json.loads</code>即可将JSON字符串转换成Python形式：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1082,20 +1046,18 @@
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;pet&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;places_lived&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;United States&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Germany&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"> <span class="s1">&#39;siblings&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Scott&#39;</span><span class="p">,</span> <span class="s1">&#39;pets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Zeus&#39;</span><span class="p">,</span> <span class="s1">&#39;Zuko&#39;</span><span class="p">]},</span>
-</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">38</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Katie&#39;</span><span class="p">,</span> <span class="s1">&#39;pets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sixes&#39;</span><span class="p">,</span> <span class="s1">&#39;Stache&#39;</span><span class="p">,</span> <span class="s1">&#39;Cisco&#39;</span><span class="p">]}]}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">38</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Katie&#39;</span><span class="p">,</span> <span class="s1">&#39;pets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sixes&#39;</span><span class="p">,</span> <span class="s1">&#39;Stache&#39;</span><span class="p">,</span> <span class="s1">&#39;Cisco&#39;</span><span class="p">]}]}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>json.dumps则将Python对象转换成JSON格式：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="n">asjson</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="n">asjson</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如何将（一个或一组）JSON对象转换为DataFrame或其他便于分析的数据结构就由你决定了。最简单方便的方式是：向DataFrame构造器传入一个字典的列表（就是原先的JSON对象），并选取数据字段的子集：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1112,11 +1074,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">67</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl">    <span class="n">name</span>  <span class="n">age</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="n">Scott</span>   <span class="mi">30</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">Katie</span>   <span class="mi">38</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">Katie</span>   <span class="mi">38</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pandas.read_json可以自动将特别格式的JSON数据集转换为Series或DataFrame。例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1127,11 +1088,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">68</span><span class="p">]:</span> <span class="err">!</span><span class="n">cat</span> <span class="n">examples</span><span class="o">/</span><span class="n">example</span><span class="o">.</span><span class="n">json</span>
 </span></span><span class="line"><span class="cl"><span class="p">[{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;c&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span>
 </span></span><span class="line"><span class="cl"> <span class="p">{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&#34;c&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">},</span>
-</span></span><span class="line"><span class="cl"> <span class="p">{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&#34;c&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">}]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&#34;c&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">}]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pandas.read_json的默认选项假设JSON数组中的每个对象是表格中的一行：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1150,12 +1110,11 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>  <span class="n">b</span>  <span class="n">c</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">7</span>  <span class="mi">8</span>  <span class="mi">9</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">7</span>  <span class="mi">8</span>  <span class="mi">9</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>第7章中关于USDA Food Database的那个例子进一步讲解了JSON数据的读取和处理（包括嵌套记录）。</p>
 <p>如果你需要将数据从pandas输出到JSON，可以使用to_json方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1168,25 +1127,23 @@
 </span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s2">&#34;a&#34;</span><span class="p">:{</span><span class="s2">&#34;0&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;1&#34;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">:</span><span class="mi">7</span><span class="p">},</span><span class="s2">&#34;b&#34;</span><span class="p">:{</span><span class="s2">&#34;0&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;1&#34;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">:</span><span class="mi">8</span><span class="p">},</span><span class="s2">&#34;c&#34;</span><span class="p">:{</span><span class="s2">&#34;0&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&#34;1&#34;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="s2">&#34;2&#34;</span><span class="p">:</span><span class="mi">9</span><span class="p">}}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">[{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">6</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">9</span><span class="p">}]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">6</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">9</span><span class="p">}]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="615-xml和htmlweb信息收集">6.1.5 XML和HTML：Web信息收集</h3>
 <p>Python有许多可以读写常见的HTML和XML格式数据的库，包括lxml、Beautiful Soup和html5lib。lxml的速度比较快，但其它的库处理有误的HTML或XML文件更好。</p>
 <p>pandas有一个内置的功能，read_html，它可以使用lxml和Beautiful Soup自动将HTML文件中的表格解析为DataFrame对象。为了进行展示，我从美国联邦存款保险公司下载了一个HTML文件（pandas文档中也使用过），它记录了银行倒闭的情况。首先，你需要安装read_html用到的库：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">conda install lxml
-</span></span><span class="line"><span class="cl">pip install beautifulsoup4 html5lib
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">pip install beautifulsoup4 html5lib</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你用的不是conda，可以使用<code>pip install lxml</code>。</p>
 <p>pandas.read_html有一些选项，默认条件下，它会搜索、尝试解析<table>标签内的的表格数据。结果是一个列表的DataFrame对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1231,12 +1188,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>                          <span class="n">United</span> <span class="n">Bank</span>     <span class="n">August</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">2016</span>  <span class="n">November</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2016</span>  
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="n">First</span><span class="o">-</span><span class="n">Citizens</span> <span class="n">Bank</span> <span class="o">&amp;</span> <span class="n">Trust</span> <span class="n">Company</span>         <span class="n">May</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2016</span>  <span class="n">September</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2016</span>  
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>           <span class="n">The</span> <span class="n">Bank</span> <span class="n">of</span> <span class="n">Fayette</span> <span class="n">County</span>      <span class="n">April</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">2016</span>  <span class="n">September</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2016</span>  
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">First</span><span class="o">-</span><span class="n">Citizens</span> <span class="n">Bank</span> <span class="o">&amp;</span> <span class="n">Trust</span> <span class="n">Company</span>      <span class="n">March</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2016</span>      <span class="n">June</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">2016</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">First</span><span class="o">-</span><span class="n">Citizens</span> <span class="n">Bank</span> <span class="o">&amp;</span> <span class="n">Trust</span> <span class="n">Company</span>      <span class="n">March</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2016</span>      <span class="n">June</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">2016</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为failures有许多列，pandas插入了一个换行符\。</p>
 <p>这里，我们可以做一些数据清洗和分析（后面章节会进一步讲解），比如计算按年份计算倒闭的银行数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1271,14 +1227,13 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2007</span>      <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2003</span>      <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span>      <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">Closing</span> <span class="n">Date</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">Closing</span> <span class="n">Date</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="616-利用lxmlobjectify解析xml">6.1.6 利用lxml.objectify解析XML</h3>
 <p>XML（Extensible Markup Language）是另一种常见的支持分层、嵌套数据以及元数据的结构化数据格式。本书所使用的这些文件实际上来自于一个很大的XML文档。</p>
 <p>前面，我介绍了pandas.read_html函数，它可以使用lxml或Beautiful Soup从HTML解析数据。XML和HTML的结构很相似，但XML更为通用。这里，我会用一个例子演示如何利用lxml从XML格式解析数据。</p>
 <p>纽约大都会运输署发布了一些有关其公交和列车服务的数据资料（http://www.mta.info/developers/download.html）。这里，我们将看看包含在一组XML文件中的运行情况数据。每项列车或公交服务都有各自的文件（如Metro-North Railroad的文件是Performance_MNR.xml），其中每条XML记录就是一条月度数据，如下所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1323,11 +1278,10 @@
 </span></span><span class="line"><span class="cl">  <span class="nt">&lt;YTD_ACTUAL&gt;&lt;/YTD_ACTUAL&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&lt;MONTHLY_TARGET&gt;</span>97.00<span class="nt">&lt;/MONTHLY_TARGET&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&lt;MONTHLY_ACTUAL&gt;&lt;/MONTHLY_ACTUAL&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/INDICATOR&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/INDICATOR&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们先用lxml.objectify解析该文件，然后通过getroot得到该XML文件的根节点的引用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1340,11 +1294,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;datasets/mta_perf/Performance_MNR.xml&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="n">parsed</span> <span class="o">=</span> <span class="n">objectify</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="n">root</span> <span class="o">=</span> <span class="n">parsed</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">root</span> <span class="o">=</span> <span class="n">parsed</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>root.INDICATOR返回一个用于产生各个<INDICATOR>XML元素的生成器。对于每条记录，我们可以用标记名（如YTD_ACTUAL）和数据值填充一个字典（排除几个标记）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1371,11 +1324,10 @@
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="ow">in</span> <span class="n">skip_fields</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="k">continue</span>
 </span></span><span class="line"><span class="cl">        <span class="n">el_data</span><span class="p">[</span><span class="n">child</span><span class="o">.</span><span class="n">tag</span><span class="p">]</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">pyval</span>
-</span></span><span class="line"><span class="cl">    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el_data</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el_data</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后，将这组字典转换为一个DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1392,11 +1344,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">82</span><span class="p">]:</span>
 </span></span><span class="line"><span class="cl"><span class="n">Empty</span> <span class="n">DataFrame</span>
 </span></span><span class="line"><span class="cl"><span class="n">Columns</span><span class="p">:</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Index</span><span class="p">:</span> <span class="p">[]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Index</span><span class="p">:</span> <span class="p">[]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>XML数据可以比本例复杂得多。每个标记都可以有元数据。看看下面这个HTML的链接标签（它也算是一段有效的XML）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1405,11 +1356,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
 </span></span><span class="line"><span class="cl"><span class="n">tag</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&#34;http://www.google.com&#34;&gt;Google&lt;/a&gt;&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">root</span> <span class="o">=</span> <span class="n">objectify</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">tag</span><span class="p">))</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">root</span> <span class="o">=</span> <span class="n">objectify</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">tag</span><span class="p">))</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在就可以访问标签或链接文本中的任何字段了（如href）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1428,12 +1378,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="s1">&#39;http://www.google.com&#39;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="n">root</span><span class="o">.</span><span class="n">text</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="s1">&#39;Google&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="s1">&#39;Google&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="62-二进制数据格式">6.2 二进制数据格式</h2>
 <p>实现数据的高效二进制格式存储最简单的办法之一是使用Python内置的pickle序列化。pandas对象都有一个用于将数据以pickle格式保存到磁盘上的to_pickle方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1456,11 +1405,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">89</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s1">&#39;examples/frame_pickle&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">89</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s1">&#39;examples/frame_pickle&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可以通过pickle直接读取被pickle化的数据，或是使用更为方便的pandas.read_pickle：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1475,8 +1423,7 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>注意：pickle仅建议用于短期存储格式。其原因是很难保证该格式永远是稳定的；今天pickle的对象可能无法被后续版本的库unpickle出来。虽然我尽力保证这种事情不会发生在pandas中，但是今后的某个时候说不定还是得“打破”该pickle格式。</p>
@@ -1489,7 +1436,7 @@
 <h3 id="621-使用hdf5格式">6.2.1 使用HDF5格式</h3>
 <p>HDF5是一种存储大规模科学数组数据的非常好的文件格式。它可以被作为C标准库，带有许多语言的接口，如Java、Python和MATLAB等。HDF5中的HDF指的是层次型数据格式（hierarchical data format）。每个HDF5文件都含有一个文件系统式的节点结构，它使你能够存储多个数据集并支持元数据。与其他简单格式相比，HDF5支持多种压缩器的即时压缩，还能更高效地存储重复模式数据。对于那些非常大的无法直接放入内存的数据集，HDF5就是不错的选择，因为它可以高效地分块读写。</p>
 <p>虽然可以用PyTables或h5py库直接访问HDF5文件，pandas提供了更为高级的接口，可以简化存储Series和DataFrame对象。HDFStore类可以像字典一样，处理低级的细节：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1532,11 +1479,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">/</span><span class="n">obj2</span>                <span class="n">frame_table</span>  <span class="p">(</span><span class="n">typ</span><span class="o">-&gt;</span><span class="n">appendable</span><span class="p">,</span><span class="n">nrows</span><span class="o">-&gt;</span><span class="mi">100</span><span class="p">,</span><span class="n">ncols</span><span class="o">-&gt;</span><span class="mi">1</span><span class="p">,</span><span class="n">indexers</span><span class="o">-&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">index</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="o">/</span><span class="n">obj3</span>                <span class="n">frame_table</span>  <span class="p">(</span><span class="n">typ</span><span class="o">-&gt;</span><span class="n">appendable</span><span class="p">,</span><span class="n">nrows</span><span class="o">-&gt;</span><span class="mi">100</span><span class="p">,</span><span class="n">ncols</span><span class="o">-&gt;</span><span class="mi">1</span><span class="p">,</span><span class="n">indexers</span><span class="o">-&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">index</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">index</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>HDF5文件中的对象可以通过与字典一样的API进行获取：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1569,11 +1515,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">97</span> <span class="o">-</span><span class="mf">0.748532</span>
 </span></span><span class="line"><span class="cl"><span class="mi">98</span>  <span class="mf">0.584970</span>
 </span></span><span class="line"><span class="cl"><span class="mi">99</span>  <span class="mf">0.152677</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">100</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">1</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">100</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">1</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>HDFStore支持两种存储模式，&lsquo;fixed&rsquo;和&rsquo;table&rsquo;。后者通常会更慢，但是支持使用特殊语法进行查询操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1602,12 +1547,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">14</span>  <span class="mf">1.352917</span>
 </span></span><span class="line"><span class="cl"><span class="mi">15</span>  <span class="mf">0.886429</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">100</span><span class="p">]:</span> <span class="n">store</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">100</span><span class="p">]:</span> <span class="n">store</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>put是store[&lsquo;obj2&rsquo;] = frame方法的显示版本，允许我们设置其它的选项，比如格式。</p>
 <p>pandas.read_hdf函数可以快捷使用这些工具：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1630,8 +1574,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">0.478943</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="o">-</span><span class="mf">0.519439</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="o">-</span><span class="mf">0.555730</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">1.965781</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">1.965781</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>笔记：如果你要处理的数据位于远程服务器，比如Amazon S3或HDFS，使用专门为分布式存储（比如Apache Parquet）的二进制格式也许更加合适。Python的Parquet和其它存储格式还在不断的发展之中，所以这本书中没有涉及。</p>
@@ -1643,16 +1586,15 @@
 <h3 id="622-读取microsoft-excel文件">6.2.2 读取Microsoft Excel文件</h3>
 <p>pandas的ExcelFile类或pandas.read_excel函数支持读取存储在Excel 2003（或更高版本）中的表格型数据。这两个工具分别使用扩展包xlrd和openpyxl读取XLS和XLSX文件。你可以用pip或conda安装它们。</p>
 <p>要使用ExcelFile，通过传递xls或xlsx路径创建一个实例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">104</span><span class="p">]:</span> <span class="n">xlsx</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="s1">&#39;examples/ex1.xlsx&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">104</span><span class="p">]:</span> <span class="n">xlsx</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="s1">&#39;examples/ex1.xlsx&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>存储在表单中的数据可以read_excel读取到DataFrame（原书这里写的是用parse解析，但代码中用的是read_excel，是个笔误：只换了代码，没有改文字）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1667,11 +1609,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果要读取一个文件中的多个表单，创建ExcelFile会更快，但你也可以将文件名传递到pandas.read_excel：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-60"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1690,11 +1631,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">a</span>   <span class="n">b</span>   <span class="n">c</span>   <span class="n">d</span> <span class="n">message</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="n">hello</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   <span class="n">world</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mi">11</span>  <span class="mi">12</span>     <span class="n">foo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果要将pandas数据写入为Excel格式，你必须首先创建一个ExcelWriter，然后使用pandas对象的to_excel方法将数据写入到其中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-61"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1707,22 +1647,20 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">109</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="s1">&#39;Sheet1&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">110</span><span class="p">]:</span> <span class="n">writer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">110</span><span class="p">]:</span> <span class="n">writer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你还可以不使用ExcelWriter，而是传递文件的路径到to_excel：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">111</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;examples/ex2.xlsx&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">111</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;examples/ex2.xlsx&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="63-web-apis交互">6.3 Web APIs交互</h2>
 <p>许多网站都有一些通过JSON或其他格式提供数据的公共API。通过Python访问这些API的办法有不少。一个简单易用的办法（推荐）是requests包（http://docs.python-requests.org）。</p>
 <p>为了搜索最新的30个GitHub上的pandas主题，我们可以发一个HTTP GET请求，使用requests扩展库：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1741,11 +1679,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">115</span><span class="p">]:</span> <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">116</span><span class="p">]:</span> <span class="n">resp</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">116</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">116</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>响应对象的json方法会返回一个包含被解析过的JSON字典，加载到一个Python对象中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-64"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1756,11 +1693,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">117</span><span class="p">]:</span> <span class="n">data</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">118</span><span class="p">]:</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">118</span><span class="p">]:</span> <span class="s1">&#39;Period does not round down for frequencies less that 1 hour&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">118</span><span class="p">]:</span> <span class="s1">&#39;Period does not round down for frequencies less that 1 hour&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>data中的每个元素都是一个包含所有GitHub主题页数据（不包含评论）的字典。我们可以直接传递数据到DataFrame，并提取感兴趣的字段：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-65"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1823,14 +1759,13 @@
 </span></span><span class="line"><span class="cl"><span class="mi">27</span>  <span class="p">[{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">35818298</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://api.github.c...  open  </span>
 </span></span><span class="line"><span class="cl"><span class="mi">28</span>  <span class="p">[{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">233160</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://api.github.com...  open  </span>
 </span></span><span class="line"><span class="cl"><span class="mi">29</span>  <span class="p">[{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">76811</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://api.github.com/...  open  </span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">30</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">30</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>花费一些精力，你就可以创建一些更高级的常见的Web API的接口，返回DataFrame对象，方便进行分析。</p>
 <h2 id="64-数据库交互">6.4 数据库交互</h2>
 <p>在商业场景下，大多数数据可能不是存储在文本或Excel文件中。基于SQL的关系型数据库（如SQL Server、PostgreSQL和MySQL等）使用非常广泛，其它一些数据库也很流行。<strong>数据库的选择通常取决于性能、数据完整性以及应用程序的伸缩性需求。</strong></p>
 <p>将数据从SQL加载到DataFrame的过程很简单，此外pandas还有一些能够简化该过程的函数。例如，我将使用SQLite数据库（通过Python内置的sqlite3驱动器）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1861,11 +1796,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">124</span><span class="p">]:</span> <span class="n">con</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">124</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">Cursor</span> <span class="n">at</span> <span class="mh">0x7f6b12a50f10</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">125</span><span class="p">]:</span> <span class="n">con</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">125</span><span class="p">]:</span> <span class="n">con</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后插入几行数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-67"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1884,11 +1818,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">127</span><span class="p">]:</span> <span class="n">stmt</span> <span class="o">=</span> <span class="s2">&#34;INSERT INTO test VALUES(?, ?, ?, ?)&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">128</span><span class="p">]:</span> <span class="n">con</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="n">stmt</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">128</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">Cursor</span> <span class="n">at</span> <span class="mh">0x7f6b15c66ce0</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">128</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">Cursor</span> <span class="n">at</span> <span class="mh">0x7f6b15c66ce0</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>从表中选取数据时，大部分Python SQL驱动器（PyODBC、psycopg2、MySQLdb、pymssql等）都会返回一个元组列表：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1909,11 +1842,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">132</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="p">[(</span><span class="s1">&#39;Atlanta&#39;</span><span class="p">,</span> <span class="s1">&#39;Georgia&#39;</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Tallahassee&#39;</span><span class="p">,</span> <span class="s1">&#39;Florida&#39;</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Sacramento&#39;</span><span class="p">,</span> <span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="mi">5</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Sacramento&#39;</span><span class="p">,</span> <span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="mi">5</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可以将这个元组列表传给DataFrame构造器，但还需要列名（位于光标的description属性中）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-69"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1942,11 +1874,10 @@
 </span></span><span class="line"><span class="cl">             <span class="n">a</span>           <span class="n">b</span>     <span class="n">c</span>  <span class="n">d</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>      <span class="n">Atlanta</span>     <span class="n">Georgia</span>  <span class="mf">1.25</span>  <span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">Tallahassee</span>     <span class="n">Florida</span>  <span class="mf">2.60</span>  <span class="mi">3</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">Sacramento</span>  <span class="n">California</span>  <span class="mf">1.70</span>  <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">Sacramento</span>  <span class="n">California</span>  <span class="mf">1.70</span>  <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种数据规整操作相当多，你肯定不想每查一次数据库就重写一次。<a href="http://www.sqlalchemy.org/"target="_blank" rel="external nofollow noopener noreferrer">SQLAlchemy项目</a>是一个流行的Python SQL工具，它抽象出了SQL数据库中的许多常见差异。pandas有一个read_sql函数，可以让你轻松的从SQLAlchemy连接读取数据。这里，我们用SQLAlchemy连接SQLite数据库，并从之前创建的表读取数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-70"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1969,8 +1900,7 @@
 </span></span><span class="line"><span class="cl">             <span class="n">a</span>           <span class="n">b</span>     <span class="n">c</span>  <span class="n">d</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>      <span class="n">Atlanta</span>     <span class="n">Georgia</span>  <span class="mf">1.25</span>  <span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">Tallahassee</span>     <span class="n">Florida</span>  <span class="mf">2.60</span>  <span class="mi">3</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">Sacramento</span>  <span class="n">California</span>  <span class="mf">1.70</span>  <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">Sacramento</span>  <span class="n">California</span>  <span class="mf">1.70</span>  <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="65-总结">6.5 总结</h2>
 <p><code>访问数据</code>通常是数据分析的第一步。在本章中，我们已经学了一些有用的工具。在接下来的章节中，我们将深入研究数据规整、数据可视化、时间序列分析和其它主题。</p>

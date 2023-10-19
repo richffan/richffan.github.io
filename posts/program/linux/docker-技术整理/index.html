@@ -185,7 +185,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2020-09-01 22:11:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-09-01">2020-09-01</time></span>&nbsp;<span title="更新于 2020-09-01 22:11:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-09-01">2020-09-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8962 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 18 分钟</span>&nbsp;<span id="/posts/program/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="Docker 技术整理">
+      <div class="post-meta-line"><span title="发布于 2020-09-01 22:11:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-09-01">2020-09-01</time></span>&nbsp;<span title="更新于 2020-09-01 22:11:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-09-01">2020-09-01</time></span>&nbsp;<span title="8962 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 18 分钟</span>&nbsp;<span id="/posts/program/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="Docker 技术整理">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Docker 技术整理">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -305,13 +305,12 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </ol>
 <h4 id="22-从仓库下载镜像">2.2 从仓库下载镜像</h4>
 <p>可以通过 <code>docker pull</code> 命令从仓库获取所需要的镜像</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker pull [选项] [Docker Registry 地址]&lt;镜像名&gt;:&lt;标签&gt;
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker pull [选项] [Docker Registry 地址]&lt;镜像名&gt;:&lt;标签&gt;</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>选项:</strong></p>
 <ol>
@@ -322,7 +321,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </ol>
 <p>标签： 下载指定标签的镜像，默认 <code>latest</code></p>
 <p><strong>示例</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -341,19 +340,17 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker pull debian:jessie
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 下载指定摘要(sha256)的镜像
-</span></span><span class="line"><span class="cl">docker pull ubuntu@sha256:45b23dee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker pull ubuntu@sha256:45b23dee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="23-列出本地镜像">2.3 列出本地镜像</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## 列出已下载的镜像 image_name: 指定列出某个镜像
-</span></span><span class="line"><span class="cl">docker images [选项] [image_name]
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker images [选项] [image_name]</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>选项</strong></p>
 <table>
@@ -391,7 +388,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </tbody>
 </table>
 <p><strong>示例</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -416,12 +413,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker images --filter &#34;dangling=true&#34;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 过滤 lable 为 &#34;com.example.version&#34; 的值为 0.1 的镜像
-</span></span><span class="line"><span class="cl">docker images --filter &#34;label=com.example.version=0.1&#34;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker images --filter &#34;label=com.example.version=0.1&#34;</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="24-dockerfile创建镜像">2.4 Dockerfile创建镜像</h4>
 <p>为了方便分享和快速部署，我们可以使用 <code>docker build</code> 来创建一个新的镜像，首先创建一个文件 Dockerfile，如下</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -436,23 +432,21 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">MAINTAINER Chris &lt;jaytp@qq.com&gt;
 </span></span><span class="line"><span class="cl">RUN apt-get -qq update
 </span></span><span class="line"><span class="cl">RUN apt-get -qqy install ruby ruby-dev
-</span></span><span class="line"><span class="cl">RUN gem install sinatra
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">RUN gem install sinatra</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后在此 Dockerfile 所在目录执行 <code>docker build -t yelog/ubuntu:v1 .</code> 来生成镜像，所属组织/镜像名:标签</p>
 <h4 id="25-上传镜像">2.5 上传镜像</h4>
 <p>用户可以通过 <code>docker push</code> 命令，把自己创建的镜像上传到仓库中来共享。例如，用户在 Docker Hub 上完成注册后，可以推送自己的镜像到仓库中。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker push yelog/ubuntu
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker push yelog/ubuntu</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="26-导出和载入镜像">2.6 导出和载入镜像</h4>
 <p>docker 支持将镜像导出为文件，然后可以再从文件导入到本地镜像仓库</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -463,11 +457,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## 导出
 </span></span><span class="line"><span class="cl">docker load --input yelog_ubuntu_v1.tar
 </span></span><span class="line"><span class="cl">## 载入
-</span></span><span class="line"><span class="cl">docker load &lt; yelog_ubuntu_v1.tar
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker load &lt; yelog_ubuntu_v1.tar</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="27-移除本地镜像">2.7 移除本地镜像</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -482,8 +475,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">## 删除悬挂镜像
 </span></span><span class="line"><span class="cl">docker rmi $(docker images -f &#34;dangling=true&#34; -q)
 </span></span><span class="line"><span class="cl">## 删除所有未被容器使用的镜像
-</span></span><span class="line"><span class="cl">docker image prune -a
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker image prune -a</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="三容器">三、容器</h3>
 <h4 id="31-介绍">3.1 介绍</h4>
@@ -492,22 +484,20 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <h4 id="32-创建容器">3.2 创建容器</h4>
 <p>我们可以通过命令 <code>docker run</code> 命令创建容器</p>
 <p>如下，启动一个容器，执行命令输出 &ldquo;Hello word&rdquo;，之后终止容器</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run ubuntu:14.04 /bin/echo &#39;Hello world&#39;
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run ubuntu:14.04 /bin/echo &#39;Hello world&#39;</span></span></code></pre></td></tr></table>
 </div>
 </div><p>下面的命令则是启动一个 bash 终端，允许用户进行交互</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run -t -i ubuntu:14.04 /bin/bash
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run -t -i ubuntu:14.04 /bin/bash</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>-t</code> 让 Dcoker 分配一个伪终端（pseudo-tty）并绑定到容器的标准输入上</p>
 <p><code>-i</code> 责让容器的标准输入保持打开</p>
@@ -602,7 +592,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <li>执行完毕后容器被终止</li>
 </ul>
 <h4 id="33-启动容器">3.3 启动容器</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -629,15 +619,14 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">## 查看日志运行日志（每次启动的日志均被查询出来）
 </span></span><span class="line"><span class="cl">$ docker logs test
 </span></span><span class="line"><span class="cl">Hello world
-</span></span><span class="line"><span class="cl">Hello world
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Hello world</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="34-守护态运行">3.4 守护态运行</h4>
 <p>前面创建的容器都是执行任务（打印Hello world）后，容器就终止了。更多的时候，我们需要让 Docker 容器在后台以守护态（Daemonized）形式运行。此时，可以通过添加 <code>-d</code> 参数来实现</p>
 <blockquote>
 <p>注意：docker是否会长久运行，和 docker run 指定的命令有关</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -666,12 +655,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">$ docker logs test2
 </span></span><span class="line"><span class="cl">hello world
 </span></span><span class="line"><span class="cl">hello world
-</span></span><span class="line"><span class="cl">hello world
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">hello world</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="35-进入容器">3.5 进入容器</h4>
 <p>上一步我们已经实现了容器守护态长久运行，某些时候需要进入容器进行操作，可以使用 <code>attach</code> 、<code>exec</code> 进入容器。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -684,34 +672,31 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker attach [容器Name]
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 以交互式命令行进入，安全的，推荐使用
-</span></span><span class="line"><span class="cl">docker exec -it [容器Name] /bin/bash
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker exec -it [容器Name] /bin/bash</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>命令优化</strong></p>
 <ol>
 <li>使用 <code>docker exec</code> 命令时，好用，但是命令过长，我们可以通过自定义命令来简化使用</li>
 <li>创建文件 <code>/user/bin/ctn</code> 命令文件，内容如下</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker exec -it $1 /bin/bash
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker exec -it $1 /bin/bash</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>检查环境变量有没有配置目录 <code>/usr/bin</code> （一般是有配置在环境变量里面的，不过最好再确认一下）</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$PATH
-</span></span><span class="line"><span class="cl">bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or directory
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or directory</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>完成上面步骤后，就可以直接通过命令 <code>ctn</code> 来进入容器</li>
@@ -719,33 +704,31 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <blockquote>
 <p>注意：如果是使用非 root 账号创建的命令，而 docker 命令是 root 权限，可能存在权限问题，可以通过设置 <code>chmod 777 /usr/bin/ctn</code> 设置权限，使用 <code>sudo ctn [容器Name]</code> 即可进入容器</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ ctn [容器Name]
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ ctn [容器Name]</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>使用上面命令时，容器Name 需要手动输入，容器出错。我们可以借助 <code>complete</code> 命令来补全 容器Name，在 <code>~/.bashrc</code> （作用于当前用户，如果想要所要用户上校，可以修改 <code>/etc/bashrc</code>）文件中添加一行，内容如下。保存后执行 <code>source ~/.bashrc</code> 使之生效，之后我们输入 <code>ctn</code> 后，按 <code>tab</code> 就会提示或自动补全容器名了了</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## ctn auto complete
-</span></span><span class="line"><span class="cl">complete -W &#34;$(docker ps --format&#34;{{.Names}}&#34;)&#34; ctn
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">complete -W &#34;$(docker ps --format&#34;{{.Names}}&#34;)&#34; ctn</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>注意： 由于提示的 容器Name 是 <code>~/.bashrc</code> 生效时的列表，所有如果之后 docker 容器列表有变动，需要重新执行 <code>source ~/.bashrc</code> 使之更新提示列表</p>
 </blockquote>
 <h4 id="36-终止容器">3.6 终止容器</h4>
 <p>通过 <code>docker stop [容器Name]</code> 来终止一个<strong>运行中</strong>的容器</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -760,12 +743,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">## 查看正在运行中的容器
 </span></span><span class="line"><span class="cl">docker ps
 </span></span><span class="line"><span class="cl">## 查看所有容器（包括终止的）
-</span></span><span class="line"><span class="cl">docker ps -a
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker ps -a</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="37-将容器保存为镜像">3.7 将容器保存为镜像</h4>
 <p>我们修改一个容器后，可以经当前容器状态打包成镜像，方便下次直接通过镜像仓库生成当前状态的容器。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -784,12 +766,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">gem install json
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 将修改后的容器打包成新的镜像
-</span></span><span class="line"><span class="cl">docker commit -m &#34;Added json gem&#34; -a &#34;Docker Newbee&#34; 0b2616b0e5a8 ouruser/sinatra:v2
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker commit -m &#34;Added json gem&#34; -a &#34;Docker Newbee&#34; 0b2616b0e5a8 ouruser/sinatra:v2</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="38-导出导入容器">3.8 导出/导入容器</h4>
 <p>容器 -&gt;导出&gt; 容器快照文件 -&gt;导入&gt; 本地镜像仓库 -&gt;新建&gt; 容器</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -816,15 +797,14 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">$ docker ubuntu.tar | docker import - test/ubuntu:v1.0
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 从指定 URL 或者某个目录导入
-</span></span><span class="line"><span class="cl">$ docker import http://example.com/exampleimage.tgz example/imagerepo
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ docker import http://example.com/exampleimage.tgz example/imagerepo</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>注意：用户既可以通过 <code>docker load</code> 来导入镜像存储文件到本地镜像仓库，也可以使用 <code>docker import</code> 来导入一个容器快找到本地镜像仓库，两者的区别在于容器快照将丢失所有的历史记录和元数据信息，仅保存容器当时的状态，而镜像存储文件将保存完成的记录，体积要更大。所有容器快照文件导入时需要重新指定标签等元数据信息。</p>
 </blockquote>
 <h4 id="39-删除容器">3.9 删除容器</h4>
 <p>可以使用 <code>docker rm [容器Name]</code> 来删除一个终止状态的容器，如果容器还未终止，可以先使用 <code>docker stop [容器Name]</code> 来终止容器，再进行删除操作</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -841,17 +821,15 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">$ docker [-f] rm myubuntu
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 删除所有已关闭的容器
-</span></span><span class="line"><span class="cl">$ docker rm $(docker ps -a -q)
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ docker rm $(docker ps -a -q)</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="310-查看容器状态">3.10 查看容器状态</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker stats $(docker ps --format={{.Names}})
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker stats $(docker ps --format={{.Names}})</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="四数据卷">四、数据卷</h3>
 <h4 id="41-介绍">4.1 介绍</h4>
@@ -867,7 +845,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </blockquote>
 <h4 id="42-创建数据卷">4.2 创建数据卷</h4>
 <p>在用 <code>docker run</code> 命令的时候，使用 <code>-v</code> 标记来创建一个数据卷并挂在在容器里，可同时挂在多个。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -892,12 +870,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker run -d -P --name web -v /src/webapp:/opt/webapp:ro
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 挂载单个文件
-</span></span><span class="line"><span class="cl">docker run --rm -it -v ~/.bash_history:/.bash_history ubuntu /bin/bash
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker run --rm -it -v ~/.bash_history:/.bash_history ubuntu /bin/bash</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="43-数据卷容器">4.3 数据卷容器</h4>
 <p>如果需要多个容器共享数据，最好创建数据卷容器，就是一个正常的容器，撰文用来提供数据卷供其他容器挂载的</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -912,15 +889,14 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 其他容器挂载 dbdata 容器的数据卷
 </span></span><span class="line"><span class="cl">docker run -d --volumes-from dbdata --name db1 training/postgres
-</span></span><span class="line"><span class="cl">docker run -d --volumes-from dbdata --name db2 training/postgres
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker run -d --volumes-from dbdata --name db2 training/postgres</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="五网络">五、网络</h3>
 <h4 id="51-外部访问容器">5.1 外部访问容器</h4>
 <p>在容器内运行一些服务，需要外部可以访问到这些服务，可以通过 <code>-P</code> 或 <code>-p</code> 参数来指定端口映射。</p>
 <p>当使用 <code>-P</code> 标记时，Docker 会随即映射一个 <code>49000～49900</code> 的端口到内部容器开放的网络端口。</p>
 <p>使用 <code>docker ps</code> 可以查看端口映射情况</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -929,11 +905,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ docker ps
 </span></span><span class="line"><span class="cl">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-</span></span><span class="line"><span class="cl">7f43807dc042        training/webapp     &#34;python app.py&#34;          3 seconds ago       Up 2 seconds        0.0.0.0:32770-&gt;5000/tcp             amazing_liskov
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">7f43807dc042        training/webapp     &#34;python app.py&#34;          3 seconds ago       Up 2 seconds        0.0.0.0:32770-&gt;5000/tcp             amazing_liskov</span></span></code></pre></td></tr></table>
 </div>
 </div><p>-p 指定端口映射，支持格式 <code>ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort</code></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -962,13 +937,12 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker run -d -p 5000:5000  -p 3000:80 training/webapp python app.py
 </span></span><span class="line"><span class="cl">## 查看映射端口配置
 </span></span><span class="line"><span class="cl">$ docker port amazing_liskov
-</span></span><span class="line"><span class="cl">5000/tcp -&gt; 0.0.0.0:32770
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">5000/tcp -&gt; 0.0.0.0:32770</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="52-容器互联">5.2 容器互联</h4>
 <p>容器除了跟宿主机端口映射外，还有一种容器间交互的方式，可以在源/目标容器之间建立一个隧道，目标容器可以看到源容器指定的信息。</p>
 <p>可以通过 <code>--link name:alias</code> 来连接容器，下面就是 “web容器连接db容器” 的例子</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -995,29 +969,26 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">PING db (172.17.0.3) 56(84) bytes of data.
 </span></span><span class="line"><span class="cl">64 bytes from db (172.17.0.3): icmp_seq=1 ttl=64 time=0.254 ms
 </span></span><span class="line"><span class="cl">64 bytes from db (172.17.0.3): icmp_seq=2 ttl=64 time=0.190 ms
-</span></span><span class="line"><span class="cl">64 bytes from db (172.17.0.3): icmp_seq=3 ttl=64 time=0.389 ms
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">64 bytes from db (172.17.0.3): icmp_seq=3 ttl=64 time=0.389 ms</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="53-访问控制">5.3 访问控制</h4>
 <p>容器想要访问外部网络，需要宿主机的转发支持。在 Linux 系统中，通过以下命令检查是否打开</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sysctl net.ipv4.ip_forward
-</span></span><span class="line"><span class="cl">net.ipv4.ip_forward = 1
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">net.ipv4.ip_forward = 1</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果是 0，说明没有开启转发，则需要手动打开。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sysctl -w net.ipv4.ip_forward=1
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sysctl -w net.ipv4.ip_forward=1</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="54-配置-docker0-桥接">5.4 配置 docker0 桥接</h4>
 <p>Docker 服务默认会创建一个 <code>docker0</code> 网桥，他在内核层连通了其他物理或虚拟网卡，这就将容器和主机都放在同一个物理网络。</p>
@@ -1039,7 +1010,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <li>容器启动时执行指令</li>
 </ol>
 <p>如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1082,8 +1053,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 创建/运行 容器时的操作指令 
 </span></span><span class="line"><span class="cl">## 可以理解为 docker run 后跟的运行指令
-</span></span><span class="line"><span class="cl">CMD /usr/sbin/nginx
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">CMD /usr/sbin/nginx</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="62-指令">6.2 指令</h4>
 <p>指令一般格式为 <code>INSTRUCTION args</code>，包括 <code>FORM</code> 、 <code>MAINTAINER</code> 、<code>RUN</code> 等</p>
@@ -1161,22 +1131,21 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <h4 id="63-创建镜像">6.3 创建镜像</h4>
 <p>编写完成 Dockerfile 之后，可以通过 <code>docker build</code> 命令来创建镜像</p>
 <p><code>docker build [选项] 路径</code> 该命令江都区指定路径下（包括子目录）的Dockerfile，并将该路径下所有内容发送给 Docker 服务端，有服务端来创建镜像。可以通过 <code>.dockerignore</code> 文件来让 Docker 忽略路径下的目录与文件</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## 使用 -t 指定镜像的标签信息
-</span></span><span class="line"><span class="cl">docker build -t myrepo/myimage .
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">docker build -t myrepo/myimage .</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="七docker-compose">七、Docker Compose</h3>
 <h4 id="71-介绍">7.1 介绍</h4>
 <p>Docker Compose 是 Docker 官方编排项目之一，负责快速在集群中部署分布式应用。维护地址：https://github.com/docker/compose，由 Python 编写，实际调用 Docker提供的API实现。</p>
 <p>Dockerfile 可以让用户管理一个单独的应用容器，而 Compose 则允许用户在一个模版（YAML格式）中定义一组相关联的应用容器（被称为一个project/项目），例如一个 web容器再加上数据库、redis等。</p>
 <h4 id="72-安装">7.2 安装</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1195,8 +1164,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">docker-ompose -h
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">## 添加 bash 补全命令
-</span></span><span class="line"><span class="cl">curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose &gt; /etc/bash_completion.d/docker-compose
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose &gt; /etc/bash_completion.d/docker-compose</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="73-使用">7.3 使用</h4>
 <p>术语</p>
@@ -1206,18 +1174,17 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </ul>
 <p>示例：创建一个 Haproxy 挂载三个 Web 容器</p>
 <p>创建一个 <code>compose-haproxy-web</code> 目录，作为项目工作目录，并在其中分别创建两个子目录： <code>haproxy</code> 和 <code>web</code> 。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">compose-haproxy-webcompose-haproxy-web
-</span></span><span class="line"><span class="cl">git clone https://github.com/yelog/compose-haproxy-web.git
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">git clone https://github.com/yelog/compose-haproxy-web.git</span></span></code></pre></td></tr></table>
 </div>
 </div><p>目录长这样：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1236,11 +1203,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">└── web
 </span></span><span class="line"><span class="cl">    ├── Dockerfile
 </span></span><span class="line"><span class="cl">    ├── index.html
-</span></span><span class="line"><span class="cl">    └── index.py
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    └── index.py</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在该目录执行 <code>docker-compose up</code> 命令，会整合输出所有容器的输出</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1269,21 +1235,19 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">haproxy_1  | [ALERT] 244/131022 (1) : parsing [/usr/local/etc/haproxy/haproxy.cfg:14] : please use the &#39;bind&#39; keyword for listening addresses.
 </span></span><span class="line"><span class="cl">haproxy_1  | [ALERT] 244/131022 (1) : Error(s) found in configuration file : /usr/local/etc/haproxy/haproxy.cfg
 </span></span><span class="line"><span class="cl">haproxy_1  | [ALERT] 244/131022 (1) : Fatal errors found in configuration.
-</span></span><span class="line"><span class="cl">compose-haproxy-web_haproxy_1 exited with code 1
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">compose-haproxy-web_haproxy_1 exited with code 1</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时访问本地的 80 端口，会经过 haproxy 自动转发到后端的某个 web 容器上，刷新页面，可以观察到访问的容器地址的变化。</p>
 <h4 id="74-命令说明">7.4 命令说明</h4>
 <p>大部分命令都可以运行在一个或多个服务上。如果没有特别的说明，命令则应用在项目所有的服务上。</p>
 <p>执行 <code>docker-compose [COMMAND] --help</code> 查看具体某个命令的使用说明</p>
 <p>使用格式</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker-compose [options] [COMMAND] [ARGS...]
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker-compose [options] [COMMAND] [ARGS...]</span></span></code></pre></td></tr></table>
 </div>
 </div><table>
 <thead>
@@ -1376,16 +1340,15 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <p>默认模版文件是 <code>docker-compose.yml</code> ，启动定义了每个服务都必须经过 <code>image</code> 指令指定镜像或 <code>build</code> 指令（需要 Dockerfile) 来自动构建。</p>
 <p>其他大部分指令跟 <code>docker run</code> 类似</p>
 <p>如果使用 <code>build</code> 指令，在 Dockerfile 中设置的选项（如 <code>CMD</code> 、<code>EXPOSE</code> 等）将会被自动获取，无需在 <code>docker-compose.yml</code> 中再次设置。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">**image**
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">**image**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>指定镜像名称或镜像ID，如果本地仓库不存在，将尝试从远程仓库拉去此镜像</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1396,33 +1359,30 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">image: ubuntu
 </span></span><span class="line"><span class="cl">image: orchardup/postgresql
 </span></span><span class="line"><span class="cl">image: a4bc65fd
-</span></span><span class="line"><span class="cl">**build**
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">**build**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>指定 <code>Dockerfile</code> 所在文件的路径。<code>Compose</code> 将利用它自动构建这个镜像，然后使用这个镜像。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">build: /path/to/build/dir
-</span></span><span class="line"><span class="cl">**command**
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">**command**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>覆盖容器启动默认执行命令</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">command: bundle exec thin -p 3000
-</span></span><span class="line"><span class="cl">**links**
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">**links**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>链接到其他服务中的容器，使用服务名称或别名</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1433,11 +1393,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">links:
 </span></span><span class="line"><span class="cl">    - db
 </span></span><span class="line"><span class="cl">  - db:database
-</span></span><span class="line"><span class="cl">  - redis
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  - redis</span></span></code></pre></td></tr></table>
 </div>
 </div><p>别名会自动在服务器中的 <code>/etc/hosts</code> 里创建。例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1448,11 +1407,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">172.17.2.186  db
 </span></span><span class="line"><span class="cl">172.17.2.186  database
 </span></span><span class="line"><span class="cl">172.17.2.187  redis
-</span></span><span class="line"><span class="cl">**external_links**
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">**external_links**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>连接到 <code>docker-compose.yml</code> 外部的容器，甚至并非 <code>Compose</code> 管理的容器。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1463,13 +1421,12 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">external_links:
 </span></span><span class="line"><span class="cl"> - redis_1
 </span></span><span class="line"><span class="cl"> - project_db_1:mysql
-</span></span><span class="line"><span class="cl"> - project_db_1:postgresql
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> - project_db_1:postgresql</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>ports</code></strong></p>
 <p>暴露端口信息 <code>HOST:CONTAINER</code></p>
 <p>格式或者仅仅指定容器的端口（宿主机会随机分配端口）</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1482,22 +1439,20 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl"> - &#34;3000&#34;
 </span></span><span class="line"><span class="cl"> - &#34;8000:8000&#34;
 </span></span><span class="line"><span class="cl"> - &#34;49100:22&#34;
-</span></span><span class="line"><span class="cl"> - &#34;127.0.0.1:8001:8001&#34;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> - &#34;127.0.0.1:8001:8001&#34;</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><em>注：当使用 <code>HOST:CONTAINER</code> 格式来映射端口时，如果你使用的容器端口小于 60 你可能会得到错误得结果，因为 <code>YAML</code> 将会解析 <code>xx:yy</code> 这种数字格式为 60 进制。所以建议采用字符串格式。</em></p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">**expose**
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">**expose**</span></span></code></pre></td></tr></table>
 </div>
 </div><p>暴露端口，但不映射到宿主机，只被连接的服务访问</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1506,12 +1461,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">expose:
 </span></span><span class="line"><span class="cl"> - &#34;3000&#34;
-</span></span><span class="line"><span class="cl"> - &#34;8000&#34;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> - &#34;8000&#34;</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>volumes</code></strong></p>
 <p>卷挂载路径设置。可以设置宿主机路径 （<code>HOST:CONTAINER</code>） 或加上访问模式 （<code>HOST:CONTAINER:ro</code>）。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1522,14 +1476,13 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">volumes:
 </span></span><span class="line"><span class="cl"> - /var/lib/mysql
 </span></span><span class="line"><span class="cl"> - cache/:/tmp/cache
-</span></span><span class="line"><span class="cl"> - ~/configs:/etc/configs/:ro
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> - ~/configs:/etc/configs/:ro</span></span></code></pre></td></tr></table>
 </div>
 </div><p>**
 **</p>
 <p><strong><code>volumes_from</code></strong></p>
 <p>从另一个服务或容器挂载它的所有卷。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1538,20 +1491,18 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">volumes_from:
 </span></span><span class="line"><span class="cl"> - service_name
-</span></span><span class="line"><span class="cl"> - container_name
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"> - container_name</span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">environment
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">environment</span></span></code></pre></td></tr></table>
 </div>
 </div><p>设置环境变量。你可以使用数组或字典两种格式。</p>
 <p>只给定名称的变量会自动获取它在 Compose 主机上的值，可以用来防止泄露不必要的数据。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1566,14 +1517,13 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">  SESSION_SECRET:
 </span></span><span class="line"><span class="cl">environment:
 </span></span><span class="line"><span class="cl">  - RACK_ENV=development
-</span></span><span class="line"><span class="cl">  - SESSION_SECRET
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  - SESSION_SECRET</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>env_file</code></strong></p>
 <p>从文件中获取环境变量，可以为单独的文件路径或列表。</p>
 <p>如果通过 <code>docker-compose -f FILE</code> 指定了模板文件，则 <code>env_file</code> 中路径会基于模板文件路径。</p>
 <p>如果有变量名称与 <code>environment</code> 指令冲突，则以后者为准。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1586,23 +1536,21 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">env_file:
 </span></span><span class="line"><span class="cl">  - ./common.env
 </span></span><span class="line"><span class="cl">  - ./apps/web.env
-</span></span><span class="line"><span class="cl">  - /opt/secrets.env
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  - /opt/secrets.env</span></span></code></pre></td></tr></table>
 </div>
 </div><p>环境变量文件中每一行必须符合格式，支持 <code>#</code> 开头的注释行。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## common.env: Set Rails/Rack environment
-</span></span><span class="line"><span class="cl">RACK_ENV=development
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">RACK_ENV=development</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>extends</code></strong></p>
 <p>基于已有的服务进行扩展。例如我们已经有了一个 webapp 服务，模板文件为 <code>common.yml</code>。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1617,11 +1565,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">  build: ./webapp
 </span></span><span class="line"><span class="cl">  environment:
 </span></span><span class="line"><span class="cl">    - DEBUG=false
-</span></span><span class="line"><span class="cl">    - SEND_EMAILS=false
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    - SEND_EMAILS=false</span></span></code></pre></td></tr></table>
 </div>
 </div><p>编写一个新的 <code>development.yml</code> 文件，使用 <code>common.yml</code> 中的 webapp 服务进行扩展。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1650,15 +1597,14 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">  environment:
 </span></span><span class="line"><span class="cl">    - DEBUG=true
 </span></span><span class="line"><span class="cl">db:
-</span></span><span class="line"><span class="cl">  image: postgres
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  image: postgres</span></span></code></pre></td></tr></table>
 </div>
 </div><p>后者会自动继承 common.yml 中的 webapp 服务及相关环节变量。</p>
 <p>**
 **</p>
 <p><strong><code>net</code></strong></p>
 <p>设置网络模式。使用和 <code>docker client</code> 的 <code>--net</code> 参数一样的值。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1669,24 +1615,22 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">net: &#34;bridge&#34;
 </span></span><span class="line"><span class="cl">net: &#34;none&#34;
 </span></span><span class="line"><span class="cl">net: &#34;container:[name or id]&#34;
-</span></span><span class="line"><span class="cl">net: &#34;host&#34;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">net: &#34;host&#34;</span></span></code></pre></td></tr></table>
 </div>
 </div><p>**
 **</p>
 <p><strong><code>pid</code></strong></p>
 <p>跟主机系统共享进程命名空间。打开该选项的容器可以相互通过进程 ID 来访问和操作。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pid: &#34;host&#34;
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pid: &#34;host&#34;</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>dns</code></strong></p>
 <p>配置 DNS 服务器。可以是一个值，也可以是一个列表。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1697,12 +1641,11 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dns: 8.8.8.8
 </span></span><span class="line"><span class="cl">dns:
 </span></span><span class="line"><span class="cl">  - 8.8.8.8
-</span></span><span class="line"><span class="cl">  - 9.9.9.9
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  - 9.9.9.9</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>cap_add, cap_drop</code></strong></p>
 <p>添加或放弃容器的 Linux 能力（Capabiliity）。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1715,14 +1658,13 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span></span><span class="line"><span class="cl">  - ALL
 </span></span><span class="line"><span class="cl">cap_drop:
 </span></span><span class="line"><span class="cl">  - NET_ADMIN
-</span></span><span class="line"><span class="cl">  - SYS_ADMIN
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  - SYS_ADMIN</span></span></code></pre></td></tr></table>
 </div>
 </div><p>**
 **</p>
 <p><strong><code>dns_search</code></strong></p>
 <p>配置 DNS 搜索域。可以是一个值，也可以是一个列表。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1733,8 +1675,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">dns_search</span><span class="p">:</span><span class="w"> </span><span class="l">example.com</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dns_search</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">domain1.example.com</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">domain2.example.com</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">domain2.example.com</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>**
 **</p>

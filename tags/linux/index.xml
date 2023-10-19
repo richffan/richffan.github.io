@@ -29,7 +29,7 @@
   <author>richfan</author>
   <guid>http://richfan.site/posts/program/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
   <description><![CDATA[<h3 id="1-变量">1. 变量</h3>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -38,8 +38,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;hello world&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$msg</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$msg</span></span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
 </item>

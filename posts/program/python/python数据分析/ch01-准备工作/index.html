@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9405 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 19 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="leancloud_visitors comment-visitors" data-flag-title="第一章 准备工作">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9405 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 19 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="leancloud_visitors comment-visitors" data-flag-title="第一章 准备工作">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第一章 准备工作">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -344,7 +344,7 @@
 <h3 id="141-windows">1.4.1 Windows</h3>
 <p>要在Windows上运行，先下载<a href="https://www.anaconda.com/download/"target="_blank" rel="external nofollow noopener noreferrer">Anaconda安装包</a>。推荐跟随Anaconda下载页面的Windows安装指导，安装指导在写作本书和读者看到此文的的这段时间内可能发生变化。</p>
 <p>现在，来确认设置是否正确。打开命令行窗口（<code>cmd.exe</code>），输入<code>python</code>以打开Python解释器。可以看到类似下面的Anaconda版本的输出：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -355,82 +355,74 @@
 <pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">C:\Users\wesm&gt;python
 </span></span><span class="line"><span class="cl">Python 3.5.2 |Anaconda 4.1.1 (64-bit)| (default, Jul  5 2016, 11:41:13)
 </span></span><span class="line"><span class="cl">[MSC v.1900 64 bit (AMD64)] on win32
-</span></span><span class="line"><span class="cl">&gt;&gt;&gt;
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt;</span></span></code></pre></td></tr></table>
 </div>
 </div><p>要退出shell，按Ctrl-D（Linux或macOS上），Ctrl-Z（Windows上），或输入命令<code>exit()</code>，再按Enter。</p>
 <h3 id="142-apple-os-x-macos">1.4.2 Apple (OS X, macOS)</h3>
 <p>下载OS X Anaconda安装包，它的名字类似Anaconda3-4.1.0-MacOSX-x86_64.pkg。双击.pkg文件，运行安装包。安装包运行时，会自动将Anaconda执行路径添加到<code>.bash_profile</code>文件，它位于<code>/Users/$USER/.bash_profile</code>。</p>
 <p>为了确认成功，在系统shell打开IPython：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$ ipython
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$ ipython</span></span></code></pre></td></tr></table>
 </div>
 </div><p>要退出shell，按Ctrl-D，或输入命令<code>exit()</code>，再按Enter。</p>
 <h3 id="143-gnulinux">1.4.3 GNU/Linux</h3>
 <p>Linux版本很多，这里给出Debian、Ubantu、CentOS和Fedora的安装方法。安装包是一个脚本文件，必须在shell中运行。取决于系统是32位还是64位，要么选择x86 (32位)或x86_64 (64位)安装包。随后你会得到一个文件，名字类似于<code>Anaconda3-4.1.0-Linux-x86_64.sh</code>。用bash进行安装：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$ bash Anaconda3-4.1.0-Linux-x86_64.sh
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$ bash Anaconda3-4.1.0-Linux-x86_64.sh</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>笔记：某些Linux版本在包管理器中有满足需求的Python包，只需用类似apt的工具安装就行。这里讲的用Anaconda安装，适用于不同的Linux安装包，也很容易将包升级到最新版本。</p>
 </blockquote>
 <p>接受许可之后，会向你询问在哪里放置Anaconda的文件。我推荐将文件安装到默认的home目录，例如<code>/home/$USER/anaconda</code>。</p>
 <p>Anaconda安装包可能会询问你是否将<code>bin/</code>目录添加到<code>$PATH</code>变量。如果在安装之后有任何问题，你可以修改文件<code>.bashrc</code>（或<code>.zshrc</code>，如果使用的是zsh shell）为类似以下的内容：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">export PATH=/home/$USER/anaconda/bin:$PATH
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">export PATH=/home/$USER/anaconda/bin:$PATH</span></span></code></pre></td></tr></table>
 </div>
 </div><p>做完之后，你可以开启一个新窗口，或再次用<code>~/.bashrc</code>执行<code>.bashrc</code>。</p>
 <h3 id="144-安装或升级python包">1.4.4 安装或升级Python包</h3>
 <p>在你阅读本书的时候，你可能想安装另外的不在Anaconda中的Python包。通常，可以用以下命令安装：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">conda install package_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">conda install package_name</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果这个命令不行，也可以用pip包管理工具：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pip install package_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pip install package_name</span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可以用<code>conda update</code>命令升级包：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">conda update package_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">conda update package_name</span></span></code></pre></td></tr></table>
 </div>
 </div><p>pip可以用<code>--upgrade</code>升级：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pip install --upgrade package_name
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pip install --upgrade package_name</span></span></code></pre></td></tr></table>
 </div>
 </div><p>本书中，你有许多机会尝试这些命令。</p>
 <blockquote>
@@ -497,22 +489,21 @@
 </ul>
 <h3 id="161-代码示例">1.6.1 代码示例</h3>
 <p>本书大部分代码示例的输入形式和输出结果都会按照其在IPython shell或Jupyter notebooks中执行时的样子进行排版：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">In [5]: CODE EXAMPLE
-</span></span><span class="line"><span class="cl">Out[5]: OUTPUT
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Out[5]: OUTPUT</span></span></code></pre></td></tr></table>
 </div>
 </div><p>但你看到类似的示例代码，就是让你在<code>in</code>的部分输入代码，按Enter键执行（Jupyter中是按Shift-Enter）。然后就可以在<code>out</code>看到输出。</p>
 <h3 id="162-示例数据">1.6.2 示例数据</h3>
 <p>各章的示例数据都存放在GitHub上：<a href="http://github.com/pydata/pydata-book"target="_blank" rel="external nofollow noopener noreferrer">http://github.com/pydata/pydata-book</a></p>
 <h3 id="163-引入惯例">1.6.3 引入惯例</h3>
 <p>Python社区已经广泛采取了一些常用模块的命名惯例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -525,8 +516,7 @@
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels</span> <span class="k">as</span> <span class="nn">sm</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels</span> <span class="k">as</span> <span class="nn">sm</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>也就是说，当你看到np.arange时，就应该想到它引用的是NumPy中的arange函数。这样做的原因是：<strong>在Python软件开发过程中，不建议直接引入类似NumPy这种大型库的全部内容</strong>（from numpy import *）。</p>
 <h3 id="164-行话">1.6.4 行话</h3>

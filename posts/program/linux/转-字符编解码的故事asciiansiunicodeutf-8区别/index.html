@@ -176,7 +176,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-09-25 19:15:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-25">2017-09-25</time></span>&nbsp;<span title="更新于 2017-09-25 19:15:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-25">2017-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4781 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 10 分钟</span>&nbsp;<span id="/posts/program/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/" class="leancloud_visitors comment-visitors" data-flag-title="[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）">
+      <div class="post-meta-line"><span title="发布于 2017-09-25 19:15:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-25">2017-09-25</time></span>&nbsp;<span title="更新于 2017-09-25 19:15:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-25">2017-09-25</time></span>&nbsp;<span title="4781 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 10 分钟</span>&nbsp;<span id="/posts/program/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/" class="leancloud_visitors comment-visitors" data-flag-title="[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -205,7 +205,7 @@
 <p>UNICODE 来到时，一起到来的还有计算机网络的兴起，UNICODE 如何在网络上传输也是一个必须考虑的问题，于是面向传输的众多 UTF（UCS Transfer Format）标准出现了，顾名思义，UTF8就是每次8个位传输数据，而UTF16就是每次16个位，只不过为了传输时的可靠性，从UNICODE到 UTF时并不是直接的对应，而是要过一些算法和规则来转换。</p>
 <p>受到过网络编程加持的计算机僧侣们都知道，在网络里传递信息时有一个很重要的问题，就是对于数据高低位的解读方式，一些计算机是采用低位先发送的方法，例如我们PC机采用的 INTEL 架构；而另一些是采用高位先发送的方式。在网络中交换数据时，为了核对双方对于高低位的认识是否是一致的，采用了一种很简便的方法，就是在文本流的开始时向对方发送一个标志符——如果之后的文本是高位在位，那就发送&quot;FEFF&rdquo;，反之，则发送&quot;FFFE&quot;。不信你可以用二进制方式打开一个UTF-X格式的文件，看看开头两个字节是不是这两个字节？</p>
 <p>下面是Unicode和UTF-8转换的规则</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -224,8 +224,7 @@
 </span></span><span class="line"><span class="cl">0080 - 07FF
 </span></span><span class="line"><span class="cl">110xxxxx 10xxxxxx
 </span></span><span class="line"><span class="cl">0800 - FFFF
-</span></span><span class="line"><span class="cl">1110xxxx 10xxxxxx 10xxxxxx
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">1110xxxx 10xxxxxx 10xxxxxx</span></span></code></pre></td></tr></table>
 </div>
 </div><p>例如&quot;汉&quot;字的Unicode编码是6C49。6C49在0800-FFFF之间，所以要用3字节模板：1110xxxx 10xxxxxx 10xxxxxx。将6C49写成二进制是：0110 1100 0100 1001，将这个比特流按三字节模板的分段方法分为0110 110001 001001，依次代替模板中的x，得到：1110-0110 10-110001 10-001001，即E6 B1 89，这就是其UTF8的编码。</p>
 <p>讲到这里，我们再顺便说说一个很著名的奇怪现象：当你在 windows 的记事本里新建一个文件，输入&quot;联通&quot;两个字之后，保存，关闭，然后再次打开，你会发现这两个字已经消失了，代之的是几个乱码！呵呵，有人说这就是联通之所以拼不过移动的原因。</p>
@@ -233,7 +232,7 @@
 <p>当一个软件打开一个文本时，它要做的第一件事是决定这个文本究竟是使用哪种字符集的哪种编码保存的。软件一般采用三种方式来决定文本的字符集和编码：</p>
 <p>检测文件头标识，提示用户选择，根据一定的规则猜测</p>
 <p>最标准的途径是检测文本最开头的几个字节，开头字节 Charset/encoding,如下表：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -246,11 +245,10 @@
 </span></span><span class="line"><span class="cl">FF FE UTF-16/UCS-2, little endian
 </span></span><span class="line"><span class="cl">FE FF UTF-16/UCS-2, big endian
 </span></span><span class="line"><span class="cl">FF FE 00 00 UTF-32/UCS-4, little endian.
-</span></span><span class="line"><span class="cl">00 00 FE FF UTF-32/UCS-4, big-endian.
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">00 00 FE FF UTF-32/UCS-4, big-endian.</span></span></code></pre></td></tr></table>
 </div>
 </div><p>当你新建一个文本文件时，记事本的编码默认是ANSI（代表系统默认编码，在中文系统中一般是GB系列编码）, 如果你在ANSI的编码输入汉字，那么他实际就是GB系列的编码方式，在这种编码下，&ldquo;联通&quot;的内码是：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -261,8 +259,7 @@
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">c1 1100 0001
 </span></span><span class="line"><span class="cl">aa 1010 1010
 </span></span><span class="line"><span class="cl">cd 1100 1101
-</span></span><span class="line"><span class="cl">a8 1010 1000
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">a8 1010 1000</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意到了吗？第一二个字节、第三四个字节的起始部分的都是&quot;110&quot;和&quot;10&rdquo;，正好与UTF8规则里的两字节模板是一致的，</p>
 <p>于是当我们再次打开记事本时，记事本就误认为这是一个UTF8编码的文件，让我们把第一个字节的110和第二个字节的10去掉，我们就得到了&quot;00001 101010&quot;，再把各位对齐，补上前导的0，就得到了&quot;0000 0000 0110 1010&quot;，不好意思，这是UNICODE的006A，也就是小写的字母&quot;j&quot;，而之后的两字节用UTF8解码之后是0368，这个字符什么也不是。这就是只有&quot;联通&quot;两个字的文件没有办法在记事本里正常显示的原因。</p>

@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 626 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/" class="leancloud_visitors comment-visitors" data-flag-title="3 栈">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="626 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 700 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/" class="leancloud_visitors comment-visitors" data-flag-title="3 栈">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="3 栈">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -204,7 +204,7 @@
 </blockquote>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/image-20201220170815652.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/image-20201220170815652.png, https://gitee.com/wugenqiang/images/raw/master/02/image-20201220170815652.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/image-20201220170815652.png 2x" sizes="auto" data-title="栈" data-alt="栈" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h2 id="31-栈的初始化">3.1 栈的初始化</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -215,11 +215,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 栈列表</span>
 </span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># 栈大小</span>
-</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># 栈顶位置</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># 栈顶位置</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="32-元素进栈">3.2 元素进栈</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -230,11 +229,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 元素进栈</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">+=</span> <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="33-元素出栈">3.3 元素出栈</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -249,20 +247,18 @@
 </span></span><span class="line"><span class="cl">    <span class="n">element</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">-=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">    <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">element</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">element</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里可以直接调用pop函数，使用如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># 弹出栈顶元素</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># 弹出栈顶元素</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="34-获取栈顶元素">3.4 获取栈顶元素</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -271,20 +267,18 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 获取栈顶位置</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">getTop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">top</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">top</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里也可以直接使用列表，使用如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="35-清空栈">3.5 清空栈</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -295,11 +289,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 清空栈</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">empty</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="36-判断是否为空栈">3.6 判断是否为空栈</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -314,20 +307,18 @@
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
 </span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里可以直接判断列表是否为空即可，使用如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="ow">is</span> <span class="p">[]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="ow">is</span> <span class="p">[]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="37-判断是否为满栈">3.7 判断是否为满栈</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -342,11 +333,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
 </span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="38-完整代码">3.8 完整代码</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -495,8 +485,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">stack</span><span class="o">.</span><span class="n">empty</span><span class="p">()</span>  <span class="c1"># 清空栈</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># 引发异常</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># 引发异常</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

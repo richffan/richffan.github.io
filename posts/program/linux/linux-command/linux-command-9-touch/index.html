@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2016-12-09 07:15:12"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-09">2016-12-09</time></span>&nbsp;<span title="更新于 2016-12-09 07:15:12"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-09">2016-12-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 736 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-9-touch/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（9）: touch">
+      <div class="post-meta-line"><span title="发布于 2016-12-09 07:15:12"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-09">2016-12-09</time></span>&nbsp;<span title="更新于 2016-12-09 07:15:12"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2016-12-09">2016-12-09</time></span>&nbsp;<span title="736 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/linux-command/linux-command-9-touch/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（9）: touch">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（9）: touch">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/linux-command/linux-command-9-touch/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -206,13 +206,12 @@
       </div><div class="content" id="content"><p>　　linux的touch命令不常用，一般在使用make的时候可能会用到，用来修改文件时间戳，或者新建一个不存在的文件。</p>
 <!--more -->
 <h4 id="命令格式">命令格式</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch <span class="o">[</span>选项<span class="o">]</span>... 文件...
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch <span class="o">[</span>选项<span class="o">]</span>... 文件...</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="命令功能">命令功能</h4>
 <p>　　touch命令参数可更改文档或目录的日期时间，包括存取时间和更改时间。</p>
@@ -257,40 +256,36 @@
 </table>
 <h4 id="命令实例">命令实例</h4>
 <p><strong><code>例一</code>：创建不存在的文件</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch 1.txt
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch 1.txt</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例二</code>：更新1.txt的时间和2.txt时间戳相同</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch -r 1.txt 2.txt
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch -r 1.txt 2.txt</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例三</code>：设定文件的时间戳</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch -t 201211142234.50 1.txt
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch -t 201211142234.50 1.txt</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong><code>例四</code>：创建不存在的文件</strong></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch 1.txt
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ touch 1.txt</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><strong>说明：</strong> <code>-t  time</code> 使用指定的时间值 time 作为指定文件相应时间戳记的新值．此处的 time规定为如下形式的十进制数:    [[CC]YY]MMDDhhmm[.SS] 这里，CC为年数中的前两位，即”世纪数”；YY为年数的后两位，即某世纪中的年数．如果不给出CC的值，则touch   将把年数CCYY限定在1969&ndash;2068之内．MM为月数，DD为天将把年数CCYY限定在1969&ndash;2068之内．MM为月数，DD为天数，hh 为小时数(几点)，mm为分钟数，SS为秒数．此处秒的设定范围是0&ndash;61，这样可以处理闰秒．这些数字组成的时间是环境变量TZ指定的时区中的一个时 间．由于系统的限制，早于1970年1月1日的时间是错误的。</p>

@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2981 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="leancloud_visitors comment-visitors" data-flag-title="MySQL常用30种SQL查询语句优化方法">
+      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="2981 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="leancloud_visitors comment-visitors" data-flag-title="MySQL常用30种SQL查询语句优化方法">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="MySQL常用30种SQL查询语句优化方法">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -268,7 +268,7 @@
 <h2 id="第一部分基础优化方法">第一部分：基础优化方法</h2>
 <h3 id="1使用索引">1.使用索引</h3>
 <p>索引是提高数据库查询性能的基础，通过为查询字段添加合适的索引，可以加快查询速度。在创建索引时，需要考虑查询的频率和数据的更新频率，避免过度索引或不必要的索引。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -277,12 +277,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="c1">-- 创建索引
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_column</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="p">(</span><span class="k">column_name</span><span class="p">);</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_column</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="p">(</span><span class="k">column_name</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2避免使用select-">2.避免使用SELECT *</h3>
 <p>在查询数据时，尽量避免使用SELECT *，而是明确指定需要查询的字段。这样可以减少返回的数据量，提高查询效率。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -299,23 +298,21 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3使用explain分析查询计划">3.使用EXPLAIN分析查询计划</h3>
 <p>使用EXPLAIN命令可以分析查询的执行计划，帮助优化查询语句，查找潜在的性能问题。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第二部分优化查询条件">第二部分：优化查询条件</h2>
 <h3 id="4使用where子句过滤数据">4.使用WHERE子句过滤数据</h3>
 <p>在查询数据时，尽量使用WHERE子句对数据进行过滤，减少返回的数据量。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -332,12 +329,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5使用索引覆盖查询">5.使用索引覆盖查询</h3>
 <p>索引覆盖查询是指查询的字段都包含在索引中，不需要回表查询数据。这样可以减少IO操作，提高查询效率。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -354,12 +350,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 索引覆盖查询  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6避免在where子句中使用函数">6.避免在WHERE子句中使用函数</h3>
 <p>在WHERE子句中使用函数会导致索引失效，需要全表扫描。尽量避免在WHERE子句中使用函数。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -376,12 +371,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">date_column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2023-01-01&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">date_column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2023-01-01&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="7使用合适的数据类型">7.使用合适的数据类型</h3>
 <p>选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -398,13 +392,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第三部分连接查询优化">第三部分：连接查询优化</h2>
 <h3 id="8使用inner-join代替where子句连接">8.使用INNER JOIN代替WHERE子句连接</h3>
 <p>使用INNER JOIN可以更好地表达表之间的关系，提高查询的可读性和性能。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -421,12 +414,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="9使用join-on代替where子句过滤连接">9.使用JOIN ON代替WHERE子句过滤连接</h3>
 <p>在连接查询时，尽量使用JOIN ON对连接进行过滤，而不是在WHERE子句中过滤连接。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -443,12 +435,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐 
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="10使用合适的连接类型">10.使用合适的连接类型</h3>
 <p>根据实际业务需求选择合适的连接类型，包括INNER JOIN、LEFT JOIN、RIGHT JOIN和FULL JOIN。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -479,13 +470,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- FULL JOIN
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">FULL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">FULL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第四部分子查询优化">第四部分：子查询优化</h2>
 <h3 id="11使用exists代替in">11.使用EXISTS代替IN</h3>
 <p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -502,12 +492,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="12使用join代替子查询">12.使用JOIN代替子查询</h3>
 <p>在查询中使用JOIN可以更好地表达查询的逻辑，避免使用复杂的子查询。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -526,13 +515,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第五部分limit优化">第五部分：LIMIT优化</h2>
 <h3 id="13使用limit限制返回的记录数">13.使用LIMIT限制返回的记录数</h3>
 <p>在查询大量数据时，使用LIMIT可以限制返回的记录数，避免查询过多的数据。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -543,12 +531,11 @@
 <pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 返回前10条记录  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="14使用分页查询">14.使用分页查询</h3>
 <p>在查询分页数据时，可以使用LIMIT结合OFFSET实现分页查询。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -565,13 +552,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 返回第2页的数据，每页10条记录 
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第六部分排序优化">第六部分：排序优化</h2>
 <h3 id="15使用合适的排序字段">15.使用合适的排序字段</h3>
 <p>在排序查询时，选择合适的排序字段可以减少排序的时间和开销。通常应该选择已经建立了索引的字段进行排序，避免对大量数据进行排序操作。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -590,12 +576,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">indexed_column</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">indexed_column</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="16使用覆盖索引减少排序">16.使用覆盖索引减少排序</h3>
 <p>如果查询中只需要排序字段，并且该字段已经建立了索引，可以使用覆盖索引来减少排序的时间。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -614,12 +599,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 使用覆盖索引  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="17使用desc进行降序排序">17.使用DESC进行降序排序</h3>
 <p>在进行降序排序时，使用DESC关键字可以明确排序方式，避免不必要的排序操作。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -630,13 +614,12 @@
 <pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 降序排序
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第七部分避免使用通配符">第七部分：避免使用通配符</h2>
 <h3 id="18避免使用通配符">18.避免使用%通配符</h3>
 <p>在查询数据时，尽量避免使用%通配符在查询字段的开头，这会导致索引失效，需要进行全表扫描。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -653,12 +636,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="19使用前缀索引">19.使用前缀索引</h3>
 <p>如果需要在查询中使用通配符%在字段的结尾，可以使用前缀索引来优化查询性能。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -677,13 +659,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 使用前缀索引
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第八部分联合查询优化">第八部分：联合查询优化</h2>
 <h3 id="20使用union-all代替union">20.使用UNION ALL代替UNION</h3>
 <p>在使用联合查询时，如果不需要去重操作，应该使用UNION ALL，可以减少查询的开销。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -702,12 +683,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐  
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="w">  </span><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="w">  </span><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="21使用exists代替in和union">21.使用EXISTS代替IN和UNION</h3>
 <p>在查询中使用EXISTS代替IN和UNION，可以更好地表达查询逻辑，提高查询性能。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -726,13 +706,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">)</span><span class="w">  </span><span class="k">OR</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table3</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table3</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">);</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">)</span><span class="w">  </span><span class="k">OR</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table3</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table3</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第九部分使用子查询优化">第九部分：使用子查询优化</h2>
 <h3 id="22使用内连接代替子查询">22.使用内连接代替子查询</h3>
 <p>在使用子查询时，尽量使用内连接代替，可以减少查询的开销。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -751,12 +730,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="23使用exists代替in">23.使用EXISTS代替IN</h3>
 <p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -775,13 +753,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="第十部分数据表设计优化">第十部分：数据表设计优化</h2>
 <h3 id="24使用合适的数据类型">24.使用合适的数据类型</h3>
 <p>在创建数据表时，选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -800,8 +777,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 推荐
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="25垂直拆分表">25.垂直拆分表</h3>
 <p>在数据表中包含大量冗余数据时，可以考虑对表进行垂直拆分，将不同的数据拆分到不同的表中，提高查询性能。</p>

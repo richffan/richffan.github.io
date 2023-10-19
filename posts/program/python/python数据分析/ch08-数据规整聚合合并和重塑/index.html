@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10119 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 21 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="leancloud_visitors comment-visitors" data-flag-title="第八章 数据规整：聚合、合并和重塑">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="10119 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 21 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="leancloud_visitors comment-visitors" data-flag-title="第八章 数据规整：聚合、合并和重塑">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第八章 数据规整：聚合、合并和重塑">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -218,7 +218,7 @@
 <p>首先，我会介绍pandas的层次化索引，它广泛用于以上操作。然后，我深入介绍了一些特殊的数据操作。在第14章，你可以看到这些工具的多种应用。</p>
 <h2 id="81-层次化索引">8.1 层次化索引</h2>
 <p>层次化索引（hierarchical indexing）是pandas的一项重要功能，它使你能在一个轴上拥有多个（两个以上）索引级别。抽象点说，它使你能以低维度形式处理高维度数据。我们先来看一个简单的例子：创建一个Series，并用一个由列表或数组组成的列表作为索引：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -253,11 +253,10 @@
 </span></span><span class="line"><span class="cl">   <span class="mi">2</span>    <span class="mf">0.092908</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>  <span class="mi">2</span>    <span class="mf">0.281746</span>
 </span></span><span class="line"><span class="cl">   <span class="mi">3</span>    <span class="mf">0.769023</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>看到的结果是经过美化的带有MultiIndex索引的Series的格式。索引之间的“间隔”表示“直接使用上面的标签”：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -268,11 +267,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">data</span><span class="o">.</span><span class="n">index</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">11</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="n">MultiIndex</span><span class="p">(</span><span class="n">levels</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]],</span>
-</span></span><span class="line"><span class="cl">           <span class="n">labels</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">           <span class="n">labels</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于一个层次化索引的对象，可以使用所谓的部分索引，使用它选取数据子集的操作更简单：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -317,11 +315,10 @@
 </span></span><span class="line"><span class="cl">   <span class="mi">3</span>    <span class="mf">1.965781</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>  <span class="mi">2</span>    <span class="mf">0.281746</span>
 </span></span><span class="line"><span class="cl">   <span class="mi">3</span>    <span class="mf">0.769023</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>有时甚至还可以在“内层”中进行选取：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -336,11 +333,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mf">0.478943</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>    <span class="mf">0.092908</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>    <span class="mf">0.281746</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>层次化索引在数据重塑和基于分组的操作（如透视表生成）中扮演着重要的角色。例如，可以通过unstack方法将这段数据重新安排到一个DataFrame中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -357,11 +353,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">-</span><span class="mf">0.204708</span>  <span class="mf">0.478943</span> <span class="o">-</span><span class="mf">0.519439</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">-</span><span class="mf">0.555730</span>       <span class="n">NaN</span>  <span class="mf">1.965781</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>  <span class="mf">1.393406</span>  <span class="mf">0.092908</span>       <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">d</span>       <span class="n">NaN</span>  <span class="mf">0.281746</span>  <span class="mf">0.769023</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">d</span>       <span class="n">NaN</span>  <span class="mf">0.281746</span>  <span class="mf">0.769023</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>unstack的逆运算是stack：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -388,12 +383,11 @@
 </span></span><span class="line"><span class="cl">   <span class="mi">2</span>    <span class="mf">0.092908</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>  <span class="mi">2</span>    <span class="mf">0.281746</span>
 </span></span><span class="line"><span class="cl">   <span class="mi">3</span>    <span class="mf">0.769023</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>stack和unstack将在本章后面详细讲解。</p>
 <p>对于一个DataFrame，每条轴都可以有分层索引：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -422,11 +416,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="mi">1</span>     <span class="mi">0</span>   <span class="mi">1</span>        <span class="mi">2</span>
 </span></span><span class="line"><span class="cl">  <span class="mi">2</span>     <span class="mi">3</span>   <span class="mi">4</span>        <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="mi">1</span>     <span class="mi">6</span>   <span class="mi">7</span>        <span class="mi">8</span>
-</span></span><span class="line"><span class="cl">  <span class="mi">2</span>     <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">  <span class="mi">2</span>     <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>各层都可以有名字（可以是字符串，也可以是别的Python对象）。如果指定了名称，它们就会显示在控制台输出中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -455,14 +448,13 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mi">1</span>        <span class="mi">0</span>   <span class="mi">1</span>        <span class="mi">2</span>
 </span></span><span class="line"><span class="cl">     <span class="mi">2</span>        <span class="mi">3</span>   <span class="mi">4</span>        <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>    <span class="mi">1</span>        <span class="mi">6</span>   <span class="mi">7</span>        <span class="mi">8</span>
-</span></span><span class="line"><span class="cl">     <span class="mi">2</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="mi">2</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>注意：小心区分索引名state、color与行标签。</p>
 </blockquote>
 <p>有了部分列索引，因此可以轻松选取列分组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -481,23 +473,21 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mi">1</span>         <span class="mi">0</span>    <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">     <span class="mi">2</span>         <span class="mi">3</span>    <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>    <span class="mi">1</span>         <span class="mi">6</span>    <span class="mi">7</span>
-</span></span><span class="line"><span class="cl">     <span class="mi">2</span>         <span class="mi">9</span>   <span class="mi">10</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="mi">2</span>         <span class="mi">9</span>   <span class="mi">10</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以单独创建MultiIndex然后复用。上面那个DataFrame中的（带有分级名称）列可以这样创建：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_arrays</span><span class="p">([[</span><span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;Green&#39;</span><span class="p">]],</span>
-</span></span><span class="line"><span class="cl">                       <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                       <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="811-重排与分级排序">8.1.1 重排与分级排序</h3>
 <p>有时，你需要重新调整某条轴上各级别的顺序，或根据指定级别上的值对数据进行排序。<code>swaplevel</code>接受两个级别编号或名称，并返回一个互换了级别的新对象（但数据不会发生变化）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -518,11 +508,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>    <span class="n">a</span>        <span class="mi">0</span>   <span class="mi">1</span>        <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="n">a</span>        <span class="mi">3</span>   <span class="mi">4</span>        <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>    <span class="n">b</span>        <span class="mi">6</span>   <span class="mi">7</span>        <span class="mi">8</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="n">b</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="n">b</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>而sort_index则根据单个级别中的值对数据进行排序。交换级别时，常常也会用到sort_index，这样最终结果就是按照指定顺序进行字母排序了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -563,12 +552,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>    <span class="n">a</span>        <span class="mi">0</span>   <span class="mi">1</span>        <span class="mi">2</span>
 </span></span><span class="line"><span class="cl">     <span class="n">b</span>        <span class="mi">6</span>   <span class="mi">7</span>        <span class="mi">8</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="n">a</span>        <span class="mi">3</span>   <span class="mi">4</span>        <span class="mi">5</span>
-</span></span><span class="line"><span class="cl">     <span class="n">b</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="n">b</span>        <span class="mi">9</span>  <span class="mi">10</span>       <span class="mi">11</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="812-根据级别汇总统计">8.1.2 根据级别汇总统计</h3>
 <p>许多对DataFrame和Series的描述和汇总统计都有一个level选项，它用于指定在某条轴上求和的级别。再以上面那个DataFrame为例，我们可以根据行或列上的级别来进行求和：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -603,13 +591,12 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mi">1</span>         <span class="mi">2</span>    <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">     <span class="mi">2</span>         <span class="mi">8</span>    <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>    <span class="mi">1</span>        <span class="mi">14</span>    <span class="mi">7</span>
-</span></span><span class="line"><span class="cl">     <span class="mi">2</span>        <span class="mi">20</span>   <span class="mi">10</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="mi">2</span>        <span class="mi">20</span>   <span class="mi">10</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这其实是利用了pandas的groupby功能，本书稍后将对其进行详细讲解。</p>
 <h3 id="813-使用dataframe的列进行索引">8.1.3 使用DataFrame的列进行索引</h3>
 <p>人们经常想要将DataFrame的一个或多个列当做行索引来用，或者可能希望将行索引变成DataFrame的列。以下面这个DataFrame为例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -642,11 +629,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="mi">3</span>  <span class="mi">4</span>  <span class="n">two</span>  <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mi">4</span>  <span class="mi">3</span>  <span class="n">two</span>  <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="mi">5</span>  <span class="mi">2</span>  <span class="n">two</span>  <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="mi">6</span>  <span class="mi">1</span>  <span class="n">two</span>  <span class="mi">3</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="mi">6</span>  <span class="mi">1</span>  <span class="n">two</span>  <span class="mi">3</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>DataFrame的set_index函数会将其一个或多个列转换为行索引，并创建一个新的DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -675,11 +661,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">two</span> <span class="mi">0</span>  <span class="mi">3</span>  <span class="mi">4</span>
 </span></span><span class="line"><span class="cl">    <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">3</span>
 </span></span><span class="line"><span class="cl">    <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">    <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>默认情况下，那些列会从DataFrame中移除，但也可以将其保留下来：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -704,11 +689,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">two</span> <span class="mi">0</span>  <span class="mi">3</span>  <span class="mi">4</span>  <span class="n">two</span>  <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">    <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">3</span>  <span class="n">two</span>  <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">    <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">2</span>  <span class="n">two</span>  <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">    <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span>  <span class="n">two</span>  <span class="mi">3</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span>  <span class="n">two</span>  <span class="mi">3</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>reset_index的功能跟set_index刚好相反，层次化索引的级别会被转移到列里面：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -731,8 +715,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="n">two</span>  <span class="mi">0</span>  <span class="mi">3</span>  <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">two</span>  <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">two</span>  <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="n">two</span>  <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="n">two</span>  <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="82-合并数据集">8.2 合并数据集</h2>
 <p>pandas对象中的数据可以通过一些方式进行合并：</p>
@@ -745,7 +728,7 @@
 <h3 id="821-数据库风格的dataframe合并">8.2.1 数据库风格的DataFrame合并</h3>
 <p>数据集的合并（merge）或连接（join）运算是通过一个或多个键将行连接起来的。这些运算是关系型数据库（基于SQL）的核心。pandas的merge函数是对数据应用这些算法的主要切入点。</p>
 <p>以一个简单的例子开始：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -794,11 +777,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">data2</span> <span class="n">key</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>      <span class="mi">0</span>   <span class="n">a</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>      <span class="mi">1</span>   <span class="n">b</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">2</span>   <span class="n">d</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">2</span>   <span class="n">d</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这是一种多对一的合并。df1中的数据有多个被标记为a和b的行，而df2中key列的每个值则仅对应一行。对这些对象调用merge即可得到：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -819,11 +801,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">6</span>   <span class="n">b</span>      <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>      <span class="mi">2</span>   <span class="n">a</span>      <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>      <span class="mi">4</span>   <span class="n">a</span>      <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>   <span class="n">a</span>      <span class="mi">0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>   <span class="n">a</span>      <span class="mi">0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意，我并没有指明要用哪个列进行连接。如果没有指定，merge就会将重叠列的列名当做键。不过，最好明确指定一下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -844,11 +825,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">6</span>   <span class="n">b</span>      <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>      <span class="mi">2</span>   <span class="n">a</span>      <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>      <span class="mi">4</span>   <span class="n">a</span>      <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>   <span class="n">a</span>      <span class="mi">0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>   <span class="n">a</span>      <span class="mi">0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果两个对象的列名不同，也可以分别进行指定：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -881,11 +861,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">6</span>    <span class="n">b</span>      <span class="mi">1</span>    <span class="n">b</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>      <span class="mi">2</span>    <span class="n">a</span>      <span class="mi">0</span>    <span class="n">a</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>      <span class="mi">4</span>    <span class="n">a</span>      <span class="mi">0</span>    <span class="n">a</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>    <span class="n">a</span>      <span class="mi">0</span>    <span class="n">a</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>      <span class="mi">5</span>    <span class="n">a</span>      <span class="mi">0</span>    <span class="n">a</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可能你已经注意到了，结果里面c和d以及与之相关的数据消失了。默认情况下，merge做的是“内连接”；结果中的键是交集。其他方式还有&quot;left&quot;、&ldquo;right&quot;以及&quot;outer&rdquo;。外连接求取的是键的并集，组合了左连接和右连接的效果：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -910,13 +889,12 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>    <span class="mf">4.0</span>   <span class="n">a</span>    <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>    <span class="mf">5.0</span>   <span class="n">a</span>    <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>    <span class="mf">3.0</span>   <span class="n">c</span>    <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="mi">7</span>    <span class="n">NaN</span>   <span class="n">d</span>    <span class="mf">2.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>    <span class="n">NaN</span>   <span class="n">d</span>    <span class="mf">2.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表8-1对这些选项进行了总结。</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235210681.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235210681.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235210681.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235210681.png 2x" sizes="auto" data-title="表8-1 不同的连接类型" data-alt="表8-1 不同的连接类型" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>多对多的合并有些不直观。看下面的例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -997,11 +975,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>       <span class="mi">4</span>   <span class="n">a</span>    <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>       <span class="mi">4</span>   <span class="n">a</span>    <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>       <span class="mi">5</span>   <span class="n">b</span>    <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">10</span>      <span class="mi">5</span>   <span class="n">b</span>    <span class="mf">3.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">10</span>      <span class="mi">5</span>   <span class="n">b</span>    <span class="mf">3.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>多对多连接产生的是行的笛卡尔积。由于左边的DataFrame有3个&quot;b&quot;行，右边的有2个，所以最终结果中就有6个&quot;b&quot;行。连接方式只影响出现在结果中的不同的键的值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1030,11 +1007,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>      <span class="mi">2</span>   <span class="n">a</span>      <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>      <span class="mi">2</span>   <span class="n">a</span>      <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>      <span class="mi">4</span>   <span class="n">a</span>      <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="mi">4</span>   <span class="n">a</span>      <span class="mi">2</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="mi">4</span>   <span class="n">a</span>      <span class="mi">2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要根据多个键进行合并，传入一个由列名组成的列表即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1069,15 +1045,14 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">foo</span>  <span class="n">one</span>   <span class="mf">1.0</span>   <span class="mf">5.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="n">foo</span>  <span class="n">two</span>   <span class="mf">2.0</span>   <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="n">bar</span>  <span class="n">one</span>   <span class="mf">3.0</span>   <span class="mf">6.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">bar</span>  <span class="n">two</span>   <span class="n">NaN</span>   <span class="mf">7.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">bar</span>  <span class="n">two</span>   <span class="n">NaN</span>   <span class="mf">7.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>结果中会出现哪些键组合取决于所选的合并方式，你可以这样来理解：多个键形成一系列元组，并将其当做单个连接键（当然，实际上并不是这么回事）。</p>
 <blockquote>
 <p>注意：在进行列－列连接时，DataFrame对象中的索引会被丢弃。</p>
 </blockquote>
 <p>对于合并运算需要考虑的最后一个问题是对重复列名的处理。虽然你可以手工处理列名重叠的问题（查看前面介绍的重命名轴标签），但merge有一个更实用的suffixes选项，用于指定附加到左右两个DataFrame对象的重叠列名上的字符串：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1118,8 +1093,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="n">foo</span>       <span class="n">two</span>     <span class="mi">2</span>        <span class="n">one</span>     <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="n">foo</span>       <span class="n">two</span>     <span class="mi">2</span>        <span class="n">one</span>     <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">bar</span>       <span class="n">one</span>     <span class="mi">3</span>        <span class="n">one</span>     <span class="mi">6</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">bar</span>       <span class="n">one</span>     <span class="mi">3</span>        <span class="n">two</span>     <span class="mi">7</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">bar</span>       <span class="n">one</span>     <span class="mi">3</span>        <span class="n">two</span>     <span class="mi">7</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>merge的参数请参见表8-2。使用DataFrame的行索引合并是下一节的主题。</p>
 <p>表8-2 merge函数的参数</p>
@@ -1128,7 +1102,7 @@
 <p>indicator 添加特殊的列_merge，它可以指明每个行的来源，它的值有left_only、right_only或both，根据每行的合并数据的来源。</p>
 <h3 id="822-索引上的合并">8.2.2 索引上的合并</h3>
 <p>有时候，DataFrame中的连接键位于其索引中。在这种情况下，你可以传入left_index=True或right_index=True（或两个都传）以说明索引应该被用作连接键：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1191,11 +1165,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">a</span>      <span class="mi">2</span>        <span class="mf">3.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="n">a</span>      <span class="mi">3</span>        <span class="mf">3.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="n">b</span>      <span class="mi">1</span>        <span class="mf">7.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">b</span>      <span class="mi">4</span>        <span class="mf">7.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">b</span>      <span class="mi">4</span>        <span class="mf">7.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于默认的merge方法是求取连接键的交集，因此你可以通过外连接的方式得到它们的并集：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1216,11 +1189,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="n">a</span>      <span class="mi">3</span>        <span class="mf">3.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="n">b</span>      <span class="mi">1</span>        <span class="mf">7.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">b</span>      <span class="mi">4</span>        <span class="mf">7.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">c</span>      <span class="mi">5</span>        <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">c</span>      <span class="mi">5</span>        <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于层次化索引的数据，事情就有点复杂了，因为索引的合并默认是多键合并：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1281,11 +1253,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Ohio</span>   <span class="mi">2000</span>       <span class="mi">4</span>       <span class="mi">5</span>
 </span></span><span class="line"><span class="cl">       <span class="mi">2000</span>       <span class="mi">6</span>       <span class="mi">7</span>
 </span></span><span class="line"><span class="cl">       <span class="mi">2001</span>       <span class="mi">8</span>       <span class="mi">9</span>
-</span></span><span class="line"><span class="cl">       <span class="mi">2002</span>      <span class="mi">10</span>      <span class="mi">11</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="mi">2002</span>      <span class="mi">10</span>      <span class="mi">11</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种情况下，你必须以列表的形式指明用作合并键的多个列（注意用how=&lsquo;outer&rsquo;对重复索引值的处理）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1328,11 +1299,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mf">2.0</span>    <span class="n">Ohio</span>  <span class="mi">2002</span>    <span class="mf">10.0</span>    <span class="mf">11.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mf">3.0</span>  <span class="n">Nevada</span>  <span class="mi">2001</span>     <span class="mf">0.0</span>     <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mf">4.0</span>  <span class="n">Nevada</span>  <span class="mi">2002</span>     <span class="n">NaN</span>     <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">NaN</span>  <span class="n">Nevada</span>  <span class="mi">2000</span>     <span class="mf">2.0</span>     <span class="mf">3.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">NaN</span>  <span class="n">Nevada</span>  <span class="mi">2000</span>     <span class="mf">2.0</span>     <span class="mf">3.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>同时使用合并双方的索引也没问题：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1397,11 +1367,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">b</span>   <span class="n">NaN</span>     <span class="n">NaN</span>       <span class="mf">7.0</span>      <span class="mf">8.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>   <span class="mf">3.0</span>     <span class="mf">4.0</span>       <span class="mf">9.0</span>     <span class="mf">10.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>   <span class="n">NaN</span>     <span class="n">NaN</span>      <span class="mf">11.0</span>     <span class="mf">12.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">e</span>   <span class="mf">5.0</span>     <span class="mf">6.0</span>      <span class="mf">13.0</span>     <span class="mf">14.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">e</span>   <span class="mf">5.0</span>     <span class="mf">6.0</span>      <span class="mf">13.0</span>     <span class="mf">14.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>DataFrame还有一个便捷的join实例方法，它能更为方便地实现按索引合并。它还可用于合并多个带有相同或相似索引的DataFrame对象，但要求没有重叠的列。在上面那个例子中，我们可以编写：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1420,11 +1389,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">b</span>   <span class="n">NaN</span>     <span class="n">NaN</span>       <span class="mf">7.0</span>      <span class="mf">8.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>   <span class="mf">3.0</span>     <span class="mf">4.0</span>       <span class="mf">9.0</span>     <span class="mf">10.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>   <span class="n">NaN</span>     <span class="n">NaN</span>      <span class="mf">11.0</span>     <span class="mf">12.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">e</span>   <span class="mf">5.0</span>     <span class="mf">6.0</span>      <span class="mf">13.0</span>     <span class="mf">14.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">e</span>   <span class="mf">5.0</span>     <span class="mf">6.0</span>      <span class="mf">13.0</span>     <span class="mf">14.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为一些历史版本的遗留原因，DataFrame的join方法默认使用的是左连接，保留左边表的行索引。它还支持在调用的DataFrame的列上，连接传递的DataFrame索引：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1445,11 +1413,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">a</span>      <span class="mi">2</span>        <span class="mf">3.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="n">a</span>      <span class="mi">3</span>        <span class="mf">3.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">b</span>      <span class="mi">4</span>        <span class="mf">7.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">c</span>      <span class="mi">5</span>        <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">c</span>      <span class="mi">5</span>        <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后，对于简单的索引合并，你还可以向join传入一组DataFrame，下一节会介绍更为通用的concat函数，也能实现此功能：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1510,12 +1477,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">c</span>   <span class="mf">3.0</span>     <span class="mf">4.0</span>       <span class="mf">9.0</span>     <span class="mf">10.0</span>       <span class="mf">9.0</span>    <span class="mf">10.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span>   <span class="n">NaN</span>     <span class="n">NaN</span>      <span class="mf">11.0</span>     <span class="mf">12.0</span>       <span class="n">NaN</span>     <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">e</span>   <span class="mf">5.0</span>     <span class="mf">6.0</span>      <span class="mf">13.0</span>     <span class="mf">14.0</span>      <span class="mf">11.0</span>    <span class="mf">12.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">f</span>   <span class="n">NaN</span>     <span class="n">NaN</span>       <span class="n">NaN</span>      <span class="n">NaN</span>      <span class="mf">16.0</span>    <span class="mf">17.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">f</span>   <span class="n">NaN</span>     <span class="n">NaN</span>       <span class="n">NaN</span>      <span class="n">NaN</span>      <span class="mf">16.0</span>    <span class="mf">17.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="823-轴向连接">8.2.3 轴向连接</h3>
 <p>另一种数据合并运算也被称作连接（concatenation）、绑定（binding）或堆叠（stacking）。NumPy的concatenation函数可以用NumPy数组来做：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1544,8 +1510,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">81</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="n">array</span><span class="p">([[</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>  <span class="mi">7</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>  <span class="mi">7</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于pandas对象（如Series和DataFrame），带有标签的轴使你能够进一步推广数组的连接运算。具体点说，你还需要考虑以下这些东西：</p>
 <ul>
@@ -1554,7 +1519,7 @@
 <li>连接轴中保存的数据是否需要保留？许多情况下，DataFrame默认的整数标签最好在连接时删掉。</li>
 </ul>
 <p>pandas的concat函数提供了一种能够解决这些问题的可靠方式。我将给出一些例子来讲解其使用方式。假设有三个没有重叠索引的Series：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1567,11 +1532,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">83</span><span class="p">]:</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">84</span><span class="p">]:</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">84</span><span class="p">]:</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对这些对象调用concat可以将值和索引粘合在一起：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1594,11 +1558,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">e</span>    <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span>    <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="n">g</span>    <span class="mi">6</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>默认情况下，concat是在axis=0上工作的，最终产生一个新的Series。如果传入axis=1，则结果就会变成一个DataFrame（axis=1是列）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1621,11 +1584,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">d</span>  <span class="n">NaN</span>  <span class="mf">3.0</span>  <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">e</span>  <span class="n">NaN</span>  <span class="mf">4.0</span>  <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">5.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">g</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">6.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">g</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">6.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种情况下，另外的轴上没有重叠，从索引的有序并集（外连接）上就可以看出来。传入join=&lsquo;inner&rsquo;即可得到它们的交集：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1674,12 +1636,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">90</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl">   <span class="mi">0</span>  <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span>  <span class="mi">0</span>  <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="n">b</span>  <span class="mi">1</span>  <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">b</span>  <span class="mi">1</span>  <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这个例子中，f和g标签消失了，是因为使用的是join=&lsquo;inner&rsquo;选项。</p>
 <p>你可以通过join_axes指定要在其它轴上使用的索引：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1696,11 +1657,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>  <span class="mf">0.0</span>  <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>  <span class="n">NaN</span>  <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>  <span class="mf">1.0</span>  <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">e</span>  <span class="n">NaN</span>  <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">e</span>  <span class="n">NaN</span>  <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>不过有个问题，参与连接的片段在结果中区分不开。假设你想要在连接轴上创建一个层次化索引。使用keys参数即可达到这个目的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1739,11 +1699,10 @@
 </span></span><span class="line"><span class="cl">         <span class="n">a</span>    <span class="n">b</span>    <span class="n">f</span>    <span class="n">g</span>
 </span></span><span class="line"><span class="cl"><span class="n">one</span>    <span class="mf">0.0</span>  <span class="mf">1.0</span>  <span class="n">NaN</span>  <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">two</span>    <span class="mf">0.0</span>  <span class="mf">1.0</span>  <span class="n">NaN</span>  <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">three</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">5.0</span>  <span class="mf">6.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">three</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">5.0</span>  <span class="mf">6.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果沿着axis=1对Series进行合并，则keys就会成为DataFrame的列头：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1766,11 +1725,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">d</span>  <span class="n">NaN</span>  <span class="mf">3.0</span>    <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">e</span>  <span class="n">NaN</span>  <span class="mf">4.0</span>    <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span>  <span class="n">NaN</span>  <span class="n">NaN</span>    <span class="mf">5.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">g</span>  <span class="n">NaN</span>  <span class="n">NaN</span>    <span class="mf">6.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">g</span>  <span class="n">NaN</span>  <span class="n">NaN</span>    <span class="mf">6.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>同样的逻辑也适用于DataFrame对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1825,11 +1783,10 @@
 </span></span><span class="line"><span class="cl">     <span class="n">one</span> <span class="n">two</span>  <span class="n">three</span> <span class="n">four</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span>      <span class="mi">0</span>   <span class="mi">1</span>    <span class="mf">5.0</span>  <span class="mf">6.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>      <span class="mi">2</span>   <span class="mi">3</span>    <span class="n">NaN</span>  <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">c</span>      <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">c</span>      <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果传入的不是列表而是一个字典，则字典的键就会被当做keys选项的值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1848,11 +1805,10 @@
 </span></span><span class="line"><span class="cl">     <span class="n">one</span> <span class="n">two</span>  <span class="n">three</span> <span class="n">four</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span>      <span class="mi">0</span>   <span class="mi">1</span>    <span class="mf">5.0</span>  <span class="mf">6.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>      <span class="mi">2</span>   <span class="mi">3</span>    <span class="n">NaN</span>  <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">c</span>      <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">c</span>      <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>此外还有两个用于管理层次化索引创建方式的参数（参见表8-3）。举个例子，我们可以用names参数命名创建的轴级别：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1871,11 +1827,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">lower</span>    <span class="n">one</span> <span class="n">two</span>  <span class="n">three</span> <span class="n">four</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span>          <span class="mi">0</span>   <span class="mi">1</span>    <span class="mf">5.0</span>  <span class="mf">6.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>          <span class="mi">2</span>   <span class="mi">3</span>    <span class="n">NaN</span>  <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">c</span>          <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">c</span>          <span class="mi">4</span>   <span class="mi">5</span>    <span class="mf">7.0</span>  <span class="mf">8.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后一个关于DataFrame的问题是，DataFrame的行索引不包含任何相关数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1910,11 +1865,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">106</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl">          <span class="n">b</span>         <span class="n">d</span>         <span class="n">a</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mf">0.476985</span>  <span class="mf">3.248944</span> <span class="o">-</span><span class="mf">1.021228</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="o">-</span><span class="mf">0.577087</span>  <span class="mf">0.124121</span>  <span class="mf">0.302614</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="o">-</span><span class="mf">0.577087</span>  <span class="mf">0.124121</span>  <span class="mf">0.302614</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这种情况下，传入ignore_index=True即可：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1933,13 +1887,12 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">0.228913</span>  <span class="mf">1.352917</span>  <span class="mf">0.886429</span> <span class="o">-</span><span class="mf">2.001637</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="o">-</span><span class="mf">0.371843</span>  <span class="mf">1.669025</span> <span class="o">-</span><span class="mf">0.438570</span> <span class="o">-</span><span class="mf">0.539741</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="o">-</span><span class="mf">1.021228</span>  <span class="mf">0.476985</span>       <span class="n">NaN</span>  <span class="mf">3.248944</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">0.302614</span> <span class="o">-</span><span class="mf">0.577087</span>       <span class="n">NaN</span>  <span class="mf">0.124121</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">0.302614</span> <span class="o">-</span><span class="mf">0.577087</span>       <span class="n">NaN</span>  <span class="mf">0.124121</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235319409.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235319409.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235319409.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201026235319409.png 2x" sizes="auto" data-title="表8-3 concat函数的参数" data-alt="表8-3 concat函数的参数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="824-合并重叠数据">8.2.4 合并重叠数据</h3>
 <p>还有一种数据组合问题不能用简单的合并（merge）或连接（concatenation）运算来处理。比如说，你可能有索引全部或部分重叠的两个数据集。举个有启发性的例子，我们使用NumPy的where函数，它表示一种等价于面向数组的if-else：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2002,11 +1955,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.</span> <span class="p">,</span>  <span class="mf">2.5</span><span class="p">,</span>  <span class="mf">2.</span> <span class="p">,</span>  <span class="mf">3.5</span><span class="p">,</span>  <span class="mf">4.5</span><span class="p">,</span>  <span class="n">nan</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.</span> <span class="p">,</span>  <span class="mf">2.5</span><span class="p">,</span>  <span class="mf">2.</span> <span class="p">,</span>  <span class="mf">3.5</span><span class="p">,</span>  <span class="mf">4.5</span><span class="p">,</span>  <span class="n">nan</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Series有一个combine_first方法，实现的也是一样的功能，还带有pandas的数据对齐：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2027,11 +1979,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">d</span>    <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">e</span>    <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">f</span>    <span class="mf">0.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于DataFrame，combine_first自然也会在列上做同样的事情，因此你可以将其看做：用传递对象中的数据为调用对象的缺失数据“打补丁”：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2098,8 +2049,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">4.0</span>  <span class="mf">2.0</span>   <span class="mf">6.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mf">5.0</span>  <span class="mf">4.0</span>  <span class="mf">10.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="mf">3.0</span>  <span class="mf">6.0</span>  <span class="mf">14.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">7.0</span>  <span class="mf">8.0</span>   <span class="n">NaN</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">7.0</span>  <span class="mf">8.0</span>   <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="83-重塑和轴向旋转">8.3 重塑和轴向旋转</h2>
 <p>有许多用于重新排列表格型数据的基础运算。这些函数也称作重塑（reshape）或轴向旋转（pivot）运算。</p>
@@ -2110,7 +2060,7 @@
 <li>unstack：将数据的行“旋转”为列。</li>
 </ul>
 <p>我将通过一系列的范例来讲解这些操作。接下来看一个简单的DataFrame，其中的行列索引均为字符串数组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2135,11 +2085,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">number</span>    <span class="n">one</span>  <span class="n">two</span>  <span class="n">three</span>
 </span></span><span class="line"><span class="cl"><span class="n">state</span>                    
 </span></span><span class="line"><span class="cl"><span class="n">Ohio</span>        <span class="mi">0</span>    <span class="mi">1</span>      <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="n">Colorado</span>    <span class="mi">3</span>    <span class="mi">4</span>      <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Colorado</span>    <span class="mi">3</span>    <span class="mi">4</span>      <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对该数据使用stack方法即可将列转换为行，得到一个Series：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2166,11 +2115,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Colorado</span>  <span class="n">one</span>       <span class="mi">3</span>
 </span></span><span class="line"><span class="cl">          <span class="n">two</span>       <span class="mi">4</span>
 </span></span><span class="line"><span class="cl">          <span class="n">three</span>     <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于一个层次化索引的Series，你可以用unstack将其重排为一个DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2185,11 +2133,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">number</span>    <span class="n">one</span>  <span class="n">two</span>  <span class="n">three</span>
 </span></span><span class="line"><span class="cl"><span class="n">state</span>                    
 </span></span><span class="line"><span class="cl"><span class="n">Ohio</span>        <span class="mi">0</span>    <span class="mi">1</span>      <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="n">Colorado</span>    <span class="mi">3</span>    <span class="mi">4</span>      <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Colorado</span>    <span class="mi">3</span>    <span class="mi">4</span>      <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>默认情况下，unstack操作的是最内层（stack也是如此）。传入分层级别的编号或名称即可对其它级别进行unstack操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2222,11 +2169,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">number</span>                
 </span></span><span class="line"><span class="cl"><span class="n">one</span>        <span class="mi">0</span>         <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="n">two</span>        <span class="mi">1</span>         <span class="mi">4</span>
-</span></span><span class="line"><span class="cl"><span class="n">three</span>      <span class="mi">2</span>         <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">three</span>      <span class="mi">2</span>         <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果不是所有的级别值都能在各分组中找到的话，则unstack操作可能会引入缺失数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2273,11 +2219,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">131</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl">       <span class="n">a</span>    <span class="n">b</span>    <span class="n">c</span>    <span class="n">d</span>    <span class="n">e</span>
 </span></span><span class="line"><span class="cl"><span class="n">one</span>  <span class="mf">0.0</span>  <span class="mf">1.0</span>  <span class="mf">2.0</span>  <span class="mf">3.0</span>  <span class="n">NaN</span>
-</span></span><span class="line"><span class="cl"><span class="n">two</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">4.0</span>  <span class="mf">5.0</span>  <span class="mf">6.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">two</span>  <span class="n">NaN</span>  <span class="n">NaN</span>  <span class="mf">4.0</span>  <span class="mf">5.0</span>  <span class="mf">6.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>stack默认会滤除缺失数据，因此该运算是可逆的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2340,11 +2285,10 @@
 </span></span><span class="line"><span class="cl">     <span class="n">c</span>    <span class="mf">4.0</span>
 </span></span><span class="line"><span class="cl">     <span class="n">d</span>    <span class="mf">5.0</span>
 </span></span><span class="line"><span class="cl">     <span class="n">e</span>    <span class="mf">6.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在对DataFrame进行unstack操作时，作为旋转轴的级别将会成为结果中的最低级别：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2391,11 +2335,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">number</span>                             
 </span></span><span class="line"><span class="cl"><span class="n">one</span>       <span class="mi">0</span>        <span class="mi">3</span>     <span class="mi">5</span>        <span class="mi">8</span>
 </span></span><span class="line"><span class="cl"><span class="n">two</span>       <span class="mi">1</span>        <span class="mi">4</span>     <span class="mi">6</span>        <span class="mi">9</span>
-</span></span><span class="line"><span class="cl"><span class="n">three</span>     <span class="mi">2</span>        <span class="mi">5</span>     <span class="mi">7</span>       <span class="mi">10</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">three</span>     <span class="mi">2</span>        <span class="mi">5</span>     <span class="mi">7</span>       <span class="mi">10</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当调用stack，我们可以指明轴的名字：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2418,12 +2361,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">two</span>    <span class="n">left</span>          <span class="mi">4</span>     <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">       <span class="n">right</span>         <span class="mi">9</span>     <span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="n">three</span>  <span class="n">left</span>          <span class="mi">5</span>     <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">       <span class="n">right</span>        <span class="mi">10</span>     <span class="mi">7</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="n">right</span>        <span class="mi">10</span>     <span class="mi">7</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="832-将长格式旋转为宽格式">8.3.2 将“长格式”旋转为“宽格式”</h3>
 <p>多个时间序列数据通常是以所谓的“长格式”（long）或“堆叠格式”（stacked）存储在数据库和CSV中的。我们先加载一些示例数据，做一些时间序列规整和数据清洗：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2480,12 +2422,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">144</span><span class="p">]:</span> <span class="n">data</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">periods</span><span class="o">.</span><span class="n">to_timestamp</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">145</span><span class="p">]:</span> <span class="n">ldata</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">})</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">145</span><span class="p">]:</span> <span class="n">ldata</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">})</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这就是多个时间序列（或者其它带有两个或多个键的可观察数据，这里，我们的键是date和item）的长格式。表中的每行代表一次观察。</p>
 <p>关系型数据库（如MySQL）中的数据经常都是这样存储的，因为固定架构（即列名和数据类型）有一个好处：随着表中数据的添加，item列中的值的种类能够增加。在前面的例子中，date和item通常就是主键（用关系型数据库的说法），不仅提供了关系完整性，而且提供了更为简单的查询支持。有的情况下，使用这样的数据会很麻烦，你可能会更喜欢DataFrame，不同的item值分别形成一列，date列中的时间戳则用作索引。DataFrame的pivot方法完全可以实现这个转换：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-60"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2544,11 +2485,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">0.94</span>  <span class="mf">12925.410</span>    <span class="mf">8.1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">3.37</span>  <span class="mf">12901.504</span>    <span class="mf">9.2</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">3.56</span>  <span class="mf">12990.341</span>    <span class="mf">9.6</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">203</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">columns</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">203</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>前两个传递的值分别用作行和列索引，最后一个可选值则是用于填充DataFrame的数据列。假设有两个需要同时重塑的数据列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-61"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2581,11 +2521,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span> <span class="mi">1959</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>  <span class="n">realgdp</span>  <span class="mf">2775.488</span> <span class="o">-</span><span class="mf">1.860761</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span> <span class="mi">1959</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>     <span class="n">infl</span>     <span class="mf">2.740</span> <span class="o">-</span><span class="mf">0.860757</span>
 </span></span><span class="line"><span class="cl"><span class="mi">8</span> <span class="mi">1959</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>    <span class="n">unemp</span>     <span class="mf">5.300</span>  <span class="mf">0.560145</span>
-</span></span><span class="line"><span class="cl"><span class="mi">9</span> <span class="mi">1959</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>  <span class="n">realgdp</span>  <span class="mf">2785.204</span> <span class="o">-</span><span class="mf">1.265934</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">9</span> <span class="mi">1959</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>  <span class="n">realgdp</span>  <span class="mf">2785.204</span> <span class="o">-</span><span class="mf">1.265934</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果忽略最后一个参数，得到的DataFrame就会带有层次化的列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2632,11 +2571,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1959</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">2.34</span>  <span class="mf">2778.801</span>    <span class="mf">5.1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1959</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">2.74</span>  <span class="mf">2775.488</span>    <span class="mf">5.3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1959</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">0.27</span>  <span class="mf">2785.204</span>    <span class="mf">5.6</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">2.31</span>  <span class="mf">2847.699</span>    <span class="mf">5.2</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">2.31</span>  <span class="mf">2847.699</span>    <span class="mf">5.2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意，pivot其实就是用set_index创建层次化索引，再用unstack重塑：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2667,12 +2605,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1959</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">0.27</span>  <span class="mf">2785.204</span>   <span class="mf">5.6</span>  <span class="mf">0.119827</span> <span class="o">-</span><span class="mf">1.265934</span> <span class="o">-</span><span class="mf">1.063512</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>  <span class="mf">2.31</span>  <span class="mf">2847.699</span>   <span class="mf">5.2</span> <span class="o">-</span><span class="mf">2.359419</span>  <span class="mf">0.332883</span> <span class="o">-</span><span class="mf">0.199543</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">0.14</span>  <span class="mf">2834.390</span>   <span class="mf">5.2</span> <span class="o">-</span><span class="mf">0.970736</span> <span class="o">-</span><span class="mf">1.541996</span> <span class="o">-</span><span class="mf">1.307030</span>
-</span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">2.70</span>  <span class="mf">2839.022</span>   <span class="mf">5.6</span>  <span class="mf">0.377984</span>  <span class="mf">0.286350</span> <span class="o">-</span><span class="mf">0.753887</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">1960</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">2.70</span>  <span class="mf">2839.022</span>   <span class="mf">5.6</span>  <span class="mf">0.377984</span>  <span class="mf">0.286350</span> <span class="o">-</span><span class="mf">0.753887</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="833-将宽格式旋转为长格式">8.3.3 将“宽格式”旋转为“长格式”</h3>
 <p>旋转DataFrame的逆运算是pandas.melt。它不是将一列转换到多个新的DataFrame，而是合并多个列成为一个，产生一个比输入长的DataFrame。看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-64"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2697,11 +2634,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">A</span>  <span class="n">B</span>  <span class="n">C</span>  <span class="n">key</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">7</span>  <span class="n">foo</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">8</span>  <span class="n">bar</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">9</span>  <span class="n">baz</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">9</span>  <span class="n">baz</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>key列可能是分组指标，其它的列是数据值。当使用pandas.melt，我们必须指明哪些列是分组指标。下面使用key作为唯一的分组指标：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-65"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2732,11 +2668,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">baz</span>        <span class="n">B</span>      <span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="n">foo</span>        <span class="n">C</span>      <span class="mi">7</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>  <span class="n">bar</span>        <span class="n">C</span>      <span class="mi">8</span>
-</span></span><span class="line"><span class="cl"><span class="mi">8</span>  <span class="n">baz</span>        <span class="n">C</span>      <span class="mi">9</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">8</span>  <span class="n">baz</span>        <span class="n">C</span>      <span class="mi">9</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用pivot，可以重塑回原来的样子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2757,11 +2692,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">key</span>              
 </span></span><span class="line"><span class="cl"><span class="n">bar</span>       <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">8</span>
 </span></span><span class="line"><span class="cl"><span class="n">baz</span>       <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">9</span>
-</span></span><span class="line"><span class="cl"><span class="n">foo</span>       <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">7</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">foo</span>       <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">7</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为pivot的结果从列创建了一个索引，用作行标签，我们可以使用reset_index将数据移回列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-67"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2776,11 +2710,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">variable</span>  <span class="n">key</span>  <span class="n">A</span>  <span class="n">B</span>  <span class="n">C</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>         <span class="n">bar</span>  <span class="mi">2</span>  <span class="mi">5</span>  <span class="mi">8</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>         <span class="n">baz</span>  <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">9</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span>         <span class="n">foo</span>  <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">7</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>         <span class="n">foo</span>  <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">7</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你还可以指定列的子集，作为值的列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -2801,11 +2734,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="n">baz</span>        <span class="n">A</span>      <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="n">foo</span>        <span class="n">B</span>      <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="n">bar</span>        <span class="n">B</span>      <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">baz</span>        <span class="n">B</span>      <span class="mi">6</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="n">baz</span>        <span class="n">B</span>      <span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pandas.melt也可以不用分组指标：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-69"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2858,8 +2790,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>        <span class="n">A</span>     <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>        <span class="n">B</span>     <span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>        <span class="n">B</span>     <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="mi">8</span>        <span class="n">B</span>     <span class="mi">6</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">8</span>        <span class="n">B</span>     <span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="84-总结">8.4 总结</h2>
 <p>现在你已经掌握了pandas数据导入、清洗、重塑，我们可以进一步学习<code>matplotlib</code>数据可视化。我们在稍后会回到pandas，学习更高级的分析。</p>

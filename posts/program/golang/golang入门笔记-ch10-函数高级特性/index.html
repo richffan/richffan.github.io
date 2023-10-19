@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2338 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="2338 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -211,16 +211,15 @@
 </nav></div>
       </div><div class="content" id="content"><h3 id="传递变长参数">传递变长参数</h3>
 <p>如果函数最后一个参数采用 <code>...type</code> 的形式，那么这个函数就可以处理一个变长参数（长度可以为 0），这样的函数被称为变参函数，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">myFunc</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">int</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">myFunc</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">int</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果参数存储在切片 <code>arr</code> 中，可以用 <code>arr...</code> 来传递参数，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -277,22 +276,20 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">min</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">The minimum is: <span class="m">0</span>
-</span></span><span class="line"><span class="cl">The minimum in the arr is: <span class="m">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">The minimum in the arr is: <span class="m">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果一个变长参数的类型未知，我们可以使用空接口 <code>interface{}</code> 来接收，然后再对参数的类型进行判断：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -323,13 +320,12 @@
 </span></span><span class="line"><span class="cl">				<span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="defer-和追踪">defer 和追踪</h3>
 <p><code>defer</code> 函数允许我们在函数返回之前（<code>return</code> 语句执行之后）能执行某些语句或函数，有点类似于 Java 的 <code>finally</code> 语句，一般用于释放一些资源，比如关闭文件等。</p>
 <h4 id="多个-defer-语句的执行顺序">多个 defer 语句的执行顺序</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -358,11 +354,10 @@
 </span></span><span class="line"><span class="cl">    <span class="c1">// 最后一个放入, 位于栈顶, 最先调用
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">defer</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;defer end&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -375,8 +370,7 @@
 </span></span><span class="line"><span class="cl">defer end
 </span></span><span class="line"><span class="cl"><span class="m">3</span>
 </span></span><span class="line"><span class="cl"><span class="m">2</span>
-</span></span><span class="line"><span class="cl"><span class="m">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="m">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><em><strong>结果分析</strong></em>：</p>
 <ul>
@@ -389,7 +383,7 @@
 <blockquote>
 <p>由于 map 默认不是并发安全的，所以需要一个 <code>sync.Mutex</code> 互斥量来保护 map 的访问。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -426,11 +420,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">valueByKeyGuard</span><span class="p">.</span><span class="nf">Unlock</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 返回值
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">v</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以使用 <code>defer</code> 对上述代码进行优化：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -459,12 +452,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">defer</span> <span class="nx">valueByKeyGuard</span><span class="p">.</span><span class="nf">Unlock</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">valueByKey</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="使用-defer-释放文件句柄">使用 defer 释放文件句柄</h5>
 <p>文件操作需要经过打开文件、获取和操作资源、关闭资源几个过程。若在操作完毕后不关闭资源，进程将一直无法释放文件资源。以下的例子，会实现打开文件、获取文件和关闭文件等操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -515,11 +507,10 @@
 </span></span><span class="line"><span class="cl">   
 </span></span><span class="line"><span class="cl">    <span class="c1">// 返回文件大小
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">size</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以用 <code>defer</code> 对代码进行简化：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -562,12 +553,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// defer 机制触发, 调用 Close 关闭文件
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">size</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="函数作为参数">函数作为参数</h3>
 <p>函数可以作为参数进行传递，被其他函数调用，我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -604,30 +594,27 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">callback</span><span class="p">(</span><span class="nx">y</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">f</span> <span class="kd">func</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">))</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">f</span><span class="p">(</span><span class="nx">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">// this becomes Add(1, 2)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>输出结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">The sum of <span class="m">1</span> and <span class="m">2</span> is: <span class="m">3</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">The sum of <span class="m">1</span> and <span class="m">2</span> is: <span class="m">3</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="递归函数">递归函数</h3>
 <p>一个函数在其函数体内调用自身就是递归，最经典的例子就是斐波那列数列（每个数均为前两个数之和）：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, …
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, …</span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们用 Go 语言来实现该算法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -662,11 +649,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;fibonacci(%d) is: %d\n&#34;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -689,12 +675,11 @@
 </span></span><span class="line"><span class="cl">fibonacci<span class="o">(</span>7<span class="o">)</span> is: <span class="m">13</span>
 </span></span><span class="line"><span class="cl">fibonacci<span class="o">(</span>8<span class="o">)</span> is: <span class="m">21</span>
 </span></span><span class="line"><span class="cl">fibonacci<span class="o">(</span>9<span class="o">)</span> is: <span class="m">34</span>
-</span></span><span class="line"><span class="cl">fibonacci<span class="o">(</span>10<span class="o">)</span> is: <span class="m">55</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">fibonacci<span class="o">(</span>10<span class="o">)</span> is: <span class="m">55</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="闭包">闭包</h3>
 <p>闭包其实就是匿名函数。匿名函数，顾名思义就是没有名称的函数，通常定义格式为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -703,11 +688,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)(</span><span class="nx">返回参数列表</span><span class="p">){</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">函数体</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们来看一个例子，如何构建一个匿名函数并调用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -746,11 +730,10 @@
 </span></span><span class="line"><span class="cl">        <span class="nf">g</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="c1">// 调用匿名函数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34; - g is of type %T and has value %v\n&#34;</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">g</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -761,24 +744,22 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">0</span>  - g is of <span class="nb">type</span> func<span class="o">(</span>int<span class="o">)</span> and has value 0x1056b20
 </span></span><span class="line"><span class="cl"><span class="m">1</span>  - g is of <span class="nb">type</span> func<span class="o">(</span>int<span class="o">)</span> and has value 0x1056b20
 </span></span><span class="line"><span class="cl"><span class="m">2</span>  - g is of <span class="nb">type</span> func<span class="o">(</span>int<span class="o">)</span> and has value 0x1056b20
-</span></span><span class="line"><span class="cl"><span class="m">3</span>  - g is of <span class="nb">type</span> func<span class="o">(</span>int<span class="o">)</span> and has value 0x1056b20
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="m">3</span>  - g is of <span class="nb">type</span> func<span class="o">(</span>int<span class="o">)</span> and has value 0x1056b20</span></span></code></pre></td></tr></table>
 </div>
 </div><p>通过以上示例我们可以了解到 <code>g</code> 的类型是 <code>func(int)</code>，它的值是内存地址。</p>
 <p>现在有两个函数 <code>Add2()</code> 和 <code>Adder()</code>，它们都返回类型为 <code>func(b int) int</code> 的函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Add2</span><span class="p">()</span> <span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Adder</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">Adder</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>Add2()</code> 不接受参数，而 <code>Adder</code> 接收一个 <code>int</code> 类型的参数。</p>
 <p>我们通过闭包来调用这两个函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -829,22 +810,20 @@
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kd">func</span><span class="p">(</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Call Add2 <span class="k">for</span> <span class="m">3</span> gives: <span class="m">5</span>
-</span></span><span class="line"><span class="cl">The result is: <span class="m">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">The result is: <span class="m">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们再来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -883,21 +862,19 @@
 </span></span><span class="line"><span class="cl">        <span class="nx">x</span> <span class="o">+=</span> <span class="nx">delta</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">x</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">1</span> - <span class="m">21</span> - <span class="m">321</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">1</span> - <span class="m">21</span> - <span class="m">321</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们发现在多次调用 <code>f()</code> 函数时，该函数内部的变量 <code>x</code> 的值被保留了，<code>x</code> 的初始值为 <code>0</code>，第一次调用：<code>0 + 1</code>，第二次调用 <code>1 + 20</code>，第三次 <code>21 + 300</code>。可以得出结论：闭包函数会保存并积累其中变量的值（不管外部函数是否退出）。</p>
 <p>将上述的例子稍加改动：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -948,19 +925,17 @@
 </span></span><span class="line"><span class="cl">        <span class="nx">x</span> <span class="o">+=</span> <span class="nx">delta</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">x</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">1</span> - <span class="m">21</span> - <span class="m">321</span>
-</span></span><span class="line"><span class="cl"><span class="m">1</span> - <span class="m">11</span> - <span class="m">111</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="m">1</span> - <span class="m">11</span> - <span class="m">111</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们发现创建的两个变量 <code>f1</code> 和 <code>f2</code> 是相互<strong>隔离</strong>的，调用 <code>f1</code> 函数只会在 <code>f1</code> 自身环境下保留变量，<code>f2</code> 也是同理，可见 <code>f1</code> 和 <code>f2</code> 引用了两个不同环境，互不干扰。</p>
 <p><em><strong>注意</strong></em>：</p>

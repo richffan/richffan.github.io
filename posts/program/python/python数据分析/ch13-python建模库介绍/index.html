@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7190 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="leancloud_visitors comment-visitors" data-flag-title="第十三章 Python 建模库介绍">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="7190 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="leancloud_visitors comment-visitors" data-flag-title="第十三章 Python 建模库介绍">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十三章 Python 建模库介绍">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -213,7 +213,7 @@
 <p>模型开发的通常工作流是使用pandas进行数据加载和清洗，然后切换到建模库进行建模。**开发模型的重要一环是机器学习中的“特征工程”。**它可以描述从原始数据集中提取信息的任何数据转换或分析，这些数据集可能在建模中有用。本书中学习的数据聚合和GroupBy工具常用于特征工程中。</p>
 <p>优秀的特征工程超出了本书的范围，我会尽量直白地介绍一些用于数据操作和建模切换的方法。</p>
 <p>pandas与其它分析库通常是靠NumPy的数组联系起来的。将DataFrame转换为NumPy数组，可以使用.values属性：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -272,11 +272,10 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">2.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">,</span>  <span class="mf">0.</span>  <span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">3.</span>  <span class="p">,</span>  <span class="mf">0.25</span><span class="p">,</span>  <span class="mf">3.6</span> <span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">4.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">4.1</span> <span class="p">,</span>  <span class="mf">1.3</span> <span class="p">],</span>
-</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">2.</span>  <span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">2.</span>  <span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要转换回DataFrame，可以传递一个二维ndarray，可带有列名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -299,12 +298,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">2.0</span> <span class="o">-</span><span class="mf">0.01</span>    <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mf">3.0</span>  <span class="mf">0.25</span>    <span class="mf">3.6</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="mf">4.0</span> <span class="o">-</span><span class="mf">4.10</span>    <span class="mf">1.3</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">5.0</span>  <span class="mf">0.00</span>   <span class="o">-</span><span class="mf">2.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">5.0</span>  <span class="mf">0.00</span>   <span class="o">-</span><span class="mf">2.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>笔记：最好当数据是均匀的时候使用.values属性。例如，全是数值类型。如果数据是不均匀的，结果会是Python对象的ndarray：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -347,12 +345,11 @@
 </span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div></blockquote>
 <p>对于一些模型，你可能只想使用列的子集。我建议你使用loc，用values作索引：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -373,12 +370,11 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">2.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">3.</span>  <span class="p">,</span>  <span class="mf">0.25</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">4.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">4.1</span> <span class="p">],</span>
-</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>一些库原生支持pandas，会自动完成工作：从DataFrame转换到NumPy，将模型的参数名添加到输出表的列或Series。其它情况，你可以手工进行“元数据管理”。</p>
 <p>在第12章，我们学习了pandas的Categorical类型和pandas.get_dummies函数。假设数据集中有一个非数值列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -403,11 +399,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="mi">2</span> <span class="o">-</span><span class="mf">0.01</span>  <span class="mf">0.0</span>        <span class="n">b</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mi">3</span>  <span class="mf">0.25</span>  <span class="mf">3.6</span>        <span class="n">a</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mi">4</span> <span class="o">-</span><span class="mf">4.10</span>  <span class="mf">1.3</span>        <span class="n">a</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>  <span class="mf">0.00</span> <span class="o">-</span><span class="mf">2.0</span>        <span class="n">b</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>  <span class="mf">0.00</span> <span class="o">-</span><span class="mf">2.0</span>        <span class="n">b</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果我们想替换category列为虚变量，我们可以创建虚变量，删除category列，然后添加到结果：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -434,23 +429,21 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="mi">2</span> <span class="o">-</span><span class="mf">0.01</span>  <span class="mf">0.0</span>           <span class="mi">0</span>           <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mi">3</span>  <span class="mf">0.25</span>  <span class="mf">3.6</span>           <span class="mi">1</span>           <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mi">4</span> <span class="o">-</span><span class="mf">4.10</span>  <span class="mf">1.3</span>           <span class="mi">1</span>           <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>  <span class="mf">0.00</span> <span class="o">-</span><span class="mf">2.0</span>           <span class="mi">0</span>           <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>  <span class="mf">0.00</span> <span class="o">-</span><span class="mf">2.0</span>           <span class="mi">0</span>           <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>用虚变量拟合某些统计模型会有一些细微差别。当你不只有数字列时，使用Patsy（下一节的主题）可能更简单，更不容易出错。</p>
 <h2 id="132-用patsy创建模型描述">13.2 用Patsy创建模型描述</h2>
 <p><code>Patsy</code>是Python的一个库，使用简短的字符串“公式语法”描述统计模型（尤其是线性模型），可能是受到了R和S统计编程语言的公式语法的启发。</p>
 <p>Patsy适合描述statsmodels的线性模型，因此我会关注于它的主要特点，让你尽快掌握。Patsy的公式是一个特殊的字符串语法，如下所示：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y</span> <span class="o">~</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">x1</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y</span> <span class="o">~</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">x1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>a+b不是将a与b相加的意思，而是为模型创建的设计矩阵。patsy.dmatrices函数接收一个公式字符串和一个数据集（可以是DataFrame或数组的字典），为线性模型创建设计矩阵：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -487,11 +480,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">patsy</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="n">y</span><span class="p">,</span> <span class="n">X</span> <span class="o">=</span> <span class="n">patsy</span><span class="o">.</span><span class="n">dmatrices</span><span class="p">(</span><span class="s1">&#39;y ~ x0 + x1&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="n">y</span><span class="p">,</span> <span class="n">X</span> <span class="o">=</span> <span class="n">patsy</span><span class="o">.</span><span class="n">dmatrices</span><span class="p">(</span><span class="s1">&#39;y ~ x0 + x1&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -544,11 +536,10 @@
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;x0&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;x1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;x1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这些Patsy的DesignMatrix实例是NumPy的ndarray，带有附加元数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -581,11 +572,10 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>  <span class="p">,</span>  <span class="mf">2.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>  <span class="p">,</span>  <span class="mf">3.</span>  <span class="p">,</span>  <span class="mf">0.25</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>  <span class="p">,</span>  <span class="mf">4.</span>  <span class="p">,</span> <span class="o">-</span><span class="mf">4.1</span> <span class="p">],</span>
-</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>  <span class="p">,</span>  <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>  <span class="p">,</span>  <span class="mf">5.</span>  <span class="p">,</span>  <span class="mf">0.</span>  <span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可能想Intercept是哪里来的。这是线性模型（比如普通最小二乘回归）的惯例用法。添加 +0 到模型可以不显示intercept：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -612,20 +602,18 @@
 </span></span><span class="line"><span class="cl">   <span class="mi">5</span>   <span class="mf">0.00</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;x0&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;x1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;x1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Patsy对象可以直接传递到算法（比如numpy.linalg.lstsq）中，它执行普通最小二乘回归：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="n">coef</span><span class="p">,</span> <span class="n">resid</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="n">coef</span><span class="p">,</span> <span class="n">resid</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>模型的元数据保留在design_info属性中，因此你可以重新附加列名到拟合系数，以获得一个Series，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -656,12 +644,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Intercept</span>    <span class="mf">0.312910</span>
 </span></span><span class="line"><span class="cl"><span class="n">x0</span>          <span class="o">-</span><span class="mf">0.079106</span>
 </span></span><span class="line"><span class="cl"><span class="n">x1</span>          <span class="o">-</span><span class="mf">0.265464</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1321-用patsy公式进行数据转换">13.2.1 用Patsy公式进行数据转换</h3>
 <p>你可以将Python代码与patsy公式结合。在评估公式时，库将尝试查找在封闭作用域内使用的函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -694,11 +681,10 @@
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;x0&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;np.log(np.abs(x1) + 1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;np.log(np.abs(x1) + 1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>常见的变量转换包括标准化（平均值为0，方差为1）和中心化（减去平均值）。Patsy有内置的函数进行这样的工作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -731,12 +717,11 @@
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;standardize(x0)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;center(x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;center(x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>作为建模的一步，你可能拟合模型到一个数据集，然后用另一个数据集评估模型。另一个数据集可能是剩余的部分或是新数据。当执行中心化和标准化转变，用新数据进行预测要格外小心。因为你必须使用平均值或标准差转换新数据集，这也称作状态转换。</p>
 <p>patsy.build_design_matrices函数可以使用原始样本数据集的保存信息，来转换新数据，：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -777,11 +762,10 @@
 </span></span><span class="line"><span class="cl">   <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">     <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">     <span class="s1">&#39;standardize(x0)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">     <span class="s1">&#39;center(x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">     <span class="s1">&#39;center(x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为Patsy中的加号不是加法的意义，当你按照名称将数据集的列相加时，你必须用特殊I函数将它们封装起来：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -812,15 +796,14 @@
 </span></span><span class="line"><span class="cl">          <span class="mi">1</span>        <span class="mf">5.00</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;I(x0 + x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;I(x0 + x1)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Patsy的patsy.builtins模块还有一些其它的内置转换。请查看线上文档。</p>
 <p>分类数据有一个特殊的转换类，下面进行讲解。</p>
 <h3 id="1322-分类数据和patsy">13.2.2 分类数据和Patsy</h3>
 <p>非数值数据可以用多种方式转换为模型设计矩阵。完整的讲解超出了本书范围，最好和统计课一起学习。</p>
 <p>当你在Patsy公式中使用非数值数据，它们会默认转换为虚变量。如果有截距，会去掉一个，避免共线性：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -871,11 +854,10 @@
 </span></span><span class="line"><span class="cl">          <span class="mi">1</span>          <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你从模型中忽略截距，每个分类值的列都会包括在设计矩阵的模型中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -910,11 +892,10 @@
 </span></span><span class="line"><span class="cl">        <span class="mi">1</span>        <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="mi">0</span>        <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1&#39;</span> <span class="p">(</span><span class="n">columns</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1&#39;</span> <span class="p">(</span><span class="n">columns</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用C函数，数值列可以截取为分类量：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -951,11 +932,10 @@
 </span></span><span class="line"><span class="cl">          <span class="mi">1</span>             <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Terms</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;C(key2)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;C(key2)&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当你在模型中使用多个分类名，事情就会变复杂，因为会包括key1:key2形式的相交部分，它可以用在方差（ANOVA）模型分析中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1064,8 +1044,7 @@
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;Intercept&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;key2&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1:key2&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">3</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1:key2&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">3</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Patsy提供转换分类数据的其它方法，包括以特定顺序转换。请参阅线上文档。</p>
 <h2 id="133-statsmodels介绍">13.3 statsmodels介绍</h2>
@@ -1082,18 +1061,17 @@
 <h3 id="1331-估计线性模型">13.3.1 估计线性模型</h3>
 <p>statsmodels有多种线性回归模型，包括从基本（比如普通最小二乘）到复杂（比如迭代加权最小二乘法）的。</p>
 <p>statsmodels的线性模型有两种不同的接口：基于数组和基于公式。它们可以通过API模块引入：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>为了展示它们的使用方法，我们从一些随机数据生成一个线性模型：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1128,11 +1106,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">eps</span> <span class="o">=</span> <span class="n">dnorm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">N</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">beta</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span> <span class="o">+</span> <span class="n">eps</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span> <span class="o">+</span> <span class="n">eps</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，我使用了“真实”模型和可知参数beta。此时，dnorm可用来生成正态分布数据，带有特定均值和方差。现在有：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1155,11 +1132,10 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.2433</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3738</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5226</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">y</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.4279</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6735</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0909</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4895</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1289</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.4279</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6735</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0909</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4895</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1289</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>像之前Patsy看到的，线性模型通常要拟合一个截距。sm.add_constant函数可以添加一个截距的列到现存的矩阵：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1180,20 +1156,18 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>    <span class="p">,</span>  <span class="mf">0.3029</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4357</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2542</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>    <span class="p">,</span> <span class="o">-</span><span class="mf">0.3285</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0253</span><span class="p">,</span>  <span class="mf">0.1384</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>    <span class="p">,</span> <span class="o">-</span><span class="mf">0.3515</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7196</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2582</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>    <span class="p">,</span>  <span class="mf">1.2433</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3738</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5226</span><span class="p">]])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span> <span class="mf">1.</span>    <span class="p">,</span>  <span class="mf">1.2433</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3738</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5226</span><span class="p">]])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>sm.OLS类可以拟合一个普通最小二乘回归：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">70</span><span class="p">]:</span> <span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">70</span><span class="p">]:</span> <span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个模型的fit方法返回了一个回归结果对象，它包含估计的模型参数和其它内容：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1204,11 +1178,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">71</span><span class="p">]:</span> <span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="n">results</span><span class="o">.</span><span class="n">params</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.1783</span><span class="p">,</span>  <span class="mf">0.223</span> <span class="p">,</span>  <span class="mf">0.501</span> <span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.1783</span><span class="p">,</span>  <span class="mf">0.223</span> <span class="p">,</span>  <span class="mf">0.501</span> <span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对结果使用summary方法可以打印模型的详细诊断结果：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1267,11 +1240,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">==============================================================================</span>
 </span></span><span class="line"><span class="cl"><span class="n">Warnings</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="n">Standard</span> <span class="n">Errors</span> <span class="n">assume</span> <span class="n">that</span> <span class="n">the</span> <span class="n">covariance</span> <span class="n">matrix</span> <span class="n">of</span> <span class="n">the</span> <span class="n">errors</span> <span class="ow">is</span> <span class="n">correctly</span> 
-</span></span><span class="line"><span class="cl"><span class="n">specified</span><span class="o">.</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">specified</span><span class="o">.</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里的参数名为通用名x1, x2等等。假设所有的模型参数都在一个DataFrame中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1298,11 +1270,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">0.302910</span> <span class="o">-</span><span class="mf">0.435742</span> <span class="o">-</span><span class="mf">0.254180</span> <span class="o">-</span><span class="mf">0.673480</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="o">-</span><span class="mf">0.328522</span> <span class="o">-</span><span class="mf">0.025302</span>  <span class="mf">0.138351</span> <span class="o">-</span><span class="mf">0.090878</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="o">-</span><span class="mf">0.351475</span> <span class="o">-</span><span class="mf">0.719605</span> <span class="o">-</span><span class="mf">0.258215</span> <span class="o">-</span><span class="mf">0.489494</span>
-</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">1.243269</span> <span class="o">-</span><span class="mf">0.373799</span> <span class="o">-</span><span class="mf">0.522629</span> <span class="o">-</span><span class="mf">0.128941</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mf">1.243269</span> <span class="o">-</span><span class="mf">0.373799</span> <span class="o">-</span><span class="mf">0.522629</span> <span class="o">-</span><span class="mf">0.128941</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，我们使用statsmodels的公式API和Patsy的公式字符串：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1339,12 +1310,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">col0</span>         <span class="mf">3.319754</span>
 </span></span><span class="line"><span class="cl"><span class="n">col1</span>         <span class="mf">4.850730</span>
 </span></span><span class="line"><span class="cl"><span class="n">col2</span>         <span class="mf">6.303971</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>观察下statsmodels是如何返回Series结果的，附带有DataFrame的列名。当使用公式和pandas对象时，我们不需要使用add_constant。</p>
 <p>给出一个样本外数据，你可以根据估计的模型参数计算预测值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1363,14 +1333,13 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="mf">0.041226</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="o">-</span><span class="mf">0.323070</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="o">-</span><span class="mf">0.100535</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>statsmodels的线性模型结果还有其它的分析、诊断和可视化工具。除了普通最小二乘模型，还有其它的线性模型。</p>
 <h3 id="1332-估计时间序列过程">13.3.2 估计时间序列过程</h3>
 <p>statsmodels的另一模型类是进行时间序列分析，包括自回归过程、卡尔曼滤波和其它态空间模型，和多元自回归模型。</p>
 <p>用自回归结构和噪声来模拟一些时间序列数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1397,11 +1366,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">noise</span> <span class="o">=</span> <span class="n">dnorm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">new_x</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">b0</span> <span class="o">+</span> <span class="n">values</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">b1</span> <span class="o">+</span> <span class="n">noise</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个数据有AR(2)结构（两个延迟），参数是0.8和-0.4。拟合AR模型时，你可能不知道滞后项的个数，因此可以用较多的滞后量来拟合这个模型：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1414,19 +1382,17 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">83</span><span class="p">]:</span> <span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">tsa</span><span class="o">.</span><span class="n">AR</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">84</span><span class="p">]:</span> <span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">MAXLAGS</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">84</span><span class="p">]:</span> <span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">MAXLAGS</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>结果中的估计参数首先是截距，其次是前两个参数的估计值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="n">results</span><span class="o">.</span><span class="n">params</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.0062</span><span class="p">,</span>  <span class="mf">0.7845</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4085</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0136</span><span class="p">,</span>  <span class="mf">0.015</span> <span class="p">,</span>  <span class="mf">0.0143</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.0062</span><span class="p">,</span>  <span class="mf">0.7845</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4085</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0136</span><span class="p">,</span>  <span class="mf">0.015</span> <span class="p">,</span>  <span class="mf">0.0143</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>更多的细节以及如何解释结果超出了本书的范围，可以通过statsmodels文档学习更多。</p>
 <h2 id="134-scikit-learn介绍">13.4 scikit-learn介绍</h2>
@@ -1434,7 +1400,7 @@
 <p>机器学习方面的学习和应用scikit-learn和TensorFlow解决实际问题的线上和纸质资料很多。本节中，我会简要介绍scikit-learn API的风格。</p>
 <p>写作此书的时候，scikit-learn并没有和pandas深度结合，但是有些第三方包在开发中。尽管如此，pandas非常适合在模型拟合前处理数据集。</p>
 <p>举个例子，我用一个Kaggle竞赛的经典数据集，关于泰坦尼克号乘客的生还率。我们用pandas加载测试和训练数据集：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1479,11 +1445,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>      <span class="mi">0</span>         <span class="n">A</span><span class="o">/</span><span class="mi">5</span> <span class="mi">21171</span>   <span class="mf">7.2500</span>   <span class="n">NaN</span>        <span class="n">S</span>  
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>      <span class="mi">0</span>          <span class="n">PC</span> <span class="mi">17599</span>  <span class="mf">71.2833</span>   <span class="n">C85</span>        <span class="n">C</span>  
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>      <span class="mi">0</span>  <span class="n">STON</span><span class="o">/</span><span class="n">O2</span><span class="o">.</span> <span class="mi">3101282</span>   <span class="mf">7.9250</span>   <span class="n">NaN</span>        <span class="n">S</span>  
-</span></span><span class="line"><span class="cl"><span class="mi">3</span>      <span class="mi">0</span>            <span class="mi">113803</span>  <span class="mf">53.1000</span>  <span class="n">C123</span>        <span class="n">S</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>      <span class="mi">0</span>            <span class="mi">113803</span>  <span class="mf">53.1000</span>  <span class="n">C123</span>        <span class="n">S</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>statsmodels和scikit-learn通常不能接收缺失数据，因此我们要查看列是否包含缺失值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1546,12 +1511,11 @@
 </span></span><span class="line"><span class="cl"><span class="n">Fare</span>             <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="n">Cabin</span>          <span class="mi">327</span>
 </span></span><span class="line"><span class="cl"><span class="n">Embarked</span>         <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在统计和机器学习的例子中，根据数据中的特征，一个典型的任务是预测乘客能否生还。模型现在训练数据集中拟合，然后用样本外测试数据集评估。</p>
 <p>我想用年龄作为预测值，但是它包含缺失值。缺失数据补全的方法有多种，我用的是一种简单方法，用训练数据集的中位数补全两个表的空值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1564,11 +1528,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">92</span><span class="p">]:</span> <span class="n">train</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">impute_value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">93</span><span class="p">]:</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">impute_value</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">93</span><span class="p">]:</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">impute_value</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在我们需要指定模型。我增加了一个列IsFemale，作为“Sex”列的编码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1577,11 +1540,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">94</span><span class="p">]:</span> <span class="n">train</span><span class="p">[</span><span class="s1">&#39;IsFemale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">95</span><span class="p">]:</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;IsFemale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">95</span><span class="p">]:</span> <span class="n">test</span><span class="p">[</span><span class="s1">&#39;IsFemale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，我们确定一些模型变量，并创建NumPy数组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1620,11 +1582,10 @@
 </span></span><span class="line"><span class="cl">       <span class="p">[</span>  <span class="mf">3.</span><span class="p">,</span>   <span class="mf">0.</span><span class="p">,</span>  <span class="mf">35.</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">101</span><span class="p">]:</span> <span class="n">y_train</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">101</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">101</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我不能保证这是一个好模型，但它的特征都符合。我们用scikit-learn的LogisticRegression模型，创建一个模型实例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1633,11 +1594,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">102</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">103</span><span class="p">]:</span> <span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">103</span><span class="p">]:</span> <span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>与statsmodels类似，我们可以用模型的fit方法，将它拟合到训练数据：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1652,11 +1612,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dual</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">          <span class="n">intercept_scaling</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s1">&#39;ovr&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">          <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">          <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，我们可以用model.predict，对测试数据进行预测：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1667,21 +1626,19 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">105</span><span class="p">]:</span> <span class="n">y_predict</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">106</span><span class="p">]:</span> <span class="n">y_predict</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">106</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">106</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你有测试数据集的真是值，你可以计算准确率或其它错误度量值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="n">y_true</span> <span class="o">==</span> <span class="n">y_predict</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="n">y_true</span> <span class="o">==</span> <span class="n">y_predict</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在实际中，模型训练经常有许多额外的复杂因素。许多模型有可以调节的参数，有些方法（比如交叉验证）可以用来进行参数调节，避免对训练数据过拟合。这通常可以提高预测性或对新数据的健壮性。</p>
 <p>交叉验证通过分割训练数据来模拟样本外预测。基于模型的精度得分（比如均方差），可以对模型参数进行网格搜索。有些模型，如logistic回归，有内置的交叉验证的估计类。例如，logisticregressioncv类可以用一个参数指定网格搜索对模型的正则化参数C的粒度：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1704,11 +1661,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">LogisticRegressionCV</span><span class="p">(</span><span class="n">Cs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dual</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">           <span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">intercept_scaling</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">           <span class="n">multi_class</span><span class="o">=</span><span class="s1">&#39;ovr&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">           <span class="n">refit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">           <span class="n">refit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要手动进行交叉验证，你可以使用cross_val_score帮助函数，它可以处理数据分割。例如，要交叉验证我们的带有四个不重叠训练数据的模型，可以这样做：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1727,8 +1683,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">112</span><span class="p">]:</span> <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">scores</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.7723</span><span class="p">,</span>  <span class="mf">0.8027</span><span class="p">,</span>  <span class="mf">0.7703</span><span class="p">,</span>  <span class="mf">0.7883</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.7723</span><span class="p">,</span>  <span class="mf">0.8027</span><span class="p">,</span>  <span class="mf">0.7703</span><span class="p">,</span>  <span class="mf">0.7883</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>默认的评分指标取决于模型本身，但是可以明确指定一个评分。交叉验证过的模型需要更长时间来训练，但会有更高的模型性能。</p>
 <h2 id="135-继续学习">13.5 继续学习</h2>

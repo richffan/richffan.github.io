@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6003 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 12 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="leancloud_visitors comment-visitors" data-flag-title="第十二章 Pandas 高级应用">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="6003 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6100 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 12 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="leancloud_visitors comment-visitors" data-flag-title="第十二章 Pandas 高级应用">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十二章 Pandas 高级应用">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -218,7 +218,7 @@
 <p>这一节介绍的是pandas的分类类型。我会向你展示通过使用它，提高性能和内存的使用率。我还会介绍一些在统计和机器学习中使用分类数据的工具。</p>
 <h3 id="1211-背景和目的">12.1.1 背景和目的</h3>
 <p>表中的一列通常会有重复的包含不同值的小集合的情况。我们已经学过了unique和value_counts，它们可以从数组提取出不同的值，并分别计算频率：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -271,11 +271,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="n">apple</span>     <span class="mi">6</span>
 </span></span><span class="line"><span class="cl"><span class="n">orange</span>    <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>许多数据系统（数据仓库、统计计算或其它应用）都发展出了特定的表征重复值的方法，以进行高效的存储和计算。在数据仓库中，最好的方法是使用所谓的包含不同值的维表(Dimension Table)，将主要的参数存储为引用维表整数键：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -320,11 +319,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">18</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>    <span class="n">orange</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以使用take方法存储原始的字符串Series：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -349,8 +347,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>    <span class="n">orange</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>     <span class="n">apple</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种用整数表示的方法称为分类或字典编码表示法。不同值得数组称为分类、字典或数据级。本书中，我们使用分类的说法。表示分类的整数值称为分类编码或简单地称为编码。</p>
 <p>分类表示可以在进行分析时大大的提高性能。你也可以在保持编码不变的情况下，对分类进行转换。一些相对简单的转变例子包括：</p>
@@ -360,7 +357,7 @@
 </ul>
 <h3 id="1212-pandas的分类类型">12.1.2 pandas的分类类型</h3>
 <p>pandas有一个特殊的分类类型，用于保存使用整数分类表示法的数据。看一个之前的Series例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -405,11 +402,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>          <span class="mi">4</span>   <span class="n">apple</span>     <span class="mi">12</span>  <span class="mf">2.990859</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>          <span class="mi">5</span>  <span class="n">orange</span>      <span class="mi">8</span>  <span class="mf">3.845227</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>          <span class="mi">6</span>   <span class="n">apple</span>      <span class="mi">5</span>  <span class="mf">0.033553</span>
-</span></span><span class="line"><span class="cl"><span class="mi">7</span>          <span class="mi">7</span>   <span class="n">apple</span>      <span class="mi">4</span>  <span class="mf">0.425778</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>          <span class="mi">7</span>   <span class="n">apple</span>      <span class="mi">4</span>  <span class="mf">0.425778</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，df[&lsquo;fruit&rsquo;]是一个Python字符串对象的数组。我们可以通过调用它，将它转变为分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -440,11 +436,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">fruit</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">apple</span><span class="p">,</span> <span class="n">orange</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">apple</span><span class="p">,</span> <span class="n">orange</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>fruit_cat的值不是NumPy数组，而是一个pandas.Categorical实例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -455,11 +450,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="n">c</span> <span class="o">=</span> <span class="n">fruit_cat</span><span class="o">.</span><span class="n">values</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="n">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">categorical</span><span class="o">.</span><span class="n">Categorical</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="n">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">categorical</span><span class="o">.</span><span class="n">Categorical</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>分类对象有categories和codes属性：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -472,11 +466,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">28</span><span class="p">]:</span> <span class="n">Index</span><span class="p">([</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="n">c</span><span class="o">.</span><span class="n">codes</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int8</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int8</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可将DataFrame的列通过分配转换结果，转换为分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -507,11 +500,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>     <span class="n">apple</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">fruit</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">apple</span><span class="p">,</span> <span class="n">orange</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">apple</span><span class="p">,</span> <span class="n">orange</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你还可以从其它Python序列直接创建pandas.Categorical：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -526,11 +518,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">33</span><span class="p">]:</span> <span class="n">my_categories</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">33</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果你已经从其它源获得了分类编码，你还可以使用from_codes构造器：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -553,11 +544,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">37</span><span class="p">]:</span> <span class="n">my_cats_2</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">37</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>与显示指定不同，分类变换不认定指定的分类顺序。因此取决于输入数据的顺序，categories数组的顺序会不同。当使用from_codes或其它的构造器时，你可以指定分类一个有意义的顺序：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -574,11 +564,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">39</span><span class="p">]:</span> <span class="n">ordered_cat</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">39</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span> <span class="o">&lt;</span> <span class="n">bar</span> <span class="o">&lt;</span> <span class="n">baz</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span> <span class="o">&lt;</span> <span class="n">bar</span> <span class="o">&lt;</span> <span class="n">baz</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>输出[foo &lt; bar &lt; baz]指明‘foo’位于‘bar’的前面，以此类推。无序的分类实例可以通过as_ordered排序：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -589,14 +578,13 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">40</span><span class="p">]:</span> <span class="n">my_cats_2</span><span class="o">.</span><span class="n">as_ordered</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">40</span><span class="p">]:</span> 
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span> <span class="o">&lt;</span> <span class="n">bar</span> <span class="o">&lt;</span> <span class="n">baz</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">foo</span> <span class="o">&lt;</span> <span class="n">bar</span> <span class="o">&lt;</span> <span class="n">baz</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后要注意，分类数据不需要字符串，尽管我仅仅展示了字符串的例子。分类数组可以包括任意不可变类型。</p>
 <h3 id="1213-用分类进行计算">12.1.3 用分类进行计算</h3>
 <p>与非编码版本（比如字符串数组）相比，使用pandas的Categorical有些类似。某些pandas组件，比如groupby函数，更适合进行分类。还有一些函数可以使用有序标志位。</p>
 <p>来看一些随机的数值数据，使用pandas.qcut面元函数。它会返回pandas.Categorical，我们之前使用过pandas.cut，但没解释分类是如何工作的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -611,11 +599,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">42</span><span class="p">]:</span> <span class="n">draws</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">43</span><span class="p">]:</span> <span class="n">draws</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">43</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.2047</span><span class="p">,</span>  <span class="mf">0.4789</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5194</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5557</span><span class="p">,</span>  <span class="mf">1.9658</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">43</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.2047</span><span class="p">,</span>  <span class="mf">0.4789</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5194</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5557</span><span class="p">,</span>  <span class="mf">1.9658</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>计算这个数据的分位面元，提取一些统计信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -640,11 +627,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Length</span><span class="p">:</span> <span class="mi">1000</span>
 </span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">interval</span><span class="p">[</span><span class="n">float64</span><span class="p">]):</span> <span class="p">[(</span><span class="o">-</span><span class="mf">2.95</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.684</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.684</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0101</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.010</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="p">,</span> <span class="mf">0.63</span><span class="p">]</span> <span class="o">&lt;</span>
-</span></span><span class="line"><span class="cl">                                    <span class="p">(</span><span class="mf">0.63</span><span class="p">,</span> <span class="mf">3.928</span><span class="p">]]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                                    <span class="p">(</span><span class="mf">0.63</span><span class="p">,</span> <span class="mf">3.928</span><span class="p">]]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>虽然有用，确切的样本分位数与分位的名称相比，不利于生成汇总。我们可以使用labels参数qcut，实现目的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -667,11 +653,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">Q1</span> <span class="o">&lt;</span> <span class="n">Q2</span> <span class="o">&lt;</span> <span class="n">Q3</span> <span class="o">&lt;</span> <span class="n">Q4</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">48</span><span class="p">]:</span> <span class="n">bins</span><span class="o">.</span><span class="n">codes</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">48</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int8</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">48</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int8</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>加上标签的面元分类不包含数据面元边界的信息，因此可以使用groupby提取一些汇总信息：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -702,11 +687,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>       <span class="n">Q1</span>    <span class="mi">250</span> <span class="o">-</span><span class="mf">2.949343</span> <span class="o">-</span><span class="mf">0.685484</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>       <span class="n">Q2</span>    <span class="mi">250</span> <span class="o">-</span><span class="mf">0.683066</span> <span class="o">-</span><span class="mf">0.010115</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>       <span class="n">Q3</span>    <span class="mi">250</span> <span class="o">-</span><span class="mf">0.010032</span>  <span class="mf">0.628894</span>
-</span></span><span class="line"><span class="cl"><span class="mi">3</span>       <span class="n">Q4</span>    <span class="mi">250</span>  <span class="mf">0.634238</span>  <span class="mf">3.927528</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>       <span class="n">Q4</span>    <span class="mi">250</span>  <span class="mf">0.634238</span>  <span class="mf">3.927528</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>分位数列保存了原始的面元分类信息，包括排序：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -725,12 +709,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>    <span class="n">Q3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>    <span class="n">Q4</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">quartile</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">Q1</span> <span class="o">&lt;</span> <span class="n">Q2</span> <span class="o">&lt;</span> <span class="n">Q3</span> <span class="o">&lt;</span> <span class="n">Q4</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">Q1</span> <span class="o">&lt;</span> <span class="n">Q2</span> <span class="o">&lt;</span> <span class="n">Q3</span> <span class="o">&lt;</span> <span class="n">Q4</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1214-用分类提高性能">12.1.4 用分类提高性能</h3>
 <p>如果你是在一个特定数据集上做大量分析，将其转换为分类可以极大地提高效率。DataFrame列的分类使用的内存通常少的多。来看一些包含一千万元素的Series，和一些不同的分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -743,20 +726,18 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">54</span><span class="p">]:</span> <span class="n">draws</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">55</span><span class="p">]:</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">,</span> <span class="s1">&#39;qux&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">N</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">55</span><span class="p">]:</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">,</span> <span class="s1">&#39;qux&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">N</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，将标签转换为分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">56</span><span class="p">]:</span> <span class="n">categories</span> <span class="o">=</span> <span class="n">labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">56</span><span class="p">]:</span> <span class="n">categories</span> <span class="o">=</span> <span class="n">labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这时，可以看到标签使用的内存远比分类多：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -769,11 +750,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">57</span><span class="p">]:</span> <span class="mi">80000080</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="n">categories</span><span class="o">.</span><span class="n">memory_usage</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="mi">10000272</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="mi">10000272</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>转换为分类不是没有代价的，但这是一次性的代价：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -782,13 +762,12 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">59</span><span class="p">]:</span> <span class="o">%</span><span class="n">time</span> <span class="n">_</span> <span class="o">=</span> <span class="n">labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">CPU</span> <span class="n">times</span><span class="p">:</span> <span class="n">user</span> <span class="mi">490</span> <span class="n">ms</span><span class="p">,</span> <span class="n">sys</span><span class="p">:</span> <span class="mi">240</span> <span class="n">ms</span><span class="p">,</span> <span class="n">total</span><span class="p">:</span> <span class="mi">730</span> <span class="n">ms</span>
-</span></span><span class="line"><span class="cl"><span class="n">Wall</span> <span class="n">time</span><span class="p">:</span> <span class="mi">726</span> <span class="n">ms</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Wall</span> <span class="n">time</span><span class="p">:</span> <span class="mi">726</span> <span class="n">ms</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>GroupBy使用分类操作明显更快，是因为底层的算法使用整数编码数组，而不是字符串数组。</p>
 <h3 id="1215-分类方法">12.1.5 分类方法</h3>
 <p>包含分类数据的Series有一些特殊的方法，类似于Series.str字符串方法。它还提供了方便的分类和编码的使用方法。看下面的Series：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -823,11 +802,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>    <span class="n">c</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>    <span class="n">d</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>特别的cat属性提供了分类方法的入口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -858,11 +836,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int8</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">64</span><span class="p">]:</span> <span class="n">cat_s</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span>
-</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">64</span><span class="p">]:</span> <span class="n">Index</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">64</span><span class="p">]:</span> <span class="n">Index</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设我们知道这个数据的实际分类集，超出了数据中的四个值。我们可以使用set_categories方法改变它们：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -897,11 +874,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>    <span class="n">c</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>    <span class="n">d</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>虽然数据看起来没变，新的分类将反映在它们的操作中。例如，如果有的话，value_counts表示分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -936,11 +912,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">b</span>    <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="n">e</span>    <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在大数据集中，分类经常作为节省内存和高性能的便捷工具。过滤完大DataFrame或Series之后，许多分类可能不会出现在数据中。我们可以使用remove_unused_categories方法删除没看到的分类：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -981,24 +956,22 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>    <span class="n">a</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>    <span class="n">b</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
-</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Categories</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表12-1列出了可用的分类方法。</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031140400402.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031140400402.png, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031140400402.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031140400402.png 2x" sizes="auto" data-title="表12-1 pandas的Series的分类方法" data-alt="表12-1 pandas的Series的分类方法" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="1216-为建模创建虚拟变量">12.1.6 为建模创建虚拟变量</h3>
 <p>当你使用统计或机器学习工具时，通常会将分类数据转换为虚拟变量，也称为one-hot编码。这包括创建一个不同类别的列的DataFrame；这些列包含给定分类的1s，其它为0。</p>
 <p>看前面的例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">73</span><span class="p">]:</span> <span class="n">cat_s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">73</span><span class="p">]:</span> <span class="n">cat_s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>前面的第7章提到过，pandas.get_dummies函数可以转换这个分类数据为包含虚拟变量的DataFrame：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1023,8 +996,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="mi">1</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">0</span>  <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">7</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">1</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="122-groupby高级应用">12.2 GroupBy高级应用</h2>
 <p>尽管我们在第10章已经深度学习了Series和DataFrame的Groupby方法，还有一些方法也是很有用的。</p>
@@ -1036,7 +1008,7 @@
 <li>它不能修改输入</li>
 </ul>
 <p>来看一个简单的例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1075,11 +1047,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">8</span>    <span class="n">c</span>    <span class="mf">8.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>    <span class="n">a</span>    <span class="mf">9.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>   <span class="n">b</span>   <span class="mf">10.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">11</span>   <span class="n">c</span>   <span class="mf">11.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">11</span>   <span class="n">c</span>   <span class="mf">11.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>按键进行分组：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1100,11 +1071,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">a</span>    <span class="mf">4.5</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>    <span class="mf">5.5</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span>    <span class="mf">6.5</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设我们想产生一个和df[&lsquo;value&rsquo;]形状相同的Series，但值替换为按键分组的平均值。我们可以传递函数lambda x: x.mean()进行转换：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1137,11 +1107,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">4.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">5.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">6.5</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>对于内置的聚合函数，我们可以传递一个字符串假名作为GroupBy的agg方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1174,11 +1143,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">4.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">5.5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">6.5</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>与apply类似，transform的函数会返回Series，但是结果必须与输入大小相同。举个例子，我们可以用lambda函数将每个分组乘以2：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1211,11 +1179,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">18.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">20.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">22.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>再举一个复杂的例子，我们可以计算每个分组的降序排名：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1248,22 +1215,20 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">1.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>看一个由简单聚合构造的的分组转换函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们用transform或apply可以获得等价的结果：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1328,11 +1293,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">1.161895</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">1.161895</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">1.161895</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>内置的聚合函数，比如mean或sum，通常比apply函数快，也比transform快。这允许我们进行一个所谓的解封（unwrapped）分组操作：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1401,13 +1365,12 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>     <span class="mf">1.161895</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10</span>    <span class="mf">1.161895</span>
 </span></span><span class="line"><span class="cl"><span class="mi">11</span>    <span class="mf">1.161895</span>
-</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>解封分组操作可能包括多个分组聚合，但是矢量化操作还是会带来收益。</p>
 <h3 id="1222-分组的时间重采样">12.2.2 分组的时间重采样</h3>
 <p>对于时间序列数据，resample方法从语义上是一个基于内在时间的分组操作。下面是一个示例表：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1460,11 +1423,10 @@
 </span></span><span class="line"><span class="cl"><span class="mi">11</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">00</span>     <span class="mi">11</span>
 </span></span><span class="line"><span class="cl"><span class="mi">12</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">12</span><span class="p">:</span><span class="mi">00</span>     <span class="mi">12</span>
 </span></span><span class="line"><span class="cl"><span class="mi">13</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">13</span><span class="p">:</span><span class="mi">00</span>     <span class="mi">13</span>
-</span></span><span class="line"><span class="cl"><span class="mi">14</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">00</span>     <span class="mi">14</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">14</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">00</span>     <span class="mi">14</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，我们可以用time作为索引，然后重采样：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1481,11 +1443,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">time</span>                      
 </span></span><span class="line"><span class="cl"><span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>      <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">00</span>      <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>      <span class="mi">5</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>      <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设DataFrame包含多个时间序列，用一个额外的分组键的列进行标记：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1516,20 +1477,18 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="n">a</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">00</span>    <span class="mf">3.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="n">b</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">00</span>    <span class="mf">4.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">c</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">00</span>    <span class="mf">5.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">6</span>   <span class="n">a</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">00</span>    <span class="mf">6.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>   <span class="n">a</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">00</span>    <span class="mf">6.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>要对每个key值进行相同的重采样，我们引入pandas.TimeGrouper对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">96</span><span class="p">]:</span> <span class="n">time_key</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">TimeGrouper</span><span class="p">(</span><span class="s1">&#39;5min&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">96</span><span class="p">]:</span> <span class="n">time_key</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">TimeGrouper</span><span class="p">(</span><span class="s1">&#39;5min&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们然后设定时间索引，用key和time_key分组，然后聚合：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1592,13 +1551,12 @@
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="n">b</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>  <span class="mf">185.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span>   <span class="n">c</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>   <span class="mf">40.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>   <span class="n">c</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">00</span>  <span class="mf">115.0</span>
-</span></span><span class="line"><span class="cl"><span class="mi">8</span>   <span class="n">c</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>  <span class="mf">190.0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">8</span>   <span class="n">c</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">20</span> <span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>  <span class="mf">190.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用TimeGrouper的限制是时间必须是Series或DataFrame的索引。</p>
 <h2 id="123-链式编程技术">12.3 链式编程技术</h2>
 <p>当对数据集进行一系列变换时，你可能发现创建的多个临时变量其实并没有在分析中用到。看下面的例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1609,11 +1567,10 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;col1_demeaned&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>虽然这里没有使用真实的数据，这个例子却指出了一些新方法。首先，DataFrame.assign方法是一个df[k] = v形式的函数式的列分配方法。它不是就地修改对象，而是返回新的修改过的DataFrame。因此，下面的语句是等价的：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1628,11 +1585,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;k&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Functional assign way</span>
-</span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">v</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">v</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>就地分配可能会比assign快，但是assign可以方便地进行链式编程：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1641,35 +1597,32 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">col1_demeaned</span><span class="o">=</span><span class="n">df2</span><span class="o">.</span><span class="n">col1</span> <span class="o">-</span> <span class="n">df2</span><span class="o">.</span><span class="n">col2</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">())</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我使用外括号，这样便于添加换行符。</p>
 <p>使用链式编程时要注意，你可能会需要涉及临时对象。在前面的例子中，我们不能使用load_data的结果，直到它被赋值给临时变量df。为了这么做，assign和许多其它pandas函数可以接收类似函数的参数，即可调用对象（callable）。为了展示可调用对象，看一个前面例子的片段：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>它可以重写为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="p">(</span><span class="n">load_data</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，load_data的结果没有赋值给某个变量，因此传递到[ ]的函数在这一步被绑定到了对象。</p>
 <p>我们可以把整个过程写为一个单链表达式：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1682,14 +1635,13 @@
 </span></span><span class="line"><span class="cl">          <span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">col2</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">col1_demeaned</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">col1</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">col1</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">col1_demeaned</span><span class="o">.</span><span class="n">std</span><span class="p">())</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>是否将代码写成这种形式只是习惯而已，将它分开成若干步可以提高可读性。</p>
 <h3 id="1231-管道方法">12.3.1 管道方法</h3>
 <p>你可以用Python内置的pandas函数和方法，用带有可调用对象的链式编程做许多工作。但是，有时你需要使用自己的函数，或是第三方库的函数。这时就要用到管道方法。</p>
 <p>看下面的函数调用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1698,11 +1650,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="n">v1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="n">arg3</span><span class="o">=</span><span class="n">v3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">h</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">arg4</span><span class="o">=</span><span class="n">v4</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">h</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">arg4</span><span class="o">=</span><span class="n">v4</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当使用接收、返回Series或DataFrame对象的函数式，你可以调用pipe将其重写：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1711,23 +1662,21 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="n">v1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="n">arg3</span><span class="o">=</span><span class="n">v3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">arg4</span><span class="o">=</span><span class="n">v4</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">arg4</span><span class="o">=</span><span class="n">v4</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>f(df)和df.pipe(f)是等价的，但是pipe使得链式声明更容易。</p>
 <p>pipe的另一个有用的地方是提炼操作为可复用的函数。看一个从列减去分组方法的例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">g</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">g</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>假设你想转换多列，并修改分组的键。另外，你想用链式编程做这个转换。下面就是一个方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1742,19 +1691,17 @@
 </span></span><span class="line"><span class="cl">    <span class="n">g</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">-</span> <span class="n">g</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后可以写为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">col1</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">group_demean</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">          <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">group_demean</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="124-总结">12.4 总结</h2>
 <p>和其它许多开源项目一样，pandas仍然在不断的变化和进步中。和本书中其它地方一样，这里的重点是放在接下来几年不会发生什么改变且稳定的功能。</p>

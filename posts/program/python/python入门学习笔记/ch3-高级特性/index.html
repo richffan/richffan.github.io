@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6764 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 14 分钟</span>&nbsp;<span id="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="leancloud_visitors comment-visitors" data-flag-title="第三章 高级特性">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="6764 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 14 分钟</span>&nbsp;<span id="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="leancloud_visitors comment-visitors" data-flag-title="第三章 高级特性">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第三章 高级特性">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -209,7 +209,7 @@
 </nav></div>
       </div><div class="content" id="content"><p>掌握了 Python 的数据类型、语句和函数，基本上就可以编写出很多有用的程序了。</p>
 <p>比如构造一个<code>1, 3, 5, 7, ..., 99</code>的列表，可以通过循环实现：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -224,19 +224,17 @@
 </span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">99</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>🔍 使用<strong>列表生成式</strong>，来解决这个问题：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>取 list 的前一半的元素，也可以通过循环实现。</p>
 <p>但是在 Python 中，代码不是越多越好，而是越少越好。代码不是越复杂越好，而是越简单越好。</p>
@@ -244,28 +242,26 @@
 <h2 id="31-切片">3.1 切片</h2>
 <h3 id="311-list-切片">3.1.1 list 切片</h3>
 <p>取一个 list 或 tuple 的部分元素是非常常见的操作。比如，一个 list 如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Michael&#39;</span><span class="p">,</span> <span class="s1">&#39;Sarah&#39;</span><span class="p">,</span> <span class="s1">&#39;Tracy&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Michael&#39;</span><span class="p">,</span> <span class="s1">&#39;Sarah&#39;</span><span class="p">,</span> <span class="s1">&#39;Tracy&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>取前 3 个元素，应该怎么做？</p>
 <p>可能会像这样解决：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712160939.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712160939.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712160939.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712160939.png 2x" sizes="auto" data-title="image-20200712160938388" data-alt="image-20200712160938388" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>但是，如果是取前 N 个元素就没辙了。</p>
 <p>🎍 取前 N 个元素，也就是索引为 0-(N-1) 的元素，可以用循环：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -278,48 +274,43 @@
 </span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">r</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">r</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214350.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214350.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214350.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214350.png 2x" sizes="auto" data-title="image-20200712214348838" data-alt="image-20200712214348838" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>对这种经常取指定索引范围的操作，用循环十分繁琐，因此，Python 提供了切片（Slice）操作符，能大大简化这种操作。</p>
 <p>对应上面的问题，取前 3 个元素，用一行代码就可以完成切片：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214633.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214633.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214633.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712214633.png 2x" sizes="auto" data-title="image-20200712214632198" data-alt="image-20200712214632198" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p><code>L[0:3]</code>表示，从索引<code>0</code>开始取，直到索引<code>3</code>为止，但不包括索引<code>3</code>。即索引<code>0</code>，<code>1</code>，<code>2</code>，正好是 3 个元素。</p>
 <p>如果第一个索引是<code>0</code>，还可以省略：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>也可以从索引 1 开始，取出 2 个元素出来：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>类似的，既然 Python 支持<code>L[-1]</code>取倒数第一个元素，那么它同样支持倒数切片，试试：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220307.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220307.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220307.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220307.png 2x" sizes="auto" data-title="image-20200712220306806" data-alt="image-20200712220306806" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>记住倒数第一个元素的索引是<code>-1</code>。</p>
@@ -338,100 +329,90 @@
 </li>
 </ul>
 <p>💬 切片操作十分有用。我们先创建一个 0 - 99 的数列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="n">L</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">L</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过切片轻松取出某一段数列。比如前 10 个数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220548.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220548.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220548.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712220548.png 2x" sizes="auto" data-title="image-20200712220546937" data-alt="image-20200712220546937" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>后 10 个数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>前 11 - 20 个数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>前 10 个数，每两个取一个：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>所有数，每 5 个取一个：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[::</span><span class="mi">5</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span><span class="p">[::</span><span class="mi">5</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>甚至什么都不写，只写<code>[:]</code>就可以原样复制一个 list：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">L</span><span class="p">[:]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">L</span><span class="p">[:]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="312-tuple-切片">3.1.2 tuple 切片</h3>
 <p>!&gt; tuple 也是一种 list，唯一区别是 tuple 不可变。因此，tuple 也可以用切片操作，只是操作的结果仍是 tuple：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712222248.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712222248.png, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712222248.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200712222248.png 2x" sizes="auto" data-title="image-20200712222247480" data-alt="image-20200712222247480" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="313-str-切片">3.1.3 str 切片</h3>
 <p>字符串<code>'xxx'</code>也可以看成是一种 list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712222834.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712222834.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712222834.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712222834.png 2x" sizes="auto" data-title="image-20200712222833885" data-alt="image-20200712222833885" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712223100.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712223100.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712223100.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712223100.png 2x" sizes="auto" data-title="image-20200712223059989" data-alt="image-20200712223059989" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>在很多编程语言中，针对字符串提供了很多各种截取函数（例如，substring），其实目的就是对字符串切片。Python 没有针对字符串的截取函数，只需要切片一个操作就可以完成，非常简单。</p>
@@ -439,7 +420,7 @@
 <p>✏️ 练习题：</p>
 </blockquote>
 <p>利用切片操作，实现一个 trim() 函数，去除字符串首尾的空格，注意不要调用 str 的<code>strip()</code>方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -454,8 +435,7 @@
 </span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 </span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39; &#39;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>✏️ 小结：</p>
@@ -467,7 +447,7 @@
 </blockquote>
 <p>迭代是通过 for &hellip; in 来完成的，Python 的<code>for</code>循环抽象程度要高于 C 的<code>for</code>循环，因为 Python 的<code>for</code>循环不仅可以用在 list 或 tuple 上，还可以作用在其他可迭代对象上。</p>
 <p>list 这种数据类型虽然有下标，但很多其他数据类型是没有下标的，但是，只要是可迭代对象，无论有无下标，都可以迭代，比如 dict 就可以迭代：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -476,25 +456,23 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为 dict 的存储不是按照 list 的方式顺序排列，所以，迭代出的结果顺序很可能不一样。</p>
 <p>🍗 默认情况下，dict 迭代的是 key。如果要迭代 value，可以用<code>for value in d.values()</code>，如果要同时迭代 key 和 value，可以用<code>for k, v in d.items()</code>。</p>
 <p>由于字符串也是可迭代对象，因此，也可以作用于<code>for</code>循环：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="s1">&#39;ABC&#39;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>所以，当我们使用<code>for</code>循环时，只要作用于一个可迭代对象，<code>for</code>循环就可以正常运行，而我们不太关心该对象究竟是list还是其他数据类型。</p>
 <p>那么，如何判断一个对象是可迭代对象呢？方法是通过 collections 模块的 Iterable 类型判断：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -511,11 +489,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">Iterable</span><span class="p">)</span> <span class="c1"># list是否可迭代</span>
 </span></span><span class="line"><span class="cl"><span class="kc">True</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> <span class="c1"># 整数是否可迭代</span>
-</span></span><span class="line"><span class="cl"><span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后一个小问题，如果要对 list 实现类似 Java 那样的下标循环怎么办？Python 内置的<code>enumerate</code>函数可以把一个 list 变成索引-元素对，这样就可以在<code>for</code>循环中同时迭代索引和元素本身：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -530,11 +507,10 @@
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span> <span class="n">A</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="n">B</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="n">C</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="n">C</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上面的<code>for</code>循环里，同时引用了两个变量，在 Python 里是很常见的，比如下面的代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -549,14 +525,13 @@
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="mi">4</span>
-</span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="mi">9</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="mi">9</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>✏️ 练习题：</p>
 </blockquote>
 <p>请使用迭代查找一个 list 中最小和最大值，并返回一个 tuple：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -601,8 +576,7 @@
 </span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">findMinAndMax</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">!=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试成功!&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试成功!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>结果图：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200715205941.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200715205941.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200715205941.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200715205941.png 2x" sizes="auto" data-title="结果图" data-alt="结果图" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -618,7 +592,7 @@
 <ul>
 <li>方法一是循环：</li>
 </ul>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -629,59 +603,54 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="p">[]</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">L</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">L</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110242.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110242.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110242.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110242.png 2x" sizes="auto" data-title="image-20200716110241249" data-alt="image-20200716110241249" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>但是循环太繁琐，而列表生成式则可以用一行语句代替循环生成上面的 list：</p>
 <ul>
 <li>方法二：列表生成式</li>
 </ul>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110449.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110449.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110449.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110449.png 2x" sizes="auto" data-title="image-20200716110448050" data-alt="image-20200716110448050" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>👒 写列表生成式时，把要生成的元素<code>x * x</code>放到前面，后面跟<code>for</code>循环，就可以把 list 创建出来，十分有用，多写几次，很快就可以熟悉这种语法。</p>
 <p>for 循环后面还可以加上 if 判断，这样我们就可以筛选出仅偶数的平方：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110715.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110715.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110715.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110715.png 2x" sizes="auto" data-title="image-20200716110714610" data-alt="image-20200716110714610" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>还可以使用两层循环，可以生成全排列：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="s1">&#39;ABC&#39;</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="s1">&#39;XYZ&#39;</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">n</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="s1">&#39;ABC&#39;</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="s1">&#39;XYZ&#39;</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110816.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110816.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110816.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110816.png 2x" sizes="auto" data-title="image-20200716110813806" data-alt="image-20200716110813806" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>三层和三层以上的循环就很少用到了。</p>
 <p>运用列表生成式，可以写出非常简洁的代码。例如，列出当前目录下的所有文件和目录名，可以通过一行代码实现：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span> <span class="c1"># 导入os模块，模块的概念后面讲到</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)]</span> <span class="c1"># os.listdir可以列出文件和目录</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)]</span> <span class="c1"># os.listdir可以列出文件和目录</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111018.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111018.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111018.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111018.png 2x" sizes="auto" data-title="image-20200716111017314" data-alt="image-20200716111017314" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p><code>for</code>循环其实可以同时使用两个甚至多个变量，比如<code>dict</code>的<code>items()</code>可以同时迭代 key 和 value：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -690,32 +659,29 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="s1">&#39;C&#39;</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111307.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111307.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111307.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111307.png 2x" sizes="auto" data-title="image-20200716111306467" data-alt="image-20200716111306467" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>因此，列表生成式也可以使用两个变量来生成 list：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-33"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="s1">&#39;C&#39;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span> <span class="o">+</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span> <span class="o">+</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111535.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111535.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111535.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111535.png 2x" sizes="auto" data-title="image-20200716111534526" data-alt="image-20200716111534526" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>最后把一个 list 中所有的字符串变成小写：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;IBM&#39;</span><span class="p">,</span> <span class="s1">&#39;Apple&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">L</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">L</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111756.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111756.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111756.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111756.png 2x" sizes="auto" data-title="image-20200716111755472" data-alt="image-20200716111755472" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h3 id="331-if--else">3.3.1 if &hellip; else</h3>
@@ -723,35 +689,32 @@
 <p>使用列表生成式的时候，有些童鞋经常搞不清楚<code>if...else</code>的用法。</p>
 </blockquote>
 <p>例如，以下代码正常输出偶数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>但是，我们不能在最后的<code>if</code>加上<code>else</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112210.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112210.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112210.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112210.png 2x" sizes="auto" data-title="image-20200716112208908" data-alt="image-20200716112208908" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>这是因为跟在<code>for</code>后面的<code>if</code>是一个筛选条件，不能带<code>else</code>，否则如何筛选？</p>
 <p>另一些童鞋发现把<code>if</code>写在<code>for</code>前面必须加<code>else</code>，否则报错：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112357.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112357.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112357.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112357.png 2x" sizes="auto" data-title="image-20200716112356893" data-alt="image-20200716112356893" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>这是因为<code>for</code>前面的部分是一个表达式，它必须根据<code>x</code>计算出一个结果。因此，考察表达式：<code>x if x % 2 == 0</code>，它无法根据<code>x</code>计算出结果，因为缺少<code>else</code>，必须加上<code>else</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112507.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112507.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112507.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716112507.png 2x" sizes="auto" data-title="image-20200716112506596" data-alt="image-20200716112506596" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>上述<code>for</code>前面的表达式<code>x if x % 2 == 0 else -x</code>才能根据<code>x</code>计算出确定的结果。</p>
@@ -764,7 +727,7 @@
 <p>使用内建的<code>isinstance</code>函数可以判断一个变量是不是字符串：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113014.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113014.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113014.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113014.png 2x" sizes="auto" data-title="image-20200716113013011" data-alt="image-20200716113013011" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>请修改列表生成式，通过添加<code>if</code>语句保证列表生成式能正确地执行：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -783,8 +746,7 @@
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">L2</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;world&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">]:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试通过!&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113245.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113245.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113245.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113245.png 2x" sizes="auto" data-title="image-20200716113244975" data-alt="image-20200716113244975" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <blockquote>
@@ -804,7 +766,7 @@
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716115125.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716115125.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716115125.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716115125.png 2x" sizes="auto" data-title="image-20200716115124114" data-alt="image-20200716115124114" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>我们讲过，generator 保存的是算法，每次调用<code>next(g)</code>，就计算出<code>g</code>的下一个元素的值，直到计算到最后一个元素，没有更多的元素时，抛出<code>StopIteration</code>的错误。</p>
 <p>当然，上面这种不断调用<code>next(g)</code>实在是太变态了，正确的方法是使用<code>for</code>循环，因为 generator 也是可迭代对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -813,15 +775,14 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">g</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>所以，我们创建了一个 generator 后，基本上永远不会调用<code>next()</code>，而是通过<code>for</code>循环来迭代它，并且不需要关心<code>StopIteration</code>的错误。</p>
 <p>generator 非常强大。如果推算的算法比较复杂，用类似列表生成式的<code>for</code>循环无法实现的时候，还可以用函数来实现。</p>
 <p>比如，著名的斐波拉契数列（Fibonacci），除第一个和第二个数外，任意一个数都可由前两个数相加得到：</p>
 <p>1, 1, 2, 3, 5, 8, 13, 21, 34, &hellip;</p>
 <p>斐波拉契数列用列表生成式写不出来，但是，用函数把它打印出来却很容易：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -838,13 +799,12 @@
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;done&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;done&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意：</p>
 <p>赋值语句：a, b = b, a + b</p>
 <p>相当于：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -853,15 +813,14 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># t是一个tuple</span>
 </span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>但不必显式写出临时变量 t 就可以赋值。</p>
 <p>上面的函数可以输出斐波那契数列的前 N 个数：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124359.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124359.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124359.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124359.png 2x" sizes="auto" data-title="image-20200716124358250" data-alt="image-20200716124358250" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>仔细观察，可以看出，<code>fib</code>函数实际上是定义了斐波拉契数列的推算规则，可以从第一个元素开始，推算出后续任意的元素，这种逻辑其实非常类似 generator。</p>
 <p>也就是说，上面的函数和 generator 仅一步之遥。要把<code>fib</code>函数变成 generator，只需要把<code>print(b)</code>改为<code>yield b</code>就可以了：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -878,14 +837,13 @@
 </span></span><span class="line"><span class="cl">        <span class="k">yield</span> <span class="n">b</span>
 </span></span><span class="line"><span class="cl">        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;done&#39;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;done&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124518.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124518.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124518.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124518.png 2x" sizes="auto" data-title="image-20200716124517165" data-alt="image-20200716124517165" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>这就是定义 generator 的另一种方法。如果一个函数定义中包含<code>yield</code>关键字，那么这个函数就不再是一个普通函数，而是一个 generator：</p>
 <p>这里，最难理解的就是 generator 和函数的执行流程不一样。函数是顺序执行，遇到<code>return</code>语句或者最后一行函数语句就返回。而变成 generator 的函数，在每次调用<code>next()</code>的时候执行，遇到<code>yield</code>语句返回，再次执行时从上次返回的<code>yield</code>语句处继续执行。</p>
 <p>举个简单的例子，定义一个 generator，依次返回数字 1，3，5：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -902,26 +860,24 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;step 2&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">yield</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;step 3&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">yield</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">yield</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>调用该 generator 时，首先要生成一个 generator 对象，然后用<code>next()</code>函数不断获得下一个返回值：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124900.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124900.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124900.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124900.png 2x" sizes="auto" data-title="image-20200716124859127" data-alt="image-20200716124859127" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>可以看到，<code>odd</code>不是普通函数，而是 generator，在执行过程中，遇到<code>yield</code>就中断，下次又继续执行。执行 3 次<code>yield</code>后，已经没有<code>yield</code>可以执行了，所以，第 4 次调用<code>next(o)</code>就报错。</p>
 <p>回到<code>fib</code>的例子，我们在循环过程中不断调用<code>yield</code>，就会不断中断。当然要给循环设置一个条件来退出循环，不然就会产生一个无限数列出来。</p>
 <p>同样的，把函数改成 generator 后，我们基本上从来不会用<code>next()</code>来获取下一个返回值，而是直接使用<code>for</code>循环来迭代：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>但是用<code>for</code>循环调用 generator 时，发现拿不到 generator 的<code>return</code>语句的返回值。如果想要拿到返回值，必须捕获<code>StopIteration</code>错误，返回值包含在<code>StopIteration</code>的<code>value</code>中：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -940,8 +896,7 @@
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;g:&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">StopIteration</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Generator return value:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">break</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716125329.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716125329.png, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716125329.png 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716125329.png 2x" sizes="auto" data-title="image-20200716125328414" data-alt="image-20200716125328414" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>关于如何捕获错误，后面的错误处理还会详细讲解。</p>
@@ -949,7 +904,7 @@
 <p>✏️ 练习题：</p>
 </blockquote>
 <p><a href="http://baike.baidu.com/view/7804.htm"target="_blank" rel="external nofollow noopener noreferrer">杨辉三角</a>定义如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-46"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -974,11 +929,10 @@
 </span></span><span class="line"><span class="cl">   / \ / \ / \ / \
 </span></span><span class="line"><span class="cl">  1   4   6   4   1
 </span></span><span class="line"><span class="cl"> / \ / \ / \ / \ / \
-</span></span><span class="line"><span class="cl">1   5   10  10  5   1
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">1   5   10  10  5   1</span></span></code></pre></td></tr></table>
 </div>
 </div><p>把每一行看做一个 list，试写一个 generator，不断输出下一行的 list：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -993,11 +947,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="k">yield</span> <span class="n">L</span> 
 </span></span><span class="line"><span class="cl">        <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>测试：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1052,8 +1005,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">]:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试通过!&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>小结：</p>
@@ -1061,7 +1013,7 @@
 <p>generator 是非常强大的工具，在 Python 中，可以简单地把列表生成式改成 generator，也可以通过函数实现复杂逻辑的 generator。</p>
 <p>要理解 generator 的工作原理，它是在<code>for</code>循环的过程中不断计算出下一个元素，并在适当的条件结束<code>for</code>循环。对于函数改成的 generator 来说，遇到<code>return</code>语句或者执行到函数体最后一行语句，就是结束 generator 的指令，<code>for</code>循环随之结束。</p>
 <p>请注意区分普通函数和 generator 函数，普通函数调用直接返回结果：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1070,11 +1022,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span>
-</span></span><span class="line"><span class="cl"><span class="mi">6</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>generator 函数的“调用”实际返回一个 generator 对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1083,8 +1034,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">fib</span> <span class="n">at</span> <span class="mh">0x1022ef948</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">fib</span> <span class="n">at</span> <span class="mh">0x1022ef948</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="35-迭代器">3.5 迭代器</h2>
 <p>我们已经知道，可以直接作用于<code>for</code>循环的数据类型有以下几种：</p>
@@ -1092,7 +1042,7 @@
 <p>一类是<code>generator</code>，包括生成器和带<code>yield</code>的 generator function。</p>
 <p>这些可以直接作用于<code>for</code>循环的对象统称为可迭代对象：<code>Iterable</code>。</p>
 <p>可以使用<code>isinstance()</code>判断一个对象是否是<code>Iterable</code>对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1117,13 +1067,12 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">((</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)),</span> <span class="n">Iterable</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="kc">True</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>而生成器不但可以作用于<code>for</code>循环，还可以被<code>next()</code>函数不断调用并返回下一个值，直到最后抛出<code>StopIteration</code>错误表示无法继续返回下一个值了。</p>
 <p>可以被<code>next()</code>函数调用并不断返回下一个值的对象称为迭代器：<code>Iterator</code>。</p>
 <p>可以使用<code>isinstance()</code>判断一个对象是否是<code>Iterator</code>对象：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1144,12 +1093,11 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">({},</span> <span class="n">Iterator</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="kc">False</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>生成器都是<code>Iterator</code>对象，但<code>list</code>、<code>dict</code>、<code>str</code>虽然是<code>Iterable</code>，却不是<code>Iterator</code>。</p>
 <p>把<code>list</code>、<code>dict</code>、<code>str</code>等<code>Iterable</code>变成<code>Iterator</code>可以使用<code>iter()</code>函数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1160,8 +1108,7 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">iter</span><span class="p">([]),</span> <span class="n">Iterator</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="kc">True</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">),</span> <span class="n">Iterator</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kc">True</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kc">True</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>你可能会问，为什么<code>list</code>、<code>dict</code>、<code>str</code>等数据类型不是<code>Iterator</code>？</p>
 <p>这是因为 Python 的<code>Iterator</code>对象表示的是一个数据流，Iterator 对象可以被<code>next()</code>函数调用并不断返回下一个数据，直到没有数据时抛出<code>StopIteration</code>错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过<code>next()</code>函数实现按需计算下一个数据，所以<code>Iterator</code>的计算是惰性的，只有在需要返回下一个数据时它才会计算。</p>
@@ -1173,18 +1120,17 @@
 <p>凡是可作用于<code>next()</code>函数的对象都是<code>Iterator</code>类型，它们表示一个惰性计算的序列；</p>
 <p>集合数据类型如<code>list</code>、<code>dict</code>、<code>str</code>等是<code>Iterable</code>但不是<code>Iterator</code>，不过可以通过<code>iter()</code>函数获得一个<code>Iterator</code>对象。</p>
 <p>Python 的<code>for</code>循环本质上就是通过不断调用<code>next()</code>函数实现的，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>实际上完全等价于：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-55"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1207,8 +1153,7 @@
 </span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># 遇到StopIteration就退出循环</span>
-</span></span><span class="line"><span class="cl">        <span class="k">break</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="36-参考资料">3.6 参考资料</h2>
 <ul>

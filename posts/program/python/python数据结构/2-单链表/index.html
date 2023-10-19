@@ -177,7 +177,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1519 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/" class="leancloud_visitors comment-visitors" data-flag-title="2 单链表">
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="1519 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1600 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/" class="leancloud_visitors comment-visitors" data-flag-title="2 单链表">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="2 单链表">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -215,7 +215,7 @@
 <p>链表分为单链表和单循环链表，双向链表和双向循环链表，本篇先讲一下单链表：</p>
 <h2 id="21-定义节点类">2.1 定义节点类</h2>
 <p>节点类中包括节点数据和下一个节点地址，即引用</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -246,12 +246,11 @@
 </span></span><span class="line"><span class="cl">        <span class="c1"># 测试基本功能，输出data</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 输出data</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里的<code>__str__</code>可以不用写，这里是在进行测试，在后面的具体实现部分可以不用这个，str函数可以方便我们打印对象中具体的属性值，也是很nice了！具体使用如上</p>
 <h2 id="22-获取链表的长度">2.2 获取链表的长度</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -270,11 +269,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">cur</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">        <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">count</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">count</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="23-头插元素">2.3 头插元素</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -287,11 +285,10 @@
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add_fist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
-</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">node</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">node</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="24-尾插元素">2.4 尾插元素</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -318,11 +315,10 @@
 </span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># 退出循环的时候，curl指向尾结点</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cur</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="n">cur</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="25-指定位置插元素">2.5 指定位置插元素</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -361,11 +357,10 @@
 </span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># 退出循环的时候，cur指向index的前一个位置</span>
 </span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cur</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="n">cur</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="26-删除节点">2.6 删除节点</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -392,11 +387,10 @@
 </span></span><span class="line"><span class="cl">            <span class="c1"># 不是要找的元素，移动游标</span>
 </span></span><span class="line"><span class="cl">            <span class="n">pre</span> <span class="o">=</span> <span class="n">cur</span>
 </span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span><span class="line"><span class="cl">        <span class="n">pre</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">        <span class="n">pre</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="27-查找节点">2.7 查找节点</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -417,11 +411,10 @@
 </span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">True</span>
 </span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">False</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="28-打印链表">2.8 打印链表</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -448,11 +441,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">cur</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">print_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cur</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">next</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&gt;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">print_list</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&gt;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">print_list</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="29-测试代码">2.9 测试代码</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -481,13 +473,12 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">length</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">remove_node</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">search_node</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">traverse_to_print_node</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">traverse_to_print_node</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>结果图：</p>
 <p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/image-20201215214543668.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/image-20201215214543668.png, https://gitee.com/wugenqiang/images/raw/master/02/image-20201215214543668.png 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/image-20201215214543668.png 2x" sizes="auto" data-title="结果图" data-alt="结果图" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h2 id="210-完整代码">2.10 完整代码</h2>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
@@ -736,8 +727,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">length</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">remove_node</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">search_node</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">traverse_to_print_node</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="nb">list</span><span class="o">.</span><span class="n">traverse_to_print_node</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

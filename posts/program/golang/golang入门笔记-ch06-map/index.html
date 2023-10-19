@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1240 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="1240 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -203,37 +203,34 @@
       </div><div class="content" id="content"><h3 id="声明和初始化-map">声明和初始化 Map</h3>
 <p><code>map</code> 是一种特殊的数据结构，通过键 <code>key</code> 和值 <code>value</code> 来保存数据，可以快速地根据 <code>key</code> 找到其对应的 <code>value</code>，与 <code>python</code> 中的字典和 <code>Java</code> 中的 <code>HashMap</code> 类似。</p>
 <p><code>map</code> 是<strong>引用类型</strong>，声明方式如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在声明的时候不需要知道 <code>map</code> 的长度，<code>map</code> 是可以<strong>动态增长</strong>的。</p>
 <p>未初始化的 <code>map</code> 的值是 <code>nil</code>。</p>
 <p><code>map</code> 中的 <code>key</code> 只能是可以用 <code>==</code> 和 <code>!=</code> 来比较的变量类型，例如 <code>string</code>，<code>int</code> 和 <code>float</code> 等，不能是数组，结构体和切片，但指针和接口可以作为 <code>key</code>。如果要使用结构体来作为 <code>key</code>，需要提供 <code>Key()</code> 和 <code>Hash()</code> 方法，<code>value</code> 可以为任意类型。</p>
 <p>可以通过赋值符号来设置 <code>key1</code> 对应的 <code>value</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span><span class="p">[</span><span class="nx">key1</span><span class="p">]</span> <span class="p">=</span> <span class="nx">value</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span><span class="p">[</span><span class="nx">key1</span><span class="p">]</span> <span class="p">=</span> <span class="nx">value</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>也可以根据赋值符号获取 <code>key1</code> 对应的 <code>value</code>，若 <code>map1</code> 中没有 <code>key1</code> 对应的值，<code>val</code> 将会被赋值 <code>map1</code> 的值类型的空值。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">val</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key1</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">val</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key1</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>示例：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -276,11 +273,10 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Map created at \&#34;key2\&#34; is: %f\n&#34;</span><span class="p">,</span> <span class="nx">mapCreated</span><span class="p">[</span><span class="s">&#34;key2&#34;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Map assigned at \&#34;two\&#34; is: %d\n&#34;</span><span class="p">,</span> <span class="nx">mapLit</span><span class="p">[</span><span class="s">&#34;two&#34;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Map literal at \&#34;ten\&#34; is: %d\n&#34;</span><span class="p">,</span> <span class="nx">mapLit</span><span class="p">[</span><span class="s">&#34;ten&#34;</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -291,33 +287,30 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Map literal at <span class="s2">&#34;one&#34;</span> is: <span class="m">1</span>
 </span></span><span class="line"><span class="cl">Map created at <span class="s2">&#34;key2&#34;</span> is: 3.14159
 </span></span><span class="line"><span class="cl">Map assigned at <span class="s2">&#34;two&#34;</span> is: <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Mpa literal at <span class="s2">&#34;ten&#34;</span> is: <span class="m">0</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Mpa literal at <span class="s2">&#34;ten&#34;</span> is: <span class="m">0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以用 <code>{key1: val1, key2: val2}</code> 来初始化 <code>map</code>。</p>
 <p><code>map</code> 是引用类型，因此用 <code>make</code> 来分配内存。</p>
 <p><code>map</code> 的常规初始化方式：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>也可以简写为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>mapCreated := make(map[string]float)</code> 相当于：<code>mapCreated := map[string]float{}</code>。</p>
 <h3 id="map-容量">Map 容量</h3>
 <p><code>map</code> 会动态扩容，因此它不存在长度限制。但也可以在初始化 <code>map</code> 时指定它的初始容量，格式如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -328,26 +321,24 @@
 </div><p>当 <code>map</code> 增长到最大容量时，容量会自动加 1。但对于性能要求较高的场景，若 <code>map</code> 中保存的数据较多或易快速扩张，建议在初始化时指定其初始容量。</p>
 <h3 id="判断键值对是否存在">判断键值对是否存在</h3>
 <p>我们可以通过如下的格式来判断 <code>map</code> 中的 <code>key</code> 是否存在：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">val</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">val</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>若 <code>ok</code> 的值为 <code>true</code>，则表明该 <code>key</code> 存在，否则不存在。</p>
 <p>若只是想判断 <code>key</code> 是否存在，而不需要获取 <code>key</code> 对应的 <code>value</code>，可以这样写：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">_</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">_</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>还可以和 <code>if</code> 混用：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -356,23 +347,21 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">map1</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span> <span class="nx">ok</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="删除元素">删除元素</h3>
 <p>删除 <code>map</code> 中的元素，可以通过 <code>delete</code> 函数，如删除 <code>map1</code> 中 <code>key</code> 对应的元素：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">delete</span><span class="p">(</span><span class="nx">map1</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">delete</span><span class="p">(</span><span class="nx">map1</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>即使要删除的 <code>key</code> 不存在，也不会报错。</p>
 <h3 id="遍历-map">遍历 Map</h3>
 <p>可以通过 <code>for range</code> 循环来遍历 <code>map</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -381,11 +370,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">map1</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果只需遍历 <code>map</code> 中的 <code>value</code>，可以用匿名变量来接收 <code>key</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -394,11 +382,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">map1</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果只需要遍历 <code>map</code> 的 <code>key</code>，可以省略 <code>value</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -407,11 +394,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">key</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">map1</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -440,11 +426,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">map1</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;key is: %d - value is: %f\n&#34;</span><span class="p">,</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -455,8 +440,7 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">key</span> <span class="nx">is</span><span class="p">:</span> <span class="mi">3</span> <span class="o">-</span> <span class="nx">value</span> <span class="nx">is</span><span class="p">:</span> <span class="mf">3.000000</span>
 </span></span><span class="line"><span class="cl"><span class="nx">key</span> <span class="nx">is</span><span class="p">:</span> <span class="mi">1</span> <span class="o">-</span> <span class="nx">value</span> <span class="nx">is</span><span class="p">:</span> <span class="mf">1.000000</span>
 </span></span><span class="line"><span class="cl"><span class="nx">key</span> <span class="nx">is</span><span class="p">:</span> <span class="mi">4</span> <span class="o">-</span> <span class="nx">value</span> <span class="nx">is</span><span class="p">:</span> <span class="mf">4.000000</span>
-</span></span><span class="line"><span class="cl"><span class="nx">key</span> <span class="nx">is</span><span class="p">:</span> <span class="mi">2</span> <span class="o">-</span> <span class="nx">value</span> <span class="nx">is</span><span class="p">:</span> <span class="mf">2.000000</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">key</span> <span class="nx">is</span><span class="p">:</span> <span class="mi">2</span> <span class="o">-</span> <span class="nx">value</span> <span class="nx">is</span><span class="p">:</span> <span class="mf">2.000000</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><em><strong>注意</strong></em>：<code>map</code> 中元素不是按照 <code>key</code> 来排序的。</p>
@@ -464,7 +448,7 @@
 <h3 id="map-类型的切片">Map 类型的切片</h3>
 <p>如果我们要创建一个 <code>map</code> 类型的切片，一定要使用两次 <code>make()</code> 函数，第一次分配切片的内存，第二次分配 <code>map</code> 的内存。</p>
 <p>来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -507,19 +491,17 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">2</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Version B: Value of items: %v\n&#34;</span><span class="p">,</span> <span class="nx">items2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">Version</span> <span class="nx">A</span><span class="p">:</span> <span class="nx">Value</span> <span class="nx">of</span> <span class="nx">items</span><span class="p">:</span> <span class="p">[</span><span class="kd">map</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="kd">map</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="kd">map</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="kd">map</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="kd">map</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">Version</span> <span class="nx">B</span><span class="p">:</span> <span class="nx">Value</span> <span class="nx">of</span> <span class="nx">items</span><span class="p">:</span> <span class="p">[</span><span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]]</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">Version</span> <span class="nx">B</span><span class="p">:</span> <span class="nx">Value</span> <span class="nx">of</span> <span class="nx">items</span><span class="p">:</span> <span class="p">[</span><span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]</span> <span class="kd">map</span><span class="p">[]]</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

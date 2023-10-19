@@ -185,7 +185,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-05-23 09:53:52"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-23">2017-05-23</time></span>&nbsp;<span title="更新于 2017-05-23 09:53:52"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-23">2017-05-23</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 763 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/" class="leancloud_visitors comment-visitors" data-flag-title="CentOS修改DNS/GW/IP">
+      <div class="post-meta-line"><span title="发布于 2017-05-23 09:53:52"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-23">2017-05-23</time></span>&nbsp;<span title="更新于 2017-05-23 09:53:52"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-23">2017-05-23</time></span>&nbsp;<span title="763 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/" class="leancloud_visitors comment-visitors" data-flag-title="CentOS修改DNS/GW/IP">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="CentOS修改DNS/GW/IP">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -209,24 +209,22 @@
       </div><div class="content" id="content"><h3 id="1修改dns">1.修改DNS</h3>
 <p><strong>解决方案一：</strong>
 修改网卡的DNS的配置文件</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/resolv.conf
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/resolv.conf</span></span></code></pre></td></tr></table>
 </div>
 </div><p>添加以下内容,设置两条dns</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nameserver 8.8.8.8 #google域名服务器
-</span></span><span class="line"><span class="cl">nameserver 8.8.4.4 #google域名服务器
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">nameserver 8.8.4.4 #google域名服务器</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>若未生效，可执行 <code>chattr +i /etc/resolv.conf</code> 设置文件属性只有root用户才能修改
@@ -234,37 +232,34 @@
 </blockquote>
 <p><strong>解决方案二：</strong>
 对接口添加dns信息；编辑/etc/sysconfig/network-scripts/ifcfg-xxx，xxx为你的网卡名，但一般是ifcfg-eth0的，具体的xxx根据你的网卡确定，在最下面添加：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DNS1=8.8.8.8   #google dns服务器, 根据实际情况更换
-</span></span><span class="line"><span class="cl">DNS2=8.8.4.4   #google dns服务器, 根据实际情况更换
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">DNS2=8.8.4.4   #google dns服务器, 根据实际情况更换</span></span></code></pre></td></tr></table>
 </div>
 </div><p>保存后重启网络</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ service network restart
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ service network restart</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2修改网关">2.修改网关</h3>
 <p>修改网关的配置文件(第3部分也可以设置)</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/sysconfig/network
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/sysconfig/network</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改为一下内容</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -273,21 +268,19 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NETWORKING=yes(表示系统是否使用网络，一般设置为yes。如果设为no，则不能使用网络，而且很多系统服务程序将无法启动)
 </span></span><span class="line"><span class="cl">HOSTNAME=centos(设置本机的主机名，这里设置的主机名要和/etc/hosts中设置的主机名对应)
-</span></span><span class="line"><span class="cl">GATEWAY=192.168.1.1(设置本机连接的网关的IP地址。例如，网关为10.0.0.2)
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">GATEWAY=192.168.1.1(设置本机连接的网关的IP地址。例如，网关为10.0.0.2)</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3修改ip">3.修改ip</h3>
 <p>修改对应的网卡的IP地址的配置文件</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/sysconfig/network-scripts/ifcfg-eth0
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/sysconfig/network-scripts/ifcfg-eth0</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改为一下内容</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -310,8 +303,7 @@
 </span></span><span class="line"><span class="cl">IPV6_AUTOCONF=no
 </span></span><span class="line"><span class="cl">NETMASK=255.255.255.0 #网卡对应的网络掩码
 </span></span><span class="line"><span class="cl">NETWORK=192.168.1.0 #网卡对应的网络地址
-</span></span><span class="line"><span class="cl">ONBOOT=yes #系统启动时是否设置此网络接口，设置为yes时，系统启动时激活此设备
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">ONBOOT=yes #系统启动时是否设置此网络接口，设置为yes时，系统启动时激活此设备</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

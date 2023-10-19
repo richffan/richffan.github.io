@@ -185,7 +185,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
           <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-09-06 23:01:31"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span title="更新于 2017-09-06 23:01:31"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 813 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" class="leancloud_visitors comment-visitors" data-flag-title="搭建Maven私服-Nexus">
+      <div class="post-meta-line"><span title="发布于 2017-09-06 23:01:31"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span title="更新于 2017-09-06 23:01:31"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span title="813 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/posts/program/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" class="leancloud_visitors comment-visitors" data-flag-title="搭建Maven私服-Nexus">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="搭建Maven私服-Nexus">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -237,18 +237,17 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 <blockquote>
 <p>官网 pro 版本的是需要付费的。所以我们使用免费的 OSS 版本，下载地址 (<a href="https://www.sonatype.com/download-oss-sonatype"target="_blank" rel="external nofollow noopener noreferrer">https://www.sonatype.com/download-oss-sonatype</a>)</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 上传到服务器并解压</span>
-</span></span><span class="line"><span class="cl">$ tar xvf nexus-3.5.1-02-unix.tar.gz
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ tar xvf nexus-3.5.1-02-unix.tar.gz</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="启动nexus">启动Nexus</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -257,8 +256,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 启动服务</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> /nexus-3.5.1-02/bin/
-</span></span><span class="line"><span class="cl">$ ./nexus start
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">$ ./nexus start</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="验证">验证</h4>
 <p>打开网址：(http://192.168.0.86:8081/) , ip 为搭建私服的服务器 ip 。
@@ -280,7 +278,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 <img loading="lazy" src="http://img.saodiyang.com/FjcMrajAM3anymLemHA2OoZZUut-.png" srcset="http://img.saodiyang.com/FjcMrajAM3anymLemHA2OoZZUut-.png, http://img.saodiyang.com/FjcMrajAM3anymLemHA2OoZZUut-.png 1.5x, http://img.saodiyang.com/FjcMrajAM3anymLemHA2OoZZUut-.png 2x" sizes="auto" data-title="创建自定义release和snapshot仓库" data-alt="创建自定义release和snapshot仓库" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <h4 id="pom中添加部署配置">pom中添加部署配置</h4>
 <p>url 复制上图中新建的仓库的 copy 按钮，复制url。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -307,12 +305,11 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 </span></span><span class="line"><span class="cl">        <span class="nt">&lt;name&gt;</span>Snapshot Repository of yelog<span class="nt">&lt;/name&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">&lt;url&gt;</span>http://192.168.0.86:8081/repository/yelog-snapshot/<span class="nt">&lt;/url&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;/snapshotRepository&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/distributionManagement&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/distributionManagement&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="在maven的-settingsxml-中配置">在maven的 settings.xml 中配置</h4>
 <p>这里配置 maven 的账号密码，id 要与 distributionManagement 中的id一致。默认账号/密码：admin/admin123</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -339,8 +336,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 </span></span><span class="line"><span class="cl">      <span class="nt">&lt;username&gt;</span>admin<span class="nt">&lt;/username&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&lt;password&gt;</span>admin123<span class="nt">&lt;/password&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;/server&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/servers&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/servers&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="执行maven命令部署项目到私服上">执行maven命令部署项目到私服上</h4>
 <p>我这里直接使用IDE的插件执行
@@ -358,7 +354,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 <img loading="lazy" src="http://img.saodiyang.com/FlmsId2u1z_vQ__zlfzoAIytujm3.png" srcset="http://img.saodiyang.com/FlmsId2u1z_vQ__zlfzoAIytujm3.png, http://img.saodiyang.com/FlmsId2u1z_vQ__zlfzoAIytujm3.png 1.5x, http://img.saodiyang.com/FlmsId2u1z_vQ__zlfzoAIytujm3.png 2x" sizes="auto" data-title="public库设置成员仓库" data-alt="public库设置成员仓库" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></li>
 <li>配置远程仓库为私服地址。</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -401,13 +397,12 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 </span></span><span class="line"><span class="cl">        <span class="nt">&lt;name&gt;</span>Public Repositories<span class="nt">&lt;/name&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">&lt;url&gt;</span>http://192.168.0.86:8081/repository/maven-public/<span class="nt">&lt;/url&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;/pluginRepository&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/pluginRepositories&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/pluginRepositories&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
 <li>引入依赖</li>
 </ol>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -420,8 +415,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.soul<span class="nt">&lt;/groupId&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>commons<span class="nt">&lt;/artifactId&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>1.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>ssm项目就可以引用到soul代码

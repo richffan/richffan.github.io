@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 5866 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 12 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="5866 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 5900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 12 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -272,7 +272,7 @@
 </blockquote>
 <h4 id="启动单个-goroutine">启动单个 goroutine</h4>
 <p>启动单个 Goroutine 只需在调用函数时加一个 <code>go</code> 关键字即可，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -299,21 +299,19 @@
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">hello</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;main goroutine done!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码的运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">main goroutine <span class="k">done</span>!
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">main goroutine <span class="k">done</span>!</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行的结果是不是有点出乎意料，只打印了 <code>main goroutine done!</code>，因为在程序运行时，<code>main</code> 函数默认创建了一个 <code>goroutine</code>，在 <code>main</code> 函数返回时由 <code>main</code> 函数创建的 <code>goroutine</code> 结束了，而在 <code>main</code> 函数中用 <code>go</code> 关键字创建的 <code>goroutine</code> 需要一定时间来生成，因此也一并结束了（<code>main</code> 函数默认创建的 <code>goroutine</code> 就是老大哥，在 <code>main</code> 函数内部用 <code>go</code> 关键字创建的其他 <code>goroutine</code> 是小弟，只要老大哥一阵亡，小弟全部阵亡）。</p>
 <p>如果我们想让 <code>main</code> 执行之后，<code>hello</code> 函数也能执行，可以用 <code>time.Sleep</code> 来实现：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -348,29 +346,27 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">hello</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;main goroutine done!&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">time</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
 <blockquote>
 <p>创建新的 <code>goroutine</code> 需要一定时间，而此时 <code>main</code> 函数中的 <code>goroutine</code> 是继续执行的。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">main goroutine <span class="k">done</span>!
-</span></span><span class="line"><span class="cl">hello goroutine!
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">hello goroutine!</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="启动多个-goroutine">启动多个 goroutine</h4>
 <p>启动多个 <code>goroutine</code> 只需使用多个 <code>go</code> 关键字：</p>
 <blockquote>
 <p>使用 <code>sync.WaitGroup</code> 来实现 <code>goroutine</code> 的同步</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -401,11 +397,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">go</span> <span class="nf">hello</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">wg</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span> <span class="c1">// 等待所有登记的 goroutine 都结束
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -426,8 +421,7 @@
 </span></span><span class="line"><span class="cl">Hello Goroutine! <span class="m">5</span>
 </span></span><span class="line"><span class="cl">Hello Goroutine! <span class="m">6</span>
 </span></span><span class="line"><span class="cl">Hello Goroutine! <span class="m">7</span>
-</span></span><span class="line"><span class="cl">Hello Goroutine! <span class="m">8</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Hello Goroutine! <span class="m">8</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>多运行几次会发现每次打印的数字顺序都不一样，这是因为这 10 个 <code>goroutine</code> 是并发执行的，而 <code>goroutine</code> 的调度是 <strong>随机</strong> 的。</p>
 <h3 id="goroutine-与线程">goroutine 与线程</h3>
@@ -450,7 +444,7 @@
 <p>Go1.5 版本之前，默认使用的是单核心执行。Go1.5 版本之后，默认使用全部的 CPU 逻辑核心数。</p>
 </blockquote>
 <p>我们可以通过将任务分配到不同的 CPU 逻辑核心上实现并行的效果，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -489,11 +483,10 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">a</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">b</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">time</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>两个任务只有一个逻辑核心，此时是做完一个任务再做另一个任务。 将逻辑核心数设为 2，此时两个任务并行执行，代码如下。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -532,8 +525,7 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">a</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">b</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">time</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Go 语言中的操作系统线程和 goroutine 的关系：</p>
 <ol>
@@ -548,16 +540,15 @@
 <p>Go 语言中，通道（<code>channel</code>）是一种特殊的数据类型。通道是队列，遵循 <strong>先进先出</strong> 的原则，以保证收发数据的顺序。每一个通道都是具体类型的载体，在声明通道（<code>channel</code>）的时候需要指定元素类型（类似于数组和切片）。</p>
 <h4 id="channel-类型">channel 类型</h4>
 <p><code>channel</code> 是一种数据类型，属于引用类型，声明格式如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="kd">chan</span> <span class="kd">type</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">variable</span> <span class="kd">chan</span> <span class="kd">type</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -571,7 +562,7 @@
 </div>
 </div><h4 id="创建-channel">创建 channel</h4>
 <p>通道是引用类型，因此空值是 <code>nil</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -585,16 +576,15 @@
 <blockquote>
 <p>缓冲区大小是可选的。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="nx">元素类型</span><span class="p">,</span> <span class="p">[</span><span class="nx">缓冲大小</span><span class="p">])</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="nx">元素类型</span><span class="p">,</span> <span class="p">[</span><span class="nx">缓冲大小</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>举几个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -603,24 +593,22 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">ch1</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nx">ch2</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">bool</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">ch3</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">ch3</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="channel-操作">channel 操作</h4>
 <p>通道有发送（send），接收（receive）和关闭（close）三种操作。</p>
 <p>发送和接收都使用 <code>&lt;-</code> 符号。</p>
 <p>先定义一个通道：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">ch</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">ch</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="发送">发送</h5>
 <p>将一个值发送到通道：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -630,7 +618,7 @@
 </div>
 </div><h5 id="接收">接收</h5>
 <p>从通道中接收值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -642,13 +630,12 @@
 </div>
 </div><h5 id="关闭">关闭</h5>
 <p>通过调用 <code>close</code> 函数来关闭通道：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">close</span><span class="p">(</span><span class="nx">ch</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">close</span><span class="p">(</span><span class="nx">ch</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>只有在通知接收方 <code>goroutine</code> 所有数据都发送完毕时才需要关闭通道，因为通道可被垃圾回收器回收，这与关闭文件不同，在结束操作之后必须关闭文件，但关闭通道非必须。</p>
@@ -662,7 +649,7 @@
 </ul>
 <h4 id="无缓冲的通道">无缓冲的通道</h4>
 <p>无缓冲通道也称阻塞通道，我们来看一段代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -675,11 +662,10 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">ch</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">ch</span> <span class="o">&lt;-</span> <span class="mi">10</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;发送成功&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码能够成功编译，但是运行时会报错：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -696,13 +682,12 @@
 </span></span><span class="line"><span class="cl">main.main<span class="o">()</span>
 </span></span><span class="line"><span class="cl">	D:/projects/go_projects/goBasic/routine/single_goroutine.go:9 +0x5f
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Process finished with <span class="nb">exit</span> code <span class="m">2</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">Process finished with <span class="nb">exit</span> code <span class="m">2</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>为什么会出现上述这种死锁（<code>deadlock</code>）情况呢？因为我们使用 <code>ch := make(chan int)</code> 创建的是无缓冲通道，无缓冲通道只有在有接收者情况下才能发送值。</p>
 <p>如何才能解决该问题呢？</p>
 <p>一种方法是启用一个 <code>goroutine</code> 去接收值，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -727,14 +712,13 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">recv</span><span class="p">(</span><span class="nx">ch</span><span class="p">)</span> <span class="c1">// 启用 goroutine 从通道接收值
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">ch</span> <span class="o">&lt;-</span> <span class="mi">10</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;发送成功&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>无缓冲通道上的发送操作会阻塞，直到另一个 <code>goroutine</code> 在该通道上执行接收操作，此时才能发送成功，两个 <code>goroutine</code> 将继续执行。相反，如果接收操作先执行，接收方的 <code>goroutine</code> 将阻塞，直到另一个 <code>goroutine</code> 在该通道上发送一个值。</p>
 <p>使用无缓冲通道进行通信将导致发送和接收的 <code>goroutine</code> 同步化，因此， <strong>无缓冲通道</strong> 也被称为 <strong>同步通道</strong> 。</p>
 <h4 id="有缓冲的通道">有缓冲的通道</h4>
 <p>解决上述问题还有一个办法，就是使用有缓冲的通道，可以在使用 <code>make()</code> 函数初始化通道的时候指定通道的容量，如下：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -747,8 +731,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">ch</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kt">int</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// 创建一个容量为1的有缓冲区通道
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">ch</span> <span class="o">&lt;-</span> <span class="mi">10</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;发送成功&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>只要通道的容量 <strong>大于 0</strong>，那么该通道就是有缓冲的通道，通道容量表示通道能存放元素的数量。</p>
 <blockquote>
@@ -757,7 +740,7 @@
 <h4 id="for-range-从通道循环取值">for range 从通道循环取值</h4>
 <p>我们可以通过 <code>close()</code> 函数来关闭通道，那么如何判断一个通道已经被关闭了呢？（对于已关闭的通道，我们不能再关闭，不然会引发 <code>panic</code>）。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -826,12 +809,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">ch2</span> <span class="p">{</span> <span class="c1">// 通道关闭后会退出 for range 循环
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="单向通道">单向通道</h4>
 <p>有时我们会将通道作为参数在函数之间传递，而我们需要对通道进行限制，比如限制通道只能发送或者只能接收。Go 语言中可以通过 <strong>单向通道</strong> 来解决该问题，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -888,8 +870,7 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">counter</span><span class="p">(</span><span class="nx">ch1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">squarer</span><span class="p">(</span><span class="nx">ch2</span><span class="p">,</span> <span class="nx">ch1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">printer</span><span class="p">(</span><span class="nx">ch2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><em><strong>注意</strong></em></p>
 <ul>
@@ -900,7 +881,7 @@
 <h3 id="并发安全和锁">并发安全和锁</h3>
 <p>多个 <code>goroutine</code> 同时操作一个资源时，会导致数据竞争。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -937,13 +918,12 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">add</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">wg</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码中，我们开启了两个 <code>goroutine</code> 去累加变量 x 的值，这两个 <code>goroutine</code> 在访问和修改 <code>x</code> 的值时会存在数据竞争，导致最后的结果与预期不符合。</p>
 <h4 id="互斥锁">互斥锁</h4>
 <p>互斥锁可以保证在同一时刻，只有一个 <code>goroutine</code> 能访问共同资源。Go 语言中可以使用 <code>sync</code> 包的 <code>Mutex</code> 来实现互斥锁，例如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -984,13 +964,12 @@
 </span></span><span class="line"><span class="cl">    <span class="k">go</span> <span class="nf">add</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">wg</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用互斥锁能保证同一时刻，只有一个 <code>goroutine</code> 进入临界区，其他 <code>goroutine</code> 在等待锁；当互斥锁释放后，等待的 <code>goroutine</code> 才能获取锁并进入临界区，而多个 <code>goroutine</code> 等待一个锁的唤醒策略是随机的。</p>
 <h4 id="读写互斥锁">读写互斥锁</h4>
 <p>读写锁分为两种，<strong>读锁</strong>和<strong>写锁</strong>。当一个 <code>goroutine</code> 获取<strong>读锁</strong>后，其他的 <code>goroutine</code> 可以继续获取<strong>读锁</strong>，但无法获取<strong>写锁</strong>（需要进行等待）；当一个 <code>goroutine</code> 获取<strong>写锁</strong>后，其他的 <code>goroutine</code> 既不能获取<strong>读锁</strong>也不能获取<strong>写锁</strong>。</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1077,8 +1056,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">wg</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">end</span> <span class="o">:=</span> <span class="nx">time</span><span class="p">.</span><span class="nf">Now</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">end</span><span class="p">.</span><span class="nf">Sub</span><span class="p">(</span><span class="nx">start</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="syncwaitgroup">sync.WaitGroup</h4>
 <p>Go 语言中可以使用 <code>sync.WaitGroup</code> 来实现并发任务的同步，它有如下几个方法：</p>
@@ -1107,17 +1085,16 @@
 <p><code>sync.WaitGroup</code> 内部维护着一个计数器，计数器的值可以发生变化。例如当我们启动了 N 个并发任务时，就将计数器值增加 N。每个任务完成时通过调用 <code>Done()</code> 方法将计数器减 1。通过调用 <code>Wait()</code> 来等待并发任务执行完，当计数器值为 0 时，表示已经完成所有并发任务。</p>
 <h4 id="synconce">sync.Once</h4>
 <p>在高并发的场景下，我们有时需要保证某些操作<strong>只执行一次</strong>，例如读取配置文件，连接数据库等。Go 语言中 <code>sync</code> 包中的 <code>Once</code> 可以帮我们来解决这个问题，<code>sync.Once</code> 只有一个 <code>Do</code> 方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">o</span> <span class="o">*</span><span class="nx">Once</span><span class="p">)</span> <span class="nf">Do</span><span class="p">(</span><span class="nx">f</span> <span class="kd">func</span><span class="p">())</span> <span class="p">{}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">o</span> <span class="o">*</span><span class="nx">Once</span><span class="p">)</span> <span class="nf">Do</span><span class="p">(</span><span class="nx">f</span> <span class="kd">func</span><span class="p">())</span> <span class="p">{}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当有多个 <code>goroutine</code> 对一个变量（资源）进行<strong>写操作</strong>时，我们很难保证这个变量在<strong>数据竞争</strong>中能被正常初始化，因此需要用<strong>互斥锁</strong>或 <code>sync.Once</code> 来保证该变量不被别的 <code>goroutine</code> 修改。</p>
 <p>使用<strong>互斥锁</strong>会存在性能问题，因此面对这种情况，优先使用 <code>sync.Once</code> 来解决：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1158,12 +1135,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">Icon</span><span class="p">(</span><span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="nx">image</span><span class="p">.</span><span class="nx">Image</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">loadIconsOnce</span><span class="p">.</span><span class="nf">Do</span><span class="p">(</span><span class="nx">loadIcons</span><span class="p">)</span> <span class="c1">// 调用 Do 方法确保 loadIcons 函数只执行一次
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">icons</span><span class="p">[</span><span class="nx">name</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="syncmap">sync.Map</h4>
 <p>Go 语言内置的 <code>Map</code> 并不是并发安全的，Go 语言为我们提供了内置的并发安全的 <code>Map</code>—— <code>sync.Map</code>，它无需初始化即可使用，内置了 <code>Store</code>、<code>Load</code>、<code>LoadOrStore</code>、<code>Delete</code> 和 <code>Range</code> 等方法：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1198,8 +1174,7 @@
 </span></span><span class="line"><span class="cl">        <span class="p">}(</span><span class="nx">i</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">wg</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

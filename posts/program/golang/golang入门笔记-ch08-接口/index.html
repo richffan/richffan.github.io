@@ -176,7 +176,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2760 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="2760 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="leancloud_visitors comment-visitors" data-flag-title="">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -227,7 +227,7 @@
 </nav></div>
       </div><div class="content" id="content"><h3 id="1-使用接口的原因">1. 使用接口的原因</h3>
 <p>我们来看一段代码：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -258,15 +258,14 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;猫:&#34;</span><span class="p">,</span> <span class="nx">c</span><span class="p">.</span><span class="nf">Say</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">d</span> <span class="o">:=</span> <span class="nx">Dog</span><span class="p">{}</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;狗:&#34;</span><span class="p">,</span> <span class="nx">d</span><span class="p">.</span><span class="nf">Say</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码中定义了狗 <code>Dog</code> 和猫 <code>Cat</code> 以及它们对应的方法 <code>Say()</code>，若要继续添加鸭 <code>Duck</code> 方法和其对应的方法 <code>Say()</code>，重复代码会非常多。我们可不可以从这三种动物类型中抽象出方法 <code>Say()</code>，这就是接口的作用，接口可以定义抽象方法，来规范我们的代码。</p>
 <h3 id="2-接口的定义和使用">2. 接口的定义和使用</h3>
 <p>Go 语言非传统面对对象语言，没有类和继承的概念。但在 Go 语言中可以通过接口来实现面对对象的一些特性，接口是用来描述对象行为的，可以在其中定义一些<strong>抽象方法</strong>，这些方法<strong>不能被实现</strong>，同时接口中<strong>不能包含变量</strong>。</p>
 <p>Go 语言中接口 <code>interface</code> 是一种抽象类型。</p>
 <p>接口的定义格式：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -277,12 +276,11 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Namer</span> <span class="kd">interface</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">Method1</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="nx">returnType</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">Method2</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="nx">returnType</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>一般接口以 <code>[e]r</code> 结尾，例如 <code>Writer</code>、<code>Logger</code> 等。若 <code>er</code> 结尾不合适时，可以采用 <code>able</code> 结尾，例如 <code>Recoverable</code>。</p>
 <p>举个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -291,12 +289,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Writer</span> <span class="kd">interface</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">Writer</span><span class="p">([]</span><span class="kt">byte</span><span class="p">)</span> <span class="kt">error</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>若一个对象实现了接口的所有方法，那么就实现了这个接口。</p>
 <p>我们来定义一个 <code>Sayer</code> 接口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -305,11 +302,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Sayer</span> <span class="kd">interface</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">say</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>定义 <code>dog</code> 和 <code>dat</code> 两个结构体：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -318,14 +314,13 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">dog</span> <span class="kd">struct</span><span class="p">{}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">cat</span> <span class="kd">struct</span><span class="p">{}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">cat</span> <span class="kd">struct</span><span class="p">{}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>让 <code>dog</code> 和 <code>cat</code> 实现接口 <code>Sayer</code> 的 <code>say</code> 方法：</p>
 <blockquote>
 <p>由于 <code>Sayer</code> 接口中只有一个 <code>say</code> 方法，所以 <code>dog</code> 和 <code>cat</code> 实现了 <code>Sayer</code> 接口。</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -342,11 +337,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="nx">cat</span><span class="p">)</span> <span class="nf">say</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;喵喵喵&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接口变量可以接收任何实现了该接口的实例，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -371,23 +365,21 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span> <span class="p">=</span> <span class="nx">d</span>   <span class="c1">// 把 dog 对应实例 d 赋值给 sayer
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">sayer</span><span class="p">.</span><span class="nf">say</span><span class="p">()</span> <span class="c1">// 通过接口变量调用 say 方法，等价于 d.say()
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
-</span></span><span class="line"><span class="cl">汪汪汪
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">汪汪汪</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3-值接收和指针接收实现接口的区别">3. 值接收和指针接收实现接口的区别</h3>
 <p>现在有一个 <code>Sayer</code> 接口和 <code>Cat</code> 结构体：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -400,11 +392,10 @@
 </span></span><span class="line"><span class="cl">	<span class="nf">say</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">cat</span> <span class="kd">struct</span><span class="p">{}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">cat</span> <span class="kd">struct</span><span class="p">{}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="31-值接收实现接口">3.1 值接收实现接口</h4>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -413,11 +404,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="nx">cat</span><span class="p">)</span> <span class="nf">say</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;喵喵喵&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>创建值实例 <code>c</code> 和指针实例 <code>c2</code>，然后通过 <code>Sayer</code> 接口变量 <code>sayer</code> 来调用方法 <code>say()</code>：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -442,24 +432,22 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span> <span class="p">=</span> <span class="nx">c2</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span><span class="p">.</span><span class="nf">say</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
-</span></span><span class="line"><span class="cl">喵喵喵
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">喵喵喵</span></span></code></pre></td></tr></table>
 </div>
 </div><p>从上述例子中，我们可以发现：当以<strong>值接收</strong>形式实现接口时，不论是值实例还是指针实例，都可以赋值给接口变量。</p>
 <h4 id="32-指针接收实现接口">3.2 指针接收实现接口</h4>
 <p>我们来看下指针接收来实现接口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -492,15 +480,14 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span> <span class="p">=</span> <span class="nx">c2</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span><span class="p">.</span><span class="nf">say</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行后，编译器会提示 <code>cat does not implement Sayer (say method has pointer receiver)</code> 错误，因为实现 <code>Sayer</code> 接口的是 <code>*cat</code>，所以不能将 <code>cat</code> 的实例 <code>c</code> 赋值给接口变量 <code>sayer</code> ，也就是说 <code>sayer</code> 只能接收指针实例。</p>
 <h3 id="4-类型和接口的关系">4. 类型和接口的关系</h3>
 <h4 id="41-类型和接口的关系">4.1 类型和接口的关系</h4>
 <h5 id="一个类型实现多个接口">一个类型实现多个接口</h5>
 <p>一个类型可以实现多个接口，且这些接口相互独立。动物既会叫，也会动，可以定义两个接口，然后让 <code>cat</code> 分别实现这两个接口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -567,23 +554,21 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">mover</span> <span class="p">=</span> <span class="nx">c</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">sayer</span><span class="p">.</span><span class="nf">say</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">mover</span><span class="p">.</span><span class="nf">move</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
-</span></span><span class="line"><span class="cl">猫动了
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">猫动了</span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="多个类型实现同一接口">多个类型实现同一接口</h5>
 <p>一个接口可以被多个不同类型实现，现在有一个接口 <code>Mover</code>，猫 <code>cat</code> 和狗 <code>dog</code> 都会动，让它们分别实现 <code>Mover</code> 接口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -646,22 +631,20 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">m</span><span class="p">.</span><span class="nf">move</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">m</span> <span class="p">=</span> <span class="nx">d</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">m</span><span class="p">.</span><span class="nf">move</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">小猫咪溜了
-</span></span><span class="line"><span class="cl">二狗子跑了
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">二狗子跑了</span></span></code></pre></td></tr></table>
 </div>
 </div><p>一个接口的方法不一定要由一个类型完全实现，可以通过在类型中嵌入其他类型来实现，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -710,12 +693,11 @@
 </span></span><span class="line"><span class="cl"><span class="c1">// 实现 WashingMachine 接口的 wash() 方法
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="p">(</span><span class="nx">h</span> <span class="nx">haier</span><span class="p">)</span> <span class="nf">wash</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;洗刷刷&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5-接口嵌套">5. 接口嵌套</h3>
 <p>接口可以通过嵌套生成新的接口，如：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -748,11 +730,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">type</span> <span class="nx">animal</span> <span class="kd">interface</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">Sayer</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">Mover</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>嵌套接口使用方式与普通接口一样，我们让 <code>cat</code> 来实现 <code>animal</code> 接口：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -787,25 +768,23 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">a</span> <span class="p">=</span> <span class="nx">c</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">a</span><span class="p">.</span><span class="nf">say</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">a</span><span class="p">.</span><span class="nf">move</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
-</span></span><span class="line"><span class="cl">小猫咪溜了
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">小猫咪溜了</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6-空接口">6. 空接口</h3>
 <h4 id="61-空接口的定义">6.1 空接口的定义</h4>
 <p>空接口是指未定义任何方法的接口，因此任何类型都实现了空接口（空接口有点类似于 Java 中的基类 Object）。</p>
 <p>空接口类型变量可以存储任意类型的值：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -842,11 +821,10 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">i</span> <span class="p">=</span> <span class="nx">b</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -855,13 +833,12 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">空接口
 </span></span><span class="line"><span class="cl"><span class="m">25</span>
-</span></span><span class="line"><span class="cl"><span class="nb">true</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">true</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="62-空接口的应用">6.2 空接口的应用</h4>
 <h5 id="函数传参">函数传参</h5>
 <p>使用空接口可以接收任意类型的参数：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -870,12 +847,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="nx">x</span> <span class="kd">interface</span><span class="p">{})</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;type:%T value:%v\n&#34;</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h5 id="map-的值">Map 的值</h5>
 <p>使用空接口可以实现保存任意类型的值的 Map：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -888,14 +864,13 @@
 </span></span><span class="line"><span class="cl"><span class="nx">studentInfo</span><span class="p">[</span><span class="s">&#34;name&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;张三&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">studentInfo</span><span class="p">[</span><span class="s">&#34;age&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="mi">24</span>
 </span></span><span class="line"><span class="cl"><span class="nx">studentInfo</span><span class="p">[</span><span class="s">&#34;married&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="kc">false</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">studentInfo</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">studentInfo</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="7-类型断言">7. 类型断言</h3>
 <p>我们如何获取空接口变量的值和具体类型呢？可以采用类型断言来实现。</p>
 <p>一个接口的值是由 <code>具体类型</code> 和 <code>具体类型的值</code> 组成的，分别称为接口的 <code>动态类型</code> 和 <code>动态值</code>。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -906,19 +881,17 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">w</span> <span class="nx">io</span><span class="p">.</span><span class="nx">Writer</span>
 </span></span><span class="line"><span class="cl"><span class="nx">w</span> <span class="p">=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Stdout</span>
 </span></span><span class="line"><span class="cl"><span class="nx">w</span> <span class="p">=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">bytes</span><span class="p">.</span><span class="nx">Buffer</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">w</span> <span class="p">=</span> <span class="kc">nil</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="nx">w</span> <span class="p">=</span> <span class="kc">nil</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>来看下接口变量 <code>w</code> 的变化：</p>
 <p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png 2x" sizes="auto" data-title="类型断言" data-alt="类型断言" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>若要判断空接口类型变量的值，可以使用类型断言，其格式为：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">x</span><span class="p">.(</span><span class="nx">T</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">x</span><span class="p">.(</span><span class="nx">T</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li><code>x</code> 为空接口类型变量</li>
@@ -926,7 +899,7 @@
 </ul>
 <p>上述断言语句将返回两个参数，第一个参数为 <code>x</code> 转化为 <code>T</code> 类型后的值，第二个值为布尔型，若为 <code>true</code> 表明断言成功，若为 <code>false</code> 表明断言失败。</p>
 <p>我们来看一个例子：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -949,11 +922,10 @@
 </span></span><span class="line"><span class="cl">	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;类型断言失败&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>若要进行多次断言，可以采用 <code>switch</code> 语句：</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -980,8 +952,7 @@
 </span></span><span class="line"><span class="cl">	<span class="k">default</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;unsupport type！&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><em><strong>注意</strong></em>：当有多个类型存在相同的方法时才适合使用接口，不要为了刻意使用接口而使用接口，这样会增加运行时的损耗。</p>
