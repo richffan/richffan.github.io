@@ -1,8 +1,8 @@
 # 十四、国外援贷款审计发现共性问题清单
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计发现共性问题清单/十四-国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单160.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计发现共性问题清单/十四-国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单161.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计发现共性问题清单/十四-国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单162.webp)
+![](http://img.richfan.site/audit/审计发现共性问题清单/十四、国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单160.webp)
+![](http://img.richfan.site/audit/审计发现共性问题清单/十四、国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单161.webp)
+![](http://img.richfan.site/audit/审计发现共性问题清单/十四、国外援贷款审计发现共性问题清单/国外援贷款审计发现共性问题清单162.webp)
 
 
 ---
