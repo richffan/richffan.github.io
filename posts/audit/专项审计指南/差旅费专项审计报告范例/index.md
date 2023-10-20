@@ -28,7 +28,7 @@
 
 （1）差旅费报销未提供实际出行情况，与OA中出差申请单的填写要求不符，导致未能查证差旅费发生的真实性及合理性；费用报销申请单填写不规范，无法一一对应费用产生的时点及事由；
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/差旅费专项审计报告范例.webp)
+![](https://img.richfan.site/obsidian/IPO/差旅费专项审计报告范例.webp)
 
 （2）部分市内交通费超标准部分未予以扣除，自驾公里数审核不严谨
 

@@ -1,7 +1,7 @@
 # 立信会计师事务所收到警示函，竟是因为这7个原因！
 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/跟着证监会学审计/立信会计师事务所收到警示函，竟是因为这7个原因！.webp)
+![](https://img.richfan.site/audit/跟着证监会学审计/立信会计师事务所收到警示函，竟是因为这7个原因！.webp)
 
 ## 01 对募集资金使用相关核查不到位
 

@@ -6,19 +6,19 @@
 
 营业外收支的核心程序便是：重要或异常项目检查。装一点即：选择重要或异常的营业外收入，检查支持性证据，确定入账金额及会计处理是否正确。此外，关于营业外收支要不要专门做截止测试，个人认为是没必要的。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/090-营业外收入审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/090-营业外收入审计要点_1.webp)
 
 一来营业外收支本身金额不会太大；二来营业外收支核心程序便是大比例抽查，抽查的时候，自然会注意附件的时间，20 年罚款 20 年入账，21 年报废 21 年入账的道理，跨期二字，通俗易懂。
 
 因为和营业外支出几乎一模一样，就不赘述，瞅一眼上市公司星光农机的年报披露，果然都~~一样~~差不多。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/090-营业外收入审计要点_2.webp)
+![](https://img.richfan.site/obsidian/IPO/090-营业外收入审计要点_2.webp)
 
 apropos of nothing,其他这种兜底的存在不应太大~~不会太大~~，星光农机营业外收入的其他竟然是大头，质检（内核）老师看到往往也会 Q 其他的具体构成，建议能按照类别重新分类就重新分类。
 
 似乎除了政府补助也没啥好说的，当然还有很多小众的存在，如排污权出售。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/090-营业外收入审计要点_3.webp)
+![](https://img.richfan.site/obsidian/IPO/090-营业外收入审计要点_3.webp)
 
 谈及政府补助，又要祭出~~名言~~歪理：不懂会计的审计就是抓瞎与抄数。
 

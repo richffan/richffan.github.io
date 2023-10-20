@@ -20,7 +20,7 @@
 
 要抑或不要，都是扯犊子，得分类谈论
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/079-销售费用审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/079-销售费用审计要点_1.webp)
 
 所谓与履行合同无关，即不是为了某个合同，卖东西给某个客户，**不妨瞅瞅图中两个粟子**
 
@@ -52,15 +52,15 @@
 
 扑朔迷离时，不妨瞅瞅对立面：广告收入是如何确认的，拿**分众传媒**年度报告打个样，收入端都是某一时点，费用端还想摊到各个时段么
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/079-销售费用审计要点_2.webp)
+![](https://img.richfan.site/obsidian/IPO/079-销售费用审计要点_2.webp)
 
 以上均系会计问题，**解决会计问题是不可避免滴**。。。
 
 正儿八经开底稿：了解被审计单位及其环境，UTB(understand the business)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/079-销售费用审计要点_3.webp)
+![](https://img.richfan.site/obsidian/IPO/079-销售费用审计要点_3.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/079-销售费用审计要点_4.webp)
+![](https://img.richfan.site/obsidian/IPO/079-销售费用审计要点_4.webp)
 
 感受一下这两个行业的销售费用率（销售费用与营业收入的比率），天差地别，打法截然不同
 

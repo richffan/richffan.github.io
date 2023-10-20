@@ -8,9 +8,9 @@
 
 相较成本管控、公司战略、市场环境、经济形势，我们更关心真实+完整，外加能应对监管的解释
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/078-营业成本审计要点_1.webp) 
+![](https://img.richfan.site/obsidian/IPO/078-营业成本审计要点_1.webp) 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/078-营业成本审计要点_2.webp) 
+![](https://img.richfan.site/obsidian/IPO/078-营业成本审计要点_2.webp) 
 
 何谓配比，确认收入时要同步结转成本
 
@@ -20,7 +20,7 @@
 
 收入成本明细表（收入成本大表|收入成本匹配表，南橘北枳）是执行收入实质性程序时最重要的基础资料，这货一般找企业要。。。服务型企业与研发型企业那得另说
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/078-营业成本审计要点_3.webp) 
+![](https://img.richfan.site/obsidian/IPO/078-营业成本审计要点_3.webp) 
 
 重头戏是成本倒轧，这玩意有啥用，有人说是质监非得要
 
@@ -30,9 +30,9 @@
 
 本期销售的库存商品，就是主营业务成本，厘清原材料与生产成本如何一步步沦为库存商品，反着来就完事。。。请出一张天职上古神图
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/078-营业成本审计要点_4.webp) 
+![](https://img.richfan.site/obsidian/IPO/078-营业成本审计要点_4.webp) 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/078-营业成本审计要点_5.webp) 
+![](https://img.richfan.site/obsidian/IPO/078-营业成本审计要点_5.webp) 
 
 ---
 

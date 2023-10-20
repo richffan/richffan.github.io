@@ -2,7 +2,7 @@
 
 警示函
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/跟着证监会学审计/中审众环收到警示函，因审计底稿存在多处错误！.webp)
+![](https://img.richfan.site/audit/跟着证监会学审计/中审众环收到警示函，因审计底稿存在多处错误！.webp)
 
 ## 01 收入测试底稿记录存在错漏
 

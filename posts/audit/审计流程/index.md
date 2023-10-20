@@ -1,7 +1,7 @@
 # 审计流程
 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/audit-process.webp)
+![](https://img.richfan.site/audit/audit-process.webp)
 
 ---
 

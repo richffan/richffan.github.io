@@ -43,7 +43,7 @@
 
 伴随增加的，还有一个绕不开的话题：转长期资产的时点，这决定着什么时候开始摊销。准则中，叫达到预定用途，听起来有些抽象，不妨结合一个案例 。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/053-无形资产和长期待摊费用审计要点_1.webp)|
+![](https://img.richfan.site/obsidian/IPO/053-无形资产和长期待摊费用审计要点_1.webp)|
 
 § 摊销不仅仅是测算
 

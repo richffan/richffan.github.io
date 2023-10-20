@@ -16,7 +16,7 @@
 
 而我们取完数，除了能看看账，也就用  Excel（WPS）自娱自乐，抑或是套着审计软件壳的 excel。诸如**方方格子**等插件不断优化，~~其实，也够用。~~
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_1.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_1.webp)
 
 时至今日，少量所（内资八大都还没整齐全）函证中心已经搭建完毕，承担着批量生成询证函（**邮件合并**堪称经典）、收寄并整理快递等任务（也有某所，函证中心只负责收，不负责寄）。
 
@@ -24,43 +24,43 @@
 
 君不见：2021 年 1 月 30 日，由中审众环会计师事务所发起、中国工商银行回函的首笔全流程自动化电子函证成功落地中国银行业协会**银行函证区块链服务平台**。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_2.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_2.webp)
 
 所谓函证数字化是银行业运用**区块链技术**打造金融科技赋能的良好契机，这才叫信息化!
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_3.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_3.webp)
 
 你给我翻译翻译，什么叫做惊喜。**30秒回函**！
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_4.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_4.webp)
 
 制作抑或改进银行流水核对工具的有很多，~~以切身体会来看，难称得上群星闪耀，用起来总是不那么理想。~~
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_4.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_4.webp)
 
 当然，我们不能否认大佬们的无私付出，**这个行业还是充满人情味的**，从银行流水 核对工具到批量重命名工具再到**同行业财务指标批量查询工具**。大佬们越无私付出，说明我们的信息化程度越。。。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_5.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_5.webp)
 
 目前，某所有益的尝试：**现金流尽调系统**。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_6.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_6.webp)
 
 我之愚见，**推进行业信息化本该是头部事务所的职责**。何谓头部事务所，不是球球大作战，大家缝合在一起，谁收入高谁牛逼，不是缝合在一起，**以量取胜，相互压价，低价厮杀**。
 
 头部事务所，应当是能为行业做实事的，应当是行业领头羊，应当是可以在行业史留下名字的，而不是刻在**证监会处罚案例**里。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_7.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_7.webp)
 
 昨日，多数头部会计师事务所的头头云集上海国家会计学院，我这种虾兵蟹将自然不知道大佬们聊了啥，只希冀行业愈发充满智慧，~~不走劳动密集型路线。~~
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_8.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_8.webp)
 
 再谈报表附注，有**王建彬老师**（不一一枚举）在不断努力着，中审众环也在用 **TNP**
 
 自动生成。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_9.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_9.webp)
 
 某所也自上而下在进行有益的尝试，不过落地之路漫漫。
 
@@ -68,7 +68,7 @@
 
 审计行业还是充斥温暖的，有陈版主那样的人，通过网络回答，助力改善执业环境，也有人致力打造方便、实用、免费的审计工具网站：青藤数据。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_10.webp)
+![](https://img.richfan.site/obsidian/IPO/109-审计信息化现状：时至今日还是体力活_10.webp)
 
 ---
 

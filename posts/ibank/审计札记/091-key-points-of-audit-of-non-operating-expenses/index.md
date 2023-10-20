@@ -16,7 +16,7 @@
 
 会计中的定义就不摆了，抽一位幸运儿上市公司星光农机看一眼。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/091-营业外支出审计要点_1.webp) 
+![](https://img.richfan.site/obsidian/IPO/091-营业外支出审计要点_1.webp) 
 
 A 非流动资产处置损失合计。区分资产处置收益（资产处置损益）和营业外收支是务必的。原则如下：相应资产处置之后还有使用价值，记入资产处置收益，没有使用价值，记入营业外收支。
 

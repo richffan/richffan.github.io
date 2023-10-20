@@ -1,6 +1,6 @@
 # 028-审计如何把往来函证控制完美（Audit Lancet）
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_1.webp)|
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_1.webp)|
 
 ## 1、【发函前】样本选择
 
@@ -30,7 +30,7 @@
 
 A. 地址位于不同省份的合理性理由：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_2.webp) 
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_2.webp) 
 
 B. 两个地址位于相同省份不同城市&两个地址位于相同城市不同行政区
 
@@ -62,7 +62,7 @@ B. 两个地址位于相同省份不同城市&两个地址位于相同城市不
 
   
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_3.webp) 
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_3.webp) 
 
 ## 6、【发出时】催函与跟进记录
 
@@ -72,9 +72,9 @@ B. 两个地址位于相同省份不同城市&两个地址位于相同城市不
 
 ## 7、【收到回函】有效数据整理
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_4.webp)|
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_4.webp)|
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_5.webp) 
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_5.webp) 
 
 ## 8、【收到回函】不符事项调查**&**异常点
 
@@ -94,19 +94,19 @@ B. 税费差异：询证函金额为公司与供应商不含税的采购交易�
 
 ②抽取该等客户的销售收入明细，获取销售合同、订单、出库单、物流单、签收单、报关单、提单、发票、银行收款凭证等支持性凭证；
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_6.webp)|
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_6.webp)|
 
 ③期后回款检查程序，涉及的客户名称、函证期间、替代测试金额及期后回款金额等
 
 ## 10、【延伸程序】实地走访**&**视频访谈
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_7.webp)
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_7.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_8.webp)
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_8.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_9.webp)
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_9.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/028-审计如何把往来函证控制完美_10.webp)
+![](https://img.richfan.site/obsidian/IPO/028-审计如何把往来函证控制完美_10.webp)
 
 【注意点】
 

@@ -50,7 +50,7 @@ C 缴纳社保
 
 **股份支付与职工薪酬最大的区别**：股份支付是以公司自身股份的公允价值变动为基础进行计价支付，而职工薪酬与此无关
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/064-应付职工薪酬和应交税费审计要点补充_1.webp)
+![](https://img.richfan.site/obsidian/IPO/064-应付职工薪酬和应交税费审计要点补充_1.webp)
 
 ---
 

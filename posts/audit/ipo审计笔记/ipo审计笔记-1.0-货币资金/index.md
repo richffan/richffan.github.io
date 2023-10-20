@@ -147,9 +147,9 @@
 
 字可能会有点小...能用电脑看就最好别用手机看...用手机看的话请点开图片...要不真的会看瞎的...
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/IPO-Audit-Notes/IPO-Audit-Notes-1.0-Monetary-Funds_01.webp)
+![](https://img.richfan.site/audit/IPO-Audit-Notes/IPO-Audit-Notes-1.0-Monetary-Funds_01.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/IPO-Audit-Notes/IPO-Audit-Notes-1.0-Monetary-Funds_02.webp)
+![](https://img.richfan.site/audit/IPO-Audit-Notes/IPO-Audit-Notes-1.0-Monetary-Funds_02.webp)
 
 上面的舞弊应对是根据舞弊风险应对措施自己做的整理，仅供参考吧，写得比较简单，只能算是抛砖引玉，大佬们轻点吐槽...
 

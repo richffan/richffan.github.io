@@ -6,7 +6,7 @@
 
 ### 流程图
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/年度报表审计/annual_report_audit_procress.drawio.webp)
+![](https://img.richfan.site/audit/年度报表审计/annual_report_audit_procress.drawio.webp)
 
 
 ### 法律依据

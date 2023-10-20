@@ -70,9 +70,9 @@
 
 这里放几张实务界男神陈版主答疑截图，一起学习。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/048-在建工程审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/048-在建工程审计要点_1.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/048-在建工程审计要点_2webp)
+![](https://img.richfan.site/obsidian/IPO/048-在建工程审计要点_2webp)
 
 ### 函
 

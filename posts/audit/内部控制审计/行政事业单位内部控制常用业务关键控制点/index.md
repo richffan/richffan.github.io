@@ -352,7 +352,7 @@ XX单位关键岗位责任书
 
 轮岗记录表
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/内部控制审计/行政事业单位内部控制常用业务关键控制点/轮岗记录表.webp)
+![](https://img.richfan.site/audit/内部控制审计/行政事业单位内部控制常用业务关键控制点/轮岗记录表.webp)
 
 三权分配简表
 

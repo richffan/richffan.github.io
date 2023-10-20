@@ -9,13 +9,13 @@
 
 ### 1.1 低效率底稿
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_1.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_2.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_1.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_2.webp)
 
 低效率原因分析：重复操作，且不利于汇总，比如做发函、回函统计很麻烦，尤其涉及大量会计处理重分类时候（比如把银行存款重分类到其他货币资金）。
 
 ### 1.2修正后底稿：
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_3.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_3.webp)
 
 优势：合并到一起做，降低错误发生几率与重复做的次数。比如你做10家公司底稿，低效率底稿你得做20张表，这个底稿你只要做10张底稿。
 
@@ -45,7 +45,7 @@
 
 ### 2.1《企业银行余额表》
 #### 2.1.1 《企业银行余额表》格式
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_4.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_4.webp)
 
 本质上，其实一般就是科目余额表。当然，在实务操作时，有的时候ERP能导出更详细的账户清单（明确到账号层面），比如金蝶EAS。取这个信息，主要编制我们的《银行存款及其他货币资金明细表》（以下简称“明细表”）底稿。
 
@@ -54,18 +54,18 @@
 ### 2.1.2 明细表底稿
 #### 2.1.2.1 明细表底稿错误示范
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_5.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_5.webp)
 
 绝大部分实务操作都是这样编制，即把真实的开户行、银行账号名称等写上。但实际是漏掉了这个账户在《企业银行余额表》叫什么？后面人来审计，其实很难上手的。
 
 #### 2.1.2.2 明细表底稿正确示范
 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_6.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_6.webp)
 
 总账银行名称一定要确保唯一值，可以直接使用科目编码代替。如果多家公司，可以公司+科目编码，一般来源于下面这2个信息：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_7.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_7.webp)
 
 ### 2.1.3 银行账户格式处理
 有的银行账户格式很长，如果不设置格式就后面都变为0000了。
@@ -73,7 +73,7 @@
 设置有2类方法：
 
 #### 1、在输入情况下，直接设置这里：
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/审计实务宝典/银行存款与其他货币资金审计_8.webp)
+![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_8.webp)
 
 #### 2、在账户前添加小引号。
 

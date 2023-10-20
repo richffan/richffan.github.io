@@ -1,7 +1,7 @@
 # 不同持股模式下税负对比思维导图
 
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/Mind-map-of-tax-burden-comparison-under-different-shareholding-models.3o94y01zu1q.webp)
+![](https://img.richfan.site/obsidian/Mind-map-of-tax-burden-comparison-under-different-shareholding-models.3o94y01zu1q.webp)
 
 个人投资企业有以下三种投资方式，一是通过合伙企业投资，个人当合伙企业的合伙人；二是通过平台公司持有被投资企业的股权，个人当平台公司的股东；三是个人直接持有被投资企业的股权，个人直接当股东。下面对三种持股模式的理论税负进行比较。
 

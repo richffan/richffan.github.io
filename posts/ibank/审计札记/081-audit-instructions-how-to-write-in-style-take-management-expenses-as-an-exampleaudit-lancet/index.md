@@ -2,11 +2,11 @@
 
 【案例】雅艺科技第一轮审核问询函的回复意见（豁免版）
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_1.webp)
+![](https://img.richfan.site/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_1.webp)
 
 【图形分析 1】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_2.webp)
+![](https://img.richfan.site/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_2.webp)
 
 审计说明：
 
@@ -20,7 +20,7 @@
 
 【图形分析 2】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_3.webp)
+![](https://img.richfan.site/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_3.webp)
 
 审计说明：
 
@@ -46,7 +46,7 @@
 
 【重要性原则的运用...】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_4.webp)
+![](https://img.richfan.site/obsidian/IPO/081-审计说明如何写出格调——以管理费用为例（Audit-Lancet）_4.webp)
 
 并不是所有变动都需要对应的审计说明，否则年报期比较难过...当然 IPO 的话另说...
 

@@ -6,82 +6,82 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E5%90%88%E5%B9%B6/" rel="self" type="application/rss+xml" /><item>
   <title>合并报表抵消分录原理通俗解读系列（八） 之从长期股权投资税会处理差异讲起</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
   <description><![CDATA[阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（二）之长投权益抵消</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
   <description><![CDATA[从上篇文章《合并报表抵消分录原理通俗解读系列（一）内部交易抵消》我们知道，合并报表的抵消分录至少包括三个部分，分别是长投权益抵消、内部往来抵]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（六） 之从长期股权投资税会处理差异讲起</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
   <description><![CDATA[阅读提示：从第（六）篇开始的系列文章，小编将带领小伙伴回溯到合并报表的源头-长期股权投资，并从会计、审计和税务角度进行实务解读,某些观点可能]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（三）之长投权益抵消</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
   <description><![CDATA[有些小伙伴反馈《合并报表抵消分录原理通俗解读系列（二）之长投权益抵消》案例有些地方还是比较模糊，小编将上篇推送文章又进行了更加细致的修改，放]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（四）之长投权益抵消</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
   <description><![CDATA[阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（五）之长投权益抵消</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
   <description><![CDATA[阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过]]></description>
 </item>
 <item>
   <title>合并报表抵消分录原理通俗解读系列（一）内部交易抵消</title>
-  <link>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</link>
+  <link>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</link>
   <pubDate>Tue, 15 Aug 2023 11:12:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</guid>
+  <guid>http://richfan.site/posts/finance/accounting/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</guid>
   <description><![CDATA[合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权]]></description>
 </item>
 <item>
   <title>Xbase handouts</title>
-  <link>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/xbase-handouts.en/</link>
+  <link>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/xbase-handouts.en/</link>
   <pubDate>Tue, 01 Aug 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/xbase-handouts.en/</guid>
+  <guid>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/xbase-handouts.en/</guid>
   <description><![CDATA[crack the logic of the consolidated statement. This move, my brother can do a year ago, and now he is more skilled. The broken sword, in my opinion, is the cash flow. This time, we cracked the logic of Tianjian xbase. When we have cracked all the important financial skills, we will learn the &ldquo;nine swords&rdquo;, and we will be able to truly laugh and be proud. Tianjian&rsquo;s xbase method]]></description>
 </item>
 <item>
   <title>xbase讲义</title>
-  <link>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/xbase-handouts/</link>
+  <link>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/xbase-handouts/</link>
   <pubDate>Tue, 01 Aug 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/xbase-handouts/</guid>
+  <guid>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/xbase-handouts/</guid>
   <description><![CDATA[本来不想讲xbase的方法的，但好几个天健的学员问，而且他们必须要用xbase编现金流。基于此，小哥研究了一天，终于把xbase的逻辑及用法]]></description>
 </item>
 <item>
   <title>不丧失控制权处置子公司</title>
-  <link>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/dispose-of-subsidiaries-without-loss-of-control/</link>
+  <link>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/dispose-of-subsidiaries-without-loss-of-control/</link>
   <pubDate>Tue, 01 Aug 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/cpa/%E5%90%88%E5%B9%B6/dispose-of-subsidiaries-without-loss-of-control/</guid>
+  <guid>http://richfan.site/posts/finance/%E5%90%88%E5%B9%B6/dispose-of-subsidiaries-without-loss-of-control/</guid>
   <description><![CDATA[1-11 不丧失控制权情况下处置子公司部分股权计算子公司 净资产份额时如何考虑商誉 母公司在不丧失控制权情况下处置子公司部分股权时，在合并财务报表中，处]]></description>
 </item>
 </channel>

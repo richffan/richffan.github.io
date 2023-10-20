@@ -20,13 +20,13 @@
 
 一是判断补助和资产相关还是和收益相关
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/069-政府补助审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/069-政府补助审计要点_1.webp)
 
 有的光看名字就感觉和资产有关（一般采用排除法哈，二者非此即彼），是要建项目（在建工程），买设备(固定资产)，搞技术（即准则所说以其他方式形成长期资产，当然前提得能资本化）。
 
 当然啦，人不可貌相，审计师是**不能根据名字下结论**的，要看政府补助文件里头具体说的是啥。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/069-政府补助审计要点_2.webp)
+![](https://img.richfan.site/obsidian/IPO/069-政府补助审计要点_2.webp)
 
 我随手点开一个文件，里头没有细说，尴尬了，咋办。要知道天上是不会掉馅饼的，补助一般是企业争取来的，我们**不妨进一步获取企业申报材料去判断，**伸手要钱总 得写个漂亮的（清楚的）由头。
 
@@ -42,7 +42,7 @@
 
 总而言之，大家都在打哈哈
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/069-政府补助审计要点_3.webp)
+![](https://img.richfan.site/obsidian/IPO/069-政府补助审计要点_3.webp)
 
 看到这，我们不禁要问，为啥上市公司爱放其他收益。
 
@@ -70,7 +70,7 @@
 
 后者，准则规定**只能用净额法（冲减财务费用）**，稍不留神（也不好找啊），政府补助就会披露不完整。前者准则描述得天花乱坠，本质还是冲减财务费用（不会有人整活，选择方法二趴）
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/069-政府补助审计要点_4.webp)
+![](https://img.richfan.site/obsidian/IPO/069-政府补助审计要点_4.webp)
 
 要不先就到这，会计处理思路对了，底稿无非是**检查文件与材料，扫描留底，重新计算摊销**(摊销时间文件里头不得写着)。
 
@@ -88,7 +88,7 @@
 
 《上市公司年报会计监管报告》：企业实际收到的政府补助，无论是与资产相关还是与收益相关，均在**收到其他与经营活动有关的现金项目**填列。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/069-政府补助审计要点_5.webp)
+![](https://img.richfan.site/obsidian/IPO/069-政府补助审计要点_5.webp)
 
 ---
 

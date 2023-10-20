@@ -46,10 +46,10 @@
 
 ### （二）思维导图
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/投行/股权激励优惠政策梳理/1.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/投行/股权激励优惠政策梳理/2.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/投行/股权激励优惠政策梳理/3.webp)
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/投行/股权激励优惠政策梳理/4.webp)
+![](https://img.richfan.site/投行/股权激励优惠政策梳理/1.webp)
+![](https://img.richfan.site/投行/股权激励优惠政策梳理/2.webp)
+![](https://img.richfan.site/投行/股权激励优惠政策梳理/3.webp)
+![](https://img.richfan.site/投行/股权激励优惠政策梳理/4.webp)
 
 
 ### （三）政策要点
@@ -206,7 +206,7 @@
 　
 ### （三）思维导图
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/投行/股权激励优惠政策梳理/5.webp)
+![](https://img.richfan.site/投行/股权激励优惠政策梳理/5.webp)
 
 ### （四）案例
 

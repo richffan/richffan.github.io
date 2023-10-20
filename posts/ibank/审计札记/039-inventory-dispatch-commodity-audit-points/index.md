@@ -2,7 +2,7 @@
 
 不是所有的牛奶都叫  XXX，不是所有的企业都有发出商品，有请**新锐股份**打个样
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/039-存货之发出商品审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/039-存货之发出商品审计要点_1.webp)
 
 什么是库存商品，什么是发出商品，不能光看地理位置，得看**实物控制权和保管责任的归属**
 
@@ -12,7 +12,7 @@
 
 然**寄售模式**，寄人篱下避无可避，除此之外，还有 **KA模式**
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/039-存货之发出商品审计要点_2.webp)
+![](https://img.richfan.site/obsidian/IPO/039-存货之发出商品审计要点_2.webp)
 
 啥是 KA （KeyAccount），翻译过来即重要客户，KA 往往是**能够满足顾客一次性购物需求的零售终端**，有请**贝因美**打个样
 
@@ -46,7 +46,7 @@ d 根据发出商品的期末余额明细表，结合发出商品抵达客户�
 
 ~~故事听上去是不是舒服比证据是不是充足更重要~~
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/039-存货之发出商品审计要点_3.webp)
+![](https://img.richfan.site/obsidian/IPO/039-存货之发出商品审计要点_3.webp)
 
 IPO  的话，本着**宁可错杀，绝不放过的审计程序执行原则**，人像豆子一样撒出去，全国飞
 
@@ -56,7 +56,7 @@ IPO  的话，本着**宁可错杀，绝不放过的审计程序执行原则**
 
 打个样
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/039-存货之发出商品审计要点_4.webp)
+![](https://img.richfan.site/obsidian/IPO/039-存货之发出商品审计要点_4.webp)
 
 还有么，有请万能的**细节测试**
 

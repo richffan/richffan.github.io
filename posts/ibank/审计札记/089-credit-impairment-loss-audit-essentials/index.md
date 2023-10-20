@@ -6,7 +6,7 @@
 
 何谓单项：如债务人（客户）在以前年度已经出现了违约、败诉、失信等行为，再如债务人（ 客户） 已进入破产清算程序， 还如已经在与债务人（ 客户） 诉讼和争议 ing。。。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/089-信用减值损失审计要点_1.webp)
+![](https://img.richfan.site/obsidian/IPO/089-信用减值损失审计要点_1.webp)
 
 事已至此，拎到单项，已然做好最坏的打算，这钱多半是要打水漂，一般全额计提坏账
 
@@ -46,7 +46,7 @@
 
 （此处必须放图）
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/089-信用减值损失审计要点_2.webp)
+![](https://img.richfan.site/obsidian/IPO/089-信用减值损失审计要点_2.webp)
 
 其实就是个中学生水准 excel 问题，随手都能写一个只用粘贴往来期初余额+发生额，然 后 自 动 划 分 账 龄 ， 进 而 计 算 迁 徙 率 ， 顺 带 出 历 史 损 失 率 的 模 板
 
@@ -56,7 +56,7 @@
 
 当然，不少大佬连最后一步也写进了模板
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/089-信用减值损失审计要点_3.webp)
+![](https://img.richfan.site/obsidian/IPO/089-信用减值损失审计要点_3.webp)
 
 **但实务从来不会让你失望**，没有大佬带也没有关系，拎个科创板已过会案例道通科技出来瞅一瞅，**人家前瞻性系数5%，抄就完事**，6+9  的故事总听过吧，你的童年我的童年，好像都一样
 

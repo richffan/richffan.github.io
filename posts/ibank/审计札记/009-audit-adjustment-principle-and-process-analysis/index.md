@@ -46,7 +46,7 @@
 
 其他重分类最典型的便是一年内到期的非流动资产和一年内到期的非流动负债，账里都没这哥俩不是
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/审计调整原理与过程解析_1.webp) 
+![](https://img.richfan.site/obsidian/IPO/审计调整原理与过程解析_1.webp) 
 
 明明是非流动资产，因为马上就要收到钱了，划到流动资产里不过分吧，不然财务指标分析流得抓狂
 
@@ -54,7 +54,7 @@
 
 **这个事其实还是有一定讨论空间的**。。。知识与无知，都是灾难之源
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/审计调整原理与过程解析_2.webp)
+![](https://img.richfan.site/obsidian/IPO/审计调整原理与过程解析_2.webp)
 
 审计调整，千奇百怪（某些流派会在预审之际将企业错账|假账挖掘干净，让企业自己改序时账，年审之际重新取数，取到的便是蕴含着审计调整的序时账）
 

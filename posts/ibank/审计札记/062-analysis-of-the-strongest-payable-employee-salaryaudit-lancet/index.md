@@ -1,6 +1,6 @@
 # 062-最强应付职工薪酬解析（Audit Lancet）
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_1.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_1.webp)
 
 ## 一、从分录出发
 
@@ -42,7 +42,7 @@
 
 2、隐藏高管个税手段
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_2.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_2.webp)
 
 【解析】为了降低员工高管 C、E 的个税，将部分奖金分摊到其他员工的工资中去，实际这个部门的工资总额都是 117000 元无差异。此时，要进行相应的调整。
 
@@ -70,13 +70,13 @@
 
 ④期后支付检查表→核算发放是否真实？年终奖是否要进行调整？
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_3.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_3.webp)
 
 注：截至 2021 年 8 月 31 日，2021 年 6 月末尚未支付的应付职工薪酬主要系因发放暂未支付工资及奖金，期后支付比例为 79.27%。
 
 ⑤抽凭表→抽借方有银行回单和工资计算表，不要抽贷方啥都没有...  3、附注披露的要求
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_4.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_4.webp)
 
 【解析】若企业做账不规范，就是未通过职工薪酬而直接发放的情形（可高级筛选挑选出来），虽然不影响应付职工薪酬的期末余额但是影响其发生额。
 
@@ -118,7 +118,7 @@
 
 【案例 3】普蕊斯（上海）医药科技开发股份有限公司
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_5.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_5.webp)
 
 【案例 4】现金支付问题
 
@@ -130,15 +130,15 @@
 
 ①期末余额↑，人数↑，人均薪酬↑【多半是因为业务规模的扩大】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_6.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_6.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_7.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_7.webp)
 
 ②期末余额↓，员工人数↓【主要原因系年终奖与业绩】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_8.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_8.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_9.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_9.webp)
 
 【解析】
 
@@ -148,9 +148,9 @@
 
 ③人数大幅↑，但期末余额增加不大
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_10.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_10.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_11.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_11.webp)
 
 【解析】
 
@@ -166,7 +166,7 @@
 
 人力费用占主营业务成本比例与同行业可比公司的对比情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_12.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_12.webp)
 
 【解析】
 
@@ -182,7 +182,7 @@
 
 公司职工人均薪酬显著高于同行业公司及所在地平均水平，具体情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_13.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_13.webp)
 
 【解析】
 
@@ -200,7 +200,7 @@
 
 年 1-6  月同等岗位分级别平均薪酬进行对比，对比情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_14.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_14.webp)
 
 【 解 析 】
 
@@ -216,7 +216,7 @@
 
 【案例 1】新华都特种电气股份有限公司
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_15.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_15.webp)
 
 【解析】
 
@@ -228,7 +228,7 @@
 
 【案例 2】苏州纽克斯电源技术股份有限公司
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_16.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_16.webp)
 
 【解析】支付给职工的现金以及为职工支付的现金流量与应付职工薪酬、期间费用和成本匹配。报告期内，公司支付给职工的现金以及为职工支付的现金流量逐年增加，主要系公司业绩持续增长，公司支付给销售人员的工资、奖金、销售提成增加所致。此处测算与勾稽的逻辑体现在表格法编制现金流上面。
 
@@ -236,7 +236,7 @@
 
 公司职工薪酬在营业成本、期间费用中构成情况
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_17.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_17.webp)
 
 【解析】
 
@@ -252,7 +252,7 @@
 
 支付给职工的现金及为职工支付的现金与应付职工薪酬、期间费用和成本的勾稽关系和归集情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_18.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_18.webp)
 
 【解析】
 
@@ -264,7 +264,7 @@
 
 应付职工薪酬减少数（借方发生额）与现金流量表相关科目存在较大差异的原因
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_19.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_19.webp)
 
 【解析】存在差异 1,074.85  万元，主要系 1,020.86  万元为资本化研发项目的研发人员职工薪酬计入开发支出，对应在现金流量表计入“购建固定资产、无形资产和其他长期资产支付的现金”所致。【属于投资活动而不是经营活动了】
 
@@ -278,7 +278,7 @@
 
 报告期内，公司董事、监事、高级管理人员及核心技术人员薪酬总额占利润总额的比重如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_20.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_20.webp)
 
 【解析】
 
@@ -300,17 +300,17 @@
 
   
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_21.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_21.webp)
 
 【解析】邢田为公司董事、副总经理，具体分管公司华东地区销售业务，2019  年华
 
 东地区销售团队共 27   人，销售额较高。公司根据业绩计算并对其发放业绩提成和年终奖金，导致当年其个人薪酬显著高于其他董事、高级管理人员。综上，公司董事、副总经理邢田 2019   年税前薪酬较高主要是与其负责的相关区域的销售业绩相关，具有合理性。
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_22.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_22.webp)
 
 【案例 4】新华都特种电气股份有限公司销售人员薪酬水平及增长情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_23.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_23.webp)
 
 【解析】
 
@@ -324,11 +324,11 @@
 
 公司计提归属于当期损益的应付职工薪酬与营业收入的关系
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_24.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_24.webp)
 
 【图形解析】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_25.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_25.webp)
 
 【解析】
 
@@ -340,7 +340,7 @@
 
 2017-2020 年及 2021 年 1-6 月收入、利润、产能、产量增长↑、员工人数下降↓是否具有合理性？
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_26.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_26.webp)
 
 【解析】
 
@@ -360,7 +360,7 @@
 
 【案例：临时用工】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_27.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_27.webp)
 
 【解析】
 
@@ -378,7 +378,7 @@
 
 【案例：劳务外包】
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_28.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_28.webp)
 
 【解析】
 
@@ -400,9 +400,9 @@
 
 若公司为前述未缴纳员工（不含因退休、在其他公司缴纳、当月新入职员工下月缴纳）缴纳社会保险和住房公积金，对报告期内经营成果影响如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_29.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_29.webp)
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_30.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_30.webp)
 
 【解析】公司为部分员工未缴纳社会保险和住房公积金金额占当期利润总额的比例较低且呈下降趋势，对公司报告期内的经营成果未造成重大影响。
 
@@ -410,11 +410,11 @@
 
 1） 应缴未缴社会保险和住房公积金的具体情况及形成原因：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_31.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_31.webp)
 
 2） 就部分员工自愿放弃缴纳社会保险、住房公积金的情况，测算报告期各期可能 需要补缴社会保险及住房公积金的金额及对净利润的影响情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_32.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_32.webp)
 
 【解析】
 
@@ -432,7 +432,7 @@
 
 【案例】厦门科拓通讯技术股份有限公司
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_33.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_33.webp)
 
 【解析】
 
@@ -454,7 +454,7 @@
 
 3） 各期辞退福利的金额：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_34.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_34.webp)
 
 【解析】
 
@@ -468,11 +468,11 @@
 
 【案例】慧博云通科技股份有限公司 存在的劳动纠纷情况及其进展如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_35.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_35.webp)
 
 截至本回复出具日，报告期内尚未完结的劳动纠纷案件具体情况如下：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_36.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_36.webp)
 
 【解析】报告期内离职员工中共有 14 人就劳动纠纷相关事项提起仲裁或诉讼，主要原因包括：
 
@@ -486,7 +486,7 @@
 
 职工薪酬水平的合理性，成本、期间费用中职工薪酬的变动原因：
 
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_37.webp)
+![](https://img.richfan.site/obsidian/IPO/062-最强应付职工薪酬解析（Audit-Lancet）_37.webp)
 
 【解析】
 

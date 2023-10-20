@@ -1,7 +1,7 @@
 # 企业关键领域风险清单（65个）
 
 ## 企业关键领域风险清单（65个）
-![](https://jsd.cdn.zzko.cn/gh/richffan/img@main/audit/企业关键领域风险清单（65个）.webp)
+![](https://img.richfan.site/audit/企业关键领域风险清单（65个）.webp)
 
 ---
 
