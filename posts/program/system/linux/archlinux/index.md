@@ -1,4 +1,4 @@
-# archlinux
+# Linux
 
 
 ### 安装

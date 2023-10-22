@@ -61,5 +61,5 @@ qemu-system-x86_64 -machine q35 \
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/system/qemu-quickstart/  
+> URL: http://richfan.site/posts/program/system/qemu-quickstart/  
 

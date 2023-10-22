@@ -173,5 +173,5 @@ port 为step 6 出现的数字，比如默认为5901，那IP为 localhost:5901
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/  
+> URL: http://richfan.site/posts/program/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/  
 

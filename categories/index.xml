@@ -4,10 +4,18 @@
     <link>http://richfan.site/categories/</link>
     <description>Categories - 分类 - 樊刹</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Fri, 20 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>编程</title>
+  <link>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</link>
+  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>审计</title>
   <link>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</link>
-  <pubDate>Fri, 20 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
   <guid>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</guid>
   <description><![CDATA[]]></description>
@@ -15,17 +23,9 @@
 <item>
   <title>投行</title>
   <link>http://richfan.site/categories/%E6%8A%95%E8%A1%8C/</link>
-  <pubDate>Thu, 19 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
   <guid>http://richfan.site/categories/%E6%8A%95%E8%A1%8C/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>编程</title>
-  <link>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
