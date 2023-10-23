@@ -4,7 +4,39 @@
     <link>http://richfan.site/posts/</link>
     <description>所有文章 | 樊刹</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>【VBA案例001】实现VLOOKUP功能</title>
+  <link>http://richfan.site/posts/program/vba/vba%E6%A1%88%E4%BE%8B/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</link>
+  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/posts/program/vba/vba%E6%A1%88%E4%BE%8B/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</guid>
+  <description><![CDATA[VBA实现VLOOKUP函数功能 数据 VBA 姓名 年龄 姓名 年龄 潘全桂 24 荆琛泽 霍栋保 35 吉栋松 荆琛泽 24 百里刚晓 越伦信 25 农康雪 吉栋松 34 越伦信 桂真顺 27 霍栋保]]></description>
+</item>
+<item>
+  <title>【VBA案例002】一对多查询</title>
+  <link>http://richfan.site/posts/program/vba/vba%E6%A1%88%E4%BE%8B/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</link>
+  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/posts/program/vba/vba%E6%A1%88%E4%BE%8B/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>行政事业单位财务报销违规问题</title>
+  <link>http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E8%B4%A2%E5%8A%A1%E6%8A%A5%E9%94%80%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98/</link>
+  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E8%B4%A2%E5%8A%A1%E6%8A%A5%E9%94%80%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98/</guid>
+  <description><![CDATA[一、财务票据及其附件“残缺不全” 1、使用非有效票据进行财务报销。 接收和使用内部结算票据及其他往来票据，使用如市场上购买的非税务部门监制的发票]]></description>
+</item>
+<item>
+  <title>主板、科创板、创业板、北交所IPO审核工作流程</title>
+  <link>http://richfan.site/posts/ibank/%E4%BF%9D%E8%8D%90%E4%BB%A3%E8%A1%A8%E4%BA%BA/%E4%B8%BB%E6%9D%BF%E7%A7%91%E5%88%9B%E6%9D%BF%E5%88%9B%E4%B8%9A%E6%9D%BF%E5%8C%97%E4%BA%A4%E6%89%80ipo%E5%AE%A1%E6%A0%B8%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/</link>
+  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/posts/ibank/%E4%BF%9D%E8%8D%90%E4%BB%A3%E8%A1%A8%E4%BA%BA/%E4%B8%BB%E6%9D%BF%E7%A7%91%E5%88%9B%E6%9D%BF%E5%88%9B%E4%B8%9A%E6%9D%BF%E5%8C%97%E4%BA%A4%E6%89%80ipo%E5%AE%A1%E6%A0%B8%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/</guid>
+  <description><![CDATA[关于主板、科创板、创业板、北交所IPO审核工作流程，或许有些人还不是很了解。尚普君今天将IPO详细审核流程分享给各位有需要的人士。 主板 证监会]]></description>
+</item>
+<item>
   <title>9款最佳Python脚本：让工作自动化起来！</title>
   <link>http://richfan.site/posts/program/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
   <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
@@ -51,38 +83,6 @@
   <author>richfan</author>
   <guid>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</guid>
   <description><![CDATA[一般情况下，只有大型企业、财团或权贵才有资格和能力创办私营高校，也就是有营业执照的私营非盈利机构。 这类高校的内审也应像企业一样，也可以从财务]]></description>
-</item>
-<item>
-  <title>消防验收中常见的130个问题</title>
-  <link>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B6%88%E9%98%B2%E9%AA%8C%E6%94%B6%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84130%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
-  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B6%88%E9%98%B2%E9%AA%8C%E6%94%B6%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84130%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
-  <description><![CDATA[1建筑防火 一、土建防火封堵不到位 1、给水管道穿越楼板、墙体部位未封堵。 2、电气管、桥架穿越越楼板、墙体部位未封堵。 3、穿越平层及竖向的桥架内]]></description>
-</item>
-<item>
-  <title>巡查审计常见36种违规问题及整改措施（案例）</title>
-  <link>http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E5%B7%A1%E6%9F%A5%E5%AE%A1%E8%AE%A1%E5%B8%B8%E8%A7%8136%E7%A7%8D%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%8F%8A%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E6%A1%88%E4%BE%8B/</link>
-  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E5%B7%A1%E6%9F%A5%E5%AE%A1%E8%AE%A1%E5%B8%B8%E8%A7%8136%E7%A7%8D%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%8F%8A%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E6%A1%88%E4%BE%8B/</guid>
-  <description><![CDATA[案例1、针对国有资产管理不善，固定资产底数不清问题 整改措施： 一是修订《医院国有资产管理办法》，规范国有资产的管理。二是委托北京XX会计师事务]]></description>
-</item>
-<item>
-  <title>招投标管理专项审计调查情况报告</title>
-  <link>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E7%AE%A1%E7%90%86%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E8%B0%83%E6%9F%A5%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/</link>
-  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E7%AE%A1%E7%90%86%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E8%B0%83%E6%9F%A5%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/</guid>
-  <description><![CDATA[XX工程招投标管理情况专项审计调查审计结果 根据《中华人民共和国审计法》的规定，XX审计X于202X年4月1日至202X年8月30日，对W建设]]></description>
-</item>
-<item>
-  <title>如何开展行政事业单位预算执行审计？</title>
-  <link>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%A6%82%E4%BD%95%E5%BC%80%E5%B1%95%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E9%A2%84%E7%AE%97%E6%89%A7%E8%A1%8C%E5%AE%A1%E8%AE%A1/</link>
-  <pubDate>Fri, 20 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/posts/audit/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%A6%82%E4%BD%95%E5%BC%80%E5%B1%95%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E9%A2%84%E7%AE%97%E6%89%A7%E8%A1%8C%E5%AE%A1%E8%AE%A1/</guid>
-  <description><![CDATA[如何开展行政事业单位预算执行审计？行政事业单位预算执行审计是各级审计机关财政预算执行审计中最基础的工作，是财政审计大格局下重要的审计内容。通]]></description>
 </item>
 </channel>
 </rss>
