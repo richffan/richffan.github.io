@@ -1,8 +1,8 @@
-# 
+# Golang入门笔记-CH09-反射
 
 反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法。
 
-### 方法和类型的反射
+## 方法和类型的反射
 
 `reflect` 包提供了反射功能，它定义两个重要类型：`Type` 和 `Value`，分别表示动态类型和值。
 
@@ -18,7 +18,7 @@ func TypeOf(i interface{}) Type
 func ValueOf(i interface{}) Value 
 ```
 
-#### reflect.TypeOf
+### reflect.TypeOf
 
 函数 `reflect.Typeof()` 可以接收任意 `interface{}` 类型数据，并返回其动态类型。
 
@@ -76,7 +76,7 @@ func main() {
 }
 ```
 
-#### reflect.ValueOf
+### reflect.ValueOf
 
 函数 `reflect.ValueOf()` 可以接收任意 `interface{}` 类型数据，并返回其值。
 
@@ -101,7 +101,7 @@ func main() {
 }
 ```
 
-### 通过反射修改值
+## 通过反射修改值
 
 反射并不能修改所有变量的值，我们来看一个例子：
 
@@ -179,7 +179,7 @@ func main() {
 
 ![image.png](https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/20/20201020144050.png)
 
-### 反射获取结构体信息
+## 反射获取结构体信息
 
 `reflect.Type` 的 `Field()` 方法返回 `StructField` 结构，这个结构用来描述结构体成员的信息：
 

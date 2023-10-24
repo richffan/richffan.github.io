@@ -5,35 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title> - 樊刹</title><meta name="author" content="richfan">
+    <title>Golang入门笔记-CH07-结构体和方法 - 樊刹</title><meta name="author" content="richfan">
 <meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，" /><meta name="keywords" content='Hugo, FixIt, richfan, 樊刹, 不渡尘心, 樊刹|不渡尘心' /><meta itemprop="name" content="">
-<meta itemprop="description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，">
-
+<meta name="description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH07-结构体和方法">
+<meta itemprop="description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="wordCount" content="4303"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
-<meta itemprop="keywords" content="" /><meta property="og:title" content="" />
+<meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH07-结构体和方法" />
 <meta property="og:description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="posts" />
-
-
+<meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-01T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
 
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Golang入门笔记-CH07-结构体和方法"/>
 <meta name="twitter:description" content="Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><link rel="prev" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><link rel="next" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "",
+    "headline": "Golang入门笔记-CH07-结构体和方法",
     "inLanguage": "zh-CN",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95\/"
-    },"genre": "posts","wordcount":  4303 ,
-    "url": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95\/","publisher": {
+    },"genre": "posts","keywords": "Golang","wordcount":  4303 ,
+    "url": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -164,7 +164,7 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
-    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="樊刹">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page"></li>
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="樊刹">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH07-结构体和方法</li>
     </ol>
   </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content" id="toc-content-auto"></div></aside>
@@ -173,12 +173,13 @@
     </aside>
 
   <article class="page single">
-    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH07-结构体和方法</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="4303 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="4303 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH07-结构体和方法">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
-            </span>&nbsp;<span class="comment-count" data-flag-title="">
+            </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH07-结构体和方法">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" class="valine-comment-count">-</span>&nbsp;条评论
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -188,46 +189,42 @@
         </div>
         <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#结构体的定义">结构体的定义</a>
       <ul>
-        <li><a href="#结构体的定义">结构体的定义</a>
-          <ul>
-            <li><a href="#格式">格式</a></li>
-            <li><a href="#使用-new">使用 new</a></li>
-            <li><a href="#选择器">选择器</a></li>
-            <li><a href="#初始化方式">初始化方式</a></li>
-            <li><a href="#结构体的内存布局">结构体的内存布局</a></li>
-            <li><a href="#递归结构体">递归结构体</a></li>
-          </ul>
-        </li>
-        <li><a href="#使用工厂方法创建结构体">使用工厂方法创建结构体</a>
-          <ul>
-            <li><a href="#定义工厂方法">定义工厂方法</a></li>
-            <li><a href="#强制使用工厂方法">强制使用工厂方法</a></li>
-            <li><a href="#new-和-make">new() 和 make()</a></li>
-          </ul>
-        </li>
-        <li><a href="#带标签的结构体">带标签的结构体</a></li>
-        <li><a href="#匿名字段和内嵌结构体">匿名字段和内嵌结构体</a></li>
-        <li><a href="#方法">方法</a>
-          <ul>
-            <li><a href="#方法的定义">方法的定义</a></li>
-            <li><a href="#函数和方法的区别">函数和方法的区别</a></li>
-            <li><a href="#指针接收者和值接收者">指针接收者和值接收者</a></li>
-            <li><a href="#方法和未导出字段">方法和未导出字段</a></li>
-            <li><a href="#内嵌类型方法与继承">内嵌类型方法与继承</a></li>
-            <li><a href="#多重继承">多重继承</a></li>
-          </ul>
-        </li>
-        <li><a href="#总结">总结</a></li>
+        <li><a href="#格式">格式</a></li>
+        <li><a href="#使用-new">使用 new</a></li>
+        <li><a href="#选择器">选择器</a></li>
+        <li><a href="#初始化方式">初始化方式</a></li>
+        <li><a href="#结构体的内存布局">结构体的内存布局</a></li>
+        <li><a href="#递归结构体">递归结构体</a></li>
       </ul>
     </li>
+    <li><a href="#使用工厂方法创建结构体">使用工厂方法创建结构体</a>
+      <ul>
+        <li><a href="#定义工厂方法">定义工厂方法</a></li>
+        <li><a href="#强制使用工厂方法">强制使用工厂方法</a></li>
+        <li><a href="#new-和-make">new() 和 make()</a></li>
+      </ul>
+    </li>
+    <li><a href="#带标签的结构体">带标签的结构体</a></li>
+    <li><a href="#匿名字段和内嵌结构体">匿名字段和内嵌结构体</a></li>
+    <li><a href="#方法">方法</a>
+      <ul>
+        <li><a href="#方法的定义">方法的定义</a></li>
+        <li><a href="#函数和方法的区别">函数和方法的区别</a></li>
+        <li><a href="#指针接收者和值接收者">指针接收者和值接收者</a></li>
+        <li><a href="#方法和未导出字段">方法和未导出字段</a></li>
+        <li><a href="#内嵌类型方法与继承">内嵌类型方法与继承</a></li>
+        <li><a href="#多重继承">多重继承</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p>Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，例如定义一个用户类型，用户类型中包含用户名、密码和生日等属性，就可以使用结构体。</p>
 <p>组成结构体属性的数据成为字段，每个字段都有类型和名称；在结构体中，字段名称必须唯一。由于 Go 语言中不存在类的概念，所以结构体 <code>struct</code> 在 Go 语言中有着较高的地位。</p>
-<h3 id="结构体的定义">结构体的定义</h3>
-<h4 id="格式">格式</h4>
+<h2 id="结构体的定义">结构体的定义</h2>
+<h3 id="格式">格式</h3>
 <p>结构体定义的格式如下：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -267,7 +264,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>结构体中字段的类型可以是任意类型（包括结构体、函数和接口等）。</p>
-<h4 id="使用-new">使用 new</h4>
+<h3 id="使用-new">使用 new</h3>
 <p>可以使用 <code>new</code> 函数给新结构体变量分配内存，它返回指向分配内存的指针，如：</p>
 <div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -357,7 +354,7 @@
 </span></span><span class="line"><span class="cl">The string is: Chris
 </span></span><span class="line"><span class="cl"><span class="p">&amp;</span><span class="o">{</span><span class="m">10</span> 15.5 Chris<span class="o">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="选择器">选择器</h4>
+</div><h3 id="选择器">选择器</h3>
 <p>可以使用 <code>.</code> 来给结构体的字段赋值：<code>structName.fieldName = value </code>。</p>
 <p>同样，也可以用 <code>.</code> 来获取结构体中的字段的值：<code>value := structName.fieldName</code>。</p>
 <p>用 <code>.</code> 来操作结构体字段在 Go 语言中叫作<strong>选择器</strong>，对于<strong>结构体类型变量</strong>和<strong>结构体类型的指针变量</strong>，都可以使用选择器来引用结构体的字段：</p>
@@ -380,7 +377,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">v</span><span class="p">.</span><span class="nx">i</span>
 </span></span><span class="line"><span class="cl"><span class="nx">p</span><span class="p">.</span><span class="nx">i</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="初始化方式">初始化方式</h4>
+</div><h3 id="初始化方式">初始化方式</h3>
 <p>初始化一个结构体实例的方式如下：</p>
 <div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -425,9 +422,9 @@
 </div>
 </div><p>以 A 这种方式初始化，要注意值的顺序和结构体字段的顺序需一一对应。</p>
 <p>以 B 这种方式初始化，要在每一个值前面加上字段名称和冒号，这种情况下，顺序不必一致；某些字段可以省略，如 C 这种初始化方式。</p>
-<h4 id="结构体的内存布局">结构体的内存布局</h4>
+<h3 id="结构体的内存布局">结构体的内存布局</h3>
 <p>Go 语言中，结构体和它所包含的数据在内存中是连续的，而 Java 中的实体类对象可能会保存在不同的内存空间中，因此 Go 语言的结构体具有更好的性能。</p>
-<h4 id="递归结构体">递归结构体</h4>
+<h3 id="递归结构体">递归结构体</h3>
 <p>结构体可以进行自引用，特别是在定义链表和二叉树等数据结构时，特别有用。</p>
 <p>例如，定义一个二叉树结点：</p>
 <div class="highlight" id="id-13"><div class="chroma">
@@ -445,8 +442,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">right</span> <span class="o">*</span><span class="nx">Tree</span> <span class="c1">// 指向右孩子结点的指针
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="使用工厂方法创建结构体">使用工厂方法创建结构体</h3>
-<h4 id="定义工厂方法">定义工厂方法</h4>
+</div><h2 id="使用工厂方法创建结构体">使用工厂方法创建结构体</h2>
+<h3 id="定义工厂方法">定义工厂方法</h3>
 <p>由于 Go 语言不支持面向对象的构造方法，因此使用工厂方法来创建实例，工厂方法一般以 <code>New</code> 开头。</p>
 <p>例如，先定义一个名为 <code>File</code> 的结构体：</p>
 <div class="highlight" id="id-14"><div class="chroma">
@@ -490,7 +487,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">f</span> <span class="o">:=</span> <span class="nf">NewFile</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;./a.txt&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="强制使用工厂方法">强制使用工厂方法</h4>
+</div><h3 id="强制使用工厂方法">强制使用工厂方法</h3>
 <blockquote>
 <p><em><strong>注意</strong></em>：Go 语言中，<strong>小写字母</strong>开头的变量和函数无法被外部包导入（<strong>私有</strong>），<strong>大写字母</strong>开头的变量和函数可以被外部导入（<strong>共有</strong>）。</p>
 </blockquote>
@@ -544,10 +541,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">right</span> <span class="o">:=</span> <span class="nx">matrix</span><span class="p">.</span><span class="nf">NewMatrix</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>  <span class="c1">// 实例化 matrix 的唯一方式
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="new-和-make">new() 和 make()</h4>
+</div><h3 id="new-和-make">new() 和 make()</h3>
 <p>make() 函数只能用在初始化 <code>slice</code>、<code>map</code> 和 <code>channel</code> 三种<strong>引用类型</strong>中。</p>
 <p>new() 函数只能用在<strong>数组</strong>和<strong>结构体</strong>这样的<strong>值类型</strong>中，为变量分配内存。</p>
-<h3 id="带标签的结构体">带标签的结构体</h3>
+<h2 id="带标签的结构体">带标签的结构体</h2>
 <p>结构体中的字段除了有名称和类型之外，还有一个可选的标签，标签以字符串的形式来编写。标签内容一般无法直接获取，需要通过反射来获取，常用于保存 ORM 字段和表单验证等。</p>
 <p>标签用反引号 `` 包围，单个标签格式为 <code>tagName:&quot;tagValue&quot;</code>，多个标签只需要用空格分开即可，如：</p>
 <div class="highlight" id="id-19"><div class="chroma">
@@ -633,7 +630,7 @@
 </span></span><span class="line"><span class="cl">name:<span class="s2">&#34;second field&#34;</span> id:<span class="s2">&#34;2&#34;</span>
 </span></span><span class="line"><span class="cl">name:<span class="s2">&#34;third field&#34;</span> id:<span class="s2">&#34;3&#34;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="匿名字段和内嵌结构体">匿名字段和内嵌结构体</h3>
+</div><h2 id="匿名字段和内嵌结构体">匿名字段和内嵌结构体</h2>
 <p>结构体可以包含一个或多个匿名字段，匿名字段是指没有显式名字的字段，但类型是必须的。匿名字段可以是结构体类型，结构体里可以内嵌结构体。</p>
 <p>内嵌结构体可以被用来模拟类似类的继承行为。</p>
 <p>我们来看一个例子：</p>
@@ -729,8 +726,8 @@
 </span></span><span class="line"><span class="cl">outer2 is: <span class="o">{</span><span class="m">6</span> 7.5 <span class="m">60</span> <span class="o">{</span><span class="m">5</span> 10<span class="o">}}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以通过类型来获取匿名字段中的数据，但每个结构体中对于每一种数据类型只能有一个匿名字段，若出现数据类型重名，需要手动处理（采用显式命名方式区分）。</p>
-<h3 id="方法">方法</h3>
-<h4 id="方法的定义">方法的定义</h4>
+<h2 id="方法">方法</h2>
+<h3 id="方法的定义">方法的定义</h3>
 <p>Go 语言中没有类的概念，那么怎么实现类似于类的方法呢？Go 语言中，方法作用在接收者 <code>receiver</code> 上，接收者可以是某种类型的变量，因此方法是一种特殊的函数。</p>
 <p>接收者可以是任意类型，包括结构体，函数，<code>int</code>，<code>string</code> 等。但不能是接口类型，因为接口是抽象定义，而方法却是具体实现。</p>
 <p>Go 语言中，类型的代码和其对应的方法的代码可以不用放在同一个源文件中，但必须在同一个包下。</p>
@@ -864,13 +861,13 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">IntVector</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}.</span><span class="nf">Sum</span><span class="p">())</span> <span class="c1">// 6
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="函数和方法的区别">函数和方法的区别</h4>
+</div><h3 id="函数和方法的区别">函数和方法的区别</h3>
 <ul>
 <li>函数将变量作为参数：<code>Function(recv)</code>，而方法在变量上被调用：<code>recv.Method1()</code>；</li>
 <li>当方法接收者为指针时，方法会改变接收者的值；函数也可以通过传递引用类型参数做到。</li>
 <li>Go 语言中，类型关联的方法不写在类型结构中，耦合性更低；类型和方法之间的关联由接收者来建立。</li>
 </ul>
-<h4 id="指针接收者和值接收者">指针接收者和值接收者</h4>
+<h3 id="指针接收者和值接收者">指针接收者和值接收者</h3>
 <p><strong>指针接收</strong>和<strong>值接收</strong>的区别在于，指针接收会改变接收者的值。</p>
 <p>我们来看一个例子：</p>
 <div class="highlight" id="id-28"><div class="chroma">
@@ -1010,7 +1007,7 @@
 </span></span><span class="line"><span class="cl"><span class="o">{</span>3<span class="o">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们发现 <code>change()</code> 方法并没有改变接收者的值，因为在调用 <code>change()</code> 方法时，传递的是对象的拷贝。</p>
-<h4 id="方法和未导出字段">方法和未导出字段</h4>
+<h3 id="方法和未导出字段">方法和未导出字段</h3>
 <p>若结构体能在外部包中引入，而该结构体中的字段都是小写字母开头，无法在外部包中导出，那么如何获取和修改未导出字段呢？可以通过定义该结构体的 <code>Get</code> 和 <code>Set</code> 方法来实现（类似于 Java 中的 Getter 和 Setter 方法）：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1049,7 +1046,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">p</span><span class="p">.</span><span class="nx">firstName</span> <span class="p">=</span> <span class="nx">newName</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="内嵌类型方法与继承">内嵌类型方法与继承</h4>
+</div><h3 id="内嵌类型方法与继承">内嵌类型方法与继承</h3>
 <p>当一个匿名类型被嵌入结构体中时，该结构体会继承匿名类型中的方法。</p>
 <p>我们来看一个例子：</p>
 <div class="highlight" id="id-33"><div class="chroma">
@@ -1168,7 +1165,7 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">n</span><span class="p">.</span><span class="nf">Abs</span><span class="p">())</span> <span class="c1">// 500
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="多重继承">多重继承</h4>
+</div><h3 id="多重继承">多重继承</h3>
 <p>多重继承是指类型能获得多个父类型的行为的能力。在 Go 语言中，可以在类型中嵌入多个父类型来实现简单的多重继承。</p>
 <p>假设有一个类型 <code>CameraPhone</code> ，它包含了 <code>Camera</code> 和 <code>Phone</code>，因此可以使用 <code> Call()</code> 和 <code>TakeAPicture()</code> 方法。</p>
 <div class="highlight" id="id-35"><div class="chroma">
@@ -1246,7 +1243,7 @@
 </span></span><span class="line"><span class="cl">It exhibits behavior of a Camera: Click
 </span></span><span class="line"><span class="cl">It works like a Phone too: Ring Ring</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="总结">总结</h3>
+</div><h2 id="总结">总结</h2>
 <p>Go 和面向对象的语言 Java 和 python 不同，在 Java 中，在一个对象上调用方法，运行时会检测当前类和它的超类中是否有此方法，没有会报错。而 Go 语言不存在这样的继承层次，若方法在此类型中定义了，就可以调用它，和该类型中的内嵌类型是否存在该方法没有关系。</p>
 <ul>
 <li>在 Go 中，类型就是类，Go 的继承不同于面对对象语言中的继承。</li>
@@ -1256,28 +1253,28 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 0001-01-01 00:00:00">更新于 0001-01-01&nbsp;</span>
+        <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
     <div class="post-info-line">
       <div class="post-info-md"><span><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" data-title="" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" data-title="Golang入门笔记-CH07-结构体和方法" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
   </div>
 
   <div class="post-info-more">
-    <section class="post-tags"></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="post-nav-item" rel="prev" title=""><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i></a>
-      <a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="post-nav-item" rel="next" title=""><i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="post-nav-item" rel="prev" title="Golang入门笔记-CH08-接口"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Golang入门笔记-CH08-接口</a>
+      <a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="post-nav-item" rel="next" title="Golang入门笔记-CH06-Map">Golang入门笔记-CH06-Map<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.

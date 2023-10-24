@@ -1,4 +1,4 @@
-# 
+# Golang入门笔记-CH11-错误处理
 
 Go 没有像 Java 那样的 `try/catch` 异常处理机制，而是用 `defer/panic/recover` 机制来处理异常。
 
@@ -23,9 +23,9 @@ type error interface {
 }
 ```
 
-### 错误处理
+## 错误处理
 
-#### 定义错误
+### 定义错误
 
 可以通过 `errors` 包中 `New()` 函数传递错误信息，从而自定义错误，如下：
 
@@ -137,7 +137,7 @@ switch err := err.(type) {
 }
 ```
 
-#### 用 fmt 创建错误对象
+### 用 fmt 创建错误对象
 
 可以通过 `fmt.Errorf()` 来创建错误对象，用法类似于 `fmt.Printf()`，可以用占位符来格式化输出，例如：
 
@@ -147,7 +147,7 @@ if f < 0 {
 }
 ```
 
-### 运行时异常和 panic
+## 运行时异常和 panic
 
 当发生**数组下标越界**等运行错误时，会触发 panic，程序会崩溃并抛出一个 `runtime.Error` 接口类型值。
 
@@ -173,7 +173,7 @@ func main() {
 
 不能随意用 `panic` 来中止程序，必须尽力补救错误以便让程序能够继续正常运行。
 
-### 从 panic 中恢复
+## 从 panic 中恢复
 
 `recover` 函数可以让程序从 `panic` 场景下恢复，停止终止过程而恢复正常。
 
@@ -215,7 +215,7 @@ func main() {
 
 ![image.png](https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png)
 
-### 闭包处理错误
+## 闭包处理错误
 
 每当函数返回错误时，我们都应该去处理，但这样会导致代码重复。结合 `defer/panic/recover` 机制和闭包我们可以创造一种更优雅的错误处理模式。但是这个模式只适用于函数签名相同的情况，一个很好的例子就是在 Web 应用中的处理函数，它的一般形式如下：
 

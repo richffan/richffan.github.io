@@ -1,6 +1,6 @@
-# 
+# Golang入门笔记-CH06-Map
 
-### 声明和初始化 Map
+## 声明和初始化 Map
 
 `map` 是一种特殊的数据结构，通过键 `key` 和值 `value` 来保存数据，可以快速地根据 `key` 找到其对应的 `value`，与 `python` 中的字典和 `Java` 中的 `HashMap` 类似。
 
@@ -80,7 +80,7 @@ map1 := make(map[keyType]valueType)
 
 `mapCreated := make(map[string]float)` 相当于：`mapCreated := map[string]float{}`。
 
-### Map 容量
+## Map 容量
 
 `map` 会动态扩容，因此它不存在长度限制。但也可以在初始化 `map` 时指定它的初始容量，格式如下：
 
@@ -90,7 +90,7 @@ map1 := make(map[string]int, 100) // map1 的初始容量为 100
 
 当 `map` 增长到最大容量时，容量会自动加 1。但对于性能要求较高的场景，若 `map` 中保存的数据较多或易快速扩张，建议在初始化时指定其初始容量。
 
-### 判断键值对是否存在
+## 判断键值对是否存在
 
 我们可以通过如下的格式来判断 `map` 中的 `key` 是否存在：
 
@@ -114,7 +114,7 @@ if _, ok := map1[key]; ok {
 }
 ```
 
-### 删除元素
+## 删除元素
 
 删除 `map` 中的元素，可以通过 `delete` 函数，如删除 `map1` 中 `key` 对应的元素：
 
@@ -124,7 +124,7 @@ delete(map1, key)
 
 即使要删除的 `key` 不存在，也不会报错。
 
-### 遍历 Map
+## 遍历 Map
 
 可以通过 `for range` 循环来遍历 `map`：
 
@@ -180,7 +180,7 @@ key is: 2 - value is: 2.000000
 > ***注意***：`map` 中元素不是按照 `key` 来排序的。
 >
 
-### Map 类型的切片
+## Map 类型的切片
 
 如果我们要创建一个 `map` 类型的切片，一定要使用两次 `make()` 函数，第一次分配切片的内存，第二次分配 `map` 的内存。
 

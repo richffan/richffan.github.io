@@ -5,35 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title> - 樊刹</title><meta name="author" content="richfan">
+    <title>Golang入门笔记-CH06-Map - 樊刹</title><meta name="author" content="richfan">
 <meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用" /><meta name="keywords" content='Hugo, FixIt, richfan, 樊刹, 不渡尘心, 樊刹|不渡尘心' /><meta itemprop="name" content="">
-<meta itemprop="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用">
-
+<meta name="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH06-Map">
+<meta itemprop="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="wordCount" content="1240"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
-<meta itemprop="keywords" content="" /><meta property="og:title" content="" />
+<meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH06-Map" />
 <meta property="og:description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="posts" />
-
-
+<meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-01T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
 
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Golang入门笔记-CH06-Map"/>
 <meta name="twitter:description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" /><link rel="prev" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><link rel="next" href="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "",
+    "headline": "Golang入门笔记-CH06-Map",
     "inLanguage": "zh-CN",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map\/"
-    },"genre": "posts","wordcount":  1240 ,
-    "url": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map\/","publisher": {
+    },"genre": "posts","keywords": "Golang","wordcount":  1240 ,
+    "url": "http:\/\/richfan.site\/posts\/program\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -164,7 +164,7 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
-    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="樊刹">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page"></li>
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="樊刹">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH06-Map</li>
     </ol>
   </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content" id="toc-content-auto"></div></aside>
@@ -173,12 +173,13 @@
     </aside>
 
   <article class="page single">
-    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH06-Map</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span></div>
-      <div class="post-meta-line"><span title="发布于 0001-01-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="更新于 0001-01-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="1240 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1240 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH06-Map">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
-            </span>&nbsp;<span class="comment-count" data-flag-title="">
+            </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH06-Map">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="valine-comment-count">-</span>&nbsp;条评论
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -188,19 +189,15 @@
         </div>
         <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#声明和初始化-map">声明和初始化 Map</a></li>
-        <li><a href="#map-容量">Map 容量</a></li>
-        <li><a href="#判断键值对是否存在">判断键值对是否存在</a></li>
-        <li><a href="#删除元素">删除元素</a></li>
-        <li><a href="#遍历-map">遍历 Map</a></li>
-        <li><a href="#map-类型的切片">Map 类型的切片</a></li>
-      </ul>
-    </li>
+    <li><a href="#声明和初始化-map">声明和初始化 Map</a></li>
+    <li><a href="#map-容量">Map 容量</a></li>
+    <li><a href="#判断键值对是否存在">判断键值对是否存在</a></li>
+    <li><a href="#删除元素">删除元素</a></li>
+    <li><a href="#遍历-map">遍历 Map</a></li>
+    <li><a href="#map-类型的切片">Map 类型的切片</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h3 id="声明和初始化-map">声明和初始化 Map</h3>
+      </div><div class="content" id="content"><h2 id="声明和初始化-map">声明和初始化 Map</h2>
 <p><code>map</code> 是一种特殊的数据结构，通过键 <code>key</code> 和值 <code>value</code> 来保存数据，可以快速地根据 <code>key</code> 找到其对应的 <code>value</code>，与 <code>python</code> 中的字典和 <code>Java</code> 中的 <code>HashMap</code> 类似。</p>
 <p><code>map</code> 是<strong>引用类型</strong>，声明方式如下：</p>
 <div class="highlight" id="id-1"><div class="chroma">
@@ -308,7 +305,7 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>mapCreated := make(map[string]float)</code> 相当于：<code>mapCreated := map[string]float{}</code>。</p>
-<h3 id="map-容量">Map 容量</h3>
+<h2 id="map-容量">Map 容量</h2>
 <p><code>map</code> 会动态扩容，因此它不存在长度限制。但也可以在初始化 <code>map</code> 时指定它的初始容量，格式如下：</p>
 <div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -319,7 +316,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当 <code>map</code> 增长到最大容量时，容量会自动加 1。但对于性能要求较高的场景，若 <code>map</code> 中保存的数据较多或易快速扩张，建议在初始化时指定其初始容量。</p>
-<h3 id="判断键值对是否存在">判断键值对是否存在</h3>
+<h2 id="判断键值对是否存在">判断键值对是否存在</h2>
 <p>我们可以通过如下的格式来判断 <code>map</code> 中的 <code>key</code> 是否存在：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -349,7 +346,7 @@
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="删除元素">删除元素</h3>
+</div><h2 id="删除元素">删除元素</h2>
 <p>删除 <code>map</code> 中的元素，可以通过 <code>delete</code> 函数，如删除 <code>map1</code> 中 <code>key</code> 对应的元素：</p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -359,7 +356,7 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">delete</span><span class="p">(</span><span class="nx">map1</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>即使要删除的 <code>key</code> 不存在，也不会报错。</p>
-<h3 id="遍历-map">遍历 Map</h3>
+<h2 id="遍历-map">遍历 Map</h2>
 <p>可以通过 <code>for range</code> 循环来遍历 <code>map</code>：</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -445,7 +442,7 @@
 </div><blockquote>
 <p><em><strong>注意</strong></em>：<code>map</code> 中元素不是按照 <code>key</code> 来排序的。</p>
 </blockquote>
-<h3 id="map-类型的切片">Map 类型的切片</h3>
+<h2 id="map-类型的切片">Map 类型的切片</h2>
 <p>如果我们要创建一个 <code>map</code> 类型的切片，一定要使用两次 <code>make()</code> 函数，第一次分配切片的内存，第二次分配 <code>map</code> 的内存。</p>
 <p>来看一个例子：</p>
 <div class="highlight" id="id-18"><div class="chroma">
@@ -507,28 +504,28 @@
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 0001-01-01 00:00:00">更新于 0001-01-01&nbsp;</span>
+        <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
           <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
         </div></div>
     <div class="post-info-line">
       <div class="post-info-md"><span><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" data-title="" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" data-title="Golang入门笔记-CH06-Map" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
   </div>
 
   <div class="post-info-more">
-    <section class="post-tags"></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" class="post-nav-item" rel="prev" title=""><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i></a>
-      <a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" class="post-nav-item" rel="next" title=""><i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" class="post-nav-item" rel="prev" title="Golang入门笔记-CH07-结构体和方法"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Golang入门笔记-CH07-结构体和方法</a>
+      <a href="/posts/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" class="post-nav-item" rel="next" title="Golang入门笔记-CH05-数组和切片">Golang入门笔记-CH05-数组和切片<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
