@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 多表_一键调整(control As IRibbonControl) '批量调整表格格式
     Application.ScreenUpdating = False  '关闭屏幕刷新
     Application.DisplayAlerts = False  '关闭提示

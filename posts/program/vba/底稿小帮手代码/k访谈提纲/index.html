@@ -253,62 +253,62 @@
 </span><span class="lnt">56
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 插入访谈(x)
-</span></span><span class="line"><span class="cl">    Path = ActiveDocument.AttachedTemplate.FullName
-</span></span><span class="line"><span class="cl">    Application.Templates(Path).BuildingBlockEntries(x).Insert Where:=Selection.Range, RichText:=True
-</span></span><span class="line"><span class="cl">    With ActiveDocument.PageSetup
-</span></span><span class="line"><span class="cl">        .Orientation = wdOrientPortrait
-</span></span><span class="line"><span class="cl">        .TopMargin = CentimetersToPoints(2.54)
-</span></span><span class="line"><span class="cl">        .BottomMargin = CentimetersToPoints(2.54)
-</span></span><span class="line"><span class="cl">        .LeftMargin = CentimetersToPoints(3.17)
-</span></span><span class="line"><span class="cl">        .RightMargin = CentimetersToPoints(2.7)
-</span></span><span class="line"><span class="cl">        .HeaderDistance = CentimetersToPoints(1)
-</span></span><span class="line"><span class="cl">        .FooterDistance = CentimetersToPoints(1.3)
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    ActiveWindow.ActivePane.View.SeekView = wdSeekCurrentPageHeader
-</span></span><span class="line"><span class="cl">    Selection.WholeStory
-</span></span><span class="line"><span class="cl">    Selection.Delete
-</span></span><span class="line"><span class="cl">    Application.Templates(Path).BuildingBlockEntries(&#34;访谈页眉&#34;).Insert Where:=Selection.Range, RichText:=True
-</span></span><span class="line"><span class="cl">    ActiveWindow.ActivePane.View.SeekView = wdSeekMainDocument
-</span></span><span class="line"><span class="cl">    Selection.WholeStory
-</span></span><span class="line"><span class="cl">    Selection.Range.ListFormat.RemoveNumbers NumberType:=wdNumberParagraph
-</span></span><span class="line"><span class="cl">    ActiveDocument.Sections(1).Footers(wdHeaderFooterPrimary).PageNumbers.Add PageNumberAlignment:=wdAlignPageNumberCenter, FirstPage:=True
-</span></span><span class="line"><span class="cl">    With ActiveDocument.Sections(1).Footers(wdHeaderFooterPrimary) &#39;进入页脚编辑状态
-</span></span><span class="line"><span class="cl">        .Range.Font.Size = 9
-</span></span><span class="line"><span class="cl">        .Range.Font.Name = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">        .Range.Collapse Direction:=wdCollapseEnd
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 财务负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;财务负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 采购负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;采购负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 人力负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;人力负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 生产负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;生产负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 投融资负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;投融资负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 销售负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;销售负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 研发负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;研发负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 总经理(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;总经理&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 独立董事(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;独立董事&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 内审负责人(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Call 插入访谈(&#34;内审负责人&#34;)
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">插入访谈</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Path</span> <span class="o">=</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">AttachedTemplate</span><span class="p">.</span><span class="n">FullName</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">Templates</span><span class="p">(</span><span class="n">Path</span><span class="p">).</span><span class="n">BuildingBlockEntries</span><span class="p">(</span><span class="n">x</span><span class="p">).</span><span class="n">Insert</span> <span class="n">Where</span><span class="p">:</span><span class="o">=</span><span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">RichText</span><span class="p">:</span><span class="o">=</span><span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">PageSetup</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TopMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">54</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">BottomMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">54</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">LeftMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">3</span><span class="p">.</span><span class="n">17</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">RightMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">HeaderDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">FooterDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ActiveWindow</span><span class="p">.</span><span class="n">ActivePane</span><span class="p">.</span><span class="n">View</span><span class="p">.</span><span class="n">SeekView</span> <span class="o">=</span> <span class="n">wdSeekCurrentPageHeader</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">WholeStory</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Delete</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">Templates</span><span class="p">(</span><span class="n">Path</span><span class="p">).</span><span class="n">BuildingBlockEntries</span><span class="p">(</span><span class="s">&#34;访谈页眉&#34;</span><span class="p">).</span><span class="n">Insert</span> <span class="n">Where</span><span class="p">:</span><span class="o">=</span><span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">RichText</span><span class="p">:</span><span class="o">=</span><span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ActiveWindow</span><span class="p">.</span><span class="n">ActivePane</span><span class="p">.</span><span class="n">View</span><span class="p">.</span><span class="n">SeekView</span> <span class="o">=</span> <span class="n">wdSeekMainDocument</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">WholeStory</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ListFormat</span><span class="p">.</span><span class="n">RemoveNumbers</span> <span class="n">NumberType</span><span class="p">:</span><span class="o">=</span><span class="n">wdNumberParagraph</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Sections</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Footers</span><span class="p">(</span><span class="n">wdHeaderFooterPrimary</span><span class="p">).</span><span class="n">PageNumbers</span><span class="p">.</span><span class="n">Add</span> <span class="n">PageNumberAlignment</span><span class="p">:</span><span class="o">=</span><span class="n">wdAlignPageNumberCenter</span><span class="p">,</span> <span class="n">FirstPage</span><span class="p">:</span><span class="o">=</span><span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Sections</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Footers</span><span class="p">(</span><span class="n">wdHeaderFooterPrimary</span><span class="p">)</span> <span class="c">&#39;进入页脚编辑状态
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">9</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Collapse</span> <span class="n">Direction</span><span class="p">:</span><span class="o">=</span><span class="n">wdCollapseEnd</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">财务负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;财务负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">采购负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;采购负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">人力负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;人力负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">生产负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;生产负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">投融资负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;投融资负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">销售负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;销售负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">研发负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;研发负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">总经理</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;总经理&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">独立董事</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;独立董事&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">内审负责人</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Call</span> <span class="n">插入访谈</span><span class="p">(</span><span class="s">&#34;内审负责人&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

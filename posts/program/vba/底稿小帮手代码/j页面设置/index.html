@@ -270,79 +270,79 @@
 </span><span class="lnt">73
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 附注页面(control As IRibbonControl) &#39;页面-页面设置
-</span></span><span class="line"><span class="cl">    With ActiveDocument.PageSetup
-</span></span><span class="line"><span class="cl">        .Orientation = wdOrientPortrait
-</span></span><span class="line"><span class="cl">        .TopMargin = CentimetersToPoints(2.54)
-</span></span><span class="line"><span class="cl">        .BottomMargin = CentimetersToPoints(2.54)
-</span></span><span class="line"><span class="cl">        .LeftMargin = CentimetersToPoints(3.17)
-</span></span><span class="line"><span class="cl">        .RightMargin = CentimetersToPoints(2.7)
-</span></span><span class="line"><span class="cl">        .HeaderDistance = CentimetersToPoints(1.5)
-</span></span><span class="line"><span class="cl">        .FooterDistance = CentimetersToPoints(1.75)
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 封面页面(control As IRibbonControl) &#39;页面-页面设置
-</span></span><span class="line"><span class="cl">    With ActiveDocument.PageSetup
-</span></span><span class="line"><span class="cl">        .Orientation = wdOrientPortrait
-</span></span><span class="line"><span class="cl">        .TopMargin = CentimetersToPoints(6.06)
-</span></span><span class="line"><span class="cl">        .BottomMargin = CentimetersToPoints(2.54)
-</span></span><span class="line"><span class="cl">        .LeftMargin = CentimetersToPoints(2.24)
-</span></span><span class="line"><span class="cl">        .RightMargin = CentimetersToPoints(2.27)
-</span></span><span class="line"><span class="cl">        .HeaderDistance = CentimetersToPoints(1.5)
-</span></span><span class="line"><span class="cl">        .FooterDistance = CentimetersToPoints(1.75)
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 正文页面(control As IRibbonControl) &#39;页面-页面设置
-</span></span><span class="line"><span class="cl">    With ActiveDocument.PageSetup
-</span></span><span class="line"><span class="cl">        .Orientation = wdOrientPortrait
-</span></span><span class="line"><span class="cl">        .TopMargin = CentimetersToPoints(5)
-</span></span><span class="line"><span class="cl">        .BottomMargin = CentimetersToPoints(2)
-</span></span><span class="line"><span class="cl">        .LeftMargin = CentimetersToPoints(3)
-</span></span><span class="line"><span class="cl">        .RightMargin = CentimetersToPoints(3)
-</span></span><span class="line"><span class="cl">        .HeaderDistance = CentimetersToPoints(1.5)
-</span></span><span class="line"><span class="cl">        .FooterDistance = CentimetersToPoints(1.75)
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 插入横页(control As IRibbonControl) &#39;页面-插入横页
-</span></span><span class="line"><span class="cl">    Selection.InsertBreak Type:=wdSectionBreakNextPage
-</span></span><span class="line"><span class="cl">    Selection.InsertBreak Type:=wdSectionBreakNextPage
-</span></span><span class="line"><span class="cl">    Selection.GoTo What:=wdGoToPage, Which:=wdGoToPrevious, Count:=1, Name:=&#34;&#34;
-</span></span><span class="line"><span class="cl">    Selection.Find.ClearFormatting
-</span></span><span class="line"><span class="cl">    With Selection.Find
-</span></span><span class="line"><span class="cl">        .Text = &#34; &#34;
-</span></span><span class="line"><span class="cl">        .Replacement.Text = &#34;&#34;
-</span></span><span class="line"><span class="cl">        .Forward = True
-</span></span><span class="line"><span class="cl">        .Wrap = wdFindContinue
-</span></span><span class="line"><span class="cl">        .Format = False
-</span></span><span class="line"><span class="cl">        .MatchCase = False
-</span></span><span class="line"><span class="cl">        .MatchWholeWord = False
-</span></span><span class="line"><span class="cl">        .MatchByte = True
-</span></span><span class="line"><span class="cl">        .CorrectHangulEndings = True
-</span></span><span class="line"><span class="cl">        .HanjaPhoneticHangul = False
-</span></span><span class="line"><span class="cl">        .MatchWildcards = False
-</span></span><span class="line"><span class="cl">        .MatchSoundsLike = False
-</span></span><span class="line"><span class="cl">        .MatchAllWordForms = False
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    If Selection.PageSetup.Orientation = wdOrientPortrait Then
-</span></span><span class="line"><span class="cl">        Selection.PageSetup.Orientation = wdOrientLandscape
-</span></span><span class="line"><span class="cl">    Else
-</span></span><span class="line"><span class="cl">        Selection.PageSetup.Orientation = wdOrientPortrait
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 插入页码(control As IRibbonControl) &#39;页面-插入页码
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False &#39;关闭屏幕更新
-</span></span><span class="line"><span class="cl">    ActiveDocument.Sections(1).Footers(wdHeaderFooterPrimary).PageNumbers.Add PageNumberAlignment:=wdAlignPageNumberCenter, FirstPage:=True
-</span></span><span class="line"><span class="cl">    With ActiveDocument.Sections(1).Footers(wdHeaderFooterPrimary) &#39;进入页脚编辑状态
-</span></span><span class="line"><span class="cl">        .Range.Font.Size = 9
-</span></span><span class="line"><span class="cl">        .Range.Font.Name = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">        .Range.Collapse Direction:=wdCollapseEnd
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    With ActiveDocument.Sections(1).Headers(wdHeaderFooterPrimary).Range &#39;进入页脚编辑状态
-</span></span><span class="line"><span class="cl">        .Delete &#39;删除页眉中的内容
-</span></span><span class="line"><span class="cl">        .ParagraphFormat.Borders(wdBorderBottom).LineStyle = wdLineStyleNone &#39;取消页眉段落下边框线
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True &#39;恢复屏幕更新
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">附注页面</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;页面-页面设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">PageSetup</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TopMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">54</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">BottomMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">54</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">LeftMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">3</span><span class="p">.</span><span class="n">17</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">RightMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">HeaderDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">FooterDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">75</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">封面页面</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;页面-页面设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">PageSetup</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TopMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">6</span><span class="p">.</span><span class="n">06</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">BottomMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">54</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">LeftMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">24</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">RightMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="n">27</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">HeaderDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">FooterDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">75</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">正文页面</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;页面-页面设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">PageSetup</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TopMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">BottomMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">LeftMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">RightMargin</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">HeaderDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">FooterDistance</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="n">75</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">插入横页</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;页面-插入横页
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Selection</span><span class="p">.</span><span class="n">InsertBreak</span> <span class="n">Type</span><span class="p">:</span><span class="o">=</span><span class="n">wdSectionBreakNextPage</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">InsertBreak</span> <span class="n">Type</span><span class="p">:</span><span class="o">=</span><span class="n">wdSectionBreakNextPage</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">GoTo</span> <span class="n">What</span><span class="p">:</span><span class="o">=</span><span class="n">wdGoToPage</span><span class="p">,</span> <span class="n">Which</span><span class="p">:</span><span class="o">=</span><span class="n">wdGoToPrevious</span><span class="p">,</span> <span class="n">Count</span><span class="p">:</span><span class="o">=</span><span class="n">1</span><span class="p">,</span> <span class="n">Name</span><span class="p">:</span><span class="o">=</span><span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">ClearFormatting</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34; &#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Wrap</span> <span class="o">=</span> <span class="n">wdFindContinue</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Format</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchCase</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWholeWord</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchByte</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">CorrectHangulEndings</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">HanjaPhoneticHangul</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchSoundsLike</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchAllWordForms</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">PageSetup</span><span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">PageSetup</span><span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientLandscape</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">PageSetup</span><span class="p">.</span><span class="n">Orientation</span> <span class="o">=</span> <span class="n">wdOrientPortrait</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">插入页码</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;页面-插入页码
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39;关闭屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Sections</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Footers</span><span class="p">(</span><span class="n">wdHeaderFooterPrimary</span><span class="p">).</span><span class="n">PageNumbers</span><span class="p">.</span><span class="n">Add</span> <span class="n">PageNumberAlignment</span><span class="p">:</span><span class="o">=</span><span class="n">wdAlignPageNumberCenter</span><span class="p">,</span> <span class="n">FirstPage</span><span class="p">:</span><span class="o">=</span><span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Sections</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Footers</span><span class="p">(</span><span class="n">wdHeaderFooterPrimary</span><span class="p">)</span> <span class="c">&#39;进入页脚编辑状态
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">9</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Collapse</span> <span class="n">Direction</span><span class="p">:</span><span class="o">=</span><span class="n">wdCollapseEnd</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Sections</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Headers</span><span class="p">(</span><span class="n">wdHeaderFooterPrimary</span><span class="p">).</span><span class="n">Range</span> <span class="c">&#39;进入页脚编辑状态
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">Delete</span> <span class="c">&#39;删除页眉中的内容
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderBottom</span><span class="p">).</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleNone</span> <span class="c">&#39;取消页眉段落下边框线
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39;恢复屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

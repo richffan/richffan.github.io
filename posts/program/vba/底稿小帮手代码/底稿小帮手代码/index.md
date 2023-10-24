@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 段落处理(control As IRibbonControl) '段落-段落处理-
     Application.ScreenUpdating = False
     For Each pg In Selection.Paragraphs
@@ -291,7 +291,7 @@ End Sub
 
 ## b表单处理
 
-```VBA
+```vb
 Dim aarr(1 To 20), bbrr(1 To 30, 1 To 30) '多列调整
 Sub 单表_一键调整(control As IRibbonControl) '单表-格式
     '功能：光标在表格中处理当前表格；否则处理所有表格！
@@ -455,7 +455,7 @@ End Sub
 
 ## c数字
 
-```VBA
+```vb
 Sub 千分位符(control As IRibbonControl) '数字-千分位符
     On Error Resume Next
     Dim i As Range, Acell As Cell, CR As Range
@@ -546,7 +546,7 @@ End Sub
 
 ## d文字
 
-```VBA
+```vb
 Sub 宋体宋体(control As IRibbonControl)
     '选中范围字体为宋体+宋体
     With Selection.Font
@@ -677,7 +677,7 @@ End Sub
 
 ## e大纲
 
-```VBA
+```vb
 Sub 大纲一级(control As IRibbonControl) '大纲调整-一级
     With Selection
         .Paragraphs.OutlineLevel = wdOutlineLevel1
@@ -712,7 +712,7 @@ End Sub
 
 ## fExcel贴数
 
-```VBA
+```vb
 Sub 粘贴格式文本(control As IRibbonControl)
     Set xl = GetObject(, "excel.application")
     xlr = xl.Selection.Rows.Count
@@ -774,7 +774,7 @@ End Function
 
 ## g批注
 
-```VBA
+```vb
 Sub 添加批注(control As IRibbonControl) '批注-添加批注
     '添加批注
     Application.ScreenUpdating = False '关闭屏幕更新
@@ -806,7 +806,7 @@ End Sub
 
 ## h行列校验
 
-```VBA
+```vb
 Sub 选行校验(control As IRibbonControl) '行列校验-选行校验
     i = 0
     x = 0
@@ -894,7 +894,7 @@ End Sub
 
 ## i多表处理
 
-```VBA
+```vb
 Sub 多表_一键调整(control As IRibbonControl) '批量调整表格格式
     Application.ScreenUpdating = False  '关闭屏幕刷新
     Application.DisplayAlerts = False  '关闭提示
@@ -1033,7 +1033,7 @@ End Sub
 
 ## JsonConverter
 
-```VBA
+```vb
 ''
 ' VBA-JSON v2.3.1
 ' (c) Tim Hall - https://github.com/VBA-tools/VBA-JSON
@@ -2160,7 +2160,7 @@ utc_ErrorHandling:
 
 ## j页面设置
 
-```VBA
+```vb
 Sub 附注页面(control As IRibbonControl) '页面-页面设置
     With ActiveDocument.PageSetup
         .Orientation = wdOrientPortrait
@@ -2238,7 +2238,7 @@ End Sub
 
 ## k访谈提纲
 
-```VBA
+```vb
 Sub 插入访谈(x)
     Path = ActiveDocument.AttachedTemplate.FullName
     Application.Templates(Path).BuildingBlockEntries(x).Insert Where:=Selection.Range, RichText:=True
@@ -2299,7 +2299,7 @@ End Sub
 
 ## 更新
 
-```VBA
+```vb
 Private Declare PtrSafe Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hwnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
 Sub 获取标签名(control As IRibbonControl, ByRef returnedVal)
     returnedVal = "报告小帮手 V2.6"
@@ -2376,7 +2376,7 @@ End Function
 
 ## 类模块
 
-```VBA
+```vb
 ''
 ' Dictionary v1.2.0
 ' (c) Tim Hall - https://github.com/timhall/VBA-Dictionary

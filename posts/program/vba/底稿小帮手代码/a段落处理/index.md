@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 段落处理(control As IRibbonControl) '段落-段落处理-
     Application.ScreenUpdating = False
     For Each pg In Selection.Paragraphs

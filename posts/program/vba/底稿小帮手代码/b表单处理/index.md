@@ -7,7 +7,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Dim aarr(1 To 20), bbrr(1 To 30, 1 To 30) '多列调整
 Sub 单表_一键调整(control As IRibbonControl) '单表-格式
     '功能：光标在表格中处理当前表格；否则处理所有表格！

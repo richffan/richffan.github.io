@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 附注页面(control As IRibbonControl) '页面-页面设置
     With ActiveDocument.PageSetup
         .Orientation = wdOrientPortrait

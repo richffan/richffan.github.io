@@ -595,404 +595,404 @@
 </span><span class="lnt">398
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Dictionary v1.2.0
-</span></span><span class="line"><span class="cl">&#39; (c) Tim Hall - https://github.com/timhall/VBA-Dictionary
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; Drop-in replacement for Scripting.Dictionary on Mac
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @author: tim.hall.engr@gmail.com
-</span></span><span class="line"><span class="cl">&#39; @license: MIT (http://www.opensource.org/licenses/mit-license.php
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &#39;
-</span></span><span class="line"><span class="cl">Option Explicit
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Dictionary v1.2.0
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; (c) Tim Hall - https://github.com/timhall/VBA-Dictionary
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Drop-in replacement for Scripting.Dictionary on Mac
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @author: tim.hall.engr@gmail.com
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @license: MIT (http://www.opensource.org/licenses/mit-license.php
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Option</span> <span class="n">Explicit</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">&#39; Constants and Private Variables
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
+</span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Constants and Private Variables
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#Const</span> <span class="n">UseScriptingDictionaryIfAvailable</span> <span class="o">=</span> <span class="k">True</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#Const UseScriptingDictionaryIfAvailable = True
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#If Mac Or Not UseScriptingDictionaryIfAvailable Then
+</span></span><span class="line"><span class="cl"><span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    &#39; KeyValue 0: FormattedKey, 1: OriginalKey, 2: Value
-</span></span><span class="line"><span class="cl">    Private pKeyValues As Collection
-</span></span><span class="line"><span class="cl">    Private pKeys() As Variant
-</span></span><span class="line"><span class="cl">    Private pItems() As Variant
-</span></span><span class="line"><span class="cl">    Private pCompareMode As CompareMethod
+</span></span><span class="line"><span class="cl">    <span class="c">&#39; KeyValue 0: FormattedKey, 1: OriginalKey, 2: Value
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Private</span> <span class="n">pKeyValues</span> <span class="ow">As</span> <span class="n">Collection</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="n">pKeys</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="n">pItems</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="n">pCompareMode</span> <span class="ow">As</span> <span class="n">CompareMethod</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">#Else
+</span></span><span class="line"><span class="cl"><span class="cp">#Else</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private pDictionary As Object
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="n">pDictionary</span> <span class="ow">As</span> <span class="kt">Object</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">#End If
+</span></span><span class="line"><span class="cl"><span class="cp">#End If</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">&#39; Types
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
+</span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Types
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Enum</span> <span class="nc">CompareMethod</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BinaryCompare</span> <span class="o">=</span> <span class="n">vbBinaryCompare</span>
+</span></span><span class="line"><span class="cl">    <span class="n">TextCompare</span> <span class="o">=</span> <span class="n">vbTextCompare</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DatabaseCompare</span> <span class="o">=</span> <span class="n">vbDatabaseCompare</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Enum</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Public Enum CompareMethod
-</span></span><span class="line"><span class="cl">    BinaryCompare = vbBinaryCompare
-</span></span><span class="line"><span class="cl">    TextCompare = vbTextCompare
-</span></span><span class="line"><span class="cl">    DatabaseCompare = vbDatabaseCompare
-</span></span><span class="line"><span class="cl">End Enum
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">&#39; Properties
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Public Property Get CompareMode() As CompareMethod
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        CompareMode = pCompareMode
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        CompareMode = pDictionary.CompareMode
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
-</span></span><span class="line"><span class="cl">Public Property Let CompareMode(Value As CompareMethod)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Me.Count &gt; 0 Then
-</span></span><span class="line"><span class="cl">            &#39; Can&#39;t change CompareMode for Dictionary that contains data
-</span></span><span class="line"><span class="cl">            &#39; http://msdn.microsoft.com/en-us/library/office/gg278481(v=office.15).aspx
-</span></span><span class="line"><span class="cl">            ERR.Raise 5 &#39; Invalid procedure call or argument
-</span></span><span class="line"><span class="cl">        End If
+</span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Properties
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Get</span> <span class="n">CompareMode</span><span class="p">()</span> <span class="ow">As</span> <span class="n">CompareMethod</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">CompareMode</span> <span class="o">=</span> <span class="n">pCompareMode</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">CompareMode</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">CompareMode</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Let</span> <span class="n">CompareMode</span><span class="p">(</span><span class="n">Value</span> <span class="ow">As</span> <span class="n">CompareMethod</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Can&#39;t change CompareMode for Dictionary that contains data
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39; http://msdn.microsoft.com/en-us/library/office/gg278481(v=office.15).aspx
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">ERR</span><span class="p">.</span><span class="n">Raise</span> <span class="n">5</span> <span class="c">&#39; Invalid procedure call or argument
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        pCompareMode = Value
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.CompareMode = Value
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
+</span></span><span class="line"><span class="cl">        <span class="n">pCompareMode</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">CompareMode</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Public Property Get Count() As Long
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Count = pKeyValues.Count
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Count = pDictionary.Count
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Get</span> <span class="n">Count</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Long</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Count</span> <span class="o">=</span> <span class="n">pKeyValues</span><span class="p">.</span><span class="n">Count</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Count</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Count</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Public Property Get Item(Key As Variant) As Variant
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Dim KeyValue As Variant
-</span></span><span class="line"><span class="cl">        KeyValue = GetKeyValue(Key)
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Get</span> <span class="n">Item</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">KeyValue</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">        <span class="n">KeyValue</span> <span class="o">=</span> <span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        If Not IsEmpty(KeyValue) Then
-</span></span><span class="line"><span class="cl">            If IsObject(KeyValue(2)) Then
-</span></span><span class="line"><span class="cl">                Set Item = KeyValue(2)
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                Item = KeyValue(2)
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            &#39; Not found -&gt; Returns Empty
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        If IsObject(pDictionary.Item(Key)) Then
-</span></span><span class="line"><span class="cl">            Set Item = pDictionary.Item(Key)
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            Item = pDictionary.Item(Key)
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
-</span></span><span class="line"><span class="cl">Public Property Let Item(Key As Variant, Value As Variant)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Me.Exists(Key) Then
-</span></span><span class="line"><span class="cl">            ReplaceKeyValue GetKeyValue(Key), Key, Value
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            AddKeyValue Key, Value
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.Item(Key) = Value
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
-</span></span><span class="line"><span class="cl">Public Property Set Item(Key As Variant, Value As Variant)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Me.Exists(Key) Then
-</span></span><span class="line"><span class="cl">            ReplaceKeyValue GetKeyValue(Key), Key, Value
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            AddKeyValue Key, Value
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Set pDictionary.Item(Key) = Value
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Not</span> <span class="n">IsEmpty</span><span class="p">(</span><span class="n">KeyValue</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">KeyValue</span><span class="p">(</span><span class="n">2</span><span class="p">))</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Set</span> <span class="n">Item</span> <span class="o">=</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Item</span> <span class="o">=</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Not found -&gt; Returns Empty
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">pDictionary</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Key</span><span class="p">))</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Set</span> <span class="n">Item</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Item</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Let</span> <span class="n">Item</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Value</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ReplaceKeyValue</span> <span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Key</span><span class="p">),</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">AddKeyValue</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Set</span> <span class="n">Item</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Value</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ReplaceKeyValue</span> <span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Key</span><span class="p">),</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">AddKeyValue</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Public Property Let Key(Previous As Variant, Updated As Variant)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Dim KeyValue As Variant
-</span></span><span class="line"><span class="cl">        KeyValue = GetKeyValue(Previous)
+</span></span><span class="line"><span class="cl"><span class="k">Public</span> <span class="k">Property</span> <span class="nf">Let</span> <span class="n">Key</span><span class="p">(</span><span class="n">Previous</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Updated</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">KeyValue</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">        <span class="n">KeyValue</span> <span class="o">=</span> <span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Previous</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        If Not IsEmpty(KeyValue) Then
-</span></span><span class="line"><span class="cl">            ReplaceKeyValue KeyValue, Updated, KeyValue(2)
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.Key(Previous) = Updated
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Property
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Not</span> <span class="n">IsEmpty</span><span class="p">(</span><span class="n">KeyValue</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ReplaceKeyValue</span> <span class="n">KeyValue</span><span class="p">,</span> <span class="n">Updated</span><span class="p">,</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">Key</span><span class="p">(</span><span class="n">Previous</span><span class="p">)</span> <span class="o">=</span> <span class="n">Updated</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Property</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39; ============================================= &#39;
-</span></span><span class="line"><span class="cl">&#39; Public Methods
-</span></span><span class="line"><span class="cl">&#39; ============================================= &#39;
+</span></span><span class="line"><span class="cl"><span class="c">&#39; ============================================= &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Public Methods
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; ============================================= &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Add an item with the given key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @param {Variant} Key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @param {Variant} Item
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Sub</span> <span class="nf">Add</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Item</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Not</span> <span class="k">Me</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">AddKeyValue</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Item</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; This key is already associated with an element of this collection
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">ERR</span><span class="p">.</span><span class="n">Raise</span> <span class="n">457</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">Add</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Item</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Add an item with the given key
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @param {Variant} Key
-</span></span><span class="line"><span class="cl">&#39; @param {Variant} Item
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Sub Add(Key As Variant, Item As Variant)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Not Me.Exists(Key) Then
-</span></span><span class="line"><span class="cl">            AddKeyValue Key, Item
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            &#39; This key is already associated with an element of this collection
-</span></span><span class="line"><span class="cl">            ERR.Raise 457
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.Add Key, Item
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Check if an item exists for the given key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @param {Variant} Key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @return {Boolean}
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Function</span> <span class="nf">Exists</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Boolean</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Exists</span> <span class="o">=</span> <span class="k">Not</span> <span class="n">IsEmpty</span><span class="p">(</span><span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Key</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Exists</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Function</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Check if an item exists for the given key
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @param {Variant} Key
-</span></span><span class="line"><span class="cl">&#39; @return {Boolean}
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Function Exists(Key As Variant) As Boolean
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Exists = Not IsEmpty(GetKeyValue(Key))
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Exists = pDictionary.Exists(Key)
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Function
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Get an array of all items
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @return {Variant}
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Function</span> <span class="nf">Items</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Items</span> <span class="o">=</span> <span class="n">pItems</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Split(&#34;&#34;) creates initialized empty array that matches Dictionary Keys and Items
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">Items</span> <span class="o">=</span> <span class="n">Split</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Items</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Items</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Function</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Get an array of all items
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @return {Variant}
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Function Items() As Variant
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Me.Count &gt; 0 Then
-</span></span><span class="line"><span class="cl">            Items = pItems
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            &#39; Split(&#34;&#34;) creates initialized empty array that matches Dictionary Keys and Items
-</span></span><span class="line"><span class="cl">            Items = Split(&#34;&#34;)
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Items = pDictionary.Items
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Function
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Get an array of all keys
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @return {Variant}
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Function</span> <span class="nf">Keys</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Count</span> <span class="o">&gt;</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Keys</span> <span class="o">=</span> <span class="n">pKeys</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Split(&#34;&#34;) creates initialized empty array that matches Dictionary Keys and Items
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">Keys</span> <span class="o">=</span> <span class="n">Split</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Keys</span> <span class="o">=</span> <span class="n">pDictionary</span><span class="p">.</span><span class="n">Keys</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Function</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Get an array of all keys
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @return {Variant}
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Function Keys() As Variant
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        If Me.Count &gt; 0 Then
-</span></span><span class="line"><span class="cl">            Keys = pKeys
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            &#39; Split(&#34;&#34;) creates initialized empty array that matches Dictionary Keys and Items
-</span></span><span class="line"><span class="cl">            Keys = Split(&#34;&#34;)
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Keys = pDictionary.Keys
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Function
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Remove an item for the given key
-</span></span><span class="line"><span class="cl">&#39;
-</span></span><span class="line"><span class="cl">&#39; @param {Variant} Key
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Sub Remove(Key As Variant)
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Dim KeyValue As Variant
-</span></span><span class="line"><span class="cl">        KeyValue = GetKeyValue(Key)
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Remove an item for the given key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; @param {Variant} Key
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Sub</span> <span class="nf">Remove</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">KeyValue</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">        <span class="n">KeyValue</span> <span class="o">=</span> <span class="n">GetKeyValue</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        If Not IsEmpty(KeyValue) Then
-</span></span><span class="line"><span class="cl">            RemoveKeyValue KeyValue
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            &#39; Application-defined or object-defined error
-</span></span><span class="line"><span class="cl">            ERR.Raise 32811
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.Remove Key
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Not</span> <span class="n">IsEmpty</span><span class="p">(</span><span class="n">KeyValue</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">RemoveKeyValue</span> <span class="n">KeyValue</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Application-defined or object-defined error
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">ERR</span><span class="p">.</span><span class="n">Raise</span> <span class="n">32811</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">Remove</span> <span class="n">Key</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;
-</span></span><span class="line"><span class="cl">&#39; Remove all items
-</span></span><span class="line"><span class="cl">&#39; --------------------------------------------- &#39;
-</span></span><span class="line"><span class="cl">Public Sub RemoveAll()
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Set pKeyValues = New Collection
+</span></span><span class="line"><span class="cl"><span class="c">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Remove all items
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; --------------------------------------------- &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">Public</span> <span class="k">Sub</span> <span class="nf">RemoveAll</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pKeyValues</span> <span class="o">=</span> <span class="k">New</span> <span class="n">Collection</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        Erase pKeys
-</span></span><span class="line"><span class="cl">        Erase pItems
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        pDictionary.RemoveAll
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl">        <span class="k">Erase</span> <span class="n">pKeys</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Erase</span> <span class="n">pItems</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pDictionary</span><span class="p">.</span><span class="n">RemoveAll</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39; ============================================= &#39;
-</span></span><span class="line"><span class="cl">&#39; Private Functions
-</span></span><span class="line"><span class="cl">&#39; ============================================= &#39;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#If Mac Or Not UseScriptingDictionaryIfAvailable Then
+</span></span><span class="line"><span class="cl"><span class="c">&#39; ============================================= &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; Private Functions
+</span></span></span><span class="line"><span class="cl"><span class="c">&#39; ============================================= &#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private Function GetKeyValue(Key As Variant) As Variant
-</span></span><span class="line"><span class="cl">        On Error Resume Next
-</span></span><span class="line"><span class="cl">        GetKeyValue = pKeyValues(GetFormattedKey(Key))
-</span></span><span class="line"><span class="cl">        ERR.Clear
-</span></span><span class="line"><span class="cl">    End Function
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="k">Function</span> <span class="nf">GetKeyValue</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">        <span class="k">On</span> <span class="k">Error</span> <span class="k">Resume</span> <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GetKeyValue</span> <span class="o">=</span> <span class="n">pKeyValues</span><span class="p">(</span><span class="n">GetFormattedKey</span><span class="p">(</span><span class="n">Key</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ERR</span><span class="p">.</span><span class="n">Clear</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Function</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private Sub AddKeyValue(Key As Variant, Value As Variant, Optional Index As Long = -1)
-</span></span><span class="line"><span class="cl">        If Me.Count = 0 Then
-</span></span><span class="line"><span class="cl">            ReDim pKeys(0 To 0)
-</span></span><span class="line"><span class="cl">            ReDim pItems(0 To 0)
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            ReDim Preserve pKeys(0 To UBound(pKeys) + 1)
-</span></span><span class="line"><span class="cl">            ReDim Preserve pItems(0 To UBound(pItems) + 1)
-</span></span><span class="line"><span class="cl">        End If
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="k">Sub</span> <span class="nf">AddKeyValue</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Value</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="k">Optional</span> <span class="n">Index</span> <span class="ow">As</span> <span class="kt">Long</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">Count</span> <span class="o">=</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">ReDim</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">ReDim</span> <span class="n">pItems</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="k">ReDim</span> <span class="n">Preserve</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="o">+</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">ReDim</span> <span class="n">Preserve</span> <span class="n">pItems</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pItems</span><span class="p">)</span> <span class="o">+</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        Dim FormattedKey As String
-</span></span><span class="line"><span class="cl">        FormattedKey = GetFormattedKey(Key)
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">FormattedKey</span> <span class="ow">As</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">        <span class="n">FormattedKey</span> <span class="o">=</span> <span class="n">GetFormattedKey</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        If Index &gt; 0 And Index &lt;= pKeyValues.Count Then
-</span></span><span class="line"><span class="cl">            Dim i As Long
-</span></span><span class="line"><span class="cl">            For i = UBound(pKeys) To Index Step -1
-</span></span><span class="line"><span class="cl">                pKeys(i) = pKeys(i - 1)
-</span></span><span class="line"><span class="cl">                If IsObject(pItems(i - 1)) Then
-</span></span><span class="line"><span class="cl">                    Set pItems(i) = pItems(i - 1)
-</span></span><span class="line"><span class="cl">                Else
-</span></span><span class="line"><span class="cl">                    pItems(i) = pItems(i - 1)
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            Next i
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">Index</span> <span class="o">&gt;</span> <span class="n">0</span> <span class="ow">And</span> <span class="n">Index</span> <span class="o">&lt;=</span> <span class="n">pKeyValues</span><span class="p">.</span><span class="n">Count</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Long</span>
+</span></span><span class="line"><span class="cl">            <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="k">To</span> <span class="n">Index</span> <span class="k">Step</span> <span class="o">-</span><span class="n">1</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="p">))</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">Set</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">pItems</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            pKeys(Index - 1) = Key
-</span></span><span class="line"><span class="cl">            If IsObject(Value) Then
-</span></span><span class="line"><span class="cl">                Set pItems(Index - 1) = Value
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                pItems(Index - 1) = Value
-</span></span><span class="line"><span class="cl">            End If
+</span></span><span class="line"><span class="cl">            <span class="n">pKeys</span><span class="p">(</span><span class="n">Index</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">Key</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Set</span> <span class="n">pItems</span><span class="p">(</span><span class="n">Index</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pItems</span><span class="p">(</span><span class="n">Index</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            pKeyValues.Add Array(FormattedKey, Key, Value), FormattedKey, before:=Index
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            pKeys(UBound(pKeys)) = Key
-</span></span><span class="line"><span class="cl">            If IsObject(Value) Then
-</span></span><span class="line"><span class="cl">                Set pItems(UBound(pItems)) = Value
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                pItems(UBound(pItems)) = Value
-</span></span><span class="line"><span class="cl">            End If
+</span></span><span class="line"><span class="cl">            <span class="n">pKeyValues</span><span class="p">.</span><span class="n">Add</span> <span class="n">Array</span><span class="p">(</span><span class="n">FormattedKey</span><span class="p">,</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span><span class="p">),</span> <span class="n">FormattedKey</span><span class="p">,</span> <span class="n">before</span><span class="p">:</span><span class="o">=</span><span class="n">Index</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pKeys</span><span class="p">(</span><span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">))</span> <span class="o">=</span> <span class="n">Key</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">Value</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Set</span> <span class="n">pItems</span><span class="p">(</span><span class="n">UBound</span><span class="p">(</span><span class="n">pItems</span><span class="p">))</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pItems</span><span class="p">(</span><span class="n">UBound</span><span class="p">(</span><span class="n">pItems</span><span class="p">))</span> <span class="o">=</span> <span class="n">Value</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            pKeyValues.Add Array(FormattedKey, Key, Value), FormattedKey
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    End Sub
+</span></span><span class="line"><span class="cl">            <span class="n">pKeyValues</span><span class="p">.</span><span class="n">Add</span> <span class="n">Array</span><span class="p">(</span><span class="n">FormattedKey</span><span class="p">,</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span><span class="p">),</span> <span class="n">FormattedKey</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private Sub ReplaceKeyValue(KeyValue As Variant, Key As Variant, Value As Variant)
-</span></span><span class="line"><span class="cl">        Dim Index As Long
-</span></span><span class="line"><span class="cl">        Dim i As Integer
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="k">Sub</span> <span class="nf">ReplaceKeyValue</span><span class="p">(</span><span class="n">KeyValue</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">Value</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">Index</span> <span class="ow">As</span> <span class="kt">Long</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Integer</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        For i = 0 To UBound(pKeys)
-</span></span><span class="line"><span class="cl">            If pKeys(i) = KeyValue(1) Then
-</span></span><span class="line"><span class="cl">                Index = i + 1
-</span></span><span class="line"><span class="cl">                Exit For
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next i
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">1</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Index</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Exit</span> <span class="k">For</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        &#39; Remove existing value
-</span></span><span class="line"><span class="cl">        RemoveKeyValue KeyValue, Index
+</span></span><span class="line"><span class="cl">        <span class="c">&#39; Remove existing value
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="n">RemoveKeyValue</span> <span class="n">KeyValue</span><span class="p">,</span> <span class="n">Index</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        &#39; Add new key value back
-</span></span><span class="line"><span class="cl">        AddKeyValue Key, Value, Index
-</span></span><span class="line"><span class="cl">    End Sub
+</span></span><span class="line"><span class="cl">        <span class="c">&#39; Add new key value back
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="n">AddKeyValue</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span><span class="p">,</span> <span class="n">Index</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private Sub RemoveKeyValue(KeyValue As Variant, Optional ByVal Index As Long = -1)
-</span></span><span class="line"><span class="cl">        Dim i As Long
-</span></span><span class="line"><span class="cl">        If Index = -1 Then
-</span></span><span class="line"><span class="cl">            For i = 0 To UBound(pKeys)
-</span></span><span class="line"><span class="cl">                If pKeys(i) = KeyValue(1) Then
-</span></span><span class="line"><span class="cl">                    Index = i
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            Next i
-</span></span><span class="line"><span class="cl">        Else
-</span></span><span class="line"><span class="cl">            Index = Index - 1
-</span></span><span class="line"><span class="cl">        End If
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="k">Sub</span> <span class="nf">RemoveKeyValue</span><span class="p">(</span><span class="n">KeyValue</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="k">Optional</span> <span class="k">ByVal</span> <span class="n">Index</span> <span class="ow">As</span> <span class="kt">Long</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Long</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">Index</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">1</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">Index</span> <span class="o">=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Next</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Index</span> <span class="o">=</span> <span class="n">Index</span> <span class="o">-</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        If Index &gt;= 0 And Index &lt;= UBound(pKeys) Then
-</span></span><span class="line"><span class="cl">            For i = Index To UBound(pKeys) - 1
-</span></span><span class="line"><span class="cl">                pKeys(i) = pKeys(i + 1)
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">Index</span> <span class="o">&gt;=</span> <span class="n">0</span> <span class="ow">And</span> <span class="n">Index</span> <span class="o">&lt;=</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">Index</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="o">-</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                If IsObject(pItems(i + 1)) Then
-</span></span><span class="line"><span class="cl">                    Set pItems(i) = pItems(i + 1)
-</span></span><span class="line"><span class="cl">                Else
-</span></span><span class="line"><span class="cl">                    pItems(i) = pItems(i + 1)
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            Next i
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">IsObject</span><span class="p">(</span><span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="p">))</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">Set</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">pItems</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">pItems</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            If UBound(pKeys) = 0 Then
-</span></span><span class="line"><span class="cl">                Erase pKeys
-</span></span><span class="line"><span class="cl">                Erase pItems
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                ReDim Preserve pKeys(0 To UBound(pKeys) - 1)
-</span></span><span class="line"><span class="cl">                ReDim Preserve pItems(0 To UBound(pItems) - 1)
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        End If
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="o">=</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Erase</span> <span class="n">pKeys</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Erase</span> <span class="n">pItems</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="k">ReDim</span> <span class="n">Preserve</span> <span class="n">pKeys</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pKeys</span><span class="p">)</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">ReDim</span> <span class="n">Preserve</span> <span class="n">pItems</span><span class="p">(</span><span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">pItems</span><span class="p">)</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        pKeyValues.Remove KeyValue(0)
-</span></span><span class="line"><span class="cl">    End Sub
+</span></span><span class="line"><span class="cl">        <span class="n">pKeyValues</span><span class="p">.</span><span class="n">Remove</span> <span class="n">KeyValue</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Private Function GetFormattedKey(Key As Variant) As String
-</span></span><span class="line"><span class="cl">        GetFormattedKey = CStr(Key)
-</span></span><span class="line"><span class="cl">        If Me.CompareMode = CompareMethod.BinaryCompare Then
-</span></span><span class="line"><span class="cl">            &#39; Collection does not have method of setting key comparison
-</span></span><span class="line"><span class="cl">            &#39; So case-sensitive keys aren&#39;t supported by default
-</span></span><span class="line"><span class="cl">            &#39; -&gt; Approach: Append lowercase characters to original key
-</span></span><span class="line"><span class="cl">            &#39;    AbC -&gt; AbC__b, abc -&gt; abc__abc, ABC -&gt; ABC
-</span></span><span class="line"><span class="cl">            &#39;    Won&#39;t work in very strange cases, but should work for now
-</span></span><span class="line"><span class="cl">            &#39;    AbBb -&gt; AbBb__bb matches AbbB -&gt; AbbB__bb
-</span></span><span class="line"><span class="cl">            Dim Lowercase As String
-</span></span><span class="line"><span class="cl">            Lowercase = &#34;&#34;
+</span></span><span class="line"><span class="cl">    <span class="k">Private</span> <span class="k">Function</span> <span class="nf">GetFormattedKey</span><span class="p">(</span><span class="n">Key</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GetFormattedKey</span> <span class="o">=</span> <span class="k">CStr</span><span class="p">(</span><span class="n">Key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="k">Me</span><span class="p">.</span><span class="n">CompareMode</span> <span class="o">=</span> <span class="n">CompareMethod</span><span class="p">.</span><span class="n">BinaryCompare</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39; Collection does not have method of setting key comparison
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39; So case-sensitive keys aren&#39;t supported by default
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39; -&gt; Approach: Append lowercase characters to original key
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39;    AbC -&gt; AbC__b, abc -&gt; abc__abc, ABC -&gt; ABC
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39;    Won&#39;t work in very strange cases, but should work for now
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39;    AbBb -&gt; AbBb__bb matches AbbB -&gt; AbbB__bb
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">Dim</span> <span class="n">Lowercase</span> <span class="ow">As</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Lowercase</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            Dim i As Integer
-</span></span><span class="line"><span class="cl">            Dim Ascii As Integer
-</span></span><span class="line"><span class="cl">            Dim Char As String
-</span></span><span class="line"><span class="cl">            For i = 1 To Len(GetFormattedKey)
-</span></span><span class="line"><span class="cl">                Char = VBA.Mid$(GetFormattedKey, i, 1)
-</span></span><span class="line"><span class="cl">                Ascii = Asc(Char)
-</span></span><span class="line"><span class="cl">                If Ascii &gt;= 97 And Ascii &lt;= 122 Then
-</span></span><span class="line"><span class="cl">                    Lowercase = Lowercase &amp; Char
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            Next i
+</span></span><span class="line"><span class="cl">            <span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Integer</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Dim</span> <span class="n">Ascii</span> <span class="ow">As</span> <span class="kt">Integer</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Dim</span> <span class="kt">Char</span> <span class="ow">As</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">            <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">Len</span><span class="p">(</span><span class="n">GetFormattedKey</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">Char</span> <span class="o">=</span> <span class="n">VBA</span><span class="p">.</span><span class="n">Mid</span><span class="err">$</span><span class="p">(</span><span class="n">GetFormattedKey</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Ascii</span> <span class="o">=</span> <span class="n">Asc</span><span class="p">(</span><span class="kt">Char</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">Ascii</span> <span class="o">&gt;=</span> <span class="n">97</span> <span class="ow">And</span> <span class="n">Ascii</span> <span class="o">&lt;=</span> <span class="n">122</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">Lowercase</span> <span class="o">=</span> <span class="n">Lowercase</span> <span class="o">&amp;</span> <span class="kt">Char</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            If Lowercase &lt;&gt; &#34;&#34; Then
-</span></span><span class="line"><span class="cl">                GetFormattedKey = GetFormattedKey &amp; &#34;__&#34; &amp; Lowercase
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    End Function
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">Lowercase</span> <span class="o">&lt;&gt;</span> <span class="s">&#34;&#34;</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">GetFormattedKey</span> <span class="o">=</span> <span class="n">GetFormattedKey</span> <span class="o">&amp;</span> <span class="s">&#34;__&#34;</span> <span class="o">&amp;</span> <span class="n">Lowercase</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Function</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">#End If
+</span></span><span class="line"><span class="cl"><span class="cp">#End If</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Private Sub Class_Initialize()
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Set pKeyValues = New Collection
+</span></span><span class="line"><span class="cl"><span class="k">Private</span> <span class="k">Sub</span> <span class="nf">Class_Initialize</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pKeyValues</span> <span class="o">=</span> <span class="k">New</span> <span class="n">Collection</span>
 </span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        Erase pKeys
-</span></span><span class="line"><span class="cl">        Erase pItems
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Set pDictionary = CreateObject(&#34;Scripting.Dictionary&#34;)
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl">        <span class="k">Erase</span> <span class="n">pKeys</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Erase</span> <span class="n">pItems</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pDictionary</span> <span class="o">=</span> <span class="n">CreateObject</span><span class="p">(</span><span class="s">&#34;Scripting.Dictionary&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Private Sub Class_Terminate()
-</span></span><span class="line"><span class="cl">    #If Mac Or Not UseScriptingDictionaryIfAvailable Then
-</span></span><span class="line"><span class="cl">        Set pKeyValues = Nothing
-</span></span><span class="line"><span class="cl">    #Else
-</span></span><span class="line"><span class="cl">        Set pDictionary = Nothing
-</span></span><span class="line"><span class="cl">    #End If
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="k">Private</span> <span class="k">Sub</span> <span class="nf">Class_Terminate</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#If Mac Or Not UseScriptingDictionaryIfAvailable Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pKeyValues</span> <span class="o">=</span> <span class="k">Nothing</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#Else</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">pDictionary</span> <span class="o">=</span> <span class="k">Nothing</span>
+</span></span><span class="line"><span class="cl">    <span class="cp">#End If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

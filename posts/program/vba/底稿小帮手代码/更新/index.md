@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Private Declare PtrSafe Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hwnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
 Sub 获取标签名(control As IRibbonControl, ByRef returnedVal)
     returnedVal = "报告小帮手 V2.6"

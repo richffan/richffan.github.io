@@ -7,7 +7,7 @@
 <!--more-->
 
 
-```VBA
+```vb
 ''
 ' Dictionary v1.2.0
 ' (c) Tim Hall - https://github.com/timhall/VBA-Dictionary

@@ -6,7 +6,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 插入访谈(x)
     Path = ActiveDocument.AttachedTemplate.FullName
     Application.Templates(Path).BuildingBlockEntries(x).Insert Where:=Selection.Range, RichText:=True

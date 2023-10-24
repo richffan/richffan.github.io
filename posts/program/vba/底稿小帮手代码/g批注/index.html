@@ -224,33 +224,33 @@
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 添加批注(control As IRibbonControl) &#39;批注-添加批注
-</span></span><span class="line"><span class="cl">    &#39;添加批注
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False &#39;关闭屏幕更新
-</span></span><span class="line"><span class="cl">    Selection.Collapse Direction:=wdCollapseEnd
-</span></span><span class="line"><span class="cl">    ActiveDocument.Comments.Add _
-</span></span><span class="line"><span class="cl">        Range:=Selection.Range, Text:=&#34;&#34;
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True &#39;恢复屏幕更新
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 删除批注(control As IRibbonControl) &#39;批注-删除批注
-</span></span><span class="line"><span class="cl">    &#39;删除批注
-</span></span><span class="line"><span class="cl">    On Error GoTo err_msgbox
-</span></span><span class="line"><span class="cl">    Selection.Comments(1).Delete
-</span></span><span class="line"><span class="cl">    Exit Sub
-</span></span><span class="line"><span class="cl">err_msgbox:
-</span></span><span class="line"><span class="cl">    MsgBox (&#34;你需要先选中一个批注&#34;)
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 修订上色(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Dim oDoc As Document
-</span></span><span class="line"><span class="cl">    Set oDoc = Word.ActiveDocument
-</span></span><span class="line"><span class="cl">    Dim oRevision As Revision
-</span></span><span class="line"><span class="cl">    For Each oRevision In oDoc.Revisions
-</span></span><span class="line"><span class="cl">        With oRevision
-</span></span><span class="line"><span class="cl">            t = .Range.Text
-</span></span><span class="line"><span class="cl">            .Range.HighlightColorIndex = wdYellow
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">添加批注</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;批注-添加批注
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;添加批注
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39;关闭屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Selection</span><span class="p">.</span><span class="n">Collapse</span> <span class="n">Direction</span><span class="p">:</span><span class="o">=</span><span class="n">wdCollapseEnd</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Comments</span><span class="p">.</span><span class="n">Add</span> _
+</span></span><span class="line"><span class="cl">        <span class="n">Range</span><span class="p">:</span><span class="o">=</span><span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">Text</span><span class="p">:</span><span class="o">=</span><span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39;恢复屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">删除批注</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;批注-删除批注
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;删除批注
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">On</span> <span class="k">Error</span> <span class="k">GoTo</span> <span class="n">err_msgbox</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Comments</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Delete</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Exit</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="nf">err_msgbox</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MsgBox</span> <span class="p">(</span><span class="s">&#34;你需要先选中一个批注&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">修订上色</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">oDoc</span> <span class="ow">As</span> <span class="n">Document</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Set</span> <span class="n">oDoc</span> <span class="o">=</span> <span class="n">Word</span><span class="p">.</span><span class="n">ActiveDocument</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">oRevision</span> <span class="ow">As</span> <span class="n">Revision</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="k">Each</span> <span class="n">oRevision</span> <span class="ow">In</span> <span class="n">oDoc</span><span class="p">.</span><span class="n">Revisions</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">oRevision</span>
+</span></span><span class="line"><span class="cl">            <span class="n">t</span> <span class="o">=</span> <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">HighlightColorIndex</span> <span class="o">=</span> <span class="n">wdYellow</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

@@ -66,7 +66,7 @@
 
 内部审计流程图
 
-![]（https://img.richfan.site/audit/专项审计指南/专项审计的流程及要点.png）
+![](https://img.richfan.site/audit/专项审计指南/专项审计的流程及要点.png)
 
 专项审计的要点、重点环节如下：
 

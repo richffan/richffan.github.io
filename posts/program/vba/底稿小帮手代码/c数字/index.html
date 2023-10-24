@@ -283,92 +283,92 @@
 </span><span class="lnt">86
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 千分位符(control As IRibbonControl) &#39;数字-千分位符
-</span></span><span class="line"><span class="cl">    On Error Resume Next
-</span></span><span class="line"><span class="cl">    Dim i As Range, Acell As Cell, CR As Range
-</span></span><span class="line"><span class="cl">    On Error Resume Next
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    If Selection.Type = 2 Then &#39;文档选定
-</span></span><span class="line"><span class="cl">        For Each i In Selection.Words
-</span></span><span class="line"><span class="cl">            If IsNumeric(i) Then
-</span></span><span class="line"><span class="cl">                If i Like &#34;####*&#34; = True Then
-</span></span><span class="line"><span class="cl">                    If i.Next Like &#34;.&#34; = True And i.Next(wdWord, 2) Like &#34;#*&#34; = True Then
-</span></span><span class="line"><span class="cl">                        i.SetRange Start:=i.Start, End:=i.Next(wdWord, 2).End
-</span></span><span class="line"><span class="cl">                        NC = Format(i, &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                        i.Text = NC
-</span></span><span class="line"><span class="cl">                    Else
-</span></span><span class="line"><span class="cl">                        NC = Format(i, &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                        i.Text = NC
-</span></span><span class="line"><span class="cl">                    End If
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next i
-</span></span><span class="line"><span class="cl">    ElseIf Selection.Type = 4 Or Selection.Type = 5 Then &#39;竖形表格（5为横形表格）
-</span></span><span class="line"><span class="cl">        For Each Acell In Selection.Cells
-</span></span><span class="line"><span class="cl">            Set CR = ActiveDocument.Range(Acell.Range.Start, Acell.Range.End - 1)
-</span></span><span class="line"><span class="cl">            &#39;            MsgBox CR
-</span></span><span class="line"><span class="cl">            If CR Like &#34;-####*&#34; Or &#34;-####.#*&#34; = True Then
-</span></span><span class="line"><span class="cl">                Yn = Format(CR, &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                CR.Text = Yn
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                If CR Like &#34;####*&#34; Or &#34;####.#*&#34; = True Then
-</span></span><span class="line"><span class="cl">                    Yn = Format(CR, &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                    CR.Text = Yn
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next Acell
-</span></span><span class="line"><span class="cl">    Else
-</span></span><span class="line"><span class="cl">        MsgBox &#34;您只能选定文本或者表格之一!&#34;, vbOK + vbInformation
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">    Application.Activate
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 除以一万(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    If Selection.Type = 2 Then
-</span></span><span class="line"><span class="cl">        If IsNumeric(Selection.Text) Then
-</span></span><span class="line"><span class="cl">            i = Selection.Text
-</span></span><span class="line"><span class="cl">            P = i / 10000
-</span></span><span class="line"><span class="cl">            q = Format(Round(P, 2), &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">            Selection.Text = q &amp; &#34;万&#34;
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    ElseIf Selection.Type = 5 Or Selection.Type = 4 Then
-</span></span><span class="line"><span class="cl">        For Each Acell In Selection.Cells
-</span></span><span class="line"><span class="cl">            Set CR = ActiveDocument.Range(Acell.Range.Start, Acell.Range.End - 1)
-</span></span><span class="line"><span class="cl">            &#39;MsgBox CR
-</span></span><span class="line"><span class="cl">            If IsNumeric(CR.Text) Then
-</span></span><span class="line"><span class="cl">                i = CR.Text
-</span></span><span class="line"><span class="cl">                P = i / 10000
-</span></span><span class="line"><span class="cl">                q = Format(Round(P, 2), &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                CR.Text = q &amp; &#34;万&#34;
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 乘百(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    If Selection.Type = 2 Then
-</span></span><span class="line"><span class="cl">        If IsNumeric(Selection.Text) Then
-</span></span><span class="line"><span class="cl">            i = Selection.Text
-</span></span><span class="line"><span class="cl">            P = i * 100
-</span></span><span class="line"><span class="cl">            q = Format(Round(P, 2), &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">            Selection.Text = q &amp; &#34;%&#34;
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    ElseIf Selection.Type = 5 Or Selection.Type = 4 Then
-</span></span><span class="line"><span class="cl">        For Each Acell In Selection.Cells
-</span></span><span class="line"><span class="cl">            Set CR = ActiveDocument.Range(Acell.Range.Start, Acell.Range.End - 1)
-</span></span><span class="line"><span class="cl">            &#39;MsgBox CR
-</span></span><span class="line"><span class="cl">            If IsNumeric(CR.Text) Then
-</span></span><span class="line"><span class="cl">                i = CR.Text
-</span></span><span class="line"><span class="cl">                P = i * 100
-</span></span><span class="line"><span class="cl">                q = Format(Round(P, 2), &#34;#,##0.00;-#,##0.00; &#34;)
-</span></span><span class="line"><span class="cl">                CR.Text = q &amp; &#34;%&#34;
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">        Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">千分位符</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;数字-千分位符
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">On</span> <span class="k">Error</span> <span class="k">Resume</span> <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="n">Range</span><span class="p">,</span> <span class="n">Acell</span> <span class="ow">As</span> <span class="n">Cell</span><span class="p">,</span> <span class="n">CR</span> <span class="ow">As</span> <span class="n">Range</span>
+</span></span><span class="line"><span class="cl">    <span class="k">On</span> <span class="k">Error</span> <span class="k">Resume</span> <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">2</span> <span class="k">Then</span> <span class="c">&#39;文档选定
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">For</span> <span class="k">Each</span> <span class="n">i</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Words</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">i</span> <span class="ow">Like</span> <span class="s">&#34;####*&#34;</span> <span class="o">=</span> <span class="k">True</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">If</span> <span class="n">i</span><span class="p">.</span><span class="n">Next</span> <span class="ow">Like</span> <span class="s">&#34;.&#34;</span> <span class="o">=</span> <span class="k">True</span> <span class="ow">And</span> <span class="n">i</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="n">wdWord</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span> <span class="ow">Like</span> <span class="s">&#34;#*&#34;</span> <span class="o">=</span> <span class="k">True</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">i</span><span class="p">.</span><span class="n">SetRange</span> <span class="n">Start</span><span class="p">:</span><span class="o">=</span><span class="n">i</span><span class="p">.</span><span class="n">Start</span><span class="p">,</span> <span class="k">End</span><span class="p">:</span><span class="o">=</span><span class="n">i</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="n">wdWord</span><span class="p">,</span> <span class="n">2</span><span class="p">).</span><span class="n">End</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">NC</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">i</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">NC</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">NC</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">i</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">NC</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ElseIf</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">4</span> <span class="ow">Or</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">5</span> <span class="k">Then</span> <span class="c">&#39;竖形表格（5为横形表格）
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">For</span> <span class="k">Each</span> <span class="n">Acell</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Cells</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Set</span> <span class="n">CR</span> <span class="o">=</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Start</span><span class="p">,</span> <span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">End</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;            MsgBox CR
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">If</span> <span class="n">CR</span> <span class="ow">Like</span> <span class="s">&#34;-####*&#34;</span> <span class="ow">Or</span> <span class="s">&#34;-####.#*&#34;</span> <span class="o">=</span> <span class="k">True</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Yn</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">CR</span><span class="p">,</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">CR</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">Yn</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">CR</span> <span class="ow">Like</span> <span class="s">&#34;####*&#34;</span> <span class="ow">Or</span> <span class="s">&#34;####.#*&#34;</span> <span class="o">=</span> <span class="k">True</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">Yn</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">CR</span><span class="p">,</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">CR</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">Yn</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span> <span class="n">Acell</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MsgBox</span> <span class="s">&#34;您只能选定文本或者表格之一!&#34;</span><span class="p">,</span> <span class="n">vbOK</span> <span class="o">+</span> <span class="n">vbInformation</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">Activate</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">除以一万</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">2</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">Selection</span><span class="p">.</span><span class="n">Text</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">            <span class="n">P</span> <span class="o">=</span> <span class="n">i</span> <span class="o">/</span> <span class="n">10000</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">Round</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">2</span><span class="p">),</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Selection</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">q</span> <span class="o">&amp;</span> <span class="s">&#34;万&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ElseIf</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">5</span> <span class="ow">Or</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">4</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">Acell</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Cells</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Set</span> <span class="n">CR</span> <span class="o">=</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Start</span><span class="p">,</span> <span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">End</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;MsgBox CR
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">CR</span><span class="p">.</span><span class="n">Text</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">i</span> <span class="o">=</span> <span class="n">CR</span><span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">                <span class="n">P</span> <span class="o">=</span> <span class="n">i</span> <span class="o">/</span> <span class="n">10000</span>
+</span></span><span class="line"><span class="cl">                <span class="n">q</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">Round</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">2</span><span class="p">),</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">CR</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">q</span> <span class="o">&amp;</span> <span class="s">&#34;万&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">乘百</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">2</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">Selection</span><span class="p">.</span><span class="n">Text</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">            <span class="n">P</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">100</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">Round</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">2</span><span class="p">),</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Selection</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">q</span> <span class="o">&amp;</span> <span class="s">&#34;%&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ElseIf</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">5</span> <span class="ow">Or</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">4</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">Acell</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Cells</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Set</span> <span class="n">CR</span> <span class="o">=</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Start</span><span class="p">,</span> <span class="n">Acell</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">End</span> <span class="o">-</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;MsgBox CR
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">CR</span><span class="p">.</span><span class="n">Text</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">i</span> <span class="o">=</span> <span class="n">CR</span><span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">                <span class="n">P</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">100</span>
+</span></span><span class="line"><span class="cl">                <span class="n">q</span> <span class="o">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">Round</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">2</span><span class="p">),</span> <span class="s">&#34;#,##0.00;-#,##0.00; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">CR</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">q</span> <span class="o">&amp;</span> <span class="s">&#34;%&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

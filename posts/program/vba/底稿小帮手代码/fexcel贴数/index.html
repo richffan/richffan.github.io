@@ -254,63 +254,63 @@
 </span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 粘贴格式文本(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Set xl = GetObject(, &#34;excel.application&#34;)
-</span></span><span class="line"><span class="cl">    xlr = xl.Selection.Rows.Count
-</span></span><span class="line"><span class="cl">    xlc = xl.Selection.Columns.Count
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        wdc = .Information(16)
-</span></span><span class="line"><span class="cl">        wdr = .Information(13)
-</span></span><span class="line"><span class="cl">        rangeselect wdr, wdc, xlr, xlc
-</span></span><span class="line"><span class="cl">        ReDim arr(1 To 1)
-</span></span><span class="line"><span class="cl">        For Each sht In .Cells
-</span></span><span class="line"><span class="cl">            i = i + 1
-</span></span><span class="line"><span class="cl">            ReDim Preserve arr(1 To i)
-</span></span><span class="line"><span class="cl">            arr(i) = sht.Range.Font.Underline
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">        .CopyFormat
-</span></span><span class="line"><span class="cl">        .PasteAndFormat (wdFormatSurroundingFormattingWithEmphasis)
-</span></span><span class="line"><span class="cl">        .PasteFormat
-</span></span><span class="line"><span class="cl">        With .Find
-</span></span><span class="line"><span class="cl">            .Text = &#34; &#34;
-</span></span><span class="line"><span class="cl">            .Replacement.Text = &#34;&#34;
-</span></span><span class="line"><span class="cl">            .Forward = True
-</span></span><span class="line"><span class="cl">            .Wrap = wdFindStop
-</span></span><span class="line"><span class="cl">            .Execute Replace:=wdReplaceAll
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">        rangeselect wdr, wdc, xlr, xlc
-</span></span><span class="line"><span class="cl">        For Each sht In .Cells
-</span></span><span class="line"><span class="cl">            j = j + 1
-</span></span><span class="line"><span class="cl">            sht.Range.Font.Underline = arr(j)
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">    End With
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">粘贴格式文本</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Set</span> <span class="n">xl</span> <span class="o">=</span> <span class="n">GetObject</span><span class="p">(,</span> <span class="s">&#34;excel.application&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">xlr</span> <span class="o">=</span> <span class="n">xl</span><span class="p">.</span><span class="n">Selection</span><span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">Count</span>
+</span></span><span class="line"><span class="cl">    <span class="n">xlc</span> <span class="o">=</span> <span class="n">xl</span><span class="p">.</span><span class="n">Selection</span><span class="p">.</span><span class="n">Columns</span><span class="p">.</span><span class="n">Count</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="n">wdc</span> <span class="o">=</span> <span class="p">.</span><span class="n">Information</span><span class="p">(</span><span class="n">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">wdr</span> <span class="o">=</span> <span class="p">.</span><span class="n">Information</span><span class="p">(</span><span class="n">13</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rangeselect</span> <span class="n">wdr</span><span class="p">,</span> <span class="n">wdc</span><span class="p">,</span> <span class="n">xlr</span><span class="p">,</span> <span class="n">xlc</span>
+</span></span><span class="line"><span class="cl">        <span class="k">ReDim</span> <span class="n">arr</span><span class="p">(</span><span class="n">1</span> <span class="k">To</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">sht</span> <span class="ow">In</span> <span class="p">.</span><span class="n">Cells</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">ReDim</span> <span class="n">Preserve</span> <span class="n">arr</span><span class="p">(</span><span class="n">1</span> <span class="k">To</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">arr</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">sht</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">CopyFormat</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">PasteAndFormat</span> <span class="p">(</span><span class="n">wdFormatSurroundingFormattingWithEmphasis</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">PasteFormat</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34; &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Wrap</span> <span class="o">=</span> <span class="n">wdFindStop</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Execute</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rangeselect</span> <span class="n">wdr</span><span class="p">,</span> <span class="n">wdc</span><span class="p">,</span> <span class="n">xlr</span><span class="p">,</span> <span class="n">xlc</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">sht</span> <span class="ow">In</span> <span class="p">.</span><span class="n">Cells</span>
+</span></span><span class="line"><span class="cl">            <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sht</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">arr</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 双下划线(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    If Selection.Font.Underline = wdUnderlineDouble Then
-</span></span><span class="line"><span class="cl">        Selection.Font.Underline = wdUnderlineNone
-</span></span><span class="line"><span class="cl">    ElseIf Selection.Font.Underline = wdUnderlineNone Then
-</span></span><span class="line"><span class="cl">        Selection.Font.Underline = wdUnderlineDouble
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 单下划线(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    If Selection.Font.Underline = wdUnderlineSingle Then
-</span></span><span class="line"><span class="cl">        Selection.Font.Underline = wdUnderlineNone
-</span></span><span class="line"><span class="cl">    ElseIf Selection.Font.Underline = wdUnderlineNone Then
-</span></span><span class="line"><span class="cl">        Selection.Font.Underline = wdUnderlineSingle
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Function rangeselect(wdr, wdc, xlr, xlc)
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Tables(1).Cell(wdr, wdc).Select
-</span></span><span class="line"><span class="cl">        .Collapse wdCollapseStart
-</span></span><span class="line"><span class="cl">        st = .Start
-</span></span><span class="line"><span class="cl">        .Tables(1).Cell(wdr + xlr - 1, wdc + xlc - 1).Select
-</span></span><span class="line"><span class="cl">        .Collapse wdCollapseEnd
-</span></span><span class="line"><span class="cl">        ed = .End
-</span></span><span class="line"><span class="cl">        ActiveDocument.Range(st, ed).Select
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Function</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">双下划线</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineDouble</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineNone</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ElseIf</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineNone</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineDouble</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">单下划线</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineSingle</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineNone</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ElseIf</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineNone</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Underline</span> <span class="o">=</span> <span class="n">wdUnderlineSingle</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Function</span> <span class="nf">rangeselect</span><span class="p">(</span><span class="n">wdr</span><span class="p">,</span> <span class="n">wdc</span><span class="p">,</span> <span class="n">xlr</span><span class="p">,</span> <span class="n">xlc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Tables</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Cell</span><span class="p">(</span><span class="n">wdr</span><span class="p">,</span> <span class="n">wdc</span><span class="p">).</span><span class="n">Select</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Collapse</span> <span class="n">wdCollapseStart</span>
+</span></span><span class="line"><span class="cl">        <span class="n">st</span> <span class="o">=</span> <span class="p">.</span><span class="n">Start</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Tables</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Cell</span><span class="p">(</span><span class="n">wdr</span> <span class="o">+</span> <span class="n">xlr</span> <span class="o">-</span> <span class="n">1</span><span class="p">,</span> <span class="n">wdc</span> <span class="o">+</span> <span class="n">xlc</span> <span class="o">-</span> <span class="n">1</span><span class="p">).</span><span class="n">Select</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Collapse</span> <span class="n">wdCollapseEnd</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ed</span> <span class="o">=</span> <span class="p">.</span><span class="n">End</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">st</span><span class="p">,</span> <span class="n">ed</span><span class="p">).</span><span class="n">Select</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Function</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

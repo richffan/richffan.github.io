@@ -227,36 +227,36 @@
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 大纲一级(control As IRibbonControl) &#39;大纲调整-一级
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevel1
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 大纲二级(control As IRibbonControl) &#39;大纲调整-二级
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevel2
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 大纲三级(control As IRibbonControl) &#39;大纲调整-三级
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevel3
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 大纲四级(control As IRibbonControl) &#39;大纲调整-四级
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevel4
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 大纲五级(control As IRibbonControl) &#39;大纲调整-五级
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevel5
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 大纲正文(control As IRibbonControl) &#39;大纲调整-正文
-</span></span><span class="line"><span class="cl">    With Selection
-</span></span><span class="line"><span class="cl">        .Paragraphs.OutlineLevel = wdOutlineLevelBodyText
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲一级</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-一级
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲二级</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-二级
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲三级</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-三级
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel3</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲四级</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-四级
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel4</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲五级</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-五级
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel5</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">大纲正文</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;大纲调整-正文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Paragraphs</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevelBodyText</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

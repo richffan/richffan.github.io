@@ -323,132 +323,132 @@
 </span><span class="lnt">126
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 宋体宋体(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    &#39;选中范围字体为宋体+宋体
-</span></span><span class="line"><span class="cl">    With Selection.Font
-</span></span><span class="line"><span class="cl">        .NameFarEast = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">        .NameAscii = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">        .NameOther = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 宋体罗马(control As IRibbonControl) &#39;文字-宋体罗马
-</span></span><span class="line"><span class="cl">    &#39;选中范围字体为宋体+Times
-</span></span><span class="line"><span class="cl">    With Selection.Font
-</span></span><span class="line"><span class="cl">        .NameFarEast = &#34;仿宋&#34;
-</span></span><span class="line"><span class="cl">        .NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">        .NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 楷体加粗(control As IRibbonControl) &#39;文字-楷体加粗
-</span></span><span class="line"><span class="cl">    &#39;选中范围字体为楷体加粗
-</span></span><span class="line"><span class="cl">    With Selection.Font
-</span></span><span class="line"><span class="cl">        .NameFarEast = &#34;楷体&#34;
-</span></span><span class="line"><span class="cl">        .NameAscii = &#34;楷体&#34;
-</span></span><span class="line"><span class="cl">        .NameOther = &#34;楷体&#34;
-</span></span><span class="line"><span class="cl">        .Name = &#34;楷体&#34;
-</span></span><span class="line"><span class="cl">        .Bold = True
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 去除空白(control As IRibbonControl) &#39;文字-去除空白
-</span></span><span class="line"><span class="cl">    &#39;删除换行及空格
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">宋体宋体</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;选中范围字体为宋体+宋体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">宋体罗马</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;文字-宋体罗马
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;选中范围字体为宋体+Times
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;仿宋&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">楷体加粗</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;文字-楷体加粗
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;选中范围字体为楷体加粗
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;楷体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;楷体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;楷体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="s">&#34;楷体&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">去除空白</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;文字-去除空白
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;删除换行及空格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">ClearFormatting</span>   <span class="c">&#39;删除空格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">ClearFormatting</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34; &#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Wrap</span> <span class="o">=</span> <span class="n">wdFindStop</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Format</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchCase</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWholeWord</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchByte</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchSoundsLike</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchAllWordForms</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Execute</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Selection.Find.ClearFormatting   &#39;删除空格
-</span></span><span class="line"><span class="cl">    Selection.Find.Replacement.ClearFormatting
-</span></span><span class="line"><span class="cl">    With Selection.Find
-</span></span><span class="line"><span class="cl">        .Text = &#34; &#34;
-</span></span><span class="line"><span class="cl">        .Replacement.Text = &#34;&#34;
-</span></span><span class="line"><span class="cl">        .Forward = True
-</span></span><span class="line"><span class="cl">        .Wrap = wdFindStop
-</span></span><span class="line"><span class="cl">        .Format = False
-</span></span><span class="line"><span class="cl">        .MatchCase = False
-</span></span><span class="line"><span class="cl">        .MatchWholeWord = False
-</span></span><span class="line"><span class="cl">        .MatchByte = True
-</span></span><span class="line"><span class="cl">        .MatchWildcards = False
-</span></span><span class="line"><span class="cl">        .MatchSoundsLike = False
-</span></span><span class="line"><span class="cl">        .MatchAllWordForms = False
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Selection.Find.Execute Replace:=wdReplaceAll
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">ClearFormatting</span>   <span class="c">&#39;删除大空格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">ClearFormatting</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;　&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Wrap</span> <span class="o">=</span> <span class="n">wdFindStop</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Format</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchCase</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWholeWord</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchByte</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchSoundsLike</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchAllWordForms</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Execute</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Selection.Find.ClearFormatting   &#39;删除大空格
-</span></span><span class="line"><span class="cl">    Selection.Find.Replacement.ClearFormatting
-</span></span><span class="line"><span class="cl">    With Selection.Find
-</span></span><span class="line"><span class="cl">        .Text = &#34;　&#34;
-</span></span><span class="line"><span class="cl">        .Replacement.Text = &#34;&#34;
-</span></span><span class="line"><span class="cl">        .Forward = True
-</span></span><span class="line"><span class="cl">        .Wrap = wdFindStop
-</span></span><span class="line"><span class="cl">        .Format = False
-</span></span><span class="line"><span class="cl">        .MatchCase = False
-</span></span><span class="line"><span class="cl">        .MatchWholeWord = False
-</span></span><span class="line"><span class="cl">        .MatchByte = True
-</span></span><span class="line"><span class="cl">        .MatchWildcards = False
-</span></span><span class="line"><span class="cl">        .MatchSoundsLike = False
-</span></span><span class="line"><span class="cl">        .MatchAllWordForms = False
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Selection.Find.Execute Replace:=wdReplaceAll
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    Selection.Find.Replacement.ClearFormatting    &#39;删除连续两个回车
-</span></span><span class="line"><span class="cl">    With Selection.Find
-</span></span><span class="line"><span class="cl">        .Text = &#34;^p^p&#34;
-</span></span><span class="line"><span class="cl">        .Replacement.Text = &#34;^p&#34;
-</span></span><span class="line"><span class="cl">        .Forward = True
-</span></span><span class="line"><span class="cl">        .Wrap = wdFindStop
-</span></span><span class="line"><span class="cl">        .Format = False
-</span></span><span class="line"><span class="cl">        .MatchCase = False
-</span></span><span class="line"><span class="cl">        .MatchWholeWord = False
-</span></span><span class="line"><span class="cl">        .MatchByte = True
-</span></span><span class="line"><span class="cl">        .MatchWildcards = False
-</span></span><span class="line"><span class="cl">        .MatchSoundsLike = False
-</span></span><span class="line"><span class="cl">        .MatchAllWordForms = False
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Selection.Find.Execute Replace:=wdReplaceAll
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 中英文标点互换(control As IRibbonControl) &#39; 文字-中英文标点互换
-</span></span><span class="line"><span class="cl">    Dim ChineseInterpunction() As Variant, EnglishInterpunction() As Variant
-</span></span><span class="line"><span class="cl">    Dim myArray1() As Variant, myArray2() As Variant, strFind As String, strRep As String
-</span></span><span class="line"><span class="cl">    Dim msgResult As VbMsgBoxResult, n As Byte
-</span></span><span class="line"><span class="cl">    &#39; 定义一个中文标点的数组对象
-</span></span><span class="line"><span class="cl">    ChineseInterpunction = Array(&#34;，&#34;, &#34;。&#34;, &#34;；&#34;, &#34;：&#34;, &#34;？&#34;, &#34;！&#34;, &#34;……&#34;, &#34;—&#34;, &#34;～&#34;, &#34;（&#34;, &#34;）&#34;, &#34;《&#34;, &#34;》&#34;)
-</span></span><span class="line"><span class="cl">    &#39; 定义一个英文标点的数组对象
-</span></span><span class="line"><span class="cl">    EnglishInterpunction = Array(&#34;,&#34;, &#34;.&#34;, &#34;;&#34;, &#34;:&#34;, &#34;?&#34;, &#34;!&#34;, &#34;…&#34;, &#34;-&#34;, &#34;~&#34;, &#34;(&#34;, &#34;)&#34;, &#34;&amp;lt;&#34;, &#34;&amp;gt;&#34;)
-</span></span><span class="line"><span class="cl">    &#39; 提示用户交互的 MSGBOX 对话框
-</span></span><span class="line"><span class="cl">    msgResult = MsgBox(&#34;您想中英标点互换吗？按 Y 将中文标点转为英文标点，按 N 将英文标点转为中文标点！&#34;, vbYesNoCancel)
-</span></span><span class="line"><span class="cl">    Select Case msgResult
-</span></span><span class="line"><span class="cl">        Case vbCancel
-</span></span><span class="line"><span class="cl">            Exit Sub &#39; 如果用户选择了取消按钮，则退出程序运行
-</span></span><span class="line"><span class="cl">        Case vbYes &#39; 如果用户选择了 YES, 则将中文标点转换为英文标点
-</span></span><span class="line"><span class="cl">            myArray1 = ChineseInterpunction
-</span></span><span class="line"><span class="cl">            myArray2 = EnglishInterpunction
-</span></span><span class="line"><span class="cl">            strFind = &#34;“(*)”&#34;
-</span></span><span class="line"><span class="cl">            strRep = &#34;&#34;&#34;\1&#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        Case vbNo &#39; 如果用户选择了 NO, 则将英文标点转换为中文标点
-</span></span><span class="line"><span class="cl">            myArray1 = EnglishInterpunction
-</span></span><span class="line"><span class="cl">            myArray2 = ChineseInterpunction
-</span></span><span class="line"><span class="cl">            strFind = &#34;&#34;&#34;(*)&#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">            strRep = &#34;“\1”&#34;
-</span></span><span class="line"><span class="cl">    End Select
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False &#39; 关闭屏幕更新
-</span></span><span class="line"><span class="cl">    For n = 0 To UBound(ChineseInterpunction)  &#39; 从数组的下标到上标间作一个循环
-</span></span><span class="line"><span class="cl">        With Selection.Find
-</span></span><span class="line"><span class="cl">            .ClearFormatting &#39; 不限定查找格式
-</span></span><span class="line"><span class="cl">            .MatchWildcards = False &#39; 不使用通配符
-</span></span><span class="line"><span class="cl">            &#39; 查找相应的英文标点，替换为对应的中文标点
-</span></span><span class="line"><span class="cl">            .Execute findtext:=myArray1(n), replacewith:=myArray2(n), Replace:=wdReplaceAll
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    With Selection.Find
-</span></span><span class="line"><span class="cl">        .ClearFormatting &#39; 不限定查找格式
-</span></span><span class="line"><span class="cl">        .MatchWildcards = True &#39; 使用通配符
-</span></span><span class="line"><span class="cl">        .Execute findtext:=strFind, replacewith:=strRep, Replace:=wdReplaceAll
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True &#39; 恢复屏幕更新
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 高亮(control As IRibbonControl) &#39;文字-HighLight
-</span></span><span class="line"><span class="cl">    If Selection.Range.HighlightColorIndex = 0 Then
-</span></span><span class="line"><span class="cl">        Selection.Range.HighlightColorIndex = wdYellow
-</span></span><span class="line"><span class="cl">    Else
-</span></span><span class="line"><span class="cl">        Selection.Range.HighlightColorIndex = wdNoHighlight
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">ClearFormatting</span>    <span class="c">&#39;删除连续两个回车
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;^p^p&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Replacement</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s">&#34;^p&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Wrap</span> <span class="o">=</span> <span class="n">wdFindStop</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Format</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchCase</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWholeWord</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchByte</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchSoundsLike</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchAllWordForms</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span><span class="p">.</span><span class="n">Execute</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">中英文标点互换</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39; 文字-中英文标点互换
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Dim</span> <span class="n">ChineseInterpunction</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">EnglishInterpunction</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">myArray1</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">myArray2</span><span class="p">()</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">strFind</span> <span class="ow">As</span> <span class="kt">String</span><span class="p">,</span> <span class="n">strRep</span> <span class="ow">As</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">msgResult</span> <span class="ow">As</span> <span class="n">VbMsgBoxResult</span><span class="p">,</span> <span class="n">n</span> <span class="ow">As</span> <span class="kt">Byte</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39; 定义一个中文标点的数组对象
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ChineseInterpunction</span> <span class="o">=</span> <span class="n">Array</span><span class="p">(</span><span class="s">&#34;，&#34;</span><span class="p">,</span> <span class="s">&#34;。&#34;</span><span class="p">,</span> <span class="s">&#34;；&#34;</span><span class="p">,</span> <span class="s">&#34;：&#34;</span><span class="p">,</span> <span class="s">&#34;？&#34;</span><span class="p">,</span> <span class="s">&#34;！&#34;</span><span class="p">,</span> <span class="s">&#34;……&#34;</span><span class="p">,</span> <span class="s">&#34;—&#34;</span><span class="p">,</span> <span class="s">&#34;～&#34;</span><span class="p">,</span> <span class="s">&#34;（&#34;</span><span class="p">,</span> <span class="s">&#34;）&#34;</span><span class="p">,</span> <span class="s">&#34;《&#34;</span><span class="p">,</span> <span class="s">&#34;》&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39; 定义一个英文标点的数组对象
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">EnglishInterpunction</span> <span class="o">=</span> <span class="n">Array</span><span class="p">(</span><span class="s">&#34;,&#34;</span><span class="p">,</span> <span class="s">&#34;.&#34;</span><span class="p">,</span> <span class="s">&#34;;&#34;</span><span class="p">,</span> <span class="s">&#34;:&#34;</span><span class="p">,</span> <span class="s">&#34;?&#34;</span><span class="p">,</span> <span class="s">&#34;!&#34;</span><span class="p">,</span> <span class="s">&#34;…&#34;</span><span class="p">,</span> <span class="s">&#34;-&#34;</span><span class="p">,</span> <span class="s">&#34;~&#34;</span><span class="p">,</span> <span class="s">&#34;(&#34;</span><span class="p">,</span> <span class="s">&#34;)&#34;</span><span class="p">,</span> <span class="s">&#34;&amp;lt;&#34;</span><span class="p">,</span> <span class="s">&#34;&amp;gt;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39; 提示用户交互的 MSGBOX 对话框
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">msgResult</span> <span class="o">=</span> <span class="n">MsgBox</span><span class="p">(</span><span class="s">&#34;您想中英标点互换吗？按 Y 将中文标点转为英文标点，按 N 将英文标点转为中文标点！&#34;</span><span class="p">,</span> <span class="n">vbYesNoCancel</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Select</span> <span class="k">Case</span> <span class="n">msgResult</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Case</span> <span class="n">vbCancel</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Exit</span> <span class="k">Sub</span> <span class="err">&#39; </span><span class="nf">如果用户选择了取消按钮</span><span class="err">，</span><span class="n">则退出程序运行</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Case</span> <span class="n">vbYes</span> <span class="c">&#39; 如果用户选择了 YES, 则将中文标点转换为英文标点
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">myArray1</span> <span class="o">=</span> <span class="n">ChineseInterpunction</span>
+</span></span><span class="line"><span class="cl">            <span class="n">myArray2</span> <span class="o">=</span> <span class="n">EnglishInterpunction</span>
+</span></span><span class="line"><span class="cl">            <span class="n">strFind</span> <span class="o">=</span> <span class="s">&#34;“(*)”&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">strRep</span> <span class="o">=</span> <span class="s">&#34;&#34;&#34;\1&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Case</span> <span class="n">vbNo</span> <span class="c">&#39; 如果用户选择了 NO, 则将英文标点转换为中文标点
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="n">myArray1</span> <span class="o">=</span> <span class="n">EnglishInterpunction</span>
+</span></span><span class="line"><span class="cl">            <span class="n">myArray2</span> <span class="o">=</span> <span class="n">ChineseInterpunction</span>
+</span></span><span class="line"><span class="cl">            <span class="n">strFind</span> <span class="o">=</span> <span class="s">&#34;&#34;&#34;(*)&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">strRep</span> <span class="o">=</span> <span class="s">&#34;“\1”&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">Select</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39; 关闭屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">For</span> <span class="n">n</span> <span class="o">=</span> <span class="n">0</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">ChineseInterpunction</span><span class="p">)</span>  <span class="c">&#39; 从数组的下标到上标间作一个循环
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">ClearFormatting</span> <span class="c">&#39; 不限定查找格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39; 不使用通配符
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39; 查找相应的英文标点，替换为对应的中文标点
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Execute</span> <span class="n">findtext</span><span class="p">:</span><span class="o">=</span><span class="n">myArray1</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">replacewith</span><span class="p">:</span><span class="o">=</span><span class="n">myArray2</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">ClearFormatting</span> <span class="c">&#39; 不限定查找格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39; 使用通配符
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">Execute</span> <span class="n">findtext</span><span class="p">:</span><span class="o">=</span><span class="n">strFind</span><span class="p">,</span> <span class="n">replacewith</span><span class="p">:</span><span class="o">=</span><span class="n">strRep</span><span class="p">,</span> <span class="n">Replace</span><span class="p">:</span><span class="o">=</span><span class="n">wdReplaceAll</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39; 恢复屏幕更新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">高亮</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;文字-HighLight
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">HighlightColorIndex</span> <span class="o">=</span> <span class="n">0</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">HighlightColorIndex</span> <span class="o">=</span> <span class="n">wdYellow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">HighlightColorIndex</span> <span class="o">=</span> <span class="n">wdNoHighlight</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

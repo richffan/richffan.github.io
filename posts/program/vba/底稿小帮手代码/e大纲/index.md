@@ -5,7 +5,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 大纲一级(control As IRibbonControl) '大纲调整-一级
     With Selection
         .Paragraphs.OutlineLevel = wdOutlineLevel1

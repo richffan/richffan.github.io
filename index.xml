@@ -84,7 +84,7 @@
   <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
   <guid>http://richfan.site/posts/program/vba/vba%E6%A1%88%E4%BE%8B/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</guid>
-  <description><![CDATA[]]></description>
+  <description><![CDATA[一对多查询的方法有很多，这里附上VBA代码，详细过程请看文章最后的视频。 方法一： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 Sub 单元格循环()]]></description>
 </item>
 </channel>
 </rss>

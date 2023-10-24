@@ -17,7 +17,7 @@
 
 ## 直接附上VBA代码：
 
-```vba
+```vb
 'Option Explicit
 
 Sub 单元格循环()

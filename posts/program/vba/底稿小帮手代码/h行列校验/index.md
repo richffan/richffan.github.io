@@ -6,7 +6,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 选行校验(control As IRibbonControl) '行列校验-选行校验
     i = 0
     x = 0

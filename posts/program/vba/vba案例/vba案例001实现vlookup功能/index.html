@@ -339,70 +339,70 @@
 </span><span class="lnt">64
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#39;Option Explicit
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="c">&#39;Option Explicit
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">单元格循环</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">cel</span> <span class="ow">As</span> <span class="n">Range</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">cel2</span> <span class="ow">As</span> <span class="n">Range</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">t</span> <span class="ow">As</span> <span class="kt">Double</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="n">Timer</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="n">e6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="k">Each</span> <span class="n">cel</span> <span class="ow">In</span> <span class="n">Range</span><span class="p">(</span><span class="s">&#34;a6:a13&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">cel2</span> <span class="ow">In</span> <span class="n">Range</span><span class="p">(</span><span class="s">&#34;d6:d13&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">cel</span><span class="p">.</span><span class="n">Value</span> <span class="o">=</span> <span class="n">cel2</span><span class="p">.</span><span class="n">Value</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">cel2</span><span class="p">.</span><span class="n">Offset</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="n">1</span><span class="p">).</span><span class="n">Value</span> <span class="o">=</span> <span class="n">cel</span><span class="p">.</span><span class="n">Offset</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="n">1</span><span class="p">).</span><span class="n">Value</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Exit</span> <span class="k">For</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Debug</span><span class="p">.</span><span class="n">Print</span> <span class="n">Format</span><span class="p">(</span><span class="n">Timer</span> <span class="o">-</span> <span class="n">t</span><span class="p">,</span> <span class="s">&#34;0.00000000000000s&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Sub 单元格循环()
-</span></span><span class="line"><span class="cl">    Dim cel As Range
-</span></span><span class="line"><span class="cl">    Dim cel2 As Range
-</span></span><span class="line"><span class="cl">    Dim t As Double
-</span></span><span class="line"><span class="cl">    t = Timer
-</span></span><span class="line"><span class="cl">    [e6:e13] = &#34;&#34;
-</span></span><span class="line"><span class="cl">    For Each cel In Range(&#34;a6:a13&#34;)
-</span></span><span class="line"><span class="cl">        For Each cel2 In Range(&#34;d6:d13&#34;)
-</span></span><span class="line"><span class="cl">            If cel.Value = cel2.Value Then
-</span></span><span class="line"><span class="cl">                cel2.Offset(0, 1).Value = cel.Offset(0, 1).Value
-</span></span><span class="line"><span class="cl">                Exit For
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    Debug.Print Format(Timer - t, &#34;0.00000000000000s&#34;)
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">数组循环</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">ar</span><span class="p">,</span> <span class="n">br</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">t</span> <span class="ow">As</span> <span class="kt">Double</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="n">Timer</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="n">e6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ar</span> <span class="o">=</span> <span class="o">[</span><span class="n">a6</span><span class="p">:</span><span class="n">b13</span><span class="o">]</span> <span class="c">&#39;range(&#34;a6:b13&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">br</span> <span class="o">=</span> <span class="o">[</span><span class="n">d6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Sub 数组循环()
-</span></span><span class="line"><span class="cl">    Dim ar, br
-</span></span><span class="line"><span class="cl">    Dim t As Double
-</span></span><span class="line"><span class="cl">    t = Timer
-</span></span><span class="line"><span class="cl">    [e6:e13] = &#34;&#34;
-</span></span><span class="line"><span class="cl">    ar = [a6:b13] &#39;range(&#34;a6:b13&#34;)
-</span></span><span class="line"><span class="cl">    br = [d6:e13]
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="n">j</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">If</span> <span class="n">ar</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">br</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">1</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                <span class="n">br</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span> <span class="o">=</span> <span class="n">ar</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">Exit</span> <span class="k">For</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span> <span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    Dim i, j
-</span></span><span class="line"><span class="cl">    For i = 1 To UBound(ar)
-</span></span><span class="line"><span class="cl">        For j = 1 To UBound(ar)
-</span></span><span class="line"><span class="cl">            If ar(i, 1) = br(j, 1) Then
-</span></span><span class="line"><span class="cl">                br(j, 2) = ar(i, 2)
-</span></span><span class="line"><span class="cl">                Exit For
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        Next j
-</span></span><span class="line"><span class="cl">    Next i
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="n">d6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span> <span class="o">=</span> <span class="n">br</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Debug</span><span class="p">.</span><span class="n">Print</span> <span class="n">Format</span><span class="p">(</span><span class="n">Timer</span> <span class="o">-</span> <span class="n">t</span><span class="p">,</span> <span class="s">&#34;0.00000000000000s&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    [d6:e13] = br
-</span></span><span class="line"><span class="cl">    Debug.Print Format(Timer - t, &#34;0.00000000000000s&#34;)
-</span></span><span class="line"><span class="cl">End Sub
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">字典循环</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">d</span> <span class="ow">As</span> <span class="kt">Object</span><span class="p">,</span> <span class="n">kw</span><span class="err">$</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Set</span> <span class="n">d</span> <span class="o">=</span> <span class="n">CreateObject</span><span class="p">(</span><span class="s">&#34;Scripting.Dictionary&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;d.CompareMode = vbTextCompare &#39;不区分大小写
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Dim</span> <span class="n">ar</span><span class="p">,</span> <span class="n">br</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">t</span> <span class="ow">As</span> <span class="kt">Double</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="n">Timer</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="n">e6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ar</span> <span class="o">=</span> <span class="o">[</span><span class="n">a6</span><span class="p">:</span><span class="n">b13</span><span class="o">]</span> <span class="c">&#39;range(&#34;a6:b13&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">br</span> <span class="o">=</span> <span class="o">[</span><span class="n">d6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Sub 字典循环()
-</span></span><span class="line"><span class="cl">    Dim d As Object, kw$
-</span></span><span class="line"><span class="cl">    Set d = CreateObject(&#34;Scripting.Dictionary&#34;)
-</span></span><span class="line"><span class="cl">    &#39;d.CompareMode = vbTextCompare &#39;不区分大小写
-</span></span><span class="line"><span class="cl">    Dim ar, br
-</span></span><span class="line"><span class="cl">    Dim t As Double
-</span></span><span class="line"><span class="cl">    t = Timer
-</span></span><span class="line"><span class="cl">    [e6:e13] = &#34;&#34;
-</span></span><span class="line"><span class="cl">    ar = [a6:b13] &#39;range(&#34;a6:b13&#34;)
-</span></span><span class="line"><span class="cl">    br = [d6:e13]
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span><span class="p">(</span><span class="n">ar</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">1</span><span class="p">))</span> <span class="o">=</span> <span class="n">ar</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span> <span class="c">&#39;KEY ITEM
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Next</span> <span class="n">i</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    Dim i, j
-</span></span><span class="line"><span class="cl">    For i = 1 To UBound(ar)
-</span></span><span class="line"><span class="cl">        d(ar(i, 1)) = ar(i, 2) &#39;KEY ITEM
-</span></span><span class="line"><span class="cl">    Next i
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="n">j</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">UBound</span><span class="p">(</span><span class="n">br</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">br</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span> <span class="o">=</span> <span class="n">d</span><span class="p">(</span><span class="n">br</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span> <span class="n">j</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    For j = 1 To UBound(br)
-</span></span><span class="line"><span class="cl">        br(j, 2) = d(br(j, 1))
-</span></span><span class="line"><span class="cl">    Next j
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    [d6:e13] = br
-</span></span><span class="line"><span class="cl">    Debug.Print Format(Timer - t, &#34;0.00000000000000s&#34;)
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="n">d6</span><span class="p">:</span><span class="n">e13</span><span class="o">]</span> <span class="o">=</span> <span class="n">br</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Debug</span><span class="p">.</span><span class="n">Print</span> <span class="n">Format</span><span class="p">(</span><span class="n">Timer</span> <span class="o">-</span> <span class="n">t</span><span class="p">,</span> <span class="s">&#34;0.00000000000000s&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><a href="https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247484991&amp;idx=1&amp;sn=a927b9a6a9a79b2c568fe0e9dbbbc307&amp;chksm=e8bccf68dfcb467e9b7852aa0733798a77f134e89be55e732fee7c57afced35a919993e62809&amp;scene=178&amp;cur_album_id=3115603487041503237#rd"target="_blank" rel="external nofollow noopener noreferrer">原始链接</a></p>
 </div><div class="post-footer" id="post-footer">

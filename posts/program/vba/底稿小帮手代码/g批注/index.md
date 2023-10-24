@@ -6,7 +6,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 添加批注(control As IRibbonControl) '批注-添加批注
     '添加批注
     Application.ScreenUpdating = False '关闭屏幕更新

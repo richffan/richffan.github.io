@@ -6,7 +6,7 @@
 
 <!--more-->
 
-```VBA
+```vb
 Sub 千分位符(control As IRibbonControl) '数字-千分位符
     On Error Resume Next
     Dim i As Range, Acell As Cell, CR As Range

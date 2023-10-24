@@ -477,286 +477,286 @@
 </span><span class="lnt">280
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 段落处理(control As IRibbonControl) &#39;段落-段落处理-
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    For Each pg In Selection.Paragraphs
-</span></span><span class="line"><span class="cl">        If pg.Range.Information(wdWithInTable) = False Then
-</span></span><span class="line"><span class="cl">            &#39;-------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">            If pg.OutlineLevel = wdOutlineLevel1 Then &#39;如果是1级标题用此格式
-</span></span><span class="line"><span class="cl">                With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">                    .LeftIndent = CentimetersToPoints(0)   &#39;左缩进
-</span></span><span class="line"><span class="cl">                    .RightIndent = CentimetersToPoints(0)  &#39;右缩进
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 2.5        &#39;段前 2.5磅等于0.5行,如果你的单位为行,则这里乘5
-</span></span><span class="line"><span class="cl">                    .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 2.5         &#39;段后
-</span></span><span class="line"><span class="cl">                    .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpace1pt5   &#39;行距,单倍 wdLineSpaceSingle   1.5倍 wdLineSpace1pt5     两倍 wdLineSpaceDouble
-</span></span><span class="line"><span class="cl">                    .Alignment = wdAlignParagraphCenter  &#39;对齐方式  左对齐:wdAlignParagraphLeft  右对齐:wdAlignParagraphRight  居中:wdAlignParagraphCenter
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0)  &#39;首行缩进
-</span></span><span class="line"><span class="cl">                    .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 0
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">段落处理</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;段落-段落处理-
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="k">Each</span> <span class="n">pg</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Paragraphs</span>
+</span></span><span class="line"><span class="cl">        <span class="k">If</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Information</span><span class="p">(</span><span class="n">wdWithInTable</span><span class="p">)</span> <span class="o">=</span> <span class="k">False</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;-------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">If</span> <span class="n">pg</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel1</span> <span class="k">Then</span> <span class="c">&#39;如果是1级标题用此格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>   <span class="c">&#39;左缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>  <span class="c">&#39;右缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>        <span class="c">&#39;段前 2.5磅等于0.5行,如果你的单位为行,则这里乘5
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>         <span class="c">&#39;段后
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpace1pt5</span>   <span class="c">&#39;行距,单倍 wdLineSpaceSingle   1.5倍 wdLineSpace1pt5     两倍 wdLineSpaceDouble
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphCenter</span>  <span class="c">&#39;对齐方式  左对齐:wdAlignParagraphLeft  右对齐:wdAlignParagraphRight  居中:wdAlignParagraphCenter
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>  <span class="c">&#39;首行缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With pg.Range
-</span></span><span class="line"><span class="cl">                    .Font.NameFarEast = &#34;黑体&#34;   &#39;中文
-</span></span><span class="line"><span class="cl">                    .Font.NameAscii = &#34;Times New Roman&#34;   &#39;西文
-</span></span><span class="line"><span class="cl">                    .Font.NameOther = &#34;Times New Roman&#34;   &#39;西文
-</span></span><span class="line"><span class="cl">                    .Font.Size = 20          &#39;字号三号
-</span></span><span class="line"><span class="cl">                    .Font.Bold = True        &#39;加粗      不加粗填false
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                &#39;-------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">            ElseIf pg.OutlineLevel = wdOutlineLevel2 Then &#39;如果是2级标题用此格式
-</span></span><span class="line"><span class="cl">                With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">                    .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpace1pt5
-</span></span><span class="line"><span class="cl">                    .Alignment = wdAlignParagraphJustify &#39;两端对齐
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 0
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;黑体&#34;</span>   <span class="c">&#39;中文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>   <span class="c">&#39;西文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>   <span class="c">&#39;西文
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">20</span>          <span class="c">&#39;字号三号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>        <span class="c">&#39;加粗      不加粗填false
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="c">&#39;-------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">ElseIf</span> <span class="n">pg</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel2</span> <span class="k">Then</span> <span class="c">&#39;如果是2级标题用此格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpace1pt5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span> <span class="c">&#39;两端对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With pg.Range
-</span></span><span class="line"><span class="cl">                    .Font.NameFarEast = &#34;黑体&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.Size = 18          &#39;字号四号
-</span></span><span class="line"><span class="cl">                    .Font.Bold = True
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;黑体&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">18</span>          <span class="c">&#39;字号四号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                &#39;-------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">            ElseIf pg.OutlineLevel = wdOutlineLevel3 Then  &#39;如果是3级标题用此格式
-</span></span><span class="line"><span class="cl">                With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">                    .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpace1pt5
-</span></span><span class="line"><span class="cl">                    .Alignment = wdAlignParagraphLeft
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 0
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="c">&#39;-------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">ElseIf</span> <span class="n">pg</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel3</span> <span class="k">Then</span>  <span class="c">&#39;如果是3级标题用此格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpace1pt5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphLeft</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With pg.Range
-</span></span><span class="line"><span class="cl">                    .Font.NameFarEast = &#34;黑体&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.Size = 16          &#39;字号小四
-</span></span><span class="line"><span class="cl">                    .Font.Bold = True
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;黑体&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">16</span>          <span class="c">&#39;字号小四
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                &#39;-------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">            ElseIf pg.OutlineLevel = wdOutlineLevel4 Then  &#39;如果是4级标题用此格式
-</span></span><span class="line"><span class="cl">                With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">                    .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpace1pt5
-</span></span><span class="line"><span class="cl">                    .Alignment = wdAlignParagraphJustify
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 0
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="c">&#39;-------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">ElseIf</span> <span class="n">pg</span><span class="p">.</span><span class="n">OutlineLevel</span> <span class="o">=</span> <span class="n">wdOutlineLevel4</span> <span class="k">Then</span>  <span class="c">&#39;如果是4级标题用此格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpace1pt5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With pg.Range
-</span></span><span class="line"><span class="cl">                    .Font.NameFarEast = &#34;仿宋&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.Size = 16          &#39;字号小四
-</span></span><span class="line"><span class="cl">                    .Font.Bold = True
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                &#39;------------------------------------------------------------------------- 下面是5级以及正文的样式设置
-</span></span><span class="line"><span class="cl">            Else
-</span></span><span class="line"><span class="cl">                With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">                    .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 2.5
-</span></span><span class="line"><span class="cl">                    .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpace1pt5
-</span></span><span class="line"><span class="cl">                    .Alignment = wdAlignParagraphJustify
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0.35)  &#39;首行缩进2
-</span></span><span class="line"><span class="cl">                    .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 2  &#39;首行缩进2
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With pg.Range
-</span></span><span class="line"><span class="cl">                    .Font.NameFarEast = &#34;仿宋&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Font.Size = 14          &#39;字号四号
-</span></span><span class="line"><span class="cl">                    .Font.Bold = False
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">            End If
-</span></span><span class="line"><span class="cl">        End If
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 表前单位格式(control As IRibbonControl) &#39;
-</span></span><span class="line"><span class="cl">    For Each pg In Selection.Paragraphs
-</span></span><span class="line"><span class="cl">        pg.IndentFirstLineCharWidth -10000
-</span></span><span class="line"><span class="cl">        pg.IndentFirstLineCharWidth 2
-</span></span><span class="line"><span class="cl">        pg.Range.Font.Bold = False
-</span></span><span class="line"><span class="cl">        With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">            .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .SpaceBefore = 0
-</span></span><span class="line"><span class="cl">            .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">            .SpaceAfter = 0
-</span></span><span class="line"><span class="cl">            .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">            .LineSpacingRule = wdLineSpaceSingle
-</span></span><span class="line"><span class="cl">            .Alignment = wdAlignParagraphJustify
-</span></span><span class="line"><span class="cl">            .FirstLineIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">            .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">            .CharacterUnitFirstLineIndent = 0
-</span></span><span class="line"><span class="cl">            .LineUnitBefore = 0
-</span></span><span class="line"><span class="cl">            .LineUnitAfter = 0
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">        With pg.Range
-</span></span><span class="line"><span class="cl">            .Font.NameFarEast = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">            .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">            .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">            .Font.Size = 10.5         &#39;字号五号
-</span></span><span class="line"><span class="cl">            .Font.Bold = False
-</span></span><span class="line"><span class="cl">            .ParagraphFormat.Alignment = wdAlignParagraphRight
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">        With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">            .SpaceBefore = 0
-</span></span><span class="line"><span class="cl">            .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">            .SpaceAfter = 0
-</span></span><span class="line"><span class="cl">            .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 表后注释格式(control As IRibbonControl) &#39;
-</span></span><span class="line"><span class="cl">    For Each pg In Selection.Paragraphs
-</span></span><span class="line"><span class="cl">        pg.IndentFirstLineCharWidth -10000
-</span></span><span class="line"><span class="cl">        pg.IndentFirstLineCharWidth 2
-</span></span><span class="line"><span class="cl">        pg.Range.Font.Bold = False
-</span></span><span class="line"><span class="cl">        With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">            .LeftIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .RightIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .SpaceBefore = 0
-</span></span><span class="line"><span class="cl">            .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">            .SpaceAfter = 0
-</span></span><span class="line"><span class="cl">            .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">            .LineSpacingRule = wdLineSpaceSingle
-</span></span><span class="line"><span class="cl">            .Alignment = wdAlignParagraphJustify
-</span></span><span class="line"><span class="cl">            .FirstLineIndent = CentimetersToPoints(0)
-</span></span><span class="line"><span class="cl">            .CharacterUnitLeftIndent = 0
-</span></span><span class="line"><span class="cl">            .CharacterUnitRightIndent = 0
-</span></span><span class="line"><span class="cl">            .CharacterUnitFirstLineIndent = 0
-</span></span><span class="line"><span class="cl">            .LineUnitBefore = 0
-</span></span><span class="line"><span class="cl">            .LineUnitAfter = 0
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">        With pg.Range
-</span></span><span class="line"><span class="cl">            .Font.NameFarEast = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">            .Font.NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">            .Font.NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">            .Font.Size = 10        &#39;字号10
-</span></span><span class="line"><span class="cl">            .Font.Bold = False
-</span></span><span class="line"><span class="cl">            .ParagraphFormat.Alignment = wdAlignParagraphJustify
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">        With pg.Range.ParagraphFormat
-</span></span><span class="line"><span class="cl">            .SpaceBefore = 0
-</span></span><span class="line"><span class="cl">            .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">            .SpaceAfter = 0
-</span></span><span class="line"><span class="cl">            .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 自动编号(control As IRibbonControl)  &#39;针对样式（一）
-</span></span><span class="line"><span class="cl">    &#39;先选择一片范围再运行代码,会将例如&#34;(一)&#34;此样式的编号换为自动编号,&#34;()&#34;为中文全角符号
-</span></span><span class="line"><span class="cl">    &#39;注意只有段落开头为&#34;(一)&#34;样式的编号会替换,段中的编号则不会
-</span></span><span class="line"><span class="cl">    Dim r As Range, P As Range, tpf, NF, NS, LI, FI
-</span></span><span class="line"><span class="cl">    &#39;================================================== 配置区
-</span></span><span class="line"><span class="cl">    tpf = &#34;（[一二三四五六七八九十]@）&#34;  &#39;通配符
-</span></span><span class="line"><span class="cl">    NF = &#34;（%1）&#34;   &#39;编号格式,%1为编号本身,不能动,只需要编辑%1旁边的格式,比如&#39;(一)&#39;为&#39;（%1）&#39; 或者 &#39;1、&#39;为 &#39;%1、&#39; 或者 &#39;第一章&#39;为&#39;第%1章&#39;
-</span></span><span class="line"><span class="cl">    NS = wdListNumberStyleSimpChinNum3  &#39;编号的样式:wdListNumberStyleArabic阿拉伯数字    wdListNumberStyleSimpChinNum3中文数字
-</span></span><span class="line"><span class="cl">    LI = CentimetersToPoints(0)    &#39;左缩进
-</span></span><span class="line"><span class="cl">    FI = CentimetersToPoints(0.74)   &#39;首行缩进
-</span></span><span class="line"><span class="cl">    &#39;================================================== 配置区
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    If Selection.Type = wdSelectionIP Then
-</span></span><span class="line"><span class="cl">        MsgBox &#34;请选择范围！&#34;
-</span></span><span class="line"><span class="cl">        Exit Sub
-</span></span><span class="line"><span class="cl">    Else
-</span></span><span class="line"><span class="cl">        Set r = Selection.Range
-</span></span><span class="line"><span class="cl">        Set P = Selection.Range
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)  &#39;设置编号格式
-</span></span><span class="line"><span class="cl">        .NumberFormat = NF
-</span></span><span class="line"><span class="cl">        .TrailingCharacter = wdTrailingNone
-</span></span><span class="line"><span class="cl">        .NumberStyle = NS
-</span></span><span class="line"><span class="cl">        .NumberPosition = 0
-</span></span><span class="line"><span class="cl">        .Alignment = wdListLevelAlignLeft
-</span></span><span class="line"><span class="cl">        .TextPosition = 0
-</span></span><span class="line"><span class="cl">        .TabPosition = wdUndefined
-</span></span><span class="line"><span class="cl">        .ResetOnHigher = 0
-</span></span><span class="line"><span class="cl">        .StartAt = 1
-</span></span><span class="line"><span class="cl">        .LinkedStyle = &#34;&#34;
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    ListGalleries(wdNumberGallery).ListTemplates(1).Name = &#34;&#34;
-</span></span><span class="line"><span class="cl">    With r.Find
-</span></span><span class="line"><span class="cl">        .ClearFormatting
-</span></span><span class="line"><span class="cl">        .Text = tpf
-</span></span><span class="line"><span class="cl">        .Forward = True
-</span></span><span class="line"><span class="cl">        .MatchWildcards = True
-</span></span><span class="line"><span class="cl">        Do While .Execute
-</span></span><span class="line"><span class="cl">            With .Parent
-</span></span><span class="line"><span class="cl">                pat = .Text
-</span></span><span class="line"><span class="cl">                If .End &gt; P.End Then Exit Do
-</span></span><span class="line"><span class="cl">                ast = Asc(ActiveDocument.Range(Start:=.Start - 1, End:=.Start))
-</span></span><span class="line"><span class="cl">                If ast = 13 Or ast = 12 Then
-</span></span><span class="line"><span class="cl">                    .ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
-</span></span><span class="line"><span class="cl">                        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
-</span></span><span class="line"><span class="cl">                        True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
-</span></span><span class="line"><span class="cl">                        wdWord10ListBehavior
-</span></span><span class="line"><span class="cl">                    With .ParagraphFormat
-</span></span><span class="line"><span class="cl">                        .SpaceBeforeAuto = False
-</span></span><span class="line"><span class="cl">                        .SpaceAfterAuto = False
-</span></span><span class="line"><span class="cl">                        .LeftIndent = LI
-</span></span><span class="line"><span class="cl">                        .FirstLineIndent = FI
-</span></span><span class="line"><span class="cl">                    End With
-</span></span><span class="line"><span class="cl">                    If .Text = pat Then
-</span></span><span class="line"><span class="cl">                        .Delete
-</span></span><span class="line"><span class="cl">                    End If
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">                .Start = .End
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">        Loop
-</span></span><span class="line"><span class="cl">    End With
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">    MsgBox &#34;完成&#34;
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 编号转文本(control As IRibbonControl)
-</span></span><span class="line"><span class="cl">    Dim kgslist As List
-</span></span><span class="line"><span class="cl">    i = MsgBox(&#34;点击确定则将该文档下所有编号转为文本&#34;, 1)
-</span></span><span class="line"><span class="cl">    If i = 1 Then
-</span></span><span class="line"><span class="cl">        For Each kgslist In ActiveDocument.Lists
-</span></span><span class="line"><span class="cl">            kgslist.ConvertNumbersToText
-</span></span><span class="line"><span class="cl">        Next
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;仿宋&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">16</span>          <span class="c">&#39;字号小四
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="c">&#39;------------------------------------------------------------------------- 下面是5级以及正文的样式设置
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">2</span><span class="p">.</span><span class="n">5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpace1pt5</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">.</span><span class="n">35</span><span class="p">)</span>  <span class="c">&#39;首行缩进2
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">2</span>  <span class="c">&#39;首行缩进2
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;仿宋&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">14</span>          <span class="c">&#39;字号四号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">表前单位格式</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">For</span> <span class="k">Each</span> <span class="n">pg</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Paragraphs</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">IndentFirstLineCharWidth</span> <span class="o">-</span><span class="n">10000</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">IndentFirstLineCharWidth</span> <span class="n">2</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpaceSingle</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineUnitBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineUnitAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">10</span><span class="p">.</span><span class="n">5</span>         <span class="c">&#39;字号五号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphRight</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">表后注释格式</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">For</span> <span class="k">Each</span> <span class="n">pg</span> <span class="ow">In</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Paragraphs</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">IndentFirstLineCharWidth</span> <span class="o">-</span><span class="n">10000</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">IndentFirstLineCharWidth</span> <span class="n">2</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">RightIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpaceSingle</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitLeftIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitRightIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineUnitBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">LineUnitAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">10</span>        <span class="c">&#39;字号10
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">pg</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">自动编号</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>  <span class="c">&#39;针对样式（一）
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;先选择一片范围再运行代码,会将例如&#34;(一)&#34;此样式的编号换为自动编号,&#34;()&#34;为中文全角符号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;注意只有段落开头为&#34;(一)&#34;样式的编号会替换,段中的编号则不会
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Dim</span> <span class="n">r</span> <span class="ow">As</span> <span class="n">Range</span><span class="p">,</span> <span class="n">P</span> <span class="ow">As</span> <span class="n">Range</span><span class="p">,</span> <span class="n">tpf</span><span class="p">,</span> <span class="n">NF</span><span class="p">,</span> <span class="n">NS</span><span class="p">,</span> <span class="n">LI</span><span class="p">,</span> <span class="n">FI</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;================================================== 配置区
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">tpf</span> <span class="o">=</span> <span class="s">&#34;（[一二三四五六七八九十]@）&#34;</span>  <span class="c">&#39;通配符
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">NF</span> <span class="o">=</span> <span class="s">&#34;（%1）&#34;</span>   <span class="c">&#39;编号格式,%1为编号本身,不能动,只需要编辑%1旁边的格式,比如&#39;(一)&#39;为&#39;（%1）&#39; 或者 &#39;1、&#39;为 &#39;%1、&#39; 或者 &#39;第一章&#39;为&#39;第%1章&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">NS</span> <span class="o">=</span> <span class="n">wdListNumberStyleSimpChinNum3</span>  <span class="c">&#39;编号的样式:wdListNumberStyleArabic阿拉伯数字    wdListNumberStyleSimpChinNum3中文数字
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">LI</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span>    <span class="c">&#39;左缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">FI</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">.</span><span class="n">74</span><span class="p">)</span>   <span class="c">&#39;首行缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;================================================== 配置区
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">wdSelectionIP</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MsgBox</span> <span class="s">&#34;请选择范围！&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Exit</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">Else</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">r</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Set</span> <span class="n">P</span> <span class="o">=</span> <span class="n">Selection</span><span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">ListGalleries</span><span class="p">(</span><span class="n">wdNumberGallery</span><span class="p">).</span><span class="n">ListTemplates</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">ListLevels</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>  <span class="c">&#39;设置编号格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="p">.</span><span class="n">NumberFormat</span> <span class="o">=</span> <span class="n">NF</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TrailingCharacter</span> <span class="o">=</span> <span class="n">wdTrailingNone</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NumberStyle</span> <span class="o">=</span> <span class="n">NS</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">NumberPosition</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdListLevelAlignLeft</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TextPosition</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">TabPosition</span> <span class="o">=</span> <span class="n">wdUndefined</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">ResetOnHigher</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">StartAt</span> <span class="o">=</span> <span class="n">1</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">LinkedStyle</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ListGalleries</span><span class="p">(</span><span class="n">wdNumberGallery</span><span class="p">).</span><span class="n">ListTemplates</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Name</span> <span class="o">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">With</span> <span class="n">r</span><span class="p">.</span><span class="n">Find</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">ClearFormatting</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">tpf</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">Forward</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="n">MatchWildcards</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Do</span> <span class="k">While</span> <span class="p">.</span><span class="n">Execute</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Parent</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pat</span> <span class="o">=</span> <span class="p">.</span><span class="n">Text</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="p">.</span><span class="n">End</span> <span class="o">&gt;</span> <span class="n">P</span><span class="p">.</span><span class="n">End</span> <span class="k">Then</span> <span class="k">Exit</span> <span class="k">Do</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ast</span> <span class="o">=</span> <span class="n">Asc</span><span class="p">(</span><span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">Start</span><span class="p">:</span><span class="o">=</span><span class="p">.</span><span class="n">Start</span> <span class="o">-</span> <span class="n">1</span><span class="p">,</span> <span class="k">End</span><span class="p">:</span><span class="o">=</span><span class="p">.</span><span class="n">Start</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">If</span> <span class="n">ast</span> <span class="o">=</span> <span class="n">13</span> <span class="ow">Or</span> <span class="n">ast</span> <span class="o">=</span> <span class="n">12</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">ListFormat</span><span class="p">.</span><span class="n">ApplyListTemplateWithLevel</span> <span class="n">ListTemplate</span><span class="p">:</span><span class="o">=</span> _
+</span></span><span class="line"><span class="cl">                        <span class="n">ListGalleries</span><span class="p">(</span><span class="n">wdNumberGallery</span><span class="p">).</span><span class="n">ListTemplates</span><span class="p">(</span><span class="n">1</span><span class="p">),</span> <span class="n">ContinuePreviousList</span><span class="p">:</span><span class="o">=</span> _
+</span></span><span class="line"><span class="cl">                        <span class="k">True</span><span class="p">,</span> <span class="n">ApplyTo</span><span class="p">:</span><span class="o">=</span><span class="n">wdListApplyToWholeList</span><span class="p">,</span> <span class="n">DefaultListBehavior</span><span class="p">:</span><span class="o">=</span> _
+</span></span><span class="line"><span class="cl">                        <span class="n">wdWord10ListBehavior</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">With</span> <span class="p">.</span><span class="n">ParagraphFormat</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">SpaceBeforeAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">SpaceAfterAuto</span> <span class="o">=</span> <span class="k">False</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">LI</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">FI</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">If</span> <span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="n">pat</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">Delete</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">Start</span> <span class="o">=</span> <span class="p">.</span><span class="n">End</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Loop</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MsgBox</span> <span class="s">&#34;完成&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">编号转文本</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Dim</span> <span class="n">kgslist</span> <span class="ow">As</span> <span class="n">List</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">MsgBox</span><span class="p">(</span><span class="s">&#34;点击确定则将该文档下所有编号转为文本&#34;</span><span class="p">,</span> <span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">If</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="k">For</span> <span class="k">Each</span> <span class="n">kgslist</span> <span class="ow">In</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Lists</span>
+</span></span><span class="line"><span class="cl">            <span class="n">kgslist</span><span class="p">.</span><span class="n">ConvertNumbersToText</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

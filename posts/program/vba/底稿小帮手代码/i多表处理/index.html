@@ -331,140 +331,140 @@
 </span><span class="lnt">134
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Sub 多表_一键调整(control As IRibbonControl) &#39;批量调整表格格式
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = False  &#39;关闭屏幕刷新
-</span></span><span class="line"><span class="cl">    Application.DisplayAlerts = False  &#39;关闭提示
-</span></span><span class="line"><span class="cl">    On Error Resume Next  &#39;忽略错误
-</span></span><span class="line"><span class="cl">    &#39;-------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">    Dim mytable As Table, i As Long
-</span></span><span class="line"><span class="cl">    For Each mytable In ActiveDocument.Tables
-</span></span><span class="line"><span class="cl">        With mytable
-</span></span><span class="line"><span class="cl">            .Shading.ForegroundPatternColor = wdColorAutomatic
-</span></span><span class="line"><span class="cl">            .Shading.BackgroundPatternColor = wdColorAutomatic
-</span></span><span class="line"><span class="cl">            Options.DefaultHighlightColorIndex = wdNoHighlight
-</span></span><span class="line"><span class="cl">            .Range.HighlightColorIndex = wdNoHighlight
-</span></span><span class="line"><span class="cl">            .Style = &#34;表格主题&#34;
-</span></span><span class="line"><span class="cl">            With .Borders(wdBorderLeft)
-</span></span><span class="line"><span class="cl">                .LineStyle = wdLineStyleSingle: .LineWidth = wdLineWidth150pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            With .Borders(wdBorderRight)
-</span></span><span class="line"><span class="cl">                .LineStyle = wdLineStyleSingle: .LineWidth = wdLineWidth150pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            With .Borders(wdBorderTop)
-</span></span><span class="line"><span class="cl">                .LineStyle = wdLineStyleSingle: .LineWidth = wdLineWidth150pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            With .Borders(wdBorderBottom)
-</span></span><span class="line"><span class="cl">                .LineStyle = wdLineStyleSingle: .LineWidth = wdLineWidth150pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            With .Borders(wdBorderVertical)
-</span></span><span class="line"><span class="cl">                .LineStyle = wdLineStyleSingle: .LineWidth = wdLineWidth050pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            .Borders(wdBorderDiagonalDown).LineStyle = wdLineStyleNone
-</span></span><span class="line"><span class="cl">            .Borders(wdBorderDiagonalUp).LineStyle = wdLineStyleNone
-</span></span><span class="line"><span class="cl">            &#39;单元格边距
-</span></span><span class="line"><span class="cl">            .TopPadding = CentimetersToPoints(0) &#39;设置上边距为0
-</span></span><span class="line"><span class="cl">            .BottomPadding = CentimetersToPoints(0) &#39;设置下边距为0
-</span></span><span class="line"><span class="cl">            .LeftPadding = PixelsToPoints(0, True)  &#39;设置左边距为0
-</span></span><span class="line"><span class="cl">            .RightPadding = PixelsToPoints(0, True) &#39;设置右边距为0
-</span></span><span class="line"><span class="cl">            .Spacing = PixelsToPoints(0, True) &#39;允许单元格间距为0
-</span></span><span class="line"><span class="cl">            .AllowPageBreaks = True &#39;允许断页
-</span></span><span class="line"><span class="cl">            &#39;.AllowAutoFit = True &#39;允许自动重调尺寸
-</span></span><span class="line"><span class="cl">            With .Rows
-</span></span><span class="line"><span class="cl">                .WrapAroundText = False &#39;取消文字环绕
-</span></span><span class="line"><span class="cl">                &#39;.Alignment = wdAlignRowCenter &#39;表水平居中  wdAlignRowLeft &#39;左对齐
-</span></span><span class="line"><span class="cl">                .AllowBreakAcrossPages = False &#39;不允许行断页
-</span></span><span class="line"><span class="cl">                .Height = CentimetersToPoints(0.8) &#39;行高0.8
-</span></span><span class="line"><span class="cl">                .HeightRule = wdRowHeightAtLeast &#39;行高设为最小值
-</span></span><span class="line"><span class="cl">                .LeftIndent = CentimetersToPoints(0) &#39;左面缩进量为0
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            With .Range
-</span></span><span class="line"><span class="cl">                With .Font &#39;字体格式
-</span></span><span class="line"><span class="cl">                    .NameFarEast = &#34;宋体&#34;
-</span></span><span class="line"><span class="cl">                    .NameAscii = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .NameOther = &#34;Times New Roman&#34;
-</span></span><span class="line"><span class="cl">                    .Color = wdColorAutomatic &#39;自动字体颜色
-</span></span><span class="line"><span class="cl">                    .Size = 10.5   &#39;字号
-</span></span><span class="line"><span class="cl">                    .Kerning = 0
-</span></span><span class="line"><span class="cl">                    .DisableCharacterSpaceGrid = True  &#39;选定段落中的字符与行网格对齐
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                With .ParagraphFormat &#39;段落格式
-</span></span><span class="line"><span class="cl">                    .LineUnitBefore = 0
-</span></span><span class="line"><span class="cl">                    .LineUnitAfter = 0
-</span></span><span class="line"><span class="cl">                    .SpaceBefore = 0
-</span></span><span class="line"><span class="cl">                    .SpaceAfter = 0
-</span></span><span class="line"><span class="cl">                    .CharacterUnitFirstLineIndent = 0 &#39;取消首行缩进
-</span></span><span class="line"><span class="cl">                    .FirstLineIndent = CentimetersToPoints(0) &#39;取消首行缩进
-</span></span><span class="line"><span class="cl">                    .LineSpacingRule = wdLineSpaceSingle &#39;wdLineSpaceSingle &#39;单倍行距  wdLineSpaceExactly &#39;行距固定值
-</span></span><span class="line"><span class="cl">                    &#39;&#39;.LineSpacing = 18 &#39;设置行间距为18磅，配合行距固定值
-</span></span><span class="line"><span class="cl">                    &#39;.Alignment = wdAlignParagraphCenter &#39;单元格水平居中
-</span></span><span class="line"><span class="cl">                    .AutoAdjustRightIndent = False  &#39;自动调整所选段落的右缩进
-</span></span><span class="line"><span class="cl">                    .DisableLineHeightGrid = True   &#39;选定段落中的字符与行网格对齐
-</span></span><span class="line"><span class="cl">                End With
-</span></span><span class="line"><span class="cl">                .Cells.VerticalAlignment = wdCellAlignVerticalCenter  &#39;单元格垂直居中
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            For Each cl In .Range.Cells    &#39;文字靠左，数字靠右
-</span></span><span class="line"><span class="cl">                Acell = ActiveDocument.Range(cl.Range.Start, cl.Range.End - 1).Text &#39;提取文本
-</span></span><span class="line"><span class="cl">                If IsNumeric(Acell) Then
-</span></span><span class="line"><span class="cl">                    cl.Range.ParagraphFormat.Alignment = wdAlignParagraphRight    &#39;右对齐
-</span></span><span class="line"><span class="cl">                Else
-</span></span><span class="line"><span class="cl">                    cl.Range.ParagraphFormat.Alignment = wdAlignParagraphJustify   &#39;左对齐
-</span></span><span class="line"><span class="cl">                    If Acell = &#34;合计&#34; Or Acell = &#34;总计&#34; Or Acell = &#34;总 计&#34; Or Acell = &#34;合 计&#34; Then
-</span></span><span class="line"><span class="cl">                        cl.Range.ParagraphFormat.Alignment = wdAlignParagraphCenter    &#39;水平居中
-</span></span><span class="line"><span class="cl">                        If cl.ColumnIndex = .Columns.Count Then
-</span></span><span class="line"><span class="cl">                            .Columns(cl.ColumnIndex).Select
-</span></span><span class="line"><span class="cl">                            Selection.Font.Bold = True
-</span></span><span class="line"><span class="cl">                        Else
-</span></span><span class="line"><span class="cl">                            cl.Row.Range.Font.Bold = True
-</span></span><span class="line"><span class="cl">                        End If
-</span></span><span class="line"><span class="cl">                    ElseIf Acell = &#34;序号&#34; Or Acell = &#34;序 号&#34; Then
-</span></span><span class="line"><span class="cl">                        .Columns(cl.ColumnIndex).Select
-</span></span><span class="line"><span class="cl">                        Selection.ParagraphFormat.Alignment = wdAlignParagraphCenter    &#39;水平居中
-</span></span><span class="line"><span class="cl">                    End If
-</span></span><span class="line"><span class="cl">                End If
-</span></span><span class="line"><span class="cl">            Next
-</span></span><span class="line"><span class="cl">            &#39;设置首行格式
-</span></span><span class="line"><span class="cl">            .Rows(1).Select &#39; 选中第一个单元格
-</span></span><span class="line"><span class="cl">            With Selection
-</span></span><span class="line"><span class="cl">                .Rows.HeadingFormat = wdToggle &#39;自动标题行重复
-</span></span><span class="line"><span class="cl">                .ParagraphFormat.Alignment = wdAlignParagraphCenter   &#39;水平居中
-</span></span><span class="line"><span class="cl">                .Range.Font.Bold = True &#39;表头加粗黑体
-</span></span><span class="line"><span class="cl">                .Shading.ForegroundPatternColor = wdColorAutomatic &#39;首行自动颜色
-</span></span><span class="line"><span class="cl">                .Shading.BackgroundPatternColor = -603923969 &#39;首行底纹填充
-</span></span><span class="line"><span class="cl">                &#39;.Borders(wdBorderBottom).LineStyle = xlContinuous
-</span></span><span class="line"><span class="cl">                &#39;.Borders(wdBorderBottom).LineWidth = wdLineWidth50pt
-</span></span><span class="line"><span class="cl">            End With
-</span></span><span class="line"><span class="cl">            &#39;自动调整表格
-</span></span><span class="line"><span class="cl">            .Columns.PreferredWidthType = wdPreferredWidthAuto
-</span></span><span class="line"><span class="cl">            .AutoFitBehavior (wdAutoFitContent) &#39;根据内容调整表格
-</span></span><span class="line"><span class="cl">            .AutoFitBehavior (wdAutoFitWindow) &#39;根据窗口调整表格
-</span></span><span class="line"><span class="cl">        End With
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    &#39;---------------------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">    ERR.Clear: On Error GoTo 0 &#39;恢复错误捕捉
-</span></span><span class="line"><span class="cl">    Application.DisplayAlerts = True  &#39;开启提示
-</span></span><span class="line"><span class="cl">    Application.ScreenUpdating = True   &#39;开启屏幕刷新
-</span></span><span class="line"><span class="cl">End Sub
-</span></span><span class="line"><span class="cl">Sub 多表处理_表格选中(control As IRibbonControl) &#39;
-</span></span><span class="line"><span class="cl">    Dim tempTable As Table
-</span></span><span class="line"><span class="cl">    &#39;Application.ScreenUpdating = False
-</span></span><span class="line"><span class="cl">    &#39;判断文档是否被保护
-</span></span><span class="line"><span class="cl">    If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then
-</span></span><span class="line"><span class="cl">        MsgBox &#34;文档已保护，此时不能选中多个表格！&#34;
-</span></span><span class="line"><span class="cl">        Exit Sub
-</span></span><span class="line"><span class="cl">    End If
-</span></span><span class="line"><span class="cl">    &#39;删除所有可编辑的区域
-</span></span><span class="line"><span class="cl">    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
-</span></span><span class="line"><span class="cl">    &#39;添加可编辑区域
-</span></span><span class="line"><span class="cl">    For Each tempTable In ActiveDocument.Tables
-</span></span><span class="line"><span class="cl">        tempTable.Range.Editors.Add wdEditorEveryone
-</span></span><span class="line"><span class="cl">    Next
-</span></span><span class="line"><span class="cl">    &#39;选中所有可编辑区域
-</span></span><span class="line"><span class="cl">    ActiveDocument.SelectAllEditableRanges wdEditorEveryone
-</span></span><span class="line"><span class="cl">    &#39;删除所有可编辑的区域
-</span></span><span class="line"><span class="cl">    ActiveDocument.DeleteAllEditableRanges wdEditorEveryone
-</span></span><span class="line"><span class="cl">    &#39;Application.ScreenUpdating = True
-</span></span><span class="line"><span class="cl">    MsgBox &#34;完成&#34;
-</span></span><span class="line"><span class="cl">End Sub</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">多表_一键调整</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;批量调整表格格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">False</span>  <span class="c">&#39;关闭屏幕刷新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">DisplayAlerts</span> <span class="o">=</span> <span class="k">False</span>  <span class="c">&#39;关闭提示
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">On</span> <span class="k">Error</span> <span class="k">Resume</span> <span class="k">Next</span>  <span class="c">&#39;忽略错误
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;-------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Dim</span> <span class="n">mytable</span> <span class="ow">As</span> <span class="n">Table</span><span class="p">,</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Long</span>
+</span></span><span class="line"><span class="cl">    <span class="k">For</span> <span class="k">Each</span> <span class="n">mytable</span> <span class="ow">In</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Tables</span>
+</span></span><span class="line"><span class="cl">        <span class="k">With</span> <span class="n">mytable</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Shading</span><span class="p">.</span><span class="n">ForegroundPatternColor</span> <span class="o">=</span> <span class="n">wdColorAutomatic</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Shading</span><span class="p">.</span><span class="n">BackgroundPatternColor</span> <span class="o">=</span> <span class="n">wdColorAutomatic</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Options</span><span class="p">.</span><span class="n">DefaultHighlightColorIndex</span> <span class="o">=</span> <span class="n">wdNoHighlight</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">HighlightColorIndex</span> <span class="o">=</span> <span class="n">wdNoHighlight</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Style</span> <span class="o">=</span> <span class="s">&#34;表格主题&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderLeft</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleSingle</span><span class="p">:</span> <span class="p">.</span><span class="n">LineWidth</span> <span class="o">=</span> <span class="n">wdLineWidth150pt</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderRight</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleSingle</span><span class="p">:</span> <span class="p">.</span><span class="n">LineWidth</span> <span class="o">=</span> <span class="n">wdLineWidth150pt</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderTop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleSingle</span><span class="p">:</span> <span class="p">.</span><span class="n">LineWidth</span> <span class="o">=</span> <span class="n">wdLineWidth150pt</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderBottom</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleSingle</span><span class="p">:</span> <span class="p">.</span><span class="n">LineWidth</span> <span class="o">=</span> <span class="n">wdLineWidth150pt</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderVertical</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleSingle</span><span class="p">:</span> <span class="p">.</span><span class="n">LineWidth</span> <span class="o">=</span> <span class="n">wdLineWidth050pt</span>
+</span></span><span class="line"><span class="cl">            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderDiagonalDown</span><span class="p">).</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleNone</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">Borders</span><span class="p">(</span><span class="n">wdBorderDiagonalUp</span><span class="p">).</span><span class="n">LineStyle</span> <span class="o">=</span> <span class="n">wdLineStyleNone</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;单元格边距
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">TopPadding</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span> <span class="c">&#39;设置上边距为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">BottomPadding</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span> <span class="c">&#39;设置下边距为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">LeftPadding</span> <span class="o">=</span> <span class="n">PixelsToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="k">True</span><span class="p">)</span>  <span class="c">&#39;设置左边距为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">RightPadding</span> <span class="o">=</span> <span class="n">PixelsToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="k">True</span><span class="p">)</span> <span class="c">&#39;设置右边距为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Spacing</span> <span class="o">=</span> <span class="n">PixelsToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="k">True</span><span class="p">)</span> <span class="c">&#39;允许单元格间距为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">AllowPageBreaks</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39;允许断页
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="c">&#39;.AllowAutoFit = True &#39;允许自动重调尺寸
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">With</span> <span class="p">.</span><span class="n">Rows</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">WrapAroundText</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39;取消文字环绕
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="c">&#39;.Alignment = wdAlignRowCenter &#39;表水平居中  wdAlignRowLeft &#39;左对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">AllowBreakAcrossPages</span> <span class="o">=</span> <span class="k">False</span> <span class="c">&#39;不允许行断页
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">Height</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">.</span><span class="n">8</span><span class="p">)</span> <span class="c">&#39;行高0.8
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">HeightRule</span> <span class="o">=</span> <span class="n">wdRowHeightAtLeast</span> <span class="c">&#39;行高设为最小值
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">LeftIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span> <span class="c">&#39;左面缩进量为0
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">With</span> <span class="p">.</span><span class="n">Range</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="p">.</span><span class="n">Font</span> <span class="c">&#39;字体格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">NameFarEast</span> <span class="o">=</span> <span class="s">&#34;宋体&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">NameAscii</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">NameOther</span> <span class="o">=</span> <span class="s">&#34;Times New Roman&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">Color</span> <span class="o">=</span> <span class="n">wdColorAutomatic</span> <span class="c">&#39;自动字体颜色
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">10</span><span class="p">.</span><span class="n">5</span>   <span class="c">&#39;字号
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">Kerning</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">DisableCharacterSpaceGrid</span> <span class="o">=</span> <span class="k">True</span>  <span class="c">&#39;选定段落中的字符与行网格对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="k">With</span> <span class="p">.</span><span class="n">ParagraphFormat</span> <span class="c">&#39;段落格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">LineUnitBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">LineUnitAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceBefore</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">SpaceAfter</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">.</span><span class="n">CharacterUnitFirstLineIndent</span> <span class="o">=</span> <span class="n">0</span> <span class="c">&#39;取消首行缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">FirstLineIndent</span> <span class="o">=</span> <span class="n">CentimetersToPoints</span><span class="p">(</span><span class="n">0</span><span class="p">)</span> <span class="c">&#39;取消首行缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">LineSpacingRule</span> <span class="o">=</span> <span class="n">wdLineSpaceSingle</span> <span class="c">&#39;wdLineSpaceSingle &#39;单倍行距  wdLineSpaceExactly &#39;行距固定值
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="c">&#39;&#39;.LineSpacing = 18 &#39;设置行间距为18磅，配合行距固定值
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="c">&#39;.Alignment = wdAlignParagraphCenter &#39;单元格水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">AutoAdjustRightIndent</span> <span class="o">=</span> <span class="k">False</span>  <span class="c">&#39;自动调整所选段落的右缩进
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="p">.</span><span class="n">DisableLineHeightGrid</span> <span class="o">=</span> <span class="k">True</span>   <span class="c">&#39;选定段落中的字符与行网格对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">Cells</span><span class="p">.</span><span class="n">VerticalAlignment</span> <span class="o">=</span> <span class="n">wdCellAlignVerticalCenter</span>  <span class="c">&#39;单元格垂直居中
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="k">For</span> <span class="k">Each</span> <span class="n">cl</span> <span class="ow">In</span> <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Cells</span>    <span class="c">&#39;文字靠左，数字靠右
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="n">Acell</span> <span class="o">=</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="n">cl</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Start</span><span class="p">,</span> <span class="n">cl</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">End</span> <span class="o">-</span> <span class="n">1</span><span class="p">).</span><span class="n">Text</span> <span class="c">&#39;提取文本
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">If</span> <span class="n">IsNumeric</span><span class="p">(</span><span class="n">Acell</span><span class="p">)</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">cl</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphRight</span>    <span class="c">&#39;右对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">cl</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphJustify</span>   <span class="c">&#39;左对齐
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="k">If</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;合计&#34;</span> <span class="ow">Or</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;总计&#34;</span> <span class="ow">Or</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;总 计&#34;</span> <span class="ow">Or</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;合 计&#34;</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cl</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphCenter</span>    <span class="c">&#39;水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                        <span class="k">If</span> <span class="n">cl</span><span class="p">.</span><span class="n">ColumnIndex</span> <span class="o">=</span> <span class="p">.</span><span class="n">Columns</span><span class="p">.</span><span class="n">Count</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">.</span><span class="n">Columns</span><span class="p">(</span><span class="n">cl</span><span class="p">.</span><span class="n">ColumnIndex</span><span class="p">).</span><span class="n">Select</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">Selection</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">Else</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">cl</span><span class="p">.</span><span class="n">Row</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">ElseIf</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;序号&#34;</span> <span class="ow">Or</span> <span class="n">Acell</span> <span class="o">=</span> <span class="s">&#34;序 号&#34;</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">.</span><span class="n">Columns</span><span class="p">(</span><span class="n">cl</span><span class="p">.</span><span class="n">ColumnIndex</span><span class="p">).</span><span class="n">Select</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">Selection</span><span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphCenter</span>    <span class="c">&#39;水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                    <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">                <span class="k">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">            <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;设置首行格式
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Rows</span><span class="p">(</span><span class="n">1</span><span class="p">).</span><span class="n">Select</span> <span class="c">&#39; 选中第一个单元格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">With</span> <span class="n">Selection</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">HeadingFormat</span> <span class="o">=</span> <span class="n">wdToggle</span> <span class="c">&#39;自动标题行重复
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">ParagraphFormat</span><span class="p">.</span><span class="n">Alignment</span> <span class="o">=</span> <span class="n">wdAlignParagraphCenter</span>   <span class="c">&#39;水平居中
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Font</span><span class="p">.</span><span class="n">Bold</span> <span class="o">=</span> <span class="k">True</span> <span class="c">&#39;表头加粗黑体
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">Shading</span><span class="p">.</span><span class="n">ForegroundPatternColor</span> <span class="o">=</span> <span class="n">wdColorAutomatic</span> <span class="c">&#39;首行自动颜色
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="p">.</span><span class="n">Shading</span><span class="p">.</span><span class="n">BackgroundPatternColor</span> <span class="o">=</span> <span class="o">-</span><span class="n">603923969</span> <span class="c">&#39;首行底纹填充
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="c">&#39;.Borders(wdBorderBottom).LineStyle = xlContinuous
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>                <span class="c">&#39;.Borders(wdBorderBottom).LineWidth = wdLineWidth50pt
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&#39;自动调整表格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">Columns</span><span class="p">.</span><span class="n">PreferredWidthType</span> <span class="o">=</span> <span class="n">wdPreferredWidthAuto</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">AutoFitBehavior</span> <span class="p">(</span><span class="n">wdAutoFitContent</span><span class="p">)</span> <span class="c">&#39;根据内容调整表格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>            <span class="p">.</span><span class="n">AutoFitBehavior</span> <span class="p">(</span><span class="n">wdAutoFitWindow</span><span class="p">)</span> <span class="c">&#39;根据窗口调整表格
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>        <span class="k">End</span> <span class="k">With</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;---------------------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ERR</span><span class="p">.</span><span class="n">Clear</span><span class="p">:</span> <span class="k">On</span> <span class="k">Error</span> <span class="k">GoTo</span> <span class="n">0</span> <span class="c">&#39;恢复错误捕捉
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">DisplayAlerts</span> <span class="o">=</span> <span class="k">True</span>  <span class="c">&#39;开启提示
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">Application</span><span class="p">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="k">True</span>   <span class="c">&#39;开启屏幕刷新
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">End</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl"><span class="k">Sub</span> <span class="nf">多表处理_表格选中</span><span class="p">(</span><span class="n">control</span> <span class="ow">As</span> <span class="n">IRibbonControl</span><span class="p">)</span> <span class="c">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">Dim</span> <span class="n">tempTable</span> <span class="ow">As</span> <span class="n">Table</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;Application.ScreenUpdating = False
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="c">&#39;判断文档是否被保护
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">If</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">ProtectionType</span> <span class="o">=</span> <span class="n">wdAllowOnlyFormFields</span> <span class="k">Then</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MsgBox</span> <span class="s">&#34;文档已保护，此时不能选中多个表格！&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">Exit</span> <span class="k">Sub</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">End</span> <span class="k">If</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;删除所有可编辑的区域
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">DeleteAllEditableRanges</span> <span class="n">wdEditorEveryone</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;添加可编辑区域
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="k">For</span> <span class="k">Each</span> <span class="n">tempTable</span> <span class="ow">In</span> <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">Tables</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tempTable</span><span class="p">.</span><span class="n">Range</span><span class="p">.</span><span class="n">Editors</span><span class="p">.</span><span class="n">Add</span> <span class="n">wdEditorEveryone</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Next</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;选中所有可编辑区域
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">SelectAllEditableRanges</span> <span class="n">wdEditorEveryone</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;删除所有可编辑的区域
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">ActiveDocument</span><span class="p">.</span><span class="n">DeleteAllEditableRanges</span> <span class="n">wdEditorEveryone</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&#39;Application.ScreenUpdating = True
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>    <span class="n">MsgBox</span> <span class="s">&#34;完成&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">End</span> <span class="k">Sub</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">
