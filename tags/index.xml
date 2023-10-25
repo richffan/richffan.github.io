@@ -4,7 +4,23 @@
     <link>http://richfan.site/tags/</link>
     <description>Tags - 标签 - 樊刹</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Wed, 25 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>审计共性问题</title>
+  <link>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+  <pubDate>Wed, 25 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>导航</title>
+  <link>http://richfan.site/tags/%E5%AF%BC%E8%88%AA/</link>
+  <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/tags/%E5%AF%BC%E8%88%AA/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>工程</title>
   <link>http://richfan.site/tags/%E5%B7%A5%E7%A8%8B/</link>
   <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
@@ -29,14 +45,6 @@
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>合并</title>
-  <link>http://richfan.site/tags/%E5%90%88%E5%B9%B6/</link>
-  <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/tags/%E5%90%88%E5%B9%B6/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
   <title>建设</title>
   <link>http://richfan.site/tags/%E5%BB%BA%E8%AE%BE/</link>
   <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
@@ -50,14 +58,6 @@
   <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
   <guid>http://richfan.site/tags/%E7%A7%91%E7%A0%94/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>审计共性问题</title>
-  <link>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</link>
-  <pubDate>Tue, 24 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
