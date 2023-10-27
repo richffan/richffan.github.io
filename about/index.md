@@ -36,14 +36,14 @@ gantt
   section 期货从业资格证
   100   : 0, 100
 
-  section 注册会计师
-  16   : 0, 16
+  section 保荐代表人
+  30   : 0, 30
 
   section 律师
   20   : 0, 20
 
-  section 保荐代表人
-  30   : 0, 30
+  section 注册会计师
+  16   : 0, 16
 
   section 董事会秘书证
   0   : 0, 0
