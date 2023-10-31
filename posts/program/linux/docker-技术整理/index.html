@@ -23,6 +23,7 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 <meta property="og:url" content="http://richfan.site/posts/program/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-09-01T22:11:00+00:00" />
 <meta property="article:modified_time" content="2020-09-01T22:11:00+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
 
@@ -454,10 +455,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## 导出
-</span></span><span class="line"><span class="cl">docker load --input yelog_ubuntu_v1.tar
-</span></span><span class="line"><span class="cl">## 载入
-</span></span><span class="line"><span class="cl">docker load &lt; yelog_ubuntu_v1.tar</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">## 导出</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="nb">load</span> <span class="o">--</span><span class="n">input</span> <span class="n">yelog_ubuntu_v1</span><span class="o">.</span><span class="n">tar</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## 载入</span>
+</span></span><span class="line"><span class="cl"><span class="n">docker</span> <span class="nb">load</span> <span class="o">&lt;</span> <span class="n">yelog_ubuntu_v1</span><span class="o">.</span><span class="n">tar</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="27-移除本地镜像">2.7 移除本地镜像</h4>
 <div class="highlight" id="id-8"><div class="chroma">
@@ -786,18 +787,18 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ docker ps -a
-</span></span><span class="line"><span class="cl">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-</span></span><span class="line"><span class="cl">2a8bffa405c8        ubuntu:14.04        &#34;/bin/sh -c &#39;while t…&#34;   About an hour ago   Up 3 seconds                                            test2
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">$</span> <span class="n">docker</span> <span class="n">ps</span> <span class="o">-</span><span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="n">CONTAINER</span> <span class="n">ID</span>        <span class="n">IMAGE</span>               <span class="n">COMMAND</span>                  <span class="n">CREATED</span>             <span class="n">STATUS</span>              <span class="n">PORTS</span>                               <span class="n">NAMES</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="n">a8bffa405c8</span>        <span class="n">ubuntu</span><span class="p">:</span><span class="mf">14.04</span>        <span class="s2">&#34;/bin/sh -c &#39;while t…&#34;</span>   <span class="n">About</span> <span class="n">an</span> <span class="n">hour</span> <span class="n">ago</span>   <span class="n">Up</span> <span class="mi">3</span> <span class="n">seconds</span>                                            <span class="n">test2</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">## 导出
-</span></span><span class="line"><span class="cl">$ docker export 2a8bffa405c8 &gt; ubuntu.tar
+</span></span><span class="line"><span class="cl"><span class="c1">## 导出</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">docker</span> <span class="k">export</span> <span class="mi">2</span><span class="n">a8bffa405c8</span> <span class="o">&gt;</span> <span class="n">ubuntu</span><span class="o">.</span><span class="n">tar</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">## 导入为镜像
-</span></span><span class="line"><span class="cl">$ docker ubuntu.tar | docker import - test/ubuntu:v1.0
+</span></span><span class="line"><span class="cl"><span class="c1">## 导入为镜像</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">docker</span> <span class="n">ubuntu</span><span class="o">.</span><span class="n">tar</span> <span class="o">|</span> <span class="n">docker</span> <span class="n">import</span> <span class="o">-</span> <span class="n">test</span><span class="o">/</span><span class="n">ubuntu</span><span class="p">:</span><span class="n">v1</span><span class="o">.</span><span class="mi">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">## 从指定 URL 或者某个目录导入
-</span></span><span class="line"><span class="cl">$ docker import http://example.com/exampleimage.tgz example/imagerepo</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="c1">## 从指定 URL 或者某个目录导入</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span> <span class="n">docker</span> <span class="n">import</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">exampleimage</span><span class="o">.</span><span class="n">tgz</span> <span class="n">example</span><span class="o">/</span><span class="n">imagerepo</span></span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>注意：用户既可以通过 <code>docker load</code> 来导入镜像存储文件到本地镜像仓库，也可以使用 <code>docker import</code> 来导入一个容器快找到本地镜像仓库，两者的区别在于容器快照将丢失所有的历史记录和元数据信息，仅保存容器当时的状态，而镜像存储文件将保存完成的记录，体积要更大。所有容器快照文件导入时需要重新指定标签等元数据信息。</p>
@@ -1473,10 +1474,10 @@ Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）�
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">volumes:
-</span></span><span class="line"><span class="cl"> - /var/lib/mysql
-</span></span><span class="line"><span class="cl"> - cache/:/tmp/cache
-</span></span><span class="line"><span class="cl"> - ~/configs:/etc/configs/:ro</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">volumes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"> <span class="o">-</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">mysql</span>
+</span></span><span class="line"><span class="cl"> <span class="o">-</span> <span class="n">cache</span><span class="o">/</span><span class="p">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">cache</span>
+</span></span><span class="line"><span class="cl"> <span class="o">-</span> <span class="o">~/</span><span class="n">configs</span><span class="p">:</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">configs</span><span class="o">/</span><span class="p">:</span><span class="n">ro</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>**
 **</p>
