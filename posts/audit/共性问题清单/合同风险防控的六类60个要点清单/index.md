@@ -1,4 +1,4 @@
-# 合同审计的风险防控要点
+# 合同风险防控的六类60个要点清单
 
 
 
@@ -142,5 +142,5 @@
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E5%90%88%E5%90%8C%E5%AE%A1%E8%AE%A1%E7%9A%84%E9%A3%8E%E9%99%A9%E9%98%B2%E6%8E%A7%E8%A6%81%E7%82%B9/  
+> URL: http://richfan.site/posts/audit/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E9%98%B2%E6%8E%A7%E7%9A%84%E5%85%AD%E7%B1%BB60%E4%B8%AA%E8%A6%81%E7%82%B9%E6%B8%85%E5%8D%95/  
 
