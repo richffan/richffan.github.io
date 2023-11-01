@@ -562,5 +562,5 @@ flowchart LR
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/ibank/directors-supervisors-and-senior-executives/%E5%9B%BD%E6%9C%89%E4%BC%81%E4%B8%9A%E8%91%A3%E4%BA%8B%E4%BC%9A%E6%B2%BB%E7%90%8650%E9%97%AE/  
+> URL: http://richfan.site/posts/ibank/directors-supervisors-and-senior-executives/50-questions-on-the-governance-of-the-board-of-directors-of-state-owned-enterprises/  
 
