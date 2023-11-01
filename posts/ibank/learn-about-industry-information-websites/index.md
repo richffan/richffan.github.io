@@ -43,5 +43,5 @@ QuestMobile：http://www.questmobile.com.cn/
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/ibank/%E4%BA%86%E8%A7%A3%E8%A1%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E7%BD%91%E7%AB%99/  
+> URL: http://richfan.site/posts/ibank/learn-about-industry-information-websites/  
 

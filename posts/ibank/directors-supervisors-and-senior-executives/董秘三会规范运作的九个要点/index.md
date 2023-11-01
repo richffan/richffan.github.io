@@ -145,5 +145,5 @@
 ---
 
 > 作者: [richfan](https://richfan.site/)  
-> URL: http://richfan.site/posts/ibank/%E8%91%A3%E7%9B%91%E9%AB%98/%E8%91%A3%E7%A7%98%E4%B8%89%E4%BC%9A%E8%A7%84%E8%8C%83%E8%BF%90%E4%BD%9C%E7%9A%84%E4%B9%9D%E4%B8%AA%E8%A6%81%E7%82%B9/  
+> URL: http://richfan.site/posts/ibank/directors-supervisors-and-senior-executives/%E8%91%A3%E7%A7%98%E4%B8%89%E4%BC%9A%E8%A7%84%E8%8C%83%E8%BF%90%E4%BD%9C%E7%9A%84%E4%B9%9D%E4%B8%AA%E8%A6%81%E7%82%B9/  
 
