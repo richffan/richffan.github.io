@@ -24,7 +24,7 @@
 <meta name="twitter:title" content="Golang入门笔记-CH01-Go语言介绍与安装"/>
 <meta name="twitter:description" content="1. Go 语言介绍 1.1 Go 语言的发展 Go 语言又称 Golang，起源于 2007 年，来自于谷歌内部的一个项目，于 2009 年正式对外发布。创始团队有三人，都是计算机界的大"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch01-go%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" /><link rel="prev" href="http://richfan.site/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" /><link rel="next" href="http://richfan.site/program/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch01-go%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" /><link rel="prev" href="http://richfan.site/program/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" /><link rel="next" href="http://richfan.site/program/excel/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8%E7%94%A8%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
@@ -48,12 +48,6 @@
       <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" srcset="/favicon.svg, /favicon.svg 1.5x, /favicon.svg 2x" sizes="auto" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
-              <a
-                class="menu-link"
-                href="/posts/"
-                
-                
-              ><i class="fa-solid fa-archive fa-fw fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item">
               <a
                 class="menu-link"
                 href="/categories/"
@@ -120,13 +114,6 @@
               取消
             </a>
           </li><li
-              class="menu-item"
-            ><a
-                  class="menu-link"
-                  href="/posts/"
-                  
-                  
-                ><i class="fa-solid fa-archive fa-fw fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li
               class="menu-item"
             ><a
                   class="menu-link"
