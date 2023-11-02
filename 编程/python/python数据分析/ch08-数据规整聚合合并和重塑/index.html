@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91\/"
-    },"genre": "编程","keywords": "python","wordcount":  10119 ,
+    },"genre": "posts","keywords": "python","wordcount":  10119 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,55 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第八章 数据规整：聚合、合并和重塑</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">第八章 数据规整：聚合、合并和重塑</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第八章 数据规整：聚合、合并和重塑</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="10119 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 21 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="leancloud_visitors comment-visitors" data-flag-title="第八章 数据规整：聚合、合并和重塑">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="第八章 数据规整：聚合、合并和重塑">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#81-层次化索引">8.1 层次化索引</a>
+      <ul>
+        <li><a href="#811-重排与分级排序">8.1.1 重排与分级排序</a></li>
+        <li><a href="#812-根据级别汇总统计">8.1.2 根据级别汇总统计</a></li>
+        <li><a href="#813-使用dataframe的列进行索引">8.1.3 使用DataFrame的列进行索引</a></li>
+      </ul>
+    </li>
+    <li><a href="#82-合并数据集">8.2 合并数据集</a>
+      <ul>
+        <li><a href="#821-数据库风格的dataframe合并">8.2.1 数据库风格的DataFrame合并</a></li>
+        <li><a href="#822-索引上的合并">8.2.2 索引上的合并</a></li>
+        <li><a href="#823-轴向连接">8.2.3 轴向连接</a></li>
+        <li><a href="#824-合并重叠数据">8.2.4 合并重叠数据</a></li>
+      </ul>
+    </li>
+    <li><a href="#83-重塑和轴向旋转">8.3 重塑和轴向旋转</a>
+      <ul>
+        <li><a href="#831-重塑层次化索引">8.3.1 重塑层次化索引</a></li>
+        <li><a href="#832-将长格式旋转为宽格式">8.3.2 将“长格式”旋转为“宽格式”</a></li>
+        <li><a href="#833-将宽格式旋转为长格式">8.3.3 将“宽格式”旋转为“长格式”</a></li>
+      </ul>
+    </li>
+    <li><a href="#84-总结">8.4 总结</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。</p>
 <p>首先，我会介绍pandas的层次化索引，它广泛用于以上操作。然后，我深入介绍了一些特殊的数据操作。在第14章，你可以看到这些工具的多种应用。</p>
 <h2 id="81-层次化索引">8.1 层次化索引</h2>
 <p>层次化索引（hierarchical indexing）是pandas的一项重要功能，它使你能在一个轴上拥有多个（两个以上）索引级别。抽象点说，它使你能以低维度形式处理高维度数据。我们先来看一个简单的例子：创建一个Series，并用一个由列表或数组组成的列表作为索引：</p>
@@ -2740,7 +2782,33 @@
 </div>
 </div><h2 id="84-总结">8.4 总结</h2>
 <p>现在你已经掌握了pandas数据导入、清洗、重塑，我们可以进一步学习<code>matplotlib</code>数据可视化。我们在稍后会回到pandas，学习更高级的分析。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" data-title="第八章 数据规整：聚合、合并和重塑" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" class="post-nav-item" rel="prev" title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第二章 Python 语法基础，IPython 和 Jupyter Notebooks</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

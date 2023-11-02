@@ -81,7 +81,7 @@ echo $msg
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/shell%E9%80%9F%E6%9F%A5%E8%A1%A8\/"
-    },"genre": "编程","keywords": "shell, linux","wordcount":  3872 ,
+    },"genre": "posts","keywords": "shell, linux","wordcount":  3872 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/shell%E9%80%9F%E6%9F%A5%E8%A1%A8\/","datePublished": "2018-09-08T11:48:24+00:00","dateModified": "2018-09-08T11:48:24+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -202,13 +202,72 @@ echo $msg
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item active" aria-current="page">shell速查表</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">shell速查表</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><h3 id="1-变量">1. 变量</h3>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>shell速查表</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2018-09-08 11:48:24"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2018-09-08">2018-09-08</time></span>&nbsp;<span title="更新于 2018-09-08 11:48:24"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2018-09-08">2018-09-08</time></span>&nbsp;<span title="3872 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 8 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/" class="leancloud_visitors comment-visitors" data-flag-title="shell速查表">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="shell速查表">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-变量">1. 变量</a></li>
+        <li><a href="#2-传参">2. 传参</a></li>
+        <li><a href="#3-数组">3. 数组</a></li>
+        <li><a href="#4-基本运算符">4. 基本运算符</a>
+          <ul>
+            <li><a href="#-算数运算符">① 算数运算符</a></li>
+            <li><a href="#-关系运算符">② 关系运算符</a></li>
+            <li><a href="#-布尔运算符">③ 布尔运算符</a></li>
+            <li><a href="#-逻辑运算符">④ 逻辑运算符</a></li>
+            <li><a href="#-字符串运算符">⑤ 字符串运算符</a></li>
+            <li><a href="#-文件测试运算符">⑥ 文件测试运算符</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-echo">5. echo</a>
+          <ul>
+            <li><a href="#-命令格式">① 命令格式</a></li>
+            <li><a href="#-颜色显示">② 颜色显示</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-sprintf">6. sprintf</a></li>
+        <li><a href="#7-test">7. test</a></li>
+        <li><a href="#8-流程控制">8. 流程控制</a>
+          <ul>
+            <li><a href="#-if-else">① if-else</a></li>
+            <li><a href="#-for">② for</a></li>
+            <li><a href="#-while">③ while</a></li>
+            <li><a href="#-case">④ case</a></li>
+            <li><a href="#-break">⑤ break</a></li>
+            <li><a href="#-continue">⑥ continue</a></li>
+            <li><a href="#-until">⑦ until</a></li>
+          </ul>
+        </li>
+        <li><a href="#9-函数">9. 函数</a></li>
+        <li><a href="#10-输入输出">10. 输入输出</a></li>
+        <li><a href="#11-文件包含">11. 文件包含</a></li>
+        <li><a href="#reference">reference:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h3 id="1-变量">1. 变量</h3>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -986,7 +1045,34 @@ $n。n 代表一个数字，1 为执行脚本的第一个参数，2 为执行脚
 <p>注：被包含的文件 test1.sh 不需要可执行权限。</p>
 </blockquote>
 <h3 id="reference">reference:</h3>
-<p>[1] <a href="http://www.runoob.com/linux/linux-shell.html"target="_blank" rel="external nofollow noopener noreferrer">http://www.runoob.com/linux/linux-shell.html</a></p></div><div id="comments"><div id="valine" class="comment"></div><noscript>
+<p>[1] <a href="http://www.runoob.com/linux/linux-shell.html"target="_blank" rel="external nofollow noopener noreferrer">http://www.runoob.com/linux/linux-shell.html</a></p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2018-09-08 11:48:24">更新于 2018-09-08&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/" data-title="shell速查表" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/shell/' class="post-tag">shell</a><a href='/tags/linux/' class="post-tag">linux</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" class="post-nav-item" rel="prev" title="nginx配置记录"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>nginx配置记录</a>
+      <a href="/%E7%BC%96%E7%A8%8B/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/" class="post-nav-item" rel="next" title="Docker 技术整理">Docker 技术整理<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

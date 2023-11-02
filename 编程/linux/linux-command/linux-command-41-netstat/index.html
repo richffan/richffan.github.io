@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/linux-command\/linux-command-41-netstat\/"
-    },"genre": "编程","keywords": "linux命令","wordcount":  2751 ,
+    },"genre": "posts","keywords": "linux命令","wordcount":  2751 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/linux-command\/linux-command-41-netstat\/","datePublished": "2017-01-10T09:54:16+00:00","dateModified": "2017-01-10T09:54:16+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,44 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/linux/linux-command/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">linux-command</a></li><li class="breadcrumb-item active" aria-current="page">每天一个linux命令（41）: netstat</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">每天一个linux命令（41）: netstat</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>　　netstat命令用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。netstat是在内核中访问网络及相关信息的程序，它能提供TCP连接，TCP和UDP监听，进程内存管理的相关报告。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>每天一个linux命令（41）: netstat</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2017-01-10 09:54:16"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-10">2017-01-10</time></span>&nbsp;<span title="更新于 2017-01-10 09:54:16"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-10">2017-01-10</time></span>&nbsp;<span title="2751 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-41-netstat/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（41）: netstat">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（41）: netstat">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-41-netstat/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#命令格式">命令格式</a></li>
+            <li><a href="#命令功能">命令功能</a></li>
+            <li><a href="#命令参数">命令参数</a></li>
+            <li><a href="#使用实例">使用实例</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>　　netstat命令用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。netstat是在内核中访问网络及相关信息的程序，它能提供TCP连接，TCP和UDP监听，进程内存管理的相关报告。</p>
 <!--more -->
 <p>　　如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP可以容许这些类型的错误，并能够自动重发数据报。但如果累计的出错情况数目占到所接收的IP数据报相当大的百分比，或者它的数目正迅速增加，那么你就应该使用netstat查一查为什么会出现这些情况了。</p>
 <h4 id="命令格式">命令格式</h4>
@@ -550,7 +581,34 @@
 <p><strong>说明：</strong>
 　　运行在端口4000的进程id为5362，再通过ps命令就可以找到具体的应用程序了</p>
 </blockquote>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2017-01-10 09:54:16">更新于 2017-01-10&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-41-netstat/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-41-netstat/" data-title="每天一个linux命令（41）: netstat" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/linux%E5%91%BD%E4%BB%A4/' class="post-tag">linux命令</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-40-traceroute/" class="post-nav-item" rel="prev" title="每天一个linux命令（40）: traceroute"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>每天一个linux命令（40）: traceroute</a>
+      <a href="/%E7%BC%96%E7%A8%8B/linux/linux-command/linux-command-42-ss/" class="post-nav-item" rel="next" title="每天一个linux命令（42）: ss">每天一个linux命令（42）: ss<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

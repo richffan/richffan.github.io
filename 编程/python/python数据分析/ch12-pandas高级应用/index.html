@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8\/"
-    },"genre": "编程","keywords": "python","wordcount":  6003 ,
+    },"genre": "posts","keywords": "python","wordcount":  6003 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,54 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十二章 Pandas 高级应用</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">第十二章 Pandas 高级应用</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>前面的章节关注于不同类型的数据规整流程和NumPy、pandas与其它库的特点。随着时间的发展，pandas发展出了更多适合高级用户的功能。本章就要深入学习pandas的高级功能。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十二章 Pandas 高级应用</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="6003 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6100 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 12 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="leancloud_visitors comment-visitors" data-flag-title="第十二章 Pandas 高级应用">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="第十二章 Pandas 高级应用">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#121-分类数据">12.1 分类数据</a>
+      <ul>
+        <li><a href="#1211-背景和目的">12.1.1 背景和目的</a></li>
+        <li><a href="#1212-pandas的分类类型">12.1.2 pandas的分类类型</a></li>
+        <li><a href="#1213-用分类进行计算">12.1.3 用分类进行计算</a></li>
+        <li><a href="#1214-用分类提高性能">12.1.4 用分类提高性能</a></li>
+        <li><a href="#1215-分类方法">12.1.5 分类方法</a></li>
+        <li><a href="#1216-为建模创建虚拟变量">12.1.6 为建模创建虚拟变量</a></li>
+      </ul>
+    </li>
+    <li><a href="#122-groupby高级应用">12.2 GroupBy高级应用</a>
+      <ul>
+        <li><a href="#1221-分组转换和解封groupby">12.2.1 分组转换和“解封”GroupBy</a></li>
+        <li><a href="#1222-分组的时间重采样">12.2.2 分组的时间重采样</a></li>
+      </ul>
+    </li>
+    <li><a href="#123-链式编程技术">12.3 链式编程技术</a>
+      <ul>
+        <li><a href="#1231-管道方法">12.3.1 管道方法</a></li>
+      </ul>
+    </li>
+    <li><a href="#124-总结">12.4 总结</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>前面的章节关注于不同类型的数据规整流程和NumPy、pandas与其它库的特点。随着时间的发展，pandas发展出了更多适合高级用户的功能。本章就要深入学习pandas的高级功能。</p>
 <h2 id="121-分类数据">12.1 分类数据</h2>
 <p>这一节介绍的是pandas的分类类型。我会向你展示通过使用它，提高性能和内存的使用率。我还会介绍一些在统计和机器学习中使用分类数据的工具。</p>
 <h3 id="1211-背景和目的">12.1.1 背景和目的</h3>
@@ -1653,7 +1694,34 @@
 </div><h2 id="124-总结">12.4 总结</h2>
 <p>和其它许多开源项目一样，pandas仍然在不断的变化和进步中。和本书中其它地方一样，这里的重点是放在接下来几年不会发生什么改变且稳定的功能。</p>
 <p>为了深入学习pandas的知识，我建议你学习官方文档，并阅读开发团队发布的文档更新。我们还邀请你加入pandas的开发工作：修改bug、创建新功能、完善文档。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" data-title="第十二章 Pandas 高级应用" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="post-nav-item" rel="prev" title="第十三章 Python 建模库介绍"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第十三章 Python 建模库介绍</a>
+      <a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/" class="post-nav-item" rel="next" title="第三章 Python 的数据结构、函数和文件">第三章 Python 的数据结构、函数和文件<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

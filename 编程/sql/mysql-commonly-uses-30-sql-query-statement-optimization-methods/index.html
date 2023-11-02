@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/sql\/mysql-commonly-uses-30-sql-query-statement-optimization-methods\/"
-    },"genre": "编程","keywords": "SQL","wordcount":  2981 ,
+    },"genre": "posts","keywords": "SQL","wordcount":  2981 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/sql\/mysql-commonly-uses-30-sql-query-statement-optimization-methods\/","datePublished": "2023-08-01T00:00:00+00:00","dateModified": "2023-08-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,104 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/sql/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">SQL</a></li><li class="breadcrumb-item active" aria-current="page">MySQL常用30种SQL查询语句优化方法</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">MySQL常用30种SQL查询语句优化方法</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><h2 id="引言">引言</h2>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>MySQL常用30种SQL查询语句优化方法</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="2981 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="leancloud_visitors comment-visitors" data-flag-title="MySQL常用30种SQL查询语句优化方法">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="MySQL常用30种SQL查询语句优化方法">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#引言">引言</a></li>
+    <li><a href="#第一部分基础优化方法">第一部分：基础优化方法</a>
+      <ul>
+        <li><a href="#1使用索引">1.使用索引</a></li>
+        <li><a href="#2避免使用select-">2.避免使用SELECT *</a></li>
+        <li><a href="#3使用explain分析查询计划">3.使用EXPLAIN分析查询计划</a></li>
+      </ul>
+    </li>
+    <li><a href="#第二部分优化查询条件">第二部分：优化查询条件</a>
+      <ul>
+        <li><a href="#4使用where子句过滤数据">4.使用WHERE子句过滤数据</a></li>
+        <li><a href="#5使用索引覆盖查询">5.使用索引覆盖查询</a></li>
+        <li><a href="#6避免在where子句中使用函数">6.避免在WHERE子句中使用函数</a></li>
+        <li><a href="#7使用合适的数据类型">7.使用合适的数据类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#第三部分连接查询优化">第三部分：连接查询优化</a>
+      <ul>
+        <li><a href="#8使用inner-join代替where子句连接">8.使用INNER JOIN代替WHERE子句连接</a></li>
+        <li><a href="#9使用join-on代替where子句过滤连接">9.使用JOIN ON代替WHERE子句过滤连接</a></li>
+        <li><a href="#10使用合适的连接类型">10.使用合适的连接类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#第四部分子查询优化">第四部分：子查询优化</a>
+      <ul>
+        <li><a href="#11使用exists代替in">11.使用EXISTS代替IN</a></li>
+        <li><a href="#12使用join代替子查询">12.使用JOIN代替子查询</a></li>
+      </ul>
+    </li>
+    <li><a href="#第五部分limit优化">第五部分：LIMIT优化</a>
+      <ul>
+        <li><a href="#13使用limit限制返回的记录数">13.使用LIMIT限制返回的记录数</a></li>
+        <li><a href="#14使用分页查询">14.使用分页查询</a></li>
+      </ul>
+    </li>
+    <li><a href="#第六部分排序优化">第六部分：排序优化</a>
+      <ul>
+        <li><a href="#15使用合适的排序字段">15.使用合适的排序字段</a></li>
+        <li><a href="#16使用覆盖索引减少排序">16.使用覆盖索引减少排序</a></li>
+        <li><a href="#17使用desc进行降序排序">17.使用DESC进行降序排序</a></li>
+      </ul>
+    </li>
+    <li><a href="#第七部分避免使用通配符">第七部分：避免使用通配符</a>
+      <ul>
+        <li><a href="#18避免使用通配符">18.避免使用%通配符</a></li>
+        <li><a href="#19使用前缀索引">19.使用前缀索引</a></li>
+      </ul>
+    </li>
+    <li><a href="#第八部分联合查询优化">第八部分：联合查询优化</a>
+      <ul>
+        <li><a href="#20使用union-all代替union">20.使用UNION ALL代替UNION</a></li>
+        <li><a href="#21使用exists代替in和union">21.使用EXISTS代替IN和UNION</a></li>
+      </ul>
+    </li>
+    <li><a href="#第九部分使用子查询优化">第九部分：使用子查询优化</a>
+      <ul>
+        <li><a href="#22使用内连接代替子查询">22.使用内连接代替子查询</a></li>
+        <li><a href="#23使用exists代替in">23.使用EXISTS代替IN</a></li>
+      </ul>
+    </li>
+    <li><a href="#第十部分数据表设计优化">第十部分：数据表设计优化</a>
+      <ul>
+        <li><a href="#24使用合适的数据类型">24.使用合适的数据类型</a></li>
+        <li><a href="#25垂直拆分表">25.垂直拆分表</a></li>
+        <li><a href="#26使用连接池">26.使用连接池</a></li>
+        <li><a href="#27合理配置缓冲区">27.合理配置缓冲区</a></li>
+        <li><a href="#28使用延迟关联">28.使用延迟关联</a></li>
+        <li><a href="#29避免使用临时表">29.避免使用临时表</a></li>
+        <li><a href="#30定期优化数据表">30.定期优化数据表</a></li>
+      </ul>
+    </li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="引言">引言</h2>
 <p>在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查询效率，为用户提供更好的用户体验。本文将介绍常用的30种MySQL SQL查询优化方法，并通过实际案例演示它们的应用。</p>
 <h2 id="第一部分基础优化方法">第一部分：基础优化方法</h2>
 <h3 id="1使用索引">1.使用索引</h3>
@@ -691,7 +782,34 @@
 <p>定期对数据表进行优化，包括重新建立索引、压缩表等操作，可以提高数据库的性能。</p>
 <h2 id="结语">结语</h2>
 <p>本文介绍了常用的30种MySQL SQL查询优化方法，并通过实际案例演示了它们的应用。优化SQL查询是提高数据库性能和响应速度的关键，通过合理优化SQL查询可以减少数据库的负载，提高查询效率。读者可以根据自己的实际情况和业务需求，选择合适的优化方法，提高数据库的性能和可用性。同时，我们也要不断学习和实践，在数据库领域不断提高自己的知识水平和技术能力，成为一名优秀的数据库工程师。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-08-01 00:00:00">更新于 2023-08-01&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" data-title="MySQL常用30种SQL查询语句优化方法" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/sql/' class="post-tag">SQL</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/sql/sql-daily-question-20230814/" class="post-nav-item" rel="prev" title="SQL每日一题(20230814)"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>SQL每日一题(20230814)</a>
+      <a href="/%E7%BC%96%E7%A8%8B/sql/live_max_online/" class="post-nav-item" rel="next" title="live_max_online">live_max_online<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

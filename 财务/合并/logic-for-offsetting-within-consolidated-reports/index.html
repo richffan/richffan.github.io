@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E5%90%88%E5%B9%B6\/logic-for-offsetting-within-consolidated-reports\/"
-    },"genre": "财务","keywords": "合并","wordcount":  2886 ,
+    },"genre": "posts","keywords": "合并","wordcount":  2886 ,
     "url": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E5%90%88%E5%B9%B6\/logic-for-offsetting-within-consolidated-reports\/","datePublished": "2023-08-01T00:00:00+00:00","dateModified": "2023-08-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,22 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">财务</a></li><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">合并</a></li><li class="breadcrumb-item active" aria-current="page">合并报表内部抵消的逻辑</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">合并报表内部抵消的逻辑</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>在这个计算机时代，合并报表编制依然还是纯手工打造。既然是纯手工打造，内部交易抵消（非权益类）自然也是经常容易出现错误的地方，尤其对于初次做内部抵消的。下面以存货为例。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>合并报表内部抵消的逻辑</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E8%AE%A1/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审计</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="2886 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-offsetting-within-consolidated-reports/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表内部抵消的逻辑">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="合并报表内部抵消的逻辑">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-offsetting-within-consolidated-reports/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="content" id="content"><p>在这个计算机时代，合并报表编制依然还是纯手工打造。既然是纯手工打造，内部交易抵消（非权益类）自然也是经常容易出现错误的地方，尤其对于初次做内部抵消的。下面以存货为例。</p>
 <p>1， 先摆一段《企业会计准则讲解2010》的话吧【为了增加字数，完全可以忽略，哈哈，以斜体显示为了区分其他都是我自己撰写的】：</p>
 <p><em>存货价值中包含的未实现内部销售损益是由于企业集团内部商品购销、劳务提供活动所引起的。在内部购销活动中，销售企业将集团内部销售作为收入确认并计算销售利润。而购买企业则是以支付购货的价款作为其成本入账；在本期内未实现对外销售而形成期末存货时，其存货价值中也相应地包括两部分内容：一部分为真正的存货成本</em> <em>（即销售企业销售该商品的成本）</em> <em>；另一部分为销售企业的销售毛利</em> <em>（即其销售收人减去销售成本的差额）</em> <em>。对于期末存货价值中包括的这部分销售毛利，从企业集团整体来看，并不是真正实现的利润。因为从整个企业集团来看，集团内部企业之间的商品购销活动实际上相当于企业内部物资调拨活动，既不会实现利润，也不会增加商品的价值。正是从这一意义上来说，将期末存货价值中包括的这部分销售企业作为利润确认的部分，称之为未实现内部销售损益。因此，在编制合并资产负债表时，应当将存货价值中包含的未实现内部销售损益予以抵销。编制抵销分录时，按照集团内部销售企业销售该商品的销售收人，借记“营业收入”项目，按照销售企业销售该商品的销售成本，贷记“营业成本”项目，按照当期期末存货价值中包含的未实现内部销售损益的金额，贷记“存货”项目。</em></p>
 <p>_2._<em>连续编制合并财务报表时内部购进商品的抵销处理</em></p>
@@ -322,7 +331,34 @@
 <p>原理其实很简单，即内部销售形成的虚增的毛利要么留存在没有卖出的购买方的资产负债表里面【B公司存货】，要么留存在购买方销售出去形成的利润表中，即B公司营业成本。所以，在假设A公司对不外销售的情况下，整个交易过程中的毛利率应该为：</p>
 <p>（B公司对外营业收入-（B公司对外营业成本-内部交易虚增的营业成本）-B公司从A公司购买的未出售的存货留存的毛利）/B公司对应营业收入，在整体匡算合并抵消之后的毛利率是否准确时，可以进一步简化：即**（<strong><strong>B</strong></strong>公司对外营业收入-B<strong><strong>公司对外营业成本*****（1-A</strong></strong>公司内部销售毛利率）-B<strong><strong>公司从A</strong></strong>公司购买的未出售的存货<em>A</em><em><strong>公司内部销售毛利率）/B</strong></em>*公司对应营业收入。**</p>
 <p>备注：比如a公司销售给b公司100块，成本80元，毛利率20%（1-80/100），那么b公司对外销售出去成本是100，实际应该是80，即100*（1-内部销售毛利率）</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-08-01 00:00:00">更新于 2023-08-01&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-offsetting-within-consolidated-reports/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-offsetting-within-consolidated-reports/" data-title="合并报表内部抵消的逻辑" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E5%90%88%E5%B9%B6/' class="post-tag">合并</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-consolidating-equity-offsets-in-the-statements/" class="post-nav-item" rel="prev" title="合并报表权益抵消的逻辑"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>合并报表权益抵消的逻辑</a>
+      <a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/first-chart/" class="post-nav-item" rel="next" title="合并报表讲义-第一章">合并报表讲义-第一章<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E4%BC%9A%E8%AE%A1\/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B\/"
-    },"genre": "财务","keywords": "现金流","wordcount":  825 ,
+    },"genre": "posts","keywords": "现金流","wordcount":  825 ,
     "url": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E4%BC%9A%E8%AE%A1\/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B\/","datePublished": "2023-08-15T11:12:00+00:00","dateModified": "2023-08-15T11:12:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,45 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">财务</a></li><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">会计</a></li><li class="breadcrumb-item active" aria-current="page">现金流量附表原理解析（四）</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">现金流量附表原理解析（四）</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>今天主要整理一下现金流量附表中每一个项目的取数逻辑。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>现金流量附表原理解析（四）</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E6%B3%A8%E4%BC%9A/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 注会</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-08-15 11:12:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="更新于 2023-08-15 11:12:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="825 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/" class="leancloud_visitors comment-visitors" data-flag-title="现金流量附表原理解析（四）">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="现金流量附表原理解析（四）">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1净利润">1、净利润</a></li>
+    <li><a href="#2资产减值准备">2、资产减值准备</a></li>
+    <li><a href="#3信用减值准备">3、信用减值准备</a></li>
+    <li><a href="#4固定资产折旧无形资产摊销">4、固定资产折旧、无形资产摊销</a></li>
+    <li><a href="#5处置固定资产无形资产和其他长期资产的损失减收益">5、处置固定资产、无形资产和其他长期资产的损失(减：收益)</a></li>
+    <li><a href="#6固定资产报废损失">6、固定资产报废损失</a></li>
+    <li><a href="#7财务费用">7、财务费用</a></li>
+    <li><a href="#8投资损失减收益">8、投资损失(减：收益)</a></li>
+    <li><a href="#9存货的减少减增加">9、存货的减少(减：增加)</a></li>
+    <li><a href="#10经营性应收项目的减少减增加">10、经营性应收项目的减少(减：增加)</a></li>
+    <li><a href="#11经营性应付项目的增加减减少">11、经营性应付项目的增加(减：减少)</a></li>
+    <li><a href="#12递延所得税资产的减少">12、递延所得税资产的减少</a></li>
+    <li><a href="#13递延所得税负债的增加">13、递延所得税负债的增加</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>今天主要整理一下现金流量附表中每一个项目的取数逻辑。</p>
 <h2 id="1净利润">1、净利润</h2>
 <p>该项目根据利润表净利润数填列，与利润表的净利润数据一致。</p>
 <h2 id="2资产减值准备">2、资产减值准备</h2>
@@ -188,7 +220,34 @@
 <p>期初递延所得税资产-期末递延所得税资产</p>
 <h2 id="13递延所得税负债的增加">13、递延所得税负债的增加</h2>
 <p>期末递延所得税负债-期初递延所得税负债</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-08-15 11:12:00">更新于 2023-08-15&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/" data-title="现金流量附表原理解析（四）" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E7%8E%B0%E9%87%91%E6%B5%81/' class="post-tag">现金流</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E9%95%BF%E6%9C%9F%E6%8C%82%E8%B4%A6%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%A6%82%E4%BD%95%E5%B9%B3%E8%B4%A6/" class="post-nav-item" rel="prev" title="长期挂账的其他应收款如何平账？"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>长期挂账的其他应收款如何平账？</a>
+      <a href="/%E8%B4%A2%E5%8A%A1/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E7%BC%96%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%80/" class="post-nav-item" rel="next" title="现金流量表附表编制原理解析（一）">现金流量表附表编制原理解析（一）<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

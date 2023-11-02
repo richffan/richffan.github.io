@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E6%8A%95%E8%A1%8C\/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0\/059-accounts-payable-audit-essentials\/"
-    },"genre": "投行","keywords": "IPO审计手札","wordcount":  1894 ,
+    },"genre": "posts","keywords": "IPO审计手札","wordcount":  1894 ,
     "url": "http:\/\/richfan.site\/%E6%8A%95%E8%A1%8C\/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0\/059-accounts-payable-audit-essentials\/","datePublished": "2023-08-01T00:00:00+00:00","dateModified": "2023-08-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,38 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E6%8A%95%E8%A1%8C/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">投行</a></li><li class="breadcrumb-item"><a href="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">IPO审计札记</a></li><li class="breadcrumb-item active" aria-current="page">059-应付账款审计要点</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">059-应付账款审计要点</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>预付账款与应付账款是一对（出双入对），这篇聊聊应付账款的程序执行，下篇聊聊应付账款的本质。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>059-应付账款审计要点</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E6%8A%95%E8%A1%8C/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 投行</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="1894 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/059-accounts-payable-audit-essentials/" class="leancloud_visitors comment-visitors" data-flag-title="059-应付账款审计要点">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="059-应付账款审计要点">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/059-accounts-payable-audit-essentials/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一步取数">第一步，取数</a></li>
+    <li><a href="#第二步获取或编制明细表">第二步，获取或编制明细表。</a></li>
+    <li><a href="#第三步依旧是往来三个铁哥们发函替代测试期后检查">第三步，依旧是往来三个铁哥们：发函、替代测试、期后检查。</a></li>
+    <li><a href="#第四步供应商核查">第四步，供应商核查。</a></li>
+    <li><a href="#第五步贷方发生额勾稽">第五步，贷方发生额勾稽。</a></li>
+    <li><a href="#第六步截止测试">第六步，截止测试。</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>预付账款与应付账款是一对（出双入对），这篇聊聊应付账款的程序执行，下篇聊聊应付账款的本质。</p>
 <p>开底稿，做什么程序，怎样做程序，怎样做记录，白纸如何上手。</p>
 <p>实务中，没有人手把手教是很正常的，依据以前年度底稿、依据其他公司底稿依葫芦画瓢成为常态。总有些隐秘的葫芦不好画，就得祭出第二招无所不问其极（询问），询问同事、外勤主管（大组长、小组长）、项目经理、甚至是质检（内核）老师。</p>
 <p>询问是极为简单粗暴的手段，也是注册会计师的七种武器之一。</p>
@@ -194,7 +219,34 @@
 <p>考虑税率后(阿西，可能有好几种税率)，还存在一定差异也是正常的，毕竟可能存在直接付现，毕竟存在偷懒神器额小不究。</p>
 <h2 id="第六步截止测试">第六步，截止测试。</h2>
 <p>结合外购存货的截止测试，获取资产负债表日后入账的应付账款对应的采购合同、采购发票、入库单、验收单（这些单据是不是很眼熟）等资料，其实做法和第三步替代测试没差，无非是重点看下时间罢了，依旧是熟悉的体力活趴。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-08-01 00:00:00">更新于 2023-08-01&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/059-accounts-payable-audit-essentials/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/059-accounts-payable-audit-essentials/" data-title="059-应付账款审计要点" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/ipo%E5%AE%A1%E8%AE%A1%E6%89%8B%E6%9C%AD/' class="post-tag">IPO审计手札</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/060-ipo-casepurchase-rebate/" class="post-nav-item" rel="prev" title="060-IPO 案例：采购返利"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>060-IPO 案例：采购返利</a>
+      <a href="/%E6%8A%95%E8%A1%8C/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/058-notes-payable-audit-essentials/" class="post-nav-item" rel="next" title="058-应付票据审计要点">058-应付票据审计要点<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

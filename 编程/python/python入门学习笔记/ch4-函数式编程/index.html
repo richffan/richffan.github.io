@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B\/"
-    },"genre": "编程","keywords": "python","wordcount":  12044 ,
+    },"genre": "posts","keywords": "python","wordcount":  12044 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,85 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python入门学习笔记</a></li><li class="breadcrumb-item active" aria-current="page">第四章 函数式编程</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">第四章 函数式编程</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>函数是 Python 内建支持的一种封装，我们通过把大段代码拆成函数，通过一层一层的函数调用，就可以把复杂任务分解成简单的任务，这种分解可以称之为面向过程的程序设计。函数就是面向过程的程序设计的基本单元。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第四章 函数式编程</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="12044 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 12100 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 25 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第四章 函数式编程">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="第四章 函数式编程">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#41-什么是函数式编程">4.1 什么是函数式编程</a>
+      <ul>
+        <li><a href="#411-定义">4.1.1 定义</a></li>
+        <li><a href="#412-特点">4.1.2 特点</a>
+          <ul>
+            <li><a href="#-函数是第一等公民">① 函数是&quot;第一等公民&rdquo;</a></li>
+            <li><a href="#-只用表达式不用语句">② 只用&quot;表达式&rdquo;，不用&quot;语句&quot;</a></li>
+            <li><a href="#-没有副作用">③ 没有&quot;副作用&rdquo;</a></li>
+            <li><a href="#-不修改状态">④ 不修改状态</a></li>
+            <li><a href="#-引用透明">⑤ 引用透明</a></li>
+          </ul>
+        </li>
+        <li><a href="#413-好处">4.1.3 好处</a>
+          <ul>
+            <li><a href="#-代码简洁开发快速">① 代码简洁，开发快速</a></li>
+            <li><a href="#-接近自然语言易于理解">② 接近自然语言，易于理解</a></li>
+            <li><a href="#-更方便的代码管理">③ 更方便的代码管理</a></li>
+            <li><a href="#-易于并发编程">④ 易于&quot;并发编程&quot;</a></li>
+            <li><a href="#-代码的热升级">⑤ 代码的热升级</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#42-高阶函数">4.2 高阶函数</a>
+      <ul>
+        <li><a href="#421-mapreduce">4.2.1 map/reduce</a>
+          <ul>
+            <li><a href="#-map">① map</a></li>
+            <li><a href="#-reduce">② reduce</a></li>
+          </ul>
+        </li>
+        <li><a href="#422-filter">4.2.2 filter</a>
+          <ul>
+            <li><a href="#-用-filter-求素数">① 用 filter 求素数</a></li>
+          </ul>
+        </li>
+        <li><a href="#423-sorted">4.2.3 sorted</a>
+          <ul>
+            <li><a href="#-排序算法">① 排序算法</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#43-返回函数">4.3 返回函数</a>
+      <ul>
+        <li><a href="#431-函数作为返回值">4.3.1 函数作为返回值</a></li>
+        <li><a href="#432-闭包">4.3.2 闭包</a></li>
+      </ul>
+    </li>
+    <li><a href="#44-匿名函数">4.4 匿名函数</a></li>
+    <li><a href="#45-装饰器">4.5 装饰器</a></li>
+    <li><a href="#46-偏函数">4.6 偏函数</a></li>
+    <li><a href="#47-参考资料">4.7 参考资料</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>函数是 Python 内建支持的一种封装，我们通过把大段代码拆成函数，通过一层一层的函数调用，就可以把复杂任务分解成简单的任务，这种分解可以称之为面向过程的程序设计。函数就是面向过程的程序设计的基本单元。</p>
 <p>而函数式编程（请注意多了一个“式”字）—— Functional Programming，虽然也可以归结到面向过程的程序设计，但其思想更接近数学计算。</p>
 <p>我们首先要搞明白计算机（Computer）和计算（Compute）的概念。</p>
 <p>在计算机的层次上，CPU 执行的是加减乘除的<code>指令代码</code>，以及各种条件判断和跳转指令，所以，汇编语言是最贴近计算机的语言。</p>
@@ -1792,7 +1864,34 @@
 <li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017328525009056"target="_blank" rel="external nofollow noopener noreferrer">廖雪峰 - Python 3.x - 函数式编程</a></li>
 <li><a href="http://www.ruanyifeng.com/blog/2012/04/functional_programming.html"target="_blank" rel="external nofollow noopener noreferrer">阮一峰 - 函数式编程初探</a></li>
 </ul>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" data-title="第四章 函数式编程" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/" class="post-nav-item" rel="prev" title="第五章 模块"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第五章 模块</a>
+      <a href="/%E7%BC%96%E7%A8%8B/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/" class="post-nav-item" rel="next" title="第十章 进程和线程">第十章 进程和线程<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

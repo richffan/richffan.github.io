@@ -41,7 +41,7 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus\/"
-    },"genre": "编程","keywords": "maven, nexus, java","wordcount":  813 ,
+    },"genre": "posts","keywords": "maven, nexus, java","wordcount":  813 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus\/","datePublished": "2017-09-06T23:01:31+00:00","dateModified": "2017-09-06T23:01:31+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -162,13 +162,57 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item active" aria-current="page">搭建Maven私服-Nexus</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">搭建Maven私服-Nexus</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><blockquote>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>搭建Maven私服-Nexus</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2017-09-06 23:01:31"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span title="更新于 2017-09-06 23:01:31"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-09-06">2017-09-06</time></span>&nbsp;<span title="813 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" class="leancloud_visitors comment-visitors" data-flag-title="搭建Maven私服-Nexus">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="搭建Maven私服-Nexus">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#作者环境">作者环境</a></li>
+        <li><a href="#安装java">安装Java</a></li>
+        <li><a href="#安装nexus">安装Nexus</a>
+          <ul>
+            <li><a href="#启动nexus">启动Nexus</a></li>
+            <li><a href="#验证">验证</a></li>
+          </ul>
+        </li>
+        <li><a href="#发布soul项目到私服">发布soul项目到私服</a>
+          <ul>
+            <li><a href="#创建仓库">创建仓库</a></li>
+            <li><a href="#pom中添加部署配置">pom中添加部署配置</a></li>
+            <li><a href="#在maven的-settingsxml-中配置">在maven的 settings.xml 中配置</a></li>
+            <li><a href="#执行maven命令部署项目到私服上">执行maven命令部署项目到私服上</a></li>
+          </ul>
+        </li>
+        <li><a href="#从私服拉去依赖库">从私服拉去依赖库</a>
+          <ul>
+            <li><a href="#pom-文件中添加如下配置">pom 文件中添加如下配置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><blockquote>
 <p>Maven 私服，可以代理远程仓库和部署自己或第三方构件。本文介绍使用最广泛搭建 Maven 私服的工具： Sonatype Nexus。</p>
 </blockquote>
 <h3 id="作者环境">作者环境</h3>
@@ -365,7 +409,34 @@ Maven 私服，可以代理远程仓库和部署自己或第三方构件。本�
 <li>ssm项目就可以引用到soul代码
 <img loading="lazy" src="http://img.saodiyang.com/FvVCRBtMwy5ckbase3E3wM9JUXp6.png" srcset="http://img.saodiyang.com/FvVCRBtMwy5ckbase3E3wM9JUXp6.png, http://img.saodiyang.com/FvVCRBtMwy5ckbase3E3wM9JUXp6.png 1.5x, http://img.saodiyang.com/FvVCRBtMwy5ckbase3E3wM9JUXp6.png 2x" sizes="auto" data-title="在代码中就可以直接引用到部署到私服的soul项目代码" data-alt="在代码中就可以直接引用到部署到私服的soul项目代码" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></li>
 </ol>
-<p>本文结束。</p></div><div id="comments"><div id="valine" class="comment"></div><noscript>
+<p>本文结束。</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2017-09-06 23:01:31">更新于 2017-09-06&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/" data-title="搭建Maven私服-Nexus" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/maven/' class="post-tag">maven</a><a href='/tags/nexus/' class="post-tag">nexus</a><a href='/tags/java/' class="post-tag">java</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/" class="post-nav-item" rel="prev" title="CentOS7安装配置匿名访问Samba"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>CentOS7安装配置匿名访问Samba</a>
+      <a href="/%E7%BC%96%E7%A8%8B/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" class="post-nav-item" rel="next" title="600 条最强 Linux 命令总结">600 条最强 Linux 命令总结<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

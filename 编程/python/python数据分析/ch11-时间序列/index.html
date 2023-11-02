@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97\/"
-    },"genre": "编程","keywords": "python","wordcount":  15148 ,
+    },"genre": "posts","keywords": "python","wordcount":  15148 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,81 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十一章 时间序列</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">第十一章 时间序列</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点观察或测量到的任何事物都可以形成一段时间序列。很多时间序列是<code>固定频率</code>的，也就是说，数据点是根据某种规律定期出现的（比如每15秒、每5分钟、每月出现一次）。时间序列也可以是不定期的，没有固定的时间单位或单位之间的偏移量。时间序列数据的意义取决于具体的应用场景，主要有以下几种：</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十一章 时间序列</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="15148 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 15200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 31 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="leancloud_visitors comment-visitors" data-flag-title="第十一章 时间序列">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="第十一章 时间序列">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#111-日期和时间数据类型及工具">11.1 日期和时间数据类型及工具</a>
+      <ul>
+        <li><a href="#1111-字符串和datetime的相互转换">11.1.1 字符串和datetime的相互转换</a></li>
+      </ul>
+    </li>
+    <li><a href="#112-时间序列基础">11.2 时间序列基础</a>
+      <ul>
+        <li><a href="#1121-索引选取子集构造">11.2.1 索引、选取、子集构造</a></li>
+        <li><a href="#1122-带有重复索引的时间序列">11.2.2 带有重复索引的时间序列</a></li>
+      </ul>
+    </li>
+    <li><a href="#113-日期的范围频率以及移动">11.3 日期的范围、频率以及移动</a>
+      <ul>
+        <li><a href="#1131-生成日期范围">11.3.1 生成日期范围</a></li>
+        <li><a href="#1132-频率和日期偏移量">11.3.2 频率和日期偏移量</a></li>
+        <li><a href="#1133-wom日期">11.3.3 WOM日期</a></li>
+        <li><a href="#1134-移动超前和滞后数据">11.3.4 移动（超前和滞后）数据</a></li>
+        <li><a href="#1135-通过偏移量对日期进行位移">11.3.5 通过偏移量对日期进行位移</a></li>
+      </ul>
+    </li>
+    <li><a href="#114-时区处理">11.4 时区处理</a>
+      <ul>
+        <li><a href="#1141-时区本地化和转换">11.4.1 时区本地化和转换</a></li>
+        <li><a href="#1142-操作时区意识型timestamp对象">11.4.2 操作时区意识型Timestamp对象</a></li>
+        <li><a href="#1143-不同时区之间的运算">11.4.3 不同时区之间的运算</a></li>
+      </ul>
+    </li>
+    <li><a href="#115-时期及其算术运算">11.5 时期及其算术运算</a>
+      <ul>
+        <li><a href="#1151-时期的频率转换">11.5.1 时期的频率转换</a></li>
+        <li><a href="#1152-按季度计算的时期频率">11.5.2 按季度计算的时期频率</a></li>
+        <li><a href="#1153-将timestamp转换为period及其反向过程">11.5.3 将Timestamp转换为Period（及其反向过程）</a></li>
+        <li><a href="#1154-通过数组创建periodindex">11.5.4 通过数组创建PeriodIndex</a></li>
+      </ul>
+    </li>
+    <li><a href="#116-重采样及频率转换">11.6 重采样及频率转换</a>
+      <ul>
+        <li><a href="#1161-降采样">11.6.1 降采样</a></li>
+        <li><a href="#1162-通过时期进行重采样">11.6.2 通过时期进行重采样</a></li>
+      </ul>
+    </li>
+    <li><a href="#117-移动窗口函数">11.7 移动窗口函数</a>
+      <ul>
+        <li><a href="#1171-指数加权函数">11.7.1 指数加权函数</a></li>
+        <li><a href="#1172-二元移动窗口函数">11.7.2 二元移动窗口函数</a></li>
+        <li><a href="#1173-用户定义的移动窗口函数">11.7.3 用户定义的移动窗口函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#118-总结">11.8 总结</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点观察或测量到的任何事物都可以形成一段时间序列。很多时间序列是<code>固定频率</code>的，也就是说，数据点是根据某种规律定期出现的（比如每15秒、每5分钟、每月出现一次）。时间序列也可以是不定期的，没有固定的时间单位或单位之间的偏移量。时间序列数据的意义取决于具体的应用场景，主要有以下几种：</p>
 <ul>
 <li>时间戳（timestamp），特定的时刻。</li>
 <li>固定时期（period），如2007年1月或2010年全年。</li>
@@ -3382,7 +3450,34 @@
 <h2 id="118-总结">11.8 总结</h2>
 <p>与前面章节接触的数据相比，时间序列数据要求不同类型的分析和数据转换工具。</p>
 <p>在接下来的章节中，我们将学习一些高级的pandas方法和如何开始使用<code>建模库statsmodels和scikit-learn</code>。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" data-title="第十一章 时间序列" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" class="post-nav-item" rel="prev" title="第十章 数据聚合与分组运算"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第十章 数据聚合与分组运算</a>
+      <a href="/%E7%BC%96%E7%A8%8B/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="post-nav-item" rel="next" title="第十四章 数据分析案例">第十四章 数据分析案例<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3\/"
-    },"genre": "编程","keywords": "docker","wordcount":  7258 ,
+    },"genre": "posts","keywords": "docker","wordcount":  7258 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/linux\/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3\/","datePublished": "2017-05-22T19:11:42+00:00","dateModified": "2017-05-22T19:11:42+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,51 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item active" aria-current="page">Dockerfile指令详解</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Dockerfile指令详解</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p><code>Dockerfile</code> 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Dockerfile指令详解</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2017-05-22 19:11:42"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-22">2017-05-22</time></span>&nbsp;<span title="更新于 2017-05-22 19:11:42"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-22">2017-05-22</time></span>&nbsp;<span title="7258 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="leancloud_visitors comment-visitors" data-flag-title="Dockerfile指令详解">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="Dockerfile指令详解">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#构建镜像">构建镜像</a></li>
+        <li><a href="#run-执行命令">RUN 执行命令</a></li>
+        <li><a href="#copy-复制文件">COPY 复制文件</a></li>
+        <li><a href="#add更高级的复制文件">ADD更高级的复制文件</a></li>
+        <li><a href="#cmd-容器启动命令">CMD 容器启动命令</a></li>
+        <li><a href="#entrypoint-入口点">ENTRYPOINT 入口点</a></li>
+        <li><a href="#env-设置环境变量">ENV 设置环境变量</a></li>
+        <li><a href="#arg-构建参数">ARG 构建参数</a></li>
+        <li><a href="#volume-定义匿名卷">VOLUME 定义匿名卷</a></li>
+        <li><a href="#expose-声明端口">EXPOSE 声明端口</a></li>
+        <li><a href="#workdir-指定工作目录">WORKDIR 指定工作目录</a></li>
+        <li><a href="#user-指定当前用户">USER 指定当前用户</a></li>
+        <li><a href="#healthcheck-健康检查">HEALTHCHECK 健康检查</a></li>
+        <li><a href="#onbuild-为他人做嫁衣裳">ONBUILD 为他人做嫁衣裳</a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p><code>Dockerfile</code> 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。</p>
 <h3 id="构建镜像">构建镜像</h3>
 <p>命令格式：</p>
 <div class="highlight" id="id-1"><div class="chroma">
@@ -654,7 +692,34 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 <h3 id="reference">Reference</h3>
 <p>Docker&ndash;从入门到实践: <a href="https://yeasy.gitbooks.io/docker_practice/content/"target="_blank" rel="external nofollow noopener noreferrer">https://yeasy.gitbooks.io/docker_practice/content/</a>
 Dockerfie 官方文档：https://docs.docker.com/engine/reference/builder/
-Dockerfile 最佳实践文档：https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/</p></div><div id="comments"><div id="valine" class="comment"></div><noscript>
+Dockerfile 最佳实践文档：https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2017-05-22 19:11:42">更新于 2017-05-22&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" data-title="Dockerfile指令详解" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/docker/' class="post-tag">docker</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/linux/docker%E9%95%9C%E5%83%8F/" class="post-nav-item" rel="prev" title="docker镜像"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>docker镜像</a>
+      <a href="/%E7%BC%96%E7%A8%8B/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/" class="post-nav-item" rel="next" title="CentOS修改DNS/GW/IP">CentOS修改DNS/GW/IP<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84\/"
-    },"genre": "编程","keywords": "Golang","wordcount":  1841 ,
+    },"genre": "posts","keywords": "Golang","wordcount":  1841 ,
     "url": "http:\/\/richfan.site\/%E7%BC%96%E7%A8%8B\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,40 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">编程</a></li><li class="breadcrumb-item"><a href="/%E7%BC%96%E7%A8%8B/golang/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Golang</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH09-反射</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Golang入门笔记-CH09-反射</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH09-反射</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E7%BC%96%E7%A8%8B/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 编程</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1841 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH09-反射">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH09-反射">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#方法和类型的反射">方法和类型的反射</a>
+      <ul>
+        <li><a href="#reflecttypeof">reflect.TypeOf</a></li>
+        <li><a href="#reflectvalueof">reflect.ValueOf</a></li>
+      </ul>
+    </li>
+    <li><a href="#通过反射修改值">通过反射修改值</a></li>
+    <li><a href="#反射获取结构体信息">反射获取结构体信息</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法。</p>
 <h2 id="方法和类型的反射">方法和类型的反射</h2>
 <p><code>reflect</code> 包提供了反射功能，它定义两个重要类型：<code>Type</code> 和 <code>Value</code>，分别表示动态类型和值。</p>
 <p>有两个常用的方法：</p>
@@ -655,7 +682,34 @@
 <blockquote>
 <p><em><strong>注意</strong></em>：虽然反射在某些场合下很好用，但反射较损耗性能，因此在性能需求较高和高并发的场景下，应尽量避免使用反射。</p>
 </blockquote>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" data-title="Golang入门笔记-CH09-反射" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="post-nav-item" rel="prev" title="Golang入门笔记-CH10-函数高级特性"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Golang入门笔记-CH10-函数高级特性</a>
+      <a href="/%E7%BC%96%E7%A8%8B/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="post-nav-item" rel="next" title="Golang入门笔记-CH08-接口">Golang入门笔记-CH08-接口<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

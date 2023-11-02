@@ -33,7 +33,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E5%90%88%E5%B9%B6\/logic-for-consolidating-equity-offsets-in-the-statements\/"
-    },"genre": "财务","keywords": "合并","wordcount":  3413 ,
+    },"genre": "posts","keywords": "合并","wordcount":  3413 ,
     "url": "http:\/\/richfan.site\/%E8%B4%A2%E5%8A%A1\/%E5%90%88%E5%B9%B6\/logic-for-consolidating-equity-offsets-in-the-statements\/","datePublished": "2023-08-01T00:00:00+00:00","dateModified": "2023-08-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,13 +154,34 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">财务</a></li><li class="breadcrumb-item"><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">合并</a></li><li class="breadcrumb-item active" aria-current="page">合并报表权益抵消的逻辑</li>
     </ol>
-  </nav><main class="container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">合并报表权益抵消的逻辑</h1></div><div
-      class="content"
-      id="content"
-      
-      
-    ><p>2010年第一年做审计的时候，项目经理说过一句话，一直印象颇深，“只有会编制合并报表，才能作为一个合格的项目经理”。这4年，真正意义上的编制合并报表，是在致同的一个ipo项目与一个上市公司年审项目，也就编制过2家。这2家其实还是很简单，基本都全资子公司，更没有传说中的交叉持股，也没有出售股权等复杂问题。我想整理一些个人的看法，希望能够帮助没有编制过的助理们更好理解如何编制合并报表，而不是简单的照搬公式，真正做到一通百通。当然，我会尽最大努力整理一系列常见的合并报表问题，案例目前打算来自于四大的一些资料翻译整理、计学撮要案例的引用整理、会计视野论坛的一些资料整理、平时帮人解决的一些案例等，这里就不标明来源了。</p>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>合并报表权益抵消的逻辑</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E8%AE%A1/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审计</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="3413 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 7 分钟</span>&nbsp;<span id="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-consolidating-equity-offsets-in-the-statements/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表权益抵消的逻辑">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="合并报表权益抵消的逻辑">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-consolidating-equity-offsets-in-the-statements/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一步一般人肯定都会就是直接汇总当然这里涉及一个格式的问题我个人倾向于放在一个表里面即资产负债表利润表利润分配表放在一张表里面不要搞成资产负债表一个表利润表一个表利润分配表更是没有">**第一步：**一般人肯定都会，就是直接汇总。当然这里涉及一个格式的问题，我个人倾向于放在一个表里面【即资产负债表，利润表，利润分配表放在一张表里面】，不要搞成资产负债表一个表，利润表一个表，利润分配表更是没有。</a></li>
+    <li><a href="#第二步很多人就理解有问题了甚至由此导致出成本法还是模拟权益法编制合并报表好我是流连过很多事务所也道听途中了好多方法现在终于有一点自己想法了先不讨论方法优劣我是这样理解的">**第二步：**很多人就理解有问题了，甚至由此导致出“成本法”还是“模拟权益法”编制合并报表好。我是流连过很多事务所，也道听途中了好多方法，现在终于有一点自己想法了。先不讨论方法优劣，我是这样理解的：</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>2010年第一年做审计的时候，项目经理说过一句话，一直印象颇深，“只有会编制合并报表，才能作为一个合格的项目经理”。这4年，真正意义上的编制合并报表，是在致同的一个ipo项目与一个上市公司年审项目，也就编制过2家。这2家其实还是很简单，基本都全资子公司，更没有传说中的交叉持股，也没有出售股权等复杂问题。我想整理一些个人的看法，希望能够帮助没有编制过的助理们更好理解如何编制合并报表，而不是简单的照搬公式，真正做到一通百通。当然，我会尽最大努力整理一系列常见的合并报表问题，案例目前打算来自于四大的一些资料翻译整理、计学撮要案例的引用整理、会计视野论坛的一些资料整理、平时帮人解决的一些案例等，这里就不标明来源了。</p>
 <p>在ifrs10下，编制合并的程序很简单：</p>
 <p>B86 Consolidated financial statements:</p>
 <p>(a) combine like items of assets, liabilities, equity, income, expenses and</p>
@@ -243,7 +264,34 @@
 <p>​ 贷：年初未分配利润</p>
 <p>​ 贷：利润分配-提取盈余公积</p>
 <p>大致明白了合并大致的框架，下面就综述各种类型的合并案例了。</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-08-01 00:00:00">更新于 2023-08-01&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-consolidating-equity-offsets-in-the-statements/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-consolidating-equity-offsets-in-the-statements/" data-title="合并报表权益抵消的逻辑" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E5%90%88%E5%B9%B6/' class="post-tag">合并</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/consolidated-statements-are-the-essence-of-the-same-control/" class="post-nav-item" rel="prev" title="合并报表同一控制的本质"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>合并报表同一控制的本质</a>
+      <a href="/%E8%B4%A2%E5%8A%A1/%E5%90%88%E5%B9%B6/logic-for-offsetting-within-consolidated-reports/" class="post-nav-item" rel="next" title="合并报表内部抵消的逻辑">合并报表内部抵消的逻辑<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
