@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Tue, 23 May 2017 21:15:52 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/docker%E4%BB%93%E5%BA%93/" rel="self" type="application/rss+xml" /><item>
   <title>docker仓库</title>
-  <link>http://richfan.site/posts/program/linux/docker%E4%BB%93%E5%BA%93/</link>
+  <link>http://richfan.site/program/linux/docker%E4%BB%93%E5%BA%93/</link>
   <pubDate>Tue, 23 May 2017 21:15:52 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/program/linux/docker%E4%BB%93%E5%BA%93/</guid>
+  <guid>http://richfan.site/program/linux/docker%E4%BB%93%E5%BA%93/</guid>
   <description><![CDATA[<h3 id="docker-hub">Docker Hub</h3>
 <p>目前 Docker 官方维护了一个公共仓库 <a href="https://hub.docker.com/"target="_blank" rel="external nofollow noopener noreferrer">Docker Hub</a>，其中已经包括了超过 15,000 的镜像。大部分需求，都可以通过在 Docker Hub 中直接下载镜像来实现。</p>]]></description>
 </item>

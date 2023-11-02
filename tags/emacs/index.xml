@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Fri, 20 Oct 2017 17:38:49 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/emacs/" rel="self" type="application/rss+xml" /><item>
   <title>linux下修改按键ESC&lt;=&gt;CAPSLOCK和Control=&gt;ALT_R</title>
-  <link>http://richfan.site/posts/program/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
+  <link>http://richfan.site/program/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
   <pubDate>Fri, 20 Oct 2017 17:38:49 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/posts/program/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
+  <guid>http://richfan.site/program/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
   <description><![CDATA[<p>使用 <code>vim</code> 过程中发现 <code>esc</code> 和 <code>ctrl</code> 按键很难按，小拇指没有那么长啊～～，而 <code>caps_lock</code> 和 <code>alt_r</code>(右alt) 很少用。</p>
 <p>本教程将 <code>esc</code> 和 <code>caps_lock</code> 两个按键交换， <code>alt_r</code>(右alt) 改为 <code>ctrl</code>。</p>]]></description>
 </item>
