@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Thu, 08 Feb 2018 09:19:09 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/nginx/" rel="self" type="application/rss+xml" /><item>
   <title>nginx配置记录</title>
-  <link>http://richfan.site/program/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+  <link>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
   <pubDate>Thu, 08 Feb 2018 09:19:09 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/program/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+  <guid>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
   <description><![CDATA[<h3 id="启用https">启用https</h3>]]></description>
 </item>
 </channel>

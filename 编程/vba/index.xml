@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VBA on 樊刹</title>
+    <link>http://richfan.site/%E7%BC%96%E7%A8%8B/vba/</link>
+    <description>Recent content in VBA on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>richffan@outlook.com (richfan)</managingEditor>
+    <webMaster>richffan@outlook.com (richfan)</webMaster>
+    <lastBuildDate>Fri, 24 Feb 2023 17:27:22 +0800</lastBuildDate>
+    <atom:link href="http://richfan.site/%E7%BC%96%E7%A8%8B/vba/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

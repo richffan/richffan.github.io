@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Mon, 27 Jun 2022 15:07:39 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/neovim/" rel="self" type="application/rss+xml" /><item>
   <title>2022年我在使用这些vim插件</title>
-  <link>http://richfan.site/program/linux/vim-plugs-2022/</link>
+  <link>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/vim-plugs-2022/</link>
   <pubDate>Mon, 27 Jun 2022 15:07:39 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/program/linux/vim-plugs-2022/</guid>
+  <guid>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/vim-plugs-2022/</guid>
   <description><![CDATA[<h3 id="前言">前言</h3>
 <p>从第一次接触 <code>vim</code> 已逾期 10 年, 期间大部分都是一些简单操作,
 最近一两年开始深度使用 <code>vim</code>, 目前使用 <code>neovim</code> 版本.

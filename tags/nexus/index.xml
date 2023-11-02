@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Wed, 06 Sep 2017 23:01:31 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/nexus/" rel="self" type="application/rss+xml" /><item>
   <title>搭建Maven私服-Nexus</title>
-  <link>http://richfan.site/program/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</link>
+  <link>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</link>
   <pubDate>Wed, 06 Sep 2017 23:01:31 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/program/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</guid>
+  <guid>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</guid>
   <description><![CDATA[<blockquote>
 <p>Maven 私服，可以代理远程仓库和部署自己或第三方构件。本文介绍使用最广泛搭建 Maven 私服的工具： Sonatype Nexus。</p>
 </blockquote>]]></description>
