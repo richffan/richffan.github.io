@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Tue, 23 May 2017 09:53:52 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/centos/" rel="self" type="application/rss+xml" /><item>
   <title>CentOS修改DNS/GW/IP</title>
-  <link>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</link>
+  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</link>
   <pubDate>Tue, 23 May 2017 09:53:52 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</guid>
+  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</guid>
   <description><![CDATA[<h3 id="1修改dns">1.修改DNS</h3>
 <p><strong>解决方案一：</strong>
 修改网卡的DNS的配置文件</p>]]></description>

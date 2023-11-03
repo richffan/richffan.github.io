@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on 樊刹</title>
+    <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/</link>
+    <description>Recent content in Python on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>richffan@outlook.com (richfan)</managingEditor>
+    <webMaster>richffan@outlook.com (richfan)</webMaster>
+    <lastBuildDate>Fri, 24 Feb 2023 17:27:22 +0800</lastBuildDate>
+    <atom:link href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9款最佳Python脚本：让工作自动化起来！</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</guid>
+      <description>一、自动化文件管理 1.在目录中对文件进行排序 1 2 3 4 5 6 7 8 9 10 11 12 # Python脚本用于按文件扩展名对目录中的文件进行排序 import os from shutil import move def sort_files(directory_path):</description>
+    </item>
+    <item>
+      <title>Jupyter notebook 使用指南</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，</description>
+    </item>
+    <item>
+      <title>PyCharm 优化使用</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
+      <description>设置 Python 路径（解释器设置） 1、打开设置对话框 点击File &amp;ndash;&amp;gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &amp;ndash;&amp;gt; Project Interpr</description>
+    </item>
+    <item>
+      <title>Python 王国 ✨</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/readme/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/readme/</guid>
+      <description>Python 入门学习笔记 对于还没入门的小伙伴们，推荐先跟6 小时 Python 入门学习笔记这篇文档敲一遍，行云流水之后对 Python 有了初步的认识，继而根据下面章节深入学习：</description>
+    </item>
+    <item>
+      <title>Python 语法</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</guid>
+      <description>1 - Python 基础 2 - 函数 3 - 高级特性 4 - 函数式编程 5 - 模块 6 - 面向对象编程 7 - 面向对象高级编程 8 - 错误、调试和测试 9 - IO 编程 10 - 进程和线程 11 - 正则</description>
+    </item>
+    <item>
+      <title>python数据分析专用数据库，与pandas结合，10倍提速&#43;极致体验</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</guid>
+      <description>前言 你有想过在 pandas 中直接使用 sql吗？我知道许多小伙伴已经知道一些库也可以做到这种体验，不过他们的性能太差劲了(基于sqlite，或其他服务端</description>
+    </item>
+    <item>
+      <title>数据库连接轻松搞定：Python 数据库推荐</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</guid>
+      <description>SQLite3：轻巧便捷的数据库连接 首先，让我们认识一下 SQLite3 这个轻巧便捷的库。它是 Python 中自带的数据库模块，适用于小型应用和快速原型开发。 让我们来</description>
+    </item>
+    <item>
+      <title>ExcelToPDF</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/exceltopdf/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/exceltopdf/</guid>
+      <description>&lt;h2 id=&#34;excel-to-pdf&#34;&gt;Excel To PDF&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

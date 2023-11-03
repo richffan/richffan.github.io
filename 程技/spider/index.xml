@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spider on 樊刹</title>
+    <link>http://richfan.site/%E7%A8%8B%E6%8A%80/spider/</link>
+    <description>Recent content in Spider on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>richffan@outlook.com (richfan)</managingEditor>
+    <webMaster>richffan@outlook.com (richfan)</webMaster>
+    <lastBuildDate>Fri, 24 Feb 2023 17:27:22 +0800</lastBuildDate>
+    <atom:link href="http://richfan.site/%E7%A8%8B%E6%8A%80/spider/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>审计技能|Python语句（四）：常用查询函数</title>
+      <link>http://richfan.site/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 15 Aug 2023 17:56:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</guid>
+      <description>1.分组聚合函数（groupby） 类似SQL的groupby那样的数据透视功能。可以使用pandas库的groupby函数来实现分组聚合操作</description>
+    </item>
+  </channel>
+</rss>

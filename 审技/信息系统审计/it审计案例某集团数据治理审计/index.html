@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>IT审计案例：某集团数据治理审计 - 樊刹</title><meta name="author" content="richfan">
+<meta name="author-link" content="https://richfan.site/">
+<meta name="description" content="某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网&#43;的大形势之下，对系统的要求会越来越高，因此" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="IT审计案例：某集团数据治理审计">
+<meta itemprop="description" content="某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网&#43;的大形势之下，对系统的要求会越来越高，因此"><meta itemprop="datePublished" content="2023-10-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-10-18T00:00:00+00:00" />
+<meta itemprop="wordCount" content="6485"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
+<meta itemprop="keywords" content="IT审计," /><meta property="og:title" content="IT审计案例：某集团数据治理审计" />
+<meta property="og:description" content="某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网&#43;的大形势之下，对系统的要求会越来越高，因此" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="审技" />
+<meta property="article:published_time" content="2023-10-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-18T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
+
+<meta name="twitter:title" content="IT审计案例：某集团数据治理审计"/>
+<meta name="twitter:description" content="某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网&#43;的大形势之下，对系统的要求会越来越高，因此"/>
+<meta name="application-name" content="樊刹">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "IT审计案例：某集团数据治理审计",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/richfan.site\/%E5%AE%A1%E6%8A%80\/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1\/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1\/"
+    },"genre": "posts","keywords": "IT审计","wordcount":  6485 ,
+    "url": "http:\/\/richfan.site\/%E5%AE%A1%E6%8A%80\/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1\/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1\/","datePublished": "2023-10-18T00:00:00+00:00","dateModified": "2023-10-18T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "richfan"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" srcset="/favicon.svg, /favicon.svg 1.5x, /favicon.svg 2x" sizes="auto" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-folder-open fa-fw fa-fw fa-sm" aria-hidden="true"></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/friends/"
+                
+                
+              ><i class="fa-solid fa-users fa-fw fa-fw fa-sm" aria-hidden="true"></i> 友链</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-fw fa-sm" aria-hidden="true"></i> 关于</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容……" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" srcset="/favicon.svg, /favicon.svg 1.5x, /favicon.svg 2x" sizes="auto" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜索文章标题或内容……" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-folder-open fa-fw fa-fw fa-sm" aria-hidden="true"></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/friends/"
+                  
+                  
+                ><i class="fa-solid fa-users fa-fw fa-fw fa-sm" aria-hidden="true"></i> 友链</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class="fa-solid fa-info-circle fa-fw fa-fw fa-sm" aria-hidden="true"></i> 关于</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">审技</a></li><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">信息系统审计</a></li><li class="breadcrumb-item active" aria-current="page">IT审计案例：某集团数据治理审计</li>
+    </ol>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>IT审计案例：某集团数据治理审计</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" srcset="/avatar.webp, /avatar.webp 1.5x, /avatar.webp 2x" sizes="auto" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;richfan</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E8%AE%A1/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审计</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-10-18 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-10-18">2023-10-18</time></span>&nbsp;<span title="更新于 2023-10-18 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-10-18">2023-10-18</time></span>&nbsp;<span title="6485 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 6500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 13 分钟</span>&nbsp;<span id="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/" class="leancloud_visitors comment-visitors" data-flag-title="IT审计案例：某集团数据治理审计">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="IT审计案例：某集团数据治理审计">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/" class="valine-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#案例背景">案例背景</a></li>
+    <li><a href="#审计目标与思路">审计目标与思路</a></li>
+    <li><a href="#审计准备">审计准备</a>
+      <ul>
+        <li><a href="#1组建联合审计队伍取得专家支持">1.组建联合审计队伍，取得专家支持</a></li>
+        <li><a href="#2制订审计计划和进度安排">2.制订审计计划和进度安排</a></li>
+        <li><a href="#3选取样本">3.选取样本</a></li>
+        <li><a href="#4审计模式">4.审计模式</a></li>
+        <li><a href="#5建立信息沟通机制">5.建立信息沟通机制</a></li>
+      </ul>
+    </li>
+    <li><a href="#实施步骤">实施步骤</a>
+      <ul>
+        <li><a href="#1根据审计思路确定关注重点及任务分配见表1-1">1.根据审计思路确定关注重点及任务分配(见表1-1)</a>
+          <ul>
+            <li><a href="#1-1审计关注重点及任务分配表">1-1审计关注重点及任务分配表</a></li>
+          </ul>
+        </li>
+        <li><a href="#2问题收集与分析方法">2.问题收集与分析方法</a></li>
+        <li><a href="#3现场审计">3.现场审计</a></li>
+      </ul>
+    </li>
+    <li><a href="#审计报告反映">审计报告反映</a></li>
+    <li><a href="#创新与反思">创新与反思</a>
+      <ul>
+        <li><a href="#1审计方式创新">1.审计方式创新</a></li>
+        <li><a href="#2审计工具创新">2.审计工具创新</a></li>
+        <li><a href="#3审计模式和技术创新">3.审计模式和技术创新</a></li>
+        <li><a href="#4审计报告方式的创新">4.审计报告方式的创新</a></li>
+        <li><a href="#5审计成果推广创新">5.审计成果推广创新</a></li>
+      </ul>
+    </li>
+    <li><a href="#案例微评">案例微评</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网+的大形势之下，对系统的要求会越来越高，因此，需要对集团整个系统进行全面的分析与评估。对整个系统进行全方位的评估，是内审人员的难点与重点，案例详细介绍审计实施过程、操作方法、思考策略等，对外行审计内行，有较好的学习与参考作用。</p>
+<h2 id="案例背景">案例背景</h2>
+<p>某企业是集军工、消费电子、核心器件等研发与制造为一体的综合型跨国企业集团，20世纪90年代初开始以自建的财务信息系统为基础，逐步实现了生产、研发和营销等各个经营管理领域的信息化。在互联网+的新社会形态下，公司实施了集“智能研发”“智能制造”“智能营销”三大平台为一体的智能化战略，产品数据和用户数据已从传统生产、销售领域拓展到了智慧小区、智慧医疗等领域，从而成为企业战略核心。</p>
+<p>经过20多年信息化发展，公司积累了海量的业务和财务数据与经验，为保证有效规划、监控和执行数据资产，公司进行了专门的数据治理，发现数据质量和数据管理方面存在较多问题；历年审计也发现数据存在维护不规范、标准不统一、清洁度低等问题，直接影响了智能化建设的顺利实施。</p>
+<p>因此，数据治理审计是在数据管理基础上，通过对产业价值链的分析，对信息化建设情况和三大智能平台上的业务流程、数据质量、关联、交付、应用情况所开展的一项智能审计。</p>
+<h2 id="审计目标与思路">审计目标与思路</h2>
+<p>**1.审计目标：**通过对集团范围内的信息系统建设和数据治理情况的全面审计，以问题数据为审计项目的切入点、数据标准为审计标准的基础、数据质量问题为审计证据，全方位深入了解公司数据管理现状，发现数据治理的漏洞，揭示公司数据治理存在的控制缺陷和系统性风险，提出可行的审计建议，促进提高信息化建设整体管理水平，建设可信任的企业级数据管理中心，打造数据共享服务典范。</p>
+<p>**2.审计标准：**审计标准参照公司发布的《数据管理与治理工作思路》、《数据管理与治理工作推进计划》、《数据管理体系》及核心制度中明确的相关单位的工作职责等规范文件</p>
+<p>**3.审计范围和重点：**通过对数据治理主要内容(安全、架构、质量、数据仓等)进行分析，数据治理审计涉及范围宽广、专业性强，而审计资源有限，加之公司主要是制造和销售企业，数据治理与三大智能平台建设紧密关联，因此此次审计聚焦，以主数据管理为审计重点，涉及采购、销售、研发、财务管理四个重要领域，审计客体包括数据管理部门、财务部门、信息系统开发部门及各系统应用子公司(业务单位)。</p>
+<p>**4.审计思路：**通过对公司数据治理战略目标、规划方案和基本情况入手，了解公司数据治理的愿景、中长期目标，确定审计重点。以数据治理体系建设为起点，从数据架构，主数据管理、元数据管理和数据安全等四个角度出发；以价值链分析为基础分为采购、营销、研发、财务等子项。检查数据治理层面的开发、应用和交互情况，分别对信息系统、业务流程、组织、角色等因素进行分析，延伸至信息安全层面，检查数据质量、控制、合规、预防和修复机制。</p>
+<p>结合智能审计软件开发和应用，分析公司在数据管理、数据质量和共享分发等方面存在的问题，同时，进一步对公司三大智能平台各子项目的蓝图规划、开发状况、实现效果等方面予以重点关注。</p>
+<h2 id="审计准备">审计准备</h2>
+<h3 id="1组建联合审计队伍取得专家支持">1.组建联合审计队伍，取得专家支持</h3>
+<p>鉴于数据治理审计专业性较强，对信息化建设和审计能力的要求非常高，因此集IT审计、财务审计、采购审计和销售审计人员组建联合工作小组实施审计项目，同时，取得专家团队支持，借助公司信息系统规划、架构人员和软件开发人员对重要问题进行集中讨论分析。</p>
+<h3 id="2制订审计计划和进度安排">2.制订审计计划和进度安排</h3>
+<p>预计审计时间为3个月，进行审计任务分工，把控关键节点，确保高效完成任务。</p>
+<h3 id="3选取样本">3.选取样本</h3>
+<p>鉴于集团下属子公司较多，而审计资源有限，前期借助智能审计软件大数据分析功能和现场调研，以业务规模、风险程度、重要性等维度抽样选取6家子公司</p>
+<h3 id="4审计模式">4.审计模式</h3>
+<p>建立前、中、后台交互工作模式，以智能审计软件(中台)为主体，利用大数据处理技术，实施审计重点输出，驱动审计业务(前台)开展审计并在线反馈，审计专家(后台)综合分析后，对审计活动实施统一的计划、协调、管理、控制与决策，最终形成并输出审计成果。</p>
+<p>另外利用智能审计系统的档案管理功能，对前期所有审计项目发现的系统问题和数据问题，进归集、分类、追踪、分析，为本次审计提供更多的支持证据，得出审计结论。</p>
+<h3 id="5建立信息沟通机制">5.建立信息沟通机制</h3>
+<p>(1)强化访谈和问卷调查，与各系统开发组及时沟通。</p>
+<p>(2)审计小组以周例会形式报告和讨论业务，保证信息畅通。</p>
+<p>(3)定期汇报工作：鉴于审计开展时间太长，为保证让公司领导能及时了解审计情况，采取阶段式审计报告方式汇报工作。</p>
+<h2 id="实施步骤">实施步骤</h2>
+<p>根据前期了解到的数据治理基本情况，对审计问题进行分析、归纳和拆解，建立分工表格，关注主要风险</p>
+<h3 id="1根据审计思路确定关注重点及任务分配见表1-1">1.根据审计思路确定关注重点及任务分配(见表1-1)</h3>
+<p>第一，从数据治理体系层面关注数据管理体系规划和架构信息、制度建设情况以及数据质量管理是否持续落地。</p>
+<p>第二，了解信息系统建设情况、开发运用效率、系统间的对接情况，数据仓库建设情况，信息系统数据一致性和信息系统开发效率。</p>
+<p>第三，了解主数据管理平台(MDM)建设和系统间共享数据情况，例如，客户、供应商、账户和组织部门相关数据、元数据管理情况，数据仓库和商业智能建设情况。</p>
+<p>第四，检查信息系统和数据安全问题表</p>
+<h4 id="1-1审计关注重点及任务分配表">1-1审计关注重点及任务分配表</h4>
+<table>
+<thead>
+<tr>
+<th>审计子项目</th>
+<th>审计内容</th>
+<th>审计关注重点</th>
+<th>负责人</th>
+<th>复核人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据治理体系建设</td>
+<td>1.检查数据管理体系有效执行</td>
+<td>数据质量管理规范是否得到有效执行</td>
+<td>A</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.检查数据管理核心平台MM信息系统设计、数据管理、数系统据安全需求</td>
+<td>系统设计、数据管理、数据安全需求</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.结合公司B和数据治理检查对数业数据模型据仓库和商业智能数据治理体系建设</td>
+<td>企业数据模型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>4检查元数据项目、财务XBRL.项目数据标准</td>
+<td>数据标准</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>5组织并参与对数据治理成果和制度治理成果的真实性和有文件执行情况，进行符合性检查效性</td>
+<td>治理成果的有效性和真实性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>6.围绕合并报表系统，BI和子项反馈的数据质量资料，结合数据管理体系的完整性对数据治理完整性进行有效性审计</td>
+<td>数据IT理体系的完整性和有效性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>财务数据治理子项</td>
+<td>1.对前期审计、智能审计及其他途径取得的问题数据进行汇总、分析</td>
+<td>根据前期了解情况，检查财务报告的准确性，问题数据产生的原因、数据逻辑及治理情况</td>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.结合经济效益审计内容，对财务报表和合并报表的数据和逻辑进行检查</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.实质抽样测试“关联交易识别码”主数据</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>4.实质抽样测试“ERP现金流交易码”主数据</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>营销数据治理子项</td>
+<td>1.对销售分支机构数据录入进行抽查、统计，从规范性、完整性、准确性、真实性方面检查录入质量方面的问题</td>
+<td>数据录入质量</td>
+<td>C</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.根据审计软件开发和数据测试中发现的问题，进一步揭示数据规则制定及总部本身的数据质量问题</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>研发数据治理子项</td>
+<td>1.数据标准整理</td>
+<td>物料属性模板的完整性和符合性</td>
+<td>D</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.数据质量的检查</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.子项存在的困难和问题</td>
+<td>物料管理流程的有效性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>采购数据治理子项</td>
+<td>1.按指标从审计软件中导出有质量问题的数据</td>
+<td>采购数据质量问题及产生的原因</td>
+<td>E</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.收集后台处理的数据质量问题</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.收集前期审计过程中发现的数据质量问题</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>4.MDM新增供应商和物料代码质量问题</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>5.R/3  MM模块、SRM系统设计缺陷</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>数据治理执行层面（开发单位）</td>
+<td>1.访谈IT部门主要负责人在数据治理方面的信息技术保障措施及执行情况，管理制度是否得到有效执行</td>
+<td>数据治理相关配套管理制度及保障措施的完整性、合理性、规范性和有效性</td>
+<td>ABCD</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.了解IT部门数据资源目录体系技术架构、数据目录服务和数据交换服务的建设、组织和管理等情况</td>
+<td>信息资源目录体系、数据资源标准化完整性、正确性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.访谈IT部门主要负责人在数据质量控制方面的具体工作计划、工作有井和相关工作成果</td>
+<td>数据质量控制措施完整性、有效性和持续性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>4.了解数据治理的专家团队建设和工作分工、职责界定情况</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>5.检查信息系统开发的方法、程序是否科学，是否含有恰当的控制</td>
+<td>信息系统设计的规范性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>6.检查开发过程中产生的系统文档资料是否规范</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>7.重点业务系统穿行/实质侧试</td>
+<td>重点验证数据输入，处理、输出、数据共享与交换、数据逻辑控制的真实性、正确性、完整性和符合性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>信息安全层面</td>
+<td>检查核心信息系统授权、权限管理、系统安全</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2问题收集与分析方法">2.问题收集与分析方法</h3>
+<p>借助智能审计软件实现信息化审计，通过审计软件自动提取数据，自动进行预警分析，改变原来手工提取数据，单机分析模式，同时兼顾了审计覆盖面和效率。</p>
+<p>通过审计软件后台清理不清洁、不规范数据，汇总整理审计过程中发现的数据质量问题。将整理好的错误数据集中推送给各开发和使用单位，要求反馈产生的原因及拟采取的修正措施，区分系统性及个性问题。与数据治理小组及各业务单位协商解决方案，发布采购数据质量报告，提出采购数据规范建议(见表1-2)</p>
+<table>
+<thead>
+<tr>
+<th>审计期间</th>
+<th>业务单位</th>
+<th>业务类型</th>
+<th>问题类型</th>
+<th>问题简述</th>
+<th>存在的风险</th>
+<th>问题数据条数</th>
+<th>涉及数据总条数</th>
+<th>原因分析</th>
+<th>改进建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016年1-12月</td>
+<td>子公司1</td>
+<td>采购份额</td>
+<td>份额分配期间与价格期间不匹配</td>
+<td>价格期间维护为半年，但份额截止期为9个月</td>
+<td>价格与份额脱钩，不利于对采购份额监控</td>
+<td>100</td>
+<td>1000</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3现场审计">3.现场审计</h3>
+<p>在确定抽样样本和取份相关在线预警数据后，利用其他审计项目组的现场工作小组，直接提取有用信息。审计人员根据审计软件在线预警结果，按照系统指示的作业流程，带打问题进入现场审计，重点是对软件无法直接识别的纸质资料进行审查，如各种制度、招标文件、相关签批报告等，对在线预警结果进行深入追查，并与被审计单位达成初步共识。</p>
+<h2 id="审计报告反映">审计报告反映</h2>
+<p>对于综合性复杂的审计项目，审计报告格式非常重要。在该项目中，由于审计反映的问题涵盖面广、系统性问题与个性问题较多、系统间的关系复杂，因此分别从以下维度反映审计发现。</p>
+<p>第一，全面反映公司信息平台建设整体情况(见表1-3)。</p>
+<p>表1-3截止审计日公司信息平台和系统的投资运营维护情况</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>系统名称</th>
+<th>业务范围</th>
+<th>上线时问</th>
+<th>合同金额</th>
+<th>使用状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>SAP ECC</td>
+<td>ERP</td>
+<td>2000.06</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>2</td>
+<td>费用管理信息系统</td>
+<td>财务管理</td>
+<td>2007.04</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>12</td>
+<td>财务云项目</td>
+<td>财务管理</td>
+<td>2015.03</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>20</td>
+<td>供应商关系管理系统</td>
+<td>采购管理</td>
+<td>2008.03</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>23</td>
+<td>条码系统</td>
+<td>仓储物流</td>
+<td>2015.12</td>
+<td></td>
+<td>等待验收</td>
+</tr>
+<tr>
+<td>24</td>
+<td>三流合一项目LRP</td>
+<td>仓储物流</td>
+<td></td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>25</td>
+<td>物流执行系统(LES)</td>
+<td>仓储物流</td>
+<td>20]2.12</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>26</td>
+<td>智能研发平台</td>
+<td>产品研发</td>
+<td>2015.12</td>
+<td></td>
+<td>项目延期</td>
+</tr>
+<tr>
+<td>28</td>
+<td>主数据管理平台</td>
+<td>经营管理</td>
+<td>2016.04</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>29</td>
+<td>决策支持系统BI</td>
+<td>经营管理</td>
+<td>2012.01</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>31</td>
+<td>供应链计划管理系统</td>
+<td>生产制造</td>
+<td>分期实施</td>
+<td></td>
+<td>等待验收</td>
+</tr>
+<tr>
+<td>32</td>
+<td>投资管理系统</td>
+<td>投资管理</td>
+<td>2016.05</td>
+<td></td>
+<td>正在实施</td>
+</tr>
+<tr>
+<td>33</td>
+<td>营销管理平台</td>
+<td>销售管理</td>
+<td>2013</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td>42</td>
+<td>SSO单点登录</td>
+<td>综合类</td>
+<td>2012.12</td>
+<td></td>
+<td>基本正常</td>
+</tr>
+<tr>
+<td></td>
+<td>合计</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>第二，反映数据管理体系规划和架构情况，指出公司需加强数据管理规划，进一步打通内外部数据。例如，公司级数据仓库缺少管理和规划运用效率低；未形成统一的企业级“元数据”管理，不利于提高信息系统的共享性、可读性、实用性；主数据管理范围及标准尚未健全；管理边界不明确，不利于各产业共享数据信息资源，主数据标准多次频繁修订，影响数据治理效果:公司数据管理文化氛围需要加强，尚未建立数据治理监控和考核体系，数据管理未形成闭环。</p>
+<p>第三，从数据治理实施层面，反映数据管理单位数据管理意识不够，未严格执行管理规范，影响数据质量。如申请入口不统一造成主数据不一致的情况。</p>
+<p>第四，分业务类型关注主数据及业务数据的质量问题。主要针对交易界面的关键风险点，充分反映问题数据的细节和责任单位，如对采购(供应商)、销售(客户)、物料/产品主数据等管理情况分别进行反映。</p>
+<p>例如，采购数据存在的问题：</p>
+<p>(1)供应商历史主数据质量问题突出:通过对MDM系统供应商主数据模块审计分析测试，发现系统上线时从R/3迁移过来的历史供应商主数据在唯一性、规范性、有效性、完整性等方面均存在问题(见表1-4，略)。</p>
+<p>(2)采购业务数据存在部分质量问题(见表1-5，略)。</p>
+<p>(3)ERP系统下的采购组织、采购组、价格有效期、付款方式等存在控制缺陷(略)</p>
+<p>第五，单独反映重要的信息平台或信息系统存在的主要风险，如对财务、供应链、营销等主要业务管理平台的设计、应用、交互和控制情况分别进行评价，充分反映各重要系统业务模块上存在漏项、功能不足的情况。</p>
+<p>例如，某子公司xx系统长远规划不足，投资总额xx万元，后期每年支付xx万元运维费。模块设计存在局限，已不能满足现有业务和未来业务发展需要，经统计在结算、风控等相关业务上系统模块至少存在26项功能缺陷（见表1-6)。</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>部门</th>
+<th>业务类型</th>
+<th>主要表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>结算部</td>
+<td>协议存款</td>
+<td>不支持存款动态利率下利息自动计算，利率调整需手工进行不支持按阶梯金额分段计息</td>
+</tr>
+<tr>
+<td>2</td>
+<td>结算部</td>
+<td>保证金管理</td>
+<td>不支持保证金(定期户)结息，需手工计息，如按照正常结息，无法完成</td>
+</tr>
+<tr>
+<td>5</td>
+<td>结算部</td>
+<td>票据转库</td>
+<td>不支持票据转库管理</td>
+</tr>
+<tr>
+<td>6</td>
+<td>结算部</td>
+<td>票据解汇</td>
+<td>无此功能，开发中</td>
+</tr>
+<tr>
+<td>7</td>
+<td>结算部</td>
+<td>利息的计算摊销</td>
+<td>不支持保证金和协议存款分段计息摊销</td>
+</tr>
+<tr>
+<td>8</td>
+<td>结算部</td>
+<td>会计凭证处理</td>
+<td>不支持同一张凭证双币种记账</td>
+</tr>
+<tr>
+<td>9</td>
+<td>结算部</td>
+<td>监管报表报送</td>
+<td>系统无法自动完成AM05报表的余额汇总，需手工相加电票和纸票余额</td>
+</tr>
+<tr>
+<td>10</td>
+<td>会计部</td>
+<td>资金计划</td>
+<td>系统无资金计划和资金头寸功能</td>
+</tr>
+<tr>
+<td>11</td>
+<td>会计部</td>
+<td>缴存准备金管理</td>
+<td>不支持准备金管理.需手工计算，线下审批</td>
+</tr>
+<tr>
+<td>12</td>
+<td>会计部</td>
+<td>再贴现</td>
+<td>不支持纸票和电票在同一个界面处理</td>
+</tr>
+<tr>
+<td>13</td>
+<td>会计部</td>
+<td>资金调拨</td>
+<td>不支持资金调拨线上审批，需线下审批</td>
+</tr>
+<tr>
+<td>14</td>
+<td>会计部</td>
+<td>外汇汇率评估</td>
+<td>无法实现汇兑损益科目自动计算，需手工计算</td>
+</tr>
+<tr>
+<td>15</td>
+<td>会计部</td>
+<td>会计报表、科目</td>
+<td>报表取数不正确。无表间和表内关系检查提醒功能；报表查询中导</td>
+</tr>
+</tbody>
+</table>
+<p>第六，反映信息系统和数据安全，一是反映系统控制缺陷，评价风险控制功能是否有效，二是评价信息平台和系统本身安全性。例如，部分系统存在审核流程设置控制失效的情况:2016年对某子公司例行审计时，发现该公司信用系统后台配置未能对标准订单进行信用发货控制，存在重大控制缺陷；MDM系统审批流程设置存在数据申请、审核、审批可以是同一人的情况，存在风险未隔离情况。</p>
+<h2 id="创新与反思">创新与反思</h2>
+<p>通过数据治理审计，系统性梳理了公司现有信息平台的管理状况和数据治理及对业务的支持情况，一是向决策层全面展示了公司数据管理的现状和水平，二是从宏观和微观两个维度反映了数据治理过程中存在的问题和风险，促进公司完善数据管理体系，提升数据治理质量，真正实现统一管理、共享和分发公司主数据，实现数据全生命周期管理，同时完善统一、准确的数据治理有助于公司价值的提升。</p>
+<h3 id="1审计方式创新">1.审计方式创新</h3>
+<p>一是成立联合工作小组和借助专家力量，保证数据治理审计的专业水平；二是利用前期所有审计项目中检查发现的同类问题支撑审计结论，在有限审计资源下高效完成大型综合审计项目。</p>
+<h3 id="2审计工具创新">2.审计工具创新</h3>
+<p>借助智能审计系统实现对全业务链的持续监控和预警，在重点检查审计样本的情况下，从纵横两个维度全面检查数据管理情况。</p>
+<h3 id="3审计模式和技术创新">3.审计模式和技术创新</h3>
+<p>针对全新的审计对象，审计布局创新，通过前、中、后台交互式的审计模式，利用智能审计软件(中台)，运用大数据处理技术和交易界面动态预警审计技术，对可能存在重要风险的业务数据进行全量扫描分析，由审计专家(后台)分析找出检查重点，推送至现场审计人员(前台)，从而提高审计效率，避免审计漏项。</p>
+<h3 id="4审计报告方式的创新">4.审计报告方式的创新</h3>
+<p>多维度反映不同的审计重点，便于不同受众使用审计报告内容；审计问题表格化.附件式列表既可全面展示所有审计抽查问题，又可清晰反映问题类别，以简单方式反映复杂性问题。</p>
+<h3 id="5审计成果推广创新">5.审计成果推广创新</h3>
+<p>此案属首次对数据治理进行审计:一是在公司范围内对数据治理工作全面应用审计结果；二是在审计实践中进行了全新的业务拓展和尝试。</p>
+<h2 id="案例微评">案例微评</h2>
+<p>数据信息安全是个大问题，可以说它关系到组织的生死存亡。集团公司的IT审计一要确认审计数据，二要审计信息系统，三要评估操作流程风险。</p>
+<p>本案从内审业界来看，此类审计项目无历史经验可借鉴，专业性极强，审计能力存在局限性，在发现问题和反映问题的广度和深度上有所欠缺。但本案能全面说明整个审计范围、审计策略与审计目标重点，并对每个关键点作了审计操作说明，对内审人员审计有一定的指导意义。</p>
+<p>集团公司的信息系统架构庞大复杂，系统性梳理和重点关注可能仍然存在漏项。我们可以在审计时考虑(包括但不限于):硬件设施的采购、软件系统的采购与使用；部门的安全管理、数据的备份等，均应纳入整个系统进行评价。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-10-18 00:00:00">更新于 2023-10-18&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/" data-title="IT审计案例：某集团数据治理审计" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/it%E5%AE%A1%E8%AE%A1/' class="post-tag">IT审计</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/" class="post-nav-item" rel="prev" title="审计军火库"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>审计军火库</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+        Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
+      </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div><div class="footer-line beian"><span class="gov">京公网安备 11010502049321号</span><span class="icp footer-divider">京ICP备2022007001号-1</span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/fanrich" title="在 GitHub 上查看源代码"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"valine":{"appId":"UCqeAbhsO8qZMRwuu7ysnv8c-gzGzoHsz","appKey":"ybrvk4jJU0fLRQAgErJuPhoT","avatar":"wavatar","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"","pageSize":10,"placeholder":"你的评论……","recordIP":true,"visitor":true}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"樊刹","typeit-header-subtitle-desktop":"不渡尘心","typeit-header-subtitle-mobile":"不渡尘心","typeit-header-title-mobile":"樊刹"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

@@ -1,0 +1,23 @@
+# 网址导航
+
+## 网址导航
+
+|网站链接|简要介绍|是否免费|视频教程|其他|
+|---|---|---|---|---|
+|[荣大二郎神](https://doc.rongdasoft.com/)|检索公告/案例|免费功能够了|[如何免费解决问题并学习](https://www.bilibili.com/video/BV1kg411e74U/?spm_id_from=333.999.0.0&vd_source=9e84fe8fffda73034572c885e70510eb)  <br>[批量下载公告完成阅读其他信息审计程序](https://www.bilibili.com/video/BV1La41157KN/?spm_id_from=333.999.0.0&vd_source=9e84fe8fffda73034572c885e70510eb)|见微收费，目前用这个比较多了|
+|[中注协法规库](https://cicpa.wkinfo.com.cn/)|检索法规|免费|-|自助申请下|
+|[企查查](https://www.qcc.com/)|检索工商信息/识别关联方|购买企业版VIP或svip|[工商信息全维度查询识别](https://www.bilibili.com/video/BV12A411X7st/?spm_id_from=333.999.0.0&vd_source=9e84fe8fffda73034572c885e70510eb)  <br>[审计实战-搞定关联方](https://www.bilibili.com/video/BV18e4y1f7Fq/?spm_id_from=333.999.0.0)|1、境外查询也可以用企查查，比境外直接购买其实更便宜  <br>2、不推荐天眼查，批量功能太鸡肋|
+|[通义千问](https://qianwen.aliyun.com/chat)|AI解决问题|免费|-|Chatgpt数据出境有风险，建议用阿里这个，效果也不错|
+|[中登网](https://www.zhongdengwang.org.cn/)|应收、存货、不动产等质押查询|免费|[手把手教你中登网查询应收账款等信息](https://www.bilibili.com/video/BV1Fy4y1W7EK/?spm_id_from=333.337.search-card.all.click&vd_source=9e84fe8fffda73034572c885e70510eb)|-|
+|[会计视野论坛](https://bbs.esnai.com/forum-7-1.html)|提问、学习，业内资深大神chenyiwei指导|免费|[年审提高效率的东东](https://www.bilibili.com/video/BV13P4y1i7a2/?spm_id_from=333.999.0.0)|如果纯检索，可以使用：[青藤数据](https://www.qingtengdata.com/audit/case)|
+|[F搜](https://fsoufsou.com/)|替代百度|免费|-|检索能力比较好|
+|[Office365境内版](https://www.microsoft.com/zh-cn/microsoft-365/business-china-offers)|云共享（比如N人同时编辑附注）、云同步（比如N人同时查看资料）等|收费|[Office365介绍](https://www.bilibili.com/video/BV1Se411P771/?spm_id_from=333.788&vd_source=9e84fe8fffda73034572c885e70510eb)|1、数据不能出境，杜绝使用家庭版、个人版办公  <br>2、可以5人共用一个账号|
+|[Excel函数官方教程](https://support.microsoft.com/zh-cn/office/excel-%E5%87%BD%E6%95%B0-%E6%8C%89%E7%B1%BB%E5%88%AB%E5%88%97%E5%87%BA-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb)|Excel函数最全教程|免费|[审计函数库介绍](https://www.bilibili.com/video/BV1Le4y1q7NL/?spm_id_from=333.999.0.0)|-|
+
+说明：只推荐最佳网站，不求多。汇率查询等常识类、境外工商（被企查查等替代）等这类网站也没有推荐。
+
+---
+
+> 作者: [richfan](https://richfan.site/)  
+> URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/  
+

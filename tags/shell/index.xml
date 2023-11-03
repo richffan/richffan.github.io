@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sat, 08 Sep 2018 11:48:24 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/shell/" rel="self" type="application/rss+xml" /><item>
   <title>shell速查表</title>
-  <link>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
+  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
   <pubDate>Sat, 08 Sep 2018 11:48:24 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/%E7%BC%96%E7%A8%8B/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
+  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
   <description><![CDATA[<h3 id="1-变量">1. 变量</h3>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
