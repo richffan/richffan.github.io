@@ -2,7 +2,7 @@
 
 **分类是门艺术，甩锅亦是艺术，以下剪不断，理还乱，可见鄙人艺术气息匮乏，敬请指正**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/117-证券所审计项目大致分类_1.png) 
+![](https://img.richfan.site/ibank/IPO审计札记/117-证券所审计项目大致分类_1.png) 
 
 **A年报审计（中期审计）**
 

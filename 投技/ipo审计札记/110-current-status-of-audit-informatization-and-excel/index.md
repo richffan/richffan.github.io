@@ -20,7 +20,7 @@
 
 降维打击第一式：**文件--选项--快速访问工具栏**。根据自身需求，将高频的操作拎出来不香么，管其原来是什么快捷键，通通自定义：ALT+数字。（按下 Alt 以后，按对应数字就行啦）
 
-![]https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/110-审计信息化现状与-Excel_1.webp)
+![]https://img.richfan.site/ibank/IPO审计札记/110-审计信息化现状与-Excel_1.webp)
 
 个人依据自身高频习惯设置的有：粘贴值、千位分隔样式、筛选、格式刷、分列、冻结窗格、合并后居中、数据透视表。大家要设置的话，自然是优先设置自己**死活记不住的**快捷键。
 
@@ -28,7 +28,7 @@
 
 降维打击第二式：**全局手势**（大小不到  3M）。将需要按各种组合键的操作，改成用鼠标滑一滑就能实现，不香么。
 
-![]https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/110-审计信息化现状与-Excel_2.webp)
+![]https://img.richfan.site/ibank/IPO审计札记/110-审计信息化现状与-Excel_2.webp)
 
 平平无奇第三式：不得不记。快速访问工具栏+全局手势都是有限的，能省去极大的快捷记忆量，然而还是有些快捷键不得不记。
 

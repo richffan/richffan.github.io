@@ -28,23 +28,23 @@
 
 审计简单，在建工程和财务费用往往托付小朋友。《深交所投行业务培训笔记》人间清醒：负责人不干活、干活人不负责。业内有一保、二保的说法，监管不认，要求签字保代要从头跟到尾；
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_1.webp)
 
 所谓检查利息资本化是否正确，所谓复核计算资本化利息的借款费用、资本化率、实际支出数以及资本化的开始和停止时间。
 
 审计的重心往往放在了重新计算之上，审计有针对一般借款、针对专门借款（顺带一提，IPO 申报期内不按约定用途使用专门借款，可能会被质疑为经营不合规和内控缺陷）的测算表，却容易忽略复核资本化的开始和停止时间。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_2.webp) 
 
 陈版：在利息资本化的顺序中，一般银行借款与一般企业间借款的顺位原则上是相同的，并不存在优先使用银行借款一说。但一般借款费用资本化本身的风险较大，见下图。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_3.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_3.webp)
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_4.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_4.webp)
 
 所谓获取相关建设月报以核实（分析）每个月在建工程的施工状态，怕是普通年审都很难做到，且不论其他建设有无月报。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_5.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_5.webp)
 
 如果说月末状态难以保持关注，年末状态总该好好盘一盘趴，该罚！
 
@@ -64,7 +64,7 @@
 
 人间清醒《深交所投行业务培训笔记》：存在用实习生或刚入职员工监盘、走访的情形。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/084-利息资本化案例_6.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/084-利息资本化案例_6.webp)
 
 啊这，地都没拿下！
 

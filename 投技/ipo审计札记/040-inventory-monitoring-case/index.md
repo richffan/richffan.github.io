@@ -4,9 +4,9 @@
 
 纵览《中国注册会计师审计准则问题解答第 3 号——存货监盘》，存货存放地点清单（含临时仓和中转仓）的完整性不像企业银行账户的完整性，好掐实。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_1.webp)
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_2.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_2.webp)
 
 无非是：一多问，毕竟一个人撒谎容易，所有人撒谎难；二分析，以前放存货的地方不可能无缘无故蒸发啦；三被审计单位内部单据，容易作假；四五思路就是讲究放东西总得有个地，没地就得花钱租地。
 
@@ -26,13 +26,13 @@
 
 渔这~~亚特兰蒂斯正在苏醒~~有绕不开的梗:《证监会对獐子岛公司案作出行政处罚及市场禁入决定》。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_3.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_3.webp)
 
 一顿操作猛如虎，定格处罚六十万。
 
 卫星定位很好，然而这不是盘点(监盘)手段，盘点(监盘)还得看《关于开展 2017 年秋季底播虾夷扇贝抽测的公告》。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_4.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_4.webp)
 
 可见，其实没啥好办法，开条破船四处跑，抽一抽，拍一拍，量一量，还是一本糊涂账。证监会运用卫星定位只能生成船只轨迹，只能证明獐子岛没跑几个点位，存在虚假盘点(监盘)。
 
@@ -52,15 +52,15 @@
 
 虽然，翻遍上述文件都无开箱检查四字，缘何，因为不屑，~~连开箱检查都需要教，注册巨婴么！~~言归正传，我们是可以在注会书中找到相应指引的。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_5.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_5.webp)
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_6.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_6.webp)
 
 知其应为而不为之，审计也。人生世上，这“应付”两个字，本来是免不了的。
 
 最后聊聊第三方保管或控制的存货，实务中监管对函证控制的要求是没那么严的~~很松的~~，有合格快递单就能解释
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_7.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_7.webp)
 
 准则说是说下列一项或两项审计程序，然而实务中审计往往首选一，因为函证证明力强且简单粗暴，无法函证，则被迫二（二约可理解为替代测试）。
 
@@ -74,7 +74,7 @@ Benniar：拿到资料之后，一定要及时的过一遍，知道这个资料�
 
 —实施存货监盘的重点关注事项》还谈到一类特殊TA 妈给特殊开门——特殊到家的存货：以数码形式存储于各类存储介质的存货。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/040-存货监盘案例_8.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/040-存货监盘案例_8.webp)
 
 ---
 

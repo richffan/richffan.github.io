@@ -24,7 +24,7 @@ B“潜亏”的概念（老会计用语）
 
 C 体外资金虚增收入、虚增采购此处引用田老师的图...
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/033-如何通过预付账款实现财务造假(盈余管理).webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/033-如何通过预付账款实现财务造假(盈余管理).webp) 
 
 C1、虚增收入原理
 

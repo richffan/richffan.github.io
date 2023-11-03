@@ -36,7 +36,7 @@
 
 tips：事后可以根据厂房是否增加、生产人数是否增加等去验证。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/049-在建工程审计的魔鬼细节_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/049-在建工程审计的魔鬼细节_1.webp)
 
 关注点：业务规划安排、目前发展情况以及对应的产能安排；在建厂房的用途及预计转固后实际使用情况；结合当前产能情况分析在建工程投资的必要性；是否因为当前固定资产存在闲置或者生产工艺落后的设备无法满足生产产品；当前业务增量与新增在建工程中生产设备的匹配性；在建项目主要用途以及施工计划等（
 
@@ -106,7 +106,7 @@ tips：事后可以根据厂房是否增加、生产人数是否增加等去验�
 
 先上图说明在建工程支付款项的最终流向，是否间接流入公司客户和供应
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/049-在建工程审计的魔鬼细节_2.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/049-在建工程审计的魔鬼细节_2.webp)
 
 商...
 

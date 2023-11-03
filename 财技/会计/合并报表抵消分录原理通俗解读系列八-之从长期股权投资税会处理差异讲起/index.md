@@ -76,7 +76,7 @@ A甲公司单体报表中的账务处理
 2、购买日成本法抵消分录
 
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_1.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_1.webp)
 
 
 二、购买日后财务报表的编制
@@ -103,11 +103,11 @@ A公司20×1年12月31日股东权益总额为38000万元，其中，股本为20
 
 ②按公允持续计算分录【教材上面没有，小编将此还原】：
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_2.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_2.webp)
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_3.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_3.webp)
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_4.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_4.webp)
 
 
 ①补提折旧差额=补提资产金额3000/20=150
@@ -143,7 +143,7 @@ A公司调整后本年净利润＝10500（子公司账面净利润）
 【注：若是成本法，则直接用统一会计政策下的账面净利润，不必再作调整】
 
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_5.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_5.webp)
 
 
 
@@ -199,9 +199,9 @@ A公司调整后本年净利润＝10500（子公司账面净利润）
 （3）资产负债日抵消分录-成本法：
 
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_6.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_6.webp)
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（八）_7.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（八）_7.webp)
 
 
 

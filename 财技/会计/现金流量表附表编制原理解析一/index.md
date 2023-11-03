@@ -16,7 +16,7 @@
 
 通过这句话，可以看出来，现金流量附表是把净利润与经营活动产生的现金流量净额进行比较，可以让企业财务报表的使用者去了解净利润与经营活动现金净流量的差异，产生差异的原因、从而分析企业净利润的质量。
 
-![](https://img.richfan.site/obsidian/现金流量表附表编制原理解析（一）_1.webp)
+![](https://img.richfan.site/finance/accounting/现金流量表附表编制原理解析/现金流量表附表编制原理解析（一）_1.webp)
 
 现金流量附表的结构
 
@@ -36,11 +36,11 @@
 
 目的是将权责发生制下的净利润调整为收付实现制下的净利润，最终得出经营活动产生的现金流量净额。
 
-![](https://img.richfan.site/obsidian/现金流量表附表编制原理解析（一）_2.webp)
+![](https://img.richfan.site/finance/accounting/现金流量表附表编制原理解析/现金流量表附表编制原理解析（一）_2.webp)
 
 现金流量附表的编制方法
 
-![](https://img.richfan.site/obsidian/现金流量表附表编制原理解析（一）_3.webp)
+![](https://img.richfan.site/finance/accounting/现金流量表附表编制原理解析/现金流量表附表编制原理解析（一）_3.webp)
 
 首先需要将现金流量附表的报表项目做一下分类：
 

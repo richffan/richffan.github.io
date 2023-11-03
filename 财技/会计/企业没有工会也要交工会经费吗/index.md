@@ -4,7 +4,7 @@
 
 ## 01 未成立工会需要缴纳工会经费吗？
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_1.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_1.webp)
 
 答复内容：
 
@@ -25,7 +25,7 @@
 
 ## 02 工会经费如何计算？如何返还？
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_2.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_2.webp)
 
 依据《中华全国总工会办公厅关于实施小额缴费工会组织工会经费全额返还支持政策的通知》（厅字〔2022〕47号）规定：
 
@@ -112,19 +112,19 @@
 
 国家税务总局公告2010年第24号《国家税务总局关于工会经费企业所得税税前扣除凭据问题的公告》第一条规定自2010年7月1日起，企业拨缴的职工工会经费，不超过工资薪金总额2%的部分，凭工会组织开具的《工会经费收入专用收据》在企业所得税税前扣除。
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_3.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_3.webp)
 
 《国家税务总局关于税务机关代收工会经费企业所得税税前扣除凭据问题的公告》国家税务总局公告2011年第30号规定自2010年1月1日起，在委托税务机关代收工会经费的地区，企业拨缴的工会经费，也可凭合法、有效的工会经费代收凭据依法在税前扣除。
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_4.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_4.webp)
 
 具体在申报表填写的时候，填写A105050表
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_5.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_5.webp)
 
 公司2019年工资薪金总额500万，按2%计提并拨付了工会经费500*2%=10万，申报表填写如下，其他栏次省略。
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_6.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_6.webp)
 
 1、账载金额填报公司会计核算计入成本费用的工会经费支出金额10万；
 
@@ -146,9 +146,9 @@
 
 具体开支范围如下：
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_7.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_7.webp)
 
-![](https://img.richfan.site/cpa\account\企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_8.webp)
+![](https://img.richfan.site/finance/accounting/企业没有工会也要交工会经费吗/企业没有工会，也要交工会经费吗？_8.webp)
 
 ---
 

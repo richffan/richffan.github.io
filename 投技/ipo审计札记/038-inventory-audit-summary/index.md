@@ -62,15 +62,15 @@
 
 猪圈里狂放，牧场上流浪，商超中通宵，**带着最微薄的行李和最繁重的任务在职场流浪**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_1.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_1.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_2.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_3.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_3.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_4.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_4.webp) 
 
 **截止测试分为入库截止测试和出库截止测试，从账到单据抑或从单据到账，本质上是个抽凭的体力活**，相较细节测试，无非是将选取样本的时间定死在资产负债表日前后
 
@@ -90,11 +90,11 @@
 
 **规定动作这玩意想必每个底稿模板都自带，哪怕你没入行，随便下个公告**，如中信建投证券股份有限公司《关于深圳证券交易所《关于对云鼎科技股份有限公司的重组问询函》回复之核查意见》
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_6.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_6.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_7.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_7.webp) 
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/038-存货审计概要_8.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/038-存货审计概要_8.webp) 
 
 ---
 

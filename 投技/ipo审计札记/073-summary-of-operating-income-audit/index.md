@@ -10,13 +10,13 @@
 
 **扯淡第一步，我是谁**——得知道自己在哪个行业吧
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_1.webp)
 
 巨潮资讯下份近年年度报告一瞅：**制造业——双金属带锯条行业**。。。再随便瞥一眼，这公司十有八九生意做到海外了，存在境外销售收入
 
 **扯淡第二步，同行在哪里**，**任意搜索引擎输入关键词**：双金属带锯条行业
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_2.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_2.webp)
 
 再次打开巨潮资讯下载恒而达年度报告，同时与被审计单位管理层唠嗑：天下英雄谁敌手，**人家对自身的竞争对手抑或潜在竞争对手门清**。。。除非同行业无敌，独孤求败
 
@@ -28,7 +28,7 @@
 
 然于泰嘉而言境内**就一家同行业上市公司，行业分析一下子变得雷声大雨点小**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_3.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_3.webp)
 
 营业收入增长率=(营业收入增长额+上年营业收入总额)×100%=19.73%
 
@@ -38,7 +38,7 @@
 
 曾几何时，中联重科面试官问我，**工程机械行业毛利率是多少**。。。凉透
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_4.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_4.webp)
 
 行业毛利率不能一概而论，得看销售模式：经销（得穿透核查吧）还是直营，**经销商**  **要吃掉一层利润趴**；还得看生产模式：自产为主还是采用的 OEM 模式（俗称代工），**代工厂要分一份蛋糕趴**
 
@@ -54,19 +54,19 @@
 
 **实务中也是有迹可循的（接地气的）**，因为问询中都是答案，随手摘摘（巨潮资讯即可下载问询）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_5.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_5.webp)
 
 这 是 从 收 入 端 着 手 ： 单 价 降 了 ， **因 为 量 大 给 优 惠 ， 因 为 低 价 稳 中 标**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_6.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_6.webp)
 
 这还是从收入端着手：**不同机型毛利率不一致，即产品结构的变化（用以解释大类整体毛利率）**，那细分机型毛利率何解：不同客户的议价能力、采购数量、市场地位不同（具体怎么不同法，没说）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_7.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_7.webp)
 
 这是硬气，诶，您这问题没水准，**私人定制，没法比**最后打个样：成本倒挂=成本大于收入=负毛利
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/073-营业收入审计概要_8.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/073-营业收入审计概要_8.webp)
 
 **某些流派坚持毛利率分析开在成本底稿之中**：收入端通过严密的财务核查可以大概摸清楚(包括物流、财务、现金流的互相印证、关联交易的核查)，成本端就不是一个画风，因为成本端的证据大部分是内部证据，诸如领用、生产耗用、存货管理(大量都是内部流转的单据，可验证性较差)
 

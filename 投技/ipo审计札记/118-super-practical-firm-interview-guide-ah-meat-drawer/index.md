@@ -36,7 +36,7 @@
 
 =净利润（利润表）+调整事项。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/118-超实用的事务所面试指南（啊肉的抽屉）_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/118-超实用的事务所面试指南（啊肉的抽屉）_1.webp)
 
 1. **怎么完成内控测试？**
 

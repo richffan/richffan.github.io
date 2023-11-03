@@ -12,9 +12,9 @@
 
 授人以鱼不如授人以渔， **想知道这玩意是啥， 不妨打开上市公司年报瞅一瞅**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/065-其他流动负债审计要点_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/065-其他流动负债审计要点_1.webp)
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/065-其他流动负债审计要点_2.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/065-其他流动负债审计要点_2.webp)
 
 **其他里塞巨额其他**，这样显得信息披露质量很差，一般不允许这么出报告，不妨换一家瞅瞅
 
@@ -38,7 +38,7 @@ why：不懂会计和税务的人看财报，看见应交税费的余额很大�
 
 不日，到底是多久，这个时间决定着这货搁其他流动负债还是其他非流动负债
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/065-其他流动负债审计要点_3.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/065-其他流动负债审计要点_3.webp)
 
 接着瞅三一重工年报披露图：短期债券、继续涉入的金融负债、质押式回购借入资金
 
@@ -60,11 +60,11 @@ C  质押式回购借入资金，要知道常用头寸管理工具有四类：�
 
 还有谁！还有啥！毕竟这是个**无穷无尽的垃圾桶，日积月累见功底。。。**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/065-其他流动负债审计要点_4.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/065-其他流动负债审计要点_4.webp)
 
 仙之巅，傲世间，有我陈版便有天（所有贬义梗均为褒用）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/065-其他流动负债审计要点_5.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/065-其他流动负债审计要点_5.webp)
 ）
 
 ---

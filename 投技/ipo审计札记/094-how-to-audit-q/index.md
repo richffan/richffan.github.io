@@ -70,7 +70,7 @@ D：上述的B 和 C 合计后，监盘了其中两个仓库，覆盖数量约 2
 
 （内容纯属虚构）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/094-审计如何答Q_1.png)
+![](https://img.richfan.site/ibank/IPO审计札记/094-审计如何答Q_1.png)
 
 这个时候，要么你就要“善解人意”，知道 TA 担忧的点在哪里，要么你就是充分沟通，电话或者拿着文件当面请教，了解质控为什么会有这个问题
 

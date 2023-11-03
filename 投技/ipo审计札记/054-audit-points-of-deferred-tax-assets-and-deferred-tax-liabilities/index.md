@@ -4,7 +4,7 @@
 
 递延所得税底稿并不难刷，**等别人数字敲定，你往底稿一涂**，自带的公式一测算，调整分录一出，三表一链，完事
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/054-递延所得税资产和递延所得税负债审计要点_1.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/054-递延所得税资产和递延所得税负债审计要点_1.webp)|
 
 不明就里的小朋友，**秉持世间万物皆可套，也能抄得有模有样**
 
@@ -84,7 +84,7 @@
 
 《关于广州慧智微电子股份有限公司 IPO 审核问询函中有关财务事项的说明》
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/054-递延所得税资产和递延所得税负债审计要点_2.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/054-递延所得税资产和递延所得税负债审计要点_2.webp)|
 
 ---
 

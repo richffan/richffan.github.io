@@ -25,7 +25,7 @@
 
 #### （一）计量方法
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（六）_1.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（六）_1.webp)
 
 此表涉及几组概念的辨析：
 
@@ -55,7 +55,7 @@
 
 #### （二）初始确认
 
-![](https://img.richfan.site/obsidian/合并报表抵消分录原理通俗解读系列（六）_2.webp)
+![](https://img.richfan.site/finance/accounting/合并报表抵消分录原理通俗解读系列/合并报表抵消分录原理通俗解读系列（六）_2.webp)
 
 此表涉及几组概念的辨析：
 

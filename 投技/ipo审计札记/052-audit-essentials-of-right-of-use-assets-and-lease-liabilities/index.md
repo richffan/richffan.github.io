@@ -34,7 +34,7 @@ A+H 股 2019 年 1 月 1 日，A 股及其他 2021 年 1 月 1 日开始
 
 why：这里的优先续租权涵盖的期间**并未对双方形成强制性权利和义务**，不属于不可撤销期间。。。同等条件下的优先购买权同理
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_1.webp) 
 
 租金总额：（该模板）无脑每期的租金 X 租赁期数即可，然有一个美妙的概念曰：可变租赁付款额
 
@@ -42,7 +42,7 @@ why：这里的优先续租权涵盖的期间**并未对双方形成强制性权
 
 啥玩意取决于指数或比率：诸如与消费者物价指数（CPI）挂钩的付款额、与基准利率（例如，伦敦银行同业拆借利率（LIBOR））挂钩的付款额，或者随市场租金率的变化而调整的付款额。。。说了等于没说
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_2.webp) 
 
 诸如：租赁期内，本合同界定的年租金价格从第二年起每年递增 1 次，每次按照 3%递增
 
@@ -68,7 +68,7 @@ why：这里的优先续租权涵盖的期间**并未对双方形成强制性权
 
 照抄行不行，要不要调整，有人要跟你谈信用，有人会跟你将讲风险，**谁BB，谁负责量化。。。**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_3.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_3.webp) 
 
 能量化的大佬其实也不计其数。。。咱们简化就好哈，记得月折现率=（1+年折现率）^(1/12)-1。。。财管书第二章的内容
 
@@ -86,7 +86,7 @@ excel 至少得懂：诸如 IF(购入时间-财务报表截止日>0,0,IF(DATED
 
 既然测了折旧，就得整张成本费用分配勾稽表（当然你能拿到使用权资产究竟是谁受益的证据也是多多益善的），**便于公式法编现金流的同志取数**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_4.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_4.webp) 
 
 细品上上上句，要是碰上短命鬼，这不得减值，这题我现在还不会。。。
 
@@ -124,7 +124,7 @@ excel 至少得懂：诸如 IF(购入时间-财务报表截止日>0,0,IF(DATED
 
 如若不然，请参照新收入准则相关规定：**依据二者的单独售价比例对合同总价重新在这两部分之间分配（分摊）**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_5.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_5.webp) 
 
 双方法律关系不存在且无其他纠纷后，押金是要退的，入其他应收款，这也是干扰项用最简单的函数在 excel 里写一个最直观的模板。。。
 
@@ -134,7 +134,7 @@ C6=C2* 1.03，直接下拉
 
 D2=C3/POWER((1+$E$5),A3-1)，直接下拉，PV  函数并不好用哈
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/052-使用权资产和租赁负债审计要点_6.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/052-使用权资产和租赁负债审计要点_6.webp) 
 
 然后就可以**自动出分录**，预先链一下上上图中的格子
 

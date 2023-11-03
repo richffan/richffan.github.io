@@ -20,7 +20,7 @@
 
 当然，最有搞头的还是股权质押，尤其是高比例股权质押。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_1.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_1.webp)
 
 简而言之，最大的风险就是股价下跌，**一旦股价下跌（跌至预警线）要么补充质押**
 
@@ -44,7 +44,7 @@
 
 （见图），至少直观感受到两个点：一是应付票据流动性更强；二是应付票据较为少见。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_2.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_2.webp)
 
 政府补助那块不懂会计容易抓瞎与抄数，票据这块不懂法律也容易抓瞎与抄数。
 
@@ -76,7 +76,7 @@ B 周转率分析: 一般没人分析这玩意，计算应收账款周转率�
 
 企业信用报告——信贷记录明细（见图）：会列示截至报告打印日（注意时点：之前也强调过最好期末去银行打印）尚未结清银行承兑汇票金额及明细。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_3.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_3.webp)
 
 ## 第四步，二个铁哥们：发函与期后检查。
 
@@ -86,7 +86,7 @@ B 周转率分析: 一般没人分析这玩意，计算应收账款周转率�
 
 应付票据函证信息需要填列在银行询证函第七项，见图，图中还可以看出发函对象是：承兑行。可翻看监管爸爸的指导文件：《中国注册会计师审计准则第 1312 号——函证》。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_4.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_4.webp)
 
 根据中国注册会计师协会和中国银行业协会制定的《银行函证及回函工作操作指引》：A 抵（质）押品指：保证金存款以外的抵（质）押品情况
 
@@ -102,7 +102,7 @@ A 应付票据增加检查：首先获取新产生债务对应的采购合同�
 
 核实交易的真实性还是需要拎出来单独说一说的，先瞅一眼北京注册会计师协会邀请的专业技术委员会专家的解答。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_5.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_5.webp)
 
 专家这车轱辘话水平就是高哈，资金拆借，无处不在梦魇
 
@@ -116,7 +116,7 @@ By the way,注意逾期，毕竟谁都有还不上钱的时候。应付商业�
 
 再看看陈版关于对方未要求承兑的答疑，见图。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/058-应付票据审计要点_6.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/058-应付票据审计要点_6.webp)
 
 ## 第六步，保证金勾稽核对。
 

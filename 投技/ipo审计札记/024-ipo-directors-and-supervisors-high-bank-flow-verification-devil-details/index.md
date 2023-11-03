@@ -33,13 +33,13 @@
 
 【案例 1】公司董事、监事、高级管理人员、实际控制人、财务负责人、出纳、销售负责人、采购负责人、根据问题导向原则扩大核查范围的个人主体，在报告期内的所有银行账户流水，具体人员名单如下：
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_1.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_1.webp)|
 
 【思考】集团审计下，是否需要根据各个子公司的组织结构专门去梳理董监高以及关键岗位节点的人员？
 
 【当然需要，母公司以及控股子公司√】
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_2.webp)【思考】此时，“花名册”的范围和样本量也需要再次进行整理归集，明确各种“关 系网络”，应该事先进行多方核对、核实、防止比官方黑科技查出来要少很多很多 ....
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_2.webp)【思考】此时，“花名册”的范围和样本量也需要再次进行整理归集，明确各种“关 系网络”，应该事先进行多方核对、核实、防止比官方黑科技查出来要少很多很多 ....
 
 ### C2 银行账户情况汇总与流水打印过程的控制
 
@@ -47,15 +47,15 @@
 
 【案例】经核查，核查对象及银行账户情况如下：
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_3.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_3.webp) 
 
 【实操】利用云闪付 **APP**  的银行账户查询功能
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_4.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_4.webp)|
 
 **↓**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_5.jpg) 
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_5.jpg) 
 
 【注意点】云闪付 APP  查询显示不了已注销、久悬类账户信息，如有必要，应当与核对对象本人前往对应银行打印，打印流水的范围包括储蓄卡、存折与在报告期内销户的账户。
 
@@ -97,7 +97,7 @@
 
 【案例 1】报告期内，发行人董事、监事、高级管理人员、实际控制人及其配偶、主要股东的银行流水主要收入支出金额、来源及去向等情况如下：
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_6.jpg)|
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_6.jpg)|
 
 ## 银行流水到底怎么核查？有没有比较完整的方法（鹏拍）
 
@@ -137,7 +137,7 @@
 
 5、15家主要银行打印银行流水程序如下：
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/024-IPO董监高银行流水核查的魔鬼细节_7.jpg) 
+![](https://img.richfan.site/ibank/IPO审计札记/024-IPO董监高银行流水核查的魔鬼细节_7.jpg) 
 
 ### 05 金额标准
 

@@ -18,7 +18,7 @@
 
 若您觉着我字里行间有抱怨，有吐槽，那绝不是天职的问题，是行业的问题，甚至您想再往上说也是可以的
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/121-辞职信怎么写出格调_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/121-辞职信怎么写出格调_1.webp) 
 
 奈何离职
 
@@ -62,7 +62,7 @@
 
 **也许我去别的行业溜一圈，然后邂逅志同道合，开一家人间理想的事务所**
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/121-辞职信怎么写出格调_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/121-辞职信怎么写出格调_2.webp) 
 
 又爱又恨，天职无悔
 

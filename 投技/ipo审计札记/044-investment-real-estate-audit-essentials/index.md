@@ -60,7 +60,7 @@
 
 最后，分享一下中债资信的评估科普。
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/044-投资性房地产审计要点.webp)
+![](https://img.richfan.site/ibank/IPO审计札记/044-投资性房地产审计要点.webp)
 
 ---
 

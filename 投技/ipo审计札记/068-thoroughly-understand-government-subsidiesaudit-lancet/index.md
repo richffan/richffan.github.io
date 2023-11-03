@@ -8,9 +8,9 @@
 
 ## 2、理论上的分类：
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/068-彻底搞懂政府补助（Audit-Lancet）_1.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/068-彻底搞懂政府补助（Audit-Lancet）_1.webp)|
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/068-彻底搞懂政府补助（Audit-Lancet）_2.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/068-彻底搞懂政府补助（Audit-Lancet）_2.webp)|
 
 ## 3、具体的分类标准：
 
@@ -32,7 +32,7 @@ C. 相关的补助款批文中已明确承诺了拨付期限，且该款项的�
 
 ## 5、会计处理
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/068-彻底搞懂政府补助（Audit-Lancet）_3.webp)|
+![](https://img.richfan.site/ibank/IPO审计札记/068-彻底搞懂政府补助（Audit-Lancet）_3.webp)|
 
 计量：货币性→实收或应收金额、非货币性→公允价值×→名义金额 1 元
 

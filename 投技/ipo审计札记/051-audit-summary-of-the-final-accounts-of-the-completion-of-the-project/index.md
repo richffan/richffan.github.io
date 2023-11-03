@@ -12,7 +12,7 @@
 
 毕竟在咨询行业浪过，哪怕屁都不会，依旧春风满面，有的是解决一切问题的方法论与模型~~（忽悠能力）~~
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/051-工程竣工决算审计概要_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/051-工程竣工决算审计概要_1.webp) 
 
 不扯麦肯锡七步成犊子，铩羽而归，乖乖翻了下我司知识库
 

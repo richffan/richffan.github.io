@@ -4,7 +4,7 @@
 
 插一嘴：**非经常性损益明细表中的所得税影响额**同理（理论与算法皆一模一样）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/092-所得税费用审计要点_1.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/092-所得税费用审计要点_1.webp) 
 
 **当期所得税费用 = 应纳税所得额（利润总额 ± 纳税调整）× 适用税率**
 
@@ -16,7 +16,7 @@
 
 温馨提示：吃着碗里的不要看着锅里的，**整当期就不要挂念递延**（这是一种朴素但高级的思路）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/092-所得税费用审计要点_2.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/092-所得税费用审计要点_2.webp) 
 
 **本期发生数**就是别人审定的抄就完事， **税前扣除限额**就是那些故纸堆里的理论
 
@@ -78,13 +78,13 @@ K  非广告性质赞助支出：全部调增，，，赞助不为打广告这�
 
 这些都是 15%，**只见过高新企业证书，碰上别的咋办，企业应该可以掏出家伙自证**，虚心请教就完事，聊天不会么（为免尴尬，这条不都成了资料清单标准条款）
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/092-所得税费用审计要点_3.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/092-所得税费用审计要点_3.webp) 
 
 《国家税务总局关于实施高新技术企业所得税优惠政策有关问题的公告》：企业的高新技术企业资格期满当年，在通过重新认定前，其企业所得税**暂按15%的税率预缴，在年底前仍未取得高新技术企业资格的，应按规定补缴相应期间的税款**
 
 当期所得税费用就是个小卡拉米，遇上优质企业，负责税务小姐姐会将调整金额与依据整理得清清楚楚，拿来粘贴就完事。。。下回分解递延所得税费用，这货倒是埋着不少坑
 
-![](https://cdn.staticaly.com/gh/richffan/img@main/obsidian/IPO/092-所得税费用审计要点_4.webp) 
+![](https://img.richfan.site/ibank/IPO审计札记/092-所得税费用审计要点_4.webp) 
 
 ---
 

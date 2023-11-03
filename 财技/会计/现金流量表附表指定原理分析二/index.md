@@ -5,7 +5,7 @@
 这里对需要指定附表项目的情况做了一下总结：
 
 
-![](https://img.richfan.site/obsidian/现金流量表附表指定原理分析（二）.webp)
+![](https://img.richfan.site/finance/accounting/现金流量表附表编制原理解析/现金流量表附表指定原理分析（二）.webp)
 
 从凭证的角度上，进行分析。
 
