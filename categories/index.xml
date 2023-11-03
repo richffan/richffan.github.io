@@ -5,67 +5,75 @@
     <description>Categories - 分类 - 樊刹</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
       <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/" rel="self" type="application/rss+xml" /><item>
-  <title>书籍</title>
-  <link>http://richfan.site/categories/%E4%B9%A6%E7%B1%8D/</link>
+  <title>书技</title>
+  <link>http://richfan.site/categories/%E4%B9%A6%E6%8A%80/</link>
   <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E4%B9%A6%E7%B1%8D/</guid>
+  <guid>http://richfan.site/categories/%E4%B9%A6%E6%8A%80/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>审计</title>
-  <link>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</link>
+  <title>审技</title>
+  <link>http://richfan.site/categories/%E5%AE%A1%E6%8A%80/</link>
   <pubDate>Wed, 01 Nov 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</guid>
+  <guid>http://richfan.site/categories/%E5%AE%A1%E6%8A%80/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>法律</title>
-  <link>http://richfan.site/categories/%E6%B3%95%E5%BE%8B/</link>
+  <title>法技</title>
+  <link>http://richfan.site/categories/%E6%B3%95%E6%8A%80/</link>
   <pubDate>Tue, 31 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E6%B3%95%E5%BE%8B/</guid>
+  <guid>http://richfan.site/categories/%E6%B3%95%E6%8A%80/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>投行</title>
-  <link>http://richfan.site/categories/%E6%8A%95%E8%A1%8C/</link>
+  <title>投技</title>
+  <link>http://richfan.site/categories/%E6%8A%95%E6%8A%80/</link>
   <pubDate>Mon, 30 Oct 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E6%8A%95%E8%A1%8C/</guid>
+  <guid>http://richfan.site/categories/%E6%8A%95%E6%8A%80/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>程技</title>
+  <link>http://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
+  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/categories/%E7%A8%8B%E6%8A%80/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>财技</title>
+  <link>http://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
+  <pubDate>Wed, 20 Sep 2023 00:00:00 &#43;0000</pubDate>
+  <author>richfan</author>
+  <guid>http://richfan.site/categories/%E8%B4%A2%E6%8A%80/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>编程</title>
   <link>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
+  <pubDate>Tue, 19 Sep 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
   <guid>http://richfan.site/categories/%E7%BC%96%E7%A8%8B/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>注会</title>
-  <link>http://richfan.site/categories/%E6%B3%A8%E4%BC%9A/</link>
-  <pubDate>Wed, 20 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
-  <guid>http://richfan.site/categories/%E6%B3%A8%E4%BC%9A/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>食记</title>
-  <link>http://richfan.site/categories/%E9%A3%9F%E8%AE%B0/</link>
+  <title>食技</title>
+  <link>http://richfan.site/categories/%E9%A3%9F%E6%8A%80/</link>
   <pubDate>Sun, 13 Aug 2023 00:00:00 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E9%A3%9F%E8%AE%B0/</guid>
+  <guid>http://richfan.site/categories/%E9%A3%9F%E6%8A%80/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>系统</title>
-  <link>http://richfan.site/categories/%E7%B3%BB%E7%BB%9F/</link>
-  <pubDate>Sun, 06 Aug 2023 18:00:00 &#43;0000</pubDate>
+  <title>审计</title>
+  <link>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</link>
+  <pubDate>Fri, 05 May 2023 14:19:09 &#43;0000</pubDate>
   <author>richfan</author>
-  <guid>http://richfan.site/categories/%E7%B3%BB%E7%BB%9F/</guid>
+  <guid>http://richfan.site/categories/%E5%AE%A1%E8%AE%A1/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
