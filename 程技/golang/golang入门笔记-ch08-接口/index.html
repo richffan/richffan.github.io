@@ -10,18 +10,16 @@
 <meta name="description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH08-接口">
 <meta itemprop="description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2760"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
+<meta itemprop="wordCount" content="2760"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH08-接口" />
 <meta property="og:description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="程技" />
+<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-10-01T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
-
-<meta name="twitter:title" content="Golang入门笔记-CH08-接口"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Golang入门笔记-CH08-接口"/>
 <meta name="twitter:description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">

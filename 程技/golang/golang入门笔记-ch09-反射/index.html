@@ -10,18 +10,16 @@
 <meta name="description" content="反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH09-反射">
 <meta itemprop="description" content="反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1841"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
+<meta itemprop="wordCount" content="1841"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH09-反射" />
 <meta property="og:description" content="反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="程技" />
+<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-10-01T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
-
-<meta name="twitter:title" content="Golang入门笔记-CH09-反射"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Golang入门笔记-CH09-反射"/>
 <meta name="twitter:description" content="反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">

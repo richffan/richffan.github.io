@@ -10,18 +10,16 @@
 <meta name="description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="duckdb从入门到精通：安装篇">
 <meta itemprop="description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合"><meta itemprop="datePublished" content="2023-05-05T14:19:09+00:00" />
 <meta itemprop="dateModified" content="2023-05-05T14:19:09+00:00" />
-<meta itemprop="wordCount" content="909"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
+<meta itemprop="wordCount" content="909"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="IT审计," /><meta property="og:title" content="duckdb从入门到精通：安装篇" />
 <meta property="og:description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="审技" />
+<meta property="og:url" content="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="审技" />
 <meta property="article:published_time" content="2023-05-05T14:19:09+00:00" />
 <meta property="article:modified_time" content="2023-05-05T14:19:09+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
-
-<meta name="twitter:title" content="duckdb从入门到精通：安装篇"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="duckdb从入门到精通：安装篇"/>
 <meta name="twitter:description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">

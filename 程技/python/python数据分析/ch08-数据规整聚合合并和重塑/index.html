@@ -10,18 +10,16 @@
 <meta name="description" content="在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的" /><meta name="keywords" content='python' /><meta itemprop="name" content="第八章 数据规整：聚合、合并和重塑">
 <meta itemprop="description" content="在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="10119"><meta itemprop="image" content="http://richfan.site/favicon.svg"/>
+<meta itemprop="wordCount" content="10119"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第八章 数据规整：聚合、合并和重塑" />
 <meta property="og:description" content="在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><meta property="og:image" content="http://richfan.site/favicon.svg"/><meta property="article:section" content="程技" />
+<meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2023-09-25T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-09-25T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://richfan.site/favicon.svg"/>
-
-<meta name="twitter:title" content="第八章 数据规整：聚合、合并和重塑"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第八章 数据规整：聚合、合并和重塑"/>
 <meta name="twitter:description" content="在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
