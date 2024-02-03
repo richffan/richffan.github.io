@@ -59,6 +59,6 @@ C 最终评估“替代测试”：它是否帮助我们获取了相应的审�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/032-audit-hit-areas-of-aircraft-releasealternative-testing/  
 

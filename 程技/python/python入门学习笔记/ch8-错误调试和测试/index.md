@@ -32,7 +32,7 @@ def foo():
 def bar():
     r = foo()
     if r==(-1):
-        print('Error')
+        print(&#39;Error&#39;)
     else:
         pass
 ```
@@ -47,14 +47,14 @@ def bar():
 
 ```python
 try:
-    print('try...')
+    print(&#39;try...&#39;)
     r = 10 / 0
-    print('result:', r)
+    print(&#39;result:&#39;, r)
 except ZeroDivisionError as e:
-    print('except:', e)
+    print(&#39;except:&#39;, e)
 finally:
-    print('finally...')
-print('END')
+    print(&#39;finally...&#39;)
+print(&#39;END&#39;)
 ```
 
 当我们认为某些代码可能会出错时，就可以用`try`来运行这段代码，如果执行出错，则后续代码不会继续执行，而是直接跳转至错误处理代码，即`except`语句块，执行完`except`后，如果有`finally`语句块，则执行`finally`语句块，至此，执行完毕。
@@ -68,7 +68,7 @@ finally...
 END
 ```
 
-从输出可以看到，当错误发生时，后续语句`print('result:', r)`不会被执行，`except`由于捕获到`ZeroDivisionError`，因此被执行。最后，`finally`语句被执行。然后，程序继续按照流程往下走。
+从输出可以看到，当错误发生时，后续语句`print(&#39;result:&#39;, r)`不会被执行，`except`由于捕获到`ZeroDivisionError`，因此被执行。最后，`finally`语句被执行。然后，程序继续按照流程往下走。
 
 如果把除数`0`改成`2`，则执行结果如下：
 
@@ -85,16 +85,16 @@ END
 
 ```python
 try:
-    print('try...')
-    r = 10 / int('a')
-    print('result:', r)
+    print(&#39;try...&#39;)
+    r = 10 / int(&#39;a&#39;)
+    print(&#39;result:&#39;, r)
 except ValueError as e:
-    print('ValueError:', e)
+    print(&#39;ValueError:&#39;, e)
 except ZeroDivisionError as e:
-    print('ZeroDivisionError:', e)
+    print(&#39;ZeroDivisionError:&#39;, e)
 finally:
-    print('finally...')
-print('END')
+    print(&#39;finally...&#39;)
+print(&#39;END&#39;)
 ```
 
 `int()`函数可能会抛出`ValueError`，所以我们用一个`except`捕获`ValueError`，用另一个`except`捕获`ZeroDivisionError`。
@@ -103,18 +103,18 @@ print('END')
 
 ```python
 try:
-    print('try...')
-    r = 10 / int('2')
-    print('result:', r)
+    print(&#39;try...&#39;)
+    r = 10 / int(&#39;2&#39;)
+    print(&#39;result:&#39;, r)
 except ValueError as e:
-    print('ValueError:', e)
+    print(&#39;ValueError:&#39;, e)
 except ZeroDivisionError as e:
-    print('ZeroDivisionError:', e)
+    print(&#39;ZeroDivisionError:&#39;, e)
 else:
-    print('no error!')
+    print(&#39;no error!&#39;)
 finally:
-    print('finally...')
-print('END')
+    print(&#39;finally...&#39;)
+print(&#39;END&#39;)
 ```
 
 Python的错误其实也是class，所有的错误类型都继承自`BaseException`，所以在使用`except`时需要注意的是，它不但捕获该类型的错误，还把其子类也“一网打尽”。比如：
@@ -123,9 +123,9 @@ Python的错误其实也是class，所有的错误类型都继承自`BaseExcepti
 try:
     foo()
 except ValueError as e:
-    print('ValueError')
+    print(&#39;ValueError&#39;)
 except UnicodeError as e:
-    print('UnicodeError')
+    print(&#39;UnicodeError&#39;)
 ```
 
 第二个`except`永远也捕获不到`UnicodeError`，因为`UnicodeError`是`ValueError`的子类，如果有，也被第一个`except`给捕获了。
@@ -145,11 +145,11 @@ def bar(s):
 
 def main():
     try:
-        bar('0')
+        bar(&#39;0&#39;)
     except Exception as e:
-        print('Error:', e)
+        print(&#39;Error:&#39;, e)
     finally:
-        print('finally...')
+        print(&#39;finally...&#39;)
 ```
 
 也就是说，不需要在每个可能出错的地方去捕获错误，只要在合适的层次去捕获错误就可以了。这样一来，就大大减少了写`try...except...finally`的麻烦。
@@ -167,7 +167,7 @@ def bar(s):
     return foo(s) * 2
 
 def main():
-    bar('0')
+    bar(&#39;0&#39;)
 
 main()
 ```
@@ -177,13 +177,13 @@ main()
 ```python
 $ python3 err.py
 Traceback (most recent call last):
-  File "err.py", line 11, in <module>
+  File &#34;err.py&#34;, line 11, in &lt;module&gt;
     main()
-  File "err.py", line 9, in main
-    bar('0')
-  File "err.py", line 6, in bar
+  File &#34;err.py&#34;, line 9, in main
+    bar(&#39;0&#39;)
+  File &#34;err.py&#34;, line 6, in bar
     return foo(s) * 2
-  File "err.py", line 3, in foo
+  File &#34;err.py&#34;, line 3, in foo
     return 10 / int(s)
 ZeroDivisionError: division by zero
 ```
@@ -201,28 +201,28 @@ Traceback (most recent call last):
 第2~3行：
 
 ```python
- File "err.py", line 11, in <module>
+ File &#34;err.py&#34;, line 11, in &lt;module&gt;
     main()
 ```
 
 调用`main()`出错了，在代码文件`err.py`的第11行代码，但原因是第9行：
 
 ```python
- File "err.py", line 9, in main
-    bar('0')
+ File &#34;err.py&#34;, line 9, in main
+    bar(&#39;0&#39;)
 ```
 
-调用`bar('0')`出错了，在代码文件`err.py`的第9行代码，但原因是第6行：
+调用`bar(&#39;0&#39;)`出错了，在代码文件`err.py`的第9行代码，但原因是第6行：
 
 ```python
-File "err.py", line 6, in bar
+File &#34;err.py&#34;, line 6, in bar
     return foo(s) * 2
 ```
 
 原因是`return foo(s) * 2`这个语句出错了，但这还不是最终原因，继续往下看：
 
 ```python
-File "err.py", line 3, in foo
+File &#34;err.py&#34;, line 3, in foo
     return 10 / int(s)
 ```
 
@@ -234,7 +234,7 @@ ZeroDivisionError: integer division or modulo by zero
 
 根据错误类型`ZeroDivisionError`，我们判断，`int(s)`本身并没有出错，但是`int(s)`返回`0`，在计算`10 / 0`时出错，至此，找到错误源头。
 
-!> 出错的时候，一定要分析错误的调用栈信息，才能定位错误的位置。
+!&gt; 出错的时候，一定要分析错误的调用栈信息，才能定位错误的位置。
 
 ![异常栈](https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png)
 
@@ -257,12 +257,12 @@ def bar(s):
 
 def main():
     try:
-        bar('0')
+        bar(&#39;0&#39;)
     except Exception as e:
         logging.exception(e)
 
 main()
-print('END')
+print(&#39;END&#39;)
 ```
 
 同样是出错，但程序打印完错误信息后会继续执行，并正常退出：
@@ -271,11 +271,11 @@ print('END')
 $ python3 err_logging.py
 ERROR:root:division by zero
 Traceback (most recent call last):
-  File "err_logging.py", line 13, in main
-    bar('0')
-  File "err_logging.py", line 9, in bar
+  File &#34;err_logging.py&#34;, line 13, in main
+    bar(&#39;0&#39;)
+  File &#34;err_logging.py&#34;, line 9, in bar
     return foo(s) * 2
-  File "err_logging.py", line 6, in foo
+  File &#34;err_logging.py&#34;, line 6, in foo
     return 10 / int(s)
 ZeroDivisionError: division by zero
 END
@@ -297,10 +297,10 @@ class FooError(ValueError):
 def foo(s):
     n = int(s)
     if n==0:
-        raise FooError('invalid value: %s' % s)
+        raise FooError(&#39;invalid value: %s&#39; % s)
     return 10 / n
 
-foo('0')
+foo(&#39;0&#39;)
 ```
 
 执行，可以最后跟踪到我们自己定义的错误：
@@ -308,10 +308,10 @@ foo('0')
 ```python
 $ python3 err_raise.py 
 Traceback (most recent call last):
-  File "err_throw.py", line 11, in <module>
-    foo('0')
-  File "err_throw.py", line 8, in foo
-    raise FooError('invalid value: %s' % s)
+  File &#34;err_throw.py&#34;, line 11, in &lt;module&gt;
+    foo(&#39;0&#39;)
+  File &#34;err_throw.py&#34;, line 8, in foo
+    raise FooError(&#39;invalid value: %s&#39; % s)
 __main__.FooError: invalid value: 0
 ```
 
@@ -325,14 +325,14 @@ __main__.FooError: invalid value: 0
 def foo(s):
     n = int(s)
     if n==0:
-        raise ValueError('invalid value: %s' % s)
+        raise ValueError(&#39;invalid value: %s&#39; % s)
     return 10 / n
 
 def bar():
     try:
-        foo('0')
+        foo(&#39;0&#39;)
     except ValueError as e:
-        print('ValueError!')
+        print(&#39;ValueError!&#39;)
         raise
 
 bar()
@@ -348,12 +348,12 @@ bar()
 try:
     10 / 0
 except ZeroDivisionError:
-    raise ValueError('input error!')
+    raise ValueError(&#39;input error!&#39;)
 ```
 
 只要是合理的转换逻辑就可以，但是，决不应该把一个`IOError`转换成毫不相干的`ValueError`。
 
-> 小结：
+&gt; 小结：
 
 Python内置的`try...except...finally`用来处理错误十分方便。出错时，会分析错误信息并定位错误发生的代码位置才是最关键的。
 
@@ -370,11 +370,11 @@ Python内置的`try...except...finally`用来处理错误十分方便。出错�
 ```python
 def foo(s):
     n = int(s)
-    print('>>> n = %d' % n)
+    print(&#39;&gt;&gt;&gt; n = %d&#39; % n)
     return 10 / n
 
 def main():
-    foo('0')
+    foo(&#39;0&#39;)
 
 main()
 ```
@@ -383,7 +383,7 @@ main()
 
 ```python
 $ python err.py
->>> n = 0
+&gt;&gt;&gt; n = 0
 Traceback (most recent call last):
   ...
 ZeroDivisionError: integer division or modulo by zero
@@ -398,11 +398,11 @@ ZeroDivisionError: integer division or modulo by zero
 ```python
 def foo(s):
     n = int(s)
-    assert n != 0, 'n is zero!'
+    assert n != 0, &#39;n is zero!&#39;
     return 10 / n
 
 def main():
-    foo('0')
+    foo(&#39;0&#39;)
 ```
 
 `assert`的意思是，表达式`n != 0`应该是`True`，否则，根据程序运行的逻辑，后面的代码肯定会出错。
@@ -425,7 +425,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-!> 注意：断言的开关“-O”是英文大写字母O，不是数字0。
+!&gt; 注意：断言的开关“-O”是英文大写字母O，不是数字0。
 
 关闭后，你可以把所有的`assert`语句当成`pass`来看。
 
@@ -436,9 +436,9 @@ ZeroDivisionError: division by zero
 ```python
 import logging
 
-s = '0'
+s = &#39;0&#39;
 n = int(s)
-logging.info('n = %d' % n)
+logging.info(&#39;n = %d&#39; % n)
 print(10 / n)
 ```
 
@@ -457,7 +457,7 @@ logging.basicConfig(level=logging.INFO)
 $ python err.py
 INFO:root:n = 0
 Traceback (most recent call last):
-  File "err.py", line 8, in <module>
+  File &#34;err.py&#34;, line 8, in &lt;module&gt;
     print(10 / n)
 ZeroDivisionError: division by zero
 ```
@@ -472,7 +472,7 @@ ZeroDivisionError: division by zero
 
 ```python
 # err.py
-s = '0'
+s = &#39;0&#39;
 n = int(s)
 print(10 / n)
 ```
@@ -481,16 +481,16 @@ print(10 / n)
 
 ```python
 $ python -m pdb err.py
-> /Users/michael/Github/learn-python3/samples/debug/err.py(2)<module>()
--> s = '0'
+&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(2)&lt;module&gt;()
+-&gt; s = &#39;0&#39;
 ```
 
-以参数`-m pdb`启动后，pdb定位到下一步要执行的代码`-> s = '0'`。输入命令`l`来查看代码：
+以参数`-m pdb`启动后，pdb定位到下一步要执行的代码`-&gt; s = &#39;0&#39;`。输入命令`l`来查看代码：
 
 ```python
 (Pdb) l
   1     # err.py
-  2  -> s = '0'
+  2  -&gt; s = &#39;0&#39;
   3     n = int(s)
   4     print(10 / n)
 ```
@@ -499,18 +499,18 @@ $ python -m pdb err.py
 
 ```python
 (Pdb) n
-> /Users/michael/Github/learn-python3/samples/debug/err.py(3)<module>()
--> n = int(s)
+&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(3)&lt;module&gt;()
+-&gt; n = int(s)
 (Pdb) n
-> /Users/michael/Github/learn-python3/samples/debug/err.py(4)<module>()
--> print(10 / n)
+&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(4)&lt;module&gt;()
+-&gt; print(10 / n)
 ```
 
 任何时候都可以输入命令`p 变量名`来查看变量：
 
 ```python
 (Pdb) p s
-'0'
+&#39;0&#39;
 (Pdb) p n
 0
 ```
@@ -531,7 +531,7 @@ $ python -m pdb err.py
 # err.py
 import pdb
 
-s = '0'
+s = &#39;0&#39;
 n = int(s)
 pdb.set_trace() # 运行到这里会自动暂停
 print(10 / n)
@@ -541,13 +541,13 @@ print(10 / n)
 
 ```python
 $ python err.py 
-> /Users/michael/Github/learn-python3/samples/debug/err.py(7)<module>()
--> print(10 / n)
+&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(7)&lt;module&gt;()
+-&gt; print(10 / n)
 (Pdb) p n
 0
 (Pdb) c
 Traceback (most recent call last):
-  File "err.py", line 7, in <module>
+  File &#34;err.py&#34;, line 7, in &lt;module&gt;
     print(10 / n)
 ZeroDivisionError: division by zero
 ```
@@ -562,7 +562,7 @@ ZeroDivisionError: division by zero
 * PyCharm：http://www.jetbrains.com/pycharm/
 * 另外，[Eclipse](http://www.eclipse.org/)加上[pydev](http://pydev.org/)插件也可以调试Python程序。
 
-> 小结：
+&gt; 小结：
 
 写程序最痛苦的事情莫过于调试，程序往往会以你意想不到的流程来运行，你期待执行的语句其实根本没有执行，这时候，就需要调试了。
 
@@ -592,10 +592,10 @@ ZeroDivisionError: division by zero
 我们来编写一个`Dict`类，这个类的行为和`dict`一致，但是可以通过属性来访问，用起来就像下面这样：
 
 ```python
->>> d = Dict(a=1, b=2)
->>> d['a']
+&gt;&gt;&gt; d = Dict(a=1, b=2)
+&gt;&gt;&gt; d[&#39;a&#39;]
 1
->>> d.a
+&gt;&gt;&gt; d.a
 1
 ```
 
@@ -611,7 +611,7 @@ class Dict(dict):
         try:
             return self[key]
         except KeyError:
-            raise AttributeError(r"'Dict' object has no attribute '%s'" % key)
+            raise AttributeError(r&#34;&#39;Dict&#39; object has no attribute &#39;%s&#39;&#34; % key)
 
     def __setattr__(self, key, value):
         self[key] = value
@@ -627,26 +627,26 @@ from mydict import Dict
 class TestDict(unittest.TestCase):
 
     def test_init(self):
-        d = Dict(a=1, b='test')
+        d = Dict(a=1, b=&#39;test&#39;)
         self.assertEqual(d.a, 1)
-        self.assertEqual(d.b, 'test')
+        self.assertEqual(d.b, &#39;test&#39;)
         self.assertTrue(isinstance(d, dict))
 
     def test_key(self):
         d = Dict()
-        d['key'] = 'value'
-        self.assertEqual(d.key, 'value')
+        d[&#39;key&#39;] = &#39;value&#39;
+        self.assertEqual(d.key, &#39;value&#39;)
 
     def test_attr(self):
         d = Dict()
-        d.key = 'value'
-        self.assertTrue('key' in d)
-        self.assertEqual(d['key'], 'value')
+        d.key = &#39;value&#39;
+        self.assertTrue(&#39;key&#39; in d)
+        self.assertEqual(d[&#39;key&#39;], &#39;value&#39;)
 
     def test_keyerror(self):
         d = Dict()
         with self.assertRaises(KeyError):
-            value = d['empty']
+            value = d[&#39;empty&#39;]
 
     def test_attrerror(self):
         d = Dict()
@@ -664,11 +664,11 @@ class TestDict(unittest.TestCase):
 self.assertEqual(abs(-1), 1) # 断言函数返回的结果与1相等
 ```
 
-另一种重要的断言就是期待抛出指定类型的Error，比如通过`d['empty']`访问不存在的key时，断言会抛出`KeyError`：
+另一种重要的断言就是期待抛出指定类型的Error，比如通过`d[&#39;empty&#39;]`访问不存在的key时，断言会抛出`KeyError`：
 
 ```python
 with self.assertRaises(KeyError):
-    value = d['empty']
+    value = d[&#39;empty&#39;]
 ```
 
 而通过`d.empty`访问不存在的key时，我们期待抛出`AttributeError`：
@@ -683,7 +683,7 @@ with self.assertRaises(AttributeError):
 一旦编写好单元测试，我们就可以运行单元测试。最简单的运行方式是在`mydict_test.py`的最后加上两行代码：
 
 ```python
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     unittest.main()
 ```
 
@@ -716,15 +716,15 @@ OK
 class TestDict(unittest.TestCase):
 
     def setUp(self):
-        print('setUp...')
+        print(&#39;setUp...&#39;)
 
     def tearDown(self):
-        print('tearDown...')
+        print(&#39;tearDown...&#39;)
 ```
 
 可以再次运行测试看看每个测试方法调用前后是否会打印出`setUp...`和`tearDown...`。
 
-> 小结：
+&gt; 小结：
 
 * 单元测试可以有效地测试某个程序模块的行为，是未来重构代码的信心保证。
 * 单元测试的测试用例要覆盖常用的输入组合、边界条件和异常。
@@ -736,10 +736,10 @@ class TestDict(unittest.TestCase):
 如果你经常阅读Python的官方文档，可以看到很多文档都有示例代码。比如[re模块](https://docs.python.org/3/library/re.html)就带了很多示例代码：
 
 ```python
->>> import re
->>> m = re.search('(?<=abc)def', 'abcdef')
->>> m.group(0)
-'def'
+&gt;&gt;&gt; import re
+&gt;&gt;&gt; m = re.search(&#39;(?&lt;=abc)def&#39;, &#39;abcdef&#39;)
+&gt;&gt;&gt; m.group(0)
+&#39;def&#39;
 ```
 
 可以把这些示例代码在Python的交互式环境下输入并执行，结果与文档中的示例代码显示的一致。
@@ -752,19 +752,19 @@ class TestDict(unittest.TestCase):
 
 ```python
 def abs(n):
-    '''
+    &#39;&#39;&#39;
     Function to get absolute value of number.
     
     Example:
     
-    >>> abs(1)
+    &gt;&gt;&gt; abs(1)
     1
-    >>> abs(-1)
+    &gt;&gt;&gt; abs(-1)
     1
-    >>> abs(0)
+    &gt;&gt;&gt; abs(0)
     0
-    '''
-    return n if n >= 0 else (-n)
+    &#39;&#39;&#39;
+    return n if n &gt;= 0 else (-n)
 ```
 
 无疑更明确地告诉函数的调用者该函数的期望输入和输出。
@@ -778,28 +778,28 @@ doctest严格按照Python交互式命令行的输入和输出来判断测试结�
 ```python
 # mydict2.py
 class Dict(dict):
-    '''
+    &#39;&#39;&#39;
     Simple dict but also support access as x.y style.
 
-    >>> d1 = Dict()
-    >>> d1['x'] = 100
-    >>> d1.x
+    &gt;&gt;&gt; d1 = Dict()
+    &gt;&gt;&gt; d1[&#39;x&#39;] = 100
+    &gt;&gt;&gt; d1.x
     100
-    >>> d1.y = 200
-    >>> d1['y']
+    &gt;&gt;&gt; d1.y = 200
+    &gt;&gt;&gt; d1[&#39;y&#39;]
     200
-    >>> d2 = Dict(a=1, b=2, c='3')
-    >>> d2.c
-    '3'
-    >>> d2['empty']
+    &gt;&gt;&gt; d2 = Dict(a=1, b=2, c=&#39;3&#39;)
+    &gt;&gt;&gt; d2.c
+    &#39;3&#39;
+    &gt;&gt;&gt; d2[&#39;empty&#39;]
     Traceback (most recent call last):
         ...
-    KeyError: 'empty'
-    >>> d2.empty
+    KeyError: &#39;empty&#39;
+    &gt;&gt;&gt; d2.empty
     Traceback (most recent call last):
         ...
-    AttributeError: 'Dict' object has no attribute 'empty'
-    '''
+    AttributeError: &#39;Dict&#39; object has no attribute &#39;empty&#39;
+    &#39;&#39;&#39;
     def __init__(self, **kw):
         super(Dict, self).__init__(**kw)
 
@@ -807,12 +807,12 @@ class Dict(dict):
         try:
             return self[key]
         except KeyError:
-            raise AttributeError(r"'Dict' object has no attribute '%s'" % key)
+            raise AttributeError(r&#34;&#39;Dict&#39; object has no attribute &#39;%s&#39;&#34; % key)
 
     def __setattr__(self, key, value):
         self[key] = value
 
-if __name__=='__main__':
+if __name__==&#39;__main__&#39;:
     import doctest
     doctest.testmod()
 ```
@@ -828,21 +828,21 @@ $ python mydict2.py
 ```python
 $ python mydict2.py
 **********************************************************************
-File "/Users/michael/Github/learn-python3/samples/debug/mydict2.py", line 10, in __main__.Dict
+File &#34;/Users/michael/Github/learn-python3/samples/debug/mydict2.py&#34;, line 10, in __main__.Dict
 Failed example:
     d1.x
 Exception raised:
     Traceback (most recent call last):
       ...
-    AttributeError: 'Dict' object has no attribute 'x'
+    AttributeError: &#39;Dict&#39; object has no attribute &#39;x&#39;
 **********************************************************************
-File "/Users/michael/Github/learn-python3/samples/debug/mydict2.py", line 16, in __main__.Dict
+File &#34;/Users/michael/Github/learn-python3/samples/debug/mydict2.py&#34;, line 16, in __main__.Dict
 Failed example:
     d2.c
 Exception raised:
     Traceback (most recent call last):
       ...
-    AttributeError: 'Dict' object has no attribute 'c'
+    AttributeError: &#39;Dict&#39; object has no attribute &#39;c&#39;
 **********************************************************************
 1 items had failures:
    2 of   9 in __main__.Dict
@@ -851,7 +851,7 @@ Exception raised:
 
 注意到最后3行代码。当模块正常导入时，doctest不会被执行。只有在命令行直接运行时，才执行doctest。所以，不必担心doctest会在非测试环境下执行。
 
-> 小结：
+&gt; 小结：
 
 doctest非常有用，不但可以用来测试，还可以直接作为示例代码。通过某些文档生成工具，就可以自动把包含doctest的注释提取出来。用户看文档的时候，同时也看到了doctest。
 
@@ -865,6 +865,6 @@ doctest非常有用，不但可以用来测试，还可以直接作为示例代�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/  
 

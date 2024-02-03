@@ -6,7 +6,7 @@
 `locate`   配合数据库查看文件位置。
 `find`   实际搜寻硬盘查询文件名称。
 　　which命令的作用是，在PATH变量指定的路径中，搜索某个系统命令的位置，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ which 可执行文件名称
@@ -42,6 +42,6 @@ $ which cd
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-16-which/  
 

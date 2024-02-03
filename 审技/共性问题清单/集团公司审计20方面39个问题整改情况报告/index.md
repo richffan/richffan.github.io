@@ -2,7 +2,7 @@
 
 _**注：因为公众号平台更改了推送规则，如果不想错过**__**审计之家**__**的文章，记得将我们设为**__**“星标”**__**，这样每次新文章推送才会第一时间出现在您的订阅列表里。**_
 
-_**方法**  点击页面左上角蓝色**审计之家**进入主页，再点主页右上角**"..."****，**然后选择**“设为星标”**（账号旁显示五角星标记表示成功）_
+_**方法**  点击页面左上角蓝色**审计之家**进入主页，再点主页右上角**&#34;...&#34;****，**然后选择**“设为星标”**（账号旁显示五角星标记表示成功）_
 
 **XX集团有限公司审计整改结果公告**
 
@@ -159,11 +159,11 @@ _**方法**  点击页面左上角蓝色**审计之家**进入主页，再点主
 \- END -
   
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/I9x6wTWRo005wj62BevSzkGicxwEaebY8FZgotwqfKxDvgkhnvuTB9wa9a1LLQygcGBqdOiaC8Ff0TYeRDvJbicTw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://mmbiz.qpic.cn/mmbiz_jpg/I9x6wTWRo005wj62BevSzkGicxwEaebY8FZgotwqfKxDvgkhnvuTB9wa9a1LLQygcGBqdOiaC8Ff0TYeRDvJbicTw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1)
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%E5%AE%A1%E8%AE%A120%E6%96%B9%E9%9D%A239%E4%B8%AA%E9%97%AE%E9%A2%98%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/  
 

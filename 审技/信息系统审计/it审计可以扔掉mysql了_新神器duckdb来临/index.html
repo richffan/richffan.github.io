@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>IT审计可以扔掉mysql了，新神器duckdb来临！ - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>IT审计可以扔掉mysql了，新神器duckdb来临！ - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="一个朋友给我推荐了一个数据 duckdb 让我去试用下。 我试用后，感觉作为平时在本地进行数据分析的 IT 审计来说，完全可以丢掉mysql,sqlserver这" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="IT审计可以扔掉mysql了，新神器duckdb来临！">
 <meta itemprop="description" content="一个朋友给我推荐了一个数据 duckdb 让我去试用下。 我试用后，感觉作为平时在本地进行数据分析的 IT 审计来说，完全可以丢掉mysql,sqlserver这"><meta itemprop="datePublished" content="2023-05-05T14:19:09+00:00" />
 <meta itemprop="dateModified" content="2023-05-05T14:19:09+00:00" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="IT审计可以扔掉mysql了，新神器duckdb来临！"/>
 <meta name="twitter:description" content="一个朋友给我推荐了一个数据 duckdb 让我去试用下。 我试用后，感觉作为平时在本地进行数据分析的 IT 审计来说，完全可以丢掉mysql,sqlserver这"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" /><link rel="prev" href="http://richfan.site/%E6%8A%95%E6%8A%80/%E4%BF%9D%E8%8D%90%E4%BB%A3%E8%A1%A8%E4%BA%BA/%E4%B8%8D%E5%90%8C%E6%8C%81%E8%82%A1%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%A8%8E%E8%B4%9F%E5%AF%B9%E6%AF%94%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">审技</a></li><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">信息系统审计</a></li><li class="breadcrumb-item active" aria-current="page">IT审计可以扔掉mysql了，新神器duckdb来临！</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>IT审计可以扔掉mysql了，新神器duckdb来临！</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="更新于 2023-05-05 14:19:09"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="1307 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" class="leancloud_visitors comment-visitors" data-flag-title="IT审计可以扔掉mysql了，新神器duckdb来临！">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E5%AE%A1%E6%8A%80/" class="post-category" title="分类 - 审技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审技</a></span></div><div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="1307 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" class="leancloud_visitors comment-visitors" data-flag-title="IT审计可以扔掉mysql了，新神器duckdb来临！">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="IT审计可以扔掉mysql了，新神器duckdb来临！">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -216,15 +211,15 @@
 <p>我使用了下，感觉非常智能、强大、粗暴。</p>
 <p>后面我可能会写一系列教程来介绍它，让大家目前还在用 mysql 的朋友可以无成本迁移到 duckdb 上来。我觉得这是值得的。</p>
 <p>这里我先简单给大家说明下有多简单。</p>
-<h3 id="图形化管理工具">图形化管理工具</h3>
-<p>使用 mysql 的朋友可能一般都会用 navicat 等图形化管理工具。 duckdb 我们可以使用 dbeaver 图形化管理工具，它是开源免费的。</p>
+<h3 id="图形化管理工具" class="heading-element">
+  <a href="#%e5%9b%be%e5%bd%a2%e5%8c%96%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7" class="heading-mark"></a>图形化管理工具</h3><p>使用 mysql 的朋友可能一般都会用 navicat 等图形化管理工具。 duckdb 我们可以使用 dbeaver 图形化管理工具，它是开源免费的。</p>
 <p>安装好后 dbeaver 后，新建一个连接，选择 duckdb ，点击 next 。</p>
 <p>要知道 duckdb 不需要安装服务器端，只需要创建一个文件，我们输入一个文件名。点击下Test Connection将会自动安装对应驱动。</p>
 <p>安装好驱动后，直接 Finish.</p>
 <p>这就安装好了！安装好了！</p>
 <p>我相信安装过mysql+navicat或者 sqlserver的人应该能体会到，这个安装有多简单！</p>
-<h3 id="导入数据">导入数据</h3>
-<p>很多人在使用 mysql 的时候觉得使用 navicat 导入向导比较方便，主要是这可以省去建表的时间，但当你用导入向导的时候速度非常慢。</p>
+<h3 id="导入数据" class="heading-element">
+  <a href="#%e5%af%bc%e5%85%a5%e6%95%b0%e6%8d%ae" class="heading-mark"></a>导入数据</h3><p>很多人在使用 mysql 的时候觉得使用 navicat 导入向导比较方便，主要是这可以省去建表的时间，但当你用导入向导的时候速度非常慢。</p>
 <p>比如我这里有个销售订单的 csv 文件，一共2.6G。我只需要写语句：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -238,8 +233,8 @@
 <p>我经常看到同事导一个几 G 的数据用 navicat 导入向导在那里傻等着，估计半个小时往上。</p>
 <p>你双击下刚新建的表，可以看到每个字段都按最合适的数据类型给创建好了，这不比自己写建表语句香么？</p>
 <p>这也太智能了。</p>
-<h3 id="处理数据量">处理数据量</h3>
-<p>我相信大部分用自己笔记本运行 mysql 做数据分析的，最多也就处理个千万行。</p>
+<h3 id="处理数据量" class="heading-element">
+  <a href="#%e5%a4%84%e7%90%86%e6%95%b0%e6%8d%ae%e9%87%8f" class="heading-mark"></a>处理数据量</h3><p>我相信大部分用自己笔记本运行 mysql 做数据分析的，最多也就处理个千万行。</p>
 <p>并且当千万行的时候，笔记本很可能跑不出来了。</p>
 <p>那么 duckdb 可以跑多少数据量呢？</p>
 <p>前面我用 clickhouse 在2019年产的 5000 块的联系小新pro 笔记本上跑过 8 亿行数据。</p>
@@ -249,8 +244,8 @@
 <p>我们先跑个总的数据量：</p>
 <p>一共8.9亿行数据，跑出来花了0.45秒。</p>
 <p>再来按一个字段聚合求和，花了12.72秒。我试过相同数据，在 clickhouse 上跑要 16 秒，居然比 clickhouse 还快，有点离谱。</p>
-<h3 id="结语">结语</h3>
-<p>以上功能，我感觉无论哪个方面都可以吊打 mysql 了。</p>
+<h3 id="结语" class="heading-element">
+  <a href="#%e7%bb%93%e8%af%ad" class="heading-mark"></a>结语</h3><p>以上功能，我感觉无论哪个方面都可以吊打 mysql 了。</p>
 <p>从方便程度和全平台支持角度，也可以吊打 clickhosue 了。</p>
 <p>尤其是对我们这种在自己笔记本本地跑数据的人来说，很适用了。</p>
 <p>我今天粗略看了下官方文档，感觉到它更强大的是和 python 的无缝链接，以及一些特殊但非常实用的独特函数。</p>
@@ -263,33 +258,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-05-05 14:19:09">更新于 2023-05-05&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" data-title="IT审计可以扔掉mysql了，新神器duckdb来临！" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" data-title="IT审计可以扔掉mysql了，新神器duckdb来临！" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/it%E5%AE%A1%E8%AE%A1/' class="post-tag">IT审计</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/it%E5%AE%A1%E8%AE%A1/" class="post-tag" title="标签 - IT审计">IT审计</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/" class="post-nav-item" rel="prev" title="IT审计可能使用到的数据库及工具"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>IT审计可能使用到的数据库及工具</a>
+  <div class="post-nav"><a href="/%E6%8A%95%E6%8A%80/%E4%BF%9D%E8%8D%90%E4%BB%A3%E8%A1%A8%E4%BA%BA/%E4%B8%8D%E5%90%8C%E6%8C%81%E8%82%A1%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%A8%8E%E8%B4%9F%E5%AF%B9%E6%AF%94%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" class="post-nav-item" rel="prev" title="不同持股模式下税负对比思维导图"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>不同持股模式下税负对比思维导图</a>
       <a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="post-nav-item" rel="next" title="duckdb从入门到精通：数据导入">duckdb从入门到精通：数据导入<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

@@ -9,14 +9,14 @@
   3. root分区不够用
 - 思路：把home分区的空间划一部分到root分区
 
-<!--more-->
+&lt;!--more--&gt;
 
 ```bash
 ## 设置home分区大小为200G，释放300G空间
 $ lvreduce -L 200G /dev/centos/home
 
 ## 将空闲空间扩展到root分区
-$ lvextend -l +100%FREE /dev/centos/root
+$ lvextend -l &#43;100%FREE /dev/centos/root
 
 ## 使用XFS文件系统自带的命令集增加分区空间
 $ xfs_growfs /dev/mapper/centos-root
@@ -51,7 +51,7 @@ LV Name                home
 VG Name                centos
 LV UUID                1fAt1E-bQsa-1HXR-MCE2-5VZ1-xzBz-iI1SLv
 LV Write Access        read/write
-LV Creation host, time localhost, 2016-10-26 17:23:47 +0800
+LV Creation host, time localhost, 2016-10-26 17:23:47 &#43;0800
 LV Status              available
 ## open                 0
 LV Size                475.70 GiB
@@ -68,7 +68,7 @@ LV Name                root
 VG Name                centos
 LV UUID                lD64zY-yc3Z-SZaB-dAjK-03YM-2gM8-pfj4oo
 LV Write Access        read/write
-LV Creation host, time localhost, 2016-10-26 17:23:48 +0800
+LV Creation host, time localhost, 2016-10-26 17:23:48 &#43;0800
 LV Status              available
 ## open                 1
 LV Size                50.00 GiB
@@ -93,7 +93,7 @@ Do you really want to reduce centos/home? [y/n]: y
 
 ##### 3.增加/root分区空间
 ```bash
-$ lvextend -l +100%FREE /dev/centos/root
+$ lvextend -l &#43;100%FREE /dev/centos/root
 Size of logical volume centos/root changed from 50.06 GiB (12816 extents) to 325.76 GiB (83394 extents).
 Logical volume centos/root successfully resized.
 ```
@@ -117,6 +117,6 @@ data blocks changed from 13107200 to 85395456
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/  
 

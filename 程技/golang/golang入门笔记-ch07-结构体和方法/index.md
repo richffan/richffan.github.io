@@ -63,7 +63,7 @@ t := new(T)
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type struct1 struct {
 	i1  int
@@ -75,11 +75,11 @@ func main() {
 	ms := new(struct1)
 	ms.i1 = 10
 	ms.f1 = 15.5
-	ms.str= "Chris"
+	ms.str= &#34;Chris&#34;
 
-	fmt.Printf("The int is: %d\n", ms.i1)
-	fmt.Printf("The float is: %f\n", ms.f1)
-	fmt.Printf("The string is: %s\n", ms.str)
+	fmt.Printf(&#34;The int is: %d\n&#34;, ms.i1)
+	fmt.Printf(&#34;The float is: %f\n&#34;, ms.f1)
+	fmt.Printf(&#34;The string is: %s\n&#34;, ms.str)
 	fmt.Println(ms)
 }
 ```
@@ -90,7 +90,7 @@ func main() {
 The int is: 10
 The float is: 15.500000
 The string is: Chris
-&{10 15.5 Chris}
+&amp;{10 15.5 Chris}
 ```
 
 ### 选择器
@@ -116,16 +116,16 @@ p.i
 初始化一个结构体实例的方式如下：
 
 ```go
-ms := &struct1{10, 15.5, "Chris"} // ms 的类型为 *struct1
+ms := &amp;struct1{10, 15.5, &#34;Chris&#34;} // ms 的类型为 *struct1
 ```
 
 或者：
 
 ```go
-ms := struct1{1, 1.2, "Bob"} // ms 的类型为 struct1
+ms := struct1{1, 1.2, &#34;Bob&#34;} // ms 的类型为 struct1
 ```
 
-在使用 `&struct{a, b, c}` 混合字面量语法时，注意值顺序和结构体字段顺序要一一对应。`new(Type)` 和 `&Type{}` 是等价的。
+在使用 `&amp;struct{a, b, c}` 混合字面量语法时，注意值顺序和结构体字段顺序要一一对应。`new(Type)` 和 `&amp;Type{}` 是等价的。
 
 我们来看一个例子：
 
@@ -181,24 +181,24 @@ type File struct {
 
 ```go
 func NewFile(fd int, name string) *File {
-	if fd < 0 {
+	if fd &lt; 0 {
 		return nil
 	}
 
-	return &File{fd, name}
+	return &amp;File{fd, name}
 }
 ```
 
 可以这样调用上面定义的工厂方法：
 
 ```go
-f := NewFile(1, "./a.txt")
+f := NewFile(1, &#34;./a.txt&#34;)
 ```
 
 ### 强制使用工厂方法
 
-> ***注意***：Go 语言中，**小写字母**开头的变量和函数无法被外部包导入（**私有**），**大写字母**开头的变量和函数可以被外部导入（**共有**）。
->
+&gt; ***注意***：Go 语言中，**小写字母**开头的变量和函数无法被外部包导入（**私有**），**大写字母**开头的变量和函数可以被外部导入（**共有**）。
+&gt;
 
 可以在定义结构体时，让结构体名称以**小写字母**开头，那么外部包就无法直接导入这个结构体（无法通过 `new` 函数初始化结构体），只能通过工厂方法来获取该结构体的实例。
 
@@ -222,7 +222,7 @@ func NewMatrix(params) *matrix {
 ```go
 package main
 
-import "matrix"
+import &#34;matrix&#34;
 
 // ...
 
@@ -240,13 +240,13 @@ new() 函数只能用在**数组**和**结构体**这样的**值类型**中，�
 
 结构体中的字段除了有名称和类型之外，还有一个可选的标签，标签以字符串的形式来编写。标签内容一般无法直接获取，需要通过反射来获取，常用于保存 ORM 字段和表单验证等。
 
-标签用反引号 `` 包围，单个标签格式为 `tagName:"tagValue"`，多个标签只需要用空格分开即可，如：
+标签用反引号 `` 包围，单个标签格式为 `tagName:&#34;tagValue&#34;`，多个标签只需要用空格分开即可，如：
 
 ```go
 type Tag struct {
-	field1 bool   `name:"first field" id:"1"` // 定义两个标签 name 和 id，值分别为 first field 和 1
-	field2 string `name:"second field" id:"2"`
-	field3 int    `name:"third field" id:"3"`
+	field1 bool   `name:&#34;first field&#34; id:&#34;1&#34;` // 定义两个标签 name 和 id，值分别为 first field 和 1
+	field2 string `name:&#34;second field&#34; id:&#34;2&#34;`
+	field3 int    `name:&#34;third field&#34; id:&#34;3&#34;`
 }
 ```
 
@@ -256,20 +256,20 @@ type Tag struct {
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 type Tag struct {
-	field1 bool   `name:"first field" id:"1"`
-	field2 string `name:"second field" id:"2"`
-	field3 int    `name:"third field" id:"3"`
+	field1 bool   `name:&#34;first field&#34; id:&#34;1&#34;`
+	field2 string `name:&#34;second field&#34; id:&#34;2&#34;`
+	field3 int    `name:&#34;third field&#34; id:&#34;3&#34;`
 }
 
 func main() {
 	tag := Tag{
 		field1: false,
-		field2: "Bob",
+		field2: &#34;Bob&#34;,
 		field3: 99,
 	}
 	t := reflect.TypeOf(tag)
@@ -283,9 +283,9 @@ func main() {
 上述代码运行结果为：
 
 ```shell
-name:"first field" id:"1"
-name:"second field" id:"2"
-name:"third field" id:"3"
+name:&#34;first field&#34; id:&#34;1&#34;
+name:&#34;second field&#34; id:&#34;2&#34;
+name:&#34;third field&#34; id:&#34;3&#34;
 ```
 
 ## 匿名字段和内嵌结构体
@@ -299,7 +299,7 @@ name:"third field" id:"3"
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type innerS struct {
 	in1 int
@@ -321,15 +321,15 @@ func main() {
 	outer.in1 = 5
 	outer.in2 = 10
 
-	fmt.Printf("outer.b is: %d\n", outer.b)
-	fmt.Printf("outer.c is: %f\n", outer.c)
-	fmt.Printf("outer.int is: %d\n", outer.int)
-	fmt.Printf("outer.in1 is: %d\n", outer.in1)
-	fmt.Printf("outer.in2 is: %d\n", outer.in2)
+	fmt.Printf(&#34;outer.b is: %d\n&#34;, outer.b)
+	fmt.Printf(&#34;outer.c is: %f\n&#34;, outer.c)
+	fmt.Printf(&#34;outer.int is: %d\n&#34;, outer.int)
+	fmt.Printf(&#34;outer.in1 is: %d\n&#34;, outer.in1)
+	fmt.Printf(&#34;outer.in2 is: %d\n&#34;, outer.in2)
 
 	// 使用结构体字面量
 	outer2 := outerS{6, 7.5, 60, innerS{5, 10}}
-	fmt.Printf("outer2 is: %v", outer2)
+	fmt.Printf(&#34;outer2 is: %v&#34;, outer2)
 }
 ```
 
@@ -366,8 +366,8 @@ func (recv receiverType) methodName(params) (returnValues) {
 }
 ```
 
-> ***注意***：Go 语言官方建议 `recv` 命名一般取 `receiverType` 具体类型名称的**首字母小写**，例如：若 `receiverType` 为 `User`，那么 `recv` 为 `u`。
->
+&gt; ***注意***：Go 语言官方建议 `recv` 命名一般取 `receiverType` 具体类型名称的**首字母小写**，例如：若 `receiverType` 为 `User`，那么 `recv` 为 `u`。
+&gt;
 
 在方法名 `methodName` 之前指定接收者 `receiver`。
 
@@ -378,7 +378,7 @@ func (recv receiverType) methodName(params) (returnValues) {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type TwoInts struct {
 	a int
@@ -386,11 +386,11 @@ type TwoInts struct {
 }
 
 func (tn *TwoInts) AddThem() int {
-	return tn.a + tn.b
+	return tn.a &#43; tn.b
 }
 
 func (tn *TwoInts) AddToParam(param int) int {
-	return tn.a + tn.b + param
+	return tn.a &#43; tn.b &#43; param
 }
 
 func main() {
@@ -398,11 +398,11 @@ func main() {
 	two1.a = 12
 	two1.b = 10
 
-	fmt.Printf("The sum is: %d\n", two1.AddThem())
-	fmt.Printf("Add them to the param: %d\n", two1.AddToParam(20))
+	fmt.Printf(&#34;The sum is: %d\n&#34;, two1.AddThem())
+	fmt.Printf(&#34;Add them to the param: %d\n&#34;, two1.AddToParam(20))
 
 	two2 := TwoInts{3, 4}
-	fmt.Printf("The sum is: %d\n", two2.AddThem())
+	fmt.Printf(&#34;The sum is: %d\n&#34;, two2.AddThem())
 }
 ```
 
@@ -419,13 +419,13 @@ The sum is: 7
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type IntVector []int
 
 func (v IntVector) Sum() (s int) {
 	for _, x := range v {
-		s += x
+		s &#43;= x
 	}
 	return
 }
@@ -451,7 +451,7 @@ func main() {
 package main
 
 import (
-	"fmt"
+	&#34;fmt&#34;
 )
 
 type B struct {
@@ -490,7 +490,7 @@ func main() {
 package main
 
 import (
-	"fmt"
+	&#34;fmt&#34;
 )
 
 type B struct {
@@ -558,8 +558,8 @@ func (p *Person) SetFirstName(newName string) {
 package main
 
 import (
-	"fmt"
-	"math"
+	&#34;fmt&#34;
+	&#34;math&#34;
 )
 
 type Point struct {
@@ -567,7 +567,7 @@ type Point struct {
 }
 
 func (p *Point) Abs() float64 {
-	return math.Sqrt(p.x*p.x + p.y*p.y)
+	return math.Sqrt(p.x*p.x &#43; p.y*p.y)
 }
 
 type NamedPoint struct {
@@ -576,7 +576,7 @@ type NamedPoint struct {
 }
 
 func main() {
-	n := &NamedPoint{Point{3, 4}, "Pythagoras"}
+	n := &amp;NamedPoint{Point{3, 4}, &#34;Pythagoras&#34;}
 	fmt.Println(n.Abs()) // 5
 }
 ```
@@ -589,8 +589,8 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"math"
+	&#34;fmt&#34;
+	&#34;math&#34;
 )
 
 type Point struct {
@@ -603,7 +603,7 @@ type NamedPoint struct {
 }
 
 func (p *Point) Abs() float64 {
-	return math.Sqrt(p.x*p.x + p.y*p.y)
+	return math.Sqrt(p.x*p.x &#43; p.y*p.y)
 }
 
 func (n *NamedPoint) Abs() float64 {
@@ -611,7 +611,7 @@ func (n *NamedPoint) Abs() float64 {
 }
 
 func main() {
-	n := &NamedPoint{Point{3, 4}, "Pythagoras"}
+	n := &amp;NamedPoint{Point{3, 4}, &#34;Pythagoras&#34;}
 	fmt.Println(n.Abs()) // 500
 }
 
@@ -627,19 +627,19 @@ func main() {
 package main
 
 import (
-    "fmt"
+    &#34;fmt&#34;
 )
 
 type Camera struct{}
 
 func (c *Camera) TakeAPicture() string {
-    return "Click"
+    return &#34;Click&#34;
 }
 
 type Phone struct{}
 
 func (p *Phone) Call() string {
-    return "Ring Ring"
+    return &#34;Ring Ring&#34;
 }
 
 type CameraPhone struct {
@@ -649,9 +649,9 @@ type CameraPhone struct {
 
 func main() {
     cp := new(CameraPhone)
-    fmt.Println("Our new CameraPhone exhibits multiple behaviors...")
-    fmt.Println("It exhibits behavior of a Camera: ", cp.TakeAPicture())
-    fmt.Println("It works like a Phone too: ", cp.Call())
+    fmt.Println(&#34;Our new CameraPhone exhibits multiple behaviors...&#34;)
+    fmt.Println(&#34;It exhibits behavior of a Camera: &#34;, cp.TakeAPicture())
+    fmt.Println(&#34;It works like a Phone too: &#34;, cp.Call())
 }
 ```
 
@@ -673,6 +673,6 @@ Go 和面向对象的语言 Java 和 python 不同，在 Java 中，在一个对
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/  
 

@@ -53,6 +53,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E9%A3%9F%E6%8A%80/%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81/  
 

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>附录B-更多关于IPython的内容 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>附录B-更多关于IPython的内容 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控" /><meta name="keywords" content='python' /><meta itemprop="name" content="附录B-更多关于IPython的内容">
 <meta itemprop="description" content="第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="9949"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="9956"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="附录B-更多关于IPython的内容" />
 <meta property="og:description" content="第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="附录B-更多关于IPython的内容"/>
 <meta name="twitter:description" content="第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%E5%AE%A1%E8%AE%A120%E6%96%B9%E9%9D%A239%E4%B8%AA%E9%97%AE%E9%A2%98%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9\/"
-    },"genre": "posts","keywords": "python","wordcount":  9949 ,
+    },"genre": "posts","keywords": "python","wordcount":  9956 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">附录B-更多关于IPython的内容</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>附录B-更多关于IPython的内容</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9949 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" class="leancloud_visitors comment-visitors" data-flag-title="附录B-更多关于IPython的内容">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9956 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" class="leancloud_visitors comment-visitors" data-flag-title="附录B-更多关于IPython的内容">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="附录B-更多关于IPython的内容">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -230,16 +225,16 @@
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p>第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控制台或在jupyter使用。</p>
-<h2 id="b1-使用命令历史">B.1 使用命令历史</h2>
-<p>Ipython维护了一个位于磁盘的小型数据库，用于保存执行的每条指令。它的用途有：</p>
+<h2 id="b1-使用命令历史" class="heading-element">
+  <a href="#b1-%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e5%8e%86%e5%8f%b2" class="heading-mark"></a>B.1 使用命令历史</h2><p>Ipython维护了一个位于磁盘的小型数据库，用于保存执行的每条指令。它的用途有：</p>
 <ul>
 <li>只用最少的输入，就能搜索、补全和执行先前运行过的指令；</li>
 <li>在不同session间保存命令历史；</li>
 <li>将日志输入/输出历史到一个文件</li>
 </ul>
 <p>这些功能在shell中，要比notebook更为有用，因为notebook从设计上是将输入和输出的代码放到每个代码格子中。</p>
-<h3 id="搜索和重复使用命令历史">搜索和重复使用命令历史</h3>
-<p>Ipython可以让你搜索和执行之前的代码或其他命令。这个功能非常有用，因为你可能需要重复执行同样的命令，例如%run命令，或其它代码。假设你必须要执行：</p>
+<h3 id="搜索和重复使用命令历史" class="heading-element">
+  <a href="#%e6%90%9c%e7%b4%a2%e5%92%8c%e9%87%8d%e5%a4%8d%e4%bd%bf%e7%94%a8%e5%91%bd%e4%bb%a4%e5%8e%86%e5%8f%b2" class="heading-mark"></a>搜索和重复使用命令历史</h3><p>Ipython可以让你搜索和执行之前的代码或其他命令。这个功能非常有用，因为你可能需要重复执行同样的命令，例如%run命令，或其它代码。假设你必须要执行：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -261,8 +256,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="n">reverse</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="n">search</span><span class="p">)</span><span class="err">`</span><span class="n">com</span><span class="s1">&#39;: a_command = foo(x, y, z)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Ctrl-R会循环历史，找到匹配字符的每一行。</p>
-<h3 id="输入和输出变量">输入和输出变量</h3>
-<p>忘记将函数调用的结果分配给变量是非常烦人的。IPython的一个session会在一个特殊变量，存储输入和输出Python对象的引用。前面两个输出会分别存储在 _（一个下划线）和 __（两个下划线）变量：</p>
+<h3 id="输入和输出变量" class="heading-element">
+  <a href="#%e8%be%93%e5%85%a5%e5%92%8c%e8%be%93%e5%87%ba%e5%8f%98%e9%87%8f" class="heading-mark"></a>输入和输出变量</h3><p>忘记将函数调用的结果分配给变量是非常烦人的。IPython的一个session会在一个特殊变量，存储输入和输出Python对象的引用。前面两个输出会分别存储在 _（一个下划线）和 __（两个下划线）变量：</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -317,12 +312,12 @@
 <blockquote>
 <p>警告：当处理非常大的数据集时，要记住IPython的输入和输出的历史会造成被引用的对象不被垃圾回收（释放内存），即使你使用del关键字从交互命名空间删除变量。在这种情况下，小心使用xdel %和%reset可以帮助你避免陷入内存问题。</p>
 </blockquote>
-<h2 id="b2-与操作系统交互">B.2 与操作系统交互</h2>
-<p>IPython的另一个功能是无缝连接文件系统和操作系统。这意味着，在同时做其它事时，无需退出IPython，就可以像Windows或Unix使用命令行操作，包括shell命令、更改目录、用Python对象（列表或字符串）存储结果。它还有简单的命令别名和目录书签功能。</p>
+<h2 id="b2-与操作系统交互" class="heading-element">
+  <a href="#b2-%e4%b8%8e%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e4%ba%a4%e4%ba%92" class="heading-mark"></a>B.2 与操作系统交互</h2><p>IPython的另一个功能是无缝连接文件系统和操作系统。这意味着，在同时做其它事时，无需退出IPython，就可以像Windows或Unix使用命令行操作，包括shell命令、更改目录、用Python对象（列表或字符串）存储结果。它还有简单的命令别名和目录书签功能。</p>
 <p>表B-1总结了调用shell命令的魔术函数和语法。我会在下面几节介绍这些功能。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=large 2x" sizes="auto" data-title="表B-1 IPython系统相关命令" data-alt="表B-1 IPython系统相关命令" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="shell命令和别名">Shell命令和别名</h3>
-<p>用叹号开始一行，是告诉IPython执行叹号后面的所有内容。这意味着你可以删除文件（取决于操作系统，用rm或del）、改变目录或执行任何其他命令。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png" alt="表B-1 IPython系统相关命令" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180610457.png?size=large 2x" sizes="auto" data-title="表B-1 IPython系统相关命令" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="shell命令和别名" class="heading-element">
+  <a href="#shell%e5%91%bd%e4%bb%a4%e5%92%8c%e5%88%ab%e5%90%8d" class="heading-mark"></a>Shell命令和别名</h3><p>用叹号开始一行，是告诉IPython执行叹号后面的所有内容。这意味着你可以删除文件（取决于操作系统，用rm或del）、改变目录或执行任何其他命令。</p>
 <p>通过给变量加上叹号，你可以在一个变量中存储命令的控制台输出。例如，在我联网的基于Linux的主机上，我可以获得IP地址为Python变量：</p>
 <div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -401,8 +396,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">macrodata</span><span class="o">.</span><span class="n">csv</span>  <span class="n">spx</span><span class="o">.</span><span class="n">csv</span>	<span class="n">tips</span><span class="o">.</span><span class="n">csv</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当session结束，你定义的别名就会失效。要创建恒久的别名，需要使用配置。</p>
-<h3 id="目录书签系统">目录书签系统</h3>
-<p>IPython有一个简单的目录书签系统，可以让你保存常用目录的别名，这样在跳来跳去的时候会非常方便。例如，假设你想创建一个书签，指向本书的补充内容：</p>
+<h3 id="目录书签系统" class="heading-element">
+  <a href="#%e7%9b%ae%e5%bd%95%e4%b9%a6%e7%ad%be%e7%b3%bb%e7%bb%9f" class="heading-mark"></a>目录书签系统</h3><p>IPython有一个简单的目录书签系统，可以让你保存常用目录的别名，这样在跳来跳去的时候会非常方便。例如，假设你想创建一个书签，指向本书的补充内容：</p>
 <div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -435,10 +430,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">py4da</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">wesm</span><span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">pydata</span><span class="o">-</span><span class="n">book</span><span class="o">-</span><span class="n">source</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>书签，和别名不同，在session之间是保持的。</p>
-<h2 id="b3-软件开发工具">B.3 软件开发工具</h2>
-<p>除了作为优秀的交互式计算和数据探索环境，IPython也是有效的Python软件开发工具。在数据分析中，最重要的是要有正确的代码。幸运的是，IPython紧密集成了和加强了Python内置的pdb调试器。第二，需要快速的代码。对于这点，IPython有易于使用的代码计时和分析工具。我会详细介绍这些工具。</p>
-<h3 id="交互调试器">交互调试器</h3>
-<p>IPython的调试器用tab补全、语法增强、逐行异常追踪增强了pdb。调试代码的最佳时间就是刚刚发生错误。异常发生之后就输入%debug，就启动了调试器，进入抛出异常的堆栈框架：</p>
+<h2 id="b3-软件开发工具" class="heading-element">
+  <a href="#b3-%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7" class="heading-mark"></a>B.3 软件开发工具</h2><p>除了作为优秀的交互式计算和数据探索环境，IPython也是有效的Python软件开发工具。在数据分析中，最重要的是要有正确的代码。幸运的是，IPython紧密集成了和加强了Python内置的pdb调试器。第二，需要快速的代码。对于这点，IPython有易于使用的代码计时和分析工具。我会详细介绍这些工具。</p>
+<h3 id="交互调试器" class="heading-element">
+  <a href="#%e4%ba%a4%e4%ba%92%e8%b0%83%e8%af%95%e5%99%a8" class="heading-mark"></a>交互调试器</h3><p>IPython的调试器用tab补全、语法增强、逐行异常追踪增强了pdb。调试代码的最佳时间就是刚刚发生错误。异常发生之后就输入%debug，就启动了调试器，进入抛出异常的堆栈框架：</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -650,9 +645,9 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>提高使用交互式调试器的熟练度需要练习和经验。表B-2，列出了所有调试器命令。如果你习惯了IDE，你可能觉得终端的调试器在一开始会不顺手，但会觉得越来越好用。一些Python的IDEs有很好的GUI调试器，选择顺手的就好。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=large 2x" sizes="auto" data-title="表B-2 IPython调试器命令" data-alt="表B-2 IPython调试器命令" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="使用调试器的其它方式">使用调试器的其它方式</h3>
-<p>还有一些其它工作可以用到调试器。第一个是使用特殊的set_trace函数（根据pdb.set_trace命名的），这是一个简装的断点。还有两种方法是你可能想用的（像我一样，将其添加到IPython的配置）：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png" alt="表B-2 IPython调试器命令" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180617376.png?size=large 2x" sizes="auto" data-title="表B-2 IPython调试器命令" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="使用调试器的其它方式" class="heading-element">
+  <a href="#%e4%bd%bf%e7%94%a8%e8%b0%83%e8%af%95%e5%99%a8%e7%9a%84%e5%85%b6%e5%ae%83%e6%96%b9%e5%bc%8f" class="heading-mark"></a>使用调试器的其它方式</h3><p>还有一些其它工作可以用到调试器。第一个是使用特殊的set_trace函数（根据pdb.set_trace命名的），这是一个简装的断点。还有两种方法是你可能想用的（像我一样，将其添加到IPython的配置）：</p>
 <div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -774,8 +769,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ipdb</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="代码计时time-和-timeit">代码计时：%time 和 %timeit</h3>
-<p>对于大型和长时间运行的数据分析应用，你可能希望测量不同组件或单独函数调用语句的执行时间。你可能想知道哪个函数占用的时间最长。幸运的是，IPython可以让你开发和测试代码时，很容易地获得这些信息。</p>
+</div><h3 id="代码计时time-和-timeit" class="heading-element">
+  <a href="#%e4%bb%a3%e7%a0%81%e8%ae%a1%e6%97%b6time-%e5%92%8c-timeit" class="heading-mark"></a>代码计时：%time 和 %timeit</h3><p>对于大型和长时间运行的数据分析应用，你可能希望测量不同组件或单独函数调用语句的执行时间。你可能想知道哪个函数占用的时间最长。幸运的是，IPython可以让你开发和测试代码时，很容易地获得这些信息。</p>
 <p>手动用time模块和它的函数time.clock和time.time给代码计时，既单调又重复，因为必须要写一些无趣的模板化代码：</p>
 <div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -874,8 +869,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">568</span><span class="p">]:</span> <span class="o">%</span><span class="n">timeit</span> <span class="n">x</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">y</span>
 </span></span><span class="line"><span class="cl"><span class="mi">10000000</span> <span class="n">loops</span><span class="p">,</span> <span class="n">best</span> <span class="n">of</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">147</span> <span class="n">ns</span> <span class="n">per</span> <span class="n">loop</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="基础分析prun和run--p">基础分析：%prun和%run -p</h3>
-<p>分析代码与代码计时关系很紧密，除了它关注的是“时间花在了哪里”。Python主要的分析工具是cProfile模块，它并不局限于IPython。cProfile会执行一个程序或任意的代码块，并会跟踪每个函数执行的时间。</p>
+</div><h3 id="基础分析prun和run--p" class="heading-element">
+  <a href="#%e5%9f%ba%e7%a1%80%e5%88%86%e6%9e%90prun%e5%92%8crun--p" class="heading-mark"></a>基础分析：%prun和%run -p</h3><p>分析代码与代码计时关系很紧密，除了它关注的是“时间花在了哪里”。Python主要的分析工具是cProfile模块，它并不局限于IPython。cProfile会执行一个程序或任意的代码块，并会跟踪每个函数执行的时间。</p>
 <p>使用cProfile的通常方式是在命令行中运行一整段程序，输出每个函数的累积时间。假设我们有一个简单的在循环中进行线型代数运算的脚本（计算一系列的100×100矩阵的最大绝对特征值）：</p>
 <div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1002,8 +997,8 @@
 </div><p>相似的，调用<code>%run -p -s cumulative cprof_example.py</code>有和命令行相似的作用，只是你不用离开Ipython。</p>
 <p>在Jupyter notebook中，你可以使用%%prun魔术方法（两个%）来分析一整段代码。这会弹出一个带有分析输出的独立窗口。便于快速回答一些问题，比如“为什么这段代码用了这么长时间”？</p>
 <p>使用IPython或Jupyter，还有一些其它工具可以让分析工作更便于理解。其中之一是SnakeViz（https://github.com/jiffyclub/snakeviz/），它会使用d3.js产生一个分析结果的交互可视化界面。</p>
-<h3 id="逐行分析函数">逐行分析函数</h3>
-<p>有些情况下，用%prun（或其它基于cProfile的分析方法）得到的信息，不能获得函数执行时间的整个过程，或者结果过于复杂，加上函数名，很难进行解读。对于这种情况，有一个小库叫做line_profiler（可以通过PyPI或包管理工具获得）。它包含IPython插件，可以启用一个新的魔术函数%lprun，可以对一个函数或多个函数进行逐行分析。你可以通过修改IPython配置（查看IPython文档或本章后面的配置小节）加入下面这行，启用这个插件：</p>
+<h3 id="逐行分析函数" class="heading-element">
+  <a href="#%e9%80%90%e8%a1%8c%e5%88%86%e6%9e%90%e5%87%bd%e6%95%b0" class="heading-mark"></a>逐行分析函数</h3><p>有些情况下，用%prun（或其它基于cProfile的分析方法）得到的信息，不能获得函数执行时间的整个过程，或者结果过于复杂，加上函数名，很难进行解读。对于这种情况，有一个小库叫做line_profiler（可以通过PyPI或包管理工具获得）。它包含IPython插件，可以启用一个新的魔术函数%lprun，可以对一个函数或多个函数进行逐行分析。你可以通过修改IPython配置（查看IPython文档或本章后面的配置小节）加入下面这行，启用这个插件：</p>
 <div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1167,11 +1162,11 @@
 <blockquote>
 <p>笔记：使用%lprun必须要指明函数名的原因是追踪每行的执行时间的损耗过多。追踪无用的函数会显著地改变结果。</p>
 </blockquote>
-<h2 id="b4-使用ipython高效开发的技巧">B.4 使用IPython高效开发的技巧</h2>
-<p>方便快捷地写代码、调试和使用是每个人的目标。除了代码风格，流程细节（比如代码重载）也需要一些调整。</p>
+<h2 id="b4-使用ipython高效开发的技巧" class="heading-element">
+  <a href="#b4-%e4%bd%bf%e7%94%a8ipython%e9%ab%98%e6%95%88%e5%bc%80%e5%8f%91%e7%9a%84%e6%8a%80%e5%b7%a7" class="heading-mark"></a>B.4 使用IPython高效开发的技巧</h2><p>方便快捷地写代码、调试和使用是每个人的目标。除了代码风格，流程细节（比如代码重载）也需要一些调整。</p>
 <p>因此，这一节的内容更像是门艺术而不是科学，还需要你不断的试验，以达成高效。最终，你要能结构优化代码，并且能省时省力地检查程序或函数的结果。我发现用IPython设计的软件比起命令行，要更适合工作。尤其是当发生错误时，你需要检查自己或别人写的数月或数年前写的代码的错误。</p>
-<h3 id="重载模块依赖">重载模块依赖</h3>
-<p>在Python中，当你输入import some_lib，some_lib中的代码就会被执行，所有的变量、函数和定义的引入，就会被存入到新创建的some_lib模块命名空间。当下一次输入some_lib，就会得到一个已存在的模块命名空间的引用。潜在的问题是当你%run一个脚本，它依赖于另一个模块，而这个模块做过修改，就会产生问题。假设我在test_script.py中有如下代码：</p>
+<h3 id="重载模块依赖" class="heading-element">
+  <a href="#%e9%87%8d%e8%bd%bd%e6%a8%a1%e5%9d%97%e4%be%9d%e8%b5%96" class="heading-mark"></a>重载模块依赖</h3><p>在Python中，当你输入import some_lib，some_lib中的代码就会被执行，所有的变量、函数和定义的引入，就会被存入到新创建的some_lib模块命名空间。当下一次输入some_lib，就会得到一个已存在的模块命名空间的引用。潜在的问题是当你%run一个脚本，它依赖于另一个模块，而这个模块做过修改，就会产生问题。假设我在test_script.py中有如下代码：</p>
 <div class="highlight" id="id-41"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1202,10 +1197,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">some_lib</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这可以保证每次运行test_script.py时可以加载最新的some_lib.py。很明显，如果依赖更深，在各处都使用reload是非常麻烦的。对于这个问题，IPython有一个特殊的dreload函数（它不是魔术函数）重载深层的模块。如果我运行过some_lib.py，然后输入dreload(some_lib)，就会尝试重载some_lib和它的依赖。不过，这个方法不适用于所有场景，但比重启IPython强多了。</p>
-<h3 id="代码设计技巧">代码设计技巧</h3>
-<p>对于这单，没有简单的对策，但是有一些原则，是我在工作中发现很好用的。</p>
-<h3 id="保持相关对象和数据活跃">保持相关对象和数据活跃</h3>
-<p>为命令行写一个下面示例中的程序是很少见的：</p>
+<h3 id="代码设计技巧" class="heading-element">
+  <a href="#%e4%bb%a3%e7%a0%81%e8%ae%be%e8%ae%a1%e6%8a%80%e5%b7%a7" class="heading-mark"></a>代码设计技巧</h3><p>对于这单，没有简单的对策，但是有一些原则，是我在工作中发现很好用的。</p>
+<h3 id="保持相关对象和数据活跃" class="heading-element">
+  <a href="#%e4%bf%9d%e6%8c%81%e7%9b%b8%e5%85%b3%e5%af%b9%e8%b1%a1%e5%92%8c%e6%95%b0%e6%8d%ae%e6%b4%bb%e8%b7%83" class="heading-mark"></a>保持相关对象和数据活跃</h3><p>为命令行写一个下面示例中的程序是很少见的：</p>
 <div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1236,15 +1231,15 @@
 </span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在IPython中运行这个程序会发生问题，你发现是什么了吗？运行之后，任何定义在main函数中的结果和对象都不能在IPython中被访问到。更好的方法是将main中的代码直接在模块的命名空间中执行（或者在<code>__name__ == '__main__':</code>中，如果你想让这个模块可以被引用）。这样，当你%rundiamante，就可以查看所有定义在main中的变量。这等价于在Jupyter notebook的代码格中定义一个顶级变量。</p>
-<h3 id="扁平优于嵌套">扁平优于嵌套</h3>
-<p>深层嵌套的代码总让我联想到洋葱皮。当测试或调试一个函数时，你需要剥多少层洋葱皮才能到达目标代码呢？“扁平优于嵌套”是Python之禅的一部分，它也适用于交互式代码开发。尽量将函数和类去耦合和模块化，有利于测试（如果你是在写单元测试）、调试和交互式使用。</p>
-<h3 id="克服对大文件的恐惧">克服对大文件的恐惧</h3>
-<p>如果你之前是写JAVA（或者其它类似的语言），你可能被告知要让文件简短。在多数语言中，这都是合理的建议：太长会让人感觉是坏代码，意味着重构和重组是必要的。但是，在用IPython开发时，运行10个相关联的小文件（小于100行），比起两个或三个长文件，会让你更头疼。更少的文件意味着重载更少的模块和更少的编辑时在文件中跳转。我发现维护大模块，每个模块都是紧密组织的，会更实用和Pythonic。经过方案迭代，有时会将大文件分解成小文件。</p>
+<h3 id="扁平优于嵌套" class="heading-element">
+  <a href="#%e6%89%81%e5%b9%b3%e4%bc%98%e4%ba%8e%e5%b5%8c%e5%a5%97" class="heading-mark"></a>扁平优于嵌套</h3><p>深层嵌套的代码总让我联想到洋葱皮。当测试或调试一个函数时，你需要剥多少层洋葱皮才能到达目标代码呢？“扁平优于嵌套”是Python之禅的一部分，它也适用于交互式代码开发。尽量将函数和类去耦合和模块化，有利于测试（如果你是在写单元测试）、调试和交互式使用。</p>
+<h3 id="克服对大文件的恐惧" class="heading-element">
+  <a href="#%e5%85%8b%e6%9c%8d%e5%af%b9%e5%a4%a7%e6%96%87%e4%bb%b6%e7%9a%84%e6%81%90%e6%83%a7" class="heading-mark"></a>克服对大文件的恐惧</h3><p>如果你之前是写JAVA（或者其它类似的语言），你可能被告知要让文件简短。在多数语言中，这都是合理的建议：太长会让人感觉是坏代码，意味着重构和重组是必要的。但是，在用IPython开发时，运行10个相关联的小文件（小于100行），比起两个或三个长文件，会让你更头疼。更少的文件意味着重载更少的模块和更少的编辑时在文件中跳转。我发现维护大模块，每个模块都是紧密组织的，会更实用和Pythonic。经过方案迭代，有时会将大文件分解成小文件。</p>
 <p>我不建议极端化这条建议，那样会形成一个单独的超大文件。找到一个合理和直观的大型代码模块库和封装结构往往需要一点工作，但这在团队工作中非常重要。每个模块都应该结构紧密，并且应该能直观地找到负责每个功能领域功能和类。</p>
-<h2 id="b5-ipython高级功能">B.5 IPython高级功能</h2>
-<p>要全面地使用IPython系统需要用另一种稍微不同的方式写代码，或深入IPython的配置。</p>
-<h3 id="让类是对ipython友好的">让类是对IPython友好的</h3>
-<p>IPython会尽可能地在控制台美化展示每个字符串。对于许多对象，比如字典、列表和元组，内置的pprint模块可以用来美化格式。但是，在用户定义的类中，你必自己生成字符串。假设有一个下面的简单的类：</p>
+<h2 id="b5-ipython高级功能" class="heading-element">
+  <a href="#b5-ipython%e9%ab%98%e7%ba%a7%e5%8a%9f%e8%83%bd" class="heading-mark"></a>B.5 IPython高级功能</h2><p>要全面地使用IPython系统需要用另一种稍微不同的方式写代码，或深入IPython的配置。</p>
+<h3 id="让类是对ipython友好的" class="heading-element">
+  <a href="#%e8%ae%a9%e7%b1%bb%e6%98%af%e5%af%b9ipython%e5%8f%8b%e5%a5%bd%e7%9a%84" class="heading-mark"></a>让类是对IPython友好的</h3><p>IPython会尽可能地在控制台美化展示每个字符串。对于许多对象，比如字典、列表和元组，内置的pprint模块可以用来美化格式。但是，在用户定义的类中，你必自己生成字符串。假设有一个下面的简单的类：</p>
 <div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1296,8 +1291,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">580</span><span class="p">]:</span> <span class="n">x</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">580</span><span class="p">]:</span> <span class="n">Message</span><span class="p">:</span> <span class="n">I</span> <span class="n">have</span> <span class="n">a</span> <span class="n">secret</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="文件和配置">文件和配置</h3>
-<p>通过扩展配置系统，大多数IPython和Jupyter notebook的外观（颜色、提示符、行间距等等）和动作都是可以配置的。通过配置，你可以做到：</p>
+</div><h3 id="文件和配置" class="heading-element">
+  <a href="#%e6%96%87%e4%bb%b6%e5%92%8c%e9%85%8d%e7%bd%ae" class="heading-mark"></a>文件和配置</h3><p>通过扩展配置系统，大多数IPython和Jupyter notebook的外观（颜色、提示符、行间距等等）和动作都是可以配置的。通过配置，你可以做到：</p>
 <ul>
 <li>改变颜色主题</li>
 <li>改变输入和输出提示符，或删除输出之后、输入之前的空行</li>
@@ -1383,8 +1378,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">jupyter</span> <span class="n">notebook</span> <span class="o">--</span><span class="n">config</span><span class="o">=~/.</span><span class="n">jupyter</span><span class="o">/</span><span class="n">my_custom_config</span><span class="o">.</span><span class="n">py</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="b6-总结">B.6 总结</h2>
-<p>学习过本书中的代码案例，你的Python技能得到了一定的提升，我建议你持续学习IPython和Jupyter。因为这两个项目的设计初衷就是提高生产率的，你可能还会发现一些工具，可以让你更便捷地使用Python和计算库。</p>
+</div><h2 id="b6-总结" class="heading-element">
+  <a href="#b6-%e6%80%bb%e7%bb%93" class="heading-mark"></a>B.6 总结</h2><p>学习过本书中的代码案例，你的Python技能得到了一定的提升，我建议你持续学习IPython和Jupyter。因为这两个项目的设计初衷就是提高生产率的，你可能还会发现一些工具，可以让你更便捷地使用Python和计算库。</p>
 <p>你可以在nbviewer（https://nbviewer.jupyter.org/）上找到更多有趣的Jupyter notebooks。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -1392,33 +1387,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" data-title="附录B-更多关于IPython的内容" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/" data-title="附录B-更多关于IPython的内容" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav">
+  <div class="post-nav"><a href="/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%E5%AE%A1%E8%AE%A120%E6%96%B9%E9%9D%A239%E4%B8%AA%E9%97%AE%E9%A2%98%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/" class="post-nav-item" rel="prev" title="集团公司审计：20方面39个问题、整改情况报告"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>集团公司审计：20方面39个问题、整改情况报告</a>
       <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="post-nav-item" rel="next" title="附录A-NumPy高级应用">附录A-NumPy高级应用<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

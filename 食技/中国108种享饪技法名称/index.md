@@ -111,10 +111,10 @@
 107. 简易蛋糕:用面粉、鸡蛋、糖等制成的小蛋糕
 108. 鱼香肉丝:用五花肉加入辣椒等调料烹饪后切成丝状食品
 
-[中国108种烹饪技法名称](https://wenku.baidu.com/view/30dd80cade88d0d233d4b14e852458fb770b38c4.html?_wkts_=1687163277865&bdQuery=%E4%B8%AD%E5%9B%BD108%E7%A7%8D%E7%83%B9%E9%A5%AA%E6%8A%80%E6%B3%95%E5%90%8D%E7%A7%B0)
+[中国108种烹饪技法名称](https://wenku.baidu.com/view/30dd80cade88d0d233d4b14e852458fb770b38c4.html?_wkts_=1687163277865&amp;bdQuery=%E4%B8%AD%E5%9B%BD108%E7%A7%8D%E7%83%B9%E9%A5%AA%E6%8A%80%E6%B3%95%E5%90%8D%E7%A7%B0)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E9%A3%9F%E6%8A%80/%E4%B8%AD%E5%9B%BD108%E7%A7%8D%E4%BA%AB%E9%A5%AA%E6%8A%80%E6%B3%95%E5%90%8D%E7%A7%B0/  
 

@@ -13,15 +13,15 @@ func myFunc(a int, args ...int)
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     x := Min(1, 3, 2, 0)
-    fmt.Printf("The minimum is: %d\n", x)
+    fmt.Printf(&#34;The minimum is: %d\n&#34;, x)
 
     arr := []int{7, 9, 3, 5, 1}
     x = Min(arr...)
-    fmt.Printf("The minimum in the arr is: %d", x)
+    fmt.Printf(&#34;The minimum in the arr is: %d&#34;, x)
 }
 
 func Min(a ...int) int {
@@ -31,7 +31,7 @@ func Min(a ...int) int {
 
     min := a[0]
     for _, v := range a {
-        if v < min {
+        if v &lt; min {
 	      min = v
         }
     }
@@ -75,16 +75,16 @@ func typeCheck(values ...interface{}) {
 ```go
 package main
 import (
-    "fmt"
+    &#34;fmt&#34;
 )
 func main() {
-    fmt.Println("defer begin")
+    fmt.Println(&#34;defer begin&#34;)
     // 将 defer 放入延迟调用栈
     defer fmt.Println(1)
     defer fmt.Println(2)
     // 最后一个放入, 位于栈顶, 最先调用
     defer fmt.Println(3)
-    fmt.Println("defer end")
+    fmt.Println(&#34;defer end&#34;)
 }
 ```
 
@@ -109,8 +109,8 @@ defer end
 
 我们来看一个不使用 `defer` 来解决 `map` 在高并发下线程不安全的例子：
 
-> 由于 map 默认不是并发安全的，所以需要一个 `sync.Mutex` 互斥量来保护 map 的访问。
->
+&gt; 由于 map 默认不是并发安全的，所以需要一个 `sync.Mutex` 互斥量来保护 map 的访问。
+&gt;
 
 ```go
 var (
@@ -214,7 +214,7 @@ func fileSize(filename string) int64 {
 package main
 
 import (
-    "fmt"
+    &#34;fmt&#34;
 )
 
 func main() {
@@ -222,7 +222,7 @@ func main() {
 }
 
 func Add(a, b int) {
-    fmt.Printf("The sum of %d and %d is: %d\n", a, b, a+b)
+    fmt.Printf(&#34;The sum of %d and %d is: %d\n&#34;, a, b, a&#43;b)
 }
 
 func callback(y int, f func(int, int)) {
@@ -249,18 +249,18 @@ The sum of 1 and 2 is: 3
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func fibonacci(n int) int {
-    if n <= 2 {
+    if n &lt;= 2 {
         return 1
     }
-    return fibonacci(n-1) + fibonacci(n-2)
+    return fibonacci(n-1) &#43; fibonacci(n-2)
 }
 
 func main() {
-    for i := 0; i <= 10; i++ {
-        fmt.Printf("fibonacci(%d) is: %d\n", i, fibonacci(i))
+    for i := 0; i &lt;= 10; i&#43;&#43; {
+        fmt.Printf(&#34;fibonacci(%d) is: %d\n&#34;, i, fibonacci(i))
     }
 }
 ```
@@ -295,7 +295,7 @@ func(参数列表)(返回参数列表){
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	f()
@@ -303,12 +303,12 @@ func main() {
 
 func f() {
     g := func(i int) { // 创建一个匿名函数，并赋值给变量 g
-        fmt.Printf("%d ", i)
+        fmt.Printf(&#34;%d &#34;, i)
     }
 
-    for i := 0; i < 4; i++ {
+    for i := 0; i &lt; 4; i&#43;&#43; {
         g(i) // 调用匿名函数
-        fmt.Printf(" - g is of type %T and has value %v\n", g, g)
+        fmt.Printf(&#34; - g is of type %T and has value %v\n&#34;, g, g)
     }
 }
 ```
@@ -338,26 +338,26 @@ func Adder(a int) (func(b int) int)
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     // make an Add2 function, give it a name p2, and call it:
     p2 := Add2()
-    fmt.Printf("Call Add2 for 3 gives: %v\n", p2(3))
+    fmt.Printf(&#34;Call Add2 for 3 gives: %v\n&#34;, p2(3))
     // make a special Adder function, a gets value 3:
     TwoAdder := Adder(2)
-    fmt.Printf("The result is: %v\n", TwoAdder(3))
+    fmt.Printf(&#34;The result is: %v\n&#34;, TwoAdder(3))
 }
 
 func Add2() func(b int) int {
     return func(b int) int {
-        return b + 2
+        return b &#43; 2
     }
 }
 
 func Adder(a int) func(b int) int {
     return func(b int) int {
-        return a + b
+        return a &#43; b
     }
 }
 ```
@@ -374,19 +374,19 @@ The result is: 5
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     var f = Adder()
-    fmt.Print(f(1), " - ")
-    fmt.Print(f(20), " - ")
+    fmt.Print(f(1), &#34; - &#34;)
+    fmt.Print(f(20), &#34; - &#34;)
     fmt.Print(f(300))
 }
 
 func Adder() func(int) int {
     var x int
     return func(delta int) int {
-        x += delta
+        x &#43;= delta
         return x
     }
 }
@@ -398,32 +398,32 @@ func Adder() func(int) int {
 1 - 21 - 321
 ```
 
-我们发现在多次调用 `f()` 函数时，该函数内部的变量 `x` 的值被保留了，`x` 的初始值为 `0`，第一次调用：`0 + 1`，第二次调用 `1 + 20`，第三次 `21 + 300`。可以得出结论：闭包函数会保存并积累其中变量的值（不管外部函数是否退出）。
+我们发现在多次调用 `f()` 函数时，该函数内部的变量 `x` 的值被保留了，`x` 的初始值为 `0`，第一次调用：`0 &#43; 1`，第二次调用 `1 &#43; 20`，第三次 `21 &#43; 300`。可以得出结论：闭包函数会保存并积累其中变量的值（不管外部函数是否退出）。
 
 将上述的例子稍加改动：
 
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     f1 := Adder()
     f2 := Adder()
 
-    fmt.Print(f1(1), " - ")
-    fmt.Print(f1(20), " - ")
-    fmt.Print(f1(300), "\n")
+    fmt.Print(f1(1), &#34; - &#34;)
+    fmt.Print(f1(20), &#34; - &#34;)
+    fmt.Print(f1(300), &#34;\n&#34;)
 
-    fmt.Print(f2(1), " - ")
-    fmt.Print(f2(10), " - ")
+    fmt.Print(f2(1), &#34; - &#34;)
+    fmt.Print(f2(10), &#34; - &#34;)
     fmt.Print(f2(100))
 }
 
 func Adder() func(int) int {
     var x int
     return func(delta int) int {
-        x += delta
+        x &#43;= delta
         return x
     }
 }
@@ -440,11 +440,11 @@ func Adder() func(int) int {
 
 ***注意***：
 
-- 闭包=函数 + 引用环境。
+- 闭包=函数 &#43; 引用环境。
 - 闭包可以缩小变量作用域，减少对全局变量的污染。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/  
 

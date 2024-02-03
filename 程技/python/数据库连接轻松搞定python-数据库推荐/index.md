@@ -10,18 +10,18 @@
 import sqlite3
 
 ## 连接数据库
-conn = sqlite3.connect("mydatabase.db")
+conn = sqlite3.connect(&#34;mydatabase.db&#34;)
 
 ## 创建表格
 cursor = conn.cursor()
-cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)")
+cursor.execute(&#34;CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)&#34;)
 
 ## 插入数据
-cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ("Alice", 25))
-cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ("Bob", 30))
+cursor.execute(&#34;INSERT INTO users (name, age) VALUES (?, ?)&#34;, (&#34;Alice&#34;, 25))
+cursor.execute(&#34;INSERT INTO users (name, age) VALUES (?, ?)&#34;, (&#34;Bob&#34;, 30))
 
 ## 查询数据
-cursor.execute("SELECT * FROM users")
+cursor.execute(&#34;SELECT * FROM users&#34;)
 rows = cursor.fetchall()
 for row in rows:
     print(row)
@@ -51,22 +51,22 @@ import mysql.connector
 
 ## 连接数据库
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="your_password",
-    database="mydatabase"
+    host=&#34;localhost&#34;,
+    user=&#34;root&#34;,
+    password=&#34;your_password&#34;,
+    database=&#34;mydatabase&#34;
 )
 
 ## 创建表格
 cursor = conn.cursor()
-cursor.execute("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)")
+cursor.execute(&#34;CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)&#34;)
 
 ## 插入数据
-cursor.execute("INSERT INTO users (name, age) VALUES (%s, %s)", ("Alice", 25))
-cursor.execute("INSERT INTO users (name, age) VALUES (%s, %s)", ("Bob", 30))
+cursor.execute(&#34;INSERT INTO users (name, age) VALUES (%s, %s)&#34;, (&#34;Alice&#34;, 25))
+cursor.execute(&#34;INSERT INTO users (name, age) VALUES (%s, %s)&#34;, (&#34;Bob&#34;, 30))
 
 ## 查询数据
-cursor.execute("SELECT * FROM users")
+cursor.execute(&#34;SELECT * FROM users&#34;)
 rows = cursor.fetchall()
 for row in rows:
     print(row)
@@ -97,12 +97,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 ## 连接数据库
-engine = create_engine("sqlite:///mydatabase.db", echo=True)
+engine = create_engine(&#34;sqlite:///mydatabase.db&#34;, echo=True)
 Base = declarative_base()
 
 ## 定义数据表模型
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = &#34;users&#34;
     id = Column(Integer, primary_key=True)
     name = Column(String)
     age = Column(Integer)
@@ -115,8 +115,8 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 ## 插入数据
-user1 = User(name="Alice", age=25)
-user2 = User(name="Bob", age=30)
+user1 = User(name=&#34;Alice&#34;, age=25)
+user2 = User(name=&#34;Bob&#34;, age=30)
 session.add_all([user1, user2])
 session.commit()
 
@@ -140,22 +140,22 @@ session.close()
 import csv
 
 ## 连接数据库（使用 SQLite3 示例）
-conn = sqlite3.connect("mydatabase.db")
+conn = sqlite3.connect(&#34;mydatabase.db&#34;)
 cursor = conn.cursor()
 
 ## 创建表格
-cursor.execute("CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY, title TEXT, author TEXT)")
+cursor.execute(&#34;CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY, title TEXT, author TEXT)&#34;)
 
 ## 从 CSV 文件中读取数据
-with open("books.csv", "r") as file:
+with open(&#34;books.csv&#34;, &#34;r&#34;) as file:
     reader = csv.reader(file)
     next(reader)  ## 跳过标题行
     for row in reader:
         title, author = row
-        cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", (title, author))
+        cursor.execute(&#34;INSERT INTO books (title, author) VALUES (?, ?)&#34;, (title, author))
 
 ## 查询数据
-cursor.execute("SELECT * FROM books")
+cursor.execute(&#34;SELECT * FROM books&#34;)
 rows = cursor.fetchall()
 for row in rows:
     print(row)
@@ -170,6 +170,6 @@ conn.close()
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/  
 

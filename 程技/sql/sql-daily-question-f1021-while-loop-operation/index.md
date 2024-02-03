@@ -14,18 +14,18 @@ DECLARE @i INT
 DECLARE @sum INT
 SET @i=0
 SET @sum=0
-WHILE @i<100
+WHILE @i&lt;100
 BEGIN
-SET @i=@i+1
+SET @i=@i&#43;1
 IF @i=55
 CONTINUE
 ELSE
-SET @sum=@sum+@i
+SET @sum=@sum&#43;@i
 END
 PRINT @sum
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1021-while-loop-operation/  
 

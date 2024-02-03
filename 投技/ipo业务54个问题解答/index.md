@@ -948,6 +948,6 @@ www.csrc.gov.cn 时间：2020-06-10 来源：中国证监会
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E4%B8%9A%E5%8A%A154%E4%B8%AA%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/  
 

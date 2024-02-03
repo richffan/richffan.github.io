@@ -31,11 +31,11 @@ a,b,c,d,message
 9,10,11,12,foo
 ```
 
->笔记：这里，我用的是Unix的cat shell命令将文件的原始内容打印到屏幕上。如果你用的是Windows，你可以使用type达到同样的效果。
+&gt;笔记：这里，我用的是Unix的cat shell命令将文件的原始内容打印到屏幕上。如果你用的是Windows，你可以使用type达到同样的效果。
 
 由于该文件以逗号分隔，所以我们可以使用read_csv将其读入一个DataFrame：
 ```python
-In [9]: df = pd.read_csv('examples/ex1.csv')
+In [9]: df = pd.read_csv(&#39;examples/ex1.csv&#39;)
 
 In [10]: df
 Out[10]: 
@@ -47,7 +47,7 @@ Out[10]:
 
 我们还可以使用read_table，并指定分隔符：
 ```python
-In [11]: pd.read_table('examples/ex1.csv', sep=',')
+In [11]: pd.read_table(&#39;examples/ex1.csv&#39;, sep=&#39;,&#39;)
 Out[11]: 
    a   b   c   d message
 0  1   2   3   4   hello
@@ -65,14 +65,14 @@ In [12]: !cat examples/ex2.csv
 
 读入该文件的办法有两个。你可以让pandas为其分配默认的列名，也可以自己定义列名：
 ```python
-In [13]: pd.read_csv('examples/ex2.csv', header=None)
+In [13]: pd.read_csv(&#39;examples/ex2.csv&#39;, header=None)
 Out[13]: 
    0   1   2   3      4
 0  1   2   3   4  hello
 1  5   6   7   8  world
 2  9  10  11  12    foo
 
-In [14]: pd.read_csv('examples/ex2.csv', names=['a', 'b', 'c', 'd', 'message'])
+In [14]: pd.read_csv(&#39;examples/ex2.csv&#39;, names=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;message&#39;])
 Out[14]: 
    a   b   c   d message
 0  1   2   3   4   hello
@@ -80,11 +80,11 @@ Out[14]:
 2  9  10  11  12     foo
 ```
 
-假设你希望将message列做成DataFrame的索引。你可以明确表示要将该列放到索引4的位置上，也可以通过index_col参数指定"message"：
+假设你希望将message列做成DataFrame的索引。你可以明确表示要将该列放到索引4的位置上，也可以通过index_col参数指定&#34;message&#34;：
 ```python
-In [15]: names = ['a', 'b', 'c', 'd', 'message']
+In [15]: names = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;message&#39;]
 
-In [16]: pd.read_csv('examples/ex2.csv', names=names, index_col='message')
+In [16]: pd.read_csv(&#39;examples/ex2.csv&#39;, names=names, index_col=&#39;message&#39;)
 Out[16]: 
          a   b   c   d
 message               
@@ -106,8 +106,8 @@ two,b,11,12
 two,c,13,14
 two,d,15,16
 
-In [18]: parsed = pd.read_csv('examples/csv_mindex.csv',
-   ....:                      index_col=['key1', 'key2'])
+In [18]: parsed = pd.read_csv(&#39;examples/csv_mindex.csv&#39;,
+   ....:                      index_col=[&#39;key1&#39;, &#39;key2&#39;])
 
 In [19]: parsed
 Out[19]: 
@@ -125,18 +125,18 @@ two  a          9      10
 
 有些情况下，有些表格可能不是用固定的分隔符去分隔字段的（比如空白符或其它模式）。看看下面这个文本文件：
 ```python
-In [20]: list(open('examples/ex3.txt'))
+In [20]: list(open(&#39;examples/ex3.txt&#39;))
 Out[20]: 
-['            A         B         C\n',
- 'aaa -0.264438 -1.026059 -0.619500\n',
- 'bbb  0.927272  0.302904 -0.032399\n',
- 'ccc -0.264273 -0.386314 -0.217601\n',
- 'ddd -0.871858 -0.348382  1.100491\n']
+[&#39;            A         B         C\n&#39;,
+ &#39;aaa -0.264438 -1.026059 -0.619500\n&#39;,
+ &#39;bbb  0.927272  0.302904 -0.032399\n&#39;,
+ &#39;ccc -0.264273 -0.386314 -0.217601\n&#39;,
+ &#39;ddd -0.871858 -0.348382  1.100491\n&#39;]
 ```
 
-虽然可以手动对数据进行规整，这里的字段是被数量不同的空白字符间隔开的。这种情况下，你可以传递一个正则表达式作为read_table的分隔符。可以用正则表达式表达为\s+，于是有：
+虽然可以手动对数据进行规整，这里的字段是被数量不同的空白字符间隔开的。这种情况下，你可以传递一个正则表达式作为read_table的分隔符。可以用正则表达式表达为\s&#43;，于是有：
 ```python
-In [21]: result = pd.read_table('examples/ex3.txt', sep='\s+')
+In [21]: result = pd.read_table(&#39;examples/ex3.txt&#39;, sep=&#39;\s&#43;&#39;)
 
 In [22]: result
 Out[22]: 
@@ -159,7 +159,7 @@ a,b,c,d,message
 1,2,3,4,hello
 5,6,7,8,world
 9,10,11,12,foo
-In [24]: pd.read_csv('examples/ex4.csv', skiprows=[0, 2, 3])
+In [24]: pd.read_csv(&#39;examples/ex4.csv&#39;, skiprows=[0, 2, 3])
 Out[24]: 
    a   b   c   d message
 0  1   2   3   4   hello
@@ -174,7 +174,7 @@ something,a,b,c,d,message
 one,1,2,3,4,NA
 two,5,6,,8,world
 three,9,10,11,12,foo
-In [26]: result = pd.read_csv('examples/ex5.csv')
+In [26]: result = pd.read_csv(&#39;examples/ex5.csv&#39;)
 
 In [27]: result
 Out[27]: 
@@ -193,7 +193,7 @@ Out[28]:
 
 na_values可以用一个列表或集合的字符串表示缺失值：
 ```python
-In [29]: result = pd.read_csv('examples/ex5.csv', na_values=['NULL'])
+In [29]: result = pd.read_csv(&#39;examples/ex5.csv&#39;, na_values=[&#39;NULL&#39;])
 
 In [30]: result
 Out[30]: 
@@ -205,9 +205,9 @@ Out[30]:
 
 字典的各列可以使用不同的NA标记值：
 ```python
-In [31]: sentinels = {'message': ['foo', 'NA'], 'something': ['two']}
+In [31]: sentinels = {&#39;message&#39;: [&#39;foo&#39;, &#39;NA&#39;], &#39;something&#39;: [&#39;two&#39;]}
 
-In [32]: pd.read_csv('examples/ex5.csv', na_values=sentinels)
+In [32]: pd.read_csv(&#39;examples/ex5.csv&#39;, na_values=sentinels)
 Out[32]:
 something  a   b     c   d message
 0       one  1   2   3.0   4     NaN
@@ -233,7 +233,7 @@ In [33]: pd.options.display.max_rows = 10
 
 然后有：
 ```python
-In [34]: result = pd.read_csv('examples/ex6.csv')
+In [34]: result = pd.read_csv(&#39;examples/ex6.csv&#39;)
 
 In [35]: result
 Out[35]: 
@@ -255,7 +255,7 @@ If you want to only read a small
 
 如果只想读取几行（避免读取整个文件），通过nrows进行指定即可：
 ```python
-In [36]: pd.read_csv('examples/ex6.csv', nrows=5)
+In [36]: pd.read_csv(&#39;examples/ex6.csv&#39;, nrows=5)
 Out[36]: 
         one       two     three      four key
 0  0.467976 -0.038649 -0.295344 -1.824726   L
@@ -267,19 +267,19 @@ Out[36]:
 
 要逐块读取文件，可以指定chunksize（行数）：
 ```python
-In [874]: chunker = pd.read_csv('ch06/ex6.csv', chunksize=1000)
+In [874]: chunker = pd.read_csv(&#39;ch06/ex6.csv&#39;, chunksize=1000)
 
 In [875]: chunker
-Out[875]: <pandas.io.parsers.TextParser at 0x8398150>
+Out[875]: &lt;pandas.io.parsers.TextParser at 0x8398150&gt;
 ```
 
-read_csv所返回的这个TextParser对象使你可以根据chunksize对文件进行逐块迭代。比如说，我们可以迭代处理ex6.csv，将值计数聚合到"key"列中，如下所示：
+read_csv所返回的这个TextParser对象使你可以根据chunksize对文件进行逐块迭代。比如说，我们可以迭代处理ex6.csv，将值计数聚合到&#34;key&#34;列中，如下所示：
 ```python
-chunker = pd.read_csv('examples/ex6.csv', chunksize=1000)
+chunker = pd.read_csv(&#39;examples/ex6.csv&#39;, chunksize=1000)
 
 tot = pd.Series([])
 for piece in chunker:
-    tot = tot.add(piece['key'].value_counts(), fill_value=0)
+    tot = tot.add(piece[&#39;key&#39;].value_counts(), fill_value=0)
 
 tot = tot.sort_values(ascending=False)
 ```
@@ -306,7 +306,7 @@ TextParser还有一个get_chunk方法，它使你可以读取任意大小的块�
 ### 6.1.2 将数据写出到文本格式
 数据也可以被输出为`分隔符`格式的文本。我们再来看看之前读过的一个CSV文件：
 ```python
-In [41]: data = pd.read_csv('examples/ex5.csv')
+In [41]: data = pd.read_csv(&#39;examples/ex5.csv&#39;)
 
 In [42]: data
 Out[42]: 
@@ -318,7 +318,7 @@ Out[42]:
 
 利用DataFrame的`to_csv`方法，我们可以将数据写到一个以`逗号`分隔的文件中：
 ```python
-In [43]: data.to_csv('examples/out.csv')
+In [43]: data.to_csv(&#39;examples/out.csv&#39;)
 
 In [44]: !cat examples/out.csv
 ,something,a,b,c,d,message
@@ -331,7 +331,7 @@ In [44]: !cat examples/out.csv
 ```python
 In [45]: import sys
 
-In [46]: data.to_csv(sys.stdout, sep='|')
+In [46]: data.to_csv(sys.stdout, sep=&#39;|&#39;)
 |something|a|b|c|d|message
 0|one|1|2|3.0|4|
 1|two|5|6||8|world
@@ -340,7 +340,7 @@ In [46]: data.to_csv(sys.stdout, sep='|')
 
 缺失值在输出结果中会被表示为空字符串。你可能希望将其表示为别的标记值：
 ```python
-In [47]: data.to_csv(sys.stdout, na_rep='NULL')
+In [47]: data.to_csv(sys.stdout, na_rep=&#39;NULL&#39;)
 ,something,a,b,c,d,message
 0,one,1,2,3.0,4,NULL
 1,two,5,6,NULL,8,world
@@ -357,7 +357,7 @@ three,9,10,11.0,12,foo
 
 此外，你还可以只写出一部分的列，并以你指定的顺序排列：
 ```python
-In [49]: data.to_csv(sys.stdout, index=False, columns=['a', 'b', 'c'])
+In [49]: data.to_csv(sys.stdout, index=False, columns=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])
 a,b,c
 1,2,3.0
 5,6,
@@ -366,11 +366,11 @@ a,b,c
 
 Series也有一个to_csv方法：
 ```python
-In [50]: dates = pd.date_range('1/1/2000', periods=7)
+In [50]: dates = pd.date_range(&#39;1/1/2000&#39;, periods=7)
 
 In [51]: ts = pd.Series(np.arange(7), index=dates)
 
-In [52]: ts.to_csv('examples/tseries.csv')
+In [52]: ts.to_csv(&#39;examples/tseries.csv&#39;)
 
 In [53]: !cat examples/tseries.csv
 2000-01-01,0
@@ -386,15 +386,15 @@ In [53]: !cat examples/tseries.csv
 大部分存储在磁盘上的表格型数据都能用pandas.read_table进行加载。然而，有时还是需要做一些手工处理。由于接收到含有畸形行的文件而使read_table出毛病的情况并不少见。为了说明这些基本工具，看看下面这个简单的CSV文件：
 ```python
 In [54]: !cat examples/ex7.csv
-"a","b","c"
-"1","2","3"
-"1","2","3"
+&#34;a&#34;,&#34;b&#34;,&#34;c&#34;
+&#34;1&#34;,&#34;2&#34;,&#34;3&#34;
+&#34;1&#34;,&#34;2&#34;,&#34;3&#34;
 ```
 
 对于**任何单字符分隔符文件**，可以直接使用Python内置的`csv`模块。将任意已打开的文件或文件型的对象传给csv.reader：
 ```python
 import csv
-f = open('examples/ex7.csv')
+f = open(&#39;examples/ex7.csv&#39;)
 
 reader = csv.reader(f)
 ```
@@ -403,14 +403,14 @@ reader = csv.reader(f)
 ```python
 In [56]: for line in reader:
    ....:     print(line)
-['a', 'b', 'c']
-['1', '2', '3']
-['1', '2', '3']
+[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]
+[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]
 ```
 
 现在，为了使数据格式合乎要求，你需要对其做一些整理工作。我们一步一步来做。首先，读取文件到一个多行的列表中：
 ```python
-In [57]: with open('examples/ex7.csv') as f:
+In [57]: with open(&#39;examples/ex7.csv&#39;) as f:
    ....:     lines = list(csv.reader(f))
 ```
 
@@ -424,52 +424,52 @@ In [58]: header, values = lines[0], lines[1:]
 In [59]: data_dict = {h: v for h, v in zip(header, zip(*values))}
 
 In [60]: data_dict
-Out[60]: {'a': ('1', '1'), 'b': ('2', '2'), 'c': ('3', '3')}
+Out[60]: {&#39;a&#39;: (&#39;1&#39;, &#39;1&#39;), &#39;b&#39;: (&#39;2&#39;, &#39;2&#39;), &#39;c&#39;: (&#39;3&#39;, &#39;3&#39;)}
 ```
 
 CSV文件的形式有很多。只需定义csv.Dialect的一个子类即可定义出新格式（如专门的分隔符、字符串引用约定、行结束符等）：
 ```python
 class my_dialect(csv.Dialect):
-    lineterminator = '\n'
-    delimiter = ';'
-    quotechar = '"'
+    lineterminator = &#39;\n&#39;
+    delimiter = &#39;;&#39;
+    quotechar = &#39;&#34;&#39;
     quoting = csv.QUOTE_MINIMAL
 reader = csv.reader(f, dialect=my_dialect)
 ```
 
 各个CSV语支的参数也可以用关键字的形式提供给csv.reader，而无需定义子类：
 ```python
-reader = csv.reader(f, delimiter='|')
+reader = csv.reader(f, delimiter=&#39;|&#39;)
 ```
 
 可用的选项（csv.Dialect的属性）及其功能如表6-3所示。
 
 ![](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png)
 
->笔记：对于那些使用复杂分隔符或多字符分隔符的文件，csv模块就无能为力了。这种情况下，你就只能使用字符串的split方法或正则表达式方法re.split进行行拆分和其他整理工作了。
+&gt;笔记：对于那些使用复杂分隔符或多字符分隔符的文件，csv模块就无能为力了。这种情况下，你就只能使用字符串的split方法或正则表达式方法re.split进行行拆分和其他整理工作了。
 
 要手工输出分隔符文件，你可以使用csv.writer。它接受一个已打开且可写的文件对象以及跟csv.reader相同的那些语支和格式化选项：
 ```python
-with open('mydata.csv', 'w') as f:
+with open(&#39;mydata.csv&#39;, &#39;w&#39;) as f:
     writer = csv.writer(f, dialect=my_dialect)
-    writer.writerow(('one', 'two', 'three'))
-    writer.writerow(('1', '2', '3'))
-    writer.writerow(('4', '5', '6'))
-    writer.writerow(('7', '8', '9'))
+    writer.writerow((&#39;one&#39;, &#39;two&#39;, &#39;three&#39;))
+    writer.writerow((&#39;1&#39;, &#39;2&#39;, &#39;3&#39;))
+    writer.writerow((&#39;4&#39;, &#39;5&#39;, &#39;6&#39;))
+    writer.writerow((&#39;7&#39;, &#39;8&#39;, &#39;9&#39;))
 ```
 
 ### 6.1.4 JSON数据
 JSON（JavaScript Object Notation的简称）已经成为通过HTTP请求在Web浏览器和其他应用程序之间发送数据的标准格式之一。它是一种比表格型文本格式（如CSV）灵活得多的数据格式。下面是一个例子：
 ```python
-obj = """
-{"name": "Wes",
- "places_lived": ["United States", "Spain", "Germany"],
- "pet": null,
- "siblings": [{"name": "Scott", "age": 30, "pets": ["Zeus", "Zuko"]},
-              {"name": "Katie", "age": 38,
-               "pets": ["Sixes", "Stache", "Cisco"]}]
+obj = &#34;&#34;&#34;
+{&#34;name&#34;: &#34;Wes&#34;,
+ &#34;places_lived&#34;: [&#34;United States&#34;, &#34;Spain&#34;, &#34;Germany&#34;],
+ &#34;pet&#34;: null,
+ &#34;siblings&#34;: [{&#34;name&#34;: &#34;Scott&#34;, &#34;age&#34;: 30, &#34;pets&#34;: [&#34;Zeus&#34;, &#34;Zuko&#34;]},
+              {&#34;name&#34;: &#34;Katie&#34;, &#34;age&#34;: 38,
+               &#34;pets&#34;: [&#34;Sixes&#34;, &#34;Stache&#34;, &#34;Cisco&#34;]}]
 }
-"""
+&#34;&#34;&#34;
 ```
 除其空值null和一些其他的细微差别（如列表末尾不允许存在多余的逗号）之外，JSON非常接近于有效的Python代码。基本类型有对象（字典）、数组（列表）、字符串、数值、布尔值以及null。对象中所有的键都必须是字符串。许多Python库都可以读写JSON数据。我将使用json，因为它是构建于Python标准库中的。通过`json.loads`即可将JSON字符串转换成Python形式：
 ```python
@@ -479,11 +479,11 @@ In [63]: result = json.loads(obj)
 
 In [64]: result
 Out[64]: 
-{'name': 'Wes',
- 'pet': None,
- 'places_lived': ['United States', 'Spain', 'Germany'],
- 'siblings': [{'age': 30, 'name': 'Scott', 'pets': ['Zeus', 'Zuko']},
-  {'age': 38, 'name': 'Katie', 'pets': ['Sixes', 'Stache', 'Cisco']}]}
+{&#39;name&#39;: &#39;Wes&#39;,
+ &#39;pet&#39;: None,
+ &#39;places_lived&#39;: [&#39;United States&#39;, &#39;Spain&#39;, &#39;Germany&#39;],
+ &#39;siblings&#39;: [{&#39;age&#39;: 30, &#39;name&#39;: &#39;Scott&#39;, &#39;pets&#39;: [&#39;Zeus&#39;, &#39;Zuko&#39;]},
+  {&#39;age&#39;: 38, &#39;name&#39;: &#39;Katie&#39;, &#39;pets&#39;: [&#39;Sixes&#39;, &#39;Stache&#39;, &#39;Cisco&#39;]}]}
 ```
 
 json.dumps则将Python对象转换成JSON格式：
@@ -493,7 +493,7 @@ In [65]: asjson = json.dumps(result)
 
 如何将（一个或一组）JSON对象转换为DataFrame或其他便于分析的数据结构就由你决定了。最简单方便的方式是：向DataFrame构造器传入一个字典的列表（就是原先的JSON对象），并选取数据字段的子集：
 ```python
-In [66]: siblings = pd.DataFrame(result['siblings'], columns=['name', 'age'])
+In [66]: siblings = pd.DataFrame(result[&#39;siblings&#39;], columns=[&#39;name&#39;, &#39;age&#39;])
 
 In [67]: siblings
 Out[67]: 
@@ -505,14 +505,14 @@ Out[67]:
 pandas.read_json可以自动将特别格式的JSON数据集转换为Series或DataFrame。例如：
 ```python
 In [68]: !cat examples/example.json
-[{"a": 1, "b": 2, "c": 3},
- {"a": 4, "b": 5, "c": 6},
- {"a": 7, "b": 8, "c": 9}]
+[{&#34;a&#34;: 1, &#34;b&#34;: 2, &#34;c&#34;: 3},
+ {&#34;a&#34;: 4, &#34;b&#34;: 5, &#34;c&#34;: 6},
+ {&#34;a&#34;: 7, &#34;b&#34;: 8, &#34;c&#34;: 9}]
 ```
 
 pandas.read_json的默认选项假设JSON数组中的每个对象是表格中的一行：
 ```python
-In [69]: data = pd.read_json('examples/example.json')
+In [69]: data = pd.read_json(&#39;examples/example.json&#39;)
 
 In [70]: data
 Out[70]: 
@@ -527,10 +527,10 @@ Out[70]:
 如果你需要将数据从pandas输出到JSON，可以使用to_json方法：
 ```python
 In [71]: print(data.to_json())
-{"a":{"0":1,"1":4,"2":7},"b":{"0":2,"1":5,"2":8},"c":{"0":3,"1":6,"2":9}}
+{&#34;a&#34;:{&#34;0&#34;:1,&#34;1&#34;:4,&#34;2&#34;:7},&#34;b&#34;:{&#34;0&#34;:2,&#34;1&#34;:5,&#34;2&#34;:8},&#34;c&#34;:{&#34;0&#34;:3,&#34;1&#34;:6,&#34;2&#34;:9}}
 
-In [72]: print(data.to_json(orient='records'))
-[{"a":1,"b":2,"c":3},{"a":4,"b":5,"c":6},{"a":7,"b":8,"c":9}]
+In [72]: print(data.to_json(orient=&#39;records&#39;))
+[{&#34;a&#34;:1,&#34;b&#34;:2,&#34;c&#34;:3},{&#34;a&#34;:4,&#34;b&#34;:5,&#34;c&#34;:6},{&#34;a&#34;:7,&#34;b&#34;:8,&#34;c&#34;:9}]
 ```
 
 ### 6.1.5 XML和HTML：Web信息收集
@@ -545,9 +545,9 @@ pip install beautifulsoup4 html5lib
 
 如果你用的不是conda，可以使用``pip install lxml``。
 
-pandas.read_html有一些选项，默认条件下，它会搜索、尝试解析<table>标签内的的表格数据。结果是一个列表的DataFrame对象：
+pandas.read_html有一些选项，默认条件下，它会搜索、尝试解析&lt;table&gt;标签内的的表格数据。结果是一个列表的DataFrame对象：
 ```python
-In [73]: tables = pd.read_html('examples/fdic_failed_bank_list.html')
+In [73]: tables = pd.read_html(&#39;examples/fdic_failed_bank_list.html&#39;)
 
 In [74]: len(tables)
 Out[74]: 1
@@ -563,18 +563,18 @@ Out[76]:
 3            Trust Company Bank          Memphis  TN   9956   
 4    North Milwaukee State Bank        Milwaukee  WI  20364   
                  Acquiring Institution        Closing Date       Updated Date  
-0                         Today's Bank  September 23, 2016  November 17, 2016  
+0                         Today&#39;s Bank  September 23, 2016  November 17, 2016  
 1                          United Bank     August 19, 2016  November 17, 2016  
-2  First-Citizens Bank & Trust Company         May 6, 2016  September 6, 2016  
+2  First-Citizens Bank &amp; Trust Company         May 6, 2016  September 6, 2016  
 3           The Bank of Fayette County      April 29, 2016  September 6, 2016  
-4  First-Citizens Bank & Trust Company      March 11, 2016      June 16, 2016
+4  First-Citizens Bank &amp; Trust Company      March 11, 2016      June 16, 2016
 ```
 
 因为failures有许多列，pandas插入了一个换行符\。
 
 这里，我们可以做一些数据清洗和分析（后面章节会进一步讲解），比如计算按年份计算倒闭的银行数：
 ```python
-In [77]: close_timestamps = pd.to_datetime(failures['Closing Date'])
+In [77]: close_timestamps = pd.to_datetime(failures[&#39;Closing Date&#39;])
 
 In [78]: close_timestamps.dt.year.value_counts()
 Out[78]: 
@@ -599,44 +599,44 @@ XML（Extensible Markup Language）是另一种常见的支持分层、嵌套数
 
 纽约大都会运输署发布了一些有关其公交和列车服务的数据资料（http://www.mta.info/developers/download.html）。这里，我们将看看包含在一组XML文件中的运行情况数据。每项列车或公交服务都有各自的文件（如Metro-North Railroad的文件是Performance_MNR.xml），其中每条XML记录就是一条月度数据，如下所示：
 ```xml
-<INDICATOR>
-  <INDICATOR_SEQ>373889</INDICATOR_SEQ>
-  <PARENT_SEQ></PARENT_SEQ>
-  <AGENCY_NAME>Metro-North Railroad</AGENCY_NAME>
-  <INDICATOR_NAME>Escalator Availability</INDICATOR_NAME>
-  <DESCRIPTION>Percent of the time that escalators are operational
+&lt;INDICATOR&gt;
+  &lt;INDICATOR_SEQ&gt;373889&lt;/INDICATOR_SEQ&gt;
+  &lt;PARENT_SEQ&gt;&lt;/PARENT_SEQ&gt;
+  &lt;AGENCY_NAME&gt;Metro-North Railroad&lt;/AGENCY_NAME&gt;
+  &lt;INDICATOR_NAME&gt;Escalator Availability&lt;/INDICATOR_NAME&gt;
+  &lt;DESCRIPTION&gt;Percent of the time that escalators are operational
   systemwide. The availability rate is based on physical observations performed
   the morning of regular business days only. This is a new indicator the agency
-  began reporting in 2009.</DESCRIPTION>
-  <PERIOD_YEAR>2011</PERIOD_YEAR>
-  <PERIOD_MONTH>12</PERIOD_MONTH>
-  <CATEGORY>Service Indicators</CATEGORY>
-  <FREQUENCY>M</FREQUENCY>
-  <DESIRED_CHANGE>U</DESIRED_CHANGE>
-  <INDICATOR_UNIT>%</INDICATOR_UNIT>
-  <DECIMAL_PLACES>1</DECIMAL_PLACES>
-  <YTD_TARGET>97.00</YTD_TARGET>
-  <YTD_ACTUAL></YTD_ACTUAL>
-  <MONTHLY_TARGET>97.00</MONTHLY_TARGET>
-  <MONTHLY_ACTUAL></MONTHLY_ACTUAL>
-</INDICATOR>
+  began reporting in 2009.&lt;/DESCRIPTION&gt;
+  &lt;PERIOD_YEAR&gt;2011&lt;/PERIOD_YEAR&gt;
+  &lt;PERIOD_MONTH&gt;12&lt;/PERIOD_MONTH&gt;
+  &lt;CATEGORY&gt;Service Indicators&lt;/CATEGORY&gt;
+  &lt;FREQUENCY&gt;M&lt;/FREQUENCY&gt;
+  &lt;DESIRED_CHANGE&gt;U&lt;/DESIRED_CHANGE&gt;
+  &lt;INDICATOR_UNIT&gt;%&lt;/INDICATOR_UNIT&gt;
+  &lt;DECIMAL_PLACES&gt;1&lt;/DECIMAL_PLACES&gt;
+  &lt;YTD_TARGET&gt;97.00&lt;/YTD_TARGET&gt;
+  &lt;YTD_ACTUAL&gt;&lt;/YTD_ACTUAL&gt;
+  &lt;MONTHLY_TARGET&gt;97.00&lt;/MONTHLY_TARGET&gt;
+  &lt;MONTHLY_ACTUAL&gt;&lt;/MONTHLY_ACTUAL&gt;
+&lt;/INDICATOR&gt;
 ```
 
 我们先用lxml.objectify解析该文件，然后通过getroot得到该XML文件的根节点的引用：
 ```python
 from lxml import objectify
 
-path = 'datasets/mta_perf/Performance_MNR.xml'
+path = &#39;datasets/mta_perf/Performance_MNR.xml&#39;
 parsed = objectify.parse(open(path))
 root = parsed.getroot()
 ```
 
-root.INDICATOR返回一个用于产生各个<INDICATOR>XML元素的生成器。对于每条记录，我们可以用标记名（如YTD_ACTUAL）和数据值填充一个字典（排除几个标记）：
+root.INDICATOR返回一个用于产生各个&lt;INDICATOR&gt;XML元素的生成器。对于每条记录，我们可以用标记名（如YTD_ACTUAL）和数据值填充一个字典（排除几个标记）：
 ```python
 data = []
 
-skip_fields = ['PARENT_SEQ', 'INDICATOR_SEQ',
-               'DESIRED_CHANGE', 'DECIMAL_PLACES']
+skip_fields = [&#39;PARENT_SEQ&#39;, &#39;INDICATOR_SEQ&#39;,
+               &#39;DESIRED_CHANGE&#39;, &#39;DECIMAL_PLACES&#39;]
 
 for elt in root.INDICATOR:
     el_data = {}
@@ -661,27 +661,27 @@ Index: []
 XML数据可以比本例复杂得多。每个标记都可以有元数据。看看下面这个HTML的链接标签（它也算是一段有效的XML）：
 ```python
 from io import StringIO
-tag = '<a href="http://www.google.com">Google</a>'
+tag = &#39;&lt;a href=&#34;http://www.google.com&#34;&gt;Google&lt;/a&gt;&#39;
 root = objectify.parse(StringIO(tag)).getroot()
 ```
 
 现在就可以访问标签或链接文本中的任何字段了（如href）：
 ```python
 In [84]: root
-Out[84]: <Element a at 0x7f6b15817748>
+Out[84]: &lt;Element a at 0x7f6b15817748&gt;
 
-In [85]: root.get('href')
-Out[85]: 'http://www.google.com'
+In [85]: root.get(&#39;href&#39;)
+Out[85]: &#39;http://www.google.com&#39;
 
 In [86]: root.text
-Out[86]: 'Google'
+Out[86]: &#39;Google&#39;
 ```
 
 ## 6.2 二进制数据格式
 
 实现数据的高效二进制格式存储最简单的办法之一是使用Python内置的pickle序列化。pandas对象都有一个用于将数据以pickle格式保存到磁盘上的to_pickle方法：
 ```python
-In [87]: frame = pd.read_csv('examples/ex1.csv')
+In [87]: frame = pd.read_csv(&#39;examples/ex1.csv&#39;)
 
 In [88]: frame
 Out[88]: 
@@ -690,12 +690,12 @@ Out[88]:
 1  5   6   7   8   world
 2  9  10  11  12     foo
 
-In [89]: frame.to_pickle('examples/frame_pickle')
+In [89]: frame.to_pickle(&#39;examples/frame_pickle&#39;)
 ```
 
 你可以通过pickle直接读取被pickle化的数据，或是使用更为方便的pandas.read_pickle：
 ```python
-In [90]: pd.read_pickle('examples/frame_pickle')
+In [90]: pd.read_pickle(&#39;examples/frame_pickle&#39;)
 Out[90]: 
    a   b   c   d message
 0  1   2   3   4   hello
@@ -703,7 +703,7 @@ Out[90]:
 2  9  10  11  12     foo
 ```
 
->注意：pickle仅建议用于短期存储格式。其原因是很难保证该格式永远是稳定的；今天pickle的对象可能无法被后续版本的库unpickle出来。虽然我尽力保证这种事情不会发生在pandas中，但是今后的某个时候说不定还是得“打破”该pickle格式。
+&gt;注意：pickle仅建议用于短期存储格式。其原因是很难保证该格式永远是稳定的；今天pickle的对象可能无法被后续版本的库unpickle出来。虽然我尽力保证这种事情不会发生在pandas中，但是今后的某个时候说不定还是得“打破”该pickle格式。
 
 pandas内置支持两个二进制数据格式：HDF5和MessagePack。下一节，我会给出几个HDF5的例子，但我建议你尝试下不同的文件格式，看看它们的速度以及是否适合你的分析工作。pandas或NumPy数据的其它存储格式有：
 
@@ -716,31 +716,31 @@ HDF5是一种存储大规模科学数组数据的非常好的文件格式。它�
 
 虽然可以用PyTables或h5py库直接访问HDF5文件，pandas提供了更为高级的接口，可以简化存储Series和DataFrame对象。HDFStore类可以像字典一样，处理低级的细节：
 ```python
-In [92]: frame = pd.DataFrame({'a': np.random.randn(100)})
+In [92]: frame = pd.DataFrame({&#39;a&#39;: np.random.randn(100)})
 
-In [93]: store = pd.HDFStore('mydata.h5')
+In [93]: store = pd.HDFStore(&#39;mydata.h5&#39;)
 
-In [94]: store['obj1'] = frame
+In [94]: store[&#39;obj1&#39;] = frame
 
-In [95]: store['obj1_col'] = frame['a']
+In [95]: store[&#39;obj1_col&#39;] = frame[&#39;a&#39;]
 
 In [96]: store
 Out[96]: 
-<class 'pandas.io.pytables.HDFStore'>
+&lt;class &#39;pandas.io.pytables.HDFStore&#39;&gt;
 File path: mydata.h5
-/obj1                frame        (shape->[100,1])                               
+/obj1                frame        (shape-&gt;[100,1])                               
         
-/obj1_col            series       (shape->[100])                                 
+/obj1_col            series       (shape-&gt;[100])                                 
         
-/obj2                frame_table  (typ->appendable,nrows->100,ncols->1,indexers->
+/obj2                frame_table  (typ-&gt;appendable,nrows-&gt;100,ncols-&gt;1,indexers-&gt;
 [index])
-/obj3                frame_table  (typ->appendable,nrows->100,ncols->1,indexers->
+/obj3                frame_table  (typ-&gt;appendable,nrows-&gt;100,ncols-&gt;1,indexers-&gt;
 [index])
 ```
 
 HDF5文件中的对象可以通过与字典一样的API进行获取：
 ```python
-In [97]: store['obj1']
+In [97]: store[&#39;obj1&#39;]
 Out[97]: 
            a
 0  -0.204708
@@ -757,11 +757,11 @@ Out[97]:
 [100 rows x 1 columns]
 ```
 
-HDFStore支持两种存储模式，'fixed'和'table'。后者通常会更慢，但是支持使用特殊语法进行查询操作：
+HDFStore支持两种存储模式，&#39;fixed&#39;和&#39;table&#39;。后者通常会更慢，但是支持使用特殊语法进行查询操作：
 ```python
-In [98]: store.put('obj2', frame, format='table')
+In [98]: store.put(&#39;obj2&#39;, frame, format=&#39;table&#39;)
 
-In [99]: store.select('obj2', where=['index >= 10 and index <= 15'])
+In [99]: store.select(&#39;obj2&#39;, where=[&#39;index &gt;= 10 and index &lt;= 15&#39;])
 Out[99]: 
            a
 10  1.007189
@@ -774,13 +774,13 @@ Out[99]:
 In [100]: store.close()
 ```
 
-put是store['obj2'] = frame方法的显示版本，允许我们设置其它的选项，比如格式。
+put是store[&#39;obj2&#39;] = frame方法的显示版本，允许我们设置其它的选项，比如格式。
 
 pandas.read_hdf函数可以快捷使用这些工具：
 ```python
-In [101]: frame.to_hdf('mydata.h5', 'obj3', format='table')
+In [101]: frame.to_hdf(&#39;mydata.h5&#39;, &#39;obj3&#39;, format=&#39;table&#39;)
 
-In [102]: pd.read_hdf('mydata.h5', 'obj3', where=['index < 5'])
+In [102]: pd.read_hdf(&#39;mydata.h5&#39;, &#39;obj3&#39;, where=[&#39;index &lt; 5&#39;])
 Out[102]: 
           a
 0 -0.204708
@@ -790,11 +790,11 @@ Out[102]:
 4  1.965781
 ```
 
->笔记：如果你要处理的数据位于远程服务器，比如Amazon S3或HDFS，使用专门为分布式存储（比如Apache Parquet）的二进制格式也许更加合适。Python的Parquet和其它存储格式还在不断的发展之中，所以这本书中没有涉及。
+&gt;笔记：如果你要处理的数据位于远程服务器，比如Amazon S3或HDFS，使用专门为分布式存储（比如Apache Parquet）的二进制格式也许更加合适。Python的Parquet和其它存储格式还在不断的发展之中，所以这本书中没有涉及。
 
 如果需要本地处理海量数据，我建议你好好研究一下PyTables和h5py，看看它们能满足你的哪些需求。。由于许多数据分析问题都是IO密集型（而不是CPU密集型），利用HDF5这样的工具能显著提升应用程序的效率。
 
->注意：HDF5不是数据库。它最适合用作“一次写多次读”的数据集。虽然数据可以在任何时候被添加到文件中，但如果同时发生多个写操作，文件就可能会被破坏。
+&gt;注意：HDF5不是数据库。它最适合用作“一次写多次读”的数据集。虽然数据可以在任何时候被添加到文件中，但如果同时发生多个写操作，文件就可能会被破坏。
 
 ### 6.2.2 读取Microsoft Excel文件
 
@@ -802,12 +802,12 @@ pandas的ExcelFile类或pandas.read_excel函数支持读取存储在Excel 2003�
 
 要使用ExcelFile，通过传递xls或xlsx路径创建一个实例：
 ```python
-In [104]: xlsx = pd.ExcelFile('examples/ex1.xlsx')
+In [104]: xlsx = pd.ExcelFile(&#39;examples/ex1.xlsx&#39;)
 ```
 
 存储在表单中的数据可以read_excel读取到DataFrame（原书这里写的是用parse解析，但代码中用的是read_excel，是个笔误：只换了代码，没有改文字）：
 ```python
-In [105]: pd.read_excel(xlsx, 'Sheet1')
+In [105]: pd.read_excel(xlsx, &#39;Sheet1&#39;)
 Out[105]: 
    a   b   c   d message
 0  1   2   3   4   hello
@@ -817,7 +817,7 @@ Out[105]:
 
 如果要读取一个文件中的多个表单，创建ExcelFile会更快，但你也可以将文件名传递到pandas.read_excel：
 ```python
-In [106]: frame = pd.read_excel('examples/ex1.xlsx', 'Sheet1')
+In [106]: frame = pd.read_excel(&#39;examples/ex1.xlsx&#39;, &#39;Sheet1&#39;)
 
 In [107]: frame
 Out[107]: 
@@ -829,16 +829,16 @@ Out[107]:
 
 如果要将pandas数据写入为Excel格式，你必须首先创建一个ExcelWriter，然后使用pandas对象的to_excel方法将数据写入到其中：
 ```python
-In [108]: writer = pd.ExcelWriter('examples/ex2.xlsx')
+In [108]: writer = pd.ExcelWriter(&#39;examples/ex2.xlsx&#39;)
 
-In [109]: frame.to_excel(writer, 'Sheet1')
+In [109]: frame.to_excel(writer, &#39;Sheet1&#39;)
 
 In [110]: writer.save()
 ```
 
 你还可以不使用ExcelWriter，而是传递文件的路径到to_excel：
 ```python
-In [111]: frame.to_excel('examples/ex2.xlsx')
+In [111]: frame.to_excel(&#39;examples/ex2.xlsx&#39;)
 ```
 
 ## 6.3 Web APIs交互
@@ -848,26 +848,26 @@ In [111]: frame.to_excel('examples/ex2.xlsx')
 ```python
 In [113]: import requests
 
-In [114]: url = 'https://api.github.com/repos/pandas-dev/pandas/issues'
+In [114]: url = &#39;https://api.github.com/repos/pandas-dev/pandas/issues&#39;
 
 In [115]: resp = requests.get(url)
 
 In [116]: resp
-Out[116]: <Response [200]>
+Out[116]: &lt;Response [200]&gt;
 ```
 
 响应对象的json方法会返回一个包含被解析过的JSON字典，加载到一个Python对象中：
 ```python
 In [117]: data = resp.json()
 
-In [118]: data[0]['title']
-Out[118]: 'Period does not round down for frequencies less that 1 hour'
+In [118]: data[0][&#39;title&#39;]
+Out[118]: &#39;Period does not round down for frequencies less that 1 hour&#39;
 ```
 
 data中的每个元素都是一个包含所有GitHub主题页数据（不包含评论）的字典。我们可以直接传递数据到DataFrame，并提取感兴趣的字段：
 ```python
-In [119]: issues = pd.DataFrame(data, columns=['number', 'title',
-   .....:                                      'labels', 'state'])
+In [119]: issues = pd.DataFrame(data, columns=[&#39;number&#39;, &#39;title&#39;,
+   .....:                                      &#39;labels&#39;, &#39;state&#39;])
 
 In [120]: issues
 Out[120]:
@@ -879,22 +879,22 @@ Out[120]:
 4    17654  BUG: Fix series rename called with str alterin...   
 ..     ...                                                ...   
 25   17603  BUG: Correctly localize naive datetime strings...   
-26   17599                     core.dtypes.generic --> cython   
+26   17599                     core.dtypes.generic --&gt; cython   
 27   17596   Merge cdate_range functionality into bdate_range   
 28   17587  Time Grouper bug fix when applied for list gro...   
-29   17583  BUG: fix tz-aware DatetimeIndex + TimedeltaInd...   
+29   17583  BUG: fix tz-aware DatetimeIndex &#43; TimedeltaInd...   
                                                labels state  
 0                                                  []  open  
-1   [{'id': 134699, 'url': 'https://api.github.com...  open  
-2   [{'id': 563047854, 'url': 'https://api.github....  open  
+1   [{&#39;id&#39;: 134699, &#39;url&#39;: &#39;https://api.github.com...  open  
+2   [{&#39;id&#39;: 563047854, &#39;url&#39;: &#39;https://api.github....  open  
 3                                                  []  open  
-4   [{'id': 76811, 'url': 'https://api.github.com/...  open  
+4   [{&#39;id&#39;: 76811, &#39;url&#39;: &#39;https://api.github.com/...  open  
 ..                                                ...   ...  
-25  [{'id': 76811, 'url': 'https://api.github.com/...  open  
-26  [{'id': 49094459, 'url': 'https://api.github.c...  open  
-27  [{'id': 35818298, 'url': 'https://api.github.c...  open  
-28  [{'id': 233160, 'url': 'https://api.github.com...  open  
-29  [{'id': 76811, 'url': 'https://api.github.com/...  open  
+25  [{&#39;id&#39;: 76811, &#39;url&#39;: &#39;https://api.github.com/...  open  
+26  [{&#39;id&#39;: 49094459, &#39;url&#39;: &#39;https://api.github.c...  open  
+27  [{&#39;id&#39;: 35818298, &#39;url&#39;: &#39;https://api.github.c...  open  
+28  [{&#39;id&#39;: 233160, &#39;url&#39;: &#39;https://api.github.com...  open  
+29  [{&#39;id&#39;: 76811, &#39;url&#39;: &#39;https://api.github.com/...  open  
 [30 rows x 4 columns]
 ```
 
@@ -908,53 +908,53 @@ Out[120]:
 ```python
 In [121]: import sqlite3
 
-In [122]: query = """
+In [122]: query = &#34;&#34;&#34;
    .....: CREATE TABLE test
    .....: (a VARCHAR(20), b VARCHAR(20),
    .....:  c REAL,        d INTEGER
-   .....: );"""
+   .....: );&#34;&#34;&#34;
 
-In [123]: con = sqlite3.connect('mydata.sqlite')
+In [123]: con = sqlite3.connect(&#39;mydata.sqlite&#39;)
 
 In [124]: con.execute(query)
-Out[124]: <sqlite3.Cursor at 0x7f6b12a50f10>
+Out[124]: &lt;sqlite3.Cursor at 0x7f6b12a50f10&gt;
 
 In [125]: con.commit()
 ```
 
 然后插入几行数据：
 ```python
-In [126]: data = [('Atlanta', 'Georgia', 1.25, 6),
-   .....:         ('Tallahassee', 'Florida', 2.6, 3),
-   .....:         ('Sacramento', 'California', 1.7, 5)]
+In [126]: data = [(&#39;Atlanta&#39;, &#39;Georgia&#39;, 1.25, 6),
+   .....:         (&#39;Tallahassee&#39;, &#39;Florida&#39;, 2.6, 3),
+   .....:         (&#39;Sacramento&#39;, &#39;California&#39;, 1.7, 5)]
 
-In [127]: stmt = "INSERT INTO test VALUES(?, ?, ?, ?)"
+In [127]: stmt = &#34;INSERT INTO test VALUES(?, ?, ?, ?)&#34;
 
 In [128]: con.executemany(stmt, data)
-Out[128]: <sqlite3.Cursor at 0x7f6b15c66ce0>
+Out[128]: &lt;sqlite3.Cursor at 0x7f6b15c66ce0&gt;
 ```
 
 从表中选取数据时，大部分Python SQL驱动器（PyODBC、psycopg2、MySQLdb、pymssql等）都会返回一个元组列表：
 ```python
-In [130]: cursor = con.execute('select * from test')
+In [130]: cursor = con.execute(&#39;select * from test&#39;)
 
 In [131]: rows = cursor.fetchall()
 
 In [132]: rows
 Out[132]: 
-[('Atlanta', 'Georgia', 1.25, 6),
- ('Tallahassee', 'Florida', 2.6, 3),
- ('Sacramento', 'California', 1.7, 5)]
+[(&#39;Atlanta&#39;, &#39;Georgia&#39;, 1.25, 6),
+ (&#39;Tallahassee&#39;, &#39;Florida&#39;, 2.6, 3),
+ (&#39;Sacramento&#39;, &#39;California&#39;, 1.7, 5)]
 ```
 
 你可以将这个元组列表传给DataFrame构造器，但还需要列名（位于光标的description属性中）：
 ```python
 In [133]: cursor.description
 Out[133]: 
-(('a', None, None, None, None, None, None),
- ('b', None, None, None, None, None, None),
- ('c', None, None, None, None, None, None),
- ('d', None, None, None, None, None, None))
+((&#39;a&#39;, None, None, None, None, None, None),
+ (&#39;b&#39;, None, None, None, None, None, None),
+ (&#39;c&#39;, None, None, None, None, None, None),
+ (&#39;d&#39;, None, None, None, None, None, None))
 
 In [134]: pd.DataFrame(rows, columns=[x[0] for x in cursor.description])
 Out[134]: 
@@ -968,9 +968,9 @@ Out[134]:
 ```python
 In [135]: import sqlalchemy as sqla
 
-In [136]: db = sqla.create_engine('sqlite:///mydata.sqlite')
+In [136]: db = sqla.create_engine(&#39;sqlite:///mydata.sqlite&#39;)
 
-In [137]: pd.read_sql('select * from test', db)
+In [137]: pd.read_sql(&#39;select * from test&#39;, db)
 Out[137]: 
              a           b     c  d
 0      Atlanta     Georgia  1.25  6
@@ -984,6 +984,6 @@ Out[137]:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/  
 

@@ -143,6 +143,6 @@ XX集团有限公司
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/%E5%86%85%E5%AE%A1%E8%A2%AB%E5%AE%A1%E8%AE%A1%E4%BA%867%E6%96%B9%E9%9D%A214%E9%A1%B9%E9%97%AE%E9%A2%98%E5%8F%91%E7%8E%B0%E5%AF%B9%E5%BA%94%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/  
 

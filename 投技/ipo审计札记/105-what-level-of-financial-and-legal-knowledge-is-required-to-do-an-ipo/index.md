@@ -30,7 +30,7 @@
 
 很多公司作销售费用处理，有少缴税嫌疑。按税法规定，应作视同销售处理。增值税怎么处理？
 
-我们的对策对赠品单独计价，作销售处理+主营产品折价销售，可合理规避税负。
+我们的对策对赠品单独计价，作销售处理&#43;主营产品折价销售，可合理规避税负。
 
 7、**租赁土地建设厂房**
 
@@ -322,6 +322,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/105-what-level-of-financial-and-legal-knowledge-is-required-to-do-an-ipo/  
 

@@ -1,7 +1,7 @@
 # 每天一个linux命令（56）: tailf
 
 　　tailf 一个实时监听文件或日志的强大的命令
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ tailf [option] file
@@ -21,7 +21,7 @@ $ tailf -n 5 myfile.txt
 $ tailf -5 myfile.txt
 $ tailf --lines=5 myfile.txt
 ```
->`注：`这是一个实时监听文件或日志的强大的命令
+&gt;`注：`这是一个实时监听文件或日志的强大的命令
 
 **`例二`：实时新增日志内容，并通过管道过滤出自己想要的内容**
 ```bash
@@ -32,6 +32,6 @@ $ tailf access.log | grep 24.10.160.10
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/  
 

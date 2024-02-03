@@ -1,7 +1,7 @@
 # 每天一个linux命令（17）: whereis
 
 　　whereis命令只能用于程序名的搜索，而且只搜索二进制文件（参数-b）、man说明文件（参数-m）和源代码文件（参数-s）。如果省略参数，则返回所有信息。
-<!--more -->
+&lt;!--more --&gt;
 
 　　和find相比，whereis查找的速度非常快，这是因为linux系统会将 系统内的所有文件都记录在一个数据库文件中，当使用whereis和下面即将介绍的locate时，会从数据库中查找数据，而不是像find命令那样，通 过遍历硬盘来查找，效率自然会很高。
 
@@ -31,11 +31,11 @@ $ whereis git
 ```bash
 $ whereis -b svn
 ```
->`whereis -m svn` 查出说明文档路径，`whereis -s svn` 找source源文件
+&gt;`whereis -m svn` 查出说明文档路径，`whereis -s svn` 找source源文件
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-17-whereis/  
 

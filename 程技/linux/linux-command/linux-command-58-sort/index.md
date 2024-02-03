@@ -2,7 +2,7 @@
 
 sort是在Linux里非常常用的一个命令，管排序的。
 
-<!--more-->
+&lt;!--more--&gt;
 ### 1.工作原理
 sort将文件的每一行作为一个单位，相互比较，比较原则是从首字符向后，依次按ASCII码值进行比较，最后将他们按升序输出。
 
@@ -30,12 +30,12 @@ photo
 ### 3.sort的-r选项
 sort默认的排序方式是升序，如果想改成降序，就加个-r就搞定了。
 ### 4.sort的-o选项
-由于sort默认是把结果输出到标准输出，所以需要用重定向才能将结果写入文件，形如sort filename > newfile。
+由于sort默认是把结果输出到标准输出，所以需要用重定向才能将结果写入文件，形如sort filename &gt; newfile。
 
 但是，如果你想把排序结果输出到原文件中，用重定向可就不行了。
 
 ```bash
-[rocrocket@rocrocket programming]$ sort -r number.txt > number.txt
+[rocrocket@rocrocket programming]$ sort -r number.txt &gt; number.txt
 [rocrocket@rocrocket programming]$ cat number.txt
 [rocrocket@rocrocket programming]$
 ```
@@ -86,6 +86,6 @@ pear:90:2.3
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-58-sort/  
 

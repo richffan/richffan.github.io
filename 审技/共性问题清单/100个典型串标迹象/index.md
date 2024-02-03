@@ -208,6 +208,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/100%E4%B8%AA%E5%85%B8%E5%9E%8B%E4%B8%B2%E6%A0%87%E8%BF%B9%E8%B1%A1/  
 

@@ -72,6 +72,6 @@ E  撰写报告此部分要时刻记住尽调的目的是发现问题并提出�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/095-core-ideas-of-financial-due-diligence/  
 

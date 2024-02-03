@@ -582,11 +582,11 @@ B方案 销售商品、提供劳务收到的现金 100 万元 购买商品、接
 
 某事务所，对A和B两家公司对某修理业务的价格谈判进行审计，这是A和B两家公司的股东决定的。假设A是购买修理服务的公司。B
 
-公司的观点是给A公司修理费设备的价格应该这样计算，直接材料费+直接人工费+分摊的制造费用+毛利。A公司表示同意以上的计
+公司的观点是给A公司修理费设备的价格应该这样计算，直接材料费&#43;直接人工费&#43;分摊的制造费用&#43;毛利。A公司表示同意以上的计
 
 算方法，但是具体计算时双方产生了分歧。注册会计师给的计算公司为，假设毛利率为8%，因为毛利率=（价格-直接材料-直接人
 
-工-分摊的制造费用）除以价格。那么价格=（直接材料+直接人工+分摊的制造费用）除以（1-8%）。B公司同意事务所的观点，但
+工-分摊的制造费用）除以价格。那么价格=（直接材料&#43;直接人工&#43;分摊的制造费用）除以（1-8%）。B公司同意事务所的观点，但
 
 是A公司反对。A公司认为这样计算，材料费除了一个小于 1 的数，相当于乘以了大于 1 的数，这不是等于，B公司给其修理设备使用的
 
@@ -594,9 +594,9 @@ B方案 销售商品、提供劳务收到的现金 100 万元 购买商品、接
 都坚持自己的观点。事务所的人说了很多观点，总之，对方就是不认可。也许注册会计师对某些客户解释某些问题时，最好放弃发表
 议论和观点的职业常态；最好减少评论性的话语，不要以为只要你给对方一定的时间，他就能思考和判断了，他就能慢慢消化或者理
 
-解你的观点了。不给观点和议论，有的时候往往能够解决问题。后来怎么计算的呢？价格=直接材料费+直接人工费+分摊的制造费
+解你的观点了。不给观点和议论，有的时候往往能够解决问题。后来怎么计算的呢？价格=直接材料费&#43;直接人工费&#43;分摊的制造费
 
-用+利润。双方的工程师核准了用料清单，注册会计师在审核材料单价的基础上，计算出了材料费，不加价格。双方的工程师核准了
+用&#43;利润。双方的工程师核准了用料清单，注册会计师在审核材料单价的基础上，计算出了材料费，不加价格。双方的工程师核准了
 
 人工工时，注册会计师在审核B公司以往小时工资的基础上，计算出了人工费。制造费用采用历史成本法，由注册会计师在审计的基
 
@@ -775,13 +775,13 @@ B公司持有其他子公司D的股权）的情况下，整个合并集团的少
 
 20%的股权在合并报表口径权益法核算产生了49%×20%×c公司在投资日后净资产增加额体现出来的。即：合并层面的少数股东权益
 
-=49%b+49%×20%×c公司在投资日后净资产增加额。 但是对于 2 我还没有完全明白。比如本例 假设b的实收资本为 100 万，a对b投
+=49%b&#43;49%×20%×c公司在投资日后净资产增加额。 但是对于 2 我还没有完全明白。比如本例 假设b的实收资本为 100 万，a对b投
 
 资为 51 万；b把收到的 100 万马上对c投资 100 万，c实收资本为 500 万。那么a对c投资为 400 万。第一年c盈利 20 万，b的当年净利润是
 
 0 ，即合并口径年末的少数股东权益是49%×104。 如果20%的股权b卖了 200 万，即b单体报表产生 200 万投资收益，a单体报表的长
 
-期股权投资c金额变为400+200。我理解您的意思是a将 100 的投资分配给51%和49%，即 49 的投资收益确认， 51 作为合并内部抵消？
+期股权投资c金额变为400&#43;200。我理解您的意思是a将 100 的投资分配给51%和49%，即 49 的投资收益确认， 51 作为合并内部抵消？
 
 在合并报表a冲减长投和b投资收益？还是我理解错了？
 
@@ -999,7 +999,7 @@ a应为 借：长期股权投资-c 贷：长期股权投资-b。税务可以参�
 熟悉会计准则的正文、应用指南、讲解和《企业会计准则解释》是深入学习和在实务中运用会计准则的基础，因此还是首先要学好这
 些内容。在此基础上，建议采用案例学习法进一步掌握与原则导向的会计准则相适应的执业理念和逻辑思维方式，并积累实务经验。
 
-我以前有一个讨论执业理念和思维方式问题的帖子，供参考：http://bbs.esnai.com/forum.php?m ... 4772548&pid=6074592。 另
+我以前有一个讨论执业理念和思维方式问题的帖子，供参考：http://bbs.esnai.com/forum.php?m ... 4772548&amp;pid=6074592。 另
 
 外， 2006 版的准则和应用指南存在后续被准则解释甚至讲解修改的情况，但其中大部分内容至今有效，所以说整本书变成废纸，未
 
@@ -1320,7 +1320,7 @@ http://www.cicpa.org.cn/topnews/201305/t20130517_41089.html。
 
 提问人： zhenxianghuang 时间： 2013-11-06 14:04:20
 
-因"某城区旧村改造",政府对企业的停工,停业损失,员工补助,搬迁费用进行分类补偿,其中政府根据企业搬迁设备的评估值给以100%的
+因&#34;某城区旧村改造&#34;,政府对企业的停工,停业损失,员工补助,搬迁费用进行分类补偿,其中政府根据企业搬迁设备的评估值给以100%的
 
 搬迁补助费,共计 4130690 元。 如上所述，请大侠判断一下，此补偿款是否可以认定为与收益相关的政府补贴，一次性计入营业外
 收入？
@@ -1656,7 +1656,7 @@ CAS 22第三十二条以成本计量的规定仅适用于权益性投资。对�
 
 溢价或折价是否又可以称作是借款费用呢？如果不称为借款费用理由又是什么呢？ 比如面值 100 债券，折价 80 发行， 3 年期总共利息
 
-为 10 万，借款手续费为 5 万，那么针对该债券来讲，我是否可以称其所发生总的借款费用为（100-80）+10+5=35万元？
+为 10 万，借款手续费为 5 万，那么针对该债券来讲，我是否可以称其所发生总的借款费用为（100-80）&#43;10&#43;5=35万元？
 
 回答人： chenyiwei
 
@@ -1935,7 +1935,7 @@ B公司： 起始日按照金融资产入账（可供出售金融资产），平
 
 分红时 借：银行存款 实际收取的款项 合作权益 低于市场租金部分金额或B公司收取的租赁费 贷：其他业务收入 A公司收取的分
 
-成款+B公司收取的分成款+低于市场租金金额 借：其他业务支出 贷：累计折旧 3 、 合作结束如果B公司未能够收回投入的
+成款&#43;B公司收取的分成款&#43;低于市场租金金额 借：其他业务支出 贷：累计折旧 3 、 合作结束如果B公司未能够收回投入的
 
 本金，合作方权益转出 借：合作权益 贷：营业外收入 问题：上述会计处理是以A公司为核算主体假设，所以的收益都在A公司入
 
@@ -1969,7 +1969,7 @@ B公司： 起始日按照金融资产入账（可供出售金融资产），平
 
 款 100(第三方使用该设备的价格) 合作权益 10(100*10%) 贷：其他业务收入 100 应付股利 10 以上分录是否符
 
-合"ying0518"的意思，如果是的话，个人对“（二）、第三方使用该设备的情况”的分录没有太多疑惑，关键是“（一）、只存在B单位
+合&#34;ying0518&#34;的意思，如果是的话，个人对“（二）、第三方使用该设备的情况”的分录没有太多疑惑，关键是“（一）、只存在B单位
 
 自行使用该设备的情况”的分录会有一点疑问，因为这样就会造成计算流转税并开具发票的收入与会计的收入不一致，虽然实务当中
 
@@ -2170,7 +2170,7 @@ loan”），如果贷款借入时即可合理预计将可满足豁免条件的�
 
 例如，某外商投资企业实收资本 300 万美元，其中 200 万美元投入日的汇率为 8 ， 100 万美元投入日的汇率为 7 ，则加权平均汇率＝
 
-（ 200 8+100 7 ）/300=2300/300=7.667。
+（ 200 8&#43;100 7 ）/300=2300/300=7.667。
 
 # 1946 、本年的“专项储备-安全生产费”冲减以前年度形成”与安全相关的“固定资产”的合规性
 
@@ -2923,7 +2923,7 @@ in exchange for the assets. 在B公司投入的 60 亿元中，除了按照上�
 
 回答人： chenyiwei
 
-请参考这里：http://bbs.esnai.com/forum.php?m ... 848&pid=6870800。
+请参考这里：http://bbs.esnai.com/forum.php?m ... 848&amp;pid=6870800。
 
 # 1962 、关于研发费用的问题
 
@@ -3505,7 +3505,7 @@ A公司目前准备投资设立全资B子公司，注册资本 1 亿元，其中
 
 类似问题近期讨论较多，本版面也有不少，例如你可以参考这个帖子：http://bbs.esnai.com/forum.php?m ...
 
-4915342&pid=6848255。 此类问题处理的基本原则就是根据金融工具准则对“负债”和“权益”的定义，以及《企业会计准则解释第 1
+4915342&amp;pid=6848255。 此类问题处理的基本原则就是根据金融工具准则对“负债”和“权益”的定义，以及《企业会计准则解释第 1
 号》第四条关于确认权益工具必须同时满足的两项条件，对照该金融工具的条款和条件进行逐项详细分析，确定是否可将所发行的金
 融工具确认为发行方的权益还是负债。这种判断要很小心，细微的文字差异（很可能只是一个虚词）就完全可能导致完全不同的后
 
@@ -3803,13 +3803,13 @@ private service contract laws,where they exist, may contain terms that do not ha
 
 在权益法核算中，也应当基于重要性原则，调整联营企业与投资方之间的重大会计政策差异。见IAS 28第 26 、 27 段：
 
-26 The investor's financial statements shall be prepared using uniform accounting policies for like transactions and events in
+26 The investor&#39;s financial statements shall be prepared using uniform accounting policies for like transactions and events in
 
 similar circumstances. 27 If an associate uses accounting policies other than those of the investor for like transactions and events
 
-in similar circumstances, adjustments shall be made to conform the associate's accounting policies to those of the investor when the
+in similar circumstances, adjustments shall be made to conform the associate&#39;s accounting policies to those of the investor when the
 
-associate's financial statements are used by the investor in applying the equity method.
+associate&#39;s financial statements are used by the investor in applying the equity method.
 
 
 提问人： jxq425 时间： 2013-11-18 18:43:16
@@ -3937,7 +3937,7 @@ associate's financial statements are used by the investor in applying the equity
 
 一、日常活动的认定 本准则第二条规定，收入是指企业在日常活动中形成的、会导致所有者权益增加的、与所有者投入资本无关
 
-的经济利益的总流入。其中"日常活动"，是指企业为完成其经营目标所从事的经常性活动以及与之相关的活动。 比如，工业企业
+的经济利益的总流入。其中&#34;日常活动&#34;，是指企业为完成其经营目标所从事的经常性活动以及与之相关的活动。 比如，工业企业
 制造并销售产品、商品流通企业销售商品、保险公司签发保单、咨询公司提供咨询服务、软件企业为客户开发软件、安装公司提供安
 装服务、商业银行对外贷款、租赁公司出租资产等，均属于企业为完成其经营目标所从事的经常性活动，由此产生的经济利益的总流
 
@@ -4277,7 +4277,7 @@ http://www.nafmii.org.cn/zlgl/xyfx/xw/201202/t20120227_2586.html。 从会计核
 
 的股份。 现A公司以其所持有的B公司80%股权作价 20000 万元，对C公司增资。由于C公司原先的整体公允价值为 12000 万元，而B公
 
-司80%股权的公允价值为 20000 万元，因此增资后A公司持有C公司的62.5%股权（=20000/(12000+20000)×100%），A公司由此可
+司80%股权的公允价值为 20000 万元，因此增资后A公司持有C公司的62.5%股权（=20000/(12000&#43;20000)×100%），A公司由此可
 
 以对C公司实施控制，构成一项非同一控制下企业合并。重组完成后，B公司成为C公司的子公司，C公司持有B公司的80%股权。 解
 
@@ -4361,13 +4361,13 @@ B 8000（全部转销） 投资收益 4500 1、 A公司合并报表层面 A公�
 提问人： tpatw 时间： 2013-11-19 14:24:26
 
 
-自己总结，欢迎大家讨论 企业合并中合并差额的处理： 非同一控制下 合并成本>被购买方可辨认净资产公允价值合并成本<被购
+自己总结，欢迎大家讨论 企业合并中合并差额的处理： 非同一控制下 合并成本&gt;被购买方可辨认净资产公允价值合并成本&lt;被购
 
 买方可辨认净资产公允价值 控股合并在合并报表中确认商誉在合并报表中记入“营业外收入”
 
 吸收合并在个别报表中确认商誉在个别报表中记入“营业外收入”
 
-同一控制下 合并成本>被购买方帐面净资产价值合并成本<被购买方帐面净资产价值 控股合并合并报表中：“股本×持股比例-支付
+同一控制下 合并成本&gt;被购买方帐面净资产价值合并成本&lt;被购买方帐面净资产价值 控股合并合并报表中：“股本×持股比例-支付
 
 的价款”的差额，依次冲减资本公积，盈余公积，未分配利润 合并报表中：自合并方的资本公积转入留存收益合并报表中：“股本×持
 
@@ -4739,7 +4739,7 @@ A是否能合并B，关键还是要看A是否实质上取得对B的控制权，�
 
 会计科目的余额或者发生额推算出投资总额。 投资总额通常理解等于企业的注册资本加借款。目前外汇管理中通过“投注差”方式控制
 
-外商投资企业举借外债的额度。即一个外商投资企业举借外债的限额按照以下公式控制：投资总额－注册资本>=中长期外债累计发
+外商投资企业举借外债的额度。即一个外商投资企业举借外债的限额按照以下公式控制：投资总额－注册资本&gt;=中长期外债累计发
 生额＋短期外债余额。
 
 # 2017 、单位食堂领用自产产品制作员工餐之会计处理
@@ -4956,16 +4956,16 @@ matter was considered further in the IASB’s deliberations on the proposed amen
 
 言，“少数股东增资时的定价依据通常是包含商誉因素在内的子公司整体净资产公允价值”，换言之，少数股东购买股权的定价是
 
-（10%的可辨认净资产公允价值+10%商誉），那么对于母公司而言，其让渡的应该是所下降持股比例对应的子公司可辨认净资产以
+（10%的可辨认净资产公允价值&#43;10%商誉），那么对于母公司而言，其让渡的应该是所下降持股比例对应的子公司可辨认净资产以
 
-及商誉（10%的可辨认净资产公允价值+10%商誉）.
+及商誉（10%的可辨认净资产公允价值&#43;10%商誉）.
 
 回答人： chenyiwei
 我理解，在合并报表层面，控制权不变的前提下部分处置子公司股权的实质是少数股东对合并主体的增资，而少数股东增资的定价依
 
 据通常是“包含商誉因素在内的子公司整体净资产公允价值”，换言之，少数股东购买股权的定价是（10%的可辨认净资产公允价值
 
-+10%商誉），也就是合并报表层面所增加的经济资源价值是“10%的可辨认净资产公允价值+10%商誉”，这里的 10 ％商誉实际上是合
+&#43;10%商誉），也就是合并报表层面所增加的经济资源价值是“10%的可辨认净资产公允价值&#43;10%商誉”，这里的 10 ％商誉实际上是合
 并主体自创的商誉，按照会计准则是不能在报表上确认的，也就是合并主体的商誉实质上是增加的（增加部分不符合确认条件），因
 此虽然母公司在子公司中的持股比例下降，但归属母公司的商誉的绝对金额并未因此减少，所以在合并报表层面不需要变动商誉的价
 值。
@@ -5018,7 +5018,7 @@ matter was considered further in the IASB’s deliberations on the proposed amen
 榷的。我理解，应该是会发生变动的。在完全商誉法下，如果处置少数股权，需要按照变动后的股权比例调整多数股东权益和少数股
 东权益，以反映按持股比例在子公司可辨认净资产和商誉之和中享有的份额。即在完全商誉法下，无论是初始确认还是后续计量，少
 
-数股东权益反映的是（子公司可辨认净资产+商誉）*少数股权比例。再说的直白一点，在完全商誉法下，随着少数股权比例的变
+数股东权益反映的是（子公司可辨认净资产&#43;商誉）*少数股权比例。再说的直白一点，在完全商誉法下，随着少数股权比例的变
 动，少数股东享有的商誉也会发生变动。既然在完全商誉法下是承认商誉按持股比例划分商誉份额的，为何在不完全商誉法下就不承
 
 认呢？
@@ -5055,11 +5055,11 @@ accordance with IFRS 3, which generally requires acquisition-date fair value; (i
 
 acquiree measured in accordance with IFRS 3; and (iii) in a business combination achieved in stages, the acquisition-date fair value
 
-of the acquirer's previously held equity interest in the acquiree. (b) the net of the acquisition-date amounts of the identifiable
+of the acquirer&#39;s previously held equity interest in the acquiree. (b) the net of the acquisition-date amounts of the identifiable
 
 assets acquired and liabilities assumed measured in accordance with IFRS 3. Allocation of goodwill C2 Paragraph 80 of this
 
-Standard requires goodwill acquired in a business combination to be allocated to each of the acquirer's cash-generating units, or
+Standard requires goodwill acquired in a business combination to be allocated to each of the acquirer&#39;s cash-generating units, or
 
 groups of cash-generating units, expected to benefit from the synergies of the combination, irrespective of whether other assets or
 
@@ -5073,7 +5073,7 @@ carrying amount of the cash-generating unit. C4 If an entity measures non-contro
 
 net identifiable assets of a subsidiary at the acquisition date, rather than at fair value, goodwill attributable to non-controlling
 
-interests is included in the recoverable amount of the related cash-generating unit but is not recognised in the parent's consolidated
+interests is included in the recoverable amount of the related cash-generating unit but is not recognised in the parent&#39;s consolidated
 
 financial statements. As a consequence, an entity shall gross up the carrying amount of goodwill allocated to the unit to include the
 
@@ -5105,7 +5105,7 @@ carrying amount of each asset in the part. In those parts that have a non-contro
 
 between the parent and the non-controlling interest on the same basis as that on which profit or loss is allocated. C8 If an
 
-impairment loss attributable to a non-controlling interest relates to goodwill that is not recognised in the parent's consolidated
+impairment loss attributable to a non-controlling interest relates to goodwill that is not recognised in the parent&#39;s consolidated
 
 financial statements (see paragraph C4), that impairment is not recognised as a goodwill impairment loss. In such cases, only the
 
@@ -5118,17 +5118,17 @@ Example 7 illustrates the impairment testing of a non-wholly-owned cash-generati
 
 Issues in testing for impairment when there is NCI It is not always clear how an entity should test for impairment when there is a
 
-NCI. The issues include: · calculating the 'gross up' of the carrying amount of goodwill when partial goodwill is recognised because
+NCI. The issues include: · calculating the &#39;gross up&#39; of the carrying amount of goodwill when partial goodwill is recognised because
 
 NCI is measured on a proportionate share basis; · allocation of impairment losses between the parent and NCI; and ·
 
-reallocation of goodwill between NCI and controlling interests after a change in a parent's ownership interest in a subsidiary that
+reallocation of goodwill between NCI and controlling interests after a change in a parent&#39;s ownership interest in a subsidiary that
 
 does not result in a loss of control.
 
 Each of these issues arises in one or more of the following situations: (a) NCI is measured on a proportionate share, rather than fair
 
-value basis (see 5.5 above), and there are non-present (i.e. future) ownership interests such as options ('NPOI'). Accounting for these
+value basis (see 5.5 above), and there are non-present (i.e. future) ownership interests such as options (&#39;NPOI&#39;). Accounting for these
 
 interests is discussed in Chapter 8 at 4.2 and Chapter 10 at 8.
 
@@ -5150,7 +5150,7 @@ represent present ownership interests. Accordingly, their balances will remain u
 
 parent and the NCI shareholders (e.g. because of the existence of a control premium).
 
-This may have two effects. First, the 'gross' goodwill amount to be tested under the partial goodwill method may be higher than
+This may have two effects. First, the &#39;gross&#39; goodwill amount to be tested under the partial goodwill method may be higher than
 
 under the full goodwill method. Second, the impairment loss allocation following IAS 36 is generally based on ownership percentages
 
@@ -5224,7 +5224,7 @@ circumstances and there may well be diversity in practice.
 
 元，增资后A公司的持股比例被稀释至60%，仍控制B公司。 B公司延续A公司合并时点的B公司的可辨认净资产的公允价值为 1500 万
 
-元（ 1000 万+300万增资+200万留存收益）。如B公司在此时公司的整体价值为 1800 万元。 商誉减值是否可以这样计算：整体商誉
+元（ 1000 万&#43;300万增资&#43;200万留存收益）。如B公司在此时公司的整体价值为 1800 万元。 商誉减值是否可以这样计算：整体商誉
 
 300/60%=500万元 B公司可辨认净资产的公允价值 1500 万元 B公司整体
 
@@ -5317,7 +5317,7 @@ circumstances and there may well be diversity in practice.
 提问人：流风回雪流风回雪 时间： 2013-11-21 11:39:27
 帖子内容和题目不是很相符呢
 
-A公司提供的是代理服务，还是在做采购+销售，这是问题的关键。
+A公司提供的是代理服务，还是在做采购&#43;销售，这是问题的关键。
 
 回答人： chenyiwei
 一方面是收入确认应采用总额还是净额，另一方面是提供代理服务、销售商品还是建造合同？这是两个最关键的问题。
@@ -5443,15 +5443,15 @@ C,D的净资产价值
 
 提问人： liubin988513 时间： 2013-11-23 22:54:22
 
-主要是一个判断吧: 1,"initial operating losses, such as those incurred while demand for theitem’s output builds up; and" 如果是补偿
+主要是一个判断吧: 1,&#34;initial operating losses, such as those incurred while demand for theitem’s output builds up; and&#34; 如果是补偿
 
 运营损失,一般计入当期损益,比如延迟交付 导致委托方生产产品滞后了等等
 
 2,如果是当时约定达到某种必要状态,但是施工方没做到,导致质量出现问题等等.如果合同明确约定了出现该类情况,冲减工程成本是合
 
-适的.类似"建设期间发生的工程物资盘亏、报废及毁损，减去残料价值以及保险公司、过失人等赔款后的净损失，计入所建工程项目
+适的.类似&#34;建设期间发生的工程物资盘亏、报废及毁损，减去残料价值以及保险公司、过失人等赔款后的净损失，计入所建工程项目
 
-的成本".而且从合理性角度来讲,委托方肯定会额外委托第三方或者自己改造这个资产的,会发生支出,计入工程成本的
+的成本&#34;.而且从合理性角度来讲,委托方肯定会额外委托第三方或者自己改造这个资产的,会发生支出,计入工程成本的
 
 回答人： chenyiwei
 
@@ -5811,7 +5811,7 @@ A公司的合并报表数额包括按照公允价值重新确定的B公司的资
 
 提问人： truelxb 时间： 2013-12-03 21:46:32
 
-是否可理解为A借资金给甲盖了一栋楼，再租给A20年，租金就是本金+利息，然后按年摊。
+是否可理解为A借资金给甲盖了一栋楼，再租给A20年，租金就是本金&#43;利息，然后按年摊。
 
 回答人： chenyiwei
 
@@ -6085,7 +6085,7 @@ A公司持有B公司80%股权，但是将B公司托管给C公司。所以A 公�
 
 1 、重组完成后的C公司在按照反向购买原则编制合并报表时，对于其所支付的现金对价，可作为对其股东的一项分配处理，具体参
 
-见附件所示的Q&A。
+见附件所示的Q&amp;A。
 
 IFRS 3.Appendix B15-1 - Reverse acquisition with cash consideration.pdf
 
@@ -6254,7 +6254,7 @@ a的个别报表不属于合并，按照实际支付价款计入长期股权投�
 
 别报表应：借：长期股权投资-视同处置的对价，贷：长期股权投资 94% 贷：投资收益 ；合并报表：借：长期股权投资6%【公允
 
-价值】 贷：【净资产+商誉】 贷：投资收益 等
+价值】 贷：【净资产&#43;商誉】 贷：投资收益 等
 
 
 回答人： chenyiwei
@@ -6356,11 +6356,11 @@ B的个别报表并未实际处置C的股权，且股权比例变更前后都是
 
 万，损益调整 480 万，其他权益变动 300 万。出售取得价款为 705 万。（ 1 ） A企业确认处置损益的帐务处理：借：银行存款 705
 
-万贷：长期股权投资 645 万（1800+480+300） 25%=645 贷：投资收益 60 万（ 2 ） 还应将原计入资本公积的部分按比例转入
+万贷：长期股权投资 645 万（1800&#43;480&#43;300） 25%=645 贷：投资收益 60 万（ 2 ） 还应将原计入资本公积的部分按比例转入
 
 当期损益借：资本公积 — 其他资本公积 75 万贷：投资收益 75 万 我们可以看到： A 公司按权益法核算对 B 公司的投资，长期
 
-股权投资帐面价值为：（ 1800+480+300 ） =2580 万， 25% 为： 645 万。如果本年度 A 公司经营性利润为 0 ，投资收益： 60+75=135
+股权投资帐面价值为：（ 1800&#43;480&#43;300 ） =2580 万， 25% 为： 645 万。如果本年度 A 公司经营性利润为 0 ，投资收益： 60&#43;75=135
 
 问题 1 ： A 公司的应纳税所得额是否为： 135 万？是否还需要进行纳税调整，因为：上述确认的投资收益中包括了：被投资企业未分配
 
@@ -6368,7 +6368,7 @@ B的个别报表并未实际处置C的股权，且股权比例变更前后都是
 
 东留存收益中按该项股权所可能分配的金额。（国税函[2009]698号）也有类似的规定。问题 2 ：如果要进行纳税调整：
 
-135+120=255万为应纳税所得额，对否？ 问题 3 ：对于用成本法核算的长期股权投资，在股权转让时如何计算。方法一：用成本法
+135&#43;120=255万为应纳税所得额，对否？ 问题 3 ：对于用成本法核算的长期股权投资，在股权转让时如何计算。方法一：用成本法
 
 核算长期投资，持股比例为80%，如果在将80%的股权一次性全部转让，是否要将进行权益法调整，将被告投资企业的留存收益增加
 
@@ -6479,7 +6479,7 @@ qualify as a business.
 提问人： hcl1986 时间： 2013-11-27 19:52:18
 
 
-陈版，"由于母公司已缴纳土地增值税，相应增加的成本在子公司后续再缴纳土地增值税时是可以作为扣除项目的"有相关的文件吗？
+陈版，&#34;由于母公司已缴纳土地增值税，相应增加的成本在子公司后续再缴纳土地增值税时是可以作为扣除项目的&#34;有相关的文件吗？
 
 回答人： chenyiwei
 根据土地增值税扣除项目的规定应可得出这一结论。
@@ -6935,7 +6935,7 @@ delivery of the asset within the time frame established generally by regulation 
 
 刚刚跟会计师简单讨论了这个问题，因为无法做细致的公允价值评估，按新股的价值假设整个公司的价值也是可以接受的了，即 900
 
-/ [40/(40+10)] = 1125, 这里暂时忽略了原有的留存收益了，因此假设无商誉
+/ [40/(40&#43;10)] = 1125, 这里暂时忽略了原有的留存收益了，因此假设无商誉
 
 回答人： chenyiwei
 还是要注意区分净资产整体公允价值（包含商誉在内的企业整体价值）和可辨认净资产公允价值的差异。
@@ -7337,6 +7337,6 @@ A公司为上市公司， 2012 年底A公司收购B公司80%的股权，完成�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201311/  
 

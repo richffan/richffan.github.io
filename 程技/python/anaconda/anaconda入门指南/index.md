@@ -50,11 +50,11 @@ activate 能将我们引入 anaconda 设定的虚拟环境中，如果你后面�
 
 在工作环境中我们会集成开发环境去编码，这里推荐 JB 公司的 pycharm，而 pycharm 也能很方便的和 anaconda 的虚拟环境结合。
 
-在`Setting => Project => Project Interpreter` 里面修改 Project Interpreter , 点击齿轮标志再点击 Add Local 为你某个环境的 python.exe 解释器就行了。
+在`Setting =&gt; Project =&gt; Project Interpreter` 里面修改 Project Interpreter , 点击齿轮标志再点击 Add Local 为你某个环境的 python.exe 解释器就行了。
 
 ## 四、使用 Jupyter notebook
 
-> 方便检查数据
+&gt; 方便检查数据
 
 官网：[https://jupyter.org/](https://jupyter.org/)
 
@@ -80,7 +80,7 @@ activate 能将我们引入 anaconda 设定的虚拟环境中，如果你后面�
 
 ![image-20200531180814664](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531180816.png)
 
-> 加速使用 Jupyter notebook
+&gt; 加速使用 Jupyter notebook
 
 * [Jupyter - notebook 使用指南](Python/Jupyter-notebook使用指南.md)
 
@@ -146,6 +146,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/  
 

@@ -32,34 +32,34 @@ val := map1[key1]
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     var mapLit map[string]int
     var mapAssigned map[string]int
 
-    mapLit = map[string]int{"one": 1, "two": 2}
+    mapLit = map[string]int{&#34;one&#34;: 1, &#34;two&#34;: 2}
     mapCreated := make(map[string]float32)
     mapAssigned = mapLit
 
-    mapCreated["key1"] = 4.5
-    mapCreated["key2"] = 3.14159
-    mapAssigned["two"] = 3
+    mapCreated[&#34;key1&#34;] = 4.5
+    mapCreated[&#34;key2&#34;] = 3.14159
+    mapAssigned[&#34;two&#34;] = 3
 
-    fmt.Printf("Map literal at \"one\" is: %d\n", mapLit["one"])
-    fmt.Printf("Map created at \"key2\" is: %f\n", mapCreated["key2"])
-    fmt.Printf("Map assigned at \"two\" is: %d\n", mapLit["two"])
-    fmt.Printf("Map literal at \"ten\" is: %d\n", mapLit["ten"])
+    fmt.Printf(&#34;Map literal at \&#34;one\&#34; is: %d\n&#34;, mapLit[&#34;one&#34;])
+    fmt.Printf(&#34;Map created at \&#34;key2\&#34; is: %f\n&#34;, mapCreated[&#34;key2&#34;])
+    fmt.Printf(&#34;Map assigned at \&#34;two\&#34; is: %d\n&#34;, mapLit[&#34;two&#34;])
+    fmt.Printf(&#34;Map literal at \&#34;ten\&#34; is: %d\n&#34;, mapLit[&#34;ten&#34;])
 }
 ```
 
 上述代码运行结果为：
 
 ```shell
-Map literal at "one" is: 1
-Map created at "key2" is: 3.14159
-Map assigned at "two" is: 3
-Mpa literal at "ten" is: 0
+Map literal at &#34;one&#34; is: 1
+Map created at &#34;key2&#34; is: 3.14159
+Map assigned at &#34;two&#34; is: 3
+Mpa literal at &#34;ten&#34; is: 0
 ```
 
 可以用 `{key1: val1, key2: val2}` 来初始化 `map`。
@@ -154,7 +154,7 @@ for key := range map1 {
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     map1 := make(map[int]float32)
@@ -163,7 +163,7 @@ func main() {
     map1[3] = 3.0
     map1[4] = 4.0
     for key, value := range map1 {
-        fmt.Printf("key is: %d - value is: %f\n", key, value)
+        fmt.Printf(&#34;key is: %d - value is: %f\n&#34;, key, value)
     }
 }
 ```
@@ -177,8 +177,8 @@ key is: 4 - value is: 4.000000
 key is: 2 - value is: 2.000000
 ```
 
-> ***注意***：`map` 中元素不是按照 `key` 来排序的。
->
+&gt; ***注意***：`map` 中元素不是按照 `key` 来排序的。
+&gt;
 
 ## Map 类型的切片
 
@@ -188,7 +188,7 @@ key is: 2 - value is: 2.000000
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     // Version A:
@@ -197,7 +197,7 @@ func main() {
         items[i] = make(map[int]int, 1)
         items[i][1] = 2
     }
-    fmt.Printf("Version A: Value of items: %v\n", items)
+    fmt.Printf(&#34;Version A: Value of items: %v\n&#34;, items)
 
     // Version B: NOT GOOD!
     items2 := make([]map[int]int, 5)
@@ -205,7 +205,7 @@ func main() {
         item = make(map[int]int, 1) // item 仅仅是切片 items2 元素的拷贝
         item[1] = 2
     }
-    fmt.Printf("Version B: Value of items: %v\n", items2)
+    fmt.Printf(&#34;Version B: Value of items: %v\n&#34;, items2)
 }
 ```
 
@@ -218,6 +218,6 @@ Version B: Value of items: [map[] map[] map[] map[] map[]]
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/  
 

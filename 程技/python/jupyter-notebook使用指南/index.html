@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Jupyter notebook 使用指南 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，" /><meta name="keywords" content='python' /><meta itemprop="name" content="Jupyter notebook 使用指南">
-<meta itemprop="description" content="前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
+    <title>Jupyter notebook 使用指南 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，" /><meta name="keywords" content='python' /><meta itemprop="name" content="Jupyter notebook 使用指南">
+<meta itemprop="description" content="前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2261"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="2293"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="Jupyter notebook 使用指南" />
-<meta property="og:description" content="前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，" />
+<meta property="og:description" content="前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2023-09-25T00:00:00+00:00" />
@@ -20,9 +20,9 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Jupyter notebook 使用指南"/>
-<meta name="twitter:description" content="前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，"/>
+<meta name="twitter:description" content="前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/git/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97\/"
-    },"genre": "posts","keywords": "python","wordcount":  2261 ,
+    },"genre": "posts","keywords": "python","wordcount":  2293 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item active" aria-current="page">Jupyter notebook 使用指南</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Jupyter notebook 使用指南</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="2261 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="leancloud_visitors comment-visitors" data-flag-title="Jupyter notebook 使用指南">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="2293 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 5 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="leancloud_visitors comment-visitors" data-flag-title="Jupyter notebook 使用指南">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Jupyter notebook 使用指南">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -214,9 +209,9 @@
     <li><a href="#在-markdown-单元格中输入数学公式">在 Markdown 单元格中输入数学公式</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="前言">前言</h2>
-<p>在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，还有 Spyder、Thonny 等。就我个人使用而言，如果进行大型项目推荐使用 Pycharm，如果进行数据处理和分析，最好选用 Jupyter notebook。可以说，<strong>Jupyter notebook 是用Python 进行数据科学、机器学习的必备工具。</strong></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=large 2x" sizes="auto" data-title="image-20200713115134320" data-alt="image-20200713115134320" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+      </div><div class="content" id="content"><h2 id="前言" class="heading-element">
+  <a href="#%e5%89%8d%e8%a8%80" class="heading-mark"></a>前言</h2><p>在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，还有 Spyder、Thonny 等。就我个人使用而言，如果进行大型项目推荐使用 Pycharm，如果进行数据处理和分析，最好选用 Jupyter notebook。可以说，<strong>Jupyter notebook 是用Python 进行数据科学、机器学习的必备工具。</strong></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png" alt="image-20200713115134320" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png?size=large 2x" sizes="auto" data-title="image-20200713115134320" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <blockquote>
 <p>🔊 突出优点：</p>
 </blockquote>
@@ -246,20 +241,20 @@
 <p>其实 Jupyter notebook 不止可以运行 Python，还可以运行 Julia、R、Javascript 等语言，这也是<code>jupyter</code>这个名字的由来。<a href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels"target="_blank" rel="external nofollow noopener noreferrer">Jupyter notebook 支持的编程语言</a></p>
 </blockquote>
 <p>🔔 Jupyter notebook 集编程和写作于一身，这就叫做“文学编程”。</p>
-<h2 id="安装和运行">安装和运行</h2>
-<blockquote>
+<h2 id="安装和运行" class="heading-element">
+  <a href="#%e5%ae%89%e8%a3%85%e5%92%8c%e8%bf%90%e8%a1%8c" class="heading-mark"></a>安装和运行</h2><blockquote>
 <p>在浏览器网页中运行 Python</p>
 </blockquote>
-<h3 id="ipython-内核">Ipython 内核</h3>
-<p>Ipython 是更高级的 Python 解释器，而 Jupyter notebook 是基于 Ipython 内核的，在浏览器中以网页形式运行 Python 代码的工具，十分方便。</p>
+<h3 id="ipython-内核" class="heading-element">
+  <a href="#ipython-%e5%86%85%e6%a0%b8" class="heading-mark"></a>Ipython 内核</h3><p>Ipython 是更高级的 Python 解释器，而 Jupyter notebook 是基于 Ipython 内核的，在浏览器中以网页形式运行 Python 代码的工具，十分方便。</p>
 <blockquote>
 <p>Ipython 是啥？</p>
 <p>Ipython 可以理解成更高级的 Python 解释器，相比原生的 Python 交互式命令行，Ipython 有更强大的命令计数、自动补全等交互功能。</p>
 <p>Spyder 和 Jupyter notebook 都是以 Ipython 为内核的。</p>
 </blockquote>
-<h3 id="安装-jupyter-notebook">安装 Jupyter notebook</h3>
-<p>如果你安装了 Python 数据科学全家桶 Anaconda，那么其中自带了 Jupyter notebook。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=large 2x" sizes="auto" data-title="image-20200713171916125" data-alt="image-20200713171916125" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="安装-jupyter-notebook" class="heading-element">
+  <a href="#%e5%ae%89%e8%a3%85-jupyter-notebook" class="heading-mark"></a>安装 Jupyter notebook</h3><p>如果你安装了 Python 数据科学全家桶 Anaconda，那么其中自带了 Jupyter notebook。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png" alt="image-20200713171916125" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png?size=large 2x" sizes="auto" data-title="image-20200713171916125" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>如果你没安装 Anaconda，可以直接在命令行里运行这行命令</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -268,11 +263,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pip install jupyter -i //pypi.tuna.tsinghua.edu.cn/simple</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="运行-jupyter-notebook">运行 Jupyter notebook</h3>
-<p>打开命令行，输入 <code>jupyter notebook</code>，回车。稍等片刻即可跳出浏览器网页。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=large 2x" sizes="auto" data-title="image-20200713172808869" data-alt="image-20200713172808869" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><h3 id="运行-jupyter-notebook" class="heading-element">
+  <a href="#%e8%bf%90%e8%a1%8c-jupyter-notebook" class="heading-mark"></a>运行 Jupyter notebook</h3><p>打开命令行，输入 <code>jupyter notebook</code>，回车。稍等片刻即可跳出浏览器网页。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png" alt="image-20200713172808869" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png?size=large 2x" sizes="auto" data-title="image-20200713172808869" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>🎉 看右上角：</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=large 2x" sizes="auto" data-title="image-20200713173007336" data-alt="image-20200713173007336" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png" alt="image-20200713173007336" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png?size=large 2x" sizes="auto" data-title="image-20200713173007336" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <ul>
 <li>
 <p>点击 New &ndash;&gt; Python3 即可创建 Python 文档。</p>
@@ -288,16 +283,16 @@
 </li>
 </ul>
 <p>🔊 最常用的是点击右边的 New &ndash;&gt; Python3，创建 Python 文档。</p>
-<h2 id="使用写代码">使用写代码</h2>
-<h3 id="写下并运行第一行-python-代码">写下并运行第一行 Python 代码</h3>
-<p>点击左上角<code>Untitled</code>给新建的 Python 文档文件重新命名。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=large 2x" sizes="auto" data-title="image-20200713224350095" data-alt="image-20200713224350095" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="使用写代码" class="heading-element">
+  <a href="#%e4%bd%bf%e7%94%a8%e5%86%99%e4%bb%a3%e7%a0%81" class="heading-mark"></a>使用写代码</h2><h3 id="写下并运行第一行-python-代码" class="heading-element">
+  <a href="#%e5%86%99%e4%b8%8b%e5%b9%b6%e8%bf%90%e8%a1%8c%e7%ac%ac%e4%b8%80%e8%a1%8c-python-%e4%bb%a3%e7%a0%81" class="heading-mark"></a>写下并运行第一行 Python 代码</h3><p>点击左上角<code>Untitled</code>给新建的 Python 文档文件重新命名。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png" alt="image-20200713224350095" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png?size=large 2x" sizes="auto" data-title="image-20200713224350095" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>自古第一行代码，总是会写 Hello World，故名称设置为了 HelloWorld</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=large 2x" sizes="auto" data-title="image-20200713224537278" data-alt="image-20200713224537278" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png" alt="image-20200713224537278" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png?size=large 2x" sizes="auto" data-title="image-20200713224537278" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>在代码框中输入第一行 Python 代码，<code>shift + 回车</code>运行</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=large 2x" sizes="auto" data-title="image-20200713230012217" data-alt="image-20200713230012217" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="蓝绿两模式命令模式编辑模式">蓝绿两模式：命令模式、编辑模式</h3>
-<p>Jupyter notebook 中，代码和文档都存在于一个个单元格中，每个单元格都有<code>蓝色</code>和<code>绿色</code>两种状态。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png" alt="image-20200713230012217" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png?size=large 2x" sizes="auto" data-title="image-20200713230012217" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="蓝绿两模式命令模式编辑模式" class="heading-element">
+  <a href="#%e8%93%9d%e7%bb%bf%e4%b8%a4%e6%a8%a1%e5%bc%8f%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f%e7%bc%96%e8%be%91%e6%a8%a1%e5%bc%8f" class="heading-mark"></a>蓝绿两模式：命令模式、编辑模式</h3><p>Jupyter notebook 中，代码和文档都存在于一个个单元格中，每个单元格都有<code>蓝色</code>和<code>绿色</code>两种状态。</p>
 <ul>
 <li>
 <p>命令模式（蓝色）：用于执行键盘输入的快捷命令（新增单元格、剪切、复制等等）。通过 <code>Esc</code> 键从绿色的编辑模式切换到蓝色的命令模式，此时单元左侧显示蓝色竖线。</p>
@@ -309,8 +304,8 @@
 <blockquote>
 <p>命令模式和编辑模式，其实是源自于著名的 vim 编辑器，vim 编辑器以特别难学和学成之后可以超神而闻名于世。</p>
 </blockquote>
-<h3 id="两种单元格代码单元格和-markdown-单元格">两种单元格：代码单元格和 Markdown 单元格</h3>
-<p>Jupyter notebook 中，有两种单元格：代码单元格和 Markdown 单元格。</p>
+<h3 id="两种单元格代码单元格和-markdown-单元格" class="heading-element">
+  <a href="#%e4%b8%a4%e7%a7%8d%e5%8d%95%e5%85%83%e6%a0%bc%e4%bb%a3%e7%a0%81%e5%8d%95%e5%85%83%e6%a0%bc%e5%92%8c-markdown-%e5%8d%95%e5%85%83%e6%a0%bc" class="heading-mark"></a>两种单元格：代码单元格和 Markdown 单元格</h3><p>Jupyter notebook 中，有两种单元格：代码单元格和 Markdown 单元格。</p>
 <ul>
 <li>代码单元格：这里是你编写代码的地方，通过按 <code>Shift + Enter</code> 运行代码，其结果显示在本单元下方。代码单元左边有 <code>In [1]:</code> 这样的序列标记，方便人们查看代码的执行次序。在蓝色命令模式下，按<code>y</code>键可以将 Markdown 单元格转换为代码单元格。</li>
 <li>Markdown 单元格：在这里对文本进行编辑，采用 markdown 的语法规范，可以设置文本格式、插入链接、图片甚至数学公式。同样使用 <code>Shift + Enter</code> 运行 markdown 单元来显示渲染后的文本。在蓝色命令模式下按<code>m</code>键可以将代码单元格转换为 Markdown 单元格。</li>
@@ -339,13 +334,13 @@
 </span></span><span class="line"><span class="cl">![我是图片](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231406.png)</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如下图：</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=large 2x" sizes="auto" data-title="image-20200713232002542" data-alt="image-20200713232002542" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png" alt="image-20200713232002542" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png?size=large 2x" sizes="auto" data-title="image-20200713232002542" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>然后按<code>shift</code>+<code>Enter</code>运行该单元格。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=large 2x" sizes="auto" data-title="image-20200713231750768" data-alt="image-20200713231750768" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="抛弃鼠标只用键盘">抛弃鼠标，只用键盘</h2>
-<p>下面介绍 Jupyter notebook 快捷键，掌握这些快捷键之后，你将彻底解放你拿鼠标的那只手，更专注、高效地敲代码了。</p>
-<h3 id="最常用快捷键必会">最常用快捷键（必会）</h3>
-<table>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png" alt="image-20200713231750768" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png?size=large 2x" sizes="auto" data-title="image-20200713231750768" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="抛弃鼠标只用键盘" class="heading-element">
+  <a href="#%e6%8a%9b%e5%bc%83%e9%bc%a0%e6%a0%87%e5%8f%aa%e7%94%a8%e9%94%ae%e7%9b%98" class="heading-mark"></a>抛弃鼠标，只用键盘</h2><p>下面介绍 Jupyter notebook 快捷键，掌握这些快捷键之后，你将彻底解放你拿鼠标的那只手，更专注、高效地敲代码了。</p>
+<h3 id="最常用快捷键必会" class="heading-element">
+  <a href="#%e6%9c%80%e5%b8%b8%e7%94%a8%e5%bf%ab%e6%8d%b7%e9%94%ae%e5%bf%85%e4%bc%9a" class="heading-mark"></a>最常用快捷键（必会）</h3><table>
 <thead>
 <tr>
 <th>快捷键</th>
@@ -419,12 +414,12 @@
 </tr>
 </tbody>
 </table>
-<h3 id="所有快捷键">所有快捷键</h3>
-<p>h 查看所有快捷键</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=large 2x" sizes="auto" data-title="命令行模式快捷键" data-alt="命令行模式快捷键" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=large 2x" sizes="auto" data-title="编辑模式快捷键" data-alt="编辑模式快捷键" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="在-markdown-单元格中输入数学公式">在 Markdown 单元格中输入数学公式</h2>
-<p>分别在两个 Markdown 单元格内输入以下内容：</p>
+<h3 id="所有快捷键" class="heading-element">
+  <a href="#%e6%89%80%e6%9c%89%e5%bf%ab%e6%8d%b7%e9%94%ae" class="heading-mark"></a>所有快捷键</h3><p>h 查看所有快捷键</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png" alt="命令行模式快捷键" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png?size=large 2x" sizes="auto" data-title="命令行模式快捷键" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png" alt="编辑模式快捷键" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png?size=large 2x" sizes="auto" data-title="编辑模式快捷键" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="在-markdown-单元格中输入数学公式" class="heading-element">
+  <a href="#%e5%9c%a8-markdown-%e5%8d%95%e5%85%83%e6%a0%bc%e4%b8%ad%e8%be%93%e5%85%a5%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f" class="heading-mark"></a>在 Markdown 单元格中输入数学公式</h2><p>分别在两个 Markdown 单元格内输入以下内容：</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -443,42 +438,43 @@
 </span></span><span class="line"><span class="cl"><span class="sb">$$</span><span class="nb">x </span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="o">-</span><span class="nb">b</span><span class="nv">\pm</span><span class="nb"> </span><span class="nv">\sqrt</span><span class="nb">{b^</span><span class="m">2</span><span class="o">-</span><span class="m">4</span><span class="nb">ac}}{</span><span class="m">2</span><span class="nb">a}</span><span class="s">$$</span>
 </span></span><span class="line"><span class="cl">初中数学内容</span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=large 2x" sizes="auto" data-title="image-20200713233438637" data-alt="image-20200713233438637" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png" alt="image-20200713233438637" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png?size=large 2x" sizes="auto" data-title="image-20200713233438637" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>按<code>shift</code>+<code>Enter</code>渲染运行：</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=large 2x" sizes="auto" data-title="image-20200713233502965" data-alt="image-20200713233502965" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png" alt="image-20200713233502965" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png?size=large 2x" sizes="auto" data-title="image-20200713233502965" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" data-title="Jupyter notebook 使用指南" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" data-title="Jupyter notebook 使用指南" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/" class="post-nav-item" rel="prev" title="PyCharm 优化使用"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>PyCharm 优化使用</a>
-      <a href="/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/" class="post-nav-item" rel="next" title="9款最佳Python脚本：让工作自动化起来！">9款最佳Python脚本：让工作自动化起来！<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/" class="post-nav-item" rel="prev" title="Jupyter添加目录toc"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Jupyter添加目录toc</a>
+      <a href="/%E7%A8%8B%E6%8A%80/git/" class="post-nav-item" rel="next" title="Git 的使用">Git 的使用<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

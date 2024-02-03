@@ -2,13 +2,12 @@
   <channel>
     <title>pandas - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/pandas/</link>
-    <description>pandas - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/pandas/" rel="self" type="application/rss+xml" /><item>
+    <description>pandas - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/pandas/" rel="self" type="application/rss+xml" /><item>
   <title>Python pandas数据分析基础100问(有重复)</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</guid>
   <description><![CDATA[题目来自B站上看的一个讲爬虫的老师发的视频，不过代码没完全照那人的来，由于在平板上写的代码，就没有执行结果，感兴趣自行到B站搜原视频。 1 import pandas]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>Pandas最常用的15个函数</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</link>
   <pubDate>Tue, 19 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</guid>
   <description><![CDATA[Pandas是一个功能强大的数据处理库，它提供了大量的函数和方法，用于数据的读取、清洗、转换、分析和可视化。下面是Pandas中最常用的15]]></description>
 </item>

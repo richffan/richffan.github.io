@@ -21,13 +21,13 @@
 
 元/件，B领带单位成本 100 元/件。当期该服装企业销售组合西服领带 100 套，收入 150000 元。
 
-则A西服应确认的销售收入=150000×1500/（1500+200）=132352.94（元） B领带应确认的销售收入
+则A西服应确认的销售收入=150000×1500/（1500&#43;200）=132352.94（元） B领带应确认的销售收入
 
-=150000×200/（1500+200）=17647.06（元） 借：银行存款 150000 1.17 　　贷：主营业务收入 —— 西服　 132352.94
+=150000×200/（1500&#43;200）=17647.06（元） 借：银行存款 150000 1.17 　　贷：主营业务收入 —— 西服　 132352.94
 
 —— 领带　 17647.06 　　　　应交税费 —— 应交增值税（销项税额） 150000 17%
 
-借：主营业务成本 800 100+100 100+100 200 0.17 贷：库存商品 800 100+100 100 应交税费—应交增值税（销项
+借：主营业务成本 800 100&#43;100 100&#43;100 200 0.17 贷：库存商品 800 100&#43;100 100 应交税费—应交增值税（销项
 
 税） 100 200 0.17 陈老师，上述会计处理是否正确？视同销售的领带的增值税会计处理是否正确？
 
@@ -35,7 +35,7 @@
 
 对于此类“买一赠一”的增值税计算，各地可能有不同的理解，如《河北省国家税务局关于企业若干销售行为征收增值税问题的通知》
 
-（冀国税函[2009]247号）就规定“企业在促销中，以"买一赠一"、购物返券、购物积分等方式组合销售货物的，对于主货物和赠品
+（冀国税函[2009]247号）就规定“企业在促销中，以&#34;买一赠一&#34;、购物返券、购物积分等方式组合销售货物的，对于主货物和赠品
 （返券商品、积分商品，下同）不开发票的，就其实际收到的货款征收增值税。对于主货物与赠品开在同一张发票的，或者分别开具
 发票的，应按发票注明的合计金额征收增值税。纳税义务发生时间均为收到货款的当天。企业应将总的销售金额按各项商品的公允价
 
@@ -73,7 +73,7 @@
 
 北京海淀区公司， 2011 年有限公司设立时没验资。有个案例-佳星慧盟，是 2005 年有限公司成立，没有验资。公转书这样表述的：
 
-北京市工商行政管理局 2004 年 2 月 6 日发布了《关于印发<改革市场准入制度优化经济发展环境若干意见>的通知》（京工商发
+北京市工商行政管理局 2004 年 2 月 6 日发布了《关于印发&lt;改革市场准入制度优化经济发展环境若干意见&gt;的通知》（京工商发
 
 [200419]号）。《北京市工商局改革市场准入制度优化经济发展环境若干意见》（ 2004 年 2 月 15 日起实施）第三条“改革内资企业注
 
@@ -936,7 +936,7 @@ IFRS 3于 2008 年的修订，很重要的一点是以“consideration transferr
 
 入1.5亿元，全部计入运营期主营收入，对应的成本是无形产总额 1.06亿；站在此整个合同利润表的角度，相当于收入=建造收入
 
-1.06+运营期1.5=2.56亿 主营成本=1+1.06=2.06亿 毛利润=0.5亿元； 2 、同上举例，只是A公司不提供实际建造服务，建设期无收
+1.06&#43;运营期1.5=2.56亿 主营成本=1&#43;1.06=2.06亿 毛利润=0.5亿元； 2 、同上举例，只是A公司不提供实际建造服务，建设期无收
 
 入和成本，运营期，政府付了总合同款1.5亿元，即收入1.5亿元，对应的成本是无形产总额 1 亿；站在整个合同利润表的角度，相当
 
@@ -1328,7 +1328,7 @@ A公司将资金借给B公司使用，向B公司收取利息，一年大概收 3
 
 提问人： vivienne007 时间： 2016-10-10 10:21:36
 
-确认一下，理财产品放在可供出售金融资产核算。 信托产品也能参照执行吗？ 债权性投资，按成本+预期收益模拟期末公允价值，
+确认一下，理财产品放在可供出售金融资产核算。 信托产品也能参照执行吗？ 债权性投资，按成本&#43;预期收益模拟期末公允价值，
 其中的预期收益怎么操作？
 
 回答人： chenyiwei
@@ -2385,9 +2385,9 @@ Case描述： A公司 2013 年底与融资租赁公司就账面净值人民币2.
 
 1 、如果变卖设备为亏损的，则应将该损失直接计入当期营业外支出。如果已经与政府达成搬迁补偿协议，补偿金额和其他主要条款
 
-已经基本确定，确定补偿款足以涵盖该项资产处置损失的，则可以就该项损失金额同时确认一项"其他流动（或非流动资产）——搬
+已经基本确定，确定补偿款足以涵盖该项资产处置损失的，则可以就该项损失金额同时确认一项&#34;其他流动（或非流动资产）——搬
 
-迁补偿资产"和营业外收入。 2 、如果变卖设备为盈利的，该项盈利应确认为当期营业外收入。 无论是上面哪种情况，均应按照《企
+迁补偿资产&#34;和营业外收入。 2 、如果变卖设备为盈利的，该项盈利应确认为当期营业外收入。 无论是上面哪种情况，均应按照《企
 
 业会计准则第 13 号——或有事项》对”企业重组义务“的相关规定（《讲解 2010 》P210~211），就搬迁过程中将发生且符合重组义务
 确认条件的项目予以预提，保证足额确认负债。如果确认重组义务的损益影响扣除资产变卖收益后为负数的，则能否确认补偿资产，
@@ -2771,7 +2771,7 @@ on distributions to the reporting entity.
 
 提问人： xdinah 时间： 2016-10-13 18:56:34
 
-即：分母股份数为 视同该可转债自发行日起全部转股的加权平均+普通股加权平均（不考虑转股那部分自转股日到期末的加权平均，
+即：分母股份数为 视同该可转债自发行日起全部转股的加权平均&#43;普通股加权平均（不考虑转股那部分自转股日到期末的加权平均，
 
 是因为已经重复算了 ）
 
@@ -2790,15 +2790,15 @@ on distributions to the reporting entity.
 
 提问人： zhs7403 时间： 2016-10-14 04:57:22
 
-陈老师，如果是年中 7 月 1 日行权，就其发行日至实际转股日之间的利息支出比如是 100 万，那么在计算时分子是否是1000+100*（1-
+陈老师，如果是年中 7 月 1 日行权，就其发行日至实际转股日之间的利息支出比如是 100 万，那么在计算时分子是否是1000&#43;100*（1-
 
-25%） 6/12 ？分母按照加权平均股份数进行调整这个是没有问题的，分子我有一些不确定。还是 1000+100 （1-25%）？假如本年的
+25%） 6/12 ？分母按照加权平均股份数进行调整这个是没有问题的，分子我有一些不确定。还是 1000&#43;100 （1-25%）？假如本年的
 
 净利润是 1000 万。
 
 回答人： chenyiwei
 
-我认为分子就是直接体现为1000+100*（1-25%）即可，模拟加回的金额已是完整的全部影响金额，不需要再加权。
+我认为分子就是直接体现为1000&#43;100*（1-25%）即可，模拟加回的金额已是完整的全部影响金额，不需要再加权。
 
 # 2620 、请教：投资不入“实收资本”，直接入“资本公积”是否可以？
 
@@ -3154,7 +3154,7 @@ A公司收购B公司股权账面价值为 600 万元，收购价为 800 万元�
 
 所得税费用 2.5
 
-合并时（只考虑合并日）： 借：B公司净资产（评估值调整后） 600+60-15=645
+合并时（只考虑合并日）： 借：B公司净资产（评估值调整后） 600&#43;60-15=645
 
 商誉 155 贷：长
 
@@ -3289,12 +3289,12 @@ A公司收购B公司股权账面价值为 600 万元，收购价为 800 万元�
 
 甲公司对乙公司公允价值 800 万（账面价值 700 万）固定资产投资，其中股权价值 500 万， 300 万乙方以现金支付给甲方，这不属于非
 
-货币性资产交换，因300/800>25%，这样处理： 借：长期股权投资 500 万 借：其他应收款 300 万 贷：固定资产清理 800
+货币性资产交换，因300/800&gt;25%，这样处理： 借：长期股权投资 500 万 借：其他应收款 300 万 贷：固定资产清理 800
 万
 
 借：固定资产清理 100 万 贷：营业外收入 100 万
 
-如果其他不变，股权价值改为 650 万，以 150 万支付差价，150/800<25%，属非货币性资产交换，会计处理上与上面有什么不同？谢
+如果其他不变，股权价值改为 650 万，以 150 万支付差价，150/800&lt;25%，属非货币性资产交换，会计处理上与上面有什么不同？谢
 谢大家解惑
 
 回答人： chenyiwei
@@ -3401,11 +3401,11 @@ CPA认为，应该在剩余摊销期限在 12 个月以内的时候进行摊销�
 回答人： chenyiwei
 
 
-以前《企业会计制度》下资产负债表的编制说明中，对“长期待摊费用”项目提到“(21)"长期待摊费用"项目，反映企业尚未摊销的摊销
+以前《企业会计制度》下资产负债表的编制说明中，对“长期待摊费用”项目提到“(21)&#34;长期待摊费用&#34;项目，反映企业尚未摊销的摊销
 
 期限在 1 年以上(不含五年)的各种费用，如租入固定资产改良支出、大修理支出以及摊销期限在 1 年以上(不含 1 年)的其他待摊费用。长
 
-期待摊费用中在 1 年内(含 1 年)摊销的部分，应在本表"待摊费用"项目填列。本项目应根据"长期待摊费用"科目的期末余额减去 1 年内(含
+期待摊费用中在 1 年内(含 1 年)摊销的部分，应在本表&#34;待摊费用&#34;项目填列。本项目应根据&#34;长期待摊费用&#34;科目的期末余额减去 1 年内(含
 
 1 年)摊销的数额后的金额填列。”但在实际操作中，从未见过把将于下一年内摊销的部分作为流动资产列报的实例。
 
@@ -3540,7 +3540,7 @@ A公司与个人B投资设立C，A占75%，B占25%，现A和C公司与其他方�
 
 # 借：股本 100 期末未分配利润 -250 贷：长期股权投资 -150
 
-到这一步的调整后，合并的未分配利润变为=600-100-250-150+250=350万， 我现在想要知道的就是在这个是否还要恢复子公司的
+到这一步的调整后，合并的未分配利润变为=600-100-250-150&#43;250=350万， 我现在想要知道的就是在这个是否还要恢复子公司的
 
 留存收益？因为如果这个时候恢复分录应该是这样的吧： 借：资本公积 -250 贷：未分配利润 -250 这时的期末未分配利润=350-
 
@@ -3568,7 +3568,7 @@ A公司与个人B投资设立C，A占75%，B占25%，现A和C公司与其他方�
 
 的未分配利润是不是体现为 500-150=350万 更合理？ ②按照我上面的合并调整思路，恢复未分配利润-250万后，合并后的未分配
 
-利润=500（A公司支付对价后）-250（B公司）-150（合并报表层面将长投调整到子公司净资产）+250（抵消子公司期末未分配利
+利润=500（A公司支付对价后）-250（B公司）-150（合并报表层面将长投调整到子公司净资产）&#43;250（抵消子公司期末未分配利
 
 润）-250（恢复子公司期末未分配利润）=100万，为什么得不出 250 的结果，是我的调整分录哪里有问题吗？
 
@@ -4602,7 +4602,7 @@ A的股权收购款作为追加投资的成本。但在母公司的合并报表�
 
 太感谢陈老师及时解惑！还有几个问题： 1 、“按（ 80 －（－ 700 ））＝ 780 万确认为投资收益，交易价格高于公允价值的差额 320 万
 
-确认为资本公积更妥当。"--------是在单体报表层面确认投资收益和资本公积吗？ 2 、如果是单体报表层面确认上述投资收益和资
+确认为资本公积更妥当。&#34;--------是在单体报表层面确认投资收益和资本公积吗？ 2 、如果是单体报表层面确认上述投资收益和资
 
 本公积，那A公司合并报表层面如何处理？ 3 、是A公司将子公司B转让给了A公司的母公司C，对于A公司合并报表层面来说，不属
 
@@ -4631,11 +4631,11 @@ A的股权收购款作为追加投资的成本。但在母公司的合并报表�
 
 提问人：累感不爱考注会累感不爱考注会 时间： 2016-10-19 22:01:38
 
-问个问题哈！广宣费的扣除，比如说上年结转 60 万，今年实际发生 400 万。然后假设扣除标准是 450 万 那么今年能扣除的是60+390
+问个问题哈！广宣费的扣除，比如说上年结转 60 万，今年实际发生 400 万。然后假设扣除标准是 450 万 那么今年能扣除的是60&#43;390
 
-呢，还是400+50呢？ 也就是说这个东西是否考虑先进先出啊？
+呢，还是400&#43;50呢？ 也就是说这个东西是否考虑先进先出啊？
 
-不过如果这样的话。比如说 上年是+60 0.25 本年应该是 -60 0.25-390*0.25了撒。
+不过如果这样的话。比如说 上年是&#43;60 0.25 本年应该是 -60 0.25-390*0.25了撒。
 
 但是如果按税法角度，是本年不超过的部分可以扣。就是 400 可以全扣，那 60 只能扣 50
 
@@ -4662,7 +4662,7 @@ A的股权收购款作为追加投资的成本。但在母公司的合并报表�
 定增认购金额扣除券商保荐费用 (3) 280,000,000.00 - 10,600,000.00 - 1,060,000.00 = 268,340,000.00元，定增认购金额扣除券商
 保荐费用、验资、律师费等
 
-(4) 40,000,000.00 + 240,000,000.00 - 11,000,000.00 =280,000,000.00 - 11,000,000.00 = 269,000,000.00元，与股本及资本公积
+(4) 40,000,000.00 &#43; 240,000,000.00 - 11,000,000.00 =280,000,000.00 - 11,000,000.00 = 269,000,000.00元，与股本及资本公积
 数增减变动勾稽
 
 问：如果以本文中选项（ 3 ）列示，那么实际收到但是尚未支付的律师费及会计师验资费用1,060,000.00元放在现金流的什么位置？
@@ -4855,7 +4855,7 @@ A的股权收购款作为追加投资的成本。但在母公司的合并报表�
 
 陈老师好,
 
-关于期末的协定存款余额，应该作为哪个会计科目核算,"银行存款“还是“其他流动资产”？其利息收入部分对应“财务费用-利息收入”还
+关于期末的协定存款余额，应该作为哪个会计科目核算,&#34;银行存款“还是“其他流动资产”？其利息收入部分对应“财务费用-利息收入”还
 
 是“投资收益”核算？
 协定存款是指单位与商业银行个别磋商后达成的协议存款，即单位与银行签订人民币单位协定存款合同，在基本存款账户或一般存款
@@ -5450,11 +5450,11 @@ asked whether the estimated value of shares issued only to employees and subject
 
 approach that would look solely or primarily to an actual or synthetic market that consisted only of transactions between an entity
 
-and its employees and in which prices, for example, reflected an employee's personal borrowing rate. The Interpretations Committee
+and its employees and in which prices, for example, reflected an employee&#39;s personal borrowing rate. The Interpretations Committee
 
 was asked whether this approach was consistent with the requirements under IFRS 2. Reasons and Conclusions The Interpretations
 
-Committee noted the requirements in paragraph B3 of Appendix B to IFRS 2, which states that, "if the shares are subject to
+Committee noted the requirements in paragraph B3 of Appendix B to IFRS 2, which states that, &#34;if the shares are subject to
 
 restrictions on transfer after vesting date, that factor shall be taken into account, but only to the extent that the post-vesting
 
@@ -5462,13 +5462,13 @@ restrictions affect the price that a knowledgeable, willing market participant w
 
 actively traded in a deep and liquid market, post-vesting transfer restrictions may have little, if any, effect on the price that a
 
-knowledgeable, willing market participant would pay for those shares." Paragraph BC168 of the Basis for Conclusions on IFRS 2 notes
+knowledgeable, willing market participant would pay for those shares.&#34; Paragraph BC168 of the Basis for Conclusions on IFRS 2 notes
 
-that "the objective is to estimate the fair value of the share option, not the value from the employee's perspective." Furthermore,
+that &#34;the objective is to estimate the fair value of the share option, not the value from the employee&#39;s perspective.&#34; Furthermore,
 
-paragraph B10 of Appendix B to IFRS 2 states that "factors that affect the value of the option from the individual employee's
+paragraph B10 of Appendix B to IFRS 2 states that &#34;factors that affect the value of the option from the individual employee&#39;s
 
-perspective only are not relevant to estimating the price that would be set by a knowledgeable, willing market participant." The
+perspective only are not relevant to estimating the price that would be set by a knowledgeable, willing market participant.&#34; The
 
 Interpretations Committee noted that these paragraphs require consideration of actual or hypothetical transactions, not only with
 
@@ -5529,9 +5529,9 @@ agenda. Decision Date November 2006 据此，在对限售股估值时如何考�
 论该剧盈利或亏损，甲方给予乙方相当于投资款年化12%的固定投资回报（本金收益的返还最迟不得超过合同签订之日起 18 个月），
 乙方收到款项时向甲方开具增值税发票。乙方将改投资款确认为长期应收款，取得的固定收益确认为投资收益还是其他业务收入（利
 
-息收入），如确认为投资收益，是否应该开具增值税发票？假如不是固定收益，保底+浮动（根据盈利情况确定浮动比例），保底
+息收入），如确认为投资收益，是否应该开具增值税发票？假如不是固定收益，保底&#43;浮动（根据盈利情况确定浮动比例），保底
 
-+浮动部分的收益在收到的时候确认为投资收益对不对？谢谢！
+&#43;浮动部分的收益在收到的时候确认为投资收益对不对？谢谢！
 
 回答人： chenyiwei
 该条款表明乙方是寻求固定收益的财务投资者，该笔投资实质上是发放贷款。参照委托贷款的会计处理方法，所获得的收益确认为其
@@ -5603,7 +5603,7 @@ agenda. Decision Date November 2006 据此，在对限售股估值时如何考�
 
 回答人： chenyiwei
 
-"版权由A、B按照各自的投资比例共同享有"和主帖中“公司有版权的七年使用权”是否矛盾？实际上是如何执行的？如有 7 年使用权，
+&#34;版权由A、B按照各自的投资比例共同享有&#34;和主帖中“公司有版权的七年使用权”是否矛盾？实际上是如何执行的？如有 7 年使用权，
 是否为独占使用权？
 
 提问人： chuaixiang1989 时间： 2016-11-01 09:45:55
@@ -6316,15 +6316,15 @@ liability” 请问陈老师， 6 楼的这句，recovery此处是指“资产�
 
 提问人：原来你就在这里原来你就在这里 时间： 2016-10-28 21:14:37
 
-@chenyiwei “Overview IAS 12 Income Taxes implements a so-called 'comprehensive balance sheet method' of accounting for income
+@chenyiwei “Overview IAS 12 Income Taxes implements a so-called &#39;comprehensive balance sheet method&#39; of accounting for income
 
 taxes which recognises both the current tax consequences of transactions and events and the future tax consequences of the future
 
-recovery or settlement of the carrying amount of an entity's assets and liabilities. Differences between the carrying amount and tax
+recovery or settlement of the carrying amount of an entity&#39;s assets and liabilities. Differences between the carrying amount and tax
 
 base of assets and liabilities, and carried forward tax losses and credits, are recognised, with limited exceptions, as deferred tax
 
-liabilities or deferred tax assets, with the latter also being subject to a 'probable profits' test.” 请问陈老师， 2 楼的tax credits 指的是什
+liabilities or deferred tax assets, with the latter also being subject to a &#39;probable profits&#39; test.” 请问陈老师， 2 楼的tax credits 指的是什
 么呢？
 
 回答人： chenyiwei
@@ -6384,11 +6384,11 @@ reduce是否就是指的资产确认资产减值损失，CAS这里翻译成减�
 
 Recognition of tax amounts for the periodAmount of income tax to recogniseThe following formula summarises the amount of tax
 
-tobe recognised in an accounting period:Tax to recognisefor the period = Current tax for the period + Movement in deferred tax
+tobe recognised in an accounting period:Tax to recognisefor the period = Current tax for the period &#43; Movement in deferred tax
 
 balances for the period（请问标红这句该怎么翻译啊） 当期应纳税额的确认应纳税额的确认以下公式总结了一个会计期间应当确认
 
-的应纳税额当期应确认的税额=当期所得税+当期递延所得税表的移动
+的应纳税额当期应确认的税额=当期所得税&#43;当期递延所得税表的移动
 
 回答人： chenyiwei
 红字部分的意思是：本期内递延所得税资产、负债的增减变动金额，即递延所得税费用的本期发生额。
@@ -6450,7 +6450,7 @@ The impact of business combinations on the recognition of pre-combination deferr
 
 determination of goodwill as part of the business combination, but are separately recognised [IAS 12.68]
 
-The recognition of acquired deferred tax benefits subsequent to a business combination are treated as 'measurement period'
+The recognition of acquired deferred tax benefits subsequent to a business combination are treated as &#39;measurement period&#39;
 
 adjustments (see IFRS 3 Business Combinations) if they qualify for that treatment, or otherwise are recognised in profit or loss [IAS
 
@@ -6541,7 +6541,7 @@ credit, the amount of deferred tax assets or liabilities recognised in the state
 
 income or expense recognised in profit or loss o tax relating to discontinued operations o tax consequences of dividends
 
-declared after the end of the reporting period o information about the impacts of business combinations on an acquirer's
+declared after the end of the reporting period o information about the impacts of business combinations on an acquirer&#39;s
 
 deferred tax assets o recognition of deferred tax assets of an acquiree after the acquisition date. Other required disclosures: o
 
@@ -6953,7 +6953,7 @@ BCD个别报表层面的会计处理取决于其自身是否需直接承担保�
 
 提问人：桃暮桃暮 时间： 2016-10-26 14:00:29
 
-我们劳务工资走的主营业务成本，是未扣个税的金额，想请教一下现金流量表里有一项叫"购买商品接受劳务支付的现金"这里不是要
+我们劳务工资走的主营业务成本，是未扣个税的金额，想请教一下现金流量表里有一项叫&#34;购买商品接受劳务支付的现金&#34;这里不是要
 增加主营业务成本吗，我们工资走的这个科目，是直接按未扣个所税金额走呢，还是扣掉个税走？
 
 回答人： chenyiwei
@@ -7074,7 +7074,7 @@ BCD个别报表层面的会计处理取决于其自身是否需直接承担保�
 
 回答人： chenyiwei
 
-1 、构成共同控制，必须有相对固定的组合。就你说的情况看，要达到 70 ％的表决权比例，可以是A+B，也可以是A+C+D，组合并不
+1 、构成共同控制，必须有相对固定的组合。就你说的情况看，要达到 70 ％的表决权比例，可以是A&#43;B，也可以是A&#43;C&#43;D，组合并不
 
 固定，因此不是合营企业。对第一大股东A而言，E是A的联营企业（尽管A事实上有否决权）。 2 、B按同一控制下合并处理，B的合
 
@@ -8321,7 +8321,7 @@ B公司持有其他子公司D的股权）的情况下，整个合并集团的少
 请教陈版和各位前辈，我公司 2016 年 10 月有境外实物投资出口，是用的存货对美国一家子公司进行的实物投资。查相关税务文件及
 税局回复都是视同外销处理。报税时是应该按照当月有免税外销收入处理，之前存货有过认证本月进项转出。但是，账务处理上，是
 
-按报关单金额作为长期股权投资成本还是按照存货购进成本作为投资成本？或者是按购进成本金额+国内运费+国外运费+国外保费
+按报关单金额作为长期股权投资成本还是按照存货购进成本作为投资成本？或者是按购进成本金额&#43;国内运费&#43;国外运费&#43;国外保费
 之和作为境外实物投资成本？还有，具体分录怎么写比较规范啊
 
 回答人： chenyiwei
@@ -8410,7 +8410,7 @@ B公司持有其他子公司D的股权）的情况下，整个合并集团的少
 
 值调整至跟母公司长投账面成本价一致，再编制合并报表时才完全抵消，是吗？假设子公司协议入账价值为A，母公司所投资产原账
 
-面价值即长投成本为B(假设A>B),子公司调整分录是： 借：实收资本 A-B 贷：实物资产 A-B ；编制合并报表时合并抵消分录是：
+面价值即长投成本为B(假设A&gt;B),子公司调整分录是： 借：实收资本 A-B 贷：实物资产 A-B ；编制合并报表时合并抵消分录是：
 
 借：实收资本 B 贷：长期股权投资 B。陈老师，请问一下以上原理及分录对不对啊
 
@@ -8894,6 +8894,6 @@ A向B投资 12 万,B公司 15 年末权益为 5 万,A长投资全额计提减值
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201610/  
 

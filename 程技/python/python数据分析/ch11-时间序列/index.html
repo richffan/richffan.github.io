@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第十一章 时间序列 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第十一章 时间序列 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点" /><meta name="keywords" content='python' /><meta itemprop="name" content="第十一章 时间序列">
 <meta itemprop="description" content="时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第十一章 时间序列"/>
 <meta name="twitter:description" content="时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十一章 时间序列</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十一章 时间序列</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="15148 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 15200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 31 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="leancloud_visitors comment-visitors" data-flag-title="第十一章 时间序列">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="15148 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 15200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 31 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="leancloud_visitors comment-visitors" data-flag-title="第十一章 时间序列">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十一章 时间序列">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -253,8 +248,8 @@
 <p>提示：pandas也支持基于timedeltas的指数，它可以有效代表实验或经过的时间。这本书不涉及timedelta指数，但你可以学习pandas的文档（http://pandas.pydata.org/）。</p>
 </blockquote>
 <p>pandas提供了许多内置的时间序列处理工具和数据算法。因此，你可以高效处理非常大的时间序列，轻松地进行切片/切块、聚合、对定期/不定期的时间序列进行重采样等。有些工具特别适合金融和经济应用，你当然也可以用它们来分析服务器日志数据。</p>
-<h2 id="111-日期和时间数据类型及工具">11.1 日期和时间数据类型及工具</h2>
-<p>Python标准库包含用于日期（date）和时间（time）数据的数据类型，而且还有日历方面的功能。我们主要会用到datetime、time以及calendar模块。datetime.datetime（也可以简写为datetime）是用得最多的数据类型：</p>
+<h2 id="111-日期和时间数据类型及工具" class="heading-element">
+  <a href="#111-%e6%97%a5%e6%9c%9f%e5%92%8c%e6%97%b6%e9%97%b4%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%8f%8a%e5%b7%a5%e5%85%b7" class="heading-mark"></a>11.1 日期和时间数据类型及工具</h2><p>Python标准库包含用于日期（date）和时间（time）数据的数据类型，而且还有日历方面的功能。我们主要会用到datetime、time以及calendar模块。datetime.datetime（也可以简写为datetime）是用得最多的数据类型：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -330,10 +325,10 @@
 </div>
 </div><p>datetime模块中的数据类型参见表10-1。虽然本章主要讲的是pandas数据类型和高级时间序列处理，但你肯定会在Python的其他地方遇到有关datetime的数据类型。</p>
 <p>表11-1 datetime模块中的数据类型</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161247046.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>tzinfo  存储时区信息的基本类型</p>
-<h3 id="1111-字符串和datetime的相互转换">11.1.1 字符串和datetime的相互转换</h3>
-<p>利用str或strftime方法（传入一个格式化字符串），datetime对象和pandas的Timestamp对象（稍后就会介绍）可以被格式化为字符串：</p>
+<h3 id="1111-字符串和datetime的相互转换" class="heading-element">
+  <a href="#1111-%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%92%8cdatetime%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>11.1.1 字符串和datetime的相互转换</h3><p>利用str或strftime方法（传入一个格式化字符串），datetime对象和pandas的Timestamp对象（稍后就会介绍）可以被格式化为字符串：</p>
 <div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -355,8 +350,8 @@
 </div>
 </div><p>表11-2列出了全部的格式化编码。</p>
 <p>表11-2 datetime格式定义（兼容ISO C89）</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161432640.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161423963.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>datetime.strptime可以用这些格式化编码将字符串转换为日期：</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -469,9 +464,9 @@
 </blockquote>
 <p>datetime对象还有一些特定于当前环境（位于不同国家或使用不同语言的系统）的格式化选项。例如，德语或法语系统所用的月份简写就与英语系统所用的不同。表11-3进行了总结。</p>
 <p>表11-3 特定于当前环境的日期格式</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="112-时间序列基础">11.2 时间序列基础</h2>
-<p>pandas最基本的时间序列类型就是以时间戳（通常以Python字符串或datatime对象表示）为索引的Series：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030161919403.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="112-时间序列基础" class="heading-element">
+  <a href="#112-%e6%97%b6%e9%97%b4%e5%ba%8f%e5%88%97%e5%9f%ba%e7%a1%80" class="heading-mark"></a>11.2 时间序列基础</h2><p>pandas最基本的时间序列类型就是以时间戳（通常以Python字符串或datatime对象表示）为索引的Series：</p>
 <div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -577,8 +572,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">47</span><span class="p">]:</span> <span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2011-01-02 00:00:00&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>只要有需要，TimeStamp可以随时自动转换为datetime对象。此外，它还可以存储频率信息（如果有的话），且知道如何执行时区转换以及其他操作。稍后将对此进行详细讲解。</p>
-<h3 id="1121-索引选取子集构造">11.2.1 索引、选取、子集构造</h3>
-<p>当你根据标签索引选取数据时，时间序列和其它的pandas.Series很像：</p>
+<h3 id="1121-索引选取子集构造" class="heading-element">
+  <a href="#1121-%e7%b4%a2%e5%bc%95%e9%80%89%e5%8f%96%e5%ad%90%e9%9b%86%e6%9e%84%e9%80%a0" class="heading-mark"></a>11.2.1 索引、选取、子集构造</h3><p>当你根据标签索引选取数据时，时间序列和其它的pandas.Series很像：</p>
 <div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -888,8 +883,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2001</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">23</span>  <span class="mf">1.676091</span> <span class="o">-</span><span class="mf">0.817649</span>  <span class="mf">0.050188</span>  <span class="mf">1.951312</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2001</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">30</span>  <span class="mf">3.260383</span>  <span class="mf">0.963301</span>  <span class="mf">1.201206</span> <span class="o">-</span><span class="mf">1.852001</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1122-带有重复索引的时间序列">11.2.2 带有重复索引的时间序列</h3>
-<p>在某些应用场景中，可能会存在多个观测数据落在同一个时间点上的情况。下面就是一个例子：</p>
+</div><h3 id="1122-带有重复索引的时间序列" class="heading-element">
+  <a href="#1122-%e5%b8%a6%e6%9c%89%e9%87%8d%e5%a4%8d%e7%b4%a2%e5%bc%95%e7%9a%84%e6%97%b6%e9%97%b4%e5%ba%8f%e5%88%97" class="heading-mark"></a>11.2.2 带有重复索引的时间序列</h3><p>在某些应用场景中，可能会存在多个观测数据落在同一个时间点上的情况。下面就是一个例子：</p>
 <div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -989,8 +984,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">03</span>    <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="113-日期的范围频率以及移动">11.3 日期的范围、频率以及移动</h2>
-<p>pandas中的原生时间序列一般被认为是不规则的，也就是说，它们没有固定的频率。对于大部分应用程序而言，这是无所谓的。但是，它常常需要以某种相对固定的频率进行分析，比如每日、每月、每15分钟等（这样自然会在时间序列中引入缺失值）。幸运的是，pandas有一整套标准时间序列频率以及用于重采样、频率推断、生成固定频率日期范围的工具。例如，我们可以将之前那个时间序列转换为一个具有固定频率（每日）的时间序列，只需调用resample即可：</p>
+</div><h2 id="113-日期的范围频率以及移动" class="heading-element">
+  <a href="#113-%e6%97%a5%e6%9c%9f%e7%9a%84%e8%8c%83%e5%9b%b4%e9%a2%91%e7%8e%87%e4%bb%a5%e5%8f%8a%e7%a7%bb%e5%8a%a8" class="heading-mark"></a>11.3 日期的范围、频率以及移动</h2><p>pandas中的原生时间序列一般被认为是不规则的，也就是说，它们没有固定的频率。对于大部分应用程序而言，这是无所谓的。但是，它常常需要以某种相对固定的频率进行分析，比如每日、每月、每15分钟等（这样自然会在时间序列中引入缺失值）。幸运的是，pandas有一整套标准时间序列频率以及用于重采样、频率推断、生成固定频率日期范围的工具。例如，我们可以将之前那个时间序列转换为一个具有固定频率（每日）的时间序列，只需调用resample即可：</p>
 <div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1020,8 +1015,8 @@
 </div>
 </div><p>字符串“D”是每天的意思。</p>
 <p>频率的转换（或重采样）是一个比较大的主题，稍后将专门用一节来进行讨论（11.6小节）。这里，我将告诉你如何使用基本的频率和它的倍数。</p>
-<h3 id="1131-生成日期范围">11.3.1 生成日期范围</h3>
-<p>虽然我之前用的时候没有明说，但你可能已经猜到pandas.date_range可用于根据指定的频率生成指定长度的DatetimeIndex：</p>
+<h3 id="1131-生成日期范围" class="heading-element">
+  <a href="#1131-%e7%94%9f%e6%88%90%e6%97%a5%e6%9c%9f%e8%8c%83%e5%9b%b4" class="heading-mark"></a>11.3.1 生成日期范围</h3><p>虽然我之前用的时候没有明说，但你可能已经猜到pandas.date_range可用于根据指定的频率生成指定长度的DatetimeIndex：</p>
 <div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1128,9 +1123,9 @@
 </span></span><span class="line"><span class="cl">              <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;datetime64[ns]&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;BM&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表11-4 基本的时间序列频率（不完整）</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110410148.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110418935.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031110426368.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>date_range默认会保留起始和结束时间戳的时间信息（如果有的话）：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1165,8 +1160,8 @@
 </span></span><span class="line"><span class="cl">               <span class="s1">&#39;2012-05-06&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;datetime64[ns]&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1132-频率和日期偏移量">11.3.2 频率和日期偏移量</h3>
-<p>pandas中的频率是由一个基础频率（base frequency）和一个乘数组成的。基础频率通常以一个字符串别名表示，比如&quot;M&quot;表示每月，&ldquo;H&quot;表示每小时。对于每个基础频率，都有一个被称为日期偏移量（date offset）的对象与之对应。例如，按小时计算的频率可以用Hour类表示：</p>
+</div><h3 id="1132-频率和日期偏移量" class="heading-element">
+  <a href="#1132-%e9%a2%91%e7%8e%87%e5%92%8c%e6%97%a5%e6%9c%9f%e5%81%8f%e7%a7%bb%e9%87%8f" class="heading-mark"></a>11.3.2 频率和日期偏移量</h3><p>pandas中的频率是由一个基础频率（base frequency）和一个乘数组成的。基础频率通常以一个字符串别名表示，比如&quot;M&quot;表示每月，&ldquo;H&quot;表示每小时。对于每个基础频率，都有一个被称为日期偏移量（date offset）的对象与之对应。例如，按小时计算的频率可以用Hour类表示：</p>
 <div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1266,11 +1261,11 @@
 <p>笔记：用户可以根据实际需求自定义一些频率类以便提供pandas所没有的日期逻辑，但具体的细节超出了本书的范围。</p>
 </blockquote>
 <p>表11-4 时间序列的基础频率</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1133-wom日期">11.3.3 WOM日期</h3>
-<p>WOM（Week Of Month）是一种非常实用的频率类，它以WOM开头。它使你能获得诸如“每月第3个星期五”之类的日期：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111231028.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111236718.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031111244837.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1133-wom日期" class="heading-element">
+  <a href="#1133-wom%e6%97%a5%e6%9c%9f" class="heading-mark"></a>11.3.3 WOM日期</h3><p>WOM（Week Of Month）是一种非常实用的频率类，它以WOM开头。它使你能获得诸如“每月第3个星期五”之类的日期：</p>
 <div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1300,8 +1295,8 @@
 </span></span><span class="line"><span class="cl"> <span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2012-07-20 00:00:00&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;WOM-3FRI&#39;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2012-08-17 00:00:00&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;WOM-3FRI&#39;</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1134-移动超前和滞后数据">11.3.4 移动（超前和滞后）数据</h3>
-<p>移动（shifting）指的是沿着时间轴将数据前移或后移。Series和DataFrame都有一个shift方法用于执行单纯的前移或后移操作，保持索引不变：</p>
+</div><h3 id="1134-移动超前和滞后数据" class="heading-element">
+  <a href="#1134-%e7%a7%bb%e5%8a%a8%e8%b6%85%e5%89%8d%e5%92%8c%e6%bb%9e%e5%90%8e%e6%95%b0%e6%8d%ae" class="heading-mark"></a>11.3.4 移动（超前和滞后）数据</h3><p>移动（shifting）指的是沿着时间轴将数据前移或后移。Series和DataFrame都有一个shift方法用于执行单纯的前移或后移操作，保持索引不变：</p>
 <div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1424,8 +1419,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">30</span> <span class="mi">01</span><span class="p">:</span><span class="mi">30</span><span class="p">:</span><span class="mi">00</span>   <span class="o">-</span><span class="mf">0.517795</span>
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="n">M</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1135-通过偏移量对日期进行位移">11.3.5 通过偏移量对日期进行位移</h3>
-<p>pandas的日期偏移量还可以用在datetime或Timestamp对象上：</p>
+</div><h3 id="1135-通过偏移量对日期进行位移" class="heading-element">
+  <a href="#1135-%e9%80%9a%e8%bf%87%e5%81%8f%e7%a7%bb%e9%87%8f%e5%af%b9%e6%97%a5%e6%9c%9f%e8%bf%9b%e8%a1%8c%e4%bd%8d%e7%a7%bb" class="heading-mark"></a>11.3.5 通过偏移量对日期进行位移</h3><p>pandas的日期偏移量还可以用在datetime或Timestamp对象上：</p>
 <div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1569,8 +1564,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">31</span>    <span class="mf">0.150209</span>
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="n">M</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="114-时区处理">11.4 时区处理</h2>
-<p>时间序列处理工作中最让人不爽的就是对时区的处理。许多人都选择以协调世界时（UTC，它是格林尼治标准时间（Greenwich Mean Time）的接替者，目前已经是国际标准了）来处理时间序列。时区是以UTC偏移量的形式表示的。例如，夏令时期间，纽约比UTC慢4小时，而在全年其他时间则比UTC慢5小时。</p>
+</div><h2 id="114-时区处理" class="heading-element">
+  <a href="#114-%e6%97%b6%e5%8c%ba%e5%a4%84%e7%90%86" class="heading-mark"></a>11.4 时区处理</h2><p>时间序列处理工作中最让人不爽的就是对时区的处理。许多人都选择以协调世界时（UTC，它是格林尼治标准时间（Greenwich Mean Time）的接替者，目前已经是国际标准了）来处理时间序列。时区是以UTC偏移量的形式表示的。例如，夏令时期间，纽约比UTC慢4小时，而在全年其他时间则比UTC慢5小时。</p>
 <p>在Python中，时区信息来自第三方库pytz，它使Python可以使用Olson数据库（汇编了世界时区信息）。这对历史数据非常重要，这是因为由于各地政府的各种突发奇想，夏令时转变日期（甚至UTC偏移量）已经发生过多次改变了。就拿美国来说，DST转变时间自1900年以来就改变过多次！</p>
 <p>有关pytz库的更多信息，请查阅其文档。就本书而言，由于pandas包装了pytz的功能，因此你可以不用记忆其API，只要记得时区的名称即可。时区名可以在shell中看到，也可以通过文档查看：</p>
 <div class="highlight" id="id-49"><div class="chroma">
@@ -1601,8 +1596,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">DstTzInfo</span> <span class="s1">&#39;America/New_York&#39;</span> <span class="n">LMT</span><span class="o">-</span><span class="mi">1</span> <span class="n">day</span><span class="p">,</span> <span class="mi">19</span><span class="p">:</span><span class="mi">04</span><span class="p">:</span><span class="mi">00</span> <span class="n">STD</span><span class="o">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pandas中的方法既可以接受时区名也可以接受这些对象。</p>
-<h3 id="1141-时区本地化和转换">11.4.1 时区本地化和转换</h3>
-<p>默认情况下，pandas中的时间序列是单纯（naive）的时区。看看下面这个时间序列：</p>
+<h3 id="1141-时区本地化和转换" class="heading-element">
+  <a href="#1141-%e6%97%b6%e5%8c%ba%e6%9c%ac%e5%9c%b0%e5%8c%96%e5%92%8c%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>11.4.1 时区本地化和转换</h3><p>默认情况下，pandas中的时间序列是单纯（naive）的时区。看看下面这个时间序列：</p>
 <div class="highlight" id="id-51"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1821,8 +1816,8 @@
 </div><blockquote>
 <p>注意：对单纯时间戳的本地化操作还会检查夏令时转变期附近容易混淆或不存在的时间。</p>
 </blockquote>
-<h3 id="1142-操作时区意识型timestamp对象">11.4.2 操作时区意识型Timestamp对象</h3>
-<p>跟时间序列和日期范围差不多，独立的Timestamp对象也能被从单纯型（naive）本地化为时区意识型（time zone-aware），并从一个时区转换到另一个时区：</p>
+<h3 id="1142-操作时区意识型timestamp对象" class="heading-element">
+  <a href="#1142-%e6%93%8d%e4%bd%9c%e6%97%b6%e5%8c%ba%e6%84%8f%e8%af%86%e5%9e%8btimestamp%e5%af%b9%e8%b1%a1" class="heading-mark"></a>11.4.2 操作时区意识型Timestamp对象</h3><p>跟时间序列和日期范围差不多，独立的Timestamp对象也能被从单纯型（naive）本地化为时区意识型（time zone-aware），并从一个时区转换到另一个时区：</p>
 <div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1914,8 +1909,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">141</span><span class="p">]:</span> <span class="n">stamp</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Hour</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">141</span><span class="p">]:</span> <span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2012-11-04 01:30:00-0500&#39;</span><span class="p">,</span> <span class="n">tz</span><span class="o">=</span><span class="s1">&#39;US/Eastern&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1143-不同时区之间的运算">11.4.3 不同时区之间的运算</h3>
-<p>如果两个时间序列的时区不同，在将它们合并到一起时，最终结果就会是UTC。由于时间戳其实是以UTC存储的，所以这是一个很简单的运算，并不需要发生任何转换：</p>
+</div><h3 id="1143-不同时区之间的运算" class="heading-element">
+  <a href="#1143-%e4%b8%8d%e5%90%8c%e6%97%b6%e5%8c%ba%e4%b9%8b%e9%97%b4%e7%9a%84%e8%bf%90%e7%ae%97" class="heading-mark"></a>11.4.3 不同时区之间的运算</h3><p>如果两个时间序列的时区不同，在将它们合并到一起时，最终结果就会是UTC。由于时间戳其实是以UTC存储的，所以这是一个很简单的运算，并不需要发生任何转换：</p>
 <div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1983,8 +1978,8 @@
 </span></span><span class="line"><span class="cl">               <span class="s1">&#39;2012-03-15 09:30:00+00:00&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;datetime64[ns, UTC]&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="115-时期及其算术运算">11.5 时期及其算术运算</h2>
-<p>时期（period）表示的是时间区间，比如数日、数月、数季、数年等。Period类所表示的就是这种数据类型，其构造函数需要用到一个字符串或整数，以及表11-4中的频率：</p>
+</div><h2 id="115-时期及其算术运算" class="heading-element">
+  <a href="#115-%e6%97%b6%e6%9c%9f%e5%8f%8a%e5%85%b6%e7%ae%97%e6%9c%af%e8%bf%90%e7%ae%97" class="heading-mark"></a>11.5 时期及其算术运算</h2><p>时期（period）表示的是时间区间，比如数日、数月、数季、数年等。Period类所表示的就是这种数据类型，其构造函数需要用到一个字符串或整数，以及表11-4中的频率：</p>
 <div class="highlight" id="id-64"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2084,8 +2079,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">159</span><span class="p">]:</span> <span class="n">PeriodIndex</span><span class="p">([</span><span class="s1">&#39;2001Q3&#39;</span><span class="p">,</span> <span class="s1">&#39;2002Q2&#39;</span><span class="p">,</span> <span class="s1">&#39;2003Q1&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;period[Q-DEC]&#39;</span><span class="p">,</span> <span class="n">freq</span>
 </span></span><span class="line"><span class="cl"><span class="o">=</span><span class="s1">&#39;Q-DEC&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1151-时期的频率转换">11.5.1 时期的频率转换</h3>
-<p>Period和PeriodIndex对象都可以通过其asfreq方法被转换成别的频率。假设我们有一个年度时期，希望将其转换为当年年初或年末的一个月度时期。该任务非常简单：</p>
+</div><h3 id="1151-时期的频率转换" class="heading-element">
+  <a href="#1151-%e6%97%b6%e6%9c%9f%e7%9a%84%e9%a2%91%e7%8e%87%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>11.5.1 时期的频率转换</h3><p>Period和PeriodIndex对象都可以通过其asfreq方法被转换成别的频率。假设我们有一个年度时期，希望将其转换为当年年初或年末的一个月度时期。该任务非常简单：</p>
 <div class="highlight" id="id-70"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2137,7 +2132,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">167</span><span class="p">]:</span> <span class="n">p</span><span class="o">.</span><span class="n">asfreq</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">167</span><span class="p">]:</span> <span class="n">Period</span><span class="p">(</span><span class="s1">&#39;2007-06&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=large 2x" sizes="auto" data-title="图11-1 Period频率转换示例" data-alt="图11-1 Period频率转换示例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png" alt="图11-1 Period频率转换示例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121609434.png?size=large 2x" sizes="auto" data-title="图11-1 Period频率转换示例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>在将高频率转换为低频率时，超时期（superperiod）是由子时期（subperiod）所属的位置决定的。例如，在A-JUN频率中，月份“2007年8月”实际上是属于周期“2008年”的：</p>
 <div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2218,8 +2213,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>   <span class="o">-</span><span class="mf">0.302988</span>
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="n">B</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1152-按季度计算的时期频率">11.5.2 按季度计算的时期频率</h3>
-<p>季度型数据在会计、金融等领域中很常见。许多季度型数据都会涉及“财年末”的概念，通常是一年12个月中某月的最后一个日历日或工作日。就这一点来说，时期&quot;2012Q4&quot;根据财年末的不同会有不同的含义。pandas支持12种可能的季度型频率，即Q-JAN到Q-DEC：</p>
+</div><h3 id="1152-按季度计算的时期频率" class="heading-element">
+  <a href="#1152-%e6%8c%89%e5%ad%a3%e5%ba%a6%e8%ae%a1%e7%ae%97%e7%9a%84%e6%97%b6%e6%9c%9f%e9%a2%91%e7%8e%87" class="heading-mark"></a>11.5.2 按季度计算的时期频率</h3><p>季度型数据在会计、金融等领域中很常见。许多季度型数据都会涉及“财年末”的概念，通常是一年12个月中某月的最后一个日历日或工作日。就这一点来说，时期&quot;2012Q4&quot;根据财年末的不同会有不同的含义。pandas支持12种可能的季度型频率，即Q-JAN到Q-DEC：</p>
 <div class="highlight" id="id-75"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2249,7 +2244,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">178</span><span class="p">]:</span> <span class="n">p</span><span class="o">.</span><span class="n">asfreq</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">178</span><span class="p">]:</span> <span class="n">Period</span><span class="p">(</span><span class="s1">&#39;2012-01-31&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=large 2x" sizes="auto" data-title="图11.2 不同季度型频率之间的转换" data-alt="图11.2 不同季度型频率之间的转换" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png" alt="图11.2 不同季度型频率之间的转换" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031121647886.png?size=large 2x" sizes="auto" data-title="图11.2 不同季度型频率之间的转换" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>因此，Period之间的算术运算会非常简单。例如，要获取该季度倒数第二个工作日下午4点的时间戳，你可以这样：</p>
 <div class="highlight" id="id-77"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2330,8 +2325,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2012</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">30</span> <span class="mi">16</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>    <span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1153-将timestamp转换为period及其反向过程">11.5.3 将Timestamp转换为Period（及其反向过程）</h3>
-<p>通过使用to_period方法，可以将由时间戳索引的Series和DataFrame对象转换为以时期索引：</p>
+</div><h3 id="1153-将timestamp转换为period及其反向过程" class="heading-element">
+  <a href="#1153-%e5%b0%86timestamp%e8%bd%ac%e6%8d%a2%e4%b8%baperiod%e5%8f%8a%e5%85%b6%e5%8f%8d%e5%90%91%e8%bf%87%e7%a8%8b" class="heading-mark"></a>11.5.3 将Timestamp转换为Period（及其反向过程）</h3><p>通过使用to_period方法，可以将由时间戳索引的Series和DataFrame对象转换为以时期索引：</p>
 <div class="highlight" id="id-79"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2475,8 +2470,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span>   <span class="o">-</span><span class="mf">0.167933</span>
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="n">D</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1154-通过数组创建periodindex">11.5.4 通过数组创建PeriodIndex</h3>
-<p>固定频率的数据集通常会将时间信息分开存放在多个列中。例如，在下面这个宏观经济数据集中，年度和季度就分别存放在不同的列中：</p>
+</div><h3 id="1154-通过数组创建periodindex" class="heading-element">
+  <a href="#1154-%e9%80%9a%e8%bf%87%e6%95%b0%e7%bb%84%e5%88%9b%e5%bb%baperiodindex" class="heading-mark"></a>11.5.4 通过数组创建PeriodIndex</h3><p>固定频率的数据集通常会将时间信息分开存放在多个列中。例如，在下面这个宏观经济数据集中，年度和季度就分别存放在不同的列中：</p>
 <div class="highlight" id="id-82"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2696,8 +2691,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2009</span><span class="n">Q3</span>    <span class="mf">3.56</span>
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="n">Q</span><span class="o">-</span><span class="n">DEC</span><span class="p">,</span> <span class="n">Name</span><span class="p">:</span> <span class="n">infl</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">203</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="116-重采样及频率转换">11.6 重采样及频率转换</h2>
-<p>重采样（resampling）指的是将时间序列从一个频率转换到另一个频率的处理过程。将高频率数据聚合到低频率称为降采样（downsampling），而将低频率数据转换到高频率则称为升采样（upsampling）。并不是所有的重采样都能被划分到这两个大类中。例如，将W-WED（每周三）转换为W-FRI既不是降采样也不是升采样。</p>
+</div><h2 id="116-重采样及频率转换" class="heading-element">
+  <a href="#116-%e9%87%8d%e9%87%87%e6%a0%b7%e5%8f%8a%e9%a2%91%e7%8e%87%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>11.6 重采样及频率转换</h2><p>重采样（resampling）指的是将时间序列从一个频率转换到另一个频率的处理过程。将高频率数据聚合到低频率称为降采样（downsampling），而将低频率数据转换到高频率则称为升采样（upsampling）。并不是所有的重采样都能被划分到这两个大类中。例如，将W-WED（每周三）转换为W-FRI既不是降采样也不是升采样。</p>
 <p>pandas对象都带有一个resample方法，它是各种频率转换工作的主力函数。resample有一个类似于groupby的API，调用resample可以分组数据，然后会调用一个聚合函数：</p>
 <div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2794,9 +2789,9 @@
 </div>
 </div><p>resample是一个灵活高效的方法，可用于处理非常大的时间序列。我将通过一系列的示例说明其用法。表11-5总结它的一些选项。</p>
 <p>表11-5 resample方法的参数
-<img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1161-降采样">11.6.1 降采样</h3>
-<p>将数据聚合到规律的低频率是一件非常普通的时间序列处理任务。待聚合的数据不必拥有固定的频率，期望的频率会自动定义聚合的面元边界，这些面元用于将时间序列拆分为多个片段。例如，要转换到月度频率（&lsquo;M&rsquo;或&rsquo;BM&rsquo;），数据需要被划分到多个单月时间段中。各时间段都是半开放的。一个数据点只能属于一个时间段，所有时间段的并集必须能组成整个时间帧。在用resample对数据进行降采样时，需要考虑两样东西：</p>
+<img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122022359.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1161-降采样" class="heading-element">
+  <a href="#1161-%e9%99%8d%e9%87%87%e6%a0%b7" class="heading-mark"></a>11.6.1 降采样</h3><p>将数据聚合到规律的低频率是一件非常普通的时间序列处理任务。待聚合的数据不必拥有固定的频率，期望的频率会自动定义聚合的面元边界，这些面元用于将时间序列拆分为多个片段。例如，要转换到月度频率（&lsquo;M&rsquo;或&rsquo;BM&rsquo;），数据需要被划分到多个单月时间段中。各时间段都是半开放的。一个数据点只能属于一个时间段，所有时间段的并集必须能组成整个时间帧。在用resample对数据进行降采样时，需要考虑两样东西：</p>
 <ul>
 <li>各区间哪边是闭合的。</li>
 <li>如何标记各个聚合面元，用区间的开头还是末尾。</li>
@@ -2906,7 +2901,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">Freq</span><span class="p">:</span> <span class="mi">5</span><span class="n">T</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>图11-3说明了“1分钟”数据被转换为“5分钟”数据的处理过程。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=large 2x" sizes="auto" data-title="图11-3 各种closed、label约定的“5分钟”重采样演示" data-alt="图11-3 各种closed、label约定的“5分钟”重采样演示" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png" alt="图11-3 各种closed、label约定的“5分钟”重采样演示" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122053525.png?size=large 2x" sizes="auto" data-title="图11-3 各种closed、label约定的“5分钟”重采样演示" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>最后，你可能希望对结果索引做一些位移，比如从右边界减去一秒以便更容易明白该时间戳到底表示的是哪个区间。只需通过loffset设置一个字符串或日期偏移量即可实现这个目的：</p>
 <div class="highlight" id="id-89"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3084,8 +3079,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">06</span> <span class="o">-</span><span class="mf">0.896431</span>  <span class="mf">0.677263</span>  <span class="mf">0.036503</span>  <span class="mf">0.087102</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">13</span> <span class="o">-</span><span class="mf">0.046662</span>  <span class="mf">0.927238</span>  <span class="mf">0.482284</span> <span class="o">-</span><span class="mf">0.867130</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1162-通过时期进行重采样">11.6.2 通过时期进行重采样</h3>
-<p>对那些使用时期索引的数据进行重采样与时间戳很像：</p>
+</div><h3 id="1162-通过时期进行重采样" class="heading-element">
+  <a href="#1162-%e9%80%9a%e8%bf%87%e6%97%b6%e6%9c%9f%e8%bf%9b%e8%a1%8c%e9%87%8d%e9%87%87%e6%a0%b7" class="heading-mark"></a>11.6.2 通过时期进行重采样</h3><p>对那些使用时期索引的数据进行重采样与时间戳很像：</p>
 <div class="highlight" id="id-96"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3214,8 +3209,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2002</span><span class="n">Q2</span>  <span class="mf">0.046303</span>  <span class="mf">0.163344</span>  <span class="mf">0.251503</span> <span class="o">-</span><span class="mf">0.157276</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2002</span><span class="n">Q3</span>  <span class="mf">0.046303</span>  <span class="mf">0.163344</span>  <span class="mf">0.251503</span> <span class="o">-</span><span class="mf">0.157276</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="117-移动窗口函数">11.7 移动窗口函数</h2>
-<p>在移动窗口（可以带有指数衰减权数）上计算的各种统计函数也是一类常见于时间序列的数组变换。这样可以圆滑噪音数据或断裂数据。我将它们称为移动窗口函数（moving window function），其中还包括那些窗口不定长的函数（如指数加权移动平均）。跟其他统计函数一样，移动窗口函数也会自动排除缺失值。</p>
+</div><h2 id="117-移动窗口函数" class="heading-element">
+  <a href="#117-%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3%e5%87%bd%e6%95%b0" class="heading-mark"></a>11.7 移动窗口函数</h2><p>在移动窗口（可以带有指数衰减权数）上计算的各种统计函数也是一类常见于时间序列的数组变换。这样可以圆滑噪音数据或断裂数据。我将它们称为移动窗口函数（moving window function），其中还包括那些窗口不定长的函数（如指数加权移动平均）。跟其他统计函数一样，移动窗口函数也会自动排除缺失值。</p>
 <p>开始之前，我们加载一些时间序列数据，将其重采样为工作日频率：</p>
 <div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3248,7 +3243,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">239</span><span class="p">]:</span> <span class="n">close_px</span><span class="o">.</span><span class="n">AAPL</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=large 2x" sizes="auto" data-title="图11-4 苹果公司股价的250日均线" data-alt="图11-4 苹果公司股价的250日均线" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png" alt="图11-4 苹果公司股价的250日均线" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122133037.png?size=large 2x" sizes="auto" data-title="图11-4 苹果公司股价的250日均线" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>表达式rolling(250)与groupby很像，但不是对其进行分组，而是创建一个按照250天分组的滑动窗口对象。然后，我们就得到了苹果公司股价的250天的移动窗口。</p>
 <p>默认情况下，rolling函数需要窗口中所有的值为非NA值。可以修改该行为以解决缺失数据的问题。其实，在时间序列开始处尚不足窗口期的那些数据就是个特例（见图11-5）：</p>
 <div class="highlight" id="id-101"><div class="chroma">
@@ -3284,7 +3279,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">243</span><span class="p">]:</span> <span class="n">appl_std250</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=large 2x" sizes="auto" data-title="图11-5 苹果公司250日每日回报标准差" data-alt="图11-5 苹果公司250日每日回报标准差" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png" alt="图11-5 苹果公司250日每日回报标准差" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122145664.png?size=large 2x" sizes="auto" data-title="图11-5 苹果公司250日每日回报标准差" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>要计算扩展窗口平均（expanding window mean），可以使用expanding而不是rolling。“扩展”意味着，从时间序列的起始处开始窗口，增加窗口直到它超过所有的序列。apple_std250时间序列的扩展窗口平均如下所示：</p>
 <div class="highlight" id="id-102"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3301,7 +3296,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">246</span><span class="p">]:</span> <span class="n">close_px</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">logy</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=large 2x" sizes="auto" data-title="图11-6 各股价60日均线（对数Y轴）" data-alt="图11-6 各股价60日均线（对数Y轴）" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png" alt="图11-6 各股价60日均线（对数Y轴）" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122152236.png?size=large 2x" sizes="auto" data-title="图11-6 各股价60日均线（对数Y轴）" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>rolling函数也可以接受一个指定固定大小时间补偿字符串，而不是一组时期。这样可以方便处理不规律的时间序列。这些字符串也可以传递给resample。例如，我们可以计算20天的滚动均值，如下所示：</p>
 <div class="highlight" id="id-104"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3358,8 +3353,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2011</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">14</span>  <span class="mf">391.038000</span>  <span class="mf">26.048667</span>  <span class="mf">74.185333</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">2292</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1171-指数加权函数">11.7.1 指数加权函数</h3>
-<p>另一种使用固定大小窗口及相等权数观测值的办法是，定义一个衰减因子（decay factor）常量，以便使近期的观测值拥有更大的权数。衰减因子的定义方式有很多，比较流行的是使用时间间隔（span），它可以使结果兼容于窗口大小等于时间间隔的简单移动窗口（simple moving window）函数。</p>
+</div><h3 id="1171-指数加权函数" class="heading-element">
+  <a href="#1171-%e6%8c%87%e6%95%b0%e5%8a%a0%e6%9d%83%e5%87%bd%e6%95%b0" class="heading-mark"></a>11.7.1 指数加权函数</h3><p>另一种使用固定大小窗口及相等权数观测值的办法是，定义一个衰减因子（decay factor）常量，以便使近期的观测值拥有更大的权数。衰减因子的定义方式有很多，比较流行的是使用时间间隔（span），它可以使结果兼容于窗口大小等于时间间隔的简单移动窗口（simple moving window）函数。</p>
 <p>由于指数加权统计会赋予近期的观测值更大的权数，因此相对于等权统计，它能“适应”更快的变化。</p>
 <p>除了rolling和expanding，pandas还有ewm运算符。下面这个例子对比了苹果公司股价的30日移动平均和span=30的指数加权移动平均（如图11-7所示）：</p>
 <div class="highlight" id="id-105"><div class="chroma">
@@ -3393,9 +3388,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">254</span><span class="p">]:</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=large 2x" sizes="auto" data-title="图11-7 简单移动平均与指数加权移动平均" data-alt="图11-7 简单移动平均与指数加权移动平均" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1172-二元移动窗口函数">11.7.2 二元移动窗口函数</h3>
-<p>有些统计运算（如相关系数和协方差）需要在两个时间序列上执行。例如，金融分析师常常对某只股票对某个参考指数（如标准普尔500指数）的相关系数感兴趣。要进行说明，我们先计算我们感兴趣的时间序列的百分数变化：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png" alt="图11-7 简单移动平均与指数加权移动平均" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031122226190.png?size=large 2x" sizes="auto" data-title="图11-7 简单移动平均与指数加权移动平均" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1172-二元移动窗口函数" class="heading-element">
+  <a href="#1172-%e4%ba%8c%e5%85%83%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3%e5%87%bd%e6%95%b0" class="heading-mark"></a>11.7.2 二元移动窗口函数</h3><p>有些统计运算（如相关系数和协方差）需要在两个时间序列上执行。例如，金融分析师常常对某只股票对某个参考指数（如标准普尔500指数）的相关系数感兴趣。要进行说明，我们先计算我们感兴趣的时间序列的百分数变化：</p>
 <div class="highlight" id="id-106"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3423,7 +3418,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">260</span><span class="p">]:</span> <span class="n">corr</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=large 2x" sizes="auto" data-title="图11-8 AAPL 6个月的回报与标准普尔500指数的相关系数" data-alt="图11-8 AAPL 6个月的回报与标准普尔500指数的相关系数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png" alt="图11-8 AAPL 6个月的回报与标准普尔500指数的相关系数" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131637209.png?size=large 2x" sizes="auto" data-title="图11-8 AAPL 6个月的回报与标准普尔500指数的相关系数" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>假设你想要一次性计算多只股票与标准普尔500指数的相关系数。虽然编写一个循环并新建一个DataFrame不是什么难事，但比较啰嗦。其实，只需传入一个TimeSeries和一个DataFrame，rolling_corr就会自动计算TimeSeries（本例中就是spx_rets）与DataFrame各列的相关系数。结果如图11-9所示：</p>
 <div class="highlight" id="id-108"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3436,9 +3431,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">263</span><span class="p">]:</span> <span class="n">corr</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=large 2x" sizes="auto" data-title="图11-9 3只股票6个月的回报与标准普尔500指数的相关系数" data-alt="图11-9 3只股票6个月的回报与标准普尔500指数的相关系数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1173-用户定义的移动窗口函数">11.7.3 用户定义的移动窗口函数</h3>
-<p>rolling_apply函数使你能够在移动窗口上应用自己设计的数组函数。唯一要求的就是：该函数要能从数组的各个片段中产生单个值（即约简）。比如说，当我们用rolling(&hellip;).quantile(q)计算样本分位数时，可能对样本中特定值的百分等级感兴趣。scipy.stats.percentileofscore函数就能达到这个目的（结果见图11-10）：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png" alt="图11-9 3只股票6个月的回报与标准普尔500指数的相关系数" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131651174.png?size=large 2x" sizes="auto" data-title="图11-9 3只股票6个月的回报与标准普尔500指数的相关系数" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1173-用户定义的移动窗口函数" class="heading-element">
+  <a href="#1173-%e7%94%a8%e6%88%b7%e5%ae%9a%e4%b9%89%e7%9a%84%e7%a7%bb%e5%8a%a8%e7%aa%97%e5%8f%a3%e5%87%bd%e6%95%b0" class="heading-mark"></a>11.7.3 用户定义的移动窗口函数</h3><p>rolling_apply函数使你能够在移动窗口上应用自己设计的数组函数。唯一要求的就是：该函数要能从数组的各个片段中产生单个值（即约简）。比如说，当我们用rolling(&hellip;).quantile(q)计算样本分位数时，可能对样本中特定值的百分等级感兴趣。scipy.stats.percentileofscore函数就能达到这个目的（结果见图11-10）：</p>
 <div class="highlight" id="id-109"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3458,10 +3453,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">268</span><span class="p">]:</span> <span class="n">result</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=large 2x" sizes="auto" data-title="图11-10 AAPL 2%回报率的百分等级（一年窗口期）" data-alt="图11-10 AAPL 2%回报率的百分等级（一年窗口期）" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png" alt="图11-10 AAPL 2%回报率的百分等级（一年窗口期）" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031131723334.png?size=large 2x" sizes="auto" data-title="图11-10 AAPL 2%回报率的百分等级（一年窗口期）" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>如果你没安装SciPy，可以使用conda或pip安装。</p>
-<h2 id="118-总结">11.8 总结</h2>
-<p>与前面章节接触的数据相比，时间序列数据要求不同类型的分析和数据转换工具。</p>
+<h2 id="118-总结" class="heading-element">
+  <a href="#118-%e6%80%bb%e7%bb%93" class="heading-mark"></a>11.8 总结</h2><p>与前面章节接触的数据相比，时间序列数据要求不同类型的分析和数据转换工具。</p>
 <p>在接下来的章节中，我们将学习一些高级的pandas方法和如何开始使用<code>建模库statsmodels和scikit-learn</code>。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -3469,33 +3464,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" data-title="第十一章 时间序列" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" data-title="第十一章 时间序列" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" class="post-nav-item" rel="prev" title="第十章 数据聚合与分组运算"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第十章 数据聚合与分组运算</a>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-nav-item" rel="prev" title="第十一章 正则表达式"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第十一章 正则表达式</a>
       <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="post-nav-item" rel="next" title="第十四章 数据分析案例">第十四章 数据分析案例<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

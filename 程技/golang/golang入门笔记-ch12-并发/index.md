@@ -25,8 +25,8 @@
 
 多线程和多进程是并行的基本条件，但单线程也可用协程（`coroutine`）做到并发。虽然单线程只能通过主动切换来实现并发，但也有优点，可以避免由于切换线程导致的资源消耗。协程上运行多个任务本质上是串行的，且可控，无需做同步处理。
 
-> 采用多进程也不一定能并行，`Python` 由于 `GIL` 的限制，默认只能并发而不能并行，转而使用“ **多进程 + 协程** ”来实现并行。
->
+&gt; 采用多进程也不一定能并行，`Python` 由于 `GIL` 的限制，默认只能并发而不能并行，转而使用“ **多进程 &#43; 协程** ”来实现并行。
+&gt;
 
 多进程、多线程和协程各有利弊，一般用多进程来实现分布式和负载均衡，减轻单进程垃圾回收压力；用多线程抢夺更多的处理器资源；用协程来提高处理器时间片利用率。
 
@@ -36,8 +36,8 @@
 
 在 Go 语言中使用 `goroutine`  很简单，只要在调用函数前加一个 `go` 关键字即可。
 
-> 一个 `goroutine` 必须对应一个函数，可以创建多个 `goroutine` 去执行相同函数。
->
+&gt; 一个 `goroutine` 必须对应一个函数，可以创建多个 `goroutine` 去执行相同函数。
+&gt;
 
 ### 启动单个 goroutine
 
@@ -46,15 +46,15 @@
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func hello() {
-    fmt.Println("hello goroutine!")
+    fmt.Println(&#34;hello goroutine!&#34;)
 }
 
 func main() {
     go hello()
-    fmt.Println("main goroutine done!")
+    fmt.Println(&#34;main goroutine done!&#34;)
 }
 ```
 
@@ -72,25 +72,25 @@ main goroutine done!
 package main
 
 import (
-    "fmt"
-    "time"
+    &#34;fmt&#34;
+    &#34;time&#34;
 )
 
 func hello() {
-    fmt.Println("hello goroutine!")
+    fmt.Println(&#34;hello goroutine!&#34;)
 }
 
 func main() {
     go hello()
-    fmt.Println("main goroutine done!")
+    fmt.Println(&#34;main goroutine done!&#34;)
     time.Sleep(time.Second)
 }
 ```
 
 上述代码运行结果为：
 
-> 创建新的 `goroutine` 需要一定时间，而此时 `main` 函数中的 `goroutine` 是继续执行的。
->
+&gt; 创建新的 `goroutine` 需要一定时间，而此时 `main` 函数中的 `goroutine` 是继续执行的。
+&gt;
 
 ```shell
 main goroutine done!
@@ -101,20 +101,20 @@ hello goroutine!
 
 启动多个 `goroutine` 只需使用多个 `go` 关键字：
 
-> 使用 `sync.WaitGroup` 来实现 `goroutine` 的同步
->
+&gt; 使用 `sync.WaitGroup` 来实现 `goroutine` 的同步
+&gt;
 
 ```go
 var wg sync.WaitGroup
 
 func hello(i int) {
     defer wg.Done() // goroutine 结束就登记 -1
-    fmt.Println("Hello Goroutine!", i)
+    fmt.Println(&#34;Hello Goroutine!&#34;, i)
 }
 
 func main() {
-    for i := 0; i < 10; i++ {
-        wg.Add(1) // 启动一个 goroutine 就登记 +1
+    for i := 0; i &lt; 10; i&#43;&#43; {
+        wg.Add(1) // 启动一个 goroutine 就登记 &#43;1
         go hello(i)
     }
     wg.Wait() // 等待所有登记的 goroutine 都结束
@@ -163,21 +163,21 @@ P 的个数是通过 `runtime.GOMAXPROCS` 设定（最大 256），Go1.5 版本�
 
 可以通过 `runtime.GOMAXPROCS()` 函数设置当前程序并发时占用的 CPU 逻辑核心数。
 
-> Go1.5 版本之前，默认使用的是单核心执行。Go1.5 版本之后，默认使用全部的 CPU 逻辑核心数。
->
+&gt; Go1.5 版本之前，默认使用的是单核心执行。Go1.5 版本之后，默认使用全部的 CPU 逻辑核心数。
+&gt;
 
 我们可以通过将任务分配到不同的 CPU 逻辑核心上实现并行的效果，例如：
 
 ```go
 func a() {
-    for i := 1; i < 10; i++ {
-        fmt.Println("A:", i)
+    for i := 1; i &lt; 10; i&#43;&#43; {
+        fmt.Println(&#34;A:&#34;, i)
     }
 }
 
 func b() {
-    for i := 1; i < 10; i++ {
-        fmt.Println("B:", i)
+    for i := 1; i &lt; 10; i&#43;&#43; {
+        fmt.Println(&#34;B:&#34;, i)
     }
 }
 
@@ -193,14 +193,14 @@ func main() {
 
 ```go
 func a() {
-    for i := 1; i < 10; i++ {
-        fmt.Println("A:", i)
+    for i := 1; i &lt; 10; i&#43;&#43; {
+        fmt.Println(&#34;A:&#34;, i)
     }
 }
 
 func b() {
-    for i := 1; i < 10; i++ {
-        fmt.Println("B:", i)
+    for i := 1; i &lt; 10; i&#43;&#43; {
+        fmt.Println(&#34;B:&#34;, i)
     }
 }
 
@@ -250,13 +250,13 @@ var ch3 chan []int // 声明一个传递 int 切片的通道
 
 ```go
 var ch chan int
-fmt.Println(ch) // <nil>
+fmt.Println(ch) // &lt;nil&gt;
 ```
 
 声明的通道需要使用 `make` 函数初始化后才能使用，格式如下：
 
-> 缓冲区大小是可选的。
->
+&gt; 缓冲区大小是可选的。
+&gt;
 
 ```go
 make(chan 元素类型, [缓冲大小])
@@ -274,7 +274,7 @@ ch3 := make(chan []int)
 
 通道有发送（send），接收（receive）和关闭（close）三种操作。
 
-发送和接收都使用 `<-` 符号。
+发送和接收都使用 `&lt;-` 符号。
 
 先定义一个通道：
 
@@ -287,7 +287,7 @@ ch := make(chan int)
 将一个值发送到通道：
 
 ```go
-ch <- 10 // 把 10 发送到 ch 中
+ch &lt;- 10 // 把 10 发送到 ch 中
 ```
 
 #### 接收
@@ -295,8 +295,8 @@ ch <- 10 // 把 10 发送到 ch 中
 从通道中接收值：
 
 ```go
-x := <- ch // 从 ch 中接收值，并赋值给 x
-<- ch      // 从 ch 接收值，忽略结果
+x := &lt;- ch // 从 ch 中接收值，并赋值给 x
+&lt;- ch      // 从 ch 接收值，忽略结果
 ```
 
 #### 关闭
@@ -307,8 +307,8 @@ x := <- ch // 从 ch 中接收值，并赋值给 x
 close(ch)
 ```
 
-> 只有在通知接收方 `goroutine` 所有数据都发送完毕时才需要关闭通道，因为通道可被垃圾回收器回收，这与关闭文件不同，在结束操作之后必须关闭文件，但关闭通道非必须。
->
+&gt; 只有在通知接收方 `goroutine` 所有数据都发送完毕时才需要关闭通道，因为通道可被垃圾回收器回收，这与关闭文件不同，在结束操作之后必须关闭文件，但关闭通道非必须。
+&gt;
 
 ***注意***：
 
@@ -324,8 +324,8 @@ close(ch)
 ```go
 func main() {
     ch := make(chan int)
-    ch <- 10
-    fmt.Println("发送成功")
+    ch &lt;- 10
+    fmt.Println(&#34;发送成功&#34;)
 }
 ```
 
@@ -336,7 +336,7 @@ fatal error: all goroutines are asleep - deadlock!
 
 goroutine 1 [chan send]:
 main.main()
-	D:/projects/go_projects/goBasic/routine/single_goroutine.go:9 +0x5f
+	D:/projects/go_projects/goBasic/routine/single_goroutine.go:9 &#43;0x5f
 
 Process finished with exit code 2
 ```
@@ -349,15 +349,15 @@ Process finished with exit code 2
 
 ```go
 func recv(c chan int) {
-    ret := <-c
-    fmt.Println("接收成功", ret)
+    ret := &lt;-c
+    fmt.Println(&#34;接收成功&#34;, ret)
 }
 
 func main() {
     ch := make(chan int)
     go recv(ch) // 启用 goroutine 从通道接收值
-    ch <- 10
-    fmt.Println("发送成功")
+    ch &lt;- 10
+    fmt.Println(&#34;发送成功&#34;)
 }
 ```
 
@@ -372,15 +372,15 @@ func main() {
 ```go
 func main() {
     ch := make(chan int, 1) // 创建一个容量为1的有缓冲区通道
-    ch <- 10
-    fmt.Println("发送成功")
+    ch &lt;- 10
+    fmt.Println(&#34;发送成功&#34;)
 }
 ```
 
 只要通道的容量 **大于 0**，那么该通道就是有缓冲的通道，通道容量表示通道能存放元素的数量。
 
-> 我们可以通过 `len` 函数获取通道内元素数量，通过 `cap()` 函数获取通道的容量。
->
+&gt; 我们可以通过 `len` 函数获取通道内元素数量，通过 `cap()` 函数获取通道的容量。
+&gt;
 
 ### for range 从通道循环取值
 
@@ -392,7 +392,7 @@ func main() {
 package main
 
 import (
-    "fmt"
+    &#34;fmt&#34;
 )
 
 // channel 练习
@@ -401,19 +401,19 @@ func main() {
     ch2 := make(chan int)
     // 开启 goroutine 将 1~10 的数发送到 ch1 中
     go func() {
-        for i := 1; i <= 10; i++ {
-            ch1 <- i
+        for i := 1; i &lt;= 10; i&#43;&#43; {
+            ch1 &lt;- i
         }
         close(ch1)
     }()
     // 开启 goroutine 从 ch1 中接收值，并将该值的平方发送到 ch2 中
     go func() {
         for {
-	    i, ok := <-ch1 // 通道关闭后再取值 ok=false
+	    i, ok := &lt;-ch1 // 通道关闭后再取值 ok=false
 	    if !ok {
 	        break
 	    }
-	    ch2 <- i * i
+	    ch2 &lt;- i * i
         }
         close(ch2)
     }()
@@ -429,21 +429,21 @@ func main() {
 有时我们会将通道作为参数在函数之间传递，而我们需要对通道进行限制，比如限制通道只能发送或者只能接收。Go 语言中可以通过 **单向通道** 来解决该问题，例如：
 
 ```go
-func counter(out chan<- int) {
-    for i := 1; i <= 10; i++ {
-        out <- i
+func counter(out chan&lt;- int) {
+    for i := 1; i &lt;= 10; i&#43;&#43; {
+        out &lt;- i
     }
     close(out)
 }
 
-func squarer(out chan<- int, in <-chan int) {
+func squarer(out chan&lt;- int, in &lt;-chan int) {
     for i := range in {
-        out <- i * i
+        out &lt;- i * i
     }
     close(out)
 }
 
-func printer(in <-chan int) {
+func printer(in &lt;-chan int) {
     for i := range in {
         fmt.Println(i)
     }
@@ -460,8 +460,8 @@ func main() {
 
 ***注意***
 
-* `chan<- int` 是一个 **只写单向通道** （只能对其写入 `int` 类型值），可对其执行发送操作但是不能执行接收操作；
-* `<-chan int` 是一个 **只读单向通道** （只能从其读取 `int` 类型值），可对其执行接收操作但是不能执行发送操作。
+* `chan&lt;- int` 是一个 **只写单向通道** （只能对其写入 `int` 类型值），可对其执行发送操作但是不能执行接收操作；
+* `&lt;-chan int` 是一个 **只读单向通道** （只能从其读取 `int` 类型值），可对其执行接收操作但是不能执行发送操作。
 * 在函数传参及任何赋值操作中可以将 **双向通道** 转换为 **单向通道** ，反之则不行。
 
 ## 并发安全和锁
@@ -475,8 +475,8 @@ var x int64
 var wg sync.WaitGroup
 
 func add() {
-    for i := 0; i < 5000; i++ {
-        x = x + 1
+    for i := 0; i &lt; 5000; i&#43;&#43; {
+        x = x &#43; 1
     }
     wg.Done()
 }
@@ -502,9 +502,9 @@ var wg sync.WaitGroup
 var lock sync.Mutex
 
 func add() {
-    for i := 0; i < 5000; i++ {
+    for i := 0; i &lt; 5000; i&#43;&#43; {
         lock.Lock() // 加锁
-        x = x + 1
+        x = x &#43; 1
         lock.Unlock() // 解锁
     }
     wg.Done()
@@ -534,7 +534,7 @@ var (
 func write() {go
     // lock.Lock() // 加互斥锁
     rwlock.Lock() // 加写锁
-    x = x + 1
+    x = x &#43; 1
     time.Sleep(10 * time.Millisecond) // 假设读操作耗时10毫秒
     rwlock.Unlock()                   // 解写锁
     // lock.Unlock()                  // 解互斥锁
@@ -553,12 +553,12 @@ func read() {
 func main() {
     start := time.Now()
 
-    for i := 0; i < 10; i++ {
+    for i := 0; i &lt; 10; i&#43;&#43; {
         wg.Add(1)  
         go write()
     }
 
-    for i := 0; i < 1000; i++ {
+    for i := 0; i &lt; 1000; i&#43;&#43; {
         wg.Add(1)
         go read()
     }
@@ -575,7 +575,7 @@ Go 语言中可以使用 `sync.WaitGroup` 来实现并发任务的同步，它�
 
 | 方法名                         | 功能                        |
 | --------------------------------- | ----------------------------- |
-| `(wg * WaitGroup) Add(delta int)` | 计数器 + delta             |
+| `(wg * WaitGroup) Add(delta int)` | 计数器 &#43; delta             |
 | `(wg *WaitGroup) Done()`          | 计数器 - 1                 |
 | `(wg *WaitGroup) Wait()`          | 阻塞直到计数器变为 0 |
 
@@ -601,10 +601,10 @@ var loadIconsOnce sync.Once
 // 对 icons 变量进行初始化
 func loadIcons() {
     icons = map[string]image.Image{
-        "left":  loadIcon("left.png"),
-        "up":    loadIcon("up.png"),
-        "right": loadIcon("right.png"),
-        "down":  loadIcon("down.png"),
+        &#34;left&#34;:  loadIcon(&#34;left.png&#34;),
+        &#34;up&#34;:    loadIcon(&#34;up.png&#34;),
+        &#34;right&#34;: loadIcon(&#34;right.png&#34;),
+        &#34;down&#34;:  loadIcon(&#34;down.png&#34;),
     }
 }
 
@@ -624,13 +624,13 @@ var m = sync.Map{}
 
 func main() {
     wg := sync.WaitGroup{}
-    for i := 0; i < 20; i++ {
+    for i := 0; i &lt; 20; i&#43;&#43; {
         wg.Add(1)
         go func(n int) {
             key := strconv.Itoa(n)
             m.Store(key, n)
             value, _ := m.Load(key)
-            fmt.Printf("k=:%v,v:=%v\n", key, value)
+            fmt.Printf(&#34;k=:%v,v:=%v\n&#34;, key, value)
             wg.Done()
         }(i)
     }
@@ -641,6 +641,6 @@ func main() {
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/  
 

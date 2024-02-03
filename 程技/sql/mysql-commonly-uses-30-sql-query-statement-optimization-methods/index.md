@@ -35,7 +35,7 @@ SELECT column1, column2 FROM table_name;
 使用EXPLAIN命令可以分析查询的执行计划，帮助优化查询语句，查找潜在的性能问题。
 
 ```SQL
-EXPLAIN SELECT * FROM table_name WHERE column_name = 'value';  
+EXPLAIN SELECT * FROM table_name WHERE column_name = &#39;value&#39;;  
 ```
 
 ## 第二部分：优化查询条件
@@ -51,7 +51,7 @@ SELECT * FROM table_name;
 
 -- 推荐  
 
-SELECT * FROM table_name WHERE column_name = 'value';  
+SELECT * FROM table_name WHERE column_name = &#39;value&#39;;  
 ```
 
 ### 5.使用索引覆盖查询
@@ -65,7 +65,7 @@ CREATE INDEX idx_column ON table_name(column_name);
 
 -- 索引覆盖查询  
 
-SELECT column1, column2 FROM table_name WHERE column_name = 'value';  
+SELECT column1, column2 FROM table_name WHERE column_name = &#39;value&#39;;  
 ```
 
 ### 6.避免在WHERE子句中使用函数
@@ -75,11 +75,11 @@ SELECT column1, column2 FROM table_name WHERE column_name = 'value';
 ```SQL
 -- 不推荐 
 
-SELECT * FROM table_name WHERE DATE_FORMAT(date_column, '%Y-%m-%d') = '2023-01-01';    
+SELECT * FROM table_name WHERE DATE_FORMAT(date_column, &#39;%Y-%m-%d&#39;) = &#39;2023-01-01&#39;;    
 
 -- 推荐  
 
-SELECT * FROM table_name WHERE date_column = '2023-01-01';  
+SELECT * FROM table_name WHERE date_column = &#39;2023-01-01&#39;;  
 ```
 
 ### 7.使用合适的数据类型
@@ -119,11 +119,11 @@ SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;
 ```SQL
 -- 不推荐  
 
-SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id WHERE table2.name = 'value';    
+SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id WHERE table2.name = &#39;value&#39;;    
 
 -- 推荐 
 
-SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id AND table2.name = 'value';  
+SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id AND table2.name = &#39;value&#39;;  
 ```
 
 ### 10.使用合适的连接类型
@@ -257,11 +257,11 @@ SELECT * FROM table_name ORDER BY column_name DESC;
 ```SQL
 -- 不推荐
 
-SELECT * FROM table_name WHERE column_name LIKE '%value';
+SELECT * FROM table_name WHERE column_name LIKE &#39;%value&#39;;
 
 -- 推荐
 
-SELECT * FROM table_name WHERE column_name LIKE 'value%';  
+SELECT * FROM table_name WHERE column_name LIKE &#39;value%&#39;;  
 ```
 
 ### 19.使用前缀索引
@@ -276,7 +276,7 @@ CREATE INDEX idx_column ON table_name(column_name(10));
 
 -- 使用前缀索引
 
-SELECT * FROM table_name WHERE column_name LIKE 'value%';  
+SELECT * FROM table_name WHERE column_name LIKE &#39;value%&#39;;  
 ```
 
 ## 第八部分：联合查询优化
@@ -392,6 +392,6 @@ CREATE TABLE table_name (id INT, name VARCHAR(100));
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/  
 

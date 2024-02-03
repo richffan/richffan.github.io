@@ -2,7 +2,7 @@
 
 ## hexo butterfly 魔改
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ### npm 淘宝镜像源
@@ -29,7 +29,7 @@ npm config set registry https://registry.npmjs.org/
 }
 
 div#menus {
-  font-family: "ZhuZiAYuanJWD";
+  font-family: &#34;ZhuZiAYuanJWD&#34;;
 }
 h1#site-title {
   font-family: ZhuZiAYuanJWD;
@@ -43,7 +43,7 @@ h1.post-title {
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: &#34;iconfont&#34; !important;
   font-size: 3em;
   /* 可以定义图标大小 */
   font-style: normal;
@@ -104,7 +104,7 @@ svg.icon.faa-tada {
 }
 
 /* 解决artitalk的图标问题 */
-#uploadSource > svg {
+#uploadSource &gt; svg {
   width: 1.19em;
   height: 1.5em;
 }
@@ -115,7 +115,7 @@ svg.icon.faa-tada {
 }
 
 /* 首页文章卡片 */
-#recent-posts > .recent-post-item {
+#recent-posts &gt; .recent-post-item {
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -150,35 +150,35 @@ div#category {
 }
 
 /*夜间模式伪类遮罩层透明*/
-[data-theme="dark"] #recent-posts > .recent-post-item {
+[data-theme=&#34;dark&#34;] #recent-posts &gt; .recent-post-item {
   background: #121212;
 }
 
-[data-theme="dark"] .card-widget {
+[data-theme=&#34;dark&#34;] .card-widget {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#post {
+[data-theme=&#34;dark&#34;] div#post {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#tag {
+[data-theme=&#34;dark&#34;] div#tag {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#archive {
+[data-theme=&#34;dark&#34;] div#archive {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#page {
+[data-theme=&#34;dark&#34;] div#page {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#category {
+[data-theme=&#34;dark&#34;] div#category {
   background: #121212 !important;
 }
 
-[data-theme="dark"] div#category {
+[data-theme=&#34;dark&#34;] div#category {
   background: transparent !important;
 }
 /* 页脚透明 */
@@ -191,7 +191,7 @@ div#category {
   background: transparent !important;
 }
 
-#rightside > div > button {
+#rightside &gt; div &gt; button {
   border-radius: 5px;
 }
 
@@ -308,7 +308,7 @@ div#category {
   padding: 0.5rem;
   text-align: center;
   font-size: 14px;
-  font-family: Titillium Web, "PingFang SC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  font-family: Titillium Web, &#34;PingFang SC&#34;, &#34;Hiragino Sans GB&#34;, &#34;Microsoft JhengHei&#34;, &#34;Microsoft YaHei&#34;, sans-serif;
 }
 #error-wrap .error-content .error-info .error_title {
   margin-top: -4rem;
@@ -391,6 +391,6 @@ div#category {
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/blog/butterfly/  
 

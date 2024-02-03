@@ -5,7 +5,7 @@
 
 容器的实质是进程，但与直接在宿主执行的进程不同，容器进程运行于属于自己的独立的 命名空间。因此容器可以拥有自己的 root 文件系统、自己的网络配置、自己的进程空间，甚至自己的用户 ID 空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样。这种特性使得容器封装的应用比直接在宿主运行更加安全。
 
-<!--more-->
+&lt;!--more--&gt;
 
 ### 命令
 ```bash
@@ -18,7 +18,7 @@ $ docker run --name=webserver -d -v /home/faker/myspace/nginx:/usr/share/nginx/h
 
 ## 查看容器的输出信息（打印信息，如 echo）
 ## run的时候，使用-d将会不展示在宿主机上，可通过下面命令查看打印信息
-$ docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+$ docker run -d ubuntu:14.04 /bin/sh -c &#34;while true; do echo hello world; sleep 1; done&#34;
 $ docker logs [container ID or NAMES]
 
 ## 启动容器 myubuntu
@@ -37,7 +37,7 @@ $ docker attach [name]
 $ docker exec -it [name] /bin/bash
 
 ## 导出容器快照到本地文件
-$ docker export [container id] > ubuntu.tar
+$ docker export [container id] &gt; ubuntu.tar
 
 ## 将容器快照导入为镜像
 $ cat ubuntu.tar | docker import - test/ubuntu:v1.0
@@ -58,6 +58,6 @@ $ docker stats $(docker ps --format={{.Names}})
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%AE%B9%E5%99%A8/  
 

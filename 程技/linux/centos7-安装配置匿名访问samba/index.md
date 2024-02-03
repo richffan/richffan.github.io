@@ -2,11 +2,11 @@
 
 
 ### 介绍
->**Samba**，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件   --wikipedia
+&gt;**Samba**，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件   --wikipedia
 
 本文就以 CentOS7 搭建 Samba 匿名完全访问（读/写）为目标，实现一个局域网内的文件共享平台。
 
-<!--more-->
+&lt;!--more--&gt;
 
 ### 1.安装Samba服务
 使用 yum 工具进行安装
@@ -45,7 +45,7 @@ Samba Server的验证方式有四种：
 * server：依靠其他Windows Server或Samba Server来验证用户的账号和密码,是一种代理验证。此种安全模式下,系统管理员可以把所有的Windows用户和口令集中到一个Server系统上,使用 Windows Server进行Samba认证, 远程服务器可以自动认证全部用户和口令,如果认证失败,Samba将使用用户级安全模式作为替代的方式。
 * domain：域安全级别,使用主域控制器(PDC)来完成认证。
 
->创建一个匿名共享访问，需要使用share模式，但在CentOS安装的samba4中share 和 server验证方式已被弃用
+&gt;创建一个匿名共享访问，需要使用share模式，但在CentOS安装的samba4中share 和 server验证方式已被弃用
 
 配置如下：
 ```xml
@@ -89,7 +89,7 @@ $ pgrep smbd
 ```bash
 $ testparm
 Load smb config files from /etc/samba/smb.conf
-Processing section "[share]"
+Processing section &#34;[share]&#34;
 Loaded services file OK.
 Server role: ROLE_STANDALONE
 
@@ -143,6 +143,6 @@ $ chown nobody:nobody
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/  
 

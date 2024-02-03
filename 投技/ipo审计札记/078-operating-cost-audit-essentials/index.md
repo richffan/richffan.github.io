@@ -6,7 +6,7 @@
 
 纵横交错，三三得九，看趋势，看比率，其实这些都是表象，都是一种引导我们摸到真相的思考工具
 
-相较成本管控、公司战略、市场环境、经济形势，我们更关心真实+完整，外加能应对监管的解释
+相较成本管控、公司战略、市场环境、经济形势，我们更关心真实&#43;完整，外加能应对监管的解释
 
 ![](https://img.richfan.site/ibank/IPO审计札记/078-营业成本审计要点_1.webp) 
 
@@ -36,6 +36,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/078-operating-cost-audit-essentials/  
 

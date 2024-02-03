@@ -25,7 +25,7 @@
 
 #### Anaconda
 
-> 开源的 Python 包管理器，其包含了 conda、Python 等 180 多个科学包及其依赖项
+&gt; 开源的 Python 包管理器，其包含了 conda、Python 等 180 多个科学包及其依赖项
 
 * [Anaconda 入门指南](Python/Anaconda/Anaconda入门指南.md)
 
@@ -55,6 +55,6 @@ Python 上最流行的机器学习/数据科学工具包。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/readme/  
 

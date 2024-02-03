@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Golang入门笔记-CH06-Map - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH06-Map">
-<meta itemprop="description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
+    <title>Golang入门笔记-CH06-Map - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="声明和初始化 Mapmap 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用类" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH06-Map">
+<meta itemprop="description" content="声明和初始化 Mapmap 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用类"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1240"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="1243"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH06-Map" />
-<meta property="og:description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用" />
+<meta property="og:description" content="声明和初始化 Mapmap 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用类" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
@@ -20,7 +20,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Golang入门笔记-CH06-Map"/>
-<meta name="twitter:description" content="声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用"/>
+<meta name="twitter:description" content="声明和初始化 Mapmap 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用类"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map\/"
-    },"genre": "posts","keywords": "Golang","wordcount":  1240 ,
+    },"genre": "posts","keywords": "Golang","wordcount":  1243 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/golang/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Golang</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH06-Map</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH06-Map</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1240 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH06-Map">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1243 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH06-Map">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH06-Map">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -198,8 +193,8 @@
     <li><a href="#map-类型的切片">Map 类型的切片</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="声明和初始化-map">声明和初始化 Map</h2>
-<p><code>map</code> 是一种特殊的数据结构，通过键 <code>key</code> 和值 <code>value</code> 来保存数据，可以快速地根据 <code>key</code> 找到其对应的 <code>value</code>，与 <code>python</code> 中的字典和 <code>Java</code> 中的 <code>HashMap</code> 类似。</p>
+      </div><div class="content" id="content"><h2 id="声明和初始化-map" class="heading-element">
+  <a href="#%e5%a3%b0%e6%98%8e%e5%92%8c%e5%88%9d%e5%a7%8b%e5%8c%96-map" class="heading-mark"></a>声明和初始化 Map</h2><p><code>map</code> 是一种特殊的数据结构，通过键 <code>key</code> 和值 <code>value</code> 来保存数据，可以快速地根据 <code>key</code> 找到其对应的 <code>value</code>，与 <code>python</code> 中的字典和 <code>Java</code> 中的 <code>HashMap</code> 类似。</p>
 <p><code>map</code> 是<strong>引用类型</strong>，声明方式如下：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -306,8 +301,8 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">map1</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="nx">keyType</span><span class="p">]</span><span class="nx">valueType</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>mapCreated := make(map[string]float)</code> 相当于：<code>mapCreated := map[string]float{}</code>。</p>
-<h2 id="map-容量">Map 容量</h2>
-<p><code>map</code> 会动态扩容，因此它不存在长度限制。但也可以在初始化 <code>map</code> 时指定它的初始容量，格式如下：</p>
+<h2 id="map-容量" class="heading-element">
+  <a href="#map-%e5%ae%b9%e9%87%8f" class="heading-mark"></a>Map 容量</h2><p><code>map</code> 会动态扩容，因此它不存在长度限制。但也可以在初始化 <code>map</code> 时指定它的初始容量，格式如下：</p>
 <div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -317,8 +312,8 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当 <code>map</code> 增长到最大容量时，容量会自动加 1。但对于性能要求较高的场景，若 <code>map</code> 中保存的数据较多或易快速扩张，建议在初始化时指定其初始容量。</p>
-<h2 id="判断键值对是否存在">判断键值对是否存在</h2>
-<p>我们可以通过如下的格式来判断 <code>map</code> 中的 <code>key</code> 是否存在：</p>
+<h2 id="判断键值对是否存在" class="heading-element">
+  <a href="#%e5%88%a4%e6%96%ad%e9%94%ae%e5%80%bc%e5%af%b9%e6%98%af%e5%90%a6%e5%ad%98%e5%9c%a8" class="heading-mark"></a>判断键值对是否存在</h2><p>我们可以通过如下的格式来判断 <code>map</code> 中的 <code>key</code> 是否存在：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -347,8 +342,8 @@
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="删除元素">删除元素</h2>
-<p>删除 <code>map</code> 中的元素，可以通过 <code>delete</code> 函数，如删除 <code>map1</code> 中 <code>key</code> 对应的元素：</p>
+</div><h2 id="删除元素" class="heading-element">
+  <a href="#%e5%88%a0%e9%99%a4%e5%85%83%e7%b4%a0" class="heading-mark"></a>删除元素</h2><p>删除 <code>map</code> 中的元素，可以通过 <code>delete</code> 函数，如删除 <code>map1</code> 中 <code>key</code> 对应的元素：</p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -357,8 +352,8 @@
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nb">delete</span><span class="p">(</span><span class="nx">map1</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>即使要删除的 <code>key</code> 不存在，也不会报错。</p>
-<h2 id="遍历-map">遍历 Map</h2>
-<p>可以通过 <code>for range</code> 循环来遍历 <code>map</code>：</p>
+<h2 id="遍历-map" class="heading-element">
+  <a href="#%e9%81%8d%e5%8e%86-map" class="heading-mark"></a>遍历 Map</h2><p>可以通过 <code>for range</code> 循环来遍历 <code>map</code>：</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -443,8 +438,8 @@
 </div><blockquote>
 <p><em><strong>注意</strong></em>：<code>map</code> 中元素不是按照 <code>key</code> 来排序的。</p>
 </blockquote>
-<h2 id="map-类型的切片">Map 类型的切片</h2>
-<p>如果我们要创建一个 <code>map</code> 类型的切片，一定要使用两次 <code>make()</code> 函数，第一次分配切片的内存，第二次分配 <code>map</code> 的内存。</p>
+<h2 id="map-类型的切片" class="heading-element">
+  <a href="#map-%e7%b1%bb%e5%9e%8b%e7%9a%84%e5%88%87%e7%89%87" class="heading-mark"></a>Map 类型的切片</h2><p>如果我们要创建一个 <code>map</code> 类型的切片，一定要使用两次 <code>make()</code> 函数，第一次分配切片的内存，第二次分配 <code>map</code> 的内存。</p>
 <p>来看一个例子：</p>
 <div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -507,19 +502,17 @@
       <div class="post-info-mod">
         <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" data-title="Golang入门笔记-CH06-Map" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/" data-title="Golang入门笔记-CH06-Map" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/golang/" class="post-tag" title="标签 - Golang">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -530,10 +523,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

@@ -22,11 +22,11 @@ Sub union并集函数()
 
     Application.DisplayAlerts = False
     For i = 2 To 20
-        If Range("a" & i + 1) = Range("a" & i) Then
-            Set rng = Union(rng, Range("a" & i + 1))
+        If Range(&#34;a&#34; &amp; i &#43; 1) = Range(&#34;a&#34; &amp; i) Then
+            Set rng = Union(rng, Range(&#34;a&#34; &amp; i &#43; 1))
         Else
             rng.Merge
-            Set rng = Range("a" & i + 1)
+            Set rng = Range(&#34;a&#34; &amp; i &#43; 1)
         End If
     Next i
     Application.DisplayAlerts = True
@@ -47,7 +47,7 @@ Sub 循环数组()
 
     Application.DisplayAlerts = False
     For i = 2 To UBound(ar)
-        For j = i + 1 To UBound(ar)
+        For j = i &#43; 1 To UBound(ar)
             If ar(j, 1) = ar(i, 1) Then
                 end_row = j
             Else
@@ -55,7 +55,7 @@ Sub 循环数组()
                 Exit For
             End If
         Next j
-        Range("a" & start_row & ":a" & end_row).Merge
+        Range(&#34;a&#34; &amp; start_row &amp; &#34;:a&#34; &amp; end_row).Merge
         start_row = j
         i = start_row - 1
     Next i
@@ -64,11 +64,11 @@ Sub 循环数组()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485264&idx=1&sn=6307b2628df616ca9d0e4246b1e32d7a&chksm=e8bcce07dfcb4711cce31a831ada9b655400d1e573b0d8e57c70fcfafbaec6efde3d9bb9a2f8&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485264&amp;idx=1&amp;sn=6307b2628df616ca9d0e4246b1e32d7a&amp;chksm=e8bcce07dfcb4711cce31a831ada9b655400d1e573b0d8e57c70fcfafbaec6efde3d9bb9a2f8&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B017%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/  
 

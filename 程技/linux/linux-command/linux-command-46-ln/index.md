@@ -1,7 +1,7 @@
 # 每天一个linux命令（46）: ln
 
 　　ln是linux中又一个非常重要命令，它的功能是为某一个文件在另外一个位置建立一个同步的链接.当我们需要在不同的目录，用到相同的文件时，我们不需要在每一个需要的目录下都放一个必须相同的文件，我们只要在某个固定的目录，放上该文件，然后在 其它的目录下用ln命令链接（link）它就可以，不必重复的占用磁盘空间。
-<!--more -->
+&lt;!--more --&gt;
 
 #### 命令格式
 ```bash
@@ -39,8 +39,8 @@ $ ln [参数][源文件或目录][目标文件或目录]
 
 | 参数 | 描述     |
 | :------------- | :------------- |
-| -S | “-S<字尾备份字符串> ”或 “--suffix=<字尾备份字符串>” |
-| -V | “-V<备份方式>”或“--version-control=<备份方式>” |
+| -S | “-S&lt;字尾备份字符串&gt; ”或 “--suffix=&lt;字尾备份字符串&gt;” |
+| -V | “-V&lt;备份方式&gt;”或“--version-control=&lt;备份方式&gt;” |
 | --help | 显示帮助信息 |
 | --version | 显示版本信息 |
 
@@ -60,12 +60,12 @@ $ ln 1.txt 1
 $ ll
 -rw-r--r-- 2 faker faker   10 1月  22 11:28 1
 -rw-r--r-- 2 faker faker   10 1月  22 11:28 1.txt
-lrwxrwxrwx 1 faker faker    5 1月  28 11:15 2 -> 2.txt
+lrwxrwxrwx 1 faker faker    5 1月  28 11:15 2 -&gt; 2.txt
 -rwxrwxrwx 1 faker faker   14 1月  18 10:06 2.txt
 
 $ rm 1.txt 2.txt
 -rw-r--r-- 1 faker faker   10 1月  22 11:28 1
-lrwxrwxrwx 1 faker faker    5 1月  28 11:15 2 -> 2.txt
+lrwxrwxrwx 1 faker faker    5 1月  28 11:15 2 -&gt; 2.txt
 
 $ cat 1
 sdfiskdlf
@@ -73,7 +73,7 @@ sdfiskdlf
 $ cat 2
 cat: 2: 没有那个文件或目录
 ```
->**说明：**
+&gt;**说明：**
 　　1.源文件被删除后，并没有影响硬链接文件；软链接文件在centos系统下不断的闪烁，提示源文件已经不存在
 　　2.重建源文件后，软链接不在闪烁提示，说明已经链接成功，找到了链接文件系统；重建后，硬链接文件并没有受到源文件影响，硬链接文件的内容还是保留了删除前源文件的内容，说明硬链接已经失效
 
@@ -89,7 +89,7 @@ $ ll ig
 ```bash
 $ ln -s ig gi
 ```
->**说明：**
+&gt;**说明：**
 　　1.目录只能创建软链接
 　　~~2.目录创建链接必须用绝对路径，相对路径创建会不成功，会提示：符号连接的层数过多 这样的错误~~（测试并不会出现这样的问题）
 　　3.在链接目标目录中修改文件都会在源文件目录中同步变化
@@ -97,6 +97,6 @@ $ ln -s ig gi
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-46-ln/  
 

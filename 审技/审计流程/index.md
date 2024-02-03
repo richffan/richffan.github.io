@@ -5,6 +5,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B/  
 

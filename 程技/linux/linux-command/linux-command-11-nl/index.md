@@ -1,7 +1,7 @@
 # 每天一个linux命令（11）: nl
 
 　　nl命令在linux系统中用来计算文件中行号。nl 可以将输出的文件内容自动的加上行号！其默认的结果与 cat -n 有点不太一样， nl 可以将行号做比较多的显示设计，包括位数与是否自动补齐 0 等等的功能。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ nl [选项]... [文件]...
@@ -32,11 +32,11 @@ $ nl -b a log2012.log
 ```bash
 $ nl -b a -n rz log2014.log
 ```
->nl -b a -n rz 命令行号默认为六位，要调整位数可以加上参数 -w 3 调整为3位。
+&gt;nl -b a -n rz 命令行号默认为六位，要调整位数可以加上参数 -w 3 调整为3位。
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-11-nl/  
 

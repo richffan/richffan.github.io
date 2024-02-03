@@ -242,7 +242,7 @@ chenyiwei 并不绝对，关键是资本性财政资金在投入时是否对其�
 
 提问人： davy1869 时间： 2011-10-03 19:10:46
 
-原文链接http://www.touhangbbs.cn/forum.php?mod=viewthread&tid=40064 本人对学习企业会计准则讲解 2010 过程中发现的相关
+原文链接http://www.touhangbbs.cn/forum.php?mod=viewthread&amp;tid=40064 本人对学习企业会计准则讲解 2010 过程中发现的相关
 
 错误点进行了整理，由于一人力量有限，整理出的相关内容可能只是其中的小部分，希望抛砖引玉，大家完善补充。其中：第 1 部分
 
@@ -294,7 +294,7 @@ chenyiwei 并不绝对，关键是资本性财政资金在投入时是否对其�
 
 借款的辅助费用应冲减负债入账价值，由此导致实际利率增加，通过实际利率影响借款费用增加确定辅助费用资本化金额。 符合资
 
-本化条件的借款辅助费用仍应按讲解 2008 所述，冲减借款入账价值。 3/357/357/售后回租收益确认 售价<账面价值<公允价值的售
+本化条件的借款辅助费用仍应按讲解 2008 所述，冲减借款入账价值。 3/357/357/售后回租收益确认 售价&lt;账面价值&lt;公允价值的售
 
 后回租，按照售价-账面价值确认递递收益，当期不确认。 4/610/611/分离交易可转债的稀释每股收益 例35-4列示了分离交易可
 转债的稀释每股收益的计算，但该可转债是发行的可分离交易的可转换债券，并且初始确认时已按负债和认股权证分拆确认，那计算
@@ -432,7 +432,7 @@ PRC也有类似规定。但我理解对于权益类项目在折算到人民币�
 
 陈版主，比较财务报表按照原记账本位币编制的财务报表进行外币报表折算，折算后的比较财务报表与变更当日（假设是 6 月 30 日）
 
-的财务报表可能没有勾稽关系，例如：年初未分配利润+本期净利润=期末未分配利润 此关系可能无法满足，该问题如何解决？
+的财务报表可能没有勾稽关系，例如：年初未分配利润&#43;本期净利润=期末未分配利润 此关系可能无法满足，该问题如何解决？
 
 回答人： chenyiwei
 
@@ -971,7 +971,7 @@ chenyiwei
 
 万转增资本：500*0.3=150 500-150=350 70万个所税由个人股东单拿
 
-出现金交税， 转增资本150+350=500 还是 500 ，这样行不行？
+出现金交税， 转增资本150&#43;350=500 还是 500 ，这样行不行？
 
 回答人： chenyiwei
 也可以。公司应注意取得该自然人股东自行完税的相应凭证，否则仍应履行代扣代缴的法定义务。
@@ -1882,7 +1882,7 @@ guidance provided by the standard, discussed above are based on the premise that
 
 business which has been acquired by the legal subsidiary (accounting acquirer). In some situations, this may not be the case, for
 
-example where a private entity arranges to have itself 'acquired' by a non-trading public entity as a means of obtaining a stock
+example where a private entity arranges to have itself &#39;acquired&#39; by a non-trading public entity as a means of obtaining a stock
 
 exchange listing. As indicated at 16 above, the standard notes that the accounting acquiree (legal acquirer) must meet the definition
 
@@ -1908,16 +1908,16 @@ of the legal parent. Example 9.37: Reverse acquisition of a non-trading shell co
 
 share capital of Entity B, a private trading company, with 9,500 ordinary shares in issue. At the date of the transaction, Entity A has
 
-$85,000 of cash and the quoted market price of Entity A's ordinary shares is $12. The fair value of Entity B has been determined by
+$85,000 of cash and the quoted market price of Entity A&#39;s ordinary shares is $12. The fair value of Entity B has been determined by
 
 an independent professional valuer as being $2,185,000, giving a value per share of $230. Following the transaction, apart from one
 
 
 non-executive director, all of the directors of Entity A resign and four new directors from Entity B are appointed to the Board of
 
-Entity A. As a result of Entity A issuing 190,000 ordinary shares, Entity B's shareholders own 95 per cent of the issued share capital of
+Entity A. As a result of Entity A issuing 190,000 ordinary shares, Entity B&#39;s shareholders own 95 per cent of the issued share capital of
 
-the combined entity (i.e. 190,000 of the 200,000 issued shares), with the remaining 5 per cent held by Entity A's existing
+the combined entity (i.e. 190,000 of the 200,000 issued shares), with the remaining 5 per cent held by Entity A&#39;s existing
 
 shareholders. How should this transaction be accounted for in the consolidated financial statements of Entity A? As the shareholders
 
@@ -1969,7 +1969,7 @@ statement)30,000 Issued equity (500 × $230) 115,000
 
 As Entity B is a private entity, it may be that a more reliable basis for determining the fair value of the deemed shares issued would
 
-have been to use the quoted market price of Entity A's shares at the date of the transaction. On this basis, the issued equity would
+have been to use the quoted market price of Entity A&#39;s shares at the date of the transaction. On this basis, the issued equity would
 
 have been $120,000 (10,000 × $12), giving rise to a listing expense of $35,000. In summary, the accounting for this transaction is
 
@@ -1979,7 +1979,7 @@ the main difference being that no goodwill arises on the transaction, and that a
 
 accounted for as a listing expense. Indeed, if the transaction had been accounted for as a reverse acquisition, the overall effect may
 
-have been the same if an impairment loss on the 'goodwill' had been recognised.
+have been the same if an impairment loss on the &#39;goodwill&#39; had been recognised.
 
 提问人：呼叫帮助呼叫帮助 时间： 2017-02-26 13:06:15
 老师不构成业务的反向购买是不能适用合并准则的，请问是否适用非货币性资产交易准则？
@@ -2860,7 +2860,7 @@ IPO申报期内控股股东无偿转让专利等给公司，公司财报“无�
 提问人： jasonchen6447 时间： 2016-02-21 00:47:50
 版主，但如果在一开始母公司单体层面就是没有资本公积可以冲减，直接冲减了留存收益，那到合并层面还要怎么处理？我理解从同
 
-控对比报表来讲确实应该是母公司+子公司的未分配利润，但由于冲减了母公司的留存收益，会导致未分配利润的减少，到合并报表
+控对比报表来讲确实应该是母公司&#43;子公司的未分配利润，但由于冲减了母公司的留存收益，会导致未分配利润的减少，到合并报表
 感觉缺了一块，两年比较数时，上年模拟合并时应该是正常两者相加，但到今年会少掉一块，请问要如何调整？谢谢
 
 回答人： chenyiwei
@@ -2965,7 +2965,7 @@ A企业以：设备发出并经过对方验收 为确认收入的标准， 但�
 回答人： chenyiwei
 法律上的所有权转移并不是收入确认的主要判断标准，关键是所有权上主要风险和报酬的转移。
 
-# 2454 、IPO疑难问题讨论：同一控制&一致行动
+# 2454 、IPO疑难问题讨论：同一控制&amp;一致行动
 
 提问人： tony868lamy 时间： 2011-10-20 01:17:22
 
@@ -3528,7 +3528,7 @@ A和B是上海的 2 家公司， 2 家公司的最终控股公司为同一家公
 话分录好像没有办法做？（相当于出售20%股权？）还是等资产负债表日一次性按照长期股权账面价值和可辨认资产净值得差额确认
 投资收益？
 
-2 ）资产负债表日（ 12 月 31 日）甲编制合并利润表的时候列示的少数股东损益需要分 2 段计算对吗？是 90 40%+30 20%=42万对吗？
+2 ）资产负债表日（ 12 月 31 日）甲编制合并利润表的时候列示的少数股东损益需要分 2 段计算对吗？是 90 40%&#43;30 20%=42万对吗？
 
 就是说需要加权过以后列示？ 请各位指教
 
@@ -4250,11 +4250,11 @@ A公司收回对B公司的投资时，所收回的净资产的计价低于原长
 
 是 1300 万元为历史成本来计算的，合营企业多提了折旧 45 万元，多提折旧是利润减少，而作为整体该部分利润仍要确认投资收益
 
-（555+45） 借：营业外收入 228 （600×38%） 贷：投资收益 228
+（555&#43;45） 借：营业外收入 228 （600×38%） 贷：投资收益 228
 
 现在想求教，在 2011 年度编制报表时如何编制分录： 假设 2011 年度丁公司仍然实现净利润为 800 万元，甲公司与丁公司无其他内部
 
-交易。 在编制个别财务报表时应确认的投资收益=（800+60）×38%= 326.8（万元） 借：长期股权投资——丁公司（损益调整）
+交易。 在编制个别财务报表时应确认的投资收益=（800&#43;60）×38%= 326.8（万元） 借：长期股权投资——丁公司（损益调整）
 
 326.80 贷：投资收益 326.80 并且在以后该资产持续存在且计提折旧的情况下，均需将公允价值与账面价值之
 
@@ -4297,7 +4297,7 @@ A（承租方）与金融公司（出租方）以及B（大型船舶制造商）
 
 回答人： chenyiwei
 
-《计学撮要》里有类似的案例（“专题三：会计实务问题Q&A”中的“租赁会计”部分），你可以搜索一下。基本要求就是把这类业务中
+《计学撮要》里有类似的案例（“专题三：会计实务问题Q&amp;A”中的“租赁会计”部分），你可以搜索一下。基本要求就是把这类业务中
 金融租赁公司代付的建造款作为融资处理。
 
 # 2499 、原同一控制下合并的子公司后出售的合并报表编制
@@ -4397,7 +4397,7 @@ A（承租方）与金融公司（出租方）以及B（大型船舶制造商）
 
 假设： 假设年初 1000 股，7.1增资 200 股。 年末股改，净资产折为 3000 股 按这个公式算是 2900 股。 按讲解上例子算应该是 2750 股
 
-按证监会公式：1000+1800+200 6/12=2900 按准则讲解： 折股比例： 3000/1200=2.5 1000 2.5+200 2.5 6/12=2750
+按证监会公式：1000&#43;1800&#43;200 6/12=2900 按准则讲解： 折股比例： 3000/1200=2.5 1000 2.5&#43;200 2.5 6/12=2750
 难道我的理解哪里有问题？？
 
 回答人： chenyiwei
@@ -4560,7 +4560,7 @@ B直接从事建造服务，所以B的个别报表层面应按建造合同准则
 
 以确认收入 50 万了？）在合并层面，将会体现出A公司的应收账款-B公司 150 万跟B公司的应付账款-A公司 150 万对冲。这样合并层面
 
-总收入是A公司的 150 万+B公司的 50 万，成本是A公司的 100 万。也就是说收入在本案例中没有抵消，只是抵消了往来。请问陈版主
+总收入是A公司的 150 万&#43;B公司的 50 万，成本是A公司的 100 万。也就是说收入在本案例中没有抵消，只是抵消了往来。请问陈版主
 我的理解正确吗？
 
 回答人： chenyiwei
@@ -4636,7 +4636,7 @@ BOT合同，项目公司再将主体工程分包给母公司A的工程队来实�
 
 产”已经摊销完毕，无需再作会计处理，只进行实物交接。 对于此案例，我认为甲公司整体能确认的收入就是经营期间每年 200 万的
 
-收入， 10 年共 2000 万；可是例题中在建造期确认了 1000 万的建造收入，在经营期又确认了 2000 万的建造收入，经营+建造一共确认
+收入， 10 年共 2000 万；可是例题中在建造期确认了 1000 万的建造收入，在经营期又确认了 2000 万的建造收入，经营&#43;建造一共确认
 
 了 3000 万的收入，是不是存在建造期 1000 万的收入重复确认的问题？@chenyiwei
 
@@ -5457,7 +5457,7 @@ A的合并报表层面需采用一定的技术处理，消除对D公司1~8月利
 如果第三季度按比例结转，按当前实际利率计算，最后一年摊余成本与面值存在差异，即利息调整总额与每年调整金额合计存在差
 异。我自己认为主要是平均分摊费用所产生的差异。如果企业简化处理，是否可以在每季度末发生转股业务时调整摊余成本，将调整
 
-金额（对“利息调整"进行调整）计入资本公积？
+金额（对“利息调整&#34;进行调整）计入资本公积？
 
 回答人： chenyiwei
 没有看懂你的意思？具体如何调整？
@@ -5506,7 +5506,7 @@ A的合并报表层面需采用一定的技术处理，消除对D公司1~8月利
 
 七年（含第五年末发行人利率选择权和投资者回售权）的应付债券。 依《企业会计准则-负债》中应付债券的例子，如果该债券的期
 
-限为 5 年同时含第三年末发行人利率选择权和投资者回售权即3+2，该如何处理呢？ 说一下本人观点吧，本人更倾向于采用按票
+限为 5 年同时含第三年末发行人利率选择权和投资者回售权即3&#43;2，该如何处理呢？ 说一下本人观点吧，本人更倾向于采用按票
 
 面利率确认费用/资本化。大家的观点呢？ （文字表达水平有限，不知说清楚了没有:P）
 
@@ -5533,7 +5533,7 @@ A的合并报表层面需采用一定的技术处理，消除对D公司1~8月利
 
 首先，感谢谢谢陈总的解答！ 如果债券为固定利率，发行费用也较大的情况，在固定利率期内即上面所说的“3”年利息费用=面
 
-值X票面利率+发行费用÷3 此处，发行费用在报表内以“长期待摊费用”的形式存在。 上述处理是否可行？
+值X票面利率&#43;发行费用÷3 此处，发行费用在报表内以“长期待摊费用”的形式存在。 上述处理是否可行？
 
 回答人： chenyiwei
 要注意：如果发行费用较大，则直线法和实际利率法的核算结果可能会有较大的差异。
@@ -5545,7 +5545,7 @@ A的合并报表层面需采用一定的技术处理，消除对D公司1~8月利
 
 陈老师能不能再解释的细一点啊，我们现在也遇到了这样的情况： 一家企业刚刚发行了 10 亿企业债，给券商支付了将近 1000 万元的
 
-承销费用。债券的设计结构为5+2，即前 5 年为固定利率， 在第 5 年年末发行人可以选择调整账面利率或者投资者回售。企业债每年
+承销费用。债券的设计结构为5&#43;2，即前 5 年为固定利率， 在第 5 年年末发行人可以选择调整账面利率或者投资者回售。企业债每年
 年末付息，到期一次还本。是采用直线法进行处理还是采用实际利率法进行处理好呢？如果采用实际利率法，后两年的现金流该如何
 
 测算呢？如何计算内内含报酬率呢？ 公司一致偏向于采用直线法计量。
@@ -5572,7 +5572,7 @@ A的合并报表层面需采用一定的技术处理，消除对D公司1~8月利
 
 分别不到一个亿，A公司股东张某将补偿PE公司 1500 万（期权1) 3、如果A公司在 2012 年前上不了市，PE可以要求A公司按照 1 亿元本
 
-金+20%的年利率偿该PE (期权 2) 陈版根据我的理解，我们应该将 1 个亿的债权拆分为 2 部分即期权条款与主合同分开。我的主要疑问
+金&#43;20%的年利率偿该PE (期权 2) 陈版根据我的理解，我们应该将 1 个亿的债权拆分为 2 部分即期权条款与主合同分开。我的主要疑问
 
 是： 1 、期权 1 是和大股东签的，公司只是担保。期权 1 的价值需要考虑吗？ 2 、如果期权的价格确认为衍生金融负债（假设期权 1 评
 
@@ -6087,7 +6087,7 @@ A公司获得一笔国家重大专项科技项目补助资金，用于某技术�
 
 A公司持有B公司70%股份，持有C公司30%股份，B公司持有C公司35%股份，若集团内无其他投资，请问A合并层面的长投是否为
 
-零？ 借：净资产 贷：长投 70%*B+(30%+70%*35%) 少数股东权益 A合并报表的长投账面仍存在B对C的10.5%的投资成本未冲
+零？ 借：净资产 贷：长投 70%*B&#43;(30%&#43;70%*35%) 少数股东权益 A合并报表的长投账面仍存在B对C的10.5%的投资成本未冲
 减，但据咨询了好几位同仁说这种情况下集团的长投最后应为零，表决权与合并时所采用的相乘比例之间差额与少数股东权益对冲，
 
 我想问的是： 若是此种做法何必相乘，合并时何不直接按相加的比例抵来得更直接？
@@ -6407,7 +6407,7 @@ A公司持有B公司70%股份，持有C公司30%股份，B公司持有C公司35%
 
 保证金存款一年，利息保证金存款一年，利息 2.25% ，则一年后保证金变成，则一年后保证金变成 6932.55 万元万元，银行给客户计算的综合收益为6932.55-6780=152.55万元
 
-**，银行汇出 1000 万美元时需要额外收取手续费，假定 136 万，则客户最终收益=152.55-136+1000*6.8393-6780=75.85万元**。
+**，银行汇出 1000 万美元时需要额外收取手续费，假定 136 万，则客户最终收益=152.55-136&#43;1000*6.8393-6780=75.85万元**。
 客户的账务处理为：
 
 借：应付账款 6839.3万元（ 1000 万美元 6.8393 ） 贷：短期借款 6839.3 万元（ 1000 万美元6.8393）
@@ -6425,6 +6425,6 @@ A公司持有B公司70%股份，持有C公司30%股份，B公司持有C公司35%
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201110/  
 

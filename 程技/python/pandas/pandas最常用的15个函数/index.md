@@ -6,7 +6,7 @@ Pandas是一个功能强大的数据处理库，它提供了大量的函数和�
 ```python
 import pandas as pd
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv(&#39;data.csv&#39;)
 print(df)
 ```
 
@@ -56,14 +56,14 @@ print(df)
 9. groupby()：用于对DataFrame进行分组操作。
 
 ```python
-grouped = df.groupby('category')
+grouped = df.groupby(&#39;category&#39;)
 print(grouped.mean())
 ```
 
 10. sort_values()：用于对DataFrame按照指定列进行排序。
 
 ```python
-sorted_df = df.sort_values('column_name')
+sorted_df = df.sort_values(&#39;column_name&#39;)
 print(sorted_df)
 ```
 
@@ -77,7 +77,7 @@ print(df)
 12. value_counts()：用于计算DataFrame中某一列的唯一值计数。
 
 ```python
-print(df['column_name'].value_counts())
+print(df[&#39;column_name&#39;].value_counts())
 ```
 
 13. apply()：用于对DataFrame的某一列或多列应用自定义函数。
@@ -87,21 +87,21 @@ def custom_function(x):
     # 自定义处理逻辑
     return x * 2
 
-df['column_name'] = df['column_name'].apply(custom_function)
+df[&#39;column_name&#39;] = df[&#39;column_name&#39;].apply(custom_function)
 print(df)
 ```
 
 14. merge()：用于合并两个DataFrame对象。
 
 ```python
-merged_df = pd.merge(df1, df2, on='key_column')
+merged_df = pd.merge(df1, df2, on=&#39;key_column&#39;)
 print(merged_df)
 ```
 
 15. plot()：用于绘制DataFrame中的数据图表。
 
 ```python
-df.plot(x='column_name1', y='column_name2', kind='line')
+df.plot(x=&#39;column_name1&#39;, y=&#39;column_name2&#39;, kind=&#39;line&#39;)
 plt.show()
 ```
 
@@ -111,6 +111,6 @@ plt.show()
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/  
 

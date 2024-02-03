@@ -40,6 +40,6 @@ XXXX，XXXX，希冀与XXXX 一同成长，希冀自己对XXXX 能有所贡献
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/120-how-to-write-the-style-of-the-regularization-application/  
 

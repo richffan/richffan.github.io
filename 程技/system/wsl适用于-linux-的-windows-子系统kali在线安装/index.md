@@ -31,12 +31,12 @@ WSL——适用于 Linux 的 Windows 子系统可让开发人员直接在 Window
 ```
 
 ##### 1、启用Windows功能
-控制面板–>程序与功能–>启用或关闭Windows功能，选中 适用于Linux的Windows子系统 和 虚拟机平台。
+控制面板–&gt;程序与功能–&gt;启用或关闭Windows功能，选中 适用于Linux的Windows子系统 和 虚拟机平台。
 见官方文档：https://docs.microsoft.com/zh-cn/windows/wsl/install-on-server
 
 
 ##### 2、设置Windows预览体验计划
-开始–>设置–>更新和安全–>Windows预览体验计划，如下图。按提示重启电脑。
+开始–&gt;设置–&gt;更新和安全–&gt;Windows预览体验计划，如下图。按提示重启电脑。
 见官方文档：https://docs.microsoft.com/zh-cn/windows/wsl/install-win10
 Windows预览体验计划文档：https://insider.windows.com/en-us/getting-started#flight
 
@@ -74,7 +74,7 @@ wsl --install -d kali-linux
 
 在Kali环境终端输入
 
-echo -e "[boot]\nsystemd=true" | sudo tee -a /etc/wsl.conf
+echo -e &#34;[boot]\nsystemd=true&#34; | sudo tee -a /etc/wsl.conf
 
 配置完后重启你的电脑。
 
@@ -172,6 +172,6 @@ port 为step 6 出现的数字，比如默认为5901，那IP为 localhost:5901
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/  
 

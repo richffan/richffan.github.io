@@ -2,13 +2,12 @@
   <channel>
     <title>Tags - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/</link>
-    <description>Tags - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/" rel="self" type="application/rss+xml" /><item>
+    <description>Tags - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/" rel="self" type="application/rss+xml" /><item>
   <title>采购</title>
   <link>http://richfan.site/tags/%E9%87%87%E8%B4%AD/</link>
   <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E9%87%87%E8%B4%AD/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>审计</title>
   <link>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</link>
   <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -24,7 +23,7 @@
   <title>专项</title>
   <link>http://richfan.site/tags/%E4%B8%93%E9%A1%B9/</link>
   <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E4%B8%93%E9%A1%B9/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -32,7 +31,7 @@
   <title>教育</title>
   <link>http://richfan.site/tags/%E6%95%99%E8%82%B2/</link>
   <pubDate>Wed, 01 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E6%95%99%E8%82%B2/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -40,7 +39,7 @@
   <title>审计共性问题</title>
   <link>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</link>
   <pubDate>Wed, 01 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -48,7 +47,7 @@
   <title>尽职调查审计</title>
   <link>http://richfan.site/tags/%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E5%AE%A1%E8%AE%A1/</link>
   <pubDate>Tue, 31 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E5%AE%A1%E8%AE%A1/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -56,7 +55,7 @@
   <title>内控</title>
   <link>http://richfan.site/tags/%E5%86%85%E6%8E%A7/</link>
   <pubDate>Tue, 31 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E5%86%85%E6%8E%A7/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -64,7 +63,7 @@
   <title>市级</title>
   <link>http://richfan.site/tags/%E5%B8%82%E7%BA%A7/</link>
   <pubDate>Tue, 31 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E5%B8%82%E7%BA%A7/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -72,7 +71,7 @@
   <title>IPO</title>
   <link>http://richfan.site/tags/ipo/</link>
   <pubDate>Mon, 30 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/ipo/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -80,7 +79,7 @@
   <title>数据字典</title>
   <link>http://richfan.site/tags/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/</link>
   <pubDate>Mon, 30 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/tags/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/</guid>
   <description><![CDATA[]]></description>
 </item>

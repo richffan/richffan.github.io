@@ -1,4 +1,4 @@
-# 007-审计调整&心理建设
+# 007-审计调整&amp;心理建设
 
 审计的起点是未审报表，（Benniar：其次是组织结构图）
 
@@ -46,6 +46,6 @@ C 账项调整（部分人称之为真正的审计调整），即 Adjustment Jo
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/007-audit-adjustment-psychological-construction/  
 

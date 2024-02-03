@@ -1,7 +1,7 @@
 # 每天一个linux命令（18）: locate
 
 　　locate 让使用者可以很快速的搜寻档案系统内是否有指定的档案。其方法是先建立一个包括系统内所有档案名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入档案系统之中了。在一般的 distribution 之中，数据库的建立都被放在 crontab 中自动执行。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ locate [选择参数] [样式]
@@ -38,6 +38,6 @@ $ locate /etc/sh
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-18-locate/  
 

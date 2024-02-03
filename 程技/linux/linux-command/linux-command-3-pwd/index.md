@@ -2,7 +2,7 @@
 
 　　Linux中用 pwd 命令来查看”当前工作目录“的完整路径。 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。
 　　在不太确定当前位置时，就会使用pwd来判定当前目录在文件系统内的确切位置。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ pwd [选项]
@@ -41,6 +41,6 @@ $ /bin/pwd
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-3-pwd/  
 

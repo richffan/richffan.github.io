@@ -1,7 +1,7 @@
 # 每天一个linux命令（8）: cp
 
 　　cp命令用来复制文件或者目录，是Linux系统中最常用的命令之一。一般情况下，shell会设置一个别名，在命令行下复制文件时，如果目标文件已经存在，就会询问是否覆盖，不管你是否使用-i参数。但是如果是在shell脚本中执行cp时，没有-i参数时不会询问是否覆盖。这说明命令行和shell脚本的执行方式有些不同。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ cp [选项]... [-T] 源 目的
@@ -42,6 +42,6 @@ $ cp -s log.log log_link.log
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-8-cp/  
 

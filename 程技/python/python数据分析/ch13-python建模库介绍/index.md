@@ -20,9 +20,9 @@ In [10]: import pandas as pd
 In [11]: import numpy as np
 
 In [12]: data = pd.DataFrame({
-   ....:     'x0': [1, 2, 3, 4, 5],
-   ....:     'x1': [0.01, -0.01, 0.25, -4.1, 0.],
-   ....:     'y': [-1.5, 0., 3.6, 1.3, -2.]})
+   ....:     &#39;x0&#39;: [1, 2, 3, 4, 5],
+   ....:     &#39;x1&#39;: [0.01, -0.01, 0.25, -4.1, 0.],
+   ....:     &#39;y&#39;: [-1.5, 0., 3.6, 1.3, -2.]})
 
 In [13]: data
 Out[13]: 
@@ -34,7 +34,7 @@ Out[13]:
 4   5  0.00 -2.0
 
 In [14]: data.columns
-Out[14]: Index(['x0', 'x1', 'y'], dtype='object')
+Out[14]: Index([&#39;x0&#39;, &#39;x1&#39;, &#39;y&#39;], dtype=&#39;object&#39;)
 
 In [15]: data.values
 Out[15]: 
@@ -47,7 +47,7 @@ array([[ 1.  ,  0.01, -1.5 ],
 
 要转换回DataFrame，可以传递一个二维ndarray，可带有列名：
 ```python
-In [16]: df2 = pd.DataFrame(data.values, columns=['one', 'two', 'three'])
+In [16]: df2 = pd.DataFrame(data.values, columns=[&#39;one&#39;, &#39;two&#39;, &#39;three&#39;])
 
 In [17]: df2
 Out[17]: 
@@ -59,33 +59,33 @@ Out[17]:
 4  5.0  0.00   -2.0
 ```
 
->笔记：最好当数据是均匀的时候使用.values属性。例如，全是数值类型。如果数据是不均匀的，结果会是Python对象的ndarray：
->```python
->In [18]: df3 = data.copy()
->
->In [19]: df3['strings'] = ['a', 'b', 'c', 'd', 'e']
->
->In [20]: df3
->Out[20]: 
->   x0    x1    y strings
->0   1  0.01 -1.5       a
->1   2 -0.01  0.0       b
->2   3  0.25  3.6       c
->3   4 -4.10  1.3       d
->4   5  0.00 -2.0       e
->
->In [21]: df3.values
->Out[21]: 
->array([[1, 0.01, -1.5, 'a'],
->       [2, -0.01, 0.0, 'b'],
->       [3, 0.25, 3.6, 'c'],
->       [4, -4.1, 1.3, 'd'],
->       [5, 0.0, -2.0, 'e']], dtype=object)
->```
+&gt;笔记：最好当数据是均匀的时候使用.values属性。例如，全是数值类型。如果数据是不均匀的，结果会是Python对象的ndarray：
+&gt;```python
+&gt;In [18]: df3 = data.copy()
+&gt;
+&gt;In [19]: df3[&#39;strings&#39;] = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
+&gt;
+&gt;In [20]: df3
+&gt;Out[20]: 
+&gt;   x0    x1    y strings
+&gt;0   1  0.01 -1.5       a
+&gt;1   2 -0.01  0.0       b
+&gt;2   3  0.25  3.6       c
+&gt;3   4 -4.10  1.3       d
+&gt;4   5  0.00 -2.0       e
+&gt;
+&gt;In [21]: df3.values
+&gt;Out[21]: 
+&gt;array([[1, 0.01, -1.5, &#39;a&#39;],
+&gt;       [2, -0.01, 0.0, &#39;b&#39;],
+&gt;       [3, 0.25, 3.6, &#39;c&#39;],
+&gt;       [4, -4.1, 1.3, &#39;d&#39;],
+&gt;       [5, 0.0, -2.0, &#39;e&#39;]], dtype=object)
+&gt;```
 
 对于一些模型，你可能只想使用列的子集。我建议你使用loc，用values作索引：
 ```python
-In [22]: model_cols = ['x0', 'x1']
+In [22]: model_cols = [&#39;x0&#39;, &#39;x1&#39;]
 
 In [23]: data.loc[:, model_cols].values
 Out[23]: 
@@ -100,8 +100,8 @@ array([[ 1.  ,  0.01],
 
 在第12章，我们学习了pandas的Categorical类型和pandas.get_dummies函数。假设数据集中有一个非数值列：
 ```python
-In [24]: data['category'] = pd.Categorical(['a', 'b', 'a', 'a', 'b'],
-   ....:                                   categories=['a', 'b'])
+In [24]: data[&#39;category&#39;] = pd.Categorical([&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;a&#39;, &#39;b&#39;],
+   ....:                                   categories=[&#39;a&#39;, &#39;b&#39;])
 
 In [25]: data
 Out[25]: 
@@ -115,9 +115,9 @@ Out[25]:
 
 如果我们想替换category列为虚变量，我们可以创建虚变量，删除category列，然后添加到结果：
 ```python
-In [26]: dummies = pd.get_dummies(data.category, prefix='category')
+In [26]: dummies = pd.get_dummies(data.category, prefix=&#39;category&#39;)
 
-In [27]: data_with_dummies = data.drop('category', axis=1).join(dummies)
+In [27]: data_with_dummies = data.drop(&#39;category&#39;, axis=1).join(dummies)
 
 In [28]: data_with_dummies
 Out[28]: 
@@ -137,15 +137,15 @@ Out[28]:
 
 Patsy适合描述statsmodels的线性模型，因此我会关注于它的主要特点，让你尽快掌握。Patsy的公式是一个特殊的字符串语法，如下所示：
 ```python
-y ~ x0 + x1
+y ~ x0 &#43; x1
 ```
 
-a+b不是将a与b相加的意思，而是为模型创建的设计矩阵。patsy.dmatrices函数接收一个公式字符串和一个数据集（可以是DataFrame或数组的字典），为线性模型创建设计矩阵：
+a&#43;b不是将a与b相加的意思，而是为模型创建的设计矩阵。patsy.dmatrices函数接收一个公式字符串和一个数据集（可以是DataFrame或数组的字典），为线性模型创建设计矩阵：
 ```python
 In [29]: data = pd.DataFrame({
-   ....:     'x0': [1, 2, 3, 4, 5],
-   ....:     'x1': [0.01, -0.01, 0.25, -4.1, 0.],
-   ....:     'y': [-1.5, 0., 3.6, 1.3, -2.]})
+   ....:     &#39;x0&#39;: [1, 2, 3, 4, 5],
+   ....:     &#39;x1&#39;: [0.01, -0.01, 0.25, -4.1, 0.],
+   ....:     &#39;y&#39;: [-1.5, 0., 3.6, 1.3, -2.]})
 
 In [30]: data
 Out[30]: 
@@ -158,7 +158,7 @@ Out[30]:
 
 In [31]: import patsy
 
-In [32]: y, X = patsy.dmatrices('y ~ x0 + x1', data)
+In [32]: y, X = patsy.dmatrices(&#39;y ~ x0 &#43; x1&#39;, data)
 ```
 
 现在有：
@@ -173,7 +173,7 @@ DesignMatrix with shape (5, 1)
    1.3
   -2.0
   Terms:
-    'y' (column 0)
+    &#39;y&#39; (column 0)
 
 In [34]: X
 Out[34]: 
@@ -185,9 +185,9 @@ DesignMatrix with shape (5, 3)
           1   4  -4.10
           1   5   0.00
   Terms:
-    'Intercept' (column 0)
-    'x0' (column 1)
-    'x1' (column 2)
+    &#39;Intercept&#39; (column 0)
+    &#39;x0&#39; (column 1)
+    &#39;x1&#39; (column 2)
 ```
 
 这些Patsy的DesignMatrix实例是NumPy的ndarray，带有附加元数据：
@@ -209,9 +209,9 @@ array([[ 1.  ,  1.  ,  0.01],
        [ 1.  ,  5.  ,  0.  ]])
 ```
 
-你可能想Intercept是哪里来的。这是线性模型（比如普通最小二乘回归）的惯例用法。添加 +0 到模型可以不显示intercept：
+你可能想Intercept是哪里来的。这是线性模型（比如普通最小二乘回归）的惯例用法。添加 &#43;0 到模型可以不显示intercept：
 ```python
-In [37]: patsy.dmatrices('y ~ x0 + x1 + 0', data)[1]
+In [37]: patsy.dmatrices(&#39;y ~ x0 &#43; x1 &#43; 0&#39;, data)[1]
 Out[37]: 
 DesignMatrix with shape (5, 2)
   x0     x1
@@ -221,8 +221,8 @@ DesignMatrix with shape (5, 2)
    4  -4.10
    5   0.00
   Terms:
-    'x0' (column 0)
-    'x1' (column 1)
+    &#39;x0&#39; (column 0)
+    &#39;x1&#39; (column 1)
 ```
 
 Patsy对象可以直接传递到算法（比如numpy.linalg.lstsq）中，它执行普通最小二乘回归：
@@ -252,26 +252,26 @@ dtype: float64
 
 你可以将Python代码与patsy公式结合。在评估公式时，库将尝试查找在封闭作用域内使用的函数：
 ```python
-In [42]: y, X = patsy.dmatrices('y ~ x0 + np.log(np.abs(x1) + 1)', data)
+In [42]: y, X = patsy.dmatrices(&#39;y ~ x0 &#43; np.log(np.abs(x1) &#43; 1)&#39;, data)
 
 In [43]: X
 Out[43]: 
 DesignMatrix with shape (5, 3)
-  Intercept  x0  np.log(np.abs(x1) + 1)
+  Intercept  x0  np.log(np.abs(x1) &#43; 1)
           1   1                 0.00995
           1   2                 0.00995
           1   3                 0.22314
           1   4                 1.62924
           1   5                 0.00000
   Terms:
-    'Intercept' (column 0)
-    'x0' (column 1)
-    'np.log(np.abs(x1) + 1)' (column 2)
+    &#39;Intercept&#39; (column 0)
+    &#39;x0&#39; (column 1)
+    &#39;np.log(np.abs(x1) &#43; 1)&#39; (column 2)
 ```
 
 常见的变量转换包括标准化（平均值为0，方差为1）和中心化（减去平均值）。Patsy有内置的函数进行这样的工作：
 ```python
-In [44]: y, X = patsy.dmatrices('y ~ standardize(x0) + center(x1)', data)
+In [44]: y, X = patsy.dmatrices(&#39;y ~ standardize(x0) &#43; center(x1)&#39;, data)
 
 In [45]: X
 Out[45]: 
@@ -283,9 +283,9 @@ DesignMatrix with shape (5, 3)
           1          0.70711       -3.33
           1          1.41421        0.77
   Terms:
-    'Intercept' (column 0)
-    'standardize(x0)' (column 1)
-    'center(x1)' (column 2)
+    &#39;Intercept&#39; (column 0)
+    &#39;standardize(x0)&#39; (column 1)
+    &#39;center(x1)&#39; (column 2)
 ```
 
 作为建模的一步，你可能拟合模型到一个数据集，然后用另一个数据集评估模型。另一个数据集可能是剩余的部分或是新数据。当执行中心化和标准化转变，用新数据进行预测要格外小心。因为你必须使用平均值或标准差转换新数据集，这也称作状态转换。
@@ -293,9 +293,9 @@ DesignMatrix with shape (5, 3)
 patsy.build_design_matrices函数可以使用原始样本数据集的保存信息，来转换新数据，：
 ```python
 In [46]: new_data = pd.DataFrame({
-   ....:     'x0': [6, 7, 8, 9],
-   ....:     'x1': [3.1, -0.5, 0, 2.3],
-   ....:     'y': [1, 2, 3, 4]})
+   ....:     &#39;x0&#39;: [6, 7, 8, 9],
+   ....:     &#39;x1&#39;: [3.1, -0.5, 0, 2.3],
+   ....:     &#39;y&#39;: [1, 2, 3, 4]})
 
 In [47]: new_X = patsy.build_design_matrices([X.design_info], new_data)
 
@@ -308,27 +308,27 @@ Out[48]:
            1          3.53553        0.77
            1          4.24264        3.07
    Terms:
-     'Intercept' (column 0)
-     'standardize(x0)' (column 1)
-     'center(x1)' (column 2)]
+     &#39;Intercept&#39; (column 0)
+     &#39;standardize(x0)&#39; (column 1)
+     &#39;center(x1)&#39; (column 2)]
 ```
 
 因为Patsy中的加号不是加法的意义，当你按照名称将数据集的列相加时，你必须用特殊I函数将它们封装起来：
 ```python
-In [49]: y, X = patsy.dmatrices('y ~ I(x0 + x1)', data)
+In [49]: y, X = patsy.dmatrices(&#39;y ~ I(x0 &#43; x1)&#39;, data)
 
 In [50]: X
 Out[50]: 
 DesignMatrix with shape (5, 2)
-  Intercept  I(x0 + x1)
+  Intercept  I(x0 &#43; x1)
           1        1.01
           1        1.99
           1        3.25
           1       -0.10
           1        5.00
   Terms:
-    'Intercept' (column 0)
-    'I(x0 + x1)' (column 1)
+    &#39;Intercept&#39; (column 0)
+    &#39;I(x0 &#43; x1)&#39; (column 1)
 ```
 
 Patsy的patsy.builtins模块还有一些其它的内置转换。请查看线上文档。
@@ -342,13 +342,13 @@ Patsy的patsy.builtins模块还有一些其它的内置转换。请查看线上�
 当你在Patsy公式中使用非数值数据，它们会默认转换为虚变量。如果有截距，会去掉一个，避免共线性：
 ```python
 In [51]: data = pd.DataFrame({
-   ....:     'key1': ['a', 'a', 'b', 'b', 'a', 'b', 'a', 'b'],
-   ....:     'key2': [0, 1, 0, 1, 0, 1, 0, 0],
-   ....:     'v1': [1, 2, 3, 4, 5, 6, 7, 8],
-   ....:     'v2': [-1, 0, 2.5, -0.5, 4.0, -1.2, 0.2, -1.7]
+   ....:     &#39;key1&#39;: [&#39;a&#39;, &#39;a&#39;, &#39;b&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;],
+   ....:     &#39;key2&#39;: [0, 1, 0, 1, 0, 1, 0, 0],
+   ....:     &#39;v1&#39;: [1, 2, 3, 4, 5, 6, 7, 8],
+   ....:     &#39;v2&#39;: [-1, 0, 2.5, -0.5, 4.0, -1.2, 0.2, -1.7]
    ....: })
 
-In [52]: y, X = patsy.dmatrices('v2 ~ key1', data)
+In [52]: y, X = patsy.dmatrices(&#39;v2 ~ key1&#39;, data)
 
 In [53]: X
 Out[53]: 
@@ -363,13 +363,13 @@ DesignMatrix with shape (8, 2)
           1          0
           1          1
   Terms:
-    'Intercept' (column 0)
-    'key1' (column 1)
+    &#39;Intercept&#39; (column 0)
+    &#39;key1&#39; (column 1)
 ```
 
 如果你从模型中忽略截距，每个分类值的列都会包括在设计矩阵的模型中：
 ```python
-In [54]: y, X = patsy.dmatrices('v2 ~ key1 + 0', data)
+In [54]: y, X = patsy.dmatrices(&#39;v2 ~ key1 &#43; 0&#39;, data)
 
 In [55]: X
 Out[55]: 
@@ -384,12 +384,12 @@ DesignMatrix with shape (8, 2)
         1        0
         0        1
   Terms:
-    'key1' (columns 0:2)
+    &#39;key1&#39; (columns 0:2)
 ```
 
 使用C函数，数值列可以截取为分类量：
 ```python
-In [56]: y, X = patsy.dmatrices('v2 ~ C(key2)', data)
+In [56]: y, X = patsy.dmatrices(&#39;v2 ~ C(key2)&#39;, data)
 
 In [57]: X
 Out[57]: 
@@ -404,13 +404,13 @@ DesignMatrix with shape (8, 2)
           1             0
           1             0
   Terms:
-    'Intercept' (column 0)
-    'C(key2)' (column 1)
+    &#39;Intercept&#39; (column 0)
+    &#39;C(key2)&#39; (column 1)
 ```
 
 当你在模型中使用多个分类名，事情就会变复杂，因为会包括key1:key2形式的相交部分，它可以用在方差（ANOVA）模型分析中：
 ```python
-In [58]: data['key2'] = data['key2'].map({0: 'zero', 1: 'one'})
+In [58]: data[&#39;key2&#39;] = data[&#39;key2&#39;].map({0: &#39;zero&#39;, 1: &#39;one&#39;})
 
 In [59]: data
 Out[59]: 
@@ -424,7 +424,7 @@ Out[59]:
 6    a  zero   7  0.2
 7    b  zero   8 -1.7
 
-In [60]: y, X = patsy.dmatrices('v2 ~ key1 + key2', data)
+In [60]: y, X = patsy.dmatrices(&#39;v2 ~ key1 &#43; key2&#39;, data)
 
 In [61]: X
 Out[61]: 
@@ -439,11 +439,11 @@ DesignMatrix with shape (8, 3)
           1          0             1
           1          1             1
   Terms:
-    'Intercept' (column 0)
-    'key1' (column 1)
-    'key2' (column 2)
+    &#39;Intercept&#39; (column 0)
+    &#39;key1&#39; (column 1)
+    &#39;key2&#39; (column 2)
 
-In [62]: y, X = patsy.dmatrices('v2 ~ key1 + key2 + key1:key2', data)
+In [62]: y, X = patsy.dmatrices(&#39;v2 ~ key1 &#43; key2 &#43; key1:key2&#39;, data)
 
 In [63]: X
 Out[63]: 
@@ -459,10 +459,10 @@ key1[T.b]:key2[T.zero]
           1          0             1                       0
           1          1             1                       1
   Terms:
-    'Intercept' (column 0)
-    'key1' (column 1)
-    'key2' (column 2)
-    'key1:key2' (column 3)
+    &#39;Intercept&#39; (column 0)
+    &#39;key1&#39; (column 1)
+    &#39;key2&#39; (column 2)
+    &#39;key1:key2&#39; (column 3)
 ```
 
 Patsy提供转换分类数据的其它方法，包括以特定顺序转换。请参阅线上文档。
@@ -496,7 +496,7 @@ import statsmodels.formula.api as smf
 def dnorm(mean, variance, size=1):
     if isinstance(size, int):
         size = size,
-    return mean + np.sqrt(variance) * np.random.randn(*size)
+    return mean &#43; np.sqrt(variance) * np.random.randn(*size)
 
 # For reproducibility
 np.random.seed(12345)
@@ -508,7 +508,7 @@ X = np.c_[dnorm(0, 0.4, size=N),
 eps = dnorm(0, 0.1, size=N)
 beta = [0.1, 0.3, 0.5]
 
-y = np.dot(X, beta) + eps
+y = np.dot(X, beta) &#43; eps
 ```
 
 这里，我使用了“真实”模型和可知参数beta。此时，dnorm可用来生成正态分布数据，带有特定均值和方差。现在有：
@@ -566,7 +566,7 @@ Df Residuals:                      97   BIC:                             82.42
 Df Model:                           3                                         
 Covariance Type:            nonrobust                                         
 ==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
+                 coef    std err          t      P&gt;|t|      [0.025      0.975]
 ------------------------------------------------------------------------------
 x1             0.1783      0.053      3.364      0.001       0.073       0.283
 x2             0.2230      0.046      4.818      0.000       0.131       0.315
@@ -585,9 +585,9 @@ specified.
 
 这里的参数名为通用名x1, x2等等。假设所有的模型参数都在一个DataFrame中：
 ```python
-In [74]: data = pd.DataFrame(X, columns=['col0', 'col1', 'col2'])
+In [74]: data = pd.DataFrame(X, columns=[&#39;col0&#39;, &#39;col1&#39;, &#39;col2&#39;])
 
-In [75]: data['y'] = y
+In [75]: data[&#39;y&#39;] = y
 
 In [76]: data[:5]
 Out[76]: 
@@ -601,7 +601,7 @@ Out[76]:
 
 现在，我们使用statsmodels的公式API和Patsy的公式字符串：
 ```python
-In [77]: results = smf.ols('y ~ col0 + col1 + col2', data=data).fit()
+In [77]: results = smf.ols(&#39;y ~ col0 &#43; col1 &#43; col2&#39;, data=data).fit()
 
 In [78]: results.params
 Out[78]: 
@@ -652,7 +652,7 @@ b0 = 0.8
 b1 = -0.4
 noise = dnorm(0, 0.1, N)
 for i in range(N):
-    new_x = values[-1] * b0 + values[-2] * b1 + noise[i]
+    new_x = values[-1] * b0 &#43; values[-2] * b1 &#43; noise[i]
     values.append(new_x)
 ```
 
@@ -683,9 +683,9 @@ scikit-learn是一个广泛使用、用途多样的Python机器学习库。它�
 
 举个例子，我用一个Kaggle竞赛的经典数据集，关于泰坦尼克号乘客的生还率。我们用pandas加载测试和训练数据集：
 ```python
-In [86]: train = pd.read_csv('datasets/titanic/train.csv')
+In [86]: train = pd.read_csv(&#39;datasets/titanic/train.csv&#39;)
 
-In [87]: test = pd.read_csv('datasets/titanic/test.csv')
+In [87]: test = pd.read_csv(&#39;datasets/titanic/test.csv&#39;)
 
 In [88]: train[:4]
 Out[88]: 
@@ -744,29 +744,29 @@ dtype: int64
 
 我想用年龄作为预测值，但是它包含缺失值。缺失数据补全的方法有多种，我用的是一种简单方法，用训练数据集的中位数补全两个表的空值：
 ```python
-In [91]: impute_value = train['Age'].median()
+In [91]: impute_value = train[&#39;Age&#39;].median()
 
-In [92]: train['Age'] = train['Age'].fillna(impute_value)
+In [92]: train[&#39;Age&#39;] = train[&#39;Age&#39;].fillna(impute_value)
 
-In [93]: test['Age'] = test['Age'].fillna(impute_value)
+In [93]: test[&#39;Age&#39;] = test[&#39;Age&#39;].fillna(impute_value)
 ```
 
 现在我们需要指定模型。我增加了一个列IsFemale，作为“Sex”列的编码：
 ```python
-In [94]: train['IsFemale'] = (train['Sex'] == 'female').astype(int)
+In [94]: train[&#39;IsFemale&#39;] = (train[&#39;Sex&#39;] == &#39;female&#39;).astype(int)
 
-In [95]: test['IsFemale'] = (test['Sex'] == 'female').astype(int)
+In [95]: test[&#39;IsFemale&#39;] = (test[&#39;Sex&#39;] == &#39;female&#39;).astype(int)
 ```
 
 然后，我们确定一些模型变量，并创建NumPy数组：
 ```python
-In [96]: predictors = ['Pclass', 'IsFemale', 'Age']
+In [96]: predictors = [&#39;Pclass&#39;, &#39;IsFemale&#39;, &#39;Age&#39;]
 
 In [97]: X_train = train[predictors].values
 
 In [98]: X_test = test[predictors].values
 
-In [99]: y_train = train['Survived'].values
+In [99]: y_train = train[&#39;Survived&#39;].values
 
 In [100]: X_train[:5]
 Out[100]: 
@@ -792,8 +792,8 @@ In [103]: model = LogisticRegression()
 In [104]: model.fit(X_train, y_train)
 Out[104]: 
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
-          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          intercept_scaling=1, max_iter=100, multi_class=&#39;ovr&#39;, n_jobs=1,
+          penalty=&#39;l2&#39;, random_state=None, solver=&#39;liblinear&#39;, tol=0.0001,
           verbose=0, warm_start=False)
 ```
 
@@ -822,8 +822,8 @@ In [109]: model_cv.fit(X_train, y_train)
 Out[109]: 
 LogisticRegressionCV(Cs=10, class_weight=None, cv=None, dual=False,
            fit_intercept=True, intercept_scaling=1.0, max_iter=100,
-           multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-           refit=True, scoring=None, solver='lbfgs', tol=0.0001, verbose=0)
+           multi_class=&#39;ovr&#39;, n_jobs=1, penalty=&#39;l2&#39;, random_state=None,
+           refit=True, scoring=None, solver=&#39;lbfgs&#39;, tol=0.0001, verbose=0)
 ```
 
 要手动进行交叉验证，你可以使用cross_val_score帮助函数，它可以处理数据分割。例如，要交叉验证我们的带有四个不重叠训练数据的模型，可以这样做：
@@ -857,6 +857,6 @@ Out[113]: array([ 0.7723,  0.8027,  0.7703,  0.7883])
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/  
 

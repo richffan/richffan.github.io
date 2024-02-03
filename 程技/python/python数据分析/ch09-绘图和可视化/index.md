@@ -39,7 +39,7 @@ In [15]: plt.plot(data)
 
 虽然seaborn这样的库和pandas的内置绘图函数能够处理许多普通的绘图任务，但如果需要自定义一些高级功能的话就必须学习matplotlib API。
 
->笔记：虽然本书没有详细地讨论matplotlib的各种功能，但足以将你引入门。matplotlib的示例库和文档是学习高级特性的最好资源。
+&gt;笔记：虽然本书没有详细地讨论matplotlib的各种功能，但足以将你引入门。matplotlib的示例库和文档是学习高级特性的最好资源。
 
 ### 9.1.1 Figure和Subplot
 
@@ -67,7 +67,7 @@ In [19]: ax3 = fig.add_subplot(2, 2, 3)
 
 ![图9-2 带有三个subplot的Figure](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027201250111.png)
 
->提示：使用Jupyter notebook有一点不同，即每个小窗重新执行后，图形会被重置。因此，对于复杂的图形，，你必须将所有的绘图命令存在一个小窗里。
+&gt;提示：使用Jupyter notebook有一点不同，即每个小窗重新执行后，图形会被重置。因此，对于复杂的图形，，你必须将所有的绘图命令存在一个小窗里。
 
 这里，我们运行同一个小窗里的所有命令：
 
@@ -81,17 +81,17 @@ ax3 = fig.add_subplot(2, 2, 3)
 如果这时执行一条绘图命令（如plt.plot([1.5, 3.5, -2, 1.6])），matplotlib就会在最后一个用过的subplot（如果没有则创建一个）上进行绘制，隐藏创建figure和subplot的过程。因此，如果我们执行下列命令，你就会得到如图9-3所示的结果：
 
 ```python
-In [20]: plt.plot(np.random.randn(50).cumsum(), 'k--')
+In [20]: plt.plot(np.random.randn(50).cumsum(), &#39;k--&#39;)
 ```
 
 ![图9-3 绘制一次之后的图像](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027202016195.png)
 
-"k--"是一个线型选项，用于告诉matplotlib绘制黑色虚线图。上面那些由fig.add_subplot所返回的对象是AxesSubplot对象，直接调用它们的实例方法就可以在其它空着的格子里面画图了，如图9-4所示：
+&#34;k--&#34;是一个线型选项，用于告诉matplotlib绘制黑色虚线图。上面那些由fig.add_subplot所返回的对象是AxesSubplot对象，直接调用它们的实例方法就可以在其它空着的格子里面画图了，如图9-4所示：
 
 ```python
-In [21]: ax1.hist(np.random.randn(100), bins=20, color='k', alpha=0.3)
+In [21]: ax1.hist(np.random.randn(100), bins=20, color=&#39;k&#39;, alpha=0.3)
 
-In [22]: ax2.scatter(np.arange(30), np.arange(30) + 3 * np.random.randn(30))
+In [22]: ax2.scatter(np.arange(30), np.arange(30) &#43; 3 * np.random.randn(30))
 ```
 
 ![图9-4 继续绘制两次之后的图像](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027202024934.png)
@@ -105,12 +105,12 @@ In [24]: fig, axes = plt.subplots(2, 3)
 
 In [25]: axes
 Out[25]: 
-array([[<matplotlib.axes._subplots.AxesSubplot object at 0x7fb626374048>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb62625db00>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb6262f6c88>],
-       [<matplotlib.axes._subplots.AxesSubplot object at 0x7fb6261a36a0>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb626181860>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fb6260fd4e0>]], dtype
+array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb626374048&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb62625db00&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb6262f6c88&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb6261a36a0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb626181860&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb6260fd4e0&gt;]], dtype
 =object)
 ```
 
@@ -133,7 +133,7 @@ subplots_adjust(left=None, bottom=None, right=None, top=None,
 fig, axes = plt.subplots(2, 2, sharex=True, sharey=True)
 for i in range(2):
     for j in range(2):
-        axes[i, j].hist(np.random.randn(500), bins=50, color='k', alpha=0.5)
+        axes[i, j].hist(np.random.randn(500), bins=50, color=&#39;k&#39;, alpha=0.5)
 plt.subplots_adjust(wspace=0, hspace=0)
 ```
 
@@ -146,23 +146,23 @@ plt.subplots_adjust(wspace=0, hspace=0)
 matplotlib的plot函数接受一组X和Y坐标，还可以接受一个表示`颜色`和`线型`的字符串缩写。例如，要根据x和y绘制绿色虚线，你可以执行如下代码：
 
 ```python
-ax.plot(x, y, 'g--')
+ax.plot(x, y, &#39;g--&#39;)
 ```
 
 这种在一个字符串中指定颜色和线型的方式非常方便。在实际中，如果你是用`代码`绘图，你可能不想通过处理字符串来获得想要的格式。通过下面这种更为明确的方式也能得到同样的效果：
 
 ```python
-ax.plot(x, y, linestyle='--', color='g')
+ax.plot(x, y, linestyle=&#39;--&#39;, color=&#39;g&#39;)
 ```
 
-常用的颜色可以使用颜色缩写，你也可以指定颜色码（例如，'#CECECE'）。你可以通过查看plot的文档字符串查看所有线型的合集（在IPython和Jupyter中使用plot?）。
+常用的颜色可以使用颜色缩写，你也可以指定颜色码（例如，&#39;#CECECE&#39;）。你可以通过查看plot的文档字符串查看所有线型的合集（在IPython和Jupyter中使用plot?）。
 
 线图可以使用标记强调数据点。因为matplotlib可以创建连续线图，在点之间进行插值，因此有时可能不太容易看出真实数据点的位置。标记也可以放到格式字符串中，但标记类型和线型必须放在颜色后面（见图9-6）：
 
 ```python
 In [30]: from numpy.random import randn
 
-In [31]: plt.plot(randn(30).cumsum(), 'ko--')
+In [31]: plt.plot(randn(30).cumsum(), &#39;ko--&#39;)
 ```
 
 ![图9-6 带有标记的线型图示例](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027204215327.png)
@@ -170,7 +170,7 @@ In [31]: plt.plot(randn(30).cumsum(), 'ko--')
 还可以将其写成更为明确的形式：
 
 ```python
-plot(randn(30).cumsum(), color='k', linestyle='dashed', marker='o')
+plot(randn(30).cumsum(), color=&#39;k&#39;, linestyle=&#39;dashed&#39;, marker=&#39;o&#39;)
 ```
 
 在线型图中，非实际数据点默认是按线性方式插值的。可以通过drawstyle选项修改（见图9-7）：
@@ -178,20 +178,20 @@ plot(randn(30).cumsum(), color='k', linestyle='dashed', marker='o')
 ```python
 In [33]: data = np.random.randn(30).cumsum()
 
-In [34]: plt.plot(data, 'k--', label='Default')
-Out[34]: [<matplotlib.lines.Line2D at 0x7fb624d86160>]
+In [34]: plt.plot(data, &#39;k--&#39;, label=&#39;Default&#39;)
+Out[34]: [&lt;matplotlib.lines.Line2D at 0x7fb624d86160&gt;]
 
-In [35]: plt.plot(data, 'k-', drawstyle='steps-post', label='steps-post')
-Out[35]: [<matplotlib.lines.Line2D at 0x7fb624d869e8>]
+In [35]: plt.plot(data, &#39;k-&#39;, drawstyle=&#39;steps-post&#39;, label=&#39;steps-post&#39;)
+Out[35]: [&lt;matplotlib.lines.Line2D at 0x7fb624d869e8&gt;]
 
-In [36]: plt.legend(loc='best')
+In [36]: plt.legend(loc=&#39;best&#39;)
 ```
 
 ![图9-7 不同drawstyle选项的线型图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027204314868.png)
 
-你可能注意到运行上面代码时有输出<matplotlib.lines.Line2D at ...>。matplotlib会返回引用了新添加的子组件的对象。大多数时候，你可以放心地忽略这些输出。这里，因为我们传递了label参数到plot，我们可以创建一个plot图例，指明每条使用plt.legend的线。
+你可能注意到运行上面代码时有输出&lt;matplotlib.lines.Line2D at ...&gt;。matplotlib会返回引用了新添加的子组件的对象。大多数时候，你可以放心地忽略这些输出。这里，因为我们传递了label参数到plot，我们可以创建一个plot图例，指明每条使用plt.legend的线。
 
->笔记：你必须调用plt.legend（或使用ax.legend，如果引用了轴的话）来创建图例，无论你绘图时是否传递label标签选项。
+&gt;笔记：你必须调用plt.legend（或使用ax.legend，如果引用了轴的话）来创建图例，无论你绘图时是否传递label标签选项。
 
 ### 9.1.4 刻度、标签和图例
 
@@ -226,17 +226,17 @@ In [39]: ax.plot(np.random.randn(1000).cumsum())
 ```python
 In [40]: ticks = ax.set_xticks([0, 250, 500, 750, 1000])
 
-In [41]: labels = ax.set_xticklabels(['one', 'two', 'three', 'four', 'five'],
-   ....:                             rotation=30, fontsize='small')
+In [41]: labels = ax.set_xticklabels([&#39;one&#39;, &#39;two&#39;, &#39;three&#39;, &#39;four&#39;, &#39;five&#39;],
+   ....:                             rotation=30, fontsize=&#39;small&#39;)
 ```
 
 rotation选项设定x刻度标签倾斜30度。最后，再用set_xlabel为X轴设置一个名称，并用set_title设置一个标题（见图9-9的结果）：
 
 ```python
-In [42]: ax.set_title('My first matplotlib plot')
-Out[42]: <matplotlib.text.Text at 0x7fb624d055f8>
+In [42]: ax.set_title(&#39;My first matplotlib plot&#39;)
+Out[42]: &lt;matplotlib.text.Text at 0x7fb624d055f8&gt;
 
-In [43]: ax.set_xlabel('Stages')
+In [43]: ax.set_xlabel(&#39;Stages&#39;)
 ```
 
 ![图9-9 用于演示xticks的简单线型图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027205624340.png)
@@ -245,8 +245,8 @@ Y轴的修改方式与此类似，只需将上述代码中的x替换为y即可�
 
 ```python
 props = {
-    'title': 'My first matplotlib plot',
-    'xlabel': 'Stages'
+    &#39;title&#39;: &#39;My first matplotlib plot&#39;,
+    &#39;xlabel&#39;: &#39;Stages&#39;
 }
 ax.set(**props)
 ```
@@ -260,35 +260,35 @@ In [44]: from numpy.random import randn
 
 In [45]: fig = plt.figure(); ax = fig.add_subplot(1, 1, 1)
 
-In [46]: ax.plot(randn(1000).cumsum(), 'k', label='one')
-Out[46]: [<matplotlib.lines.Line2D at 0x7fb624bdf860>]
+In [46]: ax.plot(randn(1000).cumsum(), &#39;k&#39;, label=&#39;one&#39;)
+Out[46]: [&lt;matplotlib.lines.Line2D at 0x7fb624bdf860&gt;]
 
-In [47]: ax.plot(randn(1000).cumsum(), 'k--', label='two')
-Out[47]: [<matplotlib.lines.Line2D at 0x7fb624be90f0>]
+In [47]: ax.plot(randn(1000).cumsum(), &#39;k--&#39;, label=&#39;two&#39;)
+Out[47]: [&lt;matplotlib.lines.Line2D at 0x7fb624be90f0&gt;]
 
-In [48]: ax.plot(randn(1000).cumsum(), 'k.', label='three')
-Out[48]: [<matplotlib.lines.Line2D at 0x7fb624be9160>]
+In [48]: ax.plot(randn(1000).cumsum(), &#39;k.&#39;, label=&#39;three&#39;)
+Out[48]: [&lt;matplotlib.lines.Line2D at 0x7fb624be9160&gt;]
 ```
 
 在此之后，你可以调用`ax.legend()`或`plt.legend()`来`自动创建图例`（结果见图9-10）：
 
 ```python
-In [49]: ax.legend(loc='best')
+In [49]: ax.legend(loc=&#39;best&#39;)
 ```
 
 ![图9-10 带有三条线以及图例的简单线型图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027205633354.png)
 
 legend方法有几个其它的loc位置参数选项。请查看文档字符串（使用ax.legend?）。
 
-loc告诉matplotlib要将图例放在哪。如果你不是吹毛求疵的话，"best"是不错的选择，因为它会选择最不碍事的位置。要从图例中去除一个或多个元素，不传入label或传入`label='_nolegend_'`即可。
+loc告诉matplotlib要将图例放在哪。如果你不是吹毛求疵的话，&#34;best&#34;是不错的选择，因为它会选择最不碍事的位置。要从图例中去除一个或多个元素，不传入label或传入`label=&#39;_nolegend_&#39;`即可。
 
 ### 9.1.7 注解以及在Subplot上绘图
 
 除标准的绘图类型，你可能还希望绘制一些子集的注解，可能是文本、箭头或其他图形等。注解和文字可以通过text、arrow和annotate函数进行添加。text可以将文本绘制在图表的指定坐标(x,y)，还可以加上一些自定义格式：
 
 ```python
-ax.text(x, y, 'Hello world!',
-        family='monospace', fontsize=10)
+ax.text(x, y, &#39;Hello world!&#39;,
+        family=&#39;monospace&#39;, fontsize=10)
 ```
 
 注解中可以既含有文本也含有箭头。例如，我们根据最近的标准普尔500指数价格（来自Yahoo!Finance）绘制一张曲线图，并标出2008年到2009年金融危机期间的一些重要日期。你可以在Jupyter notebook的一个小窗中试验这段代码（图9-11是结果）：
@@ -299,29 +299,29 @@ from datetime import datetime
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 
-data = pd.read_csv('examples/spx.csv', index_col=0, parse_dates=True)
-spx = data['SPX']
+data = pd.read_csv(&#39;examples/spx.csv&#39;, index_col=0, parse_dates=True)
+spx = data[&#39;SPX&#39;]
 
-spx.plot(ax=ax, style='k-')
+spx.plot(ax=ax, style=&#39;k-&#39;)
 
 crisis_data = [
-    (datetime(2007, 10, 11), 'Peak of bull market'),
-    (datetime(2008, 3, 12), 'Bear Stearns Fails'),
-    (datetime(2008, 9, 15), 'Lehman Bankruptcy')
+    (datetime(2007, 10, 11), &#39;Peak of bull market&#39;),
+    (datetime(2008, 3, 12), &#39;Bear Stearns Fails&#39;),
+    (datetime(2008, 9, 15), &#39;Lehman Bankruptcy&#39;)
 ]
 
 for date, label in crisis_data:
-    ax.annotate(label, xy=(date, spx.asof(date) + 75),
-                xytext=(date, spx.asof(date) + 225),
-                arrowprops=dict(facecolor='black', headwidth=4, width=2,
+    ax.annotate(label, xy=(date, spx.asof(date) &#43; 75),
+                xytext=(date, spx.asof(date) &#43; 225),
+                arrowprops=dict(facecolor=&#39;black&#39;, headwidth=4, width=2,
                                 headlength=4),
-                horizontalalignment='left', verticalalignment='top')
+                horizontalalignment=&#39;left&#39;, verticalalignment=&#39;top&#39;)
 
 # Zoom in on 2007-2010
-ax.set_xlim(['1/1/2007', '1/1/2011'])
+ax.set_xlim([&#39;1/1/2007&#39;, &#39;1/1/2011&#39;])
 ax.set_ylim([600, 1800])
 
-ax.set_title('Important dates in the 2008-2009 financial crisis')
+ax.set_title(&#39;Important dates in the 2008-2009 financial crisis&#39;)
 ```
 
 ![图9-11 2008-2009年金融危机期间的重要日期](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027211155694.png)
@@ -338,10 +338,10 @@ ax.set_title('Important dates in the 2008-2009 financial crisis')
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 
-rect = plt.Rectangle((0.2, 0.75), 0.4, 0.15, color='k', alpha=0.3)
-circ = plt.Circle((0.7, 0.2), 0.15, color='b', alpha=0.3)
+rect = plt.Rectangle((0.2, 0.75), 0.4, 0.15, color=&#39;k&#39;, alpha=0.3)
+circ = plt.Circle((0.7, 0.2), 0.15, color=&#39;b&#39;, alpha=0.3)
 pgon = plt.Polygon([[0.15, 0.15], [0.35, 0.4], [0.2, 0.6]],
-                   color='g', alpha=0.5)
+                   color=&#39;g&#39;, alpha=0.5)
 
 ax.add_patch(rect)
 ax.add_patch(circ)
@@ -357,13 +357,13 @@ ax.add_patch(pgon)
 利用plt.savefig可以将当前图表保存到文件。该方法相当于Figure对象的实例方法savefig。例如，要将图表保存为SVG文件，你只需输入：
 
 ```python
-plt.savefig('figpath.svg')
+plt.savefig(&#39;figpath.svg&#39;)
 ```
 
 文件类型是通过文件扩展名推断出来的。因此，如果你使用的是.pdf，就会得到一个PDF文件。我在发布图片时最常用到两个重要的选项是dpi（控制“每英寸点数”分辨率）和bbox_inches（可以剪除当前图表周围的空白部分）。要得到一张带有最小白边且分辨率为400DPI的PNG图片，你可以：
 
 ```python
-plt.savefig('figpath.png', dpi=400, bbox_inches='tight')
+plt.savefig(&#39;figpath.png&#39;, dpi=400, bbox_inches=&#39;tight&#39;)
 ```
 
 savefig并非一定要写入磁盘，也可以写入任何文件型的对象，比如BytesIO：
@@ -384,16 +384,16 @@ plot_data = buffer.getvalue()
 matplotlib自带一些配色方案，以及为生成出版质量的图片而设定的默认配置信息。幸运的是，几乎所有默认行为都能通过一组全局参数进行自定义，它们可以管理图像大小、subplot边距、配色方案、字体大小、网格类型等。一种Python编程方式配置系统的方法是使用rc方法。例如，要将全局的图像默认大小设置为10×10，你可以执行：
 
 ```python
-plt.rc('figure', figsize=(10, 10))
+plt.rc(&#39;figure&#39;, figsize=(10, 10))
 ```
 
-`rc`的第一个参数是希望自定义的对象，如'figure'、'axes'、'xtick'、'ytick'、'grid'、'legend'等。其后可以跟上一系列的关键字参数。一个简单的办法是将这些选项写成一个`字典`：
+`rc`的第一个参数是希望自定义的对象，如&#39;figure&#39;、&#39;axes&#39;、&#39;xtick&#39;、&#39;ytick&#39;、&#39;grid&#39;、&#39;legend&#39;等。其后可以跟上一系列的关键字参数。一个简单的办法是将这些选项写成一个`字典`：
 
 ```python
-font_options = {'family' : 'monospace',
-                'weight' : 'bold',
-                'size'   : 'small'}
-plt.rc('font', **font_options)
+font_options = {&#39;family&#39; : &#39;monospace&#39;,
+                &#39;weight&#39; : &#39;bold&#39;,
+                &#39;size&#39;   : &#39;small&#39;}
+plt.rc(&#39;font&#39;, **font_options)
 ```
 
 要了解全部的自定义选项，请查阅matplotlib的配置文件matplotlibrc（位于matplotlib/mpl-data目录中）。如果对该文件进行了自定义，并将其放在你自己的.matplotlibrc目录中，则每次使用matplotlib时就会加载该文件。
@@ -406,7 +406,7 @@ matplotlib实际上是一种比较低级的工具。要绘制一张图表，你�
 
 在pandas中，我们有多列数据，还有行和列标签。pandas自身就有内置的方法，用于简化从DataFrame和Series绘制图形。另一个库seaborn（https://seaborn.pydata.org/），由Michael Waskom创建的静态图形库。Seaborn简化了许多常见可视类型的创建。
 
->提示：引入seaborn会修改matplotlib默认的颜色方案和绘图类型，以提高可读性和美观度。即使你不使用seaborn API，你可能也会引入seaborn，作为提高美观度和绘制常见matplotlib图形的简化方法。
+&gt;提示：引入seaborn会修改matplotlib默认的颜色方案和绘图类型，以提高可读性和美观度。即使你不使用seaborn API，你可能也会引入seaborn，作为提高美观度和绘制常见matplotlib图形的简化方法。
 
 ### 9.2.1 线型图
 
@@ -432,7 +432,7 @@ pandas的大部分绘图方法都有一个可选的ax参数，它可以是一个
 DataFrame的plot方法会在一个subplot中为各列绘制一条线，并自动创建图例（如图9-14所示）：
 ```python
 In [62]: df = pd.DataFrame(np.random.randn(10, 4).cumsum(0),
-   ....:                   columns=['A', 'B', 'C', 'D'],
+   ....:                   columns=[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;],
    ....:                   index=np.arange(0, 100, 10))
 
 In [63]: df.plot()
@@ -442,13 +442,13 @@ In [63]: df.plot()
 
 plot属性包含一批不同绘图类型的方法。例如，df.plot()等价于df.plot.line()。后面会学习这些方法。
 
->笔记：plot的其他关键字参数会被传给相应的matplotlib绘图函数，所以要更深入地自定义图表，就必须学习更多有关matplotlib API的知识。
+&gt;笔记：plot的其他关键字参数会被传给相应的matplotlib绘图函数，所以要更深入地自定义图表，就必须学习更多有关matplotlib API的知识。
 
 DataFrame还有一些用于对列进行灵活处理的选项，例如，是要将所有列都绘制到一个subplot中还是创建各自的subplot。详细信息请参见表9-4。
 
 ![表9-4 专用于DataFrame的plot参数](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027211850075.png)
 
->注意： 有关时间序列的绘图，请见第11章。
+&gt;注意： 有关时间序列的绘图，请见第11章。
 
 ### 9.2.2 柱状图
 
@@ -457,22 +457,22 @@ DataFrame还有一些用于对列进行灵活处理的选项，例如，是要�
 ```python
 In [64]: fig, axes = plt.subplots(2, 1)
 
-In [65]: data = pd.Series(np.random.rand(16), index=list('abcdefghijklmnop'))
+In [65]: data = pd.Series(np.random.rand(16), index=list(&#39;abcdefghijklmnop&#39;))
 
-In [66]: data.plot.bar(ax=axes[0], color='k', alpha=0.7)
-Out[66]: <matplotlib.axes._subplots.AxesSubplot at 0x7fb62493d470>
+In [66]: data.plot.bar(ax=axes[0], color=&#39;k&#39;, alpha=0.7)
+Out[66]: &lt;matplotlib.axes._subplots.AxesSubplot at 0x7fb62493d470&gt;
 
-In [67]: data.plot.barh(ax=axes[1], color='k', alpha=0.7)
+In [67]: data.plot.barh(ax=axes[1], color=&#39;k&#39;, alpha=0.7)
 ```
 
 ![图9-15 水平和垂直的柱状图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212150645.png)
 
-color='k'和alpha=0.7设定了图形的颜色为黑色，并使用部分的填充透明度。对于DataFrame，柱状图会将每一行的值分为一组，并排显示，如图9-16所示：
+color=&#39;k&#39;和alpha=0.7设定了图形的颜色为黑色，并使用部分的填充透明度。对于DataFrame，柱状图会将每一行的值分为一组，并排显示，如图9-16所示：
 
 ```python
 In [69]: df = pd.DataFrame(np.random.rand(6, 4),
-   ....:                   index=['one', 'two', 'three', 'four', 'five', 'six'],
-   ....:                   columns=pd.Index(['A', 'B', 'C', 'D'], name='Genus'))
+   ....:                   index=[&#39;one&#39;, &#39;two&#39;, &#39;three&#39;, &#39;four&#39;, &#39;five&#39;, &#39;six&#39;],
+   ....:                   columns=pd.Index([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;], name=&#39;Genus&#39;))
 
 In [70]: df
 Out[70]: 
@@ -489,7 +489,7 @@ In [71]: df.plot.bar()
 
 ![图9-16 DataFrame的柱状图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212230345.png)
 
-注意，DataFrame各列的名称"Genus"被用作了图例的标题。
+注意，DataFrame各列的名称&#34;Genus&#34;被用作了图例的标题。
 
 设置stacked=True即可为DataFrame生成堆积柱状图，这样每行的值就会被堆积在一起（如图9-17所示）：
 
@@ -499,14 +499,14 @@ In [73]: df.plot.barh(stacked=True, alpha=0.5)
 
 ![图9-17 DataFrame的堆积柱状图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212303938.png)
 
->笔记：柱状图有一个非常不错的用法：利用value_counts图形化显示Series中各值的出现频率，比如s.value_counts().plot.bar()。
+&gt;笔记：柱状图有一个非常不错的用法：利用value_counts图形化显示Series中各值的出现频率，比如s.value_counts().plot.bar()。
 
 再以本书前面用过的那个有关小费的数据集为例，假设我们想要做一张堆积柱状图以展示每天各种聚会规模的数据点的百分比。我用read_csv将数据加载进来，然后根据日期和聚会规模创建一张交叉表：
 
 ```python
-In [75]: tips = pd.read_csv('examples/tips.csv')
+In [75]: tips = pd.read_csv(&#39;examples/tips.csv&#39;)
 
-In [76]: party_counts = pd.crosstab(tips['day'], tips['size'])
+In [76]: party_counts = pd.crosstab(tips[&#39;day&#39;], tips[&#39;size&#39;])
 
 In [77]: party_counts
 Out[77]: 
@@ -548,7 +548,7 @@ In [81]: party_pcts.plot.bar()
 ```python
 In [83]: import seaborn as sns
 
-In [84]: tips['tip_pct'] = tips['tip'] / (tips['total_bill'] - tips['tip'])
+In [84]: tips[&#39;tip_pct&#39;] = tips[&#39;tip&#39;] / (tips[&#39;total_bill&#39;] - tips[&#39;tip&#39;])
 
 In [85]: tips.head()
 Out[85]: 
@@ -559,7 +559,7 @@ Out[85]:
 3       23.68  3.31     No  Sun  Dinner     2  0.162494
 4       24.59  3.61     No  Sun  Dinner     4  0.172069
 
-In [86]: sns.barplot(x='tip_pct', y='day', data=tips, orient='h')
+In [86]: sns.barplot(x=&#39;tip_pct&#39;, y=&#39;day&#39;, data=tips, orient=&#39;h&#39;)
 ```
 
 ![图9-19 小费的每日比例，带有误差条](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212445701.png)
@@ -569,7 +569,7 @@ seaborn的绘制函数使用data参数，它可能是pandas的DataFrame。其它
 seaborn.barplot有颜色选项，使我们能够通过一个额外的值设置（见图9-20）：
 
 ```python
-In [88]: sns.barplot(x='tip_pct', y='day', hue='time', data=tips, orient='h')
+In [88]: sns.barplot(x=&#39;tip_pct&#39;, y=&#39;day&#39;, hue=&#39;time&#39;, data=tips, orient=&#39;h&#39;)
 ```
 
 ![图9-20 根据天和时间的小费比例](http://upload-images.jianshu.io/upload_images/7178691-06abe2f070222115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -577,21 +577,21 @@ In [88]: sns.barplot(x='tip_pct', y='day', hue='time', data=tips, orient='h')
 注意，seaborn已经自动修改了图形的美观度：默认调色板，图形背景和网格线的颜色。你可以用seaborn.set在不同的图形外观之间切换：
 
 ```python
-In [90]: sns.set(style="whitegrid")
+In [90]: sns.set(style=&#34;whitegrid&#34;)
 ```
 
 ### 9.2.3 直方图和密度图
 
 直方图（histogram）是一种可以对值频率进行离散化显示的柱状图。数据点被拆分到离散的、间隔均匀的面元中，绘制的是各面元中数据点的数量。再以前面那个小费数据为例，通过在Series使用plot.hist方法，我们可以生成一张“小费占消费总额百分比”的直方图（如图9-21所示）：
 ```python
-In [92]: tips['tip_pct'].plot.hist(bins=50)
+In [92]: tips[&#39;tip_pct&#39;].plot.hist(bins=50)
 ```
 
 ![图9-21 小费百分比的直方图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212607416.png)
 
 与此相关的一种图表类型是密度图，它是通过计算“可能会产生观测数据的连续概率分布的估计”而产生的。一般的过程是将该分布近似为一组核（即诸如正态分布之类的较为简单的分布）。因此，密度图也被称作KDE（Kernel Density Estimate，核密度估计）图。使用plot.kde和标准混合正态分布估计即可生成一张密度图（见图9-22）：
 ```python
-In [94]: tips['tip_pct'].plot.density()
+In [94]: tips[&#39;tip_pct&#39;].plot.density()
 ```
 
 ![图9-22  小费百分比的密度图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212622635.png)
@@ -605,7 +605,7 @@ In [97]: comp2 = np.random.normal(10, 2, size=200)
 
 In [98]: values = pd.Series(np.concatenate([comp1, comp2]))
 
-In [99]: sns.distplot(values, bins=100, color='k')
+In [99]: sns.distplot(values, bins=100, color=&#39;k&#39;)
 ```
 
 ![图9-23 标准混合密度估计的标准直方图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212633466.png)
@@ -615,9 +615,9 @@ In [99]: sns.distplot(values, bins=100, color='k')
 点图或散布图是观察两个一维数据序列之间的关系的有效手段。在下面这个例子中，我加载了来自statsmodels项目的macrodata数据集，选择了几个变量，然后计算对数差：
 
 ```python
-In [100]: macro = pd.read_csv('examples/macrodata.csv')
+In [100]: macro = pd.read_csv(&#39;examples/macrodata.csv&#39;)
 
-In [101]: data = macro[['cpi', 'm1', 'tbilrate', 'unemp']]
+In [101]: data = macro[[&#39;cpi&#39;, &#39;m1&#39;, &#39;tbilrate&#39;, &#39;unemp&#39;]]
 
 In [102]: trans_data = np.log(data).diff().dropna()
 
@@ -634,10 +634,10 @@ Out[103]:
 然后可以使用seaborn的regplot方法，它可以做一个散布图，并加上一条线性回归的线（见图9-24）：
 
 ```python
-In [105]: sns.regplot('m1', 'unemp', data=trans_data)
-Out[105]: <matplotlib.axes._subplots.AxesSubplot at 0x7fb613720be0>
+In [105]: sns.regplot(&#39;m1&#39;, &#39;unemp&#39;, data=trans_data)
+Out[105]: &lt;matplotlib.axes._subplots.AxesSubplot at 0x7fb613720be0&gt;
 
-In [106]: plt.title('Changes in log %s versus log %s' % ('m1', 'unemp'))
+In [106]: plt.title(&#39;Changes in log %s versus log %s&#39; % (&#39;m1&#39;, &#39;unemp&#39;))
 ```
 
 ![图9-24 seaborn的回归/散布图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212725977.png)
@@ -645,7 +645,7 @@ In [106]: plt.title('Changes in log %s versus log %s' % ('m1', 'unemp'))
 在探索式数据分析工作中，同时观察一组变量的散布图是很有意义的，这也被称为散布图矩阵（scatter plot matrix）。纯手工创建这样的图表很费工夫，所以seaborn提供了一个便捷的pairplot函数，它支持在对角线上放置每个变量的直方图或密度估计（见图9-25）：
 
 ```python
-In [107]: sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
+In [107]: sns.pairplot(trans_data, diag_kind=&#39;kde&#39;, plot_kws={&#39;alpha&#39;: 0.2})
 ```
 
 ![图9-25 statsmodels macro data的散布图矩阵](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212751215.png)
@@ -657,8 +657,8 @@ In [107]: sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
 要是数据集有额外的分组维度呢？有多个分类变量的数据可视化的一种方法是使用小面网格。seaborn有一个有用的内置函数factorplot，可以简化制作多种分面图（见图9-26）：
 
 ```python
- In [108]: sns.factorplot(x='day', y='tip_pct', hue='time', col='smoker',
-   .....:                kind='bar', data=tips[tips.tip_pct < 1])
+ In [108]: sns.factorplot(x=&#39;day&#39;, y=&#39;tip_pct&#39;, hue=&#39;time&#39;, col=&#39;smoker&#39;,
+   .....:                kind=&#39;bar&#39;, data=tips[tips.tip_pct &lt; 1])
 ```
 
 ![图9-26 按照天/时间/吸烟者的小费百分比](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212818352.png)
@@ -666,9 +666,9 @@ In [107]: sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
 除了在分面中用不同的颜色按时间分组，我们还可以通过给每个时间值添加一行来扩展分面网格：
 
 ```python
-In [109]: sns.factorplot(x='day', y='tip_pct', row='time',
-   .....:                col='smoker',
-   .....:                kind='bar', data=tips[tips.tip_pct < 1])
+In [109]: sns.factorplot(x=&#39;day&#39;, y=&#39;tip_pct&#39;, row=&#39;time&#39;,
+   .....:                col=&#39;smoker&#39;,
+   .....:                kind=&#39;bar&#39;, data=tips[tips.tip_pct &lt; 1])
 ```
 
 ![图9-27 按天的tip_pct，通过time/smoker分面](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212829481.png)
@@ -676,8 +676,8 @@ In [109]: sns.factorplot(x='day', y='tip_pct', row='time',
 factorplot支持其它的绘图类型，你可能会用到。例如，盒图（它可以显示中位数，四分位数，和异常值）就是一个有用的可视化类型（见图9-28）：
 
 ```python
-In [110]: sns.factorplot(x='tip_pct', y='day', kind='box',
-   .....:                data=tips[tips.tip_pct < 0.5])
+In [110]: sns.factorplot(x=&#39;tip_pct&#39;, y=&#39;day&#39;, kind=&#39;box&#39;,
+   .....:                data=tips[tips.tip_pct &lt; 0.5])
 ```
 
 ![图9-28 按天的tip_pct的盒图](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201027212838302.png)
@@ -699,6 +699,6 @@ In [110]: sns.factorplot(x='tip_pct', y='day', kind='box',
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/  
 

@@ -3,7 +3,7 @@
 ### Docker Hub
 目前 Docker 官方维护了一个公共仓库 [Docker Hub](https://hub.docker.com/)，其中已经包括了超过 15,000 的镜像。大部分需求，都可以通过在 Docker Hub 中直接下载镜像来实现。
 
-<!--more-->
+&lt;!--more--&gt;
 
 #### 登录
 可以通过执行 docker login 命令来输入用户名、密码和邮箱来完成注册和登录。 注册成功后，本地用户目录的 .dockercfg 中将保存用户的认证信息。
@@ -98,7 +98,7 @@ $ sudo gunicorn --access-logfile - --error-logfile - -k gevent -b 0.0.0.0:5000 -
 ```
 此时使用 curl 访问本地的 5000 端口，看到输出 docker-registry 的版本信息说明运行成功。
 
->*注：config/config_sample.yml 文件是示例配置文件。*
+&gt;*注：config/config_sample.yml 文件是示例配置文件。*
 
 #### 在私有仓库上传、下载、搜索镜像
 创建好私有仓库之后，就可以使用 docker tag 来标记一个镜像，然后推送它到仓库，别的机器上就可以下载下来了。例如私有仓库地址为 192.168.7.26:5000。
@@ -137,9 +137,9 @@ Pushing tag for rev [ba5877dc9bec] on {http://192.168.7.26:5000/v1/repositories/
 用 curl 查看仓库中的镜像。
 ```bash
 $ curl http://192.168.7.26:5000/v1/search
-{"num_results": 7, "query": "", "results": [{"description": "", "name": "library/miaxis_j2ee"}, {"description": "", "name": "library/tomcat"}, {"description": "", "name": "library/ubuntu"}, {"description": "", "name": "library/ubuntu_office"}, {"description": "", "name": "library/desktop_ubu"}, {"description": "", "name": "dockerfile/ubuntu"}, {"description": "", "name": "library/test"}]}
+{&#34;num_results&#34;: 7, &#34;query&#34;: &#34;&#34;, &#34;results&#34;: [{&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/miaxis_j2ee&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/tomcat&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/ubuntu&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/ubuntu_office&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/desktop_ubu&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;dockerfile/ubuntu&#34;}, {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/test&#34;}]}
 ```
-这里可以看到 {"description": "", "name": "library/test"}，表明镜像已经被成功上传了。
+这里可以看到 {&#34;description&#34;: &#34;&#34;, &#34;name&#34;: &#34;library/test&#34;}，表明镜像已经被成功上传了。
 
 现在可以到另外一台机器去下载这个镜像。
 ```bash
@@ -158,7 +158,7 @@ REPOSITORY                         TAG                 IMAGE ID            CREAT
 可以使用 [这个脚本](https://github.com/yeasy/docker_practice/raw/master/_local/push_images.sh) 批量上传本地的镜像到注册服务器中，默认是本地注册服务器 127.0.0.1:5000。例如：
 
 ```bash
-$ wget https://github.com/yeasy/docker_practice/raw/master/_local/push_images.sh; sudo chmod a+x push_images.sh
+$ wget https://github.com/yeasy/docker_practice/raw/master/_local/push_images.sh; sudo chmod a&#43;x push_images.sh
 $ ./push_images.sh ubuntu:latest centos:centos7
 The registry server is 127.0.0.1
 Uploading ubuntu:latest...
@@ -215,9 +215,9 @@ export SETTINGS_FLAVOR=dev
 ```
 common:
     loglevel: info
-    search_backend: "_env:SEARCH_BACKEND:"
+    search_backend: &#34;_env:SEARCH_BACKEND:&#34;
     sqlalchemy_index_database:
-        "_env:SQLALCHEMY_INDEX_DATABASE:sqlite:////tmp/docker-registry.db"
+        &#34;_env:SQLALCHEMY_INDEX_DATABASE:sqlite:////tmp/docker-registry.db&#34;
 
 prod:
     loglevel: warn
@@ -244,6 +244,6 @@ test:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E4%BB%93%E5%BA%93/  
 

@@ -179,6 +179,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/excel/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8%E7%94%A8%E6%B3%95/  
 

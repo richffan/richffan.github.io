@@ -10,7 +10,7 @@
 层次化索引（hierarchical indexing）是pandas的一项重要功能，它使你能在一个轴上拥有多个（两个以上）索引级别。抽象点说，它使你能以低维度形式处理高维度数据。我们先来看一个简单的例子：创建一个Series，并用一个由列表或数组组成的列表作为索引：
 ```python
 In [9]: data = pd.Series(np.random.randn(9),
-   ...:                  index=[['a', 'a', 'a', 'b', 'b', 'c', 'c', 'd', 'd'],
+   ...:                  index=[[&#39;a&#39;, &#39;a&#39;, &#39;a&#39;, &#39;b&#39;, &#39;b&#39;, &#39;c&#39;, &#39;c&#39;, &#39;d&#39;, &#39;d&#39;],
    ...:                         [1, 2, 3, 1, 3, 1, 2, 2, 3]])
 
 In [10]: data
@@ -31,19 +31,19 @@ dtype: float64
 ```python
 In [11]: data.index
 Out[11]: 
-MultiIndex(levels=[['a', 'b', 'c', 'd'], [1, 2, 3]],
+MultiIndex(levels=[[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [1, 2, 3]],
            labels=[[0, 0, 0, 1, 1, 2, 2, 3, 3], [0, 1, 2, 0, 2, 0, 1, 1, 2]])
 ```
 
 对于一个层次化索引的对象，可以使用所谓的部分索引，使用它选取数据子集的操作更简单：
 ```python
-In [12]: data['b']
+In [12]: data[&#39;b&#39;]
 Out[12]: 
 1   -0.555730
 3    1.965781
 dtype: float64
 
-In [13]: data['b':'c']
+In [13]: data[&#39;b&#39;:&#39;c&#39;]
 Out[13]: 
 b  1   -0.555730
    3    1.965781
@@ -51,7 +51,7 @@ c  1    1.393406
    2    0.092908
 dtype: float64
 
-In [14]: data.loc[['b', 'd']]
+In [14]: data.loc[[&#39;b&#39;, &#39;d&#39;]]
 Out[14]: 
 b  1   -0.555730
    3    1.965781
@@ -102,9 +102,9 @@ stack和unstack将在本章后面详细讲解。
 对于一个DataFrame，每条轴都可以有分层索引：
 ```python
 In [18]: frame = pd.DataFrame(np.arange(12).reshape((4, 3)),
-   ....:                      index=[['a', 'a', 'b', 'b'], [1, 2, 1, 2]],
-   ....:                      columns=[['Ohio', 'Ohio', 'Colorado'],
-   ....:                               ['Green', 'Red', 'Green']])
+   ....:                      index=[[&#39;a&#39;, &#39;a&#39;, &#39;b&#39;, &#39;b&#39;], [1, 2, 1, 2]],
+   ....:                      columns=[[&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Colorado&#39;],
+   ....:                               [&#39;Green&#39;, &#39;Red&#39;, &#39;Green&#39;]])
 
 In [19]: frame
 Out[19]: 
@@ -118,9 +118,9 @@ b 1     6   7        8
 
 各层都可以有名字（可以是字符串，也可以是别的Python对象）。如果指定了名称，它们就会显示在控制台输出中：
 ```python
-In [20]: frame.index.names = ['key1', 'key2']
+In [20]: frame.index.names = [&#39;key1&#39;, &#39;key2&#39;]
 
-In [21]: frame.columns.names = ['state', 'color']
+In [21]: frame.columns.names = [&#39;state&#39;, &#39;color&#39;]
 
 In [22]: frame
 Out[22]: 
@@ -133,11 +133,11 @@ b    1        6   7        8
      2        9  10       11
 ```
 
->注意：小心区分索引名state、color与行标签。
+&gt;注意：小心区分索引名state、color与行标签。
 
 有了部分列索引，因此可以轻松选取列分组：
 ```python
-In [23]: frame['Ohio']
+In [23]: frame[&#39;Ohio&#39;]
 Out[23]: 
 color      Green  Red
 key1 key2            
@@ -149,15 +149,15 @@ b    1         6    7
 
 可以单独创建MultiIndex然后复用。上面那个DataFrame中的（带有分级名称）列可以这样创建：
 ```python
-MultiIndex.from_arrays([['Ohio', 'Ohio', 'Colorado'], ['Green', 'Red', 'Green']],
-                       names=['state', 'color'])
+MultiIndex.from_arrays([[&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Colorado&#39;], [&#39;Green&#39;, &#39;Red&#39;, &#39;Green&#39;]],
+                       names=[&#39;state&#39;, &#39;color&#39;])
 ```
 
 ### 8.1.1 重排与分级排序
 
 有时，你需要重新调整某条轴上各级别的顺序，或根据指定级别上的值对数据进行排序。`swaplevel`接受两个级别编号或名称，并返回一个互换了级别的新对象（但数据不会发生变化）：
 ```python
-In [24]: frame.swaplevel('key1', 'key2')
+In [24]: frame.swaplevel(&#39;key1&#39;, &#39;key2&#39;)
 Out[24]: 
 state      Ohio     Colorado
 color     Green Red    Green
@@ -195,7 +195,7 @@ key2 key1
 
 许多对DataFrame和Series的描述和汇总统计都有一个level选项，它用于指定在某条轴上求和的级别。再以上面那个DataFrame为例，我们可以根据行或列上的级别来进行求和：
 ```python
-In [27]: frame.sum(level='key2')
+In [27]: frame.sum(level=&#39;key2&#39;)
 Out[27]: 
 state  Ohio     Colorado
 color Green Red    Green
@@ -203,7 +203,7 @@ key2
 1         6   8       10
 2        12  14       16
 
-In [28]: frame.sum(level='color', axis=1)
+In [28]: frame.sum(level=&#39;color&#39;, axis=1)
 Out[28]: 
 color      Green  Red
 key1 key2            
@@ -219,10 +219,10 @@ b    1        14    7
 
 人们经常想要将DataFrame的一个或多个列当做行索引来用，或者可能希望将行索引变成DataFrame的列。以下面这个DataFrame为例：
 ```python
-In [29]: frame = pd.DataFrame({'a': range(7), 'b': range(7, 0, -1),
-   ....:                       'c': ['one', 'one', 'one', 'two', 'two',
-   ....:                             'two', 'two'],
-   ....:                       'd': [0, 1, 2, 0, 1, 2, 3]})
+In [29]: frame = pd.DataFrame({&#39;a&#39;: range(7), &#39;b&#39;: range(7, 0, -1),
+   ....:                       &#39;c&#39;: [&#39;one&#39;, &#39;one&#39;, &#39;one&#39;, &#39;two&#39;, &#39;two&#39;,
+   ....:                             &#39;two&#39;, &#39;two&#39;],
+   ....:                       &#39;d&#39;: [0, 1, 2, 0, 1, 2, 3]})
 
 In [30]: frame
 Out[30]: 
@@ -238,7 +238,7 @@ Out[30]:
 
 DataFrame的set_index函数会将其一个或多个列转换为行索引，并创建一个新的DataFrame：
 ```python
-In [31]: frame2 = frame.set_index(['c', 'd'])
+In [31]: frame2 = frame.set_index([&#39;c&#39;, &#39;d&#39;])
 
 In [32]: frame2
 Out[32]: 
@@ -255,7 +255,7 @@ two 0  3  4
 
 默认情况下，那些列会从DataFrame中移除，但也可以将其保留下来：
 ```python
-In [33]: frame.set_index(['c', 'd'], drop=False)
+In [33]: frame.set_index([&#39;c&#39;, &#39;d&#39;], drop=False)
 Out[33]: 
        a  b    c  d
 c   d              
@@ -298,11 +298,11 @@ pandas对象中的数据可以通过一些方式进行合并：
 
 以一个简单的例子开始：
 ```python
-In [35]: df1 = pd.DataFrame({'key': ['b', 'b', 'a', 'c', 'a', 'a', 'b'],
-   ....:                     'data1': range(7)})
+In [35]: df1 = pd.DataFrame({&#39;key&#39;: [&#39;b&#39;, &#39;b&#39;, &#39;a&#39;, &#39;c&#39;, &#39;a&#39;, &#39;a&#39;, &#39;b&#39;],
+   ....:                     &#39;data1&#39;: range(7)})
 
-In [36]: df2 = pd.DataFrame({'key': ['a', 'b', 'd'],
-   ....:                     'data2': range(3)})
+In [36]: df2 = pd.DataFrame({&#39;key&#39;: [&#39;a&#39;, &#39;b&#39;, &#39;d&#39;],
+   ....:                     &#39;data2&#39;: range(3)})
 
 In [37]: df1
 Out[37]: 
@@ -338,7 +338,7 @@ Out[39]:
 
 注意，我并没有指明要用哪个列进行连接。如果没有指定，merge就会将重叠列的列名当做键。不过，最好明确指定一下：
 ```python
-In [40]: pd.merge(df1, df2, on='key')
+In [40]: pd.merge(df1, df2, on=&#39;key&#39;)
 Out[40]: 
    data1 key  data2
 0      0   b      1
@@ -351,13 +351,13 @@ Out[40]:
 
 如果两个对象的列名不同，也可以分别进行指定：
 ```python
-In [41]: df3 = pd.DataFrame({'lkey': ['b', 'b', 'a', 'c', 'a', 'a', 'b'],
-   ....:                     'data1': range(7)})
+In [41]: df3 = pd.DataFrame({&#39;lkey&#39;: [&#39;b&#39;, &#39;b&#39;, &#39;a&#39;, &#39;c&#39;, &#39;a&#39;, &#39;a&#39;, &#39;b&#39;],
+   ....:                     &#39;data1&#39;: range(7)})
 
-In [42]: df4 = pd.DataFrame({'rkey': ['a', 'b', 'd'],
-   ....:                     'data2': range(3)})
+In [42]: df4 = pd.DataFrame({&#39;rkey&#39;: [&#39;a&#39;, &#39;b&#39;, &#39;d&#39;],
+   ....:                     &#39;data2&#39;: range(3)})
 
-In [43]: pd.merge(df3, df4, left_on='lkey', right_on='rkey')
+In [43]: pd.merge(df3, df4, left_on=&#39;lkey&#39;, right_on=&#39;rkey&#39;)
 Out[43]: 
    data1 lkey  data2 rkey
 0      0    b      1    b
@@ -368,9 +368,9 @@ Out[43]:
 5      5    a      0    a
 ```
 
-可能你已经注意到了，结果里面c和d以及与之相关的数据消失了。默认情况下，merge做的是“内连接”；结果中的键是交集。其他方式还有"left"、"right"以及"outer"。外连接求取的是键的并集，组合了左连接和右连接的效果：
+可能你已经注意到了，结果里面c和d以及与之相关的数据消失了。默认情况下，merge做的是“内连接”；结果中的键是交集。其他方式还有&#34;left&#34;、&#34;right&#34;以及&#34;outer&#34;。外连接求取的是键的并集，组合了左连接和右连接的效果：
 ```python
-In [44]: pd.merge(df1, df2, how='outer')
+In [44]: pd.merge(df1, df2, how=&#39;outer&#39;)
 Out[44]: 
    data1 key  data2
 0    0.0   b    1.0
@@ -390,11 +390,11 @@ Out[44]:
 
 多对多的合并有些不直观。看下面的例子：
 ```python
-In [45]: df1 = pd.DataFrame({'key': ['b', 'b', 'a', 'c', 'a', 'b'],
-   ....:                     'data1': range(6)})
+In [45]: df1 = pd.DataFrame({&#39;key&#39;: [&#39;b&#39;, &#39;b&#39;, &#39;a&#39;, &#39;c&#39;, &#39;a&#39;, &#39;b&#39;],
+   ....:                     &#39;data1&#39;: range(6)})
 
-In [46]: df2 = pd.DataFrame({'key': ['a', 'b', 'a', 'b', 'd'],
-   ....:                     'data2': range(5)})
+In [46]: df2 = pd.DataFrame({&#39;key&#39;: [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;, &#39;d&#39;],
+   ....:                     &#39;data2&#39;: range(5)})
 
 In [47]: df1
 Out[47]: 
@@ -415,7 +415,7 @@ Out[48]:
 3      3   b
 4      4   d
 
-In [49]: pd.merge(df1, df2, on='key', how='left')
+In [49]: pd.merge(df1, df2, on=&#39;key&#39;, how=&#39;left&#39;)
 Out[49]: 
     data1 key  data2
 0       0   b    1.0
@@ -431,9 +431,9 @@ Out[49]:
 10      5   b    3.0
 ```
 
-多对多连接产生的是行的笛卡尔积。由于左边的DataFrame有3个"b"行，右边的有2个，所以最终结果中就有6个"b"行。连接方式只影响出现在结果中的不同的键的值：
+多对多连接产生的是行的笛卡尔积。由于左边的DataFrame有3个&#34;b&#34;行，右边的有2个，所以最终结果中就有6个&#34;b&#34;行。连接方式只影响出现在结果中的不同的键的值：
 ```python
-In [50]: pd.merge(df1, df2, how='inner')
+In [50]: pd.merge(df1, df2, how=&#39;inner&#39;)
 Out[50]: 
    data1 key  data2
 0      0   b      1
@@ -450,15 +450,15 @@ Out[50]:
 
 要根据多个键进行合并，传入一个由列名组成的列表即可：
 ```python
-In [51]: left = pd.DataFrame({'key1': ['foo', 'foo', 'bar'],
-   ....:                      'key2': ['one', 'two', 'one'],
-   ....:                      'lval': [1, 2, 3]})
+In [51]: left = pd.DataFrame({&#39;key1&#39;: [&#39;foo&#39;, &#39;foo&#39;, &#39;bar&#39;],
+   ....:                      &#39;key2&#39;: [&#39;one&#39;, &#39;two&#39;, &#39;one&#39;],
+   ....:                      &#39;lval&#39;: [1, 2, 3]})
 
-In [52]: right = pd.DataFrame({'key1': ['foo', 'foo', 'bar', 'bar'],
-   ....:                       'key2': ['one', 'one', 'one', 'two'],
-   ....:                       'rval': [4, 5, 6, 7]})
+In [52]: right = pd.DataFrame({&#39;key1&#39;: [&#39;foo&#39;, &#39;foo&#39;, &#39;bar&#39;, &#39;bar&#39;],
+   ....:                       &#39;key2&#39;: [&#39;one&#39;, &#39;one&#39;, &#39;one&#39;, &#39;two&#39;],
+   ....:                       &#39;rval&#39;: [4, 5, 6, 7]})
 
-In [53]: pd.merge(left, right, on=['key1', 'key2'], how='outer')
+In [53]: pd.merge(left, right, on=[&#39;key1&#39;, &#39;key2&#39;], how=&#39;outer&#39;)
 Out[53]: 
   key1 key2  lval  rval
 0  foo  one   1.0   4.0
@@ -470,11 +470,11 @@ Out[53]:
 
 结果中会出现哪些键组合取决于所选的合并方式，你可以这样来理解：多个键形成一系列元组，并将其当做单个连接键（当然，实际上并不是这么回事）。
 
->注意：在进行列－列连接时，DataFrame对象中的索引会被丢弃。
+&gt;注意：在进行列－列连接时，DataFrame对象中的索引会被丢弃。
 
 对于合并运算需要考虑的最后一个问题是对重复列名的处理。虽然你可以手工处理列名重叠的问题（查看前面介绍的重命名轴标签），但merge有一个更实用的suffixes选项，用于指定附加到左右两个DataFrame对象的重叠列名上的字符串：
 ```python
-In [54]: pd.merge(left, right, on='key1')
+In [54]: pd.merge(left, right, on=&#39;key1&#39;)
 Out[54]: 
   key1 key2_x  lval key2_y  rval
 0  foo    one     1    one     4
@@ -484,7 +484,7 @@ Out[54]:
 4  bar    one     3    one     6
 5  bar    one     3    two     7
 
-In [55]: pd.merge(left, right, on='key1', suffixes=('_left', '_right'))
+In [55]: pd.merge(left, right, on=&#39;key1&#39;, suffixes=(&#39;_left&#39;, &#39;_right&#39;))
 Out[55]: 
   key1 key2_left  lval key2_right  rval
 0  foo       one     1        one     4
@@ -509,10 +509,10 @@ indicator 添加特殊的列_merge，它可以指明每个行的来源，它的�
 
 有时候，DataFrame中的连接键位于其索引中。在这种情况下，你可以传入left_index=True或right_index=True（或两个都传）以说明索引应该被用作连接键：
 ```python
-In [56]: left1 = pd.DataFrame({'key': ['a', 'b', 'a', 'a', 'b', 'c'],
-   ....:                       'value': range(6)})
+In [56]: left1 = pd.DataFrame({&#39;key&#39;: [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;],
+   ....:                       &#39;value&#39;: range(6)})
 
-In [57]: right1 = pd.DataFrame({'group_val': [3.5, 7]}, index=['a', 'b'])
+In [57]: right1 = pd.DataFrame({&#39;group_val&#39;: [3.5, 7]}, index=[&#39;a&#39;, &#39;b&#39;])
 
 In [58]: left1
 Out[58]:
@@ -531,7 +531,7 @@ Out[59]:
 a        3.5
 b        7.0
 
-In [60]: pd.merge(left1, right1, left_on='key', right_index=True)
+In [60]: pd.merge(left1, right1, left_on=&#39;key&#39;, right_index=True)
 Out[60]: 
   key  value  group_val
 0   a      0        3.5
@@ -543,7 +543,7 @@ Out[60]:
 
 由于默认的merge方法是求取连接键的交集，因此你可以通过外连接的方式得到它们的并集：
 ```python
-In [61]: pd.merge(left1, right1, left_on='key', right_index=True, how='outer')
+In [61]: pd.merge(left1, right1, left_on=&#39;key&#39;, right_index=True, how=&#39;outer&#39;)
 Out[61]: 
   key  value  group_val
 0   a      0        3.5
@@ -556,16 +556,16 @@ Out[61]:
 
 对于层次化索引的数据，事情就有点复杂了，因为索引的合并默认是多键合并：
 ```python
-In [62]: lefth = pd.DataFrame({'key1': ['Ohio', 'Ohio', 'Ohio',
-   ....:                                'Nevada', 'Nevada'],
-   ....:                       'key2': [2000, 2001, 2002, 2001, 2002],
-   ....:                       'data': np.arange(5.)})
+In [62]: lefth = pd.DataFrame({&#39;key1&#39;: [&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Ohio&#39;,
+   ....:                                &#39;Nevada&#39;, &#39;Nevada&#39;],
+   ....:                       &#39;key2&#39;: [2000, 2001, 2002, 2001, 2002],
+   ....:                       &#39;data&#39;: np.arange(5.)})
 
 In [63]: righth = pd.DataFrame(np.arange(12).reshape((6, 2)),
-   ....:                       index=[['Nevada', 'Nevada', 'Ohio', 'Ohio',
-   ....:                               'Ohio', 'Ohio'],
+   ....:                       index=[[&#39;Nevada&#39;, &#39;Nevada&#39;, &#39;Ohio&#39;, &#39;Ohio&#39;,
+   ....:                               &#39;Ohio&#39;, &#39;Ohio&#39;],
    ....:                              [2001, 2000, 2000, 2000, 2001, 2002]],
-   ....:                       columns=['event1', 'event2'])
+   ....:                       columns=[&#39;event1&#39;, &#39;event2&#39;])
 
 In [64]: lefth
 Out[64]: 
@@ -587,9 +587,9 @@ Ohio   2000       4       5
        2002      10      11
 ```
 
-这种情况下，你必须以列表的形式指明用作合并键的多个列（注意用how='outer'对重复索引值的处理）：
+这种情况下，你必须以列表的形式指明用作合并键的多个列（注意用how=&#39;outer&#39;对重复索引值的处理）：
 ```python
-In [66]: pd.merge(lefth, righth, left_on=['key1', 'key2'], right_index=True)
+In [66]: pd.merge(lefth, righth, left_on=[&#39;key1&#39;, &#39;key2&#39;], right_index=True)
 Out[66]: 
    data    key1  key2  event1  event2
 0   0.0    Ohio  2000       4       5
@@ -598,8 +598,8 @@ Out[66]:
 2   2.0    Ohio  2002      10      11
 3   3.0  Nevada  2001       0       1
 
-In [67]: pd.merge(lefth, righth, left_on=['key1', 'key2'],
-   ....:          right_index=True, how='outer')
+In [67]: pd.merge(lefth, righth, left_on=[&#39;key1&#39;, &#39;key2&#39;],
+   ....:          right_index=True, how=&#39;outer&#39;)
 Out[67]: 
    data    key1  key2  event1  event2
 0   0.0    Ohio  2000     4.0     5.0
@@ -614,12 +614,12 @@ Out[67]:
 同时使用合并双方的索引也没问题：
 ```python
 In [68]: left2 = pd.DataFrame([[1., 2.], [3., 4.], [5., 6.]],
-   ....:                      index=['a', 'c', 'e'],
-   ....:                      columns=['Ohio', 'Nevada'])
+   ....:                      index=[&#39;a&#39;, &#39;c&#39;, &#39;e&#39;],
+   ....:                      columns=[&#39;Ohio&#39;, &#39;Nevada&#39;])
 
 In [69]: right2 = pd.DataFrame([[7., 8.], [9., 10.], [11., 12.], [13, 14]],
-   ....:                       index=['b', 'c', 'd', 'e'],
-   ....:                       columns=['Missouri', 'Alabama'])
+   ....:                       index=[&#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;],
+   ....:                       columns=[&#39;Missouri&#39;, &#39;Alabama&#39;])
 
 In [70]: left2
 Out[70]: 
@@ -636,7 +636,7 @@ c       9.0     10.0
 d      11.0     12.0
 e      13.0     14.0
 
-In [72]: pd.merge(left2, right2, how='outer', left_index=True, right_index=True)
+In [72]: pd.merge(left2, right2, how=&#39;outer&#39;, left_index=True, right_index=True)
 Out[72]: 
    Ohio  Nevada  Missouri  Alabama
 a   1.0     2.0       NaN      NaN
@@ -648,7 +648,7 @@ e   5.0     6.0      13.0     14.0
 
 DataFrame还有一个便捷的join实例方法，它能更为方便地实现按索引合并。它还可用于合并多个带有相同或相似索引的DataFrame对象，但要求没有重叠的列。在上面那个例子中，我们可以编写：
 ```python
-In [73]: left2.join(right2, how='outer')
+In [73]: left2.join(right2, how=&#39;outer&#39;)
 Out[73]: 
    Ohio  Nevada  Missouri  Alabama
 a   1.0     2.0       NaN      NaN
@@ -660,7 +660,7 @@ e   5.0     6.0      13.0     14.0
 
 因为一些历史版本的遗留原因，DataFrame的join方法默认使用的是左连接，保留左边表的行索引。它还支持在调用的DataFrame的列上，连接传递的DataFrame索引：
 ```python
-In [74]: left1.join(right1, on='key')
+In [74]: left1.join(right1, on=&#39;key&#39;)
 Out[74]: 
   key  value  group_val
 0   a      0        3.5
@@ -674,9 +674,9 @@ Out[74]:
 最后，对于简单的索引合并，你还可以向join传入一组DataFrame，下一节会介绍更为通用的concat函数，也能实现此功能：
 ```python
 In [75]: another = pd.DataFrame([[7., 8.], [9., 10.], [11., 12.], [16., 17.]],
-   ....:                        index=['a', 'c', 'e', 'f'],
-   ....:                        columns=['New York',
-'Oregon'])
+   ....:                        index=[&#39;a&#39;, &#39;c&#39;, &#39;e&#39;, &#39;f&#39;],
+   ....:                        columns=[&#39;New York&#39;,
+&#39;Oregon&#39;])
 
 In [76]: another
 Out[76]: 
@@ -693,7 +693,7 @@ a   1.0     2.0       NaN      NaN       7.0     8.0
 c   3.0     4.0       9.0     10.0       9.0    10.0
 e   5.0     6.0      13.0     14.0      11.0    12.0
 
-In [78]: left2.join([right2, another], how='outer')
+In [78]: left2.join([right2, another], how=&#39;outer&#39;)
 Out[78]: 
    Ohio  Nevada  Missouri  Alabama  New York  Oregon
 a   1.0     2.0       NaN      NaN       7.0     8.0
@@ -731,11 +731,11 @@ array([[ 0,  1,  2,  3,  0,  1,  2,  3],
 
 pandas的concat函数提供了一种能够解决这些问题的可靠方式。我将给出一些例子来讲解其使用方式。假设有三个没有重叠索引的Series：
 ```python
-In [82]: s1 = pd.Series([0, 1], index=['a', 'b'])
+In [82]: s1 = pd.Series([0, 1], index=[&#39;a&#39;, &#39;b&#39;])
 
-In [83]: s2 = pd.Series([2, 3, 4], index=['c', 'd', 'e'])
+In [83]: s2 = pd.Series([2, 3, 4], index=[&#39;c&#39;, &#39;d&#39;, &#39;e&#39;])
 
-In [84]: s3 = pd.Series([5, 6], index=['f', 'g'])
+In [84]: s3 = pd.Series([5, 6], index=[&#39;f&#39;, &#39;g&#39;])
 ```
 
 对这些对象调用concat可以将值和索引粘合在一起：
@@ -766,7 +766,7 @@ f  NaN  NaN  5.0
 g  NaN  NaN  6.0
 ```
 
-这种情况下，另外的轴上没有重叠，从索引的有序并集（外连接）上就可以看出来。传入join='inner'即可得到它们的交集：
+这种情况下，另外的轴上没有重叠，从索引的有序并集（外连接）上就可以看出来。传入join=&#39;inner&#39;即可得到它们的交集：
 ```python
 In [87]: s4 = pd.concat([s1, s3])
 
@@ -786,18 +786,18 @@ b  1.0  1
 f  NaN  5
 g  NaN  6
 
-In [90]: pd.concat([s1, s4], axis=1, join='inner')
+In [90]: pd.concat([s1, s4], axis=1, join=&#39;inner&#39;)
 Out[90]: 
    0  1
 a  0  0
 b  1  1
 ```
 
-在这个例子中，f和g标签消失了，是因为使用的是join='inner'选项。
+在这个例子中，f和g标签消失了，是因为使用的是join=&#39;inner&#39;选项。
 
 你可以通过join_axes指定要在其它轴上使用的索引：
 ```python
-In [91]: pd.concat([s1, s4], axis=1, join_axes=[['a', 'c', 'b', 'e']])
+In [91]: pd.concat([s1, s4], axis=1, join_axes=[[&#39;a&#39;, &#39;c&#39;, &#39;b&#39;, &#39;e&#39;]])
 Out[91]: 
      0    1
 a  0.0  0.0
@@ -808,7 +808,7 @@ e  NaN  NaN
 
 不过有个问题，参与连接的片段在结果中区分不开。假设你想要在连接轴上创建一个层次化索引。使用keys参数即可达到这个目的：
 ```python
-In [92]: result = pd.concat([s1, s1, s3], keys=['one','two', 'three'])
+In [92]: result = pd.concat([s1, s1, s3], keys=[&#39;one&#39;,&#39;two&#39;, &#39;three&#39;])
 
 In [93]: result
 Out[93]: 
@@ -830,7 +830,7 @@ three  NaN  NaN  5.0  6.0
 
 如果沿着axis=1对Series进行合并，则keys就会成为DataFrame的列头：
 ```python
-In [95]: pd.concat([s1, s2, s3], axis=1, keys=['one','two', 'three'])
+In [95]: pd.concat([s1, s2, s3], axis=1, keys=[&#39;one&#39;,&#39;two&#39;, &#39;three&#39;])
 Out[95]: 
    one  two  three
 a  0.0  NaN    NaN
@@ -844,11 +844,11 @@ g  NaN  NaN    6.0
 
 同样的逻辑也适用于DataFrame对象：
 ```python
-In [96]: df1 = pd.DataFrame(np.arange(6).reshape(3, 2), index=['a', 'b', 'c'],
-   ....:                    columns=['one', 'two'])
+In [96]: df1 = pd.DataFrame(np.arange(6).reshape(3, 2), index=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;],
+   ....:                    columns=[&#39;one&#39;, &#39;two&#39;])
 
-In [97]: df2 = pd.DataFrame(5 + np.arange(4).reshape(2, 2), index=['a', 'c'],
-   ....:                    columns=['three', 'four'])
+In [97]: df2 = pd.DataFrame(5 &#43; np.arange(4).reshape(2, 2), index=[&#39;a&#39;, &#39;c&#39;],
+   ....:                    columns=[&#39;three&#39;, &#39;four&#39;])
 
 In [98]: df1
 Out[98]: 
@@ -863,7 +863,7 @@ Out[99]:
 a      5     6
 c      7     8
 
-In [100]: pd.concat([df1, df2], axis=1, keys=['level1', 'level2'])
+In [100]: pd.concat([df1, df2], axis=1, keys=[&#39;level1&#39;, &#39;level2&#39;])
 Out[100]: 
   level1     level2     
      one two  three four
@@ -874,7 +874,7 @@ c      4   5    7.0  8.0
 
 如果传入的不是列表而是一个字典，则字典的键就会被当做keys选项的值：
 ```python
-In [101]: pd.concat({'level1': df1, 'level2': df2}, axis=1)
+In [101]: pd.concat({&#39;level1&#39;: df1, &#39;level2&#39;: df2}, axis=1)
 
 Out[101]: 
   level1     level2     
@@ -886,8 +886,8 @@ c      4   5    7.0  8.0
 
 此外还有两个用于管理层次化索引创建方式的参数（参见表8-3）。举个例子，我们可以用names参数命名创建的轴级别：
 ```python
-In [102]: pd.concat([df1, df2], axis=1, keys=['level1', 'level2'],
-   .....:           names=['upper', 'lower'])
+In [102]: pd.concat([df1, df2], axis=1, keys=[&#39;level1&#39;, &#39;level2&#39;],
+   .....:           names=[&#39;upper&#39;, &#39;lower&#39;])
 Out[102]: 
 upper level1     level2     
 lower    one two  three four
@@ -898,9 +898,9 @@ c          4   5    7.0  8.0
 
 最后一个关于DataFrame的问题是，DataFrame的行索引不包含任何相关数据：
 ```python
-In [103]: df1 = pd.DataFrame(np.random.randn(3, 4), columns=['a', 'b', 'c', 'd'])
+In [103]: df1 = pd.DataFrame(np.random.randn(3, 4), columns=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;])
 
-In [104]: df2 = pd.DataFrame(np.random.randn(2, 3), columns=['b', 'd', 'a'])
+In [104]: df2 = pd.DataFrame(np.random.randn(2, 3), columns=[&#39;b&#39;, &#39;d&#39;, &#39;a&#39;])
 
 In [105]: df1
 Out[105]: 
@@ -935,10 +935,10 @@ Out[107]:
 还有一种数据组合问题不能用简单的合并（merge）或连接（concatenation）运算来处理。比如说，你可能有索引全部或部分重叠的两个数据集。举个有启发性的例子，我们使用NumPy的where函数，它表示一种等价于面向数组的if-else：
 ```python
 In [108]: a = pd.Series([np.nan, 2.5, np.nan, 3.5, 4.5, np.nan],
-   .....:               index=['f', 'e', 'd', 'c', 'b', 'a'])
+   .....:               index=[&#39;f&#39;, &#39;e&#39;, &#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;])
 
 In [109]: b = pd.Series(np.arange(len(a), dtype=np.float64),
-   .....:               index=['f', 'e', 'd', 'c', 'b', 'a'])
+   .....:               index=[&#39;f&#39;, &#39;e&#39;, &#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;])
 
 In [110]: b[-1] = np.nan
 
@@ -981,12 +981,12 @@ dtype: float64
 
 对于DataFrame，combine_first自然也会在列上做同样的事情，因此你可以将其看做：用传递对象中的数据为调用对象的缺失数据“打补丁”：
 ```python
-In [115]: df1 = pd.DataFrame({'a': [1., np.nan, 5., np.nan],
-   .....:                     'b': [np.nan, 2., np.nan, 6.],
-   .....:                     'c': range(2, 18, 4)})
+In [115]: df1 = pd.DataFrame({&#39;a&#39;: [1., np.nan, 5., np.nan],
+   .....:                     &#39;b&#39;: [np.nan, 2., np.nan, 6.],
+   .....:                     &#39;c&#39;: range(2, 18, 4)})
 
-In [116]: df2 = pd.DataFrame({'a': [5., 4., np.nan, 3., 7.],
-   .....:                     'b': [np.nan, 3., 4., 6., 8.]})
+In [116]: df2 = pd.DataFrame({&#39;a&#39;: [5., 4., np.nan, 3., 7.],
+   .....:                     &#39;b&#39;: [np.nan, 3., 4., 6., 8.]})
 
 In [117]: df1
 Out[117]: 
@@ -1029,9 +1029,9 @@ Out[119]:
 我将通过一系列的范例来讲解这些操作。接下来看一个简单的DataFrame，其中的行列索引均为字符串数组：
 ```python
 In [120]: data = pd.DataFrame(np.arange(6).reshape((2, 3)),
-   .....:                     index=pd.Index(['Ohio','Colorado'], name='state'),
-   .....:                     columns=pd.Index(['one', 'two', 'three'],
-   .....:                     name='number'))
+   .....:                     index=pd.Index([&#39;Ohio&#39;,&#39;Colorado&#39;], name=&#39;state&#39;),
+   .....:                     columns=pd.Index([&#39;one&#39;, &#39;two&#39;, &#39;three&#39;],
+   .....:                     name=&#39;number&#39;))
 
 In [121]: data
 Out[121]: 
@@ -1077,7 +1077,7 @@ one        0         3
 two        1         4
 three      2         5
 
-In [126]: result.unstack('state')
+In [126]: result.unstack(&#39;state&#39;)
 Out[126]: 
 state   Ohio  Colorado
 number                
@@ -1088,11 +1088,11 @@ three      2         5
 
 如果不是所有的级别值都能在各分组中找到的话，则unstack操作可能会引入缺失数据：
 ```python
-In [127]: s1 = pd.Series([0, 1, 2, 3], index=['a', 'b', 'c', 'd'])
+In [127]: s1 = pd.Series([0, 1, 2, 3], index=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;])
 
-In [128]: s2 = pd.Series([4, 5, 6], index=['c', 'd', 'e'])
+In [128]: s2 = pd.Series([4, 5, 6], index=[&#39;c&#39;, &#39;d&#39;, &#39;e&#39;])
 
-In [129]: data2 = pd.concat([s1, s2], keys=['one', 'two'])
+In [129]: data2 = pd.concat([s1, s2], keys=[&#39;one&#39;, &#39;two&#39;])
 
 In [130]: data2
 Out[130]: 
@@ -1148,8 +1148,8 @@ dtype: float64
 
 在对DataFrame进行unstack操作时，作为旋转轴的级别将会成为结果中的最低级别：
 ```python
-In [135]: df = pd.DataFrame({'left': result, 'right': result + 5},
-   .....:                   columns=pd.Index(['left', 'right'], name='side'))
+In [135]: df = pd.DataFrame({&#39;left&#39;: result, &#39;right&#39;: result &#43; 5},
+   .....:                   columns=pd.Index([&#39;left&#39;, &#39;right&#39;], name=&#39;side&#39;))
 
 In [136]: df
 Out[136]: 
@@ -1162,7 +1162,7 @@ Colorado one        3      8
          two        4      9
          three      5     10
 
-In [137]: df.unstack('state')
+In [137]: df.unstack(&#39;state&#39;)
 Out[137]: 
 side   left          right
 state  Ohio Colorado  Ohio Colorado
@@ -1174,7 +1174,7 @@ three     2        5     7       10
 
 当调用stack，我们可以指明轴的名字：
 ```python
-In [138]: df.unstack('state').stack('side')
+In [138]: df.unstack(&#39;state&#39;).stack(&#39;side&#39;)
 Out[138]: 
 state         Colorado  Ohio
 number side                 
@@ -1190,7 +1190,7 @@ three  left          5     2
 
 多个时间序列数据通常是以所谓的“长格式”（long）或“堆叠格式”（stacked）存储在数据库和CSV中的。我们先加载一些示例数据，做一些时间序列规整和数据清洗：
 ```python
-In [139]: data = pd.read_csv('examples/macrodata.csv')
+In [139]: data = pd.read_csv(&#39;examples/macrodata.csv&#39;)
 
 In [140]: data.head()
 Out[140]: 
@@ -1208,22 +1208,22 @@ Out[140]:
 4  139.6      3.50    5.2  180.007  2.31     1.19  
 
 In [141]: periods = pd.PeriodIndex(year=data.year, quarter=data.quarter,
-   .....:                          name='date')
+   .....:                          name=&#39;date&#39;)
 
-In [142]: columns = pd.Index(['realgdp', 'infl', 'unemp'], name='item')
+In [142]: columns = pd.Index([&#39;realgdp&#39;, &#39;infl&#39;, &#39;unemp&#39;], name=&#39;item&#39;)
 
 In [143]: data = data.reindex(columns=columns)
 
-In [144]: data.index = periods.to_timestamp('D', 'end')
+In [144]: data.index = periods.to_timestamp(&#39;D&#39;, &#39;end&#39;)
 
-In [145]: ldata = data.stack().reset_index().rename(columns={0: 'value'})
+In [145]: ldata = data.stack().reset_index().rename(columns={0: &#39;value&#39;})
 ```
 
 这就是多个时间序列（或者其它带有两个或多个键的可观察数据，这里，我们的键是date和item）的长格式。表中的每行代表一次观察。
 
 关系型数据库（如MySQL）中的数据经常都是这样存储的，因为固定架构（即列名和数据类型）有一个好处：随着表中数据的添加，item列中的值的种类能够增加。在前面的例子中，date和item通常就是主键（用关系型数据库的说法），不仅提供了关系完整性，而且提供了更为简单的查询支持。有的情况下，使用这样的数据会很麻烦，你可能会更喜欢DataFrame，不同的item值分别形成一列，date列中的时间戳则用作索引。DataFrame的pivot方法完全可以实现这个转换：
 ```python
-In [147]: pivoted = ldata.pivot('date', 'item', 'value')
+In [147]: pivoted = ldata.pivot(&#39;date&#39;, &#39;item&#39;, &#39;value&#39;)
 
 In [148]: pivoted
 Out[148]: 
@@ -1255,7 +1255,7 @@ date
 
 前两个传递的值分别用作行和列索引，最后一个可选值则是用于填充DataFrame的数据列。假设有两个需要同时重塑的数据列：
 ```python
-In [149]: ldata['value2'] = np.random.randn(len(ldata))
+In [149]: ldata[&#39;value2&#39;] = np.random.randn(len(ldata))
 
 In [150]: ldata[:10]
 Out[150]: 
@@ -1274,7 +1274,7 @@ Out[150]:
 
 如果忽略最后一个参数，得到的DataFrame就会带有层次化的列：
 ```python
-In [151]: pivoted = ldata.pivot('date', 'item')
+In [151]: pivoted = ldata.pivot(&#39;date&#39;, &#39;item&#39;)
 
 In [152]: pivoted[:5]
 Out[152]: 
@@ -1287,7 +1287,7 @@ date
 1959-12-31  0.27  2785.204   5.6  0.119827 -1.265934 -1.063512
 1960-03-31  2.31  2847.699   5.2 -2.359419  0.332883 -0.199543
 
-In [153]: pivoted['value'][:5]
+In [153]: pivoted[&#39;value&#39;][:5]
 Out[153]: 
 item        infl   realgdp  unemp
 date                             
@@ -1300,7 +1300,7 @@ date
 
 注意，pivot其实就是用set_index创建层次化索引，再用unstack重塑：
 ```python
-In [154]: unstacked = ldata.set_index(['date', 'item']).unstack('item')
+In [154]: unstacked = ldata.set_index([&#39;date&#39;, &#39;item&#39;]).unstack(&#39;item&#39;)
 
 In [155]: unstacked[:7]
 Out[155]: 
@@ -1320,10 +1320,10 @@ date
 
 旋转DataFrame的逆运算是pandas.melt。它不是将一列转换到多个新的DataFrame，而是合并多个列成为一个，产生一个比输入长的DataFrame。看一个例子：
 ```python
-In [157]: df = pd.DataFrame({'key': ['foo', 'bar', 'baz'],
-   .....:                    'A': [1, 2, 3],
-   .....:                    'B': [4, 5, 6],
-   .....:                    'C': [7, 8, 9]})
+In [157]: df = pd.DataFrame({&#39;key&#39;: [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;],
+   .....:                    &#39;A&#39;: [1, 2, 3],
+   .....:                    &#39;B&#39;: [4, 5, 6],
+   .....:                    &#39;C&#39;: [7, 8, 9]})
 
 In [158]: df
 Out[158]: 
@@ -1335,7 +1335,7 @@ Out[158]:
 
 key列可能是分组指标，其它的列是数据值。当使用pandas.melt，我们必须指明哪些列是分组指标。下面使用key作为唯一的分组指标：
 ```python
-In [159]: melted = pd.melt(df, ['key'])
+In [159]: melted = pd.melt(df, [&#39;key&#39;])
 
 In [160]: melted
 Out[160]: 
@@ -1353,7 +1353,7 @@ Out[160]:
 
 使用pivot，可以重塑回原来的样子：
 ```python
-In [161]: reshaped = melted.pivot('key', 'variable', 'value')
+In [161]: reshaped = melted.pivot(&#39;key&#39;, &#39;variable&#39;, &#39;value&#39;)
 
 In [162]: reshaped
 Out[162]: 
@@ -1376,7 +1376,7 @@ variable  key  A  B  C
 
 你还可以指定列的子集，作为值的列：
 ```python
-In [164]: pd.melt(df, id_vars=['key'], value_vars=['A', 'B'])
+In [164]: pd.melt(df, id_vars=[&#39;key&#39;], value_vars=[&#39;A&#39;, &#39;B&#39;])
 Out[164]: 
    key variable  value
 0  foo        A      1
@@ -1389,7 +1389,7 @@ Out[164]:
 
 pandas.melt也可以不用分组指标：
 ```python
-In [165]: pd.melt(df, value_vars=['A', 'B', 'C'])
+In [165]: pd.melt(df, value_vars=[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;])
 Out[165]: 
   variable  value
 0        A      1
@@ -1402,7 +1402,7 @@ Out[165]:
 7        C      8
 8        C      9
 
-In [166]: pd.melt(df, value_vars=['key', 'A', 'B'])
+In [166]: pd.melt(df, value_vars=[&#39;key&#39;, &#39;A&#39;, &#39;B&#39;])
 Out[166]: 
   variable value
 0      key   foo
@@ -1423,6 +1423,6 @@ Out[166]:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/  
 

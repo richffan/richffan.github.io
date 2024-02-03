@@ -10,16 +10,16 @@
 
 这次使用了Dir函数，以下是VBA代码。详细解析请看文末的视频。
 
-'Dir函数：返回的是指定路径下【文件】或者【文件夹】的名称。如果不存在，就返回 "" 字符串
-'Dir 函数一般搭配 do while 循环遍历文件，结束的条件就是Dir返回空值。
+&#39;Dir函数：返回的是指定路径下【文件】或者【文件夹】的名称。如果不存在，就返回 &#34;&#34; 字符串
+&#39;Dir 函数一般搭配 do while 循环遍历文件，结束的条件就是Dir返回空值。
 
-'举例：
-'fileName1 = Dir("E:\test\*.xlsx")  查找E盘test文件夹里边的xlsx工作簿，将第一个工作簿名称返回
-'fileName2 = Dir                    查找下一个，并且不需要写参数
-'fileName3 = Dir                    查找下一个，并且不需要写参数
-'fileName4 = Dir                    查找下一个，并且不需要写参数
-'......                           ......
-'当返回 "" 的时候说明查找完了。如果直接 fileName_N = Dir 就会报错，需要重新指定参数
+&#39;举例：
+&#39;fileName1 = Dir(&#34;E:\test\*.xlsx&#34;)  查找E盘test文件夹里边的xlsx工作簿，将第一个工作簿名称返回
+&#39;fileName2 = Dir                    查找下一个，并且不需要写参数
+&#39;fileName3 = Dir                    查找下一个，并且不需要写参数
+&#39;fileName4 = Dir                    查找下一个，并且不需要写参数
+&#39;......                           ......
+&#39;当返回 &#34;&#34; 的时候说明查找完了。如果直接 fileName_N = Dir 就会报错，需要重新指定参数
 
 ```vb
 Sub 汇总工作簿()
@@ -27,16 +27,16 @@ Sub 汇总工作簿()
     Dim filePath, fileName
     Dim sht As Worksheet
 
-    filePath = ThisWorkbook.Path & "\文件夹\"
+    filePath = ThisWorkbook.Path &amp; &#34;\文件夹\&#34;
 
-    fileName = Dir(filePath & "*.xlsx")
+    fileName = Dir(filePath &amp; &#34;*.xlsx&#34;)
 
     Application.ScreenUpdating = False
-    Do While fileName <> ""
-        With Workbooks.Open(filePath & fileName)
+    Do While fileName &lt;&gt; &#34;&#34;
+        With Workbooks.Open(filePath &amp; fileName)
             For Each sht In .Worksheets
                 sht.Copy after:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count)
-                ActiveSheet.Name = sht.Name & "-" & Replace(.Name, ".xlsx", "")
+                ActiveSheet.Name = sht.Name &amp; &#34;-&#34; &amp; Replace(.Name, &#34;.xlsx&#34;, &#34;&#34;)
             Next
             .Close False
         End With
@@ -47,10 +47,10 @@ Sub 汇总工作簿()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485233&idx=1&sn=a27892d151b9a8332f01f20be6e0f7f9&chksm=e8bcce66dfcb4770c956e41db7a9d08d9fc1e153cd3cf7681b0130d12be97b7908d27d53a0e8&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485233&amp;idx=1&amp;sn=a27892d151b9a8332f01f20be6e0f7f9&amp;chksm=e8bcce66dfcb4770c956e41db7a9d08d9fc1e153cd3cf7681b0130d12be97b7908d27d53a0e8&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B013%E5%A4%9A%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E6%89%80%E6%9C%89sheet%E6%B1%87%E6%80%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD/  
 

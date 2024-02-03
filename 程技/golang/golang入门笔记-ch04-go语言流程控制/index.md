@@ -8,7 +8,7 @@
 
 `if` 分支结构的基本写法为：
 
-> `if` 分支结构多用于条件判断。
+&gt; `if` 分支结构多用于条件判断。
 
 ```go
 if 表达式1 {
@@ -29,17 +29,17 @@ if 表达式1 {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func testIf(score int) {
-	if score >= 90 {
-		fmt.Println("优秀")
-	} else if score >= 75 {
-		fmt.Println("良好")
-	} else if score > 60 {
-		fmt.Println("及格")
+	if score &gt;= 90 {
+		fmt.Println(&#34;优秀&#34;)
+	} else if score &gt;= 75 {
+		fmt.Println(&#34;良好&#34;)
+	} else if score &gt; 60 {
+		fmt.Println(&#34;及格&#34;)
 	} else {
-		fmt.Println("不及格")
+		fmt.Println(&#34;不及格&#34;)
 	}
 }
 
@@ -56,10 +56,10 @@ func main() {
 
 `if` 语句还有一个特殊的用法：
 
-> 可以在判断条件之前执行一条语句，例如赋值等。
+&gt; 可以在判断条件之前执行一条语句，例如赋值等。
 
 ```go
-if a := 10; a > 6 {
+if a := 10; a &gt; 6 {
     fmt.Println(a)
 }
 ```
@@ -81,10 +81,10 @@ for 初始语句;条件表达式;结束语句 {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	for i := 0; i < 5; i++ {
+	for i := 0; i &lt; 5; i&#43;&#43; {
 		fmt.Println(i)
 	}
 }
@@ -105,11 +105,11 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     i := 0
-	for ; i < 5; i++ {
+	for ; i &lt; 5; i&#43;&#43; {
 		fmt.Println(i)
 	}
 }
@@ -120,13 +120,13 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     i := 0
-	for i < 5 {
+	for i &lt; 5 {
 		fmt.Println(i)
-		i++
+		i&#43;&#43;
 	}
 }
 ```
@@ -148,13 +148,13 @@ for {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	nameList := [3]string{"张三", "李四", "赵二"}
+	nameList := [3]string{&#34;张三&#34;, &#34;李四&#34;, &#34;赵二&#34;}
 	genderMap := map[string]string{
-		"0": "男",
-		"1": "女",
+		&#34;0&#34;: &#34;男&#34;,
+		&#34;1&#34;: &#34;女&#34;,
 	}
 	
     	// k 是键，v 是值，
@@ -182,29 +182,29 @@ func main() {
 
 `switch` 语句和 `if` 语句类似，一般用于多条件判断，且这些条件易于枚举：
 
-> 每个 `switch` 语句只能有一个 `default` 分支。 
+&gt; 每个 `switch` 语句只能有一个 `default` 分支。 
 
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	finger := 3
 	
 	switch finger {
 	case 1:
-		fmt.Println("大拇指")
+		fmt.Println(&#34;大拇指&#34;)
 	case 2:
-		fmt.Println("食指")
+		fmt.Println(&#34;食指&#34;)
 	case 3:
-		fmt.Println("中指")
+		fmt.Println(&#34;中指&#34;)
 	case 4:
-		fmt.Println("无名指")
+		fmt.Println(&#34;无名指&#34;)
 	case 5:
-		fmt.Println("小拇指")
+		fmt.Println(&#34;小拇指&#34;)
 	default:
-		fmt.Println("无效的输入！")
+		fmt.Println(&#34;无效的输入！&#34;)
 	}
 }
 ```
@@ -214,18 +214,18 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	n := 3
 
 	switch n {
 	case 1, 3, 5, 7, 9:
-		fmt.Println("奇数")
+		fmt.Println(&#34;奇数&#34;)
 	case 0, 2, 4, 6, 8:
-		fmt.Println("偶数")
+		fmt.Println(&#34;偶数&#34;)
 	default:
-		fmt.Println("无效的输入！")
+		fmt.Println(&#34;无效的输入！&#34;)
 	}
 }
 ```
@@ -235,22 +235,22 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	n := 60
 
 	switch {
-	case n >= 90:
-		fmt.Println("优秀")
-	case n >= 75 && n < 90:
-		fmt.Println("良好")
-	case n >= 60 && n  < 75:
-		fmt.Println("及格")
-	case n < 60:
-		fmt.Println("不及格")
+	case n &gt;= 90:
+		fmt.Println(&#34;优秀&#34;)
+	case n &gt;= 75 &amp;&amp; n &lt; 90:
+		fmt.Println(&#34;良好&#34;)
+	case n &gt;= 60 &amp;&amp; n  &lt; 75:
+		fmt.Println(&#34;及格&#34;)
+	case n &lt; 60:
+		fmt.Println(&#34;不及格&#34;)
 	default:
-		fmt.Println("成绩无效")
+		fmt.Println(&#34;成绩无效&#34;)
 	}
 }
 ```
@@ -260,21 +260,21 @@ Go 语言中还保留了 `fallthrough` ，主要是为了兼容 C 语言，`fall
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	s := "a"
+	s := &#34;a&#34;
 
 	switch {
-	case s == "a":
-		fmt.Println("a")
+	case s == &#34;a&#34;:
+		fmt.Println(&#34;a&#34;)
 		fallthrough
-	case s == "b":
-		fmt.Println("b")
-	case s == "c":
-		fmt.Println("c")
+	case s == &#34;b&#34;:
+		fmt.Println(&#34;b&#34;)
+	case s == &#34;c&#34;:
+		fmt.Println(&#34;c&#34;)
 	default:
-		fmt.Println("...")
+		fmt.Println(&#34;...&#34;)
 	}
 }
 ```
@@ -293,10 +293,10 @@ b
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	for i := 0; i < 5; i++ {
+	for i := 0; i &lt; 5; i&#43;&#43; {
 		if i == 3 {
 			break
 		}
@@ -314,10 +314,10 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	for i := 0; i < 5; i++ {
+	for i := 0; i &lt; 5; i&#43;&#43; {
 		if i == 3 { // 当 i 值为 3 时，跳过这次循环，执行下一次循环，因此 3 不会被打印
 			continue
 		}
@@ -344,18 +344,18 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	var breakFlag bool
-	for i := 0; i < 10; i++ {
-		for j := 0; j < 10; j++ {
+	for i := 0; i &lt; 10; i&#43;&#43; {
+		for j := 0; j &lt; 10; j&#43;&#43; {
 			if j == 2 {
 				// 设置退出标签
 				breakFlag = true
 				break
 			}
-			fmt.Printf("%v-%v\n", i, j)
+			fmt.Printf(&#34;%v-%v\n&#34;, i, j)
 		}
 		// 外层 for 循环判断
 		if breakFlag {
@@ -377,22 +377,22 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-	for i := 0; i < 10; i++ {
-		for j := 0; j < 10; j++ {
+	for i := 0; i &lt; 10; i&#43;&#43; {
+		for j := 0; j &lt; 10; j&#43;&#43; {
 			if j == 2 {
 				// 设置退出标签
 				goto breakTag
 			}
-			fmt.Printf("%v-%v\n", i, j)
+			fmt.Printf(&#34;%v-%v\n&#34;, i, j)
 		}
 	}
 	return
 	// 标签
 breakTag:
-	fmt.Println("结束 for 循环")
+	fmt.Println(&#34;结束 for 循环&#34;)
 }
 ```
 
@@ -406,6 +406,6 @@ breakTag:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch04-go%E8%AF%AD%E8%A8%80%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/  
 

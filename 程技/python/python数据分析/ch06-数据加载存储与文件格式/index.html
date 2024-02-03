@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第六章 数据加载、存储与文件格式 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第六章 数据加载、存储与文件格式 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。 输入输出通常可以" /><meta name="keywords" content='python' /><meta itemprop="name" content="第六章 数据加载、存储与文件格式">
 <meta itemprop="description" content="访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。 输入输出通常可以"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第六章 数据加载、存储与文件格式"/>
 <meta name="twitter:description" content="访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。 输入输出通常可以"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第六章 数据加载、存储与文件格式</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第六章 数据加载、存储与文件格式</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9858 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="leancloud_visitors comment-visitors" data-flag-title="第六章 数据加载、存储与文件格式">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="9858 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 9900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 20 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="leancloud_visitors comment-visitors" data-flag-title="第六章 数据加载、存储与文件格式">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第六章 数据加载、存储与文件格式">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -213,9 +208,9 @@
 </nav></div>
       </div><div class="content" id="content"><p>访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。</p>
 <p>输入输出通常可以划分为几个大类：读取文本文件和其他更高效的磁盘存储格式，加载数据库中的数据，利用Web API操作网络资源。</p>
-<h2 id="61-读写文本格式的数据">6.1 读写文本格式的数据</h2>
-<p>pandas提供了一些用于将表格型数据读取为DataFrame对象的函数。表6-1对它们进行了总结，其中read_csv和read_table可能会是你今后用得最多的。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=large 2x" sizes="auto" data-title="表6-1 pandas中的解析函数" data-alt="表6-1 pandas中的解析函数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="61-读写文本格式的数据" class="heading-element">
+  <a href="#61-%e8%af%bb%e5%86%99%e6%96%87%e6%9c%ac%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%95%b0%e6%8d%ae" class="heading-mark"></a>6.1 读写文本格式的数据</h2><p>pandas提供了一些用于将表格型数据读取为DataFrame对象的函数。表6-1对它们进行了总结，其中read_csv和read_table可能会是你今后用得最多的。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png" alt="表6-1 pandas中的解析函数" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023230549415.png?size=large 2x" sizes="auto" data-title="表6-1 pandas中的解析函数" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>我将大致介绍一下这些函数在将文本数据转换为DataFrame时所用到的一些技术。这些函数的选项可以划分为以下几个大类：</p>
 <ul>
 <li>索引：将一个或多个列当做返回的DataFrame处理，以及是否从文件、用户获取列名。</li>
@@ -583,11 +578,11 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="n">three</span>  <span class="mi">9</span>  <span class="mi">10</span>  <span class="mf">11.0</span>  <span class="mi">12</span>     <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表6-2列出了pandas.read_csv和pandas.read_table常用的选项。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="611-逐块读取文本文件">6.1.1 逐块读取文本文件</h3>
-<p>在处理很大的文件时，或找出大文件中的参数集以便于后续处理时，你可能只想读取文件的一小部分或逐块对文件进行迭代。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084538674.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084606416.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024084613844.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="611-逐块读取文本文件" class="heading-element">
+  <a href="#611-%e9%80%90%e5%9d%97%e8%af%bb%e5%8f%96%e6%96%87%e6%9c%ac%e6%96%87%e4%bb%b6" class="heading-mark"></a>6.1.1 逐块读取文本文件</h3><p>在处理很大的文件时，或找出大文件中的参数集以便于后续处理时，你可能只想读取文件的一小部分或逐块对文件进行迭代。</p>
 <p>在看大文件之前，我们先设置pandas显示地更紧些：</p>
 <div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -727,8 +722,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>TextParser还有一个get_chunk方法，它使你可以读取任意大小的块。</p>
-<h3 id="612-将数据写出到文本格式">6.1.2 将数据写出到文本格式</h3>
-<p>数据也可以被输出为<code>分隔符</code>格式的文本。我们再来看看之前读过的一个CSV文件：</p>
+<h3 id="612-将数据写出到文本格式" class="heading-element">
+  <a href="#612-%e5%b0%86%e6%95%b0%e6%8d%ae%e5%86%99%e5%87%ba%e5%88%b0%e6%96%87%e6%9c%ac%e6%a0%bc%e5%bc%8f" class="heading-mark"></a>6.1.2 将数据写出到文本格式</h3><p>数据也可以被输出为<code>分隔符</code>格式的文本。我们再来看看之前读过的一个CSV文件：</p>
 <div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -870,8 +865,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">06</span><span class="p">,</span><span class="mi">5</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">07</span><span class="p">,</span><span class="mi">6</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="613-处理分隔符格式">6.1.3 处理分隔符格式</h3>
-<p>大部分存储在磁盘上的表格型数据都能用pandas.read_table进行加载。然而，有时还是需要做一些手工处理。由于接收到含有畸形行的文件而使read_table出毛病的情况并不少见。为了说明这些基本工具，看看下面这个简单的CSV文件：</p>
+</div><h3 id="613-处理分隔符格式" class="heading-element">
+  <a href="#613-%e5%a4%84%e7%90%86%e5%88%86%e9%9a%94%e7%ac%a6%e6%a0%bc%e5%bc%8f" class="heading-mark"></a>6.1.3 处理分隔符格式</h3><p>大部分存储在磁盘上的表格型数据都能用pandas.read_table进行加载。然而，有时还是需要做一些手工处理。由于接收到含有畸形行的文件而使read_table出毛病的情况并不少见。为了说明这些基本工具，看看下面这个简单的CSV文件：</p>
 <div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -974,7 +969,7 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可用的选项（csv.Dialect的属性）及其功能如表6-3所示。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024092934346.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <blockquote>
 <p>笔记：对于那些使用复杂分隔符或多字符分隔符的文件，csv模块就无能为力了。这种情况下，你就只能使用字符串的split方法或正则表达式方法re.split进行行拆分和其他整理工作了。</p>
 </blockquote>
@@ -996,8 +991,8 @@
 </span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">((</span><span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">))</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="614-json数据">6.1.4 JSON数据</h3>
-<p>JSON（JavaScript Object Notation的简称）已经成为通过HTTP请求在Web浏览器和其他应用程序之间发送数据的标准格式之一。它是一种比表格型文本格式（如CSV）灵活得多的数据格式。下面是一个例子：</p>
+</div><h3 id="614-json数据" class="heading-element">
+  <a href="#614-json%e6%95%b0%e6%8d%ae" class="heading-mark"></a>6.1.4 JSON数据</h3><p>JSON（JavaScript Object Notation的简称）已经成为通过HTTP请求在Web浏览器和其他应用程序之间发送数据的标准格式之一。它是一种比表格型文本格式（如CSV）灵活得多的数据格式。下面是一个例子：</p>
 <div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1130,8 +1125,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">[{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">6</span><span class="p">},{</span><span class="s2">&#34;a&#34;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">9</span><span class="p">}]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="615-xml和htmlweb信息收集">6.1.5 XML和HTML：Web信息收集</h3>
-<p>Python有许多可以读写常见的HTML和XML格式数据的库，包括lxml、Beautiful Soup和html5lib。lxml的速度比较快，但其它的库处理有误的HTML或XML文件更好。</p>
+</div><h3 id="615-xml和htmlweb信息收集" class="heading-element">
+  <a href="#615-xml%e5%92%8chtmlweb%e4%bf%a1%e6%81%af%e6%94%b6%e9%9b%86" class="heading-mark"></a>6.1.5 XML和HTML：Web信息收集</h3><p>Python有许多可以读写常见的HTML和XML格式数据的库，包括lxml、Beautiful Soup和html5lib。lxml的速度比较快，但其它的库处理有误的HTML或XML文件更好。</p>
 <p>pandas有一个内置的功能，read_html，它可以使用lxml和Beautiful Soup自动将HTML文件中的表格解析为DataFrame对象。为了进行展示，我从美国联邦存款保险公司下载了一个HTML文件（pandas文档中也使用过），它记录了银行倒闭的情况。首先，你需要安装read_html用到的库：</p>
 <div class="highlight" id="id-43"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1230,8 +1225,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2000</span>      <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">Closing</span> <span class="n">Date</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="616-利用lxmlobjectify解析xml">6.1.6 利用lxml.objectify解析XML</h3>
-<p>XML（Extensible Markup Language）是另一种常见的支持分层、嵌套数据以及元数据的结构化数据格式。本书所使用的这些文件实际上来自于一个很大的XML文档。</p>
+</div><h3 id="616-利用lxmlobjectify解析xml" class="heading-element">
+  <a href="#616-%e5%88%a9%e7%94%a8lxmlobjectify%e8%a7%a3%e6%9e%90xml" class="heading-mark"></a>6.1.6 利用lxml.objectify解析XML</h3><p>XML（Extensible Markup Language）是另一种常见的支持分层、嵌套数据以及元数据的结构化数据格式。本书所使用的这些文件实际上来自于一个很大的XML文档。</p>
 <p>前面，我介绍了pandas.read_html函数，它可以使用lxml或Beautiful Soup从HTML解析数据。XML和HTML的结构很相似，但XML更为通用。这里，我会用一个例子演示如何利用lxml从XML格式解析数据。</p>
 <p>纽约大都会运输署发布了一些有关其公交和列车服务的数据资料（http://www.mta.info/developers/download.html）。这里，我们将看看包含在一组XML文件中的运行情况数据。每项列车或公交服务都有各自的文件（如Metro-North Railroad的文件是Performance_MNR.xml），其中每条XML记录就是一条月度数据，如下所示：</p>
 <div class="highlight" id="id-46"><div class="chroma">
@@ -1381,8 +1376,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="n">root</span><span class="o">.</span><span class="n">text</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="s1">&#39;Google&#39;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="62-二进制数据格式">6.2 二进制数据格式</h2>
-<p>实现数据的高效二进制格式存储最简单的办法之一是使用Python内置的pickle序列化。pandas对象都有一个用于将数据以pickle格式保存到磁盘上的to_pickle方法：</p>
+</div><h2 id="62-二进制数据格式" class="heading-element">
+  <a href="#62-%e4%ba%8c%e8%bf%9b%e5%88%b6%e6%95%b0%e6%8d%ae%e6%a0%bc%e5%bc%8f" class="heading-mark"></a>6.2 二进制数据格式</h2><p>实现数据的高效二进制格式存储最简单的办法之一是使用Python内置的pickle序列化。pandas对象都有一个用于将数据以pickle格式保存到磁盘上的to_pickle方法：</p>
 <div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1434,8 +1429,8 @@
 <li>bcolz：一种可压缩的列存储二进制格式，基于Blosc压缩库。</li>
 <li>Feather：我与R语言社区的Hadley Wickham设计的一种跨语言的列存储文件格式。Feather使用了Apache Arrow的列式内存格式。</li>
 </ul>
-<h3 id="621-使用hdf5格式">6.2.1 使用HDF5格式</h3>
-<p>HDF5是一种存储大规模科学数组数据的非常好的文件格式。它可以被作为C标准库，带有许多语言的接口，如Java、Python和MATLAB等。HDF5中的HDF指的是层次型数据格式（hierarchical data format）。每个HDF5文件都含有一个文件系统式的节点结构，它使你能够存储多个数据集并支持元数据。与其他简单格式相比，HDF5支持多种压缩器的即时压缩，还能更高效地存储重复模式数据。对于那些非常大的无法直接放入内存的数据集，HDF5就是不错的选择，因为它可以高效地分块读写。</p>
+<h3 id="621-使用hdf5格式" class="heading-element">
+  <a href="#621-%e4%bd%bf%e7%94%a8hdf5%e6%a0%bc%e5%bc%8f" class="heading-mark"></a>6.2.1 使用HDF5格式</h3><p>HDF5是一种存储大规模科学数组数据的非常好的文件格式。它可以被作为C标准库，带有许多语言的接口，如Java、Python和MATLAB等。HDF5中的HDF指的是层次型数据格式（hierarchical data format）。每个HDF5文件都含有一个文件系统式的节点结构，它使你能够存储多个数据集并支持元数据。与其他简单格式相比，HDF5支持多种压缩器的即时压缩，还能更高效地存储重复模式数据。对于那些非常大的无法直接放入内存的数据集，HDF5就是不错的选择，因为它可以高效地分块读写。</p>
 <p>虽然可以用PyTables或h5py库直接访问HDF5文件，pandas提供了更为高级的接口，可以简化存储Series和DataFrame对象。HDFStore类可以像字典一样，处理低级的细节：</p>
 <div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1584,8 +1579,8 @@
 <blockquote>
 <p>注意：HDF5不是数据库。它最适合用作“一次写多次读”的数据集。虽然数据可以在任何时候被添加到文件中，但如果同时发生多个写操作，文件就可能会被破坏。</p>
 </blockquote>
-<h3 id="622-读取microsoft-excel文件">6.2.2 读取Microsoft Excel文件</h3>
-<p>pandas的ExcelFile类或pandas.read_excel函数支持读取存储在Excel 2003（或更高版本）中的表格型数据。这两个工具分别使用扩展包xlrd和openpyxl读取XLS和XLSX文件。你可以用pip或conda安装它们。</p>
+<h3 id="622-读取microsoft-excel文件" class="heading-element">
+  <a href="#622-%e8%af%bb%e5%8f%96microsoft-excel%e6%96%87%e4%bb%b6" class="heading-mark"></a>6.2.2 读取Microsoft Excel文件</h3><p>pandas的ExcelFile类或pandas.read_excel函数支持读取存储在Excel 2003（或更高版本）中的表格型数据。这两个工具分别使用扩展包xlrd和openpyxl读取XLS和XLSX文件。你可以用pip或conda安装它们。</p>
 <p>要使用ExcelFile，通过传递xls或xlsx路径创建一个实例：</p>
 <div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1658,8 +1653,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">111</span><span class="p">]:</span> <span class="n">frame</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;examples/ex2.xlsx&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="63-web-apis交互">6.3 Web APIs交互</h2>
-<p>许多网站都有一些通过JSON或其他格式提供数据的公共API。通过Python访问这些API的办法有不少。一个简单易用的办法（推荐）是requests包（http://docs.python-requests.org）。</p>
+</div><h2 id="63-web-apis交互" class="heading-element">
+  <a href="#63-web-apis%e4%ba%a4%e4%ba%92" class="heading-mark"></a>6.3 Web APIs交互</h2><p>许多网站都有一些通过JSON或其他格式提供数据的公共API。通过Python访问这些API的办法有不少。一个简单易用的办法（推荐）是requests包（http://docs.python-requests.org）。</p>
 <p>为了搜索最新的30个GitHub上的pandas主题，我们可以发一个HTTP GET请求，使用requests扩展库：</p>
 <div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1763,8 +1758,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">30</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>花费一些精力，你就可以创建一些更高级的常见的Web API的接口，返回DataFrame对象，方便进行分析。</p>
-<h2 id="64-数据库交互">6.4 数据库交互</h2>
-<p>在商业场景下，大多数数据可能不是存储在文本或Excel文件中。基于SQL的关系型数据库（如SQL Server、PostgreSQL和MySQL等）使用非常广泛，其它一些数据库也很流行。<strong>数据库的选择通常取决于性能、数据完整性以及应用程序的伸缩性需求。</strong></p>
+<h2 id="64-数据库交互" class="heading-element">
+  <a href="#64-%e6%95%b0%e6%8d%ae%e5%ba%93%e4%ba%a4%e4%ba%92" class="heading-mark"></a>6.4 数据库交互</h2><p>在商业场景下，大多数数据可能不是存储在文本或Excel文件中。基于SQL的关系型数据库（如SQL Server、PostgreSQL和MySQL等）使用非常广泛，其它一些数据库也很流行。<strong>数据库的选择通常取决于性能、数据完整性以及应用程序的伸缩性需求。</strong></p>
 <p>将数据从SQL加载到DataFrame的过程很简单，此外pandas还有一些能够简化该过程的函数。例如，我将使用SQLite数据库（通过Python内置的sqlite3驱动器）：</p>
 <div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1903,41 +1898,42 @@
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="n">Tallahassee</span>     <span class="n">Florida</span>  <span class="mf">2.60</span>  <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="n">Sacramento</span>  <span class="n">California</span>  <span class="mf">1.70</span>  <span class="mi">5</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="65-总结">6.5 总结</h2>
-<p><code>访问数据</code>通常是数据分析的第一步。在本章中，我们已经学了一些有用的工具。在接下来的章节中，我们将深入研究数据规整、数据可视化、时间序列分析和其它主题。</p>
+</div><h2 id="65-总结" class="heading-element">
+  <a href="#65-%e6%80%bb%e7%bb%93" class="heading-mark"></a>6.5 总结</h2><p><code>访问数据</code>通常是数据分析的第一步。在本章中，我们已经学了一些有用的工具。在接下来的章节中，我们将深入研究数据规整、数据可视化、时间序列分析和其它主题。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" data-title="第六章 数据加载、存储与文件格式" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" data-title="第六章 数据加载、存储与文件格式" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/" class="post-nav-item" rel="prev" title="第七章 数据清洗和准备"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第七章 数据清洗和准备</a>
-      <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/" class="post-nav-item" rel="next" title="第九章 绘图可视化">第九章 绘图可视化<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" class="post-nav-item" rel="prev" title="第七章 面向对象高级编程"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第七章 面向对象高级编程</a>
+      <a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" class="post-nav-item" rel="next" title="第六章 面向对象编程">第六章 面向对象编程<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

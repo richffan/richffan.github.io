@@ -5,6 +5,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/  
 

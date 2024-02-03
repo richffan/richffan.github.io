@@ -8,7 +8,7 @@
 Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 Docker 项目的目标是实现轻量级的操作系统虚拟化解决方案。Docker 是在 Linux 容器技术（LXC）的基础上进行了封装，让用户可以快速并可靠的将应用程序从一台运行到另一台上。
@@ -57,7 +57,7 @@ Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需�
 可以通过 `docker pull` 命令从仓库获取所需要的镜像
 
 ```
-docker pull [选项] [Docker Registry 地址]<镜像名>:<标签>
+docker pull [选项] [Docker Registry 地址]&lt;镜像名&gt;:&lt;标签&gt;
 ```
 
 **选项:**
@@ -108,14 +108,14 @@ docker images [选项] [image_name]
 ## 展示本地所有下载的镜像
 docker images
 
-## 在本地查找镜像名是 "java" 标签是 "8" 的 奖项
+## 在本地查找镜像名是 &#34;java&#34; 标签是 &#34;8&#34; 的 奖项
 docker images: java:8
 
 ## 查找悬挂镜像
-docker images --filter "dangling=true"
+docker images --filter &#34;dangling=true&#34;
 
-## 过滤 lable 为 "com.example.version" 的值为 0.1 的镜像
-docker images --filter "label=com.example.version=0.1"
+## 过滤 lable 为 &#34;com.example.version&#34; 的值为 0.1 的镜像
+docker images --filter &#34;label=com.example.version=0.1&#34;
 ```
 
 
@@ -127,7 +127,7 @@ docker images --filter "label=com.example.version=0.1"
 ```
 ## This is a comment
 FROM ubuntu:14.04
-MAINTAINER Chris <jaytp@qq.com>
+MAINTAINER Chris &lt;jaytp@qq.com&gt;
 RUN apt-get -qq update
 RUN apt-get -qqy install ruby ruby-dev
 RUN gem install sinatra
@@ -151,7 +151,7 @@ docker 支持将镜像导出为文件，然后可以再从文件导入到本地�
 ## 导出
 docker load --input yelog_ubuntu_v1.tar
 ## 载入
-docker load < yelog_ubuntu_v1.tar
+docker load &lt; yelog_ubuntu_v1.tar
 ```
 
 #### 2.7 移除本地镜像
@@ -160,7 +160,7 @@ docker load < yelog_ubuntu_v1.tar
 ## -f 强制删除
 docker rmi [-f] yelog/ubuntu:v1
 ## 删除悬挂镜像
-docker rmi $(docker images -f "dangling=true" -q)
+docker rmi $(docker images -f &#34;dangling=true&#34; -q)
 ## 删除所有未被容器使用的镜像
 docker image prune -a
 ```
@@ -181,10 +181,10 @@ docker image prune -a
 
 我们可以通过命令 `docker run` 命令创建容器
 
-如下，启动一个容器，执行命令输出 "Hello word"，之后终止容器
+如下，启动一个容器，执行命令输出 &#34;Hello word&#34;，之后终止容器
 
 ```
-docker run ubuntu:14.04 /bin/echo 'Hello world'
+docker run ubuntu:14.04 /bin/echo &#39;Hello world&#39;
 ```
 
 下面的命令则是启动一个 bash 终端，允许用户进行交互
@@ -208,15 +208,15 @@ docker run -t -i ubuntu:14.04 /bin/bash
 | -P                                 | 随机端口映射，容器端口内部随即映射到宿主机的端口上    |
 | -p                                 | 指定端口映射， -p 宿主机端口:容器端口                 |
 | -t                                 | 为容器重新分配一个伪输入终，通常与 -i 同时使用        |
-| --name="gate"                      | 为容器指定一个名称                                    |
+| --name=&#34;gate&#34;                      | 为容器指定一个名称                                    |
 | --dns 8.8.8.8                      | 指定容器的 DNS 服务器，默认与宿主机一致               |
 | --dns-search example.com           | 指定容器 DNS 搜索域名，默认与宿主机一致               |
-| -h "gate"                          | 指定容器的 hostname                                   |
-| -e username='gate'                 | 设置环境变量                                          |
+| -h &#34;gate&#34;                          | 指定容器的 hostname                                   |
+| -e username=&#39;gate&#39;                 | 设置环境变量                                          |
 | --env-file=[]                      | 从指定文件读入环境变量                                |
-| --cpuset="0-2" or --cpuset="0,1,2" | 绑定容器到指定 CPU 运行                               |
+| --cpuset=&#34;0-2&#34; or --cpuset=&#34;0,1,2&#34; | 绑定容器到指定 CPU 运行                               |
 | -m                                 | 设置容器使用内存最大值                                |
-| --net="bridge"                     | 指定容器的网络连接类型支持 bridge/host/none/container |
+| --net=&#34;bridge&#34;                     | 指定容器的网络连接类型支持 bridge/host/none/container |
 | --link=[]                          | 添加链接到另一个容器                                  |
 | --expose=[]                        | 开放一个端口或一组端口                                |
 | --volume,-v                        | 绑定一个卷                                            |
@@ -240,7 +240,7 @@ docker run -t -i ubuntu:14.04 /bin/bash
 
 ```
 ## 创建一个名为 test 的容器，容器任务是：打印一行 Hello word
-docker run --name='test' ubuntu:14.04 /bin/echo 'Hello world'
+docker run --name=&#39;test&#39; ubuntu:14.04 /bin/echo &#39;Hello world&#39;
 ## 查看所有可用容器 [-a]包括终止在内的所有容器
 docker ps -a
 ## 启动指定 name 的容器
@@ -257,16 +257,16 @@ Hello world
 
 前面创建的容器都是执行任务（打印Hello world）后，容器就终止了。更多的时候，我们需要让 Docker 容器在后台以守护态（Daemonized）形式运行。此时，可以通过添加 `-d` 参数来实现
 
-> 注意：docker是否会长久运行，和 docker run 指定的命令有关
+&gt; 注意：docker是否会长久运行，和 docker run 指定的命令有关
 
 ```
 ## 创建 docker 后台守护进程的容器
-docker run --name='test2' -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+docker run --name=&#39;test2&#39; -d ubuntu:14.04 /bin/sh -c &#34;while true; do echo hello world; sleep 1; done&#34;
 
 ## 查看容器
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-237e555d4457        ubuntu:14.04        "/bin/sh -c 'while t…"   52 seconds ago      Up 51 seconds                                           test2
+237e555d4457        ubuntu:14.04        &#34;/bin/sh -c &#39;while t…&#34;   52 seconds ago      Up 51 seconds                                           test2
 
 ## 获取容器的输出信息
 $ docker logs test2
@@ -280,7 +280,7 @@ hello world
 上一步我们已经实现了容器守护态长久运行，某些时候需要进入容器进行操作，可以使用 `attach` 、`exec` 进入容器。
 
 ```
-## 不安全的，ctrl+d 退出时容器也会终止
+## 不安全的，ctrl&#43;d 退出时容器也会终止
 docker attach [容器Name]
 
 ## 以交互式命令行进入，安全的，推荐使用
@@ -305,7 +305,7 @@ bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or 
 
 1. 完成上面步骤后，就可以直接通过命令 `ctn` 来进入容器
 
-> 注意：如果是使用非 root 账号创建的命令，而 docker 命令是 root 权限，可能存在权限问题，可以通过设置 `chmod 777 /usr/bin/ctn` 设置权限，使用 `sudo ctn [容器Name]` 即可进入容器
+&gt; 注意：如果是使用非 root 账号创建的命令，而 docker 命令是 root 权限，可能存在权限问题，可以通过设置 `chmod 777 /usr/bin/ctn` 设置权限，使用 `sudo ctn [容器Name]` 即可进入容器
 
 ```
 $ ctn [容器Name]
@@ -315,10 +315,10 @@ $ ctn [容器Name]
 
 ```
 ## ctn auto complete
-complete -W "$(docker ps --format"{{.Names}}")" ctn
+complete -W &#34;$(docker ps --format&#34;{{.Names}}&#34;)&#34; ctn
 ```
 
-> 注意： 由于提示的 容器Name 是 `~/.bashrc` 生效时的列表，所有如果之后 docker 容器列表有变动，需要重新执行 `source ~/.bashrc` 使之更新提示列表
+&gt; 注意： 由于提示的 容器Name 是 `~/.bashrc` 生效时的列表，所有如果之后 docker 容器列表有变动，需要重新执行 `source ~/.bashrc` 使之更新提示列表
 
 #### 3.6 终止容器
 
@@ -345,20 +345,20 @@ docker run -t -i training/sinatra /bin/bash
 gem install json
 
 ## 将修改后的容器打包成新的镜像
-docker commit -m "Added json gem" -a "Docker Newbee" 0b2616b0e5a8 ouruser/sinatra:v2
+docker commit -m &#34;Added json gem&#34; -a &#34;Docker Newbee&#34; 0b2616b0e5a8 ouruser/sinatra:v2
 ```
 
 #### 3.8 导出/导入容器
 
-容器 ->导出> 容器快照文件 ->导入> 本地镜像仓库 ->新建> 容器
+容器 -&gt;导出&gt; 容器快照文件 -&gt;导入&gt; 本地镜像仓库 -&gt;新建&gt; 容器
 
 ```
 $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-2a8bffa405c8        ubuntu:14.04        "/bin/sh -c 'while t…"   About an hour ago   Up 3 seconds                                            test2
+2a8bffa405c8        ubuntu:14.04        &#34;/bin/sh -c &#39;while t…&#34;   About an hour ago   Up 3 seconds                                            test2
 
 ## 导出
-$ docker export 2a8bffa405c8 > ubuntu.tar
+$ docker export 2a8bffa405c8 &gt; ubuntu.tar
 
 ## 导入为镜像
 $ docker ubuntu.tar | docker import - test/ubuntu:v1.0
@@ -367,7 +367,7 @@ $ docker ubuntu.tar | docker import - test/ubuntu:v1.0
 $ docker import http://example.com/exampleimage.tgz example/imagerepo
 ```
 
-> 注意：用户既可以通过 `docker load` 来导入镜像存储文件到本地镜像仓库，也可以使用 `docker import` 来导入一个容器快找到本地镜像仓库，两者的区别在于容器快照将丢失所有的历史记录和元数据信息，仅保存容器当时的状态，而镜像存储文件将保存完成的记录，体积要更大。所有容器快照文件导入时需要重新指定标签等元数据信息。
+&gt; 注意：用户既可以通过 `docker load` 来导入镜像存储文件到本地镜像仓库，也可以使用 `docker import` 来导入一个容器快找到本地镜像仓库，两者的区别在于容器快照将丢失所有的历史记录和元数据信息，仅保存容器当时的状态，而镜像存储文件将保存完成的记录，体积要更大。所有容器快照文件导入时需要重新指定标签等元数据信息。
 
 #### 3.9 删除容器
 
@@ -400,7 +400,7 @@ docker stats $(docker ps --format={{.Names}})
 - 对数据卷的更新，不会影响镜像
 - 卷会一直存在，直到没有容器使用
 
-> 数据卷类似于 Linux 下对目录或文件进行 mount
+&gt; 数据卷类似于 Linux 下对目录或文件进行 mount
 
 #### 4.2 创建数据卷
 
@@ -446,7 +446,7 @@ docker run -d --volumes-from dbdata --name db2 training/postgres
 ```
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-7f43807dc042        training/webapp     "python app.py"          3 seconds ago       Up 2 seconds        0.0.0.0:32770->5000/tcp             amazing_liskov
+7f43807dc042        training/webapp     &#34;python app.py&#34;          3 seconds ago       Up 2 seconds        0.0.0.0:32770-&gt;5000/tcp             amazing_liskov
 ```
 
 -p 指定端口映射，支持格式 `ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort`
@@ -464,7 +464,7 @@ docker run -d -p 127.0.0.1:5000:5000/udp training/webapp python app.py
 docker run -d -p 5000:5000  -p 3000:80 training/webapp python app.py
 ## 查看映射端口配置
 $ docker port amazing_liskov
-5000/tcp -> 0.0.0.0:32770
+5000/tcp -&gt; 0.0.0.0:32770
 ```
 
 #### 5.2 容器互联
@@ -545,9 +545,9 @@ FROM ubuntu
 MAINTAINER docker_user docker_user@email.com
 
 ## 构建镜像的命令：对镜像做的调整都在这里
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ raring main universe" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y nginx
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+RUN echo &#34;deb http://archive.ubuntu.com/ubuntu/ raring main universe&#34; &gt;&gt; /etc/apt/sources.list
+RUN apt-get update &amp;&amp; apt-get install -y nginx
+RUN echo &#34;\ndaemon off;&#34; &gt;&gt; /etc/nginx/nginx.conf
 
 ## 创建/运行 容器时的操作指令 
 ## 可以理解为 docker run 后跟的运行指令
@@ -561,14 +561,14 @@ CMD /usr/sbin/nginx
 | FORM       | 第一条指令必须是 `FORM` 指令，并且如果在同一个`Dockerfile` 中创建多个镜像，可以使用多个 `FROM` 指令（每个镜像一次） | FORM ubuntuFORM ubuntu:14.04                                 |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | MAINTAINER | 维护者信息                                                   | MAINTAINER Chris xx@gmail.com                                |
-| RUN        | 每条 RUN 指令在当前镜像基础上执行命令，并提交为新的镜像。当命令过长时可以使用 `\` 来换行 | 在 shell 终端中运行命令`RUN apt-get update && apt-get install -y nginx`在 `exec` 中执行:`RUN ["/bin/bash", "-c", "echo hello"]` |
-| CMD        | 指定启动容器时执行的命令，每个 Dockerfile 只能有一条 CMD 命令。如果指定了多条命令，只有最后一条会被执行。 | `CMD ["executable","param1","param2"]` 使用 `exec` 执行，推荐方式；`CMD command param1 param2` 在 `/bin/sh` 中执行，提供给需要交互的应用；`CMD ["param1","param2"]` 提供给 `ENTRYPOINT` 的默认参数； |
-| EXPOSE     | 告诉服务端容器暴露的端口号，                                 | EXPOSE <port>                                                |
+| RUN        | 每条 RUN 指令在当前镜像基础上执行命令，并提交为新的镜像。当命令过长时可以使用 `\` 来换行 | 在 shell 终端中运行命令`RUN apt-get update &amp;&amp; apt-get install -y nginx`在 `exec` 中执行:`RUN [&#34;/bin/bash&#34;, &#34;-c&#34;, &#34;echo hello&#34;]` |
+| CMD        | 指定启动容器时执行的命令，每个 Dockerfile 只能有一条 CMD 命令。如果指定了多条命令，只有最后一条会被执行。 | `CMD [&#34;executable&#34;,&#34;param1&#34;,&#34;param2&#34;]` 使用 `exec` 执行，推荐方式；`CMD command param1 param2` 在 `/bin/sh` 中执行，提供给需要交互的应用；`CMD [&#34;param1&#34;,&#34;param2&#34;]` 提供给 `ENTRYPOINT` 的默认参数； |
+| EXPOSE     | 告诉服务端容器暴露的端口号，                                 | EXPOSE &lt;port&gt;                                                |
 | ENV        | 指定环境变量                                                 | ENV PG_MAJOR 9.3ENV PATH /usr/local/postgres-$PG_MAJOR/bin:$PATH |
 | ADD        | `ADD  `该命令将复制指定的 ` `到容器中的 ``。其中 `` 可以是 `Dockerfile` 所在目录的一个相对路径，也可以是一个`URL`；还可以是一个 tar文件（自动解压为目录） |                                                              |
 | COPY       | 格式为 `COPY  `复制本地主机的 `` （为 Dockerfile 所在目录的相对路径）到容器中的 `` 。当使用本地目录为源目录时，推荐使用 `COPY` |                                                              |
-| ENTRYPOINT | 配置容器启动执行的命令，并且不可被 `docker run` 提供的参数覆盖每个Docekrfile 中只能有一个 `ENTRYPOINT` ，当指定多个时，只有最后一个起效 | 两种格式`ENTRYPOINT ["executable", "param1", "param2"]``ENTRYPOINT command param1 param2`（shell中执行） |
-| VOLUME     | 创建一个可以从本地主机或其他容器挂载的挂载点，一般用来存放数据库和需要保持的数据等。 | VOLUME ["/data"]                                             |
+| ENTRYPOINT | 配置容器启动执行的命令，并且不可被 `docker run` 提供的参数覆盖每个Docekrfile 中只能有一个 `ENTRYPOINT` ，当指定多个时，只有最后一个起效 | 两种格式`ENTRYPOINT [&#34;executable&#34;, &#34;param1&#34;, &#34;param2&#34;]``ENTRYPOINT command param1 param2`（shell中执行） |
+| VOLUME     | 创建一个可以从本地主机或其他容器挂载的挂载点，一般用来存放数据库和需要保持的数据等。 | VOLUME [&#34;/data&#34;]                                             |
 | USER       | 指定运行容器时的用户名或 UID，后续的 `RUN` 也会使用指定用户  | USER daemon                                                  |
 | WORKDIR    | 为后续的 `RUN`、`CMD`、`ENTRYPOINT` 指令配置工作目录。可以使用多个 `WORKDIR` 指令，后续命令如果参数是相对路径，则会基于之前命令指定的路径。 | 格式为 `WORKDIR /path/to/workdir`。 WORKDIR /aWORKDIR bWORKDIR cRUN pwd最后的路径为 /a/b/c |
 | ONBUILD    | 配置当所创建的镜像作为其它新创建镜像的基础镜像时，所执行的操作指令。 | 格式为 `ONBUILD [INSTRUCTION]`。                             |
@@ -602,7 +602,7 @@ pip install -U docker-compose
 docker-ompose -h
 
 ## 添加 bash 补全命令
-curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
+curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose &gt; /etc/bash_completion.d/docker-compose
 ```
 
 
@@ -649,8 +649,8 @@ Recreating compose-haproxy-web_haproxy_1 ... done
 Attaching to compose-haproxy-web_webb_1, compose-haproxy-web_weba_1, compose-haproxy-web_webc_1, compose-haproxy-web_haproxy_1
 haproxy_1  | [NOTICE] 244/131022 (1) : haproxy version is 2.2.2
 haproxy_1  | [NOTICE] 244/131022 (1) : path to executable is /usr/local/sbin/haproxy
-haproxy_1  | [ALERT] 244/131022 (1) : parsing [/usr/local/etc/haproxy/haproxy.cfg:14] : 'listen' cannot handle unexpected argument ':70'.
-haproxy_1  | [ALERT] 244/131022 (1) : parsing [/usr/local/etc/haproxy/haproxy.cfg:14] : please use the 'bind' keyword for listening addresses.
+haproxy_1  | [ALERT] 244/131022 (1) : parsing [/usr/local/etc/haproxy/haproxy.cfg:14] : &#39;listen&#39; cannot handle unexpected argument &#39;:70&#39;.
+haproxy_1  | [ALERT] 244/131022 (1) : parsing [/usr/local/etc/haproxy/haproxy.cfg:14] : please use the &#39;bind&#39; keyword for listening addresses.
 haproxy_1  | [ALERT] 244/131022 (1) : Error(s) found in configuration file : /usr/local/etc/haproxy/haproxy.cfg
 haproxy_1  | [ALERT] 244/131022 (1) : Fatal errors found in configuration.
 compose-haproxy-web_haproxy_1 exited with code 1
@@ -770,13 +770,13 @@ external_links:
 
 ```
 ports:
- - "3000"
- - "8000:8000"
- - "49100:22"
- - "127.0.0.1:8001:8001"
+ - &#34;3000&#34;
+ - &#34;8000:8000&#34;
+ - &#34;49100:22&#34;
+ - &#34;127.0.0.1:8001:8001&#34;
 ```
 
-> *注：当使用 `HOST:CONTAINER` 格式来映射端口时，如果你使用的容器端口小于 60 你可能会得到错误得结果，因为 `YAML` 将会解析 `xx:yy` 这种数字格式为 60 进制。所以建议采用字符串格式。*
+&gt; *注：当使用 `HOST:CONTAINER` 格式来映射端口时，如果你使用的容器端口小于 60 你可能会得到错误得结果，因为 `YAML` 将会解析 `xx:yy` 这种数字格式为 60 进制。所以建议采用字符串格式。*
 
 ```
 **expose**
@@ -786,8 +786,8 @@ ports:
 
 ```
 expose:
- - "3000"
- - "8000"
+ - &#34;3000&#34;
+ - &#34;8000&#34;
 ```
 
 **`volumes`**
@@ -882,7 +882,7 @@ web:
     file: common.yml
     service: webapp
   ports:
-    - "8000:8000"
+    - &#34;8000:8000&#34;
   links:
     - db
   environment:
@@ -901,10 +901,10 @@ db:
 设置网络模式。使用和 `docker client` 的 `--net` 参数一样的值。
 
 ```
-net: "bridge"
-net: "none"
-net: "container:[name or id]"
-net: "host"
+net: &#34;bridge&#34;
+net: &#34;none&#34;
+net: &#34;container:[name or id]&#34;
+net: &#34;host&#34;
 ```
 
 **
@@ -915,7 +915,7 @@ net: "host"
 跟主机系统共享进程命名空间。打开该选项的容器可以相互通过进程 ID 来访问和操作。
 
 ```
-pid: "host"
+pid: &#34;host&#34;
 ```
 
 
@@ -1005,6 +1005,6 @@ http://www.dockerinfo.net/
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/  
 

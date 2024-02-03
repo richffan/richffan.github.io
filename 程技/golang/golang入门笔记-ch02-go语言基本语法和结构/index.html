@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Golang入门笔记-CH02-Go语言基本语法和结构 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="1. 命名规范 1.1 文件 Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 my" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH02-Go语言基本语法和结构">
-<meta itemprop="description" content="1. 命名规范 1.1 文件 Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 my"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
+    <title>Golang入门笔记-CH02-Go语言基本语法和结构 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="1. 命名规范 1.1 文件Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 m" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH02-Go语言基本语法和结构">
+<meta itemprop="description" content="1. 命名规范 1.1 文件Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 m"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4200"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="4203"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH02-Go语言基本语法和结构" />
-<meta property="og:description" content="1. 命名规范 1.1 文件 Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 my" />
+<meta property="og:description" content="1. 命名规范 1.1 文件Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 m" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
@@ -20,7 +20,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Golang入门笔记-CH02-Go语言基本语法和结构"/>
-<meta name="twitter:description" content="1. 命名规范 1.1 文件 Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 my"/>
+<meta name="twitter:description" content="1. 命名规范 1.1 文件Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 m"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch01-go%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84\/"
-    },"genre": "posts","keywords": "Golang","wordcount":  4200 ,
+    },"genre": "posts","keywords": "Golang","wordcount":  4203 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/golang/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Golang</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH02-Go语言基本语法和结构</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH02-Go语言基本语法和结构</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="4200 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH02-Go语言基本语法和结构">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="4203 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH02-Go语言基本语法和结构">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH02-Go语言基本语法和结构">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -203,11 +198,11 @@
     <li><a href="#33-函数">3.3 函数</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="1-命名规范">1. 命名规范</h2>
-<h2 id="11-文件">1.1 文件</h2>
-<p>Go 语言中，源文件以 <code>.go</code> 格式保存，例如 <code>main.go</code>，且文件名只能由<strong>小写字母</strong>组成，若有多个单词，可以用下划线 <code>_</code> 进行拼接，例如 <code>my_file.go</code>。</p>
-<h2 id="12-标识符">1.2 标识符</h2>
-<p>Go 语言中，标识符是区分<strong>大小写</strong>的，标识符必须以字符或 <code>_</code> 开头，后面可以跟 0 个或多个字符（字母、数字以及其他符号），例如 <code>_</code>，<code>_abc</code>，<code>a1</code>，<code>b_2</code>。同时标识符不能是 Go 语言中的<strong>保留关键字</strong>，不能以<strong>数字开头</strong>，也不能有<strong>运算符</strong>。</p>
+      </div><div class="content" id="content"><h2 id="1-命名规范" class="heading-element">
+  <a href="#1-%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83" class="heading-mark"></a>1. 命名规范</h2><h2 id="11-文件" class="heading-element">
+  <a href="#11-%e6%96%87%e4%bb%b6" class="heading-mark"></a>1.1 文件</h2><p>Go 语言中，源文件以 <code>.go</code> 格式保存，例如 <code>main.go</code>，且文件名只能由<strong>小写字母</strong>组成，若有多个单词，可以用下划线 <code>_</code> 进行拼接，例如 <code>my_file.go</code>。</p>
+<h2 id="12-标识符" class="heading-element">
+  <a href="#12-%e6%a0%87%e8%af%86%e7%ac%a6" class="heading-mark"></a>1.2 标识符</h2><p>Go 语言中，标识符是区分<strong>大小写</strong>的，标识符必须以字符或 <code>_</code> 开头，后面可以跟 0 个或多个字符（字母、数字以及其他符号），例如 <code>_</code>，<code>_abc</code>，<code>a1</code>，<code>b_2</code>。同时标识符不能是 Go 语言中的<strong>保留关键字</strong>，不能以<strong>数字开头</strong>，也不能有<strong>运算符</strong>。</p>
 <p>以下这些标识符是错误的：</p>
 <ul>
 <li><code>2c</code>（不能以数字开头）</li>
@@ -218,8 +213,8 @@
 <blockquote>
 <p>用 <code>_</code> 接收的变量统称为<strong>匿名变量</strong>。</p>
 </blockquote>
-<h2 id="13-保留关键字">1.3 保留关键字</h2>
-<p>以下是 Go 语言中的保留关键字:</p>
+<h2 id="13-保留关键字" class="heading-element">
+  <a href="#13-%e4%bf%9d%e7%95%99%e5%85%b3%e9%94%ae%e5%ad%97" class="heading-mark"></a>1.3 保留关键字</h2><p>以下是 Go 语言中的保留关键字:</p>
 <blockquote>
 <p>保留关键字仅 25 个，还是比较少的，有利于加快编译速度。</p>
 </blockquote>
@@ -238,8 +233,8 @@
 </span></span><span class="line"><span class="cl"><span class="kd">const</span>     <span class="k">fallthrough</span>  <span class="k">if</span>      <span class="k">range</span>      <span class="kd">type</span>
 </span></span><span class="line"><span class="cl"><span class="k">continue</span>  <span class="k">for</span>          <span class="kn">import</span>  <span class="k">return</span>     <span class="kd">var</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="14-预定义标识符">1.4 预定义标识符</h2>
-<p>以下是 Go 语言中 36 个预定义标识符，在后面我们会用到：</p>
+</div><h2 id="14-预定义标识符" class="heading-element">
+  <a href="#14-%e9%a2%84%e5%ae%9a%e4%b9%89%e6%a0%87%e8%af%86%e7%ac%a6" class="heading-mark"></a>1.4 预定义标识符</h2><p>以下是 Go 语言中 36 个预定义标识符，在后面我们会用到：</p>
 <div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -257,9 +252,9 @@
 </span></span><span class="line"><span class="cl"><span class="nx">itoa</span>       <span class="nx">len</span>         <span class="nx">make</span>    <span class="nx">new</span>      <span class="kc">nil</span>     <span class="nx">panic</span>
 </span></span><span class="line"><span class="cl"><span class="nx">print</span>      <span class="nx">println</span>     <span class="nx">real</span>    <span class="nx">recover</span>  <span class="kt">string</span>  <span class="kc">true</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="2-语法规范">2. 语法规范</h2>
-<h2 id="21-基本规范">2.1 基本规范</h2>
-<p>Go 语言的语法和 C 语言类似，都用 <code>{ }</code> 来表示代码块，用 <code>&amp;&amp;</code> 表示逻辑与，用 <code>||</code> 表示逻辑或，<code>//</code> 表示单行注释，<code>/**/</code> 表示多行注释。</p>
+</div><h2 id="2-语法规范" class="heading-element">
+  <a href="#2-%e8%af%ad%e6%b3%95%e8%a7%84%e8%8c%83" class="heading-mark"></a>2. 语法规范</h2><h2 id="21-基本规范" class="heading-element">
+  <a href="#21-%e5%9f%ba%e6%9c%ac%e8%a7%84%e8%8c%83" class="heading-mark"></a>2.1 基本规范</h2><p>Go 语言的语法和 C 语言类似，都用 <code>{ }</code> 来表示代码块，用 <code>&amp;&amp;</code> 表示逻辑与，用 <code>||</code> 表示逻辑或，<code>//</code> 表示单行注释，<code>/**/</code> 表示多行注释。</p>
 <p>Go 语言中可以用 <code>;</code> 来表示语句结束，但<strong>不建议</strong>这样做。Go 语言是可以省略 <code>;</code> 的，<strong>直接换行</strong>来表明语句结束，Go 编译器会帮我们添加分号。</p>
 <p>C 语言中经常会使用 <code>()</code> 来表示条件，而在 Go 语言中，<code>()</code> 必须省略，例如：</p>
 <div class="highlight" id="id-3"><div class="chroma">
@@ -312,8 +307,8 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s">&#34;success&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="3-代码结构">3. 代码结构</h2>
-<p>为了加深对 go 语言的理解，我们将创建并运行第一个 go 程序。</p>
+</div><h2 id="3-代码结构" class="heading-element">
+  <a href="#3-%e4%bb%a3%e7%a0%81%e7%bb%93%e6%9e%84" class="heading-mark"></a>3. 代码结构</h2><p>为了加深对 go 语言的理解，我们将创建并运行第一个 go 程序。</p>
 <p>先创建 一个 go 源文件 <code>main.go</code>，在其中写入：</p>
 <div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -346,9 +341,9 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go run main.go</span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行成功后，观察终端输出结果。</p>
-<p><img loading="lazy" src="https://i.niupic.com/images/2020/08/31/8BEZ.png" srcset="https://i.niupic.com/images/2020/08/31/8BEZ.png?size=small, https://i.niupic.com/images/2020/08/31/8BEZ.png?size=medium 1.5x, https://i.niupic.com/images/2020/08/31/8BEZ.png?size=large 2x" sizes="auto" data-title="Hello World" data-alt="Hello World" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="31-包">3.1 包</h2>
-<ul>
+<p><img loading="lazy" src="https://i.niupic.com/images/2020/08/31/8BEZ.png" alt="Hello World" srcset="https://i.niupic.com/images/2020/08/31/8BEZ.png?size=small, https://i.niupic.com/images/2020/08/31/8BEZ.png?size=medium 1.5x, https://i.niupic.com/images/2020/08/31/8BEZ.png?size=large 2x" sizes="auto" data-title="Hello World" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="31-包" class="heading-element">
+  <a href="#31-%e5%8c%85" class="heading-mark"></a>3.1 包</h2><ul>
 <li>
 <p>包的基本概念</p>
 <p>包（<code>package</code>）由一个或多个保存在同一目录下（不含子目录）的 go 文件组成，用于结构化代码。一般包名称和目录名称相同，虽然 go 语言不强制要求包名和目录名相同，但建议相同，这样结构更清晰。</p>
@@ -564,8 +559,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="32-变量">3.2 变量</h2>
-<ul>
+<h2 id="32-变量" class="heading-element">
+  <a href="#32-%e5%8f%98%e9%87%8f" class="heading-mark"></a>3.2 变量</h2><ul>
 <li>
 <p>类比 C 语言</p>
 <p>Go 语言的变量声明方式和 C 语言大相径庭，C 语言中我们声明变量时，习惯将数据类型放在前面，例如 ：</p>
@@ -794,8 +789,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="33-函数">3.3 函数</h2>
-<ul>
+<h2 id="33-函数" class="heading-element">
+  <a href="#33-%e5%87%bd%e6%95%b0" class="heading-mark"></a>3.3 函数</h2><ul>
 <li>
 <p>基本概念</p>
 <p>函数是基本的代码块。我们可以按照功能和任务把代码划分为不同的函数，每一个函数对应一个功能，可以反复调用，以提高代码的复用率。</p>
@@ -1015,19 +1010,17 @@
       <div class="post-info-mod">
         <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" data-title="Golang入门笔记-CH02-Go语言基本语法和结构" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/" data-title="Golang入门笔记-CH02-Go语言基本语法和结构" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/golang/" class="post-tag" title="标签 - Golang">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -1038,10 +1031,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

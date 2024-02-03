@@ -105,13 +105,13 @@ considered individually or in combination) that affect potential rights, except 
 
 to exercise or convert those potential rights.” 根据IAS28.BC4，IAS 28 as amended in 2011 superseded IAS 28 (as revised in 2003
 
-and amended in 2010). As stated in paragraph BC3, in amending IAS 28, the Board did not reconsider all the Standard's
+and amended in 2010). As stated in paragraph BC3, in amending IAS 28, the Board did not reconsider all the Standard&#39;s
 
 requirements. The requirements in paragraphs 5-11, 15, 22-23, 25-28 and 32-43 relate to the assessment of significant influence
 
 and to the equity method and its application, and paragraphs 12-14 relate to the accounting for potential voting rights. With the
 
-exception of the Board's decision to incorporate the accounting for joint ventures into IAS 28, those paragraphs were carried forward
+exception of the Board&#39;s decision to incorporate the accounting for joint ventures into IAS 28, those paragraphs were carried forward
 
 from IAS 28 and from the Guidance on Implementing IAS 27 Consolidated and Separate Financial Statements, IAS 28 Investments in
 
@@ -389,7 +389,7 @@ BOT项目的合并报表编制”相关规定执行。如果是固定资产、�
 
 **回答人：** chenyiwei
 
-请参考以下Q&A：
+请参考以下Q&amp;A：
 
 
 问题 3 全资子公司引入外部股东导致母公司持股比例下降时的处理 问题： 全资子公司引入外部股东增资扩股，导致母公司持股比例
@@ -578,9 +578,9 @@ CAS2第十一条实际并不符合会计原理，此问题已有很多讨论。�
 数为贷款本金余额，第 4 年及之后为委托贷款本金余额的18%。如借款人在某一年宣布分红，则借款人必须支付该年的资金成
 本及以前年度递延的资金成本（如有）。
 
-5. 利率调整方式：如果借款人在任何一年（假设为“A”年）均为宣布分红，则借款人当年应支付的利息递延至次年（即A+1年）
+5. 利率调整方式：如果借款人在任何一年（假设为“A”年）均为宣布分红，则借款人当年应支付的利息递延至次年（即A&#43;1年）
 
-支付，且A年的利率应在A年利率基础上上浮50%；如次年（即A+1年）借款人仍未宣布分红，则A+1年的利率在A+1年利率基
+支付，且A年的利率应在A年利率基础上上浮50%；如次年（即A&#43;1年）借款人仍未宣布分红，则A&#43;1年的利率在A&#43;1年利率基
 
 础上上浮50%，以此类推，但上浮后的利率以18%/年为限，并且，当上述任何利息支付时相应的利息及因其产生的其他资金成
 本的计算（无论因递延或其他原因造成的）到其支付之日为止。如果借款人在某一年宣布分红，则必须支付该年利息及以前年
@@ -828,7 +828,7 @@ IAS 28，第 23 段，如果被投资者以前在其他综合收益确认的利�
 
 应等于合并对价的公允价值减去权益法核算中被抵销的内部交易未实现损益的相应份额，也就是说，企业合并准则（在IFRS体系下对
 
-应的准则为IFRS 10&IFRS 3）与长期股权投资准则（在IFRS体系下对应的准则为IAS 28）在这个问题上存在冲突，目前这个问题也已
+应的准则为IFRS 10&amp;IFRS 3）与长期股权投资准则（在IFRS体系下对应的准则为IAS 28）在这个问题上存在冲突，目前这个问题也已
 
 被国际会计准则理事会（IASB）和国际财务报告解释委员会（IFRIC）关注到。《计学撮要 2013 》中的“问题3-2-67（以子公司股权向
 
@@ -1069,7 +1069,7 @@ in this Exposure Draft) is consistentwith the requirements in IFRS 3 for a busin
 
 **提问人：** asdlinlvhe 时间： 2014-10-11 10:09:44
 
-怎样理解"如果原先基准日评估时确定了各单项可辨认净资产的公允价值"。比如：评估目的:为收购提供价值参考依据，评估方法分别
+怎样理解&#34;如果原先基准日评估时确定了各单项可辨认净资产的公允价值&#34;。比如：评估目的:为收购提供价值参考依据，评估方法分别
 
 为成本法和收益法，最终以收益法的评估值做评估结论，能否用此报告中成本法的评估结果代替以“购买对价分摊”为目的的评估结
 
@@ -1182,7 +1182,7 @@ through profit or loss in their own financial statements. The Board noted that s
 
 not measure their portion of the investment in the associate at fair value through profit or loss. In those situations, however, from
 
-the group's perspective, the appropriate determination of the business purpose would lead to the measurement of this portion of
+the group&#39;s perspective, the appropriate determination of the business purpose would lead to the measurement of this portion of
 
 the investment in the associate at fair value through profit or loss in the consolidated financial statements. Consequently, the Board
 
@@ -1190,7 +1190,7 @@ decided that an entity should be able to measure a portion of an investment in a
 
 or a mutual fund, unit trust and similar entities including investment-linked insurance funds, at fair value through profit or loss
 
-regardless of whether this portion of the investment is measured at fair value through profit or loss in those entities" financial
+regardless of whether this portion of the investment is measured at fair value through profit or loss in those entities&#34; financial
 
 statements. 中文翻译： 20 ・理事会收到一份请求，要求明确在联营企业中的部分投资按照《国际会计准则第 28 号》第 18 段的规定
 
@@ -2589,7 +2589,7 @@ D公司网络资产及相关业务的收购，此项资产收购构成业务合�
 的公允价值计量，在合并报表层面对所取得的资产、负债也按照公允价值予以初始计量。（ 3 ）如果按照长期股权投资准则规定的权
 益法核算原则，合并报表层面实际的合并成本应等于合并对价的公允价值减去权益法核算中被抵销的内部交易未实现损益的相应份
 
-额，也就是说，企业合并准则（在IFRS体系下对应的准则为IFRS 10&IFRS 3）与长期股权投资准则（在IFRS体系下对应的准则为IAS
+额，也就是说，企业合并准则（在IFRS体系下对应的准则为IFRS 10&amp;IFRS 3）与长期股权投资准则（在IFRS体系下对应的准则为IAS
 
 28 ）在这个问题上存在冲突，目前这个问题也已被国际会计准则理事会（IASB）和国际财务报告解释委员会（IFRIC）关注到。《计
 
@@ -3722,9 +3722,9 @@ IPO或新三板挂牌的情况下。
 
 陈版及各位老师:
 
-"投资方对联营企业的权益性投资,其中一部分通过风险投资机构、共同基金、信托公司或包括投连险基金在内类似主体间接持有
+&#34;投资方对联营企业的权益性投资,其中一部分通过风险投资机构、共同基金、信托公司或包括投连险基金在内类似主体间接持有
 
-的......" 请问：如何理解“间接持有”？ 这里所述的风险投资机构与投资企业是否应存在控制与被控制关系，投资企业在合并投资性
+的......&#34; 请问：如何理解“间接持有”？ 这里所述的风险投资机构与投资企业是否应存在控制与被控制关系，投资企业在合并投资性
 主体时对该部分投资仍然采用公允价值计量，不需要合并一起按权益法核算
 
 **回答人：** chenyiwei
@@ -3813,7 +3813,7 @@ IPO或新三板挂牌的情况下。
 
 月事务所提出的会计问题》里面提“企业对所持有的现货比照一般商品购销进行会计处理，其中，期末未实现销售的仓单在报表中列
 
-示为存货项目，已完成销售的在报表分别列示为其他业务收入、其他业务支出"，这句话没理解，如果列入存货按照什么价格呢？期
+示为存货项目，已完成销售的在报表分别列示为其他业务收入、其他业务支出&#34;，这句话没理解，如果列入存货按照什么价格呢？期
 末收盘价？持有的多头可以理解，空头呢？二次报表日期末持仓的差额有放在哪里呢？
 
 谢谢各位指教OR讨论！
@@ -3942,7 +3942,7 @@ A公司是BT项目工程总承包方并实际参与了部分工程建设，这�
 案例：假设母公司持有子公司80%股权，当期，母公司实现净利润 1000 万，子公司实现利润 500 万，子公司实现的利润中有 300 万是
 对母公司的销售，母公司从子公司购进的存货未对外销售，不考虑所得税影响。
 
-请问：以下理解是否正确？ 1 、合并净利润 1200 万（新旧准则一样） 2 、归属于母公司所有者的净利润：新：1000+（500-
+请问：以下理解是否正确？ 1 、合并净利润 1200 万（新旧准则一样） 2 、归属于母公司所有者的净利润：新：1000&#43;（500-
 
 300 ）*80%=1160万，旧： 1100 万 3 、少数股东损益：新（500-300） 20%=40 万，旧 500 20%=100万
 求指点
@@ -3980,7 +3980,7 @@ A公司是BT项目工程总承包方并实际参与了部分工程建设，这�
 
 **回答人：** chenyiwei
 
-内部逆流销售交易发生当年，年末未将标的存货对外出售的，则当年度合并报表中归属母公司股东的净利润应为 1160 （=1000+
+内部逆流销售交易发生当年，年末未将标的存货对外出售的，则当年度合并报表中归属母公司股东的净利润应为 1160 （=1000&#43;
 
 (500-300)*80%）。
 
@@ -4715,7 +4715,7 @@ IFRS下并不存在利息收入和利息支出抵销列报的方式。存款利�
 动等产生的现金流入，因此理论上目前帐面净资产为负数不一定意味着可收回金额低于初始投资成本。但这需要有很充分的证据予以
 支持。
 
-## 1745 、"奖金计提时点变更”的会计处理
+## 1745 、&#34;奖金计提时点变更”的会计处理
 
 **提问人：** 2006163008 时间： 2014-10-23 20:20:54
 
@@ -5082,16 +5082,16 @@ a持股b 90%，b去年非同一控制持股c 60%。a今年购买c 40%。其实�
 
 存货作为支付对价，该批存货账面价值 1200 万元，市场售价 1360 万元，乙公司增值税率17%。乙公司的存货是甲公司生产经营过程
 
-中必用的原材料。 请问陈版：此时个别财务报表长投初始投资成本是（1000+400+100+200）×80%+1360×17%，还是
+中必用的原材料。 请问陈版：此时个别财务报表长投初始投资成本是（1000&#43;400&#43;100&#43;200）×80%&#43;1360×17%，还是
 
-（1000+400+100）×80%+200+1360×17%，也就是说，乙公司全部接收商誉还是按比例接收。乙公司个别报表和财务报表是否有
+（1000&#43;400&#43;100）×80%&#43;200&#43;1360×17%，也就是说，乙公司全部接收商誉还是按比例接收。乙公司个别报表和财务报表是否有
 区别？
 
 **回答人：** chenyiwei
 
 商誉是被合并方资产的一部分，应全额下推，而不是按比例下推。在上市公司合并报表层面仍应确认 100 ％的商誉。但个别报表层面
 
-的长投成本仍然是（1000+400+100+200）×80%+1360×17%。
+的长投成本仍然是（1000&#43;400&#43;100&#43;200）×80%&#43;1360×17%。
 
 **提问人：** zengfengxia 时间： 2015-06-25 10:59:33
 
@@ -5391,7 +5391,7 @@ a持股b 90%，b去年非同一控制持股c 60%。a今年购买c 40%。其实�
 
 **提问人：** aRQue 时间： 2014-10-26 21:32:36
 
-请教陈版主： A公司与B公司达成<资产转让协议>，协议内容如下：
+请教陈版主： A公司与B公司达成&lt;资产转让协议&gt;，协议内容如下：
 
 1. B公司将现有的收入合同和业务转给A公司（转让前的收入属于B公司，转入后属于A公司），B公司的创业股东变成A公司的员
 
@@ -6199,7 +6199,7 @@ A公司对于被抽资是如何进行账务处理的（实务中多数企业会�
 
 **提问人：** LBYBYBLB 时间： 2014-11-09 10:15:42
 
-陈版，平时用于计提工会经费、职工教育经费的基数不是应付职工薪酬-应付工资的"贷方“发生额吗？为什么您这里讲的是"借方"发生
+陈版，平时用于计提工会经费、职工教育经费的基数不是应付职工薪酬-应付工资的&#34;贷方“发生额吗？为什么您这里讲的是&#34;借方&#34;发生
 额？有点疑问，还请陈版明示！
 
 **回答人：** chenyiwei
@@ -6403,7 +6403,7 @@ A公司 2009 年购买设备一台，价值 100 万元，进项税 17 万元已�
 
 @chenyiwei A公司持有子公司B 95%的股权，本年 7 月份从少数股东中购买剩下的5%的股权，本期的少数股东损益是分段计算的，
 
-少数股东权益是个时点数，截止期末少数股东权益为零，但是未分配利润是期初未分配利润+本期归属于母公司的净利润，这样就无
+少数股东权益是个时点数，截止期末少数股东权益为零，但是未分配利润是期初未分配利润&#43;本期归属于母公司的净利润，这样就无
 法勾稽了，应该怎么处理？
 
 **回答人：** chenyiwei
@@ -6463,6 +6463,6 @@ A是母公司，A投资境外子公司B，A公司投资 10 万美元，假设是
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201410/  
 

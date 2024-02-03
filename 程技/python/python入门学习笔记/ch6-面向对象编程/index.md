@@ -15,15 +15,15 @@
 假设我们要处理学生的成绩表，为了表示一个学生的成绩，面向过程的程序可以用一个 dict 表示：
 
 ```python
-std1 = { 'name': 'Michael', 'score': 98 }
-std2 = { 'name': 'Bob', 'score': 81 }
+std1 = { &#39;name&#39;: &#39;Michael&#39;, &#39;score&#39;: 98 }
+std2 = { &#39;name&#39;: &#39;Bob&#39;, &#39;score&#39;: 81 }
 ```
 
 而处理学生成绩可以通过函数实现，比如打印学生的成绩：
 
 ```python
 def print_score(std):
-    print('%s: %s' % (std['name'], std['score']))
+    print(&#39;%s: %s&#39; % (std[&#39;name&#39;], std[&#39;score&#39;]))
 ```
 
 如果采用面向对象的程序设计思想，我们首选思考的不是程序的执行流程，而是`Student`这种数据类型应该被视为一个对象，这个对象拥有`name`和`score`这两个属性（Property）。如果要打印一个学生的成绩，首先必须创建出这个学生对应的对象，然后，给对象发一个`print_score`消息，让对象自己把自己的数据打印出来。
@@ -36,14 +36,14 @@ class Student(object):
         self.score = score
 
     def print_score(self):
-        print('%s: %s' % (self.name, self.score))
+        print(&#39;%s: %s&#39; % (self.name, self.score))
 ```
 
 给对象发消息实际上就是调用对象对应的关联函数，我们称之为对象的方法（Method）。面向对象的程序写出来就像这样：
 
 ```python
-bart = Student('Bart Simpson', 59)
-lisa = Student('Lisa Simpson', 87)
+bart = Student(&#39;Bart Simpson&#39;, 59)
+lisa = Student(&#39;Lisa Simpson&#39;, 87)
 bart.print_score()
 lisa.print_score()
 ```
@@ -52,7 +52,7 @@ Class 是一种抽象概念，比如我们定义的 Class——Student，是指�
 
 所以，面向对象的设计思想是抽象出 Class，根据 Class 创建 Instance。
 
-> 面向对象的抽象程度又比函数要高，因为一个Class既包含数据，又包含操作数据的方法。
+&gt; 面向对象的抽象程度又比函数要高，因为一个Class既包含数据，又包含操作数据的方法。
 
 ## 6.1 类和实例
 
@@ -67,14 +67,14 @@ class Student(object):
 
 `class`后面紧接着是类名，即`Student`，类名通常是大写开头的单词，紧接着是`(object)`，表示该类是从哪个类继承下来的，继承的概念我们后面再讲，通常，如果没有合适的继承类，就使用`object`类，这是所有类最终都会继承的类。
 
-定义好了`Student`类，就可以根据`Student`类创建出`Student`的实例，创建实例是通过类名+()实现的：
+定义好了`Student`类，就可以根据`Student`类创建出`Student`的实例，创建实例是通过类名&#43;()实现的：
 
 ```python
->>> bart = Student()
->>> bart
-<__main__.Student object at 0x10a67a590>
->>> Student
-<class '__main__.Student'>
+&gt;&gt;&gt; bart = Student()
+&gt;&gt;&gt; bart
+&lt;__main__.Student object at 0x10a67a590&gt;
+&gt;&gt;&gt; Student
+&lt;class &#39;__main__.Student&#39;&gt;
 ```
 
 可以看到，变量`bart`指向的就是一个`Student`的实例，后面的`0x10a67a590`是内存地址，每个object的地址都不一样，而`Student`本身则是一个类。
@@ -82,9 +82,9 @@ class Student(object):
 可以自由地给一个实例变量绑定属性，比如，给实例`bart`绑定一个`name`属性：
 
 ```python
->>> bart.name = 'Bart Simpson'
->>> bart.name
-'Bart Simpson'
+&gt;&gt;&gt; bart.name = &#39;Bart Simpson&#39;
+&gt;&gt;&gt; bart.name
+&#39;Bart Simpson&#39;
 ```
 
 由于类可以起到模板的作用，因此，可以在创建实例的时候，把一些我们认为必须绑定的属性强制填写进去。通过定义一个特殊的`__init__`方法，在创建实例的时候，就把`name`，`score`等属性绑上去：
@@ -96,17 +96,17 @@ class Student(object):
         self.score = score
 ```
 
-!> 注意：特殊方法“__init__”前后分别有两个下划线！！！
+!&gt; 注意：特殊方法“__init__”前后分别有两个下划线！！！
 
 注意到`__init__`方法的第一个参数永远是`self`，表示创建的实例本身，因此，在`__init__`方法内部，就可以把各种属性绑定到`self`，因为`self`就指向创建的实例本身。
 
 有了`__init__`方法，在创建实例的时候，就不能传入空的参数了，必须传入与`__init__`方法匹配的参数，但`self`不需要传，Python 解释器自己会把实例变量传进去：
 
 ```python
->>> bart = Student('Bart Simpson', 59)
->>> bart.name
-'Bart Simpson'
->>> bart.score
+&gt;&gt;&gt; bart = Student(&#39;Bart Simpson&#39;, 59)
+&gt;&gt;&gt; bart.name
+&#39;Bart Simpson&#39;
+&gt;&gt;&gt; bart.score
 59
 ```
 
@@ -118,7 +118,7 @@ class Student(object):
 
 ```python
 def print_score(std):
-    print('%s: %s' % (std.name, std.score))
+    print(&#39;%s: %s&#39; % (std.name, std.score))
 
 print_score(bart)
 ```
@@ -137,13 +137,13 @@ class Student(object):
         self.score = score
 
     def print_score(self):
-        print('%s: %s' % (self.name, self.score))
+        print(&#39;%s: %s&#39; % (self.name, self.score))
 ```
 
 要定义一个方法，除了第一个参数是`self`外，其他和普通函数一样。要调用一个方法，只需要在实例变量上直接调用，除了`self`不用传递，其他参数正常传入：
 
 ```python
-bart = Student('Bart Simpson', 59)
+bart = Student(&#39;Bart Simpson&#39;, 59)
 bart.print_score() # Bart Simpson: 59
 ```
 
@@ -156,12 +156,12 @@ class Student(object):
     ...
 
     def get_grade(self):
-        if self.score >= 90:
-            return 'A'
-        elif self.score >= 60:
-            return 'B'
+        if self.score &gt;= 90:
+            return &#39;A&#39;
+        elif self.score &gt;= 60:
+            return &#39;B&#39;
         else:
-            return 'C'
+            return &#39;C&#39;
 ```
 
 同样的，`get_grade`方法可以直接在实例变量上调用，不需要知道内部实现细节：
@@ -173,19 +173,19 @@ class Student(object):
         self.score = score
 
     def get_grade(self):
-        if self.score >= 90:
-            return 'A'
-        elif self.score >= 60:
-            return 'B'
+        if self.score &gt;= 90:
+            return &#39;A&#39;
+        elif self.score &gt;= 60:
+            return &#39;B&#39;
         else:
-            return 'C'
-lisa = Student('Lisa', 99)
-bart = Student('Bart', 59)
+            return &#39;C&#39;
+lisa = Student(&#39;Lisa&#39;, 99)
+bart = Student(&#39;Bart&#39;, 59)
 print(lisa.name, lisa.get_grade()) # Lisa A
 print(bart.name, bart.get_grade()) # Bart C
 ```
 
-> 小结：
+&gt; 小结：
 
 类是创建实例的模板，而实例则是一个一个具体的对象，各个实例拥有的数据都互相独立，互不影响；
 
@@ -196,15 +196,15 @@ print(bart.name, bart.get_grade()) # Bart C
 和静态语言不同，Python 允许对实例变量绑定任何数据，也就是说，对于两个实例变量，虽然它们都是同一个类的不同实例，但拥有的变量名称都可能不同：
 
 ```python
->>> bart = Student('Bart Simpson', 59)
->>> lisa = Student('Lisa Simpson', 87)
->>> bart.age = 8
->>> bart.age
+&gt;&gt;&gt; bart = Student(&#39;Bart Simpson&#39;, 59)
+&gt;&gt;&gt; lisa = Student(&#39;Lisa Simpson&#39;, 87)
+&gt;&gt;&gt; bart.age = 8
+&gt;&gt;&gt; bart.age
 8
->>> lisa.age
+&gt;&gt;&gt; lisa.age
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'Student' object has no attribute 'age'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+AttributeError: &#39;Student&#39; object has no attribute &#39;age&#39;
 ```
 
 ## 6.2 访问限制
@@ -225,7 +225,7 @@ class Student(object):
         self.__score = score
 
     def print_score(self):
-        print('%s: %s' % (self.__name, self.__score))
+        print(&#39;%s: %s&#39; % (self.__name, self.__score))
 ```
 
 改完后，对于外部代码来说，没什么变动，但是已经无法从外部访问`实例变量.__name`和`实例变量.__score`了：
@@ -264,10 +264,10 @@ class Student(object):
     ...
 
     def set_score(self, score):
-        if 0 <= score <= 100:
+        if 0 &lt;= score &lt;= 100:
             self.__score = score
         else:
-            raise ValueError('bad score')
+            raise ValueError(&#39;bad score&#39;)
 ```
 
 需要注意的是，在 Python 中，变量名类似`__xxx__`的，也就是以双下划线开头，并且以双下划线结尾的，是特殊变量，特殊变量是可以直接访问的，不是 private 变量，所以，不能用`__name__`、`__score__`这样的变量名。
@@ -277,8 +277,8 @@ class Student(object):
 双下划线开头的实例变量是不是一定不能从外部访问呢？其实也不是。不能直接访问`__name`是因为 Python 解释器对外把`__name`变量改成了`_Student__name`，所以，仍然可以通过`_Student__name`来访问`__name`变量：
 
 ```python
->>> bart._Student__name
-'Bart Simpson'
+&gt;&gt;&gt; bart._Student__name
+&#39;Bart Simpson&#39;
 ```
 
 但是强烈建议你不要这么干，因为不同版本的 Python 解释器可能会把`__name`改成不同的变量名。
@@ -288,19 +288,19 @@ class Student(object):
 最后注意下面的这种**错误写法**：
 
 ```python
->>> bart = Student('Bart Simpson', 59)
->>> bart.get_name()
-'Bart Simpson'
->>> bart.__name = 'New Name' # 设置__name变量！
->>> bart.__name
-'New Name'
+&gt;&gt;&gt; bart = Student(&#39;Bart Simpson&#39;, 59)
+&gt;&gt;&gt; bart.get_name()
+&#39;Bart Simpson&#39;
+&gt;&gt;&gt; bart.__name = &#39;New Name&#39; # 设置__name变量！
+&gt;&gt;&gt; bart.__name
+&#39;New Name&#39;
 ```
 
 表面上看，外部代码“成功”地设置了`__name`变量，但实际上这个`__name`变量和 class 内部的`__name`变量不是一个变量！内部的`__name`变量已经被 Python 解释器自动改成了`_Student__name`，而外部代码给`bart`新增了一个`__name`变量。不信试试：
 
 ```python
->>> bart.get_name() # get_name()内部返回self.__name
-'Bart Simpson'
+&gt;&gt;&gt; bart.get_name() # get_name()内部返回self.__name
+&#39;Bart Simpson&#39;
 ```
 
 ## 6.3 继承和多态
@@ -312,7 +312,7 @@ class Student(object):
 ```python
 class Animal(object):
     def run(self):
-        print('Animal is running...')
+        print(&#39;Animal is running...&#39;)
 ```
 
 当我们需要编写`Dog`和`Cat`类时，就可以直接从`Animal`类继承：
@@ -350,10 +350,10 @@ Animal is running...
 class Dog(Animal):
 
     def run(self):
-        print('Dog is running...')
+        print(&#39;Dog is running...&#39;)
 
     def eat(self):
-        print('Eating meat...')
+        print(&#39;Eating meat...&#39;)
 ```
 
 继承的第二个好处需要我们对代码做一点改进。你看到了，无论是`Dog`还是`Cat`，它们`run()`的时候，显示的都是`Animal is running...`，符合逻辑的做法是分别显示`Dog is running...`和`Cat is running...`，因此，对`Dog`和`Cat`类改进如下：
@@ -362,12 +362,12 @@ class Dog(Animal):
 class Dog(Animal):
 
     def run(self):
-        print('Dog is running...')
+        print(&#39;Dog is running...&#39;)
 
 class Cat(Animal):
 
     def run(self):
-        print('Cat is running...')
+        print(&#39;Cat is running...&#39;)
 ```
 
 再次运行，结果如下：
@@ -390,11 +390,11 @@ c = Dog() # c是Dog类型
 判断一个变量是否是某个类型可以用`isinstance()`判断：
 
 ```python
->>> isinstance(a, list)
+&gt;&gt;&gt; isinstance(a, list)
 True
->>> isinstance(b, Animal)
+&gt;&gt;&gt; isinstance(b, Animal)
 True
->>> isinstance(c, Dog)
+&gt;&gt;&gt; isinstance(c, Dog)
 True
 ```
 
@@ -403,7 +403,7 @@ True
 但是等等，试试：
 
 ```python
->>> isinstance(c, Animal)
+&gt;&gt;&gt; isinstance(c, Animal)
 True
 ```
 
@@ -414,8 +414,8 @@ True
 所以，在继承关系中，如果一个实例的数据类型是某个子类，那它的数据类型也可以被看做是父类。但是，反过来就不行：
 
 ```python
->>> b = Animal()
->>> isinstance(b, Dog)
+&gt;&gt;&gt; b = Animal()
+&gt;&gt;&gt; isinstance(b, Dog)
 False
 ```
 
@@ -432,7 +432,7 @@ def run_twice(animal):
 当我们传入`Animal`的实例时，`run_twice()`就打印出：
 
 ```python
->>> run_twice(Animal())
+&gt;&gt;&gt; run_twice(Animal())
 Animal is running...
 Animal is running...
 ```
@@ -440,7 +440,7 @@ Animal is running...
 当我们传入`Dog`的实例时，`run_twice()`就打印出：
 
 ```python
->>> run_twice(Dog())
+&gt;&gt;&gt; run_twice(Dog())
 Dog is running...
 Dog is running...
 ```
@@ -448,7 +448,7 @@ Dog is running...
 当我们传入`Cat`的实例时，`run_twice()`就打印出：
 
 ```python
->>> run_twice(Cat())
+&gt;&gt;&gt; run_twice(Cat())
 Cat is running...
 Cat is running...
 ```
@@ -458,13 +458,13 @@ Cat is running...
 ```python
 class Tortoise(Animal):
     def run(self):
-        print('Tortoise is running slowly...')
+        print(&#39;Tortoise is running slowly...&#39;)
 ```
 
 当我们调用`run_twice()`时，传入`Tortoise`的实例：
 
 ```python
->>> run_twice(Tortoise())
+&gt;&gt;&gt; run_twice(Tortoise())
 Tortoise is running slowly...
 Tortoise is running slowly...
 ```
@@ -491,14 +491,14 @@ Tortoise is running slowly...
 ```python
 class Timer(object):
     def run(self):
-        print('Start...')
+        print(&#39;Start...&#39;)
 ```
 
 这就是动态语言的“鸭子类型”，它并不要求严格的继承体系，一个对象只要“看起来像鸭子，走起路来像鸭子”，那它就可以被看做是鸭子。
 
 Python 的“file-like object“就是一种鸭子类型。对真正的文件对象，它有一个`read()`方法，返回其内容。但是，许多对象，只要有`read()`方法，都被视为“file-like object“。许多函数接收的参数就是“file-like object“，你不一定要传入真正的文件对象，完全可以传入任何实现了`read()`方法的对象。
 
-> 小结：
+&gt; 小结：
 
 * 继承可以把父类的所有功能都直接拿过来，这样就不必重零做起，子类只需要新增自己特有的方法，也可以把父类不适合的方法覆盖重写。
 * 动态语言的鸭子类型特点决定了继承不像静态语言那样是必须的。
@@ -514,52 +514,52 @@ Python 的“file-like object“就是一种鸭子类型。对真正的文件对
 基本类型都可以用`type()`判断：
 
 ```python
->>> type(123)
-<class 'int'>
->>> type('str')
-<class 'str'>
->>> type(None)
-<type(None) 'NoneType'>
+&gt;&gt;&gt; type(123)
+&lt;class &#39;int&#39;&gt;
+&gt;&gt;&gt; type(&#39;str&#39;)
+&lt;class &#39;str&#39;&gt;
+&gt;&gt;&gt; type(None)
+&lt;type(None) &#39;NoneType&#39;&gt;
 ```
 
 如果一个变量指向函数或者类，也可以用`type()`判断：
 
 ```python
->>> type(abs)
-<class 'builtin_function_or_method'>
->>> type(a)
-<class '__main__.Animal'>
+&gt;&gt;&gt; type(abs)
+&lt;class &#39;builtin_function_or_method&#39;&gt;
+&gt;&gt;&gt; type(a)
+&lt;class &#39;__main__.Animal&#39;&gt;
 ```
 
 但是`type()`函数返回的是什么类型呢？它返回对应的 Class 类型。如果我们要在`if`语句中判断，就需要比较两个变量的 type 类型是否相同：
 
 ```python
->>> type(123)==type(456)
+&gt;&gt;&gt; type(123)==type(456)
 True
->>> type(123)==int
+&gt;&gt;&gt; type(123)==int
 True
->>> type('abc')==type('123')
+&gt;&gt;&gt; type(&#39;abc&#39;)==type(&#39;123&#39;)
 True
->>> type('abc')==str
+&gt;&gt;&gt; type(&#39;abc&#39;)==str
 True
->>> type('abc')==type(123)
+&gt;&gt;&gt; type(&#39;abc&#39;)==type(123)
 False
 ```
 
 判断基本数据类型可以直接写`int`，`str`等，但如果要判断一个对象是否是函数怎么办？可以使用`types`模块中定义的常量：
 
 ```python
->>> import types
->>> def fn():
+&gt;&gt;&gt; import types
+&gt;&gt;&gt; def fn():
 ...     pass
 ...
->>> type(fn)==types.FunctionType
+&gt;&gt;&gt; type(fn)==types.FunctionType
 True
->>> type(abs)==types.BuiltinFunctionType
+&gt;&gt;&gt; type(abs)==types.BuiltinFunctionType
 True
->>> type(lambda x: x)==types.LambdaType
+&gt;&gt;&gt; type(lambda x: x)==types.LambdaType
 True
->>> type((x for x in range(10)))==types.GeneratorType
+&gt;&gt;&gt; type((x for x in range(10)))==types.GeneratorType
 True
 ```
 
@@ -570,21 +570,21 @@ True
 我们回顾上次的例子，如果继承关系是：
 
 ```python
-object -> Animal -> Dog -> Husky
+object -&gt; Animal -&gt; Dog -&gt; Husky
 ```
 
 那么，`isinstance()`就可以告诉我们，一个对象是否是某种类型。先创建 3 种类型的对象：
 
 ```python
->>> a = Animal()
->>> d = Dog()
->>> h = Husky()
+&gt;&gt;&gt; a = Animal()
+&gt;&gt;&gt; d = Dog()
+&gt;&gt;&gt; h = Husky()
 ```
 
 然后，判断：
 
 ```python
->>> isinstance(h, Husky)
+&gt;&gt;&gt; isinstance(h, Husky)
 True
 ```
 
@@ -593,7 +593,7 @@ True
 再判断：
 
 ```python
->>> isinstance(h, Dog)
+&gt;&gt;&gt; isinstance(h, Dog)
 True
 ```
 
@@ -602,162 +602,162 @@ True
 因此，我们可以确信，`h`还是 Animal 类型：
 
 ```python
->>> isinstance(h, Animal)
+&gt;&gt;&gt; isinstance(h, Animal)
 True
 ```
 
 同理，实际类型是 Dog 的`d`也是 Animal 类型：
 
 ```python
->>> isinstance(d, Dog) and isinstance(d, Animal)
+&gt;&gt;&gt; isinstance(d, Dog) and isinstance(d, Animal)
 True
 ```
 
 但是，`d`不是 Husky 类型：
 
 ```python
->>> isinstance(d, Husky)
+&gt;&gt;&gt; isinstance(d, Husky)
 False
 ```
 
 能用`type()`判断的基本类型也可以用`isinstance()`判断：
 
 ```python
->>> isinstance('a', str)
+&gt;&gt;&gt; isinstance(&#39;a&#39;, str)
 True
->>> isinstance(123, int)
+&gt;&gt;&gt; isinstance(123, int)
 True
->>> isinstance(b'a', bytes)
+&gt;&gt;&gt; isinstance(b&#39;a&#39;, bytes)
 True
 ```
 
 并且还可以判断一个变量是否是某些类型中的一种，比如下面的代码就可以判断是否是 list 或者 tuple
 
 ```python
->>> isinstance([1, 2, 3], (list, tuple))
+&gt;&gt;&gt; isinstance([1, 2, 3], (list, tuple))
 True
->>> isinstance((1, 2, 3), (list, tuple))
+&gt;&gt;&gt; isinstance((1, 2, 3), (list, tuple))
 True
 ```
 
-> 总是优先使用 isinstance() 判断类型，可以将指定类型及其子类“一网打尽”。
+&gt; 总是优先使用 isinstance() 判断类型，可以将指定类型及其子类“一网打尽”。
 
 ### 6.4.3 使用 dir()
 
 如果要获得一个对象的所有属性和方法，可以使用`dir()`函数，它返回一个包含字符串的 list，比如，获得一个 str 对象的所有属性和方法：
 
 ```python
->>> dir('ABC')
-['__add__', '__class__',..., '__subclasshook__', 'capitalize', 'casefold',..., 'zfill']
+&gt;&gt;&gt; dir(&#39;ABC&#39;)
+[&#39;__add__&#39;, &#39;__class__&#39;,..., &#39;__subclasshook__&#39;, &#39;capitalize&#39;, &#39;casefold&#39;,..., &#39;zfill&#39;]
 ```
 
 类似`__xxx__`的属性和方法在 Python 中都是有特殊用途的，比如`__len__`方法返回长度。在 Python 中，如果你调用`len()`函数试图获取一个对象的长度，实际上，在`len()`函数内部，它自动去调用该对象的`__len__()`方法，所以，下面的代码是等价的：
 
 ```python
->>> len('ABC')
+&gt;&gt;&gt; len(&#39;ABC&#39;)
 3
->>> 'ABC'.__len__()
+&gt;&gt;&gt; &#39;ABC&#39;.__len__()
 3
 ```
 
 我们自己写的类，如果也想用`len(myObj)`的话，就自己写一个`__len__()`方法：
 
 ```python
->>> class MyDog(object):
+&gt;&gt;&gt; class MyDog(object):
 ...     def __len__(self):
 ...         return 100
 ...
->>> dog = MyDog()
->>> len(dog)
+&gt;&gt;&gt; dog = MyDog()
+&gt;&gt;&gt; len(dog)
 100
 ```
 
 剩下的都是普通属性或方法，比如`lower()`返回小写的字符串：
 
 ```python
->>> 'ABC'.lower()
-'abc'
+&gt;&gt;&gt; &#39;ABC&#39;.lower()
+&#39;abc&#39;
 ```
 
 仅仅把属性和方法列出来是不够的，配合`getattr()`、`setattr()`以及`hasattr()`，我们可以直接操作一个对象的状态：
 
 ```python
->>> class MyObject(object):
+&gt;&gt;&gt; class MyObject(object):
 ...     def __init__(self):
 ...         self.x = 9
 ...     def power(self):
 ...         return self.x * self.x
 ...
->>> obj = MyObject()
+&gt;&gt;&gt; obj = MyObject()
 ```
 
 紧接着，可以测试该对象的属性：
 
 ```python
->>> hasattr(obj, 'x') # 有属性'x'吗？
+&gt;&gt;&gt; hasattr(obj, &#39;x&#39;) # 有属性&#39;x&#39;吗？
 True
->>> obj.x
+&gt;&gt;&gt; obj.x
 9
->>> hasattr(obj, 'y') # 有属性'y'吗？
+&gt;&gt;&gt; hasattr(obj, &#39;y&#39;) # 有属性&#39;y&#39;吗？
 False
->>> setattr(obj, 'y', 19) # 设置一个属性'y'
->>> hasattr(obj, 'y') # 有属性'y'吗？
+&gt;&gt;&gt; setattr(obj, &#39;y&#39;, 19) # 设置一个属性&#39;y&#39;
+&gt;&gt;&gt; hasattr(obj, &#39;y&#39;) # 有属性&#39;y&#39;吗？
 True
->>> getattr(obj, 'y') # 获取属性'y'
+&gt;&gt;&gt; getattr(obj, &#39;y&#39;) # 获取属性&#39;y&#39;
 19
->>> obj.y # 获取属性'y'
+&gt;&gt;&gt; obj.y # 获取属性&#39;y&#39;
 19
 ```
 
 如果试图获取不存在的属性，会抛出 AttributeError 的错误：
 
 ```python
->>> getattr(obj, 'z') # 获取属性'z'
+&gt;&gt;&gt; getattr(obj, &#39;z&#39;) # 获取属性&#39;z&#39;
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'MyObject' object has no attribute 'z'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+AttributeError: &#39;MyObject&#39; object has no attribute &#39;z&#39;
 ```
 
 可以传入一个 default 参数，如果属性不存在，就返回默认值：
 
 ```python
->>> getattr(obj, 'z', 404) # 获取属性'z'，如果不存在，返回默认值404
+&gt;&gt;&gt; getattr(obj, &#39;z&#39;, 404) # 获取属性&#39;z&#39;，如果不存在，返回默认值404
 404
 ```
 
 也可以获得对象的方法：
 
 ```python
->>> hasattr(obj, 'power') # 有属性'power'吗？
+&gt;&gt;&gt; hasattr(obj, &#39;power&#39;) # 有属性&#39;power&#39;吗？
 True
->>> getattr(obj, 'power') # 获取属性'power'
-<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>
->>> fn = getattr(obj, 'power') # 获取属性'power'并赋值到变量fn
->>> fn # fn指向obj.power
-<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>
->>> fn() # 调用fn()与调用obj.power()是一样的
+&gt;&gt;&gt; getattr(obj, &#39;power&#39;) # 获取属性&#39;power&#39;
+&lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;
+&gt;&gt;&gt; fn = getattr(obj, &#39;power&#39;) # 获取属性&#39;power&#39;并赋值到变量fn
+&gt;&gt;&gt; fn # fn指向obj.power
+&lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;
+&gt;&gt;&gt; fn() # 调用fn()与调用obj.power()是一样的
 81
 ```
 
-> 小结
+&gt; 小结
 
 通过内置的一系列函数，我们可以对任意一个 Python 对象进行剖析，拿到其内部的数据。要注意的是，只有在不知道对象信息的时候，我们才会去获取对象信息。如果可以直接写：
 
 ```python
-sum = obj.x + obj.y
+sum = obj.x &#43; obj.y
 ```
 
 就不要写：
 
 ```python
-sum = getattr(obj, 'x') + getattr(obj, 'y')
+sum = getattr(obj, &#39;x&#39;) &#43; getattr(obj, &#39;y&#39;)
 ```
 
 一个正确的用法的例子如下：
 
 ```python
 def readImage(fp):
-    if hasattr(fp, 'read'):
+    if hasattr(fp, &#39;read&#39;):
         return readData(fp)
     return None
 ```
@@ -777,7 +777,7 @@ class Student(object):
     def __init__(self, name):
         self.name = name
 
-s = Student('Bob')
+s = Student(&#39;Bob&#39;)
 s.score = 90
 ```
 
@@ -785,39 +785,39 @@ s.score = 90
 
 ```python
 class Student(object):
-    name = 'Student'
+    name = &#39;Student&#39;
 ```
 
 当我们定义了一个类属性后，这个属性虽然归类所有，但类的所有实例都可以访问到。来测试一下：
 
 ```python
->>> class Student(object):
-...     name = 'Student'
+&gt;&gt;&gt; class Student(object):
+...     name = &#39;Student&#39;
 ...
->>> s = Student() # 创建实例s
->>> print(s.name) # 打印name属性，因为实例并没有name属性，所以会继续查找class的name属性
+&gt;&gt;&gt; s = Student() # 创建实例s
+&gt;&gt;&gt; print(s.name) # 打印name属性，因为实例并没有name属性，所以会继续查找class的name属性
 Student
->>> print(Student.name) # 打印类的name属性
+&gt;&gt;&gt; print(Student.name) # 打印类的name属性
 Student
->>> s.name = 'Michael' # 给实例绑定name属性
->>> print(s.name) # 由于实例属性优先级比类属性高，因此，它会屏蔽掉类的name属性
+&gt;&gt;&gt; s.name = &#39;Michael&#39; # 给实例绑定name属性
+&gt;&gt;&gt; print(s.name) # 由于实例属性优先级比类属性高，因此，它会屏蔽掉类的name属性
 Michael
->>> print(Student.name) # 但是类属性并未消失，用Student.name仍然可以访问
+&gt;&gt;&gt; print(Student.name) # 但是类属性并未消失，用Student.name仍然可以访问
 Student
->>> del s.name # 如果删除实例的name属性
->>> print(s.name) # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来了
+&gt;&gt;&gt; del s.name # 如果删除实例的name属性
+&gt;&gt;&gt; print(s.name) # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来了
 Student
 ```
 
 从上面的例子可以看出，在编写程序的时候，千万不要对实例属性和类属性使用相同的名字，因为相同名称的实例属性将屏蔽掉类属性，但是当你删除实例属性后，再使用相同的名称，访问到的将是类属性。
 
-> 小结：
+&gt; 小结：
 
 * 实例属性属于各个实例所有，互不干扰；
 * 类属性属于类所有，所有实例共享一个属性；
 * 不要对实例属性和类属性使用相同的名字，否则将产生难以发现的错误。
 
-> 练习：
+&gt; 练习：
 
 为了统计学生人数，可以给 Student 类增加一个类属性，每创建一个实例，该属性自动增加：
 
@@ -826,7 +826,7 @@ class Student(object):
     count = 0
     def __init__(self, name):
         self.__name = name
-        Student.count += 1
+        Student.count &#43;= 1
 ```
 
 测试：
@@ -834,18 +834,18 @@ class Student(object):
 ```python
 # 测试:
 if Student.count != 0:
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 else:
-    bart = Student('Bart')
+    bart = Student(&#39;Bart&#39;)
     if Student.count != 1:
-        print('测试失败!')
+        print(&#39;测试失败!&#39;)
     else:
-        lisa = Student('Bart')
+        lisa = Student(&#39;Bart&#39;)
         if Student.count != 2:
-            print('测试失败!')
+            print(&#39;测试失败!&#39;)
         else:
-            print('Students:', Student.count)
-            print('测试通过!')
+            print(&#39;Students:&#39;, Student.count)
+            print(&#39;测试通过!&#39;)
 ```
 
 测试结果：
@@ -860,6 +860,6 @@ else:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/  
 

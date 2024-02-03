@@ -206,6 +206,6 @@ IPO的难很多时候体现在质控和监管”防不胜防“的问询，打�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E7%AC%94%E8%AE%B0/ipo%E5%AE%A1%E8%AE%A1%E7%AC%94%E8%AE%B01.0%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91/  
 

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第十三章 Python 建模库介绍 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第十三章 Python 建模库介绍 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。" /><meta name="keywords" content='python' /><meta itemprop="name" content="第十三章 Python 建模库介绍">
 <meta itemprop="description" content="本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十三章 Python 建模库介绍</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十三章 Python 建模库介绍</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="7190 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="leancloud_visitors comment-visitors" data-flag-title="第十三章 Python 建模库介绍">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="7190 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="leancloud_visitors comment-visitors" data-flag-title="第十三章 Python 建模库介绍">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十三章 Python 建模库介绍">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -210,8 +205,8 @@
       </div><div class="content" id="content"><p>本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。</p>
 <p>开发模型选用什么库取决于应用本身。许多统计问题可以用简单方法解决，比如普通的最小二乘回归，其它问题可能需要复杂的机器学习方法。幸运的是，Python已经成为了运用这些分析方法的语言之一，因此读完此书，你可以探索许多工具。</p>
 <p>本章中，我会回顾一些pandas的特点，在你胶着于pandas数据规整和模型拟合和评分时，它们可能派上用场。然后我会简短介绍两个流行的建模工具，statsmodels和scikit-learn。这二者每个都值得再写一本书，我就不做全面的介绍，而是建议你学习两个项目的线上文档和其它基于Python的数据科学、统计和机器学习的书籍。</p>
-<h2 id="131-pandas与模型代码的接口">13.1 pandas与模型代码的接口</h2>
-<p>模型开发的通常工作流是使用pandas进行数据加载和清洗，然后切换到建模库进行建模。**开发模型的重要一环是机器学习中的“特征工程”。**它可以描述从原始数据集中提取信息的任何数据转换或分析，这些数据集可能在建模中有用。本书中学习的数据聚合和GroupBy工具常用于特征工程中。</p>
+<h2 id="131-pandas与模型代码的接口" class="heading-element">
+  <a href="#131-pandas%e4%b8%8e%e6%a8%a1%e5%9e%8b%e4%bb%a3%e7%a0%81%e7%9a%84%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>13.1 pandas与模型代码的接口</h2><p>模型开发的通常工作流是使用pandas进行数据加载和清洗，然后切换到建模库进行建模。**开发模型的重要一环是机器学习中的“特征工程”。**它可以描述从原始数据集中提取信息的任何数据转换或分析，这些数据集可能在建模中有用。本书中学习的数据聚合和GroupBy工具常用于特征工程中。</p>
 <p>优秀的特征工程超出了本书的范围，我会尽量直白地介绍一些用于数据操作和建模切换的方法。</p>
 <p>pandas与其它分析库通常是靠NumPy的数组联系起来的。将DataFrame转换为NumPy数组，可以使用.values属性：</p>
 <div class="highlight" id="id-1"><div class="chroma">
@@ -433,8 +428,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>  <span class="mf">0.00</span> <span class="o">-</span><span class="mf">2.0</span>           <span class="mi">0</span>           <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>用虚变量拟合某些统计模型会有一些细微差别。当你不只有数字列时，使用Patsy（下一节的主题）可能更简单，更不容易出错。</p>
-<h2 id="132-用patsy创建模型描述">13.2 用Patsy创建模型描述</h2>
-<p><code>Patsy</code>是Python的一个库，使用简短的字符串“公式语法”描述统计模型（尤其是线性模型），可能是受到了R和S统计编程语言的公式语法的启发。</p>
+<h2 id="132-用patsy创建模型描述" class="heading-element">
+  <a href="#132-%e7%94%a8patsy%e5%88%9b%e5%bb%ba%e6%a8%a1%e5%9e%8b%e6%8f%8f%e8%bf%b0" class="heading-mark"></a>13.2 用Patsy创建模型描述</h2><p><code>Patsy</code>是Python的一个库，使用简短的字符串“公式语法”描述统计模型（尤其是线性模型），可能是受到了R和S统计编程语言的公式语法的启发。</p>
 <p>Patsy适合描述statsmodels的线性模型，因此我会关注于它的主要特点，让你尽快掌握。Patsy的公式是一个特殊的字符串语法，如下所示：</p>
 <div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -647,8 +642,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">x1</span>          <span class="o">-</span><span class="mf">0.265464</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1321-用patsy公式进行数据转换">13.2.1 用Patsy公式进行数据转换</h3>
-<p>你可以将Python代码与patsy公式结合。在评估公式时，库将尝试查找在封闭作用域内使用的函数：</p>
+</div><h3 id="1321-用patsy公式进行数据转换" class="heading-element">
+  <a href="#1321-%e7%94%a8patsy%e5%85%ac%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%95%b0%e6%8d%ae%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>13.2.1 用Patsy公式进行数据转换</h3><p>你可以将Python代码与patsy公式结合。在评估公式时，库将尝试查找在封闭作用域内使用的函数：</p>
 <div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -801,8 +796,8 @@
 </div>
 </div><p>Patsy的patsy.builtins模块还有一些其它的内置转换。请查看线上文档。</p>
 <p>分类数据有一个特殊的转换类，下面进行讲解。</p>
-<h3 id="1322-分类数据和patsy">13.2.2 分类数据和Patsy</h3>
-<p>非数值数据可以用多种方式转换为模型设计矩阵。完整的讲解超出了本书范围，最好和统计课一起学习。</p>
+<h3 id="1322-分类数据和patsy" class="heading-element">
+  <a href="#1322-%e5%88%86%e7%b1%bb%e6%95%b0%e6%8d%ae%e5%92%8cpatsy" class="heading-mark"></a>13.2.2 分类数据和Patsy</h3><p>非数值数据可以用多种方式转换为模型设计矩阵。完整的讲解超出了本书范围，最好和统计课一起学习。</p>
 <p>当你在Patsy公式中使用非数值数据，它们会默认转换为虚变量。如果有截距，会去掉一个，避免共线性：</p>
 <div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1048,8 +1043,8 @@
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;key1:key2&#39;</span> <span class="p">(</span><span class="n">column</span> <span class="mi">3</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Patsy提供转换分类数据的其它方法，包括以特定顺序转换。请参阅线上文档。</p>
-<h2 id="133-statsmodels介绍">13.3 statsmodels介绍</h2>
-<p>statsmodels是Python进行拟合多种统计模型、进行统计试验和数据探索可视化的库。Statsmodels包含许多经典的统计方法，但没有贝叶斯方法和机器学习模型。</p>
+<h2 id="133-statsmodels介绍" class="heading-element">
+  <a href="#133-statsmodels%e4%bb%8b%e7%bb%8d" class="heading-mark"></a>13.3 statsmodels介绍</h2><p>statsmodels是Python进行拟合多种统计模型、进行统计试验和数据探索可视化的库。Statsmodels包含许多经典的统计方法，但没有贝叶斯方法和机器学习模型。</p>
 <p>statsmodels包含的模型有：</p>
 <ul>
 <li>线性模型，广义线性模型和健壮线性模型</li>
@@ -1059,8 +1054,8 @@
 <li>广义矩估计</li>
 </ul>
 <p>下面，我会使用一些基本的statsmodels工具，探索Patsy公式和pandasDataFrame对象如何使用模型接口。</p>
-<h3 id="1331-估计线性模型">13.3.1 估计线性模型</h3>
-<p>statsmodels有多种线性回归模型，包括从基本（比如普通最小二乘）到复杂（比如迭代加权最小二乘法）的。</p>
+<h3 id="1331-估计线性模型" class="heading-element">
+  <a href="#1331-%e4%bc%b0%e8%ae%a1%e7%ba%bf%e6%80%a7%e6%a8%a1%e5%9e%8b" class="heading-mark"></a>13.3.1 估计线性模型</h3><p>statsmodels有多种线性回归模型，包括从基本（比如普通最小二乘）到复杂（比如迭代加权最小二乘法）的。</p>
 <p>statsmodels的线性模型有两种不同的接口：基于数组和基于公式。它们可以通过API模块引入：</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1337,8 +1332,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>statsmodels的线性模型结果还有其它的分析、诊断和可视化工具。除了普通最小二乘模型，还有其它的线性模型。</p>
-<h3 id="1332-估计时间序列过程">13.3.2 估计时间序列过程</h3>
-<p>statsmodels的另一模型类是进行时间序列分析，包括自回归过程、卡尔曼滤波和其它态空间模型，和多元自回归模型。</p>
+<h3 id="1332-估计时间序列过程" class="heading-element">
+  <a href="#1332-%e4%bc%b0%e8%ae%a1%e6%97%b6%e9%97%b4%e5%ba%8f%e5%88%97%e8%bf%87%e7%a8%8b" class="heading-mark"></a>13.3.2 估计时间序列过程</h3><p>statsmodels的另一模型类是进行时间序列分析，包括自回归过程、卡尔曼滤波和其它态空间模型，和多元自回归模型。</p>
 <p>用自回归结构和噪声来模拟一些时间序列数据：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1396,8 +1391,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.0062</span><span class="p">,</span>  <span class="mf">0.7845</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4085</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0136</span><span class="p">,</span>  <span class="mf">0.015</span> <span class="p">,</span>  <span class="mf">0.0143</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>更多的细节以及如何解释结果超出了本书的范围，可以通过statsmodels文档学习更多。</p>
-<h2 id="134-scikit-learn介绍">13.4 scikit-learn介绍</h2>
-<p>scikit-learn是一个广泛使用、用途多样的Python机器学习库。它包含多种标准监督和非监督机器学习方法和模型选择和评估、数据转换、数据加载和模型持久化工具。这些模型可以用于分类、聚合、预测和其它任务。</p>
+<h2 id="134-scikit-learn介绍" class="heading-element">
+  <a href="#134-scikit-learn%e4%bb%8b%e7%bb%8d" class="heading-mark"></a>13.4 scikit-learn介绍</h2><p>scikit-learn是一个广泛使用、用途多样的Python机器学习库。它包含多种标准监督和非监督机器学习方法和模型选择和评估、数据转换、数据加载和模型持久化工具。这些模型可以用于分类、聚合、预测和其它任务。</p>
 <p>机器学习方面的学习和应用scikit-learn和TensorFlow解决实际问题的线上和纸质资料很多。本节中，我会简要介绍scikit-learn API的风格。</p>
 <p>写作此书的时候，scikit-learn并没有和pandas深度结合，但是有些第三方包在开发中。尽管如此，pandas非常适合在模型拟合前处理数据集。</p>
 <p>举个例子，我用一个Kaggle竞赛的经典数据集，关于泰坦尼克号乘客的生还率。我们用pandas加载测试和训练数据集：</p>
@@ -1687,8 +1682,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">113</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.7723</span><span class="p">,</span>  <span class="mf">0.8027</span><span class="p">,</span>  <span class="mf">0.7703</span><span class="p">,</span>  <span class="mf">0.7883</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>默认的评分指标取决于模型本身，但是可以明确指定一个评分。交叉验证过的模型需要更长时间来训练，但会有更高的模型性能。</p>
-<h2 id="135-继续学习">13.5 继续学习</h2>
-<p>我只是介绍了一些Python建模库的表面内容，现在有越来越多的框架用于各种统计和机器学习，它们都是用Python或Python用户界面实现的。</p>
+<h2 id="135-继续学习" class="heading-element">
+  <a href="#135-%e7%bb%a7%e7%bb%ad%e5%ad%a6%e4%b9%a0" class="heading-mark"></a>13.5 继续学习</h2><p>我只是介绍了一些Python建模库的表面内容，现在有越来越多的框架用于各种统计和机器学习，它们都是用Python或Python用户界面实现的。</p>
 <p>这本书的重点是数据规整，有其它的书是关注建模和数据科学工具的。其中优秀的有：</p>
 <ul>
 <li>Andreas Mueller and Sarah Guido (O’Reilly)的 《Introduction to Machine Learning with Python》</li>
@@ -1704,19 +1699,17 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" data-title="第十三章 Python 建模库介绍" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/" data-title="第十三章 Python 建模库介绍" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -1727,10 +1720,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

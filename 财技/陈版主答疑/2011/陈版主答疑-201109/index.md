@@ -665,7 +665,7 @@ A设计公司单独设立的期刊部门，是专门研发设计类标准图，�
 
 陈版，这句话不太明白，既然不需要冲回重回部分处置股权时的损益，那这里提到的增持前原持有的股权是不是处置后的股权？ “视
 
-同按公允价值处置了原先持有的股权投资，随即按同一公允价值将其购回。"完全不明白，请解惑。
+同按公允价值处置了原先持有的股权投资，随即按同一公允价值将其购回。&#34;完全不明白，请解惑。
 
 回答人： chenyiwei
 
@@ -1364,9 +1364,9 @@ A公司系外资企业 2011 年适用12.5%的税率，A公司同时系高新技�
 
 和评估费 150 万； 2.建安成本=2地块上增加的建筑面积 2700 元 / ㎡的单价 =9000 万元； 3. 财务费用的计算 （ 1 ）由于 2 地块的实施导
 
-致 1 地块少建 16800 ㎡，按 5200 元 / ㎡的均价算减少营业收入 8736 万元； （ 2 ）拆迁费用 3000 万元由公司垫付，（ 1 ） + （ 2 ）总共占
+致 1 地块少建 16800 ㎡，按 5200 元 / ㎡的均价算减少营业收入 8736 万元； （ 2 ）拆迁费用 3000 万元由公司垫付，（ 1 ） &#43; （ 2 ）总共占
 
-用资金 13168 万元，则测算财务费用 =13168 万元12%*2年=3160万元 这样总成本=3000+9000+3160=15160万元 收入部分测算，
+用资金 13168 万元，则测算财务费用 =13168 万元12%*2年=3160万元 这样总成本=3000&#43;9000&#43;3160=15160万元 收入部分测算，
 
 营业房按 2 万元/平方米，住宅按 5680 元/㎡得收入预计为 3390 万元（面积按 2 地块增加的面积减去安置面积算） 这样得到亏损3390-
 
@@ -1466,7 +1466,7 @@ A公司系外资企业 2011 年适用12.5%的税率，A公司同时系高新技�
 
 提问人： qjr1124 时间： 2011-12-21 13:26:00
 
-请教: "计入所发行的证券的初始计量金额中"这句话如何理解呢? 而且,对发行过程中,长期股权投资成本的确定和股票的定价各是如何
+请教: &#34;计入所发行的证券的初始计量金额中&#34;这句话如何理解呢? 而且,对发行过程中,长期股权投资成本的确定和股票的定价各是如何
 
 来定呢? 比如:增发股票控股另一个公司 DR:长期股权投资-成本 长期股权投资-交易费用 CR:股本-股份量 资本公积-溢价 具体
 
@@ -1604,15 +1604,15 @@ Classification of items as inventory or property, plant, and equipment when mini
 
 Issue Are there circumstances under which an item of inventory must/may be accounted for as an item of property, plant and
 
-equipment (PP&E)?
+equipment (PP&amp;E)?
 
 Fact Pattern Entities acquire items of inventory on a continuing basis, either for sale in the ordinary course of business or to be
 
 consumed in a production process or when rendering services. So there will always be a core stock of inventory. This does not in itself
 
-turn inventory into an item of PP&E, since at an individual item level, each item will be consumed in one operating cycle. However,
+turn inventory into an item of PP&amp;E, since at an individual item level, each item will be consumed in one operating cycle. However,
 
-there may be cases where it is difficult to judge whether an item is part of inventory or is an item of PP&E. Consider the following
+there may be cases where it is difficult to judge whether an item is part of inventory or is an item of PP&amp;E. Consider the following
 
 examples:
 
@@ -1640,7 +1640,7 @@ services, but is necessary to operate or benefit from an asset during more than 
 
 through sale (or is significantly impaired after it has been used to operate the asset or benefit from that asset), this item of inventory
 
-is accounted for as an item of PP&E. This applies even if the part of inventory that is an item of PP&E cannot physically be separated
+is accounted for as an item of PP&amp;E. This applies even if the part of inventory that is an item of PP&amp;E cannot physically be separated
 
 from the rest of inventories.
 
@@ -1654,7 +1654,7 @@ Equipment and depreciated over the period the cave is expected to be used.
 
 but would then be significantly impaired as sludge), even when the plant is abandoned, should be considered as an item of
 
-PP&E and amortised over the life of the plant.
+PP&amp;E and amortised over the life of the plant.
 
 3. The gas in the pipeline is not necessary to operate the pipeline. It is held for sale or to be consumed in the production process
 
@@ -1666,11 +1666,11 @@ it is not possible to identify the molecules in each of the two categories, ther
 
 a different use, and account for them differently, even if they are of the same nature. IAS 2 does cater for it in paragraph 25 when
 
-discussing different cost formulas. c) The items are necessary to bring another item of PP&E to the condition necessary for it to be
+discussing different cost formulas. c) The items are necessary to bring another item of PP&amp;E to the condition necessary for it to be
 
-capable of operating in the manner intended by management. This meets the definition of the costs of PP&E in IAS 16.16(b) upon
+capable of operating in the manner intended by management. This meets the definition of the costs of PP&amp;E in IAS 16.16(b) upon
 
-initial recognition of an item of PP&E d) Recognising these items as inventories would lead to an immediate loss because these items
+initial recognition of an item of PP&amp;E d) Recognising these items as inventories would lead to an immediate loss because these items
 
 cannot be sold or consumed in a production process or during the process of rendering services. This does not properly reflect the
 
@@ -1680,19 +1680,19 @@ starting from a historical cost basis, the accounting is quite different because
 
 income, whereas under IAS 16 they would not. The same applies if entity A would use the scope exclusion in IAS 2.3 and marks these
 
-inventories to market (fair value less costs to sell) or to net realisable value through income. References IAS 2 Inventories "6
+inventories to market (fair value less costs to sell) or to net realisable value through income. References IAS 2 Inventories &#34;6
 
 Definitions ... Inventories are assets: (a) held for sale in the ordinary course of business; (b) in the process of production for such sale;
 
-or (c) in the form of materials or supplies to be consumed in the production process or in the rendering of services." IAS 16 Property
+or (c) in the form of materials or supplies to be consumed in the production process or in the rendering of services.&#34; IAS 16 Property
 
-Plant and Equipment "6. Definitions ... Property, plant and equipment are tangible items that: (a) are held for use in the production or
+Plant and Equipment &#34;6. Definitions ... Property, plant and equipment are tangible items that: (a) are held for use in the production or
 
 supply of goods or services, for rental to others, or for administrative purposes; and (b) are expected to be used during more than
 
-one period." "16. The cost of an item of property, plant and equipment comprises: (a) .... (b) any costs directly attributable to bringing
+one period.&#34; &#34;16. The cost of an item of property, plant and equipment comprises: (a) .... (b) any costs directly attributable to bringing
 
-the asset to the location and condition necessary for it to be capable of operating in the manner intended by management."
+the asset to the location and condition necessary for it to be capable of operating in the manner intended by management.&#34;
 
 # 2195 、求助版主：急急急。。。关于政府补助的处理
 
@@ -1814,7 +1814,7 @@ the asset to the location and condition necessary for it to be capable of operat
 
 增值税应税项目）进项税要转出，此时已提折旧 50 。 账务处理为：借：固定资产 50 0.17 贷：应缴税费 - 应交增值税 - 进项转出
 
-50 0.17， 此时应该怎么计提折旧 （50+8.5-100*0.03）/剩余年限，这样处理正确吗？
+50 0.17， 此时应该怎么计提折旧 （50&#43;8.5-100*0.03）/剩余年限，这样处理正确吗？
 
 回答人： chenyiwei
 虽然上述两位的说法有一定的合理性，但严格从会计准则角度考虑，如果不能证明改变用途后该固定资产的未来经济利益流入较之前
@@ -1871,20 +1871,20 @@ the asset to the location and condition necessary for it to be capable of operat
 
 问：企业接受国家拨入的具有专门用途的拨款，在拨款项目完成后如何核算？ 答：按照《企业会计制度》规定，企业收到国家拨
 
-入的具有专门用途的资金，应通过"专项应付款"科目核算。 企业接受国家拨入的具有专门用途的拨款，如专项用于技术改造、技术研
+入的具有专门用途的资金，应通过&#34;专项应付款&#34;科目核算。 企业接受国家拨入的具有专门用途的拨款，如专项用于技术改造、技术研
 究等，在为完成承担的国家专项拨款所指定的研发活动所发生的费用实际发生时，应按与企业自己生产的产品相同的方法进行归集，
 
-并在"生产成本"科目下单列项目核算。如能确定有关支出最终将形成固定资产，则应在"在建工程"科目下单列项目归集所发生的费
+并在&#34;生产成本&#34;科目下单列项目核算。如能确定有关支出最终将形成固定资产，则应在&#34;在建工程&#34;科目下单列项目归集所发生的费
 
-用。待有关拨款项目完工后，对于形成固定资产并按规定留给企业的，应按实际成本，借记"固定资产"等科目，贷记"在建工程"科
+用。待有关拨款项目完工后，对于形成固定资产并按规定留给企业的，应按实际成本，借记&#34;固定资产&#34;等科目，贷记&#34;在建工程&#34;科
 
-目，同时，借记"专项应付款"、贷记"资本公积"。对形成产品并按规定将产品留归企业的，应按实际成本，借记"库存商品"等科目，
+目，同时，借记&#34;专项应付款&#34;、贷记&#34;资本公积&#34;。对形成产品并按规定将产品留归企业的，应按实际成本，借记&#34;库存商品&#34;等科目，
 
-贷记"生产成本"科目，同时，借记"专项应付款"，贷记"资本公积"，对未形成资产，需核销的拨款部分，报经批准后，借记"专项应付
+贷记&#34;生产成本&#34;科目，同时，借记&#34;专项应付款&#34;，贷记&#34;资本公积&#34;，对未形成资产，需核销的拨款部分，报经批准后，借记&#34;专项应付
 
-款"科目，贷记"生产成本"、"在建工程"等科目；对形成的资产按规定应上交国家的，借记"专项应付款"科目，贷记"生产成本"、"在建
+款&#34;科目，贷记&#34;生产成本&#34;、&#34;在建工程&#34;等科目；对形成的资产按规定应上交国家的，借记&#34;专项应付款&#34;科目，贷记&#34;生产成本&#34;、&#34;在建
 
-工程"等科目；对规定应上交结余的专项拨款，应在上交时，借记"专项应付款"科目，贷记"银行存款"科目。
+工程&#34;等科目；对规定应上交结余的专项拨款，应在上交时，借记&#34;专项应付款&#34;科目，贷记&#34;银行存款&#34;科目。
 
 # 2203 、几家同行业上市公司收入确认原则判断
 
@@ -2175,7 +2175,7 @@ the asset to the location and condition necessary for it to be capable of operat
 
 止 2009 年 12 月 31 日，上述土地在C公司的存货中账面价值为 3000 万元。 2009 年C公司净利润 3100 万元。
 
-则A公司在单户层面确认投资收益：（3100+（ 5000 － 3000 ） 20% ） 51% ＝ 1785 万元 借：长期股权投资 1785 贷：投资收
+则A公司在单户层面确认投资收益：（3100&#43;（ 5000 － 3000 ） 20% ） 51% ＝ 1785 万元 借：长期股权投资 1785 贷：投资收
 
 益 1785 A 在合并层面： 借 营业成本 1600 51% ＝ 816 投资收益 204 （ 2000 20%*51%） 贷：营业收
 
@@ -2287,11 +2287,11 @@ the asset to the location and condition necessary for it to be capable of operat
 
 贷：营业成本 2000 存货 1000 第四步 抵销投资 借：股本 5000 资本公积
 
-5000+1500+1000=7500 盈余公积 300 未分配利润 3000-300-100=2600 商誉 9500-
+5000&#43;1500&#43;1000=7500 盈余公积 300 未分配利润 3000-300-100=2600 商誉 9500-
 
-11500×80%=300 贷：长期股权投资 9500+3120=12620 少数股东权益
+11500×80%=300 贷：长期股权投资 9500&#43;3120=12620 少数股东权益
 
-（5000+7500+300+2600）×20%=3080 第五步 抵销投资收益 借：投资收益 2320 少数股东损益 580 贷：期末
+（5000&#43;7500&#43;300&#43;2600）×20%=3080 第五步 抵销投资收益 借：投资收益 2320 少数股东损益 580 贷：期末
 
 未分配利润 2600 提取法定盈余公积 300 我同事的做法 第一步 调整B公司个别报表 借：无形资产 1500
 
@@ -2301,11 +2301,11 @@ the asset to the location and condition necessary for it to be capable of operat
 
 （3000-100-100）×80%=2240 资本公积 1000×80%=800 第三步 抵销投资 借：股本 5000 资本
 
-公积 5000+1500+1000=7500 盈余公积 300 未分配利润 3000-300-100-100=2500 商誉
+公积 5000&#43;1500&#43;1000=7500 盈余公积 300 未分配利润 3000-300-100-100=2500 商誉
 
-9500-11500×80%=300 贷：长期股权投资 9500+3040=12540 少数股东权益
+9500-11500×80%=300 贷：长期股权投资 9500&#43;3040=12540 少数股东权益
 
-（5000+7500+300+2500）×20%=3060 第四步 抵销投资收益 借：投资收益 2240 少数股东损益 560 贷：期末
+（5000&#43;7500&#43;300&#43;2500）×20%=3060 第四步 抵销投资收益 借：投资收益 2240 少数股东损益 560 贷：期末
 
 未分配利润 2500 提取法定盈余公积 300 我们算下来的结果少数股东权益和少数股东损益都有差异，我认为抵销
 
@@ -3474,11 +3474,11 @@ part2在同一帖子里。
 
 2009 年 1 月 1 日，A股公司为了合并这个JCE（即作为子公司合并），我们的客户同另一个50%的股东签了一纸协议，约定我们的客户
 
-可以直接决定公司的经营、财务政策，但同时也表明董事会依然是公司重大事项的最高权力机构。"According to the Shareholders
+可以直接决定公司的经营、财务政策，但同时也表明董事会依然是公司重大事项的最高权力机构。&#34;According to the Shareholders
 
 Agreement, the board of directors is the highest authority of this joint venture, and the major issues of joint venture must be
 
-decided by the board of directors."
+decided by the board of directors.&#34;
 
 JV董事会的人数组成和议事规则从来没有变过。现在我们要帮客户出香港准则下的合并报表，我们认为客户对该JV不具有控制权，不
 
@@ -3589,11 +3589,11 @@ GAAP下的成熟规定的，可以参考：
 
 Recognition and measurement 21 Determining whether an entity is acting as a principal or as an agent (2009 amendment).
 
-Paragraph 8 states that 'in an agency relationship, the gross inflows of economic benefits include amounts collected on behalf of the
+Paragraph 8 states that &#39;in an agency relationship, the gross inflows of economic benefits include amounts collected on behalf of the
 
 principal and which do not result in increases in equity for the entity. The amounts collected on behalf of the principal are not
 
-revenue. Instead, revenue is the amount of commission.' Determining whether an entity is acting as a principal or as an agent
+revenue. Instead, revenue is the amount of commission.&#39; Determining whether an entity is acting as a principal or as an agent
 
 requires judgement and consideration of all relevant facts and circumstances. An entity is acting as a principal when it has exposure
 
@@ -3607,7 +3607,7 @@ purchased by the customer; (b) the entity has inventory risk before or after the
 
 the entity has latitude in establishing prices, either directly or indirectly, for example by providing additional goods or services; and
 
-(d) the entity bears the customer's credit risk for the amount receivable from the customer. An entity is acting as an agent when it
+(d) the entity bears the customer&#39;s credit risk for the amount receivable from the customer. An entity is acting as an agent when it
 
 does not have exposure to the significant risks and rewards associated with the sale of goods or the rendering of services. One
 
@@ -3911,7 +3911,7 @@ per transaction or a stated percentage of the amount billed to the customer.
 
 （可能需要模拟剥离）纳入B的合并报表。
 
-如果A1的业务在原先的A中占了绝大比重，则为了简化处理，也可采用一定的假设，即 2010 年 1 ～ 8 月期间的利润表为A（=A1+A2）
+如果A1的业务在原先的A中占了绝大比重，则为了简化处理，也可采用一定的假设，即 2010 年 1 ～ 8 月期间的利润表为A（=A1&#43;A2）
 
 的利润表，但把A2披露为终止经营，自 2010 年 8 月分立之日起将A2予以剥离。 如果是派生分立，则处理原则与前述新设分立相同。
 
@@ -4300,10 +4300,10 @@ A公司租用B村委土地办厂，租期 20 年。在上面盖的厂房、宿�
 
 老准则下，按照财会[2003]29号文第九条的规定处理：“如果报告年度的所得税汇算清缴发生于报告年度财务报告批准报出日之前，
 
-对于所得税汇算清缴时涉及的需调整报告年度所得税费用的，应通过"以前年度损益调整"科目进行会计核算并调整报告年度会计报表
+对于所得税汇算清缴时涉及的需调整报告年度所得税费用的，应通过&#34;以前年度损益调整&#34;科目进行会计核算并调整报告年度会计报表
 相关项目；如果报告年度所得税汇算清缴发生于报告年度财务报告批准报出日之后，对于所得税汇算清缴时涉及的需调整报告年度所
 
-得税费用的，应通过"以前年度损益调整"科目进行核算并相应调整本年度会计报表相关项目的年初数”。
+得税费用的，应通过&#34;以前年度损益调整&#34;科目进行核算并相应调整本年度会计报表相关项目的年初数”。
 
 新准则下需要注意区分是会计估计变更还是会计差错更正，以及如果是会计差错，则是否属于重大前期差错。 前几天我在本版面上
 回复过类似的问题，你可以搜索一下。
@@ -4318,7 +4318,7 @@ A公司租用B村委土地办厂，租期 20 年。在上面盖的厂房、宿�
 
 回复 chenyiwei 的帖子
 
-陈老师，如果所得税汇算清缴发生于财务报告报出日 后 ，应调整本期的所得税费用啊，不应通过“以前年度损益调整'啊。
+陈老师，如果所得税汇算清缴发生于财务报告报出日 后 ，应调整本期的所得税费用啊，不应通过“以前年度损益调整&#39;啊。
 
 回答人： chenyiwei
 不一定，还是需要判断年末预计的应交所得税就资产负债表日当时的实际情况而言是否合理。这里还是一个如何合理区分会计估计变
@@ -4665,9 +4665,9 @@ ps：实际中遇到的情况是，甲公司在特殊情况A下，计入固定�
 
 清产核资工作问题解答（三）（国资发评价[2004]220号）：
 
-二、关于清产核资预计损失计提标准问题 　　推进企业执行《企业会计制度》是清产核资工作目标之一。根据《关于做好执行<企业
+二、关于清产核资预计损失计提标准问题 　　推进企业执行《企业会计制度》是清产核资工作目标之一。根据《关于做好执行&lt;企业
 
-会计制度>工作的通知》（国资评价[2003]45号）及相关清产核资文件规定，企业在清产核资过程中，应当按照《企业会计制度》及
+会计制度&gt;工作的通知》（国资评价[2003]45号）及相关清产核资文件规定，企业在清产核资过程中，应当按照《企业会计制度》及
 企业内部控制制度的规定，对可能发生损失的有问题资产，进行损失预计，作为企业首次执行《企业会计制度》时的期初资产减值准
 
 备。企业在对资产进行损失预计时，应结合企业的行业特点和资产质量状况，按照《企业会计制度》和国资委财务监管有关要求，制
@@ -4703,9 +4703,9 @@ ps：实际中遇到的情况是，甲公司在特殊情况A下，计入固定�
 
 母公司占a公司80%比例。母公司和a共同投资b公司，b公司权益 100 万，母公司投资 90 万，持股90%，a公司投资 10 万，持股10%。
 
-都按照成本法核算。 这笔投资业务合并前： 增加长期股权投资90+10=100万 增加实收资本 100 万
+都按照成本法核算。 这笔投资业务合并前： 增加长期股权投资90&#43;10=100万 增加实收资本 100 万
 
-计算少数股东权益 母公司的空股比例：90%+10% 80%=98% 少数股东权益： 100 （1-98%）=2万
+计算少数股东权益 母公司的空股比例：90%&#43;10% 80%=98% 少数股东权益： 100 （1-98%）=2万
 
 应该合并抵消： 长期股权投资 100w 抵消实收资本100w 抵消少数股东权益 2w
 
@@ -4747,7 +4747,7 @@ ps：实际中遇到的情况是，甲公司在特殊情况A下，计入固定�
 
 4 、甲公司持母公司股份60%，持有a公司股份10%。 甲公司对b公司的控股比例计算方法： （ 1 ）甲公司自己持股45% （ 2 ）甲公司
 
->母公司>b公司：60%*40=24% （ 3 ）甲公司>a公司>b公司：10%*15%=1.5% （ 4 ）甲公司>母公司>a公司>b公司：
+&gt;母公司&gt;b公司：60%*40=24% （ 3 ）甲公司&gt;a公司&gt;b公司：10%*15%=1.5% （ 4 ）甲公司&gt;母公司&gt;a公司&gt;b公司：
 
 60%*90%*15%=8.1% 合计控股比例上述相加：78.6%
 
@@ -4969,7 +4969,7 @@ A和B 是同一控制下子公司（B为外资）， A和B 共同出资组建子
 
 元，折合人民币 800 万， A于 2009 年出资 100 万美元，实际出资人民币 650 万人民币 这样A实际出资 650 万，但占有权益为 725 万
 
-（800+650）/2=725万 如果A控制C 请问在A的合并报表中，725-650=75万 这部分在报表上体现为什么？ 在合并报表时应该体现
+（800&#43;650）/2=725万 如果A控制C 请问在A的合并报表中，725-650=75万 这部分在报表上体现为什么？ 在合并报表时应该体现
 
 为资本公积吧？ A公司母公司报表对该项长投的账面价值又应该为多少？ 谢谢！
 
@@ -5073,7 +5073,7 @@ A和B 是同一控制下子公司（B为外资）， A和B 共同出资组建子
 
 估价值。 2 、A公司在 2005 年完成转制后，实际发生业务与评估报告中的上述假设严重不符。 实际情况：（ 1 ） 2005 年转制完成几
 
-个月后，A公司未进行任何追加投资已取得国家行业生产准入资格；（ 2 ）按 500 万/年有偿使用商标的方式，改正为按 300 万/年+5%
+个月后，A公司未进行任何追加投资已取得国家行业生产准入资格；（ 2 ）按 500 万/年有偿使用商标的方式，改正为按 300 万/年&#43;5%
 
 年递增方式使用商标；（ 3 ）集团所欠 3000 万元，在转制后支付 2000 万偿还债务，其他以商标费抵减。 上述业务，请资产评估专
 
@@ -5326,7 +5326,7 @@ A和B 是同一控制下子公司（B为外资）， A和B 共同出资组建子
 
 陈版你好：公司 2010 年 7 月 1 日投资A公司，持股比例为30%，投资后至年末公司实现净利润 300 万元，投资后专项储备余额为 40 万
 
-元，假设投资时为 0 ，无其他权益增加，年末如何会计处理?下面处理是否正确？请陈版速回，非常感谢！ 借：长期投资 90+12
+元，假设投资时为 0 ，无其他权益增加，年末如何会计处理?下面处理是否正确？请陈版速回，非常感谢！ 借：长期投资 90&#43;12
 
 贷：投资收益 90 其他项目（权益项目） 12
 
@@ -5878,7 +5878,7 @@ A公司 2009 年 1 月 1 日以 100 万元收购B公司100%股权，非同一控
 
 40%， 2010 年上半年、下半年净利润均为 1000 万元，B公司净资产期末余额为 12000 万元，投资前后均采用权益法核算。 我在计
 
-算投资收益时是分段计算的，长期股权投资 2010 年末余额=2000+1000×20%+2000+1000×40%=4600万元。但是按照B公司净资
+算投资收益时是分段计算的，长期股权投资 2010 年末余额=2000&#43;1000×20%&#43;2000&#43;1000×40%=4600万元。但是按照B公司净资
 
 产份额来算，A公司的投资份额=12000×40%=4800万元，较分段计算的结果多 200 万元，差异该如何处理？ 2 、权益法下减资
 
@@ -5888,7 +5888,7 @@ A公司 2009 年 1 月 1 日以 100 万元收购B公司100%股权，非同一控
 
 12000 万元，投资前后均采用权益法核算。 我在计算投资收益时是分段计算的，长期股权投资 2010 年末余额
 
-=4000+1000×20%-2000+1000×40%=2600万元。但是按照B公司净资产份额来算，A公司的投资份额=12000×40%=2400万元，
+=4000&#43;1000×20%-2000&#43;1000×40%=2600万元。但是按照B公司净资产份额来算，A公司的投资份额=12000×40%=2400万元，
 
 较分段计算的结果少 200 万元，差异该如何处理？ 这些情况我在准则上没有找到明确解释，请各位大侠指导一二，谢谢。
 
@@ -5901,7 +5901,7 @@ A公司 2009 年 1 月 1 日以 100 万元收购B公司100%股权，非同一控
 
 其 20 ％为 2200 万元，即以 2000 万元购买会产生营业外收入 200 万，而长期股权投资为 2200 万。所以两次交易的长期股权投资成本合
 
-计 2000 ＋ 2200 ＝ 4200 万， 2010 年度投资收益＝ 1000 20%+1000 40%=600万，所以期末长期股权投资余额为 4800 万，占期末净资产
+计 2000 ＋ 2200 ＝ 4200 万， 2010 年度投资收益＝ 1000 20%&#43;1000 40%=600万，所以期末长期股权投资余额为 4800 万，占期末净资产
 
 1.2亿元的 40 ％。
 
@@ -5922,7 +5922,7 @@ A公司 2009 年 1 月 1 日以 100 万元收购B公司100%股权，非同一控
 
 有D公司50%的股权 C公司持有D公司10%的股权 我想问一下 如果在A公司的合并报表，那么披露对D公司的持股比例和表决权比例
 
-时，这个比例是多少呢？ 是50%+10%＝60%呢 还是60%*50%+70%*10%＝37% 呢？ 感觉上应该是披露60%，因为感觉如果披露
+时，这个比例是多少呢？ 是50%&#43;10%＝60%呢 还是60%*50%&#43;70%*10%＝37% 呢？ 感觉上应该是披露60%，因为感觉如果披露
 
 37%就好像显示不控股了，但A对于B公司真正享有的权益比例又应该只有37%。 究竟应该如果披露纳入合并子公司的股权比例呢？
 请大家帮助一下吧，谢谢！
@@ -7320,13 +7320,13 @@ IPO中三年一期财务报表审计中，附注的格式有统一要求吗？�
 回复 呼叫帮助 的帖子
 是的。支付的合并对价款超过所取得的可辨认净资产公允价值的差额，应确认为合并商誉。
 
-相关的理论基础在IFRS 3的BC313～BC318段： Goodwill qualifies as an asset BC313 The FASB's 1999 and 2001 Exposure Drafts
+相关的理论基础在IFRS 3的BC313～BC318段： Goodwill qualifies as an asset BC313 The FASB&#39;s 1999 and 2001 Exposure Drafts
 
 listed six components of the amount that in practice, under authoritative guidance in effect at that time, had been recognised as
 
-goodwill. The IASB's ED 3 included a similar, but not identical, discussion. The components and their descriptions, taken from the
+goodwill. The IASB&#39;s ED 3 included a similar, but not identical, discussion. The components and their descriptions, taken from the
 
-FASB's exposure drafts, were: Component 1—The excess of the fair values over the book values of the acquiree's net assets at the
+FASB&#39;s exposure drafts, were: Component 1—The excess of the fair values over the book values of the acquiree&#39;s net assets at the
 
 date of acquisition. Component 2—The fair values of other net assets that the acquiree had not previously recognised. They may not
 
@@ -7334,7 +7334,7 @@ have been recognised because they failed to meet the recognition criteria (perha
 
 requirement that prohibited their recognition, or because the acquiree concluded that the costs of recognising them separately were
 
-not justified by the benefits. Component 3—The fair value of the going concern element of the acquiree's existing business. The
+not justified by the benefits. Component 3—The fair value of the going concern element of the acquiree&#39;s existing business. The
 
 going concern element represents the ability of the established business to earn a higher rate of return on an assembled collection of
 
@@ -7345,7 +7345,7 @@ assets of the business, as well as from other benefits (such as factors related 
 monopoly profits and barriers to market entry—either legal or because of transaction costs—by potential competitors). Component
 
 
-4—The fair value of the expected synergies and other benefits from combining the acquirer's and acquiree's net assets and
+4—The fair value of the expected synergies and other benefits from combining the acquirer&#39;s and acquiree&#39;s net assets and
 
 businesses. Those synergies and other benefits are unique to each combination, and different combinations would produce different
 
@@ -7353,7 +7353,7 @@ synergies and, hence, different values. Component 5—Overvaluation of the consi
 
 in valuing the consideration tendered. Although the purchase price in an all-cash transaction would not be subject to measurement
 
-error, the same may not necessarily be said of a transaction involving the acquirer's equity interests. For example, the number of
+error, the same may not necessarily be said of a transaction involving the acquirer&#39;s equity interests. For example, the number of
 
 ordinary shares being traded daily may be small relative to the number of shares issued in the combination. If so, imputing the
 
@@ -7381,13 +7381,13 @@ measurement error. The sixth component is also not an asset; conceptually it rep
 
 boards also observed that the third and fourth components are part of goodwill. The third component relates to the acquiree and
 
-reflects the excess assembled value of the acquiree's net assets. It represents the pre-existing goodwill that was either internally
+reflects the excess assembled value of the acquiree&#39;s net assets. It represents the pre-existing goodwill that was either internally
 
 generated by the acquiree or acquired by it in prior business combinations. The fourth component relates to the acquiree and the
 
 acquirer jointly and reflects the excess assembled value that is created by the combination—the synergies that are expected from
 
-combining those businesses. The boards described the third and fourth components collectively as 'core goodwill'. BC317 The
+combining those businesses. The boards described the third and fourth components collectively as &#39;core goodwill&#39;. BC317 The
 
 revised standards try to avoid subsuming the first, second and fifth components of goodwill into the amount initially recognised as
 
@@ -7399,9 +7399,9 @@ reducing component 5); (b) to recognise the identifiable net assets acquired at 
 
 standards (paragraph B31 of the revised IFRS 3) so that they are not subsumed into the amount initially recognised as goodwill
 
-(reducing component 2). BC318 In developing IFRS 3 and SFAS 141, the IASB and the FASB both considered whether 'core
+(reducing component 2). BC318 In developing IFRS 3 and SFAS 141, the IASB and the FASB both considered whether &#39;core
 
-goodwill' (the third and fourth components) qualifies as an asset under the definition in their respective conceptual frameworks. (That
+goodwill&#39; (the third and fourth components) qualifies as an asset under the definition in their respective conceptual frameworks. (That
 
 consideration was based on the existing conceptual frameworks. In 2004, the IASB and the FASB began work on a joint project to
 
@@ -7936,6 +7936,6 @@ The meaning of ‘transitory’ common control.pdf
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201109/  
 

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Dockerfile指令详解 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>Dockerfile指令详解 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="Dockerfile 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。" /><meta name="keywords" content='docker' /><meta itemprop="name" content="Dockerfile指令详解">
 <meta itemprop="description" content="Dockerfile 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。"><meta itemprop="datePublished" content="2017-05-22T19:11:42+00:00" />
 <meta itemprop="dateModified" content="2017-05-22T19:11:42+00:00" />
-<meta itemprop="wordCount" content="7258"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="7279"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="docker," /><meta property="og:title" content="Dockerfile指令详解" />
 <meta property="og:description" content="Dockerfile 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。" />
 <meta property="og:type" content="article" />
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/linux\/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3\/"
-    },"genre": "posts","keywords": "docker","wordcount":  7258 ,
+    },"genre": "posts","keywords": "docker","wordcount":  7279 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/linux\/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3\/","datePublished": "2017-05-22T19:11:42+00:00","dateModified": "2017-05-22T19:11:42+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item active" aria-current="page">Dockerfile指令详解</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Dockerfile指令详解</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-05-22 19:11:42"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-22">2017-05-22</time></span>&nbsp;<span title="更新于 2017-05-22 19:11:42"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-22">2017-05-22</time></span>&nbsp;<span title="7258 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="leancloud_visitors comment-visitors" data-flag-title="Dockerfile指令详解">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2017-05-22 19:11:42"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2017-05-22">2017-05-22</time></span>&nbsp;<span title="7279 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 7300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 15 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="leancloud_visitors comment-visitors" data-flag-title="Dockerfile指令详解">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Dockerfile指令详解">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -212,8 +207,8 @@
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p><code>Dockerfile</code> 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。</p>
-<h3 id="构建镜像">构建镜像</h3>
-<p>命令格式：</p>
+<h3 id="构建镜像" class="heading-element">
+  <a href="#%e6%9e%84%e5%bb%ba%e9%95%9c%e5%83%8f" class="heading-mark"></a>构建镜像</h3><p>命令格式：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -231,8 +226,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 构建一个名为 nginx:v3 的镜像</span>
 </span></span><span class="line"><span class="cl">$ docker build -t nginx:v3 .</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="run-执行命令">RUN 执行命令</h3>
-<ol>
+</div><h3 id="run-执行命令" class="heading-element">
+  <a href="#run-%e6%89%a7%e8%a1%8c%e5%91%bd%e4%bb%a4" class="heading-mark"></a>RUN 执行命令</h3><ol>
 <li><code>shell</code>格式：RUN &lt;命令&gt;，就像直接在命令行中输入的命令一样。刚才写的 Dockrfile 中的 RUN 指令就是这种格式。</li>
 </ol>
 <div class="highlight" id="id-3"><div class="chroma">
@@ -245,8 +240,8 @@
 </div><ol start="2">
 <li><code>exec</code>格式：RUN [&ldquo;可执行文件&rdquo;, &ldquo;参数1&rdquo;, &ldquo;参数2&rdquo;]，这更像是函数调用中的格式。</li>
 </ol>
-<h3 id="copy-复制文件">COPY 复制文件</h3>
-<p>格式：</p>
+<h3 id="copy-复制文件" class="heading-element">
+  <a href="#copy-%e5%a4%8d%e5%88%b6%e6%96%87%e4%bb%b6" class="heading-mark"></a>COPY 复制文件</h3><p>格式：</p>
 <ol>
 <li><code>COPY &lt;源路径&gt;... &lt;目标路径&gt;</code></li>
 <li><code>COPY [&quot;&lt;源路径1&gt;&quot;,... &quot;&lt;目标路径&gt;&quot;]</code>
@@ -272,22 +267,22 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 </div>
 </div><p><code>&lt;目标路径&gt;</code> 可以是容器内的绝对路径，也可以是相对于工作目录的相对路径（工作目录可以用 <code>WORKDIR</code> 指令来指定）。目标路径不需要事先创建，如果目录不存在会在复制文件前先行创建缺失目录。</p>
 <p>此外，还需要注意一点，使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。</p>
-<h3 id="add更高级的复制文件">ADD更高级的复制文件</h3>
-<p><code>ADD</code> 指令和 <code>COPY</code> 的格式和性质基本一致。但是在 <code>COPY</code> 基础上增加了一些功能。</p>
+<h3 id="add更高级的复制文件" class="heading-element">
+  <a href="#add%e6%9b%b4%e9%ab%98%e7%ba%a7%e7%9a%84%e5%a4%8d%e5%88%b6%e6%96%87%e4%bb%b6" class="heading-mark"></a>ADD更高级的复制文件</h3><p><code>ADD</code> 指令和 <code>COPY</code> 的格式和性质基本一致。但是在 <code>COPY</code> 基础上增加了一些功能。</p>
 <p>比如 <code>&lt;源路径&gt;</code> 可以是一个 URL，这种情况下，Docker 引擎会试图去下载这个链接的文件放到 <code>&lt;目标路径&gt;</code> 去。下载后的文件权限自动设置为 600，如果这并不是想要的权限，那么还需要增加额外的一层 RUN 进行权限调整，另外，如果下载的是个压缩包，需要解压缩，也一样还需要额外的一层 RUN 指令进行解压缩。所以不如直接使用 RUN 指令，然后使用 <code>wget</code> 或者 <code>curl</code> 工具下载，处理权限、解压缩、然后清理无用文件更合理。因此，这个功能其实并不实用，而且不推荐使用。</p>
 <p>如果 &lt;源路径&gt; 为一个 tar 压缩文件的话，压缩格式为 gzip, bzip2 以及 xz 的情况下，ADD 指令将会自动解压缩这个压缩文件到 &lt;目标路径&gt; 去。</p>
 <p>在 Docker 官方的最佳实践文档中要求，尽可能的使用 COPY 。</p>
 <p>因此在 COPY 和 ADD 指令中选择的时候，可以遵循这样的原则，所有的文件复制均使用 <code>COPY</code> 指令，仅在需要自动解压缩的场合使用 <code>ADD</code>。</p>
-<h3 id="cmd-容器启动命令">CMD 容器启动命令</h3>
-<p>CMD 指令的格式和 RUN 相似，也是两种格式：
+<h3 id="cmd-容器启动命令" class="heading-element">
+  <a href="#cmd-%e5%ae%b9%e5%99%a8%e5%90%af%e5%8a%a8%e5%91%bd%e4%bb%a4" class="heading-mark"></a>CMD 容器启动命令</h3><p>CMD 指令的格式和 RUN 相似，也是两种格式：
 1） shell 格式：<code>CMD &lt;命令&gt;</code>
 2） exec 格式：<code>CMD [&quot;可执行文件&quot;, &quot;参数1&quot;, &quot;参数2&quot;...]</code>
 3） 参数列表格式：<code>CMD [&quot;参数1&quot;, &quot;参数2&quot;...]</code>。在指定了 ENTRYPOINT 指令后，用 CMD 指定具体的参数。</p>
 <p>Docker 不是虚拟机，容器就是进程。既然是进程，那么在启动容器的时候，需要指定所运行的程序及参数。CMD 指令就是用于指定默认的容器主进程的启动命令的。</p>
 <p>在运行时可以指定新的命令来替代镜像设置中的这个默认命令，比如，ubuntu 镜像默认的 CMD 是 /bin/bash，如果我们直接 docker run -it ubuntu 的话，会直接进入 bash。我们也可以在运行时指定运行别的命令，如 docker run -it ubuntu cat /etc/os-release。这就是用 cat /etc/os-release 命令替换了默认的 /bin/bash 命令了，输出了系统版本信息。</p>
 <p>在指令格式上，一般推荐使用 exec 格式，这类格式在解析时会被解析为 JSON 数组，因此一定要使用双引号 &ldquo;，而不要使用单引号。</p>
-<h3 id="entrypoint-入口点">ENTRYPOINT 入口点</h3>
-<p>ENTRYPOINT 的目的和 CMD 一样，都是在指定容器启动程序及参数。ENTRYPOINT 在运行时也可以替代，不过比 CMD 要略显繁琐，需要通过 docker run 的参数 &ndash;entrypoint 来指定。</p>
+<h3 id="entrypoint-入口点" class="heading-element">
+  <a href="#entrypoint-%e5%85%a5%e5%8f%a3%e7%82%b9" class="heading-mark"></a>ENTRYPOINT 入口点</h3><p>ENTRYPOINT 的目的和 CMD 一样，都是在指定容器启动程序及参数。ENTRYPOINT 在运行时也可以替代，不过比 CMD 要略显繁琐，需要通过 docker run 的参数 &ndash;entrypoint 来指定。</p>
 <p>当指定了 ENTRYPOINT 后，CMD 的含义就发生了改变，不再是直接的运行其命令，而是将 CMD 的内容作为参数传给 ENTRYPOINT 指令，换句话说实际执行时，将变为：</p>
 <div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -381,8 +376,8 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -it redis id
 </span></span><span class="line"><span class="cl"><span class="nv">uid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">groups</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="env-设置环境变量">ENV 设置环境变量</h3>
-<p>格式有两种：</p>
+</div><h3 id="env-设置环境变量" class="heading-element">
+  <a href="#env-%e8%ae%be%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f" class="heading-mark"></a>ENV 设置环境变量</h3><p>格式有两种：</p>
 <ol>
 <li><code>ENV &lt;key&gt; &lt;value&gt;</code></li>
 <li><code>ENV &lt;key1&gt;=&lt;value1&gt; &lt;key2&gt;=&lt;value2&gt;...</code></li>
@@ -425,13 +420,13 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 </div><p>在这里先定义了环境变量 NODE_VERSION，其后的 RUN 这层里，多次使用 $NODE_VERSION 来进行操作定制。可以看到，将来升级镜像构建版本的时候，只需要更新 7.2.0 即可，Dockerfile 构建维护变得更轻松了。</p>
 <p>下列指令可以支持环境变量展开： ADD、COPY、ENV、EXPOSE、LABEL、USER、WORKDIR、VOLUME、STOPSIGNAL、ONBUILD。</p>
 <p>可以从这个指令列表里感觉到，环境变量可以使用的地方很多，很强大。通过环境变量，我们可以让一份 Dockerfile 制作更多的镜像，只需使用不同的环境变量即可。</p>
-<h3 id="arg-构建参数">ARG 构建参数</h3>
-<p>格式：<code>ARG &lt;参数名&gt;[=&lt;默认值&gt;]</code></p>
+<h3 id="arg-构建参数" class="heading-element">
+  <a href="#arg-%e6%9e%84%e5%bb%ba%e5%8f%82%e6%95%b0" class="heading-mark"></a>ARG 构建参数</h3><p>格式：<code>ARG &lt;参数名&gt;[=&lt;默认值&gt;]</code></p>
 <p>构建参数和 ENV 的效果一样，都是设置环境变量。所不同的是，ARG 所设置的构建环境的环境变量，在将来容器运行时是不会存在这些环境变量的。但是不要因此就使用 ARG 保存密码之类的信息，因为 docker history 还是可以看到所有值的。</p>
 <p>Dockerfile 中的 ARG 指令是定义参数名称，以及定义其默认值。该默认值可以在构建命令 docker build 中用 &ndash;build-arg &lt;参数名&gt;=&lt;值&gt; 来覆盖。</p>
 <p>在 1.13 之前的版本，要求 &ndash;build-arg 中的参数名，必须在 Dockerfile 中用 ARG 定义过了，换句话说，就是 &ndash;build-arg 指定的参数，必须在 Dockerfile 中使用了。如果对应参数没有被使用，则会报错退出构建。从 1.13 开始，这种严格的限制被放开，不再报错退出，而是显示警告信息，并继续构建。这对于使用 CI 系统，用同样的构建流程构建不同的 Dockerfile 的时候比较有帮助，避免构建命令必须根据每个 Dockerfile 的内容修改。</p>
-<h3 id="volume-定义匿名卷">VOLUME 定义匿名卷</h3>
-<p>格式为：</p>
+<h3 id="volume-定义匿名卷" class="heading-element">
+  <a href="#volume-%e5%ae%9a%e4%b9%89%e5%8c%bf%e5%90%8d%e5%8d%b7" class="heading-mark"></a>VOLUME 定义匿名卷</h3><p>格式为：</p>
 <ol>
 <li><code>VOLUME [&quot;&lt;路径1&gt;&quot;, &quot;&lt;路径2&gt;&quot;...]</code></li>
 <li><code>VOLUME &lt;路径&gt;</code></li>
@@ -453,13 +448,13 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run -d -v mydata:/data xxxx</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这行命令中，就使用了 mydata 这个命名卷挂载到了 /data 这个位置，替代了 Dockerfile 中定义的匿名卷的挂载配置。</p>
-<h3 id="expose-声明端口">EXPOSE 声明端口</h3>
-<p>格式为 <code>EXPOSE &lt;端口1&gt; [&lt;端口2&gt;...]</code>。</p>
+<h3 id="expose-声明端口" class="heading-element">
+  <a href="#expose-%e5%a3%b0%e6%98%8e%e7%ab%af%e5%8f%a3" class="heading-mark"></a>EXPOSE 声明端口</h3><p>格式为 <code>EXPOSE &lt;端口1&gt; [&lt;端口2&gt;...]</code>。</p>
 <p>EXPOSE 指令是声明运行时容器提供服务端口，这只是一个声明，在运行时并不会因为这个声明应用就会开启这个端口的服务。在 Dockerfile 中写入这样的声明有两个好处，一个是帮助镜像使用者理解这个镜像服务的守护端口，以方便配置映射；另一个用处则是在运行时使用随机端口映射时，也就是 docker run -P 时，会自动随机映射 EXPOSE 的端口。</p>
 <p>此外，在早期 Docker 版本中还有一个特殊的用处。以前所有容器都运行于默认桥接网络中，因此所有容器互相之间都可以直接访问，这样存在一定的安全性问题。于是有了一个 Docker 引擎参数 &ndash;icc=false，当指定该参数后，容器间将默认无法互访，除非互相间使用了 &ndash;links 参数的容器才可以互通，并且只有镜像中 EXPOSE 所声明的端口才可以被访问。这个 &ndash;icc=false 的用法，在引入了 docker network 后已经基本不用了，通过自定义网络可以很轻松的实现容器间的互联与隔离。</p>
 <p>要将 EXPOSE 和在运行时使用 -p &lt;宿主端口&gt;:&lt;容器端口&gt; 区分开来。-p，是映射宿主端口和容器端口，换句话说，就是将容器的对应端口服务公开给外界访问，而 EXPOSE 仅仅是声明容器打算使用什么端口而已，并不会自动在宿主进行端口映射。</p>
-<h3 id="workdir-指定工作目录">WORKDIR 指定工作目录</h3>
-<p>格式为 WORKDIR &lt;工作目录路径&gt;。</p>
+<h3 id="workdir-指定工作目录" class="heading-element">
+  <a href="#workdir-%e6%8c%87%e5%ae%9a%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95" class="heading-mark"></a>WORKDIR 指定工作目录</h3><p>格式为 WORKDIR &lt;工作目录路径&gt;。</p>
 <p>使用 WORKDIR 指令可以来指定工作目录（或者称为当前目录），以后各层的当前目录就被改为指定的目录，如该目录不存在，WORKDIR 会帮你建立目录。</p>
 <p>之前提到一些初学者常犯的错误是把 Dockerfile 等同于 Shell 脚本来书写，这种错误的理解还可能会导致出现下面这样的错误：</p>
 <div class="highlight" id="id-16"><div class="chroma">
@@ -474,8 +469,8 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 </div><p>如果将这个 Dockerfile 进行构建镜像运行后，会发现找不到 /app/world.txt 文件，或者其内容不是 hello。原因其实很简单，在 Shell 中，连续两行是同一个进程执行环境，因此前一个命令修改的内存状态，会直接影响后一个命令；而在 Dockerfile 中，这两行 RUN 命令的执行环境根本不同，是两个完全不同的容器。这就是对 Dokerfile 构建分层存储的概念不了解所导致的错误。</p>
 <p>之前说过每一个 RUN 都是启动一个容器、执行命令、然后提交存储层文件变更。第一层 RUN cd /app 的执行仅仅是当前进程的工作目录变更，一个内存上的变化而已，其结果不会造成任何文件变更。而到第二层的时候，启动的是一个全新的容器，跟第一层的容器更完全没关系，自然不可能继承前一层构建过程中的内存变化。</p>
 <p>因此如果需要改变以后各层的工作目录的位置，那么应该使用 WORKDIR 指令。</p>
-<h3 id="user-指定当前用户">USER 指定当前用户</h3>
-<p>格式：<code>USER &lt;用户名&gt;</code></p>
+<h3 id="user-指定当前用户" class="heading-element">
+  <a href="#user-%e6%8c%87%e5%ae%9a%e5%bd%93%e5%89%8d%e7%94%a8%e6%88%b7" class="heading-mark"></a>USER 指定当前用户</h3><p>格式：<code>USER &lt;用户名&gt;</code></p>
 <p>USER 指令和 WORKDIR 相似，都是改变环境状态并影响以后的层。WORKDIR 是改变工作目录，USER 则是改变之后层的执行 RUN, CMD 以及 ENTRYPOINT 这类命令的身份。</p>
 <p>当然，和 WORKDIR 一样，USER 只是帮助你切换到指定用户而已，这个用户必须是事先建立好的，否则无法切换。</p>
 <div class="highlight" id="id-17"><div class="chroma">
@@ -511,8 +506,8 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 </span></span><span class="line"><span class="cl"><span class="c1">## 设置 CMD，并以另外的用户执行</span>
 </span></span><span class="line"><span class="cl"><span class="n">CMD</span> <span class="p">[</span> <span class="s2">&#34;exec&#34;</span><span class="p">,</span> <span class="s2">&#34;gosu&#34;</span><span class="p">,</span> <span class="s2">&#34;redis&#34;</span><span class="p">,</span> <span class="s2">&#34;redis-server&#34;</span> <span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="healthcheck-健康检查">HEALTHCHECK 健康检查</h3>
-<p>格式：</p>
+</div><h3 id="healthcheck-健康检查" class="heading-element">
+  <a href="#healthcheck-%e5%81%a5%e5%ba%b7%e6%a3%80%e6%9f%a5" class="heading-mark"></a>HEALTHCHECK 健康检查</h3><p>格式：</p>
 <ol>
 <li><code>HEALTHCHECK [选项] CMD &lt;命令&gt;</code>：设置检查容器健康状况的命令</li>
 <li><code>HEALTHCHECK NONE</code>：如果基础镜像有健康检查指令，使用这行可以屏蔽掉其健康检查指令</li>
@@ -617,8 +612,8 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;Status&#34;</span>: <span class="s2">&#34;healthy&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="onbuild-为他人做嫁衣裳">ONBUILD 为他人做嫁衣裳</h3>
-<p>格式：<code>ONBUILD &lt;其它指令&gt;</code>。</p>
+</div><h3 id="onbuild-为他人做嫁衣裳" class="heading-element">
+  <a href="#onbuild-%e4%b8%ba%e4%bb%96%e4%ba%ba%e5%81%9a%e5%ab%81%e8%a1%a3%e8%a3%b3" class="heading-mark"></a>ONBUILD 为他人做嫁衣裳</h3><p>格式：<code>ONBUILD &lt;其它指令&gt;</code>。</p>
 <p>ONBUILD 是一个特殊的指令，它后面跟的是其它指令，比如 RUN, COPY 等，而这些指令，在当前镜像构建时并不会被执行。只有当以当前镜像为基础镜像，去构建下一级镜像的时候才会被执行。</p>
 <p>Dockerfile 中的其它指令都是为了定制当前镜像而准备的，唯有 ONBUILD 是为了帮助别人定制自己而准备的。</p>
 <p>假设我们要制作 Node.js 所写的应用的镜像。我们都知道 Node.js 使用 npm 进行包管理，所有依赖、配置、启动信息等会放到 package.json 文件里。在拿到程序代码后，需要先进行 npm install 才可以获得所有需要的依赖。然后就可以通过 npm start 来启动应用。因此，一般来说会这样写 Dockerfile：</p>
@@ -702,8 +697,8 @@ COPY 指令将从构建上下文目录中 &lt;源路径&gt; 的文件/目录复�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">FROM my-node</span></span></code></pre></td></tr></table>
 </div>
 </div><p>是的，只有这么一行。当在各个项目目录中，用这个只有一行的 Dockerfile 构建镜像时，之前基础镜像的那三行 ONBUILD 就会开始执行，成功的将当前项目的代码复制进镜像、并且针对本项目执行 npm install，生成应用镜像。</p>
-<h3 id="reference">Reference</h3>
-<p>Docker&ndash;从入门到实践: <a href="https://yeasy.gitbooks.io/docker_practice/content/"target="_blank" rel="external nofollow noopener noreferrer">https://yeasy.gitbooks.io/docker_practice/content/</a>
+<h3 id="reference" class="heading-element">
+  <a href="#reference" class="heading-mark"></a>Reference</h3><p>Docker&ndash;从入门到实践: <a href="https://yeasy.gitbooks.io/docker_practice/content/"target="_blank" rel="external nofollow noopener noreferrer">https://yeasy.gitbooks.io/docker_practice/content/</a>
 Dockerfie 官方文档：https://docs.docker.com/engine/reference/builder/
 Dockerfile 最佳实践文档：https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -711,19 +706,17 @@ Dockerfile 最佳实践文档：https://docs.docker.com/engine/userguide/eng-ima
       <div class="post-info-mod">
         <span title="更新于 2017-05-22 19:11:42">更新于 2017-05-22&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" data-title="Dockerfile指令详解" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" data-title="Dockerfile指令详解" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/docker/' class="post-tag">docker</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/docker/" class="post-tag" title="标签 - docker">docker</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -734,10 +727,13 @@ Dockerfile 最佳实践文档：https://docs.docker.com/engine/userguide/eng-ima
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

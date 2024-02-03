@@ -42,6 +42,6 @@ QuestMobile：http://www.questmobile.com.cn/
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/%E4%BA%86%E8%A7%A3%E8%A1%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E7%BD%91%E7%AB%99/  
 

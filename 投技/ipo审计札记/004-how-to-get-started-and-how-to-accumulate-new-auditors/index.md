@@ -35,12 +35,12 @@ B 有意识地增进财务会计等专业方面知识积累
 
 C 可以有意识去了解资本市场，商业逻辑
 
-比如看一些书，或者me，利用好碎片阅读，没事多看财经新闻+各种和股市相关的+财报分析的。。。
+比如看一些书，或者me，利用好碎片阅读，没事多看财经新闻&#43;各种和股市相关的&#43;财报分析的。。。
 
 D 阅读招股说明书和反馈。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/004-how-to-get-started-and-how-to-accumulate-new-auditors/  
 

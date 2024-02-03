@@ -1,31 +1,31 @@
 # 每天一个linux命令（22）: find命令的参数详解
 
 　　find一些常用参数的一些常用实例和一些具体用法和注意事项。
-<!--more -->
+&lt;!--more --&gt;
 #### 使用name选项
 　　文件名选项是find命令最常用的选项，要么单独使用该选项，要么和其他选项一起使用。可以使用某种文件名模式来匹配文件，记住要用引号将文件名模式引起来。
 ```bash
-## 在自己的根目录$HOME中查找文件名符合*.log的文件，使用~作为 'pathname'参数，波浪号~代表了你的$HOME目录。
-$ find ~ -name "*.log" -print
+## 在自己的根目录$HOME中查找文件名符合*.log的文件，使用~作为 &#39;pathname&#39;参数，波浪号~代表了你的$HOME目录。
+$ find ~ -name &#34;*.log&#34; -print
 
 ## 在当前目录及子目录中查找所有的‘ *.log‘文件
-$ find . -name "*.log" -print
+$ find . -name &#34;*.log&#34; -print
 
 ## 当前目录及子目录中查找文件名以一个大写字母开头的文件
-$ find . -name "[A-Z]*" -print
+$ find . -name &#34;[A-Z]*&#34; -print
 
 ## 在/etc目录中查找文件名以host开头的文件
-$ find /etc -name "host*" -print
+$ find /etc -name &#34;host*&#34; -print
 
 ## 想要查找$HOME目录中的文件
-$ find ~ -name "*" -print
+$ find ~ -name &#34;*&#34; -print
 $ find . -print
 
 ## 让系统高负荷运行，就从根目录开始查找所有的文件
-$ find / -name "*" -print
+$ find / -name &#34;*&#34; -print
 
 ## 在当前目录查找文件名以一个个小写字母开头，最后是4到9加上.log结束的文件
-$ find . -name "[a-z]*[4-9].log" -print
+$ find . -name &#34;[a-z]*[4-9].log&#34; -print
 ```
 
 #### 用perm选项
@@ -42,20 +42,20 @@ $ find . -perm -005
 #### 忽略某个目录
 　　如果在查找文件时希望忽略某个目录，因为你知道那个目录中没有你所要查找的文件，那么可以使用-prune选项来指出需要忽略的目录。在使用-prune选项时要当心，因为如果你同时使用了-depth选项，那么-prune选项就会被find命令忽略。如果希望在test目录下查找文件，但不希望在test/test3目录下查找，可以用:
 ```bash
-$ find test -path "test/test3" -prune -o -print
+$ find test -path &#34;test/test3&#34; -prune -o -print
 ```
 #### 使用find查找文件的时候怎么避开某个文件目录
 **`例一`：在test 目录下查找不在test4子目录之内的所有文件**
 ```bash
-$ find test -path "test/test4" -prune -o -print
+$ find test -path &#34;test/test4&#34; -prune -o -print
 ```
->**说明：**
+&gt;**说明：**
 find [-path ..] [expression]
 在路径列表的后面的是表达式
--path "test" -prune -o -print 是 -path "test" -a -prune -o -print 的简写表达式按顺序求值, -a 和 -o 都是短路求值，与 shell 的 && 和 || 类似如果
--path "test" 为真，则求值 -prune , -prune 返回真，与逻辑表达式为真；否则不求值 -prune，与逻辑表达式为假。如果 -path "test" -a -prune 为假，则求值 -print ，-print返回真，或逻辑表达式为真；否则不求值 -print，或逻辑表达式为真。
+-path &#34;test&#34; -prune -o -print 是 -path &#34;test&#34; -a -prune -o -print 的简写表达式按顺序求值, -a 和 -o 都是短路求值，与 shell 的 &amp;&amp; 和 || 类似如果
+-path &#34;test&#34; 为真，则求值 -prune , -prune 返回真，与逻辑表达式为真；否则不求值 -prune，与逻辑表达式为假。如果 -path &#34;test&#34; -a -prune 为假，则求值 -print ，-print返回真，或逻辑表达式为真；否则不求值 -print，或逻辑表达式为真。
 这个表达式组合特例可以用伪码写为:
-if -path "test" then  
+if -path &#34;test&#34; then  
 -prune  
 else  
 -print  
@@ -67,7 +67,7 @@ $ find test \( -path test/test4 -o -path test/test3 \) -prune -o -print
 ```
 **`例三`：查找某一确定文件，-name等选项加在-o 之后**
 ```bash
-$ find test \(-path test/test4 -o -path test/test3 \) -prune -o -name "*.log" -print
+$ find test \(-path test/test4 -o -path test/test3 \) -prune -o -name &#34;*.log&#34; -print
 ```
 #### 使用user和nouser选项
 ```bash
@@ -91,13 +91,13 @@ $ find / -nogroup-print
 ```
 #### 按照更改时间或访问时间等查找文件
 　　如果希望按照更改时间来查找文件，可以使用mtime,atime或ctime选项。如果系统突然没有可用空间了，很有可能某一个文件的长度在此期间增长迅速，这时就可以用mtime选项来查找这样的文件。  
-用减号`-`来限定更改时间在距今n日以内的文件，而用加号`+`来限定更改时间在距今n日以前的文件
+用减号`-`来限定更改时间在距今n日以内的文件，而用加号`&#43;`来限定更改时间在距今n日以前的文件
 ```bash
 ## 在系统根目录下查找更改时间在5日以内的文件
 $ find / -mtime -5 -print
 
 ## 在/var/adm目录下查找更改时间在3日以前的文件
-$ find /var/adm -mtime +3 -print
+$ find /var/adm -mtime &#43;3 -print
 ```
 #### 查找比某个文件新或旧的文件
 　　如果希望查找更改时间比某个文件新但比另一个文件旧的所有文件，可以使用-newer选项。
@@ -125,31 +125,31 @@ $ find /etc -type l -print
 在按照文件长度查找文件时，一般使用这种以字节表示的文件长度，在查看文件系统的大小，因为这时使用块来计量更容易转换。
 ```bash
 ## 在当前目录下查找文件长度大于1 M字节的文件
-$ find . -size +1000000c -print
+$ find . -size &#43;1000000c -print
 
 ## 在/home/apache目录下查找文件长度恰好为100字节的文件
 $ find /home/apache -size 100c -print
 
 ## 在当前目录下查找长度超过10块的文件（一块等于512字节）
-$ find . -size +10 -print
+$ find . -size &#43;10 -print
 ```
 #### 使用depth选项
 　　在使用find命令时，可能希望先匹配所有的文件，再在子目录中查找。使用depth选项就可以使find命令这样做。这样做的一个原因就是，当在使用find命令向磁带上备份文件系统时，希望首先备份所有的文件，其次再备份子目录中的文件。
 ```bash
 ## find命令从文件系统的根目录开始，查找一个名为CON.FILE的文件
 ## 它将首先匹配所有的文件然后再进入子目录中查找
-$ find / -name "CON.FILE" -depth -print
+$ find / -name &#34;CON.FILE&#34; -depth -print
 ```
 #### 使用mount选项
 　　在当前的文件系统中查找文件（不进入其他文件系统），可以使用find命令的mount选项
 ```bash
 ## 从当前目录开始查找位于本文件系统中文件名以XC结尾的文件
-$ find . -name "*.XC" -mount -print
+$ find . -name &#34;*.XC&#34; -mount -print
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-22-find-args/  
 

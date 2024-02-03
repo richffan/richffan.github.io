@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>duckdb从入门到精通：安装篇 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>duckdb从入门到精通：安装篇 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="duckdb从入门到精通：安装篇">
 <meta itemprop="description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合"><meta itemprop="datePublished" content="2023-05-05T14:19:09+00:00" />
 <meta itemprop="dateModified" content="2023-05-05T14:19:09+00:00" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="duckdb从入门到精通：安装篇"/>
 <meta name="twitter:description" content="DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -180,8 +180,8 @@
 <p>接下来，我们会写系列文章，打开 duckdb 的大门，从入门到精通。</p>
 <p>你将拥有在笔记本上处理上亿行数据的能力。</p>
 <p>首先我们将介绍安装，实际上 duckdb 没有服务器端，它是用文件来存储数据，所以我们只需要安装个图形化的管理软件 DBeaver 就可以直接使用了。</p>
-<h3 id="dbeaver安装">dbeaver安装</h3>
-<p>在 DBeaver 官网下载社区版本：</p>
+<h3 id="dbeaver安装" class="heading-element">
+  <a href="#dbeaver%e5%ae%89%e8%a3%85" class="heading-mark"></a>dbeaver安装</h3><p>在 DBeaver 官网下载社区版本：</p>
 <p>下载地址：<a href="https://dbeaver.io/download/"target="_blank" rel="external nofollow noopener noreferrer">https://dbeaver.io/download/</a></p>
 <p>双击下载好的安装包</p>
 <p>点击 <code>下一步</code>:</p>
@@ -194,8 +194,8 @@
 <p>安装完成后，打开 DBeaver:</p>
 <p>这里问是否需要创建示例数据库，我们选择<code>否</code>。</p>
 <p>到此为止，我们就安装好了 DBeaver 图形化管理界面了。</p>
-<h3 id="dbeaver安装duckdb驱动">dbeaver安装duckdb驱动</h3>
-<p>打开 DBeaver 后，点击左上角<code>新建连接图标</code>，选择<code>duckdb</code>数据库后，点击<code>下一步</code>。</p>
+<h3 id="dbeaver安装duckdb驱动" class="heading-element">
+  <a href="#dbeaver%e5%ae%89%e8%a3%85duckdb%e9%a9%b1%e5%8a%a8" class="heading-mark"></a>dbeaver安装duckdb驱动</h3><p>打开 DBeaver 后，点击左上角<code>新建连接图标</code>，选择<code>duckdb</code>数据库后，点击<code>下一步</code>。</p>
 <p>点击 <code>创建</code>:</p>
 <p>选择我们想保存数据库文件的路径，例如这里我选择桌面文件夹（最好不要在 C 盘），创建一个名叫<code>myduckdb</code>文件，点击 <code>保存</code>:</p>
 <p>保存后，可以看到我们将要创建的文件路径，这时，我们点击 <code>测试连接</code>:</p>
@@ -213,7 +213,7 @@
       </noscript></div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

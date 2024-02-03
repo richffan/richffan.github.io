@@ -18,29 +18,29 @@ Course INT
 
 INSERT INTO F0215 VALUES
 
-(1,'001',67),
+(1,&#39;001&#39;,67),
 
-(1,'002',89),
+(1,&#39;002&#39;,89),
 
-(1,'003',94),
+(1,&#39;003&#39;,94),
 
-(2,'001',95),
+(2,&#39;001&#39;,95),
 
-(2,'002',88),
+(2,&#39;002&#39;,88),
 
-(2,'004',78),
+(2,&#39;004&#39;,78),
 
-(3,'001',94),
+(3,&#39;001&#39;,94),
 
-(3,'002',77),
+(3,&#39;002&#39;,77),
 
-(3,'003',90)
+(3,&#39;003&#39;,90)
 
 select * from f0215
 
 /*
 
-查询出既学过'001'课程，也学过'003'号课程的学生ID
+查询出既学过&#39;001&#39;课程，也学过&#39;003&#39;号课程的学生ID
 
 */
 
@@ -50,13 +50,13 @@ select * from f0215
 
 SELECT * FROM F0215
 
-WHERE CID='001' AND CID='003'
+WHERE CID=&#39;001&#39; AND CID=&#39;003&#39;
 
   
 
 SELECT * FROM F0215
 
-WHERE CID='001' OR CID='003'
+WHERE CID=&#39;001&#39; OR CID=&#39;003&#39;
 
   
 
@@ -64,11 +64,11 @@ WHERE CID='001' OR CID='003'
 
 SELECT T1.STUID FROM
 
-( SELECT STUID FROM F0215 WHERE CID='001' ) T1
+( SELECT STUID FROM F0215 WHERE CID=&#39;001&#39; ) T1
 
 INNER JOIN
 
-(SELECT STUID FROM F0215 WHERE CID='003' )  T2  
+(SELECT STUID FROM F0215 WHERE CID=&#39;003&#39; )  T2  
 
 ON T2.STUID=T1.STUID
 
@@ -79,9 +79,9 @@ SELECT A.STUID
 
 FROM F0215 A,F0215 B
 
-WHERE A.CID = '001'
+WHERE A.CID = &#39;001&#39;
 
-AND B.CID = '003'
+AND B.CID = &#39;003&#39;
 
 AND A.STUID = B.STUID
 
@@ -93,7 +93,7 @@ SELECT SC.STUID
 
 FROM F0215 SC
 
-WHERE  SC.CID='001'
+WHERE  SC.CID=&#39;001&#39;
 
 INTERSECT
 
@@ -101,7 +101,7 @@ SELECT SC.STUID
 
 FROM F0215 SC
 
-WHERE  SC.CID='003'
+WHERE  SC.CID=&#39;003&#39;
 
   
 
@@ -111,7 +111,7 @@ WHERE  SC.CID='003'
 
 SELECT StuID FROM F0215
 
-WHERE CID IN ('001','003')
+WHERE CID IN (&#39;001&#39;,&#39;003&#39;)
 
 GROUP BY StuID
 
@@ -125,11 +125,11 @@ SELECT STUID FROM
 
 (
 
-SELECT STUID FROM F0215 WHERE CID = '001'
+SELECT STUID FROM F0215 WHERE CID = &#39;001&#39;
 
 UNION ALL
 
-SELECT STUID FROM F0215 WHERE CID = '003'
+SELECT STUID FROM F0215 WHERE CID = &#39;003&#39;
 
 ) A
 
@@ -138,6 +138,6 @@ GROUP BY STUID HAVING COUNT(STUID) = 2
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f0215-a-variety-of-methods-and-ideas-explained/  
 

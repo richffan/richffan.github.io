@@ -30,6 +30,6 @@ C 社何许人也，曾任职 PWC、券商，拥有 CPA、保荐代表人资质
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/008-three-years-of-the-eight-major-audits-c-society-cured-my-mental-internal-friction-cpa-study-society/  
 

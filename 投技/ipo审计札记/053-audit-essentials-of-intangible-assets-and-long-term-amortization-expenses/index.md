@@ -83,7 +83,7 @@
 
 因为会计分录都是有借必有贷，借贷必相等的，所以这个勾稽关系一般都是能对上的，如果对不上，那就看累计摊销的明细账，一笔笔凭证点开看，对方科目是什么，摊销去了哪里，是否合理。
 
-§ 核对产权+盘
+§ 核对产权&#43;盘
 
 ## 第六步
 产权证明核对。主要是土地、专利、商标等等，查看原件，了解是否抵押，如有抵押，编制抵押明细表。
@@ -99,6 +99,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/053-audit-essentials-of-intangible-assets-and-long-term-amortization-expenses/  
 

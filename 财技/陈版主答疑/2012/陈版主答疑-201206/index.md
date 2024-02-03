@@ -44,7 +44,7 @@
 
 回复 alisonli123 的帖子
 
-参照IAS 21.32：Exchange differences arising on a monetary item that forms part of a reporting entity's net investment in a foreign
+参照IAS 21.32：Exchange differences arising on a monetary item that forms part of a reporting entity&#39;s net investment in a foreign
 
 operation (see paragraph 15) shall be recognised in profit or loss in the separate financial statements of the reporting entity or the
 
@@ -554,7 +554,7 @@ costs of an equity transaction that is abandoned are recognised as an expense。
 
 **提问人：** alisonli123 时间： 2012-06-03 12:49:07
 
-请教： 1> 失效的股票期权是否应从资本公积转入未分配利润? 2> 更改本位币的相关影响是否计入资本公积？
+请教： 1&gt; 失效的股票期权是否应从资本公积转入未分配利润? 2&gt; 更改本位币的相关影响是否计入资本公积？
 
 **回答人：** chenyiwei
 
@@ -716,7 +716,7 @@ A公司为集团母公司， 10 年 5 月购入B公司88%B公司股权，股权�
 
 应的金额，则应当记入其他与筹资活动相关的现金支出。不知道现在银行采取的是哪种做法？请有经验的大侠指正^_^
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 赞同此观点。
@@ -1128,7 +1128,7 @@ C公司其他经营如何？如何证明该操作的必要性？
 司工薪支出企业所得税税前扣除金额。金额差异172,500元又由下列二项造成， 1 、数量差异：会计 2012 年至 2014 年按估计行权人数
 155 人15,500股计算，企业所得税处理上按行权日实行100,000股计算，数量差异=(15,500-10,000)*15=82,500元； 2 、价格差异：
 会计按授与日每股期权公允价格 15 元计算，企业所得税处理上以行权日的公允价值为 10 元与职工实际支付价格 4 元的差额计每股 6 元
-计算，价格差异=（15-6） 10,000=90,000 元，合计差异 82,500+90,000=172,500 元。公司会计 2012 年至 2014 年在利润表的管理费
+计算，价格差异=（15-6） 10,000=90,000 元，合计差异 82,500&#43;90,000=172,500 元。公司会计 2012 年至 2014 年在利润表的管理费
 用计列股份支付费用 232,500 元与 2015 年工薪支出企业所得税税前扣除金额 60,000 元，按所得税会计分类 60,000 元为暂时性差
 异， 172,500 元为永久性差异。 四、等待期、行权有效期各年所得税会计 另假定公司所得税税率为 25 ％，公司 2012 年至 2016 年各
 年应交所得税、所得税费用如下表：时间应交税金所得税费用递延所得税资产其他资本公积当期累积当期累积
@@ -1594,7 +1594,7 @@ INDIVIDUAL FINANCIAL STATEMENTS.pdf
 2012-6-30 22:16 上传
 点击文件名下载附件
 ，其中提到：
-In many jurisdictions it is possible to effect a 'legal merger' of a parent and its subsidiary whereby the two separate entities become a single
+In many jurisdictions it is possible to effect a &#39;legal merger&#39; of a parent and its subsidiary whereby the two separate entities become a single
 entity without any issue of shares or other consideration.
 a) The parent is the surviving entity
 In all instances the investment in the shares of the subsidiary is replaced by the net assets of the subsidiary, using one of the methods
@@ -1694,11 +1694,11 @@ B公司为了发展需要，因为A公司对B公的产品销售及资金方面�
 
 产品卖给A，B的个别报表上营业收入 400 万，营业成本 300 万；A购入后继续加工发生成本 200 万，对外出售 800 万元，则A的单户报
 
-表上列示营业收入 800 万，营业成本 600 万。从整个A和B的整体来看，成本是（300+200=500），收入是 800 万。在合并工作底稿
+表上列示营业收入 800 万，营业成本 600 万。从整个A和B的整体来看，成本是（300&#43;200=500），收入是 800 万。在合并工作底稿
 
-中： 借：营业收入 400 （B公司的） 贷：营业成本 400 （A公司的） 整个集团是正确的（收入400+800-400=800），成本是
+中： 借：营业收入 400 （B公司的） 贷：营业成本 400 （A公司的） 整个集团是正确的（收入400&#43;800-400=800），成本是
 
-（300+600-400=500），收入成本在整个集团层面配比，我想问的是每一笔调整抵消分录我们都能找到具体我们是对A公司还是B公
+（300&#43;600-400=500），收入成本在整个集团层面配比，我想问的是每一笔调整抵消分录我们都能找到具体我们是对A公司还是B公
 
 司进行的调整，这样的话，以上面的例子考虑，B公司调整了收入，A公司调整了成本，B公司就有 300 万的成本没有对应收入，A公
 
@@ -1738,11 +1738,11 @@ B公司为了发展需要，因为A公司对B公的产品销售及资金方面�
 
 赞同，不应过于机械地将“非暂时性”理解为“前后各一年”。
 
-# 1437 、如何从财务报告中获得公司R&D
+# 1437 、如何从财务报告中获得公司R&amp;D
 
 **提问人：** mwsa 时间： 2012-06-09 20:53:11
 
-在新会计准则下，如何从财务报告中获得R&D数额？
+在新会计准则下，如何从财务报告中获得R&amp;D数额？
 
 **回答人：** chenyiwei
 
@@ -1757,13 +1757,13 @@ B公司为了发展需要，因为A公司对B公的产品销售及资金方面�
 回复 chenyiwei 的帖子
 
 
-yiwei 你好！ 因为论文写作研究R&D支出影响因素， 可否这样说，在核算规范前提下，我们研发支出一部分被记到管理费用（有的设
+yiwei 你好！ 因为论文写作研究R&amp;D支出影响因素， 可否这样说，在核算规范前提下，我们研发支出一部分被记到管理费用（有的设
 
-置二级科目研发支出）、另一部分记到无形资产了，现在如果我们通过报告倒推R&D的话，可以分别找出上述两项然后加总。前一项
+置二级科目研发支出）、另一部分记到无形资产了，现在如果我们通过报告倒推R&amp;D的话，可以分别找出上述两项然后加总。前一项
 
 可以通过明细账找的到，那计入无形资产的那部分可否通过明细账找的到？ 另外，有人想通过现金流量表附注中“支付的其他经营
 
-活动相关的现金流”中列示的明细“研发支出”（等类似字眼）作为R&D依据。但是楼主发现很多公司并不披露此明细，而且在披露的
+活动相关的现金流”中列示的明细“研发支出”（等类似字眼）作为R&amp;D依据。但是楼主发现很多公司并不披露此明细，而且在披露的
 
 公司中，我发现这个现金支出跟管理费用中的研发支出二级科目数额相差甚远，不知是怎么回事...
 
@@ -2087,7 +2087,7 @@ zhongzhao433 发表于 2017-1-11 16:05
 
 1 、“增资后，A公司控制B公司72.28%的股权”应是74.28% 2、“B公司 2010 年 12 月 31 日的注册资本为 700 万元”应是 2011 年 3 、模拟
 
-2010 年 12 月 31 日合并时少数股东权益为B净资产 10% 4 、 2011 年少数股东损益要分段算， 1-6 月为 B 净利润90%+7-12月净利润*（1-
+2010 年 12 月 31 日合并时少数股东权益为B净资产 10% 4 、 2011 年少数股东损益要分段算， 1-6 月为 B 净利润90%&#43;7-12月净利润*（1-
 
 74.28%），与最终少数股东权益的差额通过其他调整。
 
@@ -2365,7 +2365,7 @@ zhongzhao433 发表于 2017-1-11 16:05
 
 看了下，一些资料里面经常引用“ASC”。这个准则一般在什么网站找到啊，最好有汇总的。想下载看看。
 
-http://www.fasb.org/jsp/FASB/Page/PreCodSectionPage&cid=1218220137031这个也找不到吧-----
+http://www.fasb.org/jsp/FASB/Page/PreCodSectionPage&amp;cid=1218220137031这个也找不到吧-----
 
 该贴已经同步到 liubin988513的微博
 
@@ -2622,7 +2622,7 @@ from its cost.
 
 辈，B在 2012 年编制财务报表的时候，利润表、现金流量表是不是应该包含D公司 2012 年1-6月份的利润和现金流量？ 若包含，B公
 
-司合并资产负债表中，未分配利润项目，期初数不变，期末数=期初+本期母公司未分配利润， 利润表项目中，B公司合并利润表中
+司合并资产负债表中，未分配利润项目，期初数不变，期末数=期初&#43;本期母公司未分配利润， 利润表项目中，B公司合并利润表中
 
 包含D公司1-6月份利润，其未分配利润与资产负债表中未分配利润不一致，该怎么解决？谢谢前辈解答。
 
@@ -2665,9 +2665,9 @@ from its cost.
 
 存在一笔未实现内部交易，利润为 100 万；母公司持有子公司80%股权 假设为顺流交易，则合并净利润=（1000-
 
-100 ）+500=1400，其中归属于母公司所有者的净利润=（1000-100）+500 80%=1300 少数股东损益 =500 0.2=100； 假设为逆流
+100 ）&#43;500=1400，其中归属于母公司所有者的净利润=（1000-100）&#43;500 80%=1300 少数股东损益 =500 0.2=100； 假设为逆流
 
-交易，则合并净利润=1000+（500-100）=1400，其中归属于母公司所有者的净利润=1000+（500-100）*80%=1320 少数股东损
+交易，则合并净利润=1000&#43;（500-100）=1400，其中归属于母公司所有者的净利润=1000&#43;（500-100）*80%=1320 少数股东损
 
 益=（500-100）*20%=80； 不知我的理解是否正确 但企业会计准则讲解 2010 中例34-1P572页中计算子公司调整后利润就考虑了顺
 
@@ -2683,7 +2683,7 @@ from its cost.
 
 1 、你的理解是合理的，也是IFRS下的通常做法。讲解中的做法可能存在问题，这个问题我以前与财政部会计司的有关人士沟通过。
 
-2 、此问题以前有过多次讨论，你参考一下这个帖子：http://bbs.esnai.com/forum.php?m ... 640&pid=5163226。
+2 、此问题以前有过多次讨论，你参考一下这个帖子：http://bbs.esnai.com/forum.php?m ... 640&amp;pid=5163226。
 
 **回答人：** chenyiwei
 
@@ -2767,7 +2767,7 @@ from its cost.
 报告后重新询价。 自愿性披露：除强制性披露的情况外，如果发行人认为提供盈利预测报告将有助于投资者对发行人及投资于发行
 人的股票作出正确判断，且发行人确信有能力对最近的未来期间的盈利情况作出比较切合实际的预测，发行人可以披露盈利预测报
 
-告。 另外，在实务中，如果同时在境内和境外实施首次公开发行（即通称的“A+H”），且相关境外信息披露规范要求在境外公告的招
+告。 另外，在实务中，如果同时在境内和境外实施首次公开发行（即通称的“A&#43;H”），且相关境外信息披露规范要求在境外公告的招
 股说明书中提供盈利预测报告的，则出于保证境内外信息披露公平性的考虑，发行人一般也应当在境内披露盈利预测报告。
 
 **提问人：** szf1007 时间： 2013-10-11 16:50:03
@@ -3294,7 +3294,7 @@ A企业要上市，A企业与B企业属同一控制下的两家企业，A企业�
 性投资类似。这个怎么理解好，为什么与权益性投资类似？？？是站在债务人角度，预期未来没有支付金融资产义务，所以为权益工
 具，债权人就变成投资了？？？？
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 
@@ -3302,11 +3302,11 @@ A企业要上市，A企业与B企业属同一控制下的两家企业，A企业�
 期应收项目。比如，企业对被投资单位的长期债权，该债权没有明确的清收计划、且在可预见的未来期间不准备收回的，实质上构成
 对被投资单位的净投资。
 
-IAS 21.8: Net investment in a foreign operation is the amount of the reporting entity's interest in the net assets of that operation.
+IAS 21.8: Net investment in a foreign operation is the amount of the reporting entity&#39;s interest in the net assets of that operation.
 
 IAS 21.15：An entity may have a monetary item that is receivable from or payable to a foreign operation. An item for which
 
-settlement is neither planned nor likely to occur in the foreseeable future is, in substance, a part of the entity's net investment in that
+settlement is neither planned nor likely to occur in the foreseeable future is, in substance, a part of the entity&#39;s net investment in that
 
 foreign operation, and is accounted for in accordance with paragraphs 32 and 33. Such monetary items may include long-term
 
@@ -3314,7 +3314,7 @@ receivables or loans. They do not include trade receivables or trade payables.
 
 BC25A The principle in paragraph 32 is that exchange differences arising on a monetary item that is, in substance, part of the
 
-reporting entity's net investment in a foreign operation are initially recognised in a separate component of equity10 in the
+reporting entity&#39;s net investment in a foreign operation are initially recognised in a separate component of equity10 in the
 
 consolidated financial statements of the reporting entity. Among the revisions to IAS 21 made in 2003 was the provision of guidance
 
@@ -3334,7 +3334,7 @@ initially in equity11 in the consolidated financial statements of Parent P, if t
 
 pesos. BC25C After the revised IAS 21 was issued in 2003, constituents raised the following concerns: (a) It is common practice
 
-for a monetary item that forms part of an entity's investment in a foreign operation to be denominated in a currency that is not the
+for a monetary item that forms part of an entity&#39;s investment in a foreign operation to be denominated in a currency that is not the
 
 functional currency of either the reporting entity or the foreign operation. An example is a monetary item denominated in a currency
 
@@ -3344,9 +3344,9 @@ denominated in a currency that is not the functional currency of the reporting e
 
 group to a greater foreign currency exchange difference than arises when the investment is denominated in the functional currency
 
-of the reporting entity or the foreign operation. It simply results in exchange differences arising in the foreign operation's individual
+of the reporting entity or the foreign operation. It simply results in exchange differences arising in the foreign operation&#39;s individual
 
-financial statements and the reporting entity's separate financial statements. (c) It is not clear whether the term 'reporting entity'
+financial statements and the reporting entity&#39;s separate financial statements. (c) It is not clear whether the term &#39;reporting entity&#39;
 
 in paragraph 32 should be interpreted as the single entity or the group comprising a parent and all its subsidiaries. As a result,
 
@@ -3368,7 +3368,7 @@ consolidated financial statements should not be dependent on the currency in whi
 
 which entity within the group conducts the transaction with the foreign operation. BC25E Accordingly, in 2005 the Board decided
 
-to amend IAS 21. The amendment requires exchange differences arising on a monetary item that forms part of a reporting entity's
+to amend IAS 21. The amendment requires exchange differences arising on a monetary item that forms part of a reporting entity&#39;s
 
 net investment in a foreign operation to be recognised initially in a separate component of equity13 in the consolidated financial
 
@@ -3376,7 +3376,7 @@ statements. This requirement applies irrespective of the currency of the monetar
 
 from a transaction with the reporting entity or any of its subsidiaries. BC25F The Board also proposed amending IAS 21 to clarify
 
-that an investment in a foreign operation made by an associate of the reporting entity is not part of the reporting entity's net
+that an investment in a foreign operation made by an associate of the reporting entity is not part of the reporting entity&#39;s net
 
 investment in that foreign operation. Respondents to the exposure draft disagreed with this proposal. Many respondents said that
 
@@ -3844,7 +3844,7 @@ B，B向A的股东发行股份以取得A的 100 ％股权。前段时间证券�
 **回答人：** chenyiwei
 可能没有直接可以拿来用的模板，但你可以看下我之前对类似问题的回复，参考其中的提示自行草拟相关的报告和附表的格式：
 
-http://bbs.esnai.com/forum.php?m ... 410&pid=6330339
+http://bbs.esnai.com/forum.php?m ... 410&amp;pid=6330339
 
 # 1502 、再发一个股权收购的贴子，真实案例，请大家多多指教
 
@@ -4316,7 +4316,7 @@ B公司取得这些资产的入账价值确定原则还是按照一般的接受�
 
 2 、 3 、在逆销交易下，实际上的合并报表层面抵销分录应该是借记投资收益，贷记存货（参考我之前对权益法性质问题的讨论：
 
-http://bbs.esnai.com/forum.php?m ... 640&pid=5163226），只是个别报表层面的权益法核算使之人为分割成了两笔分录，即个别报
+http://bbs.esnai.com/forum.php?m ... 640&amp;pid=5163226），只是个别报表层面的权益法核算使之人为分割成了两笔分录，即个别报
 表中借记投资收益，贷记长期股权投资；合并报表中借记长期股权投资，贷记存货。所以没有必要分析长期股权投资的所得税影响。
 
 合并报表层面的长期股权投资本来就没有受到逆销交易抵销的影响。 4 、不用考虑。原因如你所述。
@@ -4368,7 +4368,7 @@ http://bbs.esnai.com/forum.php?m ... 640&pid=5163226），只是个别报表层�
 
 投资收益＝（ 150 ＋ 10 ）×40%＝ 64 （万元） 借：长期股权投资——A公司（损益调整）　 64 　　贷：投资收益　　　　　　　　　
 
-　　　　　64 此处我有疑问：为什么不扣除 100 未实现内部交易损益，即 （150-100+10）*40%=24万元 借：长期股权投资——A
+　　　　　64 此处我有疑问：为什么不扣除 100 未实现内部交易损益，即 （150-100&#43;10）*40%=24万元 借：长期股权投资——A
 
 公司（损益调整）　 24 　　贷：投资收益　　　　　　　　　　　　　　 24
 
@@ -4555,7 +4555,7 @@ http://bbs.esnai.com/forum.php?m ... 640&pid=5163226），只是个别报表层�
 分的所得税影响应直接计入所有者权益。”《企业会计准则讲解（ 2010 ）》在总局 18 号公告之前出版，当时对于股权激励的企业所得税处理
 还不明确。目前，根据总局 18 号公告的规定，税法上允许额企业扣除与股份支付相关的成本费用。因此，在所得税会计上，企业应按规定进
 行递延所得税的处理。但是，《企业会计准则讲解（ 2010 ）》规定比较原则，其中企业如何根据会计期末取得的信息估计可税前扣除的金
-额计算确定其计税基础及由此产生的暂时性差异是整个问题的核心。期权的价值=时间价值（time value）+内在价值（intrinsic value）企业
+额计算确定其计税基础及由此产生的暂时性差异是整个问题的核心。期权的价值=时间价值（time value）&#43;内在价值（intrinsic value）企业
 根据《企业会计准则第 11 号—股份支付》规定，在等待期内每个资产负债表日确认为成本费用的金额是根据期权的价值来计算的（对于权益
 结算的股份支付，是根据授予日权益工具的公允价值计算，并不确认后续公允价值的变动。对于现金结算的股份支付，应当按照每个资产负
 债表日权益工具的公允价值计量），其中既包括时间价值也包括内在价值。而根据总局 18 号公告的规定，最终企业可以在企业所得税前扣除
@@ -4610,7 +4610,7 @@ B
 150000 贷：资本公积-其他资本公积 150000 对于递延所得税资产的处理方法，基本同上：股票的公允价值：甲个人部分 20000×12
 240000 乙个人部分 50000×12×1/3 200000合计 440000 股票期权的行权价格：甲个人部分 20000×4.5 90000乙个人部分 50000×6×1/3
 1000000 合计 190000 内在价值 250000 企业所得税税率 25%金额 62500 减去已经确认的递延所得税资产 （ 20000 ）应确认的资产所得税资
-产 42500 同样，截止2X14年度，中天公司因股权激励累计确认的成本费用为 200000 （50000+150000）。而截止2X14年度，中天公司预计
+产 42500 同样，截止2X14年度，中天公司因股权激励累计确认的成本费用为 200000 （50000&#43;150000）。而截止2X14年度，中天公司预计
 未来期间可税前扣除的金额为 250000 元，超过了该公司股权激励累计确认的成本费用金额。超过的 50000 中， 30000 已在2X13年度乘以
 25%的税率直接进入了所有者权益，剩余的 20000 部分应在2X14年度乘以25%的税率直接进入所有者权益。具体的所得税会计处理如下：
 借：递延所得税资产 42500 贷：资本公积-其他资本公积 （20000×25%） 5000 所得税费用 （42500-5000） 37500
@@ -4668,7 +4668,7 @@ BC315 However, the amount of the tax deduction might differ from the amount of t
 statements. For example, the measurement basis applied for accounting purposes might not be the same as that used for tax
 purposes, eg intrinsic value might be used for tax purposes and fair value for accounting purposes. Similarly, the measurement date
 might differ. For example, US entities receive a tax deduction based on intrinsic value at the date of exercise in respect of some share
-options, whereas for accounting purposes an entity applying SFAS 123 would recognise an expense based on the option's fair value,
+options, whereas for accounting purposes an entity applying SFAS 123 would recognise an expense based on the option&#39;s fair value,
 measured at the date of grant. There could also be other differences in the measurement method applied for accounting and tax
 purposes, eg differences in the treatment of forfeitures or different valuation methodologies applied. BC316 SFAS 123 requires
 that, if the amount of the tax deduction exceeds the total expense recognised in the financial statements, the tax benefit for the
@@ -4721,7 +4721,7 @@ that the tax effects of share-based payment transactions should be recognised in
 
 in the determination of tax expense. It agreed that this should be explained in the form of a worked example in a consequential
 
-amendment to IAS 12. BC323 During the Board's redeliberation of the proposals in ED 2, the Board reconsidered the points
+amendment to IAS 12. BC323 During the Board&#39;s redeliberation of the proposals in ED 2, the Board reconsidered the points
 
 above, and concluded that the tax effects of an equity-settled share-based payment transaction should be allocated between the
 
@@ -4945,7 +4945,7 @@ chenyiwei在一个问答时认为：收到的银行承兑汇票在没到期前�
 法规定，已出租C建筑物以历史成本按税法规定扣除折旧后作为其计税基础，折旧年限为 20 年，净残值为零，自投入使用的次月起采
 用年限平均法计提折旧。
 
-本题确认 840 万元递延所得税负债，为什么是500+340？ 340 不是可低扣资产吗？
+本题确认 840 万元递延所得税负债，为什么是500&#43;340？ 340 不是可低扣资产吗？
 
 **回答人：** chenyiwei
 
@@ -4968,7 +4968,7 @@ chenyiwei在一个问答时认为：收到的银行承兑汇票在没到期前�
 
 回复 chenyiwei 的帖子
 
-"按照《企业会计准则第 18 号——所得税》第 21 条规定，直接计入权益的项目相关的所得税影响也是直接计入权益。"
+&#34;按照《企业会计准则第 18 号——所得税》第 21 条规定，直接计入权益的项目相关的所得税影响也是直接计入权益。&#34;
 
 这条规定应该作处理如下： DR：资产增加 CR：资本公积 DR：资本公积 CR：递延所得税负债
 上述分录是否通常仅限于后续计量，很多初始计量均没有这个影响。
@@ -5284,7 +5284,7 @@ A作为购买方，其合并报表层面不会有资本公积影响。该差额�
 
 **提问人：** xxcg11 时间： 2012-06-25 22:35:18
 
-背景： A自然人 为B公司的大股东（B公司下面还有B1、B2、B3等子公司）， 现在A 拟用所持B公司股权+部分现金 成立集团公司
+背景： A自然人 为B公司的大股东（B公司下面还有B1、B2、B3等子公司）， 现在A 拟用所持B公司股权&#43;部分现金 成立集团公司
 
 
 C， 按规定，需对B公司进行评估 问题： 1 、评估范围是B公司母公司，还是B公司的全部合并范围（即是否包括B1、B2、B3等子公
@@ -5346,7 +5346,7 @@ BT模式的本质是“建造合同＋融资”两者的结合（其实BT并无�
 
 回复 chenyiwei 的帖子
 
-BT模式的本质是“建造合同+融资”两者的结合。
+BT模式的本质是“建造合同&#43;融资”两者的结合。
 那为建造发生借款，借款利息符合资本化条件进行资本化，计入建造成本。建造完成后，再对应收的项目款进行折现，确认收入。这
 样会不会重复考虑了利息？
 
@@ -5436,7 +5436,7 @@ A: 借：固定资产清理： 219 万元 累计折旧： 281 万元 贷：固�
 
 借：固定资产清理（实物出资要缴的增值税）37.23万元 （=219X0.17） 贷：应付税费（增值税）37.23万元
 
-借：长期股权投资 256.23万元（= 219+37.23） 贷：固定资产清理 256.23万元
+借：长期股权投资 256.23万元（= 219&#43;37.23） 贷：固定资产清理 256.23万元
 
 B公司：
 
@@ -5896,7 +5896,7 @@ IPO，申报会计师认为占了董事会的50%以上的表决权，就表明�
 **回答人：** chenyiwei
 个人理解应可以。请有相关经验的网友指正。
 
-# 1557 、IFRS 3 BC (2012)'仅通过合同形成的合并'与IFRS 10 中的‘委托人和代理人’冲突！
+# 1557 、IFRS 3 BC (2012)&#39;仅通过合同形成的合并&#39;与IFRS 10 中的‘委托人和代理人’冲突！
 
 
 **提问人：** san2014 时间： 2012-06-28 13:41:08
@@ -6161,7 +6161,7 @@ A公司系由甲乙两公司共同出资成立的公司，其中甲公司持有A
 产的公允价值变动风险；同时目前的安排具有暂时过渡性质，最终处理方式和作价未定。在此情况下，乙方很可能不能控制所取得的
 甲方经营业务相关资产，更多地类似于一项租赁（当然对租赁还需要进一步区分为融资租赁还是经营租赁，需要考虑预计托管期间长
 短等因素）。 你也可以参考一下前几天关于托管、承包经营能否纳入合并报表的讨论：http://bbs.esnai.com/forum.php?m ...
-526&pid=6385093。
+526&amp;pid=6385093。
 **提问人：** Yanlinqin 时间： 2012-07-03 23:43:54
 回复 chenyiwei 的帖子
 谢谢版主的解答，但是我的判断与您不尽相同： 一、承接债权债务的会计确认 协议第二.1款“乙方承接甲方的债权债务”，协议第四.4
@@ -6269,6 +6269,6 @@ CAS 37第十三条及其指南、讲解的规定进行抵销处理。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201206/  
 

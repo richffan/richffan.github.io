@@ -21,16 +21,16 @@
 公共函数：
 
 ```vb
-Private Function filelist(folderspec, Optional pstr = "*.txt")
+Private Function filelist(folderspec, Optional pstr = &#34;*.txt&#34;)
     On Error GoTo errline
     Dim fs, f, f1, fc, i, farr
-    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set fs = CreateObject(&#34;Scripting.FileSystemObject&#34;)
     Set f = fs.GetFolder(folderspec)
     Set fc = f.Files
     ReDim farr(1 To fc.Count)
     For Each f1 In fc
-        If f1.Name Like pstr And Not f1.Name Like "*~$*" Then
-            i = i + 1
+        If f1.Name Like pstr And Not f1.Name Like &#34;*~$*&#34; Then
+            i = i &#43; 1
             farr(i) = f1.Name
         End If
     Next
@@ -47,8 +47,8 @@ Sub 方法一()
     Dim i, j, k
     Dim filePath As String, fileAr
 
-    filePath = ThisWorkbook.Path & "\表单\"
-    fileAr = filelist(filePath, "*.xlsx")
+    filePath = ThisWorkbook.Path &amp; &#34;\表单\&#34;
+    fileAr = filelist(filePath, &#34;*.xlsx&#34;)
 
     Dim t As Double
     Dim wb As Workbook
@@ -58,18 +58,18 @@ Sub 方法一()
 
     k = 1
     For i = 1 To UBound(fileAr)
-        Set wb = Workbooks.Open(filePath & fileAr(i))
+        Set wb = Workbooks.Open(filePath &amp; fileAr(i))
         With wb.Worksheets(1)
-            k = k + 1
+            k = k &#43; 1
             For j = 1 To 5
-                ThisWorkbook.Worksheets("Sheet1").Cells(k, j) = .Range("c" & j + 4)
+                ThisWorkbook.Worksheets(&#34;Sheet1&#34;).Cells(k, j) = .Range(&#34;c&#34; &amp; j &#43; 4)
             Next
         End With
         wb.Close False
     Next i
     Application.ScreenUpdating = True
 
-    MsgBox Format(Timer - t, "0.000s")
+    MsgBox Format(Timer - t, &#34;0.000s&#34;)
 End Sub
 ```
 
@@ -80,8 +80,8 @@ Sub 方法二数组()
     Dim i, j, k
     Dim filePath As String, fileAr
     Dim br(1 To 5000, 1 To 5)
-    filePath = ThisWorkbook.Path & "\表单\"
-    fileAr = filelist(filePath, "*.xlsx")
+    filePath = ThisWorkbook.Path &amp; &#34;\表单\&#34;
+    fileAr = filelist(filePath, &#34;*.xlsx&#34;)
 
     Dim t As Double
     Dim wb As Workbook
@@ -92,11 +92,11 @@ Sub 方法二数组()
     k = 0
     Dim tmp
     For i = 1 To UBound(fileAr)
-        Set wb = Workbooks.Open(filePath & fileAr(i))
+        Set wb = Workbooks.Open(filePath &amp; fileAr(i))
 
         With wb.Worksheets(1)
-            tmp = .Range("c5:c9")
-            k = k + 1
+            tmp = .Range(&#34;c5:c9&#34;)
+            k = k &#43; 1
             For j = 1 To 5
                 br(i, j) = tmp(j, 1)
             Next
@@ -106,7 +106,7 @@ Sub 方法二数组()
     ThisWorkbook.Worksheets(1).[a2].Resize(k, UBound(br, 2)) = br
     Application.ScreenUpdating = True
 
-    MsgBox Format(Timer - t, "0.000s")
+    MsgBox Format(Timer - t, &#34;0.000s&#34;)
 End Sub
 ```
 
@@ -117,8 +117,8 @@ Sub 方法三()
     Dim i, j, k
     Dim filePath As String, fileAr
     Dim br(1 To 5000, 1 To 5)
-    filePath = ThisWorkbook.Path & "\表单\"
-    fileAr = filelist(filePath, "*.xlsx")
+    filePath = ThisWorkbook.Path &amp; &#34;\表单\&#34;
+    fileAr = filelist(filePath, &#34;*.xlsx&#34;)
 
     Dim t As Double
     Dim wb As Workbook
@@ -129,22 +129,22 @@ Sub 方法三()
     k = 0
     Dim tmp
     For i = 1 To UBound(fileAr)
-        k = k + 1
+        k = k &#43; 1
         For j = 1 To 5
-            br(i, j) = Application.ExecuteExcel4Macro("'" & filePath & "[" & fileAr(i) & "]信息卡'!" & Range("c" & j + 4).Address(, , xlR1C1))
+            br(i, j) = Application.ExecuteExcel4Macro(&#34;&#39;&#34; &amp; filePath &amp; &#34;[&#34; &amp; fileAr(i) &amp; &#34;]信息卡&#39;!&#34; &amp; Range(&#34;c&#34; &amp; j &#43; 4).Address(, , xlR1C1))
         Next
     Next i
     ThisWorkbook.Worksheets(1).[a2].Resize(k, UBound(br, 2)) = br
     Application.ScreenUpdating = True
 
-    MsgBox Format(Timer - t, "0.000s")
+    MsgBox Format(Timer - t, &#34;0.000s&#34;)
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485052&idx=1&sn=1459ec753f39116a5682b5b3f558531e&chksm=e8bccf2bdfcb463db93c57b9d87e0bd281a9025543a839ce7762334c2d83bd48cf44a7ec54b1&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485052&amp;idx=1&amp;sn=1459ec753f39116a5682b5b3f558531e&amp;chksm=e8bccf2bdfcb463db93c57b9d87e0bd281a9025543a839ce7762334c2d83bd48cf44a7ec54b1&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/  
 

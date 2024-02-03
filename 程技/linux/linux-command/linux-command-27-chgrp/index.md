@@ -1,7 +1,7 @@
 # 每天一个linux命令（27）: chgrp
 
 　　在lunix系统里，文件或目录的权限的掌控以拥有者及所诉群组来管理。可以使用chgrp指令取变更文件与目录所属群组，这种方式采用群组名称或群组识别码都可以。Chgrp命令就是change group的缩写！要被改变的组名必须要在/etc/group文件内存在才行。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ chgrp [选项] [组] [文件]
@@ -24,7 +24,7 @@ $ chgrp [选项] [组] [文件]
 
 | 参数 | 描述 |
 | :------------- | :------------- |
-| --reference=<文件或者目录> | 设置为和指定的文件或目录的权限一样 |
+| --reference=&lt;文件或者目录&gt; | 设置为和指定的文件或目录的权限一样 |
 | --help | 显示帮助信息 |
 | --version | 显示版本信息 |
 
@@ -54,6 +54,6 @@ $ chgrp -R 100 test6
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-27-chgrp/  
 

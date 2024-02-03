@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第八章 错误、调试和测试 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第八章 错误、调试和测试 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug" /><meta name="keywords" content='python' /><meta itemprop="name" content="第八章 错误、调试和测试">
 <meta itemprop="description" content="在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="8133"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="8172"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第八章 错误、调试和测试" />
 <meta property="og:description" content="在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第八章 错误、调试和测试"/>
 <meta name="twitter:description" content="在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95\/"
-    },"genre": "posts","keywords": "python","wordcount":  8133 ,
+    },"genre": "posts","keywords": "python","wordcount":  8172 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python入门学习笔记</a></li><li class="breadcrumb-item active" aria-current="page">第八章 错误、调试和测试</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第八章 错误、调试和测试</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="8133 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 17 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" class="leancloud_visitors comment-visitors" data-flag-title="第八章 错误、调试和测试">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="8172 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 8200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 17 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" class="leancloud_visitors comment-visitors" data-flag-title="第八章 错误、调试和测试">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第八章 错误、调试和测试">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -225,8 +220,8 @@
 <p>Python内置了一套异常处理机制，来帮助我们进行错误处理。</p>
 <p>此外，我们也需要跟踪程序的执行，查看变量的值是否正确，这个过程称为调试。Python的pdb可以让我们以单步方式执行代码。</p>
 <p>最后，编写测试也很重要。有了良好的测试，就可以在程序修改后反复运行，确保程序输出符合我们编写的测试。</p>
-<h2 id="81-错误处理">8.1 错误处理</h2>
-<p>在程序运行的过程中，如果发生了错误，可以事先约定返回一个错误代码，这样，就可以知道是否有错，以及出错的原因。在操作系统提供的调用中，返回错误码非常常见。比如打开文件的函数<code>open()</code>，成功时返回文件描述符（就是一个整数），出错时返回<code>-1</code>。</p>
+<h2 id="81-错误处理" class="heading-element">
+  <a href="#81-%e9%94%99%e8%af%af%e5%a4%84%e7%90%86" class="heading-mark"></a>8.1 错误处理</h2><p>在程序运行的过程中，如果发生了错误，可以事先约定返回一个错误代码，这样，就可以知道是否有错，以及出错的原因。在操作系统提供的调用中，返回错误码非常常见。比如打开文件的函数<code>open()</code>，成功时返回文件描述符（就是一个整数），出错时返回<code>-1</code>。</p>
 <p>用错误码来表示是否出错十分不便，因为函数本身应该返回的正常结果和错误码混在一起，造成调用者必须用大量的代码来判断是否出错：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -261,8 +256,8 @@
 </div>
 </div><p>一旦出错，还要一级一级上报，直到某个函数可以处理该错误（比如，给用户输出一个错误信息）。</p>
 <p>所以高级语言通常都内置了一套<code>try...except...finally...</code>的错误处理机制，Python也不例外。</p>
-<h3 id="811-try">8.1.1 try</h3>
-<p>让我们用一个例子来看看<code>try</code>的机制：</p>
+<h3 id="811-try" class="heading-element">
+  <a href="#811-try" class="heading-mark"></a>8.1.1 try</h3><p>让我们用一个例子来看看<code>try</code>的机制：</p>
 <div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -432,8 +427,8 @@
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;finally...&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>也就是说，不需要在每个可能出错的地方去捕获错误，只要在合适的层次去捕获错误就可以了。这样一来，就大大减少了写<code>try...except...finally</code>的麻烦。</p>
-<h3 id="812-调用栈">8.1.2 调用栈</h3>
-<p>如果错误没有被捕获，它就会一直往上抛，最后被Python解释器捕获，打印一个错误信息，然后程序退出。来看看<code>err.py</code>：</p>
+<h3 id="812-调用栈" class="heading-element">
+  <a href="#812-%e8%b0%83%e7%94%a8%e6%a0%88" class="heading-mark"></a>8.1.2 调用栈</h3><p>如果错误没有被捕获，它就会一直往上抛，最后被Python解释器捕获，打印一个错误信息，然后程序退出。来看看<code>err.py</code>：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -549,9 +544,9 @@
 </div>
 </div><p>根据错误类型<code>ZeroDivisionError</code>，我们判断，<code>int(s)</code>本身并没有出错，但是<code>int(s)</code>返回<code>0</code>，在计算<code>10 / 0</code>时出错，至此，找到错误源头。</p>
 <p>!&gt; 出错的时候，一定要分析错误的调用栈信息，才能定位错误的位置。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=large 2x" sizes="auto" data-title="异常栈" data-alt="异常栈" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="813-记录错误">8.1.3 记录错误</h3>
-<p>如果不捕获错误，自然可以让Python解释器来打印出错误堆栈，但程序也被结束了。既然我们能捕获错误，就可以把错误堆栈打印出来，然后分析错误原因，同时，让程序继续执行下去。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png" alt="异常栈" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817150626.png?size=large 2x" sizes="auto" data-title="异常栈" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="813-记录错误" class="heading-element">
+  <a href="#813-%e8%ae%b0%e5%bd%95%e9%94%99%e8%af%af" class="heading-mark"></a>8.1.3 记录错误</h3><p>如果不捕获错误，自然可以让Python解释器来打印出错误堆栈，但程序也被结束了。既然我们能捕获错误，就可以把错误堆栈打印出来，然后分析错误原因，同时，让程序继续执行下去。</p>
 <p>Python内置的<code>logging</code>模块可以非常容易地记录错误信息：</p>
 <div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -623,8 +618,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">END</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>通过配置，<code>logging</code>还可以把错误记录到日志文件里，方便事后排查。</p>
-<h3 id="814-抛出错误">8.1.4 抛出错误</h3>
-<p>因为错误是class，捕获一个错误就是捕获到该class的一个实例。因此，错误并不是凭空产生的，而是有意创建并抛出的。Python的内置函数会抛出很多类型的错误，我们自己编写的函数也可以抛出错误。</p>
+<h3 id="814-抛出错误" class="heading-element">
+  <a href="#814-%e6%8a%9b%e5%87%ba%e9%94%99%e8%af%af" class="heading-mark"></a>8.1.4 抛出错误</h3><p>因为错误是class，捕获一个错误就是捕获到该class的一个实例。因此，错误并不是凭空产生的，而是有意创建并抛出的。Python的内置函数会抛出很多类型的错误，我们自己编写的函数也可以抛出错误。</p>
 <p>如果要抛出错误，首先根据需要，可以定义一个错误的class，选择好继承关系，然后，用<code>raise</code>语句抛出一个错误的实例：</p>
 <div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -734,10 +729,10 @@
 </blockquote>
 <p>Python内置的<code>try...except...finally</code>用来处理错误十分方便。出错时，会分析错误信息并定位错误发生的代码位置才是最关键的。</p>
 <p>程序也可以主动抛出错误，让调用者来处理相应的错误。但是，应该在文档中写清楚可能会抛出哪些错误，以及错误产生的原因。</p>
-<h2 id="82-调试">8.2 调试</h2>
-<p>程序能一次写完并正常运行的概率很小，基本不超过1%。总会有各种各样的bug需要修正。有的bug很简单，看看错误信息就知道，有的bug很复杂，我们需要知道出错时，哪些变量的值是正确的，哪些变量的值是错误的，因此，需要一整套调试程序的手段来修复bug。</p>
-<h3 id="821-print">8.2.1 print()</h3>
-<p>第一种方法简单直接粗暴有效，就是用<code>print()</code>把可能有问题的变量打印出来看看：</p>
+<h2 id="82-调试" class="heading-element">
+  <a href="#82-%e8%b0%83%e8%af%95" class="heading-mark"></a>8.2 调试</h2><p>程序能一次写完并正常运行的概率很小，基本不超过1%。总会有各种各样的bug需要修正。有的bug很简单，看看错误信息就知道，有的bug很复杂，我们需要知道出错时，哪些变量的值是正确的，哪些变量的值是错误的，因此，需要一整套调试程序的手段来修复bug。</p>
+<h3 id="821-print" class="heading-element">
+  <a href="#821-print" class="heading-mark"></a>8.2.1 print()</h3><p>第一种方法简单直接粗暴有效，就是用<code>print()</code>把可能有问题的变量打印出来看看：</p>
 <div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -778,8 +773,8 @@
 </span></span><span class="line"><span class="cl"><span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="n">integer</span> <span class="n">division</span> <span class="ow">or</span> <span class="n">modulo</span> <span class="n">by</span> <span class="n">zero</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>用<code>print()</code>最大的坏处是将来还得删掉它，想想程序里到处都是<code>print()</code>，运行结果也会包含很多垃圾信息。所以，我们又有第二种方法。</p>
-<h3 id="822-断言">8.2.2 断言</h3>
-<p>凡是用<code>print()</code>来辅助查看的地方，都可以用断言（assert）来替代：</p>
+<h3 id="822-断言" class="heading-element">
+  <a href="#822-%e6%96%ad%e8%a8%80" class="heading-mark"></a>8.2.2 断言</h3><p>凡是用<code>print()</code>来辅助查看的地方，都可以用断言（assert）来替代：</p>
 <div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -830,8 +825,8 @@
 </div>
 </div><p>!&gt; 注意：断言的开关“-O”是英文大写字母O，不是数字0。</p>
 <p>关闭后，你可以把所有的<code>assert</code>语句当成<code>pass</code>来看。</p>
-<h3 id="823-logging">8.2.3 logging</h3>
-<p>把<code>print()</code>替换为<code>logging</code>是第3种方式，和<code>assert</code>比，<code>logging</code>不会抛出错误，而且可以输出到文件：</p>
+<h3 id="823-logging" class="heading-element">
+  <a href="#823-logging" class="heading-mark"></a>8.2.3 logging</h3><p>把<code>print()</code>替换为<code>logging</code>是第3种方式，和<code>assert</code>比，<code>logging</code>不会抛出错误，而且可以输出到文件：</p>
 <div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -880,8 +875,8 @@
 </div>
 </div><p>这就是<code>logging</code>的好处，它允许你指定记录信息的级别，有<code>debug</code>，<code>info</code>，<code>warning</code>，<code>error</code>等几个级别，当我们指定<code>level=INFO</code>时，<code>logging.debug</code>就不起作用了。同理，指定<code>level=WARNING</code>后，<code>debug</code>和<code>info</code>就不起作用了。这样一来，你可以放心地输出不同级别的信息，也不用删除，最后统一控制输出哪个级别的信息。</p>
 <p><code>logging</code>的另一个好处是通过简单的配置，一条语句可以同时输出到不同的地方，比如console和文件。</p>
-<h3 id="824-pdb">8.2.4 pdb</h3>
-<p>第4种方式是启动Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态。我们先准备好程序：</p>
+<h3 id="824-pdb" class="heading-element">
+  <a href="#824-pdb" class="heading-mark"></a>8.2.4 pdb</h3><p>第4种方式是启动Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态。我们先准备好程序：</p>
 <div class="highlight" id="id-31"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -964,8 +959,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="n">Pdb</span><span class="p">)</span> <span class="n">q</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种通过pdb在命令行调试的方法理论上是万能的，但实在是太麻烦了，如果有一千行代码，要运行到第999行得敲多少命令啊。还好，我们还有另一种调试方法。</p>
-<h3 id="825-pdbset_trace">8.2.5 pdb.set_trace()</h3>
-<p>这个方法也是用pdb，但是不需要单步执行，我们只需要<code>import pdb</code>，然后，在可能出错的地方放一个<code>pdb.set_trace()</code>，就可以设置一个断点：</p>
+<h3 id="825-pdbset_trace" class="heading-element">
+  <a href="#825-pdbset_trace" class="heading-mark"></a>8.2.5 pdb.set_trace()</h3><p>这个方法也是用pdb，但是不需要单步执行，我们只需要<code>import pdb</code>，然后，在可能出错的地方放一个<code>pdb.set_trace()</code>，就可以设置一个断点：</p>
 <div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1012,8 +1007,8 @@
 </span></span><span class="line"><span class="cl"><span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个方式比直接启动pdb单步调试效率要高很多，但也高不到哪去。</p>
-<h3 id="826-ide">8.2.6 IDE</h3>
-<p>如果要比较爽地设置断点、单步执行，就需要一个支持调试功能的IDE。目前比较好的Python IDE有：</p>
+<h3 id="826-ide" class="heading-element">
+  <a href="#826-ide" class="heading-mark"></a>8.2.6 IDE</h3><p>如果要比较爽地设置断点、单步执行，就需要一个支持调试功能的IDE。目前比较好的Python IDE有：</p>
 <ul>
 <li>Visual Studio Code：https://code.visualstudio.com/，需要安装Python插件。</li>
 <li>PyCharm：http://www.jetbrains.com/pycharm/</li>
@@ -1024,8 +1019,8 @@
 </blockquote>
 <p>写程序最痛苦的事情莫过于调试，程序往往会以你意想不到的流程来运行，你期待执行的语句其实根本没有执行，这时候，就需要调试了。</p>
 <p>虽然用IDE调试起来比较方便，但是最后你会发现，logging才是终极武器。</p>
-<h2 id="83-单元测试">8.3 单元测试</h2>
-<p>如果你听说过“测试驱动开发”（TDD：Test-Driven Development），单元测试就不陌生。</p>
+<h2 id="83-单元测试" class="heading-element">
+  <a href="#83-%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95" class="heading-mark"></a>8.3 单元测试</h2><p>如果你听说过“测试驱动开发”（TDD：Test-Driven Development），单元测试就不陌生。</p>
 <p>单元测试是用来对一个模块、一个函数或者一个类来进行正确性检验的测试工作。</p>
 <p>比如对函数<code>abs()</code>，我们可以编写出以下几个测试用例：</p>
 <ol>
@@ -1186,8 +1181,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">AttributeError</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">value</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">empty</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="831-运行单元测试">8.3.1 运行单元测试</h3>
-<p>一旦编写好单元测试，我们就可以运行单元测试。最简单的运行方式是在<code>mydict_test.py</code>的最后加上两行代码：</p>
+</div><h3 id="831-运行单元测试" class="heading-element">
+  <a href="#831-%e8%bf%90%e8%a1%8c%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95" class="heading-mark"></a>8.3.1 运行单元测试</h3><p>一旦编写好单元测试，我们就可以运行单元测试。最简单的运行方式是在<code>mydict_test.py</code>的最后加上两行代码：</p>
 <div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1224,8 +1219,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">OK</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这是推荐的做法，因为这样可以一次批量运行很多单元测试，并且，有很多工具可以自动来运行这些单元测试。</p>
-<h3 id="832-setup-与-teardown">8.3.2 setUp 与 tearDown</h3>
-<p>可以在单元测试中编写两个特殊的<code>setUp()</code>和<code>tearDown()</code>方法。这两个方法会分别在每调用一个测试方法的前后分别被执行。</p>
+<h3 id="832-setup-与-teardown" class="heading-element">
+  <a href="#832-setup-%e4%b8%8e-teardown" class="heading-mark"></a>8.3.2 setUp 与 tearDown</h3><p>可以在单元测试中编写两个特殊的<code>setUp()</code>和<code>tearDown()</code>方法。这两个方法会分别在每调用一个测试方法的前后分别被执行。</p>
 <p><code>setUp()</code>和<code>tearDown()</code>方法有什么用呢？设想你的测试需要启动一个数据库，这时，就可以在<code>setUp()</code>方法中连接数据库，在<code>tearDown()</code>方法中关闭数据库，这样，不必在每个测试方法中重复相同的代码：</p>
 <div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1256,8 +1251,8 @@
 <li>单元测试代码要非常简单，如果测试代码太复杂，那么测试代码本身就可能有bug。</li>
 <li>单元测试通过了并不意味着程序就没有bug了，但是不通过程序肯定有bug。</li>
 </ul>
-<h2 id="84-文档测试">8.4 文档测试</h2>
-<p>如果你经常阅读Python的官方文档，可以看到很多文档都有示例代码。比如<a href="https://docs.python.org/3/library/re.html"target="_blank" rel="external nofollow noopener noreferrer">re模块</a>就带了很多示例代码：</p>
+<h2 id="84-文档测试" class="heading-element">
+  <a href="#84-%e6%96%87%e6%a1%a3%e6%b5%8b%e8%af%95" class="heading-mark"></a>8.4 文档测试</h2><p>如果你经常阅读Python的官方文档，可以看到很多文档都有示例代码。比如<a href="https://docs.python.org/3/library/re.html"target="_blank" rel="external nofollow noopener noreferrer">re模块</a>就带了很多示例代码：</p>
 <div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1456,8 +1451,8 @@
 <p>小结：</p>
 </blockquote>
 <p>doctest非常有用，不但可以用来测试，还可以直接作为示例代码。通过某些文档生成工具，就可以自动把包含doctest的注释提取出来。用户看文档的时候，同时也看到了doctest。</p>
-<h2 id="85-参考资料">8.5 参考资料</h2>
-<ul>
+<h2 id="85-参考资料" class="heading-element">
+  <a href="#85-%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" class="heading-mark"></a>8.5 参考资料</h2><ul>
 <li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017598814713792"target="_blank" rel="external nofollow noopener noreferrer">廖雪峰 - Python 3.x - 错误、调试和测试</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
@@ -1466,32 +1461,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" data-title="第八章 错误、调试和测试" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/" data-title="第八章 错误、调试和测试" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/" class="post-nav-item" rel="prev" title="第二章 函数"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第二章 函数</a></div>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="post-nav-item" rel="prev" title="第八章 数据规整：聚合、合并和重塑"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第八章 数据规整：聚合、合并和重塑</a>
+      <a href="/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/" class="post-nav-item" rel="next" title="Python 语法">Python 语法<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

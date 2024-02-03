@@ -5,7 +5,7 @@ Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需�
 
 因为镜像包含操作系统完整的 root 文件系统，其体积往往是庞大的，因此在 Docker 设计时，就充分利用 Union FS 的技术，将其设计为分层存储的架构。所以严格来说，镜像并非是像一个 ISO 那样的打包文件，镜像只是一个虚拟的概念，其实际体现并非由一个文件组成，而是由一组文件系统组成，或者说，由多层文件系统联合组成。
 
-<!--more-->
+&lt;!--more--&gt;
 
 ### 安装
 ```bash
@@ -22,7 +22,7 @@ $ curl -sSL https://get.daocloud.io/docker | sh
 ### 镜像
 ```
 ## 获取镜像，registry为空默认从Docker Hub上获取
-docker pull [选项] [Docker Registry地址]<仓库名>:<标签>
+docker pull [选项] [Docker Registry地址]&lt;仓库名&gt;:&lt;标签&gt;
 
 ## 交互式运行，退出删除: -i:交互式 ,-t:终端,--rm 退出删除 ,bash 启动bash窗口
 $ docker run -it --rm ubuntu:14.04 bash
@@ -43,24 +43,24 @@ $ docker images -f label=com.example.version=0.1
 $ docker images -q
 
 ## 只包含镜像ID和仓库名
-$ docker images --format "{{.ID}}: {{.Repository}}"
+$ docker images --format &#34;{{.ID}}: {{.Repository}}&#34;
 
 ## 以表格等距显示 有标题行，和默认一样，不过自己定义列
-$ docker images --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}"
+$ docker images --format &#34;table {{.ID}}\t{{.Repository}}\t{{.Tag}}&#34;
 
 ## 删除镜像ID为image_id的镜像
-$ docker rmi <image_id>
+$ docker rmi &lt;image_id&gt;
 
 ## 删除虚悬镜像
 $ docker rmi $(docker images -q -f dangling=true)
 
 ## 将容器保存为镜像
-$ docker commit [选项] <容器ID或容器名> [<仓库名>[:<标签>]]
+$ docker commit [选项] &lt;容器ID或容器名&gt; [&lt;仓库名&gt;[:&lt;标签&gt;]]
 
 ## 将容器保存为镜像
 $ docker commit \
-    --author "Tao Wang <twang2218@gmail.com>" \
-    --message "修改了默认网页" \
+    --author &#34;Tao Wang &lt;twang2218@gmail.com&gt;&#34; \
+    --message &#34;修改了默认网页&#34; \
     webserver \
     nginx:v2
 
@@ -70,6 +70,6 @@ $ docker history nginx:v2
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E9%95%9C%E5%83%8F/  
 

@@ -2,7 +2,7 @@
 
 sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。
 
-<!--more-->
+&lt;!--more--&gt;
 它可以配置使用几个有用的 SSH 功能，如公钥认证和压缩。 它连接并登录到指定的远程机器，然后切换到交互式命令模式，在该模式下用户可以执行各种命令。
 
 在本文中，我们将向你展示如何使用 sFTP 上传/下载整个目录（包括其子目录和子文件）。
@@ -16,55 +16,55 @@ $ sftp root@server
 ```
 登录到远程主机后，你可以如下运行交互式的 sFTP 命令：
 ```bash
-sftp> ls            #列出服务器文件列表
-sftp> lls           #列出本地文件列表
-sftp> pwd           #当前服务器上路径
-sftp> lpwd          #当前本地路径
-sftp> cd img        #切换服务器路径
-sftp> lcd img       #切换本地路径
-sftp> mkdir img     #在服务器上创建一个目录
-sftp> lmkdir img    #在本地创建一个目录
+sftp&gt; ls            #列出服务器文件列表
+sftp&gt; lls           #列出本地文件列表
+sftp&gt; pwd           #当前服务器上路径
+sftp&gt; lpwd          #当前本地路径
+sftp&gt; cd img        #切换服务器路径
+sftp&gt; lcd img       #切换本地路径
+sftp&gt; mkdir img     #在服务器上创建一个目录
+sftp&gt; lmkdir img    #在本地创建一个目录
 ```
 ### 上传文件
 ```bash
-sftp> put readme.md #上传单个文件
-sftp> mput *.xls    #上传多个文件
+sftp&gt; put readme.md #上传单个文件
+sftp&gt; mput *.xls    #上传多个文件
 ```
 
 ### 下载文件
 ```bash
-sftp> get readme.md #下载单个文件
-sftp> mget *.xls    #下载多个文件
+sftp&gt; get readme.md #下载单个文件
+sftp&gt; mget *.xls    #下载多个文件
 ```
 
 ### 上传文件夹
 使用`put -r` .但是远程服务器要提前创建一个相同名称的目录; `-r` 递归复制子目录和子文件
 ```bash
-sftp> mkdir img
-sftp> put -r img
+sftp&gt; mkdir img
+sftp&gt; put -r img
 ```
 要保留修改时间、访问时间以及被传输的文件的模式，可使用 `-p` 。
 ```bash
-sftp> put -pr img
+sftp&gt; put -pr img
 ```
 
 ### 下载文件夹
 ```bash
-sftp> get -r img
+sftp&gt; get -r img
 ```
 
 ### 退出
 ```bash
-sftp> bye
+sftp&gt; bye
 或
-sftp> exit
+sftp&gt; exit
 或
-ctrl + d
+ctrl &#43; d
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/  
 

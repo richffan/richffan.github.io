@@ -1,6 +1,6 @@
 # 口水鸡
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 
@@ -18,6 +18,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E9%A3%9F%E6%8A%80/%E5%8F%A3%E6%B0%B4%E9%B8%A1/  
 

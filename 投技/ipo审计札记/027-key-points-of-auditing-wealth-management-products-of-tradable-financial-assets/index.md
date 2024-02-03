@@ -80,6 +80,6 @@ C 非保本浮动收益：非保本即未见得能收回本金，显然不能�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/027-key-points-of-auditing-wealth-management-products-of-tradable-financial-assets/  
 

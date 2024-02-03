@@ -38,6 +38,6 @@ A:出售80%股权变成30%股权
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E5%90%88%E5%B9%B6/%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E8%BD%AC%E6%8D%A2%E6%9C%AC%E8%B4%A8/  
 

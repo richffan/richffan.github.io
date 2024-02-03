@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>合并报表抵消分录原理通俗解读系列（一）内部交易抵消 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>合并报表抵消分录原理通俗解读系列（一）内部交易抵消 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权" /><meta name="keywords" content='合并' /><meta itemprop="name" content="合并报表抵消分录原理通俗解读系列（一）内部交易抵消">
 <meta itemprop="description" content="合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权"><meta itemprop="datePublished" content="2023-08-15T11:12:00+00:00" />
 <meta itemprop="dateModified" content="2023-08-15T11:12:00+00:00" />
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E8%B4%A2%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">财技</a></li><li class="breadcrumb-item"><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">会计</a></li><li class="breadcrumb-item active" aria-current="page">合并报表抵消分录原理通俗解读系列（一）内部交易抵消</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>合并报表抵消分录原理通俗解读系列（一）内部交易抵消</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E8%B4%A2%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 财技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-08-15 11:12:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="更新于 2023-08-15 11:12:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="3346 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 7 分钟</span>&nbsp;<span id="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表抵消分录原理通俗解读系列（一）内部交易抵消">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E8%B4%A2%E6%8A%80/" class="post-category" title="分类 - 财技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 财技</a></span></div><div class="post-meta-line"><span title="发布于 2023-08-15 11:12:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="3346 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 7 分钟</span>&nbsp;<span id="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表抵消分录原理通俗解读系列（一）内部交易抵消">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="合并报表抵消分录原理通俗解读系列（一）内部交易抵消">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -210,25 +205,25 @@
       </div><div class="content" id="content"><p>合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权益抵消、内部往来抵消、内部交易抵消进行解读，今天我们先讨论内部交易的抵消原理。
 首先明确一点，内部交易分为顺流交易和逆流交易，其原理一样，只不过逆流交易多出一笔少数股东的会计处理。下面我们先从顺流交易讲起。
 举个栗子：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司的全资子公司。A公司本期单体利润表的营业收入100万元，系向B公司销售产品取得的销售收入，该批产品的销售成本为80万元，A公司销售毛利率20%。B公司购进该批商品财务入账100万元，同事在本期将该批购进商品的60%实现销售，其销售收入为78万元，结转销售成本为60万元，B公司销售毛利率为30%，列示于B公司的单体利润表中；剩余的该批商品40%则形成B公司的期末存货40万元，列示于B公司的单体资产负债表中。</p>
-<h2 id="一审计理论中合并抵消分录如何处理">一、审计理论中合并抵消分录如何处理？</h2>
-<p>在编制合并财务报表时，其抵消处理如下：
+<h2 id="一审计理论中合并抵消分录如何处理" class="heading-element">
+  <a href="#%e4%b8%80%e5%ae%a1%e8%ae%a1%e7%90%86%e8%ae%ba%e4%b8%ad%e5%90%88%e5%b9%b6%e6%8a%b5%e6%b6%88%e5%88%86%e5%bd%95%e5%a6%82%e4%bd%95%e5%a4%84%e7%90%86" class="heading-mark"></a>一、审计理论中合并抵消分录如何处理？</h2><p>在编制合并财务报表时，其抵消处理如下：
 借：营业收入100
 贷：营业成本 92
 存货      8
 为方便理解合并抵消原理，我们需要把母子公司双方的分录写出来：</p>
-<h3 id="1母公司的销售处理">1、母公司的销售处理</h3>
-<pre><code>①借：银行存款100
+<h3 id="1母公司的销售处理" class="heading-element">
+  <a href="#1%e6%af%8d%e5%85%ac%e5%8f%b8%e7%9a%84%e9%94%80%e5%94%ae%e5%a4%84%e7%90%86" class="heading-mark"></a>1、母公司的销售处理</h3><pre><code>①借：银行存款100
 </code></pre>
 <p>贷：营业收入100
 ——此笔系母公司确认收入分录</p>
 <p>②借：营业成本80
 贷：库存商品80
 ——此笔系母公司结转成本分录</p>
-<h3 id="2子公司的采购处理">2、子公司的采购处理</h3>
-<p>③借：库存商品100
+<h3 id="2子公司的采购处理" class="heading-element">
+  <a href="#2%e5%ad%90%e5%85%ac%e5%8f%b8%e7%9a%84%e9%87%87%e8%b4%ad%e5%a4%84%e7%90%86" class="heading-mark"></a>2、子公司的采购处理</h3><p>③借：库存商品100
 贷：银行存款100</p>
-<h3 id="3子公司在销售的时候">3、子公司在销售的时候</h3>
-<pre><code>          ④借：银行存款78
+<h3 id="3子公司在销售的时候" class="heading-element">
+  <a href="#3%e5%ad%90%e5%85%ac%e5%8f%b8%e5%9c%a8%e9%94%80%e5%94%ae%e7%9a%84%e6%97%b6%e5%80%99" class="heading-mark"></a>3、子公司在销售的时候</h3><pre><code>          ④借：银行存款78
              贷：营业收入78
      ——此笔系子公司确认收入分录
           ⑤借：营业成本60
@@ -240,8 +235,8 @@
 2、针对第②笔母公司销售成本的结转，站在合并层面，母公司应该结转成本为80*60%=48万元，而母公司结转了80万元(第②笔)，子公司结转了60(第⑤笔)，所以在合并报表中应该冲减营业成本=80+60-48=92万元，即借记营业成本92万元（母公司）;
 3、同理，存货作为营业成本的对方科目，也应当结转48万元的存货，即剩余的存货金额为80-48=32万元，所以在合并报表中应该继续确认存货=48-（80+60-100）=8万元，即贷记存货8万元（子公司） 。
 这就是上面那笔合并抵消分录的由来，大多数小伙伴应该都是这样理解的。</p>
-<h2 id="二审计实务中合并抵消分录如何处理">二、审计实务中合并抵消分录如何处理？</h2>
-<p>在审计实务中我们根本不需要这么麻烦的计算，而且上述举例仅是针对一笔销售。实务中往往存在很多笔销售业务，那又该如何处理呢？
+<h2 id="二审计实务中合并抵消分录如何处理" class="heading-element">
+  <a href="#%e4%ba%8c%e5%ae%a1%e8%ae%a1%e5%ae%9e%e5%8a%a1%e4%b8%ad%e5%90%88%e5%b9%b6%e6%8a%b5%e6%b6%88%e5%88%86%e5%bd%95%e5%a6%82%e4%bd%95%e5%a4%84%e7%90%86" class="heading-mark"></a>二、审计实务中合并抵消分录如何处理？</h2><p>在审计实务中我们根本不需要这么麻烦的计算，而且上述举例仅是针对一笔销售。实务中往往存在很多笔销售业务，那又该如何处理呢？
 审计实务中我们就要采用另一种方法，母公司确认收入100万元，结转成本80万元，所以母公司的销售毛利率是20%（[100-80]/100）;子公司的存货还剩下40万元（100-60）,对应的存货中隐含的毛利=40<em>20%=8万元，所以存货应抵消8万元。
 在审计实务抵消时，就是看母子公司之间的毛利率计算去抵消存货，营业成本进行倒挤，分录如下：
 借：营业收入100
@@ -250,10 +245,10 @@
 （倒挤成本=100-8=92万元）
 存货      8
 （计算隐含毛利=100</em>（1-60%）*20%=8万元）</p>
-<h2 id="三审计实务中合并抵消分录如何理解其原理">三、审计实务中合并抵消分录如何理解其原理？</h2>
-<p>我们通过比对以上方法可以发现，审计实务中处理方法简单、实用、高效，但是这样会计处理的原理是什么？我们又该如何理解呢？虽然在审计实务中很多项目经理、审计师都在用，但很少有人告诉你这样做的原理是什么。下面小编敢为人先，让我们一起尝试掀开这层神秘的面纱，看看它的庐山真面目~</p>
-<h3 id="一还原真正的合并分录">（一）还原真正的合并分录</h3>
-<p>为理解这个原理，我们还需要回到母子公司的原始分录，首先将母子公司的会计分录进行简单合并，我们得到以下合并分录：
+<h2 id="三审计实务中合并抵消分录如何理解其原理" class="heading-element">
+  <a href="#%e4%b8%89%e5%ae%a1%e8%ae%a1%e5%ae%9e%e5%8a%a1%e4%b8%ad%e5%90%88%e5%b9%b6%e6%8a%b5%e6%b6%88%e5%88%86%e5%bd%95%e5%a6%82%e4%bd%95%e7%90%86%e8%a7%a3%e5%85%b6%e5%8e%9f%e7%90%86" class="heading-mark"></a>三、审计实务中合并抵消分录如何理解其原理？</h2><p>我们通过比对以上方法可以发现，审计实务中处理方法简单、实用、高效，但是这样会计处理的原理是什么？我们又该如何理解呢？虽然在审计实务中很多项目经理、审计师都在用，但很少有人告诉你这样做的原理是什么。下面小编敢为人先，让我们一起尝试掀开这层神秘的面纱，看看它的庐山真面目~</p>
+<h3 id="一还原真正的合并分录" class="heading-element">
+  <a href="#%e4%b8%80%e8%bf%98%e5%8e%9f%e7%9c%9f%e6%ad%a3%e7%9a%84%e5%90%88%e5%b9%b6%e5%88%86%e5%bd%95" class="heading-mark"></a>（一）还原真正的合并分录</h3><p>为理解这个原理，我们还需要回到母子公司的原始分录，首先将母子公司的会计分录进行简单合并，我们得到以下合并分录：
 借：营业成本140
 银行存款78
 贷：营业收入178
@@ -270,8 +265,8 @@
 生产成本80
 ——“生产成本”科目最终已在母公司内部会计处理中被抵消掉，不会出现在合并抵消分录中。</p>
 <p>注:引入第0笔分录，目的是在于方便小伙伴们理解，第1笔分录中的库存商品80万，已在母公司内部结转成本时余额为0了，最终将不存在于合并分录中。</p>
-<h3 id="二拆分出存货中增值毛利">（二）拆分出存货中增值毛利</h3>
-<p>我们可以将这笔合并分录进行拆分，以便于理解这个原理。我们知道母公司销售给子公司的存货中含有增值毛利成分，我们将此部分单独分开列示，则可以将库存商品一分为二：
+<h3 id="二拆分出存货中增值毛利" class="heading-element">
+  <a href="#%e4%ba%8c%e6%8b%86%e5%88%86%e5%87%ba%e5%ad%98%e8%b4%a7%e4%b8%ad%e5%a2%9e%e5%80%bc%e6%af%9b%e5%88%a9" class="heading-mark"></a>（二）拆分出存货中增值毛利</h3><p>我们可以将这笔合并分录进行拆分，以便于理解这个原理。我们知道母公司销售给子公司的存货中含有增值毛利成分，我们将此部分单独分开列示，则可以将库存商品一分为二：
 借：营业成本140
 （应该冲减营业成本=80+60-48=92万）</p>
 <pre><code>   银行存款78   
@@ -298,8 +293,8 @@
 —增值部分12（60</em>20%=12）
 在合并过程中，我们发现子公司库存商品—原值部分借贷抵消后还剩32万元(80-48=32)的借方存货，此部分库存商品—原值部分是我们在合并层面承认且需要保留的；库存商品—增值部分借贷抵消后还剩借方金额8万元（20-12=8），此借方的增值部分8万元在合并层面仅是集团内部交易形成的，并未真正实现，需要从贷方冲销掉。
 这就是合并报表的内部交易抵消的审计实务原理。</p>
-<h2 id="四逆流内部交易的会计处理">四、逆流内部交易的会计处理？</h2>
-<p>逆流交易，顾名思义，是和上面讲的顺流交易相反的内部交易。顺流是母公司销售给子公司，逆流则是子公司销售给母公司。其合并抵消原理完全一致，但需要考虑少数股东损益和少数股东权益的拆分抵消。即：
+<h2 id="四逆流内部交易的会计处理" class="heading-element">
+  <a href="#%e5%9b%9b%e9%80%86%e6%b5%81%e5%86%85%e9%83%a8%e4%ba%a4%e6%98%93%e7%9a%84%e4%bc%9a%e8%ae%a1%e5%a4%84%e7%90%86" class="heading-mark"></a>四、逆流内部交易的会计处理？</h2><p>逆流交易，顾名思义，是和上面讲的顺流交易相反的内部交易。顺流是母公司销售给子公司，逆流则是子公司销售给母公司。其合并抵消原理完全一致，但需要考虑少数股东损益和少数股东权益的拆分抵消。即：
 ①第1笔抵消分录：
 借：营业收入100
 (母公司内部交易确认的销售收入)</p>
@@ -332,19 +327,17 @@
       <div class="post-info-mod">
         <span title="更新于 2023-08-15 11:12:00">更新于 2023-08-15&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/" data-title="合并报表抵消分录原理通俗解读系列（一）内部交易抵消" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/" data-title="合并报表抵消分录原理通俗解读系列（一）内部交易抵消" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E5%90%88%E5%B9%B6/' class="post-tag">合并</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/%E5%90%88%E5%B9%B6/" class="post-tag" title="标签 - 合并">合并</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -355,10 +348,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

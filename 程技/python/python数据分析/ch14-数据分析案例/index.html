@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第十四章 数据分析案例 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第十四章 数据分析案例 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它" /><meta name="keywords" content='python' /><meta itemprop="name" content="第十四章 数据分析案例">
 <meta itemprop="description" content="本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="14344"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="14352"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第十四章 数据分析案例" />
 <meta property="og:description" content="本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它" />
 <meta property="og:type" content="article" />
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B\/"
-    },"genre": "posts","keywords": "python","wordcount":  14344 ,
+    },"genre": "posts","keywords": "python","wordcount":  14352 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十四章 数据分析案例</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十四章 数据分析案例</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="14344 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 14400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 29 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第十四章 数据分析案例">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="14352 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 14400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 29 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第十四章 数据分析案例">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十四章 数据分析案例">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -221,8 +216,8 @@
 </nav></div>
       </div><div class="content" id="content"><p>本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它数据集，也包括你的。本章包含了一些各种各样的案例数据集，可以用来练习。</p>
 <p>案例数据集可以在Github仓库找到，见第一章。</p>
-<h2 id="141-来自bitly的usagov数据">14.1 来自Bitly的USA.gov数据</h2>
-<p>2011年，URL缩短服务Bitly跟美国政府网站USA.gov合作，提供了一份从生成.gov或.mil短链接的用户那里收集来的匿名数据。在2011年，除实时数据之外，还可以下载文本文件形式的每小时快照。写作此书时（2017年），这项服务已经关闭，但我们保存一份数据用于本书的案例。</p>
+<h2 id="141-来自bitly的usagov数据" class="heading-element">
+  <a href="#141-%e6%9d%a5%e8%87%aabitly%e7%9a%84usagov%e6%95%b0%e6%8d%ae" class="heading-mark"></a>14.1 来自Bitly的USA.gov数据</h2><p>2011年，URL缩短服务Bitly跟美国政府网站USA.gov合作，提供了一份从生成.gov或.mil短链接的用户那里收集来的匿名数据。在2011年，除实时数据之外，还可以下载文本文件形式的每小时快照。写作此书时（2017年），这项服务已经关闭，但我们保存一份数据用于本书的案例。</p>
 <p>以每小时快照为例，文件中各行的格式为JSON（即JavaScript Object Notation，这是一种常用的Web数据格式）。例如，如果我们只读取某个文件中的第一行，那么所看到的结果应该是下面这样：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -506,8 +501,8 @@
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;Europe/Madrid&#39;</span><span class="p">,</span> <span class="mi">35</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">,</span> <span class="mi">33</span><span class="p">)]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1411-用pandas对时区进行计数">14.1.1 用pandas对时区进行计数</h3>
-<p>从原始记录的集合创建DateFrame，与将记录列表传递到pandas.DataFrame一样简单：</p>
+</div><h3 id="1411-用pandas对时区进行计数" class="heading-element">
+  <a href="#1411-%e7%94%a8pandas%e5%af%b9%e6%97%b6%e5%8c%ba%e8%bf%9b%e8%a1%8c%e8%ae%a1%e6%95%b0" class="heading-mark"></a>14.1.1 用pandas对时区进行计数</h3><p>从原始记录的集合创建DateFrame，与将记录列表传递到pandas.DataFrame一样简单：</p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -693,7 +688,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">subset</span><span class="o">.</span><span class="n">values</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=large 2x" sizes="auto" data-title="图14-1 usa.gov示例数据中最常出现的时区" data-alt="图14-1 usa.gov示例数据中最常出现的时区" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png" alt="图14-1 usa.gov示例数据中最常出现的时区" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180126143.png?size=large 2x" sizes="auto" data-title="图14-1 usa.gov示例数据中最常出现的时区" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>a字段含有执行URL短缩操作的浏览器、设备、应用程序的相关信息：</p>
 <div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1012,7 +1007,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">62</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">count_subset</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=large 2x" sizes="auto" data-title="图14-2 最常出现时区的Windows和非Windows用户" data-alt="图14-2 最常出现时区的Windows和非Windows用户" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png" alt="图14-2 最常出现时区的Windows和非Windows用户" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png?size=large 2x" sizes="auto" data-title="图14-2 最常出现时区的Windows和非Windows用户" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>这张图不容易看出Windows用户在小分组中的相对比例，因此标准化分组百分比之和为1：</p>
 <div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1037,7 +1032,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;normed_total&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;tz&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;os&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">results</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=large 2x" sizes="auto" data-title="图14-3 最常出现时区的Windows和非Windows用户的百分比" data-alt="图14-3 最常出现时区的Windows和非Windows用户的百分比" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png" alt="图14-3 最常出现时区的Windows和非Windows用户的百分比" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png?size=large 2x" sizes="auto" data-title="图14-3 最常出现时区的Windows和非Windows用户的百分比" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>我们还可以用groupby的transform方法，更高效的计算标准化的和：</p>
 <div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1050,8 +1045,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="n">results2</span> <span class="o">=</span> <span class="n">count_subset</span><span class="o">.</span><span class="n">total</span> <span class="o">/</span> <span class="n">g</span><span class="o">.</span><span class="n">total</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="142-movielens-1m数据集">14.2 MovieLens 1M数据集</h2>
-<p>GroupLens Research（http://www.grouplens.org/node/73）采集了一组从20世纪90年末到21世纪初由MovieLens用户提供的电影评分数据。这些数据中包括电影评分、电影元数据（风格类型和年代）以及关于用户的人口统计学数据（年龄、邮编、性别和职业等）。基于机器学习算法的推荐系统一般都会对此类数据感兴趣。虽然我不会在本书中详细介绍机器学习技术，但我会告诉你如何对这种数据进行切片切块以满足实际需求。</p>
+</div><h2 id="142-movielens-1m数据集" class="heading-element">
+  <a href="#142-movielens-1m%e6%95%b0%e6%8d%ae%e9%9b%86" class="heading-mark"></a>14.2 MovieLens 1M数据集</h2><p>GroupLens Research（http://www.grouplens.org/node/73）采集了一组从20世纪90年末到21世纪初由MovieLens用户提供的电影评分数据。这些数据中包括电影评分、电影元数据（风格类型和年代）以及关于用户的人口统计学数据（年龄、邮编、性别和职业等）。基于机器学习算法的推荐系统一般都会对此类数据感兴趣。虽然我不会在本书中详细介绍机器学习技术，但我会告诉你如何对这种数据进行切片切块以满足实际需求。</p>
 <p>MovieLens 1M数据集含有来自6000名用户对4000部电影的100万条评分数据。它分为三个表：评分、用户信息和电影信息。将该数据从zip文件中解压出来之后，可以通过pandas.read_table将各个表分别读到一个pandas DataFrame对象中：</p>
 <div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1454,8 +1449,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Creature</span> <span class="n">Comforts</span> <span class="p">(</span><span class="mi">1990</span><span class="p">)</span>                            <span class="mf">4.513889</span>  <span class="mf">4.272277</span>
 </span></span><span class="line"><span class="cl"><span class="n">Usual</span> <span class="n">Suspects</span><span class="p">,</span> <span class="n">The</span> <span class="p">(</span><span class="mi">1995</span><span class="p">)</span>                          <span class="mf">4.513317</span>  <span class="mf">4.518248</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1421-计算评分分歧">14.2.1 计算评分分歧</h3>
-<p>假设我们想要找出男性和女性观众分歧最大的电影。一个办法是给mean_ratings加上一个用于存放平均得分之差的列，并对其进行排序：</p>
+</div><h3 id="1421-计算评分分歧" class="heading-element">
+  <a href="#1421-%e8%ae%a1%e7%ae%97%e8%af%84%e5%88%86%e5%88%86%e6%ad%a7" class="heading-mark"></a>14.2.1 计算评分分歧</h3><p>假设我们想要找出男性和女性观众分歧最大的电影。一个办法是给mean_ratings加上一个用于存放平均得分之差的列，并对其进行排序：</p>
 <div class="highlight" id="id-36"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1586,8 +1581,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">rating</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可能你已经注意到了，电影分类是以竖线（|）分隔的字符串形式给出的。如果想对电影分类进行分析的话，就需要先将其转换成更有用的形式才行。</p>
-<h2 id="143-1880-2010年间全美婴儿姓名">14.3 1880-2010年间全美婴儿姓名</h2>
-<p>美国社会保障总署（SSA）提供了一份从1880年到现在的婴儿名字频率数据。Hadley Wickham（许多流行R包的作者）经常用这份数据来演示R的数据处理功能。</p>
+<h2 id="143-1880-2010年间全美婴儿姓名" class="heading-element">
+  <a href="#143-1880-2010%e5%b9%b4%e9%97%b4%e5%85%a8%e7%be%8e%e5%a9%b4%e5%84%bf%e5%a7%93%e5%90%8d" class="heading-mark"></a>14.3 1880-2010年间全美婴儿姓名</h2><p>美国社会保障总署（SSA）提供了一份从1880年到现在的婴儿名字频率数据。Hadley Wickham（许多流行R包的作者）经常用这份数据来演示R的数据处理功能。</p>
 <p>我们要做一些数据规整才能加载这个数据集，这么做就会产生一个如下的DataFrame：</p>
 <div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1829,7 +1824,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">103</span><span class="p">]:</span> <span class="n">total_births</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total births by sex and year&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=large 2x" sizes="auto" data-title="图14-4 按性别和年度统计的总出生数" data-alt="图14-4 按性别和年度统计的总出生数" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png" alt="图14-4 按性别和年度统计的总出生数" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png?size=large 2x" sizes="auto" data-title="图14-4 按性别和年度统计的总出生数" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>下面我们来插入一个prop列，用于存放指定名字的婴儿数相对于总出生数的比例。prop值为0.02表示每100名婴儿中有2名取了当前这个名字。因此，我们先按year和sex分组，然后再将新列加到各个分组上：</p>
 <div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1985,8 +1980,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">261877</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来的数据分析工作就针对这个top1000数据集了。</p>
-<h3 id="1431-分析命名趋势">14.3.1 分析命名趋势</h3>
-<p>有了完整的数据集和刚才生成的top1000数据集，我们就可以开始分析各种命名趋势了。首先将前1000个名字分为男女两个部分：</p>
+<h3 id="1431-分析命名趋势" class="heading-element">
+  <a href="#1431-%e5%88%86%e6%9e%90%e5%91%bd%e5%90%8d%e8%b6%8b%e5%8a%bf" class="heading-mark"></a>14.3.1 分析命名趋势</h3><p>有了完整的数据集和刚才生成的top1000数据集，我们就可以开始分析各种命名趋势了。首先将前1000个名字分为男女两个部分：</p>
 <div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2038,10 +2033,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">114</span><span class="p">]:</span> <span class="n">subset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of births per year&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=large 2x" sizes="auto" data-title="图14-5 几个男孩和女孩名字随时间变化的使用数量" data-alt="图14-5 几个男孩和女孩名字随时间变化的使用数量" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png" alt="图14-5 几个男孩和女孩名字随时间变化的使用数量" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png?size=large 2x" sizes="auto" data-title="图14-5 几个男孩和女孩名字随时间变化的使用数量" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>从图中可以看出，这几个名字在美国人民的心目中已经风光不再了。但事实并非如此简单，我们在下一节中就能知道是怎么一回事了。</p>
-<h3 id="1432-评估命名多样性的增长">14.3.2 评估命名多样性的增长</h3>
-<p>一种解释是父母愿意给小孩起常见的名字越来越少。这个假设可以从数据中得到验证。一个办法是计算最流行的1000个名字所占的比例，我按year和sex进行聚合并绘图（见图14-6）：</p>
+<h3 id="1432-评估命名多样性的增长" class="heading-element">
+  <a href="#1432-%e8%af%84%e4%bc%b0%e5%91%bd%e5%90%8d%e5%a4%9a%e6%a0%b7%e6%80%a7%e7%9a%84%e5%a2%9e%e9%95%bf" class="heading-mark"></a>14.3.2 评估命名多样性的增长</h3><p>一种解释是父母愿意给小孩起常见的名字越来越少。这个假设可以从数据中得到验证。一个办法是计算最流行的1000个名字所占的比例，我按year和sex进行聚合并绘图（见图14-6）：</p>
 <div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2059,7 +2054,7 @@
 </span></span><span class="line"><span class="cl">   <span class="o">.....</span><span class="p">:</span>            <span class="n">yticks</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mi">13</span><span class="p">),</span> <span class="n">xticks</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1880</span><span class="p">,</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=large 2x" sizes="auto" data-title="图14-6 分性别统计的前1000个名字在总出生人数中的比例" data-alt="图14-6 分性别统计的前1000个名字在总出生人数中的比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png" alt="图14-6 分性别统计的前1000个名字在总出生人数中的比例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180317016.png?size=large 2x" sizes="auto" data-title="图14-6 分性别统计的前1000个名字在总出生人数中的比例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>从图中可以看出，名字的多样性确实出现了增长（前1000项的比例降低）。另一个办法是计算占总出生人数前50%的不同名字的数量，这个数字不太好计算。我们只考虑2010年男孩的名字：</p>
 <div class="highlight" id="id-57"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2206,10 +2201,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">129</span><span class="p">]:</span> <span class="n">diversity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Number of popular names in top 50%&#34;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=large 2x" sizes="auto" data-title="图14-7 按年度统计的密度表" data-alt="图14-7 按年度统计的密度表" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png" alt="图14-7 按年度统计的密度表" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png?size=large 2x" sizes="auto" data-title="图14-7 按年度统计的密度表" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>从图中可以看出，女孩名字的多样性总是比男孩的高，而且还在变得越来越高。读者们可以自己分析一下具体是什么在驱动这个多样性（比如拼写形式的变化）。</p>
-<h3 id="1433-最后一个字母的变革">14.3.3 “最后一个字母”的变革</h3>
-<p>2007年，一名婴儿姓名研究人员Laura Wattenberg在她自己的网站上指出（http://www.babynamewizard.com）：近百年来，男孩名字在最后一个字母上的分布发生了显著的变化。为了了解具体的情况，我首先将全部出生数据在年度、性别以及末字母上进行了聚合：</p>
+<h3 id="1433-最后一个字母的变革" class="heading-element">
+  <a href="#1433-%e6%9c%80%e5%90%8e%e4%b8%80%e4%b8%aa%e5%ad%97%e6%af%8d%e7%9a%84%e5%8f%98%e9%9d%a9" class="heading-mark"></a>14.3.3 “最后一个字母”的变革</h3><p>2007年，一名婴儿姓名研究人员Laura Wattenberg在她自己的网站上指出（http://www.babynamewizard.com）：近百年来，男孩名字在最后一个字母上的分布发生了显著的变化。为了了解具体的情况，我首先将全部出生数据在年度、性别以及末字母上进行了聚合：</p>
 <div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2345,7 +2340,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">letter_prop</span><span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Female&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                      <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=large 2x" sizes="auto" data-title="图14-8 男孩女孩名字中各个末字母的比例" data-alt="图14-8 男孩女孩名字中各个末字母的比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png" alt="图14-8 男孩女孩名字中各个末字母的比例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png?size=large 2x" sizes="auto" data-title="图14-8 男孩女孩名字中各个末字母的比例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>可以看出，从20世纪60年代开始，以字母&quot;n&quot;结尾的男孩名字出现了显著的增长。回到之前创建的那个完整表，按年度和性别对其进行规范化处理，并在男孩名字中选取几个字母，最后进行转置以便将各个列做成一个时间序列：</p>
 <div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2386,9 +2381,9 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">143</span><span class="p">]:</span> <span class="n">dny_ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=large 2x" sizes="auto" data-title="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" data-alt="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1434-变成女孩名字的男孩名字以及相反的情况">14.3.4 变成女孩名字的男孩名字（以及相反的情况）</h3>
-<p>另一个有趣的趋势是，早年流行于男孩的名字近年来“变性了”，例如Lesley或Leslie。回到top1000数据集，找出其中以&quot;lesl&quot;开头的一组名字：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png" alt="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180352940.png?size=large 2x" sizes="auto" data-title="图14-9 各年出生的男孩中名字以d/n/y结尾的人数比例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1434-变成女孩名字的男孩名字以及相反的情况" class="heading-element">
+  <a href="#1434-%e5%8f%98%e6%88%90%e5%a5%b3%e5%ad%a9%e5%90%8d%e5%ad%97%e7%9a%84%e7%94%b7%e5%ad%a9%e5%90%8d%e5%ad%97%e4%bb%a5%e5%8f%8a%e7%9b%b8%e5%8f%8d%e7%9a%84%e6%83%85%e5%86%b5" class="heading-mark"></a>14.3.4 变成女孩名字的男孩名字（以及相反的情况）</h3><p>另一个有趣的趋势是，早年流行于男孩的名字近年来“变性了”，例如Lesley或Leslie。回到top1000数据集，找出其中以&quot;lesl&quot;开头的一组名字：</p>
 <div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2488,9 +2483,9 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">153</span><span class="p">]:</span> <span class="n">table</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;M&#39;</span><span class="p">:</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="s1">&#39;k--&#39;</span><span class="p">})</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=large 2x" sizes="auto" data-title="图14-10 各年度使用“Lesley型”名字的男女比例" data-alt="图14-10 各年度使用“Lesley型”名字的男女比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="144-usda食品数据库">14.4 USDA食品数据库</h2>
-<p>美国农业部（USDA）制作了一份有关食物营养信息的数据库。Ashley Williams制作了该数据的JSON版（http://ashleyw.co.uk/project/food-nutrient-database）。其中的记录如下所示：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png" alt="图14-10 各年度使用“Lesley型”名字的男女比例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png?size=large 2x" sizes="auto" data-title="图14-10 各年度使用“Lesley型”名字的男女比例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="144-usda食品数据库" class="heading-element">
+  <a href="#144-usda%e9%a3%9f%e5%93%81%e6%95%b0%e6%8d%ae%e5%ba%93" class="heading-mark"></a>14.4 USDA食品数据库</h2><p>美国农业部（USDA）制作了一份有关食物营养信息的数据库。Ashley Williams制作了该数据的JSON版（http://ashleyw.co.uk/project/food-nutrient-database）。其中的记录如下所示：</p>
 <div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2920,7 +2915,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">181</span><span class="p">]:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;Zinc, Zn&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=large 2x" sizes="auto" data-title="图片14-11 根据营养分类得出的锌中位值" data-alt="图片14-11 根据营养分类得出的锌中位值" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png" alt="图片14-11 根据营养分类得出的锌中位值" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png?size=large 2x" sizes="auto" data-title="图片14-11 根据营养分类得出的锌中位值" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>只要稍微动一动脑子，就可以发现各营养成分最为丰富的食物是什么了：</p>
 <div class="highlight" id="id-82"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2981,8 +2976,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Valine</span>           <span class="n">Soy</span> <span class="n">protein</span> <span class="n">isolate</span><span class="p">,</span> <span class="n">PROTEIN</span> <span class="n">TECHNOLOGIES</span> <span class="n">INTE</span><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">food</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="145-2012联邦选举委员会数据库">14.5 2012联邦选举委员会数据库</h2>
-<p>美国联邦选举委员会发布了有关政治竞选赞助方面的数据。其中包括赞助者的姓名、职业、雇主、地址以及出资额等信息。我们对2012年美国总统大选的数据集比较感兴趣（http://www.fec.gov/disclosurep/PDownload.do）。我在2012年6月下载的数据集是一个150MB的CSV文件（P00000001-ALL.csv），我们先用pandas.read_csv将其加载进来：</p>
+</div><h2 id="145-2012联邦选举委员会数据库" class="heading-element">
+  <a href="#145-2012%e8%81%94%e9%82%a6%e9%80%89%e4%b8%be%e5%a7%94%e5%91%98%e4%bc%9a%e6%95%b0%e6%8d%ae%e5%ba%93" class="heading-mark"></a>14.5 2012联邦选举委员会数据库</h2><p>美国联邦选举委员会发布了有关政治竞选赞助方面的数据。其中包括赞助者的姓名、职业、雇主、地址以及出资额等信息。我们对2012年美国总统大选的数据集比较感兴趣（http://www.fec.gov/disclosurep/PDownload.do）。我在2012年6月下载的数据集是一个150MB的CSV文件（P00000001-ALL.csv），我们先用pandas.read_csv将其加载进来：</p>
 <div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3223,8 +3218,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">197</span><span class="p">]:</span> <span class="n">fec_mrbo</span> <span class="o">=</span> <span class="n">fec</span><span class="p">[</span><span class="n">fec</span><span class="o">.</span><span class="n">cand_nm</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Obama, Barack&#39;</span><span class="p">,</span><span class="s1">&#39;Romney, Mitt&#39;</span><span class="p">])]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1451-根据职业和雇主统计赞助信息">14.5.1 根据职业和雇主统计赞助信息</h3>
-<p>基于职业的赞助信息统计是另一种经常被研究的统计任务。例如，律师们更倾向于资助民主党，而企业主则更倾向于资助共和党。你可以不相信我，自己看那些数据就知道了。首先，根据职业计算出资总额，这很简单：</p>
+</div><h3 id="1451-根据职业和雇主统计赞助信息" class="heading-element">
+  <a href="#1451-%e6%a0%b9%e6%8d%ae%e8%81%8c%e4%b8%9a%e5%92%8c%e9%9b%87%e4%b8%bb%e7%bb%9f%e8%ae%a1%e8%b5%9e%e5%8a%a9%e4%bf%a1%e6%81%af" class="heading-mark"></a>14.5.1 根据职业和雇主统计赞助信息</h3><p>基于职业的赞助信息统计是另一种经常被研究的统计任务。例如，律师们更倾向于资助民主党，而企业主则更倾向于资助共和党。你可以不相信我，自己看那些数据就知道了。首先，根据职业计算出资总额，这很简单：</p>
 <div class="highlight" id="id-92"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3366,7 +3361,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">205</span><span class="p">]:</span> <span class="n">over_2mm</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=large 2x" sizes="auto" data-title="图14-12 对各党派总出资额最高的职业" data-alt="图14-12 对各党派总出资额最高的职业" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png" alt="图14-12 对各党派总出资额最高的职业" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png?size=large 2x" sizes="auto" data-title="图14-12 对各党派总出资额最高的职业" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>你可能还想了解一下对Obama和Romney总出资额最高的职业和企业。为此，我们先对候选人进行分组，然后使用本章前面介绍的类似top的方法：</p>
 <div class="highlight" id="id-97"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3451,8 +3446,8 @@
 </span></span><span class="line"><span class="cl">               <span class="n">H</span><span class="o">.</span><span class="n">I</span><span class="o">.</span><span class="n">G</span><span class="o">.</span> <span class="n">CAPITAL</span>             <span class="mf">139500.00</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">contb_receipt_amt</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1452-对出资额分组">14.5.2 对出资额分组</h3>
-<p>还可以对该数据做另一种非常实用的分析：利用cut函数根据出资额的大小将数据离散化到多个面元中：</p>
+</div><h3 id="1452-对出资额分组" class="heading-element">
+  <a href="#1452-%e5%af%b9%e5%87%ba%e8%b5%84%e9%a2%9d%e5%88%86%e7%bb%84" class="heading-mark"></a>14.5.2 对出资额分组</h3><p>还可以对该数据做另一种非常实用的分析：利用cut函数根据出资额的大小将数据离散化到多个面元中：</p>
 <div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3580,11 +3575,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">219</span><span class="p">]:</span> <span class="n">normed_sums</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=large 2x" sizes="auto" data-title="图14-13 两位候选人收到的各种捐赠额度的总额比例" data-alt="图14-13 两位候选人收到的各种捐赠额度的总额比例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png" alt="图14-13 两位候选人收到的各种捐赠额度的总额比例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png?size=large 2x" sizes="auto" data-title="图14-13 两位候选人收到的各种捐赠额度的总额比例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>我排除了两个最大的面元，因为这些不是由个人捐赠的。</p>
 <p>还可以对该分析过程做许多的提炼和改进。比如说，可以根据赞助人的姓名和邮编对数据进行聚合，以便找出哪些人进行了多次小额捐款，哪些人又进行了一次或多次大额捐款。我强烈建议你下载这些数据并自己摸索一下。</p>
-<h3 id="1453-根据州统计赞助信息">14.5.3 根据州统计赞助信息</h3>
-<p>根据候选人和州对数据进行聚合是常规操作：</p>
+<h3 id="1453-根据州统计赞助信息" class="heading-element">
+  <a href="#1453-%e6%a0%b9%e6%8d%ae%e5%b7%9e%e7%bb%9f%e8%ae%a1%e8%b5%9e%e5%8a%a9%e4%bf%a1%e6%81%af" class="heading-mark"></a>14.5.3 根据州统计赞助信息</h3><p>根据候选人和州对数据进行聚合是常规操作：</p>
 <div class="highlight" id="id-102"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3668,8 +3663,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">DE</span>              <span class="mf">0.802776</span>      <span class="mf">0.197224</span>
 </span></span><span class="line"><span class="cl"><span class="n">FL</span>              <span class="mf">0.467417</span>      <span class="mf">0.532583</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="146-总结">14.6 总结</h2>
-<p>我们已经完成了正文的最后一章。附录中有一些额外的内容，可能对你有用。</p>
+</div><h2 id="146-总结" class="heading-element">
+  <a href="#146-%e6%80%bb%e7%bb%93" class="heading-mark"></a>14.6 总结</h2><p>我们已经完成了正文的最后一章。附录中有一些额外的内容，可能对你有用。</p>
 <p>本书第一版出版已经有5年了，Python已经成为了一个流行的、广泛使用的数据分析语言。你从本书中学到的方法，在相当长的一段时间都是可用的。我希望本书介绍的工具和库对你的工作有用。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -3677,19 +3672,17 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" data-title="第十四章 数据分析案例" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/" data-title="第十四章 数据分析案例" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -3700,10 +3693,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

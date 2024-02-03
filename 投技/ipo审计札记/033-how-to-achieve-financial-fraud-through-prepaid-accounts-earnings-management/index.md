@@ -62,6 +62,6 @@ C2、虚增采购：其他应收款中大额往来款【专业术语：违规财
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/033-how-to-achieve-financial-fraud-through-prepaid-accounts-earnings-management/  
 

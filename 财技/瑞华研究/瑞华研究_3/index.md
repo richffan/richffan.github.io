@@ -264,8 +264,8 @@ A公司和B公司的股本都是100,000元（分为 10 万股，每股面值 1 �
 
 因此， A公司的利润（a）和B公司的利润（b）互相依赖的经济现实由以下联立方程式
 解答：
-a = 100+ 0.2b
-b= 100 + 0.2a
+a = 100&#43; 0.2b
+b= 100 &#43; 0.2a
 因此，求解该联立方程式得出如下结果：a = 125 ，b = 125
 解答：
 1 、净额法可用于对两个互为联营企业的企业之间互相投资的会计处理。这个方法不考
@@ -624,7 +624,7 @@ A公司的合并报表，只是将A公司在B公司的净利润中所占的份�
 另外，在A公司的个别报表层面，对B公司进行权益法核算时，仍然是按照B公司自
 身报表中的净利润 400 万元按比例计算投资收益，即 120 万元（因期末无未实现的顺流或
 逆流交易损益）。经过合并报表层面的上述调整后，合并报表层面的投资收益为 132 万元，
-即（B公司自身报表中净利润 400 万元+因顺流交易损益导致B公司虚减的净利润 40 万元）
+即（B公司自身报表中净利润 400 万元&#43;因顺流交易损益导致B公司虚减的净利润 40 万元）
 ×30%。
 
 # 断和适用的会计处理模式的确定） 问题 3 - 1 - 34 （集团内一子公司按收益法评估值对另一子公司投资的处理：交易性质判
@@ -2396,7 +2396,7 @@ A全民所有制企业是所在省国资委所属单位，下属子公司（企�
 出资方式为净资产出资。
 A公司以 2017 年 6 月 30 日作为基准日进行了清产核资、审计和资产评估工作，评估
 结果已向所在省国资委备案。该评估报告中的评估目的描述为“根据省国有企业改革领导小
-组第XX次会议纪要和《关于印发<A公司混合所有制改革总体方案>的通知》文件，A公司
+组第XX次会议纪要和《关于印发&lt;A公司混合所有制改革总体方案&gt;的通知》文件，A公司
 拟进行混合所有制改制。为此，需对所涉及的A公司股东全部权益的市场价值进行评估，
 为本次经济行为提供价值参考依据。”
 根据评估报告数据，截至 2017 年 6 月 30 日A公司账面净资产21,742.91万元，成本
@@ -2709,7 +2709,7 @@ A公司对境外联营企业B公司的股权投资 2016 年 12 月 31 日的账�
 例如，本案例中 2016 年 12 月 31 日的长期股权投资账面价值为6.06亿元， 2017 年B
 公司增发后减少1.25亿元，假设不考虑其他变动因素，则变为4.81亿元。如果在减值测试
 中确定该股权投资的可收回金额为4.5亿元，则应进一步确认资产减值准备0.31亿元
-（=4.81-4.5）， 并 确 认 资 产 减 值 损失1.56亿元（=1.25+0.31）， 相 应 的 会 计 分 录如下：
+（=4.81-4.5）， 并 确 认 资 产 减 值 损失1.56亿元（=1.25&#43;0.31）， 相 应 的 会 计 分 录如下：
 借：资产减值损失 1.56亿元
 贷：长期股权投资减值准备 0.31亿元
 资本公积——其他资本公积 1.25亿元
@@ -3264,7 +3264,7 @@ A公司对B公司持股比例为30%，对B公司具有重大影响，故采用�
 在集团合并层面运用各项会计政策和会计估计。实体理论下合并财务报表的预期使用者除了
 母公司股东以外，还包括少数股东。
 因为实体理论把合并集团看作一个独立会计主体，很多交易和事项站在母公司个别报表
-角度和合并角度看影响不同，因此实体理论下的合并报表不再仅仅是简单的“汇总+合并抵
+角度和合并角度看影响不同，因此实体理论下的合并报表不再仅仅是简单的“汇总&#43;合并抵
 销”，还需要就同一交易或事项站在不同会计主体角度的处理差异进行调整。最极端的例子
 是反向收购中的合并报表，母公司个别报表和合并报表的会计要素计量模式完全相反。目前，
 对企业会计准则的若干补充规定和解释中已经开始体现出对“视角差异”进行调整的要求，
@@ -3441,7 +3441,7 @@ A公司的权益按重组日公允价值计算，对老A公司原有的权益、
 公司 45 ％的股权，B公司仍为A公司的联营企业。
 假定在上述两次股权交易之间，B公司未产生损益，因此首次购入的 25 ％股权在 2004
 年增持时的账面价值仍为 30 万元。但B公司有一项资产的公允价值在该期间内上升了 50
-万元，导致 2004 年增持股权时B公司可辨认净资产的公允价值变为 150 万元（=100+50）。
+万元，导致 2004 年增持股权时B公司可辨认净资产的公允价值变为 150 万元（=100&#43;50）。
 解答：
 投资成本为两次交易的购股成本之和。于第二次股权交易日，对原先持有的 25 ％股权
 对应的净资产价值无需按当日公允价值重新计量。仍然延续之前的成本基础。
@@ -4531,7 +4531,7 @@ A企业为进行资源整合，采取资产收购方式，收购B企业（收购
 论缺陷导致，可能需要通过准则修订才能解决。
 类似问题可参考中国会计视野论坛“CPA业务探讨”板块中以下帖子的讨论：
 
-[http://bbs.esnai.com/forum.php?mod=viewthread&tid=4840703&page=1#pid6541394。](http://bbs.esnai.com/forum.php?mod=viewthread&tid=4840703&page=1#pid6541394。)
+[http://bbs.esnai.com/forum.php?mod=viewthread&amp;tid=4840703&amp;page=1#pid6541394。](http://bbs.esnai.com/forum.php?mod=viewthread&amp;tid=4840703&amp;page=1#pid6541394。)
 **2** 、基于 **2018** 年修订后《国际财务报告准则第 **3** 号——企业合并》（以下简称 **IFRS 3** ）
 和《企业会计准则解释第 **13** 号》的处理意见：
 2018 年 10 月，国际会计准则理事会（IASB）发布了《“业务”的定义：对〈国际财务
@@ -4851,12 +4851,12 @@ _2._ 该组合在合并日有产出的，满足下列条件之一的加工处理
 1. 计算确定取得的总资产的公允价值。取得的总资产不包括现金及现金等价物、递延
 所得税资产以及由递延所得税负债影响形成的商誉。购买方通常可以通过下列公式之一计算
 确定取得的总资产的公允价值：
-（ 1 ）总资产的公允价值 = 合并中取得的非现金资产的公允价值 + （购买方支付的对价 +
-购买日被购买方少数股东权益的公允价值 + 购买日前持有被购买方权益的公允价值 - 合并中
+（ 1 ）总资产的公允价值 = 合并中取得的非现金资产的公允价值 &#43; （购买方支付的对价 &#43;
+购买日被购买方少数股东权益的公允价值 &#43; 购买日前持有被购买方权益的公允价值 - 合并中
 所取得的被购买方可辨认净资产公允价值） - 递延所得税资产 - 由递延所得税负债影响形成的
 商誉
-（ 2 ）总资产的公允价值 = 购买方支付的对价 + 购买日被购买方少数股东权益的公允价值
-+ 购买日前持有被购买方权益的公允价值 + 取得负债的公允价值（不包括递延所得税负债） -
+（ 2 ）总资产的公允价值 = 购买方支付的对价 &#43; 购买日被购买方少数股东权益的公允价值
+&#43; 购买日前持有被购买方权益的公允价值 &#43; 取得负债的公允价值（不包括递延所得税负债） -
 取得的现金及现金等价物 - 递延所得税资产 - 由递延所得税负债影响形成的商誉
 2. 关于单独可辨认资产。单独可辨认资产是企业合并中作为一项单独可辨认资产予以
 确认和计量的一项资产或资产组。如果资产（包括租赁资产）及其附着物分拆成本重大，应
@@ -4933,7 +4933,7 @@ B29 购买方应确定被购买方作为承租人的各项经营租赁的条款�
 果相对于市场条款是不利的，则确认一项负债。本附录第B42段对被购买方作为出租人的
 经营租赁资产在购买日的公允价值计量提供了指南。
 B30 An identifiable intangible asset may be associated with an operating lease, which
-may be evidenced by market participants' willingness to pay a price for the lease even if it
+may be evidenced by market participants&#39; willingness to pay a price for the lease even if it
 is at market terms. For example, a lease of gates at an airport or of retail space in a prime
 shopping area might provide entry into a market or other future economic benefits that
 qualify as identifiable intangible assets, for example, as a customer relationship. In that
@@ -4991,9 +4991,9 @@ of the intangible asset in determining the gain or loss on the sale.
 购买方后续将回购权出售给第三方的，在确定该项出售的利得和损失时应包括该无形资产的
 账面金额。
 B35 As part of a business combination, an acquirer may reacquire a right that it had
-previously granted to the acquiree to use one or more of the acquirer's recognised or
-unrecognised assets. Examples of such rights include a right to use the acquirer's trade
-name under a franchise agreement or a right to use the acquirer's technology under a
+previously granted to the acquiree to use one or more of the acquirer&#39;s recognised or
+unrecognised assets. Examples of such rights include a right to use the acquirer&#39;s trade
+name under a franchise agreement or a right to use the acquirer&#39;s technology under a
 technology licensing agreement. A reacquired right is an identifiable intangible asset that
 the acquirer recognises separately from goodwill. Paragraph 29 provides guidance on
 measuring a reacquired right and paragraph 55 provides guidance on the subsequent
@@ -5924,8 +5924,8 @@ recognised for an identifiable asset (liability) by means of a decrease (increas
 goodwill. However, new information obtained during the measurement period may
 sometimes result in an adjustment to the provisional amount of more than one asset or
 liability. For example, the acquirer might have assumed a liability to pay damages related
-to an accident in one of the acquiree's facilities, part or all of which are covered by the
-acquiree's liability insurance policy. If the acquirer obtains new information during the
+to an accident in one of the acquiree&#39;s facilities, part or all of which are covered by the
+acquiree&#39;s liability insurance policy. If the acquirer obtains new information during the
 measurement period about the acquisition-date fair value of that liability, the adjustment to
 goodwill resulting from a change to the provisional amount recognised for the liability
 would be offset (in whole or in part) by a corresponding adjustment to goodwill resulting
@@ -6438,7 +6438,7 @@ A公司具体的合并报表调整编制过程如下所示：
 借：资本公积——资本溢价 - 26,565,032.68
 贷：年初未分配利润 - 26,565,032.68
 注：年初模拟增资后A公司对B公司的持股比例=增资额66.91亿元/(年初B公司净资
-产64.28亿元+增资额66.91亿元）=51%。
+产64.28亿元&#43;增资额66.91亿元）=51%。
 （二）本期合并报表
 1 、期初合并报表调整：
 借：实收资本 3,020,517,998.00
@@ -6769,7 +6769,7 @@ B公司所有者权益：
 司的注册资本之和、实收资本之和时，应当扣除投资所对应的注册资本、实收资本数额”。
 在本案例中，母公司原有注册资本 1 , 000 万元，子公司原有注册资本 2 , 600 万元（其中少数
 股东出资 31 万元）。对照上述规定，将合并后存续公司（原子公司）的注册资本和实收资
-本确定为 2 , 631 万元（＝ 2 ,600+1, 000 - 1 ,000+31）是合乎上述规定的。
+本确定为 2 , 631 万元（＝ 2 ,600&#43;1, 000 - 1 ,000&#43;31）是合乎上述规定的。
 2 、该交易的经济实质可以理解为：首先由母公司把其对子公司的长期股权投资剥离给
 母公司的原股东，再由母公司的原股东把母公司的剩余净资产投入原子公司，从而完成吸收
 合并过程。因此，该业务可以视作子公司对母公司剥离对该子公司长期股权投资后剩余净资
@@ -7452,7 +7452,7 @@ A公司所持有的C公司60%股权即可取得对C公司的控制权，收购�
 贷：股本 400
 资本公积——股本溢价 600
 因此，于购买日，B公司个别报表层面所示对C公司100%长期股权投资的投资成本为
-2,200万元（=1,200+1,000），增加股本1,000万元，增加“资本公积——股本溢价”1,200
+2,200万元（=1,200&#43;1,000），增加股本1,000万元，增加“资本公积——股本溢价”1,200
 万元。
 （ 2 ）B公司合并财务报表层面：因购买C公司40%少数股权而形成的长期股权投资成
 本1,000万元与按照新增持股比例计算应享有子公司C交易日净资产份额（本案例中即为
@@ -7721,11 +7721,11 @@ IFRS下并未对同一控制下企业合并如何进行会计处理予以规范�
 （ 6 ）当设立新公司作为合并方时，该新公司的设立是否构成一项IPO、分拆、其他控
 制权变动或者重大的所有权变动的一个内在组成部分；等等。
 根据本案例的情况看，如果各步骤都是彼此关联、互为前提和条件的一揽子交易，旨在
-实现A+B的境内资产和业务的海外上市或者发债融资等目的，在交易前后各方股东在
+实现A&#43;B的境内资产和业务的海外上市或者发债融资等目的，在交易前后各方股东在
 
-（A+B+C）集团中所占的权益份额和比例未发生变化，则该交易不具有商业实质的可能性
+（A&#43;B&#43;C）集团中所占的权益份额和比例未发生变化，则该交易不具有商业实质的可能性
 相对较大。根据前面讨论，此时B公司在其自身报表中对其合并A公司的事项，以及C公
-司在其自身报表中对其合并（A+B）的事项，均为采用权益结合法处理的可能性相对较大。
+司在其自身报表中对其合并（A&#43;B）的事项，均为采用权益结合法处理的可能性相对较大。
 对于C公司而言，由于C公司是新设的主体，因此为了海外IPO或发债等目的编制的
 C公司三年一期合并报表中，针对C公司设立之前时点或期间的部分应称为“汇总财务报
 
@@ -8209,7 +8209,7 @@ accordance for as follows:
 (a) goodwill relating to an associate or a joint venture is included in the carrying
 amount of the investment. Amortisation of that goodwill is not permitted.
 (b) Any excess of the entity’s share of the net fair value of the associate’s or joint
-venture's identifiable assets and liabilities over the cost of the investment is included as
+venture&#39;s identifiable assets and liabilities over the cost of the investment is included as
 income in the determination of the entity’s share of the associate or joint venture’s profit or
 loss in the period in which the investment is acquired.”
 （中文翻译：对联营或合营企业的投资自其成为联营或合营企业之日起采用权益法进行
@@ -8676,7 +8676,7 @@ and a liability if the terms are unfavourable relative to market terms. Paragrap
 provides guidance on measuring the acquisition-date fair value of assets subject to
 operating leases in which the acquiree is the lessor.
 B30 An identifiable intangible asset may be associated with an operating lease, which
-may be evidenced by market participants' willingness to pay a price for the lease even if it
+may be evidenced by market participants&#39; willingness to pay a price for the lease even if it
 is at market terms. For example, a lease of gates at an airport or of retail space in a prime
 
 
@@ -10092,7 +10092,7 @@ and acquiree;
 (b) a transaction that remunerates employees or former owners of the acquiree for
 future services; and
 (c) a transaction that reimburses the acquiree or its former owners for paying the
-acquirer's acquisition-related costs.
+acquirer&#39;s acquisition-related costs.
 Paragraphs B50–B62 provide related application guidance.
 （中文翻译：在合并前，购买方参与或代表购买方参与、或者是主要为了购买方或合并
 后主体的利益（而非主要为了被购买方或其前所有者的利益） 而参与的交易，很可能就是
@@ -10158,7 +10158,7 @@ the combined entity.
 购买方或其企业合并前的所有者除了他们作为合并后主体的一方而获取利益外，从该交易中
 可能仅获得很少或几乎没有经济利益。）
 **B51** The acquirer and acquiree may have a relationship that existed before they
-contemplated the business combination, referred to here as a 'pre-existing relationship'. A
+contemplated the business combination, referred to here as a &#39;pre-existing relationship&#39;. A
 pre-existing relationship between the acquirer and acquiree may be contractual (for
 example, vendor and customer or licensor and licensee) or non-contractual (for example,
 plaintiff and defendant).
@@ -10258,8 +10258,8 @@ effective settlement of the contract, measured in accordance with paragraph B52.
 理”还是“特殊性税务处理”，以及是否履行了所要求的备案程序。如果适用特殊性税务处
 理的，则计税基础延续原先在B公司的计税基础，由此形成的暂时性差异应确认递延所得
 税资产或者递延所得税负债，并作为对（ 3 ）中确认的商誉或者负商誉的调整。
-（ 5 ）对于政府承诺的 1 , 400 万元土地出让金返还款，根据《<企业会计准则第 16 号—
-─政府补助>应用指南 2018 》“五、关于政府补助的确认与计量”的相关规定，应当按照
+（ 5 ）对于政府承诺的 1 , 400 万元土地出让金返还款，根据《&lt;企业会计准则第 16 号—
+─政府补助&gt;应用指南 2018 》“五、关于政府补助的确认与计量”的相关规定，应当按照
 收付实现制原则进行确认和计量，即只有在实际收到后才能予以确认，计入递延收益。该笔
 款项实际上是对A公司发生合并成本的补助，但由于其来源于土地出让金，因此应理解为
 对取得被购买方土地使用权的成本的补助，自实际收到之日起在该土地使用权的剩余年限内
@@ -10283,7 +10283,7 @@ effective settlement of the contract, measured in accordance with paragraph B52.
 C的股份。
 现A公司以其所持有的B公司80%股权作价 20 , 000 万元，对C公司增资。由于C公
 司原先的整体公允价值为 12 , 000 万元，而B公司80%股权的公允价值为 20 , 000 万元，因
-此增资后A公司持有C公司的62.5%股权（=20,000/(12,000+20,000)×100%），A公司由
+此增资后A公司持有C公司的62.5%股权（=20,000/(12,000&#43;20,000)×100%），A公司由
 此可以对C公司实施控制，构成一项非同一控制下企业合并。重组完成后，B公司成为C
 公司的子公司，C公司持有B公司的80%股权。
 解答：
@@ -11075,22 +11075,22 @@ P公司能够控制B公司，A公司法人资格仍然存续。P公司对用于�
 相关的权威指引（此处为 IFRS 体系下的规定，在中国新企业会计准则体系下也可参照）：
 
 Paragraph 16 of IAS 1:
-"An entity whose financial statements comply with IFRSs shall make an explicit and
+&#34;An entity whose financial statements comply with IFRSs shall make an explicit and
 unreserved statement of such compliance in the notes. Financial statements shall not be
 described as complying with IFRSs unless they comply with all the requirements of
-IFRSs."
+IFRSs.&#34;
 （中文翻译： 16 根据国际财务报告准则编制财务报表的主体应在附注中明确、无保留
 地披露这一事实。只有当财务报表遵循了国际财务报告准则的全部要求时，主体才可将该财
 务报表表述为遵循了国际财务报告准则。）
 Paragraph 7 of the Introduction to IAS 8:
-"The Standard defines material omissions or misstatements. It stipulates that:
+&#34;The Standard defines material omissions or misstatements. It stipulates that:
 (a) the accounting policies in International Financial Reporting Standards (IFRSs)
 need not be applied when the effect of applying them is immaterial. This complements the
 statement in IAS 1 that disclosures required by IFRSs need not be made if the information
 is immaterial.
 (b) financial statements do not comply with IFRSs if they contain material errors.
 (c) material prior period errors are to be corrected retrospectively in the first set of
-financial statements authorised for issue after their discovery."
+financial statements authorised for issue after their discovery.&#34;
 （中文翻译：IN7 本准则定义了重要遗漏或错误表述。它规定：
 （ 1 ）当采用国际财务报告准则中的会计政策的影响不重要时，不需要采用这些会计政
 策。这补充了《国际会计准则第 1 号》中如果信息不重要则不需要按照国际财务报告准则的
@@ -11098,7 +11098,7 @@ financial statements authorised for issue after their discovery."
 （ 2 ）如果财务报表中包含了重要差错，则该财务报表没有遵循国际财务报告准则。
 （ 3 ）重要前期差错应在其被发现后授权发布的第一套财务报表中予以追溯更正。）
 Paragraph 41 of IAS 8:
-"Errors can arise in respect of the recognition, measurement, presentation or
+&#34;Errors can arise in respect of the recognition, measurement, presentation or
 disclosure of elements of financial statements. Financial statements do not comply with
 IFRSs if they contain either material errors or immaterial errors made intentionally to
 achieve a particular presentation of an entity’s financial position, financial performance or
@@ -11108,7 +11108,7 @@ the financial statements are authorised for issue. However, material errors are 
 
 not discovered until a subsequent period, and these prior period errors are corrected in
 the comparative information presented in the financial statements for that subsequent
-period (see paragraphs 42-47)."
+period (see paragraphs 42-47).&#34;
 （中文翻译： 41 差错产生于财务报表要素的确认、计量、列报或披露。如果财务报表
 包含重要差错，或者虽然差错不重要但是故意造成的，意在形成对主体财务状况、财务业绩
 或现金流量的特定列报，则财务报表没有遵循国际财务报告准则。在当期发现的潜在的当期
@@ -11833,7 +11833,7 @@ A公司主要从事文化生态园林工程的规划设计、施工，拥有城�
 设施，改造和增加配套给排水、供变配电、照明、夜景美化亮化灯光、景观灯、地下车库通
 风，消防、管理系统等建设项目。
 2 、项目期限：该项目合作期 20 年，其中建设期 2 年，采用PPP模式实施，运作模式
-为PPP+EPC（BOT+EPC）。
+为PPP&#43;EPC（BOT&#43;EPC）。
 3 、项目公司运营机制：
 （ 1 ）项目公司组织形式为有限责任公司，注册资本为 2 , 000 万元。
 （ 2 ）甲方（政府方代表C公司）与乙方（以A公司为主的联合体）的出资比例为10%：
@@ -11876,7 +11876,7 @@ A公司主要从事文化生态园林工程的规划设计、施工，拥有城�
 （ 1 ）项目回报机制
 本项目属于部分具有向第三方使用者收费的市政基础设施建设项目，对没有收益的市政
 基础设施由政府对社会资本在项目中投入的资本性支出和运营维护成本采用“可用性付费”
-的回报机制。对可向使用者收取费用的部分项目，拟采用“使用者付费+政府可行性缺口补
+的回报机制。对可向使用者收取费用的部分项目，拟采用“使用者付费&#43;政府可行性缺口补
 助”的回报机制。
 根据《政府和社会资本合作项目财政承受能力论证指引》（财金[2015]21 号）的相关规
 定，对采用可行性缺口补助模式的项目，在项目运营补贴期间，政府承担部分直接付费责任。
@@ -11894,7 +11894,7 @@ A公司主要从事文化生态园林工程的规划设计、施工，拥有城�
 同的方式获得相应的施工利润等。
 解答：
 首先，A公司虽然在项目公司中持股比例较高，但其可获取的收益基本固定，该项目虽
-采用PPP+EPC模式运作，但定价等方面均由政府主导，且在合同订立之初已基本确定，
+采用PPP&#43;EPC模式运作，但定价等方面均由政府主导，且在合同订立之初已基本确定，
 后续调整仅是在合理范围内的调整。根据“问题 4 - 4 - 21 （PPP联合体参与方的会计核算）”
 中所述，从风险角度分析，A公司实际上仅承担了来源于付款方的信用风险而不是项目公司
 的经营风险，其交易实质更接近于A公司接受项目公司的权益作为质押物，向其提供资金
@@ -12849,7 +12849,7 @@ A信托公司与B公司（系C公司和D公司的实际控制人，其中D公司
 司和D公司各占注册资本的50%。
 2 、D公司或其指定的第三方在规定的收购期（A信托公司支付股权转让款及增资款日
 （交割日）起 24 个月内）有权一次或分两次收购A信托公司持有的C公司股权。收购价
-格=（投资本金×收购股权比例／A信托公司持有标的股权的股权比例）×（1+11.5%×N/365）
+格=（投资本金×收购股权比例／A信托公司持有标的股权的股权比例）×（1&#43;11.5%×N/365）
 －已支付的该收购股权对应的权利维持费。
 在收购期内，D公司在此要求A信托公司为其保留在收购期内收购标的股权的权利，
 并承诺为此以收购期为计费期间向A信托公司支付权利维持费，权利维持费率为11.5%／
@@ -13439,8 +13439,8 @@ differences recognised in other comprehensive income to the non-controlling inte
 that foreign operation. In any other partial disposal of a foreign operation the entity shall
 reclassify to profit or loss only the proportionate share of the cumulative amount of the
 exchange differences recognised in other comprehensive income.
-48D A partial disposal of an entity's interest in a foreign operation is any reduction in
-an entity's ownership interest in a foreign operation, except those reductions in paragraph
+48D A partial disposal of an entity&#39;s interest in a foreign operation is any reduction in
+an entity&#39;s ownership interest in a foreign operation, except those reductions in paragraph
 48A that are accounted for as disposals.
 49 An entity may dispose or partially dispose of its interest in a foreign operation
 through sale, liquidation, repayment of share capital or abandonment of all, or part of, that
@@ -13824,7 +13824,7 @@ B公司与原持有C公司49%股权的股东之间不存在关联方关系。
 定，合并财务报表层面的列报适用《企业会计准则第 33 号——合并财务报表（ 2014 年修
 订）》第四十八条的规定。在合并报表层面，需对原先享有的权益（51%）进行重新计量，
 重新计量的差额计入合并报表层面的损益（其中对应于少数股东享有权益的17.64%的部分
-重新计量差额，应 计 入少数股东损益；对应于A公司原先享有权益的33.36%（15%+18.36%）
+重新计量差额，应 计 入少数股东损益；对应于A公司原先享有权益的33.36%（15%&#43;18.36%）
 的部分重新计量差额，应计入归属A公司股东的损益）。此时需要对C公司的购买日净资产
 重新进行评估，确定其各项可辨认资产、负债于购买日的公允价值。
 2012 年 8 月 31 日编制合并报表时，由于存在合并范围内交叉投资的因素，C公司的
@@ -13943,7 +13943,7 @@ between an investor... and its associate or joint venture are recognised in the 
 financial statements only to the extent of unrelated investors’ interests in the associate or
 joint venture.... ‘Downstream’ transactions are, for example, sales or contributions of
 assets from the investor to its associate or its joint venture. The investor’s share in the
-associate’s or joint venture's profits and losses resulting from these transactions is
+associate’s or joint venture&#39;s profits and losses resulting from these transactions is
 eliminated.）
 因此，企业作为投资方和顺销交易中的销售方，应当抵销其在内部交易未实现损益中所
 占的份额，但对长期股权投资的冲减，应以账面价值冲减至零为限。企业应当把未实现利润
@@ -14419,7 +14419,7 @@ A公司对B公司的其他应收款 （ 4 ） 28,758,549.86
 A公司的债权损失 (5)=-(4)×（ 1 - (3)） - 26,704,677.80
 B公司实收资本 （ 6 ） 500,000.00
 B公司未分配利润 （ 7 ） - 27,867,620.95
-B公司 2010 年末超额亏损 (8)=(6)+(7)=(1)-(2) - 27,367,620.95
+B公司 2010 年末超额亏损 (8)=(6)&#43;(7)=(1)-(2) - 27,367,620.95
 母公司按股权比例应承担的超额亏损额 (9)=(8)×50% - 13,683,810.48
 解答：
 1 、在母公司A的个别财务报表中，应按照《企业会计准则第 22 号——金融工具确认
@@ -14451,7 +14451,7 @@ B公司 2010 年末超额亏损 (8)=(6)+(7)=(1)-(2) - 27,367,620.95
 层面应编制如下分录：
 借：资本公积 13,020,867.32
 贷：少数股东权益 13,020,867.32
-经上述处理后，合并资产负债表中的少数股东权益余额为-13,683,810.47+
+经上述处理后，合并资产负债表中的少数股东权益余额为-13,683,810.47&#43;
 13,020,867.32=－662,943.15（借方），该金额表示子公司净资产负数余额中应由少数股东
 承担的份额。核对如下：少数股东应分担的子公司亏损等于子公司对外负债（29,472,480.35-
 28,758,549.86= 713,930.49）中按清偿率7.14％计算无力偿还的部分。
@@ -14604,7 +14604,7 @@ B公司对A公司的长期股权投资作为金融资产核算，且本年度A�
 基于编制合并财务报表所依据的实体理论，要求将合并集团看作一个独立的会计主体，
 在集团合并层面运用各项会计政策和会计估计。因为实体理论把合并集团看作一个独立会计
 主体，很多交易和事项站在母公司或子公司的个别报表角度和合并报表角度看影响不同，因
-此实体理论下的合并报表不再仅仅是简单的“汇总+合并抵销”，还需要就同一交易或事项
+此实体理论下的合并报表不再仅仅是简单的“汇总&#43;合并抵销”，还需要就同一交易或事项
 站在不同会计主体角度的处理差异进行调整。
 子公司从外部证券市场上购入母公司的股票，在 合 并 报 表 层 面 应视作合并集团回购自身
 权益工具，由此形成库存股；子公司出售其所持的母公司股票，在合并报表层面属于库存股
@@ -14669,7 +14669,7 @@ A公司在 2011 年取得了工商注销证明，税务注销证明正在办理�
 集团合并层面运用各项会计政策和会计估计。实体理论下合并财务报表的使用者除了母公司
 股东以外，还包括少数股东。因为实体理论把合并集团看作一个独立会计主体，很多交易和
 事项站在母公司个别报表角度和合并角度看影响不同，因此实体理论下的合并报表不再仅仅
-是简单的“汇总+合并抵销”，还需要就同一交易或事项站在不同会计主体角度的处理差异
+是简单的“汇总&#43;合并抵销”，还需要就同一交易或事项站在不同会计主体角度的处理差异
 进行调整（即“视角调整”）。
 母子公司之间的“逆销交易”即以子公司为卖方，母公司为买方的合并集团内部交易，
 在该交易完成后直至相关的内部未实现交易损益实现之前，该内部交易的标的资产都是在作
@@ -14731,9 +14731,9 @@ A公司之控股子公司B为A公司下属其他子公司提供工程建造服�
 
 2 , 000 （指B公司的各项资产、负债在A的合并报表层面的账面价值，包含商誉在内），80%
 股权的处置价格为1,800。则：
-A公司的合并报表层面80%股权的处置损益=处置80%股权的对价1,800+剩余股权公
-允价值0+处置时点的少数股权账面价值 380 （注）-处置时点该子公司的净资产在合并报表
-层面体现的价值2,000+/-应重分类至损益的与该原有子公司相关的其他综合收益0=180。
+A公司的合并报表层面80%股权的处置损益=处置80%股权的对价1,800&#43;剩余股权公
+允价值0&#43;处置时点的少数股权账面价值 380 （注）-处置时点该子公司的净资产在合并报表
+层面体现的价值2,000&#43;/-应重分类至损益的与该原有子公司相关的其他综合收益0=180。
 注：因为截至A公司处置B公司并丧失控制权的时点，原内部交易损益 100 仍未实现，
 故其抵销影响应按B公司的股权比例分配给少数股东，所以处置时点的少数股权价值（处
 置日合并报表层面的“少数股东权益”金额）=2,000×20%- 10 0×20%=380。由此导致合并
@@ -15038,7 +15038,7 @@ P集团的合并报表中，A公司的净资产价值为 190 万元（ 200 - 10 
 贷：长期股权投资——A股份有限公司 200 万元
 二是在第一步基础上引入外部战略投资者，战略投资者出资 50 万元享有A公司的 20 ％
 股权，即战略投资者出资后A公司个别报表层面的净资产增至 250 万元，P集团合并报表
-层面A公司的净资产价值增至 240 万元（=190+50）， 相 应 地少数股东权益份额为 48 万元
+层面A公司的净资产价值增至 240 万元（=190&#43;50）， 相 应 地少数股东权益份额为 48 万元
 （＝240×20％），少数股东出资额与少数股东权益之间的差额 2 万元（=50- 48 ）在合并报
 表层面作为少数股东让渡给多数股东（P集团）的权益，贷记资本公积（相当于在所有步骤
 完成后，最终冲减合并报表层面资本公积的金额为 8 万元）。即该步骤完成后，P集团合并
@@ -15956,7 +15956,7 @@ A上市公司 2011 年 4 月配股约 22 亿股，募集资金约 83 亿元，�
 期损益。证券公司在集合理财计划存续期间内的每个资产负债表日，应根据相关理财产品的
 净值表现、近期预计赎回量等因素合理评估该衍生工具的公允价值。
 （ 3 ）管理服务收入的确认。
-通常，管理人的收入对价约定为“每年按集合计划实缴出资总额的一定比例”+“集合
+通常，管理人的收入对价约定为“每年按集合计划实缴出资总额的一定比例”&#43;“集合
 计划收益（或超额收益，本案例下同）的一定比例”。
 在 2006 年收入准则下，管理人就向集合理财计划提供的管理服务，而从集合理财计划
 的净资产中取得的管理费，其性质是提供劳务的收入，应按照《企业会计准则第 14 号——
@@ -16010,6 +16010,6 @@ A上市公司 2011 年 4 月配股约 22 亿股，募集资金约 83 亿元，�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_3/  
 

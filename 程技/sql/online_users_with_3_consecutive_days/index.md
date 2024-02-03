@@ -38,11 +38,11 @@ from (select *, date_sub(dt, INTERVAL xrank DAY) as delta
             ) b
       ) c
 GROUP BY user_id, delta
-having count(*) >= 3;
+having count(*) &gt;= 3;
 ```
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/online_users_with_3_consecutive_days/  
 

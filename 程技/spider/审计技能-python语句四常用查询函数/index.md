@@ -14,11 +14,11 @@
 import pandas as pd
 
 ## 创建A表
-data = {'项目名称': ['甲项目', '甲项目', '乙项目', '乙项目'], '销售额': [50, 54, 74, 56]}
+data = {&#39;项目名称&#39;: [&#39;甲项目&#39;, &#39;甲项目&#39;, &#39;乙项目&#39;, &#39;乙项目&#39;], &#39;销售额&#39;: [50, 54, 74, 56]}
 df = pd.DataFrame(data)
 
 ## 按照“项目名称”进行聚合统计
-grouped = df.groupby('项目名称')
+grouped = df.groupby(&#39;项目名称&#39;)
 result = grouped.sum()
 
 ## 打印结果
@@ -50,10 +50,10 @@ print(result)
 ```python
 import pandas as pd
 
-data = pd.DataFrame({'Date': ['2020-01-01 10:30:00', '2020-01-02 15:20:00', '2020-01-03 18:40:00'],
-'Sales': [1000, 1500, 2000]})
+data = pd.DataFrame({&#39;Date&#39;: [&#39;2020-01-01 10:30:00&#39;, &#39;2020-01-02 15:20:00&#39;, &#39;2020-01-03 18:40:00&#39;],
+&#39;Sales&#39;: [1000, 1500, 2000]})
 
-data['Date'] = pd.to_datetime(data['Date']).dt.date
+data[&#39;Date&#39;] = pd.to_datetime(data[&#39;Date&#39;]).dt.date
 print(data)
 ```
 
@@ -85,11 +85,11 @@ print(data)
 ```python
 import pandas as pd
 data = pd.DataFrame({
-    'Customer': ['A', 'B', 'C'],
-    'Address': ['Beijing,China', 'Shanghai,China', 'New York,United States']})
-data[['City', 'Country/Region']] = data['Address'].str.split(',', expand=True)
+    &#39;Customer&#39;: [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;],
+    &#39;Address&#39;: [&#39;Beijing,China&#39;, &#39;Shanghai,China&#39;, &#39;New York,United States&#39;]})
+data[[&#39;City&#39;, &#39;Country/Region&#39;]] = data[&#39;Address&#39;].str.split(&#39;,&#39;, expand=True)
 
-print(data[['City', 'Country/Region']])
+print(data[[&#39;City&#39;, &#39;Country/Region&#39;]])
 ```
 
 运行结果：
@@ -102,6 +102,6 @@ print(data[['City', 'Country/Region']])
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/  
 

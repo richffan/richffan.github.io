@@ -1,7 +1,7 @@
 # 2 单链表
 
 
-> 单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。
+&gt; 单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。
 
 链表的基本元素有：
 
@@ -32,7 +32,7 @@ class Node(object):
         # 测试基本功能，输出data
         return self.data
 # 输出data
-print(Node('data'))
+print(Node(&#39;data&#39;))
 ```
 
 这里的`__str__`可以不用写，这里是在进行测试，在后面的具体实现部分可以不用这个，str函数可以方便我们打印对象中具体的属性值，也是很nice了！具体使用如上
@@ -45,7 +45,7 @@ def length(self):
     cur = self.head
     count = 0
     while cur is not None:
-        count += 1
+        count &#43;= 1
         cur = cur.next
     return count
 ```
@@ -89,7 +89,7 @@ def add_last(self, data):
 # 在指定位置添加元素
 def insert_node(self, index, data):
     node = Node(data)
-    if index < 0 or index > self.length():
+    if index &lt; 0 or index &gt; self.length():
         return False
     elif index == 0:
         self.add_fist()
@@ -98,8 +98,8 @@ def insert_node(self, index, data):
     else:
         cur = self.head
         count = 0
-        while count < (index - 1):
-            count += 1
+        while count &lt; (index - 1):
+            count &#43;= 1
             cur = cur.next
         # 退出循环的时候，cur指向index的前一个位置
         node.next = cur.next
@@ -152,14 +152,14 @@ def search_node(self, data):
 def traverse_to_print_node(self):
     # cur = self.head
     # while cur is not None:
-    #     print(cur.data, end = " ")
+    #     print(cur.data, end = &#34; &#34;)
     #     cur = cur.next
     print_list = []
     cur = self.head
     while cur is not None:
         print_list.append(str(cur.data))
         cur = cur.next
-    print('->'.join(print_list))
+    print(&#39;-&gt;&#39;.join(print_list))
 ```
 
 
@@ -168,7 +168,7 @@ def traverse_to_print_node(self):
 
 ```python
 # 测试
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     list = SingleLinkedList()
     list.add_fist(2)
     list.add_fist(1)
@@ -223,7 +223,7 @@ class SingleLinkedList(object):
         cur = self.head
         count = 0
         while cur is not None:
-            count += 1
+            count &#43;= 1
             cur = cur.next
         return count
 
@@ -249,7 +249,7 @@ class SingleLinkedList(object):
     # 在指定位置添加元素
     def insert_node(self, index, data):
         node = Node(data)
-        if index < 0 or index > self.length():
+        if index &lt; 0 or index &gt; self.length():
             return False
         elif index == 0:
             self.add_fist()
@@ -258,8 +258,8 @@ class SingleLinkedList(object):
         else:
             cur = self.head
             count = 0
-            while count < (index - 1):
-                count += 1
+            while count &lt; (index - 1):
+                count &#43;= 1
                 cur = cur.next
             # 退出循环的时候，cur指向index的前一个位置
             node.next = cur.next
@@ -292,17 +292,17 @@ class SingleLinkedList(object):
     def traverse_to_print_node(self):
         # cur = self.head
         # while cur is not None:
-        #     print(cur.data, end = " ")
+        #     print(cur.data, end = &#34; &#34;)
         #     cur = cur.next
         print_list = []
         cur = self.head
         while cur is not None:
             print_list.append(str(cur.data))
             cur = cur.next
-        print('->'.join(print_list))
+        print(&#39;-&gt;&#39;.join(print_list))
 
 # 测试
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     list = SingleLinkedList()
     list.add_fist(2)
     list.add_fist(1)
@@ -320,6 +320,6 @@ if __name__ == '__main__':
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/  
 

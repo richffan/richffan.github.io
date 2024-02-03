@@ -272,7 +272,7 @@ the investor. Signif icant influence must be lost before the equity method cease
 
 现金流量表的编制中，规定购建固定资产、无形资产和其他长期资产所支付的现金=购建固定资产付现(包括计入固定资产的土地增值
 
-税、耕地占用税、投资方向调节税) +支付给在建工程人员的工资和计提的职工福利费+购置或自制无形资产付现+其他长期资产付现
+税、耕地占用税、投资方向调节税) &#43;支付给在建工程人员的工资和计提的职工福利费&#43;购置或自制无形资产付现&#43;其他长期资产付现
 
 可是土地增值税不是计入营业税金及附加的项目吗？ 在编制现金流量表时，也可以直接用资产负债表中固定资产、在建工程和无形
 
@@ -1315,7 +1315,7 @@ tax.gov.cn/sjzgsww/llyj/201008/t20100819_318965.htm理由：第一、出口退�
 
 **提问人：** liubin988513 时间： 2012-02-05 00:37:34
 
-3.6.3 Loans and borrowings between the reporting entity and associates IAS 28's requirement to eliminate partially unrealised profits
+3.6.3 Loans and borrowings between the reporting entity and associates IAS 28&#39;s requirement to eliminate partially unrealised profits
 
 or losses on transactions with associates is expressed in terms of transactions involving the transfer of assets. In our view, the
 
@@ -1323,15 +1323,15 @@ requirement for partial elimination of profits does not apply to items such as i
 
 associates and the reporting entity, since such loans and borrowings do not involve the transfer of assets giving rise to gains or
 
-losses. Moreover, they are not normally regarded as part of the investor's share of the net assets of the associate, but as separate
+losses. Moreover, they are not normally regarded as part of the investor&#39;s share of the net assets of the associate, but as separate
 
 transactions, except in the case of loss-making associates, where interests in long-term loans and borrowings may be required to be
 
-accounted for as if they were part of the reporting entity's equity investment in determining the carrying value of the associate
+accounted for as if they were part of the reporting entity&#39;s equity investment in determining the carrying value of the associate
 
 against which losses may be offset (see 3.9 below). Likewise, loans and borrowings between the reporting entity and associates
 
-should not be eliminated in the reporting entity's consolidated accounts because associates are not part of the group. Finally, if the
+should not be eliminated in the reporting entity&#39;s consolidated accounts because associates are not part of the group. Finally, if the
 
 associate had a policy of capitalising borrowing costs then the investor would need to eliminate a relevant share of the profit, in the
 
@@ -1432,7 +1432,7 @@ same way it would eliminate a share of the capitalised management or advisory fe
 
 在实行企业会计制度－企业所得税实行应付税款法下，“所得税”是否包含当年度按应付税款法进行汇算清缴的补缴数额？还是仅就当
 
-年度实际缴交的企业所得税（各季预缴+本个补缴上年度汇算清缴数）？
+年度实际缴交的企业所得税（各季预缴&#43;本个补缴上年度汇算清缴数）？
 通常情况下，审计报告先于企业所得税汇算清缴报告出具，汇算清缴的补缴所得税受企业资料完善、税务局要求等等的影响，往往在
 
 出审计报告时确认的补缴数额，和实际出具的企业所得税汇算清缴报告不同，在这种情况下，当年及下一年的审计报告如何处理“所
@@ -1452,9 +1452,9 @@ same way it would eliminate a share of the capitalised management or advisory fe
 企业对涉及到本问题解答中的有关交易或事项，应按《企业会计制度》及相关准则和本问题解答中规定的原则确认所得税费用和应交
 所得税金额。如果报告年度的所得税汇算清缴发生于报告年度财务报告批准报出日之前，对于所得税汇算清缴时涉及的需调整报告年
 
-度所得税费用的，应通过"以前年度损益调整"科目进行会计核算并调整报告年度会计报表相关项目；如果报告年度所得税汇算清缴发
+度所得税费用的，应通过&#34;以前年度损益调整&#34;科目进行会计核算并调整报告年度会计报表相关项目；如果报告年度所得税汇算清缴发
 
-生于报告年度财务报告批准报出日之后，对于所得税汇算清缴时涉及的需调整报告年度所得税费用的，应通过"以前年度损益调整"科
+生于报告年度财务报告批准报出日之后，对于所得税汇算清缴时涉及的需调整报告年度所得税费用的，应通过&#34;以前年度损益调整&#34;科
 目进行核算并相应调整本年度会计报表相关项目的年初数。
 因此，按照上述规定，对于汇算清缴结果与报告年度末估计的应交所得税余额之间的差额，应当调整报告年度的所得税费用，这一点
 与新准则下的理念是不同的。当然实际操作中也可遵循重要性原则，如果差异金额不重大的，也可直接在以后年度调整，而不再追溯
@@ -1952,7 +1952,7 @@ IPO中有明确的规定需追溯至企业成立日之前吗？
 回复 jxcdxss 的帖子
 可我在看有的财务报告时，会计师如下注释未分配利润。
 
-期初未分配利润：100+20=120 本年新增净利润： 50 其他转出： 30 期末未分配利润： 140 不知道这个对不对？难道不需要回复
+期初未分配利润：100&#43;20=120 本年新增净利润： 50 其他转出： 30 期末未分配利润： 140 不知道这个对不对？难道不需要回复
 留存收益吗？
 
 **回答人：** chenyiwei
@@ -2537,7 +2537,7 @@ B公司是A公司的全资子公司，A公司为了补充B公司流动资金的�
 
 1000 贷：银行存款 1000 2011年B公司取得C公司50%的股权 长期股权投资初始投资成本
 
-=9000×60%=5400万元 初始投资成本与累计对价的差异 600 万元（1000+5000-5400）应计入资本公积 借：长期股权投资—C公司
+=9000×60%=5400万元 初始投资成本与累计对价的差异 600 万元（1000&#43;5000-5400）应计入资本公积 借：长期股权投资—C公司
 
 4400 资本公积 600 贷：银行存款 5000 合并报表处理如下： 借：C公司所有者权益
 
@@ -2557,9 +2557,9 @@ B公司是A公司的全资子公司，A公司为了补充B公司流动资金的�
 
 —C公司（其他权益变动） 120 贷：投资收益 180 资本公积
 
-120 2010年末长期股权投资期末余额=3000+180+120=3300 2011年 长期股权投资初始投
+120 2010年末长期股权投资期末余额=3000&#43;180&#43;120=3300 2011年 长期股权投资初始投
 
-资成本=9000×60%=5400万元 初始投资成本与累计对价的差异 900 万元（3300+3000-5400）应计入资本公积 借：长期
+资成本=9000×60%=5400万元 初始投资成本与累计对价的差异 900 万元（3300&#43;3000-5400）应计入资本公积 借：长期
 
 股权投资—C公司（投资成本） 300 借：长期股权投资—C公司（损益调整） 180 —
 
@@ -2876,7 +2876,7 @@ A为集团公司（国有），下设 10 个二级子公司，本级根据国资
 
 **回答人：** chenyiwei
 
-可以看看这个帖子：http://bbs.esnai.com/forum.php?mod=redirect&goto=findpost&ptid=4754541&pid=6472490
+可以看看这个帖子：http://bbs.esnai.com/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=4754541&amp;pid=6472490
 
 # 398 、陈老师及各位高人：关于准则解释 5 执行的一些问题
 
@@ -3433,7 +3433,7 @@ gain or loss arising from a change in the fair value of investment property reco
 
 同一控制下的分步合并目前没有明确的规定，前几天本版面上有网友讨论，你可以看下： http://bbs.esnai.com/forum.php?
 
-mod=viewthread&tid=4784934
+mod=viewthread&amp;tid=4784934
 
 # 418 、开放式基金 期末公允价值的确定
 
@@ -3465,7 +3465,7 @@ mod=viewthread&tid=4784934
 
 资收益？ 3 、A非同控制下合并B集团，投资成为 1950 万，B集团账面价值为 1000 万元，其中商誉价值 200 万。B集团按照评估值评估
 
-确认的可辨认净资产公允价值为 2000 万元，请问最后A合并B产生的商誉是 150 万（=200+（1950-2000））还是确认营业外收入 50
+确认的可辨认净资产公允价值为 2000 万元，请问最后A合并B产生的商誉是 150 万（=200&#43;（1950-2000））还是确认营业外收入 50
 
 万（=2000-1950）？ 4 、A下属有子公司B、C，B非同一控制下合并D，确认商誉 100 万，现B将对D的全部投资处置给C，那么C在合
 
@@ -4032,9 +4032,9 @@ the number of shares to be delivered varies. The IASB offers some (pragmatic rat
 differences in the Basis for Conclusions to IFRS 2. First, it is argued that to apply IAS 32 to share option plans would mean that a
 variable share option plan (i.e. one where the number of shares varied according to performance) would give rise to a more volatile
 (and typically greater) cost than a fixed plan (i.e. one where the number of shares to be awarded is fixed from the start), even if the
-same number of shares was ultimately delivered under each plan, which would have 'undesirable consequences'. [IFRS 2.BC109].
+same number of shares was ultimately delivered under each plan, which would have &#39;undesirable consequences&#39;. [IFRS 2.BC109].
 Second, it is argued that this is just one of several inconsistencies between IAS 32 and IFRS 2 which will be addressed in the round as
-part of the IASB's review of accounting for debt and equity. [IFRS 2.BC110]. It is noteworthy, however, that the IASB's current project
+part of the IASB&#39;s review of accounting for debt and equity. [IFRS 2.BC110]. It is noteworthy, however, that the IASB&#39;s current project
 on financial instruments with characteristics of equity excludes from its scope instruments currently accounted for under IFRS 2.
 **提问人：** nikankan 时间： 2012-02-14 09:25:05
 回复 peak121 的帖子
@@ -4073,7 +4073,7 @@ on financial instruments with characteristics of equity excludes from its scope 
 准报出日之间的，应当以调整后的股数重新计算各列报期间的每股收益。 　　按照《企业会计准则第 28 号——会计政策、会计估计
 
 变更和差错更正》的规定对以前年度损益进行追溯调整或追溯重述的，应当重新计算各列报期间的每股收益。
-请教"各列报期间的每股收益"这个是如何理解的?比如 2012 年披露 2011 年,是否还需要更正 2010 或 2009 等?
+请教&#34;各列报期间的每股收益&#34;这个是如何理解的?比如 2012 年披露 2011 年,是否还需要更正 2010 或 2009 等?
 **回答人：** chenyiwei
 一般理解应需要，即把所列报的各期均按新的计算口径予以调整和重述。
 **提问人：** yanyan7367 时间： 2012-11-14 18:05:48
@@ -4099,8 +4099,8 @@ A公司 2010 、 2011 年利润均为 1000 万， 2010 年股本为 1000 万， 
 本 2 ； 2013 年 6 月实施股改，股本为 30 ， 2013 年 9 月引入另一新股东增加股本3,2014年 6 月引入新股东增加股本 4 ，请问三年一期报告
 的每股收益如何计算？ 2012 年净利润25,2013年净利润30,2014年净利润 35 ；
 1 、 2012 年有限责任公司可以不予列报？若披露的话，则加权平均股数： 10 30/12=25, 每股收益 =1 ？ 2 、 2013 年股份公司的加权平
-均股数： 30+3 3/12=30.75，每股收益=0.98？股份制改制后又引入了新股东导致股本变化是否对 2012 年度的加权平均股数计算有影
-响？ 3 、 2014 年股份公司加权平均股数：33+4*6/12=35，每股收益=1？
+均股数： 30&#43;3 3/12=30.75，每股收益=0.98？股份制改制后又引入了新股东导致股本变化是否对 2012 年度的加权平均股数计算有影
+响？ 3 、 2014 年股份公司加权平均股数：33&#43;4*6/12=35，每股收益=1？
 **回答人：** chenyiwei
 1 、 2012 年度加权平均股数应为（ 10 ＋2*3/12）*30/12=26.25，EPS＝25/26.25=0.95 2、 3 、 2013 、 2014 年度计算基本合理。股份
 制改制后又引入了新股东导致股本变化，该股本变化是与经济资源从外部流入对应的，并不是股东权益的内部结构调整，因此无需就
@@ -4168,7 +4168,7 @@ A公司 2010 、 2011 年利润均为 1000 万， 2010 年股本为 1000 万， 
 1 、严格来说，固定资产折旧（假设不考虑计入管理费用销售费用等直接计入费用的折旧），应该只包含计入制造费用，并且对外销售了那
 部分折旧，但是实务中一般都是算当期计提的了。
 
-2 、财务费用=计入当期损益的借款利息支出—汇率变动对现金及现金等价物的影响+外币借款汇率变动的影响。 贴现利息，应该没
+2 、财务费用=计入当期损益的借款利息支出—汇率变动对现金及现金等价物的影响&#43;外币借款汇率变动的影响。 贴现利息，应该没
 
 有现金流量。举例来说，你的本期没有别的业务，只有一笔业务，应收票据贴现， 100 万，贴现息 3 万，现金流量表中的主表，经营
 
@@ -4364,9 +4364,9 @@ A公司 2010 、 2011 年利润均为 1000 万， 2010 年股本为 1000 万， 
 
 度形成， 1000 万是 2010 年度形成，那么在计算 2011 年度和 2010 年度每股收益时，股本按照 3000 万确定？还是需要考虑用于转增股
 
-本的未分配利润形成时间？如果考虑用于转增股本的未分配利润形成时间，则 2010 年度股本为1000+1000/2＝ 1500 万， 2011 年度股
+本的未分配利润形成时间？如果考虑用于转增股本的未分配利润形成时间，则 2010 年度股本为1000&#43;1000/2＝ 1500 万， 2011 年度股
 
-本为2000+1000/2＝ 2500 万
+本为2000&#43;1000/2＝ 2500 万
 欢迎讨论
 
 **回答人：** chenyiwei
@@ -4642,9 +4642,9 @@ A公司与B公司约定：A公司将苗木以 1000 万的价格售予B公司， 
 
 100%股权，出资 400 ，其购买日净资产账面价值 300 ，公允价值为 400 ，然后在我持有的过程中这个子公司盈利 100 ，现在我要处置
 
-这个子公司80%的股份，出售日子公司账面价值 400 （300+100），公允价值 600 ，那么原持股比例计算应享有原有子公司自购买日
+这个子公司80%的股份，出售日子公司账面价值 400 （300&#43;100），公允价值 600 ，那么原持股比例计算应享有原有子公司自购买日
 
-开始持续计算的净资产的份额是多少呢，是400+100吗，还是 600 ，如果是 500 的话我还有个问题，因为这个 400 是购买日净资产的
+开始持续计算的净资产的份额是多少呢，是400&#43;100吗，还是 600 ，如果是 500 的话我还有个问题，因为这个 400 是购买日净资产的
 
 公允价值，但盈利 100 应该是按账面值计算的利润，那么我是不是再将这个 100 进行调整呢，调整成安公允价值持续计算的利润。
 
@@ -4657,7 +4657,7 @@ A公司与B公司约定：A公司将苗木以 1000 万的价格售予B公司， 
 
 在投资收益上， 2 合并表投资收益=处置价款- 合并报表层面享有该子公司净资产份额，这时减去减值准备的递延税 3 在合并附注处
 
-置子公司填列"处置价款与处置投资对应的合并报表层面享有该子公司净资产份额的差额"时，不包括该准备的递延税？
+置子公司填列&#34;处置价款与处置投资对应的合并报表层面享有该子公司净资产份额的差额&#34;时，不包括该准备的递延税？
 
 **回答人：** chenyiwei
 
@@ -4754,7 +4754,7 @@ A公司原持有B公司70%股权，又于 2011 年 7 月 31 日收购了少数�
 
 60 （万元 300×20%）是针对本企业持有 的对联营企业的权益份额， 在采用权益法计算确认投资损益时应予抵销， 同时应考虑相关
 
-固 定资产折旧对损益的影响，即甲企业应当进行的会计处理为： 借：长期股权投资——损益调整［(1 000-300)+2.5×20%］ 1 405
+固 定资产折旧对损益的影响，即甲企业应当进行的会计处理为： 借：长期股权投资——损益调整［(1 000-300)&#43;2.5×20%］ 1 405
 
 000 贷：投资收益 1 405 000 甲企业如存在子公司需要编制合并财务报表， 在合并财务报表中对该未实现内部交易损 益
 
@@ -4767,7 +4767,7 @@ A公司原持有B公司70%股权，又于 2011 年 7 月 31 日收购了少数�
 
 **回答人：** chenyiwei
 
-你可以参照这个帖子里的讨论来理解：http://bbs.esnai.com/forum.php?m ... 640&pid=5163226。
+你可以参照这个帖子里的讨论来理解：http://bbs.esnai.com/forum.php?m ... 640&amp;pid=5163226。
 
 # 457 、企业在搬迁中停产损失如何处理？
 
@@ -5035,7 +5035,7 @@ A公司原持有B公司70%股权，又于 2011 年 7 月 31 日收购了少数�
 **提问人：** caishaoxian 时间： 2012-02-17 06:57:11
 这个应该计入其他业务成本还是营业税金及附加？个人认为是后者，但是一些同事认为是前者，望大家给我解惑
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 应当计入营业税金及附加。
@@ -5264,11 +5264,11 @@ A公司持B公司50%股权，B公司 5 个董事中有 3 个董事由A委派，�
 
 **提问人：** Yanlinqin 时间： 2012-02-18 12:30:32
 
-企业收到财政专项资金，税务上按不征税收入处理，会计上按与资产相关的政府补助处理，报表上体现为固定资产（A+B）和递延收
+企业收到财政专项资金，税务上按不征税收入处理，会计上按与资产相关的政府补助处理，报表上体现为固定资产（A&#43;B）和递延收
 
-益A。该项业务的所得税如何进行会计核算？ 我认为，固定资产的计税基础等于账面价值减去递延收益=（ A + B） - A =B，产生应
+益A。该项业务的所得税如何进行会计核算？ 我认为，固定资产的计税基础等于账面价值减去递延收益=（ A &#43; B） - A =B，产生应
 
-纳税差异 = （A + B） - B = A，应确认递延所得税负债为： A税率。递延收益的账面价值与计税基础均为 A ，不能确认递延所得税资
+纳税差异 = （A &#43; B） - B = A，应确认递延所得税负债为： A税率。递延收益的账面价值与计税基础均为 A ，不能确认递延所得税资
 
 产。也即，不征税收入对企业权益的增加为： A （1-税率），这是由于与不征税收入相关的费用及资产折旧摊销不得税前扣除所产生
 的。
@@ -5277,7 +5277,7 @@ A公司持B公司50%股权，B公司 5 个董事中有 3 个董事由A委派，�
 
 不征税收入用于形成固定资产时，在初始确认阶段应当没有递延所得税影响。 调整后固定资产的帐面价值＝固定资产帐面价值－递
 
-延收益＝（A+B）-A=B。 固定资产的计税基础＝B。 两者相同，所以没有暂时性差异。
+延收益＝（A&#43;B）-A=B。 固定资产的计税基础＝B。 两者相同，所以没有暂时性差异。
 
 从另一方面讲，固定资产和递延收益初始确认时都是既不影响应纳税所得额也不影响会计利润的，所以适用所得税准则规定的“初始
 
@@ -5654,7 +5654,7 @@ A公司在 2011 年 3 月 31 日同一控制下合并B公司，那么在编制�
 
 A related party is a person or entity that is related to the entity that is preparing its financial statements (in this Standard referred to
 
-as the 'reporting entity'). (a) A person or a close member of that person's family is related to a reporting entity if that person: (i)
+as the &#39;reporting entity&#39;). (a) A person or a close member of that person&#39;s family is related to a reporting entity if that person: (i)
 
 has control or joint control over the reporting entity; (ii) has significant influence over the reporting entity; or (iii) is a member
 
@@ -5772,7 +5772,7 @@ parent of the entity).
 
 陈老师，您好！部分处置子公司股权后改按权益法核算，虽然合并报表不影响“未分配利润”衔接，但是如上述会计处理后，会影响单
 
-体报表的未分配利润科目，造成“期初未分配利润+本期净利润≠期末未分配利润”，使得未分配利润不衔接
+体报表的未分配利润科目，造成“期初未分配利润&#43;本期净利润≠期末未分配利润”，使得未分配利润不衔接
 
 **回答人：** chenyiwei
 个别报表层面需就剩余股权转权益法核算的问题进行追溯调整。
@@ -5831,9 +5831,9 @@ parent of the entity).
 
 股份有限公司， 2011 年 5 月非公开定向增资 3000 万元，请教大家如何计算 2010 年度、 2011 年度的加权平均股数？ 不知道这样计算对
 
-不对？ 2010 年加权平均股数=1000 1500/1500/12 5+500 1500/1500/12 7=708.33万股 2011 年加权平均股数
+不对？ 2010 年加权平均股数=1000 1500/1500/12 5&#43;500 1500/1500/12 7=708.33万股 2011 年加权平均股数
 
-=708.33/12 5+4500/12 7=2920.14万股 或者 2011 年加权平均股数=1500/12 5+4500/12 7?
+=708.33/12 5&#43;4500/12 7=2920.14万股 或者 2011 年加权平均股数=1500/12 5&#43;4500/12 7?
 
 **回答人：** chenyiwei
 
@@ -5915,7 +5915,7 @@ A于 2011 年 6 月 30 日以现金对价 250 取得B的 100 ％股权，该时�
 
 DR：子公司实收资本 200 子公司未分配利润70 CR：长投 230 未分配利润 40
 
-那么，合并报表层面的未分配利润不是100+70-70+40=140吗？
+那么，合并报表层面的未分配利润不是100&#43;70-70&#43;40=140吗？
 
 **回答人：** chenyiwei
 成本法下的抵销分录就是我上面所列的。其目的是使所支付的非股权对价在合并报表层面均冲减资本公积，从而保证留存收益的完整
@@ -6571,7 +6571,7 @@ A公司控股子公司应收A公司控股股东下属的企业款项已经全额
 所相应调整核定的冲抵保证金金额时，公司按调整数相应的调整对客户的所确认的负债。
 
 
-2 、期货风险准备金：根据财商字[1997]44号《关于<商品期货交易财务管理暂行规定>的通知》的规定，风险准备金按代理手续费收
+2 、期货风险准备金：根据财商字[1997]44号《关于&lt;商品期货交易财务管理暂行规定&gt;的通知》的规定，风险准备金按代理手续费收
 
 入减去应付期货交易所手续费后的净收入的 5 ％提取，提取的风险准备金计入“提取期货风险准备金”项目核算。期货公司因自身原因
 造成客户交易损失时，按损失金额经审核批准后，可在风险准备金科目中列支。
@@ -6949,7 +6949,7 @@ iGAAP和iasplus.com上的共享资料）。
 
 **提问人：** wjcpa9568 时间： 2014-03-29 12:14:13
 
-请教陈版: 准则讲解2010 P336中,对反向收购每股收益的计算, 与<上市公司执行企业会计准则案例解析>P88中的公式不一致,方便请
+请教陈版: 准则讲解2010 P336中,对反向收购每股收益的计算, 与&lt;上市公司执行企业会计准则案例解析&gt;P88中的公式不一致,方便请
 释疑。先谢了
 
 **回答人：** chenyiwei
@@ -7332,7 +7332,7 @@ iGAAP和iasplus.com上的共享资料）。
 
 **提问人：**五老峰五老峰 时间： 2012-02-24 14:00:23
 
-查了<公开发行证券的公司信息披露编报规则第 15 号--财务报告的一般规定（ 2010 年修订)>, ，但是下摘不下来文件中的附件，即附
+查了&lt;公开发行证券的公司信息披露编报规则第 15 号--财务报告的一般规定（ 2010 年修订)&gt;, ，但是下摘不下来文件中的附件，即附
 
 注披露格式，请问谁有这个附注披露格式呢？ 能否帮助提供一下呢？谢谢
 
@@ -7342,7 +7342,7 @@ http://www.csrc.gov.cn/pub/zjhpu ... 20100111_175326.htm 下载里面的“附�
 
 **提问人：**五老峰五老峰 时间： 2012-02-25 14:30:47
 
-陈老师，我想问一下， 2010 年版的披露编制规定是不是最新的呢？我在附件中的'财务报告披露格式中"也没有看到要披露合并报表的
+陈老师，我想问一下， 2010 年版的披露编制规定是不是最新的呢？我在附件中的&#39;财务报告披露格式中&#34;也没有看到要披露合并报表的
 销售费用、管理费用、财务费用三个科目的附注披露要求，实际上今年披露的上市公司都基本上披露了这三项费用的明细，是不是还
 
 有其他什么文件要求披露上述三项项目或其他科目的内容呢？ 比如 2011 年度报告中有此要求呢？
@@ -7550,13 +7550,13 @@ http://www.csrc.gov.cn/pub/zjhpu ... 20100111_175326.htm 下载里面的“附�
 
 **提问人：** shidongliu3 时间： 2012-02-24 18:08:30
 
-1 、A持股B60%，A持股C50%，B、C均纳入合并范围，另外C持B2%。 A最终合并B少数股东权益比例为40%+2%*50%＝41%；（B、
+1 、A持股B60%，A持股C50%，B、C均纳入合并范围，另外C持B2%。 A最终合并B少数股东权益比例为40%&#43;2%*50%＝41%；（B、
 
 C其他权益为集团外股东持股） 2 、A持股B60%，A持股C50%，B、C均纳入合并范围，另外B控股80%子公司D持有C控股70%子公司
 
 E20%股权，A合并层面E少数股东权益是零？集团控股子公司之子公司间交叉持股不形成少数股东权益，抵消了？ 通常会想到：A对E
 
-少数股东权益为50%*30%+40%*20%*20%=16.6%
+少数股东权益为50%*30%&#43;40%*20%*20%=16.6%
 
 **回答人：** chenyiwei
 要把投资成本部分和损益调整部分分开算。你上面提到的算法，计算母公司和少数股东在子公司的损益调整部分中最终享有的份额比
@@ -7851,7 +7851,7 @@ B不是同一控制关系，原有的资产负债业务是要置换出去，最�
 **提问人：** shidongliu3 时间： 2012-02-26 09:07:51
 
 
-A合并子公司B公司，合并当年 借：资产 负债 资本公积（长投－资产+负债） 贷：长期股权投资 第二年及以后年度： 借：资本公
+A合并子公司B公司，合并当年 借：资产 负债 资本公积（长投－资产&#43;负债） 贷：长期股权投资 第二年及以后年度： 借：资本公
 
 积（合并当年差额） 贷：年初未分配利润 （合并当年差额） 第二年及以后年度处理是否正确，这样年初未分配利润与上年年末未
 分配利润对不上了，麻烦老师指点。谢谢
@@ -8484,11 +8484,11 @@ potentially have a significant effect on the amount recognised for goodwill. 请
 
 咨询陈版及各位专家，现A公司 2010 年给同一控制合并了一个集团B（A占B51%），B账面当时账面净资产是 40 亿，其中商誉是 5 亿。
 
-B集团期末时的可辨认净资产公允价值是 36 亿元（账面净值 40 亿-5亿商誉+可辨认净资产增值 1 亿元），因此当时确认少数股东权益
+B集团期末时的可辨认净资产公允价值是 36 亿元（账面净值 40 亿-5亿商誉&#43;可辨认净资产增值 1 亿元），因此当时确认少数股东权益
 
 =36亿*49%。 2011 年末B集团的对商誉计提了 1 亿元的减值，期末账面净值 45 亿元，商誉为 4 亿元，可辨认净资产增值部分连续计算
 
-为0.5亿元，那么 2011 年末的A合并B的按照公允价值调整后的报表净资产为45-4+0.5=41.5吗？当期计提的商誉 1 亿的减值是否影响A
+为0.5亿元，那么 2011 年末的A合并B的按照公允价值调整后的报表净资产为45-4&#43;0.5=41.5吗？当期计提的商誉 1 亿的减值是否影响A
 
 合并B的利润表，是否要加回来？ 如果加回来分录如何做？借：资本公积 贷资产减值损失吗？
 
@@ -8623,7 +8623,7 @@ A 公司 2011 年 8 月 12 日以B公司 2010 年 12 月 31 日净资产为基�
 
 回复 chenyiwei 的帖子
 
-"但协议中对表决权转移和利润分享另有安排的除外。"
+&#34;但协议中对表决权转移和利润分享另有安排的除外。&#34;
 请教陈版，如果协议中约定基准日至工商变更完成日的利润归新股东所有，那合并日是否能选定为基准日。
 
 如果作价基准日与实际交割日距离较远，但还在 1 年以内，会不会存在定价不公允的情况呢？
@@ -8705,11 +8705,11 @@ C属于自用房地产。D因为不能转让而不属于投资性房地产。
 现净利润 300 万。 今年 12 月 31 日，母公司以 3000 万价格出售该企业全部股权。 这时合并报表确认投资收益：3000-2000-300=700
 万。
 
-在今年内，出售之前，a公司分红 1000 万，那么年末a公司权益为：2000+300-1000=1300万， 合并报表确认投资收益3000-
+在今年内，出售之前，a公司分红 1000 万，那么年末a公司权益为：2000&#43;300-1000=1300万， 合并报表确认投资收益3000-
 
 1300=1700万。
 
-如果分红 500 万，a公司期末权益2000+300-500=1800万， 合并出售收益3000-1800=1200万。
+如果分红 500 万，a公司期末权益2000&#43;300-500=1800万， 合并出售收益3000-1800=1200万。
 从上可看出，持有期间内部分红，影响出售收益。请问对吗？
 
 **回答人：** chenyiwei
@@ -8735,11 +8735,11 @@ C属于自用房地产。D因为不能转让而不属于投资性房地产。
 
 IFRS 3.19: 19 For each business combination, the acquirer shall measure at the acquisition date components of non-controlling
 
-interests in the acquiree that are present ownership interests and entitle their holders to a proportionate share of the entity's net
+interests in the acquiree that are present ownership interests and entitle their holders to a proportionate share of the entity&#39;s net
 
-assets in the event of liquidation at either: (a) fair value; or (b) the present ownership instruments' proportionate share in the
+assets in the event of liquidation at either: (a) fair value; or (b) the present ownership instruments&#39; proportionate share in the
 
-recognised amounts of the acquiree's identifiable net assets. All other components of non-controlling interests shall be measured at
+recognised amounts of the acquiree&#39;s identifiable net assets. All other components of non-controlling interests shall be measured at
 
 their acquisition-date fair values, unless another measurement basis is required by IFRSs. 在你说的案例中，第一种情况下，被投资企
 
@@ -8750,11 +8750,11 @@ their acquisition-date fair values, unless another measurement basis is required
 
 IFRS 3.19: 19 For each business combination, the acquirer shall measure at the acquisition date components of non-controlling
 
-interests in the acquiree that are present ownership interests and entitle their holders to a proportionate share of the entity's net
+interests in the acquiree that are present ownership interests and entitle their holders to a proportionate share of the entity&#39;s net
 
-assets in the event of liquidation at either: (a) fair value; or (b) the present ownership instruments' proportionate share in the
+assets in the event of liquidation at either: (a) fair value; or (b) the present ownership instruments&#39; proportionate share in the
 
-recognised amounts of the acquiree's identifiable net assets. All other components of non-controlling interests shall be measured at
+recognised amounts of the acquiree&#39;s identifiable net assets. All other components of non-controlling interests shall be measured at
 
 their acquisition-date fair values, unless another measurement basis is required by IFRSs. 在你说的案例中，第一种情况下，被投资企
 
@@ -8866,6 +8866,6 @@ A公司持有C公司30%股份，B公司持有C公司70%股份，A、B公司同�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201202/  
 

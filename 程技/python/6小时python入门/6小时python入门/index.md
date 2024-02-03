@@ -1,7 +1,7 @@
 # 6 小时 Python 入门
 
 
-> 以下操作均在 Windows 环境下进行操作，先说明一下哈
+&gt; 以下操作均在 Windows 环境下进行操作，先说明一下哈
 
 ## 一、安装 Python
 
@@ -39,10 +39,10 @@
 
 ## 三、HelloWorld
 
-创建第一个项目 HelloWorld --> 创建文件 app.py --> 写入代码：
+创建第一个项目 HelloWorld --&gt; 创建文件 app.py --&gt; 写入代码：
 
 ```python
-print("HelloWorld")
+print(&#34;HelloWorld&#34;)
 ```
 
 
@@ -63,15 +63,15 @@ print("HelloWorld")
 
 ### 1.打印 10 个 *
 
-> 使用到表达式
+&gt; 使用到表达式
 
 ```python
-print('*' * 10)
+print(&#39;*&#39; * 10)
 ```
 
 ### 2.打印价格
 
-> 使用到变量
+&gt; 使用到变量
 
 ```python
 price = 10
@@ -84,24 +84,24 @@ print(price)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
+&#34;&#34;&#34;
 @Time        : 2020/5/18
 @Author      : WuGenQiang
 @File        : hospital
 @Description : 描述医院病人的信息
-"""
-full_name = 'John Smith'
+&#34;&#34;&#34;
+full_name = &#39;John Smith&#39;
 age = 20
 is_new = True
 ```
 
 ### 4.接收用户输入，打印问候信息
 
-> 使用输入函数 input() 进行输入
+&gt; 使用输入函数 input() 进行输入
 
 ```python
-name = input('what is your name?')
-print('Hi ' + name)
+name = input(&#39;what is your name?&#39;)
+print(&#39;Hi &#39; &#43; name)
 ```
 
 测试：
@@ -110,10 +110,10 @@ print('Hi ' + name)
 
 ### 5.打印年龄
 
-> 使用到强制类型转换
+&gt; 使用到强制类型转换
 
 ```python
-birth_year = input('Birth year: ')
+birth_year = input(&#39;Birth year: &#39;)
 age = 2019 - int(birth_year)
 print(age)
 ```
@@ -126,17 +126,17 @@ print(type(birth_year))
 
 ### 6.字符串打印
 
-> 三种字符串表达形式
+&gt; 三种字符串表达形式
 
 ```python
-course_1 = 'Python for "Beginners"'
+course_1 = &#39;Python for &#34;Beginners&#34;&#39;
 print(course_1)
-course_2 = "Python is my 'love'"
+course_2 = &#34;Python is my &#39;love&#39;&#34;
 print(course_2)
-course_3 = '''
+course_3 = &#39;&#39;&#39;
 Hi John
 welcome to python world!
-'''
+&#39;&#39;&#39;
 print(course_3)
 ```
 
@@ -195,12 +195,12 @@ print(course_1[1:-1])
 ### 7.格式化字符串
 
 ```python
-first = 'WuGenQiang'
-last = 'happy'
+first = &#39;WuGenQiang&#39;
+last = &#39;happy&#39;
 # 字符串拼接
-message = first + ' [' + last + '] is a coder'
+message = first &#43; &#39; [&#39; &#43; last &#43; &#39;] is a coder&#39;
 # 格式化字符串
-msg = f'{first} [{last}] is a coder'
+msg = f&#39;{first} [{last}] is a coder&#39;
 print(message)
 print(msg)
 ```
@@ -210,7 +210,7 @@ print(msg)
 （1）len() 函数：求字符串长度
 
 ```python
-course = 'Python for Beginners'
+course = &#39;Python for Beginners&#39;
 # 字符串长度
 print(len(course))
 ```
@@ -233,7 +233,7 @@ print(course.lower())
 
 ```python
 # 找字符返回第一个匹配的索引值
-print(course.find('n'))
+print(course.find(&#39;n&#39;))
 ```
 
 找不到返回 -1，并且区分大小写
@@ -242,14 +242,14 @@ print(course.find('n'))
 
 ```python
 # 替换字符
-print(course.replace('Beginners', 'Absolute Beginners'))
+print(course.replace(&#39;Beginners&#39;, &#39;Absolute Beginners&#39;))
 ```
 
 （6）in 使用：产生布尔值 False or True
 
 ```python
 # 判断字符串是否在字符串里
-print('Python' in course)
+print(&#39;Python&#39; in course)
 ```
 
 ### 9.算术运算符
@@ -264,15 +264,15 @@ print(10 * 3)
 print(10 ** 3)
 
 x = 10
-x = x + 3
-x += 3
+x = x &#43; 3
+x &#43;= 3
 print(x)
 ```
 
 思索下面 x 为多少：
 
 ```python
-x = 10 + 3 * 2 ** 2
+x = 10 &#43; 3 * 2 ** 2
 ```
 
 答案是 22，因为取幂运算符是优先的，所以先算 2 的 2 次方
@@ -292,96 +292,96 @@ print(math.floor(2.9))
 
 ### 11.条件语句的使用
 
-> 使用 if - elif - else
+&gt; 使用 if - elif - else
 
 ```python
 is_hot = False
 is_cold = True
 if is_hot:
-    print("It's a hot day")
+    print(&#34;It&#39;s a hot day&#34;)
 elif is_cold:
-    print("It's a cold day")
+    print(&#34;It&#39;s a cold day&#34;)
 else:
-    print("It's a lovely day")
-print("Enjoy your day")
+    print(&#34;It&#39;s a lovely day&#34;)
+print(&#34;Enjoy your day&#34;)
 ```
 
-当条件多个并且是 "and" 的关系时，使用：
+当条件多个并且是 &#34;and&#34; 的关系时，使用：
 
 ```python
 has_high_income = True
 has_good_credit = True
 if has_good_credit and has_high_income:
-    print("Eligible for loan")
+    print(&#34;Eligible for loan&#34;)
 ```
 
-若当条件多个并且是 "or" 的关系时，使用：
+若当条件多个并且是 &#34;or&#34; 的关系时，使用：
 
 ```python
 has_high_income = False
 has_good_credit = True
 if has_good_credit or has_high_income:
-    print("Eligible for loan")
+    print(&#34;Eligible for loan&#34;)
 ```
 
-如何使用 "not"，看下面：(not 相当于取反)
+如何使用 &#34;not&#34;，看下面：(not 相当于取反)
 
 ```python
 has_good_credit = True
 has_criminal_record = False
 if has_good_credit and not has_criminal_record:
-    print("Eligible for loan")
+    print(&#34;Eligible for loan&#34;)
 ```
 
 ### 12.打印天气
 
-> 使用比较运算符
+&gt; 使用比较运算符
 
 ```python
 temperature = 30
-if temperature > 30:
-    print("It's a hot day")
+if temperature &gt; 30:
+    print(&#34;It&#39;s a hot day&#34;)
 else:
-    print("It's a cold day")
+    print(&#34;It&#39;s a cold day&#34;)
 ```
 
 ### 13.打印名字是否符合要求
 
-> 使用比较运算符
+&gt; 使用比较运算符
 
 ```python
-name = "James"
-if len(name) < 3:
-    print("Name must be at least 3 character")
-elif len(name) > 50:
-    print("Name must be a maximum of 50 character")
+name = &#34;James&#34;
+if len(name) &lt; 3:
+    print(&#34;Name must be at least 3 character&#34;)
+elif len(name) &gt; 50:
+    print(&#34;Name must be a maximum of 50 character&#34;)
 else:
-    print("Name looks good")
+    print(&#34;Name looks good&#34;)
 ```
 
 ### 14.判断体重
 
 ```python
-weight = int(input('weight: '))
-unit = input('(L)bs or (K)g: ')
-if unit.upper() == "L":
+weight = int(input(&#39;weight: &#39;))
+unit = input(&#39;(L)bs or (K)g: &#39;)
+if unit.upper() == &#34;L&#34;:
     converted = weight * 0.45
-    print(f"You are {converted} kilos")
+    print(f&#34;You are {converted} kilos&#34;)
 else:
     converted = weight / 0.45
-    print(f"You are {converted} pounds")
+    print(f&#34;You are {converted} pounds&#34;)
 ```
 
 ### 15.打印 1 - 5
 
-> 使用到 while 循环语句或者 for 循环语句
+&gt; 使用到 while 循环语句或者 for 循环语句
 
 ```python
 i = 1
-while i <= 5:
+while i &lt;= 5:
     print(i)
-    i = i + 1
-print("Done")
+    i = i &#43; 1
+print(&#34;Done&#34;)
 ```
 
 ### 16.猜数（秘密号码）
@@ -390,14 +390,14 @@ print("Done")
 secret_number = 9
 guess_count = 0
 guess_limit = 3
-while guess_count < guess_limit:
-    guess = int(input('Guess: '))
-    guess_count += 1
+while guess_count &lt; guess_limit:
+    guess = int(input(&#39;Guess: &#39;))
+    guess_count &#43;= 1
     if guess == secret_number:
-        print('You won!')
+        print(&#39;You won!&#39;)
         break
 else:
-    print('Sorry, you failed')
+    print(&#39;Sorry, you failed&#39;)
 ```
 
 
@@ -405,43 +405,43 @@ else:
 ### 17.Car game
 
 ```python
-command = ""
+command = &#34;&#34;
 started = False
 
 while True:
-    command = input("> ").lower()
-    if command == "start":
+    command = input(&#34;&gt; &#34;).lower()
+    if command == &#34;start&#34;:
         if started:
-            print("Car is already started!")
+            print(&#34;Car is already started!&#34;)
         else:
             started = True
-            print("Car started...")
-    elif command == "stop":
+            print(&#34;Car started...&#34;)
+    elif command == &#34;stop&#34;:
         if not started:
-            print("Car is already stopped!")
+            print(&#34;Car is already stopped!&#34;)
         else:
             started = False
-            print("Car stopped.")
-    elif command == "help":
-        print("""
+            print(&#34;Car stopped.&#34;)
+    elif command == &#34;help&#34;:
+        print(&#34;&#34;&#34;
         start - to start the car
         stop - to stop the car
         quit - to quit
-        """)
-    elif command == "quit":
+        &#34;&#34;&#34;)
+    elif command == &#34;quit&#34;:
         break
     else:
-        print("Sorry, I don't understand that!")
+        print(&#34;Sorry, I don&#39;t understand that!&#34;)
 ```
 
 ### 18.for 循环使用
 
 ```python
 # 打印 Python
-for item in 'Python':
+for item in &#39;Python&#39;:
     print(item)
 
-for item in ['Mosh', 'John', 'Sarah']:
+for item in [&#39;Mosh&#39;, &#39;John&#39;, &#39;Sarah&#39;]:
     print(item)
 
 for item in [1, 2, 3, 4]:
@@ -460,14 +460,14 @@ for item in range(5, 10, 2):
 
 ### 19.计算价格总量
 
-> 使用到 for 循环
+&gt; 使用到 for 循环
 
 ```python
 prices = [10, 20, 30]
 total = 0
 for price in prices:
-    total += price
-print(f"Total: {total}")
+    total &#43;= price
+print(f&#34;Total: {total}&#34;)
 ```
 
 ### 20.嵌套循环
@@ -475,17 +475,17 @@ print(f"Total: {total}")
 ```python
 for x in range(4):
     for y in range(3):
-        print(f'({x}, {y})')
+        print(f&#39;({x}, {y})&#39;)
 ```
 
-**画个大大的 "F"**
+**画个大大的 &#34;F&#34;**
 
 * 方式一：
 
 ```python
 numbers = [5, 2, 5, 2, 2]
 for x_count in numbers:
-    print('x' * x_count)
+    print(&#39;x&#39; * x_count)
 ```
 
 * 方式二：
@@ -493,16 +493,16 @@ for x_count in numbers:
 ```python
 numbers = [5, 2, 5, 2, 2]
 for x_count in numbers:
-    output = ''
+    output = &#39;&#39;
     for count in range(x_count):
-        output += 'x'
+        output &#43;= &#39;x&#39;
     print(output)
 ```
 
 ### 21.List
 
 ```python
-names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
+names = [&#39;John&#39;, &#39;Bob&#39;, &#39;Mosh&#39;, &#39;Sarah&#39;, &#39;Mary&#39;]
 print(names)
 print(names[:])
 print(names[2:])
@@ -518,7 +518,7 @@ print(names[-1])
 numbers = [3, 6, 2, 8, 4, 10]
 max = numbers[0]
 for number in numbers:
-    if number > max:
+    if number &gt; max:
         max = number
 print(max)
 ```
@@ -605,46 +605,46 @@ print(x)
 
 ```python
 customer = {
-    "name": "John Smith",
-    "age": 30,
-    "is_verified": True
+    &#34;name&#34;: &#34;John Smith&#34;,
+    &#34;age&#34;: 30,
+    &#34;is_verified&#34;: True
 }
-customer["name"] = "Jack Smith"
-print(customer["name"])
-print(customer.get("name"))
-print(customer.get("host", "123.12.1.1"))
+customer[&#34;name&#34;] = &#34;Jack Smith&#34;
+print(customer[&#34;name&#34;])
+print(customer.get(&#34;name&#34;))
+print(customer.get(&#34;host&#34;, &#34;123.12.1.1&#34;))
 ```
 
 * 读号码
 
 ```python
-phone = input("Phone: ")
+phone = input(&#34;Phone: &#34;)
 digits_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five"
+    &#34;1&#34;: &#34;One&#34;,
+    &#34;2&#34;: &#34;Two&#34;,
+    &#34;3&#34;: &#34;Three&#34;,
+    &#34;4&#34;: &#34;Four&#34;,
+    &#34;5&#34;: &#34;Five&#34;
 }
-output = ""
+output = &#34;&#34;
 for ch in phone:
-    output += digits_mapping.get(ch, "!") + " "
+    output &#43;= digits_mapping.get(ch, &#34;!&#34;) &#43; &#34; &#34;
 print(output)
 ```
 
 ### 27.输出表情符号
 
 ```python
-message = input("> ")
-words = message.split(' ')
+message = input(&#34;&gt; &#34;)
+words = message.split(&#39; &#39;)
 # 调用表情符号
 emojis = {
-    ":)": "😄",
-    ":(": "😣"
+    &#34;:)&#34;: &#34;😄&#34;,
+    &#34;:(&#34;: &#34;😣&#34;
 }
-output = ""
+output = &#34;&#34;
 for word in words:
-    output += emojis.get(word, word) + " "
+    output &#43;= emojis.get(word, word) &#43; &#34; &#34;
 print(output)
 ```
 
@@ -654,24 +654,24 @@ print(output)
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
+&#34;&#34;&#34;
 @Time        : 2020/5/20
 @Author      : WuGenQiang
 @File        : testList
 @Description : 
-"""
+&#34;&#34;&#34;
 def emoji_converter(message):
-    words = message.split(' ')
+    words = message.split(&#39; &#39;)
     # 调用表情符号
     emojis = {
-        ":)": "😄",
-        ":(": "😣"
+        &#34;:)&#34;: &#34;😄&#34;,
+        &#34;:(&#34;: &#34;😣&#34;
     }
-    output = ""
+    output = &#34;&#34;
     for word in words:
-        output += emojis.get(word, word) + " "
+        output &#43;= emojis.get(word, word) &#43; &#34; &#34;
     return output
-message = input("> ")
+message = input(&#34;&gt; &#34;)
 result = emoji_converter(message)
 print(result)
 ```
@@ -684,22 +684,22 @@ print(result)
 
 ```python
 def greet_user():
-    print('Hi, function!')
+    print(&#39;Hi, function!&#39;)
 
-print("Start")
+print(&#34;Start&#34;)
 greet_user()
-print("Finished")
+print(&#34;Finished&#34;)
 ```
 
 * 传参：
 
 ```python
 def greet_user(name):
-    print(f'Hi, {name}')
+    print(f&#39;Hi, {name}&#39;)
 
-print("Start")
-greet_user("John")
-print("Finished")
+print(&#34;Start&#34;)
+greet_user(&#34;John&#34;)
+print(&#34;Finished&#34;)
 ```
 
 * 打印数的平方
@@ -720,21 +720,21 @@ print(result)
 
 ```python
 try:
-    age = int(input('Age: '))
+    age = int(input(&#39;Age: &#39;))
     income = 20000
     risk = income / age
     print(age)
 except ZeroDivisionError:
-    print('Age cannot be 0.')
+    print(&#39;Age cannot be 0.&#39;)
 except ValueError:
-    print('Invalid value')
+    print(&#39;Invalid value&#39;)
 ```
 
 ### 30.注释
 
 ```python
 # 这是注释：print Sky is blue
-print('Sky is blue')
+print(&#39;Sky is blue&#39;)
 
 # 计算和返回数的平方
 def square(number):
@@ -752,9 +752,9 @@ class Point:
         self.x = x
         self.y = y
     def move(self):
-        print("move")
+        print(&#34;move&#34;)
     def draw(self):
-        print("draw")
+        print(&#34;draw&#34;)
 # point1 = Point()
 # point1.draw()
 point2 = Point(10, 20)
@@ -769,14 +769,14 @@ class Person:
     def __init__(self, name):
         self.name = name
     def talk(self):
-        print(f"Hi, I am {self.name}")
+        print(f&#34;Hi, I am {self.name}&#34;)
 
 # john = Person()
 # john.talk()
-john = Person("John Smith")
+john = Person(&#34;John Smith&#34;)
 john.talk()
 
-bob = Person("Bob Smith")
+bob = Person(&#34;Bob Smith&#34;)
 bob.talk()
 ```
 
@@ -787,12 +787,12 @@ bob.talk()
 class Mammal:
     # Mammal: 哺乳动物
     def walk(self):
-        print("walk")
+        print(&#34;walk&#34;)
 
 
 class Dog(Mammal):
     def bark(self):
-        print("bark")
+        print(&#34;bark&#34;)
 
 class Cat(Mammal):
     pass
@@ -844,7 +844,7 @@ print(kg_to_lbs(100))
 def find_max(numbers):
     max = numbers[0]
     for number in numbers:
-        if number > max:
+        if number &gt; max:
             max = number
     return max
 ```
@@ -866,7 +866,7 @@ print(find_max(numbers))
 
 ```python
 def calc_shipping():
-    print("calc shipping")
+    print(&#34;calc shipping&#34;)
 ```
 
 调用：
@@ -910,7 +910,7 @@ for i in range(3):
 ```python
 import random
 
-members = ['John', 'Mary', 'Mosh']
+members = [&#39;John&#39;, &#39;Mary&#39;, &#39;Mosh&#39;]
 leader = random.choice(members)
 print(leader)
 ```
@@ -935,7 +935,7 @@ print(dice.roll())
 ```python
 from pathlib import Path
 
-path = Path("ecommerce")
+path = Path(&#34;ecommerce&#34;)
 print(path.exists())
 ```
 
@@ -957,7 +957,7 @@ path.rmdir
 from pathlib import Path
 
 path = Path()
-print(path.glob('*.*'))
+print(path.glob(&#39;*.*&#39;))
 ```
 
 实例：
@@ -966,7 +966,7 @@ print(path.glob('*.*'))
 from pathlib import Path
 
 path = Path()
-for file in path.glob('*.py'):
+for file in path.glob(&#39;*.py&#39;):
     print(file)
 ```
 
@@ -976,7 +976,7 @@ for file in path.glob('*.py'):
 from pathlib import Path
 
 path = Path()
-for file in path.glob('*'):
+for file in path.glob(&#39;*&#39;):
     print(file)
 ```
 
@@ -986,9 +986,9 @@ for file in path.glob('*'):
 
 ```python
 import openpyxl as xl
-wb = xl.load_workbook('transactions.xlsx')
-sheet = wb['Sheet1']
-cell = sheet['A1']
+wb = xl.load_workbook(&#39;transactions.xlsx&#39;)
+sheet = wb[&#39;Sheet1&#39;]
+cell = sheet[&#39;A1&#39;]
 cell = sheet.cell(1, 1)
 print(cell.value)
 ```
@@ -1005,24 +1005,24 @@ print(sheet.max_row)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
+&#34;&#34;&#34;
 @Time        : 2020/5/18
 @Author      : WuGenQiang
 @File        : app
 @Description : 
-"""
+&#34;&#34;&#34;
 import openpyxl as xl
-wb = xl.load_workbook('test.xlsx')
-sheet = wb['Sheet1']
-#cell = sheet['A1']
+wb = xl.load_workbook(&#39;test.xlsx&#39;)
+sheet = wb[&#39;Sheet1&#39;]
+#cell = sheet[&#39;A1&#39;]
 #cell = sheet.cell(1, 1)
 #print(cell.value)
 print(sheet.max_row)
 from openpyxl.chart import BarChart, Reference
-for row in range(1, sheet.max_row + 1):
+for row in range(1, sheet.max_row &#43; 1):
     cell = sheet.cell(row, 3)
     print(cell.value)
-    corrected_price = cell.value * 0.9 + 2
+    corrected_price = cell.value * 0.9 &#43; 2
     corrected_price_cell = sheet.cell(row, 4)
     corrected_price_cell.value = corrected_price
 values = Reference(sheet,
@@ -1032,8 +1032,8 @@ values = Reference(sheet,
           max_col=4)
 chart = BarChart()
 chart.add_data(values)
-sheet.add_chart(chart, 'E2')
-wb.save('test2.xlsx')
+sheet.add_chart(chart, &#39;E2&#39;)
+wb.save(&#39;test2.xlsx&#39;)
 ```
 
 效果图：
@@ -1048,27 +1048,27 @@ wb.save('test2.xlsx')
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
+&#34;&#34;&#34;
 @Time        : 2020/5/18
 @Author      : WuGenQiang
 @File        : app
 @Description : 
-"""
+&#34;&#34;&#34;
 import openpyxl as xl
 from openpyxl.chart import BarChart, Reference
 
 def process_workbook(filename):
     wb = xl.load_workbook(filename)
-    sheet = wb['Sheet1']
-    # cell = sheet['A1']
+    sheet = wb[&#39;Sheet1&#39;]
+    # cell = sheet[&#39;A1&#39;]
     # cell = sheet.cell(1, 1)
     # print(cell.value)
     print(sheet.max_row)
 
-    for row in range(1, sheet.max_row + 1):
+    for row in range(1, sheet.max_row &#43; 1):
         cell = sheet.cell(row, 3)
         print(cell.value)
-        corrected_price = cell.value * 0.9 + 2
+        corrected_price = cell.value * 0.9 &#43; 2
         corrected_price_cell = sheet.cell(row, 4)
         corrected_price_cell.value = corrected_price
     values = Reference(sheet,
@@ -1078,22 +1078,22 @@ def process_workbook(filename):
                        max_col=4)
     chart = BarChart()
     chart.add_data(values)
-    sheet.add_chart(chart, 'E2')
+    sheet.add_chart(chart, &#39;E2&#39;)
     wb.save(filename)
 
-process_workbook('test.xlsx')
+process_workbook(&#39;test.xlsx&#39;)
 ```
 
 ### 39.CSV 文件导入数据
 
-> 数据集下载：[vgsales.csv](https://wugenqiang.github.io/NoteBook/Python/6小时Python入门/vgsales.csv)
+&gt; 数据集下载：[vgsales.csv](https://wugenqiang.github.io/NoteBook/Python/6小时Python入门/vgsales.csv)
 
 #### 整体输出数据
 
 ```python
 import pandas as pd
 #从CSV文件导入数据，存储在df中
-df = pd.read_csv('vgsales.csv')
+df = pd.read_csv(&#39;vgsales.csv&#39;)
 df
 ```
 
@@ -1146,8 +1146,8 @@ df.values
 ```python
 import pandas as pd
 #从CSV文件导入数据，存储在df中
-df = pd.read_csv('vgsales.csv')
-x = df.drop(columns=['JP_Sales'])
+df = pd.read_csv(&#39;vgsales.csv&#39;)
+x = df.drop(columns=[&#39;JP_Sales&#39;])
 x
 ```
 
@@ -1156,8 +1156,8 @@ x
 ```python
 import pandas as pd
 #从CSV文件导入数据，存储在df中
-df = pd.read_csv('vgsales.csv')
-y = df['JP_Sales']
+df = pd.read_csv(&#39;vgsales.csv&#39;)
+y = df[&#39;JP_Sales&#39;]
 y
 ```
 
@@ -1167,9 +1167,9 @@ y
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 #从CSV文件导入数据，存储在df中
-df = pd.read_csv('vgsales.csv')
-x = df.drop(columns=['JP_Sales'])
-y = df['JP_Sales']
+df = pd.read_csv(&#39;vgsales.csv&#39;)
+x = df.drop(columns=[&#39;JP_Sales&#39;])
+y = df[&#39;JP_Sales&#39;]
 #树分类器
 model = DecisionTreeClassifier()
 model.fit(x, y)
@@ -1190,9 +1190,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 #从CSV文件导入数据，存储在df中
-df = pd.read_csv('vgsales.csv')
-x = df.drop(columns=['JP_Sales'])
-y = df['JP_Sales']
+df = pd.read_csv(&#39;vgsales.csv&#39;)
+x = df.drop(columns=[&#39;JP_Sales&#39;])
+y = df[&#39;JP_Sales&#39;]
 #培训和测试数据输入输出集
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 #树分类器
@@ -1212,6 +1212,6 @@ score
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/  
 

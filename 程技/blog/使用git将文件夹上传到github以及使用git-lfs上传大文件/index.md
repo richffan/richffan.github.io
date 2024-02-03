@@ -4,7 +4,7 @@
 GIT
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ## 一、上传普通大小文件
@@ -25,7 +25,7 @@ git add .
 1
 6.将暂存区内容添加到仓库中
 
-git commit -m "写说明信息"
+git commit -m &#34;写说明信息&#34;
 1
 7.上传远程代码并合并
 
@@ -44,7 +44,7 @@ git lfs install
 1
 6.使用 git lfs track 命令进行大文件追踪 例如git lfs track “*.png” 追踪所有后缀为png的文件
 
-git lfs track "*.文件类型"
+git lfs track &#34;*.文件类型&#34;
 1
 7.查看现有的文件追踪模式
 
@@ -84,7 +84,7 @@ git add .
 文件较大可能会等待时间较久
 14.将暂存区内容添加到仓库中
 
-git commit -m "写说明信息"
+git commit -m &#34;写说明信息&#34;
 1
 15.上传远程代码并合并
 
@@ -107,7 +107,7 @@ git push -u origin main
 报错：
 
 error: src refspec main does not match any
-error: failed to push some refs to 'https://github.com...
+error: failed to push some refs to &#39;https://github.com...
 1
 2
 原因：
@@ -128,6 +128,6 @@ git pull origin master
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/  
 

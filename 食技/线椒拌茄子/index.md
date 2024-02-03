@@ -1,6 +1,6 @@
 # 线椒拌茄子
 
-<!--more-->
+&lt;!--more--&gt;
 ### 料量
 |料|量|
 |---|---|
@@ -21,6 +21,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E9%A3%9F%E6%8A%80/%E7%BA%BF%E6%A4%92%E6%8B%8C%E8%8C%84%E5%AD%90/  
 

@@ -28,6 +28,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/  
 

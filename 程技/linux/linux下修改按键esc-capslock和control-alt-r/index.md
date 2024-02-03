@@ -1,10 +1,10 @@
-# linux下修改按键ESC<=>CAPSLOCK和Control=>ALT_R
+# linux下修改按键ESC&lt;=&gt;CAPSLOCK和Control=&gt;ALT_R
 
 使用 `vim` 过程中发现 `esc` 和 `ctrl` 按键很难按，小拇指没有那么长啊～～，而 `caps_lock` 和 `alt_r`(右alt) 很少用。
 
 本教程将 `esc` 和 `caps_lock` 两个按键交换， `alt_r`(右alt) 改为 `ctrl`。
 
-<!--more-->
+&lt;!--more--&gt;
 
 ### 一、 esc 与 caps_lock 按键交换
 ①. 创建 `.xmodmaprc` 文件。
@@ -27,13 +27,13 @@ keysym Escape = Caps_Lock
 
 ③. 修改 modifier
 ```bash
-xmodmap -e 'remove mod1 = Alt_R' ## 解除原来绑定
-xmodmap -e 'add control = Alt_R' ## 作为 control 使用
+xmodmap -e &#39;remove mod1 = Alt_R&#39; ## 解除原来绑定
+xmodmap -e &#39;add control = Alt_R&#39; ## 作为 control 使用
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/  
 

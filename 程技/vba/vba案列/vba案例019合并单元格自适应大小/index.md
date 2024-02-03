@@ -25,34 +25,34 @@ Sub 调整合并单元格行高()
     Dim n, r, c
     Dim mergeWidth, newHeight, celWidth
 
-    Set rng = Range("B4")
+    Set rng = Range(&#34;B4&#34;)
     For Each cel In rng
         If cel.MergeCells Then
             With cel.MergeArea
                 mergeWidth = 0
-                For Each c In .Columns '合并区域中的每一个单元格
-                    mergeWidth = mergeWidth + c.ColumnWidth '新合并区域列宽=每一列列宽宽的和
+                For Each c In .Columns &#39;合并区域中的每一个单元格
+                    mergeWidth = mergeWidth &#43; c.ColumnWidth &#39;新合并区域列宽=每一列列宽宽的和
                 Next
 
-                .MergeCells = False '取消合并单元格
+                .MergeCells = False &#39;取消合并单元格
 
                 With .Cells(1)
-                    .WrapText = True '自动换行
-                    celWidth = .ColumnWidth '记录取消合并后列宽，目的是调整回去
-                    .ColumnWidth = mergeWidth '调整第一个单元格宽度
-                    .EntireRow.AutoFit '自适应大小
-                    newHeight = .RowHeight '记录此时的行高，即合并后新的行高
-                    .ColumnWidth = celWidth '调整回原始列宽
+                    .WrapText = True &#39;自动换行
+                    celWidth = .ColumnWidth &#39;记录取消合并后列宽，目的是调整回去
+                    .ColumnWidth = mergeWidth &#39;调整第一个单元格宽度
+                    .EntireRow.AutoFit &#39;自适应大小
+                    newHeight = .RowHeight &#39;记录此时的行高，即合并后新的行高
+                    .ColumnWidth = celWidth &#39;调整回原始列宽
                 End With
 
-                .MergeCells = True '合并单元格
+                .MergeCells = True &#39;合并单元格
 
                 n = .Rows.Count
                 For Each r In .Rows
-                    r.RowHeight = newHeight / n * 1.1 '调整每一行的行高，并*1.1微调
+                    r.RowHeight = newHeight / n * 1.1 &#39;调整每一行的行高，并*1.1微调
                 Next
-                .HorizontalAlignment = xlCenter '左右居中
-                .VerticalAlignment = xlCenter ''上下居中
+                .HorizontalAlignment = xlCenter &#39;左右居中
+                .VerticalAlignment = xlCenter &#39;&#39;上下居中
             End With
         End If
     Next
@@ -68,45 +68,45 @@ Sub 调整合并单元格列宽()
     Dim n, r, c
     Dim mergeHeight, newWidth, celHeight
 
-    Set rng = Range("B4")
+    Set rng = Range(&#34;B4&#34;)
     For Each cel In rng
         If cel.MergeCells Then
             With cel.MergeArea
 
                 mergeHeight = 0
-                For Each r In .Rows '合并区域中的每一个行
-                    mergeHeight = mergeHeight + r.RowHeight '新合并区域行高=每一行行高的和
+                For Each r In .Rows &#39;合并区域中的每一个行
+                    mergeHeight = mergeHeight &#43; r.RowHeight &#39;新合并区域行高=每一行行高的和
                 Next
 
-                .MergeCells = False '取消合并单元格
+                .MergeCells = False &#39;取消合并单元格
 
                 With .Cells(1)
-                    .WrapText = True '自动换行
-                    celHeight = .RowHeight '记录取消合并后行高，目的是调整回去
-                    .RowHeight = mergeHeight '调整第一个单元格高度
-                    .EntireColumn.AutoFit '列宽自适应大小
-                    newWidth = .ColumnWidth '记录此时的列宽，即合并后新的列宽
-                    .RowHeight = celHeight '调整回原始列宽
+                    .WrapText = True &#39;自动换行
+                    celHeight = .RowHeight &#39;记录取消合并后行高，目的是调整回去
+                    .RowHeight = mergeHeight &#39;调整第一个单元格高度
+                    .EntireColumn.AutoFit &#39;列宽自适应大小
+                    newWidth = .ColumnWidth &#39;记录此时的列宽，即合并后新的列宽
+                    .RowHeight = celHeight &#39;调整回原始列宽
                 End With
 
-                .MergeCells = True '合并单元格
+                .MergeCells = True &#39;合并单元格
 
                 n = .Columns.Count
                 For Each c In .Columns
-                    c.ColumnWidth = newWidth / n * 1.1 '调整每一列的列宽，并*1.1微调
+                    c.ColumnWidth = newWidth / n * 1.1 &#39;调整每一列的列宽，并*1.1微调
                 Next
-                .HorizontalAlignment = xlCenter '左右居中
-                .VerticalAlignment = xlCenter '上下居中
+                .HorizontalAlignment = xlCenter &#39;左右居中
+                .VerticalAlignment = xlCenter &#39;上下居中
             End With
         End If
     Next
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485287&idx=1&sn=022ca1d3312a748fd7591b522a993764&chksm=e8bcce30dfcb4726d09083aa07afaaf286c376e4dba0955139f28a9a8d5afa28e401231498b2&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485287&amp;idx=1&amp;sn=022ca1d3312a748fd7591b522a993764&amp;chksm=e8bcce30dfcb4726d09083aa07afaaf286c376e4dba0955139f28a9a8d5afa28e401231498b2&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B019%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/  
 

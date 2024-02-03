@@ -18,52 +18,52 @@ class Student(object):
 然后，尝试给实例绑定一个属性：
 
 ```python
->>> s = Student()
->>> s.name = 'Michael' # 动态给实例绑定一个属性
->>> print(s.name)
+&gt;&gt;&gt; s = Student()
+&gt;&gt;&gt; s.name = &#39;Michael&#39; # 动态给实例绑定一个属性
+&gt;&gt;&gt; print(s.name)
 Michael
 ```
 
 还可以尝试给实例绑定一个方法：
 
 ```python
->>> def set_age(self, age): # 定义一个函数作为实例方法
+&gt;&gt;&gt; def set_age(self, age): # 定义一个函数作为实例方法
 ...     self.age = age
 ...
->>> from types import MethodType
->>> s.set_age = MethodType(set_age, s) # 给实例绑定一个方法
->>> s.set_age(25) # 调用实例方法
->>> s.age # 测试结果
+&gt;&gt;&gt; from types import MethodType
+&gt;&gt;&gt; s.set_age = MethodType(set_age, s) # 给实例绑定一个方法
+&gt;&gt;&gt; s.set_age(25) # 调用实例方法
+&gt;&gt;&gt; s.age # 测试结果
 25
 ```
 
 但是，给一个实例绑定的方法，对另一个实例是不起作用的：
 
 ```python
->>> s2 = Student() # 创建新的实例
->>> s2.set_age(25) # 尝试调用方法
+&gt;&gt;&gt; s2 = Student() # 创建新的实例
+&gt;&gt;&gt; s2.set_age(25) # 尝试调用方法
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'Student' object has no attribute 'set_age'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+AttributeError: &#39;Student&#39; object has no attribute &#39;set_age&#39;
 ```
 
 为了给所有实例都绑定方法，可以给 class 绑定方法：
 
 ```python
->>> def set_score(self, score):
+&gt;&gt;&gt; def set_score(self, score):
 ...     self.score = score
 ...
->>> Student.set_score = set_score
+&gt;&gt;&gt; Student.set_score = set_score
 ```
 
 给 class 绑定方法后，所有实例均可调用：
 
 ```python
->>> s.set_score(100)
->>> s.score
+&gt;&gt;&gt; s.set_score(100)
+&gt;&gt;&gt; s.score
 100
->>> s2.set_score(99)
->>> s2.score
+&gt;&gt;&gt; s2.set_score(99)
+&gt;&gt;&gt; s2.score
 99
 ```
 
@@ -75,31 +75,31 @@ AttributeError: 'Student' object has no attribute 'set_age'
 
 ```python
 class Student(object):
-    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
+    __slots__ = (&#39;name&#39;, &#39;age&#39;) # 用tuple定义允许绑定的属性名称
 ```
 
 然后，我们试试：
 
 ```python
->>> s = Student() # 创建新的实例
->>> s.name = 'Michael' # 绑定属性'name'
->>> s.age = 25 # 绑定属性'age'
->>> s.score = 99 # 绑定属性'score'
+&gt;&gt;&gt; s = Student() # 创建新的实例
+&gt;&gt;&gt; s.name = &#39;Michael&#39; # 绑定属性&#39;name&#39;
+&gt;&gt;&gt; s.age = 25 # 绑定属性&#39;age&#39;
+&gt;&gt;&gt; s.score = 99 # 绑定属性&#39;score&#39;
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'Student' object has no attribute 'score'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+AttributeError: &#39;Student&#39; object has no attribute &#39;score&#39;
 ```
 
-由于`'score'`没有被放到`__slots__`中，所以不能绑定`score`属性，试图绑定`score`将得到`AttributeError`的错误。
+由于`&#39;score&#39;`没有被放到`__slots__`中，所以不能绑定`score`属性，试图绑定`score`将得到`AttributeError`的错误。
 
 使用`__slots__`要注意，`__slots__`定义的属性仅对当前类实例起作用，对继承的子类是不起作用的：
 
 ```python
->>> class GraduateStudent(Student):
+&gt;&gt;&gt; class GraduateStudent(Student):
 ...     pass
 ...
->>> g = GraduateStudent()
->>> g.score = 9999
+&gt;&gt;&gt; g = GraduateStudent()
+&gt;&gt;&gt; g.score = 9999
 ```
 
 除非在子类中也定义`__slots__`，这样，子类实例允许定义的属性就是自身的`__slots__`加上父类的`__slots__`。
@@ -125,20 +125,20 @@ class Student(object):
 
     def set_score(self, value):
         if not isinstance(value, int):
-            raise ValueError('score must be an integer!')
-        if value < 0 or value > 100:
-            raise ValueError('score must between 0 ~ 100!')
+            raise ValueError(&#39;score must be an integer!&#39;)
+        if value &lt; 0 or value &gt; 100:
+            raise ValueError(&#39;score must between 0 ~ 100!&#39;)
         self._score = value
 ```
 
  现在，对任意的 Student 实例进行操作，就不能随心所欲地设置 score 了：
 
 ```python
->>> s = Student()
->>> s.set_score(60) # ok!
->>> s.get_score()
+&gt;&gt;&gt; s = Student()
+&gt;&gt;&gt; s.set_score(60) # ok!
+&gt;&gt;&gt; s.get_score()
 60
->>> s.set_score(9999)
+&gt;&gt;&gt; s.set_score(9999)
 Traceback (most recent call last):
   ...
 ValueError: score must between 0 ~ 100!
@@ -160,20 +160,20 @@ class Student(object):
     @score.setter
     def score(self, value):
         if not isinstance(value, int):
-            raise ValueError('score must be an integer!')
-        if value < 0 or value > 100:
-            raise ValueError('score must between 0 ~ 100!')
+            raise ValueError(&#39;score must be an integer!&#39;)
+        if value &lt; 0 or value &gt; 100:
+            raise ValueError(&#39;score must between 0 ~ 100!&#39;)
         self._score = value
 ```
 
 `@property`的实现比较复杂，我们先考察如何使用。把一个 getter 方法变成属性，只需要加上`@property`就可以了，此时，`@property`本身又创建了另一个装饰器`@score.setter`，负责把一个 setter 方法变成属性赋值，于是，我们就拥有一个可控的属性操作：
 
 ```python
->>> s = Student()
->>> s.score = 60 # OK，实际转化为s.set_score(60)
->>> s.score # OK，实际转化为s.get_score()
+&gt;&gt;&gt; s = Student()
+&gt;&gt;&gt; s.score = 60 # OK，实际转化为s.set_score(60)
+&gt;&gt;&gt; s.score # OK，实际转化为s.get_score()
 60
->>> s.score = 9999
+&gt;&gt;&gt; s.score = 9999
 Traceback (most recent call last):
   ...
 ValueError: score must between 0 ~ 100!
@@ -201,11 +201,11 @@ class Student(object):
 
 上面的`birth`是可读写属性，而`age`就是一个只读属性，因为`age`可以根据`birth`和当前时间计算出来。
 
-> 小结：
+&gt; 小结：
 
 `@property`广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。
 
-> 练习：
+&gt; 练习：
 
 请利用`@property`给一个`Screen`对象加上`width`和`height`属性，以及一个只读属性`resolution`：
 
@@ -224,11 +224,11 @@ class Screen(object):
 
         if not isinstance(value, (int, float)):
 
-            raise ValueError('width must be an number!')
+            raise ValueError(&#39;width must be an number!&#39;)
 
-        if value < 0 :
+        if value &lt; 0 :
 
-            raise ValueError('width must > 0')
+            raise ValueError(&#39;width must &gt; 0&#39;)
 
         self._width = value
 
@@ -244,11 +244,11 @@ class Screen(object):
 
         if not isinstance(value, (int, float)):
 
-            raise ValueError('height must be an number!')
+            raise ValueError(&#39;height must be an number!&#39;)
 
-        if value < 0 :
+        if value &lt; 0 :
 
-            raise ValueError('height must > 0')
+            raise ValueError(&#39;height must &gt; 0&#39;)
 
         self._height = value
 
@@ -266,11 +266,11 @@ class Screen(object):
 s = Screen()
 s.width = 1024
 s.height = 768
-print('resolution =', s.resolution)
+print(&#39;resolution =&#39;, s.resolution)
 if s.resolution == 786432:
-    print('测试通过!')
+    print(&#39;测试通过!&#39;)
 else:
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 ```
 
 
@@ -337,11 +337,11 @@ class Ostrich(Bird):
 ```python
 class Runnable(object):
     def run(self):
-        print('Running...')
+        print(&#39;Running...&#39;)
 
 class Flyable(object):
     def fly(self):
-        print('Flying...')
+        print(&#39;Flying...&#39;)
 ```
 
 对于需要`Runnable`功能的动物，就多继承一个`Runnable`，例如`Dog`：
@@ -398,7 +398,7 @@ class MyTCPServer(TCPServer, CoroutineMixIn):
 
 这样一来，我们不需要复杂而庞大的继承链，只要选择组合不同的类的功能，就可以快速构造出所需的子类。
 
-> 小结：
+&gt; 小结：
 
 由于 Python 允许使用多重继承，因此，MixIn 就是一种常见的设计。
 
@@ -419,26 +419,26 @@ class MyTCPServer(TCPServer, CoroutineMixIn):
 我们先定义一个`Student`类，打印一个实例：
 
 ```python
->>> class Student(object):
+&gt;&gt;&gt; class Student(object):
 ...     def __init__(self, name):
 ...         self.name = name
 ...
->>> print(Student('Michael'))
-<__main__.Student object at 0x109afb190>
+&gt;&gt;&gt; print(Student(&#39;Michael&#39;))
+&lt;__main__.Student object at 0x109afb190&gt;
 ```
 
-打印出一堆`<__main__.Student object at 0x109afb190>`，不好看。
+打印出一堆`&lt;__main__.Student object at 0x109afb190&gt;`，不好看。
 
 怎么才能打印得好看呢？只需要定义好`__str__()`方法，返回一个好看的字符串就可以了：
 
 ```python
->>> class Student(object):
+&gt;&gt;&gt; class Student(object):
 ...     def __init__(self, name):
 ...         self.name = name
 ...     def __str__(self):
-...         return 'Student object (name: %s)' % self.name
+...         return &#39;Student object (name: %s)&#39; % self.name
 ...
->>> print(Student('Michael'))
+&gt;&gt;&gt; print(Student(&#39;Michael&#39;))
 Student object (name: Michael)
 ```
 
@@ -447,9 +447,9 @@ Student object (name: Michael)
 但是细心的朋友会发现直接敲变量不用`print`，打印出来的实例还是不好看：
 
 ```python
->>> s = Student('Michael')
->>> s
-<__main__.Student object at 0x109afb310>
+&gt;&gt;&gt; s = Student(&#39;Michael&#39;)
+&gt;&gt;&gt; s
+&lt;__main__.Student object at 0x109afb310&gt;
 ```
 
 这是因为直接显示变量调用的不是`__str__()`，而是`__repr__()`，两者的区别是`__str__()`返回用户看到的字符串，而`__repr__()`返回程序开发者看到的字符串，也就是说，`__repr__()`是为调试服务的。
@@ -461,7 +461,7 @@ class Student(object):
     def __init__(self, name):
         self.name = name
     def __str__(self):
-        return 'Student object (name=%s)' % self.name
+        return &#39;Student object (name=%s)&#39; % self.name
     __repr__ = __str__
 ```
 
@@ -480,8 +480,8 @@ class Fib(object):
         return self # 实例本身就是迭代对象，故返回自己
 
     def __next__(self):
-        self.a, self.b = self.b, self.a + self.b # 计算下一个值
-        if self.a > 100000: # 退出循环的条件
+        self.a, self.b = self.b, self.a &#43; self.b # 计算下一个值
+        if self.a &gt; 100000: # 退出循环的条件
             raise StopIteration()
         return self.a # 返回下一个值
 ```
@@ -498,10 +498,10 @@ for n in Fib():
 Fib实例虽然能作用于 for 循环，看起来和 list 有点像，但是，把它当成 list 来使用还是不行，比如，取第 5 个元素：
 
 ```python
->>> Fib()[5]
+&gt;&gt;&gt; Fib()[5]
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'Fib' object does not support indexing
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+TypeError: &#39;Fib&#39; object does not support indexing
 ```
 
 要表现得像 list 那样按照下标取出元素，需要实现`__getitem__()`方法：
@@ -511,32 +511,32 @@ class Fib(object):
     def __getitem__(self, n):
         a, b = 1, 1
         for x in range(n):
-            a, b = b, a + b
+            a, b = b, a &#43; b
         return a
 ```
 
 现在，就可以按下标访问数列的任意一项了：
 
 ```python
->>> f = Fib()
->>> f[0]
+&gt;&gt;&gt; f = Fib()
+&gt;&gt;&gt; f[0]
 1
->>> f[1]
+&gt;&gt;&gt; f[1]
 1
->>> f[2]
+&gt;&gt;&gt; f[2]
 2
->>> f[3]
+&gt;&gt;&gt; f[3]
 3
->>> f[10]
+&gt;&gt;&gt; f[10]
 89
->>> f[100]
+&gt;&gt;&gt; f[100]
 573147844013817084101
 ```
 
 但是 list 有个神奇的切片方法：
 
 ```python
->>> list(range(100))[5:10]
+&gt;&gt;&gt; list(range(100))[5:10]
 [5, 6, 7, 8, 9]
 ```
 
@@ -548,7 +548,7 @@ class Fib(object):
         if isinstance(n, int): # n是索引
             a, b = 1, 1
             for x in range(n):
-                a, b = b, a + b
+                a, b = b, a &#43; b
             return a
         if isinstance(n, slice): # n是切片
             start = n.start
@@ -558,26 +558,26 @@ class Fib(object):
             a, b = 1, 1
             L = []
             for x in range(stop):
-                if x >= start:
+                if x &gt;= start:
                     L.append(a)
-                a, b = b, a + b
+                a, b = b, a &#43; b
             return L
 ```
 
 现在试试 Fib 的切片：
 
 ```python
->>> f = Fib()
->>> f[0:5]
+&gt;&gt;&gt; f = Fib()
+&gt;&gt;&gt; f[0:5]
 [1, 1, 2, 3, 5]
->>> f[:10]
+&gt;&gt;&gt; f[:10]
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
 
 但是没有对 step 参数作处理：
 
 ```python
->>> f[:10:2]
+&gt;&gt;&gt; f[:10:2]
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
 
@@ -597,19 +597,19 @@ class Fib(object):
 class Student(object):
     
     def __init__(self):
-        self.name = 'Michael'
+        self.name = &#39;Michael&#39;
 ```
 
 调用`name`属性，没问题，但是，调用不存在的`score`属性，就有问题了：
 
 ```python
->>> s = Student()
->>> print(s.name)
+&gt;&gt;&gt; s = Student()
+&gt;&gt;&gt; print(s.name)
 Michael
->>> print(s.score)
+&gt;&gt;&gt; print(s.score)
 Traceback (most recent call last):
   ...
-AttributeError: 'Student' object has no attribute 'score'
+AttributeError: &#39;Student&#39; object has no attribute &#39;score&#39;
 ```
 
 错误信息很清楚地告诉我们，没有找到`score`这个 attribute。
@@ -620,20 +620,20 @@ AttributeError: 'Student' object has no attribute 'score'
 class Student(object):
 
     def __init__(self):
-        self.name = 'Michael'
+        self.name = &#39;Michael&#39;
 
     def __getattr__(self, attr):
-        if attr=='score':
+        if attr==&#39;score&#39;:
             return 99
 ```
 
-当调用不存在的属性时，比如`score`，Python 解释器会试图调用`__getattr__(self, 'score')`来尝试获得属性，这样，我们就有机会返回`score`的值：
+当调用不存在的属性时，比如`score`，Python 解释器会试图调用`__getattr__(self, &#39;score&#39;)`来尝试获得属性，这样，我们就有机会返回`score`的值：
 
 ```python
->>> s = Student()
->>> s.name
-'Michael'
->>> s.score
+&gt;&gt;&gt; s = Student()
+&gt;&gt;&gt; s.name
+&#39;Michael&#39;
+&gt;&gt;&gt; s.score
 99
 ```
 
@@ -643,14 +643,14 @@ class Student(object):
 class Student(object):
 
     def __getattr__(self, attr):
-        if attr=='age':
+        if attr==&#39;age&#39;:
             return lambda: 25
 ```
 
 只是调用方式要变为：
 
 ```python
->>> s.age()
+&gt;&gt;&gt; s.age()
 25
 ```
 
@@ -662,9 +662,9 @@ class Student(object):
 class Student(object):
 
     def __getattr__(self, attr):
-        if attr=='age':
+        if attr==&#39;age&#39;:
             return lambda: 25
-        raise AttributeError('\'Student\' object has no attribute \'%s\'' % attr)
+        raise AttributeError(&#39;\&#39;Student\&#39; object has no attribute \&#39;%s\&#39;&#39; % attr)
 ```
 
 这实际上可以把一个类的所有属性和方法调用全部动态化处理了，不需要任何特殊手段。
@@ -685,11 +685,11 @@ class Student(object):
 ```python
 class Chain(object):
 
-    def __init__(self, path=''):
+    def __init__(self, path=&#39;&#39;):
         self._path = path
 
     def __getattr__(self, path):
-        return Chain('%s/%s' % (self._path, path))
+        return Chain(&#39;%s/%s&#39; % (self._path, path))
 
     def __str__(self):
         return self._path
@@ -700,8 +700,8 @@ class Chain(object):
 试试：
 
 ```python
->>> Chain().status.user.timeline.list
-'/status/user/timeline/list'
+&gt;&gt;&gt; Chain().status.user.timeline.list
+&#39;/status/user/timeline/list&#39;
 ```
 
 这样，无论 API 怎么变，SDK 都可以根据 URL 实现完全动态的调用，而且，不随 API 的增加而改变！
@@ -715,7 +715,7 @@ GET /users/:user/repos
 调用时，需要把`:user`替换为实际用户名。如果我们能写出这样的链式调用：
 
 ```python
-Chain().users('michael').repos
+Chain().users(&#39;michael&#39;).repos
 ```
 
 就可以非常方便地调用 API 了。有兴趣的童鞋可以试试写出来。
@@ -732,14 +732,14 @@ class Student(object):
         self.name = name
 
     def __call__(self):
-        print('My name is %s.' % self.name)
+        print(&#39;My name is %s.&#39; % self.name)
 ```
 
 调用方式如下：
 
 ```python
->>> s = Student('Michael')
->>> s() # self参数不要传入
+&gt;&gt;&gt; s = Student(&#39;Michael&#39;)
+&gt;&gt;&gt; s() # self参数不要传入
 My name is Michael.
 ```
 
@@ -750,21 +750,21 @@ My name is Michael.
 那么，怎么判断一个变量是对象还是函数呢？其实，更多的时候，我们需要判断一个对象是否能被调用，能被调用的对象就是一个`Callable`对象，比如函数和我们上面定义的带有`__call__()`的类实例：
 
 ```python
->>> callable(Student())
+&gt;&gt;&gt; callable(Student())
 True
->>> callable(max)
+&gt;&gt;&gt; callable(max)
 True
->>> callable([1, 2, 3])
+&gt;&gt;&gt; callable([1, 2, 3])
 False
->>> callable(None)
+&gt;&gt;&gt; callable(None)
 False
->>> callable('str')
+&gt;&gt;&gt; callable(&#39;str&#39;)
 False
 ```
 
 通过`callable()`函数，我们就可以判断一个对象是否是“可调用”对象。
 
-> 小结：
+&gt; 小结：
 
 * Python 的 class 允许定义许多定制方法，可以让我们非常方便地生成特定的类。
 * 本节介绍的是最常用的几个定制方法，还有很多可定制的方法，请参考[Python的官方文档](http://docs.python.org/3/reference/datamodel.html#special-method-names)。
@@ -791,14 +791,14 @@ DEC = 12
 ```python
 from enum import Enum
 
-Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+Month = Enum(&#39;Month&#39;, (&#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39;, &#39;Jun&#39;, &#39;Jul&#39;, &#39;Aug&#39;, &#39;Sep&#39;, &#39;Oct&#39;, &#39;Nov&#39;, &#39;Dec&#39;))
 ```
 
 这样我们就获得了`Month`类型的枚举类，可以直接使用`Month.Jan`来引用一个常量，或者枚举它的所有成员：
 
 ```python
 for name, member in Month.__members__.items():
-    print(name, '=>', member, ',', member.value)
+    print(name, &#39;=&gt;&#39;, member, &#39;,&#39;, member.value)
 ```
 
 `value`属性则是自动赋给成员的`int`常量，默认从`1`开始计数。
@@ -824,37 +824,37 @@ class Weekday(Enum):
 访问这些枚举类型可以有若干种方法：
 
 ```python
->>> day1 = Weekday.Mon
->>> print(day1)
+&gt;&gt;&gt; day1 = Weekday.Mon
+&gt;&gt;&gt; print(day1)
 Weekday.Mon
->>> print(Weekday.Tue)
+&gt;&gt;&gt; print(Weekday.Tue)
 Weekday.Tue
->>> print(Weekday['Tue'])
+&gt;&gt;&gt; print(Weekday[&#39;Tue&#39;])
 Weekday.Tue
->>> print(Weekday.Tue.value)
+&gt;&gt;&gt; print(Weekday.Tue.value)
 2
->>> print(day1 == Weekday.Mon)
+&gt;&gt;&gt; print(day1 == Weekday.Mon)
 True
->>> print(day1 == Weekday.Tue)
+&gt;&gt;&gt; print(day1 == Weekday.Tue)
 False
->>> print(Weekday(1))
+&gt;&gt;&gt; print(Weekday(1))
 Weekday.Mon
->>> print(day1 == Weekday(1))
+&gt;&gt;&gt; print(day1 == Weekday(1))
 True
->>> Weekday(7)
+&gt;&gt;&gt; Weekday(7)
 Traceback (most recent call last):
   ...
 ValueError: 7 is not a valid Weekday
->>> for name, member in Weekday.__members__.items():
-...     print(name, '=>', member)
+&gt;&gt;&gt; for name, member in Weekday.__members__.items():
+...     print(name, &#39;=&gt;&#39;, member)
 ...
-Sun => Weekday.Sun
-Mon => Weekday.Mon
-Tue => Weekday.Tue
-Wed => Weekday.Wed
-Thu => Weekday.Thu
-Fri => Weekday.Fri
-Sat => Weekday.Sat
+Sun =&gt; Weekday.Sun
+Mon =&gt; Weekday.Mon
+Tue =&gt; Weekday.Tue
+Wed =&gt; Weekday.Wed
+Thu =&gt; Weekday.Thu
+Fri =&gt; Weekday.Fri
+Sat =&gt; Weekday.Sat
 ```
 
 可见，既可以用成员名称引用枚举常量，又可以直接根据value的值获得枚举常量。
@@ -869,21 +869,21 @@ Sat => Weekday.Sat
 
 ```python
 class Hello(object):
-    def hello(self, name='world'):
-        print('Hello, %s.' % name)
+    def hello(self, name=&#39;world&#39;):
+        print(&#39;Hello, %s.&#39; % name)
 ```
 
 当 Python 解释器载入`hello`模块时，就会依次执行该模块的所有语句，执行结果就是动态创建出一个`Hello`的 class 对象，测试如下：
 
 ```python
->>> from hello import Hello
->>> h = Hello()
->>> h.hello()
+&gt;&gt;&gt; from hello import Hello
+&gt;&gt;&gt; h = Hello()
+&gt;&gt;&gt; h.hello()
 Hello, world.
->>> print(type(Hello))
-<class 'type'>
->>> print(type(h))
-<class 'hello.Hello'>
+&gt;&gt;&gt; print(type(Hello))
+&lt;class &#39;type&#39;&gt;
+&gt;&gt;&gt; print(type(h))
+&lt;class &#39;hello.Hello&#39;&gt;
 ```
 
 `type()`函数可以查看一个类型或变量的类型，`Hello`是一个class，它的类型就是`type`，而`h`是一个实例，它的类型就是class `Hello`。
@@ -893,17 +893,17 @@ Hello, world.
 `type()`函数既可以返回一个对象的类型，又可以创建出新的类型，比如，我们可以通过`type()`函数创建出`Hello`类，而无需通过`class Hello(object)...`的定义：
 
 ```python
->>> def fn(self, name='world'): # 先定义函数
-...     print('Hello, %s.' % name)
+&gt;&gt;&gt; def fn(self, name=&#39;world&#39;): # 先定义函数
+...     print(&#39;Hello, %s.&#39; % name)
 ...
->>> Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class
->>> h = Hello()
->>> h.hello()
+&gt;&gt;&gt; Hello = type(&#39;Hello&#39;, (object,), dict(hello=fn)) # 创建Hello class
+&gt;&gt;&gt; h = Hello()
+&gt;&gt;&gt; h.hello()
 Hello, world.
->>> print(type(Hello))
-<class 'type'>
->>> print(type(h))
-<class '__main__.Hello'>
+&gt;&gt;&gt; print(type(Hello))
+&lt;class &#39;type&#39;&gt;
+&gt;&gt;&gt; print(type(h))
+&lt;class &#39;__main__.Hello&#39;&gt;
 ```
 
 要创建一个class对象，`type()`函数依次传入3个参数：
@@ -940,7 +940,7 @@ metaclass是Python面向对象里最难理解，也是最难使用的魔术代�
 # metaclass是类的模板，所以必须从`type`类型派生：
 class ListMetaclass(type):
     def __new__(cls, name, bases, attrs):
-        attrs['add'] = lambda self, value: self.append(value)
+        attrs[&#39;add&#39;] = lambda self, value: self.append(value)
         return type.__new__(cls, name, bases, attrs)
 ```
 
@@ -963,20 +963,20 @@ class MyList(list, metaclass=ListMetaclass):
 测试一下`MyList`是否可以调用`add()`方法：
 
 ```python
->>> L = MyList()
->>> L.add(1)
->> L
+&gt;&gt;&gt; L = MyList()
+&gt;&gt;&gt; L.add(1)
+&gt;&gt; L
 [1]
 ```
 
 而普通的`list`没有`add()`方法：
 
 ```python
->>> L2 = list()
->>> L2.add(1)
+&gt;&gt;&gt; L2 = list()
+&gt;&gt;&gt; L2.add(1)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'list' object has no attribute 'add'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+AttributeError: &#39;list&#39; object has no attribute &#39;add&#39;
 ```
 
 动态修改有什么意义？直接在`MyList`定义中写上`add()`方法不是更简单吗？正常情况下，确实应该直接写，通过metaclass修改纯属变态。
@@ -994,13 +994,13 @@ ORM全称“Object Relational Mapping”，即对象-关系映射，就是把关
 ```python
 class User(Model):
     # 定义类的属性到列的映射：
-    id = IntegerField('id')
-    name = StringField('username')
-    email = StringField('email')
-    password = StringField('password')
+    id = IntegerField(&#39;id&#39;)
+    name = StringField(&#39;username&#39;)
+    email = StringField(&#39;email&#39;)
+    password = StringField(&#39;password&#39;)
 
 # 创建一个实例：
-u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')
+u = User(id=12345, name=&#39;Michael&#39;, email=&#39;test@orm.org&#39;, password=&#39;my-pwd&#39;)
 # 保存到数据库：
 u.save()
 ```
@@ -1019,7 +1019,7 @@ class Field(object):
         self.column_type = column_type
 
     def __str__(self):
-        return '<%s:%s>' % (self.__class__.__name__, self.name)
+        return &#39;&lt;%s:%s&gt;&#39; % (self.__class__.__name__, self.name)
 ```
 
 在`Field`的基础上，进一步定义各种类型的`Field`，比如`StringField`，`IntegerField`等等：
@@ -1028,12 +1028,12 @@ class Field(object):
 class StringField(Field):
 
     def __init__(self, name):
-        super(StringField, self).__init__(name, 'varchar(100)')
+        super(StringField, self).__init__(name, &#39;varchar(100)&#39;)
 
 class IntegerField(Field):
 
     def __init__(self, name):
-        super(IntegerField, self).__init__(name, 'bigint')
+        super(IntegerField, self).__init__(name, &#39;bigint&#39;)
 ```
 
 下一步，就是编写最复杂的`ModelMetaclass`了：
@@ -1042,18 +1042,18 @@ class IntegerField(Field):
 class ModelMetaclass(type):
 
     def __new__(cls, name, bases, attrs):
-        if name=='Model':
+        if name==&#39;Model&#39;:
             return type.__new__(cls, name, bases, attrs)
-        print('Found model: %s' % name)
+        print(&#39;Found model: %s&#39; % name)
         mappings = dict()
         for k, v in attrs.items():
             if isinstance(v, Field):
-                print('Found mapping: %s ==> %s' % (k, v))
+                print(&#39;Found mapping: %s ==&gt; %s&#39; % (k, v))
                 mappings[k] = v
         for k in mappings.keys():
             attrs.pop(k)
-        attrs['__mappings__'] = mappings # 保存属性和列的映射关系
-        attrs['__table__'] = name # 假设表名和类名一致
+        attrs[&#39;__mappings__&#39;] = mappings # 保存属性和列的映射关系
+        attrs[&#39;__table__&#39;] = name # 假设表名和类名一致
         return type.__new__(cls, name, bases, attrs)
 ```
 
@@ -1069,7 +1069,7 @@ class Model(dict, metaclass=ModelMetaclass):
         try:
             return self[key]
         except KeyError:
-            raise AttributeError(r"'Model' object has no attribute '%s'" % key)
+            raise AttributeError(r&#34;&#39;Model&#39; object has no attribute &#39;%s&#39;&#34; % key)
 
     def __setattr__(self, key, value):
         self[key] = value
@@ -1080,11 +1080,11 @@ class Model(dict, metaclass=ModelMetaclass):
         args = []
         for k, v in self.__mappings__.items():
             fields.append(v.name)
-            params.append('?')
+            params.append(&#39;?&#39;)
             args.append(getattr(self, k, None))
-        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(fields), ','.join(params))
-        print('SQL: %s' % sql)
-        print('ARGS: %s' % str(args))
+        sql = &#39;insert into %s (%s) values (%s)&#39; % (self.__table__, &#39;,&#39;.join(fields), &#39;,&#39;.join(params))
+        print(&#39;SQL: %s&#39; % sql)
+        print(&#39;ARGS: %s&#39; % str(args))
 ```
 
 当用户定义一个`class User(Model)`时，Python解释器首先在当前类`User`的定义中查找`metaclass`，如果没有找到，就继续在父类`Model`中查找`metaclass`，找到了，就使用`Model`中定义的`metaclass`的`ModelMetaclass`来创建`User`类，也就是说，metaclass可以隐式地继承到子类，但子类自己却感觉不到。
@@ -1102,7 +1102,7 @@ class Model(dict, metaclass=ModelMetaclass):
 编写代码试试：
 
 ```python
-u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')
+u = User(id=12345, name=&#39;Michael&#39;, email=&#39;test@orm.org&#39;, password=&#39;my-pwd&#39;)
 u.save()
 ```
 
@@ -1110,12 +1110,12 @@ u.save()
 
 ```python
 Found model: User
-Found mapping: email ==> <StringField:email>
-Found mapping: password ==> <StringField:password>
-Found mapping: id ==> <IntegerField:uid>
-Found mapping: name ==> <StringField:username>
+Found mapping: email ==&gt; &lt;StringField:email&gt;
+Found mapping: password ==&gt; &lt;StringField:password&gt;
+Found mapping: id ==&gt; &lt;IntegerField:uid&gt;
+Found mapping: name ==&gt; &lt;StringField:username&gt;
 SQL: insert into User (password,email,username,id) values (?,?,?,?)
-ARGS: ['my-pwd', 'test@orm.org', 'Michael', 12345]
+ARGS: [&#39;my-pwd&#39;, &#39;test@orm.org&#39;, &#39;Michael&#39;, 12345]
 ```
 
 可以看到，`save()`方法已经打印出了可执行的SQL语句，以及参数列表，只需要真正连接到数据库，执行该SQL语句，就可以完成真正的功能。
@@ -1124,7 +1124,7 @@ ARGS: ['my-pwd', 'test@orm.org', 'Michael', 12345]
 
 ![image-20200817100522200](https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png)
 
-> 小结：
+&gt; 小结：
 
 metaclass是Python中非常具有魔术性的对象，它可以改变类创建时的行为。这种强大的功能使用起来务必小心。
 
@@ -1134,6 +1134,6 @@ metaclass是Python中非常具有魔术性的对象，它可以改变类创建�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/  
 

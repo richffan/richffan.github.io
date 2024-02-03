@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第七章 面向对象高级编程 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第七章 面向对象高级编程 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承" /><meta name="keywords" content='python' /><meta itemprop="name" content="第七章 面向对象高级编程">
 <meta itemprop="description" content="数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="10319"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="10392"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第七章 面向对象高级编程" />
 <meta property="og:description" content="数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第七章 面向对象高级编程"/>
 <meta name="twitter:description" content="数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B\/"
-    },"genre": "posts","keywords": "python","wordcount":  10319 ,
+    },"genre": "posts","keywords": "python","wordcount":  10392 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python入门学习笔记</a></li><li class="breadcrumb-item active" aria-current="page">第七章 面向对象高级编程</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第七章 面向对象高级编程</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="10319 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 21 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第七章 面向对象高级编程">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="10392 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 10400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 21 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" class="leancloud_visitors comment-visitors" data-flag-title="第七章 面向对象高级编程">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第七章 面向对象高级编程">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -222,8 +217,8 @@
 </nav></div>
       </div><div class="content" id="content"><p>数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。</p>
 <p>我们会讨论多重继承、定制类、元类等概念。</p>
-<h2 id="71-使用-__slots__">7.1 使用 <code>__slots__</code></h2>
-<p>正常情况下，当我们定义了一个 class，创建了一个 class 的实例后，我们可以给该实例绑定任何<code>属性</code>和<code>方法</code>，这就是动态语言的灵活性。先定义 class：</p>
+<h2 id="71-使用-__slots__" class="heading-element">
+  <a href="#71-%e4%bd%bf%e7%94%a8-__slots__" class="heading-mark"></a>7.1 使用 <code>__slots__</code></h2><p>正常情况下，当我们定义了一个 class，创建了一个 class 的实例后，我们可以给该实例绑定任何<code>属性</code>和<code>方法</code>，这就是动态语言的灵活性。先定义 class：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -367,8 +362,8 @@
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="mi">9999</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>除非在子类中也定义<code>__slots__</code>，这样，子类实例允许定义的属性就是自身的<code>__slots__</code>加上父类的<code>__slots__</code>。</p>
-<h2 id="72-使用-property">7.2 使用 @property</h2>
-<p>在绑定属性时，如果我们直接把属性暴露出去，虽然写起来很简单，但是，没办法检查参数，导致可以把成绩随便改：</p>
+<h2 id="72-使用-property" class="heading-element">
+  <a href="#72-%e4%bd%bf%e7%94%a8-property" class="heading-mark"></a>7.2 使用 @property</h2><p>在绑定属性时，如果我们直接把属性暴露出去，虽然写起来很简单，但是，没办法检查参数，导致可以把成绩随便改：</p>
 <div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -649,8 +644,8 @@
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;测试失败!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="73-多重继承">7.3 多重继承</h2>
-<p>继承是面向对象编程的一个重要的方式，因为通过继承，子类就可以扩展父类的功能。</p>
+</div><h2 id="73-多重继承" class="heading-element">
+  <a href="#73-%e5%a4%9a%e9%87%8d%e7%bb%a7%e6%89%bf" class="heading-mark"></a>7.3 多重继承</h2><p>继承是面向对象编程的一个重要的方式，因为通过继承，子类就可以扩展父类的功能。</p>
 <p>回忆一下<code>Animal</code>类层次的设计，假设我们要实现以下 4 种动物：</p>
 <ul>
 <li>Dog - 狗狗；</li>
@@ -659,16 +654,16 @@
 <li>Ostrich - 鸵鸟。</li>
 </ul>
 <p>如果按照哺乳动物和鸟类归类，我们可以设计出这样的类的层次：</p>
-<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=large 2x" sizes="auto" data-title="归类" data-alt="归类" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png" alt="归类" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png?size=large 2x" sizes="auto" data-title="归类" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>但是如果按照“能跑”和“能飞”来归类，我们就应该设计出这样的类的层次：</p>
-<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=large 2x" sizes="auto" data-title="归类" data-alt="归类" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png" alt="归类" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png?size=large 2x" sizes="auto" data-title="归类" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>如果要把上面的两种分类都包含进来，我们就得设计更多的层次：</p>
 <ul>
 <li>哺乳类：能跑的哺乳类，能飞的哺乳类；</li>
 <li>鸟类：能跑的鸟类，能飞的鸟类。</li>
 </ul>
 <p>这么一来，类的层次就复杂了：</p>
-<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=large 2x" sizes="auto" data-title="image-20200811111248510" data-alt="image-20200811111248510" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png" alt="image-20200811111248510" srcset="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=small, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=medium 1.5x, https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png?size=large 2x" sizes="auto" data-title="image-20200811111248510" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>如果要再增加“宠物类”和“非宠物类”，这么搞下去，类的数量会呈指数增长，很明显这样设计是不行的。</p>
 <p>正确的做法是采用多重继承。首先，主要的类层次仍按照哺乳类和鸟类设计：</p>
 <div class="highlight" id="id-18"><div class="chroma">
@@ -761,8 +756,8 @@
 </span></span><span class="line"><span class="cl">    <span class="k">pass</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>通过多重继承，一个子类就可以同时获得多个父类的所有功能。</p>
-<h3 id="731-mixin">7.3.1 MixIn</h3>
-<p>在设计类的继承关系时，通常，主线都是单一继承下来的，例如，<code>Ostrich</code>继承自<code>Bird</code>。但是，如果需要“混入”额外的功能，通过多重继承就可以实现，比如，让<code>Ostrich</code>除了继承自<code>Bird</code>外，再同时继承<code>Runnable</code>。这种设计通常称之为 MixIn。</p>
+<h3 id="731-mixin" class="heading-element">
+  <a href="#731-mixin" class="heading-mark"></a>7.3.1 MixIn</h3><p>在设计类的继承关系时，通常，主线都是单一继承下来的，例如，<code>Ostrich</code>继承自<code>Bird</code>。但是，如果需要“混入”额外的功能，通过多重继承就可以实现，比如，让<code>Ostrich</code>除了继承自<code>Bird</code>外，再同时继承<code>Runnable</code>。这种设计通常称之为 MixIn。</p>
 <p>为了更好地看出继承关系，我们把<code>Runnable</code>和<code>Flyable</code>改为<code>RunnableMixIn</code>和<code>FlyableMixIn</code>。类似的，你还可以定义出肉食动物<code>CarnivorousMixIn</code>和植食动物<code>HerbivoresMixIn</code>，让某个动物同时拥有好几个 MixIn：</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -811,12 +806,12 @@
 </blockquote>
 <p>由于 Python 允许使用多重继承，因此，MixIn 就是一种常见的设计。</p>
 <p>只允许单一继承的语言（如 Java）不能使用 MixIn 的设计。</p>
-<h2 id="74-定制类">7.4 定制类</h2>
-<p>看到类似<code>__slots__</code>这种形如<code>__xxx__</code>的变量或者函数名就要注意，这些在 Python 中是有特殊用途的。</p>
+<h2 id="74-定制类" class="heading-element">
+  <a href="#74-%e5%ae%9a%e5%88%b6%e7%b1%bb" class="heading-mark"></a>7.4 定制类</h2><p>看到类似<code>__slots__</code>这种形如<code>__xxx__</code>的变量或者函数名就要注意，这些在 Python 中是有特殊用途的。</p>
 <p><code>__slots__</code>我们已经知道怎么用了，<code>__len__()</code>方法我们也知道是为了能让 class 作用于<code>len()</code>函数。</p>
 <p>除此之外，Python 的 class 中还有许多这样有特殊用途的函数，可以帮助我们定制类。</p>
-<h3 id="741-__str__">7.4.1 <code>__str__</code></h3>
-<p>我们先定义一个<code>Student</code>类，打印一个实例：</p>
+<h3 id="741-__str__" class="heading-element">
+  <a href="#741-__str__" class="heading-mark"></a>7.4.1 <code>__str__</code></h3><p>我们先定义一个<code>Student</code>类，打印一个实例：</p>
 <div class="highlight" id="id-26"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -889,8 +884,8 @@
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s1">&#39;Student object (name=</span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
 </span></span><span class="line"><span class="cl">    <span class="fm">__repr__</span> <span class="o">=</span> <span class="fm">__str__</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="742-__iter__">7.4.2 <code>__iter__</code></h3>
-<p>如果一个类想被用于<code>for ... in</code>循环，类似 list 或 tuple 那样，就必须实现一个<code>__iter__()</code>方法，该方法返回一个迭代对象，然后，Python 的 for 循环就会不断调用该迭代对象的<code>__next__()</code>方法拿到循环的下一个值，直到遇到<code>StopIteration</code>错误时退出循环。</p>
+</div><h3 id="742-__iter__" class="heading-element">
+  <a href="#742-__iter__" class="heading-mark"></a>7.4.2 <code>__iter__</code></h3><p>如果一个类想被用于<code>for ... in</code>循环，类似 list 或 tuple 那样，就必须实现一个<code>__iter__()</code>方法，该方法返回一个迭代对象，然后，Python 的 for 循环就会不断调用该迭代对象的<code>__next__()</code>方法拿到循环的下一个值，直到遇到<code>StopIteration</code>错误时退出循环。</p>
 <p>我们以斐波那契数列为例，写一个 Fib 类，可以作用于 for 循环：</p>
 <div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -931,8 +926,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Fib</span><span class="p">():</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="743-__getitem__">7.4.3 <code>__getitem__</code></h3>
-<p>Fib实例虽然能作用于 for 循环，看起来和 list 有点像，但是，把它当成 list 来使用还是不行，比如，取第 5 个元素：</p>
+</div><h3 id="743-__getitem__" class="heading-element">
+  <a href="#743-__getitem__" class="heading-mark"></a>7.4.3 <code>__getitem__</code></h3><p>Fib实例虽然能作用于 for 循环，看起来和 list 有点像，但是，把它当成 list 来使用还是不行，比如，取第 5 个元素：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1080,8 +1075,8 @@
 <p>此外，如果把对象看成<code>dict</code>，<code>__getitem__()</code>的参数也可能是一个可以作 key 的 object，例如<code>str</code>。</p>
 <p>与之对应的是<code>__setitem__()</code>方法，把对象视作 list 或 dict 来对集合赋值。最后，还有一个<code>__delitem__()</code>方法，用于删除某个元素。</p>
 <p>总之，通过上面的方法，我们自己定义的类表现得和 Python 自带的 list、tuple、dict 没什么区别，这完全归功于动态语言的“鸭子类型”，不需要强制继承某个接口。</p>
-<h3 id="744-__getattr__">7.4.4 <code>__getattr__</code></h3>
-<p>正常情况下，当我们调用类的方法或属性时，如果不存在，就会报错。比如定义<code>Student</code>类：</p>
+<h3 id="744-__getattr__" class="heading-element">
+  <a href="#744-__getattr__" class="heading-mark"></a>7.4.4 <code>__getattr__</code></h3><p>正常情况下，当我们调用类的方法或属性时，如果不存在，就会报错。比如定义<code>Student</code>类：</p>
 <div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1266,8 +1261,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Chain</span><span class="p">()</span><span class="o">.</span><span class="n">users</span><span class="p">(</span><span class="s1">&#39;michael&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">repos</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>就可以非常方便地调用 API 了。有兴趣的童鞋可以试试写出来。</p>
-<h3 id="745-__call__">7.4.5 <code>__call__</code></h3>
-<p>一个对象实例可以有自己的属性和方法，当我们调用实例方法时，我们用<code>instance.method()</code>来调用。能不能直接在实例本身上调用呢？在 Python 中，答案是肯定的。</p>
+<h3 id="745-__call__" class="heading-element">
+  <a href="#745-__call__" class="heading-mark"></a>7.4.5 <code>__call__</code></h3><p>一个对象实例可以有自己的属性和方法，当我们调用实例方法时，我们用<code>instance.method()</code>来调用。能不能直接在实例本身上调用呢？在 Python 中，答案是肯定的。</p>
 <p>任何类，只需要定义一个<code>__call__()</code>方法，就可以直接对实例进行调用。请看示例：</p>
 <div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1334,8 +1329,8 @@
 <li>Python 的 class 允许定义许多定制方法，可以让我们非常方便地生成特定的类。</li>
 <li>本节介绍的是最常用的几个定制方法，还有很多可定制的方法，请参考<a href="http://docs.python.org/3/reference/datamodel.html#special-method-names"target="_blank" rel="external nofollow noopener noreferrer">Python的官方文档</a>。</li>
 </ul>
-<h2 id="75-使用枚举类">7.5 使用枚举类</h2>
-<p>当我们需要定义常量时，一个办法是用大写变量通过整数来定义，例如月份：</p>
+<h2 id="75-使用枚举类" class="heading-element">
+  <a href="#75-%e4%bd%bf%e7%94%a8%e6%9e%9a%e4%b8%be%e7%b1%bb" class="heading-mark"></a>7.5 使用枚举类</h2><p>当我们需要定义常量时，一个办法是用大写变量通过整数来定义，例如月份：</p>
 <div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1355,8 +1350,8 @@
 </div>
 </div><p>好处是简单，缺点是类型是<code>int</code>，并且仍然是变量。</p>
 <p>更好的方法是为这样的枚举类型定义一个 class 类型，然后，每个常量都是 class 的一个唯一实例。Python 提供了<code>Enum</code>类来实现这个功能：</p>
-<h3 id="751-enum">7.5.1 Enum</h3>
-<div class="highlight" id="id-54"><div class="chroma">
+<h3 id="751-enum" class="heading-element">
+  <a href="#751-enum" class="heading-mark"></a>7.5.1 Enum</h3><div class="highlight" id="id-54"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1476,9 +1471,9 @@
 </span></span><span class="line"><span class="cl"><span class="n">Sat</span> <span class="o">=&gt;</span> <span class="n">Weekday</span><span class="o">.</span><span class="n">Sat</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可见，既可以用成员名称引用枚举常量，又可以直接根据value的值获得枚举常量。</p>
-<h2 id="76-使用元类">7.6 使用元类</h2>
-<h3 id="761-type">7.6.1 type()</h3>
-<p>动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。</p>
+<h2 id="76-使用元类" class="heading-element">
+  <a href="#76-%e4%bd%bf%e7%94%a8%e5%85%83%e7%b1%bb" class="heading-mark"></a>7.6 使用元类</h2><h3 id="761-type" class="heading-element">
+  <a href="#761-type" class="heading-mark"></a>7.6.1 type()</h3><p>动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。</p>
 <p>比方说我们要定义一个<code>Hello</code>的 class，就写一个<code>hello.py</code>模块：</p>
 <div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1551,8 +1546,8 @@
 </ol>
 <p>通过<code>type()</code>函数创建的类和直接写class是完全一样的，因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用<code>type()</code>函数创建出class。</p>
 <p>正常情况下，我们都用<code>class Xxx...</code>来定义类，但是，<code>type()</code>函数也允许我们动态创建出类来，也就是说，动态语言本身支持运行期动态创建类，这和静态语言有非常大的不同，要在静态语言运行期创建类，必须构造源代码字符串再调用编译器，或者借助一些工具生成字节码实现，本质上都是动态编译，会非常复杂。</p>
-<h3 id="762-metaclass">7.6.2 metaclass</h3>
-<p>除了使用<code>type()</code>动态创建类以外，要控制类的创建行为，还可以使用metaclass。</p>
+<h3 id="762-metaclass" class="heading-element">
+  <a href="#762-metaclass" class="heading-mark"></a>7.6.2 metaclass</h3><p>除了使用<code>type()</code>动态创建类以外，要控制类的创建行为，还可以使用metaclass。</p>
 <p>metaclass，直译为元类，简单的解释就是：</p>
 <p>当我们定义了类以后，就可以根据这个类创建出实例，所以：先定义类，然后创建实例。</p>
 <p>但是如果我们想创建出类呢？那就必须根据metaclass创建出类，所以：先定义metaclass，然后创建类。</p>
@@ -1840,13 +1835,13 @@
 </div>
 </div><p>可以看到，<code>save()</code>方法已经打印出了可执行的SQL语句，以及参数列表，只需要真正连接到数据库，执行该SQL语句，就可以完成真正的功能。</p>
 <p>不到100行代码，我们就通过metaclass实现了一个精简的ORM框架，是不是非常简单？</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=large 2x" sizes="auto" data-title="image-20200817100522200" data-alt="image-20200817100522200" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png" alt="image-20200817100522200" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png?size=large 2x" sizes="auto" data-title="image-20200817100522200" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <blockquote>
 <p>小结：</p>
 </blockquote>
 <p>metaclass是Python中非常具有魔术性的对象，它可以改变类创建时的行为。这种强大的功能使用起来务必小心。</p>
-<h2 id="77-参考资料">7.7 参考资料</h2>
-<ul>
+<h2 id="77-参考资料" class="heading-element">
+  <a href="#77-%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" class="heading-mark"></a>7.7 参考资料</h2><ul>
 <li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017501628721248"target="_blank" rel="external nofollow noopener noreferrer">廖雪峰 - Python 3.x - 面向对象高级编程</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
@@ -1855,33 +1850,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" data-title="第七章 面向对象高级编程" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" data-title="第七章 面向对象高级编程" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" class="post-nav-item" rel="prev" title="第三章 高级特性"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第三章 高级特性</a>
-      <a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" class="post-nav-item" rel="next" title="第六章 面向对象编程">第六章 面向对象编程<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/" class="post-nav-item" rel="prev" title="第七章 数据清洗和准备"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第七章 数据清洗和准备</a>
+      <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/" class="post-nav-item" rel="next" title="第六章 数据加载、存储与文件格式">第六章 数据加载、存储与文件格式<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

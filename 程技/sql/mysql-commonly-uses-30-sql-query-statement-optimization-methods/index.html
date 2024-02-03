@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>MySQL常用30种SQL查询语句优化方法 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查" /><meta name="keywords" content='SQL' /><meta itemprop="name" content="MySQL常用30种SQL查询语句优化方法">
-<meta itemprop="description" content="引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查"><meta itemprop="datePublished" content="2023-08-01T00:00:00+00:00" />
+    <title>MySQL常用30种SQL查询语句优化方法 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="引言在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查" /><meta name="keywords" content='SQL' /><meta itemprop="name" content="MySQL常用30种SQL查询语句优化方法">
+<meta itemprop="description" content="引言在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查"><meta itemprop="datePublished" content="2023-08-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-08-01T00:00:00+00:00" />
 <meta itemprop="wordCount" content="2981"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="SQL," /><meta property="og:title" content="MySQL常用30种SQL查询语句优化方法" />
-<meta property="og:description" content="引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查" />
+<meta property="og:description" content="引言在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2023-08-01T00:00:00+00:00" />
@@ -20,7 +20,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="MySQL常用30种SQL查询语句优化方法"/>
-<meta name="twitter:description" content="引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查"/>
+<meta name="twitter:description" content="引言在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/live_max_online/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/sql/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">SQL</a></li><li class="breadcrumb-item active" aria-current="page">MySQL常用30种SQL查询语句优化方法</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>MySQL常用30种SQL查询语句优化方法</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="更新于 2023-08-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="2981 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="leancloud_visitors comment-visitors" data-flag-title="MySQL常用30种SQL查询语句优化方法">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-08-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="2981 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 3000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="leancloud_visitors comment-visitors" data-flag-title="MySQL常用30种SQL查询语句优化方法">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="MySQL常用30种SQL查询语句优化方法">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -264,11 +259,11 @@
     <li><a href="#结语">结语</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="引言">引言</h2>
-<p>在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查询效率，为用户提供更好的用户体验。本文将介绍常用的30种MySQL SQL查询优化方法，并通过实际案例演示它们的应用。</p>
-<h2 id="第一部分基础优化方法">第一部分：基础优化方法</h2>
-<h3 id="1使用索引">1.使用索引</h3>
-<p>索引是提高数据库查询性能的基础，通过为查询字段添加合适的索引，可以加快查询速度。在创建索引时，需要考虑查询的频率和数据的更新频率，避免过度索引或不必要的索引。</p>
+      </div><div class="content" id="content"><h2 id="引言" class="heading-element">
+  <a href="#%e5%bc%95%e8%a8%80" class="heading-mark"></a>引言</h2><p>在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查询效率，为用户提供更好的用户体验。本文将介绍常用的30种MySQL SQL查询优化方法，并通过实际案例演示它们的应用。</p>
+<h2 id="第一部分基础优化方法" class="heading-element">
+  <a href="#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e5%9f%ba%e7%a1%80%e4%bc%98%e5%8c%96%e6%96%b9%e6%b3%95" class="heading-mark"></a>第一部分：基础优化方法</h2><h3 id="1使用索引" class="heading-element">
+  <a href="#1%e4%bd%bf%e7%94%a8%e7%b4%a2%e5%bc%95" class="heading-mark"></a>1.使用索引</h3><p>索引是提高数据库查询性能的基础，通过为查询字段添加合适的索引，可以加快查询速度。在创建索引时，需要考虑查询的频率和数据的更新频率，避免过度索引或不必要的索引。</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -280,8 +275,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_column</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="p">(</span><span class="k">column_name</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2避免使用select-">2.避免使用SELECT *</h3>
-<p>在查询数据时，尽量避免使用SELECT *，而是明确指定需要查询的字段。这样可以减少返回的数据量，提高查询效率。</p>
+</div><h3 id="2避免使用select-" class="heading-element">
+  <a href="#2%e9%81%bf%e5%85%8d%e4%bd%bf%e7%94%a8select-" class="heading-mark"></a>2.避免使用SELECT *</h3><p>在查询数据时，尽量避免使用SELECT *，而是明确指定需要查询的字段。这样可以减少返回的数据量，提高查询效率。</p>
 <div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -301,8 +296,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="3使用explain分析查询计划">3.使用EXPLAIN分析查询计划</h3>
-<p>使用EXPLAIN命令可以分析查询的执行计划，帮助优化查询语句，查找潜在的性能问题。</p>
+</div><h3 id="3使用explain分析查询计划" class="heading-element">
+  <a href="#3%e4%bd%bf%e7%94%a8explain%e5%88%86%e6%9e%90%e6%9f%a5%e8%af%a2%e8%ae%a1%e5%88%92" class="heading-mark"></a>3.使用EXPLAIN分析查询计划</h3><p>使用EXPLAIN命令可以分析查询的执行计划，帮助优化查询语句，查找潜在的性能问题。</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -310,9 +305,9 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第二部分优化查询条件">第二部分：优化查询条件</h2>
-<h3 id="4使用where子句过滤数据">4.使用WHERE子句过滤数据</h3>
-<p>在查询数据时，尽量使用WHERE子句对数据进行过滤，减少返回的数据量。</p>
+</div><h2 id="第二部分优化查询条件" class="heading-element">
+  <a href="#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86%e4%bc%98%e5%8c%96%e6%9f%a5%e8%af%a2%e6%9d%a1%e4%bb%b6" class="heading-mark"></a>第二部分：优化查询条件</h2><h3 id="4使用where子句过滤数据" class="heading-element">
+  <a href="#4%e4%bd%bf%e7%94%a8where%e5%ad%90%e5%8f%a5%e8%bf%87%e6%bb%a4%e6%95%b0%e6%8d%ae" class="heading-mark"></a>4.使用WHERE子句过滤数据</h3><p>在查询数据时，尽量使用WHERE子句对数据进行过滤，减少返回的数据量。</p>
 <div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -332,8 +327,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="5使用索引覆盖查询">5.使用索引覆盖查询</h3>
-<p>索引覆盖查询是指查询的字段都包含在索引中，不需要回表查询数据。这样可以减少IO操作，提高查询效率。</p>
+</div><h3 id="5使用索引覆盖查询" class="heading-element">
+  <a href="#5%e4%bd%bf%e7%94%a8%e7%b4%a2%e5%bc%95%e8%a6%86%e7%9b%96%e6%9f%a5%e8%af%a2" class="heading-mark"></a>5.使用索引覆盖查询</h3><p>索引覆盖查询是指查询的字段都包含在索引中，不需要回表查询数据。这样可以减少IO操作，提高查询效率。</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -353,8 +348,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="6避免在where子句中使用函数">6.避免在WHERE子句中使用函数</h3>
-<p>在WHERE子句中使用函数会导致索引失效，需要全表扫描。尽量避免在WHERE子句中使用函数。</p>
+</div><h3 id="6避免在where子句中使用函数" class="heading-element">
+  <a href="#6%e9%81%bf%e5%85%8d%e5%9c%a8where%e5%ad%90%e5%8f%a5%e4%b8%ad%e4%bd%bf%e7%94%a8%e5%87%bd%e6%95%b0" class="heading-mark"></a>6.避免在WHERE子句中使用函数</h3><p>在WHERE子句中使用函数会导致索引失效，需要全表扫描。尽量避免在WHERE子句中使用函数。</p>
 <div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -374,8 +369,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">date_column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2023-01-01&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="7使用合适的数据类型">7.使用合适的数据类型</h3>
-<p>选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
+</div><h3 id="7使用合适的数据类型" class="heading-element">
+  <a href="#7%e4%bd%bf%e7%94%a8%e5%90%88%e9%80%82%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>7.使用合适的数据类型</h3><p>选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
 <div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -395,9 +390,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第三部分连接查询优化">第三部分：连接查询优化</h2>
-<h3 id="8使用inner-join代替where子句连接">8.使用INNER JOIN代替WHERE子句连接</h3>
-<p>使用INNER JOIN可以更好地表达表之间的关系，提高查询的可读性和性能。</p>
+</div><h2 id="第三部分连接查询优化" class="heading-element">
+  <a href="#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86%e8%bf%9e%e6%8e%a5%e6%9f%a5%e8%af%a2%e4%bc%98%e5%8c%96" class="heading-mark"></a>第三部分：连接查询优化</h2><h3 id="8使用inner-join代替where子句连接" class="heading-element">
+  <a href="#8%e4%bd%bf%e7%94%a8inner-join%e4%bb%a3%e6%9b%bfwhere%e5%ad%90%e5%8f%a5%e8%bf%9e%e6%8e%a5" class="heading-mark"></a>8.使用INNER JOIN代替WHERE子句连接</h3><p>使用INNER JOIN可以更好地表达表之间的关系，提高查询的可读性和性能。</p>
 <div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -417,8 +412,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="9使用join-on代替where子句过滤连接">9.使用JOIN ON代替WHERE子句过滤连接</h3>
-<p>在连接查询时，尽量使用JOIN ON对连接进行过滤，而不是在WHERE子句中过滤连接。</p>
+</div><h3 id="9使用join-on代替where子句过滤连接" class="heading-element">
+  <a href="#9%e4%bd%bf%e7%94%a8join-on%e4%bb%a3%e6%9b%bfwhere%e5%ad%90%e5%8f%a5%e8%bf%87%e6%bb%a4%e8%bf%9e%e6%8e%a5" class="heading-mark"></a>9.使用JOIN ON代替WHERE子句过滤连接</h3><p>在连接查询时，尽量使用JOIN ON对连接进行过滤，而不是在WHERE子句中过滤连接。</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -438,8 +433,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="10使用合适的连接类型">10.使用合适的连接类型</h3>
-<p>根据实际业务需求选择合适的连接类型，包括INNER JOIN、LEFT JOIN、RIGHT JOIN和FULL JOIN。</p>
+</div><h3 id="10使用合适的连接类型" class="heading-element">
+  <a href="#10%e4%bd%bf%e7%94%a8%e5%90%88%e9%80%82%e7%9a%84%e8%bf%9e%e6%8e%a5%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>10.使用合适的连接类型</h3><p>根据实际业务需求选择合适的连接类型，包括INNER JOIN、LEFT JOIN、RIGHT JOIN和FULL JOIN。</p>
 <div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -473,9 +468,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">FULL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第四部分子查询优化">第四部分：子查询优化</h2>
-<h3 id="11使用exists代替in">11.使用EXISTS代替IN</h3>
-<p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
+</div><h2 id="第四部分子查询优化" class="heading-element">
+  <a href="#%e7%ac%ac%e5%9b%9b%e9%83%a8%e5%88%86%e5%ad%90%e6%9f%a5%e8%af%a2%e4%bc%98%e5%8c%96" class="heading-mark"></a>第四部分：子查询优化</h2><h3 id="11使用exists代替in" class="heading-element">
+  <a href="#11%e4%bd%bf%e7%94%a8exists%e4%bb%a3%e6%9b%bfin" class="heading-mark"></a>11.使用EXISTS代替IN</h3><p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
 <div class="highlight" id="id-11"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -495,8 +490,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="12使用join代替子查询">12.使用JOIN代替子查询</h3>
-<p>在查询中使用JOIN可以更好地表达查询的逻辑，避免使用复杂的子查询。</p>
+</div><h3 id="12使用join代替子查询" class="heading-element">
+  <a href="#12%e4%bd%bf%e7%94%a8join%e4%bb%a3%e6%9b%bf%e5%ad%90%e6%9f%a5%e8%af%a2" class="heading-mark"></a>12.使用JOIN代替子查询</h3><p>在查询中使用JOIN可以更好地表达查询的逻辑，避免使用复杂的子查询。</p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -518,9 +513,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第五部分limit优化">第五部分：LIMIT优化</h2>
-<h3 id="13使用limit限制返回的记录数">13.使用LIMIT限制返回的记录数</h3>
-<p>在查询大量数据时，使用LIMIT可以限制返回的记录数，避免查询过多的数据。</p>
+</div><h2 id="第五部分limit优化" class="heading-element">
+  <a href="#%e7%ac%ac%e4%ba%94%e9%83%a8%e5%88%86limit%e4%bc%98%e5%8c%96" class="heading-mark"></a>第五部分：LIMIT优化</h2><h3 id="13使用limit限制返回的记录数" class="heading-element">
+  <a href="#13%e4%bd%bf%e7%94%a8limit%e9%99%90%e5%88%b6%e8%bf%94%e5%9b%9e%e7%9a%84%e8%ae%b0%e5%bd%95%e6%95%b0" class="heading-mark"></a>13.使用LIMIT限制返回的记录数</h3><p>在查询大量数据时，使用LIMIT可以限制返回的记录数，避免查询过多的数据。</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -534,8 +529,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="14使用分页查询">14.使用分页查询</h3>
-<p>在查询分页数据时，可以使用LIMIT结合OFFSET实现分页查询。</p>
+</div><h3 id="14使用分页查询" class="heading-element">
+  <a href="#14%e4%bd%bf%e7%94%a8%e5%88%86%e9%a1%b5%e6%9f%a5%e8%af%a2" class="heading-mark"></a>14.使用分页查询</h3><p>在查询分页数据时，可以使用LIMIT结合OFFSET实现分页查询。</p>
 <div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -555,9 +550,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第六部分排序优化">第六部分：排序优化</h2>
-<h3 id="15使用合适的排序字段">15.使用合适的排序字段</h3>
-<p>在排序查询时，选择合适的排序字段可以减少排序的时间和开销。通常应该选择已经建立了索引的字段进行排序，避免对大量数据进行排序操作。</p>
+</div><h2 id="第六部分排序优化" class="heading-element">
+  <a href="#%e7%ac%ac%e5%85%ad%e9%83%a8%e5%88%86%e6%8e%92%e5%ba%8f%e4%bc%98%e5%8c%96" class="heading-mark"></a>第六部分：排序优化</h2><h3 id="15使用合适的排序字段" class="heading-element">
+  <a href="#15%e4%bd%bf%e7%94%a8%e5%90%88%e9%80%82%e7%9a%84%e6%8e%92%e5%ba%8f%e5%ad%97%e6%ae%b5" class="heading-mark"></a>15.使用合适的排序字段</h3><p>在排序查询时，选择合适的排序字段可以减少排序的时间和开销。通常应该选择已经建立了索引的字段进行排序，避免对大量数据进行排序操作。</p>
 <div class="highlight" id="id-15"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -579,8 +574,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">indexed_column</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="16使用覆盖索引减少排序">16.使用覆盖索引减少排序</h3>
-<p>如果查询中只需要排序字段，并且该字段已经建立了索引，可以使用覆盖索引来减少排序的时间。</p>
+</div><h3 id="16使用覆盖索引减少排序" class="heading-element">
+  <a href="#16%e4%bd%bf%e7%94%a8%e8%a6%86%e7%9b%96%e7%b4%a2%e5%bc%95%e5%87%8f%e5%b0%91%e6%8e%92%e5%ba%8f" class="heading-mark"></a>16.使用覆盖索引减少排序</h3><p>如果查询中只需要排序字段，并且该字段已经建立了索引，可以使用覆盖索引来减少排序的时间。</p>
 <div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -602,8 +597,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="17使用desc进行降序排序">17.使用DESC进行降序排序</h3>
-<p>在进行降序排序时，使用DESC关键字可以明确排序方式，避免不必要的排序操作。</p>
+</div><h3 id="17使用desc进行降序排序" class="heading-element">
+  <a href="#17%e4%bd%bf%e7%94%a8desc%e8%bf%9b%e8%a1%8c%e9%99%8d%e5%ba%8f%e6%8e%92%e5%ba%8f" class="heading-mark"></a>17.使用DESC进行降序排序</h3><p>在进行降序排序时，使用DESC关键字可以明确排序方式，避免不必要的排序操作。</p>
 <div class="highlight" id="id-17"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -617,9 +612,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第七部分避免使用通配符">第七部分：避免使用通配符</h2>
-<h3 id="18避免使用通配符">18.避免使用%通配符</h3>
-<p>在查询数据时，尽量避免使用%通配符在查询字段的开头，这会导致索引失效，需要进行全表扫描。</p>
+</div><h2 id="第七部分避免使用通配符" class="heading-element">
+  <a href="#%e7%ac%ac%e4%b8%83%e9%83%a8%e5%88%86%e9%81%bf%e5%85%8d%e4%bd%bf%e7%94%a8%e9%80%9a%e9%85%8d%e7%ac%a6" class="heading-mark"></a>第七部分：避免使用通配符</h2><h3 id="18避免使用通配符" class="heading-element">
+  <a href="#18%e9%81%bf%e5%85%8d%e4%bd%bf%e7%94%a8%e9%80%9a%e9%85%8d%e7%ac%a6" class="heading-mark"></a>18.避免使用%通配符</h3><p>在查询数据时，尽量避免使用%通配符在查询字段的开头，这会导致索引失效，需要进行全表扫描。</p>
 <div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -639,8 +634,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="19使用前缀索引">19.使用前缀索引</h3>
-<p>如果需要在查询中使用通配符%在字段的结尾，可以使用前缀索引来优化查询性能。</p>
+</div><h3 id="19使用前缀索引" class="heading-element">
+  <a href="#19%e4%bd%bf%e7%94%a8%e5%89%8d%e7%bc%80%e7%b4%a2%e5%bc%95" class="heading-mark"></a>19.使用前缀索引</h3><p>如果需要在查询中使用通配符%在字段的结尾，可以使用前缀索引来优化查询性能。</p>
 <div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -662,9 +657,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;value%&#39;</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第八部分联合查询优化">第八部分：联合查询优化</h2>
-<h3 id="20使用union-all代替union">20.使用UNION ALL代替UNION</h3>
-<p>在使用联合查询时，如果不需要去重操作，应该使用UNION ALL，可以减少查询的开销。</p>
+</div><h2 id="第八部分联合查询优化" class="heading-element">
+  <a href="#%e7%ac%ac%e5%85%ab%e9%83%a8%e5%88%86%e8%81%94%e5%90%88%e6%9f%a5%e8%af%a2%e4%bc%98%e5%8c%96" class="heading-mark"></a>第八部分：联合查询优化</h2><h3 id="20使用union-all代替union" class="heading-element">
+  <a href="#20%e4%bd%bf%e7%94%a8union-all%e4%bb%a3%e6%9b%bfunion" class="heading-mark"></a>20.使用UNION ALL代替UNION</h3><p>在使用联合查询时，如果不需要去重操作，应该使用UNION ALL，可以减少查询的开销。</p>
 <div class="highlight" id="id-20"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -686,8 +681,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="w">  </span><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="21使用exists代替in和union">21.使用EXISTS代替IN和UNION</h3>
-<p>在查询中使用EXISTS代替IN和UNION，可以更好地表达查询逻辑，提高查询性能。</p>
+</div><h3 id="21使用exists代替in和union" class="heading-element">
+  <a href="#21%e4%bd%bf%e7%94%a8exists%e4%bb%a3%e6%9b%bfin%e5%92%8cunion" class="heading-mark"></a>21.使用EXISTS代替IN和UNION</h3><p>在查询中使用EXISTS代替IN和UNION，可以更好地表达查询逻辑，提高查询性能。</p>
 <div class="highlight" id="id-21"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -709,9 +704,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">)</span><span class="w">  </span><span class="k">OR</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table3</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table3</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">condition</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第九部分使用子查询优化">第九部分：使用子查询优化</h2>
-<h3 id="22使用内连接代替子查询">22.使用内连接代替子查询</h3>
-<p>在使用子查询时，尽量使用内连接代替，可以减少查询的开销。</p>
+</div><h2 id="第九部分使用子查询优化" class="heading-element">
+  <a href="#%e7%ac%ac%e4%b9%9d%e9%83%a8%e5%88%86%e4%bd%bf%e7%94%a8%e5%ad%90%e6%9f%a5%e8%af%a2%e4%bc%98%e5%8c%96" class="heading-mark"></a>第九部分：使用子查询优化</h2><h3 id="22使用内连接代替子查询" class="heading-element">
+  <a href="#22%e4%bd%bf%e7%94%a8%e5%86%85%e8%bf%9e%e6%8e%a5%e4%bb%a3%e6%9b%bf%e5%ad%90%e6%9f%a5%e8%af%a2" class="heading-mark"></a>22.使用内连接代替子查询</h3><p>在使用子查询时，尽量使用内连接代替，可以减少查询的开销。</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -733,8 +728,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">;</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="23使用exists代替in">23.使用EXISTS代替IN</h3>
-<p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
+</div><h3 id="23使用exists代替in" class="heading-element">
+  <a href="#23%e4%bd%bf%e7%94%a8exists%e4%bb%a3%e6%9b%bfin" class="heading-mark"></a>23.使用EXISTS代替IN</h3><p>在使用子查询时，尽量使用EXISTS代替IN，EXISTS只关心是否存在记录，而IN会将子查询的结果集加载到内存中，可能导致性能问题。</p>
 <div class="highlight" id="id-23"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -756,9 +751,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table2</span><span class="p">.</span><span class="n">id</span><span class="p">);</span><span class="w">  </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第十部分数据表设计优化">第十部分：数据表设计优化</h2>
-<h3 id="24使用合适的数据类型">24.使用合适的数据类型</h3>
-<p>在创建数据表时，选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
+</div><h2 id="第十部分数据表设计优化" class="heading-element">
+  <a href="#%e7%ac%ac%e5%8d%81%e9%83%a8%e5%88%86%e6%95%b0%e6%8d%ae%e8%a1%a8%e8%ae%be%e8%ae%a1%e4%bc%98%e5%8c%96" class="heading-mark"></a>第十部分：数据表设计优化</h2><h3 id="24使用合适的数据类型" class="heading-element">
+  <a href="#24%e4%bd%bf%e7%94%a8%e5%90%88%e9%80%82%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>24.使用合适的数据类型</h3><p>在创建数据表时，选择合适的数据类型可以减少存储空间和查询时间，提高数据库性能。</p>
 <div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -780,40 +775,38 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="25垂直拆分表">25.垂直拆分表</h3>
-<p>在数据表中包含大量冗余数据时，可以考虑对表进行垂直拆分，将不同的数据拆分到不同的表中，提高查询性能。</p>
+</div><h3 id="25垂直拆分表" class="heading-element">
+  <a href="#25%e5%9e%82%e7%9b%b4%e6%8b%86%e5%88%86%e8%a1%a8" class="heading-mark"></a>25.垂直拆分表</h3><p>在数据表中包含大量冗余数据时，可以考虑对表进行垂直拆分，将不同的数据拆分到不同的表中，提高查询性能。</p>
 <p>第十一部分：其他优化方法</p>
-<h3 id="26使用连接池">26.使用连接池</h3>
-<p>使用连接池可以减少连接数据库的开销，提高数据库的并发性能。</p>
-<h3 id="27合理配置缓冲区">27.合理配置缓冲区</h3>
-<p>根据数据库的实际情况，合理配置缓冲区大小，加快数据的读写速度。</p>
-<h3 id="28使用延迟关联">28.使用延迟关联</h3>
-<p>在进行关联查询时，可以考虑使用延迟关联，将关联查询放在最后执行，减少关联操作的次数。</p>
-<h3 id="29避免使用临时表">29.避免使用临时表</h3>
-<p>在查询中尽量避免使用临时表，临时表会增加查询的开销。</p>
-<h3 id="30定期优化数据表">30.定期优化数据表</h3>
-<p>定期对数据表进行优化，包括重新建立索引、压缩表等操作，可以提高数据库的性能。</p>
-<h2 id="结语">结语</h2>
-<p>本文介绍了常用的30种MySQL SQL查询优化方法，并通过实际案例演示了它们的应用。优化SQL查询是提高数据库性能和响应速度的关键，通过合理优化SQL查询可以减少数据库的负载，提高查询效率。读者可以根据自己的实际情况和业务需求，选择合适的优化方法，提高数据库的性能和可用性。同时，我们也要不断学习和实践，在数据库领域不断提高自己的知识水平和技术能力，成为一名优秀的数据库工程师。</p>
+<h3 id="26使用连接池" class="heading-element">
+  <a href="#26%e4%bd%bf%e7%94%a8%e8%bf%9e%e6%8e%a5%e6%b1%a0" class="heading-mark"></a>26.使用连接池</h3><p>使用连接池可以减少连接数据库的开销，提高数据库的并发性能。</p>
+<h3 id="27合理配置缓冲区" class="heading-element">
+  <a href="#27%e5%90%88%e7%90%86%e9%85%8d%e7%bd%ae%e7%bc%93%e5%86%b2%e5%8c%ba" class="heading-mark"></a>27.合理配置缓冲区</h3><p>根据数据库的实际情况，合理配置缓冲区大小，加快数据的读写速度。</p>
+<h3 id="28使用延迟关联" class="heading-element">
+  <a href="#28%e4%bd%bf%e7%94%a8%e5%bb%b6%e8%bf%9f%e5%85%b3%e8%81%94" class="heading-mark"></a>28.使用延迟关联</h3><p>在进行关联查询时，可以考虑使用延迟关联，将关联查询放在最后执行，减少关联操作的次数。</p>
+<h3 id="29避免使用临时表" class="heading-element">
+  <a href="#29%e9%81%bf%e5%85%8d%e4%bd%bf%e7%94%a8%e4%b8%b4%e6%97%b6%e8%a1%a8" class="heading-mark"></a>29.避免使用临时表</h3><p>在查询中尽量避免使用临时表，临时表会增加查询的开销。</p>
+<h3 id="30定期优化数据表" class="heading-element">
+  <a href="#30%e5%ae%9a%e6%9c%9f%e4%bc%98%e5%8c%96%e6%95%b0%e6%8d%ae%e8%a1%a8" class="heading-mark"></a>30.定期优化数据表</h3><p>定期对数据表进行优化，包括重新建立索引、压缩表等操作，可以提高数据库的性能。</p>
+<h2 id="结语" class="heading-element">
+  <a href="#%e7%bb%93%e8%af%ad" class="heading-mark"></a>结语</h2><p>本文介绍了常用的30种MySQL SQL查询优化方法，并通过实际案例演示了它们的应用。优化SQL查询是提高数据库性能和响应速度的关键，通过合理优化SQL查询可以减少数据库的负载，提高查询效率。读者可以根据自己的实际情况和业务需求，选择合适的优化方法，提高数据库的性能和可用性。同时，我们也要不断学习和实践，在数据库领域不断提高自己的知识水平和技术能力，成为一名优秀的数据库工程师。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
         <span title="更新于 2023-08-01 00:00:00">更新于 2023-08-01&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" data-title="MySQL常用30种SQL查询语句优化方法" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/" data-title="MySQL常用30种SQL查询语句优化方法" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/sql/' class="post-tag">SQL</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/sql/" class="post-tag" title="标签 - SQL">SQL</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -824,10 +817,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

@@ -42,7 +42,7 @@
 
 **http://www.gsxt.gov.cn/index.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNL1HRz7sQxYCtWfbmwMpT42mQ8Ftc86osbiaXWcRVI4ONCAWShGNTJg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNL1HRz7sQxYCtWfbmwMpT42mQ8Ftc86osbiaXWcRVI4ONCAWShGNTJg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 “国家企业信用信息公示系统”是国家工商行政管理总局主办的企业信息查询网站，是律师查询企业主体资格的官方渠道，该网站列明企业的基本信息、历史沿革、分支机构、行政许可、行政处罚、异常信息等。
 
@@ -62,13 +62,13 @@
 
 **http://www.tianyancha.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkichMbkMSibPx4AECdtTRDpXZBJWrtVeCVZ478Evd1KO22ndWymlH1Bdg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkichMbkMSibPx4AECdtTRDpXZBJWrtVeCVZ478Evd1KO22ndWymlH1Bdg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **启信宝**
 
 **http://www.qixin.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhiaibPKibeBXTticZmTlWGQHNYnUcO5psiaUTcleibPydibUfqm8STQkibJiarQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhiaibPKibeBXTticZmTlWGQHNYnUcO5psiaUTcleibPydibUfqm8STQkibJiarQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 企查查、天眼查、启信宝均为第三方企业查询平台，上述平台的查询信息不能作为单独的底稿证明企业主体资格，但是可以作为重要的辅助手段、提高尽调效率。
 
@@ -78,7 +78,7 @@
 
 http://www.nacao.org.cn/publish/main/85/index.html
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkfHiauJW9M8iaVXMPiclvwlyfic3TiamDgZBPfiaPf1QLhk8SgVCicicAgfibAWQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkfHiauJW9M8iaVXMPiclvwlyfic3TiamDgZBPfiaPf1QLhk8SgVCicicAgfibAWQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 在该系统中可以查询到社会组织（如行业协会等）的组织机构代码证，确定其主体资格。
 
@@ -90,7 +90,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://xwqy.gsxt.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhOTZYWb0T29zYX7GW46xBiaypPObtY5XzicFPplFVEVK9xCemhcTsibkA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhOTZYWb0T29zYX7GW46xBiaypPObtY5XzicFPplFVEVK9xCemhcTsibkA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 按照《国务院关于扶持小型微型企业健康发展的意见》（国发〔2014〕52号）第九条要求：依托工商行政管理部门的企业信用信息公示系统，在企业自愿申报的基础上建立小型微型企业名录，集中公开各类扶持政策及企业享受扶持政策的信息，建立支持小型微型企业发展的信息互联互通机制。通过将企业年报信息与小微企业划型标准进行比对，对符合条件的企业，系统自动列入小微企业库。
 
@@ -102,7 +102,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **APP：统一代码查询**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkWJxKXSibBjpLDQuL6H5Tsh1TxCgWiamQ5eLNaAuY4r26icw9dbicLR7icXA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkWJxKXSibBjpLDQuL6H5Tsh1TxCgWiamQ5eLNaAuY4r26icw9dbicLR7icXA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 统一社会信息代码公示平台，是对法人和其他组织统一社会信用代码相关情况予以公示的平台。通过本平台公示来自登记管理部门的经校核后的法人和其他组织基本信息、重错码及关联关系和统一社会信用代码数据库总体情况。
 
@@ -110,7 +110,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.creditchina.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkCwgK4n8dl3Yt3dm68KXGVLdGTNkS52oGFPIiaiaibiaC626NibTVJMTgvLA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkCwgK4n8dl3Yt3dm68KXGVLdGTNkS52oGFPIiaiaibiaC626NibTVJMTgvLA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 信用中国为官方信用查询系统，中国基金业协会要求私募基金管理人登记法律意见书对申请机构是否在该网站存在负面信息发表明确意见。该系统可以查询到失信被执行人信息、企业经营异常信息、重大税收违法案件当事人名单、政府采购失信名单等。
 
@@ -118,7 +118,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.pbccrc.org.cn/**
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](data:image/svg&#43;xml,%3C%3Fxml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;%3F%3E%3Csvg width=&#39;1px&#39; height=&#39;1px&#39; viewBox=&#39;0 0 1 1&#39; version=&#39;1.1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%3E%3Ctitle%3E%3C/title%3E%3Cg stroke=&#39;none&#39; stroke-width=&#39;1&#39; fill=&#39;none&#39; fill-rule=&#39;evenodd&#39; fill-opacity=&#39;0&#39;%3E%3Cg transform=&#39;translate(-249.000000, -126.000000)&#39; fill=&#39;%23FFFFFF&#39;%3E%3Crect x=&#39;249&#39; y=&#39;126&#39; width=&#39;1&#39; height=&#39;1&#39;%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 自然人和企业可以通过该系统申请个人/企业信用报告。查询企业信用报告的，需要一定的申请资料，详见该中心网站。
 
@@ -126,7 +126,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.chsi.com.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkTyIMhibAXVDkAIvp1CMSIjtibbpGXIaia1ZbBwvaibbQWEY1USO7lT5EwQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkTyIMhibAXVDkAIvp1CMSIjtibbpGXIaia1ZbBwvaibbQWEY1USO7lT5EwQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 该网站可以进行学历、学籍的验证。
 
@@ -136,7 +136,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://wenshu.court.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkUEPQpMzLhq2gVkiaG1s89JZrgYWe80iaibhWBnM3SDB5t95zuX8GmicOsA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkUEPQpMzLhq2gVkiaG1s89JZrgYWe80iaibhWBnM3SDB5t95zuX8GmicOsA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 中国裁判文书网是最高人民法院公布的官方查询平台，可供经办律师查询企业、自然人诉讼情况。
 
@@ -144,13 +144,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://zhixing.court.gov.cn/search/**
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](data:image/svg&#43;xml,%3C%3Fxml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;%3F%3E%3Csvg width=&#39;1px&#39; height=&#39;1px&#39; viewBox=&#39;0 0 1 1&#39; version=&#39;1.1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%3E%3Ctitle%3E%3C/title%3E%3Cg stroke=&#39;none&#39; stroke-width=&#39;1&#39; fill=&#39;none&#39; fill-rule=&#39;evenodd&#39; fill-opacity=&#39;0&#39;%3E%3Cg transform=&#39;translate(-249.000000, -126.000000)&#39; fill=&#39;%23FFFFFF&#39;%3E%3Crect x=&#39;249&#39; y=&#39;126&#39; width=&#39;1&#39; height=&#39;1&#39;%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 **3. 全国失信被执行人公示系统**
 
 **http://shixin.court.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktVQsjo3BKt7H8GPPP7XrH3Jb7aJibXJaribnZyQCPJcia2gbyOCQuGCRw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktVQsjo3BKt7H8GPPP7XrH3Jb7aJibXJaribnZyQCPJcia2gbyOCQuGCRw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **4. 人民法院公告查询系统**
 
@@ -160,7 +160,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.rmfysszc.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk7ibV1bmElvqKvRXkE8zeypyBQaDQozsNDBfia330PWXKrkYZ6AMmqsng/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk7ibV1bmElvqKvRXkE8zeypyBQaDQozsNDBfia330PWXKrkYZ6AMmqsng/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **6. 第三方诉讼查询网站**
 
@@ -170,19 +170,19 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://openlaw.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkLaEnOgykCibQZPphSiaVPY2KliarXiaxb8ZZk0daBfwGpEA4icw8aOOFySA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkLaEnOgykCibQZPphSiaVPY2KliarXiaxb8ZZk0daBfwGpEA4icw8aOOFySA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **理脉**
 
 **http://www.legalminer.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkwSVvIic2tXdoWYLYtGXMNOj2FDMPWMTIicS0UXCJAtbI9xeO2Pn2WFYA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkwSVvIic2tXdoWYLYtGXMNOj2FDMPWMTIicS0UXCJAtbI9xeO2Pn2WFYA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **7.淘宝司法拍卖**
 
 **http://sf.taobao.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkjcpUTF00FEPjibC0QOlDWHnMKstGBicIpBAMJIb6rHZswHTMXIzhiaAZw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkjcpUTF00FEPjibC0QOlDWHnMKstGBicIpBAMJIb6rHZswHTMXIzhiaAZw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 网上拍卖减少了拍卖费用，竞价方便，越来越多的法院把没有争议、比较干净的资产都通过这个方式进行拍卖，相信涉诉的信息会越来越多。目前全国绝大部分法院已经通过淘宝司法拍卖进行。
 
@@ -202,13 +202,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.caseshare.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhw3KlIiakGeVgsNico7B04fsaSan4xTMFvoCZ17c8Fdyh0ia1uBZnnHhw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkhw3KlIiakGeVgsNico7B04fsaSan4xTMFvoCZ17c8Fdyh0ia1uBZnnHhw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **10.无讼案例/无讼名片**
 
 **http://www.itslaw.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkRRiaibspYGwoHxblvSUiclo2Q5EXVtTPfprBr0QXUNRZerAbAhzwZDx3A/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkRRiaibspYGwoHxblvSUiclo2Q5EXVtTPfprBr0QXUNRZerAbAhzwZDx3A/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **四、税收方面**
 
@@ -216,7 +216,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.foochen.com/zty/ybnsr/yibannashuiren.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkRYWjZEFRz13QkEFZVWfMptplKkS1icuy4qgz8D08GASiak0Eia9DPkVmw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkRYWjZEFRz13QkEFZVWfMptplKkS1icuy4qgz8D08GASiak0Eia9DPkVmw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **2. 小微企业**
 
@@ -224,13 +224,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://xwqy.gsxt.gov.cn/home?df=31**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNEQcrmRMg0ib54WVL2HyhzttdLKiaDJDv6eRzE75N1OicWiacgcQTuzR9g/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNEQcrmRMg0ib54WVL2HyhzttdLKiaDJDv6eRzE75N1OicWiacgcQTuzR9g/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **3. 高新技术企业认定**
 
 **http://www.guogao.org/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk5jNAfU9Tnx4axGxgXr6LScwdx7icearPc88F27RsKDrgNZDphvEPxew/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk5jNAfU9Tnx4axGxgXr6LScwdx7icearPc88F27RsKDrgNZDphvEPxew/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **五、知识产权查询网站**
 
@@ -238,7 +238,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://wsjs.saic.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkcoOzljxQoSS3aWoiccb5y4liceP36TIsdlhUQqFFfd8a2taeGaChkzVA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkcoOzljxQoSS3aWoiccb5y4liceP36TIsdlhUQqFFfd8a2taeGaChkzVA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 该系统共有六个查询平台，作为尽职调查律师，最常用到的为“商标综合查询”平台，该平台可以通过被调查公司的名称查询到该企业的注册商标。
 
@@ -246,7 +246,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://cpquery.sipo.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkIG41fRB8IHlcHgl75GzjjoCicic8BWo8yRqx5PZL2NtbLGu52fcIGhKw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkIG41fRB8IHlcHgl75GzjjoCicic8BWo8yRqx5PZL2NtbLGu52fcIGhKw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 该系统为中国专利局官方查询系统，可供查询专利情况。在核查被调查对象专利时需要注意被调查企业专利费缴纳情况，如被调查企业未按年缴纳年费的，可能会影响专利所有权情况。
 
@@ -254,7 +254,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.ccopyright.com.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkKka5pL40Wicf3BkcANJbWQ9jKbTLFbR2dtsPxjKBrkltXWKhriafCHMg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkKka5pL40Wicf3BkcANJbWQ9jKbTLFbR2dtsPxjKBrkltXWKhriafCHMg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 通过该平台可以查询到被调查公司被登记软件、作品、数字作品的情况，但是，需要注意，著作权人自作品完成之日即享有著作权，著作权并非登记生效，因此该网站所列作品并未包括被调查对象享有著作权的所有作品。
 
@@ -264,7 +264,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.quandashi.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkrMUHW14ibicDcibheFDO78ZwBv4eaEypzg9PhmUMVdW9GSS3TCcU5PU9A/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkrMUHW14ibicDcibheFDO78ZwBv4eaEypzg9PhmUMVdW9GSS3TCcU5PU9A/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 该网站为知识产权第三方查询平台，可以在同一平台查询到商标、发明专利、软件著作权的信息。由于商标局官方查询平台、专利局官方查询平台用户访问量较多，经常出现无法登入的情况，因此，在无需制作申报底稿的情况下，可以通过该平台快速查询到被调查企业知识产权情况。
 
@@ -274,13 +274,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www2.soopat.com/Home/IIndex**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mknZK0V4cC5Bv10iaWH1dy5CrpCPYEm9eoIcOPJ6ra63z7ZSGDkMPPhcQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mknZK0V4cC5Bv10iaWH1dy5CrpCPYEm9eoIcOPJ6ra63z7ZSGDkMPPhcQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **佰腾**
 
 **http://so.baiten.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkdDo0oAdBHjuwU12zdicLDjIqIzInr7SBdiarz4E1mia2Xq2nQUYKA8bzw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkdDo0oAdBHjuwU12zdicLDjIqIzInr7SBdiarz4E1mia2Xq2nQUYKA8bzw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **6. 商标第三方查询平台**
 
@@ -288,7 +288,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.tmkoo.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk8r1wOENWItGC25TV4SdlKROF7qtRYE41y6bujDnKTWoeEnfKBL3TicQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk8r1wOENWItGC25TV4SdlKROF7qtRYE41y6bujDnKTWoeEnfKBL3TicQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **六、行政处罚情况**
 
@@ -300,7 +300,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.tax.sh.gov.cn/pub/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkOFIt6XPN8wF7zMXR1HnUFBBpTK7Z8KgCkfYpE4syicU8kAHsjXwSucQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkOFIt6XPN8wF7zMXR1HnUFBBpTK7Z8KgCkfYpE4syicU8kAHsjXwSucQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **2. 环保合规性**
 
@@ -314,13 +314,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.sepb.gov.cn/fa/cms/shhj/shhj2060/index.shtml** 
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk9WcpGIBGI3nFar7y3uZv2CL3UsRW4dDKfJpFwvRYxRBcn5HYLlVHIA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk9WcpGIBGI3nFar7y3uZv2CL3UsRW4dDKfJpFwvRYxRBcn5HYLlVHIA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **江苏省环保厅**
 
 **http://www.jshb.gov.cn/hbxy/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkOp5Q2t77COD4MyoLyte86g3x1ssyCtfLDKpTP450tdLoZ5ALpHnFkw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkOp5Q2t77COD4MyoLyte86g3x1ssyCtfLDKpTP450tdLoZ5ALpHnFkw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **3. 行业合规性**
 
@@ -332,7 +332,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.cninfo.com.cn/new/index**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk3wzMibkSCyJr9J52FZL5PZRWIAoBMEIAjY0Wu2EDiacuicDdaYAbQ1ElQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk3wzMibkSCyJr9J52FZL5PZRWIAoBMEIAjY0Wu2EDiacuicDdaYAbQ1ElQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 巨潮网是中国证监会指定的上市公示信息披露网站，上市公司公告、年报、基本信息、IPO申报材料均可以在此网站上查询到。
 
@@ -344,19 +344,19 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.csrc.gov.cn/pub/newsite/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkEPiaw30bBtFyoZPccxWl7t2icic7FrfIZpj3IC6piboeM4icmlHptKvnCJA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkEPiaw30bBtFyoZPccxWl7t2icic7FrfIZpj3IC6piboeM4icmlHptKvnCJA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **3. 上海证券交易所监管措施查询**
 
 **http://www.sse.com.cn/disclosure/credibility/supervision/measures/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkmJoblvyd0S42ticdqlmQQPXFRCic6UyA4R6lLY9XiagC2kpG71ibtRGFgw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkmJoblvyd0S42ticdqlmQQPXFRCic6UyA4R6lLY9XiagC2kpG71ibtRGFgw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **4. 深圳证券交易所查询**
 
 **http://www.szse.cn/index/index.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkibYq1UCiaMjvMRbIKlFicg7XFGBrKchCQgib5iauwRytrXDfugIZudfVFfg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkibYq1UCiaMjvMRbIKlFicg7XFGBrKchCQgib5iauwRytrXDfugIZudfVFfg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **5. 独立董事、董秘等查询系统**
 
@@ -370,13 +370,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.neeq.com.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkZtfsW6WzEFicLiaNnYSSaKic0bZAoaAmmYG5llmzgU6F2e6qOZ7XggurQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkZtfsW6WzEFicLiaNnYSSaKic0bZAoaAmmYG5llmzgU6F2e6qOZ7XggurQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **7.和讯网**
 
 **网址：http://www.hexun.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktjoBVO9WNaIgibhKR5C2pLdSbbrYsP3ReUbRpOeQe5nWujcqnibTLpOg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktjoBVO9WNaIgibhKR5C2pLdSbbrYsP3ReUbRpOeQe5nWujcqnibTLpOg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 这些网站以及地方股权交易中心网站，如浙江股权交易中心http://www.zjnpse.com/
 
@@ -386,13 +386,13 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **网址：http://www.nafmii.org.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkdic1PgLrXHiaJJaSVENr4mSN2VoSdCStOKCMEpwHVlUn5WmEC43rzoeQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkdic1PgLrXHiaJJaSVENr4mSN2VoSdCStOKCMEpwHVlUn5WmEC43rzoeQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **9.中国外汇交易中心**
 
 **网址：http://www.chinamoney.com.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkjrnl4T8EBcHooiaWnTv1JjUwVhgHoEDcfBAqz2ATgyQ7aS51aGA0Jxg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkjrnl4T8EBcHooiaWnTv1JjUwVhgHoEDcfBAqz2ATgyQ7aS51aGA0Jxg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 是中国人民银行直属事业单位。为银行间外汇市场、货币市场、债券市场等现货及衍生产品提供发行、交易、交易后处理、信息、基准和培训服务，承担市场交易的日常监测工作，并为中央银行货币政策操作与传导、市场自律机制提供支持和服务。
 
@@ -400,7 +400,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.cfae.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mklr6cK3R5664khOjxTSicjEcjxrK6oibSiaSh1cdAicPiaVMqJ7MSn0iblPCw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mklr6cK3R5664khOjxTSicjEcjxrK6oibSiaSh1cdAicPiaVMqJ7MSn0iblPCw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 北金所是中国人民银行批准的债券发行、交易平台，是中国人民银行批准的中国银行间市场交易商协会指定交易平台，是财政部指定的金融类国有资产交易平台。在交易商协会的领导下，北金所为市场提供债券发行与交易、债权融资计划、委托债权投资计划、企业股权、债权和抵债资产交易等服务，为各类金融资产提供从备案、挂牌、信息披露、信息记载、交易到结算的一站直通式服务。
 
@@ -410,7 +410,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://gs.amac.org.cn/**  
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNNib3SrBYPtLRAdzecnib1jD6CD7dVFcgibEG51QM5dNHI2vSddX2Xl0Q/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkNNib3SrBYPtLRAdzecnib1jD6CD7dVFcgibEG51QM5dNHI2vSddX2Xl0Q/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 中国证券投资基金业协会的公示系统较为全面，可以查询到公募基金管理人、私募基金管理人、私募基金产品、私募基金业务外包服务机构及纪律处分等相关信息。
 
@@ -418,7 +418,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://person.amac.org.cn/pages/login/exam_query.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkMibpt0DIStlKwAJcu22cqPI2aPHXYTwZc1GKvozial5PjXsCq5fe5hdw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkMibpt0DIStlKwAJcu22cqPI2aPHXYTwZc1GKvozial5PjXsCq5fe5hdw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 通过该系统，在输入身份证号码后可以查询到被查询对象参加考试的时间、成绩及科目等。
 
@@ -430,7 +430,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.mohurd.gov.cn/wbdt/dwzzcx/index.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkj0nQRBN6Z2E227tT9hkkkhLwA0fQWqHkntSz3vibrHanuNaZnxUAWlQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkj0nQRBN6Z2E227tT9hkkkhLwA0fQWqHkntSz3vibrHanuNaZnxUAWlQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 通过该平台可以查询建设工程相关企业的资质及从业人员资质。
 
@@ -440,7 +440,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://samr.cfda.gov.cn/WS01/CL0001/**
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](data:image/svg&#43;xml,%3C%3Fxml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;%3F%3E%3Csvg width=&#39;1px&#39; height=&#39;1px&#39; viewBox=&#39;0 0 1 1&#39; version=&#39;1.1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%3E%3Ctitle%3E%3C/title%3E%3Cg stroke=&#39;none&#39; stroke-width=&#39;1&#39; fill=&#39;none&#39; fill-rule=&#39;evenodd&#39; fill-opacity=&#39;0&#39;%3E%3Cg transform=&#39;translate(-249.000000, -126.000000)&#39; fill=&#39;%23FFFFFF&#39;%3E%3Crect x=&#39;249&#39; y=&#39;126&#39; width=&#39;1&#39; height=&#39;1&#39;%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 通过“公众查询”、“企业查询”、“标准查询”可以查询到资质、批件、产品审批文件等相关信息。
 
@@ -450,7 +450,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **http://www.miitbeian.gov.cn/publish/query/indexFirst.action**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkoIcFr6Uf8cAbpRjiaWWSMBwE2mbdLKx25MNlaibQzoNZdMiarzY4L14Eg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkoIcFr6Uf8cAbpRjiaWWSMBwE2mbdLKx25MNlaibQzoNZdMiarzY4L14Eg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 4.注册会计师和会计师事务所  
 
@@ -464,7 +464,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **地址：https://cn.bing.com**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONunICOUT3DsCRUe2GciaPlAdMemqqhxFN7d45fY4osNic52oHibyiaXERt0wHuahTWmjB2ricYGZQUMgWQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONunICOUT3DsCRUe2GciaPlAdMemqqhxFN7d45fY4osNic52oHibyiaXERt0wHuahTWmjB2ricYGZQUMgWQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 终于到了我安利巨硬必应的时候，作为全球的第二大搜索引擎，不仅颜值出众，而且搜索质量非常高，免去你在广告中寻找信息的时间。
 
@@ -472,7 +472,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **地址：https://yandex.com/**
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](data:image/svg&#43;xml,%3C%3Fxml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;%3F%3E%3Csvg width=&#39;1px&#39; height=&#39;1px&#39; viewBox=&#39;0 0 1 1&#39; version=&#39;1.1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%3E%3Ctitle%3E%3C/title%3E%3Cg stroke=&#39;none&#39; stroke-width=&#39;1&#39; fill=&#39;none&#39; fill-rule=&#39;evenodd&#39; fill-opacity=&#39;0&#39;%3E%3Cg transform=&#39;translate(-249.000000, -126.000000)&#39; fill=&#39;%23FFFFFF&#39;%3E%3Crect x=&#39;249&#39; y=&#39;126&#39; width=&#39;1&#39; height=&#39;1&#39;%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 战斗民族的搜索引擎，网页搜索和图片搜索都很实用，界面为英文，支持中文搜索。
 
@@ -480,7 +480,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **地址：https://www.sogou.com/**
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](data:image/svg&#43;xml,%3C%3Fxml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;%3F%3E%3Csvg width=&#39;1px&#39; height=&#39;1px&#39; viewBox=&#39;0 0 1 1&#39; version=&#39;1.1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%3E%3Ctitle%3E%3C/title%3E%3Cg stroke=&#39;none&#39; stroke-width=&#39;1&#39; fill=&#39;none&#39; fill-rule=&#39;evenodd&#39; fill-opacity=&#39;0&#39;%3E%3Cg transform=&#39;translate(-249.000000, -126.000000)&#39; fill=&#39;%23FFFFFF&#39;%3E%3Crect x=&#39;249&#39; y=&#39;126&#39; width=&#39;1&#39; height=&#39;1&#39;%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 搜狗搜索有一个非常好用的功能，它支持直接搜索微信和知乎的内容。这对于律师来说非常方便，直接检索自己需要的内容并保存网址，可以在短时间内获取更多的内容。
 
@@ -488,7 +488,7 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **地址：http://infospace.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdcQKpf7cMcuIKatsPggyoTxzN8eRHb7ob8vfQcxrkynzHW40Qh16yaA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdcQKpf7cMcuIKatsPggyoTxzN8eRHb7ob8vfQcxrkynzHW40Qh16yaA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 一个非常小众的网站，从搜索引擎中获取所有最佳搜索结果，但有一点不是很好，搜索时需要输入验证码。
 
@@ -496,17 +496,17 @@ http://www.nacao.org.cn/publish/main/85/index.html
 
 **地址：http://search.chongbuluo.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdyVkylkv7XE3oY1aibolQxZrvLXzRW7PvDQg2wPyAp6YVWp4C2UVkSWw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdyVkylkv7XE3oY1aibolQxZrvLXzRW7PvDQg2wPyAp6YVWp4C2UVkSWw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 作为聚合类搜索网站，不仅涵盖了大部分搜索引擎，还有你需要搜索的方方面面。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdKcLxYlHLoBuibhypXjiad6AwjkbR7ft2FC4Jiad2p6yL5v2d6u61v3pAA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdKcLxYlHLoBuibhypXjiad6AwjkbR7ft2FC4Jiad2p6yL5v2d6u61v3pAA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
  **▲AnywhereAnything**
 
 **地址：http://lackar.com/aa/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdQI5f3GHhtCZicoaPsexFG4ticn2Y11AFibMrvr7B3JNrBeqypWIwWCnVQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONunICOUT3DsCRUe2GciaPlAdQI5f3GHhtCZicoaPsexFG4ticn2Y11AFibMrvr7B3JNrBeqypWIwWCnVQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 这是月半现在最喜欢的搜索网站没有之一！你在这里可以找到你需要的任何网站，作为一个搜索入口，通过它我们可以在不同的网站上搜索所需内容，左边输入关键词，然后点击右边的网站，即可跳转到目标网站里搜索。
 
@@ -534,19 +534,19 @@ http://www.miibeian.gov.cn
 
 **https://wanwang.aliyun.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkygcFlVaPzqaTPicTd8Y5nNVibdia2nuoMHt5xpDKl6GG4u7a36jwKP0jQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkygcFlVaPzqaTPicTd8Y5nNVibdia2nuoMHt5xpDKl6GG4u7a36jwKP0jQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **4.ICP备案查询网**
 
 **http://www.beianbeian.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkucwibLM26R39TsMAyO5DiaE3cMu4cuDZTSPlHLiaKAhdH2AtqRzkJK9Dw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkucwibLM26R39TsMAyO5DiaE3cMu4cuDZTSPlHLiaKAhdH2AtqRzkJK9Dw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **5.美橙互联网站备案平台**
 
 **http://beian.cndns.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktZFU0Xn8w9M1JbRYYEX5JibJpHNEPbRz3XY4MnWXKJfuzlmRJQjC5yw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mktZFU0Xn8w9M1JbRYYEX5JibJpHNEPbRz3XY4MnWXKJfuzlmRJQjC5yw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **十三、企业环保、消防、劳动等情况**
 
@@ -554,7 +554,7 @@ http://www.miibeian.gov.cn
 
 **http://www.mee.gov.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk59AhVeLFQSTuib2ibWS2PaMjSNV3MwwFzGAuV0jakKoMqU68RZRXsA6A/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mk59AhVeLFQSTuib2ibWS2PaMjSNV3MwwFzGAuV0jakKoMqU68RZRXsA6A/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **2.各地区环保部门官网**
 
@@ -564,7 +564,7 @@ http://www.miibeian.gov.cn
 
 **http://119.china.com.cn/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkwsic4FXe7oUWYye15qb30nvvbQpmGvhg1BZclcfpu6KqF7gjWgF2Hkg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/09X0tb54ONuOabve9ND83572n4zUB1mkwsic4FXe7oUWYye15qb30nvvbQpmGvhg1BZclcfpu6KqF7gjWgF2Hkg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **4.各地区消防官网**
 
@@ -578,7 +578,7 @@ http://www.miibeian.gov.cn
 
  **http://www.icris.cr.gov.hk/csci/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkSC7npH2taJwiaflFxG5jfzNQOg9hFMpuUic0tAdpv8NoUtxyEnR1MIkw/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkSC7npH2taJwiaflFxG5jfzNQOg9hFMpuUic0tAdpv8NoUtxyEnR1MIkw/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 香港公司注册处官方网站可以查到公司编号、名字、及年报申报情况。但是股东和持股比例在网上是查不到的。本网站逢星期日早上七时至八时（香港时间）进行例行系统维修工作。
 
@@ -618,7 +618,7 @@ Firmenwissen http://www.firmenwissen.de/index.html
 
 **http://www.hkexnews.hk/index_c.htm**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkWIJOjibevMT9icpwwVW6MPMm2Q2kbjmRAtanuwJJ8CLEURIWiasPO5icZA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkWIJOjibevMT9icpwwVW6MPMm2Q2kbjmRAtanuwJJ8CLEURIWiasPO5icZA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 上市公司公告进阶搜寻可供搜寻自1999年4月1日起由主板及创业板上市发行人根据上市条例披露要求而发出的公司公告、股东通函及其他公司信息（如年报及上市招股书）。
 
@@ -626,7 +626,7 @@ Firmenwissen http://www.firmenwissen.de/index.html
 
 **https://www.sec.gov/edgar/searchedgar/companysearch.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkuFJbNbTBMoNGzciacAeN99sYqI2O7KEa3vicFliaBFZ7kg0UfHPJ1icGRg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkuFJbNbTBMoNGzciacAeN99sYqI2O7KEa3vicFliaBFZ7kg0UfHPJ1icGRg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 美国证券交易委员会（SEC --the U.S. Securities and Exchange Commission）根据1934年根据证券交易法令而成立，是直属美国联邦的独立准司法机构，负责美国的证券监督和管理工作，是美国证券行业的最高机构。
 
@@ -634,7 +634,7 @@ Firmenwissen http://www.firmenwissen.de/index.html
 
 **http://www.londonstockexchange.com/home/homepage.htm**       
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk3CeeooHrSL10PM5JCcicrvSL9hQHfQMibOoP3icbVdwSyUPrLtG8Z8y5Q/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mk3CeeooHrSL10PM5JCcicrvSL9hQHfQMibOoP3icbVdwSyUPrLtG8Z8y5Q/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 英国的创业板即Alternative Investment Market，是伦敦证券交易所专为中小型成长企业提供融资支持的全球性资本市场。
 
@@ -642,7 +642,7 @@ Firmenwissen http://www.firmenwissen.de/index.html
 
 **http://www.sgx.com/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkqToV50c0zN1ws3CPar6ThvfVfRKMYWOsKEeUlZSV69mTUgOltGXqoA/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkqToV50c0zN1ws3CPar6ThvfVfRKMYWOsKEeUlZSV69mTUgOltGXqoA/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 新加坡交易所（Singapore Exchange，SGX）是亚太地区首家集证券及金融衍生产品交易於一体的企业股份制化交易所。2000年11月23日成为亚太地区首家通过公开募股和私募配售方式上市的交易所。新交所股票是摩根士丹利新加坡自由指数（MSCI Singapore Free Index）、新加坡海峡时报指数(STI)等基准指数的组成部分。
 
@@ -652,36 +652,36 @@ Firmenwissen http://www.firmenwissen.de/index.html
 
 **http://ipsearch.ipd.gov.hk/index.html**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkIdB89B1aibJRibpJsYdb3PjeBljSXPkxoQUcdtuyRFriaaYD4WYLT7wHQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkIdB89B1aibJRibpJsYdb3PjeBljSXPkxoQUcdtuyRFriaaYD4WYLT7wHQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **2. 马德里商标查询系统**
 
 **http://www.wipo.int/romarin/search.xhtml**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkyOPQHarG4hoHThVDHAgaGfcsGicJpFqM8mwvsibEtK8rORFHe80PBrqg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkyOPQHarG4hoHThVDHAgaGfcsGicJpFqM8mwvsibEtK8rORFHe80PBrqg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **3. 韩国知识产权查询系统**
 
-**http://www.kipo.go.kr/kpo/user.tdf?a=user.english.main.BoardApp&c=1001**
+**http://www.kipo.go.kr/kpo/user.tdf?a=user.english.main.BoardApp&amp;c=1001**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkAfpzkceWXmYAiabbHKAHgHd5TlT8MP6cVpB8onLJFpibaycoOc4cS6jQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkAfpzkceWXmYAiabbHKAHgHd5TlT8MP6cVpB8onLJFpibaycoOc4cS6jQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **4. 欧盟商标**
 
 **https://euipo.europa.eu/ohimportal/en/**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkzhpNO7OicAdGe43rzr08wvMicozsLjgyVibTZ4yI5iboKA6QmLwvfCmxSg/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkzhpNO7OicAdGe43rzr08wvMicozsLjgyVibTZ4yI5iboKA6QmLwvfCmxSg/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 **5. 美国知识产权查询平台**
 
 **https://www.uspto.gov/**  
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkicy1GfRYictNYThRQG2bu6XMJs0dcqoZ33DSvcJYgqiaicNiaxNF3QcYnEQ/640?wx_fmt=jpeg&wx_co=1&wxfrom=5&wx_lazy=1)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/09X0tb54ONuOabve9ND83572n4zUB1mkicy1GfRYictNYThRQG2bu6XMJs0dcqoZ33DSvcJYgqiaicNiaxNF3QcYnEQ/640?wx_fmt=jpeg&amp;wx_co=1&amp;wxfrom=5&amp;wx_lazy=1)
 
 本文来源：综合互联网 CIA内审师小站整理编辑，版权归原作者所有，本公众号转载仅用于交流与学习，如有侵权请联系后台删除
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/%E5%AE%8C%E6%95%B4%E7%9A%84%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/  
 

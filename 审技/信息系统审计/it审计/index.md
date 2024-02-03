@@ -96,6 +96,6 @@ IT应用控制审计主要关注应用系统本身的逻辑访问控制和应用
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/  
 

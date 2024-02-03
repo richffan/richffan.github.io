@@ -7,17 +7,17 @@
 ```go
 type Cat struct{}
 
-func (c Cat) Say() string { return "喵喵喵" }
+func (c Cat) Say() string { return &#34;喵喵喵&#34; }
 
 type Dog struct{}
 
-func (d Dog) Say() string { return "汪汪汪" }
+func (d Dog) Say() string { return &#34;汪汪汪&#34; }
 
 func main() {
 	c := Cat{}
-	fmt.Println("猫:", c.Say())
+	fmt.Println(&#34;猫:&#34;, c.Say())
 	d := Dog{}
-	fmt.Println("狗:", d.Say())
+	fmt.Println(&#34;狗:&#34;, d.Say())
 }
 ```
 
@@ -68,16 +68,16 @@ type cat struct{}
 
 让 `dog` 和 `cat` 实现接口 `Sayer` 的 `say` 方法：
 
-> 由于 `Sayer` 接口中只有一个 `say` 方法，所以 `dog` 和 `cat` 实现了 `Sayer` 接口。
->
+&gt; 由于 `Sayer` 接口中只有一个 `say` 方法，所以 `dog` 和 `cat` 实现了 `Sayer` 接口。
+&gt;
 
 ```go
 func (d dog) say() {
-	fmt.Println("汪汪汪")
+	fmt.Println(&#34;汪汪汪&#34;)
 }
 
 func (c cat) say() {
-	fmt.Println("喵喵喵")
+	fmt.Println(&#34;喵喵喵&#34;)
 }
 ```
 
@@ -120,7 +120,7 @@ type cat struct{}
 
 ```go
 func (c cat) say() {
-	fmt.Println("喵喵喵")
+	fmt.Println(&#34;喵喵喵&#34;)
 }
 ```
 
@@ -130,7 +130,7 @@ func (c cat) say() {
 func main() {
 	var sayer Sayer // 声明接口类型变量 sayer
 	c := cat{}
-	c2 := &cat{}
+	c2 := &amp;cat{}
 
 	sayer = c
 	sayer.say()
@@ -155,13 +155,13 @@ func main() {
 
 ```go
 func (c *cat) say() {
-	fmt.Println("喵喵喵")
+	fmt.Println(&#34;喵喵喵&#34;)
 }
 
 func main() {
 	var sayer Sayer // 声明接口类型变量 sayer
 	c := cat{} // cat 的实例
-	c2 := &cat{} // *cat 的实例
+	c2 := &amp;cat{} // *cat 的实例
 
 	sayer = c // 不能将 cat 的实例赋值给 sayer
 	sayer.say()
@@ -184,7 +184,7 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type Sayer interface {
 	say()
@@ -197,11 +197,11 @@ type Mover interface {
 type cat struct{}
 
 func (c cat) say() {
-	fmt.Println("喵喵喵")
+	fmt.Println(&#34;喵喵喵&#34;)
 }
 
 func (c cat) move() {
-	fmt.Println("猫动了")
+	fmt.Println(&#34;猫动了&#34;)
 }
 
 func main() {
@@ -230,7 +230,7 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 type Mover interface {
 	move()
@@ -241,11 +241,11 @@ type cat struct{}
 type dog struct{}
 
 func (c cat) move() {
-	fmt.Println("小猫咪溜了")
+	fmt.Println(&#34;小猫咪溜了&#34;)
 }
 
 func (d dog) move() {
-	fmt.Println("二狗子跑了")
+	fmt.Println(&#34;二狗子跑了&#34;)
 }
 
 func main() {
@@ -281,7 +281,7 @@ type dryer struct{}
 
 // 实现 WashingMachine 接口的 dry() 方法
 func (d dryer) dry() {
-	fmt.Println("甩一甩")
+	fmt.Println(&#34;甩一甩&#34;)
 }
 
 // 海尔洗衣机
@@ -291,7 +291,7 @@ type haier struct {
 
 // 实现 WashingMachine 接口的 wash() 方法
 func (h haier) wash() {
-	fmt.Println("洗刷刷")
+	fmt.Println(&#34;洗刷刷&#34;)
 }
 ```
 
@@ -321,11 +321,11 @@ type animal interface {
 
 ```go
 func (c cat) say() {
-	fmt.Println("喵喵喵")
+	fmt.Println(&#34;喵喵喵&#34;)
 }
 
 func (c cat) move() {
-	fmt.Println("小猫咪溜了")
+	fmt.Println(&#34;小猫咪溜了&#34;)
 }
 
 func main() {
@@ -356,11 +356,11 @@ func main() {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
 	var i interface{}
-	s := "空接口"
+	s := &#34;空接口&#34;
 	n := 25
 	b := true
 
@@ -389,7 +389,7 @@ true
 
 ```go
 func show(x interface{}) {
-    fmt.Printf("type:%T value:%v\n", x, x)
+    fmt.Printf(&#34;type:%T value:%v\n&#34;, x, x)
 }
 ```
 
@@ -399,9 +399,9 @@ func show(x interface{}) {
 
 ```go
 var studentInfo = make(map[string]interface{})
-studentInfo["name"] = "张三"
-studentInfo["age"] = 24
-studentInfo["married"] = false
+studentInfo[&#34;name&#34;] = &#34;张三&#34;
+studentInfo[&#34;age&#34;] = 24
+studentInfo[&#34;married&#34;] = false
 fmt.Println(studentInfo)
 ```
 
@@ -440,12 +440,12 @@ x.(T)
 ```go
 func main() {
 	var x interface{}
-	x = "Hello Golang"
+	x = &#34;Hello Golang&#34;
 	v, ok := x.(string)
 	if ok {
 		fmt.Println(v)
 	} else {
-		fmt.Println("类型断言失败")
+		fmt.Println(&#34;类型断言失败&#34;)
 	}
 }
 ```
@@ -456,22 +456,22 @@ func main() {
 func justifyType(x interface{}) {
 	switch v := x.(type) {
 	case string:
-		fmt.Printf("x is a string，value is %v\n", v)
+		fmt.Printf(&#34;x is a string，value is %v\n&#34;, v)
 	case int:
-		fmt.Printf("x is a int is %v\n", v)
+		fmt.Printf(&#34;x is a int is %v\n&#34;, v)
 	case bool:
-		fmt.Printf("x is a bool is %v\n", v)
+		fmt.Printf(&#34;x is a bool is %v\n&#34;, v)
 	default:
-		fmt.Println("unsupport type！")
+		fmt.Println(&#34;unsupport type！&#34;)
 	}
 }
 ```
 
-> ***注意***：当有多个类型存在相同的方法时才适合使用接口，不要为了刻意使用接口而使用接口，这样会增加运行时的损耗。
+&gt; ***注意***：当有多个类型存在相同的方法时才适合使用接口，不要为了刻意使用接口而使用接口，这样会增加运行时的损耗。
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/  
 

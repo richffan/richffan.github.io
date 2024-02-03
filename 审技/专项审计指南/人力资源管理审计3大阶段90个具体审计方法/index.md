@@ -264,6 +264,6 @@ F 正式在适当的范围内发出报告
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A13%E5%A4%A7%E9%98%B6%E6%AE%B590%E4%B8%AA%E5%85%B7%E4%BD%93%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/  
 

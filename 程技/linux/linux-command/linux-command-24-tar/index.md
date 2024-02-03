@@ -1,7 +1,7 @@
 # 每天一个linux命令（24）: tar
 
 　　通过SSH访问服务器，难免会要用到压缩，解压缩，打包，解包等，这时候tar命令就是是必不可少的一个功能强大的工具。linux中最流行的tar是麻雀虽小，五脏俱全，功能强大。
-<!--more -->
+&lt;!--more --&gt;
 
 　　tar命令可以为linux的文件和目录创建档案。利用tar，可以为某一特定文件创建档案（备份文件），也可以在档案中改变文件，或者向档案中加入新的文件。tar最初被用来在磁带上创建档案，现在，用户可以在任何设备上创建档案。利用tar命令，可以把一大堆的文件和目录全部打包成一个文件，这对于备份文件或将几个文件组合成为一个文件以便于网络传输是非常有用的。
 
@@ -18,7 +18,7 @@ $ tar [必要参数] [选择参数] [文件]
 #### 命令功能
 　　用来压缩和解压文件。tar本身不具有压缩功能。他是调用压缩功能实现的
 #### 命令参数
-<span>**必要参数**</span>
+&lt;span&gt;**必要参数**&lt;/span&gt;
 
 | 参数 | 描述 |
 | :------------- | :------------- |
@@ -120,7 +120,7 @@ $ tar -cvf log.tar log2012.log   ## 仅打包，不压缩！
 $ tar -zcvf log.tar.gz log2012.log ## 打包后，以 gzip 压缩
 $ tar -jcvf log.tar.bz2 log2012.log ## 打包后，以 bzip2 压缩
 ```
->在参数 f 之后的文件档名是自己取的，我们习惯上都用 .tar 来作为辨识。 如果加 z 参数，则以 .tar.gz 或 .tgz 来代表 gzip 压缩过的 tar包； 如果加 j 参数，则以 .tar.bz2 来作为tar包名。
+&gt;在参数 f 之后的文件档名是自己取的，我们习惯上都用 .tar 来作为辨识。 如果加 z 参数，则以 .tar.gz 或 .tgz 来代表 gzip 压缩过的 tar包； 如果加 j 参数，则以 .tar.bz2 来作为tar包名。
 
 **`例二`：查阅上述 tar包内有哪些文件**
 ```bash
@@ -144,7 +144,7 @@ $ tar -zcvpf log31.tar.gz log2014.log log2015.log log2016.log
 ```
 **`例六`：在 文件夹当中，比某个日期新的文件才备份**
 ```bash
-$ tar -N "2012/11/13" -zcvf log17.tar.gz test
+$ tar -N &#34;2012/11/13&#34; -zcvf log17.tar.gz test
 ```
 **`例七`：备份文件夹内容是排除部分文件**
 ```bash
@@ -154,6 +154,6 @@ $ tar --exclude scf/service -zcvf scf.tar.gz scf/*
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-24-tar/  
 

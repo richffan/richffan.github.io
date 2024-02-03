@@ -1,7 +1,7 @@
 # 每天一个linux命令（7）: mv
 
 　　mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），是Linux系统下常用的命令，经常用来备份文件或者目录
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ mv [选项] 源文件或目录 目标文件或目录
@@ -52,16 +52,16 @@ $ mv * ../
 ```bash
 $ mv log1.txt -b log2.txt
 ```
-> -b不接受参数，mv会去读取环境变量VERSION_CONTROL来作为备份策略。
+&gt; -b不接受参数，mv会去读取环境变量VERSION_CONTROL来作为备份策略。
 --backup该选项指定如果目标文件存在时的动作，共有四种备份策略：
 1. CONTROL=none或off : 不备份。
 2. CONTROL=numbered或t：数字编号的备份
-3. CONTROL=existing或nil：如果存在以数字编号的备份，则继续编号备份m+1...n：执行mv操作前已存在以数字编号的文件log2.txt.~1~，那么再次执行将产生log2.txt~2~，以次类推。如果之前没有以数字编号的文件，则使用下面讲到的简单备份。
+3. CONTROL=existing或nil：如果存在以数字编号的备份，则继续编号备份m&#43;1...n：执行mv操作前已存在以数字编号的文件log2.txt.~1~，那么再次执行将产生log2.txt~2~，以次类推。如果之前没有以数字编号的文件，则使用下面讲到的简单备份。
 4. CONTROL=simple或never：使用简单备份：在被覆盖前进行了简单备份，简单备份只能有一份，再次被覆盖时，简单备份也会被覆盖。
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-7-mv/  
 

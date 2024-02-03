@@ -52,9 +52,9 @@
 
 陈版您好，目前负责的一家新三板公司就存在这种情况，比如A开了一张票据给B,B拿去贴现，贴现完，正常的贴现利息费用由A承
 
-担，B也要收取一部分的佣金，扣除贴现费用+佣金之后，剩余的钱打回来给A，这种交易除了进行披露，券商律师出具说明以外，贴
+担，B也要收取一部分的佣金，扣除贴现费用&#43;佣金之后，剩余的钱打回来给A，这种交易除了进行披露，券商律师出具说明以外，贴
 
-现费用+佣金如何入账？因为没有单据
+现费用&#43;佣金如何入账？因为没有单据
 
 **回答人：** chenyiwei
 只能取得各方的协议、合同和付款单据等能够取得的证据，分析是否互相印证，判断其证明效力如何。如果能够证明交易真实性的，
@@ -184,7 +184,7 @@
 话：“初始投资成本包括与取得长期股权投资直接相关的费用、税金及其他必要支出。”
 虽然这两个不完全一样，但这一思路是否适用于这里呢？
 
-如果适用的话，这个额外支出是否属于“其他必要支出"呢？
+如果适用的话，这个额外支出是否属于“其他必要支出&#34;呢？
 
 **回答人：** chenyiwei
 不一定适用，尤其是收购合作方权益时本企业对该合作项目取得完全控制权的情形，应比照企业合并处理。
@@ -807,9 +807,9 @@ a持股b60%，b持股c60%，合并层面合并时表决权和持股比例是多�
 
 上述64%仅是A合并报表中C公司净利润中的少数股东损益部分，未包含B公司利润中的少数股东损益。 假设单体A、B、C净利润分别
 
-为 300 、 200 、 100 ，（省略万元）在B合并层面，归属于母公司普通股股东净利润=200+100 60%=260 ，少数股东损益
+为 300 、 200 、 100 ，（省略万元）在B合并层面，归属于母公司普通股股东净利润=200&#43;100 60%=260 ，少数股东损益
 
-=100 40%=40；在A合并层面，归属于母公司普通股股东净利润=300+260 60%=456 ，少数股东损益 =260 40%+40=144。
+=100 40%=40；在A合并层面，归属于母公司普通股股东净利润=300&#43;260 60%=456 ，少数股东损益 =260 40%&#43;40=144。
 
 @chenyiwei
 
@@ -1094,7 +1094,7 @@ a持股b60%，b持股c60%，合并层面合并时表决权和持股比例是多�
 
 **提问人：**大脸大脸 时间： 2014-03-06 00:40:20
 
-"应采用被投资企业的合并报表数字",这里的合并报表数字怎么理解？
+&#34;应采用被投资企业的合并报表数字&#34;,这里的合并报表数字怎么理解？
 
 **回答人：** chenyiwei
 被投资企业自身合并报表所显示的归属于其母公司股东的净资产、净利润金额。
@@ -1138,7 +1138,7 @@ a持股b60%，b持股c60%，合并层面合并时表决权和持股比例是多�
 
 **回答人：** chenyiwei
 
-http://bbs.esnai.com/forum.php?m ... 462&pid=7145661
+http://bbs.esnai.com/forum.php?m ... 462&amp;pid=7145661
 
 **提问人：** hcl1986 时间： 2014-03-06 08:20:32
 陈版，那未实现内部交易跟哪个项目抵消呢，期末合并报表层面已经没有该项无形资产了。
@@ -1275,7 +1275,7 @@ http://bbs.esnai.com/forum.php?m ... 462&pid=7145661
 **提问人：** Alisa_wang 时间： 2014-03-17 20:22:39
 陈老师，您也说到了，在合并报表层面冲减的资本公积，相当于支付的现金对价。我看到一些上市公司披露的所有者权益变动表，也
 
-是冲减的支付对价。可在这个例子中，冲减的是1000+200=1200万元资本公积，并不是 2200 万元啊，这是怎么回事呢？
+是冲减的支付对价。可在这个例子中，冲减的是1000&#43;200=1200万元资本公积，并不是 2200 万元啊，这是怎么回事呢？
 
 **回答人：** chenyiwei
 
@@ -1366,7 +1366,7 @@ http://bbs.esnai.com/forum.php?m ... 462&pid=7145661
 
 本额 存货 （B-C）—未实现的内部收益（销售收入*内部利润率） （ 3 ）内部购进的商品部分实现对外销售部分形成
 
-期末存货 可以（ 1 ）+（ 2 ），分为两部分做；也可以： 借：营业收入 E—内部销售方的销售额（假设全部实现收
+期末存货 可以（ 1 ）&#43;（ 2 ），分为两部分做；也可以： 借：营业收入 E—内部销售方的销售额（假设全部实现收
 
 益） 贷：营业成本 E—内部销售方的销售额（假设全部实现收益） 借：营业成本 F—未实现的内部收益
 
@@ -2114,7 +2114,7 @@ amount of the revenue that will not be taxable in future periods.
 **回答人：** chenyiwei
 不需要。因为管理层意图的改变导致会计处理方法的变更既不是政策变更，也不是差错更正。
 
-## 471 、企业合并+权益法问题求教
+## 471 、企业合并&#43;权益法问题求教
 
 **提问人：** zhs7403 时间： 2014-03-10 10:21:21
 
@@ -2906,13 +2906,13 @@ D=C-B 当年末 798.54 还款第一年 798.54 63.88 200.00 136.12 还款第二�
 
 由于批准登记等手续耗时较长，截止 2012 年 12 月 31 日，A和B公司才将有关资产、负债转给C公司，A和B公司同时进入清算程序。
 
-2012 年 1 月 1 日至 2012 年 12 月 31 日， A公司和B公司的盈利各为 10 。 2012 年 12 月 31 日A和B的净资产合计为120+10*2=140
+2012 年 1 月 1 日至 2012 年 12 月 31 日， A公司和B公司的盈利各为 10 。 2012 年 12 月 31 日A和B的净资产合计为120&#43;10*2=140
 
 2012 年 12 月 31 日，C公司建账的时候， 实收资本为约定的 120 。
 
 那么， 2012 年 12 月 31 日，C公司是(1) 有未分配利润 20 ，还是(2) 这 20 计入资本公积，因为这类似于成立日之前A和B公司送给C公司
 
-的？或者是(3)，同一控制下的企业合并，未分配利润由A和B延续到C，那么，C公司有未分配利润是-40 2+10 2=-60，资本公积是
+的？或者是(3)，同一控制下的企业合并，未分配利润由A和B延续到C，那么，C公司有未分配利润是-40 2&#43;10 2=-60，资本公积是
 
 80(也就是原本A和B的注册资本100*2与核定的注册资本 120 的差额)？这三种处理，将影响新设的C公司到底有没有可供分配的利润。
 
@@ -3147,7 +3147,7 @@ A公司改制重新归甲集团管理，成为甲集团的子公司（甲占80%�
 
 户吗？如果出资款达到验资户，而又不需要验资报告，这样验资户还有必要存在吗？ 直接出资款达到基本户，然后凭银行的进账
 
-单“借:银行存款，贷：实收资本"行不行？
+单“借:银行存款，贷：实收资本&#34;行不行？
 
 **回答人：** chenyiwei
 如果不考虑其他特殊监管规定，仅就工商方面的要求而言，增资开立专户本来就不是一项强制性的要求，虽然以前我们为了控制验资
@@ -3207,7 +3207,7 @@ A公司改制重新归甲集团管理，成为甲集团的子公司（甲占80%�
 
 1 、按照完工百分比确认项目的收入，成本，当期实际发生的成本（即工程施工-成本借方发生额）是否必须与主营业务成本相等，当
 
-工程施工-成本借方发生额小于主营业务成本的时候，我们是否必须要暂估，暂估的结果是 工程施工（成本+毛利）与工程结算相
+工程施工-成本借方发生额小于主营业务成本的时候，我们是否必须要暂估，暂估的结果是 工程施工（成本&#43;毛利）与工程结算相
 等，这样才能满足权责发生制、配比等会计记账原则；如果不暂估，出现存货为负数（工程施工小于工程结算），无论是作为存货的
 抵减项，还是重分类至预收账款或是其他流动负债是不是都不合理啊？
 
@@ -3266,7 +3266,7 @@ A公司改制重新归甲集团管理，成为甲集团的子公司（甲占80%�
 
 **提问人：**呼叫帮助呼叫帮助 时间： 2014-05-09 10:30:58
 
-陈版您说"营业税金及附加”项目只反映本企业实际承担的流转税和附加。但是我记得您有一个回复说: 如收入确认采用总额法的，则
+陈版您说&#34;营业税金及附加”项目只反映本企业实际承担的流转税和附加。但是我记得您有一个回复说: 如收入确认采用总额法的，则
 
 代扣的分包单位营业税应计入“营业税金及附加”，与总额法下确认的全部合同收入相对应。如果采用净额法确认收入的，则代扣的分
 
@@ -3652,7 +3652,7 @@ chenyiwei点评 被收购企业是否属于为了开采该矿区的煤矿而专�
 积；C公司出资 500 万， 其中 160 万作为B公司实收资本、 340 万作为B公司资本公积。这样增资后， B公司注册资本 300 万、账面实收
 
 
-资本 300 万（100+40+160）、资本公积 400 万，未弥补亏损 10 万，所有者权益合计 690 万;A公司持有B的股权比例从100%降低为
+资本 300 万（100&#43;40&#43;160）、资本公积 400 万，未弥补亏损 10 万，所有者权益合计 690 万;A公司持有B的股权比例从100%降低为
 
 47%， C对B的持股比例是53%。A对B的长投从权益法改为成本法。 此时，A公司应当如何调整长期投资（新准则）？
 
@@ -3681,9 +3681,9 @@ Dr 长期投资 413 万 Cr 资本公积 413 万 还是这个差额应当计入�
 
 润 10 0.47 贷 长期股权投资 10 0.47 2、增资 借 长期股权投资 100 贷 现金 100 3、增资日对被投资单位除净损益、其他
 
-综合收益和利润分配以外所有者权益的其他变动补记权益法核算 借 长期股权投资 （100-10+100+500） 0.47- （ 100-
+综合收益和利润分配以外所有者权益的其他变动补记权益法核算 借 长期股权投资 （100-10&#43;100&#43;500） 0.47- （ 100-
 
-100 0.47+100） 贷 资本公积（非综合收益） （100-10+100+500） 0.47- （ 100-100 0.47+100）
+100 0.47&#43;100） 贷 资本公积（非综合收益） （100-10&#43;100&#43;500） 0.47- （ 100-100 0.47&#43;100）
 
 **回答人：** chenyiwei
 这也是一种可能的理解，但这次准则的修订也没有区分增资和股权转让这两种丧失控制权的不同情况，由此造成的困惑仍然存在。
@@ -3985,9 +3985,9 @@ Dr 长期投资 413 万 Cr 资本公积 413 万 还是这个差额应当计入�
 
 年 1 月至 2010 年 6 月，A公司累计确认投资收益800×25%=200万元，同时增加长期股权投资账面价值 200 万元。 2010 年 6 月 30 日，A
 
-公司对B公司长期股权投资账面价值为1100+200=1300万元。 B公司向C公司定向发行股份后，A公司在B公司所持股份比例变
+公司对B公司长期股权投资账面价值为1100&#43;200=1300万元。 B公司向C公司定向发行股份后，A公司在B公司所持股份比例变
 
-为:400÷(1600+400)=20%。B公司因定向发行股份所有者权益增加 2000 万元，归属于A公司的份额为2000×20%=400万元。 A公司
+为:400÷(1600&#43;400)=20%。B公司因定向发行股份所有者权益增加 2000 万元，归属于A公司的份额为2000×20%=400万元。 A公司
 
 对B公司持股比例减少25%-20%=5%，相当于处置5%÷25%=20%的长期股权投资，视同处置长期股权投资的账面价值为
 
@@ -3999,7 +3999,7 @@ Dr 长期投资 413 万 Cr 资本公积 413 万 还是这个差额应当计入�
 
 我的理解：增加投资后A公司分成两段原来被投资单位净资产 4800 和新增投资 2000 ，增加投资后持股比例为20%，那么A公司的长投
 
-就应该是（4800+2000）*20%=1360，比原来的长投增加了 160 ，为什么例题中确认的是 140 ？我的理解有哪个地方没有考虑
+就应该是（4800&#43;2000）*20%=1360，比原来的长投增加了 160 ，为什么例题中确认的是 140 ？我的理解有哪个地方没有考虑
 
 到？@chenyiwei
 
@@ -4066,9 +4066,9 @@ Dr 长期投资 413 万 Cr 资本公积 413 万 还是这个差额应当计入�
 
 第 27 段原文是：When an associate or a joint venture has subsidiaries, associates or joint ventures, the profit or loss, other
 
-comprehensive income and net assets taken into account in applying the equity method are those recognised in the associate's or
+comprehensive income and net assets taken into account in applying the equity method are those recognised in the associate&#39;s or
 
-joint venture's financial statements (including the associate's or joint venture's share of the profit or loss, other comprehensive
+joint venture&#39;s financial statements (including the associate&#39;s or joint venture&#39;s share of the profit or loss, other comprehensive
 
 income and net assets of its associates and joint ventures), after any adjustments necessary to give effect to uniform accounting
 
@@ -4094,9 +4094,9 @@ appropriate portion of gain or loss on the transaction shall be recognised by th
 
 **回答人：** chenyiwei
 
-IAS 28.27：A group's share in an associate or a joint venture is the aggregate of the holdings in that associate or joint venture by
+IAS 28.27：A group&#39;s share in an associate or a joint venture is the aggregate of the holdings in that associate or joint venture by
 
-the parent and its subsidiaries. The holdings of the group's other associates or joint ventures are ignored for this purpose.
+the parent and its subsidiaries. The holdings of the group&#39;s other associates or joint ventures are ignored for this purpose.
 
 **提问人：** ying0518 时间： 2014-05-10 11:44:21
 
@@ -4119,7 +4119,7 @@ B的部分投资收益相抵销，可能会造成一定的重复确认。
 
 资企业B的其中一投资公司C增加 160 万，实收资本变为 1000 万。 08 年底A的投资比例是39%。 那 2008 年底长期股权投资的账目余额
 
-=（ 07 年B的所有者权益+07至 08 底累计净亏损+160）*39%？ 这样做对吗？
+=（ 07 年B的所有者权益&#43;07至 08 底累计净亏损&#43;160）*39%？ 这样做对吗？
 
 **回答人：** chenyiwei
 
@@ -4229,7 +4229,7 @@ B的部分投资收益相抵销，可能会造成一定的重复确认。
 
 **提问人：**茉莉绿茶茉莉绿茶 时间： 2014-03-16 18:01:44
 
-非同一控制下的企业控股合并，在购买日不需要编制合并利润表，若，长投账面价值< 子公司可辨认净资产公允价值的份额，是否
+非同一控制下的企业控股合并，在购买日不需要编制合并利润表，若，长投账面价值&lt; 子公司可辨认净资产公允价值的份额，是否
 贷：留存收益，而非贷：营业外收入。
 
 **回答人：** chenyiwei
@@ -4613,7 +4613,7 @@ liubin的意见是正确的。在解释 4 号修改了分步交易实现企业�
 
 3 、模具的成本是得到汽车厂家的确认的，在进行零部件报价时候，是包括模具的价格的，（如果是按工作量分摊的话，就是以每个
 
-零部件“材料成本+工序成本+模具成本”，考虑利润率后计算得到的） 这种情况，能否认为模具是随同零部件一起进行销售的，相应
+零部件“材料成本&#43;工序成本&#43;模具成本”，考虑利润率后计算得到的） 这种情况，能否认为模具是随同零部件一起进行销售的，相应
 地，在确认模具收入的时候，也相应按照收入确认方法一致的基础，来结转对应的成本？
 综上，结合我公司的情况，还请陈老师帮忙看看，能不能视其为销售，并在量产前，将其计入存货。或者，审计师认为不能递延确认
 
@@ -4815,7 +4815,7 @@ liubin的意见是正确的。在解释 4 号修改了分步交易实现企业�
 感谢陈老师解答，您这一说，我好像有点开窍了
 就我所举的上述最简单的多层合并案例来说，少数股东权益是否应为：
 
-B净资产的20%（由甲直接享有）+C净资产的30%（由乙直接享有）+B对C投资后，C形成的损益和其他权益变动的14%（由甲间接
+B净资产的20%（由甲直接享有）&#43;C净资产的30%（由乙直接享有）&#43;B对C投资后，C形成的损益和其他权益变动的14%（由甲间接
 享有）
 
 其中要注意的一点是，B对C的投资成本中甲享有的部分，也就是C股本的14%不应计入甲间接享有的部分，否则存在重复
@@ -4989,7 +4989,7 @@ b80%股权的同时还 500 万购买了c少数股东40%的股权（购买日c可
 
 时候肯定是将40%股权作为少数股东处理，但a编制consol的时候则需要根据bconsol做出调整，因为不可能确认少数股权。我的问题
 
-是 1 、a 层面consol是否是商誉是200+100=300？即40%股权部分也是需要确认商誉 2 、单体a层面对于c40%股权是否是视为控制按
+是 1 、a 层面consol是否是商誉是200&#43;100=300？即40%股权部分也是需要确认商誉 2 、单体a层面对于c40%股权是否是视为控制按
 
 照成本法合并？ 3 、还有就是a对于b的合并报表需要作调整，即合并日b确认的少数股东权益（应该是 400 万，假如评估值=帐面值）
 
@@ -5407,7 +5407,7 @@ A公司80%控股B公司，现A公司由有限公司改制为股份公司 问题�
 陈老师，我觉得这两种方法是不一样的，第一种情况如果补助是征税收入，但会计上确认的是递延收益，暂未作收入，税法上要调增
 当年的应纳税额所得额（以后形成的资产折旧、摊销时，递延收益转营业外收入纳税调减即转回财税差异），所以应该在确认递延收
 
-益的时候确认递延所得税资产。按陈老师说的方法，资产价值300-递延收益 300 （逐年折旧）=0<计税基础 300 ，应确认递延所得税
+益的时候确认递延所得税资产。按陈老师说的方法，资产价值300-递延收益 300 （逐年折旧）=0&lt;计税基础 300 ，应确认递延所得税
 
 资产。陈老师的方法是把收到补助和购置资产放一起来看的，该递延所得税资产是在确认递延收益时产生的。而”快枪“说的第一种情
 况是购置资产的环节，这一环节并未产生财税差异。而第二种情况，补助是不征税收入时，确认营业外收入时纳税调减，资产摊销时
@@ -5720,11 +5720,11 @@ A公司投资B公司，占B公司股比30%，对B公司具有重大影响，B公
 
 (the purchaser) enters into an arrangement with a third party (the supplier) to supply a specific component part of its manufactured
 
-product for a specified period of time. The supplier designs and constructs a **t adjacent to the purchaser's factory to produce the
+product for a specified period of time. The supplier designs and constructs a **t adjacent to the purchaser&#39;s factory to produce the
 
-component part. The designed capacity of the **t exceeds the purchaser's current needs, and the supplier maintains ownership and
+component part. The designed capacity of the **t exceeds the purchaser&#39;s current needs, and the supplier maintains ownership and
 
-control over all significant aspects of operating the **t. The arrangement provides for the following: • The supplier's **t is explicitly
+control over all significant aspects of operating the **t. The arrangement provides for the following: • The supplier&#39;s **t is explicitly
 
 identified in the arrangement, but the supplier has the right to fulfil the arrangement by shipping the component parts from another
 
@@ -5732,13 +5732,13 @@ identified in the arrangement, but the supplier has the right to fulfil the arra
 
 for repairs, maintenance, and capital expenditures of the **t. • The supplier must stand ready to deliver a minimum quantity. The
 
-purchaser is required to pay a fixed price per unit for the actual quantity taken. Even if the purchaser's needs are such that they do
+purchaser is required to pay a fixed price per unit for the actual quantity taken. Even if the purchaser&#39;s needs are such that they do
 
 not need the stated minimum quantity, they still pay only for the actual quantity taken. • The supplier has the right to sell the
 
 component parts to other customers and has a history of doing so (by selling in the replacement parts market), so it is expected that
 
-parties other than the purchaser will take more than an insignificant amount of the component parts produced at the supplier's **t.
+parties other than the purchaser will take more than an insignificant amount of the component parts produced at the supplier&#39;s **t.
 
 Assessment IE4 The arrangement does not contain a lease within the scope of IAS 17. An asset (the **t) is explicitly identified in
 
@@ -6104,7 +6104,7 @@ IFRS下，对于接受股东捐赠的非货币、非金融资产，可以有会�
 同根据合同约定取得了 500 万工程预收款。因为公司要IPO,那么在披露应收账款时，应按 1500 万还是 1000 万披露，如果应收、预收
 分开披露，就会出现一个客户同时出现预收、应收的情况，我看了一些公司的招股说明书，很少出现这种同一客户同时披露预收应收
 
-的情况，还有计提坏账时是按客户（应收预收相抵后余额） 1000 万计提，还是按（客户+合同项目分类） 1500 万计提。个人感觉按
+的情况，还有计提坏账时是按客户（应收预收相抵后余额） 1000 万计提，还是按（客户&#43;合同项目分类） 1500 万计提。个人感觉按
 预收、应收分开披露更能合理、真实反应企业的经营情况，并且我们的日常财务核算中也是加以区分，但因初次涉及此类问题，还请
 老师们帮助下，不胜感激！
 
@@ -6368,7 +6368,7 @@ IFRS下，对于接受股东捐赠的非货币、非金融资产，可以有会�
 
 IAS 21.32~34写得比较清楚，可以看看：
 
-32 Exchange differences arising on a monetary item that forms part of a reporting entity's net investment in a foreign operation
+32 Exchange differences arising on a monetary item that forms part of a reporting entity&#39;s net investment in a foreign operation
 
 (see paragraph 15) shall be recognised in profit or loss in the separate financial statements of the reporting entity or the individual
 
@@ -6803,7 +6803,7 @@ A和B公司同为C公司的控股子公司，其中C公司持股A公司75%股权
 
 **回答人：** chenyiwei
 
-参考此处讨论：http://bbs.esnai.com/forum.php?m ... 999&pid=6980277
+参考此处讨论：http://bbs.esnai.com/forum.php?m ... 999&amp;pid=6980277
 
 **提问人：**飘雪～飘雪～ 时间： 2014-03-24 22:36:15
 
@@ -6894,11 +6894,11 @@ A和B公司同为C公司的控股子公司，其中C公司持股A公司75%股权
 
 的中 5000 万结转到 2014 年，即对应未来可以回收的现金，剩下的成本（包括 2013 年工程部预计还要发生的支出暂估计入成本并挂应
 
-付账款）均可以全部转入 2013 年度的土地转让成本科目呢？ 即销售收入为4.亿。 成本＝ 10000 万（土地拍卖价格）+5000万（ 2013
+付账款）均可以全部转入 2013 年度的土地转让成本科目呢？ 即销售收入为4.亿。 成本＝ 10000 万（土地拍卖价格）&#43;5000万（ 2013
 
-年底账上道路成本已发生的支出）+1000万（ 2014 年预计还要发生的道路成本支出）+10000万（ 2013 年底账上已发生的安置房成
+年底账上道路成本已发生的支出）&#43;1000万（ 2014 年预计还要发生的道路成本支出）&#43;10000万（ 2013 年底账上已发生的安置房成
 
-本）+6000万（ 2014 年预计还要发生的安置房成本）－ 5000 万（政府预计可以回收的被拆迁房的安置房补交回的房款）＝ 27000 万
+本）&#43;6000万（ 2014 年预计还要发生的安置房成本）－ 5000 万（政府预计可以回收的被拆迁房的安置房补交回的房款）＝ 27000 万
 不知这样核算是否正确呢？还是要考虑其他因素呢？
 
 **回答人：** chenyiwei
@@ -7076,7 +7076,7 @@ for the costs of that stripping activity in accordance with the principles of IA
 
 access to ore, the entity shall recognise these costs as a non-current asset, if the criteria in paragraph 9 below are met. This
 
-Interpretation refers to the non-current asset as the 'stripping activity asset'.
+Interpretation refers to the non-current asset as the &#39;stripping activity asset&#39;.
 
 13 When the costs of the stripping activity asset and the inventory produced are not separately identifiable, the entity shall
 
@@ -7336,7 +7336,7 @@ compared with expected mineral content to be extracted, for a given quantity of 
 
 司和B商量后，甲公司与B个人共同出资成立了乙公司，然后再由乙公司收购B的加盟店。但是B是个体工商户没有资本股本且无限责
 
-任等因素，于是实际整个收购行为如下：1.对B的加盟店进行评估。2.B注销个体工商户。3.购买对象为加盟店的固定资产+溢价金额
+任等因素，于是实际整个收购行为如下：1.对B的加盟店进行评估。2.B注销个体工商户。3.购买对象为加盟店的固定资产&#43;溢价金额
 
 （比如评估报告中固定资产评估价格为 50 万，溢价再加上 50 万共 100 万收购价）。 请问一下，作为乙公司该如何处理账务？ 1.此业
 
@@ -7390,11 +7390,11 @@ compared with expected mineral content to be extracted, for a given quantity of 
 
 相关文件： 根据证监会发布的标准，归属于公司普通股股东的加权平均净资产收益率=报告期归属于公司普通股股东的净利润/(归属
 
-于公司普通股股东的期初净资产+报告期归属于公司普通股股东的净利润/2+报告期发行新股或债转股等新增的归属于公司普通股股
+于公司普通股股东的期初净资产&#43;报告期归属于公司普通股股东的净利润/2&#43;报告期发行新股或债转股等新增的归属于公司普通股股
 
 东的净资产新增净资产下一月份起至报告期期末的月份数 / 报告期月份数 - 报告期回购或现金分红等减少的归属于公司普通股股东的净
 
-资产减少净资产下一月份起至报告期期末的月份数/报告期月份数+其他事项引起的净资产增减变动*其他净资产变动下一月份起至报
+资产减少净资产下一月份起至报告期期末的月份数/报告期月份数&#43;其他事项引起的净资产增减变动*其他净资产变动下一月份起至报
 
 告期期末的月份数/报告期月份数）
 
@@ -7442,7 +7442,7 @@ compared with expected mineral content to be extracted, for a given quantity of 
 
 假设期初归属母公司权益项下未分配利润 700 ； 少数股东权益 300 。母公司期初占股份70%，本年一月收购了10%股份，达到80%，
 
-本年利润 200 万，假设本年收购10%的利润都归母公司享有，这样所有者权益变动表母公司未分配利润就是期初700+净利润转入
+本年利润 200 万，假设本年收购10%的利润都归母公司享有，这样所有者权益变动表母公司未分配利润就是期初700&#43;净利润转入
 
 160 （200*80%）=860, 实际上 年末 未分配利润应该是 960 ，这样收购少数股东权益产生的未分配利润 100 该填所有者权益变动表
 哪行？
@@ -8296,7 +8296,7 @@ A公司做账，（ 1 ）借：应付账款 1000 万 贷：应付票据 1000 万
 
 子公司新增资本公积（ 200 万），净利润-20万，其他所有者权益科目不变，100%持有，今年母公司合并如何处理： 借：长期股权投
 
-资-损益调整 -20 长期股权投资-股权投资准备 100 （因为长期股权投资余额应该与子公司的所有者权益一致（-100+200） 贷：
+资-损益调整 -20 长期股权投资-股权投资准备 100 （因为长期股权投资余额应该与子公司的所有者权益一致（-100&#43;200） 贷：
 
 资本公积 200 投资收益 -20
 这分录不平，刚好差去年未确认的那部分损失，怎么回事？该怎么处理？谢谢！
@@ -8321,9 +8321,9 @@ A公司做账，（ 1 ）借：应付账款 1000 万 贷：应付票据 1000 万
 
 BC233 When it developed ED 2, the Board concluded that if an entity cancels a share or share option grant during the vesting
 
-period (other than cancellations because of employees' failing to satisfy the vesting conditions), it should nevertheless continue to
+period (other than cancellations because of employees&#39; failing to satisfy the vesting conditions), it should nevertheless continue to
 
-account for services received, as if that share or share option grant had not been cancelled. In the Board's view, it is very unlikely that
+account for services received, as if that share or share option grant had not been cancelled. In the Board&#39;s view, it is very unlikely that
 
 a share or share option grant would be cancelled without some compensation to the counterparty, either in the form of cash or
 
@@ -8397,17 +8397,17 @@ neither the entity nor the counterparty can choose whether that condition is met
 
 expense, based on the grant date fair value, over the vesting period unless the employee fails to meet a vesting condition. BC237B
 
-However, the Board concluded that the entity's failure to meet a non-vesting condition is a cancellation if the entity can choose
+However, the Board concluded that the entity&#39;s failure to meet a non-vesting condition is a cancellation if the entity can choose
 
 whether that non-vesting condition is met. Furthermore, the Board noted that no non-arbitrary or unambiguous criteria exist to
 
 distinguish between a decision by the counterparty not to meet a non-vesting condition and a cancellation by the entity. The Board
 
-considered establishing a rebuttable presumption that a counterparty's failure to meet a non-vesting condition is (or is not) a
+considered establishing a rebuttable presumption that a counterparty&#39;s failure to meet a non-vesting condition is (or is not) a
 
-cancellation, unless it can be demonstrated that the entity had no (or had some) influence over the counterparty's decision. The
+cancellation, unless it can be demonstrated that the entity had no (or had some) influence over the counterparty&#39;s decision. The
 
-Board did not believe that the information about the entity's decision-making processes that is publicly available would be sufficient
+Board did not believe that the information about the entity&#39;s decision-making processes that is publicly available would be sufficient
 
 to determine whether the presumption has been rebutted. Therefore, the Board concluded that a failure to meet a non-vesting
 
@@ -8662,7 +8662,7 @@ A公司收购一境外公司B，使B成为其控股子公司。在收购日，B�
 
 我现在遇到家客户要出具US GAAP的报告，按照ASC 830的要求， 我认定其功能货币为美元， 现在其报表以人民币列示，我在资产
 
-负债表日 remeasure 了之后所以汇率差异都进了P&L, 无需进行 translate， 报表也不存在外币报表折算差异这一科目了？
+负债表日 remeasure 了之后所以汇率差异都进了P&amp;L, 无需进行 translate， 报表也不存在外币报表折算差异这一科目了？
 
 那么IFRs 里面 是否有这样的说法？按道理应该不存在差别，但是我没有找到。 因为境外审计师现在要求我将汇率差异放进外币报表
 折算差异，影响权益。
@@ -8742,9 +8742,9 @@ OCI（其他综合收益）中的一项。
 度》时，如果未摊销的开办费和筹建期间汇兑损失余额较大，直接将其余额转入当期损益对企业的利润产生重大影响的，可采用追溯
 调整法进行处理。如果未摊销的开办费和筹建期间汇兑损失余额较小，直接将其余额转入当期损益对企业的利润无重大影响的，可将
 
-其余额直接转入当期损益”；“"筹建期间汇兑损失"贷方余额，应区别情况处理：留待清算时处理的，转入"长期待摊费用"科目；留待
+其余额直接转入当期损益”；“&#34;筹建期间汇兑损失&#34;贷方余额，应区别情况处理：留待清算时处理的，转入&#34;长期待摊费用&#34;科目；留待
 
-弥补企业生产经营期间发生的年度亏损的，转入"长期待摊费用"科目；自企业投入生产经营起按 5 年分期平均转销的，如直接将其余
+弥补企业生产经营期间发生的年度亏损的，转入&#34;长期待摊费用&#34;科目；自企业投入生产经营起按 5 年分期平均转销的，如直接将其余
 额转入当期损益对企业的利润产生重大影响的，可采用追溯调整法进行处理，如直接转入当期损益对企业的利润无重大影响的，可直
 
 接计入当期损益”。
@@ -8806,6 +8806,6 @@ OCI（其他综合收益）中的一项。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201403/  
 

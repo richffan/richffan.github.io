@@ -5,7 +5,7 @@
 
 为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在 Python 中，一个 .py 文件就称之为一个模块（Module）。
 
-> 🎉 使用模块有什么好处？
+&gt; 🎉 使用模块有什么好处？
 
 * （1）最大的好处是大大提高了代码的可维护性。
 * （2）其次，编写代码不必从零开始。当一个模块编写完毕，就可以被其他地方引用。我们在编写程序的时候，也经常引用其他模块，包括 Python 内置的模块和来自第三方的模块。
@@ -45,9 +45,9 @@ mycompany
 
 文件`www.py`的模块名就是`mycompany.web.www`，两个文件`utils.py`的模块名分别是`mycompany.utils`和`mycompany.web.utils`。
 
-!> 自己创建模块时要注意命名，不能和 Python 自带的模块名称冲突。例如，系统自带了 sys 模块，自己的模块就不可命名为 sys.py，否则将无法导入系统自带的 sys 模块。
+!&gt; 自己创建模块时要注意命名，不能和 Python 自带的模块名称冲突。例如，系统自带了 sys 模块，自己的模块就不可命名为 sys.py，否则将无法导入系统自带的 sys 模块。
 
-> 总结：
+&gt; 总结：
 
 模块是一组 Python 代码的集合，可以使用其他模块，也可以被其他模块使用。
 
@@ -66,22 +66,22 @@ Python 本身就内置了很多非常有用的模块，只要安装完毕，这�
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-' a test module '
+&#39; a test module &#39;
 
-__author__ = 'WuGenQiang'
+__author__ = &#39;WuGenQiang&#39;
 
 import sys
 
 def test():
     args = sys.argv
     if len(args)==1:
-        print('Hello, world!')
+        print(&#39;Hello, world!&#39;)
     elif len(args)==2:
-        print('Hello, %s!' % args[1])
+        print(&#39;Hello, %s!&#39; % args[1])
     else:
-        print('Too many arguments!')
+        print(&#39;Too many arguments!&#39;)
 
-if __name__=='__main__':
+if __name__==&#39;__main__&#39;:
     test()
 ```
 
@@ -105,14 +105,14 @@ import sys
 
 `sys`模块有一个`argv`变量，用 list 存储了命令行的所有参数。`argv`至少有一个元素，因为第一个参数永远是该 .py 文件的名称，例如：
 
-运行`python3 hello.py`获得的`sys.argv`就是`['hello.py']`；
+运行`python3 hello.py`获得的`sys.argv`就是`[&#39;hello.py&#39;]`；
 
-运行`python3 hello.py WuGenQiang`获得的`sys.argv`就是`['hello.py', 'WuGenQiang']`。
+运行`python3 hello.py WuGenQiang`获得的`sys.argv`就是`[&#39;hello.py&#39;, &#39;WuGenQiang&#39;]`。
 
 最后，注意到这两行代码：
 
 ```python
-if __name__=='__main__':
+if __name__==&#39;__main__&#39;:
     test()
 ```
 
@@ -133,9 +133,9 @@ Hello, WuGenQiang!
 $ python3
 Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> import hello
->>>
+Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.
+&gt;&gt;&gt; import hello
+&gt;&gt;&gt;
 ```
 
 导入时，没有打印`Hello, word!`，因为没有执行`test()`函数。
@@ -143,7 +143,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 调用`hello.test()`时，才能打印出`Hello, word!`：
 
 ```python
->>> hello.test()
+&gt;&gt;&gt; hello.test()
 Hello, world!
 ```
 
@@ -163,13 +163,13 @@ private 函数或变量不应该被别人引用，那它们有什么用呢？请
 
 ```python
 def _private_1(name):
-    return 'Hello, %s' % name
+    return &#39;Hello, %s&#39; % name
 
 def _private_2(name):
-    return 'Hi, %s' % name
+    return &#39;Hi, %s&#39; % name
 
 def greeting(name):
-    if len(name) > 3:
+    if len(name) &gt; 3:
         return _private_1(name)
     else:
         return _private_2(name)
@@ -216,18 +216,18 @@ pip install Pillow
 当我们试图加载一个模块时，Python 会在指定的路径下搜索对应的 .py 文件，如果找不到，就会报错：
 
 ```python
->>> import mymodule
+&gt;&gt;&gt; import mymodule
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
 ImportError: No module named mymodule
 ```
 
 默认情况下，Python 解释器会搜索当前目录、所有已安装的内置模块和第三方模块，搜索路径存放在`sys`模块的`path`变量中：
 
 ```python
->>> import sys
->>> sys.path
-['', '/Library/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6', ..., '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages']
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; sys.path
+[&#39;&#39;, &#39;/Library/Frameworks/Python.framework/Versions/3.6/lib/python36.zip&#39;, &#39;/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6&#39;, ..., &#39;/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages&#39;]
 ```
 
 如果我们要添加自己的搜索目录，有两种方法：
@@ -235,8 +235,8 @@ ImportError: No module named mymodule
 一是直接修改`sys.path`，添加要搜索的目录：
 
 ```python
->>> import sys
->>> sys.path.append('/Users/michael/my_py_scripts')
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; sys.path.append(&#39;/Users/michael/my_py_scripts&#39;)
 ```
 
 这种方法是在运行时修改，运行结束后失效。
@@ -245,7 +245,7 @@ ImportError: No module named mymodule
 
 ## 5.3 标准库的使用
 
-**Python 计算生态 = 标准库 + 第三方库**
+**Python 计算生态 = 标准库 &#43; 第三方库**
 
 * 标准库：随解释器直接安装到操作系统中的功能模块。
 * 第三方库：需要经过安装才能使用的功能模块。
@@ -257,7 +257,7 @@ ImportError: No module named mymodule
 
 ####  ① 实例：Python 蟒蛇绘制
 
-> 用程序绘制一条蟒蛇。
+&gt; 用程序绘制一条蟒蛇。
 
 ```python
 #PythonDraw.py
@@ -267,7 +267,7 @@ turtle.penup()
 turtle.fd(-250)
 turtle.pendown()
 turtle.pensize(25)
-turtle.pencolor("purple")
+turtle.pencolor(&#34;purple&#34;)
 turtle.seth(-40)
 for i in range(4):
     turtle.circle(40,80)
@@ -283,7 +283,7 @@ turtle.done()
 
 ![Sep-122-2020 09-31-22](https://gitee.com/wugenqiang/images/raw/master/01/Sep-122-2020%2009-31-22.gif)
 
-> ☎️ 拓展：
+&gt; ☎️ 拓展：
 
 `import turtle` 是程序的关键，import 保留字引入了一个绘图库：turtle（海龟库）
 
@@ -337,7 +337,7 @@ turtle.setup(width,height,startx,starty)
 
 ![image-20200922110505608](https://gitee.com/wugenqiang/images/raw/master/01/image-20200922110505608.png)
 
-> 小例子：
+&gt; 小例子：
 
 ![image-20200922110548219](https://gitee.com/wugenqiang/images/raw/master/01/image-20200922110548219.png)
 
@@ -370,23 +370,23 @@ turtle.colormode(mode)
 
 **库引用**：扩充 Python 程序功能的方式
 
-使用 import 保留字完成，采用 `<a>.<b>()` 编码风格
+使用 import 保留字完成，采用 `&lt;a&gt;.&lt;b&gt;()` 编码风格
 
 使用方法：
 
 ```python
-import <库名>
-<库名>.<函数名>(<函数参数>)
+import &lt;库名&gt;
+&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)
 ```
 
-> 其他 import 用法：
+&gt; 其他 import 用法：
 
 使用 from 和 import 保留字共同完成：
 
 ```python
-from <库名> import <函数名>
-from <库名> import *
-<函数名>(<函数参数>)
+from &lt;库名&gt; import &lt;函数名&gt;
+from &lt;库名&gt; import *
+&lt;函数名&gt;(&lt;函数参数&gt;)
 ```
 
 🐹 两种方法比较：
@@ -398,11 +398,11 @@ from <库名> import *
 **使用 import 和 as 保留字共同完成**
 
 ```python
-import <库名> as <库别名>
-<库别名>.<函数名>(<函数参数>)
+import &lt;库名&gt; as &lt;库别名&gt;
+&lt;库别名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)
 ```
 
-> 好处：
+&gt; 好处：
 
 * 给调用的外部库关联一个更短、更适合自己的名字。
 
@@ -430,7 +430,7 @@ import <库名> as <库别名>
 
 （3）运动控制函数
 
-**控制海龟行进：走直线 & 走曲线**
+**控制海龟行进：走直线 &amp; 走曲线**
 
 `turtle.forward(d)` 别名 `turtle.fd(d)`
 
@@ -446,13 +446,13 @@ import <库名> as <库别名>
 
 `extent`：绘制角度，默认是 360 度整圆
 
-> 举例：
+&gt; 举例：
 
 ![image-20200923112538907](https://gitee.com/wugenqiang/images/raw/master/01/image-20200923112538907.png)
 
 （4）方向控制函数
 
-**控制海龟面对方向：绝对角度 & 海龟角度**
+**控制海龟面对方向：绝对角度 &amp; 海龟角度**
 
 `turtle.setheading(angle)` 别名 `turtle.seth(angle)`
 
@@ -469,6 +469,6 @@ import <库名> as <库别名>
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/  
 

@@ -1,7 +1,7 @@
 # 每天一个linux命令（51）: wc
 
 　　Linux系统中的wc(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出。
-<!-- more -->
+&lt;!-- more --&gt;
 #### 命令格式
 ```bash
 $ wc [选项]文件...
@@ -37,12 +37,12 @@ $ cat 1.txt | wc -l
 ```bash
 ## 数量中包含当前目录
 $ ls -l | wc -l
-10 ## 7个文件 + 2个文件夹 + 1个当前目录
+10 ## 7个文件 &#43; 2个文件夹 &#43; 1个当前目录
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-51-wc/  
 

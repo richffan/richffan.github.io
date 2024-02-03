@@ -22,15 +22,15 @@ Sub 复制粘贴()
     Dim sht As Worksheet
     Dim zongSht As Worksheet
 
-    Set zongSht = Worksheets("总表")
+    Set zongSht = Worksheets(&#34;总表&#34;)
 
     Dim rowsCount, zongRows
     For Each sht In Worksheets
-        If sht.Name <> "总表" Then
+        If sht.Name &lt;&gt; &#34;总表&#34; Then
             With sht
                 rowsCount = .[a65536].End(3).Row
-                zongRows = zongSht.[a65536].End(3).Row + 1
-                .Range("a2:d" & rowsCount).Copy zongSht.Range("a" & zongRows)
+                zongRows = zongSht.[a65536].End(3).Row &#43; 1
+                .Range(&#34;a2:d&#34; &amp; rowsCount).Copy zongSht.Range(&#34;a&#34; &amp; zongRows)
             End With
         End If
     Next
@@ -46,17 +46,17 @@ Sub 数组()
     Dim sht As Worksheet
     Dim zongSht As Worksheet
 
-    Set zongSht = Worksheets("总表")
+    Set zongSht = Worksheets(&#34;总表&#34;)
 
     Dim rowsCount, zongRows
     Dim tmpAr
     For Each sht In Worksheets
-        If sht.Name <> "总表" Then
+        If sht.Name &lt;&gt; &#34;总表&#34; Then
             With sht
                 rowsCount = .[a65536].End(3).Row
-                zongRows = zongSht.[a65536].End(3).Row + 1
-                tmpAr = .Range("a2:d" & rowsCount)
-                zongSht.Range("a" & zongRows).Resize(UBound(tmpAr), UBound(tmpAr, 2)) = tmpAr
+                zongRows = zongSht.[a65536].End(3).Row &#43; 1
+                tmpAr = .Range(&#34;a2:d&#34; &amp; rowsCount)
+                zongSht.Range(&#34;a&#34; &amp; zongRows).Resize(UBound(tmpAr), UBound(tmpAr, 2)) = tmpAr
             End With
         End If
     Next
@@ -64,10 +64,10 @@ Sub 数组()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485203&idx=1&sn=c64987b006f9b38f49d0878e102b01bc&chksm=e8bcce44dfcb4752782767f464205bccc84b743f39e8a6f8988ae79067c61e85130dbc91aa55&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485203&amp;idx=1&amp;sn=c64987b006f9b38f49d0878e102b01bc&amp;chksm=e8bcce44dfcb4752782767f464205bccc84b743f39e8a6f8988ae79067c61e85130dbc91aa55&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B011%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E8%A1%A8/  
 

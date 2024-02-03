@@ -11,7 +11,7 @@ from shutil import move
 def sort_files(directory_path):
     for filename in os.listdir(directory_path):
         if os.path.isfile(os.path.join(directory_path, filename)):
-            file_extension = filename.split('.')[-1]
+            file_extension = filename.split(&#39;.&#39;)[-1]
             destination_directory = os.path.join(directory_path, file_extension)
             if not os.path.exists(destination_directory):
                 os.makedirs(destination_directory)
@@ -64,7 +64,7 @@ import requests
 from bs4 import BeautifulSoup
 def scrape_data(url):
     response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, &#39;html.parser&#39;)
     # 提取网站中相关数据的代码在这里
 ```
 
@@ -86,7 +86,7 @@ def download_images(url, save_directory):
         for index, image_url in enumerate(images):
             image_response = requests.get(image_url)
             if image_response.status_code == 200:
-                with open(f"{save_directory}/image_{index}.jpg", "wb") as f:
+                with open(f&#34;{save_directory}/image_{index}.jpg&#34;, &#34;wb&#34;) as f:
                     f.write(image_response.content)
 ```
 
@@ -119,7 +119,7 @@ def submit_form(url, form_data):
 ```python
 # Python脚本用于统计文本文件中的单词数量
 def count_words(file_path):
-    with open(file_path, 'r') as f:
+    with open(file_path, &#39;r&#39;) as f:
         text = f.read()
         word_count = len(text.split())
         return word_count
@@ -136,10 +136,10 @@ def count_words(file_path):
 ```python
 # 在文件中查找和替换文本的Python脚本
 def find_replace(file_path, search_text, replace_text):
-    with open(file_path, 'r') as f:
+    with open(file_path, &#39;r&#39;) as f:
         text = f.read()
         modified_text = text.replace(search_text, replace_text)
-    with open(file_path, 'w') as f:
+    with open(file_path, &#39;w&#39;) as f:
         f.write(modified_text)
 ```
 
@@ -156,8 +156,8 @@ def find_replace(file_path, search_text, replace_text):
 import random
 import string
 def generate_random_text(length):
-    letters = string.ascii_letters + string.digits + string.punctuation
-    random_text = ''.join(random.choice(letters) for i in range(length))
+    letters = string.ascii_letters &#43; string.digits &#43; string.punctuation
+    random_text = &#39;&#39;.join(random.choice(letters) for i in range(length))
     return random_text
 ```
 
@@ -174,15 +174,15 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 def send_personalized_email(sender_email, sender_password, recipients, subject, body):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP(&#39;smtp.gmail.com&#39;, 587)
     server.starttls()
     server.login(sender_email, sender_password)
     for recipient_email in recipients:
         message = MIMEMultipart()
-        message['From'] = sender_email
-        message['To'] = recipient_email
-        message['Subject'] = subject
-        message.attach(MIMEText(body, 'plain'))
+        message[&#39;From&#39;] = sender_email
+        message[&#39;To&#39;] = recipient_email
+        message[&#39;Subject&#39;] = subject
+        message.attach(MIMEText(body, &#39;plain&#39;))
         server.sendmail(sender_email, recipient_email, message.as_string())
         server.quit()
 ```
@@ -202,19 +202,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 def send_email_with_attachment(sender_email, sender_password, recipient_email, subject, body, file_path):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP(&#39;smtp.gmail.com&#39;, 587)
     server.starttls()
     server.login(sender_email, sender_password)
     message = MIMEMultipart()
-    message['From'] = sender_email
-    message['To'] = recipient_email
-    message['Subject'] = subject
-    message.attach(MIMEText(body, 'plain'))
-    with open(file_path, "rb") as attachment:
-        part = MIMEBase('application', 'octet-stream')
+    message[&#39;From&#39;] = sender_email
+    message[&#39;To&#39;] = recipient_email
+    message[&#39;Subject&#39;] = subject
+    message.attach(MIMEText(body, &#39;plain&#39;))
+    with open(file_path, &#34;rb&#34;) as attachment:
+        part = MIMEBase(&#39;application&#39;, &#39;octet-stream&#39;)
         part.set_payload(attachment.read())
         encoders.encode_base64(part)
-        part.add_header('Content-Disposition', f"attachment; filename= {file_path}")
+        part.add_header(&#39;Content-Disposition&#39;, f&#34;attachment; filename= {file_path}&#34;)
         message.attach(part)
     server.sendmail(sender_email, recipient_email, message.as_string())
     server.quit()
@@ -230,16 +230,16 @@ import smtplib
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta
 def send_reminder_email(sender_email, sender_password, recipient_email, subject, body, reminder_date):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP(&#39;smtp.gmail.com&#39;, 587)
     server.starttls()
     server.login(sender_email, sender_password)
     now = datetime.now()
-    reminder_date = datetime.strptime(reminder_date, '%Y-%m-%d')
+    reminder_date = datetime.strptime(reminder_date, &#39;%Y-%m-%d&#39;)
     if now.date() == reminder_date.date():
-        message = MIMEText(body, 'plain')
-        message['From'] = sender_email
-        message['To'] = recipient_email
-        message['Subject'] = subject
+        message = MIMEText(body, &#39;plain&#39;)
+        message[&#39;From&#39;] = sender_email
+        message[&#39;To&#39;] = recipient_email
+        message[&#39;Subject&#39;] = subject
         server.sendmail(sender_email, recipient_email, message.as_string())
         server.quit()
 ```
@@ -378,7 +378,7 @@ from PIL import ImageFont
 def add_watermark(input_path, output_path, watermark_text):
     image = Image.open(input_path)
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype('arial.ttf', 36)
+    font = ImageFont.truetype(&#39;arial.ttf&#39;, 36)
     draw.text((10, 10), watermark_text, fill=(255, 255, 255, 128), font=font)
     image.save(output_path)
 ```
@@ -432,7 +432,7 @@ def normalize_data(data_frame):
 # 处理数据中缺失值的Python脚本
 import pandas as pd
 def handle_missing_values(data_frame):
-    filled_data = data_frame.fillna(method='ffill')
+    filled_data = data_frame.fillna(method=&#39;ffill&#39;)
     return filled_data
 ```
 
@@ -448,12 +448,12 @@ def handle_missing_values(data_frame):
 # 从PDF中提取文本的Python脚本
 import PyPDF2
 def extract_text_from_pdf(file_path):
-    with open(file_path, 'rb') as f:
+    with open(file_path, &#39;rb&#39;) as f:
         pdf_reader = PyPDF2.PdfFileReader(f)
-        text = ''
+        text = &#39;&#39;
         for page_num in range(pdf_reader.numPages):
             page = pdf_reader.getPage(page_num)
-            text += page.extractText()
+            text &#43;= page.extractText()
         return text
 ```
 
@@ -469,9 +469,9 @@ import PyPDF2
 def merge_pdfs(input_paths, output_path):
     pdf_merger = PyPDF2.PdfMerger()
     for path in input_paths:
-        with open(path, 'rb') as f:
+        with open(path, &#39;rb&#39;) as f:
             pdf_merger.append(f)
-    with open(output_path, 'wb') as f:
+    with open(output_path, &#39;wb&#39;) as f:
         pdf_merger.write(f)
 ```
 
@@ -485,14 +485,14 @@ def merge_pdfs(input_paths, output_path):
 # Python脚本用于为PDF添加密码保护。
 import PyPDF2
 def add_password_protection(input_path, output_path, password):
-    with open(input_path, 'rb') as f:
+    with open(input_path, &#39;rb&#39;) as f:
         pdf_reader = PyPDF2.PdfFileReader(f)
         pdf_writer = PyPDF2.PdfFileWriter()
         for page_num in range(pdf_reader.numPages):
             page = pdf_reader.getPage(page_num)
             pdf_writer.addPage(page)
             pdf_writer.encrypt(password)
-    with open(output_path, 'wb') as output_file:
+    with open(output_path, &#39;wb&#39;) as output_file:
         pdf_writer.write(output_file)
 ```
 
@@ -502,6 +502,6 @@ def add_password_protection(input_path, output_path, password):
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/  
 

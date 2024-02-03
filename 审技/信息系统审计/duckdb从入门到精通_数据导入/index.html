@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>duckdb从入门到精通：数据导入 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="数据导入 这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件 实际上，duckdb 可以不导入到数" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="duckdb从入门到精通：数据导入">
-<meta itemprop="description" content="数据导入 这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件 实际上，duckdb 可以不导入到数"><meta itemprop="datePublished" content="2023-05-05T14:19:09+00:00" />
+    <title>duckdb从入门到精通：数据导入 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="数据导入这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件实际上，duckdb 可以不导入到数" /><meta name="keywords" content='IT审计' /><meta itemprop="name" content="duckdb从入门到精通：数据导入">
+<meta itemprop="description" content="数据导入这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件实际上，duckdb 可以不导入到数"><meta itemprop="datePublished" content="2023-05-05T14:19:09+00:00" />
 <meta itemprop="dateModified" content="2023-05-05T14:19:09+00:00" />
-<meta itemprop="wordCount" content="1374"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="1393"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="IT审计," /><meta property="og:title" content="duckdb从入门到精通：数据导入" />
-<meta property="og:description" content="数据导入 这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件 实际上，duckdb 可以不导入到数" />
+<meta property="og:description" content="数据导入这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件实际上，duckdb 可以不导入到数" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="审技" />
 <meta property="article:published_time" content="2023-05-05T14:19:09+00:00" />
@@ -20,7 +20,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="duckdb从入门到精通：数据导入"/>
-<meta name="twitter:description" content="数据导入 这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件 实际上，duckdb 可以不导入到数"/>
+<meta name="twitter:description" content="数据导入这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件实际上，duckdb 可以不导入到数"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" /><link rel="prev" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/" /><link rel="next" href="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E5%AE%A1%E6%8A%80\/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1\/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5\/"
-    },"genre": "posts","keywords": "IT审计","wordcount":  1374 ,
+    },"genre": "posts","keywords": "IT审计","wordcount":  1393 ,
     "url": "http:\/\/richfan.site\/%E5%AE%A1%E6%8A%80\/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1\/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5\/","datePublished": "2023-05-05T14:19:09+00:00","dateModified": "2023-05-05T14:19:09+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">审技</a></li><li class="breadcrumb-item"><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">信息系统审计</a></li><li class="breadcrumb-item active" aria-current="page">duckdb从入门到精通：数据导入</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>duckdb从入门到精通：数据导入</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E5%AE%A1%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="更新于 2023-05-05 14:19:09"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="1374 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="leancloud_visitors comment-visitors" data-flag-title="duckdb从入门到精通：数据导入">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E5%AE%A1%E6%8A%80/" class="post-category" title="分类 - 审技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 审技</a></span></div><div class="post-meta-line"><span title="发布于 2023-05-05 14:19:09"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-05-05">2023-05-05</time></span>&nbsp;<span title="1393 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;<span id="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="leancloud_visitors comment-visitors" data-flag-title="duckdb从入门到精通：数据导入">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="duckdb从入门到精通：数据导入">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -214,10 +209,10 @@
     </li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h3 id="数据导入">数据导入</h3>
-<p>这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。</p>
-<h4 id="读取文件">读取文件</h4>
-<p>实际上，duckdb 可以不导入到数据库中，就可以直接查询。</p>
+      </div><div class="content" id="content"><h3 id="数据导入" class="heading-element">
+  <a href="#%e6%95%b0%e6%8d%ae%e5%af%bc%e5%85%a5" class="heading-mark"></a>数据导入</h3><p>这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。</p>
+<h4 id="读取文件" class="heading-element">
+  <a href="#%e8%af%bb%e5%8f%96%e6%96%87%e4%bb%b6" class="heading-mark"></a>读取文件</h4><p>实际上，duckdb 可以不导入到数据库中，就可以直接查询。</p>
 <p>我们先“新建 SQL 编辑器”，这样我们就可以在里面写 SQL 语句了。</p>
 <p>我们使用一个电商数据集<a href="#citeproc_bib_item_1">[1]</a>，在编辑器中输入代码：</p>
 <div class="highlight" id="id-1"><div class="chroma">
@@ -229,8 +224,8 @@
 </div>
 </div><p>直接可以查询出数据结果，而不需要像一般数据库需要先建表、导入数据后才能查询。</p>
 <p>从这一点可以看出是非常简洁、方便的。</p>
-<h4 id="智能导数-read_csv_auto">智能导数 read_csv_auto</h4>
-<p>一般来说，如果一张表我们要经常查询还是需要将其导入到数据库中。</p>
+<h4 id="智能导数-read_csv_auto" class="heading-element">
+  <a href="#%e6%99%ba%e8%83%bd%e5%af%bc%e6%95%b0-read_csv_auto" class="heading-mark"></a>智能导数 read_csv_auto</h4><p>一般来说，如果一张表我们要经常查询还是需要将其导入到数据库中。</p>
 <p>这时我们可以使用read_csv_auto函数，智能创建表并导入到数据库中。</p>
 <div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -241,8 +236,8 @@
 </div>
 </div><p>我们打开数据库，可以看到出现了刚新建的表<code>ecommerce</code>，双击后，点击<code>数据</code>选项卡，能够查看导入的数据。</p>
 <p>这个导数的过程非常智能，快速，比 mysql 导入速度快了不少。</p>
-<h5 id="导入报错解决方法">导入报错解决方法</h5>
-<p>由于它是根据前面几行自动判断数据类型，可能会出现后面的数据不符合数据类型而导致出错的情况。</p>
+<h5 id="导入报错解决方法" class="heading-element">
+  <a href="#%e5%af%bc%e5%85%a5%e6%8a%a5%e9%94%99%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95" class="heading-mark"></a>导入报错解决方法</h5><p>由于它是根据前面几行自动判断数据类型，可能会出现后面的数据不符合数据类型而导致出错的情况。</p>
 <p>如：</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -265,8 +260,8 @@
 <p>需要注意的是 duckdb 和 mysql 不同的是需要设置严格的数据类型，例如， mysql 中 varchar 文本类型也是可以计算的，但是在 duckdb 只就不能进行计算。所以，我们需要在建表时设置正确的数据类型，数字就设置成数字类型，日期时间设置成日期时间的类型。</p>
 <p>假如数据中有<code>双引号包裹的千分符数字</code>，如&quot;12,345.23&quot;，这对 duckdb来说是文本格式，将不能参与计算，为了能导入成数字格式，我们需要先将原文件中双引号中的逗号删除，可以在终端中使用 sed 命令来完成。</p>
 <p>( 注：linux,mac 终端中可以使用 sed 命令，Windows 可以安装wsl linux子系统使用终端 sed 命令）</p>
-<h5 id="删除引号内数字中逗号">删除引号内数字中逗号</h5>
-<p>如果你想替换原文件，你可以使用 -i 选项来实现原地修改，例如：</p>
+<h5 id="删除引号内数字中逗号" class="heading-element">
+  <a href="#%e5%88%a0%e9%99%a4%e5%bc%95%e5%8f%b7%e5%86%85%e6%95%b0%e5%ad%97%e4%b8%ad%e9%80%97%e5%8f%b7" class="heading-mark"></a>删除引号内数字中逗号</h5><p>如果你想替换原文件，你可以使用 -i 选项来实现原地修改，例如：</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -276,9 +271,9 @@
 </div>
 </div><p>例如，将1,2,3,&ldquo;45,678.00&rdquo; 转换成1,2,3,&ldquo;45678.00&rdquo;</p>
 <p>这个命令会在修改data.csv文件的同时，生成一个data.csv.bak文件作为备份。</p>
-<h3 id="xlsx2csv">xlsx2csv</h3>
-<h4 id="安装">安装</h4>
-<p>xlsx2csv 是一个将 excel 文件转 csv 文件的 python 包。</p>
+<h3 id="xlsx2csv" class="heading-element">
+  <a href="#xlsx2csv" class="heading-mark"></a>xlsx2csv</h3><h4 id="安装" class="heading-element">
+  <a href="#%e5%ae%89%e8%a3%85" class="heading-mark"></a>安装</h4><p>xlsx2csv 是一个将 excel 文件转 csv 文件的 python 包。</p>
 <p>安装方法：</p>
 <div class="highlight" id="id-6"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -287,8 +282,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install xlsx2csv</span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="基础使用">基础使用</h4>
-<p>在终端中将<code>input_name.xlsx</code>转换成<code>output_name.csv</code>：</p>
+</div><h4 id="基础使用" class="heading-element">
+  <a href="#%e5%9f%ba%e7%a1%80%e4%bd%bf%e7%94%a8" class="heading-mark"></a>基础使用</h4><p>在终端中将<code>input_name.xlsx</code>转换成<code>output_name.csv</code>：</p>
 <div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -314,8 +309,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xlsx2csv /path/to/input/dir /path/to/output/dir</span></span></code></pre></td></tr></table>
 </div>
 </div><p>同样的，如果文件中有多个工作表，需要使用<code>-a</code>参数将所有的工作表转出。</p>
-<h3 id="参考资料">参考资料</h3>
-<style>.csl-left-margin{float: left; padding-right: 0em;}
+<h3 id="参考资料" class="heading-element">
+  <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" class="heading-mark"></a>参考资料</h3><style>.csl-left-margin{float: left; padding-right: 0em;}
  .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
     <div class="csl-left-margin">[1]</div><div class="csl-right-inline">nigo81, “nigo81/IT-Audit-Resources,” <i>Gitee</i>. https://gitee.com/nigo81/it-audit-resources.</div>
@@ -330,19 +325,17 @@
       <div class="post-info-mod">
         <span title="更新于 2023-05-05 14:19:09">更新于 2023-05-05&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" data-title="duckdb从入门到精通：数据导入" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/" data-title="duckdb从入门到精通：数据导入" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/it%E5%AE%A1%E8%AE%A1/' class="post-tag">IT审计</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/it%E5%AE%A1%E8%AE%A1/" class="post-tag" title="标签 - IT审计">IT审计</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -353,10 +346,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

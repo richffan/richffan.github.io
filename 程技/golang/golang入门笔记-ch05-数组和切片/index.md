@@ -29,14 +29,14 @@ var numArray = [...]int{1, 2, 3}
 我们还可以根据**索引**来声明数组：
 
 ```go
-a := [...]string{0: "北京", 1: "上海"} // 索引 0 对应的元素为"北京"，1 对应的元素为"上海"
+a := [...]string{0: &#34;北京&#34;, 1: &#34;上海&#34;} // 索引 0 对应的元素为&#34;北京&#34;，1 对应的元素为&#34;上海&#34;
 ```
 
 整型数组中所有元素都初始化为 0，数组 `arr`中第 `i` 个元素为`arr[i - 1]`，最后一个元素为 `arr[len(arr) - 1]`。
 
 数组是**可变**的，可以通过索引对元素进行赋值：`arr[1] = 1`。
 
-> ***注意***：在程序中若索引超出数组**最大有效索引**，会引发 `index out of range` 错误。
+&gt; ***注意***：在程序中若索引超出数组**最大有效索引**，会引发 `index out of range` 错误。
 
 ### 遍历数组
 
@@ -45,12 +45,12 @@ a := [...]string{0: "北京", 1: "上海"} // 索引 0 对应的元素为"北京
   ```go
   package main
   
-  import "fmt"
+  import &#34;fmt&#34;
   
   func main() {
   	a := [...]int{2, 4, 6, 8, 10}
       
-  	for i := 0; i < len(a); i++ {
+  	for i := 0; i &lt; len(a); i&#43;&#43; {
   		fmt.Println(a[i])
   	}
   }
@@ -61,7 +61,7 @@ a := [...]string{0: "北京", 1: "上海"} // 索引 0 对应的元素为"北京
   ```go
   package main
   
-  import "fmt"
+  import &#34;fmt&#34;
   
   func main() {
   	a := [...]int{2, 4, 6, 8, 10}
@@ -82,7 +82,7 @@ a := [...]string{0: "北京", 1: "上海"} // 索引 0 对应的元素为"北京
 
 可以通过 `cap()` 函数来获取切片的**容量**，而 `len()` 函数获取的是切片的**长度**（切片保存的元素个数），对于切片 `s` ，存在这样的数量关系：
 
-`0 <= len(s) <= cap(s)`
+`0 &lt;= len(s) &lt;= cap(s)`
 
 声明切片：
 
@@ -120,20 +120,20 @@ var s []type = make([]type, len)
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     var slice1 []int = make([]int, 10)
 
-    for i := 0; i < len(slice1); i++ {
+    for i := 0; i &lt; len(slice1); i&#43;&#43; {
         slice1[i] = 5 * i
     }
 
-    for i := 0; i < len(slice1); i++ {
-        fmt.Printf("Slice at %d is %d\n", i, slice1[i])
+    for i := 0; i &lt; len(slice1); i&#43;&#43; {
+        fmt.Printf(&#34;Slice at %d is %d\n&#34;, i, slice1[i])
     }
-    fmt.Printf("\nThe length of slice1 is %d\n", len(slice1))
-    fmt.Printf("The capacity of slice1 is %d\n", cap(slice1))
+    fmt.Printf(&#34;\nThe length of slice1 is %d\n&#34;, len(slice1))
+    fmt.Printf(&#34;The capacity of slice1 is %d\n&#34;, cap(slice1))
 }
 ```
 
@@ -165,27 +165,27 @@ slice1 := make([]type, length, cap) // type 为类型，length 为初始长度, 
 切片会**自动扩容**，我们也可以手动进行扩容，比如将切片 `s1` 扩展 `1` 位：
 
 ```go
-sl = sl[0:len(sl)+1]
+sl = sl[0:len(sl)&#43;1]
 ```
 
 切片可以反复扩容直至切片长度到达切片容量：
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     slice1 := make([]int, 0, 10)
     // load the slice, cap(slice1) is 10:
-    for i := 0; i < cap(slice1); i++ {
-        slice1 = slice1[0:i+1]
+    for i := 0; i &lt; cap(slice1); i&#43;&#43; {
+        slice1 = slice1[0:i&#43;1]
         slice1[i] = i
-        fmt.Printf("The length of slice is %d\n", len(slice1))
+        fmt.Printf(&#34;The length of slice is %d\n&#34;, len(slice1))
     }
 
     // print the slice:
-    for i := 0; i < len(slice1); i++ {
-        fmt.Printf("Slice at %d is %d\n", i, slice1[i])
+    for i := 0; i &lt; len(slice1); i&#43;&#43; {
+        fmt.Printf(&#34;Slice at %d is %d\n&#34;, i, slice1[i])
     }
 }
 ```
@@ -221,7 +221,7 @@ Slice at 9 is 9
 
 ```go
 package main
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
     sl_from := []int{1, 2, 3}
@@ -229,7 +229,7 @@ func main() {
 
     n := copy(sl_to, sl_from)
     fmt.Println(sl_to)
-    fmt.Printf("Copied %d elements\n", n) // n == 3
+    fmt.Printf(&#34;Copied %d elements\n&#34;, n) // n == 3
 
     sl3 := []int{1, 2, 3}
     sl3 = append(sl3, 4, 5, 6)
@@ -245,23 +245,23 @@ func main() {
 x = append(x, y...)
 ```
 
->  ***注意***：`append` 虽然很好用，但是如果想要理解切片追加元素的原理，可以自己来实现一个 `AppendByte` 方法：
->
-> ```go
-> func AppendByte(slice []byte, data ...byte) []byte {
->     m := len(slice) // 原切片长度
->     n := m + len(data) // 新切片长度
->     if n > cap(slice) { // 若新切片长度大于切片容量，手动扩容
->         newSlice := make([]byte, (n+1)*2)
->         copy(newSlice, slice)
->         slice = newSlice
->     }
->     // 复制元素
->     slice = slice[0:n]
->     copy(slice[m:n], data)
->     return slice
-> }
-> ```
+&gt;  ***注意***：`append` 虽然很好用，但是如果想要理解切片追加元素的原理，可以自己来实现一个 `AppendByte` 方法：
+&gt;
+&gt; ```go
+&gt; func AppendByte(slice []byte, data ...byte) []byte {
+&gt;     m := len(slice) // 原切片长度
+&gt;     n := m &#43; len(data) // 新切片长度
+&gt;     if n &gt; cap(slice) { // 若新切片长度大于切片容量，手动扩容
+&gt;         newSlice := make([]byte, (n&#43;1)*2)
+&gt;         copy(newSlice, slice)
+&gt;         slice = newSlice
+&gt;     }
+&gt;     // 复制元素
+&gt;     slice = slice[0:n]
+&gt;     copy(slice[m:n], data)
+&gt;     return slice
+&gt; }
+&gt; ```
 
 ## 字符串、数组和切片的应用
 
@@ -288,7 +288,7 @@ x = append(x, y...)
 Go 语言的字符串是**不可变**的，对于 `str[index]`，我们不能执行这样的语句：
 
 ```go
-str[index] = 'A'
+str[index] = &#39;A&#39;
 ```
 
 编译器会报 `cannot assign to str[i]` 错误。
@@ -296,10 +296,10 @@ str[index] = 'A'
 因此，如果要修改字符串中的字符，需要先将**字符串**转换成**字节数组**，然后修改**字节数组**中的元素来实现修改字符串字符的目的，最后再将**字节数组**转换成**字符串**。例如：
 
 ```go
-s := "hello"
+s := &#34;hello&#34;
 c := []byte(s)
-c[0] = 'c'
-s2 := string(c) // "cello"
+c[0] = &#39;c&#39;
+s2 := string(c) // &#34;cello&#34;
 ```
 
 ### append 函数
@@ -313,7 +313,7 @@ s2 := string(c) // "cello"
    copy(b, a)
    ```
 
-3. 删除位于索引 `i` 的元素：`a = append(a[:i], a[i+1:]...)`
+3. 删除位于索引 `i` 的元素：`a = append(a[:i], a[i&#43;1:]...)`
 4. 切除切片 `a` 中从索引 `i` 至 `j` 位置的元素：`a = append(a[:i], a[j:]...)`
 5. 为切片 `a` 扩展` j` 个元素长度：`a = append(a, make([]T, j)...)`
 6. 在索引 `i` 的位置插入元素 `x`：`a = append(a[:i], append([]T{x}, a[i:]...)...)`
@@ -331,7 +331,7 @@ s2 := string(c) // "cello"
 函数 `FindDigits` 将一个文件加载到内存，然后搜索其中所有的数字并返回一个切片：
 
 ```go
-var digitRegexp = regexp.MustCompile("[0-9]+")
+var digitRegexp = regexp.MustCompile(&#34;[0-9]&#43;&#34;)
 
 func FindDigits(filename string) []byte {
     b, _ := ioutil.ReadFile(filename)
@@ -353,6 +353,6 @@ func FindDigits(filename string) []byte {
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/  
 

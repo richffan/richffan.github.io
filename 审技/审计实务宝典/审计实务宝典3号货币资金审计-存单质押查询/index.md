@@ -82,6 +82,6 @@ A银行在为B企业办理贷款时，由C公司为该贷款提供纸质存单�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B83%E5%8F%B7%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91%E5%AE%A1%E8%AE%A1-%E5%AD%98%E5%8D%95%E8%B4%A8%E6%8A%BC%E6%9F%A5%E8%AF%A2/  
 

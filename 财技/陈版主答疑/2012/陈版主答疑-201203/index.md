@@ -1054,7 +1054,7 @@ A房地产公司 2011 年 12 月预收房款 10000 ，当年期间费用 6000 �
 **回答人：** chenyiwei
 
 
-这应该不矛盾。在未来有足够应纳税所得额的前提下，合计应确认递延所得税资产 1500 （375+1125），即未来可享受到的所得税抵
+这应该不矛盾。在未来有足够应纳税所得额的前提下，合计应确认递延所得税资产 1500 （375&#43;1125），即未来可享受到的所得税抵
 
 免利益为 1500 。例如，未来的法定亏损税前弥补期内如果能获得会计利润 10000 ，则实际应纳税所得额为（ 10000 －税务可弥补亏损
 
@@ -1120,7 +1120,7 @@ A房地产公司 2011 年 12 月预收房款 10000 ，当年期间费用 6000 �
 
 表中则体现为“外币报表折算差额”？
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 不是。对联营、合营企业的外币报表折算差额，无论在个别报表还是合并报表层面，均计入资本公积。
@@ -1278,7 +1278,7 @@ A房地产公司 2011 年 12 月预收房款 10000 ，当年期间费用 6000 �
 
 企业的年审费用是计入当期管理费用的，那ipo、发债呢？这两种情况下审计费用金额较大，是不是可以走“长期待摊费用”？
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 
@@ -1402,9 +1402,9 @@ A房地产公司 2011 年 12 月预收房款 10000 ，当年期间费用 6000 �
 
 目，主要包括 重新计量设定受益计划净负债或净资产导致的变动、按照权益法核算的在被投资单位以后会计期间不能重分类进损益
 
-的其他综合收益中所享有的份额等。 "按照权益法核算的在被投资单位以后会计期间不能重分类进损益的其他综合收益中所享有的份
+的其他综合收益中所享有的份额等。 &#34;按照权益法核算的在被投资单位以后会计期间不能重分类进损益的其他综合收益中所享有的份
 
-额等"怎么理解呢？我的理解是，如果被投资企业因为重新计量设定受益计划产生了其他综合收益变动，投资企业按投资比例所占的
+额等&#34;怎么理解呢？我的理解是，如果被投资企业因为重新计量设定受益计划产生了其他综合收益变动，投资企业按投资比例所占的
 
 相应份额。 但讲课的一个老师是这样说的，这个是指:被投资企业因为增资产生了资本变动，但投资企业没有相应出资，股权比例被
 稀释，相应的持股比例与被投资企业之间的权益份额之间的差异，调整资本公积，这部分资本公积，在被投资企业不是其他综合收
@@ -1524,9 +1524,9 @@ A企业取得B企业股权，假设是 2 重方案， 方案一：A企业直接�
 
 **提问人：** nenhui 时间： 2017-09-05 14:28:31
 
-请教陈版：如果购买固定资产时开出应付票据如何核算，根据《会计科目和主要账务处理》－应付票据－"本科目核算企业购买材
+请教陈版：如果购买固定资产时开出应付票据如何核算，根据《会计科目和主要账务处理》－应付票据－&#34;本科目核算企业购买材
 
-料、商品和接受劳务供应等开出、承兑的商业汇票，包括银行承兑汇票和商业承兑汇票。" 是不是还要专门增设一个“其他应付票
+料、商品和接受劳务供应等开出、承兑的商业汇票，包括银行承兑汇票和商业承兑汇票。&#34; 是不是还要专门增设一个“其他应付票
 
 
 据”科目来进行核算?
@@ -1631,7 +1631,7 @@ A企业取得B企业股权，假设是 2 重方案， 方案一：A企业直接�
 共同控制经营与合营企业之间还是存在较大差异的。项目联合体也可视为一个会计主体。
 **提问人：** zico9999 时间： 2012-06-12 08:06:26
 谢谢陈版~~如果该联合体我方占投资比重的40%，那么对于我方的出资，在公司账上我不用“长期股权投资”科目，该用什么科
-目？“其他应收款"?由于是40%的份额，也实际参与了管理经营，是否可以比照权益法，在期末确认投资收益，并调整增加其他应收
+目？“其他应收款&#34;?由于是40%的份额，也实际参与了管理经营，是否可以比照权益法，在期末确认投资收益，并调整增加其他应收
 款？
 **回答人：** chenyiwei
 建议按照合作期限长短使用“其他流动资产”或者“其他非流动资产”科目。期末可比照对联营企业的投资，采用权益法进行后续计量。
@@ -1698,7 +1698,7 @@ A企业取得B企业股权，假设是 2 重方案， 方案一：A企业直接�
 
 **回答人：** chenyiwei
 
-现在新准则下的短期利润分享计划的会计处理规定与原先《讲解 2010 》p160"利润分享与奖金计划"所述一致，并未发生变化。
+现在新准则下的短期利润分享计划的会计处理规定与原先《讲解 2010 》p160&#34;利润分享与奖金计划&#34;所述一致，并未发生变化。
 
 **提问人：** zengfengxia 时间： 2015-01-22 16:36:44
 
@@ -1742,7 +1742,7 @@ A企业取得B企业股权，假设是 2 重方案， 方案一：A企业直接�
 购金额的，则属于利润分享计划（由职工薪酬准则规范），不是股份支付。
 **提问人：**原来你就在这里原来你就在这里 时间： 2018-09-01 13:22:03
 “《国际财务报告准则第 3 号一一-业务合并》应用指南第 54 段、第 55 段对于区分企业合并中的或有对价与职工薪酬提供了具体的指
-引: "B54. 对雇员或出售方股东的或有支付安排是企业合井中的或有对价， 还是独立交易，取决于该安排的性质。理解该购买协议为
+引: &#34;B54. 对雇员或出售方股东的或有支付安排是企业合井中的或有对价， 还是独立交易，取决于该安排的性质。理解该购买协议为
 何包括或有支付条 款、谁发起该安排以及何时各方进行该安排. 可能有助于评估该安排的 性质。 B5 5. 如果尚未明确对雇员或出售方
 股东的支付安排是与被购买方交易 的一部分还是单独于企业合并的交易，那么购买方应考虑下列指标: (1)持续雇佣一一对成为核心雇
 员的出售方股东的持续雇佣条款可能 意味着该交易实质是一项或有对价安排。持续雇佣的相关条款可能包含在雇 佣协议、购买协议
@@ -1764,7 +1764,7 @@ A企业取得B企业股权，假设是 2 重方案， 方案一：A企业直接�
 归属于其他事项而非为被购买方支付的对价。例如，与购 买相关联，购买方可能与主要的出售方股东进行一项财产租赁。如果租赁
 合 同规定的租金显著低于市场水平，此项或有支付安排要求的给出租人(出售 方股东)的部分或全部或有支付，可能是为使用租赁而
 进行的支付，该租赁 资产要在购买方合并后财务报表中单独确认。相反，如果租赁合同规定的租 金与市场就该租赁资产的条款一
-致，对出售方股东的或有支付的安排可能就 是企业合并中的或有对价。"
+致，对出售方股东的或有支付的安排可能就 是企业合并中的或有对价。&#34;
 陈老师，请问该怎么理解(2 )持续雇佣的时间一一如果要求的雇佣期超过或有支付的期间或两 者一致，该事实表明或有支付实质上是
 报酬。 原股东须于购买日后起在被购买方继续工作满 3 年，且购买日后连续两年被购买方业绩达到什么条件，原股东才能取得该或有
 支付。 这个属于要求的雇佣期超过或有支付的期间吗？
@@ -2066,7 +2066,7 @@ IPO企业从关联方无偿受让一批商标，是不是从核准转让公告�
 **回答人：** chenyiwei
 货币性项目。
 **提问人：**呼叫帮助呼叫帮助 时间： 2018-04-23 20:54:47
-我的理解是否准确，陈版， 2014 年 12 月 31 日计算公允价值变动和汇兑差额 　　第二步:公允价值变动＝1 100×6.04-(6 030+10)＝
+我的理解是否准确，陈版， 2014 年 12 月 31 日计算公允价值变动和汇兑差额 　　第二步:公允价值变动＝1 100×6.04-(6 030&#43;10)＝
 604 　　借：可供出售金融资产——公允价值变动（美元）　　 604 　　　　贷：其他综合收益　　　　　　　　　　　　　　　　
 604 　　第一步:汇兑差额＝1 000×（6.04－6.03）＋50×（6.04－6.04）＝ 10 （万元） 　　借：可供出售金融资产——成本（美
 元）　　　　　　 10 　　　　贷：财务费用　　　　　　　　　　　　　　　　　　 10
@@ -2290,7 +2290,7 @@ IPO企业从关联方无偿受让一批商标，是不是从核准转让公告�
 
 **提问人：** maofuguo123 时间： 2012-03-08 09:31:14
 
-集团公司A，拥有一家上市公司B（A+H股，母公司直接控股约52%）， 2010 年度，B公司对集团A的境外子公司C及集团范围外的其
+集团公司A，拥有一家上市公司B（A&#43;H股，母公司直接控股约52%）， 2010 年度，B公司对集团A的境外子公司C及集团范围外的其
 
 他几个公司定向增发了H股（总发行额占B公司股本的比例约为20%以下），集团公司A的合并报表需将自身所持B公司长投及境外子
 
@@ -2319,7 +2319,7 @@ IPO企业从关联方无偿受让一批商标，是不是从核准转让公告�
 
 2 、合并报表层面调整资本公积的金额（假设以 6 月末数据模拟增持日净资产状况）＝ 700 万元－ 13540 万元 3%=700-406.2=293.8 万
 
-元。期末合并报表少数股东权益＝ 14650 万元67%=9815.50万元。 2010 年度少数股东损益＝1000*70%+(2000-1000)*67%=1370万
+元。期末合并报表少数股东权益＝ 14650 万元67%=9815.50万元。 2010 年度少数股东损益＝1000*70%&#43;(2000-1000)*67%=1370万
 元。
 
 **提问人：** maofuguo123 时间： 2012-03-15 11:23:22
@@ -2655,7 +2655,7 @@ E、其他选项（请注明） 请说明你的理由。
 非同一控制下企业合并，被合并企业的固定资产、无形资产、应收款项等科目调整为合并日的公允价值时，是不是这个公允价值就是
 个净值的概念？从而不会再有累计折旧、累计摊销、坏账准备等？
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 
@@ -2669,7 +2669,7 @@ E、其他选项（请注明） 请说明你的理由。
 
 会形成少数股东权益”，这句话应该怎么理解？为什么合并时投资成本不按比例确认相应的
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 前几天还有人问过这个问题，把问题和我当时的回复分享一下：
@@ -2682,7 +2682,7 @@ E、其他选项（请注明） 请说明你的理由。
 
 法核算对d的投资收益：＝10×86%＝8.6万元 借：长期股权投资－损益调整 8.6 贷：投资收益 8.6 合并抵消： 借：
 
-实收资本 100 未分配利润 10 贷：长期股权投资 70+20+8.6=98.6 少数股东权益 11.4 如果这样做：
+实收资本 100 未分配利润 10 贷：长期股权投资 70&#43;20&#43;8.6=98.6 少数股东权益 11.4 如果这样做：
 
 98.6/86％＝114.65≠110 为啥?
 
@@ -2832,7 +2832,7 @@ depreciation based on the asset’s original cost. Transfers from revaluation su
 
 or loss.
 
-这个感觉挺奇怪的。比如一个资产，原始成本 100 万，提折旧 5 年，第 3 年增值了 20 万。后面 2 年折旧就为【100-20*3+20]/2,比原来
+这个感觉挺奇怪的。比如一个资产，原始成本 100 万，提折旧 5 年，第 3 年增值了 20 万。后面 2 年折旧就为【100-20*3&#43;20]/2,比原来
 
 每年折旧增加了 10 万。如果我第 4 年处置，扣除多提折旧的 10 万只能计入留存收益.如果坚持下，就可以间接计入折旧【转让当期费
 
@@ -3183,23 +3183,23 @@ A公司持有B公司100%股权，A公司个别报表对B公司的长期股权投
 此，我不认同，陈将资产与业务理解为商誉的载体、而抛弃最重要的法人因素。
 **回答人：** chenyiwei
 会计理论也是在不断发展变化中的。目前对于商誉的本质，主要的权威指引是IFRS 3（ 2008 年修订）的BC313～BC318段：
-BC313 The FASB's 1999 and 2001 Exposure Drafts listed six components of the amount that in practice, under authoritative
-guidance in effect at that time, had been recognised as goodwill. The IASB's ED 3 included a similar, but not identical, discussion. The
-components and their descriptions, taken from the FASB's exposure drafts, were: Component 1—The excess of the fair values over
-the book values of the acquiree's net assets at the date of acquisition. Component 2—The fair values of other net assets that the
+BC313 The FASB&#39;s 1999 and 2001 Exposure Drafts listed six components of the amount that in practice, under authoritative
+guidance in effect at that time, had been recognised as goodwill. The IASB&#39;s ED 3 included a similar, but not identical, discussion. The
+components and their descriptions, taken from the FASB&#39;s exposure drafts, were: Component 1—The excess of the fair values over
+the book values of the acquiree&#39;s net assets at the date of acquisition. Component 2—The fair values of other net assets that the
 acquiree had not previously recognised. They may not have been recognised because they failed to meet the recognition criteria
 (perhaps because of measurement difficulties), because of a requirement that prohibited their recognition, or because the acquiree
 concluded that the costs of recognising them separately were not justified by the benefits. Component 3—The fair value of the going
-concern element of the acquiree's existing business. The going concern element represents the ability of the established business to
+concern element of the acquiree&#39;s existing business. The going concern element represents the ability of the established business to
 earn a higher rate of return on an assembled collection of net assets than would be expected if those net assets had to be acquired
 separately. That value stems from the synergies of the net assets of the business, as well as from other benefits (such as factors
 related to market imperfections, including the ability to earn monopoly profits and barriers to market entry—either legal or because
 of transaction costs—by potential competitors). Component 4—The fair value of the expected synergies and other benefits from
-combining the acquirer's and acquiree's net assets and businesses. Those synergies and other benefits are unique to each
+combining the acquirer&#39;s and acquiree&#39;s net assets and businesses. Those synergies and other benefits are unique to each
 combination, and different combinations would produce different synergies and, hence, different values. Component 5—
 Overvaluation of the consideration paid by the acquirer stemming from errors in valuing the consideration tendered. Although the
 purchase price in an all-cash transaction would not be subject to measurement error, the same may not necessarily be said of a
-transaction involving the acquirer's equity interests. For example, the number of ordinary shares being traded daily may be small
+transaction involving the acquirer&#39;s equity interests. For example, the number of ordinary shares being traded daily may be small
 relative to the number of shares issued in the combination. If so, imputing the current market price to all of the shares issued to
 effect the combination may produce a higher value than those shares would command if they were sold for cash and the cash then
 used to effect the combination. Component 6—Overpayment or underpayment by the acquirer. Overpayment might occur, for
@@ -3214,16 +3214,16 @@ component is not an asset in and of itself or even part of an asset but, rather,
 not an asset; conceptually it represents a loss (in the case of overpayment) or a gain (in the case of underpayment) to the acquirer.
 Thus, neither of those components is conceptually part of goodwill. BC316 The boards also observed that the third and fourth
 components are part of goodwill. The third component relates to the acquiree and reflects the excess assembled value of the
-acquiree's net assets. It represents the pre-existing goodwill that was either internally generated by the acquiree or acquired by it in
+acquiree&#39;s net assets. It represents the pre-existing goodwill that was either internally generated by the acquiree or acquired by it in
 prior business combinations. The fourth component relates to the acquiree and the acquirer jointly and reflects the excess assembled
 value that is created by the combination—the synergies that are expected from combining those businesses. The boards described
-the third and fourth components collectively as 'core goodwill'. BC317 The revised standards try to avoid subsuming the first,
+the third and fourth components collectively as &#39;core goodwill&#39;. BC317 The revised standards try to avoid subsuming the first,
 second and fifth components of goodwill into the amount initially recognised as goodwill. Specifically, an acquirer is required to make
 every effort: (a) to measure the consideration accurately (eliminating or reducing component 5); (b) to recognise the identifiable
 net assets acquired at their fair values rather than their carrying amounts (eliminating or reducing component 1); and (c) to
 recognise all acquired intangible assets meeting the criteria in the revised standards (paragraph B31 of the revised IFRS 3) so that
 they are not subsumed into the amount initially recognised as goodwill (reducing component 2). BC318 In developing IFRS 3 and
-SFAS 141, the IASB and the FASB both considered whether 'core goodwill' (the third and fourth components) qualifies as an asset
+SFAS 141, the IASB and the FASB both considered whether &#39;core goodwill&#39; (the third and fourth components) qualifies as an asset
 under the definition in their respective conceptual frameworks. (That consideration was based on the existing conceptual frameworks.
 In 2004, the IASB and the FASB began work on a joint project to develop an improved conceptual framework that, among other
 things, would eliminate both substantive and wording differences between their existing frameworks. Although the asset definition is
@@ -3281,7 +3281,7 @@ changes are likely to call into question whether goodwill continues to qualify a
 
 在A、B、C三方签订一系列VIE协议，约定C公司不享有任何B公司的分红及债务，B公司的分红及债务都归属于A公司。试问，B公司
 
-的所有净利润是否都可归属入上市公司A公司的P&L，而不需要再确认B公司的少数股东损益？
+的所有净利润是否都可归属入上市公司A公司的P&amp;L，而不需要再确认B公司的少数股东损益？
 
 **回答人：** chenyiwei
 
@@ -3358,7 +3358,7 @@ IFRS有这个规定吗？C公司放弃的话作为资本性投入？
 一个亿一般借款确实用了，按理也可以资本化，总的资本化本金就变成二亿了？
 我一开始的想法是总支出一亿五，超过专门借款，所以专门借款不管怎么都全额资本化，差额五千万算是一般借款支出，资本化五千
 
-万对应的利息，即1E 5%+5000W 8%=900W资本化，不知这样想问题出在哪？
+万对应的利息，即1E 5%&#43;5000W 8%=900W资本化，不知这样想问题出在哪？
 
 **回答人：** chenyiwei
 被挪用的专门借款不再符合专门借款的定义（不同于暂时闲置），其对应的利息不能资本化。
@@ -3819,7 +3819,7 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 将 600 万计入营业外支出，b和c应该将相应的获利金额计入营业外收入。请陈老师指正*_*
 
-<来自中国会计视野网安卓客户端>
+&lt;来自中国会计视野网安卓客户端&gt;
 
 **回答人：** chenyiwei
 你的想法有一定合理性，但建议取得更直接的证据来佐证你的判断。另外，母公司对子公司的捐赠不是计入营业外支出，而是增加对
@@ -4065,7 +4065,7 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 偿还部分列示为长期借款 做法 3 ：全部列示为长期借款
 
-个人感觉“做法3+附注披露说明分期还本”比较合理。想听听陈老师的意见，谢谢老师！
+个人感觉“做法3&#43;附注披露说明分期还本”比较合理。想听听陈老师的意见，谢谢老师！
 
 **回答人：** chenyiwei
 
@@ -4152,7 +4152,7 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 无形资产作价 90 万（账面价值为 0 ），向同一集团下的另一家公司B增资，增资后A公司持有B公司90%股权。假设增资前B公司账面净
 
-资产是 10 ，增资后是 100 （10+90）。则A公司账面长期股权投资的初始投资成本是 90 （100*90%），支付的对价（ 0 ）与享有的B公
+资产是 10 ，增资后是 100 （10&#43;90）。则A公司账面长期股权投资的初始投资成本是 90 （100*90%），支付的对价（ 0 ）与享有的B公
 
 司净资产份额 90 之间的差额增加资本公积 90 。 假设增资后，A公司以 90 万的价格处置了对B公司的投资，账面没有形成处置损益。但
 
@@ -4614,18 +4614,18 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 发行公司债券的关键日期如下： T-2，公告日，募集说明书、发行公告刊登（含利率区间）； T-1，询价簿记日，该日结束前确定发
 
-行最终利率； T to T+2，发行首日，公告利率区间，正式开始发售债券,催缴投资者认购款； T+3，募集资金足额，将扣除费用的募
+行最终利率； T to T&#43;2，发行首日，公告利率区间，正式开始发售债券,催缴投资者认购款； T&#43;3，募集资金足额，将扣除费用的募
 
-集资金净额划付发行人，将债券划付各机构投资者账户； T+5，之前募集资金不足，主承销商启动余额包销责任，将募集资金净额划
+集资金净额划付发行人，将债券划付各机构投资者账户； T&#43;5，之前募集资金不足，主承销商启动余额包销责任，将募集资金净额划
 付发行人。
 
 请教起息日为发行日即T-2日，这样确认债券负债义务应在何时？在T-2日确认负债，同时确认对券商的应收是否恰当？
 
 **回答人：** chenyiwei
 
-理论上应当在T+2日投资者缴款结束后确认该笔应付债券，因为对于未在截止时点之前缴款的投资者，发行人对其不负有债务，此处
+理论上应当在T&#43;2日投资者缴款结束后确认该笔应付债券，因为对于未在截止时点之前缴款的投资者，发行人对其不负有债务，此处
 
-的“催缴”也没有一般债权债务关系中的强制性。只有到T+2日缴款之后，发行人与投资者之间的债权债务关系才确立。 当然，还需要
+的“催缴”也没有一般债权债务关系中的强制性。只有到T&#43;2日缴款之后，发行人与投资者之间的债权债务关系才确立。 当然，还需要
 
 进一步关注：（ 1 ）相关法律法规和协议、合同对于债券相关法律关系的成立有无特殊约定；（ 2 ）有效申购款在券商的指定收款帐
 户停留期间，如果出现灭失等意外事件，应当是由投资者向券商索赔（与发行人无关），还是投资者仍可向发行人索赔，发行人再向
@@ -4681,7 +4681,7 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 的现金”里是否体现企业购买房屋的支出。
 
-2 、主营业务收入+销项+应收，预收，应收票据的调整之后，销售商品、提供劳务收到的现金比银行存款日记账，现金日记账的借方
+2 、主营业务收入&#43;销项&#43;应收，预收，应收票据的调整之后，销售商品、提供劳务收到的现金比银行存款日记账，现金日记账的借方
 发生额还大，不知道可能什么原因造成的？
 谢谢大家
 
@@ -4734,7 +4734,7 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 税 100 万已用银行存款支付。
 
-主表里 分配利润和支付利息支付的现金： 300 万， 主表里 支付其他经营活动有关的现金：+200万， 补充资料里经营性应收项目减
+主表里 分配利润和支付利息支付的现金： 300 万， 主表里 支付其他经营活动有关的现金：&#43;200万， 补充资料里经营性应收项目减
 
 少：-200万， 这个逻辑对不？
 
@@ -4750,9 +4750,9 @@ D”可按 3000 万元作为投资成本， 600 万元作为融资利息在融�
 
 我的意思表达错了。根据这两个分录，完全按照公式法做现金流量表是这样的： 主表：收到其他经营有关的现金=其他应收款的减少
 
-=200万元， 主表：分配利润支付的现金=500万元， 现金净流量=200-500=-300 附表：经营活动的现金流=0（净利润）+200（经
+=200万元， 主表：分配利润支付的现金=500万元， 现金净流量=200-500=-300 附表：经营活动的现金流=0（净利润）&#43;200（经
 
-营性应收项目减少）+（100-100）（经营性应付项目增加）=200与主表一致。 但是由于 200 万元其他应收款的减少为筹资活动的，
+营性应收项目减少）&#43;（100-100）（经营性应付项目增加）=200与主表一致。 但是由于 200 万元其他应收款的减少为筹资活动的，
 
 所以调整后为： 主表:收到其他经营有关的现金=其他应收款的减少=200-200=0， 主表：分配利润支付的现金=500-200（未付
 
@@ -4852,7 +4852,7 @@ NIKANKAN版主能否也告诉我一下呢？
 
 位。基金设立的相关条款规定如下：保证基金投资人每年固定分红15%（私募基金的投资额）；前两年每年预分红款 8% ，第三年后
 
-给予（ 2 7%+15%）。第一个问题，他们的子公司收到私募基金时该如何做账呢？工商登记势必发生改变，私募基金成为股东之一，
+给予（ 2 7%&#43;15%）。第一个问题，他们的子公司收到私募基金时该如何做账呢？工商登记势必发生改变，私募基金成为股东之一，
 但是私募基金不参与公司管理，不承担公司经营的风险，享受的是固定的分红，形式上是股东，实质享受的却是类似于债权人的固定
 
 收益。第二个问题，我设想下，如果这个子公司前两年，甚至前三年无法实现收益，根据协议，这家子公司仍然需要分红给这个私募
@@ -5104,9 +5104,9 @@ A本身就是母公司，提升其中一个子公司的层级不应增加其自�
 
 请问各位，这个案例中，站在A公司的角度来说，应该怎么样进行会计处理呢？
 
-我个人目前的看法是： <1>针对 1 ，查看合同中关于A 类优先股对于发行方与持有方的权利与义务，查看是否可赎回、可转换或其它
+我个人目前的看法是： &lt;1&gt;针对 1 ，查看合同中关于A 类优先股对于发行方与持有方的权利与义务，查看是否可赎回、可转换或其它
 
-具体条款，来将发行收入分为金融负债与权益工具。 <2>针对 2 ，个人觉得应将此事项确认为金融负债，做为对<1>中金融负债公允
+具体条款，来将发行收入分为金融负债与权益工具。 &lt;2&gt;针对 2 ，个人觉得应将此事项确认为金融负债，做为对&lt;1&gt;中金融负债公允
 价值的调整。
 谢谢各位的帮忙，如果可以麻烦将您的看法写得详细些，谢谢！
 
@@ -5714,7 +5714,7 @@ B、 2011 年度先按权益法确认对C公司的合并报表上的投资收益
 
 2 、A的合并报表层面调整资本公积的金额应当根据反向购买日（2011.1.1）的情况计算，而不是根据 2011 年末的情况计算。 2011 年
 
-1 月 1 日反向购买完成后C的合并报表净资产为3.2亿元（ 3 ＋0.2，不大清楚你这里的 4 亿元是如何算出来的：3.5+0.5？），按 55 ％计
+1 月 1 日反向购买完成后C的合并报表净资产为3.2亿元（ 3 ＋0.2，不大清楚你这里的 4 亿元是如何算出来的：3.5&#43;0.5？），按 55 ％计
 
 算为1.76亿元，与重组前A享有B的 100 ％权益（ 3 亿元）相比，所享有的B/C的权益在重组后减少了1.24亿元（3-1.76），该1.24亿元
 
@@ -5989,11 +5989,11 @@ A公司承担其他责任可能性较小。 请问：（ 1 ）目前收款如何
 回复 chenyiwei 的帖子
 再请教下陈老师。对于暂时性判断，可以依据这段话吗”Therefore, whether or not a Newco is set up within an existing group for the
 purpose of a
-transaction to facilitate the disposal of businesses by way of the IPO, is irrelevant as to whether or not common control is 'transitory'.
+transaction to facilitate the disposal of businesses by way of the IPO, is irrelevant as to whether or not common control is &#39;transitory&#39;.
 However, does the fact that the purpose of a reorganisation undertaken to facilitate the disposal of businesses, for example, by sale
 or initial public offering that result in the parent of the existing group losing control over those businesses, mean that common
-control is 'transitory'? In our view, the answer is 'no'. An intention to sell the businesses or go to an IPO shortly after the
-reorganisation does not, by itself, prevent the use of the common control exemption. Whether or not control is 'transitory' should be
+control is &#39;transitory&#39;? In our view, the answer is &#39;no&#39;. An intention to sell the businesses or go to an IPO shortly after the
+reorganisation does not, by itself, prevent the use of the common control exemption. Whether or not control is &#39;transitory&#39; should be
 assessed by looking at the duration of control of the businesses in the period both before and after the reorganisation – it is not
 limited to an assessment of the duration of control only after the reorganisation.“。即只要合并前或者合并后处于一方或相当的多方
 控制不是暂时性的，即可以达到控制不是暂时性的。
@@ -6086,7 +6086,7 @@ notional amount or zero. (b) It may only have an option to acquire the assets, o
 place other arrangements, e.g. grantingthe operator a new term or selecting a new party to take on the assets. Paymentmight be
 made by the grantor or by the new operator but always at the directionof the grantor. (c) The grantor has anoption to acquire the
 assets but if this is not exercised then the operator mayretain them. If the arrangement is of the type described in (c), then
-theoperator's residual interest is not a financial asset. Nor does it have aresidual interest in the underlying property, plant and
+theoperator&#39;s residual interest is not a financial asset. Nor does it have aresidual interest in the underlying property, plant and
 equipment because thisis an arrangement within scope of IFRIC 12 and the entity cannot recognise the underlyingassets, in whole or
 in part. [IFRIC 12.11]. The only option is to recognise an intangible right to receive cash orthe residual interest in the assets. By
 contrast to the residual financial asset,it is most unlikely that the operator would be able to restate the value ofthis right over the
@@ -6679,7 +6679,7 @@ IPO的实质性障碍。
 
 金额”，如果外方用利润再投资，将其分得利润汇往其再投资的境内企业是否应填入该项目内？外方用分得利润作为本企业的增资，
 
-是否反映在该项目内？（上述两项按规定都要在“外方投资者实际出资额"项目内的）外方汇出利润前企业代扣代缴的外国企业所得税
+是否反映在该项目内？（上述两项按规定都要在“外方投资者实际出资额&#34;项目内的）外方汇出利润前企业代扣代缴的外国企业所得税
 
 额是否应反映在该项目内？ 国家外汇管理局似乎没有明确，不知各位有啥看法？不妨讨论一下。
 
@@ -6902,12 +6902,12 @@ IPO的实质性障碍。
 
 **提问人：** qjr1124 时间： 2012-03-24 17:20:23
 
-。。。是指由若干个资产组 组成的 最小资产组 组合。 假设有资产组A和资产组B，C=A+B，这C可以理解为资产组 组合。 。。。包
+。。。是指由若干个资产组 组成的 最小资产组 组合。 假设有资产组A和资产组B，C=A&#43;B，这C可以理解为资产组 组合。 。。。包
 括资产组或者资产组组合，以及按合理方法分摊的总部资产部分。
 
-假设以及按合理方法分摊的总部资产部分为D，关键是A+B+D可以认定为 资产组 组合。
+假设以及按合理方法分摊的总部资产部分为D，关键是A&#43;B&#43;D可以认定为 资产组 组合。
 
-问题是：D是资产组吗？那么A+B+D又是个什么实质呢？
+问题是：D是资产组吗？那么A&#43;B&#43;D又是个什么实质呢？
 
 该贴已经同步到 qjr1124的微博
 
@@ -6989,7 +6989,7 @@ D本身不是资产组，因为没有独立产生现金流入的能力。但总�
 
 回复 chenyiwei 的帖子
 
-"是一个重新分配的过程"
+&#34;是一个重新分配的过程&#34;
 
 理由是不是说资产的账面价值才是最终可实现价值，所以折旧（消耗）就是最新的账面价值来计算。
 
@@ -7154,7 +7154,7 @@ D本身不是资产组，因为没有独立产生现金流入的能力。但总�
 
 **回答人：** chenyiwei
 
-按照财会[2011]25号文的规定：“合并所有者权益变动表（会合 04 表）"本年金额"栏下 "加：会计政策变更"和"前期差错更正"项目，不
+按照财会[2011]25号文的规定：“合并所有者权益变动表（会合 04 表）&#34;本年金额&#34;栏下 &#34;加：会计政策变更&#34;和&#34;前期差错更正&#34;项目，不
 
 得填列金额”。
 
@@ -7171,7 +7171,7 @@ D本身不是资产组，因为没有独立产生现金流入的能力。但总�
 
 **提问人：** xiaomage843 时间： 2012-03-26 09:18:04
 
-请教：上市公司披露融资租赁形成的长期应付款，初始金额是指长期应付款的账面金额（本金+利息），还是长期应付款的账面金额
+请教：上市公司披露融资租赁形成的长期应付款，初始金额是指长期应付款的账面金额（本金&#43;利息），还是长期应付款的账面金额
 减去未确认融资费用的金额（本金）？
 
 **回答人：** chenyiwei
@@ -7246,15 +7246,15 @@ D本身不是资产组，因为没有独立产生现金流入的能力。但总�
 
 益法是怎么做？人话处理这个 10 万的资本公积？做商誉？还是？ 是不是 借：长期股权投资 7 万 贷：资本公积 7 万 借 长
 
-期股权投资 35 万 贷 投资收益 35 万 长期股权投资的账面为 80+7+35=122万 对应比例 （110+50）*70%=112万，商誉 10
+期股权投资 35 万 贷 投资收益 35 万 长期股权投资的账面为 80&#43;7&#43;35=122万 对应比例 （110&#43;50）*70%=112万，商誉 10
 
 万？ 然后抵消 借 股本 100 万 资本公积 10 万 未分配利润 50 万 商誉 10 万 贷 长期股权投
 
-资 122 少数股东权益 48 （33+15 是不是这样处理啊？
+资 122 少数股东权益 48 （33&#43;15 是不是这样处理啊？
 
 **回答人：** chenyiwei
 
-该交易不是企业合并，不会产生商誉。在出资完成时，母公司出资 80 万元，享有权益份额 77 万（=(100+10)*70%），少数股东出资
+该交易不是企业合并，不会产生商誉。在出资完成时，母公司出资 80 万元，享有权益份额 77 万（=(100&#43;10)*70%），少数股东出资
 
 30 万，享有 33 万权益，此处的 3 万元差额是母公司让渡给少数股东的权益，在合并报表层面调整（冲减）资本公积。 如果你按照模
 
@@ -7319,7 +7319,7 @@ D本身不是资产组，因为没有独立产生现金流入的能力。但总�
 
 项目进行调整的方法。即视同该业务从一开始用的就是新政策，并依此思路将以前政策下的所有会计核算指标进行“翻新”。 提几个问
 
-题: 1."并以此对财务报表相关项目进行调整",理论上是帐先调整,才有报表调整?如果是报表调整,那需要调整利润表吗?如何调整利润表?
+题: 1.&#34;并以此对财务报表相关项目进行调整&#34;,理论上是帐先调整,才有报表调整?如果是报表调整,那需要调整利润表吗?如何调整利润表?
 
 2.将以前政策下的所有会计核算指标进行“翻新”,书上讲解是涉及资产类科目的调整的是资产类科目,而涉及损益的一律以中转科目调
 
@@ -8373,7 +8373,7 @@ A公司今年年初出资设立全资子公司B公司， 11 月 30 日又卖出�
 
 **提问人：** timc26 时间： 2016-01-05 09:24:17
 
-谢谢陈老师。陈老师，您看我理解的对不对，"子变分“后法律主体不存在了，但会计主体还存在，业务延续，因此可以按照持续经营
+谢谢陈老师。陈老师，您看我理解的对不对，&#34;子变分“后法律主体不存在了，但会计主体还存在，业务延续，因此可以按照持续经营
 假设编制财务报表。出具审计报告时加强调事项段。这么做对吗？烦劳陈老师解答，谢谢。
 
 **回答人：** chenyiwei
@@ -8706,7 +8706,7 @@ IFRIC 17仅适用于针对所有股东按比例分配的情形。而且本案例
 
 **回答人：** chenyiwei
 
-正确做法是：500*(1000/600) 5/12+1000 7/12=930.56万股。 目前在主板、中小板IPO中，也可简化为 1000 万股，视同整体变更折
+正确做法是：500*(1000/600) 5/12&#43;1000 7/12=930.56万股。 目前在主板、中小板IPO中，也可简化为 1000 万股，视同整体变更折
 
 合的 1000 万股在年初即已发行在外。
 
@@ -8840,11 +8840,11 @@ IFRIC 17仅适用于针对所有股东按比例分配的情形。而且本案例
 尽管母公司直接持有该孙公司的股权比例小于 50 ％，但能够控制该孙公司，且控制在交易前后是延续的，所以不是企业合并，母公
 司应作为子公司按成本法在个别报表层面核算该项长期股权投资。
 
-# 892 、投资性房地产是否列示在"通过经营租赁租出的固定资产"项下
+# 892 、投资性房地产是否列示在&#34;通过经营租赁租出的固定资产&#34;项下
 
 **提问人：** yphs 时间： 2012-03-30 17:08:30
 
-请教版主及大家:"通过经营租赁租出的固定资产"是否包含"投资性房地产"的金额
+请教版主及大家:&#34;通过经营租赁租出的固定资产&#34;是否包含&#34;投资性房地产&#34;的金额
 
 **回答人：** chenyiwei
 不含。大前提是：这些项目在资产负债表上列报为固定资产。
@@ -8885,7 +8885,7 @@ IFRIC 17仅适用于针对所有股东按比例分配的情形。而且本案例
 
 冲回？；（ 2 ）如果子公司没有足够的资本公积和盈余公积进行冲减，如调整资本公积则会使子公司合并层面资本公积出现负数？如
 
-果不调整资本公积，直接冲减未分配利润，会导致期末未分配不等于期初未分配利润+当期归母净利润-分配（假设无其他特殊情
+果不调整资本公积，直接冲减未分配利润，会导致期末未分配不等于期初未分配利润&#43;当期归母净利润-分配（假设无其他特殊情
 况），这个差额在所有者权益变动表里体现在哪个科目里？如何从理论上解释这个差额？
 
 **回答人：** chenyiwei
@@ -8999,6 +8999,6 @@ IFRIC 17仅适用于针对所有股东按比例分配的情形。而且本案例
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201203/  
 

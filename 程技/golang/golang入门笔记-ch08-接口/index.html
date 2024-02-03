@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Golang入门笔记-CH08-接口 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
-<meta name="description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH08-接口">
-<meta itemprop="description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
+    <title>Golang入门笔记-CH08-接口 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="1. 使用接口的原因我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH08-接口">
+<meta itemprop="description" content="1. 使用接口的原因我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2760"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="2761"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH08-接口" />
-<meta property="og:description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" />
+<meta property="og:description" content="1. 使用接口的原因我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><meta property="og:image" content="http://richfan.site/favicon.svg" /><meta property="article:section" content="程技" />
 <meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
@@ -20,7 +20,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="Golang入门笔记-CH08-接口"/>
-<meta name="twitter:description" content="1. 使用接口的原因 我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"/>
+<meta name="twitter:description" content="1. 使用接口的原因我们来看一段代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 type Cat struct{} func (c Cat) Say() string { return &#34;喵喵喵&#34; } type Dog struct{} func (d Dog) Say() string { return &#34;"/>
 <meta name="application-name" content="樊刹">
 <meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3\/"
-    },"genre": "posts","keywords": "Golang","wordcount":  2760 ,
+    },"genre": "posts","keywords": "Golang","wordcount":  2761 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/golang/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Golang</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH08-接口</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH08-接口</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="2760 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH08-接口">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="2761 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 2800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH08-接口">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH08-接口">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -223,8 +218,8 @@
     <li><a href="#7-类型断言">7. 类型断言</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="1-使用接口的原因">1. 使用接口的原因</h2>
-<p>我们来看一段代码：</p>
+      </div><div class="content" id="content"><h2 id="1-使用接口的原因" class="heading-element">
+  <a href="#1-%e4%bd%bf%e7%94%a8%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8e%9f%e5%9b%a0" class="heading-mark"></a>1. 使用接口的原因</h2><p>我们来看一段代码：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -259,8 +254,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码中定义了狗 <code>Dog</code> 和猫 <code>Cat</code> 以及它们对应的方法 <code>Say()</code>，若要继续添加鸭 <code>Duck</code> 方法和其对应的方法 <code>Say()</code>，重复代码会非常多。我们可不可以从这三种动物类型中抽象出方法 <code>Say()</code>，这就是接口的作用，接口可以定义抽象方法，来规范我们的代码。</p>
-<h2 id="2-接口的定义和使用">2. 接口的定义和使用</h2>
-<p>Go 语言非传统面对对象语言，没有类和继承的概念。但在 Go 语言中可以通过接口来实现面对对象的一些特性，接口是用来描述对象行为的，可以在其中定义一些<strong>抽象方法</strong>，这些方法<strong>不能被实现</strong>，同时接口中<strong>不能包含变量</strong>。</p>
+<h2 id="2-接口的定义和使用" class="heading-element">
+  <a href="#2-%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ae%9a%e4%b9%89%e5%92%8c%e4%bd%bf%e7%94%a8" class="heading-mark"></a>2. 接口的定义和使用</h2><p>Go 语言非传统面对对象语言，没有类和继承的概念。但在 Go 语言中可以通过接口来实现面对对象的一些特性，接口是用来描述对象行为的，可以在其中定义一些<strong>抽象方法</strong>，这些方法<strong>不能被实现</strong>，同时接口中<strong>不能包含变量</strong>。</p>
 <p>Go 语言中接口 <code>interface</code> 是一种抽象类型。</p>
 <p>接口的定义格式：</p>
 <div class="highlight" id="id-2"><div class="chroma">
@@ -375,8 +370,8 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
 </span></span><span class="line"><span class="cl">汪汪汪</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="3-值接收和指针接收实现接口的区别">3. 值接收和指针接收实现接口的区别</h2>
-<p>现在有一个 <code>Sayer</code> 接口和 <code>Cat</code> 结构体：</p>
+</div><h2 id="3-值接收和指针接收实现接口的区别" class="heading-element">
+  <a href="#3-%e5%80%bc%e6%8e%a5%e6%94%b6%e5%92%8c%e6%8c%87%e9%92%88%e6%8e%a5%e6%94%b6%e5%ae%9e%e7%8e%b0%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%8c%ba%e5%88%ab" class="heading-mark"></a>3. 值接收和指针接收实现接口的区别</h2><p>现在有一个 <code>Sayer</code> 接口和 <code>Cat</code> 结构体：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -392,8 +387,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">cat</span> <span class="kd">struct</span><span class="p">{}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="31-值接收实现接口">3.1 值接收实现接口</h3>
-<div class="highlight" id="id-10"><div class="chroma">
+</div><h3 id="31-值接收实现接口" class="heading-element">
+  <a href="#31-%e5%80%bc%e6%8e%a5%e6%94%b6%e5%ae%9e%e7%8e%b0%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>3.1 值接收实现接口</h3><div class="highlight" id="id-10"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -443,8 +438,8 @@
 </span></span><span class="line"><span class="cl">喵喵喵</span></span></code></pre></td></tr></table>
 </div>
 </div><p>从上述例子中，我们可以发现：当以<strong>值接收</strong>形式实现接口时，不论是值实例还是指针实例，都可以赋值给接口变量。</p>
-<h3 id="32-指针接收实现接口">3.2 指针接收实现接口</h3>
-<p>我们来看下指针接收来实现接口：</p>
+<h3 id="32-指针接收实现接口" class="heading-element">
+  <a href="#32-%e6%8c%87%e9%92%88%e6%8e%a5%e6%94%b6%e5%ae%9e%e7%8e%b0%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>3.2 指针接收实现接口</h3><p>我们来看下指针接收来实现接口：</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -481,10 +476,10 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行后，编译器会提示 <code>cat does not implement Sayer (say method has pointer receiver)</code> 错误，因为实现 <code>Sayer</code> 接口的是 <code>*cat</code>，所以不能将 <code>cat</code> 的实例 <code>c</code> 赋值给接口变量 <code>sayer</code> ，也就是说 <code>sayer</code> 只能接收指针实例。</p>
-<h2 id="4-类型和接口的关系">4. 类型和接口的关系</h2>
-<h3 id="41-类型和接口的关系">4.1 类型和接口的关系</h3>
-<h4 id="一个类型实现多个接口">一个类型实现多个接口</h4>
-<p>一个类型可以实现多个接口，且这些接口相互独立。动物既会叫，也会动，可以定义两个接口，然后让 <code>cat</code> 分别实现这两个接口：</p>
+<h2 id="4-类型和接口的关系" class="heading-element">
+  <a href="#4-%e7%b1%bb%e5%9e%8b%e5%92%8c%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%85%b3%e7%b3%bb" class="heading-mark"></a>4. 类型和接口的关系</h2><h3 id="41-类型和接口的关系" class="heading-element">
+  <a href="#41-%e7%b1%bb%e5%9e%8b%e5%92%8c%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%85%b3%e7%b3%bb" class="heading-mark"></a>4.1 类型和接口的关系</h3><h4 id="一个类型实现多个接口" class="heading-element">
+  <a href="#%e4%b8%80%e4%b8%aa%e7%b1%bb%e5%9e%8b%e5%ae%9e%e7%8e%b0%e5%a4%9a%e4%b8%aa%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>一个类型实现多个接口</h4><p>一个类型可以实现多个接口，且这些接口相互独立。动物既会叫，也会动，可以定义两个接口，然后让 <code>cat</code> 分别实现这两个接口：</p>
 <div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -564,8 +559,8 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
 </span></span><span class="line"><span class="cl">猫动了</span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="多个类型实现同一接口">多个类型实现同一接口</h4>
-<p>一个接口可以被多个不同类型实现，现在有一个接口 <code>Mover</code>，猫 <code>cat</code> 和狗 <code>dog</code> 都会动，让它们分别实现 <code>Mover</code> 接口：</p>
+</div><h4 id="多个类型实现同一接口" class="heading-element">
+  <a href="#%e5%a4%9a%e4%b8%aa%e7%b1%bb%e5%9e%8b%e5%ae%9e%e7%8e%b0%e5%90%8c%e4%b8%80%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>多个类型实现同一接口</h4><p>一个接口可以被多个不同类型实现，现在有一个接口 <code>Mover</code>，猫 <code>cat</code> 和狗 <code>dog</code> 都会动，让它们分别实现 <code>Mover</code> 接口：</p>
 <div class="highlight" id="id-16"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -693,8 +688,8 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;洗刷刷&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="5-接口嵌套">5. 接口嵌套</h2>
-<p>接口可以通过嵌套生成新的接口，如：</p>
+</div><h2 id="5-接口嵌套" class="heading-element">
+  <a href="#5-%e6%8e%a5%e5%8f%a3%e5%b5%8c%e5%a5%97" class="heading-mark"></a>5. 接口嵌套</h2><p>接口可以通过嵌套生成新的接口，如：</p>
 <div class="highlight" id="id-19"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -778,9 +773,9 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">喵喵喵
 </span></span><span class="line"><span class="cl">小猫咪溜了</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="6-空接口">6. 空接口</h2>
-<h3 id="61-空接口的定义">6.1 空接口的定义</h3>
-<p>空接口是指未定义任何方法的接口，因此任何类型都实现了空接口（空接口有点类似于 Java 中的基类 Object）。</p>
+</div><h2 id="6-空接口" class="heading-element">
+  <a href="#6-%e7%a9%ba%e6%8e%a5%e5%8f%a3" class="heading-mark"></a>6. 空接口</h2><h3 id="61-空接口的定义" class="heading-element">
+  <a href="#61-%e7%a9%ba%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ae%9a%e4%b9%89" class="heading-mark"></a>6.1 空接口的定义</h3><p>空接口是指未定义任何方法的接口，因此任何类型都实现了空接口（空接口有点类似于 Java 中的基类 Object）。</p>
 <p>空接口类型变量可以存储任意类型的值：</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -833,9 +828,9 @@
 </span></span><span class="line"><span class="cl"><span class="m">25</span>
 </span></span><span class="line"><span class="cl">true</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="62-空接口的应用">6.2 空接口的应用</h3>
-<h4 id="函数传参">函数传参</h4>
-<p>使用空接口可以接收任意类型的参数：</p>
+</div><h3 id="62-空接口的应用" class="heading-element">
+  <a href="#62-%e7%a9%ba%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ba%94%e7%94%a8" class="heading-mark"></a>6.2 空接口的应用</h3><h4 id="函数传参" class="heading-element">
+  <a href="#%e5%87%bd%e6%95%b0%e4%bc%a0%e5%8f%82" class="heading-mark"></a>函数传参</h4><p>使用空接口可以接收任意类型的参数：</p>
 <div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -847,8 +842,8 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;type:%T value:%v\n&#34;</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="map-的值">Map 的值</h4>
-<p>使用空接口可以实现保存任意类型的值的 Map：</p>
+</div><h4 id="map-的值" class="heading-element">
+  <a href="#map-%e7%9a%84%e5%80%bc" class="heading-mark"></a>Map 的值</h4><p>使用空接口可以实现保存任意类型的值的 Map：</p>
 <div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -864,8 +859,8 @@
 </span></span><span class="line"><span class="cl"><span class="nx">studentInfo</span><span class="p">[</span><span class="s">&#34;married&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">studentInfo</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="7-类型断言">7. 类型断言</h2>
-<p>我们如何获取空接口变量的值和具体类型呢？可以采用类型断言来实现。</p>
+</div><h2 id="7-类型断言" class="heading-element">
+  <a href="#7-%e7%b1%bb%e5%9e%8b%e6%96%ad%e8%a8%80" class="heading-mark"></a>7. 类型断言</h2><p>我们如何获取空接口变量的值和具体类型呢？可以采用类型断言来实现。</p>
 <p>一个接口的值是由 <code>具体类型</code> 和 <code>具体类型的值</code> 组成的，分别称为接口的 <code>动态类型</code> 和 <code>动态值</code>。</p>
 <p>我们来看一个例子：</p>
 <div class="highlight" id="id-26"><div class="chroma">
@@ -882,7 +877,7 @@
 </span></span><span class="line"><span class="cl"><span class="nx">w</span> <span class="p">=</span> <span class="kc">nil</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>来看下接口变量 <code>w</code> 的变化：</p>
-<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=large 2x" sizes="auto" data-title="类型断言" data-alt="类型断言" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png" alt="类型断言" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/16/20201016132857.png?size=large 2x" sizes="auto" data-title="类型断言" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>若要判断空接口类型变量的值，可以使用类型断言，其格式为：</p>
 <div class="highlight" id="id-27"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -961,19 +956,17 @@
       <div class="post-info-mod">
         <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" data-title="Golang入门笔记-CH08-接口" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/" data-title="Golang入门笔记-CH08-接口" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/golang/" class="post-tag" title="标签 - Golang">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -984,10 +977,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

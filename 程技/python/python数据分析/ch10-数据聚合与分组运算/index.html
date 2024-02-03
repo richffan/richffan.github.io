@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第十章 数据聚合与分组运算 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第十章 数据聚合与分组运算 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分" /><meta name="keywords" content='python' /><meta itemprop="name" content="第十章 数据聚合与分组运算">
 <meta itemprop="description" content="对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="11566"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="11571"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第十章 数据聚合与分组运算" />
 <meta property="og:description" content="对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第十章 数据聚合与分组运算"/>
 <meta name="twitter:description" content="对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97\/"
-    },"genre": "posts","keywords": "python","wordcount":  11566 ,
+    },"genre": "posts","keywords": "python","wordcount":  11571 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第十章 数据聚合与分组运算</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第十章 数据聚合与分组运算</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="11566 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 11600 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 24 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" class="leancloud_visitors comment-visitors" data-flag-title="第十章 数据聚合与分组运算">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="11571 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 11600 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 24 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" class="leancloud_visitors comment-visitors" data-flag-title="第十章 数据聚合与分组运算">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第十章 数据聚合与分组运算">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -236,9 +231,9 @@
 <blockquote>
 <p>笔记：对时间序列数据的聚合（groupby的特殊用法之一）也称作重采样（resampling），将在第11章中单独对其进行讲解。</p>
 </blockquote>
-<h2 id="101-groupby机制">10.1 GroupBy机制</h2>
-<p>Hadley Wickham（许多热门R语言包的作者）创造了一个用于表示分组运算的术语&quot;split-apply-combine&quot;（拆分－应用－合并）。第一个阶段，pandas对象（无论是Series、DataFrame还是其他的）中的数据会根据你所提供的一个或多个键被拆分（split）为多组。拆分操作是在对象的特定轴上执行的。例如，DataFrame可以在其行（axis=0）或列（axis=1）上进行分组。然后，将一个函数应用（apply）到各个分组并产生一个新值。最后，所有这些函数的执行结果会被合并（combine）到最终的结果对象中。结果对象的形式一般取决于数据上所执行的操作。图10-1大致说明了一个简单的分组聚合过程。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=large 2x" sizes="auto" data-title="图10-1 分组聚合演示" data-alt="图10-1 分组聚合演示" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="101-groupby机制" class="heading-element">
+  <a href="#101-groupby%e6%9c%ba%e5%88%b6" class="heading-mark"></a>10.1 GroupBy机制</h2><p>Hadley Wickham（许多热门R语言包的作者）创造了一个用于表示分组运算的术语&quot;split-apply-combine&quot;（拆分－应用－合并）。第一个阶段，pandas对象（无论是Series、DataFrame还是其他的）中的数据会根据你所提供的一个或多个键被拆分（split）为多组。拆分操作是在对象的特定轴上执行的。例如，DataFrame可以在其行（axis=0）或列（axis=1）上进行分组。然后，将一个函数应用（apply）到各个分组并产生一个新值。最后，所有这些函数的执行结果会被合并（combine）到最终的结果对象中。结果对象的形式一般取决于数据上所执行的操作。图10-1大致说明了一个简单的分组聚合过程。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png" alt="图10-1 分组聚合演示" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029215541450.png?size=large 2x" sizes="auto" data-title="图10-1 分组聚合演示" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>分组键可以有多种形式，且类型不必相同：</p>
 <ul>
 <li>列表或数组，其长度与待分组的轴一样。</li>
@@ -443,8 +438,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意，任何分组关键词中的缺失值，都会被从结果中除去。</p>
-<h3 id="1011-对分组进行迭代">10.1.1 对分组进行迭代</h3>
-<p>GroupBy对象支持<code>迭代</code>，可以产生一组二元元组（由分组名和数据块组成）。看下面的例子：</p>
+<h3 id="1011-对分组进行迭代" class="heading-element">
+  <a href="#1011-%e5%af%b9%e5%88%86%e7%bb%84%e8%bf%9b%e8%a1%8c%e8%bf%ad%e4%bb%a3" class="heading-mark"></a>10.1.1 对分组进行迭代</h3><p>GroupBy对象支持<code>迭代</code>，可以产生一组二元元组（由分组名和数据块组成）。看下面的例子：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -602,8 +597,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>    <span class="n">b</span>  <span class="n">two</span>
 </span></span><span class="line"><span class="cl"><span class="mi">4</span>    <span class="n">a</span>  <span class="n">one</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1012-选取一列或列的子集">10.1.2 选取一列或列的子集</h3>
-<p>对于由DataFrame产生的GroupBy对象，如果用一个（单个字符串）或一组（字符串数组）列名对其进行索引，就能实现选取部分列进行聚合的目的。也就是说：</p>
+</div><h3 id="1012-选取一列或列的子集" class="heading-element">
+  <a href="#1012-%e9%80%89%e5%8f%96%e4%b8%80%e5%88%97%e6%88%96%e5%88%97%e7%9a%84%e5%ad%90%e9%9b%86" class="heading-mark"></a>10.1.2 选取一列或列的子集</h3><p>对于由DataFrame产生的GroupBy对象，如果用一个（单个字符串）或一组（字符串数组）列名对其进行索引，就能实现选取部分列进行聚合的目的。也就是说：</p>
 <div class="highlight" id="id-14"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -677,8 +672,8 @@
 </span></span><span class="line"><span class="cl">      <span class="n">two</span>     <span class="mf">0.769023</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">data2</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1013-通过字典或series进行分组">10.1.3 通过字典或Series进行分组</h3>
-<p>除数组以外，分组信息还可以其他形式存在。来看另一个示例DataFrame：</p>
+</div><h3 id="1013-通过字典或series进行分组" class="heading-element">
+  <a href="#1013-%e9%80%9a%e8%bf%87%e5%ad%97%e5%85%b8%e6%88%96series%e8%bf%9b%e8%a1%8c%e5%88%86%e7%bb%84" class="heading-mark"></a>10.1.3 通过字典或Series进行分组</h3><p>除数组以外，分组信息还可以其他形式存在。来看另一个示例DataFrame：</p>
 <div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -794,8 +789,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Jim</span>        <span class="mi">2</span>    <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="n">Travis</span>     <span class="mi">2</span>    <span class="mi">3</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1014-通过函数进行分组">10.1.4 通过函数进行分组</h3>
-<p>比起使用字典或Series，使用Python函数是一种更原生的方法定义分组映射。任何被当做分组键的函数都会在各个索引值上被调用一次，其返回值就会被用作分组名称。具体点说，以上一小节的示例DataFrame为例，其索引值为人的名字。你可以计算一个字符串长度的数组，更简单的方法是传入len函数：</p>
+</div><h3 id="1014-通过函数进行分组" class="heading-element">
+  <a href="#1014-%e9%80%9a%e8%bf%87%e5%87%bd%e6%95%b0%e8%bf%9b%e8%a1%8c%e5%88%86%e7%bb%84" class="heading-mark"></a>10.1.4 通过函数进行分组</h3><p>比起使用字典或Series，使用Python函数是一种更原生的方法定义分组映射。任何被当做分组键的函数都会在各个索引值上被调用一次，其返回值就会被用作分组名称。具体点说，以上一小节的示例DataFrame为例，其索引值为人的名字。你可以计算一个字符串长度的数组，更简单的方法是传入len函数：</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -837,8 +832,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">5</span> <span class="n">one</span>  <span class="mf">0.886429</span> <span class="o">-</span><span class="mf">2.001637</span> <span class="o">-</span><span class="mf">0.371843</span>  <span class="mf">1.669025</span> <span class="o">-</span><span class="mf">0.438570</span>
 </span></span><span class="line"><span class="cl"><span class="mi">6</span> <span class="n">two</span> <span class="o">-</span><span class="mf">0.713544</span> <span class="o">-</span><span class="mf">0.831154</span> <span class="o">-</span><span class="mf">2.370232</span> <span class="o">-</span><span class="mf">1.860761</span> <span class="o">-</span><span class="mf">0.860757</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1015-根据索引级别分组">10.1.5 根据索引级别分组</h3>
-<p>层次化索引数据集最方便的地方就在于它能够根据轴索引的一个级别进行聚合：</p>
+</div><h3 id="1015-根据索引级别分组" class="heading-element">
+  <a href="#1015-%e6%a0%b9%e6%8d%ae%e7%b4%a2%e5%bc%95%e7%ba%a7%e5%88%ab%e5%88%86%e7%bb%84" class="heading-mark"></a>10.1.5 根据索引级别分组</h3><p>层次化索引数据集最方便的地方就在于它能够根据轴索引的一个级别进行聚合：</p>
 <div class="highlight" id="id-24"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -892,9 +887,9 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>     <span class="mi">2</span>   <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>     <span class="mi">2</span>   <span class="mi">3</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="102-数据聚合">10.2 数据聚合</h2>
-<p>聚合指的是任何能够从数组产生标量值的数据转换过程。之前的例子已经用过一些，比如mean、count、min以及sum等。你可能想知道在GroupBy对象上调用mean()时究竟发生了什么。许多常见的聚合运算（如表10-1所示）都有进行优化。然而，除了这些方法，你还可以使用其它的。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=large 2x" sizes="auto" data-title="表10-1 经过优化的groupby方法" data-alt="表10-1 经过优化的groupby方法" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><h2 id="102-数据聚合" class="heading-element">
+  <a href="#102-%e6%95%b0%e6%8d%ae%e8%81%9a%e5%90%88" class="heading-mark"></a>10.2 数据聚合</h2><p>聚合指的是任何能够从数组产生标量值的数据转换过程。之前的例子已经用过一些，比如mean、count、min以及sum等。你可能想知道在GroupBy对象上调用mean()时究竟发生了什么。许多常见的聚合运算（如表10-1所示）都有进行优化。然而，除了这些方法，你还可以使用其它的。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png" alt="表10-1 经过优化的groupby方法" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029222751891.png?size=large 2x" sizes="auto" data-title="表10-1 经过优化的groupby方法" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>你可以使用自己发明的聚合运算，还可以调用分组对象上已经定义好的任何方法。例如，quantile可以计算Series或DataFrame列的样本分位数。</p>
 <p>虽然quantile并没有明确地实现于GroupBy，但它是一个Series方法，所以这里是能用的。实际上，GroupBy会高效地对Series进行切片，然后对各片调用piece.quantile(0.9)，最后将这些结果组装成最终结果：</p>
 <div class="highlight" id="id-26"><div class="chroma">
@@ -1002,8 +997,8 @@
 <blockquote>
 <p>笔记：自定义聚合函数要比表10-1中那些经过优化的函数慢得多。这是因为在构造中间分组数据块时存在非常大的开销（函数调用、数据重排等）。</p>
 </blockquote>
-<h3 id="1021-面向列的多函数应用">10.2.1 面向列的多函数应用</h3>
-<p>回到前面小费的例子。使用read_csv导入数据之后，我们添加了一个小费百分比的列tip_pct：</p>
+<h3 id="1021-面向列的多函数应用" class="heading-element">
+  <a href="#1021-%e9%9d%a2%e5%90%91%e5%88%97%e7%9a%84%e5%a4%9a%e5%87%bd%e6%95%b0%e5%ba%94%e7%94%a8" class="heading-mark"></a>10.2.1 面向列的多函数应用</h3><p>回到前面小费的例子。使用read_csv导入数据之后，我们添加了一个小费百分比的列tip_pct：</p>
 <div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1307,8 +1302,8 @@
 </span></span><span class="line"><span class="cl">     <span class="n">Yes</span>     <span class="mf">0.090014</span>  <span class="mf">0.241255</span>  <span class="mf">0.163863</span>  <span class="mf">0.039389</span>   <span class="mi">40</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>只有将多个函数应用到至少一列时，DataFrame才会拥有层次化的列。</p>
-<h3 id="1022-以没有行索引的形式返回聚合数据">10.2.2 以“没有行索引”的形式返回聚合数据</h3>
-<p>到目前为止，所有示例中的聚合数据都有由唯一的分组键组成的索引（可能还是层次化的）。由于并不总是需要如此，所以你可以向groupby传入as_index=False以禁用该功能：</p>
+<h3 id="1022-以没有行索引的形式返回聚合数据" class="heading-element">
+  <a href="#1022-%e4%bb%a5%e6%b2%a1%e6%9c%89%e8%a1%8c%e7%b4%a2%e5%bc%95%e7%9a%84%e5%bd%a2%e5%bc%8f%e8%bf%94%e5%9b%9e%e8%81%9a%e5%90%88%e6%95%b0%e6%8d%ae" class="heading-mark"></a>10.2.2 以“没有行索引”的形式返回聚合数据</h3><p>到目前为止，所有示例中的聚合数据都有由唯一的分组键组成的索引（可能还是层次化的）。由于并不总是需要如此，所以你可以向groupby传入as_index=False以禁用该功能：</p>
 <div class="highlight" id="id-38"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1337,9 +1332,9 @@
 </span></span><span class="line"><span class="cl"><span class="mi">7</span>  <span class="n">Thur</span>    <span class="n">Yes</span>   <span class="mf">19.190588</span>  <span class="mf">3.030000</span>  <span class="mf">2.352941</span>  <span class="mf">0.163863</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>当然，对结果调用reset_index也能得到这种形式的结果。使用as_index=False方法可以避免一些不必要的计算。</p>
-<h2 id="103-apply一般性的拆分应用合并">10.3 apply：一般性的“拆分－应用－合并”</h2>
-<p>最通用的GroupBy方法是apply，本节剩余部分将重点讲解它。如图10-2所示，apply会将待处理的对象拆分成多个片段，然后对各片段调用传入的函数，最后尝试将各片段组合到一起。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=large 2x" sizes="auto" data-title="图10-2 分组聚合示例" data-alt="图10-2 分组聚合示例" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="103-apply一般性的拆分应用合并" class="heading-element">
+  <a href="#103-apply%e4%b8%80%e8%88%ac%e6%80%a7%e7%9a%84%e6%8b%86%e5%88%86%e5%ba%94%e7%94%a8%e5%90%88%e5%b9%b6" class="heading-mark"></a>10.3 apply：一般性的“拆分－应用－合并”</h2><p>最通用的GroupBy方法是apply，本节剩余部分将重点讲解它。如图10-2所示，apply会将待处理的对象拆分成多个片段，然后对各片段调用传入的函数，最后尝试将各片段组合到一起。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png" alt="图10-2 分组聚合示例" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201029223444220.png?size=large 2x" sizes="auto" data-title="图10-2 分组聚合示例" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>回到之前那个小费数据集，假设你想要根据分组选出最高的5个tip_pct值。首先，编写一个选取指定列具有最大值的行的函数：</p>
 <div class="highlight" id="id-39"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1522,8 +1517,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">grouped</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">f</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1031-禁止分组键">10.3.1 禁止分组键</h3>
-<p>从上面的例子中可以看出，分组键会跟原始对象的索引共同构成结果对象中的层次化索引。将group_keys=False传入groupby即可禁止该效果：</p>
+</div><h3 id="1031-禁止分组键" class="heading-element">
+  <a href="#1031-%e7%a6%81%e6%ad%a2%e5%88%86%e7%bb%84%e9%94%ae" class="heading-mark"></a>10.3.1 禁止分组键</h3><p>从上面的例子中可以看出，分组键会跟原始对象的索引共同构成结果对象中的层次化索引。将group_keys=False传入groupby即可禁止该效果：</p>
 <div class="highlight" id="id-44"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1555,8 +1550,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">178</span>        <span class="mf">9.60</span>  <span class="mf">4.00</span>    <span class="n">Yes</span>   <span class="n">Sun</span>  <span class="n">Dinner</span>     <span class="mi">2</span>  <span class="mf">0.416667</span>
 </span></span><span class="line"><span class="cl"><span class="mi">172</span>        <span class="mf">7.25</span>  <span class="mf">5.15</span>    <span class="n">Yes</span>   <span class="n">Sun</span>  <span class="n">Dinner</span>     <span class="mi">2</span>  <span class="mf">0.710345</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1032-分位数和桶分析">10.3.2 分位数和桶分析</h3>
-<p>我曾在第8章中讲过，pandas有一些能根据指定面元或样本分位数将数据拆分成多块的工具（比如cut和qcut）。将这些函数跟groupby结合起来，就能非常轻松地实现对数据集的桶（bucket）或分位数（quantile）分析了。以下面这个简单的随机数据集为例，我们利用cut将其装入长度相等的桶中：</p>
+</div><h3 id="1032-分位数和桶分析" class="heading-element">
+  <a href="#1032-%e5%88%86%e4%bd%8d%e6%95%b0%e5%92%8c%e6%a1%b6%e5%88%86%e6%9e%90" class="heading-mark"></a>10.3.2 分位数和桶分析</h3><p>我曾在第8章中讲过，pandas有一些能根据指定面元或样本分位数将数据拆分成多块的工具（比如cut和qcut）。将这些函数跟groupby结合起来，就能非常轻松地实现对数据集的桶（bucket）或分位数（quantile）分析了。以下面这个简单的随机数据集为例，我们利用cut将其装入长度相等的桶中：</p>
 <div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1681,8 +1676,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">9</span>      <span class="mf">100.0</span>  <span class="mf">2.377020</span>  <span class="mf">0.220122</span> <span class="o">-</span><span class="mf">2.064111</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们会在第12章详细讲解pandas的Categorical类型。</p>
-<h3 id="1033-示例用特定于分组的值填充缺失值">10.3.3 示例：用特定于分组的值填充缺失值</h3>
-<p>对于缺失数据的清理工作，有时你会用dropna将其替换掉，而有时则可能会希望用一个固定值或由数据集本身所衍生出来的值去填充NA值。这时就得使用fillna这个工具了。在下面这个例子中，我用平均值去填充NA值：</p>
+<h3 id="1033-示例用特定于分组的值填充缺失值" class="heading-element">
+  <a href="#1033-%e7%a4%ba%e4%be%8b%e7%94%a8%e7%89%b9%e5%ae%9a%e4%ba%8e%e5%88%86%e7%bb%84%e7%9a%84%e5%80%bc%e5%a1%ab%e5%85%85%e7%bc%ba%e5%a4%b1%e5%80%bc" class="heading-mark"></a>10.3.3 示例：用特定于分组的值填充缺失值</h3><p>对于缺失数据的清理工作，有时你会用dropna将其替换掉，而有时则可能会希望用一个固定值或由数据集本身所衍生出来的值去填充NA值。这时就得使用fillna这个工具了。在下面这个例子中，我用平均值去填充NA值：</p>
 <div class="highlight" id="id-48"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1889,8 +1884,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Idaho</span>        <span class="o">-</span><span class="mf">1.000000</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1034-示例随机采样和排列">10.3.4 示例：随机采样和排列</h3>
-<p>假设你想要从一个大数据集中随机抽取（进行替换或不替换）样本以进行蒙特卡罗模拟（Monte Carlo simulation）或其他分析工作。“抽取”的方式有很多，这里使用的方法是对Series使用sample方法：</p>
+</div><h3 id="1034-示例随机采样和排列" class="heading-element">
+  <a href="#1034-%e7%a4%ba%e4%be%8b%e9%9a%8f%e6%9c%ba%e9%87%87%e6%a0%b7%e5%92%8c%e6%8e%92%e5%88%97" class="heading-mark"></a>10.3.4 示例：随机采样和排列</h3><p>假设你想要从一个大数据集中随机抽取（进行替换或不替换）样本以进行蒙特卡罗模拟（Monte Carlo simulation）或其他分析工作。“抽取”的方式有很多，这里使用的方法是对Series使用sample方法：</p>
 <div class="highlight" id="id-53"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2040,8 +2035,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">KS</span>    <span class="mi">10</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1035-示例分组加权平均数和相关系数">10.3.5 示例：分组加权平均数和相关系数</h3>
-<p>根据groupby的“拆分－应用－合并”范式，可以进行DataFrame的列与列之间或两个Series之间的运算（比如分组加权平均）。以下面这个数据集为例，它含有分组键、值以及一些权重值：</p>
+</div><h3 id="1035-示例分组加权平均数和相关系数" class="heading-element">
+  <a href="#1035-%e7%a4%ba%e4%be%8b%e5%88%86%e7%bb%84%e5%8a%a0%e6%9d%83%e5%b9%b3%e5%9d%87%e6%95%b0%e5%92%8c%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0" class="heading-mark"></a>10.3.5 示例：分组加权平均数和相关系数</h3><p>根据groupby的“拆分－应用－合并”范式，可以进行DataFrame的列与列之间或两个Series之间的运算（比如分组加权平均）。以下面这个数据集为例，它含有分组键、值以及一些权重值：</p>
 <div class="highlight" id="id-58"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2237,8 +2232,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2011</span>    <span class="mf">0.581987</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="1036-示例组级别的线性回归">10.3.6 示例：组级别的线性回归</h3>
-<p>顺着上一个例子继续，你可以用groupby执行更为复杂的分组统计分析，只要函数返回的是pandas对象或标量值即可。例如，我可以定义下面这个regress函数（利用statsmodels计量经济学库）对各数据块执行普通最小二乘法（Ordinary Least Squares，OLS）回归：</p>
+</div><h3 id="1036-示例组级别的线性回归" class="heading-element">
+  <a href="#1036-%e7%a4%ba%e4%be%8b%e7%bb%84%e7%ba%a7%e5%88%ab%e7%9a%84%e7%ba%bf%e6%80%a7%e5%9b%9e%e5%bd%92" class="heading-mark"></a>10.3.6 示例：组级别的线性回归</h3><p>顺着上一个例子继续，你可以用groupby执行更为复杂的分组统计分析，只要函数返回的是pandas对象或标量值即可。例如，我可以定义下面这个regress函数（利用statsmodels计量经济学库）对各数据块执行普通最小二乘法（Ordinary Least Squares，OLS）回归：</p>
 <div class="highlight" id="id-65"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2288,9 +2283,9 @@
 </span></span><span class="line"><span class="cl"><span class="mi">2010</span>  <span class="mf">1.052608</span>   <span class="mf">0.001261</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2011</span>  <span class="mf">0.806605</span>   <span class="mf">0.001514</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="104-透视表和交叉表">10.4 透视表和交叉表</h2>
-<h3 id="1041-透视表pivot">10.4.1 透视表：pivot</h3>
-<p>透视表（pivot table）是各种电子表格程序和其他数据分析软件中一种常见的数据汇总工具。它根据一个或多个键对数据进行聚合，并根据行和列上的分组键将数据分配到各个矩形区域中。在Python和pandas中，可以通过本章所介绍的groupby功能以及（能够利用层次化索引的）重塑运算制作透视表。DataFrame有一个pivot_table方法，此外还有一个顶级的pandas.pivot_table函数。除能为groupby提供便利之外，pivot_table还可以添加分项小计，也叫做margins。</p>
+</div><h2 id="104-透视表和交叉表" class="heading-element">
+  <a href="#104-%e9%80%8f%e8%a7%86%e8%a1%a8%e5%92%8c%e4%ba%a4%e5%8f%89%e8%a1%a8" class="heading-mark"></a>10.4 透视表和交叉表</h2><h3 id="1041-透视表pivot" class="heading-element">
+  <a href="#1041-%e9%80%8f%e8%a7%86%e8%a1%a8pivot" class="heading-mark"></a>10.4.1 透视表：pivot</h3><p>透视表（pivot table）是各种电子表格程序和其他数据分析软件中一种常见的数据汇总工具。它根据一个或多个键对数据进行聚合，并根据行和列上的分组键将数据分配到各个矩形区域中。在Python和pandas中，可以通过本章所介绍的groupby功能以及（能够利用层次化索引的）重塑运算制作透视表。DataFrame有一个pivot_table方法，此外还有一个顶级的pandas.pivot_table函数。除能为groupby提供便利之外，pivot_table还可以添加分项小计，也叫做margins。</p>
 <p>回到小费数据集，假设我想要根据day和smoker计算分组平均数（pivot_table的默认聚合类型），并将day和smoker放到行上：</p>
 <div class="highlight" id="id-67"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2471,9 +2466,9 @@
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">21</span> <span class="n">rows</span> <span class="n">x</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>pivot_table的参数说明请参见表10-2。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=large 2x" sizes="auto" data-title="表10-2 pivot_table的选项" data-alt="表10-2 pivot_table的选项" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="1042-交叉表crosstab">10.4.2 交叉表：crosstab</h3>
-<p>交叉表（cross-tabulation，简称crosstab）是一种用于计算分组频率的特殊透视表。看下面的例子：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png" alt="表10-2 pivot_table的选项" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201030001248831.png?size=large 2x" sizes="auto" data-title="表10-2 pivot_table的选项" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="1042-交叉表crosstab" class="heading-element">
+  <a href="#1042-%e4%ba%a4%e5%8f%89%e8%a1%a8crosstab" class="heading-mark"></a>10.4.2 交叉表：crosstab</h3><p>交叉表（cross-tabulation，简称crosstab）是一种用于计算分组频率的特殊透视表。看下面的例子：</p>
 <div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2553,8 +2548,8 @@
 </span></span><span class="line"><span class="cl">       <span class="n">Thur</span>   <span class="mi">44</span>   <span class="mi">17</span>   <span class="mi">61</span>
 </span></span><span class="line"><span class="cl"><span class="n">All</span>          <span class="mi">151</span>   <span class="mi">93</span>  <span class="mi">244</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="105-总结">10.5 总结</h2>
-<p>掌握pandas数据分组工具既有助于数据清理，也有助于建模或统计分析工作。在第14章，我们会看几个例子，对真实数据使用groupby。</p>
+</div><h2 id="105-总结" class="heading-element">
+  <a href="#105-%e6%80%bb%e7%bb%93" class="heading-mark"></a>10.5 总结</h2><p>掌握pandas数据分组工具既有助于数据清理，也有助于建模或统计分析工作。在第14章，我们会看几个例子，对真实数据使用groupby。</p>
 <p>在下一章，我们将关注时间序列数据。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -2562,33 +2557,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" data-title="第十章 数据聚合与分组运算" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/" data-title="第十章 数据聚合与分组运算" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
   <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/" class="post-nav-item" rel="prev" title="第四章 Numpy 基础"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第四章 Numpy 基础</a>
-      <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" class="post-nav-item" rel="next" title="第十一章 时间序列">第十一章 时间序列<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+      <a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/" class="post-nav-item" rel="next" title="第十章 进程和线程">第十章 进程和线程<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

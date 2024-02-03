@@ -90,6 +90,6 @@ B 技术都在 PPT 里，A4 纸雕花匠，骗补助，骗补贴
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/012-what-are-the-areas-where-audit-fraud-frequently-occurs-and-what-are-the-reporting-items/  
 

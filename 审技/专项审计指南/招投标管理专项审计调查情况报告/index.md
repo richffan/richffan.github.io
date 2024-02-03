@@ -59,6 +59,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E7%AE%A1%E7%90%86%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E8%B0%83%E6%9F%A5%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/  
 

@@ -6,11 +6,11 @@ Go 语言的设计者认为 `try/catch` 机制使用过于泛滥，而且从底�
 
 我们通过调用 `pack1` 包中的 `Func1` 函数来了解 Go 语言中的错误处理方式：
 
-> `Func1`返回了两个值，一个 `value`和 `err`，`err` 是错误对象，若 `err` 不为 `nil`（`nil` 是**空**的意思，类似于 `Java` 中的 `null`），则进行错误处理，打印出具体错误信息。
+&gt; `Func1`返回了两个值，一个 `value`和 `err`，`err` 是错误对象，若 `err` 不为 `nil`（`nil` 是**空**的意思，类似于 `Java` 中的 `null`），则进行错误处理，打印出具体错误信息。
 
 ```go
 if value, err := pack1.Func1(param1); err != nil {
-    fmt.Printf("Error %s in pack1.Func1 with parameter %v", err.Error(), param1)
+    fmt.Printf(&#34;Error %s in pack1.Func1 with parameter %v&#34;, err.Error(), param1)
     return    // or: return err
 }
 ```
@@ -30,7 +30,7 @@ type error interface {
 可以通过 `errors` 包中 `New()` 函数传递错误信息，从而自定义错误，如下：
 
 ```go
-err := errors.New("square root of negative number")
+err := errors.New(&#34;square root of negative number&#34;)
 ```
 
 我们来看一个例子：
@@ -39,14 +39,14 @@ err := errors.New("square root of negative number")
 package main
 
 import (
-    "errors"
-    "fmt"
+    &#34;errors&#34;
+    &#34;fmt&#34;
 )
 
-var errNotFound = errors.New("not found error")
+var errNotFound = errors.New(&#34;not found error&#34;)
 
 func main() {
-    fmt.Printf("Error: %v", errNotFound)
+    fmt.Printf(&#34;Error: %v&#34;, errNotFound)
 }
 ```
 
@@ -60,20 +60,20 @@ func main() {
 package main
 
 import (
-    "errors"
-    "fmt"
-    "math"
+    &#34;errors&#34;
+    &#34;fmt&#34;
+    &#34;math&#34;
 )
 
 // 自定义错误
-var errSqrtNegative = errors.New("square root of negative number")
+var errSqrtNegative = errors.New(&#34;square root of negative number&#34;)
 
 /*
 求平方根：
 若传入数据小于 0，返回 0 和错误；否则，返回平方根结果和 nil
 */
 func sqrt(x float64) (float64, error) {
-    if x < 0 {
+    if x &lt; 0 {
         return 0, errSqrtNegative
     }
     return math.Sqrt(x), nil
@@ -81,15 +81,15 @@ func sqrt(x float64) (float64, error) {
 
 func main() {
     x, err := sqrt(-1)
-    fmt.Printf("x: %v\n", x)
+    fmt.Printf(&#34;x: %v\n&#34;, x)
     if err != nil { // 若错误不为空，进行错误处理
-        fmt.Printf("error: %v\n", err.Error())
+        fmt.Printf(&#34;error: %v\n&#34;, err.Error())
     }
 
     x, err = sqrt(9)
-    fmt.Printf("x: %v\n", x)
+    fmt.Printf(&#34;x: %v\n&#34;, x)
     if err != nil {
-        fmt.Printf("error: %v\n", err.Error())
+        fmt.Printf(&#34;error: %v\n&#34;, err.Error())
     }
 }
 ```
@@ -98,8 +98,8 @@ func main() {
 
 ![image.png](https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png)
 
-> ***注意***：一般错误信息都会有 `Error` 前缀，因此错误信息不要以大写字母开头。
->
+&gt; ***注意***：一般错误信息都会有 `Error` 前缀，因此错误信息不要以大写字母开头。
+&gt;
 
 自定义错误类型中可以包含错误信息以外的其他信息，我们来看下 `os.Open` 操作触发的 `PathError` 错误：
 
@@ -112,7 +112,7 @@ type PathError struct {
 }
 
 func (e *PathError) String() string {
-    return e.Op + " " + e.Path + ": "+ e.Err.Error()
+    return e.Op &#43; &#34; &#34; &#43; e.Path &#43; &#34;: &#34;&#43; e.Err.Error()
 }
 ```
 
@@ -133,7 +133,7 @@ switch err := err.(type) {
     case PathError:
         // ...
     default:
-        fmt.Printf("not a special error, just %v\n", err)
+        fmt.Printf(&#34;not a special error, just %v\n&#34;, err)
 }
 ```
 
@@ -142,8 +142,8 @@ switch err := err.(type) {
 可以通过 `fmt.Errorf()` 来创建错误对象，用法类似于 `fmt.Printf()`，可以用占位符来格式化输出，例如：
 
 ```go
-if f < 0 {
-    return 0, fmt.Errorf("math: square root of negative number %g", f)
+if f &lt; 0 {
+    return 0, fmt.Errorf(&#34;math: square root of negative number %g&#34;, f)
 }
 ```
 
@@ -158,12 +158,12 @@ if f < 0 {
 ```go
 package main
 
-import "fmt"
+import &#34;fmt&#34;
 
 func main() {
-    fmt.Println("Starting the program")
-    panic("A severe error occurred: stopping the program!")
-    fmt.Println("Ending the program")
+    fmt.Println(&#34;Starting the program&#34;)
+    panic(&#34;A severe error occurred: stopping the program!&#34;)
+    fmt.Println(&#34;Ending the program&#34;)
 }
 ```
 
@@ -185,11 +185,11 @@ func main() {
 package main
 
 import (
-    "fmt"
+    &#34;fmt&#34;
 )
 
 func badCall() {
-    panic("bad end")
+    panic(&#34;bad end&#34;)
 }
 
 func test() {
@@ -197,17 +197,17 @@ func test() {
     defer func() {
 	    // 用 recover 接收 panic 错误信息
         if e := recover(); e != nil {
-            fmt.Printf("Panicing %s\r\n", e)
+            fmt.Printf(&#34;Panicing %s\r\n&#34;, e)
         }
     }()
     badCall()
-    fmt.Printf("After bad call\r\n")
+    fmt.Printf(&#34;After bad call\r\n&#34;)
 }
 
 func main() {
-    fmt.Printf("Calling test\r\n")
+    fmt.Printf(&#34;Calling test\r\n&#34;)
     test()
-    fmt.Printf("Test completed\r\n")
+    fmt.Printf(&#34;Test completed\r\n&#34;)
 }
 ```
 
@@ -255,7 +255,7 @@ fType1 = func f(a type1, b type2)
       return func(a type1, b type2) {
           defer func() {
               if e, ok := recover().(error); ok {
-                  log.Printf("run time panic: %v", err)
+                  log.Printf(&#34;run time panic: %v&#34;, err)
               } 
           }()
           fn(a, b) 
@@ -282,6 +282,6 @@ func f1(a type1, b type2) {
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/  
 

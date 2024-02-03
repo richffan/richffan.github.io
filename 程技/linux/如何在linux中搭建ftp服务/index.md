@@ -3,7 +3,7 @@
 ### 什么是 FTP
 `FTP` 是文件传输协议File Transfer Protocol的缩写。顾名思义，FTP用于计算机之间通过网络进行文件传输。你可以通过FTP在计算机账户间进行文件传输，也可以在账户和桌面计算机之间传输文件，或者访问在线软件归档。但是，需要注意的是多数的FTP站点的使用率非常高，可能需要多次重连才能连接上。
 
-<!--more-->
+&lt;!--more--&gt;
 
 FTP地址和HTTP地址（即网页地址）非常相似，只是FTP地址使用 `ftp://前缀而不是http://`
 
@@ -73,6 +73,6 @@ $ sudo systemctl restart vsftpd
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1/  
 

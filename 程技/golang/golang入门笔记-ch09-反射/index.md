@@ -26,14 +26,14 @@ func ValueOf(i interface{}) Value
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 func main() {
 	t := reflect.TypeOf(3)  // a reflect.Type
-	fmt.Println(t.String()) // "int"
-	fmt.Println(t)          // "int"
+	fmt.Println(t.String()) // &#34;int&#34;
+	fmt.Println(t)          // &#34;int&#34;
 }
 ```
 
@@ -43,15 +43,15 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"io"
-	"os"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;io&#34;
+	&#34;os&#34;
+	&#34;reflect&#34;
 )
 
 func main() {
 	var w io.Writer = os.Stdout
-	fmt.Println(reflect.TypeOf(w)) // "*os.File"
+	fmt.Println(reflect.TypeOf(w)) // &#34;*os.File&#34;
 }
 ```
 
@@ -61,8 +61,8 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 type Enum int // 自定义类型 Enum
@@ -86,8 +86,8 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 type Enum int // 自定义类型 Enum
@@ -96,8 +96,8 @@ func main() {
 	var x Enum = 2
 	v := reflect.ValueOf(x)
 
-	fmt.Printf("%v\n", v)                  // 2
-	fmt.Printf("%v", v.Interface().(Enum)) // 2
+	fmt.Printf(&#34;%v\n&#34;, v)                  // 2
+	fmt.Printf(&#34;%v&#34;, v.Interface().(Enum)) // 2
 }
 ```
 
@@ -108,7 +108,7 @@ func main() {
 ```go
 package main
 
-import "reflect"
+import &#34;reflect&#34;
 
 func main() {
 	var x int = 2
@@ -126,15 +126,15 @@ func main() {
 
 我们可以利用 `CanSet()` 函数判断变量是否可设置：
 
-> 若 `CanSet()` 返回 false，表明变量无法设置；`true` 表可设置。
->
+&gt; 若 `CanSet()` 返回 false，表明变量无法设置；`true` 表可设置。
+&gt;
 
 ```go
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 func main() {
@@ -148,27 +148,27 @@ func main() {
 
 要让 `v` 可设置，我们可以使用 `Elem()` 方法，相当于间接使用指针：
 
-> `v := reflect.ValueOf(x)` 只是传递了 `x` 的拷贝，修改 `v` 并无法修改原始的 `x`；若要使修改 `v` 也能作用到 `x` 上，需要传递 `x` 的引用：`v := reflect.ValueOf(&x)`。
->
+&gt; `v := reflect.ValueOf(x)` 只是传递了 `x` 的拷贝，修改 `v` 并无法修改原始的 `x`；若要使修改 `v` 也能作用到 `x` 上，需要传递 `x` 的引用：`v := reflect.ValueOf(&amp;x)`。
+&gt;
 
 ```go
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 func main() {
 	var x = 2
 	v := reflect.ValueOf(x)
-	fmt.Printf("setAbility of v: %v\n", v.CanSet())
+	fmt.Printf(&#34;setAbility of v: %v\n&#34;, v.CanSet())
 
-	v = reflect.ValueOf(&x)
-	fmt.Printf("setAbility of v: %v\n", v.CanSet())
+	v = reflect.ValueOf(&amp;x)
+	fmt.Printf(&#34;setAbility of v: %v\n&#34;, v.CanSet())
 
 	v = v.Elem()
-	fmt.Printf("setAbility of v: %v\n", v.CanSet())
+	fmt.Printf(&#34;setAbility of v: %v\n&#34;, v.CanSet())
 
 	v.SetInt(3)
 	fmt.Println(v)
@@ -211,31 +211,31 @@ type StructField struct {
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 type Cat struct {
 	Name string
-	Type int `json:"type" id:"66"`
+	Type int `json:&#34;type&#34; id:&#34;66&#34;`
 }
 
 func main() {
-	cat := Cat{Name: "Kim", Type: 1} // 创建结构体实例
+	cat := Cat{Name: &#34;Kim&#34;, Type: 1} // 创建结构体实例
 	typeOfCat := reflect.TypeOf(cat) // 获取结构体实例的反射类型对象
 
 	// 遍历结构体所有成员
-	for i := 0; i < typeOfCat.NumField(); i++ {
+	for i := 0; i &lt; typeOfCat.NumField(); i&#43;&#43; {
 		// 获取字段类型
 		fieldType := typeOfCat.Field(i)
 		// 输出成员名称和 tag
-		fmt.Printf("name: %v tag: %v\n", fieldType.Name, fieldType.Tag)
+		fmt.Printf(&#34;name: %v tag: %v\n&#34;, fieldType.Name, fieldType.Tag)
 	}
 
 	// 通过字段名, 找到字段类型信息
-	if catType, ok := typeOfCat.FieldByName("Type"); ok {
+	if catType, ok := typeOfCat.FieldByName(&#34;Type&#34;); ok {
 		// 根据名称获取对应 tag
-		fmt.Println(catType.Tag.Get("json"), catType.Tag.Get("id"))
+		fmt.Println(catType.Tag.Get(&#34;json&#34;), catType.Tag.Get(&#34;id&#34;))
 	}
 }
 ```
@@ -250,19 +250,19 @@ func main() {
 package main
 
 import (
-	"reflect"
+	&#34;reflect&#34;
 )
 
 type Cat struct {
 	name string
-	Type int `json:"type" id:"66"`
+	Type int `json:&#34;type&#34; id:&#34;66&#34;`
 }
 
 func main() {
-	cat := Cat{name: "Kim", Type: 1} // 创建结构体实例
-	valOfCat := reflect.ValueOf(&cat).Elem() // 通过 Elem() 获取 &cat 的指针实例
+	cat := Cat{name: &#34;Kim&#34;, Type: 1} // 创建结构体实例
+	valOfCat := reflect.ValueOf(&amp;cat).Elem() // 通过 Elem() 获取 &amp;cat 的指针实例
 
-	valOfCat.Field(0).SetString("Mi") // 修改 name 字段的值
+	valOfCat.Field(0).SetString(&#34;Mi&#34;) // 修改 name 字段的值
 }
 ```
 
@@ -276,20 +276,20 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"reflect"
+	&#34;fmt&#34;
+	&#34;reflect&#34;
 )
 
 type Cat struct {
 	Name string
-	Type int `json:"type" id:"66"`
+	Type int `json:&#34;type&#34; id:&#34;66&#34;`
 }
 
 func main() {
-	cat := Cat{Name: "Kim", Type: 1} // 创建结构体实例
-	valOfCat := reflect.ValueOf(&cat).Elem() // 通过 Elem() 获取 &cat 的指针实例
+	cat := Cat{Name: &#34;Kim&#34;, Type: 1} // 创建结构体实例
+	valOfCat := reflect.ValueOf(&amp;cat).Elem() // 通过 Elem() 获取 &amp;cat 的指针实例
 
-	valOfCat.Field(0).SetString("Mi") // 修改 Name 字段的值
+	valOfCat.Field(0).SetString(&#34;Mi&#34;) // 修改 Name 字段的值
 	fmt.Println(valOfCat.Field(0))
 }
 ```
@@ -298,11 +298,11 @@ func main() {
 
 ![image.png](https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/10/20/20201020144126.png)
 
-> ***注意***：虽然反射在某些场合下很好用，但反射较损耗性能，因此在性能需求较高和高并发的场景下，应尽量避免使用反射。
+&gt; ***注意***：虽然反射在某些场合下很好用，但反射较损耗性能，因此在性能需求较高和高并发的场景下，应尽量避免使用反射。
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/  
 

@@ -16,7 +16,7 @@
 
 ```vb
 Sub 方法一()
-    Range("f1:h18").RemoveDuplicates Array(1, 2), xlYes
+    Range(&#34;f1:h18&#34;).RemoveDuplicates Array(1, 2), xlYes
 End Sub
 ```
 
@@ -27,21 +27,21 @@ Sub 方法二第一次出现的值()
     Dim i, j, k
     Dim ar, br()
 
-    ar = Range("a1:c18")
+    ar = Range(&#34;a1:c18&#34;)
     ReDim br(1 To UBound(ar), 1 To UBound(ar, 2))
 
     Dim d As Object, kw$
-    Set d = CreateObject("Scripting.Dictionary")
-    'd.CompareMode = vbTextCompare '不区分大小写
+    Set d = CreateObject(&#34;Scripting.Dictionary&#34;)
+    &#39;d.CompareMode = vbTextCompare &#39;不区分大小写
 
     For i = 1 To UBound(ar)
-        kw = ar(i, 1) & ar(i, 2)
+        kw = ar(i, 1) &amp; ar(i, 2)
         If Not d.exists(kw) Then
-            k = k + 1
+            k = k &#43; 1
             For j = 1 To UBound(br, 2)
                 br(k, j) = ar(i, j)
             Next j
-            d(kw) = ""
+            d(kw) = &#34;&#34;
         End If
     Next i
 
@@ -57,21 +57,21 @@ Sub 方法二最后值()
     Dim i, j, k
     Dim ar, br()
 
-    ar = Range("a1:c18")
+    ar = Range(&#34;a1:c18&#34;)
     ReDim br(1 To UBound(ar), 1 To UBound(ar, 2))
 
     Dim d As Object, kw$
-    Set d = CreateObject("Scripting.Dictionary")
-    'd.CompareMode = vbTextCompare '不区分大小写
+    Set d = CreateObject(&#34;Scripting.Dictionary&#34;)
+    &#39;d.CompareMode = vbTextCompare &#39;不区分大小写
 
     For i = 1 To UBound(ar)
-        kw = ar(i, 1) & ar(i, 2)
+        kw = ar(i, 1) &amp; ar(i, 2)
         d(kw) = i
     Next i
 
     Dim dickey
     For Each dickey In d.keys
-        k = k + 1
+        k = k &#43; 1
         For j = 1 To UBound(br, 2)
             br(k, j) = ar(d(dickey), j)
         Next j
@@ -82,10 +82,10 @@ Sub 方法二最后值()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485123&idx=1&sn=74578fe8bd5288519db8f509207b0caf&chksm=e8bccf94dfcb468231cb18e7d79f65bd75b01a4636fd0523cb5f36f565447027255b915e52e9&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485123&amp;idx=1&amp;sn=74578fe8bd5288519db8f509207b0caf&amp;chksm=e8bccf94dfcb468231cb18e7d79f65bd75b01a4636fd0523cb5f36f565447027255b915e52e9&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/  
 

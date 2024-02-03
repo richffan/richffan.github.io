@@ -2,50 +2,52 @@
   <channel>
     <title>docker - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/docker/</link>
-    <description>docker - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Tue, 01 Sep 2020 22:11:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <description>docker - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 01 Sep 2020 22:11:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/docker/" rel="self" type="application/rss+xml" /><item>
   <title>Docker 技术整理</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</link>
   <pubDate>Tue, 01 Sep 2020 22:11:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</guid>
-  <description><![CDATA[<h3 id="一概述">一、概述</h3>
-<h4 id="11-什么是docker">1.1 什么是docker</h4>
-<p>Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议</p>]]></description>
+  <description><![CDATA[<h3 id="一概述" class="heading-element">
+  <a href="#%e4%b8%80%e6%a6%82%e8%bf%b0" class="heading-mark"></a>一、概述</h3><h4 id="11-什么是docker" class="heading-element">
+  <a href="#11-%e4%bb%80%e4%b9%88%e6%98%afdocker" class="heading-mark"></a>1.1 什么是docker</h4><p>Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议</p>]]></description>
 </item>
 <item>
   <title>docker报错集锦</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E6%8A%A5%E9%94%99%E9%9B%86%E9%94%A6/</link>
   <pubDate>Mon, 25 Sep 2017 10:03:50 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E6%8A%A5%E9%94%99%E9%9B%86%E9%94%A6/</guid>
-  <description><![CDATA[<h3 id="docker创建容器">docker创建容器</h3>]]></description>
+  <description><![CDATA[<h3 id="docker创建容器" class="heading-element">
+  <a href="#docker%e5%88%9b%e5%bb%ba%e5%ae%b9%e5%99%a8" class="heading-mark"></a>docker创建容器</h3>]]></description>
 </item>
 <item>
   <title>docker备份恢复之save与export</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-save-%E4%B8%8E-docker-export/</link>
   <pubDate>Mon, 18 Sep 2017 22:38:52 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-save-%E4%B8%8E-docker-export/</guid>
-  <description><![CDATA[<h3 id="docker-save">docker save</h3>]]></description>
+  <description><![CDATA[<h3 id="docker-save" class="heading-element">
+  <a href="#docker-save" class="heading-mark"></a>docker save</h3>]]></description>
 </item>
 <item>
   <title>进入docker容器命令制作</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E8%BF%9B%E5%85%A5docker%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4%E5%88%B6%E4%BD%9C/</link>
   <pubDate>Thu, 01 Jun 2017 17:25:11 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E8%BF%9B%E5%85%A5docker%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4%E5%88%B6%E4%BD%9C/</guid>
-  <description><![CDATA[<h3 id="通过attach进入容器">通过attach进入容器</h3>]]></description>
+  <description><![CDATA[<h3 id="通过attach进入容器" class="heading-element">
+  <a href="#%e9%80%9a%e8%bf%87attach%e8%bf%9b%e5%85%a5%e5%ae%b9%e5%99%a8" class="heading-mark"></a>通过attach进入容器</h3>]]></description>
 </item>
 <item>
   <title>docker数据管理</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/</link>
   <pubDate>Tue, 23 May 2017 21:43:06 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/</guid>
-  <description><![CDATA[<h3 id="数据卷">数据卷</h3>
-<p>数据卷是一个可供一个或多个容器使用的特殊目录，它绕过 UFS，可以提供很多有用的特性：</p>
+  <description><![CDATA[<h3 id="数据卷" class="heading-element">
+  <a href="#%e6%95%b0%e6%8d%ae%e5%8d%b7" class="heading-mark"></a>数据卷</h3><p>数据卷是一个可供一个或多个容器使用的特殊目录，它绕过 UFS，可以提供很多有用的特性：</p>
 <ul>
 <li>数据卷可以在容器之间共享和重用</li>
 <li>对数据卷的修改会立马生效</li>
@@ -57,26 +59,26 @@
   <title>docker容器</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%AE%B9%E5%99%A8/</link>
   <pubDate>Tue, 23 May 2017 21:29:38 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%AE%B9%E5%99%A8/</guid>
-  <description><![CDATA[<h3 id="容器">容器</h3>
-<p>镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。</p>
+  <description><![CDATA[<h3 id="容器" class="heading-element">
+  <a href="#%e5%ae%b9%e5%99%a8" class="heading-mark"></a>容器</h3><p>镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。</p>
 <p>容器的实质是进程，但与直接在宿主执行的进程不同，容器进程运行于属于自己的独立的 命名空间。因此容器可以拥有自己的 root 文件系统、自己的网络配置、自己的进程空间，甚至自己的用户 ID 空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样。这种特性使得容器封装的应用比直接在宿主运行更加安全。</p>]]></description>
 </item>
 <item>
   <title>docker仓库</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E4%BB%93%E5%BA%93/</link>
   <pubDate>Tue, 23 May 2017 21:15:52 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E4%BB%93%E5%BA%93/</guid>
-  <description><![CDATA[<h3 id="docker-hub">Docker Hub</h3>
-<p>目前 Docker 官方维护了一个公共仓库 <a href="https://hub.docker.com/"target="_blank" rel="external nofollow noopener noreferrer">Docker Hub</a>，其中已经包括了超过 15,000 的镜像。大部分需求，都可以通过在 Docker Hub 中直接下载镜像来实现。</p>]]></description>
+  <description><![CDATA[<h3 id="docker-hub" class="heading-element">
+  <a href="#docker-hub" class="heading-mark"></a>Docker Hub</h3><p>目前 Docker 官方维护了一个公共仓库 <a href="https://hub.docker.com/"target="_blank" rel="external nofollow noopener noreferrer">Docker Hub</a>，其中已经包括了超过 15,000 的镜像。大部分需求，都可以通过在 Docker Hub 中直接下载镜像来实现。</p>]]></description>
 </item>
 <item>
   <title>Dockerfile指令详解</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
   <pubDate>Mon, 22 May 2017 19:11:42 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</guid>
   <description><![CDATA[<p><code>Dockerfile</code> 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。</p>]]></description>
 </item>
@@ -84,21 +86,21 @@
   <title>docker镜像</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E9%95%9C%E5%83%8F/</link>
   <pubDate>Fri, 19 May 2017 16:47:33 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E9%95%9C%E5%83%8F/</guid>
-  <description><![CDATA[<h3 id="what">What</h3>
-<p>Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。</p>
+  <description><![CDATA[<h3 id="what" class="heading-element">
+  <a href="#what" class="heading-mark"></a>What</h3><p>Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。</p>
 <p>因为镜像包含操作系统完整的 root 文件系统，其体积往往是庞大的，因此在 Docker 设计时，就充分利用 Union FS 的技术，将其设计为分层存储的架构。所以严格来说，镜像并非是像一个 ISO 那样的打包文件，镜像只是一个虚拟的概念，其实际体现并非由一个文件组成，而是由一组文件系统组成，或者说，由多层文件系统联合组成。</p>]]></description>
 </item>
 <item>
   <title>docker初体验</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
   <pubDate>Fri, 19 May 2017 16:32:23 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
-  <description><![CDATA[<h3 id="安装">安装</h3>
-<h4 id="笔者环境">笔者环境</h4>
-<p>操作系统：deepin 15.4 Desktop 64Bit</p>]]></description>
+  <description><![CDATA[<h3 id="安装" class="heading-element">
+  <a href="#%e5%ae%89%e8%a3%85" class="heading-mark"></a>安装</h3><h4 id="笔者环境" class="heading-element">
+  <a href="#%e7%ac%94%e8%80%85%e7%8e%af%e5%a2%83" class="heading-mark"></a>笔者环境</h4><p>操作系统：deepin 15.4 Desktop 64Bit</p>]]></description>
 </item>
 </channel>
 </rss>

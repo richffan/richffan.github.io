@@ -50,7 +50,7 @@
 
 无需过质控的底稿，**刷个三表** or 直接拿空白底稿归档
 
-直接拿企业明细，抄一版报表+附注，**一数不核**
+直接拿企业明细，抄一版报表&#43;附注，**一数不核**
 
 大额流水检查，排完序后，对应不上的 or 非一一对应的**直接删除**
 
@@ -82,6 +82,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/015-common-means-and-methods-of-putting-aircraft/  
 

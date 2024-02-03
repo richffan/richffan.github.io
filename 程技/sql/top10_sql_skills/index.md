@@ -22,7 +22,7 @@ create table cm.tb_user(
 -- bad
 create table cm.tb_user(
     id int primary key ,
-    name varchar(255) not null default 'NULL',
+    name varchar(255) not null default &#39;NULL&#39;,
     age int,
     gender varchar(16),
     create_time datetime default now(),
@@ -31,7 +31,7 @@ create table cm.tb_user(
 -- good
 create table cm.tb_user(
     id int primary key ,
-    name varchar(255) not null default '-',
+    name varchar(255) not null default &#39;-&#39;,
     age int,
     gender varchar(16),
     store_time datetime default now(),
@@ -40,13 +40,13 @@ create table cm.tb_user(
 
 -- 03
 -- bad
-select min(age), max(age) from cm.tb_user where age < 40 group by gender;
+select min(age), max(age) from cm.tb_user where age &lt; 40 group by gender;
 -- good
 select
     min(age),
     max(age)
 from cm.tb_user
-where age < 40
+where age &lt; 40
 group by gender;
 
 -- 04
@@ -54,26 +54,26 @@ group by gender;
 select id,
        name
 from cm.tb_user
-where age > 10
-  and id<=10010;
+where age &gt; 10
+  and id&lt;=10010;
 -- good
 select id,
        name
 from cm.tb_user
 where 1=1
-  and age > 10
-  and id<=10010;
+  and age &gt; 10
+  and id&lt;=10010;
 
 -- 05
 -- bad
 insert into cm.tb_user
 values
-    (1001, 'Mike', 20, 'M');
+    (1001, &#39;Mike&#39;, 20, &#39;M&#39;);
 -- good
 insert into cm.tb_user
 (id, name, age, gender)
 values
-    (1001, 'Mike', 20, 'M');
+    (1001, &#39;Mike&#39;, 20, &#39;M&#39;);
 
 -- 06
 -- good
@@ -92,24 +92,24 @@ select id,
 from cm.tb_user;
 
 -- 08
--- 分批次+limit进行delete或update
+-- 分批次&#43;limit进行delete或update
 delete
 from cm.tb_user
-where age > 35
+where age &gt; 35
 limit 5;
 
 -- 09
 -- bad
 delete from cm.tb_user
-where age <= 20;
+where age &lt;= 20;
 update cm.tb_user
-set age = age + 1;
+set age = age &#43; 1;
 -- good
 begin;
 delete from cm.tb_user
-where age <= 20;
+where age &lt;= 20;
 update cm.tb_user
-set age = age + 1;
+set age = age &#43; 1;
 commit;
 
 -- 10
@@ -117,17 +117,17 @@ commit;
 insert into cm.data_count
 (dt, count)
 values
-    ('2023-06-20', 101),
-    ('2023-06-21', 231),
-    ('2023-06-22', 170),
-    ('2023-06-23', 146),
-    ('2023-06-24', 187),
-    ('2023-06-25', 123),
-    ('2023-06-26', 221),
-    ('2023-06-27', 101),
-    ('2023-06-28', 103),
-    ('2023-06-29', 122),
-    ('2023-06-30', 144);
+    (&#39;2023-06-20&#39;, 101),
+    (&#39;2023-06-21&#39;, 231),
+    (&#39;2023-06-22&#39;, 170),
+    (&#39;2023-06-23&#39;, 146),
+    (&#39;2023-06-24&#39;, 187),
+    (&#39;2023-06-25&#39;, 123),
+    (&#39;2023-06-26&#39;, 221),
+    (&#39;2023-06-27&#39;, 101),
+    (&#39;2023-06-28&#39;, 103),
+    (&#39;2023-06-29&#39;, 122),
+    (&#39;2023-06-30&#39;, 144);
 -- bad
 select dt, count
 from cm.data_count t1;
@@ -142,6 +142,6 @@ on datediff(t1.dt, t2.dt)=7;
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/top10_sql_skills/  
 

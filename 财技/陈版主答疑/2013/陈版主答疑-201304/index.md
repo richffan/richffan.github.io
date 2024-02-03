@@ -377,7 +377,7 @@ A公司财务报表按照持续经营假设编制，报表显示A公司报表日
 
 大疑虑”，这里的“重大疑虑“我的理解就是陈版讲到的“导致对持续经营能力产生疑虑的事项或者情况”，而“持续经营能力存在重大不
 
-确定性”中的不确定性是针对”续经营能力"本身的，所以还有是有所区别的。
+确定性”中的不确定性是针对”续经营能力&#34;本身的，所以还有是有所区别的。
 
 回答人： chenyiwei
 赞同此观点。
@@ -486,7 +486,7 @@ A公司财务报表按照持续经营假设编制，报表显示A公司报表日
 如果上期确认了递延，那本期在考虑非经的所得税影响时，其实双方已经抵消了，因为转回的递延所得税和纳税调减少确认的当期所
 得税正好抵掉。如果原来没有确认递延，那本期就会存在一块纳税调减的部分对应的所得税
 
-<来自中国会计视野网iPhone客户端>
+&lt;来自中国会计视野网iPhone客户端&gt;
 
 回答人： chenyiwei
 
@@ -841,7 +841,7 @@ profits and losses resulting from these transactions is eliminated.） 因此，
 在论坛中搜索有关主题，得到的解释偏向于分类到“支付给职工以及为职工支付的现金”里面, 解释一般是“代扣代缴的所得税并非为企
 
 
-业所承担的税费” 而准则解释中对"支付的各项税费"定义为:本项目反映企业按规定支付的各项税费，包括本期发生并支付的税费，以
+业所承担的税费” 而准则解释中对&#34;支付的各项税费&#34;定义为:本项目反映企业按规定支付的各项税费，包括本期发生并支付的税费，以
 
 及本期支付以 前各期发生的税费和预交的税金，如支付的营业税、增值税、所得税、教育费附加、印花税、房产税、土地增值税、
 
@@ -1391,19 +1391,19 @@ http://finance.sina.com.cn/stock ... 8009.shtml?wbf=more
 
 资金 7.5 （股东需要缴纳的个人所得税） ③ 对会计报表的综合影响：
 
-资产 本年变动 变动小计 负债及权益 本年变动 变动小计 货币资金 +30-4.36（增值税）-2.46（企业所得
+资产 本年变动 变动小计 负债及权益 本年变动 变动小计 货币资金 &#43;30-4.36（增值税）-2.46（企业所得
 
 税）-30-7.5（代扣个人所得税） -14.32 短期借款 应收账款 应付账款 存货 -15.81
 
--15.81 实收资本 未分配利润 +7.37-37.5 -30.13 总计 -30.13 负债及所有者
+-15.81 实收资本 未分配利润 &#43;7.37-37.5 -30.13 总计 -30.13 负债及所有者
 
 权益 -30.13
 
-项 目 利润表净影响数 一、主营业务收入 +25.64 减: 主营业务成本 +15.81 主营业务税金及附加
+项 目 利润表净影响数 一、主营业务收入 &#43;25.64 减: 主营业务成本 &#43;15.81 主营业务税金及附加
 
-二、主营业务利润 +9.83 加: 其他业务利润 减：营业费用 管理费用 四、利润总额 +9.83
+二、主营业务利润 &#43;9.83 加: 其他业务利润 减：营业费用 管理费用 四、利润总额 &#43;9.83
 
-减：所得税费用 +2.46 五、净利润 +7.37
+减：所得税费用 &#43;2.46 五、净利润 &#43;7.37
 
 小结：从以上探讨可看出，上市公司为了把这盒销售价为 30 元的芝麻糊，除了账面成本15.81元外，还需支付的税费为14.31元(分别
 
@@ -1428,7 +1428,7 @@ http://finance.sina.com.cn/stock ... 8009.shtml?wbf=more
 
 当然以上实物股利，对自然人股东，要缴纳个人所得税，按 30 元红利所得、20%税率的话，需缴纳 6 元，如而个人又不想掏钱，上市
 
-公司可对每盒芝麻糊再配套增加发放7.5元现金股利，（30+7.5）共37.5元红利，正好需要缴纳7.5元红利，发放红利时，上市公司所
+公司可对每盒芝麻糊再配套增加发放7.5元现金股利，（30&#43;7.5）共37.5元红利，正好需要缴纳7.5元红利，发放红利时，上市公司所
 作会计分录为：
 
 
@@ -1490,7 +1490,7 @@ http://finance.sina.com.cn/stock ... 8009.shtml?wbf=more
 
 IFRIC17《国际财务报告解释公告第 17 号——对所有者的非货币性资产分配》 2008 年 11 月发布， 2009 年 7 月 1 日生效。(准则原文可到
 
-微盘下载，Hi，推荐文件给你 "ifric17-国际财务报告解释公告第 17 号——对所有者的非货币性资产分配.pdf"
+微盘下载，Hi，推荐文件给你 &#34;ifric17-国际财务报告解释公告第 17 号——对所有者的非货币性资产分配.pdf&#34;
 
 http://vdisk.weibo.com/s/wknC7) IFRIC17明确：当股利已适当地批准且主体无法再作出改变时，则应确认应付股利。股利应按已
 分配资产的公允价值计量，且该金额与已分配资产的原账面金额之间的差额应在主体结算应付股利时计入损益。但不适用于非现金资
@@ -1504,7 +1504,7 @@ http://vdisk.weibo.com/s/wknC7) IFRIC17明确：当股利已适当地批准且�
 
 益，只有在IFRIC 17发布之后才把非货币资产的公允价值和帐面价值之间的差额作为处置损益计入当期损益中。鉴于中国的会计准则
 
-体系目前暂未引入IFRIC 17的对应规定，所以对此需要慎重。一般A+H上市公司为了消除境内外准则差异，可以比照IFRIC 17处理。
+体系目前暂未引入IFRIC 17的对应规定，所以对此需要慎重。一般A&#43;H上市公司为了消除境内外准则差异，可以比照IFRIC 17处理。
 
 2 、如果把处置损益计入当期损益的，则就处置损益的确认这一点而言，对母公司股东的分配和对少数股东的分配并无区别。非货币
 资产的公允价值和应付股利帐面价值之间的差额，因为系直接调整权益，所以应当分别调整归属母公司股东的权益和少数股东权益。
@@ -2338,7 +2338,7 @@ IFRS的财务报表中并不存在因子公司有超额亏损而出现“未确�
 
 2. 资产负债表：因当时转换系统时，原系统本位币就是美金，所以期初用的就是原系统的美金数，然后，后续每月的报表，都以
 
-上期期末余额+当期发生额以当期交易汇率折算成的美金数。
+上期期末余额&#43;当期发生额以当期交易汇率折算成的美金数。
 
 问题： 资产负债表科目美金余额不正确。 我自己想到可能有以下原因：
 
@@ -2356,7 +2356,7 @@ IFRS的财务报表中并不存在因子公司有超额亏损而出现“未确�
 其次，假设变更本位币到人民币是合理的，则需要注意的是：原系统中的美元金额是按照原先交易发生时的历史汇率折算并延续下来
 的（尤其是对其中的非货币性项目），而现在本位币更换为人民币以后，资产和负债折算为美元报表时须按照期末汇率，所以与你采
 
-用的“上期期末余额+当期发生额以当期交易汇率折算成的美金数”的做法必然存在差异，这也就是你所说的“资产负债表科目美金余额
+用的“上期期末余额&#43;当期发生额以当期交易汇率折算成的美金数”的做法必然存在差异，这也就是你所说的“资产负债表科目美金余额
 
 不正确”问题的主要原因。
 
@@ -2460,7 +2460,7 @@ A公司拥有B公司100%的股权，B公司拥有C公司100%股权，现在A公�
 各基金管理公司、基金托管银行：
 为规范证券投资基金会计核算业务，保证基金行业切实执行新会计准则，保护基金份额持有人的合法权益，根据中国证监会《关于基
 
-金管理公司及证券投资基金执行<企业会计准则>的通知》的要求，中国证券业协会于 2007 年 5 月 15 日颁布了《证券投资基金会计核
+金管理公司及证券投资基金执行&lt;企业会计准则&gt;的通知》的要求，中国证券业协会于 2007 年 5 月 15 日颁布了《证券投资基金会计核
 算业务指引》。中国证券投资基金业协会（以下简称协会）根据《中国证券投资基金业协会章程》重新修订了《证券投资基金会计核
 算业务指引》（以下简称《指引》），现予发布。请在证券投资基金执行《企业会计准则》的相关会计核算业务中遵照执行。
 如财政部等有关部门对证券投资基金会计核算另有具体规定，从其规定。
@@ -2812,7 +2812,7 @@ C公司在重组前业务所产生的损益？有无依据？ 2 、如果需要�
 那想请教下陈版主，是不是可以做如下的理解呢：
 因房地产行业的特殊性，根据税局相关要求，纳税人转让土地使用权或销售不动产，采用预收款方式的，其纳税义务发生时间为收到
 
-预收款的当天。因此对于"应交税费"科目，房地产企业日常的账务处理方式为：
+预收款的当天。因此对于&#34;应交税费&#34;科目，房地产企业日常的账务处理方式为：
 
 1 ）计提预售房款相关税金：根据税法规定，房地产企业在收到预收房款的当月将计提相关税金，分录
 
@@ -2948,7 +2948,7 @@ C公司在重组前业务所产生的损益？有无依据？ 2 、如果需要�
 但A股东认为增资前公司的净资产已小于实收资本，A股东享有公司的净资产为 30 ，B股东享有 20 ，本次增资 100 ，其出资比例的计算
 应为：
 
-（30+100）/(50+100)=86.67%，相应B股东的出资比例为1-86.67%=13.33%
+（30&#43;100）/(50&#43;100)=86.67%，相应B股东的出资比例为1-86.67%=13.33%
 
 A股东要求在股东会决议、公司章程中确定其出资比例为86.67%，而不是80%，并且此事项要在验资报告体现，要在工商局作登记。
 
@@ -3145,7 +3145,7 @@ A股东要求在股东会决议、公司章程中确定其出资比例为86.67%�
 回答人： chenyiwei
 
 
-请看这里：http://bbs.esnai.com/forum.php?mod=viewthread&tid=4710452
+请看这里：http://bbs.esnai.com/forum.php?mod=viewthread&amp;tid=4710452
 
 # 854 、不构成企业合并但具有重大影响的股权收购日的判断
 
@@ -3275,7 +3275,7 @@ venture of a member of a group of which the other entity is a member).......
 
 回复 chenyiwei 的帖子
 
-陈老师，本版面的<企业会计准则讲解 2010 》有没有最新的啊。我在本版上找了一个和您前几天发的那个关于长期股权投资 41 页的修改的版
+陈老师，本版面的&lt;企业会计准则讲解 2010 》有没有最新的啊。我在本版上找了一个和您前几天发的那个关于长期股权投资 41 页的修改的版
 
 本不一样 。谢谢。
 
@@ -3457,9 +3457,9 @@ IFRIC Considerations– Item 3: ‘Transitory’ common control是一致的。IF
 
 时间性要求为:在合并日之前，参与合并各方受最终控制方的控制时间在一年以上(含一年)，合并日之后所形成的报告主体受最终控制
 
-方的控制时间也应达到一年以上(含一年)。此外，如果合并交易发生时上市公司与拟收购主体受同一最终控制方控制的时间超过"一
+方的控制时间也应达到一年以上(含一年)。此外，如果合并交易发生时上市公司与拟收购主体受同一最终控制方控制的时间超过&#34;一
 
-年"，还需要根据《企业会计准则解释第 5 号》的相关规定，判断合并交易与之前上市公司与拟收购主体成为同一控制下企业的交易是
+年&#34;，还需要根据《企业会计准则解释第 5 号》的相关规定，判断合并交易与之前上市公司与拟收购主体成为同一控制下企业的交易是
 
 否为一揽子交易。 他们虽然引用了讲解 2010 ，但把讲解中“通常”字样去掉，在实务中做证券类业务应如何把握？
 
@@ -3534,7 +3534,7 @@ A公司未能行使该主导权的原因。
 
 请问：该案例是否适合同一控制合并？合并日为何时？ 母公司长投余额如何确定（1.按净资产份额，2.按实际投入资金
 
-+购买D对C公司的股权按净资产份额+购买丁对C公司股权按公允价值计量的净资产份额，3.按照实收资本份额反映）？
+&#43;购买D对C公司的股权按净资产份额&#43;购买丁对C公司股权按公允价值计量的净资产份额，3.按照实收资本份额反映）？
 
 回答人： chenyiwei
 
@@ -3939,7 +3939,7 @@ A公司购买B公司30%的股权，权益法核算，购买股权支付的代价
 
 对甲公司而言：收到的补价 50 万元÷换入资产的公允价值 450 万元(换入股票投资公允价值 400 万元＋收到的补价 50 万元)＝
 
-11.11％<25％，属于非货币性资产交换。对乙公司而言：支付的补价 50 万元÷换入资产的公允价值 450 万元＝11.11％<25％，属于
+11.11％&lt;25％，属于非货币性资产交换。对乙公司而言：支付的补价 50 万元÷换入资产的公允价值 450 万元＝11.11％&lt;25％，属于
 非货币性资产交换。本例属于以投资性房地产换入以公允价值计量且其变动计入当期损益的金融资产。对甲公司而言，换入交易目的
 的股票投资使得企业可以在希望变现的时候取得现金流量，但风险程度要比租金稍大，用于经营出租目的的公寓楼，可以获得稳定均
 衡的租金流，但是不能满足企业急需大量现金的需要，因此，交易性股票投资带来的未来现金流量在时间、风险方面与用于出租的公
@@ -4161,7 +4161,7 @@ A持有B上市公司15%股权，为第二大股东，其他股权比较分散，
 
 3 发生发行费用 300 万元 非同一控制下： 第一种处理：借：长
 
-期股权投资 18,300 =6000 3+300 贷：股本 6,000 资本公积 -- 股本
+期股权投资 18,300 =6000 3&#43;300 贷：股本 6,000 资本公积 -- 股本
 
 溢价 12,000 银行存款 300 300 万元作为长投成本
 
@@ -4182,7 +4182,7 @@ A持有B上市公司15%股权，为第二大股东，其他股权比较分散，
 
 万元，两种会计处理如下： 第一种处理： 借：长期股权投资
 
-19,050 =25000 0.75+300 贷：股本 6,000 资本公积 -- 股本溢价
+19,050 =25000 0.75&#43;300 贷：股本 6,000 资本公积 -- 股本溢价
 
 12,000 银行存款 300 300 万作为长投成本 营业外收入
 
@@ -4291,7 +4291,7 @@ A持有B上市公司15%股权，为第二大股东，其他股权比较分散，
 
 确认投资收益时应予抵销，同时应当考虑相关固定资产折旧额对损益的影响，即甲企业应当进行的会计处理为： 借：长期股权投资
 
-―― 损益调整 [ （ 1000 － 300+2.5 ） 20%] 1405000 贷：投资收益 1405000 甲企业如存在子公司需编
+―― 损益调整 [ （ 1000 － 300&#43;2.5 ） 20%] 1405000 贷：投资收益 1405000 甲企业如存在子公司需编
 
 制合并财务报表，在合并财务报表中对该未实现内部交易损益应在个别报表已确认投资损益的基础上进行以下调整： 借：营业收入
 
@@ -4499,17 +4499,17 @@ A公司制度规定，在公司工作一年以上的员工，每年可以享受�
 予、分期行权的股权激励计划，每期的结果相对独立，即第一期未达到可行权条件并不会直接导致第二期或第三期不能达到可行权条
 件，因此在会计处理时会将其作为三个独立的股份支付计划处理，即第一个计划的等待期是一年，第二个计划的等待期是两年，第三
 
-个计划的等待期是三年" "从表3 -1中可以看到，公司确认的费用成阶梯型下降，即前期比后期要确认更多的费用。前期费用较高的原
+个计划的等待期是三年&#34; &#34;从表3 -1中可以看到，公司确认的费用成阶梯型下降，即前期比后期要确认更多的费用。前期费用较高的原
 
-因是员工在前期为数个具有不同等待期的奖励计划而工作。" 但是在案例3.3中锁定期也是 3 年，"该计划为一次授予、分期行权的计
+因是员工在前期为数个具有不同等待期的奖励计划而工作。&#34; 但是在案例3.3中锁定期也是 3 年，&#34;该计划为一次授予、分期行权的计
 
-划"并且每年解除一部分， 1 、那么这个案例是否与案例3.1一样"每期的结果相对独立"? 2、我理解按照表3-2的分摊情况，计入 2011
+划&#34;并且每年解除一部分， 1 、那么这个案例是否与案例3.1一样&#34;每期的结果相对独立&#34;? 2、我理解按照表3-2的分摊情况，计入 2011
 
-年的费用是8,750，计入 2012 的费用是4,250，计入 2013 的费用是2,000，即"公司确认的费用成阶梯型下降，即前期比后期要确认更
+年的费用是8,750，计入 2012 的费用是4,250，计入 2013 的费用是2,000，即&#34;公司确认的费用成阶梯型下降，即前期比后期要确认更
 
-多的费用",如果 2012 、 2013 按照加速行权处理的话，也应该是4,250+2,000=6,250，但是案例最后的结论是 "上述财办会[2012] 11号
+多的费用&#34;,如果 2012 、 2013 按照加速行权处理的话，也应该是4,250&#43;2,000=6,250，但是案例最后的结论是 &#34;上述财办会[2012] 11号
 
-的观点似乎更倾向于观点一，即在本例中，应当加速确认与第二、三期的相关费用 10500 万元。",不知我在哪里理解有问题？ 谢谢！
+的观点似乎更倾向于观点一，即在本例中，应当加速确认与第二、三期的相关费用 10500 万元。&#34;,不知我在哪里理解有问题？ 谢谢！
 
 回答人： chenyiwei
 
@@ -4531,7 +4531,7 @@ A公司制度规定，在公司工作一年以上的员工，每年可以享受�
 ST西轴 2012 年年报披露第二大股东豁免该公司债务利息计入营业外收入八千多，该事项是否涉及权益性交易？ 如何判断正常债务重
 组还是基于二股东特殊身份下的债务重组判断属于权益性交易
 
-<来自中国会计视野网iPhone客户端>
+&lt;来自中国会计视野网iPhone客户端&gt;
 
 回答人： chenyiwei
 这种事项应涉及高度主观的判断，即对于企业与非控股股东之间的交易，也要根据交易是否具有合理的商业目的、作价是否公允等因
@@ -4670,7 +4670,7 @@ chenyiwei回复楼主釜山的帖子 1 、考虑是否存在《企业会计准�
 
 企业未对外出售该固定资产。乙公司20×7年实现净利润为1 600万元。假定不考虑所得税因素影响。甲企业在按照权益法确认应享有
 
-乙公司20×7年净损益时，应时行以下会计处理：借：长期股权投资——损益调整［（1 600-300+2.5）×20%］ 2 605 000　　贷：
+乙公司20×7年净损益时，应时行以下会计处理：借：长期股权投资——损益调整［（1 600-300&#43;2.5）×20%］ 2 605 000　　贷：
 
 投资收益　　　 2 605 000或者：借：长期股权投资——损益调整（1 600×20%） 3 200 000　　贷：
 
@@ -5325,7 +5325,7 @@ A公司 （ 2 ）合同类型：分享型合同能源管理项目 （ 3 ）用�
 
 权上的主要风险和报酬的享有、承担和转移情况。”关于这点想和您再讨论一下。
 
-我现在做的一个客户是EMC的采购方，有约定保底收益。采购方每月支付的金额为保底收益+实际运行中高于保底收益的能效收益。
+我现在做的一个客户是EMC的采购方，有约定保底收益。采购方每月支付的金额为保底收益&#43;实际运行中高于保底收益的能效收益。
 如果实际运行的能效收益低于保底收益，则按保底收益支付。
 根据合同期间和合同期满后采购方无偿获得设备所有权，我们判断采购方按融资租赁进行账务处理，公允价值为项目投资总额，用月
 
@@ -5367,7 +5367,7 @@ BOT会计模式下的金融资产模式进行会计处理。 另外，根据保�
 
 编制合并报表时，计算少数股东权益时是按35%计算，还是按实际出资比例的25%计算呢？ 如果是按章程约定比例35%计算的话，在
 
-所有者权益变动表中少数股东投入的资本是不是就不能填 2000 万，而是要填（2000+6000） 35%=2800 万？ 如果是这样的话，是不
+所有者权益变动表中少数股东投入的资本是不是就不能填 2000 万，而是要填（2000&#43;6000） 35%=2800 万？ 如果是这样的话，是不
 
 是广东公司的长期股权投资是不是要产生商誉？ 6000-8000 65%=800万？
 怎么感觉怪怪的，哪里不对，是陈老师指点。
@@ -5672,7 +5672,7 @@ A、B均持有26%的股权。现A公司与B公司的所有股东（均为自然�
 
 公司与银行签订协议存款合同，在银行开立一个总账户，包括A、B、C三个子账户，其中A为活期存款账户（余额不低于 10 万），B
 
-为协定存款账户（ 500 万元>余额>10万，C为协议存款账户（最低余额不低于 1000 万元）。银行对A和B账户按季计息，对C账户于每
+为协定存款账户（ 500 万元&gt;余额&gt;10万，C为协议存款账户（最低余额不低于 1000 万元）。银行对A和B账户按季计息，对C账户于每
 
 年的 2 月份结息，即本年结算上年 3 月至本年 2 月的利息。于上年末，由于C账户的存款余额变动频繁，公司无法按照每笔的存期和利
 
@@ -5751,7 +5751,7 @@ A、B均持有26%的股权。现A公司与B公司的所有股东（均为自然�
 
 利行为的有关规定冲减当期增值税进项税金，不征收营业税。? 二、商业企业向供货方收取的各种收入，一律不得开具增值税专
 
-用发票。? 三、应冲减进项税金的计算公式调整为：? 当期应冲减进项税金=当期取得的返还资金/（1+所购货物适用增值税税
+用发票。? 三、应冲减进项税金的计算公式调整为：? 当期应冲减进项税金=当期取得的返还资金/（1&#43;所购货物适用增值税税
 
 率）×所购货物适用增值税税率? 四、本通知自 2004 年 7 月 1 日起执行。本通知发布前已征收入库税款不再进行调整。其他增值税
 
@@ -6186,7 +6186,7 @@ DR: 投资收益-期权 CR: 银行存款
 
 USD (外币本金 SAP 当月记账汇率 ) CR: 银行存款 -RMB ( 外币本金期权执行汇率)
 
-DR/CR: 财务费用-已实现汇兑收益/损失-其他资产&负债 （外币本金*(SAP记账汇率-交割日即期汇率）) 1 DR/CR: 投资收益 - 期权
+DR/CR: 财务费用-已实现汇兑收益/损失-其他资产&amp;负债 （外币本金*(SAP记账汇率-交割日即期汇率）) 1 DR/CR: 投资收益 - 期权
 
 ( 外币本金（交割日即期汇率-期权执行汇率)) *2
 
@@ -6578,7 +6578,7 @@ A公司（单体报表） 借：长期股权投资-B公司 10 （引用非货币
 
 预计B将赔偿100-120万元。但截至报告日，具体赔偿金额并未得到正式确认。 【问题】（ 1 ）在此种情形下，我们可否将此事项认
 
-定为非经常性项目，在基于税前利润确定计划性重要水平时将其剔除，以提高审计效率？（即：以200+120=320万为基础设定重要
+定为非经常性项目，在基于税前利润确定计划性重要水平时将其剔除，以提高审计效率？（即：以200&#43;120=320万为基础设定重要
 
 性水平。但是针对该存货跌价准备，我们会执行更多针对性的审计程序）（ 2 ）若该批存货在 2013 年度可用于其他新接的订单，将该
 
@@ -6702,7 +6702,7 @@ A公司（单体报表） 借：长期股权投资-B公司 10 （引用非货币
 
 因为 2012 年度资本公积按1:1转增股本，所以在 2012 年年报中披露 2011 年度的每股收益时，是将原先 2011 年年报中披露的该年度每
 
-股收益除以本次转增比例，即1/2=0.5元／股，相当于5100/(5000+1200/12)/2。
+股收益除以本次转增比例，即1/2=0.5元／股，相当于5100/(5000&#43;1200/12)/2。
 
 # 966 、股权增资问题，求助？
 
@@ -6829,11 +6829,11 @@ possibility that other parties could take more than an insignificant amount of t
 
 disagreed with the proposals in D3, it was this criterion that was considered most troublesome. They disagreed that, in certain
 
-specified circumstances, a purchaser's right to acquire the output from an asset could be equated with a right of use that asset.
+specified circumstances, a purchaser&#39;s right to acquire the output from an asset could be equated with a right of use that asset.
 
 Among the arguments put to the IFRIC were: (a) A right of use requires the purchaser to have the ability to control the way in
 
-which the underlying asset is used during the term of the arrangement: for example, the right for the purchaser's employees to assist
+which the underlying asset is used during the term of the arrangement: for example, the right for the purchaser&#39;s employees to assist
 
 or supervise the operation of the asset. (b) In addition to the right to the output, the purchaser needs to have control over the
 
@@ -6845,15 +6845,15 @@ purchaser would not have access to the plant in the event of default by the supp
 
 right points to there not being a lease. If the arrangement did contain a lease, the purchaser would have the ability to receive the
 
-output from the plant in the arrangement by replacing the original supplier with another service provider. (d) D3 dismisses 'risks
+output from the plant in the arrangement by replacing the original supplier with another service provider. (d) D3 dismisses &#39;risks
 
-and rewards incidental to ownership' of the asset in determining whether an arrangement contains a lease. Therefore, arrangements
+and rewards incidental to ownership&#39; of the asset in determining whether an arrangement contains a lease. Therefore, arrangements
 
 in which the supplier retains significantly all of the risks and rewards of operation and ownership of the asset could be deemed to
 
-contain leases. However, in such arrangements the supplier's cash flows may have significantly more potential for variability than a
+contain leases. However, in such arrangements the supplier&#39;s cash flows may have significantly more potential for variability than a
 
-'true' lessor and the supplier may demand a return significantly above the market rate for a lessor. BC35 In its redeliberations, the
+&#39;true&#39; lessor and the supplier may demand a return significantly above the market rate for a lessor. BC35 In its redeliberations, the
 
 IFRIC reaffirmed its view that a purchaser that is taking substantially all of the output from an asset has the ability to restrict the
 
@@ -6874,7 +6874,7 @@ that terminates the lease because of default by the lessor would no longer have 
 
 contain both a right of use and a service element, the related service contract does not operate independently (eg the lessee cannot
 
-terminate the service element alone). Indeed, the IFRIC noted that the purchaser's entitlement to damages in the event of default by
+terminate the service element alone). Indeed, the IFRIC noted that the purchaser&#39;s entitlement to damages in the event of default by
 
 the supplier indicates that a right of use was originally conveyed, and that the supplier is compensating the purchaser for
 
@@ -6890,7 +6890,7 @@ arrangement that conveys the right to use an asset will also convey certain risk
 
 transfer of risks and rewards of ownership may indicate that the arrangement conveys the right to use an asset. For example, if an
 
-arrangement's pricing provides for a fixed capacity charge designed to recover the supplier's capital investment in the underlying
+arrangement&#39;s pricing provides for a fixed capacity charge designed to recover the supplier&#39;s capital investment in the underlying
 
 asset, the pricing may be persuasive evidence that it is remote that parties other than the purchaser will take more than an
 
@@ -6912,7 +6912,7 @@ to purchase substantially all of the output from specific assets, being determin
 
 arrangements the purchaser makes payments for the time that the underlying asset is made available for use rather than on the
 
-basis of actual use or output (resulting in the arrangement's pricing being neither fixed per unit of output nor equal to the current
+basis of actual use or output (resulting in the arrangement&#39;s pricing being neither fixed per unit of output nor equal to the current
 
 market price per unit of output). In many take-or-pay arrangements, the purchaser is contractually committed to pay the supplier
 
@@ -6940,7 +6940,7 @@ represent significant future commitments, and yet these commitments are not spec
 
 statements by Standards other than IAS 17. The IFRIC concluded that bringing such arrangements within the scope of IAS 17 would
 
-provide users of financial statements with relevant information that is useful for assessing the purchaser's solvency, liquidity and
+provide users of financial statements with relevant information that is useful for assessing the purchaser&#39;s solvency, liquidity and
 
 adaptability. The IFRIC acknowledged that the disclosed information might relate only to the lease element of the arrangement;
 
@@ -6958,11 +6958,11 @@ possibility that other parties could take more than an insignificant amount of t
 
 disagreed with the proposals in D3, it was this criterion that was considered most troublesome. They disagreed that, in certain
 
-specified circumstances, a purchaser's right to acquire the output from an asset could be equated with a right of use that asset.
+specified circumstances, a purchaser&#39;s right to acquire the output from an asset could be equated with a right of use that asset.
 
 Among the arguments put to the IFRIC were: (a) A right of use requires the purchaser to have the ability to control the way in
 
-which the underlying asset is used during the term of the arrangement: for example, the right for the purchaser's employees to assist
+which the underlying asset is used during the term of the arrangement: for example, the right for the purchaser&#39;s employees to assist
 
 or supervise the operation of the asset. (b) In addition to the right to the output, the purchaser needs to have control over the
 
@@ -6974,15 +6974,15 @@ purchaser would not have access to the plant in the event of default by the supp
 
 right points to there not being a lease. If the arrangement did contain a lease, the purchaser would have the ability to receive the
 
-output from the plant in the arrangement by replacing the original supplier with another service provider. (d) D3 dismisses 'risks
+output from the plant in the arrangement by replacing the original supplier with another service provider. (d) D3 dismisses &#39;risks
 
-and rewards incidental to ownership' of the asset in determining whether an arrangement contains a lease. Therefore, arrangements
+and rewards incidental to ownership&#39; of the asset in determining whether an arrangement contains a lease. Therefore, arrangements
 
 in which the supplier retains significantly all of the risks and rewards of operation and ownership of the asset could be deemed to
 
-contain leases. However, in such arrangements the supplier's cash flows may have significantly more potential for variability than a
+contain leases. However, in such arrangements the supplier&#39;s cash flows may have significantly more potential for variability than a
 
-'true' lessor and the supplier may demand a return significantly above the market rate for a lessor. BC35 In its redeliberations, the
+&#39;true&#39; lessor and the supplier may demand a return significantly above the market rate for a lessor. BC35 In its redeliberations, the
 
 IFRIC reaffirmed its view that a purchaser that is taking substantially all of the output from an asset has the ability to restrict the
 
@@ -7003,7 +7003,7 @@ that terminates the lease because of default by the lessor would no longer have 
 
 contain both a right of use and a service element, the related service contract does not operate independently (eg the lessee cannot
 
-terminate the service element alone). Indeed, the IFRIC noted that the purchaser's entitlement to damages in the event of default by
+terminate the service element alone). Indeed, the IFRIC noted that the purchaser&#39;s entitlement to damages in the event of default by
 
 the supplier indicates that a right of use was originally conveyed, and that the supplier is compensating the purchaser for
 
@@ -7019,7 +7019,7 @@ arrangement that conveys the right to use an asset will also convey certain risk
 
 transfer of risks and rewards of ownership may indicate that the arrangement conveys the right to use an asset. For example, if an
 
-arrangement's pricing provides for a fixed capacity charge designed to recover the supplier's capital investment in the underlying
+arrangement&#39;s pricing provides for a fixed capacity charge designed to recover the supplier&#39;s capital investment in the underlying
 
 asset, the pricing may be persuasive evidence that it is remote that parties other than the purchaser will take more than an
 
@@ -7041,7 +7041,7 @@ to purchase substantially all of the output from specific assets, being determin
 
 arrangements the purchaser makes payments for the time that the underlying asset is made available for use rather than on the
 
-basis of actual use or output (resulting in the arrangement's pricing being neither fixed per unit of output nor equal to the current
+basis of actual use or output (resulting in the arrangement&#39;s pricing being neither fixed per unit of output nor equal to the current
 
 market price per unit of output). In many take-or-pay arrangements, the purchaser is contractually committed to pay the supplier
 
@@ -7069,7 +7069,7 @@ represent significant future commitments, and yet these commitments are not spec
 
 statements by Standards other than IAS 17. The IFRIC concluded that bringing such arrangements within the scope of IAS 17 would
 
-provide users of financial statements with relevant information that is useful for assessing the purchaser's solvency, liquidity and
+provide users of financial statements with relevant information that is useful for assessing the purchaser&#39;s solvency, liquidity and
 
 adaptability. The IFRIC acknowledged that the disclosed information might relate only to the lease element of the arrangement;
 
@@ -7236,6 +7236,6 @@ A公司 2011 年 5 月收到政府补助 5 万元， 2012 年在检查时由于�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201304/  
 

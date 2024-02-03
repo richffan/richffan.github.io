@@ -144,7 +144,7 @@
 
 000×20%=2 000 000(元) 进一步取得40%股份应确认的商誉 =80 000 000-180 000 000×40%=8 000 000(元) 合并财务报表中应确
 
-认的商誉 =2 000 000+8 000 000=10 000 000(元) (3) 对于购买之前持有的被购买方的股权，按照该股权在购买日的公允价值进行重
+认的商誉 =2 000 000&#43;8 000 000=10 000 000(元) (3) 对于购买之前持有的被购买方的股权，按照该股权在购买日的公允价值进行重
 
 新计量 甲公司在编制购买日(2×10 年 7 月 31 日)或当期的合并财务报表时，应当对购买日之前持有的乙 公司20%的股权按照其在购买
 
@@ -158,14 +158,14 @@
 
 万元)、按照公允价值重新计量产生的有关利得金额 500 万元)。
 
-按照上述做法，合并报表中购买日长期股权投资账面价值=3500+8000+500=12000（其中 500 是调整的购买日原持有的20%股权公
+按照上述做法，合并报表中购买日长期股权投资账面价值=3500&#43;8000&#43;500=12000（其中 500 是调整的购买日原持有的20%股权公
 
 
-允价值与账面价值的差额部分）。 购买日少数股东权益=18000 40%=7200 万元 因此合并报表中的商誉 =12000+7200-18000=1200
+允价值与账面价值的差额部分）。 购买日少数股东权益=18000 40%=7200 万元 因此合并报表中的商誉 =12000&#43;7200-18000=1200
 
 万元。 也可以验算一下，根据解释 4 号，原持有的股权的账面价值已经调整为购买日的公允价值 4000 万元，新增加的股权部分购买
 
-日的公允价值为 8000 万元，购买日被投资方的净资产公允价值为 18000 ，因此商誉 =4000+8000-18000 60%=1200万元。
+日的公允价值为 8000 万元，购买日被投资方的净资产公允价值为 18000 ，因此商誉 =4000&#43;8000-18000 60%=1200万元。
 
 但是根据合并报表商誉应为单项交易产生的商誉之和为 1000 万元。
 是否此处存在错误？
@@ -489,7 +489,7 @@ C的合并利润表只包含AB自 2014 年 5 ～ 12 月的损益，相应地留�
 
 则的话，此部分销售提成必然在“应付职工薪酬核算？如果企业还是实行企业会计制度的话，此部分销售提成，是否可在“销售费用”核
 
-算？另外，是否如果在“销售费用"核算，是否要到税务机关代开发票入账？此部分税金和个人所得税相比，有怎么的差异？
+算？另外，是否如果在“销售费用&#34;核算，是否要到税务机关代开发票入账？此部分税金和个人所得税相比，有怎么的差异？
 
 回答人： chenyiwei
 
@@ -989,7 +989,7 @@ C的合并利润表只包含AB自 2014 年 5 ～ 12 月的损益，相应地留�
 
 看了陈版对于帖子“金融工具到底应该包括哪些？”（http://bbs.esnai.com/frame.php?
 
-frameon=yes&referer=http%3A//bbs.esnai.com/viewthread.php%3Ftid%3D4650130%26highlight%3D%25BD%25F0%25C8%25DA
+frameon=yes&amp;referer=http%3A//bbs.esnai.com/viewthread.php%3Ftid%3D4650130%26highlight%3D%25BD%25F0%25C8%25DA
 
 %25B9%25A4%25BE%25DF） 的回复。 “从会计准则角度，关键是掌握一点：金融工具是一项合同，并且标的物是金融资产或者金
 
@@ -1124,7 +1124,7 @@ consumption of employee services received as consideration for share options gra
 
 Payment, and not receive a tax deduction until the share options are exercised, with the measurement of the tax deduction based on
 
-the entity's share price at the date of exercise. 68B As with the research costs discussed in paragraphs 9 and 26(b) of this
+the entity&#39;s share price at the date of exercise. 68B As with the research costs discussed in paragraphs 9 and 26(b) of this
 
 Standard, the difference between the tax base of the employee services received to date (being the amount the taxation authorities
 
@@ -1134,9 +1134,9 @@ deferred tax asset. If the amount the taxation authorities will permit as a dedu
 
 period, it shall be estimated, based on information available at the end of the period. For example, if the amount that the taxation
 
-authorities will permit as a deduction in future periods is dependent upon the entity's share price at a future date, the measurement
+authorities will permit as a deduction in future periods is dependent upon the entity&#39;s share price at a future date, the measurement
 
-of the deductible temporary difference should be based on the entity's share price at the end of the period. 68C As noted in
+of the deductible temporary difference should be based on the entity&#39;s share price at the end of the period. 68C As noted in
 
 paragraph 68A, the amount of the tax deduction (or estimated future tax deduction, measured in accordance with paragraph 68B)
 
@@ -1204,7 +1204,7 @@ or deferred tax should be recognised directly in equity.
 
 品　 90000 　　该笔捐赠业务，当年捐赠准予扣除的限额为 12 万元（100×12%），对视同销售行为应作纳税调增 3 万元（12-9）；
 
-本例计入“营业外支出”金额 140400 元，其中 20400 元不予税前扣除，从而增加公司税收负担为2.79万元（3×25%+2.04）。 以上是某
+本例计入“营业外支出”金额 140400 元，其中 20400 元不予税前扣除，从而增加公司税收负担为2.79万元（3×25%&#43;2.04）。 以上是某
 一网站的处理过程，我认为其计算的税收负担有误，
 
 1. 为什么视同销售行为对视同销售行为应作纳税调增 3 万元（12-9），3*25% ？
@@ -1630,7 +1630,7 @@ settles pre-existing relationships between the acquirer and acquiree; (b) a tran
 
 owners of the acquiree for future services; and (c) a transaction that reimburses the acquiree or its former owners for paying the
 
-acquirer's acquisition-related costs. Paragraphs B50–B62 provide related application guidance.
+acquirer&#39;s acquisition-related costs. Paragraphs B50–B62 provide related application guidance.
 
 B50 The acquirer should consider the following factors, which are neither mutually exclusive nor individually conclusive, to
 
@@ -1673,7 +1673,7 @@ of the combined entity. Effective settlement of a pre-existing relationship betw
 
 combination (application of paragraph 52(a)) B51 The acquirer and acquiree may have a relationship that existed before they
 
-contemplated the business combination, referred to here as a 'pre-existing relationship'. A pre-existing relationship between the
+contemplated the business combination, referred to here as a &#39;pre-existing relationship&#39;. A pre-existing relationship between the
 
 acquirer and acquiree may be contractual (for example, vendor and customer or licensor and licensee) or non-contractual (for
 
@@ -1725,7 +1725,7 @@ reported gain or loss therefore may differ from the amount calculated by applyin
 
 回答人： chenyiwei
 
-回复 楼主 tony868lamy 的帖子该交易中，D取得的是对“A+B+C”的经济主体的控制权。被合并方是“A+B+C”构成的经济主体，所以
+回复 楼主 tony868lamy 的帖子该交易中，D取得的是对“A&#43;B&#43;C”的经济主体的控制权。被合并方是“A&#43;B&#43;C”构成的经济主体，所以
 被合并方是构成业务的，适用企业合并准则。
 
 回答人： chenyiwei
@@ -2050,7 +2050,7 @@ A公司 2008 年与B公司签订一固定资产采购合同，A将从B处购入�
 
 一步取得40%股份应确认的商誉 ＝80000000-180000000×40%＝ 8000000 （元） 合并财务报表中应确认的商誉 ＝
 
-2000000+8000000＝ 10000000 （元） （ 3 ）对于购买日之前持有的被购买方的股权，按照该股权在购买日的公允价值进行重新计
+2000000&#43;8000000＝ 10000000 （元） （ 3 ）对于购买日之前持有的被购买方的股权，按照该股权在购买日的公允价值进行重新计
 
 量 甲公司在编制购买日（2×10年 7 月 31 日）或当期的合并财务报表时，应当对购买日之前持有的乙公司20%的股权按照其在购买日
 
@@ -2587,21 +2587,21 @@ A公司的一全资子公司B公司目前自行解散而进行停业清算，根
 
 为 35 亿元（其中：投资成本 36 亿，资本公积-9亿，未分配利润 8 亿），另外股东合计持股20%，子公司上市后发行的股份为 13 亿（占
 
-发行后股本的13/(26/0.8+13)=28.57%），增加的资本溢价为 87 亿，现合并层面处理与中介不同： 1 、我集团对此部分划转的股权合
+发行后股本的13/(26/0.8&#43;13)=28.57%），增加的资本溢价为 87 亿，现合并层面处理与中介不同： 1 、我集团对此部分划转的股权合
 
 并层面的处理为：35/26 1.1=1.48 亿，合并层面减少 1.48 亿未分配利润，因子公司发行股票增加的资本溢价，集团合并层面增加资本
 
 公积为： (100-43.75 0.2857/0.7) 0.55=45.5425 亿。（计算结果保留尾差调整）计算后，合并层面享有权益： 35-
 
-1.48+45.5425=79.0625 亿元 2 、中介处理：分二步计算，第一步计算发行股票后的持股比例下降引起的权益变化及发行股票增加的
+1.48&#43;45.5425=79.0625 亿元 2 、中介处理：分二步计算，第一步计算发行股票后的持股比例下降引起的权益变化及发行股票增加的
 
-资本公积，计算过程如下：发行后持股比例： 26/(32.5+13)=57.14%, 合并层面增加资本公积： 87 0.5714=49.7118亿元，减少未分配
+资本公积，计算过程如下：发行后持股比例： 26/(32.5&#43;13)=57.14%, 合并层面增加资本公积： 87 0.5714=49.7118亿元，减少未分配
 
-利润2.3亿（8-8*/0.8 0.5714 ） =2.286 亿，减少资本公积 0.2871 亿元： 35+49.7118-2.286-143.75 0.5714=0.2871亿元 划转1.1亿股转
+利润2.3亿（8-8*/0.8 0.5714 ） =2.286 亿，减少资本公积 0.2871 亿元： 35&#43;49.7118-2.286-143.75 0.5714=0.2871亿元 划转1.1亿股转
 
 出净资产3.0762亿，计算过程为:143.75*(57.14%-55%)=3.0762亿(考虑尾差调整)其中：减少未分配利润（8-2.3） /26 1.1=0.24亿，
 
-减少资本公积2.836亿（3.0762-0.24=2.8362）。 计算后合并层面享有权益：35+49.7118-2.286-0.2871-0.24-2.8362=79.0625亿
+减少资本公积2.836亿（3.0762-0.24=2.8362）。 计算后合并层面享有权益：35&#43;49.7118-2.286-0.2871-0.24-2.8362=79.0625亿
 
 元 中介的过程晕死了，我问中介，既然你这么计算减少权益，为什么不将3.0762亿都减少未分配利润呢？中介说，《境内证券市场
 转持部分国有股充实全国社会保障基金实施办法》的规定不适用合并层面调整，在合并层面应对享有的权益分别计算减少额。。
@@ -3000,7 +3000,7 @@ CR：？？？
 
 通股股数需以 2009 年 10 月 1 日为界分段计算，其中 2009 年 1 ～ 9 月期间的加权平均普通股股本数=12,000万股； 2009 年 10 ～ 12 月期间
 
-的加权平均普通股股本数=15,000万股，故 2009 年全年加权平均普通股股数=12,000×9/12+15,000×3/12=12,750万股。
+的加权平均普通股股本数=15,000万股，故 2009 年全年加权平均普通股股数=12,000×9/12&#43;15,000×3/12=12,750万股。
 
 回答人： chenyiwei
 这种情况需要区分不同情况分别讨论。
@@ -3040,7 +3040,7 @@ CR：？？？
 
 通股股数需以 2009 年 10 月 1 日为界分段计算，其中 2009 年 1 ～ 9 月期间的加权平均普通股股本数=12,000万股； 2009 年 10 ～ 12 月期间
 
-的加权平均普通股股本数=15,000万股，故 2009 年全年加权平均普通股股数=12,000×9/12+15,000×3/12=12,750万股。
+的加权平均普通股股本数=15,000万股，故 2009 年全年加权平均普通股股数=12,000×9/12&#43;15,000×3/12=12,750万股。
 
 回答人： chenyiwei
 
@@ -3771,13 +3771,13 @@ IPO申报材料中申报报表与原始报表的差异说明中，其中涉及�
 
 提问人： aRQue 时间： 2011-04-18 17:58:43
 
-在<企业会计准则讲解2010>企业合并这章有如下内容：
+在&lt;企业会计准则讲解2010&gt;企业合并这章有如下内容：
 六、被购买方的会计处理
 
 非同一控制下的企业合并中，购买方通过企业合并取得被购买方 100 ％股权的，被购买方可以按照合并中确定的可辨认资产、负债的
 公允价值调整其账面价值。除此之外，其他情况下被购买方不应因企业合并改记有关资产、负债的账面价值。
 
-所以想请教，如果符合上述条件“非同一控制下的企业合并及购买方通过企业合并取得被购买方 100 ％股权"，是否被合并方调整相关
+所以想请教，如果符合上述条件“非同一控制下的企业合并及购买方通过企业合并取得被购买方 100 ％股权&#34;，是否被合并方调整相关
 
 资产账面成本至收购时点的公允价值的做法可以接受？同时实务中是否有这样的操作。 特别的，在编制被购买方的审计报告时，除
 了在财务报表编制基础段落要特别说明外，其他还有什么特别要注意的事项？
@@ -4586,7 +4586,7 @@ B，但最终退货和滞销风险由A承担，比如低价甩卖等等，损失
 
 交予代理商，代理商购汇后对外支付给境外供货商，整个资金流占进出口代理企业的量非常大，但对企业的损益影响非常低~~那么
 
-进出口代理企业是否将此类代收代付业务，仅仅在资产负债表上以净额列报的形式列报在”其他应收/其他应付"，现金流量表也是净额
+进出口代理企业是否将此类代收代付业务，仅仅在资产负债表上以净额列报的形式列报在”其他应收/其他应付&#34;，现金流量表也是净额
 列报？
 
 回答人： chenyiwei
@@ -5793,11 +5793,11 @@ IFRS 2011合订本下载地址：
 
 请问母子孙公司的合并报表时的编制 A公司占B公司80%股份，占C公司60%股份，B公司占C公司10%股份。C公司当年盈利 100 万，
 
-在编制合并报表时， A公司在对C公司采用权益法换算时确认C公司长期股权投资增加是 100 60%+100 10% 80%=68 万还是
+在编制合并报表时， A公司在对C公司采用权益法换算时确认C公司长期股权投资增加是 100 60%&#43;100 10% 80%=68 万还是
 
-100 60%+100 10%=70 万 我觉得应该是第一个。 因为 C 公司归属于 A 公司的权益增加是 100 60%=60万 C公司归属于B公司的权益增加
+100 60%&#43;100 10%=70 万 我觉得应该是第一个。 因为 C 公司归属于 A 公司的权益增加是 100 60%=60万 C公司归属于B公司的权益增加
 
-是 100 10%=10 万，从而归属于 A 公司权益增加 =10 80%=8万。 两项合并=60+8=68万。
+是 100 10%=10 万，从而归属于 A 公司权益增加 =10 80%=8万。 两项合并=60&#43;8=68万。
 
 但是我查了一些其他资料，大部份都是按第二种增加 70 万来做的。。。实在是无法理解。
 
@@ -5833,9 +5833,9 @@ IFRS 2011合订本下载地址：
 
 元。 2010 年 1 月 1 日，甲处置了其中60%的股权，取得价款 480 。该日按照购买日持续计算的公允价值为 575 ，其中由于损益增加 50 ，
 
-由于AFS变动增加资本公积 25 ，该日剩余的40%股权公允价值为 320 元。请问合并报表层次的投资收益是不是如下计算：480+320-
+由于AFS变动增加资本公积 25 ，该日剩余的40%股权公允价值为 320 元。请问合并报表层次的投资收益是不是如下计算：480&#43;320-
 
-575+25-100（商誉）=150 抵消分录： 借：长期股权投资 90 贷：投资收益 90 （320-575*40%）
+575&#43;25-100（商誉）=150 抵消分录： 借：长期股权投资 90 贷：投资收益 90 （320-575*40%）
 
 借：资本公积 25 贷：投资收益 25
 
@@ -6043,9 +6043,9 @@ IAS 41《农业》是在 2001 年 2 月发布的，从其初次发布时开始�
 
 根据 2009 年 11 月修订后IAS 24第 9 段： The following terms are used in this Standard with the meanings specified: A related party is a
 
-person or entity that is related to the entity that is preparing its financial statements (in this Standard referred to as the 'reporting
+person or entity that is related to the entity that is preparing its financial statements (in this Standard referred to as the &#39;reporting
 
-entity'). (a) A person or a close member of that person's family is related to a reporting entity if that person: (i) has control or
+entity&#39;). (a) A person or a close member of that person&#39;s family is related to a reporting entity if that person: (i) has control or
 
 joint control over the reporting entity; (ii) has significant influence over the reporting entity; or (iii) is a member of the key
 
@@ -6127,10 +6127,10 @@ influence over the entity or is a member of the key management personnel of the 
 法取得足够的应纳税所得额用于抵扣该亏损而未确认相关的递延所得税资产，如按照税法规定能够抵扣购买方未来期间实现的应纳税
 所得额而且购买方在未来期间预计很可能取得足够的应纳税所得额的情况下，有关的递延所得税资产应作为合并中取得的可辨认资产
 
-予以确认。 有两个问题，1>如果此非同一控制下企合并为控股合并的话，在购买方在确认递延所得税时，是否应当是采用被合并方
+予以确认。 有两个问题，1&gt;如果此非同一控制下企合并为控股合并的话，在购买方在确认递延所得税时，是否应当是采用被合并方
 的适用税率，如果被合并方为合并报表，则如其子公司资产与负债存在暂时性差异，适用的税率是不是应当是子公司的所得税率？吸
 
-收合并的话，则应当采用合并方的税率？ 2>是不是如果被合并方原来存在商誉的话，就不再考虑了，只考虑在此次合并中产生的商
+收合并的话，则应当采用合并方的税率？ 2&gt;是不是如果被合并方原来存在商誉的话，就不再考虑了，只考虑在此次合并中产生的商
 誉。
 
 回答人： chenyiwei
@@ -6970,7 +6970,7 @@ A公司是一家经营大型非标准机械设备的高新技术企业， 2010 �
 
 看的是半年度报表 公司是国内的，销售生产都在国内 首先假设【主营业务收入】是真实的，【应收账款】比年初增加了35W，没有
 
-【应收票据】，【预收账款】减少了18152W，理论上【主营业务收入】应该比【销售商品现金流入】多了18152W+35W 结果报表
+【应收票据】，【预收账款】减少了18152W，理论上【主营业务收入】应该比【销售商品现金流入】多了18152W&#43;35W 结果报表
 
 上显示【主营业务收入】比【销售商品现金流入】411W 看不懂压看不懂 这摊水好深~:Q
 
@@ -7055,6 +7055,6 @@ A公司是一家经营大型非标准机械设备的高新技术企业， 2010 �
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201104/  
 

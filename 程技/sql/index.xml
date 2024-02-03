@@ -6,91 +6,89 @@
     <description>Recent content in SQL on 樊刹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <managingEditor>richffan@outlook.com (richfan)</managingEditor>
-    <webMaster>richffan@outlook.com (richfan)</webMaster>
     <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://richfan.site/%E7%A8%8B%E6%8A%80/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL常用函数</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
       <description>1、数学函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ABS(x) --返回x的绝对值 BIN(x) --返回x的二进制（OCT返回八进制，HEX返回十六进制） CEILING(x) --返回大</description>
     </item>
     <item>
       <title>live_max_online</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/live_max_online/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/live_max_online/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
     </item>
     <item>
       <title>MySQL常用30种SQL查询语句优化方法</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/</guid>
-      <description>引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查</description>
+      <description>引言在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查</description>
     </item>
     <item>
       <title>SQL每日一题(20230814)</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/</guid>
-      <description>SQL每日一题(20230814) 题目 有如下两张表G0227A（客户表） Id Name 1 曹操 2 关于 3 刘备 4 张飞 G0227B（订单表） Id CustomerId 1 3 2 1 查询G</description>
+      <description>SQL每日一题(20230814) 题目有如下两张表G0227A（客户表） Id Name 1 曹操 2 关于 3 刘备 4 张飞 G0227B（订单表） Id CustomerId 1 3 2 1 查询G</description>
     </item>
     <item>
       <title>SQL每日一题F0215，多种方法及思路讲解</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f0215-a-variety-of-methods-and-ideas-explained/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f0215-a-variety-of-methods-and-ideas-explained/</guid>
       <description>SQL每日一题F0215，多种方法及思路讲解 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48</description>
     </item>
     <item>
       <title>SQL每日一题F1021，while循环操作</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1021-while-loop-operation/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1021-while-loop-operation/</guid>
-      <description>SQL每日一题F1021，while循环操作 /* 写一个查询语句要求 求出整数1到100之间排除55后的和 预计结果是4995 该如何写这个查询？ 要求</description>
+      <description>SQL每日一题F1021，while循环操作/* 写一个查询语句要求 求出整数1到100之间排除55后的和 预计结果是4995 该如何写这个查询？ 要</description>
     </item>
     <item>
       <title>SQL每日一题F1025，复杂逻辑处理</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1025-complex-logic-processing/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1025-complex-logic-processing/</guid>
       <description>SQL每日一题F1025，复杂逻辑处理 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 create table F1025 ( id int, num int ) insert into F1025 values(1,5); insert into F1025 values(2,11); insert into F1025 values(3,0); insert into F1025 values(4,-2); insert into F1025 values(5,2); insert into F1025 values(6,9); insert into F1025</description>
     </item>
     <item>
       <title>SQL每日一题F1028，关联子查询</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1028-correlation-subquery/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1028-correlation-subquery/</guid>
-      <description>SQL每日一题F1028，关联子查询 create table F1028A (aid varchar(20), bid varchar(20) ) insert into F1028A values (&amp;lsquo;跑步&amp;rsquo;,&amp;lsquo;张三&amp;rsquo;); insert into F1028A values</description>
+      <description>SQL每日一题F1028，关联子查询create table F1028A (aid varchar(20), bid varchar(20) ) insert into F1028A values (&amp;lsquo;跑步&amp;rsquo;,&amp;lsquo;张三&amp;rsquo;)</description>
     </item>
     <item>
       <title>top10_sql_skills</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/top10_sql_skills/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/top10_sql_skills/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
     </item>
     <item>
       <title>查询连续登陆3天的用户id和登陆天数</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/online_users_with_3_consecutive_days/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/online_users_with_3_consecutive_days/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 -- 查询连续登陆3天的用户id和登陆天数 -- step1:用户登录日期</description>
     </item>
     <item>
       <title>给定用户登录表，求表中每一天的3天留存率</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/3days_alive_users/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/3days_alive_users/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
     </item>
     <item>
       <title>求占据前90%销售额的商品类型</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/90_percent_contribution_goods/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/sql/90_percent_contribution_goods/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
     </item>

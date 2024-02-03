@@ -127,6 +127,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%B3%95%E6%8A%80/%E5%AE%A1%E8%AE%A1/%E5%85%AC%E8%81%8C%E4%BA%BA%E5%91%98%E5%8A%9E%E5%85%AC%E8%AE%BE%E5%A4%87%E5%AE%B6%E5%85%B7%E5%B7%AE%E6%97%85%E8%B4%B9%E4%BD%8F%E5%AE%BF%E8%B4%B9%E4%BA%A4%E9%80%9A%E8%B4%B9%E4%BC%99%E9%A3%9F%E8%B4%B9%E4%BC%9A%E8%AE%AE%E8%B4%B9%E6%A0%87%E5%87%86/  
 

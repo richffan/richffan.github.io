@@ -1,7 +1,7 @@
 # 每天一个linux命令（44）: rcp
 
 　　rcp代表“remote file copy”（远程文件拷贝）。该命令用于在计算机之间拷贝文件。rcp命令有两种格式。第一种格式用于文件到文件的拷贝；第二种格式用于把文件或目录拷贝到另一个目录中。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ rcp [参数] [源文件] [目标文件]
@@ -59,6 +59,6 @@ $ rcp -r img/ webserver1:/var/project/
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-44-rcp/  
 

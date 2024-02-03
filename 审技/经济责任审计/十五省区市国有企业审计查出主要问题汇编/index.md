@@ -268,6 +268,6 @@ _（湖南审计报告中指出，省属国有企业参与PPP项目成为市县�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E7%BB%8F%E6%B5%8E%E8%B4%A3%E4%BB%BB%E5%AE%A1%E8%AE%A1/%E5%8D%81%E4%BA%94%E7%9C%81%E5%8C%BA%E5%B8%82%E5%9B%BD%E6%9C%89%E4%BC%81%E4%B8%9A%E5%AE%A1%E8%AE%A1%E6%9F%A5%E5%87%BA%E4%B8%BB%E8%A6%81%E9%97%AE%E9%A2%98%E6%B1%87%E7%BC%96/  
 

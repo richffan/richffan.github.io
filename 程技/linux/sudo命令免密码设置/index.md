@@ -1,8 +1,8 @@
 # sudo命令免密码设置
 
-> 如果某台linux只有自己在使用，比如个人系统，每次调用 `sudo` 时都需要输入密码，长期下来着实厌烦，因此本文介绍如何配置 `sudo` 命令，使其在运行时不需要输入密码。
+&gt; 如果某台linux只有自己在使用，比如个人系统，每次调用 `sudo` 时都需要输入密码，长期下来着实厌烦，因此本文介绍如何配置 `sudo` 命令，使其在运行时不需要输入密码。
 
-<!--more-->
+&lt;!--more--&gt;
 
 ### 步骤
 1. 执行命令
@@ -27,6 +27,6 @@ aaronkilik ALL=(ALL) NOPASSWD: ALL
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/  
 

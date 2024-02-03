@@ -12,7 +12,7 @@
   Excel VBA编写的一系列工具（点击“克隆/下载”）
   [github链接](https://github.com/nigo81/tools-for-auditor)
 
-- [附注生成工具](https://space.bilibili.com/417830965/channel/collectiondetail?sid=784007&ctype=0) -- 根据Excel 生动生成报告附注。王建彬开发，目前市面上我看到的最强，最易用的工具。
+- [附注生成工具](https://space.bilibili.com/417830965/channel/collectiondetail?sid=784007&amp;ctype=0) -- 根据Excel 生动生成报告附注。王建彬开发，目前市面上我看到的最强，最易用的工具。
   [工具下载链接](https://www.cpasit.com/assets/Update.exe) 付费软件，很便宜，买一次管终生，可以节省很多时间。
 
 - [万能函证生成器](https://mp.weixin.qq.com/s/VdCmd2lL7mJcSLJTV_fF7w) 支持批量生成所有格式的函证，包括Excel和Word格式模板，如银行询证函、往来、票据、交易事项、存货、验资业务等等模板。
@@ -21,14 +21,14 @@
 - [方方格子](http://www.ffcell.com/)
   -Excel插件，包含一系列Excel实用功能
 
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247491654&idx=1&sn=4b374e054033b0a2d951a50e97031357&chksm=e9743eb4de03b7a2aed427500e294574bc80abb860f749afe7b835b2f6e4c73d200a42b91cb5&token=196403941&lang=zh_CN#rd](审计报告排版工具)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491654&amp;idx=1&amp;sn=4b374e054033b0a2d951a50e97031357&amp;chksm=e9743eb4de03b7a2aed427500e294574bc80abb860f749afe7b835b2f6e4c73d200a42b91cb5&amp;token=196403941&amp;lang=zh_CN#rd](审计报告排版工具)
   [https://wwe.lanzoui.com/izTYZsopdej](下载链接)
 
 - [https://www.gzaudit.com/](底稿小帮手)
-  -集成财审一线的60+实用功能，包括各种针对审计行业的Excel增强功能和审计效率工具、看账工具等等，免费使用
+  -集成财审一线的60&#43;实用功能，包括各种针对审计行业的Excel增强功能和审计效率工具、看账工具等等，免费使用
 - [https://www.gzaudit.com/glf/](内部往来交易统计工具) -无论是单体分工还是科目分工，都可以直接生成生成关联方统计表，上百家公司匹配合并也不会卡顿
 
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247489878&idx=1&sn=fd6471bdfcf1612fbac06bf4e573c4fb&chksm=e977c7a4de004eb22b53ee57cc2543c5466dc213e0d1d2fdff3a3e92f0bf9c41f09f268bb81e&token=196403941&lang=zh_CN#rd](word排版大杀器) -
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247489878&amp;idx=1&amp;sn=fd6471bdfcf1612fbac06bf4e573c4fb&amp;chksm=e977c7a4de004eb22b53ee57cc2543c5466dc213e0d1d2fdff3a3e92f0bf9c41f09f268bb81e&amp;token=196403941&amp;lang=zh_CN#rd](word排版大杀器) -
   word加载宏一些实用功能
   [https://pan.baidu.com/s/1p8oUSHNQCRbq18Kzo_aHLA](下载链接)
   提取码：oeia
@@ -98,9 +98,9 @@
   -全国行政区划，省市区镇四级，包含名称、完整名称、经纬度、区号、邮编、行政区划代码、拼音。
 - [https://gitee.com/nigo81/invoiceocr](批量识别增值税发票)
   利用paddleocr批量识别并提取发票信息
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247491671&idx=1&sn=8e4dd10b14d9e0195e7ebb49277cbed0&chksm=e9743ea5de03b7b378694673d2303918b378febed48a5b0bd2a76bfdfc1ab6f52764f903ed26&token=894284587&lang=zh_CN#rd](BOM穿透)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491671&amp;idx=1&amp;sn=8e4dd10b14d9e0195e7ebb49277cbed0&amp;chksm=e9743ea5de03b7b378694673d2303918b378febed48a5b0bd2a76bfdfc1ab6f52764f903ed26&amp;token=894284587&amp;lang=zh_CN#rd](BOM穿透)
   利用树对生产企业的BOM关系进行穿透
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247491615&idx=1&sn=1bc06e3e981929db2a84deceb3a82a6c&chksm=e9743eedde03b7fb411286e3b72d8d10e60b5913d7ade2ec3a8a3dd39c132ddd6fd37608f356&token=894284587&lang=zh_CN#rd](公司名称批量模糊匹配)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491615&amp;idx=1&amp;sn=1bc06e3e981929db2a84deceb3a82a6c&amp;chksm=e9743eedde03b7fb411286e3b72d8d10e60b5913d7ade2ec3a8a3dd39c132ddd6fd37608f356&amp;token=894284587&amp;lang=zh_CN#rd](公司名称批量模糊匹配)
   利用fuzzywuzzy对两期账套的往来科目公司名称进行模糊匹配
 
 
@@ -109,12 +109,12 @@
 - [https://chat.openai.com/chat](官方网站（需要魔法）)
 - [http://43.139.36.221/](国内免登录注册网站)
 - [https://xinghuo.xfyun.cn/desk](讯飞星火)
-- [https://chatdoc.xfyun.cn/](讯飞星火-文档问答) -- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247499345&idx=1&sn=6ff4afca93b63ae87d11019c92081159&chksm=e97420a3de03a9b5376719b76d8c46e51f8366e42a27e15ca91a4d36e041e16fa35abafc8cee&token=1383386970&lang=zh_CN#rd](使用介绍)
+- [https://chatdoc.xfyun.cn/](讯飞星火-文档问答) -- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247499345&amp;idx=1&amp;sn=6ff4afca93b63ae87d11019c92081159&amp;chksm=e97420a3de03a9b5376719b76d8c46e51f8366e42a27e15ca91a4d36e041e16fa35abafc8cee&amp;token=1383386970&amp;lang=zh_CN#rd](使用介绍)
 
 介绍文章：
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247496683&idx=1&sn=a8ee685ab5d1e468bd5efc50390f5a34&chksm=e9742d19de03a40f58d6856640e939f248ea68b70e6c594b384cb16dc8f0cd55733fa8bdaeed&scene=21#wechat_redirect](AI改变未来的审计)
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247497227&idx=1&sn=aa4d4e3108269da6c111e625191c5a35&chksm=e97428f9de03a1ef0c48f8cbe4c93cb0be63e775e7756121dc3cb363145dc9c7c9e80136296d&scene=21#wechat_redirect](chatgpt在会计师事务所中的运用-审计篇)
-- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&mid=2247497302&idx=1&sn=d8c9dbc089139e73e1373ce24106f32f&chksm=e97428a4de03a1b24d0083da628be0560905170b16b80ca78882063ecbe7f5da1f0d05d0dc51&scene=21#wechat_redirect](chatgpt在会计师事务所中的运用-IT审计篇)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247496683&amp;idx=1&amp;sn=a8ee685ab5d1e468bd5efc50390f5a34&amp;chksm=e9742d19de03a40f58d6856640e939f248ea68b70e6c594b384cb16dc8f0cd55733fa8bdaeed&amp;scene=21#wechat_redirect](AI改变未来的审计)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247497227&amp;idx=1&amp;sn=aa4d4e3108269da6c111e625191c5a35&amp;chksm=e97428f9de03a1ef0c48f8cbe4c93cb0be63e775e7756121dc3cb363145dc9c7c9e80136296d&amp;scene=21#wechat_redirect](chatgpt在会计师事务所中的运用-审计篇)
+- [https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247497302&amp;idx=1&amp;sn=d8c9dbc089139e73e1373ce24106f32f&amp;chksm=e97428a4de03a1b24d0083da628be0560905170b16b80ca78882063ecbe7f5da1f0d05d0dc51&amp;scene=21#wechat_redirect](chatgpt在会计师事务所中的运用-IT审计篇)
 
 ## 财务工具
 
@@ -141,7 +141,7 @@
 - [一键现流:穷尽勾稽关系，底稿自动摆平](https://mp.weixin.qq.com/s/rEE7FHlyLzz0MtcD56Er9g)
   [https://pan.baidu.com/s/1TQ-jwR7vtqNpfwH-1XiUJw?pwd=6666](下载)
 - [https://mp.weixin.qq.com/s/zdkkGN3Z4K7v2vaNbHS1Dw](Excel转Word插件)
-  -Excel选中源数据=转Word表格+智能排版，任意打开一个Excel随便选中一块区域都可以转Word表格
+  -Excel选中源数据=转Word表格&#43;智能排版，任意打开一个Excel随便选中一块区域都可以转Word表格
   [https://pan.baidu.com/s/1ui3qU-uMKUwwLcQTpKnNkQ](下载) 提取码：6666
 
 ## 办公效率工具
@@ -168,7 +168,7 @@
   [https://c1n.cn/BE7XE](搜索技巧)
 - [https://obsidian.md/](Obsidian)
   -强大的免费双链式笔记工具，搭配坚果云可同步，适合建立自己的知识库。
-  [https://www.bilibili.com/video/BV1P64y1q7ND?from=search&seid=10079939813401286196&spm_id_from=333.337.0.0](简介视频)
+  [https://www.bilibili.com/video/BV1P64y1q7ND?from=search&amp;seid=10079939813401286196&amp;spm_id_from=333.337.0.0](简介视频)
   ，还有很多免费的插件，适合用来建立自己的审计知识库。
 - [https://github.com/jgraph/drawio-desktop/releases](drawio)
   -免费开源的流程图绘制工具，桌面客户端，可以完全替代visio。
@@ -256,7 +256,7 @@
 
 ### 利率查询
 
-- [http://data.bank.hexun.com/yhcj/cj.aspx?r=0000000001000000&t=12&page=24](LIBOR历史利率)
+- [http://data.bank.hexun.com/yhcj/cj.aspx?r=0000000001000000&amp;t=12&amp;page=24](LIBOR历史利率)
 - [http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/125838/125888/index.html](贷款基准利率查询)
 - [http://yield.chinabond.com.cn/cbweb-mn/yield_main?locale=zh_CN](中国债券信息网-中债收益率)
 - [http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/index.html](贷款利率和LPR)
@@ -287,7 +287,7 @@
 ### 动产抵押查询
 - [http://dcdy.gsxt.gov.cn/loginSydq/index.xhtml?isNotLogin=1](全国市场监管动产抵押登记业务系统)
 ### 国家科技成果库登记结果查询
-- [https://www.tech110.net/portal.php?mod=list&catid=538](国家科技成果库登记结果查询)
+- [https://www.tech110.net/portal.php?mod=list&amp;catid=538](国家科技成果库登记结果查询)
 ### 征信报告查询
 - [http://www.pbccrc.org.cn/](中国人民银行征信中心)
 ### 海外银行函证
@@ -345,7 +345,7 @@
 - [http://www.mof.gov.cn/gongzhongcanyu/zixunfankui/](财政部-其他相关实施问答)
 - [https://wwe.lanzoui.com/ib3yQropyid](企业会计准则及应用指南2021年5月修订-下载)
 - [https://pan.baidu.com/s/1YNI5eK_kx1BnJmdZ53pPHQ](中国注册会计师审计准则2019-下载)
-  -（提取码：f4d9）-2019年发布的18项中国注册会计师审计准则+2020发布的5项中国注册会计师审计准则问题解答
+  -（提取码：f4d9）-2019年发布的18项中国注册会计师审计准则&#43;2020发布的5项中国注册会计师审计准则问题解答
 - [https://www.lanzoui.com/i7um6ch](中国注册会计师审计准则应用指南-下载)
 - [http://www.casplus.com/standard/standard.asp#ifrs](国际财务报告准则（IFRS）中英文版本对照查询网站)
 - [http://www.csrc.gov.cn/csrc/c101802/c7118278/content.shtml](监管规则适用指引——发行类第5号)
@@ -364,7 +364,7 @@
 - [http://www.casplus.com/home.asp](德勤发布会计研究)
 # 网课
 
-- [https://www.bilibili.com/video/BV1Ts411L7mz?from=search&seid=4193060424620229640](瑞华会计师事务所合伙人手把手教你审计实操)
+- [https://www.bilibili.com/video/BV1Ts411L7mz?from=search&amp;seid=4193060424620229640](瑞华会计师事务所合伙人手把手教你审计实操)
   B站上提供的审计实操课程。
 - [https://www.bilibili.com/video/BV1434y1r7e3](中审众环陈奕蔚《监管规则适用指引-会计类第2号》《21年财政部发布案例、问题解答要点》)
 - [https://space.bilibili.com/229695603/channel/detail?cid=86210](审计效率提升课)
@@ -380,7 +380,7 @@
   密码：00
 - [https://www.lanzouw.com/ikRhqulwuyh](北京证券交易所新政解读-中金公司-2021.9)
   密码:00
-- [https://liarn.ke.qq.com/#tab=1&category=-1](及晓慧老师腾讯课堂)
+- [https://liarn.ke.qq.com/#tab=1&amp;category=-1](及晓慧老师腾讯课堂)
   -底稿法编制现金流量表
 - [http://www.neeq.com.cn/investor_guide/train_area.html](全国中小企业股转系统-培训园地)
   -包含会计准则、北交所上市法规等视频
@@ -417,8 +417,8 @@
 - [https://wwe.lanzoui.com/iz8wMvo3ugj](热点难点会计问题专题研究（2021）-天职国际)
 - [https://wwe.lanzoui.com/ipeEpvo491e](财务炼金术)
   -主要介绍通过行业信息以及报表数据识别是否有造假
-- [https://book.douban.com/subject/35922721/](IT审计：用SQL+Python提升工作效率)
-  -主要介绍利用SQL+Python进行数据分析
+- [https://book.douban.com/subject/35922721/](IT审计：用SQL&#43;Python提升工作效率)
+  -主要介绍利用SQL&#43;Python进行数据分析
 
 # 自媒体
 
@@ -464,6 +464,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/  
 

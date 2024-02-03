@@ -21,26 +21,26 @@ Sub 汇总合并工作簿()
     Dim sht As Worksheet
 
     For Each sht In ThisWorkbook.Worksheets
-        shtName = shtName & "," & sht.Name
+        shtName = shtName &amp; &#34;,&#34; &amp; sht.Name
     Next
 
     Dim filePath$, fileName As String
 
-    filePath = ThisWorkbook.Path & "\文件夹\"
-    fileName = Dir(filePath & "*.xlsx")
+    filePath = ThisWorkbook.Path &amp; &#34;\文件夹\&#34;
+    fileName = Dir(filePath &amp; &#34;*.xlsx&#34;)
 
     Dim row_count, thisRow_count
     Application.ScreenUpdating = False
-    Do While fileName <> ""
-        With Workbooks.Open(filePath & fileName)
+    Do While fileName &lt;&gt; &#34;&#34;
+        With Workbooks.Open(filePath &amp; fileName)
             For Each sht In .Worksheets
-                If InStr("," & shtName & ",", "," & sht.Name & ",") > 0 Then
+                If InStr(&#34;,&#34; &amp; shtName &amp; &#34;,&#34;, &#34;,&#34; &amp; sht.Name &amp; &#34;,&#34;) &gt; 0 Then
                     row_count = sht.[a65536].End(3).Row
                     thisRow_count = ThisWorkbook.Worksheets(sht.Name).[a65536].End(3).Row
-                    sht.Range("a2:e" & row_count).Copy ThisWorkbook.Worksheets(sht.Name).Range("a" & thisRow_count + 1)
+                    sht.Range(&#34;a2:e&#34; &amp; row_count).Copy ThisWorkbook.Worksheets(sht.Name).Range(&#34;a&#34; &amp; thisRow_count &#43; 1)
                 Else
                     sht.Copy after:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count)
-                    shtName = shtName & "," & sht.Name
+                    shtName = shtName &amp; &#34;,&#34; &amp; sht.Name
                 End If
             Next
             .Close False
@@ -52,10 +52,10 @@ Sub 汇总合并工作簿()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485296&idx=1&sn=368ced654f9b46912baa0fba537656af&chksm=e8bcce27dfcb4731f5192f230ed000202ad3c401136f1d56d70c53a901bf99ab6d377d416eaf&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485296&amp;idx=1&amp;sn=368ced654f9b46912baa0fba537656af&amp;chksm=e8bcce27dfcb4731f5192f230ed000202ad3c401136f1d56d70c53a901bf99ab6d377d416eaf&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B020%E6%95%B4%E5%90%88%E5%B7%A5%E4%BD%9C%E7%B0%BF/  
 

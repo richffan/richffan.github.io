@@ -63,7 +63,7 @@
 
 ![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_6.webp)
 
-总账银行名称一定要确保唯一值，可以直接使用科目编码代替。如果多家公司，可以公司+科目编码，一般来源于下面这2个信息：
+总账银行名称一定要确保唯一值，可以直接使用科目编码代替。如果多家公司，可以公司&#43;科目编码，一般来源于下面这2个信息：
 
 ![](https://img.richfan.site/audit/审计实务宝典/银行存款与其他货币资金审计_7.webp)
 
@@ -85,6 +85,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B83%E5%8F%B7%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91%E5%AE%A1%E8%AE%A1-%E9%93%B6%E8%A1%8C%E5%AD%98%E6%AC%BE%E4%B8%8E%E5%85%B6%E4%BB%96%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91%E5%AE%A1%E8%AE%A1/  
 

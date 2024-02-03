@@ -20,7 +20,7 @@ DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 
 
 在 DBeaver 官网下载社区版本：
 
-下载地址：<https://dbeaver.io/download/>
+下载地址：&lt;https://dbeaver.io/download/&gt;
 
 
 双击下载好的安装包
@@ -88,9 +88,9 @@ DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 
 这时会自动开始下载，不过一般下载很慢，我们可以更换下下载源，加快速度。需要先点击停止的按钮后，点击 `下载配置`:
 
 
-找到首选项 &gt;连接&gt;驱动&gt;驱动位置 ，点击添加。
+找到首选项 &amp;gt;连接&amp;gt;驱动&amp;gt;驱动位置 ，点击添加。
 
-输入阿里云中央仓库地址： <http://maven.aliyun.com/nexus/content/groups/public/>
+输入阿里云中央仓库地址： &lt;http://maven.aliyun.com/nexus/content/groups/public/&gt;
 
 
 
@@ -112,6 +112,6 @@ DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/  
 

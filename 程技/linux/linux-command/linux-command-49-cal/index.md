@@ -1,7 +1,7 @@
 # 每天一个linux命令（49）: cal
 
 　　cal命令可以用来显示公历（阳历）日历。公历是现在国际通用的历法，又称格列历，通称阳历。“阳历”又名“太阳历”，系以地球绕行太阳一周为一年，为西方各国所通用，故又名“西历”。
-<!-- more -->
+&lt;!-- more --&gt;
 #### 命令格式
 ```bash
 $ cal [参数][月份][年份]
@@ -51,6 +51,6 @@ $ cal -m
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-49-cal/  
 

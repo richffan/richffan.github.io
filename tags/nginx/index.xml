@@ -2,15 +2,15 @@
   <channel>
     <title>nginx - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/nginx/</link>
-    <description>nginx - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Thu, 08 Feb 2018 09:19:09 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/nginx/" rel="self" type="application/rss+xml" /><item>
+    <description>nginx - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 08 Feb 2018 09:19:09 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/nginx/" rel="self" type="application/rss+xml" /><item>
   <title>nginx配置记录</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
   <pubDate>Thu, 08 Feb 2018 09:19:09 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
-  <description><![CDATA[<h3 id="启用https">启用https</h3>]]></description>
+  <description><![CDATA[<h3 id="启用https" class="heading-element">
+  <a href="#%e5%90%af%e7%94%a8https" class="heading-mark"></a>启用https</h3>]]></description>
 </item>
 </channel>
 </rss>

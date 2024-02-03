@@ -1,7 +1,7 @@
 # 3 栈
 
 
-> 栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。
+&gt; 栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。
 
 ![栈](https://gitee.com/wugenqiang/images/raw/master/02/image-20201220170815652.png)
 
@@ -22,7 +22,7 @@ def __init__(self):
 # 元素进栈
 def push(self, element):
     self.stack.append(element)
-    self.top += 1
+    self.top &#43;= 1
 ```
 
 
@@ -120,15 +120,15 @@ class Stack:
     # 元素进栈
     def push(self, element):
         if self.isFull():  # 如果栈满，引发异常
-            raise StackException('Stack is full')
+            raise StackException(&#39;Stack is full&#39;)
         else:
             self.stack.append(element)
-            self.top += 1
+            self.top &#43;= 1
 
     # 元素出栈
     def pop(self):
         if self.isEmpty():  # 如果栈为空，则引发异常
-            raise StackException('Stack is empty')
+            raise StackException(&#39;Stack is empty&#39;)
         else:
             element = self.stack[-1]
             self.top -= 1
@@ -167,14 +167,14 @@ class StackException(Exception):  # 自定义异常类
         return self.data
 
 
-'''
+&#39;&#39;&#39;
 主函数
-'''
-if __name__ == '__main__':
+&#39;&#39;&#39;
+if __name__ == &#39;__main__&#39;:
     stack = Stack()  # 创建栈
     for i in range(10):
         stack.push(i)  # 元素进栈
-    print('栈顶位置：', stack.getTop())
+    print(&#39;栈顶位置：&#39;, stack.getTop())
     while not stack.isEmpty():
         print(stack.pop())  # 元素出栈
 
@@ -189,6 +189,6 @@ if __name__ == '__main__':
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/  
 

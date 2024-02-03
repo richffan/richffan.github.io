@@ -3,7 +3,7 @@
 
 Docsify
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 #### 插件
@@ -14,6 +14,6 @@ Docsify
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/blog/docsify/  
 

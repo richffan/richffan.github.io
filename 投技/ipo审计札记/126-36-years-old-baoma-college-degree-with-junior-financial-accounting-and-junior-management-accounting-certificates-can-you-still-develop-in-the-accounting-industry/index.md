@@ -83,6 +83,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/126-36-years-old-baoma-college-degree-with-junior-financial-accounting-and-junior-management-accounting-certificates-can-you-still-develop-in-the-accounting-industry/  
 

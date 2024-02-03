@@ -1,8 +1,8 @@
 # 每天一个linux命令（39）: ping
 
 　　Linux系统的ping命令是常用的网络命令，它通常用来测试与目标主机的连通性，我们经常会说“ping一下某机器，看是不是开着”、不能打开网页时会说“你先ping网关地址192.168.1.1试试”。它通过发送ICMP ECHO_REQUEST数据包到网络主机（send ICMP ECHO_REQUEST to network hosts），并显示响应情况，这样我们就可以根据它输出的信息来确定目标主机是否可访问（但这不是绝对的）。有些服务器为了防止通过ping探测到，通过防火墙设置了禁止ping或者在内核参数中禁止ping，这样就不能通过ping确定该主机是否还处于开启状态。
-  <!--more -->
-　　linux下的ping和windows下的ping稍有区别,linux下ping不会自动终止,需要按ctrl+c终止或者用参数-c指定要求完成的回应次数。
+  &lt;!--more --&gt;
+　　linux下的ping和windows下的ping稍有区别,linux下ping不会自动终止,需要按ctrl&#43;c终止或者用参数-c指定要求完成的回应次数。
 #### 命令格式
 ```bash
 $ ping [参数] [主机名或IP地址]
@@ -20,7 +20,7 @@ $ ping [参数] [主机名或IP地址]
 | -r | 忽略普通的Routing Table，直接将数据包送到远端主机上。通常是查看本机的网络接口是否有问题 |
 | -R | 记录路由过程 |
 | -v | 详细显示指令的执行过程 |
-| <p>-c 数目 | 在发送指定数目的包后停止 |
+| &lt;p&gt;-c 数目 | 在发送指定数目的包后停止 |
 | -i 秒数 | 设定间隔几秒送一个网络封包给一台机器，预设值是一秒送一次 |
 | -I 网络界面 | 使用指定的网络界面送出数据包 |
 | -l 前置载入 | 设置在送出要求信息之前，先行发出的数据包 |
@@ -50,7 +50,7 @@ From 192.168.0.101 icmp_seq=2 Destination Host Unreachable
 From 192.168.0.101 icmp_seq=3 Destination Host Unreachable
 
 --- 192.168.0.222 ping statistics ---
-7 packets transmitted, 0 received, +6 errors, 100% packet loss, time 6032ms
+7 packets transmitted, 0 received, &#43;6 errors, 100% packet loss, time 6032ms
 pipe 3
 ```
 **`例二`：ping指定次数**
@@ -79,6 +79,6 @@ PING github.map.fastly.net (151.101.192.133) 1024(1052) bytes of data.
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-39-ping/  
 

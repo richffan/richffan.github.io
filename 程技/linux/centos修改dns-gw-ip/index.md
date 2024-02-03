@@ -4,7 +4,7 @@
 **解决方案一：**
 修改网卡的DNS的配置文件
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ```bash
@@ -15,7 +15,7 @@ $ vim /etc/resolv.conf
 nameserver 8.8.8.8 #google域名服务器
 nameserver 8.8.4.4 #google域名服务器
 ```
->若未生效，可执行 `chattr +i /etc/resolv.conf` 设置文件属性只有root用户才能修改
+&gt;若未生效，可执行 `chattr &#43;i /etc/resolv.conf` 设置文件属性只有root用户才能修改
 然后执行 `service NetworkManager restart `
 
 **解决方案二：**
@@ -63,6 +63,6 @@ ONBOOT=yes #系统启动时是否设置此网络接口，设置为yes时，系�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/  
 

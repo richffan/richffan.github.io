@@ -14,8 +14,8 @@
 ```python
 In [10]: import numpy as np; import pandas as pd
 
-In [11]: values = pd.Series(['apple', 'orange', 'apple',
-   ....:                     'apple'] * 2)
+In [11]: values = pd.Series([&#39;apple&#39;, &#39;orange&#39;, &#39;apple&#39;,
+   ....:                     &#39;apple&#39;] * 2)
 
 In [12]: values
 Out[12]: 
@@ -30,7 +30,7 @@ Out[12]:
 dtype: object
 
 In [13]: pd.unique(values)
-Out[13]: array(['apple', 'orange'], dtype=object)
+Out[13]: array([&#39;apple&#39;, &#39;orange&#39;], dtype=object)
 
 In [14]: pd.value_counts(values)
 Out[14]: 
@@ -43,7 +43,7 @@ dtype: int64
 ```python
 In [15]: values = pd.Series([0, 1, 0, 0] * 2)
 
-In [16]: dim = pd.Series(['apple', 'orange'])
+In [16]: dim = pd.Series([&#39;apple&#39;, &#39;orange&#39;])
 
 In [17]: values
 Out[17]: 
@@ -90,15 +90,15 @@ dtype: object
 
 pandas有一个特殊的分类类型，用于保存使用整数分类表示法的数据。看一个之前的Series例子：
 ```python
-In [20]: fruits = ['apple', 'orange', 'apple', 'apple'] * 2
+In [20]: fruits = [&#39;apple&#39;, &#39;orange&#39;, &#39;apple&#39;, &#39;apple&#39;] * 2
 
 In [21]: N = len(fruits)
 
-In [22]: df = pd.DataFrame({'fruit': fruits,
-   ....:                    'basket_id': np.arange(N),
-   ....:                    'count': np.random.randint(3, 15, size=N),
-   ....:                    'weight': np.random.uniform(0, 4, size=N)},
-   ....:                   columns=['basket_id', 'fruit', 'count', 'weight'])
+In [22]: df = pd.DataFrame({&#39;fruit&#39;: fruits,
+   ....:                    &#39;basket_id&#39;: np.arange(N),
+   ....:                    &#39;count&#39;: np.random.randint(3, 15, size=N),
+   ....:                    &#39;weight&#39;: np.random.uniform(0, 4, size=N)},
+   ....:                   columns=[&#39;basket_id&#39;, &#39;fruit&#39;, &#39;count&#39;, &#39;weight&#39;])
 
 In [23]: df
 Out[23]: 
@@ -113,9 +113,9 @@ Out[23]:
 7          7   apple      4  0.425778
 ```
 
-这里，df['fruit']是一个Python字符串对象的数组。我们可以通过调用它，将它转变为分类：
+这里，df[&#39;fruit&#39;]是一个Python字符串对象的数组。我们可以通过调用它，将它转变为分类：
 ```python
-In [24]: fruit_cat = df['fruit'].astype('category')
+In [24]: fruit_cat = df[&#39;fruit&#39;].astype(&#39;category&#39;)
 
 In [25]: fruit_cat
 Out[25]: 
@@ -142,7 +142,7 @@ Out[27]: pandas.core.categorical.Categorical
 分类对象有categories和codes属性：
 ```python
 In [28]: c.categories
-Out[28]: Index(['apple', 'orange'], dtype='object')
+Out[28]: Index([&#39;apple&#39;, &#39;orange&#39;], dtype=&#39;object&#39;)
 
 In [29]: c.codes
 Out[29]: array([0, 1, 0, 0, 0, 1, 0, 0], dtype=int8)
@@ -150,7 +150,7 @@ Out[29]: array([0, 1, 0, 0, 0, 1, 0, 0], dtype=int8)
 
 你可将DataFrame的列通过分配转换结果，转换为分类：
 ```python
-In [30]: df['fruit'] = df['fruit'].astype('category')
+In [30]: df[&#39;fruit&#39;] = df[&#39;fruit&#39;].astype(&#39;category&#39;)
 
 In [31]: df.fruit
 Out[31]:
@@ -168,7 +168,7 @@ Categories (2, object): [apple, orange]
 
 你还可以从其它Python序列直接创建pandas.Categorical：
 ```python
-In [32]: my_categories = pd.Categorical(['foo', 'bar', 'baz', 'foo', 'bar'])
+In [32]: my_categories = pd.Categorical([&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;, &#39;bar&#39;])
 
 In [33]: my_categories
 Out[33]: 
@@ -178,7 +178,7 @@ Categories (3, object): [bar, baz, foo]
 
 如果你已经从其它源获得了分类编码，你还可以使用from_codes构造器：
 ```python
-In [34]: categories = ['foo', 'bar', 'baz']
+In [34]: categories = [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;]
 
 In [35]: codes = [0, 1, 2, 0, 0, 1]
 
@@ -198,15 +198,15 @@ In [38]: ordered_cat = pd.Categorical.from_codes(codes, categories,
 In [39]: ordered_cat
 Out[39]: 
 [foo, bar, baz, foo, foo, bar]
-Categories (3, object): [foo < bar < baz]
+Categories (3, object): [foo &lt; bar &lt; baz]
 ```
 
-输出[foo < bar < baz]指明‘foo’位于‘bar’的前面，以此类推。无序的分类实例可以通过as_ordered排序：
+输出[foo &lt; bar &lt; baz]指明‘foo’位于‘bar’的前面，以此类推。无序的分类实例可以通过as_ordered排序：
 ```python
 In [40]: my_cats_2.as_ordered()
 Out[40]: 
 [foo, bar, baz, foo, foo, bar]
-Categories (3, object): [foo < bar < baz]
+Categories (3, object): [foo &lt; bar &lt; baz]
 ```
 
 最后要注意，分类数据不需要字符串，尽管我仅仅展示了字符串的例子。分类数组可以包括任意不可变类型。
@@ -235,20 +235,20 @@ Out[45]:
  3.928], ..., (-0.0101, 0.63], (-0.684, -0.0101], (-2.95, -0.684], (-0.0101, 0.63
 ], (0.63, 3.928]]
 Length: 1000
-Categories (4, interval[float64]): [(-2.95, -0.684] < (-0.684, -0.0101] < (-0.010
-1, 0.63] <
+Categories (4, interval[float64]): [(-2.95, -0.684] &lt; (-0.684, -0.0101] &lt; (-0.010
+1, 0.63] &lt;
                                     (0.63, 3.928]]
 ```
 
 虽然有用，确切的样本分位数与分位的名称相比，不利于生成汇总。我们可以使用labels参数qcut，实现目的：
 ```python
-In [46]: bins = pd.qcut(draws, 4, labels=['Q1', 'Q2', 'Q3', 'Q4'])
+In [46]: bins = pd.qcut(draws, 4, labels=[&#39;Q1&#39;, &#39;Q2&#39;, &#39;Q3&#39;, &#39;Q4&#39;])
 
 In [47]: bins
 Out[47]: 
 [Q2, Q3, Q2, Q2, Q4, ..., Q3, Q2, Q1, Q3, Q4]
 Length: 1000
-Categories (4, object): [Q1 < Q2 < Q3 < Q4]
+Categories (4, object): [Q1 &lt; Q2 &lt; Q3 &lt; Q4]
 
 In [48]: bins.codes[:10]
 Out[48]: array([1, 2, 1, 1, 3, 3, 2, 2, 3, 3], dtype=int8)
@@ -256,11 +256,11 @@ Out[48]: array([1, 2, 1, 1, 3, 3, 2, 2, 3, 3], dtype=int8)
 
 加上标签的面元分类不包含数据面元边界的信息，因此可以使用groupby提取一些汇总信息：
 ```python
-In [49]: bins = pd.Series(bins, name='quartile')
+In [49]: bins = pd.Series(bins, name=&#39;quartile&#39;)
 
 In [50]: results = (pd.Series(draws)
    ....:            .groupby(bins)
-   ....:            .agg(['count', 'min', 'max'])
+   ....:            .agg([&#39;count&#39;, &#39;min&#39;, &#39;max&#39;])
    ....:            .reset_index())
 
 In [51]: results
@@ -274,14 +274,14 @@ Out[51]:
 
 分位数列保存了原始的面元分类信息，包括排序：
 ```python
-In [52]: results['quartile']
+In [52]: results[&#39;quartile&#39;]
 Out[52]:
 0    Q1
 1    Q2
 2    Q3
 3    Q4
 Name: quartile, dtype: category
-Categories (4, object): [Q1 < Q2 < Q3 < Q4]
+Categories (4, object): [Q1 &lt; Q2 &lt; Q3 &lt; Q4]
 ```
 
 ### 12.1.4 用分类提高性能
@@ -292,12 +292,12 @@ In [53]: N = 10000000
 
 In [54]: draws = pd.Series(np.random.randn(N))
 
-In [55]: labels = pd.Series(['foo', 'bar', 'baz', 'qux'] * (N // 4))
+In [55]: labels = pd.Series([&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;qux&#39;] * (N // 4))
 ```
 
 现在，将标签转换为分类：
 ```python
-In [56]: categories = labels.astype('category')
+In [56]: categories = labels.astype(&#39;category&#39;)
 ```
 
 这时，可以看到标签使用的内存远比分类多：
@@ -311,7 +311,7 @@ Out[58]: 10000272
 
 转换为分类不是没有代价的，但这是一次性的代价：
 ```python
-In [59]: %time _ = labels.astype('category')
+In [59]: %time _ = labels.astype(&#39;category&#39;)
 CPU times: user 490 ms, sys: 240 ms, total: 730 ms
 Wall time: 726 ms
 ```
@@ -322,9 +322,9 @@ GroupBy使用分类操作明显更快，是因为底层的算法使用整数编�
 
 包含分类数据的Series有一些特殊的方法，类似于Series.str字符串方法。它还提供了方便的分类和编码的使用方法。看下面的Series：
 ```python
-In [60]: s = pd.Series(['a', 'b', 'c', 'd'] * 2)
+In [60]: s = pd.Series([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;] * 2)
 
-In [61]: cat_s = s.astype('category')
+In [61]: cat_s = s.astype(&#39;category&#39;)
 
 In [62]: cat_s
 Out[62]: 
@@ -355,12 +355,12 @@ Out[63]:
 dtype: int8
 
 In [64]: cat_s.cat.categories
-Out[64]: Index(['a', 'b', 'c', 'd'], dtype='object')
+Out[64]: Index([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], dtype=&#39;object&#39;)
 ```
 
 假设我们知道这个数据的实际分类集，超出了数据中的四个值。我们可以使用set_categories方法改变它们：
 ```python
-In [65]: actual_categories = ['a', 'b', 'c', 'd', 'e']
+In [65]: actual_categories = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 
 In [66]: cat_s2 = cat_s.cat.set_categories(actual_categories)
 
@@ -400,7 +400,7 @@ dtype: int64
 
 在大数据集中，分类经常作为节省内存和高性能的便捷工具。过滤完大DataFrame或Series之后，许多分类可能不会出现在数据中。我们可以使用remove_unused_categories方法删除没看到的分类：
 ```python
-In [70]: cat_s3 = cat_s[cat_s.isin(['a', 'b'])]
+In [70]: cat_s3 = cat_s[cat_s.isin([&#39;a&#39;, &#39;b&#39;])]
 
 In [71]: cat_s3
 Out[71]: 
@@ -432,7 +432,7 @@ Categories (2, object): [a, b]
 
 看前面的例子：
 ```python
-In [73]: cat_s = pd.Series(['a', 'b', 'c', 'd'] * 2, dtype='category')
+In [73]: cat_s = pd.Series([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;] * 2, dtype=&#39;category&#39;)
 ```
 
 前面的第7章提到过，pandas.get_dummies函数可以转换这个分类数据为包含虚拟变量的DataFrame：
@@ -464,8 +464,8 @@ Out[74]:
 
 来看一个简单的例子：
 ```python
-In [75]: df = pd.DataFrame({'key': ['a', 'b', 'c'] * 4,
-   ....:                    'value': np.arange(12.)})
+In [75]: df = pd.DataFrame({&#39;key&#39;: [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] * 4,
+   ....:                    &#39;value&#39;: np.arange(12.)})
 
 In [76]: df
 Out[76]: 
@@ -486,7 +486,7 @@ Out[76]:
 
 按键进行分组：
 ```python
-In [77]: g = df.groupby('key').value
+In [77]: g = df.groupby(&#39;key&#39;).value
 
 In [78]: g.mean()
 Out[78]: 
@@ -497,7 +497,7 @@ c    6.5
 Name: value, dtype: float64
 ```
 
-假设我们想产生一个和df['value']形状相同的Series，但值替换为按键分组的平均值。我们可以传递函数lambda x: x.mean()进行转换：
+假设我们想产生一个和df[&#39;value&#39;]形状相同的Series，但值替换为按键分组的平均值。我们可以传递函数lambda x: x.mean()进行转换：
 ```python
 In [79]: g.transform(lambda x: x.mean())
 Out[79]: 
@@ -518,7 +518,7 @@ Name: value, dtype: float64
 
 对于内置的聚合函数，我们可以传递一个字符串假名作为GroupBy的agg方法：
 ```python
-In [80]: g.transform('mean')
+In [80]: g.transform(&#39;mean&#39;)
 Out[80]: 
 0     4.5
 1     5.5
@@ -616,7 +616,7 @@ Name: value, dtype: float64
 
 内置的聚合函数，比如mean或sum，通常比apply函数快，也比transform快。这允许我们进行一个所谓的解封（unwrapped）分组操作：
 ```python
-In [86]: g.transform('mean')
+In [86]: g.transform(&#39;mean&#39;)
 Out[86]: 
 0     4.5
 1     5.5
@@ -632,7 +632,7 @@ Out[86]:
 11    6.5
 Name: value, dtype: float64
 
-In [87]: normalized = (df['value'] - g.transform('mean')) / g.transform('std')
+In [87]: normalized = (df[&#39;value&#39;] - g.transform(&#39;mean&#39;)) / g.transform(&#39;std&#39;)
 
 In [88]: normalized
 Out[88]: 
@@ -659,10 +659,10 @@ Name: value, dtype: float64
 ```python
 In [89]: N = 15
 
-In [90]: times = pd.date_range('2017-05-20 00:00', freq='1min', periods=N)
+In [90]: times = pd.date_range(&#39;2017-05-20 00:00&#39;, freq=&#39;1min&#39;, periods=N)
 
-In [91]: df = pd.DataFrame({'time': times,
-   ....:                    'value': np.arange(N)})
+In [91]: df = pd.DataFrame({&#39;time&#39;: times,
+   ....:                    &#39;value&#39;: np.arange(N)})
 
 In [92]: df
 Out[92]: 
@@ -686,7 +686,7 @@ Out[92]:
 
 这里，我们可以用time作为索引，然后重采样：
 ```python
-In [93]: df.set_index('time').resample('5min').count()
+In [93]: df.set_index(&#39;time&#39;).resample(&#39;5min&#39;).count()
 Out[93]: 
                      value
 time                      
@@ -697,9 +697,9 @@ time
 
 假设DataFrame包含多个时间序列，用一个额外的分组键的列进行标记：
 ```python
-In [94]: df2 = pd.DataFrame({'time': times.repeat(3),
-   ....:                     'key': np.tile(['a', 'b', 'c'], N),
-   ....:                     'value': np.arange(N * 3.)})
+In [94]: df2 = pd.DataFrame({&#39;time&#39;: times.repeat(3),
+   ....:                     &#39;key&#39;: np.tile([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], N),
+   ....:                     &#39;value&#39;: np.arange(N * 3.)})
 
 In [95]: df2[:7]
 Out[95]: 
@@ -715,13 +715,13 @@ Out[95]:
 
 要对每个key值进行相同的重采样，我们引入pandas.TimeGrouper对象：
 ```python
-In [96]: time_key = pd.TimeGrouper('5min')
+In [96]: time_key = pd.TimeGrouper(&#39;5min&#39;)
 ```
 
 我们然后设定时间索引，用key和time_key分组，然后聚合：
 ```python
-In [97]: resampled = (df2.set_index('time')
-   ....:              .groupby(['key', time_key])
+In [97]: resampled = (df2.set_index(&#39;time&#39;)
+   ....:              .groupby([&#39;key&#39;, time_key])
    ....:              .sum())
 
 In [98]: resampled
@@ -759,16 +759,16 @@ key                time  value
 当对数据集进行一系列变换时，你可能发现创建的多个临时变量其实并没有在分析中用到。看下面的例子：
 ```python
 df = load_data()
-df2 = df[df['col2'] < 0]
-df2['col1_demeaned'] = df2['col1'] - df2['col1'].mean()
-result = df2.groupby('key').col1_demeaned.std()
+df2 = df[df[&#39;col2&#39;] &lt; 0]
+df2[&#39;col1_demeaned&#39;] = df2[&#39;col1&#39;] - df2[&#39;col1&#39;].mean()
+result = df2.groupby(&#39;key&#39;).col1_demeaned.std()
 ```
 
 虽然这里没有使用真实的数据，这个例子却指出了一些新方法。首先，DataFrame.assign方法是一个df[k] = v形式的函数式的列分配方法。它不是就地修改对象，而是返回新的修改过的DataFrame。因此，下面的语句是等价的：
 ```python
 # Usual non-functional way
 df2 = df.copy()
-df2['k'] = v
+df2[&#39;k&#39;] = v
 
 # Functional assign way
 df2 = df.assign(k=v)
@@ -777,7 +777,7 @@ df2 = df.assign(k=v)
 就地分配可能会比assign快，但是assign可以方便地进行链式编程：
 ```python
 result = (df2.assign(col1_demeaned=df2.col1 - df2.col2.mean())
-          .groupby('key')
+          .groupby(&#39;key&#39;)
           .col1_demeaned.std())
 ```
 
@@ -786,13 +786,13 @@ result = (df2.assign(col1_demeaned=df2.col1 - df2.col2.mean())
 使用链式编程时要注意，你可能会需要涉及临时对象。在前面的例子中，我们不能使用load_data的结果，直到它被赋值给临时变量df。为了这么做，assign和许多其它pandas函数可以接收类似函数的参数，即可调用对象（callable）。为了展示可调用对象，看一个前面例子的片段：
 ```python
 df = load_data()
-df2 = df[df['col2'] < 0]
+df2 = df[df[&#39;col2&#39;] &lt; 0]
 ```
 
 它可以重写为：
 ```python
 df = (load_data()
-      [lambda x: x['col2'] < 0])
+      [lambda x: x[&#39;col2&#39;] &lt; 0])
 ```
 
 这里，load_data的结果没有赋值给某个变量，因此传递到[ ]的函数在这一步被绑定到了对象。
@@ -800,9 +800,9 @@ df = (load_data()
 我们可以把整个过程写为一个单链表达式：
 ```python
 result = (load_data()
-          [lambda x: x.col2 < 0]
+          [lambda x: x.col2 &lt; 0]
           .assign(col1_demeaned=lambda x: x.col1 - x.col1.mean())
-          .groupby('key')
+          .groupby(&#39;key&#39;)
           .col1_demeaned.std())
 ```
 
@@ -830,8 +830,8 @@ f(df)和df.pipe(f)是等价的，但是pipe使得链式声明更容易。
 
 pipe的另一个有用的地方是提炼操作为可复用的函数。看一个从列减去分组方法的例子：
 ```python
-g = df.groupby(['key1', 'key2'])
-df['col1'] = df['col1'] - g.transform('mean')
+g = df.groupby([&#39;key1&#39;, &#39;key2&#39;])
+df[&#39;col1&#39;] = df[&#39;col1&#39;] - g.transform(&#39;mean&#39;)
 ```
 
 假设你想转换多列，并修改分组的键。另外，你想用链式编程做这个转换。下面就是一个方法：
@@ -840,14 +840,14 @@ def group_demean(df, by, cols):
     result = df.copy()
     g = df.groupby(by)
     for c in cols:
-        result[c] = df[c] - g[c].transform('mean')
+        result[c] = df[c] - g[c].transform(&#39;mean&#39;)
     return result
 ```
 
 然后可以写为：
 ```python
-result = (df[df.col1 < 0]
-          .pipe(group_demean, ['key1', 'key2'], ['col1']))
+result = (df[df.col1 &lt; 0]
+          .pipe(group_demean, [&#39;key1&#39;, &#39;key2&#39;], [&#39;col1&#39;]))
 ```
 
 ## 12.4 总结
@@ -859,6 +859,6 @@ result = (df[df.col1 < 0]
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/  
 

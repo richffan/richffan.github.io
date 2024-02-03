@@ -2,7 +2,7 @@
 
 ### docker创建容器
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 #### 1. iptables failed
@@ -26,6 +26,6 @@ $ service docker restart
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E6%8A%A5%E9%94%99%E9%9B%86%E9%94%A6/  
 

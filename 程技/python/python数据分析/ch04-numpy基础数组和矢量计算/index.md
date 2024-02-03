@@ -9,9 +9,9 @@ NumPy的部分功能如下：
 - 用于对整组数据进行快速运算的标准数学函数（无需编写循环）。
 - 用于读写磁盘数据的工具以及用于操作内存映射文件的工具。
 - 线性代数、随机数生成以及傅里叶变换功能。
-- 用于集成由C、C++、Fortran等语言编写的代码的A C API。
+- 用于集成由C、C&#43;&#43;、Fortran等语言编写的代码的A C API。
 
-由于NumPy提供了一个简单易用的C API，因此很容易将数据传递给由低级语言编写的外部库，外部库也能以NumPy数组的形式将数据返回给Python。这个功能使Python成为一种包装C/C++/Fortran历史代码库的选择，并使被包装库拥有一个动态的、易用的接口。
+由于NumPy提供了一个简单易用的C API，因此很容易将数据传递给由低级语言编写的外部库，外部库也能以NumPy数组的形式将数据返回给Python。这个功能使Python成为一种包装C/C&#43;&#43;/Fortran历史代码库的选择，并使被包装库拥有一个动态的、易用的接口。
 
 NumPy本身并没有提供多么高级的数据分析功能，理解NumPy数组以及面向数组的计算将有助于你更加高效地使用诸如pandas之类的工具。因为NumPy是一个很大的题目，我会在附录A中介绍更多NumPy高级功能，比如广播。
 
@@ -26,7 +26,7 @@ NumPy本身并没有提供多么高级的数据分析功能，理解NumPy数组�
 
 虽然NumPy提供了通用的`数值数据处理`的计算基础，但大多数读者可能还是想将pandas作为`统计和分析工作`的基础，尤其是处理表格数据时。pandas还提供了一些NumPy所没有的领域特定的功能，如时间序列处理等。
 
->🐰 笔记：Python的面向数组计算可以追溯到1995年，Jim Hugunin创建了Numeric库。接下来的10年，许多科学编程社区纷纷开始使用Python的数组编程，但是进入21世纪，库的生态系统变得碎片化了。2005年，Travis Oliphant从Numeric和Numarray项目整合出了NumPy项目，进而所有社区都集合到了这个框架下。
+&gt;🐰 笔记：Python的面向数组计算可以追溯到1995年，Jim Hugunin创建了Numeric库。接下来的10年，许多科学编程社区纷纷开始使用Python的数组编程，但是进入21世纪，库的生态系统变得碎片化了。2005年，Travis Oliphant从Numeric和Numarray项目整合出了NumPy项目，进而所有社区都集合到了这个框架下。
 
 NumPy对于数值计算特别重要的原因之一，是**因为它可以高效处理大数组的数据。**这是因为：
 
@@ -71,9 +71,9 @@ array([[-0.2047,  0.4789, -0.5194],
        [-0.5557,  1.9658,  1.3934]])
 ```
 
-> 🦐 拓展：numpy 常用函数之 randn
->
-> randn 函数位于 numpy.random 中，用于产生随机数，这个函数的作用就是从标准正态分布中返回一个或多个样本值。
+&gt; 🦐 拓展：numpy 常用函数之 randn
+&gt;
+&gt; randn 函数位于 numpy.random 中，用于产生随机数，这个函数的作用就是从标准正态分布中返回一个或多个样本值。
 
 然后进行数学运算：
 
@@ -83,7 +83,7 @@ Out[15]:
 array([[ -2.0471,   4.7894,  -5.1944],
        [ -5.5573,  19.6578,  13.9341]])
 
-In [16]: data + data
+In [16]: data &#43; data
 Out[16]: 
 array([[-0.4094,  0.9579, -1.0389],
        [-1.1115,  3.9316,  2.7868]])
@@ -91,7 +91,7 @@ array([[-0.4094,  0.9579, -1.0389],
 
 第一个例子中，所有的元素都乘以10。第二个例子中，每个元素都与自身相加。
 
->🐌 笔记：在本章及全书中，我会使用标准的NumPy惯用法``import numpy as np``。你当然也可以在代码中使用``from numpy import *``，但不建议这么做。``numpy``的命名空间很大，包含许多函数，其中一些的名字与Python的内置函数重名（比如min和max）。
+&gt;🐌 笔记：在本章及全书中，我会使用标准的NumPy惯用法``import numpy as np``。你当然也可以在代码中使用``from numpy import *``，但不建议这么做。``numpy``的命名空间很大，包含许多函数，其中一些的名字与Python的内置函数重名（比如min和max）。
 
 ndarray是一个通用的同构数据多维容器，也就是说，其中的所有元素必须是相同类型的。每个数组都有一个shape（一个表示各维度大小的元组）和一个dtype（一个用于说明数组数据类型的对象）：
 ```python
@@ -99,12 +99,12 @@ In [17]: data.shape
 Out[17]: (2, 3)
 
 In [18]: data.dtype
-Out[18]: dtype('float64')
+Out[18]: dtype(&#39;float64&#39;)
 ```
 
 本章将会介绍NumPy数组的基本用法，这对于本书后面各章的理解基本够用。虽然大多数数据分析工作不需要深入理解NumPy，但是精通面向数组的编程和思维方式是成为Python科学计算牛人的一大关键步骤。
 
->笔记：当你在本书中看到“数组”、“NumPy数组”、"ndarray"时，基本上都指的是同一样东西，即ndarray对象。
+&gt;笔记：当你在本书中看到“数组”、“NumPy数组”、&#34;ndarray&#34;时，基本上都指的是同一样东西，即ndarray对象。
 
 ## 4.1.1 创建ndarray
 创建数组最简单的办法就是使用array函数。它接受一切序列型的对象（包括其他数组），然后产生一个新的含有传入数据的NumPy数组。以一个列表的转换为例：
@@ -141,10 +141,10 @@ Out[26]: (2, 4)
 除非特别说明（稍后将会详细介绍），np.array会尝试为新建的这个数组推断出一个较为合适的数据类型。数据类型保存在一个特殊的dtype对象中。比如说，在上面的两个例子中，我们有：
 ```python
 In [27]: arr1.dtype
-Out[27]: dtype('float64')
+Out[27]: dtype(&#39;float64&#39;)
 
 In [28]: arr2.dtype
-Out[28]: dtype('int64')
+Out[28]: dtype(&#39;int64&#39;)
 ```
 
 除np.array之外，还有一些函数也可以新建数组。比如，zeros和ones分别可以创建指定长度或形状的全0或全1数组。empty可以创建一个没有任何具体值的数组。要用这些方法创建多维数组，只需传入一个表示形状的元组即可：
@@ -168,7 +168,7 @@ array([[[ 0.,  0.],
         [ 0.,  0.]]])
 ```
 
->注意：认为np.empty会返回全0数组的想法是不安全的。很多情况下（如前所示），它返回的都是一些未初始化的垃圾值。
+&gt;注意：认为np.empty会返回全0数组的想法是不安全的。很多情况下（如前所示），它返回的都是一些未初始化的垃圾值。
 
 arange是Python内置函数range的数组版：
 ```python
@@ -188,15 +188,15 @@ In [33]: arr1 = np.array([1, 2, 3], dtype=np.float64)
 In [34]: arr2 = np.array([1, 2, 3], dtype=np.int32)
 
 In [35]: arr1.dtype
-Out[35]: dtype('float64')
+Out[35]: dtype(&#39;float64&#39;)
 
 In [36]: arr2.dtype
-Out[36]: dtype('int32')
+Out[36]: dtype(&#39;int32&#39;)
 ```
 
 **dtype是NumPy灵活交互其它系统的源泉之一**。多数情况下，它们直接映射到相应的机器表示，这使得“读写磁盘上的二进制数据流”以及“集成低级语言代码（如C、Fortran）”等工作变得更加简单。数值型dtype的命名方式相同：一个类型名（如float或int），后面跟一个用于表示各元素位长的数字。标准的双精度浮点值（即Python中的float对象）需要占用8字节（即64位）。因此，该类型在NumPy中就记作float64。表4-2列出了NumPy所支持的全部数据类型。
 
->笔记：记不住这些NumPy的dtype也没关系，新手更是如此。通常只需要知道你所处理的数据的大致类型是浮点数、复数、整数、布尔值、字符串，还是普通的Python对象即可。当你需要控制数据在内存和磁盘中的存储方式时（尤其是对大数据集），那就得了解如何控制存储类型。
+&gt;笔记：记不住这些NumPy的dtype也没关系，新手更是如此。通常只需要知道你所处理的数据的大致类型是浮点数、复数、整数、布尔值、字符串，还是普通的Python对象即可。当你需要控制数据在内存和磁盘中的存储方式时（尤其是对大数据集），那就得了解如何控制存储类型。
 
 ![](https://gitee.com/wugenqiang/images/raw/master/01/1240-20201010092713397.png)
 
@@ -207,12 +207,12 @@ Out[36]: dtype('int32')
 In [37]: arr = np.array([1, 2, 3, 4, 5])
 
 In [38]: arr.dtype
-Out[38]: dtype('int64')
+Out[38]: dtype(&#39;int64&#39;)
 
 In [39]: float_arr = arr.astype(np.float64)
 
 In [40]: float_arr.dtype
-Out[40]: dtype('float64')
+Out[40]: dtype(&#39;float64&#39;)
 ```
 
 在本例中，整数被转换成了浮点数。如果将浮点数转换成整数，则小数部分将会被截取删除：
@@ -228,13 +228,13 @@ Out[43]: array([ 3, -1, -2,  0, 12, 10], dtype=int32)
 
 如果某字符串数组表示的全是数字，也可以用astype将其转换为数值形式：
 ```python
-In [44]: numeric_strings = np.array(['1.25', '-9.6', '42'], dtype=np.string_)
+In [44]: numeric_strings = np.array([&#39;1.25&#39;, &#39;-9.6&#39;, &#39;42&#39;], dtype=np.string_)
 
 In [45]: numeric_strings.astype(float)
 Out[45]: array([  1.25,  -9.6 ,  42.  ])
 ```
 
->🐤 注意：使用numpy.string_类型时，一定要小心，因为NumPy的字符串数据是大小固定的，发生截取时，不会发出警告。pandas提供了更多非数值数据的便利的处理方法。
+&gt;🐤 注意：使用numpy.string_类型时，一定要小心，因为NumPy的字符串数据是大小固定的，发生截取时，不会发出警告。pandas提供了更多非数值数据的便利的处理方法。
 
 如果转换过程因为某种原因而失败了（比如某个不能被转换为float64的字符串），就会引发一个ValueError。这里，我比较懒，写的是float而不是np.float64；NumPy很聪明，它会将Python类型映射到等价的dtype上。
 
@@ -250,7 +250,7 @@ Out[48]: array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9.])
 
 你还可以用简洁的类型代码来表示dtype：
 ```python
-In [49]: empty_uint32 = np.empty(8, dtype='u4')
+In [49]: empty_uint32 = np.empty(8, dtype=&#39;u4&#39;)
 
 In [50]: empty_uint32
 Out[50]: 
@@ -258,7 +258,7 @@ array([         0, 1075314688,          0, 1075707904,          0,
        1075838976,          0, 1072693248], dtype=uint32)
 ```
 
->🐛 笔记：调用astype总会创建一个新的数组（一个数据的备份），即使新的dtype与旧的dtype相同。
+&gt;🐛 笔记：调用astype总会创建一个新的数组（一个数据的备份），即使新的dtype与旧的dtype相同。
 
 ## 4.1.3 NumPy数组的运算
 数组很重要，因为它使你不用编写循环即可对数据执行批量运算。NumPy用户称其为矢量化（vectorization）。大小相等的数组之间的任何算术运算都会将运算应用到元素级：
@@ -303,7 +303,7 @@ Out[58]:
 array([[  0.,   4.,   1.],
        [  7.,   2.,  12.]])
 
-In [59]: arr2 > arr
+In [59]: arr2 &gt; arr
 Out[59]:
 array([[False,  True, False],
        [ True, False,  True]], dtype=bool)
@@ -360,7 +360,7 @@ Out[71]: array([ 0,  1,  2,  3,  4, 64, 64, 64,  8,  9])
 
 如果你刚开始接触NumPy，可能会对此感到惊讶（尤其是当你曾经用过其他热衷于复制数组数据的编程语言）。由于NumPy的设计目的是**处理大数据**，所以你可以想象一下，假如NumPy坚持要将数据复制来复制去的话会产生何等的性能和内存问题。
 
->❗️ 注意：如果你想要得到的是ndarray切片的一份副本而非视图，就需要明确地进行复制操作，例如``arr[5:8].copy()``。
+&gt;❗️ 注意：如果你想要得到的是ndarray切片的一份副本而非视图，就需要明确地进行复制操作，例如``arr[5:8].copy()``。
 
 对于高维度数组，能做的事情更多。在一个二维数组中，各索引位置上的元素不再是标量而是一维数组：
 ```python
@@ -521,14 +521,14 @@ array([[1, 0, 0],
 ## 4.1.6 布尔型索引
 来看这样一个例子，假设我们有一个用于存储数据的数组以及一个存储姓名的数组（含有重复项）。在这里，我将使用numpy.random中的randn函数生成一些正态分布的随机数据：
 ```python
-In [98]: names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])
+In [98]: names = np.array([&#39;Bob&#39;, &#39;Joe&#39;, &#39;Will&#39;, &#39;Bob&#39;, &#39;Will&#39;, &#39;Joe&#39;, &#39;Joe&#39;])
 
 In [99]: data = np.random.randn(7, 4)
 
 In [100]: names
 Out[100]: 
-array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'],
-      dtype='<U4')
+array([&#39;Bob&#39;, &#39;Joe&#39;, &#39;Will&#39;, &#39;Bob&#39;, &#39;Will&#39;, &#39;Joe&#39;, &#39;Joe&#39;],
+      dtype=&#39;&lt;U4&#39;)
 
 In [101]: data
 Out[101]: 
@@ -541,15 +541,15 @@ array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
        [-0.7135, -0.8312, -2.3702, -1.8608]])
 ```
 
-假设每个名字都对应data数组中的一行，而我们想要选出对应于名字"Bob"的所有行。跟算术运算一样，数组的比较运算（如==）也是矢量化的。因此，对names和字符串"Bob"的比较运算将会产生一个布尔型数组：
+假设每个名字都对应data数组中的一行，而我们想要选出对应于名字&#34;Bob&#34;的所有行。跟算术运算一样，数组的比较运算（如==）也是矢量化的。因此，对names和字符串&#34;Bob&#34;的比较运算将会产生一个布尔型数组：
 ```python
-In [102]: names == 'Bob'
+In [102]: names == &#39;Bob&#39;
 Out[102]: array([ True, False, False,  True, False, False, False], dtype=bool)
 ```
 
 这个布尔型数组可用于数组索引：
 ```python
-In [103]: data[names == 'Bob']
+In [103]: data[names == &#39;Bob&#39;]
 Out[103]: 
 array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
        [ 1.669 , -0.4386, -0.5397,  0.477 ]])
@@ -557,31 +557,31 @@ array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
 
 布尔型数组的长度必须跟被索引的轴长度一致。此外，还可以将布尔型数组跟切片、整数（或整数序列，稍后将对此进行详细讲解）混合使用：
 ```python
-In [103]: data[names == 'Bob']
+In [103]: data[names == &#39;Bob&#39;]
 Out[103]: 
 array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
        [ 1.669 , -0.4386, -0.5397,  0.477 ]])
 ```
 
->注意：如果布尔型数组的长度不对，布尔型选择就会出错，因此一定要小心。
+&gt;注意：如果布尔型数组的长度不对，布尔型选择就会出错，因此一定要小心。
 
-下面的例子，我选取了``names == 'Bob'``的行，并索引了列：
+下面的例子，我选取了``names == &#39;Bob&#39;``的行，并索引了列：
 ```python
-In [104]: data[names == 'Bob', 2:]
+In [104]: data[names == &#39;Bob&#39;, 2:]
 Out[104]: 
 array([[ 0.769 ,  1.2464],
        [-0.5397,  0.477 ]])
 
-In [105]: data[names == 'Bob', 3]
+In [105]: data[names == &#39;Bob&#39;, 3]
 Out[105]: array([ 1.2464,  0.477 ])
 ```
 
-要选择除"Bob"以外的其他值，既可以使用不等于符号（!=），也可以通过~对条件进行否定：
+要选择除&#34;Bob&#34;以外的其他值，既可以使用不等于符号（!=），也可以通过~对条件进行否定：
 ```python
-In [106]: names != 'Bob'
+In [106]: names != &#39;Bob&#39;
 Out[106]: array([False,  True,  True, False,  True,  True,  True], dtype=bool)
 
-In [107]: data[~(names == 'Bob')]
+In [107]: data[~(names == &#39;Bob&#39;)]
 Out[107]:
 array([[ 1.0072, -1.2962,  0.275 ,  0.2289],
        [ 1.3529,  0.8864, -2.0016, -0.3718],
@@ -593,7 +593,7 @@ array([[ 1.0072, -1.2962,  0.275 ,  0.2289],
 ~操作符用来反转条件很好用：
 
 ```python
-In [108]: cond = names == 'Bob'
+In [108]: cond = names == &#39;Bob&#39;
 
 In [109]: data[~cond]
 Out[109]: 
@@ -604,9 +604,9 @@ array([[ 1.0072, -1.2962,  0.275 ,  0.2289],
        [-0.7135, -0.8312, -2.3702, -1.8608]])
 ```
 
-选取这三个名字中的两个需要组合应用多个布尔条件，使用&（和）、|（或）之类的布尔算术运算符即可：
+选取这三个名字中的两个需要组合应用多个布尔条件，使用&amp;（和）、|（或）之类的布尔算术运算符即可：
 ```python
-In [110]: mask = (names == 'Bob') | (names == 'Will')
+In [110]: mask = (names == &#39;Bob&#39;) | (names == &#39;Will&#39;)
 
 In [111]: mask
 Out[111]: array([ True, False,  True,  True,  True, False, False], dtype=bool)
@@ -621,11 +621,11 @@ array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
 
 通过布尔型索引选取数组中的数据，将总是创建数据的副本，即使返回一模一样的数组也是如此。
 
->注意：Python关键字and和or在布尔型数组中无效。要使用&与|。
+&gt;注意：Python关键字and和or在布尔型数组中无效。要使用&amp;与|。
 
 通过布尔型数组设置值是一种经常用到的手段。为了将data中的所有负值都设置为0，我们只需：
 ```python
-In [113]: data[data < 0] = 0
+In [113]: data[data &lt; 0] = 0
 
 In [114]: data
 Out[114]: 
@@ -640,7 +640,7 @@ array([[ 0.0929,  0.2817,  0.769 ,  1.2464],
 
 通过一维布尔数组设置整行或列的值也很简单：
 ```python
-In [115]: data[names != 'Joe'] = 7
+In [115]: data[names != &#39;Joe&#39;] = 7
 
 In [116]: data
 Out[116]: 
@@ -903,9 +903,9 @@ Out[154]: array([    nan,     nan,     nan,  2.318 ,  1.9022,  1.8574,  2.2378])
 ![](http://upload-images.jianshu.io/upload_images/7178691-236dba83b6a420cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # 4.3 利用数组进行数据处理
-> NumPy数组使你可以将许多种数据处理任务表述为简洁的数组表达式（否则需要编写循环）。**用数组表达式代替循环的做法，通常被称为矢量化**。一般来说，矢量化数组运算要比等价的纯Python方式快上一两个数量级（甚至更多），尤其是各种数值计算。在后面内容中（见附录A）我将介绍广播，这是一种针对矢量化计算的强大手段。
+&gt; NumPy数组使你可以将许多种数据处理任务表述为简洁的数组表达式（否则需要编写循环）。**用数组表达式代替循环的做法，通常被称为矢量化**。一般来说，矢量化数组运算要比等价的纯Python方式快上一两个数量级（甚至更多），尤其是各种数值计算。在后面内容中（见附录A）我将介绍广播，这是一种针对矢量化计算的强大手段。
 
-作为简单的例子，假设我们想要在一组值（网格型）上计算函数``sqrt(x^2+y^2)``。np.meshgrid函数接受两个一维数组，并产生两个二维矩阵（对应于两个数组中所有的(x,y)对）：
+作为简单的例子，假设我们想要在一组值（网格型）上计算函数``sqrt(x^2&#43;y^2)``。np.meshgrid函数接受两个一维数组，并产生两个二维矩阵（对应于两个数组中所有的(x,y)对）：
 ```python
 In [155]: points = np.arange(-5, 5, 0.01) # 1000 equally spaced points
 
@@ -923,7 +923,7 @@ array([[-5.  , -5.  , -5.  , ..., -5.  , -5.  , -5.  ],
 
 现在，对该函数的求值运算就好办了，把这两个数组当做两个浮点数那样编写表达式即可：
 ```python
-In [158]: z = np.sqrt(xs ** 2 + ys ** 2)
+In [158]: z = np.sqrt(xs ** 2 &#43; ys ** 2)
 
 In [159]: z
 Out[159]: 
@@ -941,10 +941,10 @@ array([[ 7.0711,  7.064 ,  7.0569, ...,  7.0499,  7.0569,  7.064 ],
 In [160]: import matplotlib.pyplot as plt
 
 In [161]: plt.imshow(z, cmap=plt.cm.gray); plt.colorbar()
-Out[161]: <matplotlib.colorbar.Colorbar at 0x7f715e3fa630>
+Out[161]: &lt;matplotlib.colorbar.Colorbar at 0x7f715e3fa630&gt;
 
-In [162]: plt.title("Image plot of $\sqrt{x^2 + y^2}$ for a grid of values")
-Out[162]: <matplotlib.text.Text at 0x7f715d2de748>
+In [162]: plt.title(&#34;Image plot of $\sqrt{x^2 &#43; y^2}$ for a grid of values&#34;)
+Out[162]: &lt;matplotlib.text.Text at 0x7f715d2de748&gt;
 ```
 
 见图4-3。这张图是用matplotlib的imshow函数创建的。
@@ -989,14 +989,14 @@ array([[-0.5031, -0.6223, -0.9212, -0.7262],
        [ 0.4336,  1.0107,  1.8249, -0.9975],
        [ 0.8506, -0.1316,  0.9124,  0.1882]])
 
-In [174]: arr > 0
+In [174]: arr &gt; 0
 Out[174]: 
 array([[False, False, False, False],
        [ True,  True, False,  True],
        [ True,  True,  True, False],
        [ True, False,  True,  True]], dtype=bool)
 
-In [175]: np.where(arr > 0, 2, -2)
+In [175]: np.where(arr &gt; 0, 2, -2)
 Out[175]: 
 array([[-2, -2, -2, -2],
        [ 2,  2, -2,  2],
@@ -1006,7 +1006,7 @@ array([[-2, -2, -2, -2],
 
 使用np.where，可以将标量和数组结合起来。例如，我可用常数2替换arr中所有正的值：
 ```python
-In [176]: np.where(arr > 0, 2, arr) # set only positive values to 2
+In [176]: np.where(arr &gt; 0, 2, arr) # set only positive values to 2
 Out[176]: 
 array([[-0.5031, -0.6223, -0.9212, -0.7262],
        [ 2.    ,  2.    , -1.1577,  2.    ],
@@ -1094,7 +1094,7 @@ array([[  0,   0,   0],
 ```python
 In [190]: arr = np.random.randn(100)
 
-In [191]: (arr > 0).sum() # Number of positive values
+In [191]: (arr &gt; 0).sum() # Number of positive values
 Out[191]: 42
 ```
 
@@ -1163,12 +1163,12 @@ Out[205]: -1.5311513550102103
 ## 4.3.5 唯一化以及其它的集合逻辑
 NumPy提供了一些针对一维ndarray的基本集合运算。最常用的可能要数np.unique了，它用于找出数组中的唯一值并返回已排序的结果：
 ```python
-In [206]: names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe'])
+In [206]: names = np.array([&#39;Bob&#39;, &#39;Joe&#39;, &#39;Will&#39;, &#39;Bob&#39;, &#39;Will&#39;, &#39;Joe&#39;, &#39;Joe&#39;])
 
 In [207]: np.unique(names)
 Out[207]: 
-array(['Bob', 'Joe', 'Will'],
-      dtype='<U4')
+array([&#39;Bob&#39;, &#39;Joe&#39;, &#39;Will&#39;],
+      dtype=&#39;&lt;U4&#39;)
 
 In [208]: ints = np.array([3, 3, 3, 2, 2, 1, 1, 4, 4])
 
@@ -1179,7 +1179,7 @@ Out[209]: array([1, 2, 3, 4])
 拿跟np.unique等价的纯Python代码来对比一下：
 ```python
 In [210]: sorted(set(names))
-Out[210]: ['Bob', 'Joe', 'Will']
+Out[210]: [&#39;Bob&#39;, &#39;Joe&#39;, &#39;Will&#39;]
 ```
 
 另一个函数np.in1d用于测试一个数组中的值在另一个数组中的成员资格，返回一个布尔型数组：
@@ -1200,31 +1200,31 @@ np.save和np.load是读写磁盘数组数据的两个主要函数。默认情况
 ```python
 In [213]: arr = np.arange(10)
 
-In [214]: np.save('some_array', arr)
+In [214]: np.save(&#39;some_array&#39;, arr)
 ```
 
 如果文件路径末尾没有扩展名.npy，则该扩展名会被自动加上。然后就可以通过np.load读取磁盘上的数组：
 ```python
-In [215]: np.load('some_array.npy')
+In [215]: np.load(&#39;some_array.npy&#39;)
 Out[215]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
 通过np.savez可以将多个数组保存到一个未压缩文件中，将数组以关键字参数的形式传入即可：
 ```python
-In [216]: np.savez('array_archive.npz', a=arr, b=arr)
+In [216]: np.savez(&#39;array_archive.npz&#39;, a=arr, b=arr)
 ```
 
 加载.npz文件时，你会得到一个类似字典的对象，该对象会对各个数组进行延迟加载：
 ```python
-In [217]: arch = np.load('array_archive.npz')
+In [217]: arch = np.load(&#39;array_archive.npz&#39;)
 
-In [218]: arch['b']
+In [218]: arch[&#39;b&#39;]
 Out[218]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
 如果要将数据压缩，可以使用numpy.savez_compressed：
 ```python
-In [219]: np.savez_compressed('arrays_compressed.npz', a=arr, b=arr)
+In [219]: np.savez_compressed(&#39;arrays_compressed.npz&#39;, a=arr, b=arr)
 ```
 
 # 4.5 线性代数
@@ -1332,10 +1332,10 @@ In [240]: from random import normalvariate
 In [241]: N = 1000000
 
 In [242]: %timeit samples = [normalvariate(0, 1) for _ in range(N)]
-1.77 s +- 126 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+1.77 s &#43;- 126 ms per loop (mean &#43;- std. dev. of 7 runs, 1 loop each)
 
 In [243]: %timeit np.random.normal(size=N)
-61.7 ms +- 1.32 ms per loop (mean +- std. dev. of 7 runs, 10 loops each)
+61.7 ms &#43;- 1.32 ms per loop (mean &#43;- std. dev. of 7 runs, 10 loops each)
 ```
 
 我们说这些都是伪随机数，是因为它们都是通过算法基于随机数生成器种子，在确定性的条件下生成的。你可以用NumPy的np.random.seed更改随机数生成种子：
@@ -1370,7 +1370,7 @@ In [247]: import random
    .....: steps = 1000
    .....: for i in range(steps):
    .....:     step = 1 if random.randint(0, 1) else -1
-   .....:     position += step
+   .....:     position &#43;= step
    .....:     walk.append(position)
    .....:
 ```
@@ -1388,7 +1388,7 @@ In [251]: nsteps = 1000
 
 In [252]: draws = np.random.randint(0, 2, size=nsteps)
 
-In [253]: steps = np.where(draws > 0, 1, -1)
+In [253]: steps = np.where(draws &gt; 0, 1, -1)
 
 In [254]: walk = steps.cumsum()
 ```
@@ -1402,9 +1402,9 @@ In [256]: walk.max()
 Out[256]: 31
 ```
 
-现在来看一个复杂点的统计任务——首次穿越时间，即随机漫步过程中第一次到达某个特定值的时间。假设我们想要知道本次随机漫步需要多久才能距离初始0点至少10步远（任一方向均可）。np.abs(walk)>=10可以得到一个布尔型数组，它表示的是距离是否达到或超过10，而我们想要知道的是第一个10或－10的索引。可以用argmax来解决这个问题，它返回的是该布尔型数组第一个最大值的索引（True就是最大值）：
+现在来看一个复杂点的统计任务——首次穿越时间，即随机漫步过程中第一次到达某个特定值的时间。假设我们想要知道本次随机漫步需要多久才能距离初始0点至少10步远（任一方向均可）。np.abs(walk)&gt;=10可以得到一个布尔型数组，它表示的是距离是否达到或超过10，而我们想要知道的是第一个10或－10的索引。可以用argmax来解决这个问题，它返回的是该布尔型数组第一个最大值的索引（True就是最大值）：
 ```python
-In [257]: (np.abs(walk) >= 10).argmax()
+In [257]: (np.abs(walk) &gt;= 10).argmax()
 Out[257]: 37
 ```
 
@@ -1419,7 +1419,7 @@ In [259]: nsteps = 1000
 
 In [260]: draws = np.random.randint(0, 2, size=(nwalks, nsteps)) # 0 or 1
 
-In [261]: steps = np.where(draws > 0, 1, -1)
+In [261]: steps = np.where(draws &gt; 0, 1, -1)
 
 In [262]: walks = steps.cumsum(1)
 
@@ -1445,7 +1445,7 @@ Out[265]: -133
 
 得到这些数据之后，我们来计算30或－30的最小穿越时间。这里稍微复杂些，因为不是5000个过程都到达了30。我们可以用any方法来对此进行检查：
 ```python
-In [266]: hits30 = (np.abs(walks) >= 30).any(1)
+In [266]: hits30 = (np.abs(walks) &gt;= 30).any(1)
 
 In [267]: hits30
 Out[267]: array([False,  True, False, ..., False,  True, False], dtype=bool)
@@ -1456,7 +1456,7 @@ Out[268]: 3410
 
 然后我们利用这个布尔型数组选出那些穿越了30（绝对值）的随机漫步（行），并调用argmax在轴1上获取穿越时间：
 ```python
-In [269]: crossing_times = (np.abs(walks[hits30]) >= 30).argmax(1)
+In [269]: crossing_times = (np.abs(walks[hits30]) &gt;= 30).argmax(1)
 
 In [270]: crossing_times.mean()
 Out[270]: 498.88973607038122
@@ -1474,6 +1474,6 @@ In [271]: steps = np.random.normal(loc=0, scale=0.25,
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/  
 

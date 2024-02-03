@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第五章 Pandas 入门 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第五章 Pandas 入门 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值" /><meta name="keywords" content='python' /><meta itemprop="name" content="第五章 Pandas 入门">
 <meta itemprop="description" content="pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="13894"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="13907"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第五章 Pandas 入门" />
 <meta property="og:description" content="pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第五章 Pandas 入门"/>
 <meta name="twitter:description" content="pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch05-pandas%E5%85%A5%E9%97%A8\/"
-    },"genre": "posts","keywords": "python","wordcount":  13894 ,
+    },"genre": "posts","keywords": "python","wordcount":  13907 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch05-pandas%E5%85%A5%E9%97%A8\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第五章 Pandas 入门</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第五章 Pandas 入门</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="13894 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 13900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 28 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" class="leancloud_visitors comment-visitors" data-flag-title="第五章 Pandas 入门">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="13907 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 14000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 28 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" class="leancloud_visitors comment-visitors" data-flag-title="第五章 Pandas 入门">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第五章 Pandas 入门">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -240,10 +235,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="51-pandas的数据结构介绍">5.1 pandas的数据结构介绍</h2>
-<p>要使用pandas，你首先就得熟悉它的两个主要数据结构：<code>Series</code>和<code>DataFrame</code>。虽然它们并不能解决所有问题，但它们为大多数应用<code>提供了一种可靠的、易于使用的基础</code>。</p>
-<h3 id="511-series">5.1.1 Series</h3>
-<p>Series是一种类似于一维数组的对象，它由一组数据（各种NumPy数据类型）以及一组与之相关的数据标签（即索引）组成。仅由一组数据即可产生最简单的Series：</p>
+</div><h2 id="51-pandas的数据结构介绍" class="heading-element">
+  <a href="#51-pandas%e7%9a%84%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e4%bb%8b%e7%bb%8d" class="heading-mark"></a>5.1 pandas的数据结构介绍</h2><p>要使用pandas，你首先就得熟悉它的两个主要数据结构：<code>Series</code>和<code>DataFrame</code>。虽然它们并不能解决所有问题，但它们为大多数应用<code>提供了一种可靠的、易于使用的基础</code>。</p>
+<h3 id="511-series" class="heading-element">
+  <a href="#511-series" class="heading-mark"></a>5.1.1 Series</h3><p>Series是一种类似于一维数组的对象，它由一组数据（各种NumPy数据类型）以及一组与之相关的数据标签（即索引）组成。仅由一组数据即可产生最简单的Series：</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -647,8 +642,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">Ryan</span>     <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="512-dataframe">5.1.2 DataFrame</h3>
-<p>DataFrame是一个表格型的数据结构，它含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔值等）。DataFrame既有行索引也有列索引，它可以被看做由Series组成的字典（共用同一个索引）。DataFrame中的数据是以一个或多个二维块存放的（而不是列表、字典或别的一维数据结构）。有关DataFrame内部的技术细节远远超出了本书所讨论的范围。</p>
+</div><h3 id="512-dataframe" class="heading-element">
+  <a href="#512-dataframe" class="heading-mark"></a>5.1.2 DataFrame</h3><p>DataFrame是一个表格型的数据结构，它含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔值等）。DataFrame既有行索引也有列索引，它可以被看做由Series组成的字典（共用同一个索引）。DataFrame中的数据是以一个或多个二维块存放的（而不是列表、字典或别的一维数据结构）。有关DataFrame内部的技术细节远远超出了本书所讨论的范围。</p>
 <blockquote>
 <p>笔记：虽然DataFrame是以二维结构保存数据的，但你仍然可以轻松地将其表示为更高维度的数据（层次化索引的表格型结构，这是pandas中许多高级数据处理功能的关键要素，我们会在第8章讨论这个问题）。</p>
 </blockquote>
@@ -1066,7 +1061,7 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </span></span><span class="line"><span class="cl"><span class="mi">2001</span>     <span class="mf">2.4</span>   <span class="mf">1.7</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表5-1列出了DataFrame构造函数所能接受的各种数据。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240.png?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>如果设置了DataFrame的index和columns的name属性，则这些信息也会被显示出来：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1129,8 +1124,8 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </span></span><span class="line"><span class="cl">       <span class="p">[</span><span class="mi">2002</span><span class="p">,</span> <span class="s1">&#39;Nevada&#39;</span><span class="p">,</span> <span class="mf">2.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.7</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">       <span class="p">[</span><span class="mi">2003</span><span class="p">,</span> <span class="s1">&#39;Nevada&#39;</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="n">nan</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="513-索引对象">5.1.3 索引对象</h3>
-<p>pandas的索引对象负责管理轴标签和其他元数据（比如轴名称等）。构建Series或DataFrame时，所用到的任何数组或其他序列的标签都会被转换成一个Index：</p>
+</div><h3 id="513-索引对象" class="heading-element">
+  <a href="#513-%e7%b4%a2%e5%bc%95%e5%af%b9%e8%b1%a1" class="heading-mark"></a>5.1.3 索引对象</h3><p>pandas的索引对象负责管理轴标签和其他元数据（比如轴名称等）。构建Series或DataFrame时，所用到的任何数组或其他序列的标签都会被转换成一个Index：</p>
 <div class="highlight" id="id-35"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1255,11 +1250,11 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </div>
 </div><p>选择重复的标签，会显示所有的结果。</p>
 <p>每个索引都有一些方法和属性，它们可用于设置逻辑并回答有关该索引所包含的数据的常见问题。表5-2列出了这些函数。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="52-基本功能">5.2 基本功能</h2>
-<p>本节中，我将介绍操作Series和DataFrame中的数据的基本手段。后续章节将更加深入地挖掘pandas在数据分析和处理方面的功能。本书不是pandas库的详尽文档，主要关注的是最重要的功能，那些不大常用的内容（也就是那些更深奥的内容）就交给你自己去摸索吧。</p>
-<h3 id="521-重新索引">5.2.1 重新索引</h3>
-<p>pandas对象的一个重要方法是<code>reindex</code>，其作用是创建一个新对象，它的数据符合<code>新的索引</code>。看下面的例子：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240.jpeg" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="52-基本功能" class="heading-element">
+  <a href="#52-%e5%9f%ba%e6%9c%ac%e5%8a%9f%e8%83%bd" class="heading-mark"></a>5.2 基本功能</h2><p>本节中，我将介绍操作Series和DataFrame中的数据的基本手段。后续章节将更加深入地挖掘pandas在数据分析和处理方面的功能。本书不是pandas库的详尽文档，主要关注的是最重要的功能，那些不大常用的内容（也就是那些更深奥的内容）就交给你自己去摸索吧。</p>
+<h3 id="521-重新索引" class="heading-element">
+  <a href="#521-%e9%87%8d%e6%96%b0%e7%b4%a2%e5%bc%95" class="heading-mark"></a>5.2.1 重新索引</h3><p>pandas对象的一个重要方法是<code>reindex</code>，其作用是创建一个新对象，它的数据符合<code>新的索引</code>。看下面的例子：</p>
 <div class="highlight" id="id-40"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1420,9 +1415,9 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </span></span><span class="line"><span class="cl"><span class="n">d</span>      <span class="mi">7</span>   <span class="n">NaN</span>           <span class="mi">8</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表5-3列出了reindex函数的各参数及说明。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="522-丢弃指定轴上的项">5.2.2 丢弃指定轴上的项</h3>
-<p>丢弃某条轴上的一个或多个项很简单，只要有一个索引数组或列表即可。由于需要执行一些数据整理和集合逻辑，所以drop方法返回的是一个在指定轴上删除了指定值的新对象：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023164044247.jpeg" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="522-丢弃指定轴上的项" class="heading-element">
+  <a href="#522-%e4%b8%a2%e5%bc%83%e6%8c%87%e5%ae%9a%e8%bd%b4%e4%b8%8a%e7%9a%84%e9%a1%b9" class="heading-mark"></a>5.2.2 丢弃指定轴上的项</h3><p>丢弃某条轴上的一个或多个项很简单，只要有一个索引数组或列表即可。由于需要执行一些数据整理和集合逻辑，所以drop方法返回的是一个在指定轴上删除了指定值的新对象：</p>
 <div class="highlight" id="id-45"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1587,8 +1582,8 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>小心使用inplace，它会销毁所有被删除的数据。</p>
-<h3 id="523-索引选取和过滤">5.2.3 索引、选取和过滤</h3>
-<p>Series索引（obj[&hellip;]）的工作方式类似于NumPy数组的索引，只不过Series的索引值不只是整数。下面是几个例子：</p>
+<h3 id="523-索引选取和过滤" class="heading-element">
+  <a href="#523-%e7%b4%a2%e5%bc%95%e9%80%89%e5%8f%96%e5%92%8c%e8%bf%87%e6%bb%a4" class="heading-mark"></a>5.2.3 索引、选取和过滤</h3><p>Series索引（obj[&hellip;]）的工作方式类似于NumPy数组的索引，只不过Series的索引值不只是整数。下面是几个例子：</p>
 <div class="highlight" id="id-50"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1846,8 +1841,8 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 </span></span><span class="line"><span class="cl"><span class="n">New</span> <span class="n">York</span>   <span class="mi">12</span>   <span class="mi">13</span>     <span class="mi">14</span>    <span class="mi">15</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这使得DataFrame的语法与NumPy二维数组的语法很像。</p>
-<h3 id="524-用loc和iloc进行选取">5.2.4 用loc和iloc进行选取</h3>
-<p>对于DataFrame的行的标签索引，我引入了特殊的标签运算符loc和iloc。它们可以让你用类似NumPy的标记，使用轴标签（loc）或整数索引（iloc），从DataFrame选择行和列的子集。</p>
+<h3 id="524-用loc和iloc进行选取" class="heading-element">
+  <a href="#524-%e7%94%a8loc%e5%92%8ciloc%e8%bf%9b%e8%a1%8c%e9%80%89%e5%8f%96" class="heading-mark"></a>5.2.4 用loc和iloc进行选取</h3><p>对于DataFrame的行的标签索引，我引入了特殊的标签运算符loc和iloc。它们可以让你用类似NumPy的标记，使用轴标签（loc）或整数索引（iloc），从DataFrame选择行和列的子集。</p>
 <p>作为一个初步示例，让我们通过标签选择一行和多列：</p>
 <div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1947,9 +1942,9 @@ frame2[column]适用于任何列的名，但是frame2.column只有在列名是�
 <p>笔记：在一开始设计pandas时，我觉得用frame[:, col]选取列过于繁琐（也容易出错），因为列的选择是非常常见的操作。我做了些取舍，将花式索引的功能（标签和整数）放到了ix运算符中。在实践中，这会导致许多边缘情况，数据的轴标签是整数，所以pandas团队决定创造loc和iloc运算符分别处理严格基于标签和整数的索引。
 ix运算符仍然可用，但并不推荐。</p>
 </blockquote>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=large 2x" sizes="auto" data-title="表5-4 DataFrame的索引选项" data-alt="表5-4 DataFrame的索引选项" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="525-整数索引">5.2.5 整数索引</h3>
-<p>处理整数索引的pandas对象常常难住新手，因为它与Python内置的列表和元组的索引语法不同。例如，你可能不认为下面的代码会出错：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png" alt="表5-4 DataFrame的索引选项" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023171704254.png?size=large 2x" sizes="auto" data-title="表5-4 DataFrame的索引选项" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="525-整数索引" class="heading-element">
+  <a href="#525-%e6%95%b4%e6%95%b0%e7%b4%a2%e5%bc%95" class="heading-mark"></a>5.2.5 整数索引</h3><p>处理整数索引的pandas对象常常难住新手，因为它与Python内置的列表和元组的索引语法不同。例如，你可能不认为下面的代码会出错：</p>
 <div class="highlight" id="id-59"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2029,8 +2024,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span>    <span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="526-算术运算和数据对齐">5.2.6 算术运算和数据对齐</h3>
-<p>pandas最重要的一个功能是，它可以对不同索引的对象进行算术运算。在将对象相加时，如果存在不同的索引对，则结果的索引就是该索引对的并集。对于有数据库经验的用户，这就像在索引标签上进行自动外连接。看一个简单的例子：</p>
+</div><h3 id="526-算术运算和数据对齐" class="heading-element">
+  <a href="#526-%e7%ae%97%e6%9c%af%e8%bf%90%e7%ae%97%e5%92%8c%e6%95%b0%e6%8d%ae%e5%af%b9%e9%bd%90" class="heading-mark"></a>5.2.6 算术运算和数据对齐</h3><p>pandas最重要的一个功能是，它可以对不同索引的对象进行算术运算。在将对象相加时，如果存在不同的索引对，则结果的索引就是该索引对的并集。对于有数据库经验的用户，这就像在索引标签上进行自动外连接。看一个简单的例子：</p>
 <div class="highlight" id="id-63"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2220,8 +2215,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span> <span class="n">NaN</span> <span class="n">NaN</span>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="n">NaN</span> <span class="n">NaN</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="527-在算术方法中填充值">5.2.7 在算术方法中填充值</h3>
-<p>在对不同索引的对象进行算术运算时，你可能希望当一个对象中某个轴标签在另一个对象中找不到时填充一个特殊值（比如0）：</p>
+</div><h3 id="527-在算术方法中填充值" class="heading-element">
+  <a href="#527-%e5%9c%a8%e7%ae%97%e6%9c%af%e6%96%b9%e6%b3%95%e4%b8%ad%e5%a1%ab%e5%85%85%e5%80%bc" class="heading-mark"></a>5.2.7 在算术方法中填充值</h3><p>在对不同索引的对象进行算术运算时，你可能希望当一个对象中某个轴标签在另一个对象中找不到时填充一个特殊值（比如0）：</p>
 <div class="highlight" id="id-68"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2343,7 +2338,7 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">0.250000</span>  <span class="mf">0.200000</span>  <span class="mf">0.166667</span>  <span class="mf">0.142857</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mf">0.125000</span>  <span class="mf">0.111111</span>  <span class="mf">0.100000</span>  <span class="mf">0.090909</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=large 2x" sizes="auto" data-title="表5-5 灵活的算术方法" data-alt="表5-5 灵活的算术方法" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png" alt="表5-5 灵活的算术方法" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172333048.png?size=large 2x" sizes="auto" data-title="表5-5 灵活的算术方法" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>与此类似，在对Series或DataFrame重新索引时，也可以指定一个填充值：</p>
 <div class="highlight" id="id-72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2362,8 +2357,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mf">4.0</span>  <span class="mf">5.0</span>   <span class="mf">6.0</span>   <span class="mf">7.0</span>  <span class="mi">0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mf">8.0</span>  <span class="mf">9.0</span>  <span class="mf">10.0</span>  <span class="mf">11.0</span>  <span class="mi">0</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="528-dataframe和series之间的运算">5.2.8 DataFrame和Series之间的运算</h3>
-<p>跟不同维度的NumPy数组一样，DataFrame和Series之间算术运算也是有明确规定的。先来看一个具有启发性的例子，计算一个二维数组与其某行之间的差：</p>
+</div><h3 id="528-dataframe和series之间的运算" class="heading-element">
+  <a href="#528-dataframe%e5%92%8cseries%e4%b9%8b%e9%97%b4%e7%9a%84%e8%bf%90%e7%ae%97" class="heading-mark"></a>5.2.8 DataFrame和Series之间的运算</h3><p>跟不同维度的NumPy数组一样，DataFrame和Series之间算术运算也是有明确规定的。先来看一个具有启发性的例子，计算一个二维数组与其某行之间的差：</p>
 <div class="highlight" id="id-73"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2548,8 +2543,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">Oregon</span> <span class="o">-</span><span class="mf">1.0</span>  <span class="mf">0.0</span>  <span class="mf">1.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>传入的轴号就是希望匹配的轴。在本例中，我们的目的是匹配DataFrame的行索引（axis=&lsquo;index&rsquo; or axis=0）并进行广播。</p>
-<h3 id="529-函数应用和映射">5.2.9 函数应用和映射</h3>
-<p>NumPy的ufuncs（元素级数组方法）也可用于操作pandas对象：</p>
+<h3 id="529-函数应用和映射" class="heading-element">
+  <a href="#529-%e5%87%bd%e6%95%b0%e5%ba%94%e7%94%a8%e5%92%8c%e6%98%a0%e5%b0%84" class="heading-mark"></a>5.2.9 函数应用和映射</h3><p>NumPy的ufuncs（元素级数组方法）也可用于操作pandas对象：</p>
 <div class="highlight" id="id-78"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2701,8 +2696,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">Oregon</span>    <span class="o">-</span><span class="mf">1.30</span>
 </span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">e</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="5210-排序和排名">5.2.10 排序和排名</h3>
-<p>根据条件对数据集排序（sorting）也是一种重要的内置运算。要对行或列索引进行排序（按字典顺序），可使用sort_index方法，它将返回一个已排序的新对象：</p>
+</div><h3 id="5210-排序和排名" class="heading-element">
+  <a href="#5210-%e6%8e%92%e5%ba%8f%e5%92%8c%e6%8e%92%e5%90%8d" class="heading-mark"></a>5.2.10 排序和排名</h3><p>根据条件对数据集排序（sorting）也是一种重要的内置运算。要对行或列索引进行排序（按字典顺序），可使用sort_index方法，它将返回一个已排序的新对象：</p>
 <div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3015,9 +3010,9 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mf">2.0</span>  <span class="mf">1.0</span>  <span class="mf">3.0</span>
 </span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="mf">2.0</span>  <span class="mf">3.0</span>  <span class="mf">1.0</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=large 2x" sizes="auto" data-title="表5-6 排名时用于破坏平级关系的方法" data-alt="表5-6 排名时用于破坏平级关系的方法" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="5211-带有重复标签的轴索引">5.2.11 带有重复标签的轴索引</h3>
-<p>直到目前为止，我所介绍的所有范例都有着唯一的轴标签（索引值）。虽然许多pandas函数（如reindex）都要求标签唯一，但这并不是强制性的。我们来看看下面这个简单的带有重复索引值的Series：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png" alt="表5-6 排名时用于破坏平级关系的方法" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172547701.png?size=large 2x" sizes="auto" data-title="表5-6 排名时用于破坏平级关系的方法" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="5211-带有重复标签的轴索引" class="heading-element">
+  <a href="#5211-%e5%b8%a6%e6%9c%89%e9%87%8d%e5%a4%8d%e6%a0%87%e7%ad%be%e7%9a%84%e8%bd%b4%e7%b4%a2%e5%bc%95" class="heading-mark"></a>5.2.11 带有重复标签的轴索引</h3><p>直到目前为止，我所介绍的所有范例都有着唯一的轴标签（索引值）。虽然许多pandas函数（如reindex）都要求标签唯一，但这并不是强制性的。我们来看看下面这个简单的带有重复索引值的Series：</p>
 <div class="highlight" id="id-95"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3112,8 +3107,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>  <span class="mf">1.669025</span> <span class="o">-</span><span class="mf">0.438570</span> <span class="o">-</span><span class="mf">0.539741</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span>  <span class="mf">0.476985</span>  <span class="mf">3.248944</span> <span class="o">-</span><span class="mf">1.021228</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="53-汇总和计算描述统计">5.3 汇总和计算描述统计</h2>
-<p>pandas对象拥有一组常用的数学和统计方法。它们大部分都属于<code>约简和汇总统计</code>，用于从Series中提取单个值（如sum或mean）或从DataFrame的行或列中提取一个Series。跟对应的NumPy数组方法相比，它们都是基于没有缺失数据的假设而构建的。看一个简单的DataFrame：</p>
+</div><h2 id="53-汇总和计算描述统计" class="heading-element">
+  <a href="#53-%e6%b1%87%e6%80%bb%e5%92%8c%e8%ae%a1%e7%ae%97%e6%8f%8f%e8%bf%b0%e7%bb%9f%e8%ae%a1" class="heading-mark"></a>5.3 汇总和计算描述统计</h2><p>pandas对象拥有一组常用的数学和统计方法。它们大部分都属于<code>约简和汇总统计</code>，用于从Series中提取单个值（如sum或mean）或从DataFrame的行或列中提取一个Series。跟对应的NumPy数组方法相比，它们都是基于没有缺失数据的假设而构建的。看一个简单的DataFrame：</p>
 <div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3198,7 +3193,7 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表5-7列出了这些约简方法的常用选项。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023172745492.jpeg" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>有些方法（如idxmin和idxmax）返回的是间接统计（比如达到最小值或最大值的索引）：</p>
 <div class="highlight" id="id-103"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3288,9 +3283,9 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表5-8列出了所有与描述统计相关的方法。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" data-alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="531-相关系数与协方差">5.3.1 相关系数与协方差</h3>
-<p>有些汇总统计（如相关系数和协方差）是通过参数对计算出来的。我们来看几个DataFrame，它们的数据来自Yahoo!Finance的股票价格和成交量，使用的是pandas-datareader包（可以用conda或pip安装）：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" alt="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg?size=large 2x" sizes="auto" data-title="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023184611242.jpeg" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="531-相关系数与协方差" class="heading-element">
+  <a href="#531-%e7%9b%b8%e5%85%b3%e7%b3%bb%e6%95%b0%e4%b8%8e%e5%8d%8f%e6%96%b9%e5%b7%ae" class="heading-mark"></a>5.3.1 相关系数与协方差</h3><p>有些汇总统计（如相关系数和协方差）是通过参数对计算出来的。我们来看几个DataFrame，它们的数据来自Yahoo!Finance的股票价格和成交量，使用的是pandas-datareader包（可以用conda或pip安装）：</p>
 <div class="highlight" id="id-107"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3454,8 +3449,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>传入axis=&lsquo;columns&rsquo;即可按行进行计算。无论如何，在计算相关系数之前，所有的数据项都会按标签对齐。</p>
-<h3 id="532-唯一值值计数以及成员资格">5.3.2 唯一值、值计数以及成员资格</h3>
-<p>还有一类方法可以从一维Series的值中抽取信息。看下面的例子：</p>
+<h3 id="532-唯一值值计数以及成员资格" class="heading-element">
+  <a href="#532-%e5%94%af%e4%b8%80%e5%80%bc%e5%80%bc%e8%ae%a1%e6%95%b0%e4%bb%a5%e5%8f%8a%e6%88%90%e5%91%98%e8%b5%84%e6%a0%bc" class="heading-mark"></a>5.3.2 唯一值、值计数以及成员资格</h3><p>还有一类方法可以从一维Series的值中抽取信息。看下面的例子：</p>
 <div class="highlight" id="id-115"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3614,7 +3609,7 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">262</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表5-9给出了这几个方法的一些参考信息。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=large 2x" sizes="auto" data-title="表5-9 唯一值、值计数、成员资格方法" data-alt="表5-9 唯一值、值计数、成员资格方法" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png" alt="表5-9 唯一值、值计数、成员资格方法" srcset="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=small, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/02/1240-20201023221621417.png?size=large 2x" sizes="auto" data-title="表5-9 唯一值、值计数、成员资格方法" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>有时，你可能希望得到DataFrame中多个相关列的一张柱状图。例如：</p>
 <div class="highlight" id="id-121"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3672,8 +3667,8 @@ ix运算符仍然可用，但并不推荐。</p>
 </span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="mf">0.0</span>  <span class="mf">0.0</span>  <span class="mf">1.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里，结果中的行标签是所有列的唯一值。后面的频率值是每个列中这些值的相应计数。</p>
-<h2 id="54-总结">5.4 总结</h2>
-<p>在下一章，我们将讨论用pandas读取（或加载）和写入数据集的工具。</p>
+<h2 id="54-总结" class="heading-element">
+  <a href="#54-%e6%80%bb%e7%bb%93" class="heading-mark"></a>5.4 总结</h2><p>在下一章，我们将讨论用pandas读取（或加载）和写入数据集的工具。</p>
 <p>之后，我们将更深入地研究使用pandas进行数据清洗、规整、分析和可视化工具。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
@@ -3681,33 +3676,34 @@ ix运算符仍然可用，但并不推荐。</p>
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" data-title="第五章 Pandas 入门" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/" data-title="第五章 Pandas 入门" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="post-nav-item" rel="prev" title="第一章 准备工作"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第一章 准备工作</a>
-      <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/" class="post-nav-item" rel="next" title="第四章 Numpy 基础">第四章 Numpy 基础<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/" class="post-nav-item" rel="prev" title="第五章 模块"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第五章 模块</a>
+      <a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" class="post-nav-item" rel="next" title="第四章 函数式编程">第四章 函数式编程<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

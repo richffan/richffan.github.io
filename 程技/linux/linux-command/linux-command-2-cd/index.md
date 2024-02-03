@@ -1,7 +1,7 @@
 # 每天一个linux命令（2）: cd
 
 　　Linux cd 命令可以说是Linux中最基本的命令语句，其他的命令语句要进行操作，都是建立在使用 cd 命令上的。所以，学习Linux 常用命令，首先就要学好 cd 命令的使用方法技巧。
-<!--more-->
+&lt;!--more--&gt;
 #### 命令格式
 ```bash
 $ cd [目录名]
@@ -39,6 +39,6 @@ $ cd !$
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-2-cd/  
 

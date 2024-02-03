@@ -1,7 +1,7 @@
 # 每天一个linux命令（4）: mkdir
 
 　　linux mkdir 命令用来创建指定的名称的目录，要求创建目录的用户在当前目录中具有写权限，并且指定的目录名不能是当前目录中已有的目录。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ mkdir [选项] 目录...
@@ -11,7 +11,7 @@ $ mkdir [选项] 目录...
 #### 命令参数
 | 参数 | 说明     |
 | :------------- | :------------- |
-| -m, --mode=模式       | 设定权限<模式> (类似 chmod)，而不是 rwxrwxrwx 减 umask       |
+| -m, --mode=模式       | 设定权限&lt;模式&gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask       |
 |  -p, --parents |  可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录 |
 | -v, --verbose  | 每次创建新目录都显示信息 |
 | --help |显示此帮助信息并退出|
@@ -70,6 +70,6 @@ scf/
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-4-mkdir/  
 

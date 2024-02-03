@@ -6,7 +6,7 @@
 
 操作系统：deepin 15.4 Desktop 64Bit
 
-<!--more-->
+&lt;!--more--&gt;
 
 #### 安装
 
@@ -25,12 +25,12 @@ $ curl -sSL https://get.daocloud.io/docker | sh
 [Docker Hub](https://hub.docker.com/explore/) 上有大量的高质量的镜像可以用，这里我们就说一下怎么获取这些镜像并运行。
 从 Docker Registry 获取镜像的命令是 docker pull。其命令格式为：
 ```bash
-$ docker pull [选项] [Docker Registry地址]<仓库名>:<标签>
+$ docker pull [选项] [Docker Registry地址]&lt;仓库名&gt;:&lt;标签&gt;
 ```
 具体的选项可以通过 `docker pull --help` 命令看到，这里我们说一下镜像名称的格式。
 
-- Docker Registry地址：地址的格式一般是 `<域名/IP>[:端口号]`。默认地址是 `Docker Hub`。
-- 仓库名：如之前所说，这里的仓库名是两段式名称，既 `<用户名>/<软件名>`。对于 Docker Hub，如果不给出用户名，则默认为 library，也就是官方镜像。
+- Docker Registry地址：地址的格式一般是 `&lt;域名/IP&gt;[:端口号]`。默认地址是 `Docker Hub`。
+- 仓库名：如之前所说，这里的仓库名是两段式名称，既 `&lt;用户名&gt;/&lt;软件名&gt;`。对于 Docker Hub，如果不给出用户名，则默认为 library，也就是官方镜像。
 
 ```bash
 $ sudo docker pull ubuntu
@@ -42,15 +42,15 @@ $ sudo docker pull ubuntu
 ```bash
 $ sudo docker run -it --rm ubuntu
 root@0ae011f7b5be:/## cat /etc/os-release  
-NAME="Ubuntu"
-VERSION="16.04.2 LTS (Xenial Xerus)"
+NAME=&#34;Ubuntu&#34;
+VERSION=&#34;16.04.2 LTS (Xenial Xerus)&#34;
 ID=ubuntu
 ID_LIKE=debian
-PRETTY_NAME="Ubuntu 16.04.2 LTS"
-VERSION_ID="16.04"
-HOME_URL="http://www.ubuntu.com/"
-SUPPORT_URL="http://help.ubuntu.com/"
-BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+PRETTY_NAME=&#34;Ubuntu 16.04.2 LTS&#34;
+VERSION_ID=&#34;16.04&#34;
+HOME_URL=&#34;http://www.ubuntu.com/&#34;
+SUPPORT_URL=&#34;http://help.ubuntu.com/&#34;
+BUG_REPORT_URL=&#34;http://bugs.launchpad.net/ubuntu/&#34;
 VERSION_CODENAME=xenial
 UBUNTU_CODENAME=xenial
 ```
@@ -68,6 +68,6 @@ UBUNTU_CODENAME=xenial
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker%E5%88%9D%E4%BD%93%E9%AA%8C/  
 

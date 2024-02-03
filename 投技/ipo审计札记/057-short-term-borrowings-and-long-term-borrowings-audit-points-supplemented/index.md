@@ -34,12 +34,12 @@
 
 民间借贷法律法规已经很完善了，按流程来，完全是合法的（不要戴有色眼镜），毕竟不是所有中小企业都能从银行借到钱。中小企业融资难，是一个宏大的话题
 
-~~（世纪性+世界性）~~，展开来讲那就没完没了哒。
+~~（世纪性&#43;世界性）~~，展开来讲那就没完没了哒。
 
 当然，这些对涂鸦底稿是没帮助。。。(不过学点**影子银行、过桥资金**这般词汇方显逼格不是)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/057-short-term-borrowings-and-long-term-borrowings-audit-points-supplemented/  
 

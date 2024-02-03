@@ -2,10 +2,10 @@
 
 ### 启用https
 
-<!--more-->
+&lt;!--more--&gt;
 
 #### 1.购买免费证书
-登录阿里云 -> 控制台 -> 安全（云盾） -> CA证书服务 -> 购买证书
+登录阿里云 -&gt; 控制台 -&gt; 安全（云盾） -&gt; CA证书服务 -&gt; 购买证书
 ![购买免费证书](http://img.saodiyang.com/Fr8xZ-Z1ylYPcoN1PCTk_5SDm6TM.png)
 
 
@@ -53,6 +53,6 @@ server {
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/  
 

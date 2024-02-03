@@ -64,10 +64,10 @@ b 核查哪些交易：
 
 四是双向流水核查底稿开一个表就行，很多底稿模板觉得既然是双向，那咋不得整两张表。简直毫无逻辑可言~
 
-## penta kill：随时随地 Ctrl+S。
+## penta kill：随时随地 Ctrl&#43;S。
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/017-what-are-the-seemingly-ordinary-but-actually-important-steps-in-the-audit-process/  
 

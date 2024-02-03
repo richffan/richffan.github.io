@@ -37,10 +37,10 @@ Id int,
 Name varchar(20)  
 )  
   
-insert into G0814A values (1,'曹操');  
-insert into G0814A values (2,'关羽');  
-insert into G0814A values (3,'刘备');  
-insert into G0814A values (4,'张飞');  
+insert into G0814A values (1,&#39;曹操&#39;);  
+insert into G0814A values (2,&#39;关羽&#39;);  
+insert into G0814A values (3,&#39;刘备&#39;);  
+insert into G0814A values (4,&#39;张飞&#39;);  
   
 create table G0814B(  
 Id int,  
@@ -70,6 +70,6 @@ select * from G0814Awhere id inselect a.id from G0814A aexceptselect b.customeri
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/  
 

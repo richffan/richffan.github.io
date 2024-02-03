@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>合并报表抵消分录原理通俗解读系列（四）之长投权益抵消 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>合并报表抵消分录原理通俗解读系列（四）之长投权益抵消 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直" /><meta name="keywords" content='合并' /><meta itemprop="name" content="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消">
 <meta itemprop="description" content="阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直"><meta itemprop="datePublished" content="2023-08-15T11:12:00+00:00" />
 <meta itemprop="dateModified" content="2023-08-15T11:12:00+00:00" />
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E8%B4%A2%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">财技</a></li><li class="breadcrumb-item"><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">会计</a></li><li class="breadcrumb-item active" aria-current="page">合并报表抵消分录原理通俗解读系列（四）之长投权益抵消</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>合并报表抵消分录原理通俗解读系列（四）之长投权益抵消</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E8%B4%A2%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 财技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-08-15 11:12:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="更新于 2023-08-15 11:12:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="3959 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 8 分钟</span>&nbsp;<span id="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E8%B4%A2%E6%8A%80/" class="post-category" title="分类 - 财技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 财技</a></span></div><div class="post-meta-line"><span title="发布于 2023-08-15 11:12:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-15">2023-08-15</time></span>&nbsp;<span title="3959 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4000 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 8 分钟</span>&nbsp;<span id="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/" class="leancloud_visitors comment-visitors" data-flag-title="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -203,8 +198,8 @@
       </div><div class="content" id="content"><p>阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直接忽略，不影响您的正常阅读。</p>
 <p>在上篇文章《合并报表抵消分录原理通俗解读系列（三）长投权益抵消》中，我们了解到，不管用成本法直接抵消还是转权益法调整后再抵消，子公司实现净利润未分配的部分最终都无法抵消。这样在审计实务中，小伙伴们完全可以利用成本法直接抵消，而不必先转为权益法后再进行抵消，方便简洁了许多。但是有些小伙伴问道，按照成本法做出合并抵消分录后，我们又该如何佐证其正确性呢？</p>
 <p>今天我们将继续讨论长投权益的抵消原理，并从实务角度来佐证数据的准确性。</p>
-<h2 id="一长投权益抵消分录完成后如何佐证其准确性">一、长投权益抵消分录完成后如何佐证其准确性？</h2>
-<p>在上篇文章中，我们知道了长投权益的抵消共包括两个部分，即“余额的抵消”和“发生额的抵消”。</p>
+<h2 id="一长投权益抵消分录完成后如何佐证其准确性" class="heading-element">
+  <a href="#%e4%b8%80%e9%95%bf%e6%8a%95%e6%9d%83%e7%9b%8a%e6%8a%b5%e6%b6%88%e5%88%86%e5%bd%95%e5%ae%8c%e6%88%90%e5%90%8e%e5%a6%82%e4%bd%95%e4%bd%90%e8%af%81%e5%85%b6%e5%87%86%e7%a1%ae%e6%80%a7" class="heading-mark"></a>一、长投权益抵消分录完成后如何佐证其准确性？</h2><p>在上篇文章中，我们知道了长投权益的抵消共包括两个部分，即“余额的抵消”和“发生额的抵消”。</p>
 <p>“余额的抵消”就是指母公司的长期股权投资与子公司的所有者权益的抵消，是为了在合并层面还原资产的真实性才做的抵消。</p>
 <p>“发生额的抵消”就是指损益的抵消，即母公司的投资收益与子公司的利润分配项目的抵消，目的在于在合并层面还原利润的真实性才做的抵消。</p>
 <p>按照成本法做出合并抵消分录后，我们又该如何佐证其正确性呢？小编还是拿之前的案例进行举例说明。</p>
@@ -219,13 +214,13 @@
 <p>应付普通股股利  10（子公司账面数据）</p>
 <p>以上就是我们上篇文章介绍的成本法直接做的抵消分录，那么这笔抵消分录到底对不对呢？如果按照上篇文章的思路，再按照权益法调整后进行验证岂不是又回到了最初的做法，这肯定不是我们审计实务中所希望的结果。那么我们又该如何进行数据佐证呢？</p>
 <p>我们还是回归到合并报表的原始编制分录来理解下，回到母子公司所做的会计分录上：</p>
-<h3 id="1母公司成本法账务处理分录">1、母公司成本法账务处理分录</h3>
-<p>(1)借：长期股权投资 100</p>
+<h3 id="1母公司成本法账务处理分录" class="heading-element">
+  <a href="#1%e6%af%8d%e5%85%ac%e5%8f%b8%e6%88%90%e6%9c%ac%e6%b3%95%e8%b4%a6%e5%8a%a1%e5%a4%84%e7%90%86%e5%88%86%e5%bd%95" class="heading-mark"></a>1、母公司成本法账务处理分录</h3><p>(1)借：长期股权投资 100</p>
 <p>贷：银行存款     100（合并日当天）</p>
 <p>(2)借：应收股利       10</p>
 <p>贷：投资收益       10（宣告分配股利）</p>
-<h3 id="2子公司账务处理分录">2、子公司账务处理分录</h3>
-<p>(3)借：银行存款     100</p>
+<h3 id="2子公司账务处理分录" class="heading-element">
+  <a href="#2%e5%ad%90%e5%85%ac%e5%8f%b8%e8%b4%a6%e5%8a%a1%e5%a4%84%e7%90%86%e5%88%86%e5%bd%95" class="heading-mark"></a>2、子公司账务处理分录</h3><p>(3)借：银行存款     100</p>
 <p>贷：实收资本     100（合并日当天）</p>
 <p>(4)借：损益类科目     20（子公司内部结转平）</p>
 <p>贷：未分配利润-年末20（实现净利润）</p>
@@ -234,8 +229,8 @@
 </code></pre>
 <p>贷：盈余公积                  2（提供盈余公积）</p>
 <p>应付股利                  10（宣告分配股利）</p>
-<h3 id="3将母子公司分录直接合并后">3、将母子公司分录直接合并后</h3>
-<p>①借：长期股权投资   100</p>
+<h3 id="3将母子公司分录直接合并后" class="heading-element">
+  <a href="#3%e5%b0%86%e6%af%8d%e5%ad%90%e5%85%ac%e5%8f%b8%e5%88%86%e5%bd%95%e7%9b%b4%e6%8e%a5%e5%90%88%e5%b9%b6%e5%90%8e" class="heading-mark"></a>3、将母子公司分录直接合并后</h3><p>①借：长期股权投资   100</p>
 <p>贷：实收资本      100（合并日当天）</p>
 <p>②借：应收股利       10</p>
 <p>贷：应付股利      10（子公司宣告分配净利润）</p>
@@ -293,8 +288,8 @@
 <p>数据我们按照公式推导出来了，有些小伙伴可能就问了，这个推导出来的数据实质是什么呢？为什么要做这样的推导？其意义何在？其实这样做的原因很简单—为了下期分录能够做平！结论一出，可能有些小伙伴更疑惑了，这合并抵消的公式也忒不地道了，难道是为了做分录而做分录吗？其实不是这个样子。我们之所以这样做，是因为我们不得已或者说为了便于直观取数。</p>
 <p>我们知道，每一期子公司账面都可能涉及做权益的调整如提取盈余公积和分配股利等。而这两笔分录中，分配股利是一锤子买卖，只在当期有效，过期不候—即在下期做合并抵消分录时跟它没有一毛钱关系了；但提取盈余公积则不同，它会在子公司账面不断累积，对下期合并抵消分录仍有影响。所以，合并抵消分录逻辑关系公式中的年末未分配利润借方数其实是子公司当期提取盈余公积的抵消数。</p>
 <p>为了确保我们的结论准确无误，本着审慎严谨的原则，我们将对以上结论及数据需做进一步假设及验证。</p>
-<h2 id="二长投权益抵消分录逻辑再推演">二、长投权益抵消分录逻辑再推演</h2>
-<p>我们接上述案例进一步假设：假设第二年B公司当期实现净利润50万元，提取盈余公积5万元，子公司宣告分配30万股利，剩余未分配利润15万元，不考虑其他经济业务。</p>
+<h2 id="二长投权益抵消分录逻辑再推演" class="heading-element">
+  <a href="#%e4%ba%8c%e9%95%bf%e6%8a%95%e6%9d%83%e7%9b%8a%e6%8a%b5%e6%b6%88%e5%88%86%e5%bd%95%e9%80%bb%e8%be%91%e5%86%8d%e6%8e%a8%e6%bc%94" class="heading-mark"></a>二、长投权益抵消分录逻辑再推演</h2><p>我们接上述案例进一步假设：假设第二年B公司当期实现净利润50万元，提取盈余公积5万元，子公司宣告分配30万股利，剩余未分配利润15万元，不考虑其他经济业务。</p>
 <p>第二年的合并报表长投权益抵消分录如何编制呢？按照我们上述思路，直接按照成本法进行抵消：</p>
 <p>借：实收资本100（子公司账面数据）</p>
 <p>盈余公积7（子公司账面数据-上期+本期累计数）</p>
@@ -316,19 +311,17 @@
       <div class="post-info-mod">
         <span title="更新于 2023-08-15 11:12:00">更新于 2023-08-15&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/" data-title="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/" data-title="合并报表抵消分录原理通俗解读系列（四）之长投权益抵消" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E5%90%88%E5%B9%B6/' class="post-tag">合并</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/%E5%90%88%E5%B9%B6/" class="post-tag" title="标签 - 合并">合并</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -339,10 +332,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

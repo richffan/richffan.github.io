@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Golang入门笔记-CH11-错误处理 - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>Golang入门笔记-CH11-错误处理 - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="Go 没有像 Java 那样的 try/catch 异常处理机制，而是用 defer/panic/recover 机制来处理异常。 Go 语言的设计者认为 try/catch 机制使用过于泛滥，而且从底层向高层抛出错误太耗费资源，因此他给 Go" /><meta name="keywords" content='Golang' /><meta itemprop="name" content="Golang入门笔记-CH11-错误处理">
 <meta itemprop="description" content="Go 没有像 Java 那样的 try/catch 异常处理机制，而是用 defer/panic/recover 机制来处理异常。 Go 语言的设计者认为 try/catch 机制使用过于泛滥，而且从底层向高层抛出错误太耗费资源，因此他给 Go"><meta itemprop="datePublished" content="2022-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1814"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="1824"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="Golang," /><meta property="og:title" content="Golang入门笔记-CH11-错误处理" />
 <meta property="og:description" content="Go 没有像 Java 那样的 try/catch 异常处理机制，而是用 defer/panic/recover 机制来处理异常。 Go 语言的设计者认为 try/catch 机制使用过于泛滥，而且从底层向高层抛出错误太耗费资源，因此他给 Go" />
 <meta property="og:type" content="article" />
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86\/"
-    },"genre": "posts","keywords": "Golang","wordcount":  1814 ,
+    },"genre": "posts","keywords": "Golang","wordcount":  1824 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/golang\/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86\/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/golang/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Golang</a></li><li class="breadcrumb-item active" aria-current="page">Golang入门笔记-CH11-错误处理</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Golang入门笔记-CH11-错误处理</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="更新于 2022-10-01 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1814 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH11-错误处理">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2022-10-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-10-01">2022-10-01</time></span>&nbsp;<span title="1824 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1900 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="leancloud_visitors comment-visitors" data-flag-title="Golang入门笔记-CH11-错误处理">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="Golang入门笔记-CH11-错误处理">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -232,9 +227,9 @@
 </span></span><span class="line"><span class="cl">    <span class="nf">Error</span><span class="p">()</span> <span class="kt">string</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="错误处理">错误处理</h2>
-<h3 id="定义错误">定义错误</h3>
-<p>可以通过 <code>errors</code> 包中 <code>New()</code> 函数传递错误信息，从而自定义错误，如下：</p>
+</div><h2 id="错误处理" class="heading-element">
+  <a href="#%e9%94%99%e8%af%af%e5%a4%84%e7%90%86" class="heading-mark"></a>错误处理</h2><h3 id="定义错误" class="heading-element">
+  <a href="#%e5%ae%9a%e4%b9%89%e9%94%99%e8%af%af" class="heading-mark"></a>定义错误</h3><p>可以通过 <code>errors</code> 包中 <code>New()</code> 函数传递错误信息，从而自定义错误，如下：</p>
 <div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -273,7 +268,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=large 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png" alt="image.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105639.png?size=large 2x" sizes="auto" data-title="image.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>我们通过测试平方根函数，来了解错误处理机制：</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -351,7 +346,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=large 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png" alt="image.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105649.png?size=large 2x" sizes="auto" data-title="image.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <blockquote>
 <p><em><strong>注意</strong></em>：一般错误信息都会有 <code>Error</code> 前缀，因此错误信息不要以大写字母开头。</p>
 </blockquote>
@@ -415,8 +410,8 @@
 </span></span><span class="line"><span class="cl">        <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;not a special error, just %v\n&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="用-fmt-创建错误对象">用 fmt 创建错误对象</h3>
-<p>可以通过 <code>fmt.Errorf()</code> 来创建错误对象，用法类似于 <code>fmt.Printf()</code>，可以用占位符来格式化输出，例如：</p>
+</div><h3 id="用-fmt-创建错误对象" class="heading-element">
+  <a href="#%e7%94%a8-fmt-%e5%88%9b%e5%bb%ba%e9%94%99%e8%af%af%e5%af%b9%e8%b1%a1" class="heading-mark"></a>用 fmt 创建错误对象</h3><p>可以通过 <code>fmt.Errorf()</code> 来创建错误对象，用法类似于 <code>fmt.Printf()</code>，可以用占位符来格式化输出，例如：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -428,8 +423,8 @@
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;math: square root of negative number %g&#34;</span><span class="p">,</span> <span class="nx">f</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="运行时异常和-panic">运行时异常和 panic</h2>
-<p>当发生<strong>数组下标越界</strong>等运行错误时，会触发 panic，程序会崩溃并抛出一个 <code>runtime.Error</code> 接口类型值。</p>
+</div><h2 id="运行时异常和-panic" class="heading-element">
+  <a href="#%e8%bf%90%e8%a1%8c%e6%97%b6%e5%bc%82%e5%b8%b8%e5%92%8c-panic" class="heading-mark"></a>运行时异常和 panic</h2><p>当发生<strong>数组下标越界</strong>等运行错误时，会触发 panic，程序会崩溃并抛出一个 <code>runtime.Error</code> 接口类型值。</p>
 <p><code>panic</code> 一般用在<strong>错误条件很苛刻</strong>且<strong>不可恢复</strong>时，当程序无法继续运行时，比如连接数据库时密码错误，可以使用 <code>panic</code> 函数产生一个中止运行的错误。</p>
 <p><code>panic</code> 可以接收一个任意类型的参数，一般是字符串，当程序执行到 <code>panic</code> 时，会打印出来，同时 <code>panic</code> 之后的语句将不会被执行， 我们来看一个例子：</p>
 <div class="highlight" id="id-10"><div class="chroma">
@@ -456,10 +451,10 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=large 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png" alt="image.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105658.png?size=large 2x" sizes="auto" data-title="image.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>不能随意用 <code>panic</code> 来中止程序，必须尽力补救错误以便让程序能够继续正常运行。</p>
-<h2 id="从-panic-中恢复">从 panic 中恢复</h2>
-<p><code>recover</code> 函数可以让程序从 <code>panic</code> 场景下恢复，停止终止过程而恢复正常。</p>
+<h2 id="从-panic-中恢复" class="heading-element">
+  <a href="#%e4%bb%8e-panic-%e4%b8%ad%e6%81%a2%e5%a4%8d" class="heading-mark"></a>从 panic 中恢复</h2><p><code>recover</code> 函数可以让程序从 <code>panic</code> 场景下恢复，停止终止过程而恢复正常。</p>
 <p><code>recover</code> 只能在 <code>defer</code> 修饰的函数中使用，可以获取从 <code>panic</code> 中传递过来的错误信息，若是正常调用 <code>recover</code> 只返回 <code>nil</code>。</p>
 <p>我们来看一个例子：</p>
 <div class="highlight" id="id-11"><div class="chroma">
@@ -522,9 +517,9 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述代码运行结果为：</p>
-<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=large 2x" sizes="auto" data-title="image.png" data-alt="image.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="闭包处理错误">闭包处理错误</h2>
-<p>每当函数返回错误时，我们都应该去处理，但这样会导致代码重复。结合 <code>defer/panic/recover</code> 机制和闭包我们可以创造一种更优雅的错误处理模式。但是这个模式只适用于函数签名相同的情况，一个很好的例子就是在 Web 应用中的处理函数，它的一般形式如下：</p>
+<p><img loading="lazy" src="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png" alt="image.png" srcset="https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=small, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=medium 1.5x, https://cangmang.coding.net/p/image/d/image/git/raw/master/article/2020/11/30/20201130105707.png?size=large 2x" sizes="auto" data-title="image.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="闭包处理错误" class="heading-element">
+  <a href="#%e9%97%ad%e5%8c%85%e5%a4%84%e7%90%86%e9%94%99%e8%af%af" class="heading-mark"></a>闭包处理错误</h2><p>每当函数返回错误时，我们都应该去处理，但这样会导致代码重复。结合 <code>defer/panic/recover</code> 机制和闭包我们可以创造一种更优雅的错误处理模式。但是这个模式只适用于函数签名相同的情况，一个很好的例子就是在 Web 应用中的处理函数，它的一般形式如下：</p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -634,19 +629,17 @@
       <div class="post-info-mod">
         <span title="更新于 2022-10-01 00:00:00">更新于 2022-10-01&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" data-title="Golang入门笔记-CH11-错误处理" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" data-title="Golang入门笔记-CH11-错误处理" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/golang/' class="post-tag">Golang</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/golang/" class="post-tag" title="标签 - Golang">Golang</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -657,10 +650,13 @@
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

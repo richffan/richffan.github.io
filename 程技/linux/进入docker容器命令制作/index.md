@@ -2,17 +2,17 @@
 
 ### 通过attach进入容器
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ```bash
 ## 进入容器（Docker自带的命令）
 $ sudo docker attach [name]
 ```
-通过这命令进入容器后，执行ctrl+d退出容器后发现容器也停止了。
+通过这命令进入容器后，执行ctrl&#43;d退出容器后发现容器也停止了。
 所以可以通过
-- 先按，ctrl+p
-- 再按，ctrl+q
+- 先按，ctrl&#43;p
+- 再按，ctrl&#43;q
 
 退出
 
@@ -38,7 +38,7 @@ bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or 
 ```bash
 $ ctn [name]
 ```
->注意：如果是使用非root账号创建的命令，而docker命令是root权限，可能会存在权限问题
+&gt;注意：如果是使用非root账号创建的命令，而docker命令是root权限，可能会存在权限问题
 可以设置 `chmod 777 /usr/bin/ctn` 设置权限
 使用 `sudo ctn [name]` 即可进入容器
 
@@ -50,17 +50,17 @@ $ ctn [name]
 在~/.bashrc(作用于当前用户，如果所有用户，修改/etc/bashrc)文件中添加一行
 ```bash
 ## ctn auto complete
-complete -W "$(docker ps --format "{{.Names}}")" ctn
+complete -W &#34;$(docker ps --format &#34;{{.Names}}&#34;)&#34; ctn
 ```
 再执行 `source .bashrc` 使之生效。
 
 这样我们输入 `ctn` 后，按 `Tab` 就会提示或自动补全了。
 
->`注意：` 由于提示的docker名是 `.bashrc` 生效时的列表，所以如果之后docker列表有变动，需重新执行 `source .bashrc` 使之更新提示列表
+&gt;`注意：` 由于提示的docker名是 `.bashrc` 生效时的列表，所以如果之后docker列表有变动，需重新执行 `source .bashrc` 使之更新提示列表
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E8%BF%9B%E5%85%A5docker%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4%E5%88%B6%E4%BD%9C/  
 

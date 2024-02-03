@@ -1,7 +1,7 @@
 # 每天一个linux命令（10）: cat
 
 　　cat命令的用途是连接文件或标准输入并打印。这个命令常用来显示文件内容，或者将几个文件连接起来显示，或者从标准输入读取内容并显示，它常与重定向符号配合使用。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ cat [选项] [文件]...
@@ -9,8 +9,8 @@ $ cat [选项] [文件]...
 #### 命令功能
 **cat主要有三大功能**
 1. 一次显示整个文件:`cat filename`
-2. 从键盘创建一个文件:`cat > filename` 只能创建新文件,不能编辑已有文件.
-3. 将几个文件合并为一个文件:`cat file1 file2 > file`
+2. 从键盘创建一个文件:`cat &gt; filename` 只能创建新文件,不能编辑已有文件.
+3. 将几个文件合并为一个文件:`cat file1 file2 &gt; file`
 
 #### 命令参数
 | 参数 | 描述     |
@@ -37,16 +37,16 @@ $ cat -b log2012.log log2013.log log.log
 ```
 **`例三`：把 log2012.log 的文件内容加上行号后输入 log.log 这个文件里**
 ```bash
-$ cat -n log2012.log > log.log
+$ cat -n log2012.log &gt; log.log
 ```
 **`例四`：使用here doc来生成文件**
 ```bash
-$ cat >log.txt <<EOF
-> Hello
-> World
-> Linux
-> PWD=$(pwd)
-> EOF
+$ cat &gt;log.txt &lt;&lt;EOF
+&gt; Hello
+&gt; World
+&gt; Linux
+&gt; PWD=$(pwd)
+&gt; EOF
 ```
 **`例五`：tac (反向列示)**
 ```bash
@@ -56,11 +56,11 @@ Linux
 World
 Hello
 ```
-> tac 是将 cat 反写过来，所以他的功能就跟 cat 相反， cat 是由第一行到最后一行连续显示在萤幕上，而 tac 则是由最后一行到第一行反向在萤幕上显示出来！
+&gt; tac 是将 cat 反写过来，所以他的功能就跟 cat 相反， cat 是由第一行到最后一行连续显示在萤幕上，而 tac 则是由最后一行到第一行反向在萤幕上显示出来！
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-10-cat/  
 

@@ -9,6 +9,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B83%E5%8F%B7%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91%E5%AE%A1%E8%AE%A1-%E8%B4%A7%E5%B8%81%E8%B5%84%E9%87%91%E5%AE%A1%E8%AE%A1%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D/  
 

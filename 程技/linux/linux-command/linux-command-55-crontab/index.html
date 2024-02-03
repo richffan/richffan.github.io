@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>每天一个linux命令（55）: crontab - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>每天一个linux命令（55）: crontab - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="前一天学习了 at 命令是针对仅运行一次的任务，循环运行的例行性计划任务，linux系统则是由 cron (crond) 这个系统服务来控制的。Linux 系统上面原本就有" /><meta name="keywords" content='linux命令' /><meta itemprop="name" content="每天一个linux命令（55）: crontab">
 <meta itemprop="description" content="前一天学习了 at 命令是针对仅运行一次的任务，循环运行的例行性计划任务，linux系统则是由 cron (crond) 这个系统服务来控制的。Linux 系统上面原本就有"><meta itemprop="datePublished" content="2017-01-23T10:44:50+00:00" />
 <meta itemprop="dateModified" content="2017-01-23T10:44:50+00:00" />
@@ -38,14 +38,14 @@
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">linux-command</a></li><li class="breadcrumb-item active" aria-current="page">每天一个linux命令（55）: crontab</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>每天一个linux命令（55）: crontab</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-01-23 10:44:50"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-23">2017-01-23</time></span>&nbsp;<span title="更新于 2017-01-23 10:44:50"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-23">2017-01-23</time></span>&nbsp;<span title="5351 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 5400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 11 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（55）: crontab">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2017-01-23 10:44:50"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2017-01-23">2017-01-23</time></span>&nbsp;<span title="5351 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 5400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 11 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（55）: crontab">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（55）: crontab">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -223,8 +218,8 @@
 </nav></div>
       </div><div class="content" id="content"><p>　　前一天学习了 at 命令是针对仅运行一次的任务，循环运行的例行性计划任务，linux系统则是由 cron (crond) 这个系统服务来控制的。Linux 系统上面原本就有非常多的计划性工作，因此这个系统服务是默认启动的。另外, 由于使用者自己也可以设置计划任务，所以， Linux 系统也提供了使用者控制计划任务的命令 :crontab 命令。</p>
 <!--more -->
-<h4 id="crond简介">crond简介</h4>
-<p>　　crond是linux下用来周期性的执行某种任务或等待处理某些事件的一个守护进程，与windows下的计划任务类似，当安装完成操作系统后，默认会安装此服务工具，并且会自动启动crond进程，crond进程每分钟会定期检查是否有要执行的任务，如果有要执行的任务，则自动执行该任务。</p>
+<h4 id="crond简介" class="heading-element">
+  <a href="#crond%e7%ae%80%e4%bb%8b" class="heading-mark"></a>crond简介</h4><p>　　crond是linux下用来周期性的执行某种任务或等待处理某些事件的一个守护进程，与windows下的计划任务类似，当安装完成操作系统后，默认会安装此服务工具，并且会自动启动crond进程，crond进程每分钟会定期检查是否有要执行的任务，如果有要执行的任务，则自动执行该任务。</p>
 <p>　　Linux下的任务调度分为两类，系统任务调度和用户任务调度。</p>
 <p>　　系统任务调度：系统周期性所要执行的工作，比如写缓存数据到硬盘、日志清理等。在/etc目录下有一个crontab文件，这个就是系统任务调度的配置文件。</p>
 <p>　　/etc/crontab文件包括下面几行：</p>
@@ -263,15 +258,15 @@
 </div>
 </div><p>　　前四行是用来配置crond任务运行的环境变量，第一行SHELL变量指定了系统要使用哪个shell，这里是bash，第二行PATH变量指定了系统执行命令的路径，第三行MAILTO变量指定了crond的任务执行信息将通过电子邮件发送给root用户，如果MAILTO变量的值为空，则表示不发送任务执行信息给用户，第四行的HOME变量指定了在执行命令或者脚本时使用的主目录。第六至九行表示的含义将在下个小节详细讲述。这里不在多说。</p>
 <p>　　用户任务调度：用户定期要执行的工作，比如用户数据备份、定时邮件提醒等。用户可以使用 crontab 工具来定制自己的计划任务。所有用户定义的crontab 文件都被保存在 /var/spool/cron目录中。其文件名与用户名一致。</p>
-<h4 id="使用者权限文件">使用者权限文件</h4>
-<p>文件：/etc/cron.deny
+<h4 id="使用者权限文件" class="heading-element">
+  <a href="#%e4%bd%bf%e7%94%a8%e8%80%85%e6%9d%83%e9%99%90%e6%96%87%e4%bb%b6" class="heading-mark"></a>使用者权限文件</h4><p>文件：/etc/cron.deny
 说明：该文件中所列用户不允许使用crontab命令</p>
 <p>文件：/etc/cron.allow
 说明：该文件中所列用户允许使用crontab命令</p>
 <p>文件：/var/spool/cron/
 说明：所有用户crontab文件存放的目录,以用户名命名</p>
-<h4 id="crontab文件的含义">crontab文件的含义</h4>
-<p>　　用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下：
+<h4 id="crontab文件的含义" class="heading-element">
+  <a href="#crontab%e6%96%87%e4%bb%b6%e7%9a%84%e5%90%ab%e4%b9%89" class="heading-mark"></a>crontab文件的含义</h4><p>　　用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下：
 minute   hour   day   month   week   command
 其中：
 　　minute： 表示分钟，可以是从0到59之间的任何整数。
@@ -285,8 +280,8 @@ minute   hour   day   month   week   command
 <code>逗号（,）</code>：可以用逗号隔开的值指定一个列表范围，例如，“1,2,5,7,8,9”
 <code>中杠（-）</code>：可以用整数之间的中杠表示一个整数范围，例如“2-6”表示“2,3,4,5,6”
 <code>正斜线（/）</code>：可以用正斜线指定时间的间隔频率，例如“0-23/2”表示每两小时执行一次。同时正斜线可以和星号一起使用，例如*/10，如果用在minute字段，表示每十分钟执行一次。</p>
-<h4 id="crond服务">crond服务</h4>
-<p>安装crontab：</p>
+<h4 id="crond服务" class="heading-element">
+  <a href="#crond%e6%9c%8d%e5%8a%a1" class="heading-mark"></a>crond服务</h4><p>安装crontab：</p>
 <div class="highlight" id="id-2"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -340,9 +335,9 @@ minute   hour   day   month   week   command
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ chkconfig –level <span class="m">35</span> crond on</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="contab-命令详解">contab 命令详解</h3>
-<h4 id="命令格式">命令格式</h4>
-<div class="highlight" id="id-8"><div class="chroma">
+</div><h3 id="contab-命令详解" class="heading-element">
+  <a href="#contab-%e5%91%bd%e4%bb%a4%e8%af%a6%e8%a7%a3" class="heading-mark"></a>contab 命令详解</h3><h4 id="命令格式" class="heading-element">
+  <a href="#%e5%91%bd%e4%bb%a4%e6%a0%bc%e5%bc%8f" class="heading-mark"></a>命令格式</h4><div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -351,10 +346,10 @@ minute   hour   day   month   week   command
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ crontab <span class="o">[</span>-u user<span class="o">]</span> file
 </span></span><span class="line"><span class="cl">$ crontab <span class="o">[</span>-u user<span class="o">]</span> <span class="o">[</span> -e <span class="p">|</span> -l <span class="p">|</span> -r <span class="o">]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="命令功能">命令功能</h4>
-<p>　　通过crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合。这个命令非常设合周期性的日志分析或数据备份等工作。</p>
-<h4 id="命令参数">命令参数</h4>
-<table>
+</div><h4 id="命令功能" class="heading-element">
+  <a href="#%e5%91%bd%e4%bb%a4%e5%8a%9f%e8%83%bd" class="heading-mark"></a>命令功能</h4><p>　　通过crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合。这个命令非常设合周期性的日志分析或数据备份等工作。</p>
+<h4 id="命令参数" class="heading-element">
+  <a href="#%e5%91%bd%e4%bb%a4%e5%8f%82%e6%95%b0" class="heading-mark"></a>命令参数</h4><table>
 <thead>
 <tr>
 <th style="text-align:left">参数</th>
@@ -388,8 +383,8 @@ minute   hour   day   month   week   command
 </tr>
 </tbody>
 </table>
-<h4 id="常用方法">常用方法</h4>
-<p><strong><code>例一</code>：创建一个新的crontab文件</strong>
+<h4 id="常用方法" class="heading-element">
+  <a href="#%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95" class="heading-mark"></a>常用方法</h4><p><strong><code>例一</code>：创建一个新的crontab文件</strong>
 在考虑向cron进程提交一个crontab文件之前，首先要做的一件事情就是设置环境变量EDITOR。cron进程根据它来确定使用哪个编辑器编辑crontab文件。9 9 %的UNIX和LINUX用户都使用vi，如果你也是这样，那么你就编辑$ HOME目录下的. profile文件，在其中加入这样一行：
 EDITOR=vi; export EDITOR
 然后保存并退出。不妨创建一个名为<user> cron的文件，其中<user>是用户名，例如， davecron。在该文件中加入如下的内容。
@@ -452,8 +447,8 @@ $ crontab <filename>
 其中，<filename>是你在$ H O M E目录中副本的文件名。
 我建议你在自己的$ H O M E目录中保存一个该文件的副本。我就有过类似的经历，有数次误删了crontab文件（因为r键紧挨在e键的右边）。这就是为什么有些系统文档建议不要直接编辑crontab文件，而是编辑该文件的一个副本，然后重新提交新的文件。
 有些crontab的变体有些怪异，所以在使用crontab命令时要格外小心。如果遗漏了任何选项，crontab可能会打开一个空文件，或者看起来像是个空文件。这时敲delete键退出，不要按<Ctrl-D>，否则你将丢失crontab文件。</p>
-<h4 id="使用实例">使用实例</h4>
-<p><strong><code>例一</code>：每1分钟执行一次command</strong></p>
+<h4 id="使用实例" class="heading-element">
+  <a href="#%e4%bd%bf%e7%94%a8%e5%ae%9e%e4%be%8b" class="heading-mark"></a>使用实例</h4><p><strong><code>例一</code>：每1分钟执行一次command</strong></p>
 <div class="highlight" id="id-12"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -577,9 +572,9 @@ $ crontab <filename>
 <p><strong>说明：</strong>
 run-parts这个参数了，如果去掉这个参数的话，后面就可以写要运行的某个脚本名，而不是目录名了</p>
 </blockquote>
-<h4 id="注意事项">注意事项</h4>
-<h5 id="注意环境变量问题">注意环境变量问题</h5>
-<p>　　有时我们创建了一个crontab，但是这个任务却无法自动执行，而手动执行这个任务却没有问题，这种情况一般是由于在crontab文件中没有配置环境变量引起的。</p>
+<h4 id="注意事项" class="heading-element">
+  <a href="#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" class="heading-mark"></a>注意事项</h4><h5 id="注意环境变量问题" class="heading-element">
+  <a href="#%e6%b3%a8%e6%84%8f%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e9%97%ae%e9%a2%98" class="heading-mark"></a>注意环境变量问题</h5><p>　　有时我们创建了一个crontab，但是这个任务却无法自动执行，而手动执行这个任务却没有问题，这种情况一般是由于在crontab文件中没有配置环境变量引起的。</p>
 <p>　　在crontab文件中定义多个调度任务时，需要特别注意的一个问题就是环境变量的设置，因为我们手动执行某个任务时，是在当前shell环境下进行的，程序当然能找到环境变量，而系统自动执行任务调度时，是不会加载任何环境变量的，因此，就需要在crontab文件中指定任务运行所需的所有环境变量，这样，系统执行任务调度时就没有问题了。</p>
 <p>　　不要假定cron知道所需要的特殊环境，它其实并不知道。所以你要保证在shelll脚本中提供所有必要的路径和环境变量，除了一些自动设置的全局变量。所以注意如下3点：
 　　1）脚本中涉及文件路径时写全局路径；
@@ -607,8 +602,8 @@ run-parts这个参数了，如果去掉这个参数的话，后面就可以写�
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0</span> * * * * . /etc/profile<span class="p">;</span>/bin/sh /var/www/java/audit_no_count/bin/restart_audit.sh</span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="注意清理系统用户的邮件日志">注意清理系统用户的邮件日志</h5>
-<p>　　每条任务调度执行完毕，系统都会将任务输出信息通过电子邮件的形式发送给当前系统用户，这样日积月累，日志信息会非常大，可能会影响系统的正常运行，因此，将每条任务进行重定向处理非常重要。
+</div><h5 id="注意清理系统用户的邮件日志" class="heading-element">
+  <a href="#%e6%b3%a8%e6%84%8f%e6%b8%85%e7%90%86%e7%b3%bb%e7%bb%9f%e7%94%a8%e6%88%b7%e7%9a%84%e9%82%ae%e4%bb%b6%e6%97%a5%e5%bf%97" class="heading-mark"></a>注意清理系统用户的邮件日志</h5><p>　　每条任务调度执行完毕，系统都会将任务输出信息通过电子邮件的形式发送给当前系统用户，这样日积月累，日志信息会非常大，可能会影响系统的正常运行，因此，将每条任务进行重定向处理非常重要。
 　　例如，可以在crontab文件中设置如下形式，忽略日志输出：</p>
 <div class="highlight" id="id-29"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -618,10 +613,10 @@ run-parts这个参数了，如果去掉这个参数的话，后面就可以写�
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0</span> */3 * * * /usr/local/apache2/apachectl restart &gt;/dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>“/dev/null 2&gt;&amp;1”表示先将标准输出重定向到/dev/null，然后将标准错误重定向到标准输出，由于标准输出已经重定向到了/dev/null，因此标准错误也会重定向到/dev/null，这样日志输出问题就解决了。</p>
-<h5 id="系统级任务调度与用户级任务调度">系统级任务调度与用户级任务调度</h5>
-<p>　　系统级任务调度主要完成系统的一些维护操作，用户级任务调度主要完成用户自定义的一些任务，可以将用户级任务调度放到系统级任务调度来完成（不建议这么做），但是反过来却不行，root用户的任务调度操作可以通过“crontab –uroot –e”来设置，也可以将调度任务直接写入/etc/crontab文件，需要注意的是，如果要定义一个定时重启系统的任务，就必须将任务放到/etc/crontab文件，即使在root用户下创建一个定时重启系统的任务也是无效的。</p>
-<h5 id="其他注意事项">其他注意事项</h5>
-<p>　　新创建的cron job，不会马上执行，至少要过2分钟才执行。如果重启cron则马上执行。</p>
+<h5 id="系统级任务调度与用户级任务调度" class="heading-element">
+  <a href="#%e7%b3%bb%e7%bb%9f%e7%ba%a7%e4%bb%bb%e5%8a%a1%e8%b0%83%e5%ba%a6%e4%b8%8e%e7%94%a8%e6%88%b7%e7%ba%a7%e4%bb%bb%e5%8a%a1%e8%b0%83%e5%ba%a6" class="heading-mark"></a>系统级任务调度与用户级任务调度</h5><p>　　系统级任务调度主要完成系统的一些维护操作，用户级任务调度主要完成用户自定义的一些任务，可以将用户级任务调度放到系统级任务调度来完成（不建议这么做），但是反过来却不行，root用户的任务调度操作可以通过“crontab –uroot –e”来设置，也可以将调度任务直接写入/etc/crontab文件，需要注意的是，如果要定义一个定时重启系统的任务，就必须将任务放到/etc/crontab文件，即使在root用户下创建一个定时重启系统的任务也是无效的。</p>
+<h5 id="其他注意事项" class="heading-element">
+  <a href="#%e5%85%b6%e4%bb%96%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" class="heading-mark"></a>其他注意事项</h5><p>　　新创建的cron job，不会马上执行，至少要过2分钟才执行。如果重启cron则马上执行。</p>
 <p>　　当crontab突然失效时，可以尝试/etc/init.d/crond restart解决问题。或者查看日志看某个job有没有执行/报错tail -f /var/log/cron。</p>
 <p>　　千万别乱运行crontab -r。它从Crontab目录（/var/spool/cron）中删除用户的Crontab文件。删除了该用户的所有crontab都没了。</p>
 <p>　　在crontab中%是有特殊含义的，表示换行的意思。如果要用的话必须进行转义%，如经常用的date ‘+%Y%m%d’在crontab里是不会执行的，应该换成date ‘+%Y%m%d’。</p>
@@ -631,19 +626,17 @@ run-parts这个参数了，如果去掉这个参数的话，后面就可以写�
       <div class="post-info-mod">
         <span title="更新于 2017-01-23 10:44:50">更新于 2017-01-23&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/" data-title="每天一个linux命令（55）: crontab" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/" data-title="每天一个linux命令（55）: crontab" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/linux%E5%91%BD%E4%BB%A4/' class="post-tag">linux命令</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/linux%E5%91%BD%E4%BB%A4/" class="post-tag" title="标签 - linux命令">linux命令</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
@@ -654,10 +647,13 @@ run-parts这个参数了，如果去掉这个参数的话，后面就可以写�
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

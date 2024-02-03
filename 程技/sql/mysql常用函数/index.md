@@ -112,13 +112,13 @@ SELECT EXTRACT(HOUR_MINUTE FROM CURRENT_DATE);
 SELECT PERIOD_DIFF(200302,199802);
 
 在Mysql中计算年龄：
-SELECT DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(birthday)),'%Y')+0 AS age FROM employee;
+SELECT DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(birthday)),&#39;%Y&#39;)&#43;0 AS age FROM employee;
 这样，如果Brithday是未来的年月日的话，计算结果为0。
 下面的SQL语句计算员工的绝对年龄，即当Birthday是未来的日期时，将得到负值。
-SELECT DATE_FORMAT(NOW(), '%Y') 
-- DATE_FORMAT(birthday, '%Y') 
--(DATE_FORMAT(NOW(), '00-%m-%d') 
-< DATE_FORMAT(birthday, '00-%m-%d')) AS age from employee
+SELECT DATE_FORMAT(NOW(), &#39;%Y&#39;) 
+- DATE_FORMAT(birthday, &#39;%Y&#39;) 
+-(DATE_FORMAT(NOW(), &#39;00-%m-%d&#39;) 
+&lt; DATE_FORMAT(birthday, &#39;00-%m-%d&#39;)) AS age from employee
 ```
 
 ## 5、加密函数
@@ -136,13 +136,13 @@ PASSWORD(str)      --返回字符串str的加密版本，这个加密过程是�
 SHA()              --计算字符串str的安全散列算法(SHA)校验和
 
 例如
-SELECT ENCRYPT('root','salt') ;
-SELECT ENCODE('xufeng','key') ;
-SELECT DECODE(ENCODE('xufeng','key'),'key') ;--加解密放在一起
-SELECT AES_ENCRYPT('root','key') ;
-SELECT AES_DECRYPT(AES_ENCRYPT('root','key'),'key') ;
-SELECT MD5('123456') ;
-SELECT SHA('123456') ;
+SELECT ENCRYPT(&#39;root&#39;,&#39;salt&#39;) ;
+SELECT ENCODE(&#39;xufeng&#39;,&#39;key&#39;) ;
+SELECT DECODE(ENCODE(&#39;xufeng&#39;,&#39;key&#39;),&#39;key&#39;) ;--加解密放在一起
+SELECT AES_ENCRYPT(&#39;root&#39;,&#39;key&#39;) ;
+SELECT AES_DECRYPT(AES_ENCRYPT(&#39;root&#39;,&#39;key&#39;),&#39;key&#39;) ;
+SELECT MD5(&#39;123456&#39;) ;
+SELECT SHA(&#39;123456&#39;) ;
 ```
 
 ## 6、控制流函数
@@ -162,21 +162,21 @@ NULLIF(arg1,arg2)   --如果arg1=arg2返回NULL；否则返回arg1
 例如
 SELECT IFNULL(1,2), 
 IFNULL(NULL,10),
-IFNULL(4*NULL,'false');
+IFNULL(4*NULL,&#39;false&#39;);
 
 NULLIF()函数将会检验提供的两个参数是否相等，如果相等，则返回NULL，
 如果不相等，就返回第一个参数。
 例如
 SELECT  NULLIF(1,1),
- NULLIF('A','B'),
- NULLIF(2+3,4+1);
+ NULLIF(&#39;A&#39;,&#39;B&#39;),
+ NULLIF(2&#43;3,4&#43;1);
 
 MySQL的IF()函数也可以建立一个简单的条件测试，
 这个函数有三个参数，第一个是要被判断的表达式，
 如果表达式为真，IF()将会返回第二个参数，
 如果为假，IF()将会返回第三个参数。
 例如
-SELECT IF(1<10,2,3),IF(56>100,'true','false');
+SELECT IF(1&lt;10,2,3),IF(56&gt;100,&#39;true&#39;,&#39;false&#39;);
 IF()函数在只有两种可能结果时才适合使用。
 然而，在现实世界中，我们可能发现在条件测试中会需要多个分支。
 在这种情况下，它和PHP及Perl语言的switch-case条件例程一样。
@@ -203,28 +203,28 @@ ELSE [default result]
 END
 这种条件下，返回的结果取决于相应的条件测试是否为真。
 例如：
-SELECT  CASE 'green'
-      WHEN 'red' THEN 'stop'
-      WHEN 'green' THEN 'go' END;
+SELECT  CASE &#39;green&#39;
+      WHEN &#39;red&#39; THEN &#39;stop&#39;
+      WHEN &#39;green&#39; THEN &#39;go&#39; END;
 
 SELECT CASE  9 
-WHEN 1 THEN 'a'
-WHEN 2 THEN 'b' ELSE 'N/A' END;
+WHEN 1 THEN &#39;a&#39;
+WHEN 2 THEN &#39;b&#39; ELSE &#39;N/A&#39; END;
 
-SELECT CASE WHEN (2+2)=4 THEN 'OK' 
-WHEN (2+2)<>4 THEN 'not OK' END AS STATUS;
+SELECT CASE WHEN (2&#43;2)=4 THEN &#39;OK&#39; 
+WHEN (2&#43;2)&lt;&gt;4 THEN &#39;not OK&#39; END AS STATUS;
 
-SELECT Name,IF((IsActive = 1),'已激活','未激活') AS RESULT 
+SELECT Name,IF((IsActive = 1),&#39;已激活&#39;,&#39;未激活&#39;) AS RESULT 
 FROM UserLoginInfo;
 
-SELECT fname,lname,(math+sci+lit) AS total,
-CASE WHEN (math+sci+lit) < 50 THEN 'D'
-     WHEN (math+sci+lit) BETWEEN 50 AND 150 THEN 'C'
-     WHEN (math+sci+lit) BETWEEN 151 AND 250 THEN 'B'
-ELSE 'A' END AS grade FROM marks ;
+SELECT fname,lname,(math&#43;sci&#43;lit) AS total,
+CASE WHEN (math&#43;sci&#43;lit) &lt; 50 THEN &#39;D&#39;
+     WHEN (math&#43;sci&#43;lit) BETWEEN 50 AND 150 THEN &#39;C&#39;
+     WHEN (math&#43;sci&#43;lit) BETWEEN 151 AND 250 THEN &#39;B&#39;
+ELSE &#39;A&#39; END AS grade FROM marks ;
 
-SELECT IF(ENCRYPT('sue','ts')=upass,'allow','deny') AS LoginResult
-FROM users WHERE uname = 'sue';
+SELECT IF(ENCRYPT(&#39;sue&#39;,&#39;ts&#39;)=upass,&#39;allow&#39;,&#39;deny&#39;) AS LoginResult
+FROM users WHERE uname = &#39;sue&#39;;
 ```
 
 ## 7、格式化函数
@@ -241,11 +241,11 @@ TIME_FORMAT(time,fmt)
 它可以把大的数值格式化为以逗号间隔的易读的序列。
 例如
 SELECT FORMAT(34234.34323432,3) ;
-SELECT DATE_FORMAT(NOW(),'%W,%D %M %Y %r') ;
-SELECT DATE_FORMAT(NOW(),'%Y-%m-%d') ;
-SELECT DATE_FORMAT(19990330,'%Y-%m-%d') ;
-SELECT DATE_FORMAT(NOW(),'%h:%i %p') ;
-SELECT INET_ATON('10.122.89.47') ;
+SELECT DATE_FORMAT(NOW(),&#39;%W,%D %M %Y %r&#39;) ;
+SELECT DATE_FORMAT(NOW(),&#39;%Y-%m-%d&#39;) ;
+SELECT DATE_FORMAT(19990330,&#39;%Y-%m-%d&#39;) ;
+SELECT DATE_FORMAT(NOW(),&#39;%h:%i %p&#39;) ;
+SELECT INET_ATON(&#39;10.122.89.47&#39;) ;
 SELECT INET_NTOA(175790383) ;
 ```
 
@@ -256,8 +256,8 @@ SELECT INET_NTOA(175790383) ;
 它可以把一个值转化为指定的数据类型。
 类型有：BINARY,CHAR,DATE,TIME,DATETIME,SIGNED,UNSIGNED
 例如
-SELECT CAST(NOW() AS SIGNED INTEGER),CURDATE()+0;
-SELECT 'f'=BINARY 'F','f'=CAST('F' AS BINARY);
+SELECT CAST(NOW() AS SIGNED INTEGER),CURDATE()&#43;0;
+SELECT &#39;f&#39;=BINARY &#39;F&#39;,&#39;f&#39;=CAST(&#39;F&#39; AS BINARY);
 
 ```
 
@@ -279,7 +279,7 @@ SELECTBENCHMARK(9999999,LOG(RAND()*PI()));
 ```
 
 10、开窗函数
-> MySQL8.0版本开始支持开窗函数
+&gt; MySQL8.0版本开始支持开窗函数
 
 ```sql
 ROW_NUMBER() OVER()  --排序：1,2,3,4
@@ -296,6 +296,6 @@ LEAD(expr,n) OVER()  --返回当前行 后N行的expr的值
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/  
 

@@ -21,9 +21,9 @@
 ```vb
 Sub 宏2()
 
-    Range("a1:a20").UnMerge
-    Range("a1:a20").SpecialCells(xlCellTypeBlanks).FormulaR1C1 = "=R[-1]C"
-    Range("a1:a20").Value = Range("a1:a20").Value
+    Range(&#34;a1:a20&#34;).UnMerge
+    Range(&#34;a1:a20&#34;).SpecialCells(xlCellTypeBlanks).FormulaR1C1 = &#34;=R[-1]C&#34;
+    Range(&#34;a1:a20&#34;).Value = Range(&#34;a1:a20&#34;).Value
 
 End Sub
 ```
@@ -37,7 +37,7 @@ Sub 取消合并单元格()
     Dim mRng As Range
     Dim mRngVal
 
-    For Each cel In Range("a1:a20")
+    For Each cel In Range(&#34;a1:a20&#34;)
         If cel.MergeCells Then
             Set mRng = cel.MergeArea
             mRngVal = mRng(1, 1)
@@ -49,10 +49,10 @@ Sub 取消合并单元格()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485272&idx=1&sn=898b64ffdb77aff339d71f7bda45906f&chksm=e8bcce0fdfcb47192a223e90ac62cd0b104af662e8f66c26dfdc87801f61712a960f6777470c&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485272&amp;idx=1&amp;sn=898b64ffdb77aff339d71f7bda45906f&amp;chksm=e8bcce0fdfcb47192a223e90ac62cd0b104af662e8f66c26dfdc87801f61712a960f6777470c&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B018%E5%8F%96%E6%B6%88%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/  
 

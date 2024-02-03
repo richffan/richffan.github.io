@@ -381,6 +381,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/%E5%9B%BD%E4%BC%81%E7%BB%8F%E8%90%A5%E7%AE%A1%E7%90%86%E8%A1%8C%E4%B8%BA%E5%85%B3%E9%94%AE%E5%90%88%E8%A7%84%E8%A6%81%E6%B1%82180%E6%9D%A1/  
 

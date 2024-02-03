@@ -12,7 +12,7 @@
 
 缺失数据在pandas中呈现的方式有些不完美，但对于大多数用户可以保证功能正常。对于数值数据，pandas使用浮点值NaN（Not a Number）表示缺失数据。我们称其为`哨兵值`，可以方便的检测出来：
 ```python
-In [10]: string_data = pd.Series(['aardvark', 'artichoke', np.nan, 'avocado'])
+In [10]: string_data = pd.Series([&#39;aardvark&#39;, &#39;artichoke&#39;, np.nan, &#39;avocado&#39;])
 
 In [11]: string_data
 Out[11]:
@@ -96,9 +96,9 @@ Out[22]:
 0  1.0  6.5  3.0
 ```
 
-传入how='all'将只丢弃全为NA的那些行：
+传入how=&#39;all&#39;将只丢弃全为NA的那些行：
 ```python
-In [23]: data.dropna(how='all')
+In [23]: data.dropna(how=&#39;all&#39;)
 Out[23]: 
      0    1    2
 0  1.0  6.5  3.0
@@ -118,7 +118,7 @@ Out[25]:
 2  NaN  NaN  NaN NaN
 3  NaN  6.5  3.0 NaN
 
-In [26]: data.dropna(axis=1, how='all')
+In [26]: data.dropna(axis=1, how=&#39;all&#39;)
 Out[26]: 
      0    1    2
 0  1.0  6.5  3.0
@@ -226,7 +226,7 @@ Out[40]:
 4 -1.860761       NaN       NaN
 5 -1.265934       NaN       NaN
 
-In [41]: df.fillna(method='ffill')
+In [41]: df.fillna(method=&#39;ffill&#39;)
 Out[41]: 
           0         1         2
 0  0.476985  3.248944 -1.021228
@@ -236,7 +236,7 @@ Out[41]:
 4 -1.860761  0.124121 -2.370232
 5 -1.265934  0.124121 -2.370232
 
-In [42]: df.fillna(method='ffill', limit=2)
+In [42]: df.fillna(method=&#39;ffill&#39;, limit=2)
 Out[42]: 
           0         1         2
 0  0.476985  3.248944 -1.021228
@@ -273,8 +273,8 @@ dtype: float64
 
 DataFrame中出现重复行有多种原因。下面就是一个例子：
 ```python
-In [45]: data = pd.DataFrame({'k1': ['one', 'two'] * 3 + ['two'],
-   ....:                      'k2': [1, 1, 2, 3, 3, 4, 4]})
+In [45]: data = pd.DataFrame({&#39;k1&#39;: [&#39;one&#39;, &#39;two&#39;] * 3 &#43; [&#39;two&#39;],
+   ....:                      &#39;k2&#39;: [1, 1, 2, 3, 3, 4, 4]})
 
 In [46]: data
 Out[46]: 
@@ -317,18 +317,18 @@ Out[48]:
 
 这两个方法默认会判断全部列，你也可以指定部分列进行重复项判断。假设我们还有一列值，且只希望根据k1列过滤重复项：
 ```python
-In [49]: data['v1'] = range(7)
+In [49]: data[&#39;v1&#39;] = range(7)
 
-In [50]: data.drop_duplicates(['k1'])
+In [50]: data.drop_duplicates([&#39;k1&#39;])
 Out[50]: 
     k1  k2  v1
 0  one   1   0
 1  two   1   1
 ```
 
-duplicated和drop_duplicates默认保留的是第一个出现的值组合。传入keep='last'则保留最后一个：
+duplicated和drop_duplicates默认保留的是第一个出现的值组合。传入keep=&#39;last&#39;则保留最后一个：
 ```python
-In [51]: data.drop_duplicates(['k1', 'k2'], keep='last')
+In [51]: data.drop_duplicates([&#39;k1&#39;, &#39;k2&#39;], keep=&#39;last&#39;)
 Out[51]: 
     k1  k2  v1
 0  one   1   0
@@ -342,10 +342,10 @@ Out[51]:
 ### 7.2.2 利用函数或映射进行数据转换
 对于许多数据集，你可能希望根据数组、Series或DataFrame列中的值来实现转换工作。我们来看看下面这组有关肉类的数据：
 ```python
-In [52]: data = pd.DataFrame({'food': ['bacon', 'pulled pork', 'bacon',
-   ....:                               'Pastrami', 'corned beef', 'Bacon',
-   ....:                               'pastrami', 'honey ham', 'nova lox'],
-   ....:                      'ounces': [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})
+In [52]: data = pd.DataFrame({&#39;food&#39;: [&#39;bacon&#39;, &#39;pulled pork&#39;, &#39;bacon&#39;,
+   ....:                               &#39;Pastrami&#39;, &#39;corned beef&#39;, &#39;Bacon&#39;,
+   ....:                               &#39;pastrami&#39;, &#39;honey ham&#39;, &#39;nova lox&#39;],
+   ....:                      &#39;ounces&#39;: [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})
 
 In [53]: data
 Out[53]: 
@@ -364,18 +364,18 @@ Out[53]:
 假设你想要添加一列表示该肉类食物来源的动物类型。我们先编写一个不同肉类到动物的映射：
 ```python
 meat_to_animal = {
-  'bacon': 'pig',
-  'pulled pork': 'pig',
-  'pastrami': 'cow',
-  'corned beef': 'cow',
-  'honey ham': 'pig',
-  'nova lox': 'salmon'
+  &#39;bacon&#39;: &#39;pig&#39;,
+  &#39;pulled pork&#39;: &#39;pig&#39;,
+  &#39;pastrami&#39;: &#39;cow&#39;,
+  &#39;corned beef&#39;: &#39;cow&#39;,
+  &#39;honey ham&#39;: &#39;pig&#39;,
+  &#39;nova lox&#39;: &#39;salmon&#39;
 }
 ```
 
 Series的map方法可以接受一个函数或含有映射关系的字典型对象，但是这里有一个小问题，即有些肉类的首字母大写了，而另一些则没有。因此，我们还需要使用Series的str.lower方法，将各个值转换为小写：
 ```python
-In [55]: lowercased = data['food'].str.lower()
+In [55]: lowercased = data[&#39;food&#39;].str.lower()
 
 In [56]: lowercased
 Out[56]: 
@@ -390,7 +390,7 @@ Out[56]:
 8       nova lox
 Name: food, dtype: object
 
-In [57]: data['animal'] = lowercased.map(meat_to_animal)
+In [57]: data[&#39;animal&#39;] = lowercased.map(meat_to_animal)
 
 In [58]: data
 Out[58]: 
@@ -408,7 +408,7 @@ Out[58]:
 
 我们也可以传入一个能够完成全部这些工作的函数：
 ```python
-In [59]: data['food'].map(lambda x: meat_to_animal[x.lower()])
+In [59]: data[&#39;food&#39;].map(lambda x: meat_to_animal[x.lower()])
 Out[59]: 
 0       pig
 1       pig
@@ -491,14 +491,14 @@ Out[65]:
 dtype: float64
 ```
 
->笔记：data.replace方法与data.str.replace不同，后者做的是字符串的元素级替换。我们会在后面学习Series的字符串方法。
+&gt;笔记：data.replace方法与data.str.replace不同，后者做的是字符串的元素级替换。我们会在后面学习Series的字符串方法。
 
 ### 7.2.4 重命名轴索引
 跟Series中的值一样，轴标签也可以通过函数或映射进行转换，从而得到一个新的不同标签的对象。轴还可以被就地修改，而无需新建一个数据结构。接下来看看下面这个简单的例子：
 ```python
 In [66]: data = pd.DataFrame(np.arange(12).reshape((3, 4)),
-   ....:                     index=['Ohio', 'Colorado', 'New York'],
-   ....:                     columns=['one', 'two', 'three', 'four'])
+   ....:                     index=[&#39;Ohio&#39;, &#39;Colorado&#39;, &#39;New York&#39;],
+   ....:                     columns=[&#39;one&#39;, &#39;two&#39;, &#39;three&#39;, &#39;four&#39;])
 ```
 
 跟Series一样，轴索引也有一个map方法：
@@ -506,7 +506,7 @@ In [66]: data = pd.DataFrame(np.arange(12).reshape((3, 4)),
 In [67]: transform = lambda x: x[:4].upper()
 
 In [68]: data.index.map(transform)
-Out[68]: Index(['OHIO', 'COLO', 'NEW '], dtype='object')
+Out[68]: Index([&#39;OHIO&#39;, &#39;COLO&#39;, &#39;NEW &#39;], dtype=&#39;object&#39;)
 ```
 
 你可以将其赋值给index，这样就可以对DataFrame进行就地修改：
@@ -533,8 +533,8 @@ New     8    9     10    11
 
 特别说明一下，rename可以结合字典型对象实现对部分轴标签的更新：
 ```python
-In [72]: data.rename(index={'OHIO': 'INDIANA'},
-   ....:             columns={'three': 'peekaboo'})
+In [72]: data.rename(index={&#39;OHIO&#39;: &#39;INDIANA&#39;},
+   ....:             columns={&#39;three&#39;: &#39;peekaboo&#39;})
 Out[72]:
 one  two  peekaboo  four
 INDIANA    0    1         2     3
@@ -544,7 +544,7 @@ NEW        8    9        10    11
 
 rename可以实现复制DataFrame并对其索引和列标签进行赋值。如果希望就地修改某个数据集，传入inplace=True即可：
 ```python
-In [73]: data.rename(index={'OHIO': 'INDIANA'}, inplace=True)
+In [73]: data.rename(index={&#39;OHIO&#39;: &#39;INDIANA&#39;}, inplace=True)
 
 In [74]: data
 Out[74]: 
@@ -570,7 +570,7 @@ In [78]: cats
 Out[78]: 
 [(18, 25], (18, 25], (18, 25], (25, 35], (18, 25], ..., (25, 35], (60, 100], (35,60], (35, 60], (25, 35]]
 Length: 12
-Categories (4, interval[int64]): [(18, 25] < (25, 35] < (35, 60] < (60, 100]]
+Categories (4, interval[int64]): [(18, 25] &lt; (25, 35] &lt; (35, 60] &lt; (60, 100]]
 ```
 
 pandas返回的是一个特殊的Categorical对象。结果展示了pandas.cut划分的面元。你可以将其看做一组表示面元名称的字符串。它的底层含有一个表示不同分类名称的类型数组，以及一个codes属性中的年龄数据的标签：
@@ -581,8 +581,8 @@ Out[79]: array([0, 0, 0, 1, 0, 0, 2, 1, 3, 2, 2, 1], dtype=int8)
 In [80]: cats.categories
 Out[80]: 
 IntervalIndex([(18, 25], (25, 35], (35, 60], (60, 100]]
-              closed='right',
-              dtype='interval[int64]')
+              closed=&#39;right&#39;,
+              dtype=&#39;interval[int64]&#39;)
 
 In [81]: pd.value_counts(cats)
 Out[81]: 
@@ -602,19 +602,19 @@ Out[82]:
 [[18, 26), [18, 26), [18, 26), [26, 36), [18, 26), ..., [26, 36), [61, 100), [36,
  61), [36, 61), [26, 36)]
 Length: 12
-Categories (4, interval[int64]): [[18, 26) < [26, 36) < [36, 61) < [61, 100)]
+Categories (4, interval[int64]): [[18, 26) &lt; [26, 36) &lt; [36, 61) &lt; [61, 100)]
 ```
 
 你可 以通过传递一个列表或数组到labels，设置自己的面元名称：
 ```python
-In [83]: group_names = ['Youth', 'YoungAdult', 'MiddleAged', 'Senior']
+In [83]: group_names = [&#39;Youth&#39;, &#39;YoungAdult&#39;, &#39;MiddleAged&#39;, &#39;Senior&#39;]
 
 In [84]: pd.cut(ages, bins, labels=group_names)
 Out[84]: 
 [Youth, Youth, Youth, YoungAdult, Youth, ..., YoungAdult, Senior, MiddleAged, Mid
 dleAged, YoungAdult]
 Length: 12
-Categories (4, object): [Youth < YoungAdult < MiddleAged < Senior]
+Categories (4, object): [Youth &lt; YoungAdult &lt; MiddleAged &lt; Senior]
 ```
 
 如果向cut传入的是面元的数量而不是确切的面元边界，则它会根据数据的最小值和最大值计算等长面元。下面这个例子中，我们将一些均匀分布的数据分成四组：
@@ -626,7 +626,7 @@ Out[86]:
 [(0.34, 0.55], (0.34, 0.55], (0.76, 0.97], (0.76, 0.97], (0.34, 0.55], ..., (0.34
 , 0.55], (0.34, 0.55], (0.55, 0.76], (0.34, 0.55], (0.12, 0.34]]
 Length: 20
-Categories (4, interval[float64]): [(0.12, 0.34] < (0.34, 0.55] < (0.55, 0.76] < 
+Categories (4, interval[float64]): [(0.12, 0.34] &lt; (0.34, 0.55] &lt; (0.55, 0.76] &lt; 
 (0.76, 0.97]]
 ```
 
@@ -644,8 +644,8 @@ Out[89]:
 , ..., (-0.68, -0.0265], (-0.68, -0.0265], (-2.95, -0.68], (0.62, 3.928], (-0.68,
  -0.0265]]
 Length: 1000
-Categories (4, interval[float64]): [(-2.95, -0.68] < (-0.68, -0.0265] < (-0.0265,
- 0.62] <
+Categories (4, interval[float64]): [(-2.95, -0.68] &lt; (-0.68, -0.0265] &lt; (-0.0265,
+ 0.62] &lt;
                                     (0.62, 3.928]]
 
 In [90]: pd.value_counts(cats)
@@ -665,8 +665,8 @@ Out[91]:
 5, 1.286], ..., (-1.187, -0.0265], (-1.187, -0.0265], (-2.95, -1.187], (-0.0265, 
 1.286], (-1.187, -0.0265]]
 Length: 1000
-Categories (4, interval[float64]): [(-2.95, -1.187] < (-1.187, -0.0265] < (-0.026
-5, 1.286] <
+Categories (4, interval[float64]): [(-2.95, -1.187] &lt; (-1.187, -0.0265] &lt; (-0.026
+5, 1.286] &lt;
                                     (1.286, 3.928]]
 ```
 
@@ -694,7 +694,7 @@ max       2.653656     3.525865     2.735527     3.366626
 ```python
 In [94]: col = data[2]
 
-In [95]: col[np.abs(col) > 3]
+In [95]: col[np.abs(col) &gt; 3]
 Out[95]: 
 41    -3.399312
 136   -3.745356
@@ -703,7 +703,7 @@ Name: 2, dtype: float64
 
 要选出全部含有“超过3或－3的值”的行，你可以在布尔型DataFrame中使用any方法：
 ```python
-In [96]: data[(np.abs(data) > 3).any(1)]
+In [96]: data[(np.abs(data) &gt; 3).any(1)]
 Out[96]: 
             0         1         2         3
 41   0.457246 -0.025907 -3.399312 -0.974657
@@ -720,7 +720,7 @@ Out[96]:
 
 根据这些条件，就可以对值进行设置。下面的代码可以将值限制在区间－3到3以内：
 ```python
-In [97]: data[np.abs(data) > 3] = np.sign(data) * 3
+In [97]: data[np.abs(data) &gt; 3] = np.sign(data) * 3
 
 In [98]: data.describe()
 Out[98]: 
@@ -815,10 +815,10 @@ dtype: int64
 
 如果DataFrame的某一列中含有k个不同的值，则可以派生出一个k列矩阵或DataFrame（其值全为1和0）。pandas有一个get_dummies函数可以实现该功能（其实自己动手做一个也不难）。使用之前的一个DataFrame例子：
 ```python
-In [109]: df = pd.DataFrame({'key': ['b', 'b', 'a', 'c', 'a', 'b'],
-   .....:                    'data1': range(6)})
+In [109]: df = pd.DataFrame({&#39;key&#39;: [&#39;b&#39;, &#39;b&#39;, &#39;a&#39;, &#39;c&#39;, &#39;a&#39;, &#39;b&#39;],
+   .....:                    &#39;data1&#39;: range(6)})
 
-In [110]: pd.get_dummies(df['key'])
+In [110]: pd.get_dummies(df[&#39;key&#39;])
 Out[110]: 
    a  b  c
 0  0  1  0
@@ -831,9 +831,9 @@ Out[110]:
 
 有时候，你可能想给指标DataFrame的列加上一个前缀，以便能够跟其他数据进行合并。get_dummies的prefix参数可以实现该功能：
 ```python
-In [111]: dummies = pd.get_dummies(df['key'], prefix='key')
+In [111]: dummies = pd.get_dummies(df[&#39;key&#39;], prefix=&#39;key&#39;)
 
-In [112]: df_with_dummy = df[['data1']].join(dummies)
+In [112]: df_with_dummy = df[[&#39;data1&#39;]].join(dummies)
 
 In [113]: df_with_dummy
 Out[113]: 
@@ -848,22 +848,22 @@ Out[113]:
 
 如果DataFrame中的某行同属于多个分类，则事情就会有点复杂。看一下MovieLens 1M数据集，14章会更深入地研究它：
 ```python
-In [114]: mnames = ['movie_id', 'title', 'genres']
+In [114]: mnames = [&#39;movie_id&#39;, &#39;title&#39;, &#39;genres&#39;]
 
-In [115]: movies = pd.read_table('datasets/movielens/movies.dat', sep='::',
+In [115]: movies = pd.read_table(&#39;datasets/movielens/movies.dat&#39;, sep=&#39;::&#39;,
    .....:                        header=None, names=mnames)
 
 In [116]: movies[:10]
 Out[116]: 
    movie_id                               title                        genres
-0         1                    Toy Story (1995)   Animation|Children's|Comedy
-1         2                      Jumanji (1995)  Adventure|Children's|Fantasy
+0         1                    Toy Story (1995)   Animation|Children&#39;s|Comedy
+1         2                      Jumanji (1995)  Adventure|Children&#39;s|Fantasy
 2         3             Grumpier Old Men (1995)                Comedy|Romance
 3         4            Waiting to Exhale (1995)                  Comedy|Drama
 4         5  Father of the Bride Part II (1995)                        Comedy
 5         6                         Heat (1995)         Action|Crime|Thriller
 6         7                      Sabrina (1995)                Comedy|Romance
-7         8                 Tom and Huck (1995)          Adventure|Children's
+7         8                 Tom and Huck (1995)          Adventure|Children&#39;s
 8         9                 Sudden Death (1995)
 Action
 9        10                    GoldenEye (1995)     Action|Adventure|Thriller
@@ -874,7 +874,7 @@ Action
 In [117]: all_genres = []
 
 In [118]: for x in movies.genres:
-   .....:     all_genres.extend(x.split('|'))
+   .....:     all_genres.extend(x.split(&#39;|&#39;))
 
 In [119]: genres = pd.unique(all_genres)
 ```
@@ -883,10 +883,10 @@ In [119]: genres = pd.unique(all_genres)
 ```python
 In [120]: genres
 Out[120]: 
-array(['Animation', "Children's", 'Comedy', 'Adventure', 'Fantasy',
-       'Romance', 'Drama', 'Action', 'Crime', 'Thriller','Horror',
-       'Sci-Fi', 'Documentary', 'War', 'Musical', 'Mystery', 'Film-Noir',
-       'Western'], dtype=object)
+array([&#39;Animation&#39;, &#34;Children&#39;s&#34;, &#39;Comedy&#39;, &#39;Adventure&#39;, &#39;Fantasy&#39;,
+       &#39;Romance&#39;, &#39;Drama&#39;, &#39;Action&#39;, &#39;Crime&#39;, &#39;Thriller&#39;,&#39;Horror&#39;,
+       &#39;Sci-Fi&#39;, &#39;Documentary&#39;, &#39;War&#39;, &#39;Musical&#39;, &#39;Mystery&#39;, &#39;Film-Noir&#39;,
+       &#39;Western&#39;], dtype=object)
 ```
 
 构建指标DataFrame的方法之一是从一个全零DataFrame开始：
@@ -900,32 +900,32 @@ In [122]: dummies = pd.DataFrame(zero_matrix, columns=genres)
 ```python
 In [123]: gen = movies.genres[0]
 
-In [124]: gen.split('|')
-Out[124]: ['Animation', "Children's", 'Comedy']
+In [124]: gen.split(&#39;|&#39;)
+Out[124]: [&#39;Animation&#39;, &#34;Children&#39;s&#34;, &#39;Comedy&#39;]
 
-In [125]: dummies.columns.get_indexer(gen.split('|'))
+In [125]: dummies.columns.get_indexer(gen.split(&#39;|&#39;))
 Out[125]: array([0, 1, 2])
 ```
 
 然后，根据索引，使用.iloc设定值：
 ```python
 In [126]: for i, gen in enumerate(movies.genres):
-   .....:     indices = dummies.columns.get_indexer(gen.split('|'))
+   .....:     indices = dummies.columns.get_indexer(gen.split(&#39;|&#39;))
    .....:     dummies.iloc[i, indices] = 1
    .....:
 ```
 
 然后，和以前一样，再将其与movies合并起来：
 ```python
-In [127]: movies_windic = movies.join(dummies.add_prefix('Genre_'))
+In [127]: movies_windic = movies.join(dummies.add_prefix(&#39;Genre_&#39;))
 
 In [128]: movies_windic.iloc[0]
 Out[128]: 
 movie_id                                       1
 title                           Toy Story (1995)
-genres               Animation|Children's|Comedy
+genres               Animation|Children&#39;s|Comedy
 Genre_Animation                                1
-Genre_Children's                               1
+Genre_Children&#39;s                               1
 Genre_Comedy                                   1
 Genre_Adventure                                0
 Genre_Fantasy                                  0
@@ -945,7 +945,7 @@ Genre_Western                                  0
 Name: 0, Length: 21, dtype: object
 ```
 
->笔记：对于很大的数据，用这种方式构建多成员指标变量就会变得非常慢。最好使用更低级的函数，将其写入NumPy数组，然后结果包装在DataFrame中。
+&gt;笔记：对于很大的数据，用这种方式构建多成员指标变量就会变得非常慢。最好使用更低级的函数，将其写入NumPy数组，然后结果包装在DataFrame中。
 
 一个对统计应用有用的秘诀是：结合get_dummies和诸如cut之类的离散化函数：
 ```python
@@ -985,68 +985,68 @@ Python能够成为流行的数据处理语言，部分原因是其简单易用�
 
 对于许多字符串处理和脚本应用，内置的字符串方法已经能够满足要求了。例如，以逗号分隔的字符串可以用split拆分成数段：
 ```python
-In [134]: val = 'a,b,  guido'
-In [135]: val.split(',')
-Out[135]: ['a', 'b', '  guido']
+In [134]: val = &#39;a,b,  guido&#39;
+In [135]: val.split(&#39;,&#39;)
+Out[135]: [&#39;a&#39;, &#39;b&#39;, &#39;  guido&#39;]
 ```
 
 split常常与strip一起使用，以去除空白符（包括换行符）：
 ```python
-In [136]: pieces = [x.strip() for x in val.split(',')]
+In [136]: pieces = [x.strip() for x in val.split(&#39;,&#39;)]
 
 In [137]: pieces
-Out[137]: ['a', 'b', 'guido']
+Out[137]: [&#39;a&#39;, &#39;b&#39;, &#39;guido&#39;]
 ```
 
 利用加法，可以将这些子字符串以双冒号分隔符的形式连接起来：
 ```python
 In [138]: first, second, third = pieces
 
-In [139]: first + '::' + second + '::' + third
-Out[139]: 'a::b::guido'
+In [139]: first &#43; &#39;::&#39; &#43; second &#43; &#39;::&#39; &#43; third
+Out[139]: &#39;a::b::guido&#39;
 ```
 
-但这种方式并不是很实用。一种更快更符合Python风格的方式是，向字符串"::"的join方法传入一个列表或元组：
+但这种方式并不是很实用。一种更快更符合Python风格的方式是，向字符串&#34;::&#34;的join方法传入一个列表或元组：
 ```python
-In [140]: '::'.join(pieces)
-Out[140]: 'a::b::guido'
+In [140]: &#39;::&#39;.join(pieces)
+Out[140]: &#39;a::b::guido&#39;
 ```
 
 其它方法关注的是子串定位。检测子串的最佳方式是利用Python的in关键字，还可以使用index和find：
 ```python
-In [141]: 'guido' in val
+In [141]: &#39;guido&#39; in val
 Out[141]: True
 
-In [142]: val.index(',')
+In [142]: val.index(&#39;,&#39;)
 Out[142]: 1
 
-In [143]: val.find(':')
+In [143]: val.find(&#39;:&#39;)
 Out[143]: -1
 ```
 
 注意find和index的区别：如果找不到字符串，index将会引发一个异常（而不是返回－1）：
 ```python
-In [144]: val.index(':')
+In [144]: val.index(&#39;:&#39;)
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
-<ipython-input-144-280f8b2856ce> in <module>()
-----> 1 val.index(':')
+&lt;ipython-input-144-280f8b2856ce&gt; in &lt;module&gt;()
+----&gt; 1 val.index(&#39;:&#39;)
 ValueError: substring not found
 ```
 
 与此相关，count可以返回指定子串的出现次数：
 ```python
-In [145]: val.count(',')
+In [145]: val.count(&#39;,&#39;)
 Out[145]: 2
 ```
 
 replace用于将指定模式替换为另一个模式。通过传入空字符串，它也常常用于删除模式：
 ```python
-In [146]: val.replace(',', '::')
-Out[146]: 'a::b::  guido'
+In [146]: val.replace(&#39;,&#39;, &#39;::&#39;)
+Out[146]: &#39;a::b::  guido&#39;
 
-In [147]: val.replace(',', '')
-Out[147]: 'ab  guido'
+In [147]: val.replace(&#39;,&#39;, &#39;&#39;)
+Out[147]: &#39;ab  guido&#39;
 ```
 
 表7-3列出了Python内置的字符串方法。
@@ -1063,44 +1063,44 @@ casefold      将字符转换为小写，并将任何特定区域的变量字符
 
 正则表达式提供了一种灵活的在文本中搜索或匹配（通常比前者复杂）字符串模式的方式。正则表达式，常称作regex，是根据正则表达式语言编写的字符串。Python内置的re模块负责对字符串应用正则表达式。我将通过一些例子说明其使用方法。
 
->笔记：正则表达式的编写技巧可以自成一章，超出了本书的范围。从网上和其它书可以找到许多非常不错的教程和参考资料。
+&gt;笔记：正则表达式的编写技巧可以自成一章，超出了本书的范围。从网上和其它书可以找到许多非常不错的教程和参考资料。
 
-re模块的函数可以分为三个大类：模式匹配、替换以及拆分。当然，它们之间是相辅相成的。一个regex描述了需要在文本中定位的一个模式，它可以用于许多目的。我们先来看一个简单的例子：假设我想要拆分一个字符串，分隔符为数量不定的一组空白符（制表符、空格、换行符等）。描述一个或多个空白符的regex是\s+：
+re模块的函数可以分为三个大类：模式匹配、替换以及拆分。当然，它们之间是相辅相成的。一个regex描述了需要在文本中定位的一个模式，它可以用于许多目的。我们先来看一个简单的例子：假设我想要拆分一个字符串，分隔符为数量不定的一组空白符（制表符、空格、换行符等）。描述一个或多个空白符的regex是\s&#43;：
 ```python
 In [148]: import re
 
-In [149]: text = "foo    bar\t baz  \tqux"
+In [149]: text = &#34;foo    bar\t baz  \tqux&#34;
 
-In [150]: re.split('\s+', text)
-Out[150]: ['foo', 'bar', 'baz', 'qux']
+In [150]: re.split(&#39;\s&#43;&#39;, text)
+Out[150]: [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;qux&#39;]
 ```
 
-调用`re.split('\s+',text)`时，正则表达式会先被编译，然后再在text上调用其split方法。你可以用re.compile自己编译regex以得到一个可重用的regex对象：
+调用`re.split(&#39;\s&#43;&#39;,text)`时，正则表达式会先被编译，然后再在text上调用其split方法。你可以用re.compile自己编译regex以得到一个可重用的regex对象：
 ```python
-In [151]: regex = re.compile('\s+')
+In [151]: regex = re.compile(&#39;\s&#43;&#39;)
 
 In [152]: regex.split(text)
-Out[152]: ['foo', 'bar', 'baz', 'qux']
+Out[152]: [&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;qux&#39;]
 ```
 
 如果只希望得到匹配regex的所有模式，则可以使用findall方法：
 ```python
 In [153]: regex.findall(text)
-Out[153]: ['    ', '\t ', '  \t']
+Out[153]: [&#39;    &#39;, &#39;\t &#39;, &#39;  \t&#39;]
 ```
 
->笔记：如果想避免正则表达式中不需要的转义（\），则可以使用原始字符串字面量如r'C:\x'（也可以编写其等价式'C:\\x'）。
+&gt;笔记：如果想避免正则表达式中不需要的转义（\），则可以使用原始字符串字面量如r&#39;C:\x&#39;（也可以编写其等价式&#39;C:\\x&#39;）。
 
 如果打算对许多字符串应用同一条正则表达式，强烈建议通过re.compile创建regex对象。这样将可以节省大量的CPU时间。
 
 match和search跟findall功能类似。findall返回的是字符串中所有的匹配项，而search则只返回第一个匹配项。match更加严格，它只匹配字符串的首部。来看一个小例子，假设我们有一段文本以及一条能够识别大部分电子邮件地址的正则表达式：
 ```python
-text = """Dave dave@google.com
+text = &#34;&#34;&#34;Dave dave@google.com
 Steve steve@gmail.com
 Rob rob@gmail.com
 Ryan ryan@yahoo.com
-"""
-pattern = r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}'
+&#34;&#34;&#34;
+pattern = r&#39;[A-Z0-9._%&#43;-]&#43;@[A-Z0-9.-]&#43;\.[A-Z]{2,4}&#39;
 
 # re.IGNORECASE makes the regex case-insensitive
 regex = re.compile(pattern, flags=re.IGNORECASE)
@@ -1110,10 +1110,10 @@ regex = re.compile(pattern, flags=re.IGNORECASE)
 ```python
 In [155]: regex.findall(text)
 Out[155]: 
-['dave@google.com',
- 'steve@gmail.com',
- 'rob@gmail.com',
- 'ryan@yahoo.com']
+[&#39;dave@google.com&#39;,
+ &#39;steve@gmail.com&#39;,
+ &#39;rob@gmail.com&#39;,
+ &#39;ryan@yahoo.com&#39;]
 ```
 
 search返回的是文本中第一个电子邮件地址（以特殊的匹配项对象形式返回）。对于上面那个regex，匹配项对象只能告诉我们模式在原字符串中的起始和结束位置：
@@ -1121,10 +1121,10 @@ search返回的是文本中第一个电子邮件地址（以特殊的匹配项�
 In [156]: m = regex.search(text)
 
 In [157]: m
-Out[157]: <_sre.SRE_Match object; span=(5, 20), match='dave@google.com'>
+Out[157]: &lt;_sre.SRE_Match object; span=(5, 20), match=&#39;dave@google.com&#39;&gt;
 
 In [158]: text[m.start():m.end()]
-Out[158]: 'dave@google.com'
+Out[158]: &#39;dave@google.com&#39;
 ```
 
 regex.match则将返回None，因为它只匹配出现在字符串开头的模式：
@@ -1135,7 +1135,7 @@ None
 
 相关的，sub方法可以将匹配到的模式替换为指定字符串，并返回所得到的新字符串：
 ```python
-In [160]: print(regex.sub('REDACTED', text))
+In [160]: print(regex.sub(&#39;REDACTED&#39;, text))
 Dave REDACTED
 Steve REDACTED
 Rob REDACTED
@@ -1144,32 +1144,32 @@ Ryan REDACTED
 
 假设你不仅想要找出电子邮件地址，还想将各个地址分成3个部分：用户名、域名以及域后缀。要实现此功能，只需将待分段的模式的各部分用圆括号包起来即可：
 ```python
-In [161]: pattern = r'([A-Z0-9._%+-]+)@([A-Z0-9.-]+)\.([A-Z]{2,4})'
+In [161]: pattern = r&#39;([A-Z0-9._%&#43;-]&#43;)@([A-Z0-9.-]&#43;)\.([A-Z]{2,4})&#39;
 
 In [162]: regex = re.compile(pattern, flags=re.IGNORECASE)
 ```
 
 由这种修改过的正则表达式所产生的匹配项对象，可以通过其groups方法返回一个由模式各段组成的元组：
 ```python
-In [163]: m = regex.match('wesm@bright.net')
+In [163]: m = regex.match(&#39;wesm@bright.net&#39;)
 
 In [164]: m.groups()
-Out[164]: ('wesm', 'bright', 'net')
+Out[164]: (&#39;wesm&#39;, &#39;bright&#39;, &#39;net&#39;)
 ```
 
 对于带有分组功能的模式，findall会返回一个元组列表：
 ```python
 In [165]: regex.findall(text)
 Out[165]:
-[('dave', 'google', 'com'),
- ('steve', 'gmail', 'com'),
- ('rob', 'gmail', 'com'),
- ('ryan', 'yahoo', 'com')]
+[(&#39;dave&#39;, &#39;google&#39;, &#39;com&#39;),
+ (&#39;steve&#39;, &#39;gmail&#39;, &#39;com&#39;),
+ (&#39;rob&#39;, &#39;gmail&#39;, &#39;com&#39;),
+ (&#39;ryan&#39;, &#39;yahoo&#39;, &#39;com&#39;)]
 ```
 
 sub还能通过诸如\1、\2之类的特殊符号访问各匹配项中的分组。符号\1对应第一个匹配的组，\2对应第二个匹配的组，以此类推：
 ```python
-In [166]: print(regex.sub(r'Username: \1, Domain: \2, Suffix: \3', text))
+In [166]: print(regex.sub(r&#39;Username: \1, Domain: \2, Suffix: \3&#39;, text))
 Dave Username: dave, Domain: google, Suffix: com
 Steve Username: steve, Domain: gmail, Suffix: com
 Rob Username: rob, Domain: gmail, Suffix: com
@@ -1184,8 +1184,8 @@ Python中还有许多的正则表达式，但大部分都超出了本书的范�
 
 清理待分析的散乱数据时，常常需要做一些字符串规整化工作。更为复杂的情况是，含有字符串的列有时还含有缺失数据：
 ```python
-In [167]: data = {'Dave': 'dave@google.com', 'Steve': 'steve@gmail.com',
-   .....:         'Rob': 'rob@gmail.com', 'Wes': np.nan}
+In [167]: data = {&#39;Dave&#39;: &#39;dave@google.com&#39;, &#39;Steve&#39;: &#39;steve@gmail.com&#39;,
+   .....:         &#39;Rob&#39;: &#39;rob@gmail.com&#39;, &#39;Wes&#39;: np.nan}
 
 In [168]: data = pd.Series(data)
 
@@ -1206,9 +1206,9 @@ Wes       True
 dtype: bool
 ```
 
-通过data.map，所有字符串和正则表达式方法都能被应用于（传入lambda表达式或其他函数）各个值，但是如果存在NA（null）就会报错。为了解决这个问题，Series有一些能够跳过NA值的面向数组方法，进行字符串操作。通过Series的str属性即可访问这些方法。例如，我们可以通过str.contains检查各个电子邮件地址是否含有"gmail"：
+通过data.map，所有字符串和正则表达式方法都能被应用于（传入lambda表达式或其他函数）各个值，但是如果存在NA（null）就会报错。为了解决这个问题，Series有一些能够跳过NA值的面向数组方法，进行字符串操作。通过Series的str属性即可访问这些方法。例如，我们可以通过str.contains检查各个电子邮件地址是否含有&#34;gmail&#34;：
 ```python
-In [171]: data.str.contains('gmail')
+In [171]: data.str.contains(&#39;gmail&#39;)
 Out[171]: 
 Dave     False
 Rob       True
@@ -1220,7 +1220,7 @@ dtype: object
 也可以使用正则表达式，还可以加上任意re选项（如IGNORECASE）：
 ```python
 In [172]: pattern
-Out[172]: '([A-Z0-9._%+-]+)@([A-Z0-9.-]+)\\.([A-Z]{2,4})'
+Out[172]: &#39;([A-Z0-9._%&#43;-]&#43;)@([A-Z0-9.-]&#43;)\\.([A-Z]{2,4})&#39;
 
 In [173]: data.str.findall(pattern, flags=re.IGNORECASE)
 Out[173]: 
@@ -1286,6 +1286,6 @@ dtype: object
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/  
 

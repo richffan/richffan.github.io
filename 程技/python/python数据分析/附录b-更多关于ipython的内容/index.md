@@ -19,13 +19,13 @@ Ipython可以让你搜索和执行之前的代码或其他命令。这个功能�
 In[7]: %run first/second/third/data_script.py
 ```
 
-运行成功，然后检查结果，发现计算有错。解决完问题，然后修改了data_script.py，你就可以输入一些%run命令，然后按Ctrl+P或上箭头。这样就可以搜索历史命令，匹配输入字符的命令。多次按Ctrl+P或上箭头，会继续搜索命令。如果你要执行你想要执行的命令，不要害怕。你可以按下Ctrl-N或下箭头，向前移动历史命令。这样做了几次后，你可以不假思索地按下这些键！
+运行成功，然后检查结果，发现计算有错。解决完问题，然后修改了data_script.py，你就可以输入一些%run命令，然后按Ctrl&#43;P或上箭头。这样就可以搜索历史命令，匹配输入字符的命令。多次按Ctrl&#43;P或上箭头，会继续搜索命令。如果你要执行你想要执行的命令，不要害怕。你可以按下Ctrl-N或下箭头，向前移动历史命令。这样做了几次后，你可以不假思索地按下这些键！
 
 Ctrl-R可以带来如同Unix风格shell（比如bash shell）的readline的部分增量搜索功能。在Windows上，readline功能是被IPython模仿的。要使用这个功能，先按Ctrl-R，然后输入一些包含于输入行的想要搜索的字符：
 ```python
 In [1]: a_command = foo(x, y, z)
 
-(reverse-i-search)`com': a_command = foo(x, y, z)
+(reverse-i-search)`com&#39;: a_command = foo(x, y, z)
 ```
 
 Ctrl-R会循环历史，找到匹配字符的每一行。
@@ -43,16 +43,16 @@ Out[25]: 134217728
 
 输入变量是存储在名字类似_iX的变量中，X是输入行的编号。对于每个输入变量，都有一个对应的输出变量_X。因此在输入第27行之后，会有两个新变量_27 （输出）和_i27（输入）:
 ```python
-In [26]: foo = 'bar'
+In [26]: foo = &#39;bar&#39;
 
 In [27]: foo
-Out[27]: 'bar'
+Out[27]: &#39;bar&#39;
 
 In [28]: _i27
-Out[28]: u'foo'
+Out[28]: u&#39;foo&#39;
 
 In [29]: _27
-Out[29]: 'bar'
+Out[29]: &#39;bar&#39;
 ```
 
 因为输入变量是字符串，它们可以用Python的exec关键字再次执行：
@@ -64,7 +64,7 @@ In [30]: exec(_i27)
 
 有几个魔术函数可以让你利用输入和输出历史。%hist可以打印所有或部分的输入历史，加上或不加上编号。%reset可以清理交互命名空间，或输入和输出缓存。%xdel魔术函数可以去除IPython中对一个特别对象的所有引用。对于关于这些魔术方法的更多内容，请查看文档。
 
->警告：当处理非常大的数据集时，要记住IPython的输入和输出的历史会造成被引用的对象不被垃圾回收（释放内存），即使你使用del关键字从交互命名空间删除变量。在这种情况下，小心使用xdel %和%reset可以帮助你避免陷入内存问题。
+&gt;警告：当处理非常大的数据集时，要记住IPython的输入和输出的历史会造成被引用的对象不被垃圾回收（释放内存），即使你使用del关键字从交互命名空间删除变量。在这种情况下，小心使用xdel %和%reset可以帮助你避免陷入内存问题。
 
 ## B.2 与操作系统交互
 
@@ -79,17 +79,17 @@ IPython的另一个功能是无缝连接文件系统和操作系统。这意味�
 
 通过给变量加上叹号，你可以在一个变量中存储命令的控制台输出。例如，在我联网的基于Linux的主机上，我可以获得IP地址为Python变量：
 ```python
-In [1]: ip_info = !ifconfig wlan0 | grep "inet "
+In [1]: ip_info = !ifconfig wlan0 | grep &#34;inet &#34;
 
 In [2]: ip_info[0].strip()
-Out[2]: 'inet addr:10.0.0.11  Bcast:10.0.0.255  Mask:255.255.255.0'
+Out[2]: &#39;inet addr:10.0.0.11  Bcast:10.0.0.255  Mask:255.255.255.0&#39;
 ```
 
 返回的Python对象ip_info实际上是一个自定义的列表类型，它包含着多种版本的控制台输出。
 
 当使用！，IPython还可以替换定义在当前环境的Python值。要这么做，可以在变量名前面加上$符号：
 ```python
-In [3]: foo = 'test*'
+In [3]: foo = &#39;test*&#39;
 
 In [4]: !ls $foo
 test4.py  test.py  test.xml
@@ -106,7 +106,7 @@ drwxr-xr-x   2 root root   4096 2010-08-23 12:05 games/
 drwxr-xr-x 123 root root  20480 2011-12-26 18:08 include/
 drwxr-xr-x 265 root root 126976 2012-01-29 20:36 lib/
 drwxr-xr-x  44 root root  69632 2011-12-26 18:08 lib32/
-lrwxrwxrwx   1 root root      3 2010-08-23 16:02 lib64 -> lib/
+lrwxrwxrwx   1 root root      3 2010-08-23 16:02 lib64 -&gt; lib/
 drwxr-xr-x  15 root root   4096 2011-10-13 19:03 local/
 drwxr-xr-x   2 root root  12288 2012-01-12 09:32 sbin/
 drwxr-xr-x 387 root root  12288 2011-11-04 22:53 share/
@@ -133,7 +133,7 @@ In [6]: %bookmark py4da /home/wesm/code/pydata-book
 这么做之后，当使用%cd魔术命令，就可以使用定义的书签：
 ```python
 In [7]: cd py4da
-(bookmark:py4da) -> /home/wesm/code/pydata-book
+(bookmark:py4da) -&gt; /home/wesm/code/pydata-book
 /home/wesm/code/pydata-book
 ```
 
@@ -141,7 +141,7 @@ In [7]: cd py4da
 ```python
 In [8]: %bookmark -l
 Current bookmarks:
-py4da -> /home/wesm/code/pydata-book-source
+py4da -&gt; /home/wesm/code/pydata-book-source
 ```
 
 书签，和别名不同，在session之间是保持的。
@@ -158,42 +158,42 @@ IPython的调试器用tab补全、语法增强、逐行异常追踪增强了pdb�
 In [2]: run examples/ipython_bug.py
 ---------------------------------------------------------------------------
 AssertionError                            Traceback (most recent call last)
-/home/wesm/code/pydata-book/examples/ipython_bug.py in <module>()
+/home/wesm/code/pydata-book/examples/ipython_bug.py in &lt;module&gt;()
      13     throws_an_exception()
      14
----> 15 calling_things()
+---&gt; 15 calling_things()
 
 /home/wesm/code/pydata-book/examples/ipython_bug.py in calling_things()
 11 def calling_things():
      12     works_fine()
----> 13     throws_an_exception()
+---&gt; 13     throws_an_exception()
      14
      15 calling_things()
 
 /home/wesm/code/pydata-book/examples/ipython_bug.py in throws_an_exception()
       7     a = 5
       8     b = 6
-----> 9     assert(a + b == 10)
+----&gt; 9     assert(a &#43; b == 10)
      10
      11 def calling_things():
 
 AssertionError:
 
 In [3]: %debug
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(9)throws_an_exception()
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(9)throws_an_exception()
       8     b = 6
-----> 9     assert(a + b == 10)
+----&gt; 9     assert(a &#43; b == 10)
      10
 
-ipdb>
+ipdb&gt;
 ```
 
 一旦进入调试器，你就可以执行任意的Python代码，在每个堆栈框架中检查所有的对象和数据（解释器会保持它们活跃）。默认是从错误发生的最低级开始。通过u（up）和d（down），你可以在不同等级的堆栈踪迹切换：
 ```python
-ipdb> u
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(13)calling_things()
+ipdb&gt; u
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(13)calling_things()
      12     works_fine()
----> 13     throws_an_exception()
+---&gt; 13     throws_an_exception()
      14
 ```
 
@@ -203,66 +203,66 @@ ipdb> u
 ```python
 In [5]: run -d examples/ipython_bug.py
 Breakpoint 1 at /home/wesm/code/pydata-book/examples/ipython_bug.py:1
-NOTE: Enter 'c' at the ipdb>  prompt to start your script.
-> <string>(1)<module>()
+NOTE: Enter &#39;c&#39; at the ipdb&gt;  prompt to start your script.
+&gt; &lt;string&gt;(1)&lt;module&gt;()
 
-ipdb> s
+ipdb&gt; s
 --Call--
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(1)<module>()
-1---> 1 def works_fine():
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(1)&lt;module&gt;()
+1---&gt; 1 def works_fine():
       2     a = 5
       3     b = 6
 ```
 
 然后，你就可以决定如何工作。例如，在前面的异常，我们可以设置一个断点，就在调用works_fine之前，然后运行脚本，在遇到断点时按c（continue）：
 ```python
-ipdb> b 12
-ipdb> c
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(12)calling_things()
+ipdb&gt; b 12
+ipdb&gt; c
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(12)calling_things()
      11 def calling_things():
-2--> 12     works_fine()
+2--&gt; 12     works_fine()
      13     throws_an_exception()
 ```
 
 这时，你可以step进入works_fine()，或通过按n（next）执行works_fine()，进入下一行：
 ```python
-ipdb> n
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(13)calling_things()
+ipdb&gt; n
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(13)calling_things()
 2    12     works_fine()
----> 13     throws_an_exception()
+---&gt; 13     throws_an_exception()
      14
 ```
 
 然后，我们可以进入throws_an_exception，到达发生错误的一行，查看变量。注意，调试器的命令是在变量名之前，在变量名前面加叹号！可以查看内容：
 ```python
-ipdb> s
+ipdb&gt; s
 --Call--
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(6)throws_an_exception()
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(6)throws_an_exception()
       5
-----> 6 def throws_an_exception():
+----&gt; 6 def throws_an_exception():
       7     a = 5
 
-ipdb> n
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(7)throws_an_exception()
+ipdb&gt; n
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(7)throws_an_exception()
       6 def throws_an_exception():
-----> 7     a = 5
+----&gt; 7     a = 5
       8     b = 6
 
-ipdb> n
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(8)throws_an_exception()
+ipdb&gt; n
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(8)throws_an_exception()
       7     a = 5
-----> 8     b = 6
-      9     assert(a + b == 10)
+----&gt; 8     b = 6
+      9     assert(a &#43; b == 10)
 
-ipdb> n
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(9)throws_an_exception()
+ipdb&gt; n
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(9)throws_an_exception()
       8     b = 6
-----> 9     assert(a + b == 10)
+----&gt; 9     assert(a &#43; b == 10)
      10
 
-ipdb> !a
+ipdb&gt; !a
 5
-ipdb> !b
+ipdb&gt; !b
 6
 ```
 
@@ -277,18 +277,18 @@ ipdb> !b
 from IPython.core.debugger import Pdb
 
 def set_trace():
-    Pdb(color_scheme='Linux').set_trace(sys._getframe().f_back)
+    Pdb(color_scheme=&#39;Linux&#39;).set_trace(sys._getframe().f_back)
 
 def debug(f, *args, **kwargs):
-    pdb = Pdb(color_scheme='Linux')
+    pdb = Pdb(color_scheme=&#39;Linux&#39;)
     return pdb.runcall(f, *args, **kwargs)
 ```
 第一个函数set_trace非常简单。如果你想暂时停下来进行仔细检查（比如发生异常之前），可以在代码的任何位置使用set_trace：
 ```python
 In [7]: run examples/ipython_bug.py
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(16)calling_things()
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(16)calling_things()
      15     set_trace()
----> 16     throws_an_exception()
+---&gt; 16     throws_an_exception()
      17
 ```
 
@@ -297,19 +297,19 @@ In [7]: run examples/ipython_bug.py
 我们刚看的debug函数，可以让你方便的在调用任何函数时使用调试器。假设我们写了一个下面的函数，想逐步分析它的逻辑：
 ```python
 def f(x, y, z=1):
-    tmp = x + y
+    tmp = x &#43; y
     return tmp / z
 ```
 
 普通地使用f，就会像f(1, 2, z=3)。而要想进入f，将f作为第一个参数传递给debug，再将位置和关键词参数传递给f：
 ```python
 In [6]: debug(f, 1, 2, z=3)
-> <ipython-input>(2)f()
+&gt; &lt;ipython-input&gt;(2)f()
       1 def f(x, y, z):
-----> 2     tmp = x + y
+----&gt; 2     tmp = x &#43; y
       3     return tmp / z
 
-ipdb>
+ipdb&gt;
 ```
 
 这两个简单方法节省了我平时的大量时间。
@@ -318,10 +318,10 @@ ipdb>
 ```python
 In [1]: %run -d examples/ipython_bug.py
 Breakpoint 1 at /home/wesm/code/pydata-book/examples/ipython_bug.py:1
-NOTE: Enter 'c' at the ipdb>  prompt to start your script.
-> <string>(1)<module>()
+NOTE: Enter &#39;c&#39; at the ipdb&gt;  prompt to start your script.
+&gt; &lt;string&gt;(1)&lt;module&gt;()
 
-ipdb>
+ipdb&gt;
 ```
 
 加上-b和行号，可以预设一个断点：
@@ -329,16 +329,16 @@ ipdb>
 In [2]: %run -d -b2 examples/ipython_bug.py
 
 Breakpoint 1 at /home/wesm/code/pydata-book/examples/ipython_bug.py:2
-NOTE: Enter 'c' at the ipdb>  prompt to start your script.
-> <string>(1)<module>()
+NOTE: Enter &#39;c&#39; at the ipdb&gt;  prompt to start your script.
+&gt; &lt;string&gt;(1)&lt;module&gt;()
 
-ipdb> c
-> /home/wesm/code/pydata-book/examples/ipython_bug.py(2)works_fine()
+ipdb&gt; c
+&gt; /home/wesm/code/pydata-book/examples/ipython_bug.py(2)works_fine()
       1 def works_fine():
-1---> 2     a = 5
+1---&gt; 2     a = 5
       3     b = 6
 
-ipdb>
+ipdb&gt;
 ```
 
 ### 代码计时：%time 和 %timeit
@@ -359,31 +359,31 @@ elapsed_per = (time.time() - start) / iterations
 %time会运行一次语句，报告总共的执行时间。假设我们有一个大的字符串列表，我们想比较不同的可以挑选出特定开头字符串的方法。这里有一个含有600000字符串的列表，和两个方法，用以选出foo开头的字符串：
 ```python
 ## a very large list of strings
-strings = ['foo', 'foobar', 'baz', 'qux',
-           'python', 'Guido Van Rossum'] * 100000
+strings = [&#39;foo&#39;, &#39;foobar&#39;, &#39;baz&#39;, &#39;qux&#39;,
+           &#39;python&#39;, &#39;Guido Van Rossum&#39;] * 100000
 
-method1 = [x for x in strings if x.startswith('foo')]
+method1 = [x for x in strings if x.startswith(&#39;foo&#39;)]
 
-method2 = [x for x in strings if x[:3] == 'foo']
+method2 = [x for x in strings if x[:3] == &#39;foo&#39;]
 ```
 
 看起来它们的性能应该是同级别的，但事实呢？用%time进行一下测量：
 ```python
-In [561]: %time method1 = [x for x in strings if x.startswith('foo')]
+In [561]: %time method1 = [x for x in strings if x.startswith(&#39;foo&#39;)]
 CPU times: user 0.19 s, sys: 0.00 s, total: 0.19 s
 Wall time: 0.19 s
 
-In [562]: %time method2 = [x for x in strings if x[:3] == 'foo']
+In [562]: %time method2 = [x for x in strings if x[:3] == &#39;foo&#39;]
 CPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s
 Wall time: 0.09 s
 ```
 
 Wall time（wall-clock time的简写）是主要关注的。第一个方法是第二个方法的两倍多，但是这种测量方法并不准确。如果用%time多次测量，你就会发现结果是变化的。要想更准确，可以使用%timeit魔术函数。给出任意一条语句，它能多次运行这条语句以得到一个更为准确的时间：
 ```python
-In [563]: %timeit [x for x in strings if x.startswith('foo')]
+In [563]: %timeit [x for x in strings if x.startswith(&#39;foo&#39;)]
 10 loops, best of 3: 159 ms per loop
 
-In [564]: %timeit [x for x in strings if x[:3] == 'foo']
+In [564]: %timeit [x for x in strings if x[:3] == &#39;foo&#39;]
 10 loops, best of 3: 59.3 ms per loop
 ```
 
@@ -391,9 +391,9 @@ In [564]: %timeit [x for x in strings if x[:3] == 'foo']
 
 %timeit特别适合分析执行时间短的语句和函数，即使是微秒或纳秒。这些时间可能看起来毫不重要，但是一个20微秒的函数执行1百万次就比一个5微秒的函数长15秒。在上一个例子中，我们可以直接比较两个字符串操作，以了解它们的性能特点：
 ```python
-In [565]: x = 'foobar'
+In [565]: x = &#39;foobar&#39;
 
-In [566]: y = 'foo'
+In [566]: y = &#39;foo&#39;
 
 In [567]: %timeit x.startswith(y)
 1000000 loops, best of 3: 267 ns per loop
@@ -420,7 +420,7 @@ def run_experiment(niter=100):
         results.append(max_eigenvalue)
     return results
 some_results = run_experiment()
-print 'Largest one we saw: %s' % np.max(some_results)
+print &#39;Largest one we saw: %s&#39; % np.max(some_results)
 ```
 
 你可以用cProfile运行这个脚本，使用下面的命令行：
@@ -437,19 +437,19 @@ Largest one we saw: 11.923204422
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-     1    0.001    0.001    0.721    0.721 cprof_example.py:1(<module>)
+     1    0.001    0.001    0.721    0.721 cprof_example.py:1(&lt;module&gt;)
    100    0.003    0.000    0.586    0.006 linalg.py:702(eigvals)
    200    0.572    0.003    0.572    0.003 {numpy.linalg.lapack_lite.dgeev}
-     1    0.002    0.002    0.075    0.075 __init__.py:106(<module>)
-   100    0.059    0.001    0.059    0.001 {method 'randn')
-     1    0.000    0.000    0.044    0.044 add_newdocs.py:9(<module>)
-     2    0.001    0.001    0.037    0.019 __init__.py:1(<module>)
-     2    0.003    0.002    0.030    0.015 __init__.py:2(<module>)
-     1    0.000    0.000    0.030    0.030 type_check.py:3(<module>)
-     1    0.001    0.001    0.021    0.021 __init__.py:15(<module>)
-     1    0.013    0.013    0.013    0.013 numeric.py:1(<module>)
-     1    0.000    0.000    0.009    0.009 __init__.py:6(<module>)
-     1    0.001    0.001    0.008    0.008 __init__.py:45(<module>)
+     1    0.002    0.002    0.075    0.075 __init__.py:106(&lt;module&gt;)
+   100    0.059    0.001    0.059    0.001 {method &#39;randn&#39;)
+     1    0.000    0.000    0.044    0.044 add_newdocs.py:9(&lt;module&gt;)
+     2    0.001    0.001    0.037    0.019 __init__.py:1(&lt;module&gt;)
+     2    0.003    0.002    0.030    0.015 __init__.py:2(&lt;module&gt;)
+     1    0.000    0.000    0.030    0.030 type_check.py:3(&lt;module&gt;)
+     1    0.001    0.001    0.021    0.021 __init__.py:15(&lt;module&gt;)
+     1    0.013    0.013    0.013    0.013 numeric.py:1(&lt;module&gt;)
+     1    0.000    0.000    0.009    0.009 __init__.py:6(&lt;module&gt;)
+     1    0.001    0.001    0.008    0.008 __init__.py:45(&lt;module&gt;)
    262    0.005    0.000    0.007    0.000 function_base.py:3178(add_newdoc)
    100    0.003    0.000    0.005    0.000 linalg.py:162(_assertFinite)
 ```
@@ -462,15 +462,15 @@ In [4]: %prun -l 7 -s cumulative run_experiment()
          4203 function calls in 0.643 seconds
 
 Ordered by: cumulative time
-List reduced from 32 to 7 due to restriction <7>
+List reduced from 32 to 7 due to restriction &lt;7&gt;
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-     1    0.000    0.000    0.643    0.643 <string>:1(<module>)
+     1    0.000    0.000    0.643    0.643 &lt;string&gt;:1(&lt;module&gt;)
      1    0.001    0.001    0.643    0.643 cprof_example.py:4(run_experiment)
    100    0.003    0.000    0.583    0.006 linalg.py:702(eigvals)
    200    0.569    0.003    0.569    0.003 {numpy.linalg.lapack_lite.dgeev}
-   100    0.058    0.001    0.058    0.001 {method 'randn'}
+   100    0.058    0.001    0.058    0.001 {method &#39;randn&#39;}
    100    0.003    0.000    0.005    0.000 linalg.py:162(_assertFinite)
-   200    0.002    0.000    0.002    0.000 {method 'all' of 'numpy.ndarray'}
+   200    0.002    0.000    0.002    0.000 {method &#39;all&#39; of &#39;numpy.ndarray&#39;}
 ```
 
 相似的，调用``%run -p -s cumulative cprof_example.py``有和命令行相似的作用，只是你不用离开Ipython。
@@ -484,7 +484,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 有些情况下，用%prun（或其它基于cProfile的分析方法）得到的信息，不能获得函数执行时间的整个过程，或者结果过于复杂，加上函数名，很难进行解读。对于这种情况，有一个小库叫做line_profiler（可以通过PyPI或包管理工具获得）。它包含IPython插件，可以启用一个新的魔术函数%lprun，可以对一个函数或多个函数进行逐行分析。你可以通过修改IPython配置（查看IPython文档或本章后面的配置小节）加入下面这行，启用这个插件：
 ```python
 ## A list of dotted module names of IPython extensions to load.
-c.TerminalIPythonApp.extensions = ['line_profiler']
+c.TerminalIPythonApp.extensions = [&#39;line_profiler&#39;]
 ```
 
 你还可以运行命令：
@@ -497,7 +497,7 @@ line_profiler也可以在程序中使用（查看完整文档），但是在IPyt
 from numpy.random import randn
 
 def add_and_sum(x, y):
-    added = x + y
+    added = x &#43; y
     summed = added.sum(axis=1)
     return summed
 
@@ -520,8 +520,8 @@ In [572]: %prun add_and_sum(x, y)
    Ordered by: internal time
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.036    0.036    0.046    0.046 prof_mod.py:3(add_and_sum)
-        1    0.009    0.009    0.009    0.009 {method 'sum' of 'numpy.ndarray'}
-        1    0.003    0.003    0.049    0.049 <string>:1(<module>)
+        1    0.009    0.009    0.009    0.009 {method &#39;sum&#39; of &#39;numpy.ndarray&#39;}
+        1    0.003    0.003    0.049    0.049 &lt;string&gt;:1(&lt;module&gt;)
 ```
 
 上面的做法启发性不大。激活了IPython插件line_profiler，新的命令%lprun就能用了。使用中的不同点是，我们必须告诉%lprun要分析的函数是哪个。语法是：
@@ -539,7 +539,7 @@ Total time: 0.045936 s
 Line ##      Hits         Time  Per Hit   % Time  Line Contents
 ==============================================================
      3                                           def add_and_sum(x, y):
-     4         1        36510  36510.0     79.5      added = x + y
+     4         1        36510  36510.0     79.5      added = x &#43; y
      5         1         9425   9425.0     20.5      summed = added.sum(axis=1)
      6         1            1      1.0      0.0      return summed
 ```
@@ -554,7 +554,7 @@ Total time: 0.005526 s
 Line ##      Hits         Time  Per Hit   % Time  Line Contents
 ==============================================================
      3                                           def add_and_sum(x, y):
-     4         1         4375   4375.0     79.2      added = x + y
+     4         1         4375   4375.0     79.2      added = x &#43; y
      5         1         1149   1149.0     20.8      summed = added.sum(axis=1)
      6         1            2      2.0      0.0      return summed
 File: prof_mod.py
@@ -570,7 +570,7 @@ Line ##      Hits         Time  Per Hit   % Time  Line Contents
 
 我的经验是用%prun (cProfile)进行宏观分析，%lprun (line_profiler)做微观分析。最好对这两个工具都了解清楚。
 
->笔记：使用%lprun必须要指明函数名的原因是追踪每行的执行时间的损耗过多。追踪无用的函数会显著地改变结果。
+&gt;笔记：使用%lprun必须要指明函数名的原因是追踪每行的执行时间的损耗过多。追踪无用的函数会显著地改变结果。
 
 ## B.4 使用IPython高效开发的技巧
 
@@ -610,18 +610,18 @@ importlib.reload(some_lib)
 from my_functions import g
 
 def f(x, y):
-    return g(x + y)
+    return g(x &#43; y)
 
 def main():
     x = 6
     y = 7.5
-    result = x + y
+    result = x &#43; y
 
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     main()
 ```
 
-在IPython中运行这个程序会发生问题，你发现是什么了吗？运行之后，任何定义在main函数中的结果和对象都不能在IPython中被访问到。更好的方法是将main中的代码直接在模块的命名空间中执行（或者在``__name__ == '__main__':``中，如果你想让这个模块可以被引用）。这样，当你%rundiamante，就可以查看所有定义在main中的变量。这等价于在Jupyter notebook的代码格中定义一个顶级变量。
+在IPython中运行这个程序会发生问题，你发现是什么了吗？运行之后，任何定义在main函数中的结果和对象都不能在IPython中被访问到。更好的方法是将main中的代码直接在模块的命名空间中执行（或者在``__name__ == &#39;__main__&#39;:``中，如果你想让这个模块可以被引用）。这样，当你%rundiamante，就可以查看所有定义在main中的变量。这等价于在Jupyter notebook的代码格中定义一个顶级变量。
 
 ### 扁平优于嵌套
 
@@ -648,10 +648,10 @@ class Message:
 
 如果这么写，就会发现默认的输出不够美观：
 ```python
-In [576]: x = Message('I have a secret')
+In [576]: x = Message(&#39;I have a secret&#39;)
 
 In [577]: x
-Out[577]: <__main__.Message instance at 0x60ebbd8>
+Out[577]: &lt;__main__.Message instance at 0x60ebbd8&gt;
 ```
 
 IPython会接收__repr__魔术方法返回的字符串（通过output = repr(obj)），并在控制台打印出来。因此，我们可以添加一个简单的__repr__方法到前面的类中，以得到一个更有用的输出：
@@ -661,8 +661,8 @@ class Message:
         self.msg = msg
 
     def __repr__(self):
-        return 'Message: %s' % self.msg
-In [579]: x = Message('I have a secret')
+        return &#39;Message: %s&#39; % self.msg
+In [579]: x = Message(&#39;I have a secret&#39;)
 
 In [580]: x
 Out[580]: Message: I have a secret
@@ -698,13 +698,13 @@ ipython profile create secret_project
 ```python
 $ ipython --profile=secret_project
 Python 3.5.1 | packaged by conda-forge | (default, May 20 2016, 05:22:56)
-Type "copyright", "credits" or "license" for more information.
+Type &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.
 
 IPython 5.1.0 -- An enhanced Interactive Python.
-?         -> Introduction and overview of IPython's features.
-%quickref -> Quick reference.
-help      -> Python's own help system.
-object?   -> Details about 'object', use 'object??' for extra details.
+?         -&gt; Introduction and overview of IPython&#39;s features.
+%quickref -&gt; Quick reference.
+help      -&gt; Python&#39;s own help system.
+object?   -&gt; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.
 
 IPython profile: secret_project
 ```
@@ -734,6 +734,6 @@ $ mv ~/.jupyter/jupyter_notebook_config.py ~/.jupyter/my_custom_config.py
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/  
 

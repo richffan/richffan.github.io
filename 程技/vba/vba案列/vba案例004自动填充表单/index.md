@@ -27,17 +27,17 @@ Sub 表格填充()
     Dim xinXiSht As Worksheet
     Dim qingDanSht As Worksheet
 
-    Set xinXiSht = ThisWorkbook.Worksheets("信息卡")
-    Set qingDanSht = ThisWorkbook.Worksheets("人员清单")
+    Set xinXiSht = ThisWorkbook.Worksheets(&#34;信息卡&#34;)
+    Set qingDanSht = ThisWorkbook.Worksheets(&#34;人员清单&#34;)
 
     With qingDanSht
-        For i = 2 To .Range("a" & .Rows.Count).End(xlUp).Row
+        For i = 2 To .Range(&#34;a&#34; &amp; .Rows.Count).End(xlUp).Row
             For j = 1 To 5
-                xinXiSht.Range("c" & j + 4) = .Cells(i, j)
+                xinXiSht.Range(&#34;c&#34; &amp; j &#43; 4) = .Cells(i, j)
             Next j
 
             xinXiSht.Copy
-            ActiveWorkbook.SaveAs ThisWorkbook.Path & "\" & .Range("a" & i) & ".xlsx"
+            ActiveWorkbook.SaveAs ThisWorkbook.Path &amp; &#34;\&#34; &amp; .Range(&#34;a&#34; &amp; i) &amp; &#34;.xlsx&#34;
             ActiveWorkbook.Close True
         Next i
     End With
@@ -55,14 +55,14 @@ Sub 表格填充优化()
     Dim xinXiSht As Worksheet
     Dim qingDanSht As Worksheet
 
-    Set xinXiSht = ThisWorkbook.Worksheets("信息卡")
-    Set qingDanSht = ThisWorkbook.Worksheets("人员清单")
+    Set xinXiSht = ThisWorkbook.Worksheets(&#34;信息卡&#34;)
+    Set qingDanSht = ThisWorkbook.Worksheets(&#34;人员清单&#34;)
 
     Application.ScreenUpdating = False
 
     Dim ar, br()
     With qingDanSht
-        ar = .Range("a2:e" & .Range("a" & .Rows.Count).End(xlUp).Row)
+        ar = .Range(&#34;a2:e&#34; &amp; .Range(&#34;a&#34; &amp; .Rows.Count).End(xlUp).Row)
         For i = 1 To UBound(ar)
             ReDim br(1 To 5, 1 To 1)
             For j = 1 To 5
@@ -70,7 +70,7 @@ Sub 表格填充优化()
             Next j
             xinXiSht.[c5].Resize(UBound(br)) = br
             xinXiSht.Copy
-            ActiveWorkbook.SaveAs ThisWorkbook.Path & "\" & ar(i, 1) & ".xlsx"
+            ActiveWorkbook.SaveAs ThisWorkbook.Path &amp; &#34;\&#34; &amp; ar(i, 1) &amp; &#34;.xlsx&#34;
             ActiveWorkbook.Close True
             xinXiSht.[c5:c9].ClearContents
         Next i
@@ -80,10 +80,10 @@ Sub 表格填充优化()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485040&idx=1&sn=1f89ff1b2c14a4b22607fcc1ba725ce9&chksm=e8bccf27dfcb463130a13e9e02c0e0534f314ffbfc12cf3697a006cb2b215ebc8db0e1f0c3d5&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485040&amp;idx=1&amp;sn=1f89ff1b2c14a4b22607fcc1ba725ce9&amp;chksm=e8bccf27dfcb463130a13e9e02c0e0534f314ffbfc12cf3697a006cb2b215ebc8db0e1f0c3d5&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/  
 

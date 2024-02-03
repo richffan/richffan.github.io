@@ -1,6 +1,6 @@
 # QEMU - QuickStart
 
-<https://cyan-io.github.io/>
+&lt;https://cyan-io.github.io/&gt;
 ## Intro
 QEMU是一款跨平台的开源虚拟机工具，因为无GUI配置工具，有一定使用门槛
 
@@ -21,8 +21,8 @@ qemu-img create -f qcow2 drive 16G
 ```
 
 ## 虚拟硬件环境
-运算器、控制器 -> CPU、各种加速器*
-输入、输出设备 -> 网卡、CXL设备等
+运算器、控制器 -&gt; CPU、各种加速器*
+输入、输出设备 -&gt; 网卡、CXL设备等
 QEMU本身没有像VMware那样的GUI配置界面，所有配置通过命令行参数指定
 
 ```bash
@@ -46,20 +46,20 @@ qemu-system-x86_64 -machine q35 \
 ## 安装系统
 参考为物理机安装系统：
 
-物理机硬盘 -> 虚拟磁盘文件drive
-安装媒介（写入了镜像的U盘） -> 系统镜像文件
+物理机硬盘 -&gt; 虚拟磁盘文件drive
+安装媒介（写入了镜像的U盘） -&gt; 系统镜像文件
 
 ```bash
 qemu-system-x86_64 -machine q35 \
 	-smp 4,sockets=1,cores=4,threads=1 \
 	-m 4096 \
 	-drive file=drive \
-	-drive file=<系统镜像，如ubuntu-22.04.2-live-server-amd64.iso>,media=cdrom
+	-drive file=&lt;系统镜像，如ubuntu-22.04.2-live-server-amd64.iso&gt;,media=cdrom
 ```
 按照ISO文件的引导进行安装即可，完成后可移除ISO文件重启
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/system/qemu-quickstart/  
 

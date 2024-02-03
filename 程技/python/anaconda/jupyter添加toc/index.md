@@ -10,7 +10,7 @@
 
 同时toc目录的大小和位置可以随意改变，也支持对每个标题自动编号，默认的就挺好哈哈哈。
 
-> 如何安装呢？
+&gt; 如何安装呢？
 
 第一步：安装Jupyter notebook
 
@@ -48,6 +48,6 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/  
 

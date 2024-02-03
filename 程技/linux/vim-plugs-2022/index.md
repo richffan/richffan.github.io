@@ -6,9 +6,9 @@
 最近一两年开始深度使用 `vim`, 目前使用 `neovim` 版本.
 本文将记录一些笔者觉得好用的一些 `Plugin`, 本文也将持续更新.
 
-<!--more-->
+&lt;!--more--&gt;
 
-> 注意: 笔者使用的插件管理器是 [vim-plug](https://github.com/junegunn/vim-plug),
+&gt; 注意: 笔者使用的插件管理器是 [vim-plug](https://github.com/junegunn/vim-plug),
 所以以下示例都是基于 `vim-plug` 来写的.
 
 ### Goto/Open
@@ -17,12 +17,12 @@
 可以用浏览器打开光标下的 url. 
 
 - `gB` 用默认浏览器打开光标下的 url
-- `g<CR>` 使用默认搜索引擎搜索光标下的单词
+- `g&lt;CR&gt;` 使用默认搜索引擎搜索光标下的单词
 - `gG` 使用 Google 搜索光标下的单词
 - `gW` 使用 Wikipedia 搜索光标下的单词
 
 ```vim
-Plug 'dhruvasagar/vim-open-url'
+Plug &#39;dhruvasagar/vim-open-url&#39;
 ```
 
 ### Auto Complete
@@ -32,6 +32,6 @@ Plug 'dhruvasagar/vim-open-url'
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/vim-plugs-2022/  
 

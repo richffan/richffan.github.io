@@ -58,12 +58,12 @@
 
 同时，公司也推出了很多智能审计工具，解决很多重复性的劳动与此同时可以进行数据清洗。（部分八大也开始建数字技术部，出各种智能审计工具）
 
-G 请时刻谨记：**Ctrl+S**
+G 请时刻谨记：**Ctrl&#43;S**
 
 如果没有及时保存，也请时刻保持**“**从头再来**”**的心态！
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/114-what-can-you-learn-from-the-four-major-audits-and-what-are-the-absolute-advantages-over-the-eight-major-audits/  
 

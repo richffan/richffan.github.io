@@ -34,6 +34,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/system/windows/windows%E9%87%8D%E8%A3%85/  
 

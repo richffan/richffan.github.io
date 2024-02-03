@@ -34,38 +34,38 @@ IO编程中，Stream（流）是一个很重要的概念，可以把流想象成
 要以读文件的模式打开一个文件对象，使用Python内置的`open()`函数，传入文件名和标示符：
 
 ```python
->>> f = open('/Users/michael/test.txt', 'r')
+&gt;&gt;&gt; f = open(&#39;/Users/michael/test.txt&#39;, &#39;r&#39;)
 ```
 
-标示符'r'表示读，这样，我们就成功地打开了一个文件。
+标示符&#39;r&#39;表示读，这样，我们就成功地打开了一个文件。
 
 如果文件不存在，`open()`函数就会抛出一个`IOError`的错误，并且给出错误码和详细的信息告诉你文件不存在：
 
 ```python
->>> f=open('/Users/michael/notfound.txt', 'r')
+&gt;&gt;&gt; f=open(&#39;/Users/michael/notfound.txt&#39;, &#39;r&#39;)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/michael/notfound.txt'
+  File &#34;&lt;stdin&gt;&#34;, line 1, in &lt;module&gt;
+FileNotFoundError: [Errno 2] No such file or directory: &#39;/Users/michael/notfound.txt&#39;
 ```
 
 如果文件打开成功，接下来，调用`read()`方法可以一次读取文件的全部内容，Python把内容读到内存，用一个`str`对象表示：
 
 ```python
->>> f.read()
-'Hello, world!'
+&gt;&gt;&gt; f.read()
+&#39;Hello, world!&#39;
 ```
 
 最后一步是调用`close()`方法关闭文件。文件使用完毕后必须关闭，因为文件对象会占用操作系统的资源，并且操作系统同一时间能打开的文件数量也是有限的：
 
 ```python
->>> f.close()
+&gt;&gt;&gt; f.close()
 ```
 
 由于文件读写时都有可能产生`IOError`，一旦出错，后面的`f.close()`就不会调用。所以，为了保证无论是否出错都能正确地关闭文件，我们可以使用`try ... finally`来实现：
 
 ```python
 try:
-    f = open('/path/to/file', 'r')
+    f = open(&#39;/path/to/file&#39;, &#39;r&#39;)
     print(f.read())
 finally:
     if f:
@@ -75,7 +75,7 @@ finally:
 但是每次都这么写实在太繁琐，所以，Python引入了`with`语句来自动帮我们调用`close()`方法：
 
 ```python
-with open('/path/to/file', 'r') as f:
+with open(&#39;/path/to/file&#39;, &#39;r&#39;) as f:
     print(f.read())
 ```
 
@@ -87,7 +87,7 @@ with open('/path/to/file', 'r') as f:
 
 ```python
 for line in f.readlines():
-    print(line.strip()) # 把末尾的'\n'删掉
+    print(line.strip()) # 把末尾的&#39;\n&#39;删掉
 ```
 
 ### 9.1.2 file-like Object
@@ -98,12 +98,12 @@ for line in f.readlines():
 
 ### 9.1.3 二进制文件
 
-前面讲的默认都是读取文本文件，并且是UTF-8编码的文本文件。要读取二进制文件，比如图片、视频等等，用`'rb'`模式打开文件即可：
+前面讲的默认都是读取文本文件，并且是UTF-8编码的文本文件。要读取二进制文件，比如图片、视频等等，用`&#39;rb&#39;`模式打开文件即可：
 
 ```python
->>> f = open('/Users/michael/test.jpg', 'rb')
->>> f.read()
-b'\xff\xd8\xff\xe1\x00\x18Exif\x00\x00...' # 十六进制表示的字节
+&gt;&gt;&gt; f = open(&#39;/Users/michael/test.jpg&#39;, &#39;rb&#39;)
+&gt;&gt;&gt; f.read()
+b&#39;\xff\xd8\xff\xe1\x00\x18Exif\x00\x00...&#39; # 十六进制表示的字节
 ```
 
 ### 9.1.4 字符编码
@@ -111,37 +111,37 @@ b'\xff\xd8\xff\xe1\x00\x18Exif\x00\x00...' # 十六进制表示的字节
 要读取非UTF-8编码的文本文件，需要给`open()`函数传入`encoding`参数，例如，读取GBK编码的文件：
 
 ```python
->>> f = open('/Users/michael/gbk.txt', 'r', encoding='gbk')
->>> f.read()
-'测试'
+&gt;&gt;&gt; f = open(&#39;/Users/michael/gbk.txt&#39;, &#39;r&#39;, encoding=&#39;gbk&#39;)
+&gt;&gt;&gt; f.read()
+&#39;测试&#39;
 ```
 
 遇到有些编码不规范的文件，你可能会遇到`UnicodeDecodeError`，因为在文本文件中可能夹杂了一些非法编码的字符。遇到这种情况，`open()`函数还接收一个`errors`参数，表示如果遇到编码错误后如何处理。最简单的方式是直接忽略：
 
 ```python
->>> f = open('/Users/michael/gbk.txt', 'r', encoding='gbk', errors='ignore')
+&gt;&gt;&gt; f = open(&#39;/Users/michael/gbk.txt&#39;, &#39;r&#39;, encoding=&#39;gbk&#39;, errors=&#39;ignore&#39;)
 ```
 
 ### 9.1.5 写文件
 
-写文件和读文件是一样的，唯一区别是调用`open()`函数时，传入标识符`'w'`或者`'wb'`表示写文本文件或写二进制文件：
+写文件和读文件是一样的，唯一区别是调用`open()`函数时，传入标识符`&#39;w&#39;`或者`&#39;wb&#39;`表示写文本文件或写二进制文件：
 
 ```python
->>> f = open('/Users/michael/test.txt', 'w')
->>> f.write('Hello, world!')
->>> f.close()
+&gt;&gt;&gt; f = open(&#39;/Users/michael/test.txt&#39;, &#39;w&#39;)
+&gt;&gt;&gt; f.write(&#39;Hello, world!&#39;)
+&gt;&gt;&gt; f.close()
 ```
 
 你可以反复调用`write()`来写入文件，但是务必要调用`f.close()`来关闭文件。当我们写文件时，操作系统往往不会立刻把数据写入磁盘，而是放到内存缓存起来，空闲的时候再慢慢写入。只有调用`close()`方法时，操作系统才保证把没有写入的数据全部写入磁盘。忘记调用`close()`的后果是数据可能只写了一部分到磁盘，剩下的丢失了。所以，还是用`with`语句来得保险：
 
 ```python
-with open('/Users/michael/test.txt', 'w') as f:
-    f.write('Hello, world!')
+with open(&#39;/Users/michael/test.txt&#39;, &#39;w&#39;) as f:
+    f.write(&#39;Hello, world!&#39;)
 ```
 
 要写入特定编码的文本文件，请给`open()`函数传入`encoding`参数，将字符串自动转换成指定编码。
 
-细心的童鞋会发现，以`'w'`模式写入文件时，如果文件已存在，会直接覆盖（相当于删掉后新写入一个文件）。如果我们希望追加到文件末尾怎么办？可以传入`'a'`以追加（append）模式写入。
+细心的童鞋会发现，以`&#39;w&#39;`模式写入文件时，如果文件已存在，会直接覆盖（相当于删掉后新写入一个文件）。如果我们希望追加到文件末尾怎么办？可以传入`&#39;a&#39;`以追加（append）模式写入。
 
 所有模式的定义及含义可以参考Python的[官方文档](https://docs.python.org/3/library/functions.html#open)。
 
@@ -156,15 +156,15 @@ StringIO顾名思义就是在内存中读写str。
 要把str写入StringIO，我们需要先创建一个StringIO，然后，像文件一样写入即可：
 
 ```python
->>> from io import StringIO
->>> f = StringIO()
->>> f.write('hello')
+&gt;&gt;&gt; from io import StringIO
+&gt;&gt;&gt; f = StringIO()
+&gt;&gt;&gt; f.write(&#39;hello&#39;)
 5
->>> f.write(' ')
+&gt;&gt;&gt; f.write(&#39; &#39;)
 1
->>> f.write('world!')
+&gt;&gt;&gt; f.write(&#39;world!&#39;)
 6
->>> print(f.getvalue())
+&gt;&gt;&gt; print(f.getvalue())
 hello world!
 ```
 
@@ -173,11 +173,11 @@ hello world!
 要读取StringIO，可以用一个str初始化StringIO，然后，像读文件一样读取：
 
 ```python
->>> from io import StringIO
->>> f = StringIO('Hello!\nHi!\nGoodbye!')
->>> while True:
+&gt;&gt;&gt; from io import StringIO
+&gt;&gt;&gt; f = StringIO(&#39;Hello!\nHi!\nGoodbye!&#39;)
+&gt;&gt;&gt; while True:
 ...     s = f.readline()
-...     if s == '':
+...     if s == &#39;&#39;:
 ...         break
 ...     print(s.strip())
 ...
@@ -193,12 +193,12 @@ StringIO操作的只能是str，如果要操作二进制数据，就需要使用
 BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写入一些bytes：
 
 ```python
->>> from io import BytesIO
->>> f = BytesIO()
->>> f.write('中文'.encode('utf-8'))
+&gt;&gt;&gt; from io import BytesIO
+&gt;&gt;&gt; f = BytesIO()
+&gt;&gt;&gt; f.write(&#39;中文&#39;.encode(&#39;utf-8&#39;))
 6
->>> print(f.getvalue())
-b'\xe4\xb8\xad\xe6\x96\x87'
+&gt;&gt;&gt; print(f.getvalue())
+b&#39;\xe4\xb8\xad\xe6\x96\x87&#39;
 ```
 
 请注意，写入的不是str，而是经过UTF-8编码的bytes。
@@ -206,10 +206,10 @@ b'\xe4\xb8\xad\xe6\x96\x87'
 和StringIO类似，可以用一个bytes初始化BytesIO，然后，像读文件一样读取：
 
 ```python
->>> from io import BytesIO
->>> f = BytesIO(b'\xe4\xb8\xad\xe6\x96\x87')
->>> f.read()
-b'\xe4\xb8\xad\xe6\x96\x87'
+&gt;&gt;&gt; from io import BytesIO
+&gt;&gt;&gt; f = BytesIO(b&#39;\xe4\xb8\xad\xe6\x96\x87&#39;)
+&gt;&gt;&gt; f.read()
+b&#39;\xe4\xb8\xad\xe6\x96\x87&#39;
 ```
 
 请注意，写入的不是str，而是经过UTF-8编码的bytes。
@@ -217,13 +217,13 @@ b'\xe4\xb8\xad\xe6\x96\x87'
 和StringIO类似，可以用一个bytes初始化BytesIO，然后，像读文件一样读取：
 
 ```python
->>> from io import BytesIO
->>> f = BytesIO(b'\xe4\xb8\xad\xe6\x96\x87')
->>> f.read()
-b'\xe4\xb8\xad\xe6\x96\x87'
+&gt;&gt;&gt; from io import BytesIO
+&gt;&gt;&gt; f = BytesIO(b&#39;\xe4\xb8\xad\xe6\x96\x87&#39;)
+&gt;&gt;&gt; f.read()
+b&#39;\xe4\xb8\xad\xe6\x96\x87&#39;
 ```
 
-> 小结：
+&gt; 小结：
 
 StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文件具有一致的接口。
 
@@ -236,9 +236,9 @@ StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文
 打开Python交互式命令行，我们来看看如何使用`os`模块的基本功能：
 
 ```python
->>> import os
->>> os.name # 操作系统类型
-'posix'
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.name # 操作系统类型
+&#39;posix&#39;
 ```
 
 如果是`posix`，说明系统是`Linux`、`Unix`或`Mac OS X`，如果是`nt`，就是`Windows`系统。
@@ -246,8 +246,8 @@ StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文
 要获取详细的系统信息，可以调用`uname()`函数：
 
 ```python
->>> os.uname()
-posix.uname_result(sysname='Darwin', nodename='MichaelMacPro.local', release='14.3.0', version='Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64', machine='x86_64')
+&gt;&gt;&gt; os.uname()
+posix.uname_result(sysname=&#39;Darwin&#39;, nodename=&#39;MichaelMacPro.local&#39;, release=&#39;14.3.0&#39;, version=&#39;Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64&#39;, machine=&#39;x86_64&#39;)
 ```
 
 注意`uname()`函数在Windows上不提供，也就是说，`os`模块的某些函数是跟操作系统相关的。
@@ -257,17 +257,17 @@ posix.uname_result(sysname='Darwin', nodename='MichaelMacPro.local', release='14
 在操作系统中定义的环境变量，全部保存在`os.environ`这个变量中，可以直接查看：
 
 ```python
->>> os.environ
-environ({'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '326', 'LOGNAME': 'michael', 'USER': 'michael', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin', ...})
+&gt;&gt;&gt; os.environ
+environ({&#39;VERSIONER_PYTHON_PREFER_32_BIT&#39;: &#39;no&#39;, &#39;TERM_PROGRAM_VERSION&#39;: &#39;326&#39;, &#39;LOGNAME&#39;: &#39;michael&#39;, &#39;USER&#39;: &#39;michael&#39;, &#39;PATH&#39;: &#39;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&#39;, ...})
 ```
 
-要获取某个环境变量的值，可以调用`os.environ.get('key')`：
+要获取某个环境变量的值，可以调用`os.environ.get(&#39;key&#39;)`：
 
 ```python
->>> os.environ.get('PATH')
-'/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin'
->>> os.environ.get('x', 'default')
-'default'
+&gt;&gt;&gt; os.environ.get(&#39;PATH&#39;)
+&#39;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&#39;
+&gt;&gt;&gt; os.environ.get(&#39;x&#39;, &#39;default&#39;)
+&#39;default&#39;
 ```
 
 ### 9.3.2 操作文件和目录
@@ -276,15 +276,15 @@ environ({'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '326', 
 
 ```python
 # 查看当前目录的绝对路径:
->>> os.path.abspath('.')
-'/Users/michael'
+&gt;&gt;&gt; os.path.abspath(&#39;.&#39;)
+&#39;/Users/michael&#39;
 # 在某个目录下创建一个新目录，首先把新目录的完整路径表示出来:
->>> os.path.join('/Users/michael', 'testdir')
-'/Users/michael/testdir'
+&gt;&gt;&gt; os.path.join(&#39;/Users/michael&#39;, &#39;testdir&#39;)
+&#39;/Users/michael/testdir&#39;
 # 然后创建一个目录:
->>> os.mkdir('/Users/michael/testdir')
+&gt;&gt;&gt; os.mkdir(&#39;/Users/michael/testdir&#39;)
 # 删掉一个目录:
->>> os.rmdir('/Users/michael/testdir')
+&gt;&gt;&gt; os.rmdir(&#39;/Users/michael/testdir&#39;)
 ```
 
 把两个路径合成一个时，不要直接拼字符串，而要通过`os.path.join()`函数，这样可以正确处理不同操作系统的路径分隔符。在Linux/Unix/Mac下，`os.path.join()`返回这样的字符串：
@@ -302,15 +302,15 @@ part-1\part-2
 同样的道理，要拆分路径时，也不要直接去拆字符串，而要通过`os.path.split()`函数，这样可以把一个路径拆分为两部分，后一部分总是最后级别的目录或文件名：
 
 ```python
->>> os.path.split('/Users/michael/testdir/file.txt')
-('/Users/michael/testdir', 'file.txt')
+&gt;&gt;&gt; os.path.split(&#39;/Users/michael/testdir/file.txt&#39;)
+(&#39;/Users/michael/testdir&#39;, &#39;file.txt&#39;)
 ```
 
 `os.path.splitext()`可以直接让你得到文件扩展名，很多时候非常方便：
 
 ```python
->>> os.path.splitext('/path/to/file.txt')
-('/path/to/file', '.txt')
+&gt;&gt;&gt; os.path.splitext(&#39;/path/to/file.txt&#39;)
+(&#39;/path/to/file&#39;, &#39;.txt&#39;)
 ```
 
 这些合并、拆分路径的函数并不要求目录和文件要真实存在，它们只对字符串进行操作。
@@ -319,9 +319,9 @@ part-1\part-2
 
 ```python
 # 对文件重命名:
->>> os.rename('test.txt', 'test.py')
+&gt;&gt;&gt; os.rename(&#39;test.txt&#39;, &#39;test.py&#39;)
 # 删掉文件:
->>> os.remove('test.py')
+&gt;&gt;&gt; os.remove(&#39;test.py&#39;)
 ```
 
 但是复制文件的函数居然在`os`模块中不存在！原因是复制文件并非由操作系统提供的系统调用。理论上讲，我们通过上一节的读写文件可以完成文件复制，只不过要多写很多代码。
@@ -331,20 +331,20 @@ part-1\part-2
 最后看看如何利用Python的特性来过滤文件。比如我们要列出当前目录下的所有目录，只需要一行代码：
 
 ```python
->>> [x for x in os.listdir('.') if os.path.isdir(x)]
-['.lein', '.local', '.m2', '.npm', '.ssh', '.Trash', '.vim', 'Applications', 'Desktop', ...]
+&gt;&gt;&gt; [x for x in os.listdir(&#39;.&#39;) if os.path.isdir(x)]
+[&#39;.lein&#39;, &#39;.local&#39;, &#39;.m2&#39;, &#39;.npm&#39;, &#39;.ssh&#39;, &#39;.Trash&#39;, &#39;.vim&#39;, &#39;Applications&#39;, &#39;Desktop&#39;, ...]
 ```
 
 要列出所有的`.py`文件，也只需一行代码：
 
 ```python
->>> [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1]=='.py']
-['apis.py', 'config.py', 'models.py', 'pymonitor.py', 'test_db.py', 'urls.py', 'wsgiapp.py']
+&gt;&gt;&gt; [x for x in os.listdir(&#39;.&#39;) if os.path.isfile(x) and os.path.splitext(x)[1]==&#39;.py&#39;]
+[&#39;apis.py&#39;, &#39;config.py&#39;, &#39;models.py&#39;, &#39;pymonitor.py&#39;, &#39;test_db.py&#39;, &#39;urls.py&#39;, &#39;wsgiapp.py&#39;]
 ```
 
 是不是非常简洁？
 
-> 小结：
+&gt; 小结：
 
 Python的`os`模块封装了操作系统的目录和文件操作，要注意这些函数有的在`os`模块中，有的在`os.path`模块中。
 
@@ -353,10 +353,10 @@ Python的`os`模块封装了操作系统的目录和文件操作，要注意这�
 在程序运行的过程中，所有的变量都是在内存中，比如，定义一个dict：
 
 ```python
-d = dict(name='Bob', age=20, score=88)
+d = dict(name=&#39;Bob&#39;, age=20, score=88)
 ```
 
-可以随时修改变量，比如把`name`改成`'Bill'`，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的`'Bill'`存储到磁盘上，下次重新运行程序，变量又被初始化为`'Bob'`。
+可以随时修改变量，比如把`name`改成`&#39;Bill&#39;`，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的`&#39;Bill&#39;`存储到磁盘上，下次重新运行程序，变量又被初始化为`&#39;Bob&#39;`。
 
 我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。
 
@@ -369,18 +369,18 @@ Python提供了`pickle`模块来实现序列化。
 首先，我们尝试把一个对象序列化并写入文件：
 
 ```python
->>> import pickle
->>> d = dict(name='Bob', age=20, score=88)
->>> pickle.dumps(d)
-b'\x80\x03}q\x00(X\x03\x00\x00\x00ageq\x01K\x14X\x05\x00\x00\x00scoreq\x02KXX\x04\x00\x00\x00nameq\x03X\x03\x00\x00\x00Bobq\x04u.'
+&gt;&gt;&gt; import pickle
+&gt;&gt;&gt; d = dict(name=&#39;Bob&#39;, age=20, score=88)
+&gt;&gt;&gt; pickle.dumps(d)
+b&#39;\x80\x03}q\x00(X\x03\x00\x00\x00ageq\x01K\x14X\x05\x00\x00\x00scoreq\x02KXX\x04\x00\x00\x00nameq\x03X\x03\x00\x00\x00Bobq\x04u.&#39;
 ```
 
 `pickle.dumps()`方法把任意对象序列化成一个`bytes`，然后，就可以把这个`bytes`写入文件。或者用另一个方法`pickle.dump()`直接把对象序列化后写入一个file-like Object：
 
 ```python
->>> f = open('dump.txt', 'wb')
->>> pickle.dump(d, f)
->>> f.close()
+&gt;&gt;&gt; f = open(&#39;dump.txt&#39;, &#39;wb&#39;)
+&gt;&gt;&gt; pickle.dump(d, f)
+&gt;&gt;&gt; f.close()
 ```
 
 看看写入的`dump.txt`文件，一堆乱七八糟的内容，这些都是Python保存的对象内部信息。
@@ -388,11 +388,11 @@ b'\x80\x03}q\x00(X\x03\x00\x00\x00ageq\x01K\x14X\x05\x00\x00\x00scoreq\x02KXX\x0
 当我们要把对象从磁盘读到内存时，可以先把内容读到一个`bytes`，然后用`pickle.loads()`方法反序列化出对象，也可以直接用`pickle.load()`方法从一个`file-like Object`中直接反序列化出对象。我们打开另一个Python命令行来反序列化刚才保存的对象：
 
 ```python
->>> f = open('dump.txt', 'rb')
->>> d = pickle.load(f)
->>> f.close()
->>> d
-{'age': 20, 'score': 88, 'name': 'Bob'}
+&gt;&gt;&gt; f = open(&#39;dump.txt&#39;, &#39;rb&#39;)
+&gt;&gt;&gt; d = pickle.load(f)
+&gt;&gt;&gt; f.close()
+&gt;&gt;&gt; d
+{&#39;age&#39;: 20, &#39;score&#39;: 88, &#39;name&#39;: &#39;Bob&#39;}
 ```
 
 变量的内容又回来了！
@@ -412,10 +412,10 @@ JSON表示的对象就是标准的JavaScript语言的对象，JSON和Python内�
 Python内置的`json`模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON：
 
 ```python
->>> import json
->>> d = dict(name='Bob', age=20, score=88)
->>> json.dumps(d)
-'{"age": 20, "score": 88, "name": "Bob"}'
+&gt;&gt;&gt; import json
+&gt;&gt;&gt; d = dict(name=&#39;Bob&#39;, age=20, score=88)
+&gt;&gt;&gt; json.dumps(d)
+&#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;
 ```
 
 `dumps()`方法返回一个`str`，内容就是标准的JSON。类似的，`dump()`方法可以直接把JSON写入一个`file-like Object`。
@@ -423,9 +423,9 @@ Python内置的`json`模块提供了非常完善的Python对象到JSON格式的�
 要把JSON反序列化为Python对象，用`loads()`或者对应的`load()`方法，前者把JSON的字符串反序列化，后者从`file-like Object`中读取字符串并反序列化：
 
 ```python
->>> json_str = '{"age": 20, "score": 88, "name": "Bob"}'
->>> json.loads(json_str)
-{'age': 20, 'score': 88, 'name': 'Bob'}
+&gt;&gt;&gt; json_str = &#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;
+&gt;&gt;&gt; json.loads(json_str)
+{&#39;age&#39;: 20, &#39;score&#39;: 88, &#39;name&#39;: &#39;Bob&#39;}
 ```
 
 由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的`str`与JSON的字符串之间转换。
@@ -443,7 +443,7 @@ class Student(object):
         self.age = age
         self.score = score
 
-s = Student('Bob', 20, 88)
+s = Student(&#39;Bob&#39;, 20, 88)
 print(json.dumps(s))
 ```
 
@@ -452,7 +452,7 @@ print(json.dumps(s))
 ```python
 Traceback (most recent call last):
   ...
-TypeError: <__main__.Student object at 0x10603cc50> is not JSON serializable
+TypeError: &lt;__main__.Student object at 0x10603cc50&gt; is not JSON serializable
 ```
 
 错误的原因是`Student`对象不是一个可序列化为JSON的对象。
@@ -470,17 +470,17 @@ https://docs.python.org/3/library/json.html#json.dumps
 ```python
 def student2dict(std):
     return {
-        'name': std.name,
-        'age': std.age,
-        'score': std.score
+        &#39;name&#39;: std.name,
+        &#39;age&#39;: std.age,
+        &#39;score&#39;: std.score
     }
 ```
 
 这样，`Student`实例首先被`student2dict()`函数转换成`dict`，然后再被顺利序列化为JSON：
 
 ```python
->>> print(json.dumps(s, default=student2dict))
-{"age": 20, "name": "Bob", "score": 88}
+&gt;&gt;&gt; print(json.dumps(s, default=student2dict))
+{&#34;age&#34;: 20, &#34;name&#34;: &#34;Bob&#34;, &#34;score&#34;: 88}
 ```
 
 不过，下次如果遇到一个`Teacher`类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意`class`的实例变为`dict`：
@@ -495,20 +495,20 @@ print(json.dumps(s, default=lambda obj: obj.__dict__))
 
 ```python
 ef dict2student(d):
-    return Student(d['name'], d['age'], d['score'])
+    return Student(d[&#39;name&#39;], d[&#39;age&#39;], d[&#39;score&#39;])
 ```
 
 运行结果如下：
 
 ```python
->>> json_str = '{"age": 20, "score": 88, "name": "Bob"}'
->>> print(json.loads(json_str, object_hook=dict2student))
-<__main__.Student object at 0x10cd3c190>
+&gt;&gt;&gt; json_str = &#39;{&#34;age&#34;: 20, &#34;score&#34;: 88, &#34;name&#34;: &#34;Bob&#34;}&#39;
+&gt;&gt;&gt; print(json.loads(json_str, object_hook=dict2student))
+&lt;__main__.Student object at 0x10cd3c190&gt;
 ```
 
 打印出的是反序列化的`Student`实例对象。
 
-> 小结：
+&gt; 小结：
 
 Python语言特定的序列化模块是`pickle`，但如果要把序列化搞得更通用、更符合Web标准，就可以使用`json`模块。
 
@@ -522,6 +522,6 @@ Python语言特定的序列化模块是`pickle`，但如果要把序列化搞得
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/  
 

@@ -10,22 +10,22 @@
 
 以每小时快照为例，文件中各行的格式为JSON（即JavaScript Object Notation，这是一种常用的Web数据格式）。例如，如果我们只读取某个文件中的第一行，那么所看到的结果应该是下面这样：
 ```python
-In [5]: path = 'datasets/bitly_usagov/example.txt'
+In [5]: path = &#39;datasets/bitly_usagov/example.txt&#39;
 
 In [6]: open(path).readline()
-Out[6]: '{ "a": "Mozilla\\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\\/535.11
-(KHTML, like Gecko) Chrome\\/17.0.963.78 Safari\\/535.11", "c": "US", "nk": 1,
-"tz": "America\\/New_York", "gr": "MA", "g": "A6qOVH", "h": "wfLQtf", "l":
-"orofrog", "al": "en-US,en;q=0.8", "hh": "1.usa.gov", "r":
-"http:\\/\\/www.facebook.com\\/l\\/7AQEFzjSi\\/1.usa.gov\\/wfLQtf", "u":
-"http:\\/\\/www.ncbi.nlm.nih.gov\\/pubmed\\/22415991", "t": 1331923247, "hc":
-1331822918, "cy": "Danvers", "ll": [ 42.576698, -70.954903 ] }\n'
+Out[6]: &#39;{ &#34;a&#34;: &#34;Mozilla\\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\\/535.11
+(KHTML, like Gecko) Chrome\\/17.0.963.78 Safari\\/535.11&#34;, &#34;c&#34;: &#34;US&#34;, &#34;nk&#34;: 1,
+&#34;tz&#34;: &#34;America\\/New_York&#34;, &#34;gr&#34;: &#34;MA&#34;, &#34;g&#34;: &#34;A6qOVH&#34;, &#34;h&#34;: &#34;wfLQtf&#34;, &#34;l&#34;:
+&#34;orofrog&#34;, &#34;al&#34;: &#34;en-US,en;q=0.8&#34;, &#34;hh&#34;: &#34;1.usa.gov&#34;, &#34;r&#34;:
+&#34;http:\\/\\/www.facebook.com\\/l\\/7AQEFzjSi\\/1.usa.gov\\/wfLQtf&#34;, &#34;u&#34;:
+&#34;http:\\/\\/www.ncbi.nlm.nih.gov\\/pubmed\\/22415991&#34;, &#34;t&#34;: 1331923247, &#34;hc&#34;:
+1331822918, &#34;cy&#34;: &#34;Danvers&#34;, &#34;ll&#34;: [ 42.576698, -70.954903 ] }\n&#39;
 ```
 
 Python有内置或第三方模块可以将JSON字符串转换成Python字典对象。这里，我将使用json模块及其loads函数逐行加载已经下载好的数据文件：
 ```python
 import json
-path = 'datasets/bitly_usagov/example.txt'
+path = &#39;datasets/bitly_usagov/example.txt&#39;
 records = [json.loads(line) for line in open(path)]
 ```
 
@@ -33,55 +33,55 @@ records = [json.loads(line) for line in open(path)]
 ```python
 In [18]: records[0]
 Out[18]:
-{'a': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko)
-Chrome/17.0.963.78 Safari/535.11',
- 'al': 'en-US,en;q=0.8',
- 'c': 'US',
- 'cy': 'Danvers',
- 'g': 'A6qOVH',
- 'gr': 'MA',
- 'h': 'wfLQtf',
- 'hc': 1331822918,
- 'hh': '1.usa.gov',
- 'l': 'orofrog',
- 'll': [42.576698, -70.954903],
- 'nk': 1,
- 'r': 'http://www.facebook.com/l/7AQEFzjSi/1.usa.gov/wfLQtf',
- 't': 1331923247,
- 'tz': 'America/New_York',
- 'u': 'http://www.ncbi.nlm.nih.gov/pubmed/22415991'}
+{&#39;a&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko)
+Chrome/17.0.963.78 Safari/535.11&#39;,
+ &#39;al&#39;: &#39;en-US,en;q=0.8&#39;,
+ &#39;c&#39;: &#39;US&#39;,
+ &#39;cy&#39;: &#39;Danvers&#39;,
+ &#39;g&#39;: &#39;A6qOVH&#39;,
+ &#39;gr&#39;: &#39;MA&#39;,
+ &#39;h&#39;: &#39;wfLQtf&#39;,
+ &#39;hc&#39;: 1331822918,
+ &#39;hh&#39;: &#39;1.usa.gov&#39;,
+ &#39;l&#39;: &#39;orofrog&#39;,
+ &#39;ll&#39;: [42.576698, -70.954903],
+ &#39;nk&#39;: 1,
+ &#39;r&#39;: &#39;http://www.facebook.com/l/7AQEFzjSi/1.usa.gov/wfLQtf&#39;,
+ &#39;t&#39;: 1331923247,
+ &#39;tz&#39;: &#39;America/New_York&#39;,
+ &#39;u&#39;: &#39;http://www.ncbi.nlm.nih.gov/pubmed/22415991&#39;}
 ```
 
 ##用纯Python代码对时区进行计数
 
 假设我们想要知道该数据集中最常出现的是哪个时区（即tz字段），得到答案的办法有很多。首先，我们用列表推导式取出一组时区：
 ```python
-In [12]: time_zones = [rec['tz'] for rec in records]
+In [12]: time_zones = [rec[&#39;tz&#39;] for rec in records]
 ---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
-<ipython-input-12-db4fbd348da9> in <module>()
-----> 1 time_zones = [rec['tz'] for rec in records]
-<ipython-input-12-db4fbd348da9> in <listcomp>(.0)
-----> 1 time_zones = [rec['tz'] for rec in records]
-KeyError: 'tz'
+&lt;ipython-input-12-db4fbd348da9&gt; in &lt;module&gt;()
+----&gt; 1 time_zones = [rec[&#39;tz&#39;] for rec in records]
+&lt;ipython-input-12-db4fbd348da9&gt; in &lt;listcomp&gt;(.0)
+----&gt; 1 time_zones = [rec[&#39;tz&#39;] for rec in records]
+KeyError: &#39;tz&#39;
 ```
 
-晕！原来并不是所有记录都有时区字段。这个好办，只需在列表推导式末尾加上一个if 'tz'in rec判断即可：
+晕！原来并不是所有记录都有时区字段。这个好办，只需在列表推导式末尾加上一个if &#39;tz&#39;in rec判断即可：
 ```python
-In [13]: time_zones = [rec['tz'] for rec in records if 'tz' in rec]
+In [13]: time_zones = [rec[&#39;tz&#39;] for rec in records if &#39;tz&#39; in rec]
 
 In [14]: time_zones[:10]
 Out[14]: 
-['America/New_York',
- 'America/Denver',
- 'America/New_York',
- 'America/Sao_Paulo',
- 'America/New_York',
- 'America/New_York',
- 'Europe/Warsaw',
- '',
- '',
- '']
+[&#39;America/New_York&#39;,
+ &#39;America/Denver&#39;,
+ &#39;America/New_York&#39;,
+ &#39;America/Sao_Paulo&#39;,
+ &#39;America/New_York&#39;,
+ &#39;America/New_York&#39;,
+ &#39;Europe/Warsaw&#39;,
+ &#39;&#39;,
+ &#39;&#39;,
+ &#39;&#39;]
 ```
 
 只看前10个时区，我们发现有些是未知的（即空的）。虽然可以将它们过滤掉，但现在暂时先留着。接下来，为了对时区进行计数，这里介绍两个办法：一个较难（只使用标准Python库），另一个较简单（使用pandas）。计数的办法之一是在遍历时区的过程中将计数值保存在字典中：
@@ -90,7 +90,7 @@ def get_counts(sequence):
     counts = {}
     for x in sequence:
         if x in counts:
-            counts[x] += 1
+            counts[x] &#43;= 1
         else:
             counts[x] = 1
     return counts
@@ -103,7 +103,7 @@ from collections import defaultdict
 def get_counts2(sequence):
     counts = defaultdict(int) # values will initialize to 0
     for x in sequence:
-        counts[x] += 1
+        counts[x] &#43;= 1
     return counts
 ```
 
@@ -111,7 +111,7 @@ def get_counts2(sequence):
 ```python
 In [17]: counts = get_counts(time_zones)
 
-In [18]: counts['America/New_York']
+In [18]: counts[&#39;America/New_York&#39;]
 Out[18]: 1251
 
 In [19]: len(time_zones)
@@ -130,16 +130,16 @@ def top_counts(count_dict, n=10):
 ```python
 In [21]: top_counts(counts)
 Out[21]: 
-[(33, 'America/Sao_Paulo'),
- (35, 'Europe/Madrid'),
-(36, 'Pacific/Honolulu'),
- (37, 'Asia/Tokyo'),
- (74, 'Europe/London'),
- (191, 'America/Denver'),
- (382, 'America/Los_Angeles'),
- (400, 'America/Chicago'),
- (521, ''),
- (1251, 'America/New_York')]
+[(33, &#39;America/Sao_Paulo&#39;),
+ (35, &#39;Europe/Madrid&#39;),
+(36, &#39;Pacific/Honolulu&#39;),
+ (37, &#39;Asia/Tokyo&#39;),
+ (74, &#39;Europe/London&#39;),
+ (191, &#39;America/Denver&#39;),
+ (382, &#39;America/Los_Angeles&#39;),
+ (400, &#39;America/Chicago&#39;),
+ (521, &#39;&#39;),
+ (1251, &#39;America/New_York&#39;)]
 ```
 
 如果你搜索Python的标准库，你能找到collections.Counter类，它可以使这项工作更简单：
@@ -150,16 +150,16 @@ In [23]: counts = Counter(time_zones)
 
 In [24]: counts.most_common(10)
 Out[24]: 
-[('America/New_York', 1251),
- ('', 521),
- ('America/Chicago', 400),
- ('America/Los_Angeles', 382),
- ('America/Denver', 191),
- ('Europe/London', 74),
- ('Asia/Tokyo', 37),
- ('Pacific/Honolulu', 36),
- ('Europe/Madrid', 35),
- ('America/Sao_Paulo', 33)]
+[(&#39;America/New_York&#39;, 1251),
+ (&#39;&#39;, 521),
+ (&#39;America/Chicago&#39;, 400),
+ (&#39;America/Los_Angeles&#39;, 382),
+ (&#39;America/Denver&#39;, 191),
+ (&#39;Europe/London&#39;, 74),
+ (&#39;Asia/Tokyo&#39;, 37),
+ (&#39;Pacific/Honolulu&#39;, 36),
+ (&#39;Europe/Madrid&#39;, 35),
+ (&#39;America/Sao_Paulo&#39;, 33)]
 ```
 
 ### 14.1.1 用pandas对时区进行计数
@@ -171,7 +171,7 @@ In [25]: import pandas as pd
 In [26]: frame = pd.DataFrame(records)
 
 In [27]: frame.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 3560 entries, 0 to 3559
 Data columns (total 18 columns):
 _heartbeat_    120 non-null float64
@@ -193,9 +193,9 @@ t              3440 non-null float64
 tz             3440 non-null object
 u              3440 non-null object
 dtypes: float64(4), object(14)
-memory usage: 500.7+ KB
+memory usage: 500.7&#43; KB
 
-In [28]: frame['tz'][:10]
+In [28]: frame[&#39;tz&#39;][:10]
 Out[28]: 
 0     America/New_York
 1       America/Denver
@@ -212,7 +212,7 @@ Name: tz, dtype: object
 
 这里frame的输出形式是摘要视图（summary view），主要用于较大的DataFrame对象。我们然后可以对Series使用value_counts方法：
 ```python
-In [29]: tz_counts = frame['tz'].value_counts()
+In [29]: tz_counts = frame[&#39;tz&#39;].value_counts()
 
 In [30]: tz_counts[:10]
 Out[30]: 
@@ -231,9 +231,9 @@ Name: tz, dtype: int64
 
 我们可以用matplotlib可视化这个数据。为此，我们先给记录中未知或缺失的时区填上一个替代值。fillna函数可以替换缺失值（NA），而未知值（空字符串）则可以通过布尔型数组索引加以替换：
 ```python
-In [31]: clean_tz = frame['tz'].fillna('Missing')
+In [31]: clean_tz = frame[&#39;tz&#39;].fillna(&#39;Missing&#39;)
 
-In [32]: clean_tz[clean_tz == ''] = 'Unknown'
+In [32]: clean_tz[clean_tz == &#39;&#39;] = &#39;Unknown&#39;
 
 In [33]: tz_counts = clean_tz.value_counts()
 
@@ -265,18 +265,18 @@ In [38]: sns.barplot(y=subset.index, x=subset.values)
 
 a字段含有执行URL短缩操作的浏览器、设备、应用程序的相关信息：
 ```python
-In [39]: frame['a'][1]
-Out[39]: 'GoogleMaps/RochesterNY'
+In [39]: frame[&#39;a&#39;][1]
+Out[39]: &#39;GoogleMaps/RochesterNY&#39;
 
-In [40]: frame['a'][50]
-Out[40]: 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2)
-Gecko/20100101 Firefox/10.0.2'
+In [40]: frame[&#39;a&#39;][50]
+Out[40]: &#39;Mozilla/5.0 (Windows NT 5.1; rv:10.0.2)
+Gecko/20100101 Firefox/10.0.2&#39;
 
-In [41]: frame['a'][51][:50]  # long line
-Out[41]: 'Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; LG-P9'
+In [41]: frame[&#39;a&#39;][51][:50]  # long line
+Out[41]: &#39;Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; LG-P9&#39;
 ```
 
-将这些"agent"字符串中的所有信息都解析出来是一件挺郁闷的工作。一种策略是将这种字符串的第一节（与浏览器大致对应）分离出来并得到另外一份用户行为摘要：
+将这些&#34;agent&#34;字符串中的所有信息都解析出来是一件挺郁闷的工作。一种策略是将这种字符串的第一节（与浏览器大致对应）分离出来并得到另外一份用户行为摘要：
 ```python
 In [42]: results = pd.Series([x.split()[0] for x in frame.a.dropna()])
 
@@ -302,17 +302,17 @@ BlackBerry8520/5.0.0.681       4
 dtype: int64
 ```
 
-现在，假设你想按Windows和非Windows用户对时区统计信息进行分解。为了简单起见，我们假定只要agent字符串中含有"Windows"就认为该用户为Windows用户。由于有的agent缺失，所以首先将它们从数据中移除：
+现在，假设你想按Windows和非Windows用户对时区统计信息进行分解。为了简单起见，我们假定只要agent字符串中含有&#34;Windows&#34;就认为该用户为Windows用户。由于有的agent缺失，所以首先将它们从数据中移除：
 ```python
 In [45]: cframe = frame[frame.a.notnull()]
 ```
 
 然后计算出各行是否含有Windows的值：
 ```python
-In [47]: cframe['os'] = np.where(cframe['a'].str.contains('Windows'),
-   ....:                         'Windows', 'Not Windows')
+In [47]: cframe[&#39;os&#39;] = np.where(cframe[&#39;a&#39;].str.contains(&#39;Windows&#39;),
+   ....:                         &#39;Windows&#39;, &#39;Not Windows&#39;)
 
-In [48]: cframe['os'][:5]
+In [48]: cframe[&#39;os&#39;][:5]
 Out[48]: 
 0        Windows
 1    Not Windows
@@ -324,7 +324,7 @@ Name: os, dtype: object
 
 接下来就可以根据时区和新得到的操作系统列表对数据进行分组了：
 ```python
-In [49]: by_tz_os = cframe.groupby(['tz', 'os'])
+In [49]: by_tz_os = cframe.groupby([&#39;tz&#39;, &#39;os&#39;])
 ```
 
 分组计数，类似于value_counts函数，可以用size来计算。并利用unstack对计数结果进行重塑：
@@ -411,7 +411,7 @@ dtype: float64
 # Rearrange the data for plotting
 In [58]: count_subset = count_subset.stack()
 
-In [59]: count_subset.name = 'total'
+In [59]: count_subset.name = &#39;total&#39;
 
 In [60]: count_subset = count_subset.reset_index()
 
@@ -429,7 +429,7 @@ Out[61]:
 8      Europe/London  Not Windows   43.0
 9      Europe/London      Windows   31.0
 
-In [62]: sns.barplot(x='total', y='tz', hue='os',  data=count_subset)
+In [62]: sns.barplot(x=&#39;total&#39;, y=&#39;tz&#39;, hue=&#39;os&#39;,  data=count_subset)
 ```
 
 ![图14-2 最常出现时区的Windows和非Windows用户](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180143099.png)
@@ -437,24 +437,24 @@ In [62]: sns.barplot(x='total', y='tz', hue='os',  data=count_subset)
 这张图不容易看出Windows用户在小分组中的相对比例，因此标准化分组百分比之和为1：
 ```python
 def norm_total(group):
-    group['normed_total'] = group.total / group.total.sum()
+    group[&#39;normed_total&#39;] = group.total / group.total.sum()
     return group
 
-results = count_subset.groupby('tz').apply(norm_total)
+results = count_subset.groupby(&#39;tz&#39;).apply(norm_total)
 ```
 
 再次画图，见图14-3：
 ```python
-In [65]: sns.barplot(x='normed_total', y='tz', hue='os',  data=results)
+In [65]: sns.barplot(x=&#39;normed_total&#39;, y=&#39;tz&#39;, hue=&#39;os&#39;,  data=results)
 ```
 
 ![图14-3 最常出现时区的Windows和非Windows用户的百分比](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180149689.png)
 
 我们还可以用groupby的transform方法，更高效的计算标准化的和：
 ```python
-In [66]: g = count_subset.groupby('tz')
+In [66]: g = count_subset.groupby(&#39;tz&#39;)
 
-In [67]: results2 = count_subset.total / g.total.transform('sum')
+In [67]: results2 = count_subset.total / g.total.transform(&#39;sum&#39;)
 ```
 
 ## 14.2 MovieLens 1M数据集
@@ -468,15 +468,15 @@ import pandas as pd
 # Make display smaller
 pd.options.display.max_rows = 10
 
-unames = ['user_id', 'gender', 'age', 'occupation', 'zip']
-users = pd.read_table('datasets/movielens/users.dat', sep='::',
+unames = [&#39;user_id&#39;, &#39;gender&#39;, &#39;age&#39;, &#39;occupation&#39;, &#39;zip&#39;]
+users = pd.read_table(&#39;datasets/movielens/users.dat&#39;, sep=&#39;::&#39;,
                       header=None, names=unames)
 
-rnames = ['user_id', 'movie_id', 'rating', 'timestamp']
-ratings = pd.read_table('datasets/movielens/ratings.dat', sep='::',
+rnames = [&#39;user_id&#39;, &#39;movie_id&#39;, &#39;rating&#39;, &#39;timestamp&#39;]
+ratings = pd.read_table(&#39;datasets/movielens/ratings.dat&#39;, sep=&#39;::&#39;,
                         header=None, names=rnames)
-mnames = ['movie_id', 'title', 'genres']
-movies = pd.read_table('datasets/movielens/movies.dat', sep='::',
+mnames = [&#39;movie_id&#39;, &#39;title&#39;, &#39;genres&#39;]
+movies = pd.read_table(&#39;datasets/movielens/movies.dat&#39;, sep=&#39;::&#39;,
                        header=None, names=mnames)
 ```
 
@@ -503,8 +503,8 @@ Out[70]:
 In [71]: movies[:5]
 Out[71]: 
    movie_id                               title                        genres
-0         1                    Toy Story (1995)   Animation|Children's|Comedy
-1         2                      Jumanji (1995)  Adventure|Children's|Fantasy
+0         1                    Toy Story (1995)   Animation|Children&#39;s|Comedy
+1         2                      Jumanji (1995)  Adventure|Children&#39;s|Fantasy
 2         3             Grumpier Old Men (1995)                Comedy|Romance
 3         4            Waiting to Exhale (1995)                  Comedy|Drama
 4         5  Father of the Bride Part II (1995)                        Comedy
@@ -545,11 +545,11 @@ Out[74]:
 1000207     5851      3607       5  957756608      F   18          20  55410   
 1000208     5938      2909       4  957273353      M   25           1  35401   
                                                title                genres  
-0             One Flew Over the Cuckoo's Nest (1975)                 Drama  
-1             One Flew Over the Cuckoo's Nest (1975)                 Drama  
-2             One Flew Over the Cuckoo's Nest (1975)                 Drama  
-3             One Flew Over the Cuckoo's Nest (1975)                 Drama  
-4             One Flew Over the Cuckoo's Nest (1975)                 Drama  
+0             One Flew Over the Cuckoo&#39;s Nest (1975)                 Drama  
+1             One Flew Over the Cuckoo&#39;s Nest (1975)                 Drama  
+2             One Flew Over the Cuckoo&#39;s Nest (1975)                 Drama  
+3             One Flew Over the Cuckoo&#39;s Nest (1975)                 Drama  
+4             One Flew Over the Cuckoo&#39;s Nest (1975)                 Drama  
 ...                                              ...                   ...  
 1000204                           Modulations (1998)           Documentary  
 1000205                        Broken Vessels (1998)                 Drama  
@@ -568,38 +568,38 @@ gender                                             F
 age                                                1
 occupation                                        10
 zip                                            48067
-title         One Flew Over the Cuckoo's Nest (1975)
+title         One Flew Over the Cuckoo&#39;s Nest (1975)
 genres                                         Drama
 Name: 0, dtype: object
 ```
 
 为了按性别计算每部电影的平均得分，我们可以使用pivot_table方法：
 ```python
-In [76]: mean_ratings = data.pivot_table('rating', index='title',
-   ....:                                 columns='gender', aggfunc='mean')
+In [76]: mean_ratings = data.pivot_table(&#39;rating&#39;, index=&#39;title&#39;,
+   ....:                                 columns=&#39;gender&#39;, aggfunc=&#39;mean&#39;)
 
 In [77]: mean_ratings[:5]
 Out[77]: 
 gender                                F         M
 title                                            
 $1,000,000 Duck (1971)         3.375000  2.761905
-'Night Mother (1986)           3.388889  3.352941
-'Til There Was You (1997)      2.675676  2.733333
-'burbs, The (1989)             2.793478  2.962085
+&#39;Night Mother (1986)           3.388889  3.352941
+&#39;Til There Was You (1997)      2.675676  2.733333
+&#39;burbs, The (1989)             2.793478  2.962085
 ...And Justice for All (1979)  3.828571  3.689024
 ```
 
 该操作产生了另一个DataFrame，其内容为电影平均得分，行标为电影名称（索引），列标为性别。现在，我打算过滤掉评分数据不够250条的电影（随便选的一个数字）。为了达到这个目的，我先对title进行分组，然后利用size()得到一个含有各电影分组大小的Series对象：
 ```python
-In [78]: ratings_by_title = data.groupby('title').size()
+In [78]: ratings_by_title = data.groupby(&#39;title&#39;).size()
 
 In [79]: ratings_by_title[:10]
 Out[79]: 
 title
 $1,000,000 Duck (1971)                37
-'Night Mother (1986)                  70
-'Til There Was You (1997)             52
-'burbs, The (1989)                   303
+&#39;Night Mother (1986)                  70
+&#39;Til There Was You (1997)             52
+&#39;burbs, The (1989)                   303
 ...And Justice for All (1979)        199
 1-900 (1994)                           2
 10 Things I Hate About You (1999)    700
@@ -608,22 +608,22 @@ $1,000,000 Duck (1971)                37
 12 Angry Men (1957)                  616
 dtype: int64
 
-In [80]: active_titles = ratings_by_title.index[ratings_by_title >= 250]
+In [80]: active_titles = ratings_by_title.index[ratings_by_title &gt;= 250]
 
 In [81]: active_titles
 Out[81]: 
-Index([''burbs, The (1989)', '10 Things I Hate About You (1999)',
-       '101 Dalmatians (1961)', '101 Dalmatians (1996)', '12 Angry Men (1957)',
-       '13th Warrior, The (1999)', '2 Days in the Valley (1996)',
-       '20,000 Leagues Under the Sea (1954)', '2001: A Space Odyssey (1968)',
-       '2010 (1984)',
+Index([&#39;&#39;burbs, The (1989)&#39;, &#39;10 Things I Hate About You (1999)&#39;,
+       &#39;101 Dalmatians (1961)&#39;, &#39;101 Dalmatians (1996)&#39;, &#39;12 Angry Men (1957)&#39;,
+       &#39;13th Warrior, The (1999)&#39;, &#39;2 Days in the Valley (1996)&#39;,
+       &#39;20,000 Leagues Under the Sea (1954)&#39;, &#39;2001: A Space Odyssey (1968)&#39;,
+       &#39;2010 (1984)&#39;,
        ...
-'X-Men (2000)', 'Year of Living Dangerously (1982)',
-       'Yellow Submarine (1968)', 'You've Got Mail (1998)',
-       'Young Frankenstein (1974)', 'Young Guns (1988)',
-       'Young Guns II (1990)', 'Young Sherlock Holmes (1985)',
-       'Zero Effect (1998)', 'eXistenZ (1999)'],
-      dtype='object', name='title', length=1216)
+&#39;X-Men (2000)&#39;, &#39;Year of Living Dangerously (1982)&#39;,
+       &#39;Yellow Submarine (1968)&#39;, &#39;You&#39;ve Got Mail (1998)&#39;,
+       &#39;Young Frankenstein (1974)&#39;, &#39;Young Guns (1988)&#39;,
+       &#39;Young Guns II (1990)&#39;, &#39;Young Sherlock Holmes (1985)&#39;,
+       &#39;Zero Effect (1998)&#39;, &#39;eXistenZ (1999)&#39;],
+      dtype=&#39;object&#39;, name=&#39;title&#39;, length=1216)
 ```
 
 标题索引中含有评分数据大于250条的电影名称，然后我们就可以据此从前面的mean_ratings中选取所需的行了：
@@ -635,7 +635,7 @@ In [83]: mean_ratings
 Out[83]: 
 gender                                    F         M
 title                                                
-'burbs, The (1989)                 2.793478  2.962085
+&#39;burbs, The (1989)                 2.793478  2.962085
 10 Things I Hate About You (1999)  3.646552  3.311966
 101 Dalmatians (1961)              3.791444  3.500000
 101 Dalmatians (1996)              3.240000  2.911215
@@ -651,7 +651,7 @@ eXistenZ (1999)                    3.098592  3.289086
 
 为了了解女性观众最喜欢的电影，我们可以对F列降序排列：
 ```python
-In [85]: top_female_ratings = mean_ratings.sort_values(by='F', ascending=False)
+In [85]: top_female_ratings = mean_ratings.sort_values(by=&#39;F&#39;, ascending=False)
 
 In [86]: top_female_ratings[:10]
 Out[86]: 
@@ -660,8 +660,8 @@ title
 Close Shave, A (1995)                               4.644444  4.473795
 Wrong Trousers, The (1993)                          4.588235  4.478261
 Sunset Blvd. (a.k.a. Sunset Boulevard) (1950)       4.572650  4.464589
-Wallace & Gromit: The Best of Aardman Animation...  4.563107  4.385075
-Schindler's List (1993)                             4.562602  4.491415
+Wallace &amp; Gromit: The Best of Aardman Animation...  4.563107  4.385075
+Schindler&#39;s List (1993)                             4.562602  4.491415
 Shawshank Redemption, The (1994)                    4.539075  4.560625
 Grand Day Out, A (1992)                             4.537879  4.293255
 To Kill a Mockingbird (1962)                        4.536667  4.372611
@@ -673,19 +673,19 @@ Usual Suspects, The (1995)                          4.513317  4.518248
 
 假设我们想要找出男性和女性观众分歧最大的电影。一个办法是给mean_ratings加上一个用于存放平均得分之差的列，并对其进行排序：
 ```python
-In [87]: mean_ratings['diff'] = mean_ratings['M'] - mean_ratings['F']
+In [87]: mean_ratings[&#39;diff&#39;] = mean_ratings[&#39;M&#39;] - mean_ratings[&#39;F&#39;]
 ```
 
-按"diff"排序即可得到分歧最大且女性观众更喜欢的电影：
+按&#34;diff&#34;排序即可得到分歧最大且女性观众更喜欢的电影：
 ```python
-In [88]: sorted_by_diff = mean_ratings.sort_values(by='diff')
+In [88]: sorted_by_diff = mean_ratings.sort_values(by=&#39;diff&#39;)
 
 In [89]: sorted_by_diff[:10]
 Out[89]: 
 gender                                        F         M      diff
 title                                                              
 Dirty Dancing (1987)                   3.790378  2.959596 -0.830782
-Jumpin' Jack Flash (1986)              3.254717  2.578358 -0.676359
+Jumpin&#39; Jack Flash (1986)              3.254717  2.578358 -0.676359
 Grease (1978)                          3.975265  3.367041 -0.608224
 Little Women (1994)                    3.870588  3.321739 -0.548849
 Steel Magnolias (1989)                 3.901734  3.365957 -0.535777
@@ -705,7 +705,7 @@ gender                                         F         M      diff
 title                                                               
 Good, The Bad and The Ugly, The (1966)  3.494949  4.221300  0.726351
 Kentucky Fried Movie, The (1977)        2.878788  3.555147  0.676359
-Dumb & Dumber (1994)                    2.697987  3.336595  0.638608
+Dumb &amp; Dumber (1994)                    2.697987  3.336595  0.638608
 Longest Day, The (1962)                 3.411765  4.031447  0.619682
 Cable Guy, The (1996)                   2.250000  2.863787  0.613787
 Evil Dead II (Dead By Dawn) (1987)      3.297297  3.909283  0.611985
@@ -718,7 +718,7 @@ For a Few Dollars More (1965)           3.409091  3.953795  0.544704
 如果只是想要找出分歧最大的电影（不考虑性别因素），则可以计算得分数据的方差或标准差：
 ```python
 # Standard deviation of rating grouped by title
-In [91]: rating_std_by_title = data.groupby('title')['rating'].std()
+In [91]: rating_std_by_title = data.groupby(&#39;title&#39;)[&#39;rating&#39;].std()
 
 # Filter down to active_titles
 In [92]: rating_std_by_title = rating_std_by_title.loc[active_titles]
@@ -727,7 +727,7 @@ In [92]: rating_std_by_title = rating_std_by_title.loc[active_titles]
 In [93]: rating_std_by_title.sort_values(ascending=False)[:10]
 Out[93]: 
 title
-Dumb & Dumber (1994)                     1.321333
+Dumb &amp; Dumber (1994)                     1.321333
 Blair Witch Project, The (1999)          1.316368
 Natural Born Killers (1994)              1.307198
 Tank Girl (1995)                         1.277695
@@ -777,7 +777,7 @@ Out[4]:
 
 如果你在阅读本书的时候这个页面已经不见了，也可以用搜索引擎找找。
 
-下载"National data"文件names.zip，解压后的目录中含有一组文件（如yob1880.txt）。我用UNIX的head命令查看了其中一个文件的前10行（在Windows上，你可以用more命令，或直接在文本编辑器中打开）：
+下载&#34;National data&#34;文件names.zip，解压后的目录中含有一组文件（如yob1880.txt）。我用UNIX的head命令查看了其中一个文件的前10行（在Windows上，你可以用more命令，或直接在文本编辑器中打开）：
 ```
 In [94]: !head -n 10 datasets/babynames/yob1880.txt
 Mary,F,7065
@@ -797,8 +797,8 @@ Sarah,F,1288
 In [95]: import pandas as pd
 
 In [96]: names1880 =
-pd.read_csv('datasets/babynames/yob1880.txt',
-   ....:                         names=['name', 'sex', 'births'])
+pd.read_csv(&#39;datasets/babynames/yob1880.txt&#39;,
+   ....:                         names=[&#39;name&#39;, &#39;sex&#39;, &#39;births&#39;])
 
 In [97]: names1880
 Out[97]: 
@@ -819,7 +819,7 @@ Out[97]:
 
 这些文件中仅含有当年出现超过5次的名字。为了简单起见，我们可以用births列的sex分组小计表示该年度的births总计：
 ```python
-In [98]: names1880.groupby('sex').births.sum()
+In [98]: names1880.groupby(&#39;sex&#39;).births.sum()
 Out[98]: 
 sex
 F     90993
@@ -832,13 +832,13 @@ Name: births, dtype: int64
 years = range(1880, 2011)
 
 pieces = []
-columns = ['name', 'sex', 'births']
+columns = [&#39;name&#39;, &#39;sex&#39;, &#39;births&#39;]
 
 for year in years:
-    path = 'datasets/babynames/yob%d.txt' % year
+    path = &#39;datasets/babynames/yob%d.txt&#39; % year
     frame = pd.read_csv(path, names=columns)
 
-    frame['year'] = year
+    frame[&#39;year&#39;] = year
     pieces.append(frame)
 
 # Concatenate everything into a single DataFrame
@@ -866,8 +866,8 @@ Out[100]:
 
 有了这些数据之后，我们就可以利用groupby或pivot_table在year和sex级别上对其进行聚合了，如图14-4所示：
 ```python
-In [101]: total_births = names.pivot_table('births', index='year',
-   .....:                                  columns='sex', aggfunc=sum)
+In [101]: total_births = names.pivot_table(&#39;births&#39;, index=&#39;year&#39;,
+   .....:                                  columns=&#39;sex&#39;, aggfunc=sum)
 
 In [102]: total_births.tail()
 Out[102]: 
@@ -879,7 +879,7 @@ year
 2009  1827643  1973359
 2010  1759010  1898382
 
-In [103]: total_births.plot(title='Total births by sex and year')
+In [103]: total_births.plot(title=&#39;Total births by sex and year&#39;)
 ```
 
 ![图14-4 按性别和年度统计的总出生数](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180243650.png)
@@ -887,9 +887,9 @@ In [103]: total_births.plot(title='Total births by sex and year')
 下面我们来插入一个prop列，用于存放指定名字的婴儿数相对于总出生数的比例。prop值为0.02表示每100名婴儿中有2名取了当前这个名字。因此，我们先按year和sex分组，然后再将新列加到各个分组上：
 ```python
 def add_prop(group):
-    group['prop'] = group.births / group.births.sum()
+    group[&#39;prop&#39;] = group.births / group.births.sum()
     return group
-names = names.groupby(['year', 'sex']).apply(add_prop)
+names = names.groupby([&#39;year&#39;, &#39;sex&#39;]).apply(add_prop)
 ```
 
 现在，完整的数据集就有了下面这些列：
@@ -913,7 +913,7 @@ Out[105]:
 
 在执行这样的分组处理时，一般都应该做一些有效性检查，比如验证所有分组的prop的总和是否为1：
 ```python
-In [106]: names.groupby(['year', 'sex']).prop.sum()
+In [106]: names.groupby([&#39;year&#39;, &#39;sex&#39;]).prop.sum()
 Out[106]: 
 year  sex
 1880  F      1.0
@@ -933,8 +933,8 @@ Name: prop, Length: 262, dtype: float64
 工作完成。为了便于实现更进一步的分析，我需要取出该数据的一个子集：每对sex/year组合的前1000个名字。这又是一个分组操作：
 ```python
 def get_top1000(group):
-    return group.sort_values(by='births', ascending=False)[:1000]
-grouped = names.groupby(['year', 'sex'])
+    return group.sort_values(by=&#39;births&#39;, ascending=False)[:1000]
+grouped = names.groupby([&#39;year&#39;, &#39;sex&#39;])
 top1000 = grouped.apply(get_top1000)
 # Drop the group index, not needed
 top1000.reset_index(inplace=True, drop=True)
@@ -943,8 +943,8 @@ top1000.reset_index(inplace=True, drop=True)
 如果你喜欢DIY的话，也可以这样：
 ```python
 pieces = []
-for year, group in names.groupby(['year', 'sex']):
-    pieces.append(group.sort_values(by='births', ascending=False)[:1000])
+for year, group in names.groupby([&#39;year&#39;, &#39;sex&#39;]):
+    pieces.append(group.sort_values(by=&#39;births&#39;, ascending=False)[:1000])
 top1000 = pd.concat(pieces, ignore_index=True)
 ```
 
@@ -973,31 +973,31 @@ Out[108]:
 
 有了完整的数据集和刚才生成的top1000数据集，我们就可以开始分析各种命名趋势了。首先将前1000个名字分为男女两个部分：
 ```python
-In [109]: boys = top1000[top1000.sex == 'M']
+In [109]: boys = top1000[top1000.sex == &#39;M&#39;]
 
-In [110]: girls = top1000[top1000.sex == 'F']
+In [110]: girls = top1000[top1000.sex == &#39;F&#39;]
 ```
 
 这是两个简单的时间序列，只需稍作整理即可绘制出相应的图表（比如每年叫做John和Mary的婴儿数）。我们先生成一张按year和name统计的总出生数透视表：
 ```python
-In [111]: total_births = top1000.pivot_table('births', index='year',
-   .....:                                    columns='name',
+In [111]: total_births = top1000.pivot_table(&#39;births&#39;, index=&#39;year&#39;,
+   .....:                                    columns=&#39;name&#39;,
    .....:                                    aggfunc=sum)
 ```
 
 现在，我们用DataFrame的plot方法绘制几个名字的曲线图（见图14-5）：
 ```python
 In [112]: total_births.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 131 entries, 1880 to 2010
 Columns: 6868 entries, Aaden to Zuri
 dtypes: float64(6868)
 memory usage: 6.9 MB
 
-In [113]: subset = total_births[['John', 'Harry', 'Mary', 'Marilyn']]
+In [113]: subset = total_births[[&#39;John&#39;, &#39;Harry&#39;, &#39;Mary&#39;, &#39;Marilyn&#39;]]
 
 In [114]: subset.plot(subplots=True, figsize=(12, 10), grid=False,
-   .....:             title="Number of births per year")
+   .....:             title=&#34;Number of births per year&#34;)
 ```
 
 ![图14-5 几个男孩和女孩名字随时间变化的使用数量](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180302658.png)
@@ -1008,10 +1008,10 @@ In [114]: subset.plot(subplots=True, figsize=(12, 10), grid=False,
 
 一种解释是父母愿意给小孩起常见的名字越来越少。这个假设可以从数据中得到验证。一个办法是计算最流行的1000个名字所占的比例，我按year和sex进行聚合并绘图（见图14-6）：
 ```python
-In [116]: table = top1000.pivot_table('prop', index='year',
-   .....:                             columns='sex', aggfunc=sum)
+In [116]: table = top1000.pivot_table(&#39;prop&#39;, index=&#39;year&#39;,
+   .....:                             columns=&#39;sex&#39;, aggfunc=sum)
 
-In [117]: table.plot(title='Sum of table1000.prop by year and sex',
+In [117]: table.plot(title=&#39;Sum of table1000.prop by year and sex&#39;,
    .....:            yticks=np.linspace(0, 1.2, 13), xticks=range(1880, 2020, 10)
 )
 ```
@@ -1041,7 +1041,7 @@ Out[119]:
 
 在对prop降序排列之后，我们想知道前面多少个名字的人数加起来才够50%。虽然编写一个for循环确实也能达到目的，但NumPy有一种更聪明的矢量方式。先计算prop的累计和cumsum，然后再通过searchsorted方法找出0.5应该被插入在哪个位置才能保证不破坏顺序：
 ```python
-In [120]: prop_cumsum = df.sort_values(by='prop', ascending=False).prop.cumsum()
+In [120]: prop_cumsum = df.sort_values(by=&#39;prop&#39;, ascending=False).prop.cumsum()
 
 In [121]: prop_cumsum[:10]
 Out[121]: 
@@ -1065,20 +1065,20 @@ Out[122]: 116
 ```python
 In [123]: df = boys[boys.year == 1900]
 
-In [124]: in1900 = df.sort_values(by='prop', ascending=False).prop.cumsum()
+In [124]: in1900 = df.sort_values(by=&#39;prop&#39;, ascending=False).prop.cumsum()
 
-In [125]: in1900.values.searchsorted(0.5) + 1
+In [125]: in1900.values.searchsorted(0.5) &#43; 1
 Out[125]: 25
 ```
 
 现在就可以对所有year/sex组合执行这个计算了。按这两个字段进行groupby处理，然后用一个函数计算各分组的这个值：
 ```python
 def get_quantile_count(group, q=0.5):
-    group = group.sort_values(by='prop', ascending=False)
-    return group.prop.cumsum().values.searchsorted(q) + 1
+    group = group.sort_values(by=&#39;prop&#39;, ascending=False)
+    return group.prop.cumsum().values.searchsorted(q) &#43; 1
 
-diversity = top1000.groupby(['year', 'sex']).apply(get_quantile_count)
-diversity = diversity.unstack('sex')
+diversity = top1000.groupby([&#39;year&#39;, &#39;sex&#39;]).apply(get_quantile_count)
+diversity = diversity.unstack(&#39;sex&#39;)
 ```
 
 现在，diversity这个DataFrame拥有两个时间序列（每个性别各一个，按年度索引）。通过IPython，你可以查看其内容，还可以像之前那样绘制图表（如图14-7所示）：
@@ -1093,7 +1093,7 @@ year
 1883  39  15
 1884  39  16
 
-In [129]: diversity.plot(title="Number of popular names in top 50%")
+In [129]: diversity.plot(title=&#34;Number of popular names in top 50%&#34;)
 ```
 
 ![图14-7 按年度统计的密度表](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180325177.png)
@@ -1107,15 +1107,15 @@ In [129]: diversity.plot(title="Number of popular names in top 50%")
 # extract last letter from name column
 get_last_letter = lambda x: x[-1]
 last_letters = names.name.map(get_last_letter)
-last_letters.name = 'last_letter'
+last_letters.name = &#39;last_letter&#39;
 
-table = names.pivot_table('births', index=last_letters,
-                          columns=['sex', 'year'], aggfunc=sum)
+table = names.pivot_table(&#39;births&#39;, index=last_letters,
+                          columns=[&#39;sex&#39;, &#39;year&#39;], aggfunc=sum)
 ```
 
 然后，我选出具有一定代表性的三年，并输出前面几行：
 ```python
-In [131]: subtable = table.reindex(columns=[1910, 1960, 2010], level='year')
+In [131]: subtable = table.reindex(columns=[1910, 1960, 2010], level=&#39;year&#39;)
 
 In [132]: subtable.head()
 Out[132]: 
@@ -1169,18 +1169,18 @@ z            0.002439  0.000659  0.000704  0.000170  0.000184  0.001831
 import matplotlib.pyplot as plt
 
 fig, axes = plt.subplots(2, 1, figsize=(10, 8))
-letter_prop['M'].plot(kind='bar', rot=0, ax=axes[0], title='Male')
-letter_prop['F'].plot(kind='bar', rot=0, ax=axes[1], title='Female',
+letter_prop[&#39;M&#39;].plot(kind=&#39;bar&#39;, rot=0, ax=axes[0], title=&#39;Male&#39;)
+letter_prop[&#39;F&#39;].plot(kind=&#39;bar&#39;, rot=0, ax=axes[1], title=&#39;Female&#39;,
                       legend=False)
 ```
 
 ![图14-8 男孩女孩名字中各个末字母的比例](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180345568.png)
 
-可以看出，从20世纪60年代开始，以字母"n"结尾的男孩名字出现了显著的增长。回到之前创建的那个完整表，按年度和性别对其进行规范化处理，并在男孩名字中选取几个字母，最后进行转置以便将各个列做成一个时间序列：
+可以看出，从20世纪60年代开始，以字母&#34;n&#34;结尾的男孩名字出现了显著的增长。回到之前创建的那个完整表，按年度和性别对其进行规范化处理，并在男孩名字中选取几个字母，最后进行转置以便将各个列做成一个时间序列：
 ```python
 In [138]: letter_prop = table / table.sum()
 
-In [139]: dny_ts = letter_prop.loc[['d', 'n', 'y'], 'M'].T
+In [139]: dny_ts = letter_prop.loc[[&#39;d&#39;, &#39;n&#39;, &#39;y&#39;], &#39;M&#39;].T
 
 In [140]: dny_ts.head()
 Out[140]: 
@@ -1202,12 +1202,12 @@ In [143]: dny_ts.plot()
 
 ### 14.3.4 变成女孩名字的男孩名字（以及相反的情况）
 
-另一个有趣的趋势是，早年流行于男孩的名字近年来“变性了”，例如Lesley或Leslie。回到top1000数据集，找出其中以"lesl"开头的一组名字：
+另一个有趣的趋势是，早年流行于男孩的名字近年来“变性了”，例如Lesley或Leslie。回到top1000数据集，找出其中以&#34;lesl&#34;开头的一组名字：
 
 ```python
 In [144]: all_names = pd.Series(top1000.name.unique())
 
-In [145]: lesley_like = all_names[all_names.str.lower().str.contains('lesl')]
+In [145]: lesley_like = all_names[all_names.str.lower().str.contains(&#39;lesl&#39;)]
 
 In [146]: lesley_like
 Out[146]: 
@@ -1223,7 +1223,7 @@ dtype: object
 ```python
 In [147]: filtered = top1000[top1000.name.isin(lesley_like)]
 
-In [148]: filtered.groupby('name').births.sum()
+In [148]: filtered.groupby(&#39;name&#39;).births.sum()
 Out[148]: 
 name
 Leslee      1082
@@ -1236,8 +1236,8 @@ Name: births, dtype: int64
 
 接下来，我们按性别和年度进行聚合，并按年度进行规范化处理：
 ```python
-In [149]: table = filtered.pivot_table('births', index='year',
-   .....:                              columns='sex', aggfunc='sum')
+In [149]: table = filtered.pivot_table(&#39;births&#39;, index=&#39;year&#39;,
+   .....:                              columns=&#39;sex&#39;, aggfunc=&#39;sum&#39;)
 
 In [150]: table = table.div(table.sum(1), axis=0)
 
@@ -1254,7 +1254,7 @@ year
 
 最后，就可以轻松绘制一张分性别的年度曲线图了（如图2-10所示）：
 ```python
-In [153]: table.plot(style={'M': 'k-', 'F': 'k--'})
+In [153]: table.plot(style={&#39;M&#39;: &#39;k-&#39;, &#39;F&#39;: &#39;k--&#39;})
 ```
 
 ![图14-10 各年度使用“Lesley型”名字的男女比例](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180408537.png)
@@ -1264,27 +1264,27 @@ In [153]: table.plot(style={'M': 'k-', 'F': 'k--'})
 美国农业部（USDA）制作了一份有关食物营养信息的数据库。Ashley Williams制作了该数据的JSON版（http://ashleyw.co.uk/project/food-nutrient-database）。其中的记录如下所示：
 ```python
 {
-  "id": 21441,
-  "description": "KENTUCKY FRIED CHICKEN, Fried Chicken, EXTRA CRISPY,
-Wing, meat and skin with breading",
-  "tags": ["KFC"],
-  "manufacturer": "Kentucky Fried Chicken",
-"group": "Fast Foods",
-  "portions": [
+  &#34;id&#34;: 21441,
+  &#34;description&#34;: &#34;KENTUCKY FRIED CHICKEN, Fried Chicken, EXTRA CRISPY,
+Wing, meat and skin with breading&#34;,
+  &#34;tags&#34;: [&#34;KFC&#34;],
+  &#34;manufacturer&#34;: &#34;Kentucky Fried Chicken&#34;,
+&#34;group&#34;: &#34;Fast Foods&#34;,
+  &#34;portions&#34;: [
     {
-      "amount": 1,
-      "unit": "wing, with skin",
-      "grams": 68.0
+      &#34;amount&#34;: 1,
+      &#34;unit&#34;: &#34;wing, with skin&#34;,
+      &#34;grams&#34;: 68.0
     },
 
     ...
   ],
-  "nutrients": [
+  &#34;nutrients&#34;: [
     {
-      "value": 20.8,
-      "units": "g",
-      "description": "Protein",
-      "group": "Composition"
+      &#34;value&#34;: 20.8,
+      &#34;units&#34;: &#34;g&#34;,
+      &#34;description&#34;: &#34;Protein&#34;,
+      &#34;group&#34;: &#34;Composition&#34;
     },
 
     ...
@@ -1298,7 +1298,7 @@ Wing, meat and skin with breading",
 ```python
 In [154]: import json
 
-In [155]: db = json.load(open('datasets/usda_food/database.json'))
+In [155]: db = json.load(open(&#39;datasets/usda_food/database.json&#39;))
 
 In [156]: len(db)
 Out[156]: 6636
@@ -1307,17 +1307,17 @@ Out[156]: 6636
 db中的每个条目都是一个含有某种食物全部数据的字典。nutrients字段是一个字典列表，其中的每个字典对应一种营养成分：
 ```python
 In [157]: db[0].keys()
-Out[157]: dict_keys(['id', 'description', 'tags', 'manufacturer', 'group', 'porti
-ons', 'nutrients'])
+Out[157]: dict_keys([&#39;id&#39;, &#39;description&#39;, &#39;tags&#39;, &#39;manufacturer&#39;, &#39;group&#39;, &#39;porti
+ons&#39;, &#39;nutrients&#39;])
 
-In [158]: db[0]['nutrients'][0]
+In [158]: db[0][&#39;nutrients&#39;][0]
 Out[158]: 
-{'description': 'Protein',
- 'group': 'Composition',
- 'units': 'g',
- 'value': 25.18}
+{&#39;description&#39;: &#39;Protein&#39;,
+ &#39;group&#39;: &#39;Composition&#39;,
+ &#39;units&#39;: &#39;g&#39;,
+ &#39;value&#39;: 25.18}
 
-In [159]: nutrients = pd.DataFrame(db[0]['nutrients'])
+In [159]: nutrients = pd.DataFrame(db[0][&#39;nutrients&#39;])
 
 In [160]: nutrients[:7]
 Out[160]: 
@@ -1334,7 +1334,7 @@ Out[160]:
 在将字典列表转换为DataFrame时，可以只抽取其中的一部分字段。这里，我们将取出食物的名称、分类、编号以及制造商等信息：
 
 ```python
-In [161]: info_keys = ['description', 'group', 'id', 'manufacturer']
+In [161]: info_keys = [&#39;description&#39;, &#39;group&#39;, &#39;id&#39;, &#39;manufacturer&#39;]
 
 In [162]: info = pd.DataFrame(db, columns=info_keys)
 
@@ -1354,7 +1354,7 @@ Out[163]:
 4               
 
 In [164]: info.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 6636 entries, 0 to 6635
 Data columns (total 4 columns):
 description     6636 non-null object
@@ -1362,7 +1362,7 @@ group           6636 non-null object
 id              6636 non-null int64
 manufacturer    5195 non-null object
 dtypes: int64(1), object(3)
-memory usage: 207.5+ KB
+memory usage: 207.5&#43; KB
 ```
 
 通过value_counts，你可以查看食物类别的分布情况：
@@ -1412,15 +1412,15 @@ Out[168]: 14179
 In [169]: nutrients = nutrients.drop_duplicates()
 ```
 
-由于两个DataFrame对象中都有"group"和"description"，所以为了明确到底谁是谁，我们需要对它们进行重命名：
+由于两个DataFrame对象中都有&#34;group&#34;和&#34;description&#34;，所以为了明确到底谁是谁，我们需要对它们进行重命名：
 ```python
-In [170]: col_mapping = {'description' : 'food',
-   .....:                'group'       : 'fgroup'}
+In [170]: col_mapping = {&#39;description&#39; : &#39;food&#39;,
+   .....:                &#39;group&#39;       : &#39;fgroup&#39;}
 
 In [171]: info = info.rename(columns=col_mapping, copy=False)
 
 In [172]: info.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 6636 entries, 0 to 6635
 Data columns (total 4 columns):
 food            6636 non-null object
@@ -1428,10 +1428,10 @@ fgroup          6636 non-null object
 id              6636 non-null int64
 manufacturer    5195 non-null object
 dtypes: int64(1), object(3)
-memory usage: 207.5+ KB
+memory usage: 207.5&#43; KB
 
-In [173]: col_mapping = {'description' : 'nutrient',
-   .....:                'group' : 'nutgroup'}
+In [173]: col_mapping = {&#39;description&#39; : &#39;nutrient&#39;,
+   .....:                &#39;group&#39; : &#39;nutgroup&#39;}
 In [174]: nutrients = nutrients.rename(columns=col_mapping, copy=False)
 
 In [175]: nutrients
@@ -1453,10 +1453,10 @@ Out[175]:
 
 做完这些，就可以将info跟nutrients合并起来：
 ```python
-In [176]: ndata = pd.merge(nutrients, info, on='id', how='outer')
+In [176]: ndata = pd.merge(nutrients, info, on=&#39;id&#39;, how=&#39;outer&#39;)
 
 In [177]: ndata.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 375176 entries, 0 to 375175
 Data columns (total 8 columns):
 nutrient        375176 non-null object
@@ -1468,7 +1468,7 @@ food            375176 non-null object
 fgroup          375176 non-null object
 manufacturer    293054 non-null object
 dtypes: float64(1), int64(1), object(6)
-memory usage: 25.8+ MB
+memory usage: 25.8&#43; MB
 
 In [178]: ndata.iloc[30000]
 Out[178]: 
@@ -1485,29 +1485,29 @@ Name: 30000, dtype: object
 
 我们现在可以根据食物分类和营养类型画出一张中位值图（如图14-11所示）：
 ```python
-In [180]: result = ndata.groupby(['nutrient', 'fgroup'])['value'].quantile(0.5)
+In [180]: result = ndata.groupby([&#39;nutrient&#39;, &#39;fgroup&#39;])[&#39;value&#39;].quantile(0.5)
 
-In [181]: result['Zinc, Zn'].sort_values().plot(kind='barh')
+In [181]: result[&#39;Zinc, Zn&#39;].sort_values().plot(kind=&#39;barh&#39;)
 ```
 
 ![图片14-11 根据营养分类得出的锌中位值](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180432697.png)
 
 只要稍微动一动脑子，就可以发现各营养成分最为丰富的食物是什么了：
 ```python
-by_nutrient = ndata.groupby(['nutgroup', 'nutrient'])
+by_nutrient = ndata.groupby([&#39;nutgroup&#39;, &#39;nutrient&#39;])
 
 get_maximum = lambda x: x.loc[x.value.idxmax()]
 get_minimum = lambda x: x.loc[x.value.idxmin()]
 
-max_foods = by_nutrient.apply(get_maximum)[['value', 'food']]
+max_foods = by_nutrient.apply(get_maximum)[[&#39;value&#39;, &#39;food&#39;]]
 
 # make the food a little smaller
 max_foods.food = max_foods.food.str[:50]
 ```
 
-由于得到的DataFrame很大，所以不方便在书里面全部打印出来。这里只给出"Amino Acids"营养分组：
+由于得到的DataFrame很大，所以不方便在书里面全部打印出来。这里只给出&#34;Amino Acids&#34;营养分组：
 ```python
-In [183]: max_foods.loc['Amino Acids']['food']
+In [183]: max_foods.loc[&#39;Amino Acids&#39;][&#39;food&#39;]
 Out[183]: 
 nutrient
 Alanine                          Gelatins, dry powder, unsweetened
@@ -1529,10 +1529,10 @@ Name: food, Length: 19, dtype: object
 美国联邦选举委员会发布了有关政治竞选赞助方面的数据。其中包括赞助者的姓名、职业、雇主、地址以及出资额等信息。我们对2012年美国总统大选的数据集比较感兴趣（http://www.fec.gov/disclosurep/PDownload.do）。我在2012年6月下载的数据集是一个150MB的CSV文件（P00000001-ALL.csv），我们先用pandas.read_csv将其加载进来：
 
 ```python
-In [184]: fec = pd.read_csv('datasets/fec/P00000001-ALL.csv')
+In [184]: fec = pd.read_csv(&#39;datasets/fec/P00000001-ALL.csv&#39;)
 
 In [185]: fec.info()
-<class 'pandas.core.frame.DataFrame'>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 1001731 entries, 0 to 1001730
 Data columns (total 16 columns):
 cmte_id              1001731 non-null object
@@ -1552,7 +1552,7 @@ memo_text            97770 non-null object
 form_tp              1001731 non-null object
 file_num             1001731 non-null int64
 dtypes: float64(1), int64(1), object(14)
-memory usage: 122.3+ MB
+memory usage: 122.3&#43; MB
 ```
 
 该DataFrame中的记录如下所示：
@@ -1581,31 +1581,31 @@ In [187]: unique_cands = fec.cand_nm.unique()
 
 In [188]: unique_cands
 Out[188]: 
-array(['Bachmann, Michelle', 'Romney, Mitt', 'Obama, Barack',
-       "Roemer, Charles E. 'Buddy' III", 'Pawlenty, Timothy',
-       'Johnson, Gary Earl', 'Paul, Ron', 'Santorum, Rick', 'Cain, Herman',
-       'Gingrich, Newt', 'McCotter, Thaddeus G', 'Huntsman, Jon',
-       'Perry, Rick'], dtype=object)
+array([&#39;Bachmann, Michelle&#39;, &#39;Romney, Mitt&#39;, &#39;Obama, Barack&#39;,
+       &#34;Roemer, Charles E. &#39;Buddy&#39; III&#34;, &#39;Pawlenty, Timothy&#39;,
+       &#39;Johnson, Gary Earl&#39;, &#39;Paul, Ron&#39;, &#39;Santorum, Rick&#39;, &#39;Cain, Herman&#39;,
+       &#39;Gingrich, Newt&#39;, &#39;McCotter, Thaddeus G&#39;, &#39;Huntsman, Jon&#39;,
+       &#39;Perry, Rick&#39;], dtype=object)
 
 In [189]: unique_cands[2]
-Out[189]: 'Obama, Barack'
+Out[189]: &#39;Obama, Barack&#39;
 ```
 
 指明党派信息的方法之一是使用字典：
 ```python
-parties = {'Bachmann, Michelle': 'Republican',
-           'Cain, Herman': 'Republican',
-           'Gingrich, Newt': 'Republican',
-           'Huntsman, Jon': 'Republican',
-           'Johnson, Gary Earl': 'Republican',
-           'McCotter, Thaddeus G': 'Republican',
-           'Obama, Barack': 'Democrat',
-           'Paul, Ron': 'Republican',
-           'Pawlenty, Timothy': 'Republican',
-           'Perry, Rick': 'Republican',
-           "Roemer, Charles E. 'Buddy' III": 'Republican',
-           'Romney, Mitt': 'Republican',
-           'Santorum, Rick': 'Republican'}
+parties = {&#39;Bachmann, Michelle&#39;: &#39;Republican&#39;,
+           &#39;Cain, Herman&#39;: &#39;Republican&#39;,
+           &#39;Gingrich, Newt&#39;: &#39;Republican&#39;,
+           &#39;Huntsman, Jon&#39;: &#39;Republican&#39;,
+           &#39;Johnson, Gary Earl&#39;: &#39;Republican&#39;,
+           &#39;McCotter, Thaddeus G&#39;: &#39;Republican&#39;,
+           &#39;Obama, Barack&#39;: &#39;Democrat&#39;,
+           &#39;Paul, Ron&#39;: &#39;Republican&#39;,
+           &#39;Pawlenty, Timothy&#39;: &#39;Republican&#39;,
+           &#39;Perry, Rick&#39;: &#39;Republican&#39;,
+           &#34;Roemer, Charles E. &#39;Buddy&#39; III&#34;: &#39;Republican&#39;,
+           &#39;Romney, Mitt&#39;: &#39;Republican&#39;,
+           &#39;Santorum, Rick&#39;: &#39;Republican&#39;}
 ```
 
 现在，通过这个映射以及Series对象的map方法，你可以根据候选人姓名得到一组党派信息：
@@ -1629,9 +1629,9 @@ Out[192]:
 Name: cand_nm, dtype: object
 
 # Add it as a column
-In [193]: fec['party'] = fec.cand_nm.map(parties)
+In [193]: fec[&#39;party&#39;] = fec.cand_nm.map(parties)
 
-In [194]: fec['party'].value_counts()
+In [194]: fec[&#39;party&#39;].value_counts()
 Out[194]: 
 Democrat      593746
 Republican    407985
@@ -1640,7 +1640,7 @@ Name: party, dtype: int64
 
 这里有两个需要注意的地方。第一，该数据既包括赞助也包括退款（负的出资额）：
 ```python
-In [195]: (fec.contb_receipt_amt > 0).value_counts()
+In [195]: (fec.contb_receipt_amt &gt; 0).value_counts()
 Out[195]: 
 True     991475
 False     10256
@@ -1649,12 +1649,12 @@ Name: contb_receipt_amt, dtype: int64
 
 为了简化分析过程，我限定该数据集只能有正的出资额：
 ```python
-In [196]: fec = fec[fec.contb_receipt_amt > 0]
+In [196]: fec = fec[fec.contb_receipt_amt &gt; 0]
 ```
 
 由于Barack Obama和Mitt Romney是最主要的两名候选人，所以我还专门准备了一个子集，只包含针对他们两人的竞选活动的赞助信息：
 ```python
-In [197]: fec_mrbo = fec[fec.cand_nm.isin(['Obama, Barack','Romney, Mitt'])]
+In [197]: fec_mrbo = fec[fec.cand_nm.isin([&#39;Obama, Barack&#39;,&#39;Romney, Mitt&#39;])]
 ```
 
 ### 14.5.1 根据职业和雇主统计赞助信息
@@ -1679,10 +1679,10 @@ Name: contbr_occupation, dtype: int64
 不难看出，许多职业都涉及相同的基本工作类型，或者同一样东西有多种变体。下面的代码片段可以清理一些这样的数据（将一个职业信息映射到另一个）。注意，这里巧妙地利用了dict.get，它允许没有映射关系的职业也能“通过”：
 ```python
 occ_mapping = {
-   'INFORMATION REQUESTED PER BEST EFFORTS' : 'NOT PROVIDED',
-   'INFORMATION REQUESTED' : 'NOT PROVIDED',
-   'INFORMATION REQUESTED (BEST EFFORTS)' : 'NOT PROVIDED',
-   'C.E.O.': 'CEO'
+   &#39;INFORMATION REQUESTED PER BEST EFFORTS&#39; : &#39;NOT PROVIDED&#39;,
+   &#39;INFORMATION REQUESTED&#39; : &#39;NOT PROVIDED&#39;,
+   &#39;INFORMATION REQUESTED (BEST EFFORTS)&#39; : &#39;NOT PROVIDED&#39;,
+   &#39;C.E.O.&#39;: &#39;CEO&#39;
 }
 
 # If no mapping provided, return x
@@ -1693,10 +1693,10 @@ fec.contbr_occupation = fec.contbr_occupation.map(f)
 我对雇主信息也进行了同样的处理：
 ```python
 emp_mapping = {
-   'INFORMATION REQUESTED PER BEST EFFORTS' : 'NOT PROVIDED',
-   'INFORMATION REQUESTED' : 'NOT PROVIDED',
-   'SELF' : 'SELF-EMPLOYED',
-   'SELF EMPLOYED' : 'SELF-EMPLOYED',
+   &#39;INFORMATION REQUESTED PER BEST EFFORTS&#39; : &#39;NOT PROVIDED&#39;,
+   &#39;INFORMATION REQUESTED&#39; : &#39;NOT PROVIDED&#39;,
+   &#39;SELF&#39; : &#39;SELF-EMPLOYED&#39;,
+   &#39;SELF EMPLOYED&#39; : &#39;SELF-EMPLOYED&#39;,
 }
 
 # If no mapping provided, return x
@@ -1706,33 +1706,33 @@ fec.contbr_employer = fec.contbr_employer.map(f)
 
 现在，你可以通过pivot_table根据党派和职业对数据进行聚合，然后过滤掉总出资额不足200万美元的数据：
 ```python
-In [201]: by_occupation = fec.pivot_table('contb_receipt_amt',
-   .....:                                 index='contbr_occupation',
-   .....:                                 columns='party', aggfunc='sum')
+In [201]: by_occupation = fec.pivot_table(&#39;contb_receipt_amt&#39;,
+   .....:                                 index=&#39;contbr_occupation&#39;,
+   .....:                                 columns=&#39;party&#39;, aggfunc=&#39;sum&#39;)
 
-In [202]: over_2mm = by_occupation[by_occupation.sum(1) > 2000000]
+In [202]: over_2mm = by_occupation[by_occupation.sum(1) &gt; 2000000]
 
 In [203]: over_2mm
 Out[203]: 
 party                 Democrat    Republican
 contbr_occupation                           
-ATTORNEY           11141982.97  7.477194e+06
-CEO                 2074974.79  4.211041e+06
-CONSULTANT          2459912.71  2.544725e+06
-ENGINEER             951525.55  1.818374e+06
-EXECUTIVE           1355161.05  4.138850e+06
+ATTORNEY           11141982.97  7.477194e&#43;06
+CEO                 2074974.79  4.211041e&#43;06
+CONSULTANT          2459912.71  2.544725e&#43;06
+ENGINEER             951525.55  1.818374e&#43;06
+EXECUTIVE           1355161.05  4.138850e&#43;06
 ...                        ...           ...
-PRESIDENT           1878509.95  4.720924e+06
-PROFESSOR           2165071.08  2.967027e+05
-REAL ESTATE          528902.09  1.625902e+06
-RETIRED            25305116.38  2.356124e+07
-SELF-EMPLOYED        672393.40  1.640253e+06
+PRESIDENT           1878509.95  4.720924e&#43;06
+PROFESSOR           2165071.08  2.967027e&#43;05
+REAL ESTATE          528902.09  1.625902e&#43;06
+RETIRED            25305116.38  2.356124e&#43;07
+SELF-EMPLOYED        672393.40  1.640253e&#43;06
 [17 rows x 2 columns]
 ```
 
-把这些数据做成柱状图看起来会更加清楚（'barh'表示水平柱状图，如图14-12所示）：
+把这些数据做成柱状图看起来会更加清楚（&#39;barh&#39;表示水平柱状图，如图14-12所示）：
 ```python
-In [205]: over_2mm.plot(kind='barh')
+In [205]: over_2mm.plot(kind=&#39;barh&#39;)
 ```
 
 ![图14-12 对各党派总出资额最高的职业](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180453918.png)
@@ -1740,15 +1740,15 @@ In [205]: over_2mm.plot(kind='barh')
 你可能还想了解一下对Obama和Romney总出资额最高的职业和企业。为此，我们先对候选人进行分组，然后使用本章前面介绍的类似top的方法：
 ```python
 def get_top_amounts(group, key, n=5):
-    totals = group.groupby(key)['contb_receipt_amt'].sum()
+    totals = group.groupby(key)[&#39;contb_receipt_amt&#39;].sum()
     return totals.nlargest(n)
 ```
 
 然后根据职业和雇主进行聚合：
 ```python
-In [207]: grouped = fec_mrbo.groupby('cand_nm')
+In [207]: grouped = fec_mrbo.groupby(&#39;cand_nm&#39;)
 
-In [208]: grouped.apply(get_top_amounts, 'contbr_occupation', n=7)
+In [208]: grouped.apply(get_top_amounts, &#39;contbr_occupation&#39;, n=7)
 Out[208]: 
 cand_nm        contbr_occupation    
 Obama, Barack  RETIRED                  25305116.38
@@ -1764,7 +1764,7 @@ Romney, Mitt   HOMEMAKER                 8147446.22
                C.E.O.                    1968386.11
 Name: contb_receipt_amt, Length: 14, dtype: float64
 
-In [209]: grouped.apply(get_top_amounts, 'contbr_employer', n=10)
+In [209]: grouped.apply(get_top_amounts, &#39;contbr_employer&#39;, n=10)
 Out[209]: 
 cand_nm        contbr_employer      
 Obama, Barack  RETIRED                  22694358.85
@@ -1775,7 +1775,7 @@ Obama, Barack  RETIRED                  22694358.85
                                            ...     
 Romney, Mitt   CREDIT SUISSE              281150.00
                MORGAN STANLEY             267266.00
-               GOLDMAN SACH & CO.         238250.00
+               GOLDMAN SACH &amp; CO.         238250.00
                BARCLAYS CAPITAL           162750.00
                H.I.G. CAPITAL             139500.00
 Name: contb_receipt_amt, Length: 20, dtype: float64
@@ -1804,15 +1804,15 @@ Out[212]:
 701384      (10, 100]
 701385    (100, 1000]
 Name: contb_receipt_amt, Length: 694282, dtype: category
-Categories (8, interval[int64]): [(0, 1] < (1, 10] < (10, 100] < (100, 1000] < (1
-000, 10000] <
-                                  (10000, 100000] < (100000, 1000000] < (1000000,
+Categories (8, interval[int64]): [(0, 1] &lt; (1, 10] &lt; (10, 100] &lt; (100, 1000] &lt; (1
+000, 10000] &lt;
+                                  (10000, 100000] &lt; (100000, 1000000] &lt; (1000000,
  10000000]]
 ```
 
 现在可以根据候选人姓名以及面元标签对奥巴马和罗姆尼数据进行分组，以得到一个柱状图：
 ```python
-In [213]: grouped = fec_mrbo.groupby(['cand_nm', labels])
+In [213]: grouped = fec_mrbo.groupby([&#39;cand_nm&#39;, labels])
 
 In [214]: grouped.size().unstack(0)
 Out[214]: 
@@ -1848,7 +1848,7 @@ contb_receipt_amt
 (100000, 1000000]         1.000000           NaN
 (1000000, 10000000]       1.000000           NaN
 
-In [219]: normed_sums[:-2].plot(kind='barh')
+In [219]: normed_sums[:-2].plot(kind=&#39;barh&#39;)
 ```
 
 ![图14-13 两位候选人收到的各种捐赠额度的总额比例](https://gitee.com/wugenqiang/images/raw/master/02/1240-20201031180513851.png)
@@ -1861,11 +1861,11 @@ In [219]: normed_sums[:-2].plot(kind='barh')
 
 根据候选人和州对数据进行聚合是常规操作：
 ```python
-In [220]: grouped = fec_mrbo.groupby(['cand_nm', 'contbr_st'])
+In [220]: grouped = fec_mrbo.groupby([&#39;cand_nm&#39;, &#39;contbr_st&#39;])
 
 In [221]: totals = grouped.contb_receipt_amt.sum().unstack(0).fillna(0)
 
-In [222]: totals = totals[totals.sum(1) > 100000]
+In [222]: totals = totals[totals.sum(1) &gt; 100000]
 
 In [223]: totals[:10]
 Out[223]: 
@@ -1912,6 +1912,6 @@ FL              0.467417      0.532583
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/  
 

@@ -38,7 +38,7 @@
 
 这就安装好了！安装好了！
 
-我相信安装过mysql+navicat或者 sqlserver的人应该能体会到，这个安装有多简单！
+我相信安装过mysql&#43;navicat或者 sqlserver的人应该能体会到，这个安装有多简单！
 
 
 ### 导入数据 {#导入数据}
@@ -48,7 +48,7 @@
 比如我这里有个销售订单的 csv 文件，一共2.6G。我只需要写语句：
 
 ```sql
-create table 销售订单  as select * from read_csv_auto('/home/nigo/销售订单.csv')
+create table 销售订单  as select * from read_csv_auto(&#39;/home/nigo/销售订单.csv&#39;)
 ```
 
 一共花费 46 秒。
@@ -103,11 +103,11 @@ create table 销售订单  as select * from read_csv_auto('/home/nigo/销售订�
 
 感觉我们部门所有人都可以抛弃 mysql 了。
 
-官方网站：<https://duckdb.org/>
+官方网站：&lt;https://duckdb.org/&gt;
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/  
 

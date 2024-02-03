@@ -2,7 +2,7 @@
 
 ### docker save
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 #### 导出
@@ -13,12 +13,12 @@ $ docker images
 ## 持久化镜像名为 image_name 的镜像，
 $ docker save image_name -o ~/save.tar
 ```
-> **注意：** 如果镜像是在远程仓库，执行保存镜像的时候可能会报 `Cowardly refusing to save to a terminal. Use the -o flag or redirect.` 的错，可以通过 `docker save image_name > image_name.tar` 将镜像从远程仓库持久化到本地。
+&gt; **注意：** 如果镜像是在远程仓库，执行保存镜像的时候可能会报 `Cowardly refusing to save to a terminal. Use the -o flag or redirect.` 的错，可以通过 `docker save image_name &gt; image_name.tar` 将镜像从远程仓库持久化到本地。
 
 #### 导入
 ```bash
 ## 导入 save.tar
-$ docker load < ~/save.tar
+$ docker load &lt; ~/save.tar
 ## 查看镜像
 $ docker images images
 ```
@@ -30,7 +30,7 @@ $ docker images images
 ## 通过此命令查出要持久化的容器ID
 $ docker ps -a
 ## 持久化容器id为 container_id 的容器
-$ docker export container_id > ~/export.tar
+$ docker export container_id &gt; ~/export.tar
 ```
 #### 导入
 ```bash
@@ -46,6 +46,6 @@ $ sudo docker images
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-save-%E4%B8%8E-docker-export/  
 

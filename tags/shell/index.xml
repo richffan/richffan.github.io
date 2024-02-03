@@ -2,16 +2,15 @@
   <channel>
     <title>shell - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/shell/</link>
-    <description>shell - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sat, 08 Sep 2018 11:48:24 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/shell/" rel="self" type="application/rss+xml" /><item>
+    <description>shell - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 08 Sep 2018 11:48:24 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/shell/" rel="self" type="application/rss+xml" /><item>
   <title>shell速查表</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
   <pubDate>Sat, 08 Sep 2018 11:48:24 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
-  <description><![CDATA[<h3 id="1-变量">1. 变量</h3>
-<div class="highlight" id="id-1"><div class="chroma">
+  <description><![CDATA[<h3 id="1-变量" class="heading-element">
+  <a href="#1-%e5%8f%98%e9%87%8f" class="heading-mark"></a>1. 变量</h3><div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2

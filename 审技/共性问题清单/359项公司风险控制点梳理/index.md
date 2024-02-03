@@ -441,6 +441,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/359%E9%A1%B9%E5%85%AC%E5%8F%B8%E9%A3%8E%E9%99%A9%E6%8E%A7%E5%88%B6%E7%82%B9%E6%A2%B3%E7%90%86/  
 

@@ -1,7 +1,7 @@
 # 每天一个linux命令（15）: tail
 
 　　tail 命令从指定点开始将文件写到标准输出.使用tail命令的-f选项可以方便的查阅正在改变的日志文件,tail -f filename会把filename里最尾部的内容显示在屏幕上,并且不但刷新,使你看到最新的文件内容.
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 tail[必要参数][选择参数][文件]
@@ -14,8 +14,8 @@ tail[必要参数][选择参数][文件]
 | -f |循环读取 |
 | -q | 不显示处理信息 |
 | -v | 显示详细的处理信息 |
-| -c<数目> | 显示的字节数 |
-| -n<行数> | 显示行数 |
+| -c&lt;数目&gt; | 显示的字节数 |
+| -n&lt;行数&gt; | 显示行数 |
 | --pid=PID | 与-f合用,表示在进程ID,PID死掉之后结束 |
 | -q, --quiet, --silent | 从不输出给出文件名的首部 |
 | -s, --sleep-interval=S | 与-f合用,表示在每次反复的间隔休眠S秒  |
@@ -31,12 +31,12 @@ $ tail -f test.log
 ```
 **`例三`：从第5行开始显示文件**
 ```bash
-$ tail -n +5 log2014.log
+$ tail -n &#43;5 log2014.log
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-15-tail/  
 

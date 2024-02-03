@@ -25,7 +25,7 @@ Linux 之父 Linus 在 1991 年创建开源的 Linux 操作系统之后，多年
 
 ![image-20200413212620633](../images/image-20200413212620633.png)
 
-> 注：本人 CentOS 已经更新至 CentOS 8，目前在适应阶段，趁巩固 Git 操作来熟悉一下 Centos 8，加油！
+&gt; 注：本人 CentOS 已经更新至 CentOS 8，目前在适应阶段，趁巩固 Git 操作来熟悉一下 Centos 8，加油！
 
 ### 1.3 Git 仓库的三大区域
 
@@ -79,8 +79,8 @@ Git 使用 **git init** 命令来初始化一个 Git 仓库，Git 的很多命�
 #### 2.3.2 Git 提交到 GitHub
 
 * （1）git add 文件名称/.
-  * "." 代表全部
-* （2）git commit -m  '本次修改注释'
+  * &#34;.&#34; 代表全部
+* （2）git commit -m  &#39;本次修改注释&#39;
   * 提交到版本库
 * （3）git push -u origin master 
   * 推送到远程仓库
@@ -90,7 +90,7 @@ Git 使用 **git init** 命令来初始化一个 Git 仓库，Git 的很多命�
 克隆仓库的命令格式为：
 
 ```
-git clone <repo>
+git clone &lt;repo&gt;
 ```
 
 举例：
@@ -124,7 +124,7 @@ git clone <repo>
 
 * 以后再 add 到暂存区的时候就会忽略配置的文件或文件夹了
 
-> 忽略具体的文件或文件夹：
+&gt; 忽略具体的文件或文件夹：
 
 ```
 /target/  // 忽略这个target 目录
@@ -159,6 +159,6 @@ git pull --rebase origin master
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/git/  
 

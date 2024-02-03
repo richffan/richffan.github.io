@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>第二章 Python 语法基础，IPython 和 Jupyter Notebooks - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>第二章 Python 语法基础，IPython 和 Jupyter Notebooks - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，" /><meta name="keywords" content='python' /><meta itemprop="name" content="第二章 Python 语法基础，IPython 和 Jupyter Notebooks">
 <meta itemprop="description" content="我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，"><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
-<meta itemprop="wordCount" content="13305"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="13326"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="python," /><meta property="og:title" content="第二章 Python 语法基础，IPython 和 Jupyter Notebooks" />
 <meta property="og:description" content="我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="第二章 Python 语法基础，IPython 和 Jupyter Notebooks"/>
 <meta name="twitter:description" content="我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks\/"
-    },"genre": "posts","keywords": "python","wordcount":  13305 ,
+    },"genre": "posts","keywords": "python","wordcount":  13326 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/python\/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90\/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks\/","datePublished": "2023-09-25T00:00:00+00:00","dateModified": "2023-09-25T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Python数据分析</a></li><li class="breadcrumb-item active" aria-current="page">第二章 Python 语法基础，IPython 和 Jupyter Notebooks</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>第二章 Python 语法基础，IPython 和 Jupyter Notebooks</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="更新于 2023-09-25 00:00:00"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="13305 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 13400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 27 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" class="leancloud_visitors comment-visitors" data-flag-title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2023-09-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-09-25">2023-09-25</time></span>&nbsp;<span title="13326 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 13400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 27 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" class="leancloud_visitors comment-visitors" data-flag-title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -254,8 +249,8 @@
 <li>高效的Python，Brett Slatkin著 (Pearson)</li>
 </ul>
 </blockquote>
-<h2 id="21-python解释器">2.1 Python解释器</h2>
-<p>Python是解释性语言。Python解释器同一时间只能运行一个程序的一条语句。标准的交互Python解释器可以在命令行中通过键入<code>python</code>命令打开：</p>
+<h2 id="21-python解释器" class="heading-element">
+  <a href="#21-python%e8%a7%a3%e9%87%8a%e5%99%a8" class="heading-mark"></a>2.1 Python解释器</h2><p>Python是解释性语言。Python解释器同一时间只能运行一个程序的一条语句。标准的交互Python解释器可以在命令行中通过键入<code>python</code>命令打开：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -319,10 +314,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>IPython默认采用序号的格式<code>In [2]:</code>，与标准的<code>&gt;&gt;&gt;</code>提示符不同。</p>
-<h2 id="22-ipython基础">2.2 IPython基础</h2>
-<p>在本节中，我们会教你打开运行<code>IPython shell</code>和<code>jupyter notebook</code>，并介绍一些基本概念。</p>
-<h3 id="221-运行ipython-shell">2.2.1 运行IPython Shell</h3>
-<p>你可以用<code>ipython</code>在命令行打开<code>IPython Shell</code>，就像打开普通的Python解释器：</p>
+<h2 id="22-ipython基础" class="heading-element">
+  <a href="#22-ipython%e5%9f%ba%e7%a1%80" class="heading-mark"></a>2.2 IPython基础</h2><p>在本节中，我们会教你打开运行<code>IPython shell</code>和<code>jupyter notebook</code>，并介绍一些基本概念。</p>
+<h3 id="221-运行ipython-shell" class="heading-element">
+  <a href="#221-%e8%bf%90%e8%a1%8cipython-shell" class="heading-mark"></a>2.2.1 运行IPython Shell</h3><p>你可以用<code>ipython</code>在命令行打开<code>IPython Shell</code>，就像打开普通的Python解释器：</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -396,8 +391,8 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span><span class="p">:</span> <span class="mf">0.3308507317325902</span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>IPython还支持执行任意代码块（通过一个<code>华丽的复制-粘贴方法</code>）和整段Python脚本的功能。你也可以使用Jupyter notebook运行大代码块，接下来就会看到。</p>
-<h3 id="222-运行jupyter-notebook">2.2.2 运行Jupyter Notebook</h3>
-<p>notebook是Jupyter项目的重要组件之一，它是一个代码、文本（有标记或无标记）、数据可视化或其它输出的交互式文档。Jupyter Notebook需要与内核互动，内核是Jupyter与其它编程语言的交互编程协议。Python的Jupyter内核是使用IPython。要启动Jupyter，在命令行中输入<code>jupyter notebook</code>:</p>
+<h3 id="222-运行jupyter-notebook" class="heading-element">
+  <a href="#222-%e8%bf%90%e8%a1%8cjupyter-notebook" class="heading-mark"></a>2.2.2 运行Jupyter Notebook</h3><p>notebook是Jupyter项目的重要组件之一，它是一个代码、文本（有标记或无标记）、数据可视化或其它输出的交互式文档。Jupyter Notebook需要与内核互动，内核是Jupyter与其它编程语言的交互编程协议。Python的Jupyter内核是使用IPython。要启动Jupyter，在命令行中输入<code>jupyter notebook</code>:</p>
 <div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -417,14 +412,14 @@
 <blockquote>
 <p>笔记：许多人使用Jupyter作为本地的计算环境，但它也可以部署到服务器上远程访问。这里不做介绍，如果需要的话，鼓励读者自行到网上学习。</p>
 </blockquote>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=large 2x" sizes="auto" data-title="图2-1 Jupyter notebook启动页面" data-alt="图2-1 Jupyter notebook启动页面" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240.png" alt="图2-1 Jupyter notebook启动页面" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240.png?size=large 2x" sizes="auto" data-title="图2-1 Jupyter notebook启动页面" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>要新建一个notebook，点击按钮New，选择“Python3”或“conda[默认项]”。如果是第一次，点击空格，输入一行Python代码。然后按Shift-Enter执行。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=large 2x" sizes="auto" data-title="图2-2 Jupyter新notebook页面" data-alt="图2-2 Jupyter新notebook页面" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png" alt="图2-2 Jupyter新notebook页面" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png?size=large 2x" sizes="auto" data-title="图2-2 Jupyter新notebook页面" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>当保存notebook时（File目录下的Save and Checkpoint），会创建一个后缀名为<code>.ipynb</code>的文件。这是一个自包含文件格式，包含当前笔记本中的所有内容（包括所有已评估的代码输出）。可以被其它Jupyter用户加载和编辑。要加载存在的notebook，把它放到启动notebook进程的相同目录内。你可以用本书的示例代码练习，见图2-3。</p>
 <p>虽然Jupyter notebook和IPython shell使用起来不同，本章中几乎所有的命令和工具都可以通用。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=large 2x" sizes="auto" data-title="图2-3 Jupyter查看一个存在的notebook的页面" data-alt="图2-3 Jupyter查看一个存在的notebook的页面" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="223-tab补全">2.2.3 Tab补全</h3>
-<p>从外观上，IPython shell和标准的Python解释器只是看起来不同。IPython shell的进步之一是具备其它IDE和交互计算分析环境都有的tab补全功能。在shell中输入表达式，按下Tab，会搜索已输入变量（对象、函数等等）的命名空间：</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png" alt="图2-3 Jupyter查看一个存在的notebook的页面" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png?size=large 2x" sizes="auto" data-title="图2-3 Jupyter查看一个存在的notebook的页面" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="223-tab补全" class="heading-element">
+  <a href="#223-tab%e8%a1%a5%e5%85%a8" class="heading-mark"></a>2.2.3 Tab补全</h3><p>从外观上，IPython shell和标准的Python解释器只是看起来不同。IPython shell的进步之一是具备其它IDE和交互计算分析环境都有的tab补全功能。在shell中输入表达式，按下Tab，会搜索已输入变量（对象、函数等等）的命名空间：</p>
 <div class="highlight" id="id-9"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -504,10 +499,10 @@
 </div>
 </div><p>结合<code>%run</code>，tab补全可以节省许多键盘操作。</p>
 <p>另外，tab补全可以补全函数的关键词参数（包括等于号=）。见图2-4。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=large 2x" sizes="auto" data-title="图2-4 Jupyter notebook中自动补全函数关键词" data-alt="图2-4 Jupyter notebook中自动补全函数关键词" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png" alt="图2-4 Jupyter notebook中自动补全函数关键词" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png?size=large 2x" sizes="auto" data-title="图2-4 Jupyter notebook中自动补全函数关键词" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>后面会仔细地学习函数。</p>
-<h3 id="224-自省">2.2.4 自省</h3>
-<p>在变量前后使用问号？，可以显示对象的信息：</p>
+<h3 id="224-自省" class="heading-element">
+  <a href="#224-%e8%87%aa%e7%9c%81" class="heading-mark"></a>2.2.4 自省</h3><p>在变量前后使用问号？，可以显示对象的信息：</p>
 <div class="highlight" id="id-13"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -657,8 +652,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span>
 </span></span><span class="line"><span class="cl"><span class="n">np</span><span class="o">.</span><span class="n">pkgload</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="225-run命令">2.2.5 %run命令</h3>
-<p>你可以用<code>%run</code>命令运行所有的Python程序。假设有一个文件<code>ipython_script_test.py</code>：</p>
+</div><h3 id="225-run命令" class="heading-element">
+  <a href="#225-run%e5%91%bd%e4%bb%a4" class="heading-mark"></a>2.2.5 %run命令</h3><p>你可以用<code>%run</code>命令运行所有的Python程序。假设有一个文件<code>ipython_script_test.py</code>：</p>
 <div class="highlight" id="id-18"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -732,13 +727,13 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="226-中断运行的代码">2.2.6 中断运行的代码</h3>
-<p>代码运行时按Ctrl-C，无论是%run或长时间运行命令，都会导致<code>KeyboardInterrupt</code>。这会导致几乎所有Python程序立即停止，除非一些特殊情况。</p>
+</div><h3 id="226-中断运行的代码" class="heading-element">
+  <a href="#226-%e4%b8%ad%e6%96%ad%e8%bf%90%e8%a1%8c%e7%9a%84%e4%bb%a3%e7%a0%81" class="heading-mark"></a>2.2.6 中断运行的代码</h3><p>代码运行时按Ctrl-C，无论是%run或长时间运行命令，都会导致<code>KeyboardInterrupt</code>。这会导致几乎所有Python程序立即停止，除非一些特殊情况。</p>
 <blockquote>
 <p>警告：当Python代码调用了一些编译的扩展模块，按Ctrl-C不一定将执行的程序立即停止。在这种情况下，你必须等待，直到控制返回Python解释器，或者在更糟糕的情况下强制终止Python进程。</p>
 </blockquote>
-<h3 id="227-从剪贴板执行程序">2.2.7 从剪贴板执行程序</h3>
-<p>如果使用Jupyter notebook，你可以将代码复制粘贴到任意代码格执行。在IPython shell中也可以从剪贴板执行。假设在其它应用中复制了如下代码：</p>
+<h3 id="227-从剪贴板执行程序" class="heading-element">
+  <a href="#227-%e4%bb%8e%e5%89%aa%e8%b4%b4%e6%9d%bf%e6%89%a7%e8%a1%8c%e7%a8%8b%e5%ba%8f" class="heading-mark"></a>2.2.7 从剪贴板执行程序</h3><p>如果使用Jupyter notebook，你可以将代码复制粘贴到任意代码格执行。在IPython shell中也可以从剪贴板执行。假设在其它应用中复制了如下代码：</p>
 <div class="highlight" id="id-22"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -803,13 +798,13 @@
 </span></span><span class="line"><span class="cl"><span class="p">:</span><span class="o">--</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用<code>%cpaste</code>，你可以粘贴任意多的代码再运行。你可能想在运行前，先看看代码。如果粘贴了错误的代码，可以用Ctrl-C中断。</p>
-<h3 id="228-键盘快捷键">2.2.8 键盘快捷键</h3>
-<p>IPython有许多键盘快捷键进行导航提示（类似Emacs文本编辑器或UNIX bash Shell）和交互shell的历史命令。表2-1总结了常见的快捷键。图2-5展示了一部分，如移动光标。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=large 2x" sizes="auto" data-title="图2-5 IPython shell中一些快捷键的说明" data-alt="图2-5 IPython shell中一些快捷键的说明" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=large 2x" sizes="auto" data-title="表2-1 IPython的标准快捷键" data-alt="表2-1 IPython的标准快捷键" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="228-键盘快捷键" class="heading-element">
+  <a href="#228-%e9%94%ae%e7%9b%98%e5%bf%ab%e6%8d%b7%e9%94%ae" class="heading-mark"></a>2.2.8 键盘快捷键</h3><p>IPython有许多键盘快捷键进行导航提示（类似Emacs文本编辑器或UNIX bash Shell）和交互shell的历史命令。表2-1总结了常见的快捷键。图2-5展示了一部分，如移动光标。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png" alt="图2-5 IPython shell中一些快捷键的说明" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png?size=large 2x" sizes="auto" data-title="图2-5 IPython shell中一些快捷键的说明" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png" alt="表2-1 IPython的标准快捷键" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png?size=large 2x" sizes="auto" data-title="表2-1 IPython的标准快捷键" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>Jupyter notebooks有另外一套庞大的快捷键。因为它的快捷键比IPython的变化快，建议你参阅Jupyter notebook的帮助文档。</p>
-<h3 id="229-魔术命令">2.2.9 魔术命令</h3>
-<p>IPython中特殊的命令（Python中没有）被称作“魔术”命令。这些命令可以使普通任务更便捷，更容易控制IPython系统。魔术命令是在指令前添加百分号%前缀。例如，可以用<code>%timeit</code>（这个命令后面会详谈）测量任何Python语句，例如矩阵乘法，的执行时间：</p>
+<h3 id="229-魔术命令" class="heading-element">
+  <a href="#229-%e9%ad%94%e6%9c%af%e5%91%bd%e4%bb%a4" class="heading-mark"></a>2.2.9 魔术命令</h3><p>IPython中特殊的命令（Python中没有）被称作“魔术”命令。这些命令可以使普通任务更便捷，更容易控制IPython系统。魔术命令是在指令前添加百分号%前缀。例如，可以用<code>%timeit</code>（这个命令后面会详谈）测量任何Python语句，例如矩阵乘法，的执行时间：</p>
 <div class="highlight" id="id-25"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -915,9 +910,9 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="s1">&#39;/home/wesm/code/pydata-book&#39;</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>IPython的文档可以在shell中打开，我建议你用<code>%quickref</code>或<code>%magic</code>学习下所有特殊命令。表2-2列出了一些可以提高生产率的交互计算和Python开发的IPython指令。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=large 2x" sizes="auto" data-title="表2-2 一些常用的IPython魔术命令" data-alt="表2-2 一些常用的IPython魔术命令" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="2210-集成matplotlib">2.2.10 集成Matplotlib</h3>
-<p>IPython在<code>分析计算</code>领域能够流行的原因之一是它非常好的集成了数据可视化和其它用户界面库，比如matplotlib。不用担心以前没用过matplotlib，本书后面会详细介绍。<code>%matplotlib</code>魔术函数配置了IPython shell和Jupyter notebook中的matplotlib。这点很重要，其它创建的图不会出现（notebook）或获取session的控制，直到结束（shell）。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png" alt="表2-2 一些常用的IPython魔术命令" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png?size=large 2x" sizes="auto" data-title="表2-2 一些常用的IPython魔术命令" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="2210-集成matplotlib" class="heading-element">
+  <a href="#2210-%e9%9b%86%e6%88%90matplotlib" class="heading-mark"></a>2.2.10 集成Matplotlib</h3><p>IPython在<code>分析计算</code>领域能够流行的原因之一是它非常好的集成了数据可视化和其它用户界面库，比如matplotlib。不用担心以前没用过matplotlib，本书后面会详细介绍。<code>%matplotlib</code>魔术函数配置了IPython shell和Jupyter notebook中的matplotlib。这点很重要，其它创建的图不会出现（notebook）或获取session的控制，直到结束（shell）。</p>
 <p>在IPython shell中，运行<code>%matplotlib</code>可以进行设置，可以创建多个绘图窗口，而不会干扰控制台session：</p>
 <div class="highlight" id="id-28"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -936,15 +931,15 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=large 2x" sizes="auto" data-title="图2-6 Jupyter行内matplotlib作图" data-alt="图2-6 Jupyter行内matplotlib作图" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h2 id="23-python语法基础">2.3 Python语法基础</h2>
-<blockquote>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png" alt="图2-6 Jupyter行内matplotlib作图" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png?size=large 2x" sizes="auto" data-title="图2-6 Jupyter行内matplotlib作图" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="23-python语法基础" class="heading-element">
+  <a href="#23-python%e8%af%ad%e6%b3%95%e5%9f%ba%e7%a1%80" class="heading-mark"></a>2.3 Python语法基础</h2><blockquote>
 <p>🐹 在本节中，将概述基本的Python概念和语言机制。在下一章，将详细介绍Python的数据结构、函数和其它内建工具。</p>
 </blockquote>
-<h3 id="231-语言的语义">2.3.1 语言的语义</h3>
-<p>Python的语言设计强调的是可读性、简洁和清晰。有些人称Python为“可执行的伪代码”。</p>
-<h3 id="232-使用缩进而不是括号">2.3.2 使用缩进，而不是括号</h3>
-<p>Python使用空白字符（tab和空格）来组织代码，而不是像其它语言，比如R、C++、JAVA和Perl那样使用括号。看一个排序算法的<code>for</code>循环：</p>
+<h3 id="231-语言的语义" class="heading-element">
+  <a href="#231-%e8%af%ad%e8%a8%80%e7%9a%84%e8%af%ad%e4%b9%89" class="heading-mark"></a>2.3.1 语言的语义</h3><p>Python的语言设计强调的是可读性、简洁和清晰。有些人称Python为“可执行的伪代码”。</p>
+<h3 id="232-使用缩进而不是括号" class="heading-element">
+  <a href="#232-%e4%bd%bf%e7%94%a8%e7%bc%a9%e8%bf%9b%e8%80%8c%e4%b8%8d%e6%98%af%e6%8b%ac%e5%8f%b7" class="heading-mark"></a>2.3.2 使用缩进，而不是括号</h3><p>Python使用空白字符（tab和空格）来组织代码，而不是像其它语言，比如R、C++、JAVA和Perl那样使用括号。看一个排序算法的<code>for</code>循环：</p>
 <div class="highlight" id="id-30"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -975,10 +970,10 @@
 </div><blockquote>
 <p>Python不建议将多条语句放到一行，这会降低代码的可读性。</p>
 </blockquote>
-<h3 id="233-万物皆对象">2.3.3 万物皆对象</h3>
-<p>Python语言的一个重要特性就是它的对象模型的一致性。每个数字、字符串、数据结构、函数、类、模块等等，都是在Python解释器的自有“盒子”内，它被认为是Python对象。每个对象都有类型（例如，字符串或函数）和内部数据。在实际中，这可以让语言非常灵活，因为函数也可以被当做对象使用。</p>
-<h3 id="234-注释">2.3.4 注释</h3>
-<p>任何前面带有井号#的文本都会被Python解释器忽略。这通常被用来添加注释。有时，你会想排除一段代码，但并不删除。简便的方法就是将其注释掉：</p>
+<h3 id="233-万物皆对象" class="heading-element">
+  <a href="#233-%e4%b8%87%e7%89%a9%e7%9a%86%e5%af%b9%e8%b1%a1" class="heading-mark"></a>2.3.3 万物皆对象</h3><p>Python语言的一个重要特性就是它的对象模型的一致性。每个数字、字符串、数据结构、函数、类、模块等等，都是在Python解释器的自有“盒子”内，它被认为是Python对象。每个对象都有类型（例如，字符串或函数）和内部数据。在实际中，这可以让语言非常灵活，因为函数也可以被当做对象使用。</p>
+<h3 id="234-注释" class="heading-element">
+  <a href="#234-%e6%b3%a8%e9%87%8a" class="heading-mark"></a>2.3.4 注释</h3><p>任何前面带有井号#的文本都会被Python解释器忽略。这通常被用来添加注释。有时，你会想排除一段代码，但并不删除。简便的方法就是将其注释掉：</p>
 <div class="highlight" id="id-32"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1004,8 +999,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Reached this line&#34;</span><span class="p">)</span>  <span class="c1"># Simple status report</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="235-函数和对象方法调用">2.3.5 函数和对象方法调用</h3>
-<p>你可以用圆括号调用函数，传递零个或几个参数，或者将返回值给一个变量：</p>
+</div><h3 id="235-函数和对象方法调用" class="heading-element">
+  <a href="#235-%e5%87%bd%e6%95%b0%e5%92%8c%e5%af%b9%e8%b1%a1%e6%96%b9%e6%b3%95%e8%b0%83%e7%94%a8" class="heading-mark"></a>2.3.5 函数和对象方法调用</h3><p>你可以用圆括号调用函数，传递零个或几个参数，或者将返回值给一个变量：</p>
 <div class="highlight" id="id-34"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1032,8 +1027,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>后面会有更多介绍。</p>
-<h3 id="236-变量和参数传递">2.3.6 变量和参数传递</h3>
-<p>当在Python中创建变量（或名字），你就在等号右边创建了一个对这个变量的引用。考虑一个整数列表：</p>
+<h3 id="236-变量和参数传递" class="heading-element">
+  <a href="#236-%e5%8f%98%e9%87%8f%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92" class="heading-mark"></a>2.3.6 变量和参数传递</h3><p>当在Python中创建变量（或名字），你就在等号右边创建了一个对这个变量的引用。考虑一个整数列表：</p>
 <div class="highlight" id="id-37"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1063,7 +1058,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">b</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=large 2x" sizes="auto" data-title="图2-7 对同一对象的双重引用" data-alt="图2-7 对同一对象的双重引用" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png" alt="图2-7 对同一对象的双重引用" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png?size=large 2x" sizes="auto" data-title="图2-7 对同一对象的双重引用" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>理解Python的引用的含义，数据是何时、如何、为何复制的，是非常重要的。尤其是当你用Python处理大的数据集时。</p>
 <blockquote>
 <p>笔记：赋值也被称作绑定，我们是把一个名字绑定给一个对象。变量名有时可能被称为绑定变量。</p>
@@ -1096,8 +1091,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="n">data</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="237-动态引用强类型">2.3.7 动态引用，强类型</h3>
-<p>与许多编译语言（如JAVA和C++）对比，Python中的对象引用不包含附属的类型。下面的代码是没有问题的：</p>
+</div><h3 id="237-动态引用强类型" class="heading-element">
+  <a href="#237-%e5%8a%a8%e6%80%81%e5%bc%95%e7%94%a8%e5%bc%ba%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>2.3.7 动态引用，强类型</h3><p>与许多编译语言（如JAVA和C++）对比，Python中的对象引用不包含附属的类型。下面的代码是没有问题的：</p>
 <div class="highlight" id="id-42"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1199,8 +1194,8 @@
 </span></span><span class="line"><span class="cl">In [25]: isinstance(b, (int, float))
 </span></span><span class="line"><span class="cl">Out[25]: True</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="238-属性和方法">2.3.8 属性和方法</h3>
-<p>Python的对象通常都有属性（其它存储在对象内部的Python对象）和方法（对象的附属函数可以访问对象的内部数据）。可以用<code>obj.attribute_name</code>访问属性和方法：</p>
+</div><h3 id="238-属性和方法" class="heading-element">
+  <a href="#238-%e5%b1%9e%e6%80%a7%e5%92%8c%e6%96%b9%e6%b3%95" class="heading-mark"></a>2.3.8 属性和方法</h3><p>Python的对象通常都有属性（其它存储在对象内部的Python对象）和方法（对象的附属函数可以访问对象的内部数据）。可以用<code>obj.attribute_name</code>访问属性和方法：</p>
 <div class="highlight" id="id-47"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1239,8 +1234,8 @@
 </span></span><span class="line"><span class="cl">Out[27]: &lt;function str.split&gt;</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在其它语言中，访问对象的名字通常称作“反射”。本书不会大量使用<code>getattr</code>函数和相关的<code>hasattr</code>和<code>setattr</code>函数，使用这些函数可以高效编写原生的、可重复使用的代码。</p>
-<h3 id="239-鸭子类型">2.3.9 鸭子类型</h3>
-<p>经常地，你可能不关心对象的类型，只关心对象是否有某些方法或用途。这通常被称为“鸭子类型”，来自“走起来像鸭子、叫起来像鸭子，那么它就是鸭子”的说法。例如，你可以通过验证一个对象是否遵循迭代协议，判断它是可迭代的。对于许多对象，这意味着它有一个<code>__iter__</code>魔术方法，其它更好的判断方法是使用<code>iter</code>函数：</p>
+<h3 id="239-鸭子类型" class="heading-element">
+  <a href="#239-%e9%b8%ad%e5%ad%90%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>2.3.9 鸭子类型</h3><p>经常地，你可能不关心对象的类型，只关心对象是否有某些方法或用途。这通常被称为“鸭子类型”，来自“走起来像鸭子、叫起来像鸭子，那么它就是鸭子”的说法。例如，你可以通过验证一个对象是否遵循迭代协议，判断它是可迭代的。对于许多对象，这意味着它有一个<code>__iter__</code>魔术方法，其它更好的判断方法是使用<code>iter</code>函数：</p>
 <div class="highlight" id="id-49"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1290,8 +1285,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">and</span> <span class="n">isiterable</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2310-引入">2.3.10 引入</h3>
-<p>在Python中，模块就是一个有<code>.py</code>扩展名、包含Python代码的文件。假设有以下模块：</p>
+</div><h3 id="2310-引入" class="heading-element">
+  <a href="#2310-%e5%bc%95%e5%85%a5" class="heading-mark"></a>2.3.10 引入</h3><p>在Python中，模块就是一个有<code>.py</code>扩展名、包含Python代码的文件。假设有以下模块：</p>
 <div class="highlight" id="id-52"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1351,8 +1346,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">r1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">r2</span> <span class="o">=</span> <span class="n">gf</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2311-二元运算符和比较运算符">2.3.11 二元运算符和比较运算符</h3>
-<p>大多数二元数学运算和比较都不难想到：</p>
+</div><h3 id="2311-二元运算符和比较运算符" class="heading-element">
+  <a href="#2311-%e4%ba%8c%e5%85%83%e8%bf%90%e7%ae%97%e7%ac%a6%e5%92%8c%e6%af%94%e8%be%83%e8%bf%90%e7%ae%97%e7%ac%a6" class="heading-mark"></a>2.3.11 二元运算符和比较运算符</h3><p>大多数二元数学运算和比较都不难想到：</p>
 <div class="highlight" id="id-56"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1427,9 +1422,9 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">42</span><span class="p">]:</span> <span class="n">a</span> <span class="ow">is</span> <span class="kc">None</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">42</span><span class="p">]:</span> <span class="kc">True</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=large 2x" sizes="auto" data-title="表2-3 二元运算符" data-alt="表2-3 二元运算符" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="2312-可变与不可变对象">2.3.12 可变与不可变对象</h3>
-<p>Python中的大多数对象，比如列表、字典、NumPy数组，和用户定义的类型（类），都是可变的。意味着这些对象或包含的值可以被修改：</p>
+</div><p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png" alt="表2-3 二元运算符" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png?size=large 2x" sizes="auto" data-title="表2-3 二元运算符" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="2312-可变与不可变对象" class="heading-element">
+  <a href="#2312-%e5%8f%af%e5%8f%98%e4%b8%8e%e4%b8%8d%e5%8f%af%e5%8f%98%e5%af%b9%e8%b1%a1" class="heading-mark"></a>2.3.12 可变与不可变对象</h3><p>Python中的大多数对象，比如列表、字典、NumPy数组，和用户定义的类型（类），都是可变的。意味着这些对象或包含的值可以被修改：</p>
 <div class="highlight" id="id-60"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1470,11 +1465,11 @@
 </span></span><span class="line"><span class="cl"><span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;tuple&#39;</span> <span class="nb">object</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">support</span> <span class="n">item</span> <span class="n">assignment</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>记住，可以修改一个对象并不意味就要修改它。这被称为副作用。例如，当写一个函数，任何副作用都要在文档或注释中写明。如果可能的话，我推荐避免副作用，采用不可变的方式，即使要用到可变对象。</p>
-<h3 id="2313-标量类型">2.3.13 标量类型</h3>
-<p>Python的标准库中有一些内建的类型，用于处理数值数据、字符串、布尔值，和日期时间。这些单值类型被称为标量类型，本书中称其为标量。表2-4列出了主要的标量。日期和时间处理会另外讨论，因为它们是标准库的<code>datetime</code>模块提供的。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=large 2x" sizes="auto" data-title="表2-4 Python的标量" data-alt="表2-4 Python的标量" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
-<h3 id="2314-数值类型">2.3.14 数值类型</h3>
-<p>Python的主要数值类型是<code>int</code>和<code>float</code>。<code>int</code>可以存储任意大的数：</p>
+<h3 id="2313-标量类型" class="heading-element">
+  <a href="#2313-%e6%a0%87%e9%87%8f%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>2.3.13 标量类型</h3><p>Python的标准库中有一些内建的类型，用于处理数值数据、字符串、布尔值，和日期时间。这些单值类型被称为标量类型，本书中称其为标量。表2-4列出了主要的标量。日期和时间处理会另外讨论，因为它们是标准库的<code>datetime</code>模块提供的。</p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png" alt="表2-4 Python的标量" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png?size=large 2x" sizes="auto" data-title="表2-4 Python的标量" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h3 id="2314-数值类型" class="heading-element">
+  <a href="#2314-%e6%95%b0%e5%80%bc%e7%b1%bb%e5%9e%8b" class="heading-mark"></a>2.3.14 数值类型</h3><p>Python的主要数值类型是<code>int</code>和<code>float</code>。<code>int</code>可以存储任意大的数：</p>
 <div class="highlight" id="id-62"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1520,8 +1515,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">53</span><span class="p">]:</span> <span class="mi">3</span> <span class="o">//</span> <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">53</span><span class="p">]:</span> <span class="mi">1</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2315-字符串">2.3.15 字符串</h3>
-<p>许多人是因为Python强大而灵活的字符串处理而使用Python的。你可以用单引号或双引号来写字符串：</p>
+</div><h3 id="2315-字符串" class="heading-element">
+  <a href="#2315-%e5%ad%97%e7%ac%a6%e4%b8%b2" class="heading-mark"></a>2.3.15 字符串</h3><p>许多人是因为Python强大而灵活的字符串处理而使用Python的。你可以用单引号或双引号来写字符串：</p>
 <div class="highlight" id="id-66"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1709,8 +1704,8 @@
 </div>
 </div><p>字符串格式化是一个很深的主题，有多种方法和大量的选项，可以控制字符串中的值是如何格式化的。推荐参阅Python官方文档。</p>
 <p>这里概括介绍字符串处理，第8章的数据分析会详细介绍。</p>
-<h3 id="2316-字节和unicode">2.3.16 字节和Unicode</h3>
-<p>在Python 3及以上版本中，Unicode是一级的字符串类型，这样可以更一致的处理ASCII和Non-ASCII文本。在老的Python版本中，字符串都是字节，不使用Unicode编码。假如知道字符编码，可以将其转化为Unicode。看一个例子：</p>
+<h3 id="2316-字节和unicode" class="heading-element">
+  <a href="#2316-%e5%ad%97%e8%8a%82%e5%92%8cunicode" class="heading-mark"></a>2.3.16 字节和Unicode</h3><p>在Python 3及以上版本中，Unicode是一级的字符串类型，这样可以更一致的处理ASCII和Non-ASCII文本。在老的Python版本中，字符串都是字节，不使用Unicode编码。假如知道字符编码，可以将其转化为Unicode。看一个例子：</p>
 <div class="highlight" id="id-78"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1801,8 +1796,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">88</span><span class="p">]:</span> <span class="n">decoded</span>  <span class="c1"># this is str (Unicode) now</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">88</span><span class="p">]:</span> <span class="s1">&#39;this is bytes&#39;</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2317-布尔值">2.3.17 布尔值</h3>
-<p>Python中的布尔值有两个，True和False。比较和其它条件表达式可以用True和False判断。布尔值可以与and和or结合使用：</p>
+</div><h3 id="2317-布尔值" class="heading-element">
+  <a href="#2317-%e5%b8%83%e5%b0%94%e5%80%bc" class="heading-mark"></a>2.3.17 布尔值</h3><p>Python中的布尔值有两个，True和False。比较和其它条件表达式可以用True和False判断。布尔值可以与and和or结合使用：</p>
 <div class="highlight" id="id-83"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1818,8 +1813,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">90</span><span class="p">]:</span> <span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">90</span><span class="p">]:</span> <span class="kc">True</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2318-类型转换">2.3.18 类型转换</h3>
-<p>str、bool、int和float也是函数，可以用来转换类型：</p>
+</div><h3 id="2318-类型转换" class="heading-element">
+  <a href="#2318-%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2" class="heading-mark"></a>2.3.18 类型转换</h3><p>str、bool、int和float也是函数，可以用来转换类型：</p>
 <div class="highlight" id="id-84"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1855,8 +1850,8 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">96</span><span class="p">]:</span> <span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">96</span><span class="p">]:</span> <span class="kc">False</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2319-none">2.3.19 None</h3>
-<p>None是Python的空值类型。如果一个函数没有明确的返回值，就会默认返回None：</p>
+</div><h3 id="2319-none" class="heading-element">
+  <a href="#2319-none" class="heading-mark"></a>2.3.19 None</h3><p>None是Python的空值类型。如果一个函数没有明确的返回值，就会默认返回None：</p>
 <div class="highlight" id="id-85"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1910,8 +1905,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">101</span><span class="p">]:</span> <span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">101</span><span class="p">]:</span> <span class="n">NoneType</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2320-日期和时间">2.3.20 日期和时间</h3>
-<p>Python内建的<code>datetime</code>模块提供了<code>datetime</code>、<code>date</code>和<code>time</code>类型。<code>datetime</code>类型结合了<code>date</code>和<code>time</code>，是最常使用的：</p>
+</div><h3 id="2320-日期和时间" class="heading-element">
+  <a href="#2320-%e6%97%a5%e6%9c%9f%e5%92%8c%e6%97%b6%e9%97%b4" class="heading-mark"></a>2.3.20 日期和时间</h3><p>Python内建的<code>datetime</code>模块提供了<code>datetime</code>、<code>date</code>和<code>time</code>类型。<code>datetime</code>类型结合了<code>date</code>和<code>time</code>，是最常使用的：</p>
 <div class="highlight" id="id-88"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1972,7 +1967,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">109</span><span class="p">]:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>表2-5列出了所有的格式化命令。</p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=large 2x" sizes="auto" data-title="表2-5 Datetime格式化指令（与ISO C89兼容）" data-alt="表2-5 Datetime格式化指令（与ISO C89兼容）" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png" alt="表2-5 Datetime格式化指令（与ISO C89兼容）" srcset="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=small, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=medium 1.5x, https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png?size=large 2x" sizes="auto" data-title="表2-5 Datetime格式化指令（与ISO C89兼容）" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 <p>当你聚类或对时间序列进行分组，替换datetimes的time字段有时会很有用。例如，用0替换分和秒：</p>
 <div class="highlight" id="id-92"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2025,10 +2020,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">116</span><span class="p">]:</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">delta</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">116</span><span class="p">]:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2321-控制流">2.3.21 控制流</h3>
-<p>Python有若干内建的关键字进行条件逻辑、循环和其它控制流操作。</p>
-<h3 id="2322-ifelif和else">2.3.22 if、elif和else</h3>
-<p>if是最广为人知的控制流语句。它检查一个条件，如果为True，就执行后面的语句：</p>
+</div><h3 id="2321-控制流" class="heading-element">
+  <a href="#2321-%e6%8e%a7%e5%88%b6%e6%b5%81" class="heading-mark"></a>2.3.21 控制流</h3><p>Python有若干内建的关键字进行条件逻辑、循环和其它控制流操作。</p>
+<h3 id="2322-ifelif和else" class="heading-element">
+  <a href="#2322-ifelif%e5%92%8celse" class="heading-mark"></a>2.3.22 if、elif和else</h3><p>if是最广为人知的控制流语句。它检查一个条件，如果为True，就执行后面的语句：</p>
 <div class="highlight" id="id-95"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2091,8 +2086,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">In</span> <span class="p">[</span><span class="mi">120</span><span class="p">]:</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">120</span><span class="p">]:</span> <span class="kc">True</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2324-for循环">2.3.24 for循环</h3>
-<p>for循环是在一个集合（列表或元组）中进行迭代，或者就是一个迭代器。for循环的标准语法是：</p>
+</div><h3 id="2324-for循环" class="heading-element">
+  <a href="#2324-for%e5%be%aa%e7%8e%af" class="heading-mark"></a>2.3.24 for循环</h3><p>for循环是在一个集合（列表或元组）中进行迭代，或者就是一个迭代器。for循环的标准语法是：</p>
 <div class="highlight" id="id-99"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2186,8 +2181,8 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">iterator</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># do something</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2325-while循环">2.3.25 While循环</h3>
-<p>while循环指定了条件和代码，当条件为False或用break退出循环，代码才会退出：</p>
+</div><h3 id="2325-while循环" class="heading-element">
+  <a href="#2325-while%e5%be%aa%e7%8e%af" class="heading-mark"></a>2.3.25 While循环</h3><p>while循环指定了条件和代码，当条件为False或用break退出循环，代码才会退出：</p>
 <div class="highlight" id="id-104"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2207,8 +2202,8 @@
 </span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="o">+=</span> <span class="n">x</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">2</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2326-pass">2.3.26 pass</h3>
-<p>pass是Python中的非操作语句。代码块不需要任何动作时可以使用（作为未执行代码的占位符）；因为Python需要使用空白字符划定代码块，所以需要pass：</p>
+</div><h3 id="2326-pass" class="heading-element">
+  <a href="#2326-pass" class="heading-mark"></a>2.3.26 pass</h3><p>pass是Python中的非操作语句。代码块不需要任何动作时可以使用（作为未执行代码的占位符）；因为Python需要使用空白字符划定代码块，所以需要pass：</p>
 <div class="highlight" id="id-105"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2228,8 +2223,8 @@
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;positive!&#39;</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2327-range">2.3.27 range</h3>
-<p>range函数返回一个迭代器，它产生一个均匀分布的整数序列：</p>
+</div><h3 id="2327-range" class="heading-element">
+  <a href="#2327-range" class="heading-mark"></a>2.3.27 range</h3><p>range函数返回一个迭代器，它产生一个均匀分布的整数序列：</p>
 <div class="highlight" id="id-106"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2290,8 +2285,8 @@
 </span></span><span class="line"><span class="cl">        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>虽然range可以产生任意大的数，但任意时刻耗用的内存却很小。</p>
-<h3 id="2328-三元表达式">2.3.28 三元表达式</h3>
-<p>Python中的三元表达式可以将if-else语句放到一行里。语法如下：</p>
+<h3 id="2328-三元表达式" class="heading-element">
+  <a href="#2328-%e4%b8%89%e5%85%83%e8%a1%a8%e8%be%be%e5%bc%8f" class="heading-mark"></a>2.3.28 三元表达式</h3><p>Python中的三元表达式可以将if-else语句放到一行里。语法如下：</p>
 <div class="highlight" id="id-110"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2329,11 +2324,11 @@
 </div>
 </div><p>和if-else一样，只有一个表达式会被执行。因此，三元表达式中的if和else可以包含大量的计算，但只有True的分支会被执行。因此，三元表达式中的if和else可以包含大量的计算，但只有True的分支会被执行。</p>
 <p>虽然使用三元表达式可以压缩代码，但会降低代码可读性。</p>
-<h2 id="24-参考资料">2.4 参考资料</h2>
-<ul>
+<h2 id="24-参考资料" class="heading-element">
+  <a href="#24-%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99" class="heading-mark"></a>2.4 参考资料</h2><ul>
 <li>
 <p>📕 <a href="https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version/"target="_blank" rel="external nofollow noopener noreferrer">《利用Python进行数据分析-第2版-中文译版》</a></p>
-<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=large 2x" sizes="auto" data-title="image-20200821110800287" data-alt="image-20200821110800287" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p><img loading="lazy" src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png" alt="image-20200821110800287" srcset="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=small, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=medium 1.5x, https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png?size=large 2x" sizes="auto" data-title="image-20200821110800287" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
 </li>
 <li>
 <p>🎬 <a href="https://www.bilibili.com/video/BV1cA411v7VG"target="_blank" rel="external nofollow noopener noreferrer">《利用Python进行数据分析 配套视频》</a></p>
@@ -2348,33 +2343,34 @@
       <div class="post-info-mod">
         <span title="更新于 2023-09-25 00:00:00">更新于 2023-09-25&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" data-title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/" data-title="第二章 Python 语法基础，IPython 和 Jupyter Notebooks" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/python/' class="post-tag">python</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/python/" class="post-tag" title="标签 - python">python</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/" class="post-nav-item" rel="prev" title="第九章 绘图可视化"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第九章 绘图可视化</a>
+  <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/" class="post-nav-item" rel="prev" title="第二章 函数"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>第二章 函数</a>
       <a href="/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/" class="post-nav-item" rel="next" title="第八章 数据规整：聚合、合并和重塑">第八章 数据规整：聚合、合并和重塑<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

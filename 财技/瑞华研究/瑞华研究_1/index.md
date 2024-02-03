@@ -1167,13 +1167,13 @@ C公司控制合资公司。
 取。而这一差价可以通过同期周边类似房产、土地的交易价格而得出；
 2 、对于代办手续的服务，由于房产中介相对是较成熟的市场，也可参照一般的中介代
 办手续的服务收费标准判断支付给A公司的价格是否公允。
-若上述两部分均核实，房产及土地自A公司获取购买权至转让给合资公司的增值+代办
+若上述两部分均核实，房产及土地自A公司获取购买权至转让给合资公司的增值&#43;代办
 服务的公允市场收费合计与1,400万元基本一致，则1,400万元应计入取得标的房屋的原值；
-若1,400万元远大于增值+服务费合计，则需要考虑1,400万元是否包含了部分应作为
+若1,400万元远大于增值&#43;服务费合计，则需要考虑1,400万元是否包含了部分应作为
 权益性交易处理的内容。由于A 公司与C公司的合作协议中约定了“合资公司收购标的房
 屋后优先出租给C公司，且给予租金优惠”。C公司通过租金优惠的方式从合资公司获取
 资源，合资公司本次支付给A公司的1,400万元，是否也包含A公司作为合资公司股东，
-以“转让购买权+代办服务”的名义从合资公司获取利益？对此应注意核实。如有，此部分
+以“转让购买权&#43;代办服务”的名义从合资公司获取利益？对此应注意核实。如有，此部分
 应按照权益性交易的原则处理，合资公司支付时，应冲减“资本公积——资本溢价”，“资
 本公积——资本溢价”不足冲减的，冲减留存收益。
 
@@ -2476,7 +2476,7 @@ physical construction of the asset. They include technical and administrative wo
 the commencement of physical construction, such as the activities associated with
 obtaining permits prior to the commencement of the physical construction. However, such
 activities exclude the holding of an asset when no production or development that
-changes the asset's condition is taking place. For example, borrowing costs incurred while
+changes the asset&#39;s condition is taking place. For example, borrowing costs incurred while
 land is under development are capitalised during the period in which activities related to
 
 
@@ -2683,7 +2683,7 @@ Example 3
 An entity acquires through foreclosure a property comprising land and buildings that it
 intends to sell.
 (a)The entity does not intend to transfer the property to a buyer until after it completes
-renovations to increase the property's sales value. The delay in the timing of the transfer
+renovations to increase the property&#39;s sales value. The delay in the timing of the transfer
 of the property imposed by the entity (seller) demonstrates that the property is not
 available for immediate sale. The criterion in paragraph 7 would not be met until the
 renovations are completed.
@@ -4276,7 +4276,7 @@ A公司 2015 年申请了高新技术企业认定，申请材料中三年的研�
 根据《财政部关于企业加强研发费用财务管理的若干意见》（财企[2007]194号）第一
 
 条规定：
-企业研发费用 ( 即原"技术开发费" ), 指企业在产品、技术、材料、工艺、标准的研究、开
+企业研发费用 ( 即原&#34;技术开发费&#34; ), 指企业在产品、技术、材料、工艺、标准的研究、开
 发过程中发生的各项费用 , 包括 :
 （一）研发活动直接消耗的材料、燃料和动力费用。
 （二）企业在职研发人员的工资、奖金、津贴、补贴、社会保险费、住房公积金等人工
@@ -4960,7 +4960,7 @@ A公司需要考虑其对C产品这一研发中无形资产项目进行评估时
 期平均摊销，计入损益。如预计使用年限超过了相关合同规定的受益年限或法律规定的有效
 年限，该无形资产的摊销年限按如下原则确定：......”
 《企业会计制度——会计科目和会计报表》对“ 1801 无形资产”科目的使用说明第四
-条：“摊销无形资产价值时，借记"管理费用——无形资产摊销"科目，贷记本科目。”
+条：“摊销无形资产价值时，借记&#34;管理费用——无形资产摊销&#34;科目，贷记本科目。”
 《企业会计制度》之附录“《企业会计制度》主要会计事项分录举例”中：无形资产摊
 销的会计处理为：借：管理费用——无形资产摊销，贷：无形资产。
 鉴于《企业会计制度》下对无形资产摊销应计入管理费用已作出明确规定，因此企业在
@@ -5849,10 +5849,10 @@ A公司主要以销售玉米种子和南瓜籽仁食品为主，其中南瓜籽�
 借：银行存款 13
 贷：其他应收款——应收退税款 13
 根据上述会计分录，可清晰得出：A公司销售该批存款产生的亏损为： 142 万元
-（800+42- 700 ）。
+（800&#43;42- 700 ）。
 
 由于减值迹象在 2017 年 12 月 31 日时已存在，相应地，A公司应于 2017 年 12 月 31 日对该
-批存货计提减值准备 142 万元（=存货账面余额 800 万元+当期“免、抵、退”税不得免征和
+批存货计提减值准备 142 万元（=存货账面余额 800 万元&#43;当期“免、抵、退”税不得免征和
 抵扣税额 42 万元-预计出口价格 700 万元）。
 
 ## 问题 1 - 3 - 15 （集团整体亏损，承担集团产业链中部分环节的子公司与合并报表层面应如
@@ -6254,7 +6254,7 @@ A公司按照4.2×60%=2.52亿元作价收购（即合并成本为 2 .52亿元）
 动负债（如交易性金融资产、短期借款等）。
 按照《企业会计准则讲解（ 2010 ）》第九章“资产减值”中“例 9 - 11 ”举例的方法，商
 誉减值测试的公式总结为：
-商誉减值测试=X+Y-Z
+商誉减值测试=X&#43;Y-Z
 其中：X是按照A公司收购B公司60%股权的合并对价推算收购100%股权将产生的
 商誉模拟数；Y是B公司于 2017 年 12 月 31 日可辨认净资产在A公司合并报表层面的账
 面价值；Z是最新评估的资产组可收回金额。
@@ -6264,21 +6264,21 @@ A公司管理层对该商誉及B公司形成的资产组进行减值测试时，
 
 上述公式中Y值，为购买日B公司的可辨认净资产的公允价值1.2亿元，B公司合并
 日后的净利润0.4亿不予考虑。此时B公司与商誉相关的资产组整体减值为：
-X+Y-Z=（1.8÷60%）+1.2-3.9 = 4.2-3.9 =0.3亿元。
+X&#43;Y-Z=（1.8÷60%）&#43;1.2-3.9 = 4.2-3.9 =0.3亿元。
 推算至A公司合并报表层面按照60%的持股比例，商誉的减值金额为0.3×60%=0.18
 亿元。此方式的原理相当于是按照前后两次收益法评估结果之差作为商誉减值的依据。
 方法二：
 Y值应以购买日B公司的可辨认净资产公允价值1.2亿元为基础，并考虑购买日后至资
 产负债表日期间的净利润0.4亿元进行调整。在 2017 年 12 月 31 日进行减值测试时，B公
-司的可辨认净资产的账面价值为1.2+0.4=1.6亿元。与之相对应，需对该资产组的收益法评
+司的可辨认净资产的账面价值为1.2&#43;0.4=1.6亿元。与之相对应，需对该资产组的收益法评
 估值3.9亿元进行调整，在该评估值基础上加上因购买日后至资产负债表日期间的净利润
 0.4亿元所对应的净流动资产增加额（假设已对B公司的应收和预付款项、存货等各项流动
 资产分别按照《企业会计准则第 22 号——金融工具确认和计量》和《企业会计准则第 1 号
 ——存货》的规定进行了减值测试，并已恰当计提减值准备，对流动资产计提减值准备的损
 益影响已体现在上述0.4亿元的净利润中），方可求得该资产组的可收回金额。相应地，在
-该方法下，该资产组的可收回金额（上面公式中的Z值）变为：3.9+0.4=4.3亿元。
+该方法下，该资产组的可收回金额（上面公式中的Z值）变为：3.9&#43;0.4=4.3亿元。
 此时B公司与商誉相关的资产组整体减值为：
-X+Y-Z =（1.8÷60%）+1.6-4.3 = 4.6-4.3 =0.3亿元。
+X&#43;Y-Z =（1.8÷60%）&#43;1.6-4.3 = 4.6-4.3 =0.3亿元。
 推算至A公司合并报表层面按照60%的持股比例，商誉的减值金额为0.3×60%=0.18
 亿元。该结果与上述“方法一”下相同。
 从逻辑上说，在购买日计算商誉时，是以首次评估基准日 2016 年 12 月 31 日的资产基
@@ -6291,7 +6291,7 @@ X+Y-Z =（1.8÷60%）+1.6-4.3 = 4.6-4.3 =0.3亿元。
 续计算的净利润的计算结果。
 在确定Z值时，A公司管理层注意到：评估师出具的收益法评估报告中有如下内容：
 股东全部权益价值＝企业整体价值-付息债务；
-企业整体价值=企业自由现金流评估值+非经营性资产价值-非经营性负债价值＋溢余资
+企业整体价值=企业自由现金流评估值&#43;非经营性资产价值-非经营性负债价值＋溢余资
 产价值；
 企业自由现金流评估值：以目前的资料预测未来 5 年具体数，以及永续现流假设数的
 一个汇总折现数。
@@ -6685,8 +6685,8 @@ A公司的可辨认净资产公允价值持续计量的结果＋完整商誉＝2
 乙公司（不含A公司）的资产组可收回金额＋非经营性资产与负债、溢余资产的账面
 价值合计为 39 亿元（ 43 - 5 × 8 0%）。
 根据上述评估结果（假定公允），从整体上看，乙公司收购A公司之后可收回金额 43
-亿元>乙公司自购买日可辨认资产负债持续计量的账面价值与商誉之和41.08亿元，商誉没
-有减值；乙公司扣除A公司的可收回金额 39 亿元<乙公司自购买日可辨认资产负债持续计
+亿元&gt;乙公司自购买日可辨认资产负债持续计量的账面价值与商誉之和41.08亿元，商誉没
+有减值；乙公司扣除A公司的可收回金额 39 亿元&lt;乙公司自购买日可辨认资产负债持续计
 量的账面价值与商誉之和 41 亿元，相应地，商誉出现减值 2 亿元。
 
 解答：
@@ -7211,20 +7211,20 @@ IAS 37 and involves the payment of termination benefits._**
 （ 1 ）当主体不再能撤回其提供的福利时；以及
 （ 2 ）当主体确认《国际会计准则第 37 号》范围内的重组成本，且涉及辞退福利的支付
 时。）
-**_166_** _For termination benefits payable as a result of an employee's decision to accept an
+**_166_** _For termination benefits payable as a result of an employee&#39;s decision to accept an
 offer of benefits in exchange for the termination of employment, the time when an entity
 can no longer withdraw the offer of termination benefits is the earlier of:
 (a) when the employee accepts the offer; and
 (b) when a restriction (eg a legal, regulatory or contractual requirement or other restriction)
-on the entity's ability to withdraw the offer takes effect. This would be when the offer is
+on the entity&#39;s ability to withdraw the offer takes effect. This would be when the offer is
 made, if the restriction existed at the time of the offer._
 （中文翻译为： 166 对于雇员决定接受为换取终止雇佣而提供的福利提议所产生的应
 付辞退福利，主体不再能撤回提供这些福利的时间是以下时间的较早者：
 （ 1 ） 当雇员接受提议时；以及
 （ 2 ） 当对主体撤回提供福利的能力的限制（例如，法律、监管或合同规定或其他限
 制）生效时。如果限制在提供福利时存在，则为作出提供福利的时间。）
-**_167_** _For termination benefits payable as a result of an entity's decision to terminate an
-employee's employment, the entity can no longer withdraw the offer when the entity has
+**_167_** _For termination benefits payable as a result of an entity&#39;s decision to terminate an
+employee&#39;s employment, the entity can no longer withdraw the offer when the entity has
 communicated to the affected employees a plan of termination meeting all of the following
 criteria:
 (a) Actions required to complete the plan indicate that it is unlikely that significant changes
@@ -8103,7 +8103,7 @@ A公司员工离职率一直非常低。
 根据“背景”部分的信息，企业负担的职工工伤医药费应从“应付职工薪酬——福利费”
 还是“安全生产费”中列支？
 背景：
-某企业为施工企业，属于《关于印发<企业安全生产费用提取和使用管理办法>的通知》
+某企业为施工企业，属于《关于印发&lt;企业安全生产费用提取和使用管理办法&gt;的通知》
 （财企〔 2012 〕 16 号）规定的需计提安全生产费的单位，该企业也按照规定计提了安全生
 产费。 2012 年，该企业在施工中发生了安全事故，已支付职工工伤医药费 100 万元，其中
 保险公司赔付 80 万元，其余的 20 万元应由企业承担。
@@ -8111,7 +8111,7 @@ A公司员工离职率一直非常低。
 此问题应以相关规定对“安全生产费”和“职工福利费”的定义和构成内容的规定为
 出发点进行分析。
 1 、关于“安全生产费”的定义和用途
-《关于印发<企业安全生产费用提取和使用管理办法>的通知》（财企〔 2012 〕 16 号）
+《关于印发&lt;企业安全生产费用提取和使用管理办法&gt;的通知》（财企〔 2012 〕 16 号）
 第三条将“安全生产费”定义为“指企业按照规定标准提取在成本中列支，专门用于完善和
 改进企业或者项目安全生产条件的资金”。第十九条明确规定建设工程施工企业安全费用使
 用范围如下：
@@ -8952,7 +8952,7 @@ A公司于 2016 年 7 月在新三板挂牌。 2017 年 12 月，A公司计划�
 财年
 
 财年净利润 当年分红 期权前净资产 股东认购 员工认购 兑现 期权后净资产
-① ② ③=⑦+①-② ④ ⑤ ⑥ ⑦=③+④+⑤-⑥
+① ② ③=⑦&#43;①-② ④ ⑤ ⑥ ⑦=③&#43;④&#43;⑤-⑥
 2002 7,648,343.00 230,000.00 250,000.00 8,128,343.00
 2003 7,689,328.00 900,000.00 14,917,671.00 570,000.00 480,000.00 15,967,671.00
 （四）工作思路
@@ -8961,7 +8961,7 @@ A公司的IPO计划启动在即，因此需要在 2017 年末前将该期权条�
 1 、关于期权性质的判断
 由于期权条例中已经明确，期权制度是公司薪酬体系的一部分，因此管理层初步判断期
 权属于一种“以现金形式结算”的股份支付，持有A公司期权的员工在A公司工作期间获
-取的报酬包括（A公司所支付的薪酬+A公司股东向其兑现的期权）。
+取的报酬包括（A公司所支付的薪酬&#43;A公司股东向其兑现的期权）。
 根据员工认购期权的三种方式（包括现金认购、未发放奖金认购和奖励）， 管 理 层初步
 判断A公司的期权应作如下区别对待：
 （ 1 ）员工以现金认购的部分应判断为公司向员工进行集资的行为，该部分现金认购本
@@ -9376,13 +9376,13 @@ with paragraphs 30–33.
 广的员工持股计划也应属于IFRS 2的规范范围。正如IFRS 2的“结论基础”部分的BC8～
 BC18段所指出：
 **Broad-based employee share plans, including employee share purchase plans**
-BC8 Some employee share plans are described as 'broad-based' or 'all-employee'
+BC8 Some employee share plans are described as &#39;broad-based&#39; or &#39;all-employee&#39;
 plans, in which all (or virtually all) employees have the opportunity to participate, whereas
 other plans are more selective, covering individual or specific groups of employees (eg
 senior executives). Employee share purchase plans are often broad-based plans.
 Typically, employee share purchase plans provide employees with an opportunity to buy a
 specific number of shares at a discounted price, ie at an amount that is less than the fair
-value of the shares. The employee's entitlement to discounted shares is usually
+value of the shares. The employee&#39;s entitlement to discounted shares is usually
 
 
 conditional upon specific conditions being satisfied, such as remaining in the service of
@@ -9397,7 +9397,7 @@ the entity for a specified period.
 BC9 The issues that arise with respect to employee share purchase plans are:
 (a) are these plans somehow so different from other employee share plans that a
 different accounting treatment is appropriate?
-(b) even if the answer to the above question is 'no', are there circumstances, such as
+(b) even if the answer to the above question is &#39;no&#39;, are there circumstances, such as
 when the discount is very small, when it is appropriate to exempt employee share
 purchase plans from an accounting standard on share-based payment?
 （ 9 ．与雇员股份购买计划相关的问题有：
@@ -9425,11 +9425,11 @@ discount is small.
 
 BC11 **The Board concluded that, in principle, there is no reason to treat
 broad-based employee share plans, including broad-based employee share
-purchase plans, differently from other employee share plans** (the issue of 'small'
+purchase plans, differently from other employee share plans** (the issue of &#39;small&#39;
 discounts is considered later). The Board noted that the fact that these schemes are
 available only to employees is in itself sufficient to conclude that the benefits provided
-represent employee remuneration. Moreover, the term 'remuneration' is not limited to
-remuneration provided as part of an individual employee's contract: it encompasses all
+represent employee remuneration. Moreover, the term &#39;remuneration&#39; is not limited to
+remuneration provided as part of an individual employee&#39;s contract: it encompasses all
 benefits provided to employees. Similarly, the term services encompasses all benefits
 provided by the employees in return, including increased productivity, commitment or
 other enhancements in employee work performance as a result of the incentives provided
@@ -9484,7 +9484,7 @@ discount is small.
 BC15 On the one hand, it seems reasonable to exempt an employee share purchase
 plan if it has substantially no option features and the discount is small. In such situations,
 the rights given to the employees under the plan probably do not have a significant value,
-from the entity's perspective.
+from the entity&#39;s perspective.
 （15.一方面，如果它实质上没有期权特征并且折价较小时，将雇员股份购买计划作为
 例外似乎是有道理的。在这样的情况下，计划授予雇员的权利从主体的角度来看很可能没有
 明显的价值。）
@@ -9562,22 +9562,22 @@ _The Interpretations Committee was asked whether the estimated value of shares i
 only to employees and subject to post-vesting restrictions could be based on an approach
 that would look solely or primarily to an actual or synthetic market that consisted only of
 transactions between an entity and its employees and in which prices, for example,
-reflected an employee's personal borrowing rate. The Interpretations Committee was
+reflected an employee&#39;s personal borrowing rate. The Interpretations Committee was
 asked whether this approach was consistent with the requirements under IFRS 2._
 **_Reasons and Conclusions_**
 _The Interpretations Committee noted the requirements in paragraph B3 of Appendix B to
-IFRS 2, which states that,_ " _if the shares are subject to restrictions on transfer after vesting
+IFRS 2, which states that,_ &#34; _if the shares are subject to restrictions on transfer after vesting
 date, that factor shall be taken into account, but only to the extent that the post-vesting
 restrictions affect the price that a knowledgeable, willing market participant would pay for
 that share. For example, if the shares are actively traded in a deep and liquid market,
 post-vesting transfer restrictions may have little, if any, effect on the price that a
-knowledgeable, willing market participant would pay for those shares._ "
-_Paragraph BC168 of the Basis for Conclusions on IFRS 2 notes that_ " _the objective is to
-estimate the fair value of the share option, not the value from the employee's
-perspective._ " _Furthermore, paragraph B10 of Appendix B to IFRS 2 states that_ " _factors
-that affect the value of the option from the individual employee's perspective only are not
+knowledgeable, willing market participant would pay for those shares._ &#34;
+_Paragraph BC168 of the Basis for Conclusions on IFRS 2 notes that_ &#34; _the objective is to
+estimate the fair value of the share option, not the value from the employee&#39;s
+perspective._ &#34; _Furthermore, paragraph B10 of Appendix B to IFRS 2 states that_ &#34; _factors
+that affect the value of the option from the individual employee&#39;s perspective only are not
 relevant to estimating the price that would be set by a knowledgeable, willing market
-participant._ "
+participant._ &#34;
 _The Interpretations Committee noted that these paragraphs require consideration of
 actual or hypothetical transactions, not only with employees, but rather with all actual or
 potential market participants willing to invest in restricted shares that had been or might be
@@ -9710,7 +9710,7 @@ B公司于 2016 年 4 月、 2016 年 11 月分别向A公司管理团队以 1 �
 该市场条件的影响，而不应简单地依据每股净资产的账面价值或者收益法评估值。例如，假
 设预计授予日满 2 年后完成协议约定的A轮融资，届时公司的估值为5,000万元，即该次
 可无偿取得的公司股份的届时公允价值将至少为 250 万元（=5,000*5%）。假设折现率为
-12 ％，则可以大致测算第一轮期权在授予日的公允价值是 250 ／(1+12%)^2 = 1,992,984.69
+12 ％，则可以大致测算第一轮期权在授予日的公允价值是 250 ／(1&#43;12%)^2 = 1,992,984.69
 元（近似值为 200 万元）。相应地，该 200 万元应在 2 年等待期内分摊，每年确认股份支
 付费用 100 万元。对应于后续各轮融资的股权激励也采用类似的方法处理。在后续等待期
 内的每年末，应根据公司业绩、市场情况等因素对完成后续各轮融资的可能性和预计时间的
@@ -9985,7 +9985,7 @@ A公司为留住人才，于 2014 年第一次董事会决议对符合条件的�
 更
 
 
-用于员工激励股份由“邓某"代持，邓
+用于员工激励股份由“邓某&#34;代持，邓
 某、A公司、员工三方签订协议。
 
 
@@ -10315,7 +10315,7 @@ A公司各股东给予高管的激励股最高占总股比的22%（含5%的初�
 股权，收购价按公司届时净资产估值价减去一亿元作为公司总股本价值计算。
 解答：
 1 、根据《企业会计准则第 11 号——股份支付》及其应用指南和讲解的规定，股份支
-付中的授予日，是指股份支付协议获得批准的日期。其中"获得批准"，是指企业与职工或其
+付中的授予日，是指股份支付协议获得批准的日期。其中&#34;获得批准&#34;，是指企业与职工或其
 他方就股份支付的协议条款和条件已达成一致，该协议获得股东大会或类似机构的批准。故
 A公司股份支付交易的授予日为公司成立日即 2015 年 4 月 29 日。A公司在《合伙协议》
 和《公司章程》明确列示了股权激励的内容，虽然没有专门的股东大会决议，但仍符合《企
@@ -10336,15 +10336,15 @@ A公司股份支付交易的授予日为公司成立日即 2015 年 4 月 29 日
 元作为出资价格）。
 假如按每股 1 元作为所授予的股份于授予日的公允价值，则账务处理如下：
 2015 年 12 月 31 日：
-借：管理费用 375.56万元＝（500/2+400/3+400/4+400/5）*8/12
+借：管理费用 375.56万元＝（500/2&#43;400/3&#43;400/4&#43;400/5）*8/12
 贷：资本公积 375.56万元
 注 1 ：此处按授予的股份数量为 1 , 700 万股计算。因为 5 ％的初始股份在A公司的成立
 日即已授予，此时的授予价格与其他股东的入股价格一致，均为每股 1 元，且无等待期，
 可以认为该批初始股份的授予所对应的股份支付费用金额为零。
 注 2 ：本案例中假设激励对象在等待期内的预计离职率为零。
 2016 年 12 月 31 日：
-借：管理费用 565.33万元＝（500/2+400/3+400/4+400/5）
-*4/12+{（500+400*2/3+400*2/4+400*2/5）-（500/2+400/3+400/4+400/5）}*8/12
+借：管理费用 565.33万元＝（500/2&#43;400/3&#43;400/4&#43;400/5）
+*4/12&#43;{（500&#43;400*2/3&#43;400*2/4&#43;400*2/5）-（500/2&#43;400/3&#43;400/4&#43;400/5）}*8/12
 贷：资本公积 565.33万元
 3 、根据财政部《关于做好执行企业会计准则的企业 2012 年年报工作的通知》（财会
 [2012]25号）规定：“在等待期内如果取消了授予的权益性工具的（因未满足可行权条件
@@ -10378,8 +10378,8 @@ A公司股份支付交易的授予日为公司成立日即 2015 年 4 月 29 日
 “企业在可行权日之后不再对已确认的相关成本或费用和所有者权益总额进行调整。”
 《企业会计准则第 11 号——股份支付》应用指南
 “除了立即可行权的股份支付外，无论权益结算的股份支付或者现金结算的股份支付，
-企业在授予日都不进行会计处理。授予日是指股份支付协议获得批准的日期。其中"获得批
-准"，是指企业与职工或其他方就股份支付的协议条款和条件已达成一致，该协议获得股东
+企业在授予日都不进行会计处理。授予日是指股份支付协议获得批准的日期。其中&#34;获得批
+准&#34;，是指企业与职工或其他方就股份支付的协议条款和条件已达成一致，该协议获得股东
 大会或类似机构的批准。”
 “业绩条件分为市场条件和非市场条件。市场条件是指行权价格、可行权条件以及行
 权可能性与权益工具的市场价格相关的业绩条件，如股份支付协议中关于股价至少上升至
@@ -10400,7 +10400,7 @@ A公司股份支付交易的授予日为公司成立日即 2015 年 4 月 29 日
 价值。对于授予的不存在活跃市场的期权等权益工具，应当采用期权定价模型等确定其公允
 
 价值”
-“授予日是指股份支付协议获得批准的日期。其中"获得批准"，是指企业与职工或其
+“授予日是指股份支付协议获得批准的日期。其中&#34;获得批准&#34;，是指企业与职工或其
 他方就股份支付的协议条款和条件已达成一致，该协议获得股东大会或类似机构的批准。”
 财政部《关于做好执行企业会计准则的企业 **2012** 年年报工作的通知》（财会 **[2012]25**
 号）
@@ -11205,6 +11205,6 @@ A公司管理层认为，A公司艺人运作业务的“产品”为艺人，艺
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_1/  
 

@@ -1,7 +1,7 @@
 # 每天一个linux命令（53）: watch
 
 　　watch是一个非常实用的命令，基本所有的Linux发行版都带有这个小工具，如同名字一样，watch可以帮你监测一个命令的运行结果，省得你一遍遍的手动运行。在Linux下，watch是周期性的执行下个程序，并全屏显示执行结果。你可以拿他来监测你想要的一切命令的结果变化，比如 tail 一个 log 文件，ls 监测某个文件的大小变化，看你的想象力了！
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 $ watch[参数][命令]
@@ -22,32 +22,32 @@ $ watch[参数][命令]
 ```bash
 $ watch -n 1 -d netstat -ant
 ```
->**说明：**
+&gt;**说明：**
 其它操作：
-切换终端： Ctrl+x
-退出watch：Ctrl+g (deepin系统没效果，只能使用Ctrl+c退出了)
+切换终端： Ctrl&#43;x
+退出watch：Ctrl&#43;g (deepin系统没效果，只能使用Ctrl&#43;c退出了)
 
 **`例二`：每隔一秒高亮显示http链接数的变化情况**
 ```bash
-## 每隔一秒高亮显示http链接数的变化情况。 后面接的命令若带有管道符，需要加''将命令区域归整。
-$ watch -n 1 -d 'pstree|grep http'
+## 每隔一秒高亮显示http链接数的变化情况。 后面接的命令若带有管道符，需要加&#39;&#39;将命令区域归整。
+$ watch -n 1 -d &#39;pstree|grep http&#39;
 ```
 **`例三`：实时查看模拟攻击客户机建立起来的连接数**
 ```bash
-$ watch 'netstat -an | grep:21 | \ grep<模拟攻击客户机的IP>| wc -l'
+$ watch &#39;netstat -an | grep:21 | \ grep&lt;模拟攻击客户机的IP&gt;| wc -l&#39;
 ```
-**`例四`：监测当前目录中 scf' 的文件的变化**
+**`例四`：监测当前目录中 scf&#39; 的文件的变化**
 ```bash
-$ watch -d 'ls -l|grep scf'
+$ watch -d &#39;ls -l|grep scf&#39;
 ```
 **`例五`：10秒一次输出系统的平均负载**
 ```bash
-$ watch -n 10 'cat /proc/loadavg'
+$ watch -n 10 &#39;cat /proc/loadavg&#39;
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-53-watch/  
 

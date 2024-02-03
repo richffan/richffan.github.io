@@ -27,17 +27,17 @@ Sub range装进字典()
     Dim i, j, k
     Dim ar, tmp()
     Dim d As Object, kw$
-    Set d = CreateObject("Scripting.Dictionary")
-    'd.CompareMode = vbTextCompare '不区分大小写
+    Set d = CreateObject(&#34;Scripting.Dictionary&#34;)
+    &#39;d.CompareMode = vbTextCompare &#39;不区分大小写
 
-    ar = Range("a1:e" & [a65536].End(3).Row)
+    ar = Range(&#34;a1:e&#34; &amp; [a65536].End(3).Row)
     Dim irow
     For i = 2 To UBound(ar)
         kw = ar(i, 4)
         If Not d.exists(kw) Then
-            Set d(kw) = Union(Range("a1:e1"), Range("a" & i & ":e" & i))
+            Set d(kw) = Union(Range(&#34;a1:e1&#34;), Range(&#34;a&#34; &amp; i &amp; &#34;:e&#34; &amp; i))
         Else
-            Set d(kw) = Union(d(kw), Range("a" & i & ":e" & i))
+            Set d(kw) = Union(d(kw), Range(&#34;a&#34; &amp; i &amp; &#34;:e&#34; &amp; i))
         End If
     Next i
 
@@ -52,10 +52,10 @@ Sub range装进字典()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485249&idx=1&sn=a5358d8fe595364149e6f41e84cdec3b&chksm=e8bcce16dfcb47004200062e717b1f72ba0326d94589d37bdfad489431f3e72491eb119824a8&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485249&amp;idx=1&amp;sn=a5358d8fe595364149e6f41e84cdec3b&amp;chksm=e8bcce16dfcb47004200062e717b1f72ba0326d94589d37bdfad489431f3e72491eb119824a8&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B015%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8B/  
 

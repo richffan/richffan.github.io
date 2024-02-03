@@ -87,6 +87,6 @@
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/  
 

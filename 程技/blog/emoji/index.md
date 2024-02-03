@@ -4,7 +4,7 @@
 Emoji
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ### 数字
@@ -34,6 +34,6 @@ Emoji
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/blog/emoji/  
 

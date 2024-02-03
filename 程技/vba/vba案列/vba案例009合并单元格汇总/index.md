@@ -21,15 +21,15 @@ Sub 汇总()
     Dim i, j, k
     Dim ar
 
-    ar = Range("a1:c" & [c65536].End(3).Row)
+    ar = Range(&#34;a1:c&#34; &amp; [c65536].End(3).Row)
 
     Dim d As Object, kw$
-    Set d = CreateObject("Scripting.Dictionary")
-    'd.CompareMode = vbTextCompare '不区分大小写
+    Set d = CreateObject(&#34;Scripting.Dictionary&#34;)
+    &#39;d.CompareMode = vbTextCompare &#39;不区分大小写
 
     For i = 2 To UBound(ar)
-        If ar(i, 1) = "" Then ar(i, 1) = ar(i - 1, 1)
-        d(ar(i, 1)) = d(ar(i, 1)) + ar(i, 3)
+        If ar(i, 1) = &#34;&#34; Then ar(i, 1) = ar(i - 1, 1)
+        d(ar(i, 1)) = d(ar(i, 1)) &#43; ar(i, 3)
     Next
     [F2].Resize(d.Count) = Application.WorksheetFunction.Transpose(d.keys)
     [g2].Resize(d.Count) = Application.WorksheetFunction.Transpose(d.items)
@@ -37,10 +37,10 @@ Sub 汇总()
 End Sub
 ```
 
-[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&mid=2247485175&idx=1&sn=21a86379e469df4052c9e26bc5615e4b&chksm=e8bccfa0dfcb46b67aa9719e78f9d5ef4e2316ead39351e037282d360f6fc752126496c0e063&scene=178&cur_album_id=3115603487041503237#rd)
+[原始链接](https://mp.weixin.qq.com/s?__biz=MzIyOTc3NzQ2NA==&amp;mid=2247485175&amp;idx=1&amp;sn=21a86379e469df4052c9e26bc5615e4b&amp;chksm=e8bccfa0dfcb46b67aa9719e78f9d5ef4e2316ead39351e037282d360f6fc752126496c0e063&amp;scene=178&amp;cur_album_id=3115603487041503237#rd)
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/  
 

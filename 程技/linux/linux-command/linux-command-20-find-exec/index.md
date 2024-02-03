@@ -1,7 +1,7 @@
 # 每天一个linux命令（20）: find命令之exec
 
 　　find是我们很常用的一个Linux命令，但是我们一般查找出来的并不仅仅是看看而已，还会有进一步的操作，这个时候exec的作用就显现出来了
-<!--more -->
+&lt;!--more --&gt;
 #### 命令介绍
 　　`-exec`  参数后面跟的是command命令，它的终止是以;为结束标志的，所以这句命令后面的分号是不可缺少的，考虑到各个系统中分号会有不同的意义，所以前面加反斜杠。
 
@@ -16,28 +16,28 @@ $ find . -type f -exec ls -l {} \;
 ```
 **`例二`：在目录中查找更改时间在n日以前的文件并删除它们**
 ```bash
-$ find . -type f -mtime +14 -exec rm {} \;
+$ find . -type f -mtime &#43;14 -exec rm {} \;
 ```
 **`例三`：在目录中查找更改时间在n日以前的文件并删除它们，在删除之前先给出提示**
 ```bash
-$ find . -name "*.log" -mtime +5 -ok rm {} \;
+$ find . -name &#34;*.log&#34; -mtime &#43;5 -ok rm {} \;
 ```
 **`例四`：-exec中使用grep命令**
 ```bash
-$ find /etc -name "passwd*" -exec grep "root" {} \;
+$ find /etc -name &#34;passwd*&#34; -exec grep &#34;root&#34; {} \;
 ```
 **`例五`：查找文件移动到指定目录**
 ```bash
-$ find . -name "*.log" -exec mv {} .. \;
+$ find . -name &#34;*.log&#34; -exec mv {} .. \;
 ```
 **`例六`：用exec选项执行cp命令**
 ```bash
-$ find . -name "*.log" -exec cp {} test3 \;
+$ find . -name &#34;*.log&#34; -exec cp {} test3 \;
 ```
 
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-20-find-exec/  
 

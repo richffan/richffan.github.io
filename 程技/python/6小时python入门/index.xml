@@ -6,16 +6,14 @@
     <description>Recent content in 6小时Python入门 on 樊刹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <managingEditor>richffan@outlook.com (richfan)</managingEditor>
-    <webMaster>richffan@outlook.com (richfan)</webMaster>
     <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>6 小时 Python 入门</title>
       <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>richffan@outlook.com (richfan)</author>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
       <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
-      <description>以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python 1、官网下载 Python 进入官网（https://www.python.org），点击 Downlo</description>
+      <description>以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python1、官网下载 Python 进入官网（https://www.python.org），点击 D</description>
     </item>
   </channel>
 </rss>

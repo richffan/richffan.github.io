@@ -1,13 +1,13 @@
 # 每天一个linux命令（38）: route
 
 　　Linux系统的route命令用于显示和操作IP路由表（show / manipulate the IP routing table）。要实现两个不同的子网之间的通信，需要一台连接两个网络的路由器，或者同时位于两个网络的网关来实现。在Linux系统中，设置路由通常是为了解决以下问题：该Linux系统在一个局域网中，局域网中有一个网关，能够让机器访问Internet，那么就需要将这台机器的IP地址设置为Linux机器的默认路由。要注意的是，直接在命令行下执行route命令来添加路由，不会永久保存，当网卡重启或者机器重启之后，该路由就失效了；可以在/etc/rc.local中添加route命令来保证该路由设置永久有效。
-<!--more -->
+&lt;!--more --&gt;
 #### 命令格式
 ```bash
 route [-f] [-p] [Command [Destination] [mask Netmask] [Gateway] [metric Metric]] [if Interface]]
 ```
 #### 命令功能
-　　Route命令是用于操作基于内核ip路由表，它的主要作用是创建一个静态路由让指定一个主机或者一个网络通过一个网络接口，如eth0。当使用"add"或者"del"参数时，路由表被修改，如果没有参数，则显示路由表当前的内容。
+　　Route命令是用于操作基于内核ip路由表，它的主要作用是创建一个静态路由让指定一个主机或者一个网络通过一个网络接口，如eth0。当使用&#34;add&#34;或者&#34;del&#34;参数时，路由表被修改，如果没有参数，则显示路由表当前的内容。
 #### 命令参数
 | 命令 | 描述     |
 | :------------- | :------------- |
@@ -54,7 +54,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 10.0.0.0        192.168.120.1   255.0.0.0       UG    0      0        0 eth0
 0.0.0.0         192.168.120.240 0.0.0.0         UG    0      0        0 eth0
 ```
->**说明：**
+&gt;**说明：**
 　　第一行表示主机所在网络的地址为192.168.120.0，若数据传送目标是在本局域网内通信，则可直接通过eth0转发数据包;
 　　第四行表示数据传送目的是访问Internet，则由接口eth0，将数据包发送到网关192.168.120.240
 　　其中Flags为路由标志，标记当前网络节点的状态。
@@ -93,6 +93,6 @@ $ route add default gw 192.168.120.240
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-38-route/  
 

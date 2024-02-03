@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>每天一个linux命令（57）: sftp - 樊刹</title><meta name="author" content="richfan">
-<meta name="author-link" content="https://richfan.site/">
+    <title>每天一个linux命令（57）: sftp - 樊刹</title><meta name="author" content="">
+<meta name="author-link" content="">
 <meta name="description" content="sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。" /><meta name="keywords" content='linux命令' /><meta itemprop="name" content="每天一个linux命令（57）: sftp">
 <meta itemprop="description" content="sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。"><meta itemprop="datePublished" content="2017-03-05T16:29:38+00:00" />
 <meta itemprop="dateModified" content="2017-03-05T16:29:38+00:00" />
-<meta itemprop="wordCount" content="608"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
+<meta itemprop="wordCount" content="610"><meta itemprop="image" content="http://richfan.site/favicon.svg" />
 <meta itemprop="keywords" content="linux命令," /><meta property="og:title" content="每天一个linux命令（57）: sftp" />
 <meta property="og:description" content="sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。" />
 <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="http://richfan.site/favicon.svg" /><meta name="twitter:title" content="每天一个linux命令（57）: sftp"/>
 <meta name="twitter:description" content="sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。"/>
 <meta name="application-name" content="樊刹">
-<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-58-sort/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="樊刹"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" /><link rel="prev" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/" /><link rel="next" href="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -33,19 +33,19 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/linux\/linux-command\/linux-command-57-sftp\/"
-    },"genre": "posts","keywords": "linux命令","wordcount":  608 ,
+    },"genre": "posts","keywords": "linux命令","wordcount":  610 ,
     "url": "http:\/\/richfan.site\/%E7%A8%8B%E6%8A%80\/linux\/linux-command\/linux-command-57-sftp\/","datePublished": "2017-03-05T16:29:38+00:00","dateModified": "2017-03-05T16:29:38+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
-        "name": "richfan"
+        "name": "作者"
       },"description": ""
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper" data-github-corner="right">
     <div class="header-title">
-      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="樊刹" data-alt="樊刹" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+      <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="樊刹" data-title="樊刹" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-desktop" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
     <nav>
       <ul class="menu"><li class="menu-item">
               <a
@@ -97,7 +97,7 @@
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" data-title="/favicon.svg" data-alt="/favicon.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+        <a href="/" title="樊刹"><img loading="lazy" src="/favicon.svg" alt="/favicon.svg" data-title="/favicon.svg" class="logo" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span id="typeit-header-title-mobile" class="typeit"></span><span class="header-title-post"><i class='fa-solid fa-jedi fa-fw'></i></span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
       </div>
@@ -167,18 +167,13 @@
   </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">程技</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/linux/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">Linux</a></li><li class="breadcrumb-item"><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/" title="编程,投行,学习,blog,excel,golang,linux,python,spider,sql,system,vba,emoji,git,pandas,ibank,audit,program,design,cook,law,book,tax,ipo,finance,accounting,">linux-command</a></li><li class="breadcrumb-item active" aria-current="page">每天一个linux命令（57）: sftp</li>
     </ol>
-  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
-      <div class="toc-content" id="toc-content-auto"></div></aside>
-
-  <aside class="aside-custom">
-    </aside>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>每天一个linux命令（57）: sftp</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://richfan.site/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.webp" data-title="richfan" data-alt="richfan" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const i of ['style', 'data-title','data-alt','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;richfan</a></span>
-          <span class="post-category">收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2017-03-05 16:29:38"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2017-03-05">2017-03-05</time></span>&nbsp;<span title="更新于 2017-03-05 16:29:38"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2017-03-05">2017-03-05</time></span>&nbsp;<span title="608 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 700 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（57）: sftp">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E7%A8%8B%E6%8A%80/" class="post-category" title="分类 - 程技"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 程技</a></span></div><div class="post-meta-line"><span title="发布于 2017-03-05 16:29:38"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2017-03-05">2017-03-05</time></span>&nbsp;<span title="610 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 700 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;<span id="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" class="leancloud_visitors comment-visitors" data-flag-title="每天一个linux命令（57）: sftp">
               <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span class="leancloud-visitors-count">-</span>&nbsp;次阅读
             </span>&nbsp;<span class="comment-count" data-flag-title="每天一个linux命令（57）: sftp">
               <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-xid="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" class="valine-comment-count">-</span>&nbsp;条评论
@@ -205,8 +200,8 @@
       </div><div class="content" id="content"><p>sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。</p>
 <p>它可以配置使用几个有用的 SSH 功能，如公钥认证和压缩。 它连接并登录到指定的远程机器，然后切换到交互式命令模式，在该模式下用户可以执行各种命令。</p>
 <p>在本文中，我们将向你展示如何使用 sFTP 上传/下载整个目录（包括其子目录和子文件）。</p>
-<h3 id="how-to-use">How to use</h3>
-<p>默认情况下，SFTP 协议采用和 SSH 传输协议一样的方式建立到远程服务器的安全连接。虽然，用户验证使用类似于 SSH 默认设置的密码方式，但是，建议创建和使用 SSH 无密码登录，以简化和更安全地连接到远程主机。</p>
+<h3 id="how-to-use" class="heading-element">
+  <a href="#how-to-use" class="heading-mark"></a>How to use</h3><p>默认情况下，SFTP 协议采用和 SSH 传输协议一样的方式建立到远程服务器的安全连接。虽然，用户验证使用类似于 SSH 默认设置的密码方式，但是，建议创建和使用 SSH 无密码登录，以简化和更安全地连接到远程主机。</p>
 <p>要连接到远程 sftp 服务器，如下建立一个安全 SSH 连接并创建 SFTP 会话：</p>
 <div class="highlight" id="id-1"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -237,8 +232,8 @@
 </span></span><span class="line"><span class="cl">sftp&gt; mkdir img     <span class="c1">#在服务器上创建一个目录</span>
 </span></span><span class="line"><span class="cl">sftp&gt; lmkdir img    <span class="c1">#在本地创建一个目录</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="上传文件">上传文件</h3>
-<div class="highlight" id="id-3"><div class="chroma">
+</div><h3 id="上传文件" class="heading-element">
+  <a href="#%e4%b8%8a%e4%bc%a0%e6%96%87%e4%bb%b6" class="heading-mark"></a>上传文件</h3><div class="highlight" id="id-3"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -247,8 +242,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sftp&gt; put readme.md <span class="c1">#上传单个文件</span>
 </span></span><span class="line"><span class="cl">sftp&gt; mput *.xls    <span class="c1">#上传多个文件</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="下载文件">下载文件</h3>
-<div class="highlight" id="id-4"><div class="chroma">
+</div><h3 id="下载文件" class="heading-element">
+  <a href="#%e4%b8%8b%e8%bd%bd%e6%96%87%e4%bb%b6" class="heading-mark"></a>下载文件</h3><div class="highlight" id="id-4"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -257,8 +252,8 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sftp&gt; get readme.md <span class="c1">#下载单个文件</span>
 </span></span><span class="line"><span class="cl">sftp&gt; mget *.xls    <span class="c1">#下载多个文件</span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="上传文件夹">上传文件夹</h3>
-<p>使用<code>put -r</code> .但是远程服务器要提前创建一个相同名称的目录; <code>-r</code> 递归复制子目录和子文件</p>
+</div><h3 id="上传文件夹" class="heading-element">
+  <a href="#%e4%b8%8a%e4%bc%a0%e6%96%87%e4%bb%b6%e5%a4%b9" class="heading-mark"></a>上传文件夹</h3><p>使用<code>put -r</code> .但是远程服务器要提前创建一个相同名称的目录; <code>-r</code> 递归复制子目录和子文件</p>
 <div class="highlight" id="id-5"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -276,16 +271,16 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sftp&gt; put -pr img</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="下载文件夹">下载文件夹</h3>
-<div class="highlight" id="id-7"><div class="chroma">
+</div><h3 id="下载文件夹" class="heading-element">
+  <a href="#%e4%b8%8b%e8%bd%bd%e6%96%87%e4%bb%b6%e5%a4%b9" class="heading-mark"></a>下载文件夹</h3><div class="highlight" id="id-7"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sftp&gt; get -r img</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="退出">退出</h3>
-<div class="highlight" id="id-8"><div class="chroma">
+</div><h3 id="退出" class="heading-element">
+  <a href="#%e9%80%80%e5%87%ba" class="heading-mark"></a>退出</h3><div class="highlight" id="id-8"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -306,33 +301,34 @@
       <div class="post-info-mod">
         <span title="更新于 2017-03-05 16:29:38">更新于 2017-03-05&nbsp;</span>
       </div><div class="post-info-license">
-          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
-        </div></div>
-    <div class="post-info-line">
-      <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
-      <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" data-title="每天一个linux命令（57）: sftp" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/" data-title="每天一个linux命令（57）: sftp" data-ralateuid="u/6067824622"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div></div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/linux%E5%91%BD%E4%BB%A4/' class="post-tag">linux命令</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/linux%E5%91%BD%E4%BB%A4/" class="post-tag" title="标签 - linux命令">linux命令</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
   <div class="post-nav"><a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/" class="post-nav-item" rel="prev" title="每天一个linux命令（56）: tailf"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>每天一个linux命令（56）: tailf</a>
-      <a href="/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-58-sort/" class="post-nav-item" rel="next" title="每天一个linux命令（58）: sort">每天一个linux命令（58）: sort<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+      <a href="/%E7%A8%8B%E6%8A%80/linux/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1/" class="post-nav-item" rel="next" title="如何在linux中搭建ftp服务">如何在linux中搭建ftp服务<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
         Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/" rel="external nofollow noopener noreferrer">Valine</a>.
-      </noscript></div></article></main><footer class="footer">
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">
-              <a href="https://richfan.site/"target="_blank" rel="external nofollow noopener noreferrer">richfan</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line visitor">
           <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
         </div><div class="footer-line beian"><span class="gov"><a href="https://beian.mps.gov.cn/">京公网安备 11010502049321号</a></span><span class="icp footer-divider"><a href="https://beian.miit.gov.cn/shouye.html">京ICP备2022007001号-1</a></span></div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>

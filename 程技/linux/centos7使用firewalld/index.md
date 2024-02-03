@@ -3,7 +3,7 @@
 ### 介绍
 FirewallD 提供了支持网络/防火墙区域(zone)定义网络链接以及接口安全等级的动态防火墙管理工具。它支持 IPv4, IPv6 防火墙设置以及以太网桥接，并且拥有运行时配置和永久配置选项。它也支持允许服务或者应用程序直接添加防火墙规则的接口。
 
-<!--more-->
+&lt;!--more--&gt;
 
 #### 安装
 ```bash
@@ -205,7 +205,7 @@ $ firewall-cmd --zone=public --remove-icmp-block=echo-reply
 ```
 **`g. IP 封禁`**
 ```bash
-$ firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='222.222.222.222' reject"
+$ firewall-cmd --permanent --add-rich-rule=&#34;rule family=&#39;ipv4&#39; source address=&#39;222.222.222.222&#39; reject&#34;
 ```
 当然，我们仍然可以通过 ipset 来封禁 ip
 
@@ -225,7 +225,7 @@ $ firewall-cmd --permanent --zone=public --new-ipset-from-file=/path/blacklist.x
 ```
 然后封禁 blacklist
 ```bash
-$ firewall-cmd --permanent --zone=public --add-rich-rule='rule source ipset=blacklist drop'
+$ firewall-cmd --permanent --zone=public --add-rich-rule=&#39;rule source ipset=blacklist drop&#39;
 ```
 重新载入以生效
 ```bash
@@ -235,6 +235,6 @@ $ firewall-cmd --reload
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/  
 

@@ -29,17 +29,17 @@ insert into F1025 values(9,-7);
 SELECT 
     a.id
     ,a.Num
-    ,CASE WHEN a.Num>ISNULL((
+    ,CASE WHEN a.Num&gt;ISNULL((
         SELECT Num FROM F1025 b WHERE b.id=a.id-1 
     ),a.Num-1)
-    AND a.Num>ISNULL((
-        SELECT Num FROM F1025 c WHERE c.id=a.id+1 
-    ),a.Num-1) THEN '是' ELSE '否' END AS Result
+    AND a.Num&gt;ISNULL((
+        SELECT Num FROM F1025 c WHERE c.id=a.id&#43;1 
+    ),a.Num-1) THEN &#39;是&#39; ELSE &#39;否&#39; END AS Result
 FROM F1025 AS a
 ```
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1025-complex-logic-processing/  
 

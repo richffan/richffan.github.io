@@ -3,7 +3,7 @@
 
 突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，或者不想这么干的话，直接调用内置的方法咯。
 
-> list 是一种元素个数可变的线性表，采用了分离式技术实现的动态顺序表。可以加入和删除元素，并在各种操作中维持已有元素的顺序（即保序）。
+&gt; list 是一种元素个数可变的线性表，采用了分离式技术实现的动态顺序表。可以加入和删除元素，并在各种操作中维持已有元素的顺序（即保序）。
 
 
 
@@ -12,10 +12,10 @@
 ```python
 # 创建顺序表
 def CreateSeqList(self):
-    element = input("please enter(input #:end):")
-    while element != '#':
+    element = input(&#34;please enter(input #:end):&#34;)
+    while element != &#39;#&#39;:
         self.seqList.append(int(element))
-        element = input("please enter(input #:end):")
+        element = input(&#34;please enter(input #:end):&#34;)
 ```
 
 
@@ -25,12 +25,12 @@ def CreateSeqList(self):
 ```python
 # 查找顺序表中某一个元素
 def FindElement(self):
-    key = int(input("please enter what you want to find:"))
+    key = int(input(&#34;please enter what you want to find:&#34;))
     if key in self.seqList:
         keyPosition = self.seqList.index(key)
         result = keyPosition
     else:
-        result = "none"
+        result = &#34;none&#34;
     return result
 ```
 
@@ -41,11 +41,11 @@ def FindElement(self):
 ```python
 # 在指定位置上插入元素
 def InsertElement(self):
-    postion = int(input("请输入要插入的位置："))
-    key = int(input("请输入要插入的值："))
-    print("插入前顺序：", self.seqList)
+    postion = int(input(&#34;请输入要插入的位置：&#34;))
+    key = int(input(&#34;请输入要插入的值：&#34;))
+    print(&#34;插入前顺序：&#34;, self.seqList)
     self.seqList.insert(postion, key)
-    print("插入后顺序：", self.seqList)
+    print(&#34;插入后顺序：&#34;, self.seqList)
 ```
 
 
@@ -55,13 +55,13 @@ def InsertElement(self):
 ```python
 # 在指定位置上删除元素
 def DeleteElement(self):
-    postion = int(input("请输入要删除元素的位置："))
-    print("删除前的顺序表：", self.seqList)
-    if postion < len(self.seqList) and postion >= 0:
+    postion = int(input(&#34;请输入要删除元素的位置：&#34;))
+    print(&#34;删除前的顺序表：&#34;, self.seqList)
+    if postion &lt; len(self.seqList) and postion &gt;= 0:
         del self.seqList[postion]
         return self.seqList
     else:
-        print("不存在啊老铁，删除个毛线啊")
+        print(&#34;不存在啊老铁，删除个毛线啊&#34;)
 ```
 
 
@@ -77,43 +77,43 @@ class SequenceList:
 
     # 创建顺序表
     def CreateSeqList(self):
-        element = input("please enter(input #:end):")
-        while element != '#':
+        element = input(&#34;please enter(input #:end):&#34;)
+        while element != &#39;#&#39;:
             self.seqList.append(int(element))
-            element = input("please enter(input #:end):")
+            element = input(&#34;please enter(input #:end):&#34;)
 
     # 查找顺序表中某一个元素
     def FindElement(self):
-        key = int(input("please enter what you want to find:"))
+        key = int(input(&#34;please enter what you want to find:&#34;))
         if key in self.seqList:
             keyPosition = self.seqList.index(key)
             result = keyPosition
         else:
-            result = "none"
+            result = &#34;none&#34;
         return result
 
     # 在指定位置上插入元素
     def InsertElement(self):
-        postion = int(input("请输入要插入的位置："))
-        key = int(input("请输入要插入的值："))
-        print("插入前顺序：", self.seqList)
+        postion = int(input(&#34;请输入要插入的位置：&#34;))
+        key = int(input(&#34;请输入要插入的值：&#34;))
+        print(&#34;插入前顺序：&#34;, self.seqList)
         self.seqList.insert(postion, key)
-        print("插入后顺序：", self.seqList)
+        print(&#34;插入后顺序：&#34;, self.seqList)
 
     # 在指定位置上删除元素
     def DeleteElement(self):
-        postion = int(input("请输入要删除元素的位置："))
-        print("删除前的顺序表：", self.seqList)
-        if postion < len(self.seqList) and postion >= 0:
+        postion = int(input(&#34;请输入要删除元素的位置：&#34;))
+        print(&#34;删除前的顺序表：&#34;, self.seqList)
+        if postion &lt; len(self.seqList) and postion &gt;= 0:
             del self.seqList[postion]
             return self.seqList
         else:
-            print("不存在啊老铁，删除个毛线啊")
+            print(&#34;不存在啊老铁，删除个毛线啊&#34;)
 
     # 遍历顺序表元素
     def TraverseElement(self):
         for i in range(len(self.seqList)):
-            print(self.seqList[i], end =' ')
+            print(self.seqList[i], end =&#39; &#39;)
 
     # 判空
     def IsEmpty(self):
@@ -121,13 +121,13 @@ class SequenceList:
 
     # 销毁顺序表
     def DestorySeqList(self):
-        print("销毁前顺序表：", self.seqList)
+        print(&#34;销毁前顺序表：&#34;, self.seqList)
         self.__init__()
-        print("销毁后顺序表：", self.seqList)
+        print(&#34;销毁后顺序表：&#34;, self.seqList)
 
 
 # 测试
-if __name__ == '__main__':
+if __name__ == &#39;__main__&#39;:
     list = SequenceList()
     list.CreateSeqList()
     print(list.seqList)
@@ -143,6 +143,6 @@ if __name__ == '__main__':
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/  
 

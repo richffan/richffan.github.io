@@ -6,11 +6,11 @@
 
 1、打开设置对话框
 
-点击File --> settings，弹出设置对话框
+点击File --&gt; settings，弹出设置对话框
 
 2、设置 Python 路径（解释器设置）
 
-点击 Project --> Project Interpreter，在右侧 Project Interpreter 下拉，选择 python 路径（若没有，选择 show all），实现 pycharm的 python 路径设置。
+点击 Project --&gt; Project Interpreter，在右侧 Project Interpreter 下拉，选择 python 路径（若没有，选择 show all），实现 pycharm的 python 路径设置。
 
 ![image-20200517235214785](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517235215.png)
 
@@ -37,7 +37,7 @@ Python 的编码问题由来已久，为了避免一步一坑， Pycharm 提供�
 
 对于常用的快捷键，可以设置为自己熟悉的风格，我选的是 Eclipse。
 
-File --> Setting --> Keymap --> Keymaps --> XXX --> Apply
+File --&gt; Setting --&gt; Keymap --&gt; Keymaps --&gt; XXX --&gt; Apply
 
 ![image-20200518000651606](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518000652.png)
 
@@ -45,17 +45,17 @@ File --> Setting --> Keymap --> Keymaps --> XXX --> Apply
 
 1、修改代码栏字体
 
-通过 File --> Setting --> Editor --> Font 调节
+通过 File --&gt; Setting --&gt; Editor --&gt; Font 调节
 
 2、修改菜单栏列表框字体
 
-通过 setting>>> 在搜索框搜 Appearance，勾选 Override default fonts by(not recommended)
+通过 setting&gt;&gt;&gt; 在搜索框搜 Appearance，勾选 Override default fonts by(not recommended)
 
 3、鼠标改变字体
 
-浏览器的时候我们习惯于 Ctrl + 鼠标滚轮改变字体大小，很多编辑工具也提供，那么 PyCharm 中支持吗？也是支持的，只是默认不开启，可以设置
+浏览器的时候我们习惯于 Ctrl &#43; 鼠标滚轮改变字体大小，很多编辑工具也提供，那么 PyCharm 中支持吗？也是支持的，只是默认不开启，可以设置
 
-File --> Setting --> Editor --> General
+File --&gt; Setting --&gt; Editor --&gt; General
 
 ![image-20200518001247655](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518001248.png)
 
@@ -63,7 +63,7 @@ File --> Setting --> Editor --> General
 
 设置路径：
 
-File --> Settings --> Editor --> File and Code Templates --> Python Scripts
+File --&gt; Settings --&gt; Editor --&gt; File and Code Templates --&gt; Python Scripts
 
 输入信息：
 
@@ -71,12 +71,12 @@ File --> Settings --> Editor --> File and Code Templates --> Python Scripts
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
+&#34;&#34;&#34;
 @Time        : ${DATE}
 @Author      : ${USER}
 @File        : ${NAME}
 @Description : 
-"""
+&#34;&#34;&#34;
 ```
 
 说明：
@@ -101,7 +101,7 @@ File --> Settings --> Editor --> File and Code Templates --> Python Scripts
 
 ## 设置提示函数及其参数和使用
 
-File --> Settings --> Editor --> Code Completion
+File --&gt; Settings --&gt; Editor --&gt; Code Completion
 
 ![image-20200518104823559](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518104825.png)
 
@@ -109,13 +109,13 @@ File --> Settings --> Editor --> Code Completion
 
 ## 设置自动提示功能
 
-File --> Settings --> Editor --> Code Completion
+File --&gt; Settings --&gt; Editor --&gt; Code Completion
 
 ![image-20200518110552692](https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518110553.png)
 
 ## 打出表情符号
 
-按住 `win + 。` 键
+按住 `win &#43; 。` 键
 
 效果图：
 
@@ -123,6 +123,6 @@ File --> Settings --> Editor --> Code Completion
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/  
 

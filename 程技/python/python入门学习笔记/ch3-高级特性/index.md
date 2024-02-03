@@ -8,9 +8,9 @@
 ```python
 L = []
 n = 1
-while n <= 99:
+while n &lt;= 99:
     L.append(n)
-    n = n + 2
+    n = n &#43; 2
 print(L)
 ```
 
@@ -34,7 +34,7 @@ print(list)
 取一个 list 或 tuple 的部分元素是非常常见的操作。比如，一个 list 如下：
 
 ```python
-L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+L = [&#39;Michael&#39;, &#39;Sarah&#39;, &#39;Tracy&#39;, &#39;Bob&#39;, &#39;Jack&#39;]
 ```
 
 取前 3 个元素，应该怎么做？
@@ -97,15 +97,15 @@ L[1:3]
 
 ⭐ 切片格式：**[开头：结束：步长]**
 
-- **开头**：当步长 >0 时，开头不写默认 0，即从第一位开始切片
+- **开头**：当步长 &gt;0 时，开头不写默认 0，即从第一位开始切片
 
-  当步长 < 0时，开头不写默认 -1 ，即从最后一位开始倒着切片
+  当步长 &lt; 0时，开头不写默认 -1 ，即从最后一位开始倒着切片
 
-- **结束**：当步长 > 0 时，结束不写默认为列表长度加一，即切片到最后一位结束
+- **结束**：当步长 &gt; 0 时，结束不写默认为列表长度加一，即切片到最后一位结束
 
-  当步长 < 0 时，结束不写默认为负的列表长度减一，即倒着切片到第一位结束
+  当步长 &lt; 0 时，结束不写默认为负的列表长度减一，即倒着切片到第一位结束
 
-- **步长：默认为1，> 0 是从左往右走，< 0 是从右往左走**
+- **步长：默认为1，&gt; 0 是从左往右走，&lt; 0 是从右往左走**
 
 💬 切片操作十分有用。我们先创建一个 0 - 99 的数列：
 
@@ -154,7 +154,7 @@ L[::5]
 
 ### 3.1.2 tuple 切片
 
-!> tuple 也是一种 list，唯一区别是 tuple 不可变。因此，tuple 也可以用切片操作，只是操作的结果仍是 tuple：
+!&gt; tuple 也是一种 list，唯一区别是 tuple 不可变。因此，tuple 也可以用切片操作，只是操作的结果仍是 tuple：
 
 ```python
 (0, 1, 2, 3, 4, 5)[:3]
@@ -164,51 +164,51 @@ L[::5]
 
 ### 3.1.3 str 切片
 
-字符串`'xxx'`也可以看成是一种 list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：
+字符串`&#39;xxx&#39;`也可以看成是一种 list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：
 
 ```python
-'ABCDEFG'[:3]
+&#39;ABCDEFG&#39;[:3]
 ```
 
 ![image-20200712222833885](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712222834.png)
 
 ```python
-'ABCDEFG'[::2]
+&#39;ABCDEFG&#39;[::2]
 ```
 
 ![image-20200712223059989](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200712223100.png)
 
 在很多编程语言中，针对字符串提供了很多各种截取函数（例如，substring），其实目的就是对字符串切片。Python 没有针对字符串的截取函数，只需要切片一个操作就可以完成，非常简单。
 
-> ✏️ 练习题：
+&gt; ✏️ 练习题：
 
 利用切片操作，实现一个 trim() 函数，去除字符串首尾的空格，注意不要调用 str 的`strip()`方法：
 
 ```python
 def trim(s):
-    while s[:1] == ' ':
+    while s[:1] == &#39; &#39;:
         s = s[1:]
-    while s[-1:] == ' ':
+    while s[-1:] == &#39; &#39;:
         s = s[:-1]
     return s
 ```
 
 
 
-> ✏️ 小结：
+&gt; ✏️ 小结：
 
 有了切片操作，很多地方循环就不再需要了。Python 的切片非常灵活，一行代码就可以实现很多行循环才能完成的操作。
 
 ## 3.2 迭代
 
-> 定义：如果给定一个 list 或 tuple，我们可以通过`for`循环来遍历这个 list 或 tuple，这种遍历我们称为迭代（Iteration）。
+&gt; 定义：如果给定一个 list 或 tuple，我们可以通过`for`循环来遍历这个 list 或 tuple，这种遍历我们称为迭代（Iteration）。
 
 迭代是通过 for ... in 来完成的，Python 的`for`循环抽象程度要高于 C 的`for`循环，因为 Python 的`for`循环不仅可以用在 list 或 tuple 上，还可以作用在其他可迭代对象上。
 
 list 这种数据类型虽然有下标，但很多其他数据类型是没有下标的，但是，只要是可迭代对象，无论有无下标，都可以迭代，比如 dict 就可以迭代：
 
 ```python
-d = {'a': 1, 'b': 2, 'c': 3}
+d = {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3}
 for key in d:
     print(key)
 ```
@@ -220,7 +220,7 @@ for key in d:
 由于字符串也是可迭代对象，因此，也可以作用于`for`循环：
 
 ```python
-for ch in 'ABC':
+for ch in &#39;ABC&#39;:
     print(ch)
 ```
 
@@ -229,19 +229,19 @@ for ch in 'ABC':
 那么，如何判断一个对象是可迭代对象呢？方法是通过 collections 模块的 Iterable 类型判断：
 
 ```python
->>> from collections import Iterable
->>> isinstance('abc', Iterable) # str是否可迭代
+&gt;&gt;&gt; from collections import Iterable
+&gt;&gt;&gt; isinstance(&#39;abc&#39;, Iterable) # str是否可迭代
 True
->>> isinstance([1,2,3], Iterable) # list是否可迭代
+&gt;&gt;&gt; isinstance([1,2,3], Iterable) # list是否可迭代
 True
->>> isinstance(123, Iterable) # 整数是否可迭代
+&gt;&gt;&gt; isinstance(123, Iterable) # 整数是否可迭代
 False
 ```
 
 最后一个小问题，如果要对 list 实现类似 Java 那样的下标循环怎么办？Python 内置的`enumerate`函数可以把一个 list 变成索引-元素对，这样就可以在`for`循环中同时迭代索引和元素本身：
 
 ```python
->>> for i, value in enumerate(['A', 'B', 'C']):
+&gt;&gt;&gt; for i, value in enumerate([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]):
 ...     print(i, value)
 ...
 0 A
@@ -252,7 +252,7 @@ False
 上面的`for`循环里，同时引用了两个变量，在 Python 里是很常见的，比如下面的代码：
 
 ```python
->>> for x, y in [(1, 1), (2, 4), (3, 9)]:
+&gt;&gt;&gt; for x, y in [(1, 1), (2, 4), (3, 9)]:
 ...     print(x, y)
 ...
 1 1
@@ -260,7 +260,7 @@ False
 3 9
 ```
 
-> ✏️ 练习题：
+&gt; ✏️ 练习题：
 
 请使用迭代查找一个 list 中最小和最大值，并返回一个 tuple：
 
@@ -277,22 +277,22 @@ def findMinAndMax(L):
         return (MIN, MAX)
 # 测试
 if findMinAndMax([]) != (None, None):
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 elif findMinAndMax([7]) != (7, 7):
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 elif findMinAndMax([7, 1]) != (1, 7):
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 elif findMinAndMax([7, 1, 3, 9, 5]) != (1, 9):
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 else:
-    print('测试成功!')
+    print(&#39;测试成功!&#39;)
 ```
 
 结果图：
 
 ![结果图](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200715205941.png)
 
-> ✏️ 小结：
+&gt; ✏️ 小结：
 
 任何可迭代对象都可以作用于`for`循环，包括我们自定义的数据类型，只要符合迭代条件，就可以使用`for`循环。
 
@@ -340,7 +340,7 @@ for 循环后面还可以加上 if 判断，这样我们就可以筛选出仅偶
 还可以使用两层循环，可以生成全排列：
 
 ```python
-[m + n for m in 'ABC' for n in 'XYZ']
+[m &#43; n for m in &#39;ABC&#39; for n in &#39;XYZ&#39;]
 ```
 
 ![image-20200716110813806](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716110816.png)
@@ -351,7 +351,7 @@ for 循环后面还可以加上 if 判断，这样我们就可以筛选出仅偶
 
 ```python
 import os # 导入os模块，模块的概念后面讲到
-[d for d in os.listdir('.')] # os.listdir可以列出文件和目录
+[d for d in os.listdir(&#39;.&#39;)] # os.listdir可以列出文件和目录
 ```
 
 ![image-20200716111017314](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111018.png)
@@ -359,9 +359,9 @@ import os # 导入os模块，模块的概念后面讲到
 `for`循环其实可以同时使用两个甚至多个变量，比如`dict`的`items()`可以同时迭代 key 和 value：
 
 ```python
-d = {'x': 'A', 'y': 'B', 'z': 'C' }
+d = {&#39;x&#39;: &#39;A&#39;, &#39;y&#39;: &#39;B&#39;, &#39;z&#39;: &#39;C&#39; }
 for k, v in d.items():
-    print(k, '=', v)
+    print(k, &#39;=&#39;, v)
 ```
 
 ![image-20200716111306467](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111307.png)
@@ -369,8 +369,8 @@ for k, v in d.items():
 因此，列表生成式也可以使用两个变量来生成 list：
 
 ```python
-d = {'x': 'A', 'y': 'B', 'z': 'C' }
-[k + '=' + v for k, v in d.items()]
+d = {&#39;x&#39;: &#39;A&#39;, &#39;y&#39;: &#39;B&#39;, &#39;z&#39;: &#39;C&#39; }
+[k &#43; &#39;=&#39; &#43; v for k, v in d.items()]
 ```
 
 ![image-20200716111534526](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716111535.png)
@@ -378,7 +378,7 @@ d = {'x': 'A', 'y': 'B', 'z': 'C' }
 最后把一个 list 中所有的字符串变成小写：
 
 ```python
-L = ['Hello', 'World', 'IBM', 'Apple']
+L = [&#39;Hello&#39;, &#39;World&#39;, &#39;IBM&#39;, &#39;Apple&#39;]
 [s.lower() for s in L]
 ```
 
@@ -386,7 +386,7 @@ L = ['Hello', 'World', 'IBM', 'Apple']
 
 ### 3.3.1 if ... else
 
-> 使用列表生成式的时候，有些童鞋经常搞不清楚`if...else`的用法。
+&gt; 使用列表生成式的时候，有些童鞋经常搞不清楚`if...else`的用法。
 
 例如，以下代码正常输出偶数：
 
@@ -420,7 +420,7 @@ L = ['Hello', 'World', 'IBM', 'Apple']
 
 可见，在一个列表生成式中，`for`前面的`if ... else`是表达式，而`for`后面的`if`是过滤条件，不能带`else`。
 
-> ✏️ 练习题：
+&gt; ✏️ 练习题：
 
 如果list中既包含字符串，又包含整数，由于非字符串类型没有`lower()`方法，所以列表生成式会报错：
 
@@ -433,25 +433,25 @@ L = ['Hello', 'World', 'IBM', 'Apple']
 请修改列表生成式，通过添加`if`语句保证列表生成式能正确地执行：
 
 ```python
-L1 = ['Hello', 'World', 18, 'Apple', None]
+L1 = [&#39;Hello&#39;, &#39;World&#39;, 18, &#39;Apple&#39;, None]
 L2 = [s.lower() for s in L1 if isinstance(s,str)]
 # 测试:
 print(L2)
-if L2 == ['hello', 'world', 'apple']:
-    print('测试通过!')
+if L2 == [&#39;hello&#39;, &#39;world&#39;, &#39;apple&#39;]:
+    print(&#39;测试通过!&#39;)
 else:
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 ```
 
 ![image-20200716113244975](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716113245.png)
 
-> ✏️ 小结：
+&gt; ✏️ 小结：
 
 运用列表生成式，可以快速生成 list，可以通过一个 list 推导出另一个 list，而代码却十分简洁。
 
 ## 3.4 生成器
 
-> 通过列表生成式，我们可以直接创建一个列表。但是，受到内存限制，列表容量肯定是有限的。而且，创建一个包含 100 万个元素的列表，不仅占用很大的存储空间，如果我们仅仅需要访问前面几个元素，那后面绝大多数元素占用的空间都白白浪费了。
+&gt; 通过列表生成式，我们可以直接创建一个列表。但是，受到内存限制，列表容量肯定是有限的。而且，创建一个包含 100 万个元素的列表，不仅占用很大的存储空间，如果我们仅仅需要访问前面几个元素，那后面绝大多数元素占用的空间都白白浪费了。
 
 所以，如果列表元素可以按照某种算法推算出来，那我们是否可以在循环的过程中不断推算出后续的元素呢？这样就不必创建完整的 list，从而节省大量的空间。在 Python 中，这种`一边循环一边计算`的机制，称为生成器：generator。
 
@@ -490,21 +490,21 @@ generator 非常强大。如果推算的算法比较复杂，用类似列表生�
 ```python
 def fib(max):
     n, a, b = 0, 0, 1
-    while n < max:
+    while n &lt; max:
         print(b)
-        a, b = b, a + b
-        n = n + 1
-    return 'done'
+        a, b = b, a &#43; b
+        n = n &#43; 1
+    return &#39;done&#39;
 ```
 
 注意：
 
-赋值语句：a, b = b, a + b
+赋值语句：a, b = b, a &#43; b
 
 相当于：
 
 ```python
-t = (b, a + b) # t是一个tuple
+t = (b, a &#43; b) # t是一个tuple
 a = t[0]
 b = t[1]
 ```
@@ -522,11 +522,11 @@ b = t[1]
 ```python
 def fib(max):
     n, a, b = 0, 0, 1
-    while n < max:
+    while n &lt; max:
         yield b
-        a, b = b, a + b
-        n = n + 1
-    return 'done'
+        a, b = b, a &#43; b
+        n = n &#43; 1
+    return &#39;done&#39;
 ```
 
 ![image-20200716124517165](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716124518.png)
@@ -539,11 +539,11 @@ def fib(max):
 
 ```python
 def odd():
-    print('step 1')
+    print(&#39;step 1&#39;)
     yield 1
-    print('step 2')
+    print(&#39;step 2&#39;)
     yield(3)
-    print('step 3')
+    print(&#39;step 3&#39;)
     yield(5)
 ```
 
@@ -569,9 +569,9 @@ g = fib(6)
 while True:
     try:
         x = next(g)
-        print('g:', x)
+        print(&#39;g:&#39;, x)
     except StopIteration as e:
-        print('Generator return value:', e.value)
+        print(&#39;Generator return value:&#39;, e.value)
         break
 ```
 
@@ -579,7 +579,7 @@ while True:
 
 关于如何捕获错误，后面的错误处理还会详细讲解。
 
-> ✏️ 练习题：
+&gt; ✏️ 练习题：
 
 [杨辉三角](http://baike.baidu.com/view/7804.htm)定义如下：
 
@@ -604,7 +604,7 @@ def triangles():
     L = [1]
     while True:
         yield L 
-        L = [1] + [L[i] + L[i+1] for i in range(len(L) - 1)] + [1]
+        L = [1] &#43; [L[i] &#43; L[i&#43;1] for i in range(len(L) - 1)] &#43; [1]
     pass
 ```
 
@@ -615,7 +615,7 @@ n = 0
 results = []
 for t in triangles():
     results.append(t)
-    n = n + 1
+    n = n &#43; 1
     if n == 10:
         break
 
@@ -634,12 +634,12 @@ if results == [
     [1, 8, 28, 56, 70, 56, 28, 8, 1],
     [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
 ]:
-    print('测试通过!')
+    print(&#39;测试通过!&#39;)
 else:
-    print('测试失败!')
+    print(&#39;测试失败!&#39;)
 ```
 
-> 小结：
+&gt; 小结：
 
 generator 是非常强大的工具，在 Python 中，可以简单地把列表生成式改成 generator，也可以通过函数实现复杂逻辑的 generator。
 
@@ -648,17 +648,17 @@ generator 是非常强大的工具，在 Python 中，可以简单地把列表�
 请注意区分普通函数和 generator 函数，普通函数调用直接返回结果：
 
 ```python
->>> r = abs(6)
->>> r
+&gt;&gt;&gt; r = abs(6)
+&gt;&gt;&gt; r
 6
 ```
 
 generator 函数的“调用”实际返回一个 generator 对象：
 
 ```python
->>> g = fib(6)
->>> g
-<generator object fib at 0x1022ef948>
+&gt;&gt;&gt; g = fib(6)
+&gt;&gt;&gt; g
+&lt;generator object fib at 0x1022ef948&gt;
 ```
 
 ## 3.5 迭代器
@@ -674,16 +674,16 @@ generator 函数的“调用”实际返回一个 generator 对象：
 可以使用`isinstance()`判断一个对象是否是`Iterable`对象：
 
 ```python
->>> from collections.abc import Iterable
->>> isinstance([], Iterable)
+&gt;&gt;&gt; from collections.abc import Iterable
+&gt;&gt;&gt; isinstance([], Iterable)
 True
->>> isinstance({}, Iterable)
+&gt;&gt;&gt; isinstance({}, Iterable)
 True
->>> isinstance('abc', Iterable)
+&gt;&gt;&gt; isinstance(&#39;abc&#39;, Iterable)
 True
->>> isinstance((x for x in range(10)), Iterable)
+&gt;&gt;&gt; isinstance((x for x in range(10)), Iterable)
 True
->>> isinstance(100, Iterable)
+&gt;&gt;&gt; isinstance(100, Iterable)
 False
 ```
 
@@ -694,14 +694,14 @@ False
 可以使用`isinstance()`判断一个对象是否是`Iterator`对象：
 
 ```python
->>> from collections.abc import Iterator
->>> isinstance((x for x in range(10)), Iterator)
+&gt;&gt;&gt; from collections.abc import Iterator
+&gt;&gt;&gt; isinstance((x for x in range(10)), Iterator)
 True
->>> isinstance([], Iterator)
+&gt;&gt;&gt; isinstance([], Iterator)
 False
->>> isinstance({}, Iterator)
+&gt;&gt;&gt; isinstance({}, Iterator)
 False
->>> isinstance('abc', Iterator)
+&gt;&gt;&gt; isinstance(&#39;abc&#39;, Iterator)
 False
 ```
 
@@ -710,9 +710,9 @@ False
 把`list`、`dict`、`str`等`Iterable`变成`Iterator`可以使用`iter()`函数：
 
 ```python
->>> isinstance(iter([]), Iterator)
+&gt;&gt;&gt; isinstance(iter([]), Iterator)
 True
->>> isinstance(iter('abc'), Iterator)
+&gt;&gt;&gt; isinstance(iter(&#39;abc&#39;), Iterator)
 True
 ```
 
@@ -722,7 +722,7 @@ True
 
 `Iterator`甚至可以表示一个无限大的数据流，例如全体自然数。而使用 list 是永远不可能存储全体自然数的。
 
-> 小结：
+&gt; 小结：
 
 凡是可作用于`for`循环的对象都是`Iterable`类型；
 
@@ -767,6 +767,6 @@ while True:
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/  
 

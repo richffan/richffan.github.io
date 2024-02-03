@@ -2,13 +2,12 @@
   <channel>
     <title>python - 标签 - 樊刹</title>
     <link>http://richfan.site/tags/python/</link>
-    <description>python - 标签 - 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>richffan@outlook.com (richfan)</managingEditor>
-      <webMaster>richffan@outlook.com (richfan)</webMaster><lastBuildDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <description>python - 标签 | 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/python/" rel="self" type="application/rss+xml" /><item>
   <title>9款最佳Python脚本：让工作自动化起来！</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
   <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</guid>
   <description><![CDATA[一、自动化文件管理 1.在目录中对文件进行排序 1 2 3 4 5 6 7 8 9 10 11 12 # Python脚本用于按文件扩展名对目录中的文件进行排序 import os from shutil import move def sort_files(directory_path):]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>1 顺序表</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
   <description><![CDATA[突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，]]></description>
 </item>
@@ -24,7 +23,7 @@
   <title>2 单链表</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
   <description><![CDATA[单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。 链表的基本元素有： 节点：包括数]]></description>
 </item>
@@ -32,7 +31,7 @@
   <title>3 栈</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</guid>
   <description><![CDATA[栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。 3.1 栈的初始化 1 2 3 4 def __init__(self): self.stack = [] # 栈列表 self.size = 20 # 栈大小 self.top = -1 # 栈顶位置]]></description>
 </item>
@@ -40,31 +39,31 @@
   <title>6 小时 Python 入门</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
-  <description><![CDATA[以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python 1、官网下载 Python 进入官网（https://www.python.org），点击 Downlo]]></description>
+  <description><![CDATA[以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python1、官网下载 Python 进入官网（https://www.python.org），点击 D]]></description>
 </item>
 <item>
   <title>Anaconda 入门指南</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
-  <description><![CDATA[一、下载安装 Anaconda 1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好了, 安装完成之]]></description>
+  <description><![CDATA[一、下载安装 Anaconda1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好]]></description>
 </item>
 <item>
   <title>Jupyter notebook 使用指南</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
-  <description><![CDATA[前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，]]></description>
+  <description><![CDATA[前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，]]></description>
 </item>
 <item>
   <title>Jupyter添加目录toc</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
   <description><![CDATA[最近在使用Jupyter notebook的时候感觉到，没有个目录真心难受，当想查找需要的函数的时候，不能很快速的找到，这个时候，要是有个目录]]></description>
 </item>
@@ -72,7 +71,7 @@
   <title>Pandas常用操作</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -80,9 +79,9 @@
   <title>PyCharm 优化使用</title>
   <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
   <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>richfan</author>
+  <author>作者</author>
   <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
-  <description><![CDATA[设置 Python 路径（解释器设置） 1、打开设置对话框 点击File &ndash;&gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &ndash;&gt; Project Interpr]]></description>
+  <description><![CDATA[设置 Python 路径（解释器设置）1、打开设置对话框 点击File &ndash;&gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &ndash;&gt; Project Interpr]]></description>
 </item>
 </channel>
 </rss>

@@ -62,6 +62,6 @@ b 检查报告期内是否存在机器设备和厂房既用于研发活动又�
 
 ---
 
-> 作者: [richfan](https://richfan.site/)  
+> 作者:   
 > URL: http://richfan.site/%E6%8A%95%E6%8A%80/ipo%E5%AE%A1%E8%AE%A1%E6%9C%AD%E8%AE%B0/085-key-points-of-rd-expenses-and-rd-expenditure-audits/  
 
