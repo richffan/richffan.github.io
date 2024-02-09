@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/git/</link>
-    <description>git - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/git/" rel="self" type="application/rss+xml" /><item>
-  <title>Git 的使用</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/git/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/git/</guid>
-  <description><![CDATA[1 前言 1.1 Git 与 GitHub 的来历Linux 之父 Linus 在 1991 年创建开源的 Linux 操作系统之后，多年来依靠全世界广大热心志愿者的共同建设，经过长足发展，现已成为世界上最]]></description>
-</item>
-</channel>
+    <title>git on 樊刹</title>
+    <link>https://richfan.site/tags/git/</link>
+    <description>Recent content in git on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 的使用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/git/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/git/</guid>
+      <description>1 前言 1.1 Git 与 GitHub 的来历 Linux 之父 Linus 在 1991 年创建开源的 Linux 操作系统之后，多年来依靠全世界广大热心志愿者的共同建设，经过长足发展，现已成为世界上最大的服务器系统。系统创建之初</description>
+    </item>
+  </channel>
 </rss>

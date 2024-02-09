@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>firewall - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/firewall/</link>
-    <description>firewall - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 19 Sep 2017 09:53:53 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/firewall/" rel="self" type="application/rss+xml" /><item>
-  <title>CentOS7使用Firewalld</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</link>
-  <pubDate>Tue, 19 Sep 2017 09:53:53 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</guid>
-  <description><![CDATA[<h3 id="介绍" class="heading-element">
-  <a href="#%e4%bb%8b%e7%bb%8d" class="heading-mark"></a>介绍</h3><p>FirewallD 提供了支持网络/防火墙区域(zone)定义网络链接以及接口安全等级的动态防火墙管理工具。它支持 IPv4, IPv6 防火墙设置以及以太网桥接，并且拥有运行时配置和永久配置选项。它也支持允许服务或者应用程序直接添加防火墙规则的接口。</p>]]></description>
-</item>
-</channel>
+    <title>firewall on 樊刹</title>
+    <link>https://richfan.site/tags/firewall/</link>
+    <description>Recent content in firewall on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 19 Sep 2017 09:53:53 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS7使用Firewalld</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</link>
+      <pubDate>Tue, 19 Sep 2017 09:53:53 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;&#xA;&lt;p&gt;FirewallD 提供了支持网络/防火墙区域(zone)定义网络链接以及接口安全等级的动态防火墙管理工具。它支持 IPv4, IPv6 防火墙设置以及以太网桥接，并且拥有运行时配置和永久配置选项。它也支持允许服务或者应用程序直接添加防火墙规则的接口。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

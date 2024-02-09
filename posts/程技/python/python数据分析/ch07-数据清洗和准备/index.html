@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="第七章 数据清洗和准备 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>第七章 数据清洗和准备</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            第七章 数据清洗和准备
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            9493 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            19 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#71-处理缺失数据">7.1 处理缺失数据</a>
+      <ul>
+        <li><a href="#711-滤除缺失数据">7.1.1 滤除缺失数据</a></li>
+        <li><a href="#712-填充缺失数据">7.1.2 填充缺失数据</a></li>
+      </ul>
+    </li>
+    <li><a href="#72-数据转换">7.2 数据转换</a>
+      <ul>
+        <li><a href="#721-移除重复数据">7.2.1 移除重复数据</a></li>
+        <li><a href="#722-利用函数或映射进行数据转换">7.2.2 利用函数或映射进行数据转换</a></li>
+        <li><a href="#723-替换值">7.2.3 替换值</a></li>
+        <li><a href="#724-重命名轴索引">7.2.4 重命名轴索引</a></li>
+        <li><a href="#725-离散化和面元划分">7.2.5 离散化和面元划分</a></li>
+        <li><a href="#726-检测和过滤异常值">7.2.6 检测和过滤异常值</a></li>
+        <li><a href="#727-排列和随机采样">7.2.7 排列和随机采样</a></li>
+        <li><a href="#728-计算指标哑变量">7.2.8 计算指标/哑变量</a></li>
+      </ul>
+    </li>
+    <li><a href="#73-字符串操作">7.3 字符串操作</a>
+      <ul>
+        <li><a href="#731-字符串对象方法">7.3.1 字符串对象方法</a></li>
+        <li><a href="#732-正则表达式">7.3.2 正则表达式</a></li>
+        <li><a href="#733-pandas的矢量化字符串函数">7.3.3 pandas的矢量化字符串函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#74-总结">7.4 总结</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>在数据分析和建模的过程中，相当多的时间要用在数据准备上：加载、清理、转换以及重塑。这些工作会占到分析师时间的80%或更多。有时，存储在文件和数据库中的数据的格式不适合某个特定的任务。许多研究者都选择使用通用编程语言（如Python、Perl、R或Java）或UNIX文本处理工具（如sed或awk）对数据格式进行专门处理。幸运的是，pandas和内置的Python标准库提供了一组高级的、灵活的、快速的工具，可以让你轻松地将数据规整为想要的格式。</p>
+<p>实际上，pandas的许多设计和实现都是由真实应用的需求所驱动的。</p>
+<p>在本章中，我会讨论处理缺失数据、重复数据、字符串操作和其它分析数据转换的工具。下一章，我会关注于用多种方法合并、重塑数据集。</p>
+<h2 id="71-处理缺失数据">7.1 处理缺失数据</h2>
+<p>在许多数据分析工作中，<code>缺失数据</code>是经常发生的。pandas的目标之一就是尽量轻松地处理缺失数据。例如，pandas对象的所有描述性统计默认都不包括缺失数据。</p>
+<p>缺失数据在pandas中呈现的方式有些不完美，但对于大多数用户可以保证功能正常。对于数值数据，pandas使用浮点值NaN（Not a Number）表示缺失数据。我们称其为<code>哨兵值</code>，可以方便的检测出来：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">10</span>]: string_data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series([<span style="color:#d14">&#39;aardvark&#39;</span>, <span style="color:#d14">&#39;artichoke&#39;</span>, np<span style="color:#000;font-weight:bold">.</span>nan, <span style="color:#d14">&#39;avocado&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">11</span>]: string_data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">11</span>]:
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>     aardvark
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    artichoke
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>          NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>      avocado
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">12</span>]: string_data<span style="color:#000;font-weight:bold">.</span>isnull()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">12</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">bool</span>
+</span></span></code></pre></div><p>在pandas中，我们采用了R语言中的惯用法，即将缺失值表示为NA，它表示不可用not available。在统计应用中，NA数据可能是不存在的数据或者虽然存在，但是没有观察到（例如，数据采集中发生了问题）。<strong>当进行数据清洗以进行分析时，最好直接对缺失数据进行分析，以判断数据采集的问题或缺失数据可能导致的偏差</strong>。</p>
+<p>Python内置的None值在对象数组中也可以作为NA：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">13</span>]: string_data[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">14</span>]: string_data<span style="color:#000;font-weight:bold">.</span>isnull()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">14</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">bool</span>
+</span></span></code></pre></div><p>pandas项目中还在不断优化内部细节以更好处理缺失数据，像用户API功能，例如pandas.isnull，去除了许多恼人的细节。表7-1列出了一些关于缺失数据处理的函数。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024095928724.png" alt="表7-1 NA处理方法"></p>
+<h3 id="711-滤除缺失数据">7.1.1 滤除缺失数据</h3>
+<p>过滤掉缺失数据的办法有很多种。你可以通过pandas.isnull或布尔索引的手工方法，但dropna可能会更实用一些。对于一个Series，dropna返回一个仅含非空数据和索引值的Series：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">15</span>]: <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">import</span> nan <span style="color:#000;font-weight:bold">as</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">16</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series([<span style="color:#099">1</span>, NA, <span style="color:#099">3.5</span>, NA, <span style="color:#099">7</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">17</span>]: data<span style="color:#000;font-weight:bold">.</span>dropna()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">17</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">3.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">7.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>这等价于：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">18</span>]: data[data<span style="color:#000;font-weight:bold">.</span>notnull()]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">18</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">3.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">7.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>而对于DataFrame对象，事情就有点复杂了。你可能希望丢弃全NA或含有NA的行或列。dropna默认丢弃任何含有缺失值的行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">19</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame([[<span style="color:#099">1.</span>, <span style="color:#099">6.5</span>, <span style="color:#099">3.</span>], [<span style="color:#099">1.</span>, NA, NA],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                      [NA, NA, NA], [NA, <span style="color:#099">6.5</span>, <span style="color:#099">3.</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">20</span>]: cleaned <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>dropna()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">21</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">21</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1.0</span>  NaN  NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  NaN  NaN  NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  NaN  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">22</span>]: cleaned
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">22</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span></code></pre></div><p>传入how=&lsquo;all&rsquo;将只丢弃全为NA的那些行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">23</span>]: data<span style="color:#000;font-weight:bold">.</span>dropna(how<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;all&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">23</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1.0</span>  NaN  NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  NaN  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span></code></pre></div><p>用这种方式丢弃列，只需传入axis=1即可：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">24</span>]: data[<span style="color:#099">4</span>] <span style="color:#000;font-weight:bold">=</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">25</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">25</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>   <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span> NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1.0</span>  NaN  NaN NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  NaN  NaN  NaN NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  NaN  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span> NaN
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">26</span>]: data<span style="color:#000;font-weight:bold">.</span>dropna(axis<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>, how<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;all&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">26</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1.0</span>  NaN  NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  NaN  NaN  NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  NaN  <span style="color:#099">6.5</span>  <span style="color:#099">3.0</span>
+</span></span></code></pre></div><p>另一个滤除DataFrame行的问题涉及时间序列数据。假设你只想留下一部分观测数据，可以用thresh参数实现此目的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">27</span>]: df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#099">7</span>, <span style="color:#099">3</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">28</span>]: df<span style="color:#000;font-weight:bold">.</span>iloc[:<span style="color:#099">4</span>, <span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">29</span>]: df<span style="color:#000;font-weight:bold">.</span>iloc[:<span style="color:#099">2</span>, <span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">30</span>]: df
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">30</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.204708</span>       NaN       NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.555730</span>       NaN       NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.092908</span>       NaN  <span style="color:#099">0.769023</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1.246435</span>       NaN <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.296221</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">31</span>]: df<span style="color:#000;font-weight:bold">.</span>dropna()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">31</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">32</span>]: df<span style="color:#000;font-weight:bold">.</span>dropna(thresh<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">32</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.092908</span>       NaN  <span style="color:#099">0.769023</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1.246435</span>       NaN <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.296221</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span></code></pre></div><h3 id="712-填充缺失数据">7.1.2 填充缺失数据</h3>
+<p>你可能不想滤除缺失数据（有可能会丢弃跟它有关的其他数据），而是希望通过其他方式填补那些“空洞”。对于大多数情况而言，fillna方法是最主要的函数。通过一个常数调用fillna就会将缺失值替换为那个常数值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">33</span>]: df<span style="color:#000;font-weight:bold">.</span>fillna(<span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">33</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.204708</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.555730</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.092908</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.769023</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1.246435</span>  <span style="color:#099">0.000000</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.296221</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span></code></pre></div><p>若是通过一个字典调用fillna，就可以实现对不同的列填充不同的值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">34</span>]: df<span style="color:#000;font-weight:bold">.</span>fillna({<span style="color:#099">1</span>: <span style="color:#099">0.5</span>, <span style="color:#099">2</span>: <span style="color:#099">0</span>})
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">34</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.204708</span>  <span style="color:#099">0.500000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.555730</span>  <span style="color:#099">0.500000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.092908</span>  <span style="color:#099">0.500000</span>  <span style="color:#099">0.769023</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1.246435</span>  <span style="color:#099">0.500000</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.296221</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span></code></pre></div><p>fillna默认会返回新对象，但也可以对现有对象进行就地修改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">35</span>]: _ <span style="color:#000;font-weight:bold">=</span> df<span style="color:#000;font-weight:bold">.</span>fillna(<span style="color:#099">0</span>, inplace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">36</span>]: df
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">36</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.204708</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.555730</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.092908</span>  <span style="color:#099">0.000000</span>  <span style="color:#099">0.769023</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1.246435</span>  <span style="color:#099">0.000000</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.296221</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">0.274992</span>  <span style="color:#099">0.228913</span>  <span style="color:#099">1.352917</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0.886429</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.001637</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.371843</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1.669025</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.438570</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.539741</span>
+</span></span></code></pre></div><p>对reindexing有效的那些插值方法也可用于fillna：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">37</span>]: df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#099">6</span>, <span style="color:#099">3</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">38</span>]: df<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">2</span>:, <span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">39</span>]: df<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">4</span>:, <span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> NA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">40</span>]: df
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">40</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">0.476985</span>  <span style="color:#099">3.248944</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.021228</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.577087</span>  <span style="color:#099">0.124121</span>  <span style="color:#099">0.302614</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.523772</span>       NaN  <span style="color:#099">1.343810</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.713544</span>       NaN <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.860761</span>       NaN       NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.265934</span>       NaN       NaN
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">41</span>]: df<span style="color:#000;font-weight:bold">.</span>fillna(method<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ffill&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">41</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">0.476985</span>  <span style="color:#099">3.248944</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.021228</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.577087</span>  <span style="color:#099">0.124121</span>  <span style="color:#099">0.302614</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.523772</span>  <span style="color:#099">0.124121</span>  <span style="color:#099">1.343810</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.713544</span>  <span style="color:#099">0.124121</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.860761</span>  <span style="color:#099">0.124121</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.265934</span>  <span style="color:#099">0.124121</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">42</span>]: df<span style="color:#000;font-weight:bold">.</span>fillna(method<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ffill&#39;</span>, limit<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">42</span>]: 
+</span></span><span style="display:flex;"><span>          <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">0.476985</span>  <span style="color:#099">3.248944</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.021228</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.577087</span>  <span style="color:#099">0.124121</span>  <span style="color:#099">0.302614</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">0.523772</span>  <span style="color:#099">0.124121</span>  <span style="color:#099">1.343810</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.713544</span>  <span style="color:#099">0.124121</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.860761</span>       NaN <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.265934</span>       NaN <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.370232</span>
+</span></span></code></pre></div><p>只要有些创新，你就可以利用fillna实现许多别的功能。比如说，你可以传入Series的平均值或中位数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">43</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series([<span style="color:#099">1.</span>, NA, <span style="color:#099">3.5</span>, NA, <span style="color:#099">7</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">44</span>]: data<span style="color:#000;font-weight:bold">.</span>fillna(data<span style="color:#000;font-weight:bold">.</span>mean())
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">44</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#099">3.833333</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">3.500000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#099">3.833333</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">7.000000</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>表7-2列出了fillna的参考。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024100735442.png" alt=""></p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024100741805.png" alt="fillna函数参数"></p>
+<h2 id="72-数据转换">7.2 数据转换</h2>
+<p>本章到目前为止介绍的都是数据的重排。另一类重要操作则是过滤、清理以及其他的转换工作。</p>
+<h3 id="721-移除重复数据">7.2.1 移除重复数据</h3>
+<p>DataFrame中出现重复行有多种原因。下面就是一个例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">45</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({<span style="color:#d14">&#39;k1&#39;</span>: [<span style="color:#d14">&#39;one&#39;</span>, <span style="color:#d14">&#39;two&#39;</span>] <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">+</span> [<span style="color:#d14">&#39;two&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                      <span style="color:#d14">&#39;k2&#39;</span>: [<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">4</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">46</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">46</span>]: 
+</span></span><span style="display:flex;"><span>    k1  k2
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  one   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  two   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  one   <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  two   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  one   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  two   <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  two   <span style="color:#099">4</span>
+</span></span></code></pre></div><p>DataFrame的duplicated方法返回一个布尔型Series，表示各行是否是重复行（前面出现过的行）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">47</span>]: data<span style="color:#000;font-weight:bold">.</span>duplicated()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">47</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">bool</span>
+</span></span></code></pre></div><p>还有一个与此相关的drop_duplicates方法，它会返回一个DataFrame，重复的数组会标为False：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">48</span>]: data<span style="color:#000;font-weight:bold">.</span>drop_duplicates()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">48</span>]: 
+</span></span><span style="display:flex;"><span>    k1  k2
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  one   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  two   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  one   <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  two   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  one   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  two   <span style="color:#099">4</span>
+</span></span></code></pre></div><p>这两个方法默认会判断全部列，你也可以指定部分列进行重复项判断。假设我们还有一列值，且只希望根据k1列过滤重复项：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">49</span>]: data[<span style="color:#d14">&#39;v1&#39;</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">range</span>(<span style="color:#099">7</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">50</span>]: data<span style="color:#000;font-weight:bold">.</span>drop_duplicates([<span style="color:#d14">&#39;k1&#39;</span>])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">50</span>]: 
+</span></span><span style="display:flex;"><span>    k1  k2  v1
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  one   <span style="color:#099">1</span>   <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  two   <span style="color:#099">1</span>   <span style="color:#099">1</span>
+</span></span></code></pre></div><p>duplicated和drop_duplicates默认保留的是第一个出现的值组合。传入keep=&lsquo;last&rsquo;则保留最后一个：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">51</span>]: data<span style="color:#000;font-weight:bold">.</span>drop_duplicates([<span style="color:#d14">&#39;k1&#39;</span>, <span style="color:#d14">&#39;k2&#39;</span>], keep<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;last&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">51</span>]: 
+</span></span><span style="display:flex;"><span>    k1  k2  v1
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  one   <span style="color:#099">1</span>   <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  two   <span style="color:#099">1</span>   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  one   <span style="color:#099">2</span>   <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  two   <span style="color:#099">3</span>   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  one   <span style="color:#099">3</span>   <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  two   <span style="color:#099">4</span>   <span style="color:#099">6</span>
+</span></span></code></pre></div><h3 id="722-利用函数或映射进行数据转换">7.2.2 利用函数或映射进行数据转换</h3>
+<p>对于许多数据集，你可能希望根据数组、Series或DataFrame列中的值来实现转换工作。我们来看看下面这组有关肉类的数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">52</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({<span style="color:#d14">&#39;food&#39;</span>: [<span style="color:#d14">&#39;bacon&#39;</span>, <span style="color:#d14">&#39;pulled pork&#39;</span>, <span style="color:#d14">&#39;bacon&#39;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                               <span style="color:#d14">&#39;Pastrami&#39;</span>, <span style="color:#d14">&#39;corned beef&#39;</span>, <span style="color:#d14">&#39;Bacon&#39;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                               <span style="color:#d14">&#39;pastrami&#39;</span>, <span style="color:#d14">&#39;honey ham&#39;</span>, <span style="color:#d14">&#39;nova lox&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                      <span style="color:#d14">&#39;ounces&#39;</span>: [<span style="color:#099">4</span>, <span style="color:#099">3</span>, <span style="color:#099">12</span>, <span style="color:#099">6</span>, <span style="color:#099">7.5</span>, <span style="color:#099">8</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">53</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">53</span>]: 
+</span></span><span style="display:flex;"><span>          food  ounces
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>        bacon     <span style="color:#099">4.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  pulled pork     <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>        bacon    <span style="color:#099">12.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>     Pastrami     <span style="color:#099">6.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  corned beef     <span style="color:#099">7.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>        Bacon     <span style="color:#099">8.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>     pastrami     <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>    honey ham     <span style="color:#099">5.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>     nova lox     <span style="color:#099">6.0</span>
+</span></span></code></pre></div><p>假设你想要添加一列表示该肉类食物来源的动物类型。我们先编写一个不同肉类到动物的映射：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>meat_to_animal <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;bacon&#39;</span>: <span style="color:#d14">&#39;pig&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;pulled pork&#39;</span>: <span style="color:#d14">&#39;pig&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;pastrami&#39;</span>: <span style="color:#d14">&#39;cow&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;corned beef&#39;</span>: <span style="color:#d14">&#39;cow&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;honey ham&#39;</span>: <span style="color:#d14">&#39;pig&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#d14">&#39;nova lox&#39;</span>: <span style="color:#d14">&#39;salmon&#39;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Series的map方法可以接受一个函数或含有映射关系的字典型对象，但是这里有一个小问题，即有些肉类的首字母大写了，而另一些则没有。因此，我们还需要使用Series的str.lower方法，将各个值转换为小写：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">55</span>]: lowercased <span style="color:#000;font-weight:bold">=</span> data[<span style="color:#d14">&#39;food&#39;</span>]<span style="color:#000;font-weight:bold">.</span>str<span style="color:#000;font-weight:bold">.</span>lower()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">56</span>]: lowercased
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">56</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>          bacon
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    pulled pork
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>          bacon
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>       pastrami
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    corned beef
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>          bacon
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>       pastrami
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>      honey ham
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>       nova lox
+</span></span><span style="display:flex;"><span>Name: food, dtype: <span style="color:#0086b3">object</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">57</span>]: data[<span style="color:#d14">&#39;animal&#39;</span>] <span style="color:#000;font-weight:bold">=</span> lowercased<span style="color:#000;font-weight:bold">.</span>map(meat_to_animal)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">58</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">58</span>]: 
+</span></span><span style="display:flex;"><span>          food  ounces  animal
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>        bacon     <span style="color:#099">4.0</span>     pig
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  pulled pork     <span style="color:#099">3.0</span>     pig
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>        bacon    <span style="color:#099">12.0</span>     pig
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>     Pastrami     <span style="color:#099">6.0</span>     cow
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  corned beef     <span style="color:#099">7.5</span>     cow
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>        Bacon     <span style="color:#099">8.0</span>     pig
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>     pastrami     <span style="color:#099">3.0</span>     cow
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>    honey ham     <span style="color:#099">5.0</span>     pig
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>     nova lox     <span style="color:#099">6.0</span>  salmon
+</span></span></code></pre></div><p>我们也可以传入一个能够完成全部这些工作的函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">59</span>]: data[<span style="color:#d14">&#39;food&#39;</span>]<span style="color:#000;font-weight:bold">.</span>map(<span style="color:#000;font-weight:bold">lambda</span> x: meat_to_animal[x<span style="color:#000;font-weight:bold">.</span>lower()])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">59</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>       pig
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>       pig
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>       pig
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>       cow
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>       cow
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>       pig
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>       cow
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>       pig
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>    salmon
+</span></span><span style="display:flex;"><span>Name: food, dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><p>使用map是一种实现元素级转换以及其他数据清理工作的便捷方式。</p>
+<h3 id="723-替换值">7.2.3 替换值</h3>
+<p>利用fillna方法填充缺失数据可以看做值替换的一种特殊情况。前面已经看到，map可用于修改对象的数据子集，而replace则提供了一种实现该功能的更简单、更灵活的方式。我们来看看下面这个Series：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">60</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series([<span style="color:#099">1.</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">999.</span>, <span style="color:#099">2.</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">999.</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000.</span>, <span style="color:#099">3.</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">61</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">61</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>       <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">999.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>       <span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">999.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>       <span style="color:#099">3.0</span>
+</span></span></code></pre></div><p>-999这个值可能是一个表示缺失数据的标记值。要将其替换为pandas能够理解的NA值，我们可以利用replace来产生一个新的Series（除非传入inplace=True）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">62</span>]: data<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">999</span>, np<span style="color:#000;font-weight:bold">.</span>nan)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">62</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>       <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>       NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>       <span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>       NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>       <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>如果你希望一次性替换多个值，可以传入一个由待替换值组成的列表以及一个替换值：：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">63</span>]: data<span style="color:#000;font-weight:bold">.</span>replace([<span style="color:#000;font-weight:bold">-</span><span style="color:#099">999</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000</span>], np<span style="color:#000;font-weight:bold">.</span>nan)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">63</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>    <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>要让每个值有不同的替换值，可以传递一个替换列表：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">64</span>]: data<span style="color:#000;font-weight:bold">.</span>replace([<span style="color:#000;font-weight:bold">-</span><span style="color:#099">999</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000</span>], [np<span style="color:#000;font-weight:bold">.</span>nan, <span style="color:#099">0</span>])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">64</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>    <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>传入的参数也可以是字典：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">65</span>]: data<span style="color:#000;font-weight:bold">.</span>replace({<span style="color:#000;font-weight:bold">-</span><span style="color:#099">999</span>: np<span style="color:#000;font-weight:bold">.</span>nan, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1000</span>: <span style="color:#099">0</span>})
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">65</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    NaN
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>    <span style="color:#099">3.0</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><blockquote>
+<p>笔记：data.replace方法与data.str.replace不同，后者做的是字符串的元素级替换。我们会在后面学习Series的字符串方法。</p>
+</blockquote>
+<h3 id="724-重命名轴索引">7.2.4 重命名轴索引</h3>
+<p>跟Series中的值一样，轴标签也可以通过函数或映射进行转换，从而得到一个新的不同标签的对象。轴还可以被就地修改，而无需新建一个数据结构。接下来看看下面这个简单的例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">66</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(np<span style="color:#000;font-weight:bold">.</span>arange(<span style="color:#099">12</span>)<span style="color:#000;font-weight:bold">.</span>reshape((<span style="color:#099">3</span>, <span style="color:#099">4</span>)),
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                     index<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;Ohio&#39;</span>, <span style="color:#d14">&#39;Colorado&#39;</span>, <span style="color:#d14">&#39;New York&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                     columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;one&#39;</span>, <span style="color:#d14">&#39;two&#39;</span>, <span style="color:#d14">&#39;three&#39;</span>, <span style="color:#d14">&#39;four&#39;</span>])
+</span></span></code></pre></div><p>跟Series一样，轴索引也有一个map方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">67</span>]: transform <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">lambda</span> x: x[:<span style="color:#099">4</span>]<span style="color:#000;font-weight:bold">.</span>upper()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">68</span>]: data<span style="color:#000;font-weight:bold">.</span>index<span style="color:#000;font-weight:bold">.</span>map(transform)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">68</span>]: Index([<span style="color:#d14">&#39;OHIO&#39;</span>, <span style="color:#d14">&#39;COLO&#39;</span>, <span style="color:#d14">&#39;NEW &#39;</span>], dtype<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;object&#39;</span>)
+</span></span></code></pre></div><p>你可以将其赋值给index，这样就可以对DataFrame进行就地修改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">69</span>]: data<span style="color:#000;font-weight:bold">.</span>index <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>index<span style="color:#000;font-weight:bold">.</span>map(transform)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">70</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">70</span>]:
+</span></span><span style="display:flex;"><span>one  two  three  four
+</span></span><span style="display:flex;"><span>OHIO    <span style="color:#099">0</span>    <span style="color:#099">1</span>      <span style="color:#099">2</span>     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>COLO    <span style="color:#099">4</span>    <span style="color:#099">5</span>      <span style="color:#099">6</span>     <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>NEW     <span style="color:#099">8</span>    <span style="color:#099">9</span>     <span style="color:#099">10</span>    <span style="color:#099">11</span>
+</span></span></code></pre></div><p>如果想要创建数据集的转换版（而不是修改原始数据），比较实用的方法是rename：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">71</span>]: data<span style="color:#000;font-weight:bold">.</span>rename(index<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>title, columns<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>upper)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">71</span>]: 
+</span></span><span style="display:flex;"><span>      ONE  TWO  THREE  FOUR
+</span></span><span style="display:flex;"><span>Ohio    <span style="color:#099">0</span>    <span style="color:#099">1</span>      <span style="color:#099">2</span>     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>Colo    <span style="color:#099">4</span>    <span style="color:#099">5</span>      <span style="color:#099">6</span>     <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>New     <span style="color:#099">8</span>    <span style="color:#099">9</span>     <span style="color:#099">10</span>    <span style="color:#099">11</span>
+</span></span></code></pre></div><p>特别说明一下，rename可以结合字典型对象实现对部分轴标签的更新：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">72</span>]: data<span style="color:#000;font-weight:bold">.</span>rename(index<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14">&#39;OHIO&#39;</span>: <span style="color:#d14">&#39;INDIANA&#39;</span>},
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:             columns<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14">&#39;three&#39;</span>: <span style="color:#d14">&#39;peekaboo&#39;</span>})
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">72</span>]:
+</span></span><span style="display:flex;"><span>one  two  peekaboo  four
+</span></span><span style="display:flex;"><span>INDIANA    <span style="color:#099">0</span>    <span style="color:#099">1</span>         <span style="color:#099">2</span>     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>COLO       <span style="color:#099">4</span>    <span style="color:#099">5</span>         <span style="color:#099">6</span>     <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>NEW        <span style="color:#099">8</span>    <span style="color:#099">9</span>        <span style="color:#099">10</span>    <span style="color:#099">11</span>
+</span></span></code></pre></div><p>rename可以实现复制DataFrame并对其索引和列标签进行赋值。如果希望就地修改某个数据集，传入inplace=True即可：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">73</span>]: data<span style="color:#000;font-weight:bold">.</span>rename(index<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14">&#39;OHIO&#39;</span>: <span style="color:#d14">&#39;INDIANA&#39;</span>}, inplace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">74</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">74</span>]: 
+</span></span><span style="display:flex;"><span>         one  two  three  four
+</span></span><span style="display:flex;"><span>INDIANA    <span style="color:#099">0</span>    <span style="color:#099">1</span>      <span style="color:#099">2</span>     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>COLO       <span style="color:#099">4</span>    <span style="color:#099">5</span>      <span style="color:#099">6</span>     <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>NEW        <span style="color:#099">8</span>    <span style="color:#099">9</span>     <span style="color:#099">10</span>    <span style="color:#099">11</span>
+</span></span></code></pre></div><h3 id="725-离散化和面元划分">7.2.5 离散化和面元划分</h3>
+<p>为了便于分析，连续数据常常被离散化或拆分为“面元”（bin）。假设有一组人员数据，而你希望将它们划分为不同的年龄组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">75</span>]: ages <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">20</span>, <span style="color:#099">22</span>, <span style="color:#099">25</span>, <span style="color:#099">27</span>, <span style="color:#099">21</span>, <span style="color:#099">23</span>, <span style="color:#099">37</span>, <span style="color:#099">31</span>, <span style="color:#099">61</span>, <span style="color:#099">45</span>, <span style="color:#099">41</span>, <span style="color:#099">32</span>]
+</span></span></code></pre></div><p>接下来将这些数据划分为“18到25”、“26到35”、“35到60”以及“60以上”几个面元。要实现该功能，你需要使用pandas的cut函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">76</span>]: bins <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">18</span>, <span style="color:#099">25</span>, <span style="color:#099">35</span>, <span style="color:#099">60</span>, <span style="color:#099">100</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">77</span>]: cats <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>cut(ages, bins)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">78</span>]: cats
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">78</span>]: 
+</span></span><span style="display:flex;"><span>[(<span style="color:#099">18</span>, <span style="color:#099">25</span>], (<span style="color:#099">18</span>, <span style="color:#099">25</span>], (<span style="color:#099">18</span>, <span style="color:#099">25</span>], (<span style="color:#099">25</span>, <span style="color:#099">35</span>], (<span style="color:#099">18</span>, <span style="color:#099">25</span>], <span style="color:#000;font-weight:bold">...</span>, (<span style="color:#099">25</span>, <span style="color:#099">35</span>], (<span style="color:#099">60</span>, <span style="color:#099">100</span>], (<span style="color:#099">35</span>,<span style="color:#099">60</span>], (<span style="color:#099">35</span>, <span style="color:#099">60</span>], (<span style="color:#099">25</span>, <span style="color:#099">35</span>]]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">12</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, interval[int64]): [(<span style="color:#099">18</span>, <span style="color:#099">25</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#099">25</span>, <span style="color:#099">35</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#099">35</span>, <span style="color:#099">60</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#099">60</span>, <span style="color:#099">100</span>]]
+</span></span></code></pre></div><p>pandas返回的是一个特殊的Categorical对象。结果展示了pandas.cut划分的面元。你可以将其看做一组表示面元名称的字符串。它的底层含有一个表示不同分类名称的类型数组，以及一个codes属性中的年龄数据的标签：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">79</span>]: cats<span style="color:#000;font-weight:bold">.</span>codes
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">79</span>]: array([<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">2</span>, <span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">2</span>, <span style="color:#099">2</span>, <span style="color:#099">1</span>], dtype<span style="color:#000;font-weight:bold">=</span>int8)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">80</span>]: cats<span style="color:#000;font-weight:bold">.</span>categories
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">80</span>]: 
+</span></span><span style="display:flex;"><span>IntervalIndex([(<span style="color:#099">18</span>, <span style="color:#099">25</span>], (<span style="color:#099">25</span>, <span style="color:#099">35</span>], (<span style="color:#099">35</span>, <span style="color:#099">60</span>], (<span style="color:#099">60</span>, <span style="color:#099">100</span>]]
+</span></span><span style="display:flex;"><span>              closed<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;right&#39;</span>,
+</span></span><span style="display:flex;"><span>              dtype<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;interval[int64]&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">81</span>]: pd<span style="color:#000;font-weight:bold">.</span>value_counts(cats)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">81</span>]: 
+</span></span><span style="display:flex;"><span>(<span style="color:#099">18</span>, <span style="color:#099">25</span>]     <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#099">35</span>, <span style="color:#099">60</span>]     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#099">25</span>, <span style="color:#099">35</span>]     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#099">60</span>, <span style="color:#099">100</span>]    <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>dtype: int64
+</span></span></code></pre></div><p>pd.value_counts(cats)是pandas.cut结果的面元计数。</p>
+<p>跟“区间”的数学符号一样，圆括号表示开端，而方括号则表示闭端（包括）。哪边是闭端可以通过right=False进行修改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">82</span>]: pd<span style="color:#000;font-weight:bold">.</span>cut(ages, [<span style="color:#099">18</span>, <span style="color:#099">26</span>, <span style="color:#099">36</span>, <span style="color:#099">61</span>, <span style="color:#099">100</span>], right<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">False</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">82</span>]: 
+</span></span><span style="display:flex;"><span>[[<span style="color:#099">18</span>, <span style="color:#099">26</span>), [<span style="color:#099">18</span>, <span style="color:#099">26</span>), [<span style="color:#099">18</span>, <span style="color:#099">26</span>), [<span style="color:#099">26</span>, <span style="color:#099">36</span>), [<span style="color:#099">18</span>, <span style="color:#099">26</span>), <span style="color:#000;font-weight:bold">...</span>, [<span style="color:#099">26</span>, <span style="color:#099">36</span>), [<span style="color:#099">61</span>, <span style="color:#099">100</span>), [<span style="color:#099">36</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">61</span>), [<span style="color:#099">36</span>, <span style="color:#099">61</span>), [<span style="color:#099">26</span>, <span style="color:#099">36</span>)]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">12</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, interval[int64]): [[<span style="color:#099">18</span>, <span style="color:#099">26</span>) <span style="color:#000;font-weight:bold">&lt;</span> [<span style="color:#099">26</span>, <span style="color:#099">36</span>) <span style="color:#000;font-weight:bold">&lt;</span> [<span style="color:#099">36</span>, <span style="color:#099">61</span>) <span style="color:#000;font-weight:bold">&lt;</span> [<span style="color:#099">61</span>, <span style="color:#099">100</span>)]
+</span></span></code></pre></div><p>你可 以通过传递一个列表或数组到labels，设置自己的面元名称：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">83</span>]: group_names <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;Youth&#39;</span>, <span style="color:#d14">&#39;YoungAdult&#39;</span>, <span style="color:#d14">&#39;MiddleAged&#39;</span>, <span style="color:#d14">&#39;Senior&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">84</span>]: pd<span style="color:#000;font-weight:bold">.</span>cut(ages, bins, labels<span style="color:#000;font-weight:bold">=</span>group_names)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">84</span>]: 
+</span></span><span style="display:flex;"><span>[Youth, Youth, Youth, YoungAdult, Youth, <span style="color:#000;font-weight:bold">...</span>, YoungAdult, Senior, MiddleAged, Mid
+</span></span><span style="display:flex;"><span>dleAged, YoungAdult]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">12</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, <span style="color:#0086b3">object</span>): [Youth <span style="color:#000;font-weight:bold">&lt;</span> YoungAdult <span style="color:#000;font-weight:bold">&lt;</span> MiddleAged <span style="color:#000;font-weight:bold">&lt;</span> Senior]
+</span></span></code></pre></div><p>如果向cut传入的是面元的数量而不是确切的面元边界，则它会根据数据的最小值和最大值计算等长面元。下面这个例子中，我们将一些均匀分布的数据分成四组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">85</span>]: data <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>rand(<span style="color:#099">20</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">86</span>]: pd<span style="color:#000;font-weight:bold">.</span>cut(data, <span style="color:#099">4</span>, precision<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">86</span>]: 
+</span></span><span style="display:flex;"><span>[(<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>], (<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>], (<span style="color:#099">0.76</span>, <span style="color:#099">0.97</span>], (<span style="color:#099">0.76</span>, <span style="color:#099">0.97</span>], (<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>], <span style="color:#000;font-weight:bold">...</span>, (<span style="color:#099">0.34</span>
+</span></span><span style="display:flex;"><span>, <span style="color:#099">0.55</span>], (<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>], (<span style="color:#099">0.55</span>, <span style="color:#099">0.76</span>], (<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>], (<span style="color:#099">0.12</span>, <span style="color:#099">0.34</span>]]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">20</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, interval[float64]): [(<span style="color:#099">0.12</span>, <span style="color:#099">0.34</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#099">0.34</span>, <span style="color:#099">0.55</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#099">0.55</span>, <span style="color:#099">0.76</span>] <span style="color:#000;font-weight:bold">&lt;</span> 
+</span></span><span style="display:flex;"><span>(<span style="color:#099">0.76</span>, <span style="color:#099">0.97</span>]]
+</span></span></code></pre></div><p>选项precision=2，限定小数只有两位。</p>
+<p>qcut是一个非常类似于cut的函数，它可以根据样本分位数对数据进行面元划分。根据数据的分布情况，cut可能无法使各个面元中含有相同数量的数据点。而qcut由于使用的是样本分位数，因此可以得到大小基本相等的面元：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">87</span>]: data <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#099">1000</span>)  <span style="color:#998;font-style:italic"># Normally distributed</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">88</span>]: cats <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>qcut(data, <span style="color:#099">4</span>)  <span style="color:#998;font-style:italic"># Cut into quartiles</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">89</span>]: cats
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">89</span>]: 
+</span></span><span style="display:flex;"><span>[(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">0.62</span>], (<span style="color:#099">0.62</span>, <span style="color:#099">3.928</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#099">0.62</span>, <span style="color:#099">3.928</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">0.62</span>]
+</span></span><span style="display:flex;"><span>, <span style="color:#000;font-weight:bold">...</span>, (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.95</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>], (<span style="color:#099">0.62</span>, <span style="color:#099">3.928</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>]]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">1000</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, interval[float64]): [(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.95</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">0.62</span>] <span style="color:#000;font-weight:bold">&lt;</span>
+</span></span><span style="display:flex;"><span>                                    (<span style="color:#099">0.62</span>, <span style="color:#099">3.928</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">90</span>]: pd<span style="color:#000;font-weight:bold">.</span>value_counts(cats)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">90</span>]:
+</span></span><span style="display:flex;"><span>(<span style="color:#099">0.62</span>, <span style="color:#099">3.928</span>]       <span style="color:#099">250</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">0.62</span>]     <span style="color:#099">250</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>]    <span style="color:#099">250</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.95</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.68</span>]      <span style="color:#099">250</span>
+</span></span><span style="display:flex;"><span>dtype: int64
+</span></span></code></pre></div><p>与cut类似，你也可以传递自定义的分位数（0到1之间的数值，包含端点）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">91</span>]: pd<span style="color:#000;font-weight:bold">.</span>qcut(data, [<span style="color:#099">0</span>, <span style="color:#099">0.1</span>, <span style="color:#099">0.5</span>, <span style="color:#099">0.9</span>, <span style="color:#099">1.</span>])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">91</span>]: 
+</span></span><span style="display:flex;"><span>[(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">1.286</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">1.286</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, <span style="color:#099">1.286</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.026</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>, <span style="color:#099">1.286</span>], <span style="color:#000;font-weight:bold">...</span>, (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.95</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#099">1.286</span>], (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>]]
+</span></span><span style="display:flex;"><span>Length: <span style="color:#099">1000</span>
+</span></span><span style="display:flex;"><span>Categories (<span style="color:#099">4</span>, interval[float64]): [(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.95</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.187</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0265</span>] <span style="color:#000;font-weight:bold">&lt;</span> (<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.026</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>, <span style="color:#099">1.286</span>] <span style="color:#000;font-weight:bold">&lt;</span>
+</span></span><span style="display:flex;"><span>                                    (<span style="color:#099">1.286</span>, <span style="color:#099">3.928</span>]]
+</span></span></code></pre></div><p>本章稍后在讲解聚合和分组运算时会再次用到cut和qcut，因为这两个离散化函数对分位和分组分析非常重要。</p>
+<h3 id="726-检测和过滤异常值">7.2.6 检测和过滤异常值</h3>
+<p>过滤或变换异常值（outlier）在很大程度上就是运用数组运算。来看一个含有正态分布数据的DataFrame：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">92</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#099">1000</span>, <span style="color:#099">4</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">93</span>]: data<span style="color:#000;font-weight:bold">.</span>describe()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">93</span>]: 
+</span></span><span style="display:flex;"><span>                 <span style="color:#099">0</span>            <span style="color:#099">1</span>            <span style="color:#099">2</span>            <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>count  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>
+</span></span><span style="display:flex;"><span>mean      <span style="color:#099">0.049091</span>     <span style="color:#099">0.026112</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.002544</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.051827</span>
+</span></span><span style="display:flex;"><span>std       <span style="color:#099">0.996947</span>     <span style="color:#099">1.007458</span>     <span style="color:#099">0.995232</span>     <span style="color:#099">0.998311</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">min</span>      <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.645860</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.184377</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.745356</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.428254</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">25</span><span style="color:#000;font-weight:bold">%</span>      <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.599807</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.612162</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.687373</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.747478</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">50</span><span style="color:#000;font-weight:bold">%</span>       <span style="color:#099">0.047101</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.013609</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.022158</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.088274</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">75</span><span style="color:#000;font-weight:bold">%</span>       <span style="color:#099">0.756646</span>     <span style="color:#099">0.695298</span>     <span style="color:#099">0.699046</span>     <span style="color:#099">0.623331</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">max</span>       <span style="color:#099">2.653656</span>     <span style="color:#099">3.525865</span>     <span style="color:#099">2.735527</span>     <span style="color:#099">3.366626</span>
+</span></span></code></pre></div><p>假设你想要找出某列中绝对值大小超过3的值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">94</span>]: col <span style="color:#000;font-weight:bold">=</span> data[<span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">95</span>]: col[np<span style="color:#000;font-weight:bold">.</span>abs(col) <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">95</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">41</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.399312</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">136</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.745356</span>
+</span></span><span style="display:flex;"><span>Name: <span style="color:#099">2</span>, dtype: float64
+</span></span></code></pre></div><p>要选出全部含有“超过3或－3的值”的行，你可以在布尔型DataFrame中使用any方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">96</span>]: data[(np<span style="color:#000;font-weight:bold">.</span>abs(data) <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">.</span>any(<span style="color:#099">1</span>)]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">96</span>]: 
+</span></span><span style="display:flex;"><span>            <span style="color:#099">0</span>         <span style="color:#099">1</span>         <span style="color:#099">2</span>         <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">41</span>   <span style="color:#099">0.457246</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.025907</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.399312</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.974657</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">60</span>   <span style="color:#099">1.951312</span>  <span style="color:#099">3.260383</span>  <span style="color:#099">0.963301</span>  <span style="color:#099">1.201206</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">136</span>  <span style="color:#099">0.508391</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.196713</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.745356</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.520113</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">235</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.242459</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.056990</span>  <span style="color:#099">1.918403</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.578828</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">258</span>  <span style="color:#099">0.682841</span>  <span style="color:#099">0.326045</span>  <span style="color:#099">0.425384</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.428254</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">322</span>  <span style="color:#099">1.179227</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.184377</span>  <span style="color:#099">1.369891</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.074833</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">544</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.548824</span>  <span style="color:#099">1.553205</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.186301</span>  <span style="color:#099">1.277104</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">635</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.578093</span>  <span style="color:#099">0.193299</span>  <span style="color:#099">1.397822</span>  <span style="color:#099">3.366626</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">782</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.207434</span>  <span style="color:#099">3.525865</span>  <span style="color:#099">0.283070</span>  <span style="color:#099">0.544635</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">803</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.645860</span>  <span style="color:#099">0.255475</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.549574</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.907459</span>
+</span></span></code></pre></div><p>根据这些条件，就可以对值进行设置。下面的代码可以将值限制在区间－3到3以内：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">97</span>]: data[np<span style="color:#000;font-weight:bold">.</span>abs(data) <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">3</span>] <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>sign(data) <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">98</span>]: data<span style="color:#000;font-weight:bold">.</span>describe()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">98</span>]: 
+</span></span><span style="display:flex;"><span>                 <span style="color:#099">0</span>            <span style="color:#099">1</span>            <span style="color:#099">2</span>            <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>count  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>  <span style="color:#099">1000.000000</span>
+</span></span><span style="display:flex;"><span>mean      <span style="color:#099">0.050286</span>     <span style="color:#099">0.025567</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.001399</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.051765</span>
+</span></span><span style="display:flex;"><span>std       <span style="color:#099">0.992920</span>     <span style="color:#099">1.004214</span>     <span style="color:#099">0.991414</span>     <span style="color:#099">0.995761</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">min</span>      <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.000000</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.000000</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.000000</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">25</span><span style="color:#000;font-weight:bold">%</span>      <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.599807</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.612162</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.687373</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.747478</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">50</span><span style="color:#000;font-weight:bold">%</span>       <span style="color:#099">0.047101</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.013609</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.022158</span>    <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.088274</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">75</span><span style="color:#000;font-weight:bold">%</span>       <span style="color:#099">0.756646</span>     <span style="color:#099">0.695298</span>     <span style="color:#099">0.699046</span>     <span style="color:#099">0.623331</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">max</span>       <span style="color:#099">2.653656</span>     <span style="color:#099">3.000000</span>     <span style="color:#099">2.735527</span>     <span style="color:#099">3.000000</span>
+</span></span></code></pre></div><p>根据数据的值是正还是负，np.sign(data)可以生成1和-1：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">99</span>]: np<span style="color:#000;font-weight:bold">.</span>sign(data)<span style="color:#000;font-weight:bold">.</span>head()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">99</span>]: 
+</span></span><span style="display:flex;"><span>     <span style="color:#099">0</span>    <span style="color:#099">1</span>    <span style="color:#099">2</span>    <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>  <span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">1.0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>  <span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>
+</span></span></code></pre></div><h3 id="727-排列和随机采样">7.2.7 排列和随机采样</h3>
+<p>利用numpy.random.permutation函数可以轻松实现对Series或DataFrame的列的排列工作（permuting，随机重排序）。通过需要排列的轴的长度调用permutation，可产生一个表示新顺序的整数数组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">100</span>]: df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(np<span style="color:#000;font-weight:bold">.</span>arange(<span style="color:#099">5</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">4</span>)<span style="color:#000;font-weight:bold">.</span>reshape((<span style="color:#099">5</span>, <span style="color:#099">4</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">101</span>]: sampler <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>permutation(<span style="color:#099">5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">102</span>]: sampler
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">102</span>]: array([<span style="color:#099">3</span>, <span style="color:#099">1</span>, <span style="color:#099">4</span>, <span style="color:#099">2</span>, <span style="color:#099">0</span>])
+</span></span></code></pre></div><p>然后就可以在基于iloc的索引操作或take函数中使用该数组了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">103</span>]: df
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">103</span>]: 
+</span></span><span style="display:flex;"><span>    <span style="color:#099">0</span>   <span style="color:#099">1</span>   <span style="color:#099">2</span>   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">0</span>   <span style="color:#099">1</span>   <span style="color:#099">2</span>   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">4</span>   <span style="color:#099">5</span>   <span style="color:#099">6</span>   <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">8</span>   <span style="color:#099">9</span>  <span style="color:#099">10</span>  <span style="color:#099">11</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">12</span>  <span style="color:#099">13</span>  <span style="color:#099">14</span>  <span style="color:#099">15</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">16</span>  <span style="color:#099">17</span>  <span style="color:#099">18</span>  <span style="color:#099">19</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">104</span>]: df<span style="color:#000;font-weight:bold">.</span>take(sampler)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">104</span>]: 
+</span></span><span style="display:flex;"><span>    <span style="color:#099">0</span>   <span style="color:#099">1</span>   <span style="color:#099">2</span>   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">12</span>  <span style="color:#099">13</span>  <span style="color:#099">14</span>  <span style="color:#099">15</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">4</span>   <span style="color:#099">5</span>   <span style="color:#099">6</span>   <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">16</span>  <span style="color:#099">17</span>  <span style="color:#099">18</span>  <span style="color:#099">19</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">8</span>   <span style="color:#099">9</span>  <span style="color:#099">10</span>  <span style="color:#099">11</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">0</span>   <span style="color:#099">1</span>   <span style="color:#099">2</span>   <span style="color:#099">3</span>
+</span></span></code></pre></div><p>如果不想用替换的方式选取随机子集，可以在Series和DataFrame上使用sample方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">105</span>]: df<span style="color:#000;font-weight:bold">.</span>sample(n<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">105</span>]: 
+</span></span><span style="display:flex;"><span>    <span style="color:#099">0</span>   <span style="color:#099">1</span>   <span style="color:#099">2</span>   <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">12</span>  <span style="color:#099">13</span>  <span style="color:#099">14</span>  <span style="color:#099">15</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">16</span>  <span style="color:#099">17</span>  <span style="color:#099">18</span>  <span style="color:#099">19</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">8</span>   <span style="color:#099">9</span>  <span style="color:#099">10</span>  <span style="color:#099">11</span>
+</span></span></code></pre></div><p>要通过替换的方式产生样本（允许重复选择），可以传递replace=True到sample：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">106</span>]: choices <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series([<span style="color:#099">5</span>, <span style="color:#099">7</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>, <span style="color:#099">6</span>, <span style="color:#099">4</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">107</span>]: draws <span style="color:#000;font-weight:bold">=</span> choices<span style="color:#000;font-weight:bold">.</span>sample(n<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>, replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">108</span>]: draws
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">108</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    <span style="color:#099">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>dtype: int64
+</span></span></code></pre></div><h3 id="728-计算指标哑变量">7.2.8 计算指标/哑变量</h3>
+<p>另一种常用于统计建模或机器学习的转换方式是：将分类变量（categorical variable）转换为“哑变量”或“指标矩阵”。</p>
+<p>如果DataFrame的某一列中含有k个不同的值，则可以派生出一个k列矩阵或DataFrame（其值全为1和0）。pandas有一个get_dummies函数可以实现该功能（其实自己动手做一个也不难）。使用之前的一个DataFrame例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">109</span>]: df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({<span style="color:#d14">&#39;key&#39;</span>: [<span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;c&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:                    <span style="color:#d14">&#39;data1&#39;</span>: <span style="color:#0086b3">range</span>(<span style="color:#099">6</span>)})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">110</span>]: pd<span style="color:#000;font-weight:bold">.</span>get_dummies(df[<span style="color:#d14">&#39;key&#39;</span>])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">110</span>]: 
+</span></span><span style="display:flex;"><span>   a  b  c
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">0</span>  <span style="color:#099">1</span>  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">0</span>  <span style="color:#099">1</span>  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">1</span>  <span style="color:#099">0</span>  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">0</span>  <span style="color:#099">0</span>  <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">1</span>  <span style="color:#099">0</span>  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">0</span>  <span style="color:#099">1</span>  <span style="color:#099">0</span>
+</span></span></code></pre></div><p>有时候，你可能想给指标DataFrame的列加上一个前缀，以便能够跟其他数据进行合并。get_dummies的prefix参数可以实现该功能：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">111</span>]: dummies <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>get_dummies(df[<span style="color:#d14">&#39;key&#39;</span>], prefix<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;key&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">112</span>]: df_with_dummy <span style="color:#000;font-weight:bold">=</span> df[[<span style="color:#d14">&#39;data1&#39;</span>]]<span style="color:#000;font-weight:bold">.</span>join(dummies)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">113</span>]: df_with_dummy
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">113</span>]: 
+</span></span><span style="display:flex;"><span>   data1  key_a  key_b  key_c
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>      <span style="color:#099">0</span>      <span style="color:#099">0</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>      <span style="color:#099">2</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>      <span style="color:#099">3</span>      <span style="color:#099">0</span>      <span style="color:#099">0</span>      <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>      <span style="color:#099">4</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>      <span style="color:#099">5</span>      <span style="color:#099">0</span>      <span style="color:#099">1</span>      <span style="color:#099">0</span>
+</span></span></code></pre></div><p>如果DataFrame中的某行同属于多个分类，则事情就会有点复杂。看一下MovieLens 1M数据集，14章会更深入地研究它：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">114</span>]: mnames <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;movie_id&#39;</span>, <span style="color:#d14">&#39;title&#39;</span>, <span style="color:#d14">&#39;genres&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">115</span>]: movies <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_table(<span style="color:#d14">&#39;datasets/movielens/movies.dat&#39;</span>, sep<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;::&#39;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:                        header<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, names<span style="color:#000;font-weight:bold">=</span>mnames)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">116</span>]: movies[:<span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">116</span>]: 
+</span></span><span style="display:flex;"><span>   movie_id                               title                        genres
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>         <span style="color:#099">1</span>                    Toy Story (<span style="color:#099">1995</span>)   Animation<span style="color:#000;font-weight:bold">|</span>Children<span style="color:#d14">&#39;s|Comedy</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>         <span style="color:#099">2</span>                      Jumanji (<span style="color:#099">1995</span>)  Adventure<span style="color:#000;font-weight:bold">|</span>Children<span style="color:#d14">&#39;s|Fantasy</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>         <span style="color:#099">3</span>             Grumpier Old Men (<span style="color:#099">1995</span>)                Comedy<span style="color:#000;font-weight:bold">|</span>Romance
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>         <span style="color:#099">4</span>            Waiting to Exhale (<span style="color:#099">1995</span>)                  Comedy<span style="color:#000;font-weight:bold">|</span>Drama
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>         <span style="color:#099">5</span>  Father of the Bride Part II (<span style="color:#099">1995</span>)                        Comedy
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>         <span style="color:#099">6</span>                         Heat (<span style="color:#099">1995</span>)         Action<span style="color:#000;font-weight:bold">|</span>Crime<span style="color:#000;font-weight:bold">|</span>Thriller
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>         <span style="color:#099">7</span>                      Sabrina (<span style="color:#099">1995</span>)                Comedy<span style="color:#000;font-weight:bold">|</span>Romance
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>         <span style="color:#099">8</span>                 Tom <span style="color:#000;font-weight:bold">and</span> Huck (<span style="color:#099">1995</span>)          Adventure<span style="color:#000;font-weight:bold">|</span>Children<span style="color:#d14">&#39;s</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>         <span style="color:#099">9</span>                 Sudden Death (<span style="color:#099">1995</span>)
+</span></span><span style="display:flex;"><span>Action
+</span></span><span style="display:flex;"><span><span style="color:#099">9</span>        <span style="color:#099">10</span>                    GoldenEye (<span style="color:#099">1995</span>)     Action<span style="color:#000;font-weight:bold">|</span>Adventure<span style="color:#000;font-weight:bold">|</span>Thriller
+</span></span></code></pre></div><p>要为每个genre添加指标变量就需要做一些数据规整操作。首先，我们从数据集中抽取出不同的genre值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">117</span>]: all_genres <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">118</span>]: <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> movies<span style="color:#000;font-weight:bold">.</span>genres:
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:     all_genres<span style="color:#000;font-weight:bold">.</span>extend(x<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;|&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">119</span>]: genres <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>unique(all_genres)
+</span></span></code></pre></div><p>现在有：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">120</span>]: genres
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">120</span>]: 
+</span></span><span style="display:flex;"><span>array([<span style="color:#d14">&#39;Animation&#39;</span>, <span style="color:#d14">&#34;Children&#39;s&#34;</span>, <span style="color:#d14">&#39;Comedy&#39;</span>, <span style="color:#d14">&#39;Adventure&#39;</span>, <span style="color:#d14">&#39;Fantasy&#39;</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#d14">&#39;Romance&#39;</span>, <span style="color:#d14">&#39;Drama&#39;</span>, <span style="color:#d14">&#39;Action&#39;</span>, <span style="color:#d14">&#39;Crime&#39;</span>, <span style="color:#d14">&#39;Thriller&#39;</span>,<span style="color:#d14">&#39;Horror&#39;</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#d14">&#39;Sci-Fi&#39;</span>, <span style="color:#d14">&#39;Documentary&#39;</span>, <span style="color:#d14">&#39;War&#39;</span>, <span style="color:#d14">&#39;Musical&#39;</span>, <span style="color:#d14">&#39;Mystery&#39;</span>, <span style="color:#d14">&#39;Film-Noir&#39;</span>,
+</span></span><span style="display:flex;"><span>       <span style="color:#d14">&#39;Western&#39;</span>], dtype<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">object</span>)
+</span></span></code></pre></div><p>构建指标DataFrame的方法之一是从一个全零DataFrame开始：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">121</span>]: zero_matrix <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>zeros((<span style="color:#0086b3">len</span>(movies), <span style="color:#0086b3">len</span>(genres)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">122</span>]: dummies <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(zero_matrix, columns<span style="color:#000;font-weight:bold">=</span>genres)
+</span></span></code></pre></div><p>现在，迭代每一部电影，并将dummies各行的条目设为1。要这么做，我们使用dummies.columns来计算每个类型的列索引：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">123</span>]: gen <span style="color:#000;font-weight:bold">=</span> movies<span style="color:#000;font-weight:bold">.</span>genres[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">124</span>]: gen<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;|&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">124</span>]: [<span style="color:#d14">&#39;Animation&#39;</span>, <span style="color:#d14">&#34;Children&#39;s&#34;</span>, <span style="color:#d14">&#39;Comedy&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">125</span>]: dummies<span style="color:#000;font-weight:bold">.</span>columns<span style="color:#000;font-weight:bold">.</span>get_indexer(gen<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;|&#39;</span>))
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">125</span>]: array([<span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>])
+</span></span></code></pre></div><p>然后，根据索引，使用.iloc设定值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">126</span>]: <span style="color:#000;font-weight:bold">for</span> i, gen <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">enumerate</span>(movies<span style="color:#000;font-weight:bold">.</span>genres):
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:     indices <span style="color:#000;font-weight:bold">=</span> dummies<span style="color:#000;font-weight:bold">.</span>columns<span style="color:#000;font-weight:bold">.</span>get_indexer(gen<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;|&#39;</span>))
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:     dummies<span style="color:#000;font-weight:bold">.</span>iloc[i, indices] <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:
+</span></span></code></pre></div><p>然后，和以前一样，再将其与movies合并起来：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">127</span>]: movies_windic <span style="color:#000;font-weight:bold">=</span> movies<span style="color:#000;font-weight:bold">.</span>join(dummies<span style="color:#000;font-weight:bold">.</span>add_prefix(<span style="color:#d14">&#39;Genre_&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">128</span>]: movies_windic<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">128</span>]: 
+</span></span><span style="display:flex;"><span>movie_id                                       <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>title                           Toy Story (<span style="color:#099">1995</span>)
+</span></span><span style="display:flex;"><span>genres               Animation<span style="color:#000;font-weight:bold">|</span>Children<span style="color:#d14">&#39;s|Comedy</span>
+</span></span><span style="display:flex;"><span>Genre_Animation                                <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>Genre_Children<span style="color:#d14">&#39;s                               1</span>
+</span></span><span style="display:flex;"><span>Genre_Comedy                                   <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>Genre_Adventure                                <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Fantasy                                  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Romance                                  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Drama                                    <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>                                <span style="color:#000;font-weight:bold">...</span>             
+</span></span><span style="display:flex;"><span>Genre_Crime                                    <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Thriller                                 <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Horror                                   <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Sci<span style="color:#000;font-weight:bold">-</span>Fi                                   <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Documentary                              <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_War                                      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Musical                                  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Mystery                                  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Film<span style="color:#000;font-weight:bold">-</span>Noir                                <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Genre_Western                                  <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Name: <span style="color:#099">0</span>, Length: <span style="color:#099">21</span>, dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><blockquote>
+<p>笔记：对于很大的数据，用这种方式构建多成员指标变量就会变得非常慢。最好使用更低级的函数，将其写入NumPy数组，然后结果包装在DataFrame中。</p>
+</blockquote>
+<p>一个对统计应用有用的秘诀是：结合get_dummies和诸如cut之类的离散化函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">129</span>]: np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>seed(<span style="color:#099">12345</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">130</span>]: values <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>rand(<span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">131</span>]: values
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">131</span>]: 
+</span></span><span style="display:flex;"><span>array([ <span style="color:#099">0.9296</span>,  <span style="color:#099">0.3164</span>,  <span style="color:#099">0.1839</span>,  <span style="color:#099">0.2046</span>,  <span style="color:#099">0.5677</span>,  <span style="color:#099">0.5955</span>,  <span style="color:#099">0.9645</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#099">0.6532</span>,  <span style="color:#099">0.7489</span>,  <span style="color:#099">0.6536</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">132</span>]: bins <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">0</span>, <span style="color:#099">0.2</span>, <span style="color:#099">0.4</span>, <span style="color:#099">0.6</span>, <span style="color:#099">0.8</span>, <span style="color:#099">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">133</span>]: pd<span style="color:#000;font-weight:bold">.</span>get_dummies(pd<span style="color:#000;font-weight:bold">.</span>cut(values, bins))
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">133</span>]: 
+</span></span><span style="display:flex;"><span>   (<span style="color:#099">0.0</span>, <span style="color:#099">0.2</span>]  (<span style="color:#099">0.2</span>, <span style="color:#099">0.4</span>]  (<span style="color:#099">0.4</span>, <span style="color:#099">0.6</span>]  (<span style="color:#099">0.6</span>, <span style="color:#099">0.8</span>]  (<span style="color:#099">0.8</span>, <span style="color:#099">1.0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">8</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">9</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span></code></pre></div><p>我们用numpy.random.seed，使这个例子具有确定性。本书后面会介绍pandas.get_dummies。</p>
+<h2 id="73-字符串操作">7.3 字符串操作</h2>
+<p>Python能够成为流行的数据处理语言，部分原因是其简单易用的字符串和文本处理功能。大部分文本运算都直接做成了字符串对象的内置方法。对于更为复杂的模式匹配和文本操作，则可能需要用到正则表达式。pandas对此进行了加强，它使你能够对整组数据应用字符串表达式和正则表达式，而且能处理烦人的缺失数据。</p>
+<h3 id="731-字符串对象方法">7.3.1 字符串对象方法</h3>
+<p>对于许多字符串处理和脚本应用，内置的字符串方法已经能够满足要求了。例如，以逗号分隔的字符串可以用split拆分成数段：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">134</span>]: val <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;a,b,  guido&#39;</span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">135</span>]: val<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">135</span>]: [<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;  guido&#39;</span>]
+</span></span></code></pre></div><p>split常常与strip一起使用，以去除空白符（包括换行符）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">136</span>]: pieces <span style="color:#000;font-weight:bold">=</span> [x<span style="color:#000;font-weight:bold">.</span>strip() <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> val<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;,&#39;</span>)]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">137</span>]: pieces
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">137</span>]: [<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;guido&#39;</span>]
+</span></span></code></pre></div><p>利用加法，可以将这些子字符串以双冒号分隔符的形式连接起来：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">138</span>]: first, second, third <span style="color:#000;font-weight:bold">=</span> pieces
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">139</span>]: first <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;::&#39;</span> <span style="color:#000;font-weight:bold">+</span> second <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;::&#39;</span> <span style="color:#000;font-weight:bold">+</span> third
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">139</span>]: <span style="color:#d14">&#39;a::b::guido&#39;</span>
+</span></span></code></pre></div><p>但这种方式并不是很实用。一种更快更符合Python风格的方式是，向字符串&quot;::&ldquo;的join方法传入一个列表或元组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">140</span>]: <span style="color:#d14">&#39;::&#39;</span><span style="color:#000;font-weight:bold">.</span>join(pieces)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">140</span>]: <span style="color:#d14">&#39;a::b::guido&#39;</span>
+</span></span></code></pre></div><p>其它方法关注的是子串定位。检测子串的最佳方式是利用Python的in关键字，还可以使用index和find：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">141</span>]: <span style="color:#d14">&#39;guido&#39;</span> <span style="color:#000;font-weight:bold">in</span> val
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">141</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">142</span>]: val<span style="color:#000;font-weight:bold">.</span>index(<span style="color:#d14">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">142</span>]: <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">143</span>]: val<span style="color:#000;font-weight:bold">.</span>find(<span style="color:#d14">&#39;:&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">143</span>]: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>
+</span></span></code></pre></div><p>注意find和index的区别：如果找不到字符串，index将会引发一个异常（而不是返回－1）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">144</span>]: val<span style="color:#000;font-weight:bold">.</span>index(<span style="color:#d14">&#39;:&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ValueError</span>                                Traceback (most recent call last)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span>ipython<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">input</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">144</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">280</span>f8b2856ce<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">----&gt;</span> <span style="color:#099">1</span> val<span style="color:#000;font-weight:bold">.</span>index(<span style="color:#d14">&#39;:&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ValueError</span>: substring <span style="color:#000;font-weight:bold">not</span> found
+</span></span></code></pre></div><p>与此相关，count可以返回指定子串的出现次数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">145</span>]: val<span style="color:#000;font-weight:bold">.</span>count(<span style="color:#d14">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">145</span>]: <span style="color:#099">2</span>
+</span></span></code></pre></div><p>replace用于将指定模式替换为另一个模式。通过传入空字符串，它也常常用于删除模式：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">146</span>]: val<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;,&#39;</span>, <span style="color:#d14">&#39;::&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">146</span>]: <span style="color:#d14">&#39;a::b::  guido&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">147</span>]: val<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;,&#39;</span>, <span style="color:#d14">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">147</span>]: <span style="color:#d14">&#39;ab  guido&#39;</span>
+</span></span></code></pre></div><p>表7-3列出了Python内置的字符串方法。</p>
+<p>这些运算大部分都能使用正则表达式实现（马上就会看到）。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024101334802.png" alt=""></p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024101343117.png" alt=""></p>
+<p>casefold      将字符转换为小写，并将任何特定区域的变量字符组合转换成一个通用的可比较形式。</p>
+<h3 id="732-正则表达式">7.3.2 正则表达式</h3>
+<p>正则表达式提供了一种灵活的在文本中搜索或匹配（通常比前者复杂）字符串模式的方式。正则表达式，常称作regex，是根据正则表达式语言编写的字符串。Python内置的re模块负责对字符串应用正则表达式。我将通过一些例子说明其使用方法。</p>
+<blockquote>
+<p>笔记：正则表达式的编写技巧可以自成一章，超出了本书的范围。从网上和其它书可以找到许多非常不错的教程和参考资料。</p>
+</blockquote>
+<p>re模块的函数可以分为三个大类：模式匹配、替换以及拆分。当然，它们之间是相辅相成的。一个regex描述了需要在文本中定位的一个模式，它可以用于许多目的。我们先来看一个简单的例子：假设我想要拆分一个字符串，分隔符为数量不定的一组空白符（制表符、空格、换行符等）。描述一个或多个空白符的regex是\s+：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">148</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">re</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">149</span>]: text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;foo    bar</span><span style="color:#d14">\t</span><span style="color:#d14"> baz  </span><span style="color:#d14">\t</span><span style="color:#d14">qux&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">150</span>]: re<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39;\s+&#39;</span>, text)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">150</span>]: [<span style="color:#d14">&#39;foo&#39;</span>, <span style="color:#d14">&#39;bar&#39;</span>, <span style="color:#d14">&#39;baz&#39;</span>, <span style="color:#d14">&#39;qux&#39;</span>]
+</span></span></code></pre></div><p>调用<code>re.split('\s+',text)</code>时，正则表达式会先被编译，然后再在text上调用其split方法。你可以用re.compile自己编译regex以得到一个可重用的regex对象：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">151</span>]: regex <span style="color:#000;font-weight:bold">=</span> re<span style="color:#000;font-weight:bold">.</span>compile(<span style="color:#d14">&#39;\s+&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">152</span>]: regex<span style="color:#000;font-weight:bold">.</span>split(text)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">152</span>]: [<span style="color:#d14">&#39;foo&#39;</span>, <span style="color:#d14">&#39;bar&#39;</span>, <span style="color:#d14">&#39;baz&#39;</span>, <span style="color:#d14">&#39;qux&#39;</span>]
+</span></span></code></pre></div><p>如果只希望得到匹配regex的所有模式，则可以使用findall方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">153</span>]: regex<span style="color:#000;font-weight:bold">.</span>findall(text)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">153</span>]: [<span style="color:#d14">&#39;    &#39;</span>, <span style="color:#d14">&#39;</span><span style="color:#d14">\t</span><span style="color:#d14"> &#39;</span>, <span style="color:#d14">&#39;  </span><span style="color:#d14">\t</span><span style="color:#d14">&#39;</span>]
+</span></span></code></pre></div><blockquote>
+<p>笔记：如果想避免正则表达式中不需要的转义（\），则可以使用原始字符串字面量如r&rsquo;C:\x&rsquo;（也可以编写其等价式&rsquo;C:\x&rsquo;）。</p>
+</blockquote>
+<p>如果打算对许多字符串应用同一条正则表达式，强烈建议通过re.compile创建regex对象。这样将可以节省大量的CPU时间。</p>
+<p>match和search跟findall功能类似。findall返回的是字符串中所有的匹配项，而search则只返回第一个匹配项。match更加严格，它只匹配字符串的首部。来看一个小例子，假设我们有一段文本以及一条能够识别大部分电子邮件地址的正则表达式：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;Dave dave@google.com
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">Steve steve@gmail.com
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">Rob rob@gmail.com
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">Ryan ryan@yahoo.com
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>pattern <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">r</span><span style="color:#d14">&#39;[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># re.IGNORECASE makes the regex case-insensitive</span>
+</span></span><span style="display:flex;"><span>regex <span style="color:#000;font-weight:bold">=</span> re<span style="color:#000;font-weight:bold">.</span>compile(pattern, flags<span style="color:#000;font-weight:bold">=</span>re<span style="color:#000;font-weight:bold">.</span>IGNORECASE)
+</span></span></code></pre></div><p>对text使用findall将得到一组电子邮件地址：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">155</span>]: regex<span style="color:#000;font-weight:bold">.</span>findall(text)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">155</span>]: 
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;dave@google.com&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#d14">&#39;steve@gmail.com&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#d14">&#39;rob@gmail.com&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#d14">&#39;ryan@yahoo.com&#39;</span>]
+</span></span></code></pre></div><p>search返回的是文本中第一个电子邮件地址（以特殊的匹配项对象形式返回）。对于上面那个regex，匹配项对象只能告诉我们模式在原字符串中的起始和结束位置：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">156</span>]: m <span style="color:#000;font-weight:bold">=</span> regex<span style="color:#000;font-weight:bold">.</span>search(text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">157</span>]: m
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">157</span>]: <span style="color:#000;font-weight:bold">&lt;</span>_sre<span style="color:#000;font-weight:bold">.</span>SRE_Match <span style="color:#0086b3">object</span>; span<span style="color:#000;font-weight:bold">=</span>(<span style="color:#099">5</span>, <span style="color:#099">20</span>), <span style="color:#000;font-weight:bold">match</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;dave@google.com&#39;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">158</span>]: text[m<span style="color:#000;font-weight:bold">.</span>start():m<span style="color:#000;font-weight:bold">.</span>end()]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">158</span>]: <span style="color:#d14">&#39;dave@google.com&#39;</span>
+</span></span></code></pre></div><p>regex.match则将返回None，因为它只匹配出现在字符串开头的模式：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">159</span>]: <span style="color:#0086b3">print</span>(regex<span style="color:#000;font-weight:bold">.</span><span style="color:#000;font-weight:bold">match</span>(text))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">None</span>
+</span></span></code></pre></div><p>相关的，sub方法可以将匹配到的模式替换为指定字符串，并返回所得到的新字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">160</span>]: <span style="color:#0086b3">print</span>(regex<span style="color:#000;font-weight:bold">.</span>sub(<span style="color:#d14">&#39;REDACTED&#39;</span>, text))
+</span></span><span style="display:flex;"><span>Dave REDACTED
+</span></span><span style="display:flex;"><span>Steve REDACTED
+</span></span><span style="display:flex;"><span>Rob REDACTED
+</span></span><span style="display:flex;"><span>Ryan REDACTED
+</span></span></code></pre></div><p>假设你不仅想要找出电子邮件地址，还想将各个地址分成3个部分：用户名、域名以及域后缀。要实现此功能，只需将待分段的模式的各部分用圆括号包起来即可：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">161</span>]: pattern <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">r</span><span style="color:#d14">&#39;([A-Z0-9._%+-]+)@([A-Z0-9.-]+)\.([A-Z]{2,4})&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">162</span>]: regex <span style="color:#000;font-weight:bold">=</span> re<span style="color:#000;font-weight:bold">.</span>compile(pattern, flags<span style="color:#000;font-weight:bold">=</span>re<span style="color:#000;font-weight:bold">.</span>IGNORECASE)
+</span></span></code></pre></div><p>由这种修改过的正则表达式所产生的匹配项对象，可以通过其groups方法返回一个由模式各段组成的元组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">163</span>]: m <span style="color:#000;font-weight:bold">=</span> regex<span style="color:#000;font-weight:bold">.</span><span style="color:#000;font-weight:bold">match</span>(<span style="color:#d14">&#39;wesm@bright.net&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">164</span>]: m<span style="color:#000;font-weight:bold">.</span>groups()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">164</span>]: (<span style="color:#d14">&#39;wesm&#39;</span>, <span style="color:#d14">&#39;bright&#39;</span>, <span style="color:#d14">&#39;net&#39;</span>)
+</span></span></code></pre></div><p>对于带有分组功能的模式，findall会返回一个元组列表：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">165</span>]: regex<span style="color:#000;font-weight:bold">.</span>findall(text)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">165</span>]:
+</span></span><span style="display:flex;"><span>[(<span style="color:#d14">&#39;dave&#39;</span>, <span style="color:#d14">&#39;google&#39;</span>, <span style="color:#d14">&#39;com&#39;</span>),
+</span></span><span style="display:flex;"><span> (<span style="color:#d14">&#39;steve&#39;</span>, <span style="color:#d14">&#39;gmail&#39;</span>, <span style="color:#d14">&#39;com&#39;</span>),
+</span></span><span style="display:flex;"><span> (<span style="color:#d14">&#39;rob&#39;</span>, <span style="color:#d14">&#39;gmail&#39;</span>, <span style="color:#d14">&#39;com&#39;</span>),
+</span></span><span style="display:flex;"><span> (<span style="color:#d14">&#39;ryan&#39;</span>, <span style="color:#d14">&#39;yahoo&#39;</span>, <span style="color:#d14">&#39;com&#39;</span>)]
+</span></span></code></pre></div><p>sub还能通过诸如\1、\2之类的特殊符号访问各匹配项中的分组。符号\1对应第一个匹配的组，\2对应第二个匹配的组，以此类推：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">166</span>]: <span style="color:#0086b3">print</span>(regex<span style="color:#000;font-weight:bold">.</span>sub(<span style="color:#d14">r</span><span style="color:#d14">&#39;Username: \1, Domain: \2, Suffix: \3&#39;</span>, text))
+</span></span><span style="display:flex;"><span>Dave Username: dave, Domain: google, Suffix: com
+</span></span><span style="display:flex;"><span>Steve Username: steve, Domain: gmail, Suffix: com
+</span></span><span style="display:flex;"><span>Rob Username: rob, Domain: gmail, Suffix: com
+</span></span><span style="display:flex;"><span>Ryan Username: ryan, Domain: yahoo, Suffix: com
+</span></span></code></pre></div><p>Python中还有许多的正则表达式，但大部分都超出了本书的范围。表7-4是一个简要概括。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024102452195.png" alt=""></p>
+<h3 id="733-pandas的矢量化字符串函数">7.3.3 pandas的矢量化字符串函数</h3>
+<p>清理待分析的散乱数据时，常常需要做一些字符串规整化工作。更为复杂的情况是，含有字符串的列有时还含有缺失数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">167</span>]: data <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;Dave&#39;</span>: <span style="color:#d14">&#39;dave@google.com&#39;</span>, <span style="color:#d14">&#39;Steve&#39;</span>: <span style="color:#d14">&#39;steve@gmail.com&#39;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:         <span style="color:#d14">&#39;Rob&#39;</span>: <span style="color:#d14">&#39;rob@gmail.com&#39;</span>, <span style="color:#d14">&#39;Wes&#39;</span>: np<span style="color:#000;font-weight:bold">.</span>nan}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">168</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">169</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">169</span>]: 
+</span></span><span style="display:flex;"><span>Dave     dave<span style="color:#3c5d5d;font-weight:bold">@google.com</span>
+</span></span><span style="display:flex;"><span>Rob        rob<span style="color:#3c5d5d;font-weight:bold">@gmail.com</span>
+</span></span><span style="display:flex;"><span>Steve    steve<span style="color:#3c5d5d;font-weight:bold">@gmail.com</span>
+</span></span><span style="display:flex;"><span>Wes                  NaN
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">170</span>]: data<span style="color:#000;font-weight:bold">.</span>isnull()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">170</span>]: 
+</span></span><span style="display:flex;"><span>Dave     <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>Rob      <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>Steve    <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>Wes       <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">bool</span>
+</span></span></code></pre></div><p>通过data.map，所有字符串和正则表达式方法都能被应用于（传入lambda表达式或其他函数）各个值，但是如果存在NA（null）就会报错。为了解决这个问题，Series有一些能够跳过NA值的面向数组方法，进行字符串操作。通过Series的str属性即可访问这些方法。例如，我们可以通过str.contains检查各个电子邮件地址是否含有&quot;gmail&rdquo;：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">171</span>]: data<span style="color:#000;font-weight:bold">.</span>str<span style="color:#000;font-weight:bold">.</span>contains(<span style="color:#d14">&#39;gmail&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">171</span>]: 
+</span></span><span style="display:flex;"><span>Dave     <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>Rob       <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Steve     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Wes        NaN
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><p>也可以使用正则表达式，还可以加上任意re选项（如IGNORECASE）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">172</span>]: pattern
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">172</span>]: <span style="color:#d14">&#39;([A-Z0-9._%+-]+)@([A-Z0-9.-]+)</span><span style="color:#d14">\\</span><span style="color:#d14">.([A-Z]{2,4})&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">173</span>]: data<span style="color:#000;font-weight:bold">.</span>str<span style="color:#000;font-weight:bold">.</span>findall(pattern, flags<span style="color:#000;font-weight:bold">=</span>re<span style="color:#000;font-weight:bold">.</span>IGNORECASE)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">173</span>]: 
+</span></span><span style="display:flex;"><span>Dave     [(dave, google, com)]
+</span></span><span style="display:flex;"><span>Rob        [(rob, gmail, com)]
+</span></span><span style="display:flex;"><span>Steve    [(steve, gmail, com)]
+</span></span><span style="display:flex;"><span>Wes                        NaN
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><p>有两个办法可以实现矢量化的元素获取操作：要么使用str.get，要么在str属性上使用索引：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">174</span>]: matches <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>str<span style="color:#000;font-weight:bold">.</span><span style="color:#000;font-weight:bold">match</span>(pattern, flags<span style="color:#000;font-weight:bold">=</span>re<span style="color:#000;font-weight:bold">.</span>IGNORECASE)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">175</span>]: matches
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">175</span>]: 
+</span></span><span style="display:flex;"><span>Dave     <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Rob      <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Steve    <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Wes       NaN
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><p>要访问嵌入列表中的元素，我们可以传递索引到这两个函数中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">176</span>]: matches<span style="color:#000;font-weight:bold">.</span>str<span style="color:#000;font-weight:bold">.</span>get(<span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">176</span>]: 
+</span></span><span style="display:flex;"><span>Dave    NaN
+</span></span><span style="display:flex;"><span>Rob     NaN
+</span></span><span style="display:flex;"><span>Steve   NaN
+</span></span><span style="display:flex;"><span>Wes     NaN
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">177</span>]: matches<span style="color:#000;font-weight:bold">.</span>str[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">177</span>]: 
+</span></span><span style="display:flex;"><span>Dave    NaN
+</span></span><span style="display:flex;"><span>Rob     NaN
+</span></span><span style="display:flex;"><span>Steve   NaN
+</span></span><span style="display:flex;"><span>Wes     NaN
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>你可以利用这种方法对字符串进行截取：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">178</span>]: data<span style="color:#000;font-weight:bold">.</span>str[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">178</span>]: 
+</span></span><span style="display:flex;"><span>Dave     dave<span style="color:#000;font-weight:bold">@</span>
+</span></span><span style="display:flex;"><span>Rob      rob<span style="color:#3c5d5d;font-weight:bold">@g</span>
+</span></span><span style="display:flex;"><span>Steve    steve
+</span></span><span style="display:flex;"><span>Wes        NaN
+</span></span><span style="display:flex;"><span>dtype: <span style="color:#0086b3">object</span>
+</span></span></code></pre></div><p>表7-5介绍了更多的pandas字符串方法。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/02/1240-20201024102507010.png" alt="表7-5 部分矢量化字符串方法"></p>
+<h2 id="74-总结">7.4 总结</h2>
+<p>高效的数据准备可以让你将更多的时间用于数据分析，花较少的时间用于准备工作，这样就可以极大地提高生产力。我们在本章中学习了许多工具，但覆盖并不全面。下一章，我们会学习pandas的聚合与分组。</p>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">← 第一章 准备工作</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/">第三章 Python 的数据结构、函数和文件  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

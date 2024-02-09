@@ -1,48 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/blog/</link>
-    <description>blog - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Feb 2022 17:56:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/blog/" rel="self" type="application/rss+xml" /><item>
-  <title>butterfly</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/butterfly/</link>
-  <pubDate>Wed, 23 Feb 2022 17:56:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/butterfly/</guid>
-  <description><![CDATA[<h2 id="hexo-butterfly-魔改" class="heading-element">
-  <a href="#hexo-butterfly-%e9%ad%94%e6%94%b9" class="heading-mark"></a>hexo butterfly 魔改</h2>]]></description>
-</item>
-<item>
-  <title>docsify</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/docsify/</link>
-  <pubDate>Wed, 23 Feb 2022 17:56:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/docsify/</guid>
-  <description><![CDATA[<p>Docsify</p>]]></description>
-</item>
-<item>
-  <title>Emoji</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/emoji/</link>
-  <pubDate>Wed, 23 Feb 2022 17:56:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/emoji/</guid>
-  <description><![CDATA[<p>Emoji</p>]]></description>
-</item>
-<item>
-  <title>使用Git将文件夹上传到Github以及使用Git LFS上传大文件</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</link>
-  <pubDate>Wed, 23 Feb 2022 17:56:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</guid>
-  <description><![CDATA[<p>GIT</p>]]></description>
-</item>
-<item>
-  <title>博客搭建工具</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</link>
-  <pubDate>Wed, 23 Feb 2022 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</guid>
-  <description><![CDATA[<p>博客搭建工具</p>]]></description>
-</item>
-</channel>
+    <title>blog on 樊刹</title>
+    <link>https://richfan.site/tags/blog/</link>
+    <description>Recent content in blog on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Feb 2022 17:56:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>butterfly</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/butterfly/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/butterfly/</guid>
+      <description>&lt;h2 id=&#34;hexo-butterfly-魔改&#34;&gt;hexo butterfly 魔改&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>docsify</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/docsify/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/docsify/</guid>
+      <description>&lt;p&gt;Docsify&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/emoji/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/emoji/</guid>
+      <description>&lt;p&gt;Emoji&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>使用Git将文件夹上传到Github以及使用Git LFS上传大文件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;GIT&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>博客搭建工具</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;博客搭建工具&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

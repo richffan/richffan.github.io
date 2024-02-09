@@ -1,71 +1,68 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories - 分类 - 樊刹</title>
-    <link>http://richfan.site/categories/</link>
-    <description>Categories - 分类 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/" rel="self" type="application/rss+xml" /><item>
-  <title>审技</title>
-  <link>http://richfan.site/categories/%E5%AE%A1%E6%8A%80/</link>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E5%AE%A1%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>书技</title>
-  <link>http://richfan.site/categories/%E4%B9%A6%E6%8A%80/</link>
-  <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E4%B9%A6%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>法技</title>
-  <link>http://richfan.site/categories/%E6%B3%95%E6%8A%80/</link>
-  <pubDate>Tue, 31 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E6%B3%95%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>投技</title>
-  <link>http://richfan.site/categories/%E6%8A%95%E6%8A%80/</link>
-  <pubDate>Mon, 30 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E6%8A%95%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>财技</title>
-  <link>http://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
-  <pubDate>Wed, 25 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E8%B4%A2%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>程技</title>
-  <link>http://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E7%A8%8B%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>税技</title>
-  <link>http://richfan.site/categories/%E7%A8%8E%E6%8A%80/</link>
-  <pubDate>Wed, 23 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E7%A8%8E%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>食技</title>
-  <link>http://richfan.site/categories/%E9%A3%9F%E6%8A%80/</link>
-  <pubDate>Sun, 13 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/categories/%E9%A3%9F%E6%8A%80/</guid>
-  <description><![CDATA[]]></description>
-</item>
-</channel>
+    <title>Categories on 樊刹</title>
+    <link>https://richfan.site/categories/</link>
+    <description>Recent content in Categories on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>审技</title>
+      <link>https://richfan.site/categories/%E5%AE%A1%E6%8A%80/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E5%AE%A1%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>书技</title>
+      <link>https://richfan.site/categories/%E4%B9%A6%E6%8A%80/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E4%B9%A6%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>法技</title>
+      <link>https://richfan.site/categories/%E6%B3%95%E6%8A%80/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E6%B3%95%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>投技</title>
+      <link>https://richfan.site/categories/%E6%8A%95%E6%8A%80/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E6%8A%95%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>财技</title>
+      <link>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>程技</title>
+      <link>https://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E7%A8%8B%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>税技</title>
+      <link>https://richfan.site/categories/%E7%A8%8E%E6%8A%80/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E7%A8%8E%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>食技</title>
+      <link>https://richfan.site/categories/%E9%A3%9F%E6%8A%80/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E9%A3%9F%E6%8A%80/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

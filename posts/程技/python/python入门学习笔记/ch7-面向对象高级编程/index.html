@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="第七章 面向对象高级编程 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>第七章 面向对象高级编程</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            第七章 面向对象高级编程
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            9795 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            20 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#71-使用-__slots__">7.1 使用 <code>__slots__</code></a></li>
+    <li><a href="#72-使用-property">7.2 使用 @property</a></li>
+    <li><a href="#73-多重继承">7.3 多重继承</a>
+      <ul>
+        <li><a href="#731-mixin">7.3.1 MixIn</a></li>
+      </ul>
+    </li>
+    <li><a href="#74-定制类">7.4 定制类</a>
+      <ul>
+        <li><a href="#741-__str__">7.4.1 <code>__str__</code></a></li>
+        <li><a href="#742-__iter__">7.4.2 <code>__iter__</code></a></li>
+        <li><a href="#743-__getitem__">7.4.3 <code>__getitem__</code></a></li>
+        <li><a href="#744-__getattr__">7.4.4 <code>__getattr__</code></a></li>
+        <li><a href="#745-__call__">7.4.5 <code>__call__</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#75-使用枚举类">7.5 使用枚举类</a>
+      <ul>
+        <li><a href="#751-enum">7.5.1 Enum</a></li>
+      </ul>
+    </li>
+    <li><a href="#76-使用元类">7.6 使用元类</a>
+      <ul>
+        <li><a href="#761-type">7.6.1 type()</a></li>
+        <li><a href="#762-metaclass">7.6.2 metaclass</a></li>
+      </ul>
+    </li>
+    <li><a href="#77-参考资料">7.7 参考资料</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。</p>
+<p>我们会讨论多重继承、定制类、元类等概念。</p>
+<h2 id="71-使用-__slots__">7.1 使用 <code>__slots__</code></h2>
+<p>正常情况下，当我们定义了一个 class，创建了一个 class 的实例后，我们可以给该实例绑定任何<code>属性</code>和<code>方法</code>，这就是动态语言的灵活性。先定义 class：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>然后，尝试给实例绑定一个属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span> <span style="color:#998;font-style:italic"># 动态给实例绑定一个属性</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(s<span style="color:#000;font-weight:bold">.</span>name)
+</span></span><span style="display:flex;"><span>Michael
+</span></span></code></pre></div><p>还可以尝试给实例绑定一个方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">set_age</span>(<span style="color:#999">self</span>, age): <span style="color:#998;font-style:italic"># 定义一个函数作为实例方法</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>age <span style="color:#000;font-weight:bold">=</span> age
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">types</span> <span style="color:#000;font-weight:bold">import</span> MethodType
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>set_age <span style="color:#000;font-weight:bold">=</span> MethodType(set_age, s) <span style="color:#998;font-style:italic"># 给实例绑定一个方法</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>set_age(<span style="color:#099">25</span>) <span style="color:#998;font-style:italic"># 调用实例方法</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>age <span style="color:#998;font-style:italic"># 测试结果</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">25</span>
+</span></span></code></pre></div><p>但是，给一个实例绑定的方法，对另一个实例是不起作用的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s2 <span style="color:#000;font-weight:bold">=</span> Student() <span style="color:#998;font-style:italic"># 创建新的实例</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s2<span style="color:#000;font-weight:bold">.</span>set_age(<span style="color:#099">25</span>) <span style="color:#998;font-style:italic"># 尝试调用方法</span>
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">AttributeError</span>: <span style="color:#d14">&#39;Student&#39;</span> <span style="color:#0086b3">object</span> has no attribute <span style="color:#d14">&#39;set_age&#39;</span>
+</span></span></code></pre></div><p>为了给所有实例都绑定方法，可以给 class 绑定方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">set_score</span>(<span style="color:#999">self</span>, score):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> score
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> Student<span style="color:#000;font-weight:bold">.</span>set_score <span style="color:#000;font-weight:bold">=</span> set_score
+</span></span></code></pre></div><p>给 class 绑定方法后，所有实例均可调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>set_score(<span style="color:#099">100</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score
+</span></span><span style="display:flex;"><span><span style="color:#099">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s2<span style="color:#000;font-weight:bold">.</span>set_score(<span style="color:#099">99</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s2<span style="color:#000;font-weight:bold">.</span>score
+</span></span><span style="display:flex;"><span><span style="color:#099">99</span>
+</span></span></code></pre></div><p>通常情况下，上面的<code>set_score</code>方法可以直接定义在 class 中，但动态绑定允许我们在程序运行的过程中动态给 class 加上功能，这在静态语言中很难实现。</p>
+<p>但是，如果我们想要限制实例的属性怎么办？比如，只允许对 Student 实例添加<code>name</code>和<code>age</code>属性。</p>
+<p>为了达到限制的目的，Python 允许在定义 class 的时候，定义一个特殊的<code>__slots__</code>变量，来限制该 class 实例能添加的属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    __slots__ <span style="color:#000;font-weight:bold">=</span> (<span style="color:#d14">&#39;name&#39;</span>, <span style="color:#d14">&#39;age&#39;</span>) <span style="color:#998;font-style:italic"># 用tuple定义允许绑定的属性名称</span>
+</span></span></code></pre></div><p>然后，我们试试：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student() <span style="color:#998;font-style:italic"># 创建新的实例</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span> <span style="color:#998;font-style:italic"># 绑定属性&#39;name&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">25</span> <span style="color:#998;font-style:italic"># 绑定属性&#39;age&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">99</span> <span style="color:#998;font-style:italic"># 绑定属性&#39;score&#39;</span>
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">AttributeError</span>: <span style="color:#d14">&#39;Student&#39;</span> <span style="color:#0086b3">object</span> has no attribute <span style="color:#d14">&#39;score&#39;</span>
+</span></span></code></pre></div><p>由于<code>'score'</code>没有被放到<code>__slots__</code>中，所以不能绑定<code>score</code>属性，试图绑定<code>score</code>将得到<code>AttributeError</code>的错误。</p>
+<p>使用<code>__slots__</code>要注意，<code>__slots__</code>定义的属性仅对当前类实例起作用，对继承的子类是不起作用的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">GraduateStudent</span>(Student):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> g <span style="color:#000;font-weight:bold">=</span> GraduateStudent()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> g<span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9999</span>
+</span></span></code></pre></div><p>除非在子类中也定义<code>__slots__</code>，这样，子类实例允许定义的属性就是自身的<code>__slots__</code>加上父类的<code>__slots__</code>。</p>
+<h2 id="72-使用-property">7.2 使用 @property</h2>
+<p>在绑定属性时，如果我们直接把属性暴露出去，虽然写起来很简单，但是，没办法检查参数，导致可以把成绩随便改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span>s<span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9999</span>
+</span></span></code></pre></div><p>这显然不合逻辑。为了限制 score 的范围，可以通过一个<code>set_score()</code>方法来设置成绩，再通过一个<code>get_score()</code>来获取成绩，这样，在<code>set_score()</code>方法里，就可以检查参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">get_score</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>         <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">set_score</span>(<span style="color:#999">self</span>, value):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(value, <span style="color:#0086b3">int</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;score must be an integer!&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">or</span> value <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">100</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;score must between 0 ~ 100!&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_score <span style="color:#000;font-weight:bold">=</span> value
+</span></span></code></pre></div><p>现在，对任意的 Student 实例进行操作，就不能随心所欲地设置 score 了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>set_score(<span style="color:#099">60</span>) <span style="color:#998;font-style:italic"># ok!</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>get_score()
+</span></span><span style="display:flex;"><span><span style="color:#099">60</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>set_score(<span style="color:#099">9999</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ValueError</span>: score must between <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#099">100</span><span style="color:#a61717;background-color:#e3d2d2">!</span>
+</span></span></code></pre></div><p>但是，上面的调用方法又略显复杂，没有直接用属性这么直接简单。</p>
+<p>有没有既能检查参数，又可以用类似属性这样简单的方式来访问类的变量呢？对于追求完美的 Python 程序员来说，这是必须要做到的！</p>
+<p>还记得装饰器（decorator）可以给函数动态加上功能吗？对于类的方法，装饰器一样起作用。Python 内置的<code>@property</code>装饰器就是负责把一个方法变成属性调用的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">score</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@score.setter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">score</span>(<span style="color:#999">self</span>, value):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(value, <span style="color:#0086b3">int</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;score must be an integer!&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">or</span> value <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">100</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;score must between 0 ~ 100!&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_score <span style="color:#000;font-weight:bold">=</span> value
+</span></span></code></pre></div><p><code>@property</code>的实现比较复杂，我们先考察如何使用。把一个 getter 方法变成属性，只需要加上<code>@property</code>就可以了，此时，<code>@property</code>本身又创建了另一个装饰器<code>@score.setter</code>，负责把一个 setter 方法变成属性赋值，于是，我们就拥有一个可控的属性操作：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">60</span> <span style="color:#998;font-style:italic"># OK，实际转化为s.set_score(60)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score <span style="color:#998;font-style:italic"># OK，实际转化为s.get_score()</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">60</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9999</span>
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ValueError</span>: score must between <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#099">100</span><span style="color:#a61717;background-color:#e3d2d2">!</span>
+</span></span></code></pre></div><p>注意到这个神奇的<code>@property</code>，我们在对实例属性操作的时候，就知道该属性很可能不是直接暴露的，而是通过 getter 和 setter 方法来实现的。</p>
+<p>还可以定义只读属性，只定义 getter 方法，不定义 setter 方法就是一个只读属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">birth</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_birth
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@birth.setter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">birth</span>(<span style="color:#999">self</span>, value):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_birth <span style="color:#000;font-weight:bold">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">age</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">2015</span> <span style="color:#000;font-weight:bold">-</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_birth
+</span></span></code></pre></div><p>上面的<code>birth</code>是可读写属性，而<code>age</code>就是一个只读属性，因为<code>age</code>可以根据<code>birth</code>和当前时间计算出来。</p>
+<blockquote>
+<p>小结：</p>
+</blockquote>
+<p><code>@property</code>广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。</p>
+<blockquote>
+<p>练习：</p>
+</blockquote>
+<p>请利用<code>@property</code>给一个<code>Screen</code>对象加上<code>width</code>和<code>height</code>属性，以及一个只读属性<code>resolution</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Screen</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">width</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_width
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@width.setter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">width</span>(<span style="color:#999">self</span>, value):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(value, (<span style="color:#0086b3">int</span>, <span style="color:#0086b3">float</span>)):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;width must be an number!&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span> :
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;width must &gt; 0&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_width <span style="color:#000;font-weight:bold">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">height</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_height
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@height.setter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">height</span>(<span style="color:#999">self</span>, value):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(value, (<span style="color:#0086b3">int</span>, <span style="color:#0086b3">float</span>)):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;height must be an number!&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span> :
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">ValueError</span>(<span style="color:#d14">&#39;height must &gt; 0&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_height <span style="color:#000;font-weight:bold">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@property</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">resolution</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_height <span style="color:#000;font-weight:bold">*</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_width
+</span></span></code></pre></div><p>测试：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 测试:</span>
+</span></span><span style="display:flex;"><span>s <span style="color:#000;font-weight:bold">=</span> Screen()
+</span></span><span style="display:flex;"><span>s<span style="color:#000;font-weight:bold">.</span>width <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1024</span>
+</span></span><span style="display:flex;"><span>s<span style="color:#000;font-weight:bold">.</span>height <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">768</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;resolution =&#39;</span>, s<span style="color:#000;font-weight:bold">.</span>resolution)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> s<span style="color:#000;font-weight:bold">.</span>resolution <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">786432</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;测试通过!&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;测试失败!&#39;</span>)
+</span></span></code></pre></div><h2 id="73-多重继承">7.3 多重继承</h2>
+<p>继承是面向对象编程的一个重要的方式，因为通过继承，子类就可以扩展父类的功能。</p>
+<p>回忆一下<code>Animal</code>类层次的设计，假设我们要实现以下 4 种动物：</p>
+<ul>
+<li>Dog - 狗狗；</li>
+<li>Bat - 蝙蝠；</li>
+<li>Parrot - 鹦鹉；</li>
+<li>Ostrich - 鸵鸟。</li>
+</ul>
+<p>如果按照哺乳动物和鸟类归类，我们可以设计出这样的类的层次：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wugenqiang/PictureBed/images/01/20200811104931.png" alt="归类"></p>
+<p>但是如果按照“能跑”和“能飞”来归类，我们就应该设计出这样的类的层次：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811105312.png" alt="归类"></p>
+<p>如果要把上面的两种分类都包含进来，我们就得设计更多的层次：</p>
+<ul>
+<li>哺乳类：能跑的哺乳类，能飞的哺乳类；</li>
+<li>鸟类：能跑的鸟类，能飞的鸟类。</li>
+</ul>
+<p>这么一来，类的层次就复杂了：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wugenqiang/wugenqiang.js.org/images/01/20200811111249.png" alt="image-20200811111248510"></p>
+<p>如果要再增加“宠物类”和“非宠物类”，这么搞下去，类的数量会呈指数增长，很明显这样设计是不行的。</p>
+<p>正确的做法是采用多重继承。首先，主要的类层次仍按照哺乳类和鸟类设计：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Animal</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 大类:</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Mammal</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Bird</span>(Animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 各种动物:</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span>(Mammal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Bat</span>(Mammal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Parrot</span>(Bird):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Ostrich</span>(Bird):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>现在，我们要给动物再加上<code>Runnable</code>和<code>Flyable</code>的功能，只需要先定义好<code>Runnable</code>和<code>Flyable</code>的类：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Runnable</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">run</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Running...&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Flyable</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fly</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Flying...&#39;</span>)
+</span></span></code></pre></div><p>对于需要<code>Runnable</code>功能的动物，就多继承一个<code>Runnable</code>，例如<code>Dog</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span>(Mammal, Runnable):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>对于需要<code>Flyable</code>功能的动物，就多继承一个<code>Flyable</code>，例如<code>Bat</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Bat</span>(Mammal, Flyable):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>通过多重继承，一个子类就可以同时获得多个父类的所有功能。</p>
+<h3 id="731-mixin">7.3.1 MixIn</h3>
+<p>在设计类的继承关系时，通常，主线都是单一继承下来的，例如，<code>Ostrich</code>继承自<code>Bird</code>。但是，如果需要“混入”额外的功能，通过多重继承就可以实现，比如，让<code>Ostrich</code>除了继承自<code>Bird</code>外，再同时继承<code>Runnable</code>。这种设计通常称之为 MixIn。</p>
+<p>为了更好地看出继承关系，我们把<code>Runnable</code>和<code>Flyable</code>改为<code>RunnableMixIn</code>和<code>FlyableMixIn</code>。类似的，你还可以定义出肉食动物<code>CarnivorousMixIn</code>和植食动物<code>HerbivoresMixIn</code>，让某个动物同时拥有好几个 MixIn：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span>(Mammal, RunnableMixIn, CarnivorousMixIn):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>MixIn 的目的就是给一个类增加多个功能，这样，在设计类的时候，我们优先考虑通过多重继承来组合多个 MixIn 的功能，而不是设计多层次的复杂的继承关系。</p>
+<p>Python 自带的很多库也使用了 MixIn。举个例子， Python 自带了<code>TCPServer</code>和<code>UDPServer</code>这两类网络服务，而要同时服务多个用户就必须使用多进程或多线程模型，这两种模型由<code>ForkingMixIn</code>和<code>ThreadingMixIn</code>提供。通过组合，我们就可以创造出合适的服务来。</p>
+<p>比如，编写一个多进程模式的 TCP 服务，定义如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyTCPServer</span>(TCPServer, ForkingMixIn):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>编写一个多线程模式的 UDP 服务，定义如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyUDPServer</span>(UDPServer, ThreadingMixIn):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>如果你打算搞一个更先进的协程模型，可以编写一个<code>CoroutineMixIn</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyTCPServer</span>(TCPServer, CoroutineMixIn):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>这样一来，我们不需要复杂而庞大的继承链，只要选择组合不同的类的功能，就可以快速构造出所需的子类。</p>
+<blockquote>
+<p>小结：</p>
+</blockquote>
+<p>由于 Python 允许使用多重继承，因此，MixIn 就是一种常见的设计。</p>
+<p>只允许单一继承的语言（如 Java）不能使用 MixIn 的设计。</p>
+<h2 id="74-定制类">7.4 定制类</h2>
+<p>看到类似<code>__slots__</code>这种形如<code>__xxx__</code>的变量或者函数名就要注意，这些在 Python 中是有特殊用途的。</p>
+<p><code>__slots__</code>我们已经知道怎么用了，<code>__len__()</code>方法我们也知道是为了能让 class 作用于<code>len()</code>函数。</p>
+<p>除此之外，Python 的 class 中还有许多这样有特殊用途的函数，可以帮助我们定制类。</p>
+<h3 id="741-__str__">7.4.1 <code>__str__</code></h3>
+<p>我们先定义一个<code>Student</code>类，打印一个实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>         <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Student(<span style="color:#d14">&#39;Michael&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span>__main__<span style="color:#000;font-weight:bold">.</span>Student <span style="color:#0086b3">object</span> at <span style="color:#099">0x109afb190</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p>打印出一堆<code>&lt;__main__.Student object at 0x109afb190&gt;</code>，不好看。</p>
+<p>怎么才能打印得好看呢？只需要定义好<code>__str__()</code>方法，返回一个好看的字符串就可以了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>         <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">def</span> __str__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>         <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;Student object (name: </span><span style="color:#d14">%s</span><span style="color:#d14">)&#39;</span> <span style="color:#000;font-weight:bold">%</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Student(<span style="color:#d14">&#39;Michael&#39;</span>))
+</span></span><span style="display:flex;"><span>Student <span style="color:#0086b3">object</span> (name: Michael)
+</span></span></code></pre></div><p>这样打印出来的实例，不但好看，而且容易看出实例内部重要的数据。</p>
+<p>但是细心的朋友会发现直接敲变量不用<code>print</code>，打印出来的实例还是不好看：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student(<span style="color:#d14">&#39;Michael&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span>__main__<span style="color:#000;font-weight:bold">.</span>Student <span style="color:#0086b3">object</span> at <span style="color:#099">0x109afb310</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p>这是因为直接显示变量调用的不是<code>__str__()</code>，而是<code>__repr__()</code>，两者的区别是<code>__str__()</code>返回用户看到的字符串，而<code>__repr__()</code>返回程序开发者看到的字符串，也就是说，<code>__repr__()</code>是为调试服务的。</p>
+<p>解决办法是再定义一个<code>__repr__()</code>。但是通常<code>__str__()</code>和<code>__repr__()</code>代码都是一样的，所以，有个偷懒的写法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __str__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;Student object (name=</span><span style="color:#d14">%s</span><span style="color:#d14">)&#39;</span> <span style="color:#000;font-weight:bold">%</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name
+</span></span><span style="display:flex;"><span>    __repr__ <span style="color:#000;font-weight:bold">=</span> __str__
+</span></span></code></pre></div><h3 id="742-__iter__">7.4.2 <code>__iter__</code></h3>
+<p>如果一个类想被用于<code>for ... in</code>循环，类似 list 或 tuple 那样，就必须实现一个<code>__iter__()</code>方法，该方法返回一个迭代对象，然后，Python 的 for 循环就会不断调用该迭代对象的<code>__next__()</code>方法拿到循环的下一个值，直到遇到<code>StopIteration</code>错误时退出循环。</p>
+<p>我们以斐波那契数列为例，写一个 Fib 类，可以作用于 for 循环：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Fib</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>a, <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>, <span style="color:#099">1</span> <span style="color:#998;font-style:italic"># 初始化两个计数器a，b</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __iter__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span> <span style="color:#998;font-style:italic"># 实例本身就是迭代对象，故返回自己</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __next__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>a, <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>b <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>b, <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>a <span style="color:#000;font-weight:bold">+</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>b <span style="color:#998;font-style:italic"># 计算下一个值</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>a <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">100000</span>: <span style="color:#998;font-style:italic"># 退出循环的条件</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">StopIteration</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>a <span style="color:#998;font-style:italic"># 返回下一个值</span>
+</span></span></code></pre></div><p>现在，试试把 Fib 实例作用于 for 循环：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> Fib():
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(n)
+</span></span></code></pre></div><h3 id="743-__getitem__">7.4.3 <code>__getitem__</code></h3>
+<p>Fib实例虽然能作用于 for 循环，看起来和 list 有点像，但是，把它当成 list 来使用还是不行，比如，取第 5 个元素：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> Fib()[<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#d14">&#39;Fib&#39;</span> <span style="color:#0086b3">object</span> does <span style="color:#000;font-weight:bold">not</span> support indexing
+</span></span></code></pre></div><p>要表现得像 list 那样按照下标取出元素，需要实现<code>__getitem__()</code>方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Fib</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getitem__(<span style="color:#999">self</span>, n):
+</span></span><span style="display:flex;"><span>        a, b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(n):
+</span></span><span style="display:flex;"><span>            a, b <span style="color:#000;font-weight:bold">=</span> b, a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> a
+</span></span></code></pre></div><p>现在，就可以按下标访问数列的任意一项了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f <span style="color:#000;font-weight:bold">=</span> Fib()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">89</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">100</span>]
+</span></span><span style="display:flex;"><span><span style="color:#099">573147844013817084101</span>
+</span></span></code></pre></div><p>但是 list 有个神奇的切片方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">list</span>(<span style="color:#0086b3">range</span>(<span style="color:#099">100</span>))[<span style="color:#099">5</span>:<span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>, <span style="color:#099">9</span>]
+</span></span></code></pre></div><p>对于 Fib 却报错。原因是<code>__getitem__()</code>传入的参数可能是一个 int，也可能是一个切片对象<code>slice</code>，所以要做判断：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Fib</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getitem__(<span style="color:#999">self</span>, n):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">isinstance</span>(n, <span style="color:#0086b3">int</span>): <span style="color:#998;font-style:italic"># n是索引</span>
+</span></span><span style="display:flex;"><span>            a, b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(n):
+</span></span><span style="display:flex;"><span>                a, b <span style="color:#000;font-weight:bold">=</span> b, a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> a
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">isinstance</span>(n, <span style="color:#0086b3">slice</span>): <span style="color:#998;font-style:italic"># n是切片</span>
+</span></span><span style="display:flex;"><span>            start <span style="color:#000;font-weight:bold">=</span> n<span style="color:#000;font-weight:bold">.</span>start
+</span></span><span style="display:flex;"><span>            stop <span style="color:#000;font-weight:bold">=</span> n<span style="color:#000;font-weight:bold">.</span>stop
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">if</span> start <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">None</span>:
+</span></span><span style="display:flex;"><span>                start <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>            a, b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>            L <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(stop):
+</span></span><span style="display:flex;"><span>                <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;=</span> start:
+</span></span><span style="display:flex;"><span>                    L<span style="color:#000;font-weight:bold">.</span>append(a)
+</span></span><span style="display:flex;"><span>                a, b <span style="color:#000;font-weight:bold">=</span> b, a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> L
+</span></span></code></pre></div><p>现在试试 Fib 的切片：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f <span style="color:#000;font-weight:bold">=</span> Fib()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[<span style="color:#099">0</span>:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[:<span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">8</span>, <span style="color:#099">13</span>, <span style="color:#099">21</span>, <span style="color:#099">34</span>, <span style="color:#099">55</span>]
+</span></span></code></pre></div><p>但是没有对 step 参数作处理：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> f[:<span style="color:#099">10</span>:<span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">8</span>, <span style="color:#099">13</span>, <span style="color:#099">21</span>, <span style="color:#099">34</span>, <span style="color:#099">55</span>, <span style="color:#099">89</span>]
+</span></span></code></pre></div><p>也没有对负数作处理，所以，要正确实现一个<code>__getitem__()</code>还是有很多工作要做的。</p>
+<p>此外，如果把对象看成<code>dict</code>，<code>__getitem__()</code>的参数也可能是一个可以作 key 的 object，例如<code>str</code>。</p>
+<p>与之对应的是<code>__setitem__()</code>方法，把对象视作 list 或 dict 来对集合赋值。最后，还有一个<code>__delitem__()</code>方法，用于删除某个元素。</p>
+<p>总之，通过上面的方法，我们自己定义的类表现得和 Python 自带的 list、tuple、dict 没什么区别，这完全归功于动态语言的“鸭子类型”，不需要强制继承某个接口。</p>
+<h3 id="744-__getattr__">7.4.4 <code>__getattr__</code></h3>
+<p>正常情况下，当我们调用类的方法或属性时，如果不存在，就会报错。比如定义<code>Student</code>类：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span>
+</span></span></code></pre></div><p>调用<code>name</code>属性，没问题，但是，调用不存在的<code>score</code>属性，就有问题了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(s<span style="color:#000;font-weight:bold">.</span>name)
+</span></span><span style="display:flex;"><span>Michael
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(s<span style="color:#000;font-weight:bold">.</span>score)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">AttributeError</span>: <span style="color:#d14">&#39;Student&#39;</span> <span style="color:#0086b3">object</span> has no attribute <span style="color:#d14">&#39;score&#39;</span>
+</span></span></code></pre></div><p>错误信息很清楚地告诉我们，没有找到<code>score</code>这个 attribute。</p>
+<p>要避免这个错误，除了可以加上一个<code>score</code>属性外，Python 还有另一个机制，那就是写一个<code>__getattr__()</code>方法，动态返回一个属性。修改如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getattr__(<span style="color:#999">self</span>, attr):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> attr<span style="color:#000;font-weight:bold">==</span><span style="color:#d14">&#39;score&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">99</span>
+</span></span></code></pre></div><p>当调用不存在的属性时，比如<code>score</code>，Python 解释器会试图调用<code>__getattr__(self, 'score')</code>来尝试获得属性，这样，我们就有机会返回<code>score</code>的值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>name
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#39;Michael&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>score
+</span></span><span style="display:flex;"><span><span style="color:#099">99</span>
+</span></span></code></pre></div><p>返回函数也是完全可以的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getattr__(<span style="color:#999">self</span>, attr):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> attr<span style="color:#000;font-weight:bold">==</span><span style="color:#d14">&#39;age&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">lambda</span>: <span style="color:#099">25</span>
+</span></span></code></pre></div><p>只是调用方式要变为：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s<span style="color:#000;font-weight:bold">.</span>age()
+</span></span><span style="display:flex;"><span><span style="color:#099">25</span>
+</span></span></code></pre></div><p>注意，只有在没有找到属性的情况下，才调用<code>__getattr__</code>，已有的属性，比如<code>name</code>，不会在<code>__getattr__</code>中查找。</p>
+<p>此外，注意到任意调用如<code>s.abc</code>都会返回<code>None</code>，这是因为我们定义的<code>__getattr__</code>默认返回就是<code>None</code>。要让 class 只响应特定的几个属性，我们就要按照约定，抛出<code>AttributeError</code>的错误：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getattr__(<span style="color:#999">self</span>, attr):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> attr<span style="color:#000;font-weight:bold">==</span><span style="color:#d14">&#39;age&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">lambda</span>: <span style="color:#099">25</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">AttributeError</span>(<span style="color:#d14">&#39;</span><span style="color:#d14">\&#39;</span><span style="color:#d14">Student</span><span style="color:#d14">\&#39;</span><span style="color:#d14"> object has no attribute </span><span style="color:#d14">\&#39;</span><span style="color:#d14">%s</span><span style="color:#d14">\&#39;</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> attr)
+</span></span></code></pre></div><p>这实际上可以把一个类的所有属性和方法调用全部动态化处理了，不需要任何特殊手段。</p>
+<p>这种完全动态调用的特性有什么实际作用呢？作用就是，可以针对完全动态的情况作调用。</p>
+<p>举个例子：</p>
+<p>现在很多网站都搞 REST API，比如新浪微博、豆瓣啥的，调用 API 的 URL 类似：</p>
+<ul>
+<li><a href="http://api.server/user/friends">http://api.server/user/friends</a></li>
+<li><a href="http://api.server/user/timeline/list">http://api.server/user/timeline/list</a></li>
+</ul>
+<p>如果要写 SDK，给每个 URL 对应的 API 都写一个方法，那得累死，而且，API 一旦改动，SDK 也要改。</p>
+<p>利用完全动态的<code>__getattr__</code>，我们可以写出一个链式调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Chain</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, path<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&#39;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_path <span style="color:#000;font-weight:bold">=</span> path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getattr__(<span style="color:#999">self</span>, path):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> Chain(<span style="color:#d14">&#39;</span><span style="color:#d14">%s</span><span style="color:#d14">/</span><span style="color:#d14">%s</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> (<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_path, path))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __str__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>_path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    __repr__ <span style="color:#000;font-weight:bold">=</span> __str__
+</span></span></code></pre></div><p>试试：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> Chain()<span style="color:#000;font-weight:bold">.</span>status<span style="color:#000;font-weight:bold">.</span>user<span style="color:#000;font-weight:bold">.</span>timeline<span style="color:#000;font-weight:bold">.</span>list
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#39;/status/user/timeline/list&#39;</span>
+</span></span></code></pre></div><p>这样，无论 API 怎么变，SDK 都可以根据 URL 实现完全动态的调用，而且，不随 API 的增加而改变！</p>
+<p>还有些 REST API 会把参数放到 URL 中，比如 GitHub 的 API：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>GET <span style="color:#000;font-weight:bold">/</span>users<span style="color:#000;font-weight:bold">/</span>:user<span style="color:#000;font-weight:bold">/</span>repos
+</span></span></code></pre></div><p>调用时，需要把<code>:user</code>替换为实际用户名。如果我们能写出这样的链式调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Chain()<span style="color:#000;font-weight:bold">.</span>users(<span style="color:#d14">&#39;michael&#39;</span>)<span style="color:#000;font-weight:bold">.</span>repos
+</span></span></code></pre></div><p>就可以非常方便地调用 API 了。有兴趣的童鞋可以试试写出来。</p>
+<h3 id="745-__call__">7.4.5 <code>__call__</code></h3>
+<p>一个对象实例可以有自己的属性和方法，当我们调用实例方法时，我们用<code>instance.method()</code>来调用。能不能直接在实例本身上调用呢？在 Python 中，答案是肯定的。</p>
+<p>任何类，只需要定义一个<code>__call__()</code>方法，就可以直接对实例进行调用。请看示例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Student</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __call__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;My name is </span><span style="color:#d14">%s</span><span style="color:#d14">.&#39;</span> <span style="color:#000;font-weight:bold">%</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name)
+</span></span></code></pre></div><p>调用方式如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s <span style="color:#000;font-weight:bold">=</span> Student(<span style="color:#d14">&#39;Michael&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> s() <span style="color:#998;font-style:italic"># self参数不要传入</span>
+</span></span><span style="display:flex;"><span>My name <span style="color:#000;font-weight:bold">is</span> Michael<span style="color:#000;font-weight:bold">.</span>
+</span></span></code></pre></div><p><code>__call__()</code>还可以定义参数。对实例进行直接调用就好比对一个函数进行调用一样，所以你完全可以把对象看成函数，把函数看成对象，因为这两者之间本来就没啥根本的区别。</p>
+<p>如果你把对象看成函数，那么函数本身其实也可以在运行期动态创建出来，因为类的实例都是运行期创建出来的，这么一来，我们就模糊了对象和函数的界限。</p>
+<p>那么，怎么判断一个变量是对象还是函数呢？其实，更多的时候，我们需要判断一个对象是否能被调用，能被调用的对象就是一个<code>Callable</code>对象，比如函数和我们上面定义的带有<code>__call__()</code>的类实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> callable(Student())
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> callable(<span style="color:#0086b3">max</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> callable([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>])
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> callable(<span style="color:#000;font-weight:bold">None</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> callable(<span style="color:#d14">&#39;str&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">False</span>
+</span></span></code></pre></div><p>通过<code>callable()</code>函数，我们就可以判断一个对象是否是“可调用”对象。</p>
+<blockquote>
+<p>小结：</p>
+</blockquote>
+<ul>
+<li>Python 的 class 允许定义许多定制方法，可以让我们非常方便地生成特定的类。</li>
+<li>本节介绍的是最常用的几个定制方法，还有很多可定制的方法，请参考<a href="http://docs.python.org/3/reference/datamodel.html#special-method-names">Python的官方文档</a>。</li>
+</ul>
+<h2 id="75-使用枚举类">7.5 使用枚举类</h2>
+<p>当我们需要定义常量时，一个办法是用大写变量通过整数来定义，例如月份：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>JAN <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>FEB <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>MAR <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span>NOV <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">11</span>
+</span></span><span style="display:flex;"><span>DEC <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12</span>
+</span></span></code></pre></div><p>好处是简单，缺点是类型是<code>int</code>，并且仍然是变量。</p>
+<p>更好的方法是为这样的枚举类型定义一个 class 类型，然后，每个常量都是 class 的一个唯一实例。Python 提供了<code>Enum</code>类来实现这个功能：</p>
+<h3 id="751-enum">7.5.1 Enum</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">enum</span> <span style="color:#000;font-weight:bold">import</span> Enum
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Month <span style="color:#000;font-weight:bold">=</span> Enum(<span style="color:#d14">&#39;Month&#39;</span>, (<span style="color:#d14">&#39;Jan&#39;</span>, <span style="color:#d14">&#39;Feb&#39;</span>, <span style="color:#d14">&#39;Mar&#39;</span>, <span style="color:#d14">&#39;Apr&#39;</span>, <span style="color:#d14">&#39;May&#39;</span>, <span style="color:#d14">&#39;Jun&#39;</span>, <span style="color:#d14">&#39;Jul&#39;</span>, <span style="color:#d14">&#39;Aug&#39;</span>, <span style="color:#d14">&#39;Sep&#39;</span>, <span style="color:#d14">&#39;Oct&#39;</span>, <span style="color:#d14">&#39;Nov&#39;</span>, <span style="color:#d14">&#39;Dec&#39;</span>))
+</span></span></code></pre></div><p>这样我们就获得了<code>Month</code>类型的枚举类，可以直接使用<code>Month.Jan</code>来引用一个常量，或者枚举它的所有成员：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> name, member <span style="color:#000;font-weight:bold">in</span> Month<span style="color:#000;font-weight:bold">.</span>__members__<span style="color:#000;font-weight:bold">.</span>items():
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(name, <span style="color:#d14">&#39;=&gt;&#39;</span>, member, <span style="color:#d14">&#39;,&#39;</span>, member<span style="color:#000;font-weight:bold">.</span>value)
+</span></span></code></pre></div><p><code>value</code>属性则是自动赋给成员的<code>int</code>常量，默认从<code>1</code>开始计数。</p>
+<p>如果需要更精确地控制枚举类型，可以从<code>Enum</code>派生出自定义类：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">enum</span> <span style="color:#000;font-weight:bold">import</span> Enum, unique
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@unique</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Weekday</span>(Enum):
+</span></span><span style="display:flex;"><span>    Sun <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span> <span style="color:#998;font-style:italic"># Sun的value被设定为0</span>
+</span></span><span style="display:flex;"><span>    Mon <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    Tue <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>    Wed <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>    Thu <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>    Fri <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>    Sat <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>
+</span></span></code></pre></div><p><code>@unique</code>装饰器可以帮助我们检查保证没有重复值。</p>
+<p>访问这些枚举类型可以有若干种方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> day1 <span style="color:#000;font-weight:bold">=</span> Weekday<span style="color:#000;font-weight:bold">.</span>Mon
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(day1)
+</span></span><span style="display:flex;"><span>Weekday<span style="color:#000;font-weight:bold">.</span>Mon
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Weekday<span style="color:#000;font-weight:bold">.</span>Tue)
+</span></span><span style="display:flex;"><span>Weekday<span style="color:#000;font-weight:bold">.</span>Tue
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Weekday[<span style="color:#d14">&#39;Tue&#39;</span>])
+</span></span><span style="display:flex;"><span>Weekday<span style="color:#000;font-weight:bold">.</span>Tue
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Weekday<span style="color:#000;font-weight:bold">.</span>Tue<span style="color:#000;font-weight:bold">.</span>value)
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(day1 <span style="color:#000;font-weight:bold">==</span> Weekday<span style="color:#000;font-weight:bold">.</span>Mon)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(day1 <span style="color:#000;font-weight:bold">==</span> Weekday<span style="color:#000;font-weight:bold">.</span>Tue)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(Weekday(<span style="color:#099">1</span>))
+</span></span><span style="display:flex;"><span>Weekday<span style="color:#000;font-weight:bold">.</span>Mon
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(day1 <span style="color:#000;font-weight:bold">==</span> Weekday(<span style="color:#099">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> Weekday(<span style="color:#099">7</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ValueError</span>: <span style="color:#099">7</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> a valid Weekday
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">for</span> name, member <span style="color:#000;font-weight:bold">in</span> Weekday<span style="color:#000;font-weight:bold">.</span>__members__<span style="color:#000;font-weight:bold">.</span>items():
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#0086b3">print</span>(name, <span style="color:#d14">&#39;=&gt;&#39;</span>, member)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span>Sun <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Sun
+</span></span><span style="display:flex;"><span>Mon <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Mon
+</span></span><span style="display:flex;"><span>Tue <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Tue
+</span></span><span style="display:flex;"><span>Wed <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Wed
+</span></span><span style="display:flex;"><span>Thu <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Thu
+</span></span><span style="display:flex;"><span>Fri <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Fri
+</span></span><span style="display:flex;"><span>Sat <span style="color:#000;font-weight:bold">=&gt;</span> Weekday<span style="color:#000;font-weight:bold">.</span>Sat
+</span></span></code></pre></div><p>可见，既可以用成员名称引用枚举常量，又可以直接根据value的值获得枚举常量。</p>
+<h2 id="76-使用元类">7.6 使用元类</h2>
+<h3 id="761-type">7.6.1 type()</h3>
+<p>动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。</p>
+<p>比方说我们要定义一个<code>Hello</code>的 class，就写一个<code>hello.py</code>模块：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Hello</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">hello</span>(<span style="color:#999">self</span>, name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;world&#39;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Hello, </span><span style="color:#d14">%s</span><span style="color:#d14">.&#39;</span> <span style="color:#000;font-weight:bold">%</span> name)
+</span></span></code></pre></div><p>当 Python 解释器载入<code>hello</code>模块时，就会依次执行该模块的所有语句，执行结果就是动态创建出一个<code>Hello</code>的 class 对象，测试如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">hello</span> <span style="color:#000;font-weight:bold">import</span> Hello
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> h <span style="color:#000;font-weight:bold">=</span> Hello()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> h<span style="color:#000;font-weight:bold">.</span>hello()
+</span></span><span style="display:flex;"><span>Hello, world<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(<span style="color:#0086b3">type</span>(Hello))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">class</span> <span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#458;font-weight:bold">type</span><span style="color:#d14">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(<span style="color:#0086b3">type</span>(h))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">class</span> <span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#458;font-weight:bold">hello</span><span style="color:#000;font-weight:bold">.</span>Hello<span style="color:#d14">&#39;&gt;</span>
+</span></span></code></pre></div><p><code>type()</code>函数可以查看一个类型或变量的类型，<code>Hello</code>是一个class，它的类型就是<code>type</code>，而<code>h</code>是一个实例，它的类型就是class <code>Hello</code>。</p>
+<p>我们说class的定义是运行时动态创建的，而创建class的方法就是使用<code>type()</code>函数。</p>
+<p><code>type()</code>函数既可以返回一个对象的类型，又可以创建出新的类型，比如，我们可以通过<code>type()</code>函数创建出<code>Hello</code>类，而无需通过<code>class Hello(object)...</code>的定义：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fn</span>(<span style="color:#999">self</span>, name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;world&#39;</span>): <span style="color:#998;font-style:italic"># 先定义函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>     <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Hello, </span><span style="color:#d14">%s</span><span style="color:#d14">.&#39;</span> <span style="color:#000;font-weight:bold">%</span> name)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> Hello <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">type</span>(<span style="color:#d14">&#39;Hello&#39;</span>, (<span style="color:#0086b3">object</span>,), <span style="color:#0086b3">dict</span>(hello<span style="color:#000;font-weight:bold">=</span>fn)) <span style="color:#998;font-style:italic"># 创建Hello class</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> h <span style="color:#000;font-weight:bold">=</span> Hello()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> h<span style="color:#000;font-weight:bold">.</span>hello()
+</span></span><span style="display:flex;"><span>Hello, world<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(<span style="color:#0086b3">type</span>(Hello))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">class</span> <span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#458;font-weight:bold">type</span><span style="color:#d14">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(<span style="color:#0086b3">type</span>(h))
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">class</span> <span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#458;font-weight:bold">__main__</span><span style="color:#000;font-weight:bold">.</span>Hello<span style="color:#d14">&#39;&gt;</span>
+</span></span></code></pre></div><p>要创建一个class对象，<code>type()</code>函数依次传入3个参数：</p>
+<ol>
+<li>class的名称；</li>
+<li>继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法；</li>
+<li>class的方法名称与函数绑定，这里我们把函数<code>fn</code>绑定到方法名<code>hello</code>上。</li>
+</ol>
+<p>通过<code>type()</code>函数创建的类和直接写class是完全一样的，因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用<code>type()</code>函数创建出class。</p>
+<p>正常情况下，我们都用<code>class Xxx...</code>来定义类，但是，<code>type()</code>函数也允许我们动态创建出类来，也就是说，动态语言本身支持运行期动态创建类，这和静态语言有非常大的不同，要在静态语言运行期创建类，必须构造源代码字符串再调用编译器，或者借助一些工具生成字节码实现，本质上都是动态编译，会非常复杂。</p>
+<h3 id="762-metaclass">7.6.2 metaclass</h3>
+<p>除了使用<code>type()</code>动态创建类以外，要控制类的创建行为，还可以使用metaclass。</p>
+<p>metaclass，直译为元类，简单的解释就是：</p>
+<p>当我们定义了类以后，就可以根据这个类创建出实例，所以：先定义类，然后创建实例。</p>
+<p>但是如果我们想创建出类呢？那就必须根据metaclass创建出类，所以：先定义metaclass，然后创建类。</p>
+<p>连接起来就是：先定义metaclass，就可以创建类，最后创建实例。</p>
+<p>所以，metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。</p>
+<p>metaclass是Python面向对象里最难理解，也是最难使用的魔术代码。正常情况下，你不会碰到需要使用metaclass的情况，所以，以下内容看不懂也没关系，因为基本上你不会用到。</p>
+<p>我们先看一个简单的例子，这个metaclass可以给我们自定义的MyList增加一个<code>add</code>方法：</p>
+<p>定义<code>ListMetaclass</code>，按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># metaclass是类的模板，所以必须从`type`类型派生：</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ListMetaclass</span>(<span style="color:#0086b3">type</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __new__(<span style="color:#999">cls</span>, name, bases, attrs):
+</span></span><span style="display:flex;"><span>        attrs[<span style="color:#d14">&#39;add&#39;</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">lambda</span> <span style="color:#999">self</span>, value: <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>append(value)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">type</span><span style="color:#000;font-weight:bold">.</span>__new__(<span style="color:#999">cls</span>, name, bases, attrs)
+</span></span></code></pre></div><p>有了ListMetaclass，我们在定义类的时候还要指示使用ListMetaclass来定制类，传入关键字参数<code>metaclass</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyList</span>(<span style="color:#0086b3">list</span>, metaclass<span style="color:#000;font-weight:bold">=</span>ListMetaclass):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>当我们传入关键字参数<code>metaclass</code>时，魔术就生效了，它指示Python解释器在创建<code>MyList</code>时，要通过<code>ListMetaclass.__new__()</code>来创建，在此，我们可以修改类的定义，比如，加上新的方法，然后，返回修改后的定义。</p>
+<p><code>__new__()</code>方法接收到的参数依次是：</p>
+<ol>
+<li>当前准备创建的类的对象；</li>
+<li>类的名字；</li>
+<li>类继承的父类集合；</li>
+<li>类的方法集合。</li>
+</ol>
+<p>测试一下<code>MyList</code>是否可以调用<code>add()</code>方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> L <span style="color:#000;font-weight:bold">=</span> MyList()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> L<span style="color:#000;font-weight:bold">.</span>add(<span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;</span> L
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>]
+</span></span></code></pre></div><p>而普通的<code>list</code>没有<code>add()</code>方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> L2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> L2<span style="color:#000;font-weight:bold">.</span>add(<span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">AttributeError</span>: <span style="color:#d14">&#39;list&#39;</span> <span style="color:#0086b3">object</span> has no attribute <span style="color:#d14">&#39;add&#39;</span>
+</span></span></code></pre></div><p>动态修改有什么意义？直接在<code>MyList</code>定义中写上<code>add()</code>方法不是更简单吗？正常情况下，确实应该直接写，通过metaclass修改纯属变态。</p>
+<p>但是，总会遇到需要通过metaclass修改类定义的。ORM就是一个典型的例子。</p>
+<p>ORM全称“Object Relational Mapping”，即对象-关系映射，就是把关系数据库的一行映射为一个对象，也就是一个类对应一个表，这样，写代码更简单，不用直接操作SQL语句。</p>
+<p>要编写一个ORM框架，所有的类都只能动态定义，因为只有使用者才能根据表的结构定义出对应的类来。</p>
+<p>让我们来尝试编写一个ORM框架。</p>
+<p>编写底层模块的第一步，就是先把调用接口写出来。比如，使用者如果使用这个ORM框架，想定义一个<code>User</code>类来操作对应的数据库表<code>User</code>，我们期待他写出这样的代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">User</span>(Model):
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 定义类的属性到列的映射：</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">id</span> <span style="color:#000;font-weight:bold">=</span> IntegerField(<span style="color:#d14">&#39;id&#39;</span>)
+</span></span><span style="display:flex;"><span>    name <span style="color:#000;font-weight:bold">=</span> StringField(<span style="color:#d14">&#39;username&#39;</span>)
+</span></span><span style="display:flex;"><span>    email <span style="color:#000;font-weight:bold">=</span> StringField(<span style="color:#d14">&#39;email&#39;</span>)
+</span></span><span style="display:flex;"><span>    password <span style="color:#000;font-weight:bold">=</span> StringField(<span style="color:#d14">&#39;password&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 创建一个实例：</span>
+</span></span><span style="display:flex;"><span>u <span style="color:#000;font-weight:bold">=</span> User(<span style="color:#0086b3">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#099">12345</span>, name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Michael&#39;</span>, email<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;test@orm.org&#39;</span>, password<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;my-pwd&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 保存到数据库：</span>
+</span></span><span style="display:flex;"><span>u<span style="color:#000;font-weight:bold">.</span>save()
+</span></span></code></pre></div><p>其中，父类<code>Model</code>和属性类型<code>StringField</code>、<code>IntegerField</code>是由ORM框架提供的，剩下的魔术方法比如<code>save()</code>全部由metaclass自动完成。虽然metaclass的编写会比较复杂，但ORM的使用者用起来却异常简单。</p>
+<p>现在，我们就按上面的接口来实现该ORM。</p>
+<p>首先来定义<code>Field</code>类，它负责保存数据库表的字段名和字段类型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Field</span>(<span style="color:#0086b3">object</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name, column_type):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>column_type <span style="color:#000;font-weight:bold">=</span> column_type
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __str__(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&lt;</span><span style="color:#d14">%s</span><span style="color:#d14">:</span><span style="color:#d14">%s</span><span style="color:#d14">&gt;&#39;</span> <span style="color:#000;font-weight:bold">%</span> (<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__class__<span style="color:#000;font-weight:bold">.</span>__name__, <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name)
+</span></span></code></pre></div><p>在<code>Field</code>的基础上，进一步定义各种类型的<code>Field</code>，比如<code>StringField</code>，<code>IntegerField</code>等等：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">StringField</span>(Field):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">super</span>(StringField, <span style="color:#999">self</span>)<span style="color:#000;font-weight:bold">.</span>__init__(name, <span style="color:#d14">&#39;varchar(100)&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">IntegerField</span>(Field):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">super</span>(IntegerField, <span style="color:#999">self</span>)<span style="color:#000;font-weight:bold">.</span>__init__(name, <span style="color:#d14">&#39;bigint&#39;</span>)
+</span></span></code></pre></div><p>下一步，就是编写最复杂的<code>ModelMetaclass</code>了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ModelMetaclass</span>(<span style="color:#0086b3">type</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __new__(<span style="color:#999">cls</span>, name, bases, attrs):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> name<span style="color:#000;font-weight:bold">==</span><span style="color:#d14">&#39;Model&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">type</span><span style="color:#000;font-weight:bold">.</span>__new__(<span style="color:#999">cls</span>, name, bases, attrs)
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Found model: </span><span style="color:#d14">%s</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> name)
+</span></span><span style="display:flex;"><span>        mappings <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">dict</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> k, v <span style="color:#000;font-weight:bold">in</span> attrs<span style="color:#000;font-weight:bold">.</span>items():
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">isinstance</span>(v, Field):
+</span></span><span style="display:flex;"><span>                <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Found mapping: </span><span style="color:#d14">%s</span><span style="color:#d14"> ==&gt; </span><span style="color:#d14">%s</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> (k, v))
+</span></span><span style="display:flex;"><span>                mappings[k] <span style="color:#000;font-weight:bold">=</span> v
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> k <span style="color:#000;font-weight:bold">in</span> mappings<span style="color:#000;font-weight:bold">.</span>keys():
+</span></span><span style="display:flex;"><span>            attrs<span style="color:#000;font-weight:bold">.</span>pop(k)
+</span></span><span style="display:flex;"><span>        attrs[<span style="color:#d14">&#39;__mappings__&#39;</span>] <span style="color:#000;font-weight:bold">=</span> mappings <span style="color:#998;font-style:italic"># 保存属性和列的映射关系</span>
+</span></span><span style="display:flex;"><span>        attrs[<span style="color:#d14">&#39;__table__&#39;</span>] <span style="color:#000;font-weight:bold">=</span> name <span style="color:#998;font-style:italic"># 假设表名和类名一致</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">type</span><span style="color:#000;font-weight:bold">.</span>__new__(<span style="color:#999">cls</span>, name, bases, attrs)
+</span></span></code></pre></div><p>以及基类<code>Model</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Model</span>(<span style="color:#0086b3">dict</span>, metaclass<span style="color:#000;font-weight:bold">=</span>ModelMetaclass):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, <span style="color:#000;font-weight:bold">**</span>kw):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">super</span>(Model, <span style="color:#999">self</span>)<span style="color:#000;font-weight:bold">.</span>__init__(<span style="color:#000;font-weight:bold">**</span>kw)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __getattr__(<span style="color:#999">self</span>, key):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">try</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">self</span>[key]
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">except</span> <span style="color:#900;font-weight:bold">KeyError</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">AttributeError</span>(<span style="color:#d14">r</span><span style="color:#d14">&#34;&#39;Model&#39; object has no attribute &#39;</span><span style="color:#d14">%s</span><span style="color:#d14">&#39;&#34;</span> <span style="color:#000;font-weight:bold">%</span> key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __setattr__(<span style="color:#999">self</span>, key, value):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span>[key] <span style="color:#000;font-weight:bold">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">save</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        fields <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>        params <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>        args <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">for</span> k, v <span style="color:#000;font-weight:bold">in</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__mappings__<span style="color:#000;font-weight:bold">.</span>items():
+</span></span><span style="display:flex;"><span>            fields<span style="color:#000;font-weight:bold">.</span>append(v<span style="color:#000;font-weight:bold">.</span>name)
+</span></span><span style="display:flex;"><span>            params<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#d14">&#39;?&#39;</span>)
+</span></span><span style="display:flex;"><span>            args<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#0086b3">getattr</span>(<span style="color:#999">self</span>, k, <span style="color:#000;font-weight:bold">None</span>))
+</span></span><span style="display:flex;"><span>        sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;insert into </span><span style="color:#d14">%s</span><span style="color:#d14"> (</span><span style="color:#d14">%s</span><span style="color:#d14">) values (</span><span style="color:#d14">%s</span><span style="color:#d14">)&#39;</span> <span style="color:#000;font-weight:bold">%</span> (<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__table__, <span style="color:#d14">&#39;,&#39;</span><span style="color:#000;font-weight:bold">.</span>join(fields), <span style="color:#d14">&#39;,&#39;</span><span style="color:#000;font-weight:bold">.</span>join(params))
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;SQL: </span><span style="color:#d14">%s</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> sql)
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;ARGS: </span><span style="color:#d14">%s</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span> <span style="color:#0086b3">str</span>(args))
+</span></span></code></pre></div><p>当用户定义一个<code>class User(Model)</code>时，Python解释器首先在当前类<code>User</code>的定义中查找<code>metaclass</code>，如果没有找到，就继续在父类<code>Model</code>中查找<code>metaclass</code>，找到了，就使用<code>Model</code>中定义的<code>metaclass</code>的<code>ModelMetaclass</code>来创建<code>User</code>类，也就是说，metaclass可以隐式地继承到子类，但子类自己却感觉不到。</p>
+<p>在<code>ModelMetaclass</code>中，一共做了几件事情：</p>
+<ol>
+<li>排除掉对<code>Model</code>类的修改；</li>
+<li>在当前类（比如<code>User</code>）中查找定义的类的所有属性，如果找到一个Field属性，就把它保存到一个<code>__mappings__</code>的dict中，同时从类属性中删除该Field属性，否则，容易造成运行时错误（实例的属性会遮盖类的同名属性）；</li>
+<li>把表名保存到<code>__table__</code>中，这里简化为表名默认为类名。</li>
+</ol>
+<p>在<code>Model</code>类中，就可以定义各种操作数据库的方法，比如<code>save()</code>，<code>delete()</code>，<code>find()</code>，<code>update</code>等等。</p>
+<p>我们实现了<code>save()</code>方法，把一个实例保存到数据库中。因为有表名，属性到字段的映射和属性值的集合，就可以构造出<code>INSERT</code>语句。</p>
+<p>编写代码试试：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>u <span style="color:#000;font-weight:bold">=</span> User(<span style="color:#0086b3">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#099">12345</span>, name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Michael&#39;</span>, email<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;test@orm.org&#39;</span>, password<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;my-pwd&#39;</span>)
+</span></span><span style="display:flex;"><span>u<span style="color:#000;font-weight:bold">.</span>save()
+</span></span></code></pre></div><p>输出如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Found model: User
+</span></span><span style="display:flex;"><span>Found mapping: email <span style="color:#000;font-weight:bold">==&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span>StringField:email<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>Found mapping: password <span style="color:#000;font-weight:bold">==&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span>StringField:password<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>Found mapping: <span style="color:#0086b3">id</span> <span style="color:#000;font-weight:bold">==&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span>IntegerField:uid<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>Found mapping: name <span style="color:#000;font-weight:bold">==&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span>StringField:username<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>SQL: insert into User (password,email,username,<span style="color:#0086b3">id</span>) values (<span style="color:#a61717;background-color:#e3d2d2">?</span>,<span style="color:#a61717;background-color:#e3d2d2">?</span>,<span style="color:#a61717;background-color:#e3d2d2">?</span>,<span style="color:#a61717;background-color:#e3d2d2">?</span>)
+</span></span><span style="display:flex;"><span>ARGS: [<span style="color:#d14">&#39;my-pwd&#39;</span>, <span style="color:#d14">&#39;test@orm.org&#39;</span>, <span style="color:#d14">&#39;Michael&#39;</span>, <span style="color:#099">12345</span>]
+</span></span></code></pre></div><p>可以看到，<code>save()</code>方法已经打印出了可执行的SQL语句，以及参数列表，只需要真正连接到数据库，执行该SQL语句，就可以完成真正的功能。</p>
+<p>不到100行代码，我们就通过metaclass实现了一个精简的ORM框架，是不是非常简单？</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200817100532.png" alt="image-20200817100522200"></p>
+<blockquote>
+<p>小结：</p>
+</blockquote>
+<p>metaclass是Python中非常具有魔术性的对象，它可以改变类创建时的行为。这种强大的功能使用起来务必小心。</p>
+<h2 id="77-参考资料">7.7 参考资料</h2>
+<ul>
+<li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017501628721248">廖雪峰 - Python 3.x - 面向对象高级编程</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/">← 第一章 Python 基础</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/">第三章 高级特性  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

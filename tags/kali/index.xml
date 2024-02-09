@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kali - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/kali/</link>
-    <description>kali - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 27 Jul 2023 18:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/kali/" rel="self" type="application/rss+xml" /><item>
-  <title>WSL（适用于 Linux 的 Windows 子系统）Kali在线安装</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
-  <pubDate>Thu, 27 Jul 2023 18:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
-  <description><![CDATA[WSL-Kali安装说明：https://www.kali.org/docs/wsl/win-kex/ WSL-Kali软件安装：https:]]></description>
-</item>
-</channel>
+    <title>kali on 樊刹</title>
+    <link>https://richfan.site/tags/kali/</link>
+    <description>Recent content in kali on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 27 Jul 2023 18:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/kali/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL（适用于 Linux 的 Windows 子系统）Kali在线安装</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 27 Jul 2023 18:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
+      <description>WSL-Kali安装说明：https://www.kali.org/docs/wsl/win-kex/ WSL-Kali软件安装：https://blog.csd</description>
+    </item>
+  </channel>
 </rss>

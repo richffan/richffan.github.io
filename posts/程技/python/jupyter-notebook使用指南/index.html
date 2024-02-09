@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Jupyter notebook 使用指南 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Jupyter notebook 使用指南</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            Jupyter notebook 使用指南
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            2249 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            5 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#安装和运行">安装和运行</a>
+      <ul>
+        <li><a href="#ipython-内核">Ipython 内核</a></li>
+        <li><a href="#安装-jupyter-notebook">安装 Jupyter notebook</a></li>
+        <li><a href="#运行-jupyter-notebook">运行 Jupyter notebook</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用写代码">使用写代码</a>
+      <ul>
+        <li><a href="#写下并运行第一行-python-代码">写下并运行第一行 Python 代码</a></li>
+        <li><a href="#蓝绿两模式命令模式编辑模式">蓝绿两模式：命令模式、编辑模式</a></li>
+        <li><a href="#两种单元格代码单元格和-markdown-单元格">两种单元格：代码单元格和 Markdown 单元格</a></li>
+      </ul>
+    </li>
+    <li><a href="#抛弃鼠标只用键盘">抛弃鼠标，只用键盘</a>
+      <ul>
+        <li><a href="#最常用快捷键必会">最常用快捷键（必会）</a></li>
+        <li><a href="#所有快捷键">所有快捷键</a></li>
+      </ul>
+    </li>
+    <li><a href="#在-markdown-单元格中输入数学公式">在 Markdown 单元格中输入数学公式</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <h2 id="前言">前言</h2>
+<p>在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，还有 Spyder、Thonny 等。就我个人使用而言，如果进行大型项目推荐使用 Pycharm，如果进行数据处理和分析，最好选用 Jupyter notebook。可以说，<strong>Jupyter notebook 是用Python 进行数据科学、机器学习的必备工具。</strong></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713115135.png" alt="image-20200713115134320"></p>
+<blockquote>
+<p>🔊 突出优点：</p>
+</blockquote>
+<ul>
+<li>
+<p>学习 Jupyter notebook 非常容易，按照我的教程一步一步做，再自己尝试一下，之后写代码即可健步如飞。</p>
+</li>
+<li>
+<p>能够独立运行一个、几个或全部 Python 代码块，更容易看到中间变量的值，从而进行调试</p>
+</li>
+<li>
+<p>可以插入 Markdown 说明文字和 Latex 数学公式，让枯燥的代码充满颜值，可读性爆表</p>
+</li>
+<li>
+<p>能够调用 Ipython 丰富的“魔法函数”，比如程序计时、重复运行、显示图片等</p>
+</li>
+<li>
+<p>写好的代码和文档能够以网页和 ppt 的形式在线分享。<a href="https://nbviewer.jupyter.org/">在线看 Jupyter notebook 文件 </a></p>
+</li>
+<li>
+<p>可以在云端远程服务器运行，不需本地安装配置各种环境。<a href="https://jupyter.org/try">体验一下</a></p>
+</li>
+</ul>
+<p>🔔 文件中包含了 Markdown 说明文档、代码块、代码运行结果、图片嵌入等元素，特别适合 Python 数据科学和机器学习撰写文档。</p>
+<p>🔔 吴恩达的《深度学习》慕课的课后编程作业、大数据竞赛网站 Kaggle 上的代码文档、美国大学的数据科学课程的课后资料及编程作业，都是以 Jupyter notebook 文件的形式给出的，也就是<code>.ipynb</code>文件。</p>
+<blockquote>
+<p>其实 Jupyter notebook 不止可以运行 Python，还可以运行 Julia、R、Javascript 等语言，这也是<code>jupyter</code>这个名字的由来。<a href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">Jupyter notebook 支持的编程语言</a></p>
+</blockquote>
+<p>🔔 Jupyter notebook 集编程和写作于一身，这就叫做“文学编程”。</p>
+<h2 id="安装和运行">安装和运行</h2>
+<blockquote>
+<p>在浏览器网页中运行 Python</p>
+</blockquote>
+<h3 id="ipython-内核">Ipython 内核</h3>
+<p>Ipython 是更高级的 Python 解释器，而 Jupyter notebook 是基于 Ipython 内核的，在浏览器中以网页形式运行 Python 代码的工具，十分方便。</p>
+<blockquote>
+<p>Ipython 是啥？</p>
+<p>Ipython 可以理解成更高级的 Python 解释器，相比原生的 Python 交互式命令行，Ipython 有更强大的命令计数、自动补全等交互功能。</p>
+<p>Spyder 和 Jupyter notebook 都是以 Ipython 为内核的。</p>
+</blockquote>
+<h3 id="安装-jupyter-notebook">安装 Jupyter notebook</h3>
+<p>如果你安装了 Python 数据科学全家桶 Anaconda，那么其中自带了 Jupyter notebook。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713171917.png" alt="image-20200713171916125"></p>
+<p>如果你没安装 Anaconda，可以直接在命令行里运行这行命令</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install jupyter -i //pypi.tuna.tsinghua.edu.cn/simple
+</span></span></code></pre></div><h3 id="运行-jupyter-notebook">运行 Jupyter notebook</h3>
+<p>打开命令行，输入 <code>jupyter notebook</code>，回车。稍等片刻即可跳出浏览器网页。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713172810.png" alt="image-20200713172808869"></p>
+<p>🎉 看右上角：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713173009.png" alt="image-20200713173007336"></p>
+<ul>
+<li>
+<p>点击 New &ndash;&gt; Python3 即可创建 Python 文档。</p>
+</li>
+<li>
+<p>点击 New &ndash;&gt; Folder 可以创建新文件夹。</p>
+</li>
+<li>
+<p>点击 New &ndash;&gt; Text File 可以创建空的<code>.txt</code>文件。</p>
+</li>
+<li>
+<p>点击 New &ndash;&gt; Terminal 可以打开操作系统命令行，你可以使用操作系统对应的命令行进行目录切换、解压文件等操作。</p>
+</li>
+</ul>
+<p>🔊 最常用的是点击右边的 New &ndash;&gt; Python3，创建 Python 文档。</p>
+<h2 id="使用写代码">使用写代码</h2>
+<h3 id="写下并运行第一行-python-代码">写下并运行第一行 Python 代码</h3>
+<p>点击左上角<code>Untitled</code>给新建的 Python 文档文件重新命名。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224351.png" alt="image-20200713224350095"></p>
+<p>自古第一行代码，总是会写 Hello World，故名称设置为了 HelloWorld</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713224538.png" alt="image-20200713224537278"></p>
+<p>在代码框中输入第一行 Python 代码，<code>shift + 回车</code>运行</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713230014.png" alt="image-20200713230012217"></p>
+<h3 id="蓝绿两模式命令模式编辑模式">蓝绿两模式：命令模式、编辑模式</h3>
+<p>Jupyter notebook 中，代码和文档都存在于一个个单元格中，每个单元格都有<code>蓝色</code>和<code>绿色</code>两种状态。</p>
+<ul>
+<li>
+<p>命令模式（蓝色）：用于执行键盘输入的快捷命令（新增单元格、剪切、复制等等）。通过 <code>Esc</code> 键从绿色的编辑模式切换到蓝色的命令模式，此时单元左侧显示蓝色竖线。</p>
+</li>
+<li>
+<p>编辑模式（绿色）：编辑文本和代码。选中单元并按 <code>Enter</code> 键进入编辑模式，此时单元左侧显示绿色竖线。</p>
+</li>
+</ul>
+<blockquote>
+<p>命令模式和编辑模式，其实是源自于著名的 vim 编辑器，vim 编辑器以特别难学和学成之后可以超神而闻名于世。</p>
+</blockquote>
+<h3 id="两种单元格代码单元格和-markdown-单元格">两种单元格：代码单元格和 Markdown 单元格</h3>
+<p>Jupyter notebook 中，有两种单元格：代码单元格和 Markdown 单元格。</p>
+<ul>
+<li>代码单元格：这里是你编写代码的地方，通过按 <code>Shift + Enter</code> 运行代码，其结果显示在本单元下方。代码单元左边有 <code>In [1]:</code> 这样的序列标记，方便人们查看代码的执行次序。在蓝色命令模式下，按<code>y</code>键可以将 Markdown 单元格转换为代码单元格。</li>
+<li>Markdown 单元格：在这里对文本进行编辑，采用 markdown 的语法规范，可以设置文本格式、插入链接、图片甚至数学公式。同样使用 <code>Shift + Enter</code> 运行 markdown 单元来显示渲染后的文本。在蓝色命令模式下按<code>m</code>键可以将代码单元格转换为 Markdown 单元格。</li>
+</ul>
+<blockquote>
+<p>Markdown 是程序员通用的撰写文档的语法，可以轻松实现标题、引用、链接、图片等，非常简洁易学，Github 代码托管网站、有道云笔记、简书、知乎、CSDN 论坛、电子邮件等都支持 Markdown 语法。</p>
+</blockquote>
+<p>编辑 Markdown 单元格，输入以下内容：</p>
+<pre tabindex="0"><code># 我是Markdown一号标题
+## 我是Markdown二号标题
+### 我是Markdown三号标题
+&gt; 我是引用，我这行开头有一个灰色竖杠
+
+[我是外部链接，点我上百度](https://www.baidu.com)
+![我是图片](https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231406.png)
+</code></pre><p>如下图：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713232003.png" alt="image-20200713232002542"></p>
+<p>然后按<code>shift</code>+<code>Enter</code>运行该单元格。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713231751.png" alt="image-20200713231750768"></p>
+<h2 id="抛弃鼠标只用键盘">抛弃鼠标，只用键盘</h2>
+<p>下面介绍 Jupyter notebook 快捷键，掌握这些快捷键之后，你将彻底解放你拿鼠标的那只手，更专注、高效地敲代码了。</p>
+<h3 id="最常用快捷键必会">最常用快捷键（必会）</h3>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>查看所有快捷键</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>从命令模式进入编辑模式</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>从编辑模式退回到命令模式</td>
+</tr>
+<tr>
+<td>m</td>
+<td>将代码单元格转换为 Markdown 单元格</td>
+</tr>
+<tr>
+<td>y</td>
+<td>将 Markdown 单元格转换为代码单元格</td>
+</tr>
+<tr>
+<td>shift + Enter</td>
+<td>运行本单元格，选择下面的代码块</td>
+</tr>
+<tr>
+<td>ctrl + Enter</td>
+<td>运行本单元格</td>
+</tr>
+<tr>
+<td>alt + Enter</td>
+<td>运行本单元格，在下方新建一个单元格</td>
+</tr>
+<tr>
+<td>a</td>
+<td>在上方新建一个单元格（above）</td>
+</tr>
+<tr>
+<td>b</td>
+<td>在下方新建一个单元格（below）</td>
+</tr>
+<tr>
+<td>d</td>
+<td>删除选中的单元格（delete）</td>
+</tr>
+<tr>
+<td>x</td>
+<td>剪切本单元格</td>
+</tr>
+<tr>
+<td>c</td>
+<td>复制本单元格</td>
+</tr>
+<tr>
+<td>shift + v</td>
+<td>粘贴到上面</td>
+</tr>
+<tr>
+<td>v</td>
+<td>粘贴到下面</td>
+</tr>
+<tr>
+<td>l</td>
+<td>显示代码行号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="所有快捷键">所有快捷键</h3>
+<p>h 查看所有快捷键</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233052.png" alt="命令行模式快捷键"></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233152.png" alt="编辑模式快捷键"></p>
+<h2 id="在-markdown-单元格中输入数学公式">在 Markdown 单元格中输入数学公式</h2>
+<p>分别在两个 Markdown 单元格内输入以下内容：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span>这是爱因斯坦的质能转换方程<span style="color:#d14">$</span><span style="color:#0086b3">E</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">mc^</span><span style="color:#099">2</span><span style="color:#d14">$</span>，揭示了质量和能量之间的关系
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span>这是一元二次方程求解公式
+</span></span><span style="display:flex;"><span><span style="color:#d14">$$</span><span style="color:#0086b3">x </span><span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3"> </span><span style="color:#008080">\frac</span><span style="color:#0086b3">{</span><span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">b</span><span style="color:#008080">\pm</span><span style="color:#0086b3"> </span><span style="color:#008080">\sqrt</span><span style="color:#0086b3">{b^</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">4</span><span style="color:#0086b3">ac}}{</span><span style="color:#099">2</span><span style="color:#0086b3">a}</span><span style="color:#d14">$$</span>
+</span></span><span style="display:flex;"><span>初中数学内容
+</span></span></code></pre></div><p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233439.png" alt="image-20200713233438637"></p>
+<p>按<code>shift</code>+<code>Enter</code>渲染运行：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200713233504.png" alt="image-20200713233502965"></p>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/">← 9款最佳Python脚本：让工作自动化起来！</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/">PyCharm 优化使用  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

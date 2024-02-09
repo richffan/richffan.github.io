@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>房产 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/%E6%88%BF%E4%BA%A7/</link>
-    <description>房产 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E6%88%BF%E4%BA%A7/" rel="self" type="application/rss+xml" /><item>
-  <title>个人住房买卖涉税政策常见问题解答</title>
-  <link>http://richfan.site/%E7%A8%8E%E6%8A%80/%E4%B8%AA%E4%BA%BA%E4%BD%8F%E6%88%BF%E4%B9%B0%E5%8D%96%E6%B6%89%E7%A8%8E%E6%94%BF%E7%AD%96%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</link>
-  <pubDate>Wed, 23 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8E%E6%8A%80/%E4%B8%AA%E4%BA%BA%E4%BD%8F%E6%88%BF%E4%B9%B0%E5%8D%96%E6%B6%89%E7%A8%8E%E6%94%BF%E7%AD%96%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</guid>
-  <description><![CDATA[01 问：个人出售自己购买的住房，增值税税率是多少？答： 个人将购买不足2年的住房对外销售的，按照5%的征收率全额缴纳增值税;个人将购买2年以上(]]></description>
-</item>
-</channel>
+    <title>房产 on 樊刹</title>
+    <link>https://richfan.site/tags/%E6%88%BF%E4%BA%A7/</link>
+    <description>Recent content in 房产 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/%E6%88%BF%E4%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人住房买卖涉税政策常见问题解答</title>
+      <link>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E4%B8%AA%E4%BA%BA%E4%BD%8F%E6%88%BF%E4%B9%B0%E5%8D%96%E6%B6%89%E7%A8%8E%E6%94%BF%E7%AD%96%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E4%B8%AA%E4%BA%BA%E4%BD%8F%E6%88%BF%E4%B9%B0%E5%8D%96%E6%B6%89%E7%A8%8E%E6%94%BF%E7%AD%96%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</guid>
+      <description>01 问：个人出售自己购买的住房，增值税税率是多少？ 答： 个人将购买不足2年的住房对外销售的，按照5%的征收率全额缴纳增值税;个人将购买2年以上(含2年)的住房对外销</description>
+    </item>
+  </channel>
 </rss>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="审计军火库 - https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>审计军火库</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            审计军火库
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-10-18&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-10-18&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            3733 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            8 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E5%AE%A1%E6%8A%80">审技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/it%E5%AE%A1%E8%AE%A1">IT审计</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#财务审计工具">财务审计工具</a>
+      <ul>
+        <li><a href="#财务数据工具">财务数据工具</a></li>
+      </ul>
+    </li>
+    <li><a href="#it审计工具">IT审计工具</a></li>
+    <li><a href="#chatgpt">ChatGpt</a></li>
+    <li><a href="#财务工具">财务工具</a></li>
+    <li><a href="#办公效率工具">办公效率工具</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#综合数据查询平台">综合数据查询平台</a></li>
+    <li><a href="#工商信息查询">工商信息查询</a></li>
+    <li><a href="#ipo及上市公司定期公告查询">IPO及上市公司定期公告查询</a></li>
+    <li><a href="#招股说明书查询">招股说明书查询</a></li>
+    <li><a href="#审计程序检索">审计程序检索</a>
+      <ul>
+        <li><a href="#汇率查询">汇率查询</a></li>
+        <li><a href="#利率查询">利率查询</a></li>
+        <li><a href="#海关信息查询">海关信息查询</a></li>
+        <li><a href="#商标专利">商标专利</a></li>
+        <li><a href="#动产抵押查询">动产抵押查询</a></li>
+        <li><a href="#国家科技成果库登记结果查询">国家科技成果库登记结果查询</a></li>
+        <li><a href="#征信报告查询">征信报告查询</a></li>
+        <li><a href="#海外银行函证">海外银行函证</a></li>
+        <li><a href="#诉讼">诉讼</a></li>
+      </ul>
+    </li>
+    <li><a href="#事务所信息查询">事务所信息查询</a></li>
+    <li><a href="#税收法规查询">税收法规查询</a></li>
+    <li><a href="#处罚信息">处罚信息</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#准则">准则</a></li>
+    <li><a href="#h股上市规则">H股上市规则</a></li>
+    <li><a href="#其它">其它</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#微信公众号">微信公众号</a></li>
+    <li><a href="#微博">微博</a></li>
+    <li><a href="#b站">B站</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <h1 id="工具">工具</h1>
+<h2 id="财务审计工具">财务审计工具</h2>
+<ul>
+<li>
+<p><a href="http://52xlsj.com/">审计工具箱</a>
+快递截图、工商截图、询证函处理、地址复核、海关查询、公告下载、地址补全集合成一个exe文件。</p>
+</li>
+<li>
+<p><a href="https://gitee.com/nigo81/tools-for-auditor">tools for auditor</a>
+Excel VBA编写的一系列工具（点击“克隆/下载”）
+<a href="https://github.com/nigo81/tools-for-auditor">github链接</a></p>
+</li>
+<li>
+<p><a href="https://space.bilibili.com/417830965/channel/collectiondetail?sid=784007&amp;ctype=0">附注生成工具</a> &ndash; 根据Excel 生动生成报告附注。王建彬开发，目前市面上我看到的最强，最易用的工具。
+<a href="https://www.cpasit.com/assets/Update.exe">工具下载链接</a> 付费软件，很便宜，买一次管终生，可以节省很多时间。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/VdCmd2lL7mJcSLJTV_fF7w">万能函证生成器</a> 支持批量生成所有格式的函证，包括Excel和Word格式模板，如银行询证函、往来、票据、交易事项、存货、验资业务等等模板。
+<a href="%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">https://www.123pan.com/s/8kiA-Jc3hH</a> 提取码:4VBB</p>
+</li>
+<li>
+<p><a href="http://www.ffcell.com/">方方格子</a>
+-Excel插件，包含一系列Excel实用功能</p>
+</li>
+<li>
+<p><a href="%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A%E6%8E%92%E7%89%88%E5%B7%A5%E5%85%B7">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491654&amp;idx=1&amp;sn=4b374e054033b0a2d951a50e97031357&amp;chksm=e9743eb4de03b7a2aed427500e294574bc80abb860f749afe7b835b2f6e4c73d200a42b91cb5&amp;token=196403941&amp;lang=zh_CN#rd</a>
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://wwe.lanzoui.com/izTYZsopdej</a></p>
+</li>
+<li>
+<p><a href="%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B">https://www.gzaudit.com/</a>
+-集成财审一线的60+实用功能，包括各种针对审计行业的Excel增强功能和审计效率工具、看账工具等等，免费使用</p>
+</li>
+<li>
+<p><a href="%E5%86%85%E9%83%A8%E5%BE%80%E6%9D%A5%E4%BA%A4%E6%98%93%E7%BB%9F%E8%AE%A1%E5%B7%A5%E5%85%B7">https://www.gzaudit.com/glf/</a> -无论是单体分工还是科目分工，都可以直接生成生成关联方统计表，上百家公司匹配合并也不会卡顿</p>
+</li>
+<li>
+<p><a href="word%E6%8E%92%E7%89%88%E5%A4%A7%E6%9D%80%E5%99%A8">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247489878&amp;idx=1&amp;sn=fd6471bdfcf1612fbac06bf4e573c4fb&amp;chksm=e977c7a4de004eb22b53ee57cc2543c5466dc213e0d1d2fdff3a3e92f0bf9c41f09f268bb81e&amp;token=196403941&amp;lang=zh_CN#rd</a> -
+word加载宏一些实用功能
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/s/1p8oUSHNQCRbq18Kzo_aHLA</a>
+提取码：oeia</p>
+</li>
+<li>
+<p>财审办公小助手-工具格 （Word）
+-此插件为“财审办公小助手-工具格”的配套插件，安装工具格时亦同时安装工具格 （Word）；也可单独安装，免费使用。
+此插件集合了一些常用的功能，比如：粘贴美表（表格自动排版）、表格核数、图片排版、链接报告等功能。
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/s/100W0acIlu245DQ3bSirP8Q</a> 提取码：kunm</p>
+</li>
+<li>
+<p><a href="%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E9%97%AD%E7%8E%AF%E6%A0%B8%E6%9F%A5%E5%B7%A5%E5%85%B7">https://mp.weixin.qq.com/s/432rFH8lHHLCiUJpNZ4zag</a></p>
+</li>
+<li>
+<p><a href="%E4%B8%80%E9%94%AE%E6%89%B9%E9%87%8F%E5%A1%AB%E6%9C%AA%E5%AE%A1TB">https://mp.weixin.qq.com/s/abF14LhH8qUgWweOPwUvUg</a></p>
+</li>
+<li>
+<p><a href="%E4%BF%A1%E6%81%AF%E6%89%B9%E9%87%8F%E8%8E%B7%E5%8F%96(%E8%8C%B6%E7%93%9C%E5%AD%90)">https://mp.weixin.qq.com/s/cQGEpWuGqgL4hup0_BSVgA</a></p>
+</li>
+<li>
+<p><a href="%E8%B4%A2%E5%AE%A1%E5%8A%9E%E5%85%AC%E5%B0%8F%E5%8A%A9%E6%89%8B-%E5%B7%A5%E5%85%B7%E6%A0%BC">https://pan.baidu.com/s/100W0acIlu245DQ3bSirP8Q</a>
+主要适合财务、审计人员和与数字打交道人员用于辅助数据处理，简单易用。集中功能有：目录导航、公式转值、数字累加、正则、统一字体、数据验证等常用功能。
+提取码：kunm</p>
+</li>
+</ul>
+<h3 id="财务数据工具">财务数据工具</h3>
+<ul>
+<li><a href="%E5%90%8C%E8%A1%8C%E4%B8%9A%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E6%9F%A5%E8%AF%A2%E5%B7%A5%E5%85%B7">https://pan.baidu.com/s/1qtkLv475LvqGcOHKuK1uxw</a>
+-(密码: gkp5)Excel
+VBA写的宏获取新浪财经指标数据包含在[[https://github.com/nigo81/tools-for-auditor](tools
+for auditor)中。</li>
+<li><a href="%E5%9B%BD%E6%B3%B0%E5%90%9B%E5%AE%89%E6%95%B0%E6%8D%AE%E5%BA%93">https://www.gtarsc.com/</a>
+-查询上市公司财务数据（付费），
+<a href="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">https://mp.weixin.qq.com/s/_d42SKSUyWBKoM1JRNbQMA</a> 。</li>
+<li><a href="tushare%E9%87%91%E8%9E%8D%E6%95%B0%E6%8D%AE">https://tushare.pro/</a>
+-金融数据接口（数据获取需要积分）</li>
+<li><a href="akshare%E9%87%91%E8%9E%8D%E6%95%B0%E6%8D%AE">https://www.akshare.xyz</a>
+-免费的金融数据接口</li>
+<li><a href="baostock%E9%87%91%E8%9E%8D%E6%95%B0%E6%8D%AE">http://baostock.com/baostock/index.php</a>
+-免费的金融数据接口</li>
+<li><a href="CEIC%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E%E6%95%B0%E6%8D%AE">https://www.ceicdata.com/zh-hans</a>
+-全球宏观经济数据</li>
+</ul>
+<h2 id="it审计工具">IT审计工具</h2>
+<ul>
+<li><a href="mysql">https://www.mysql.com/downloads/</a>
+-免费数据库，可以对大数据量数据进行处理分析，需要掌握SQL语言。</li>
+<li><a href="navicat12%E5%85%8D%E5%AE%89%E8%A3%85">https://wwe.lanzoui.com/isqHYwbsfab</a>
+-数据库图形化管理工具，可搭配mysql使用。</li>
+<li><a href="SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95">https://www.w3school.com.cn/sql/index.asp</a>
+-快速掌握SQL基本语法。</li>
+<li><a href="SQL%E7%BB%83%E4%B9%A0%E7%BD%91%E7%AB%99">https://sqlzoo.net/</a> -通过练习掌握SQL用法。</li>
+<li><a href="python%E6%95%99%E7%A8%8B">https://www.liaoxuefeng.com/wiki/1016959663602400</a>
+-免费python教程。</li>
+<li><a href="IT%E5%AE%A1%E8%AE%A1%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C">https://www.bilibili.com/video/BV1sF411i7LG</a> -
+python,sql网课教程</li>
+<li><a href="clickhouse">https://mp.weixin.qq.com/s/p4Fl459LdeC5sovyoID0wQ</a>
+-大数据工具 <a href="%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3">https://clickhouse.com/docs/zh/</a></li>
+<li>[https://powerbi.microsoft.com/zh-cn/downloads/](power bi)
+-微软出的免费的BI工具。</li>
+<li><a href="superset">https://superset.apache.org/</a>
+-免费的可视化数据分析工具(BI工具)，基于python。</li>
+<li><a href="gephi">https://gephi.org/</a> -免费的网络关系分析工具。</li>
+<li><a href="plotly">https://plotly.com/python/</a> -免费的数据可视化库(python库)。</li>
+<li><a href="%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E4%B8%BA%E7%9C%81%E5%B8%82%E5%8C%BA">https://github.com/DQinYuan/chinese_province_city_area_mapper</a>
+-一个用于提取简体中文字符串中省，市和区并能够进行映射，检验和简单绘图的python模块。</li>
+<li><a href="IP%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90">https://gitee.com/lionsoul/ip2region</a> -ip2region
+准确率99.9%的离线IP地址定位库。</li>
+<li><a href="IP%E5%9C%B0%E5%9D%80%E6%9F%A5%E8%AF%A2%E7%BD%91%E7%AB%99">https://www.ipip.net/ip.html</a>
+-IPIP网站查询IP地址，解析出其物理地址。</li>
+<li><a href="%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%E5%BD%92%E5%B1%9E%E5%9C%B0%E8%A7%A3%E6%9E%90">https://github.com/ls0f/phone</a>
+-手机号码归属地库。</li>
+<li><a href="%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92%E6%95%B0%E6%8D%AE%E5%BA%93">https://gitee.com/xusimin/area</a>
+-全国行政区划，省市区镇四级，包含名称、完整名称、经纬度、区号、邮编、行政区划代码、拼音。</li>
+<li><a href="%E6%89%B9%E9%87%8F%E8%AF%86%E5%88%AB%E5%A2%9E%E5%80%BC%E7%A8%8E%E5%8F%91%E7%A5%A8">https://gitee.com/nigo81/invoiceocr</a>
+利用paddleocr批量识别并提取发票信息</li>
+<li><a href="BOM%E7%A9%BF%E9%80%8F">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491671&amp;idx=1&amp;sn=8e4dd10b14d9e0195e7ebb49277cbed0&amp;chksm=e9743ea5de03b7b378694673d2303918b378febed48a5b0bd2a76bfdfc1ab6f52764f903ed26&amp;token=894284587&amp;lang=zh_CN#rd</a>
+利用树对生产企业的BOM关系进行穿透</li>
+<li><a href="%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0%E6%89%B9%E9%87%8F%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247491615&amp;idx=1&amp;sn=1bc06e3e981929db2a84deceb3a82a6c&amp;chksm=e9743eedde03b7fb411286e3b72d8d10e60b5913d7ade2ec3a8a3dd39c132ddd6fd37608f356&amp;token=894284587&amp;lang=zh_CN#rd</a>
+利用fuzzywuzzy对两期账套的往来科目公司名称进行模糊匹配</li>
+</ul>
+<h2 id="chatgpt">ChatGpt</h2>
+<ul>
+<li><a href="%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99%EF%BC%88%E9%9C%80%E8%A6%81%E9%AD%94%E6%B3%95%EF%BC%89">https://chat.openai.com/chat</a></li>
+<li><a href="%E5%9B%BD%E5%86%85%E5%85%8D%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E7%BD%91%E7%AB%99">http://43.139.36.221/</a></li>
+<li><a href="%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB">https://xinghuo.xfyun.cn/desk</a></li>
+<li><a href="%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB-%E6%96%87%E6%A1%A3%E9%97%AE%E7%AD%94">https://chatdoc.xfyun.cn/</a> &ndash; <a href="%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247499345&amp;idx=1&amp;sn=6ff4afca93b63ae87d11019c92081159&amp;chksm=e97420a3de03a9b5376719b76d8c46e51f8366e42a27e15ca91a4d36e041e16fa35abafc8cee&amp;token=1383386970&amp;lang=zh_CN#rd</a></li>
+</ul>
+<p>介绍文章：</p>
+<ul>
+<li><a href="AI%E6%94%B9%E5%8F%98%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%AE%A1%E8%AE%A1">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247496683&amp;idx=1&amp;sn=a8ee685ab5d1e468bd5efc50390f5a34&amp;chksm=e9742d19de03a40f58d6856640e939f248ea68b70e6c594b384cb16dc8f0cd55733fa8bdaeed&amp;scene=21#wechat_redirect</a></li>
+<li><a href="chatgpt%E5%9C%A8%E4%BC%9A%E8%AE%A1%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8-%E5%AE%A1%E8%AE%A1%E7%AF%87">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247497227&amp;idx=1&amp;sn=aa4d4e3108269da6c111e625191c5a35&amp;chksm=e97428f9de03a1ef0c48f8cbe4c93cb0be63e775e7756121dc3cb363145dc9c7c9e80136296d&amp;scene=21#wechat_redirect</a></li>
+<li><a href="chatgpt%E5%9C%A8%E4%BC%9A%E8%AE%A1%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8-IT%E5%AE%A1%E8%AE%A1%E7%AF%87">https://mp.weixin.qq.com/s?__biz=MzI0MjgxMzg1Mw==&amp;mid=2247497302&amp;idx=1&amp;sn=d8c9dbc089139e73e1373ce24106f32f&amp;chksm=e97428a4de03a1b24d0083da628be0560905170b16b80ca78882063ecbe7f5da1f0d05d0dc51&amp;scene=21#wechat_redirect</a></li>
+</ul>
+<h2 id="财务工具">财务工具</h2>
+<ul>
+<li><a href="%E6%96%B0%E7%A7%9F%E8%B5%81%E5%87%86%E5%88%99%E5%88%86%E5%BD%95%E5%88%86%E6%88%90">https://mp.weixin.qq.com/s/nuV-imxFZSxHXJ4daT9SQw</a>
+工具
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/share/init?surl=GWzJQnzw5AeNXgMvqD-DcA</a>
+提取码：6666</li>
+<li><a href="%E9%95%BF%E6%9C%9F%E8%B5%84%E4%BA%A7%E5%87%8F%E5%80%BC">https://mp.weixin.qq.com/s/SBX4UOOS8WwS66LVMU9jVQ</a>
+解决资产组减值测试需要金融建模的痛点
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/s/19sC2Off26iNmnCmwSmgQdQ</a>
+提取码：6666</li>
+<li><a href="%E5%95%86%E8%AA%89%E5%87%8F%E5%80%BC">https://mp.weixin.qq.com/s/Ugb3hw6d7iPcuhd-YNRYuw</a>
+解决商誉减值测试需要金融建模的痛点，也可以用于评估企业价值、股权价值
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/s/16znI7tiJAl_Ifsq3TP5xCg</a>
+提取码:6666</li>
+<li><a href="%E9%9D%9E%E4%B8%8A%E5%B8%82%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E8%87%AA%E5%8A%A8%E4%BC%B0%E5%80%BC">https://mp.weixin.qq.com/s/zLNDvApBZ2PBf6KqYcnJmg</a>
+-解决采用新金融工具准则需要对缺乏市场公开价格信息的非上市股权投资进行估值的痛点
+<a href="%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5">https://pan.baidu.com/s/1-kdWTCpeFK-FTbu-VO0rkw</a>
+提取码:6666</li>
+<li><a href="%E9%A2%84%E6%9C%9F%E4%BF%A1%E7%94%A8%E6%8D%9F%E5%A4%B1%E4%B8%80%E9%94%AE%E5%BB%BA%E6%A8%A1">https://mp.weixin.qq.com/s/OROA3I79SwyhWMeb6elVPg</a>
+<a href="%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1RFeCWWQlUdcRleFQVAo19g</a> 提取码:6666</li>
+<li><a href="https://mp.weixin.qq.com/s/99b4sOmrlJPpPqF2BY2Zvw">一键拆税:税前利润到所得税费用轻松调</a>
+<a href="%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1Uq-lKOGQUcW3dxKtCNaraQ?pwd=6666</a></li>
+<li><a href="https://mp.weixin.qq.com/s/rEE7FHlyLzz0MtcD56Er9g">一键现流:穷尽勾稽关系，底稿自动摆平</a>
+<a href="%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1TQ-jwR7vtqNpfwH-1XiUJw?pwd=6666</a></li>
+<li><a href="Excel%E8%BD%ACWord%E6%8F%92%E4%BB%B6">https://mp.weixin.qq.com/s/zdkkGN3Z4K7v2vaNbHS1Dw</a>
+-Excel选中源数据=转Word表格+智能排版，任意打开一个Excel随便选中一块区域都可以转Word表格
+<a href="%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1ui3qU-uMKUwwLcQTpKnNkQ</a> 提取码：6666</li>
+</ul>
+<h2 id="办公效率工具">办公效率工具</h2>
+<ul>
+<li>
+<p>[https://www.ghisler.com/](total commander)
+-强大的资源管理器，可以提高操作文件的效率。(免费的够用)
+<a href="%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D">https://wwe.lanzoui.com/i61cjtp24hc</a></p>
+</li>
+<li>
+<p><a href="capsez">https://mp.weixin.qq.com/s/i8ouQ7XeKh1Db_dk6nOeIg</a>
+&ndash;使用AHK脚本自定义快捷键，提高total commander,Excel等软件的操作效率
+<a href="%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">https://wwe.lanzoui.com/i61cjtp24hc</a></p>
+</li>
+<li>
+<p><a href="utools">https://u.tools/</a>
+-非常强大的一个应用启动器，同时也是生产力工具集，集成了很多有用的小插件。(免费)</p>
+</li>
+<li>
+<p><a href="listary">https://www.listary.com/download</a>
+-Windows搜索工具,可以快速搜索电脑文件、定位文件、执行智能命令、记录访问历史、快速切换目录、收藏常用项目等</p>
+</li>
+<li>
+<p><a href="Quicker">https://getquicker.net/</a>
+-办公效率工具，可以为任何常用内容建立捷径，也可以自己组合动作去完成某个特定的功能。不善于创造动作的同学可以使用他人分享的动作。</p>
+</li>
+<li>
+<p><a href="Everything">https://www.voidtools.com/zh-cn/</a>
+-基于名称快速定位文件和文件夹，是我见过的速度最快的文件名搜索软件，只要文件或文件夹命名无误，几个十万个文件，可以在几秒内完成索引。</p>
+</li>
+<li>
+<p><a href="%E7%81%AB%E6%9F%B4">https://www.huochaipro.com/</a>
+-搜索工具:能够做到文件达到秒搜，局域网秒传文件，还支持各种系统命令命令，迅速打开我们的电脑软件，支持网络直达功能</p>
+</li>
+<li>
+<p><a href="docfetcher">http://docfetcher.sourceforge.net/zh/index.html</a>
+可以检索文件(pdf\word等)内容的搜索工具
+<a href="%E4%BB%8B%E7%BB%8D">https://mp.weixin.qq.com/s/fhRNSWzeWfXCaxD5ECUDfg</a>
+<a href="%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7">https://c1n.cn/BE7XE</a></p>
+</li>
+<li>
+<p><a href="Obsidian">https://obsidian.md/</a>
+-强大的免费双链式笔记工具，搭配坚果云可同步，适合建立自己的知识库。
+<a href="%E7%AE%80%E4%BB%8B%E8%A7%86%E9%A2%91">https://www.bilibili.com/video/BV1P64y1q7ND?from=search&amp;seid=10079939813401286196&amp;spm_id_from=333.337.0.0</a>
+，还有很多免费的插件，适合用来建立自己的审计知识库。</p>
+</li>
+<li>
+<p><a href="drawio">https://github.com/jgraph/drawio-desktop/releases</a>
+-免费开源的流程图绘制工具，桌面客户端，可以完全替代visio。
+<a href="%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD">https://wwe.lanzoui.com/b01osg6ef</a> 密码:camc</p>
+</li>
+<li>
+<p>[https://otp.landian.vip/zh-cn/](office tool plus)
+一键安装office软件，并激活，免费。</p>
+</li>
+<li>
+<p><a href="xmind">https://www.xmind.cn/</a>
+思维导图工具，适合整理想法，免费版足够使用。</p>
+</li>
+<li>
+<p><a href="%E6%BB%B4%E7%AD%94%E6%B8%85%E5%8D%95">https://www.dida365.com/</a>
+-全平台GTD软件，适合日常任务管理，建议先阅读
+[https://book.douban.com/subject/26612471/](《搞定Ⅰ
+无压工作的艺术》)。</p>
+</li>
+<li>
+<p>[https://super-productivity.com](super productivity)
+-开源免费的清单及时间记录工具</p>
+</li>
+</ul>
+<h1 id="实用网站">实用网站</h1>
+<h2 id="综合数据查询平台">综合数据查询平台</h2>
+<ul>
+<li><a href="oslaw">http://www.oslaw.net/</a>
+&ndash;集合了大量网站链接导航，包括效率工具、世界各地工商信息查询、知识产权查询、行政处罚、诉讼仲裁、法律法规、资质证照、资本市场、健康与生命科学等信息的导航网站。</li>
+<li><a href="%E9%9D%92%E8%97%A4%E6%95%B0%E6%8D%AE">http://www.qingtengdata.com/</a>
+-审计相关数据查询网站。实务问答、税务问答、关键审计事项、公告查询、财务法规、税务法规。(免费)</li>
+<li><a href="%E8%A7%81%E5%BE%AE%E6%95%B0%E6%8D%AE">https://www.jianweidata.com/</a>
+-公告查询、IPO反馈、问询。一个月试用期。(付费)</li>
+<li><a href="%E8%8D%A3%E5%A4%A7%E4%BA%8C%E9%83%9E%E7%A5%9E">http://doc.rongdasoft.com/</a>
+-公告、反馈，与见微相似。(付费)</li>
+<li><a href="%E4%BC%9A%E8%AE%A1%E8%A7%86%E9%87%8E%E8%AE%BA%E5%9D%9B">https://bbs.esnai.com/forum-7-1.html</a>
+-审计行业最专业的实务问题交流平台。</li>
+<li><a href="%E8%A1%8C%E8%A1%8C%E6%9F%A5">https://www.hanghangcha.com/</a> -行研报告</li>
+</ul>
+<h2 id="工商信息查询">工商信息查询</h2>
+<ul>
+<li><a href="%E5%A4%A9%E7%9C%BC%E6%9F%A5">https://www.tianyancha.com/</a></li>
+<li><a href="%E4%BF%A1%E7%94%A8%E4%B8%AD%E5%9B%BD">https://www.creditchina.gov.cn</a></li>
+<li><a href="%E6%B7%B1%E5%9C%B3%E5%95%86%E4%BA%8B%E4%B8%BB%E4%BD%93%E6%9F%A5%E8%AF%A2">https://amr.sz.gov.cn/outer/entSelect/gs.html</a></li>
+<li><a href="%E5%9B%BD%E5%A4%96%E5%85%AC%E5%8F%B8%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://opencorporates.com/</a> &ndash;
+数据涵盖129国家/地区的1.6亿家公司</li>
+<li><a href="%E9%A6%99%E6%B8%AF%E5%85%AC%E5%8F%B8%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.icris.cr.gov.hk/csci/</a></li>
+<li><a href="%E5%8F%B0%E6%B9%BE%E5%85%AC%E5%8F%B8%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://findbiz.nat.gov.tw/fts/query/QueryBar/queryInit.do</a></li>
+<li><a href="%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%85%AC%E5%8F%B8%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.acra.gov.sg/home/</a></li>
+<li><a href="%E8%8B%B1%E5%B1%9E%E7%BB%B4%E5%B0%94%E4%BA%AC%E7%BE%A4%E5%B2%9B%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.bvifsc.vg/</a></li>
+<li><a href="%E7%91%9E%E5%A3%AB%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.uid.admin.ch/search.aspx?lang=en</a></li>
+<li><a href="%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.ssm.com.my/Pages/Home.aspx</a></li>
+<li><a href="%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html?locale=en_CA</a></li>
+<li><a href="%E7%BE%8E%E5%9B%BD%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">http://www.wysk.com/index/</a></li>
+<li><a href="%E8%8B%B1%E5%9B%BD%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://beta.companieshouse.gov.uk/</a></li>
+<li><a href="%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://abr.business.gov.au/</a></li>
+<li><a href="%E4%BF%84%E7%BD%97%E6%96%AF%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">http://www.ved.gov.ru/eng/companies/business/</a></li>
+<li><a href="%E5%BE%B7%E5%9B%BD%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.firmenwissen.de/index.html</a></li>
+<li><a href="%E5%8D%B0%E5%BA%A6%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">http://www.mca.gov.in/</a></li>
+<li><a href="%E6%97%A5%E6%9C%AC%E7%9A%84%E5%B7%A5%E5%95%86%E4%BF%A1%E6%81%AF">https://www.houjin-bangou.nta.go.jp/</a></li>
+<li><a href="%E5%BC%80%E6%9B%BC%E7%BE%A4%E5%B2%9B%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2">https://www.kvk.nl/</a></li>
+<li><a href="%E5%A2%83%E5%A4%96%E9%9D%9E%E6%94%BF%E5%BA%9C%E7%BB%84%E7%BB%87%E6%9F%A5%E8%AF%A2">https://ngo.mps.gov.cn/ngo/portal/index.do</a></li>
+<li><a href="%E5%9B%BD%E5%AE%B6%E4%BC%81%E4%B8%9A%E4%BF%A1%E7%94%A8%E4%BF%A1%E6%81%AF%E5%85%AC%E7%A4%BA%E7%B3%BB%E7%BB%9F">http://www.gsxt.gov.cn/index.html</a></li>
+<li><a href="%E5%9B%BD%E5%AE%B6%E5%B8%82%E5%9C%BA%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E6%80%BB%E5%B1%80">http://zwfw.samr.gov.cn/wyc/</a></li>
+<li><a href="%E5%B0%8F%E5%BE%AE%E4%BC%81%E4%B8%9A%E5%90%8D%E5%BD%95">http://xwqy.gsxt.gov.cn</a></li>
+</ul>
+<h2 id="ipo及上市公司定期公告查询">IPO及上市公司定期公告查询</h2>
+<ul>
+<li><a href="%E5%B7%A8%E6%BD%AE%E8%B5%84%E8%AE%AF%E7%BD%91">http://www.cninfo.com.cn/new/index</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%EF%BC%88%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E5%B9%B3%E5%8F%B0%EF%BC%89">http://eid.csrc.gov.cn/</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A">http://www.csrc.gov.cn/pub/newsite/</a></li>
+<li><a href="%E8%82%A1%E8%BD%AC%E7%B3%BB%E7%BB%9F%E5%85%AC%E5%91%8A%E6%9F%A5%E8%AF%A2">http://www.neeq.com.cn/disclosure/overview_information.html</a></li>
+<li><a href="%E4%B8%8A%E4%BA%A4%E6%89%80%E4%B8%BB%E6%9D%BF%E3%80%81%E7%A7%91%E5%88%9B%E6%9D%BF%E5%90%8D%E5%8D%95%E5%8F%8A%E5%8F%8D%E9%A6%88%E6%9F%A5%E8%AF%A2">http://kcb.sse.com.cn/renewal/</a></li>
+<li><a href="%E6%B7%B1%E4%BA%A4%E6%89%80%E4%B8%BB%E6%9D%BF%E3%80%81%E5%88%9B%E4%B8%9A%E6%9D%BF%E5%90%8D%E5%8D%95%E5%8F%8A%E5%8F%8D%E9%A6%88%E6%9F%A5%E8%AF%A2">http://listing.szse.cn/projectdynamic/ipo/index.html</a></li>
+</ul>
+<h2 id="招股说明书查询">招股说明书查询</h2>
+<ul>
+<li><a href="A%E8%82%A1%E6%8B%9B%E8%82%A1%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%9F%A5%E8%AF%A2">http://eid.csrc.gov.cn/1010/index.html</a></li>
+<li><a href="%E6%B8%AF%E8%82%A1%E6%8B%9B%E8%82%A1%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%9F%A5%E8%AF%A2">http://www.hkexnews.hk/APP/SEHKAppMainIndex_c.htm</a></li>
+<li><a href="%E7%BE%8E%E8%82%A1%E6%8B%9B%E8%82%A1%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%9F%A5%E8%AF%A2">https://www.sec.gov/edgar/searchedgar/companysearch.html</a></li>
+</ul>
+<h2 id="审计程序检索">审计程序检索</h2>
+<ul>
+<li><a href="%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8F%B7%E5%BD%92%E5%B1%9E%E5%9C%B0%E6%9F%A5%E8%AF%A2">http://www.guabu.com/bank/</a></li>
+</ul>
+<h3 id="汇率查询">汇率查询</h3>
+<ul>
+<li><a href="%E5%9B%BD%E5%AE%B6%E5%A4%96%E6%B1%87%E7%AE%A1%E7%90%86%E5%B1%80">http://www.safe.gov.cn/safe/rmbhlzjj/index.html</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%93%B6%E8%A1%8C">http://www.pbc.gov.cn/rmyh/108976/index.html</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%B4%A7%E5%B8%81%E7%BD%91">http://www.chinamoney.com.cn/</a>
+-有汇率、利率等相关信息，由中国外汇交易中心主办。</li>
+</ul>
+<h3 id="利率查询">利率查询</h3>
+<ul>
+<li><a href="LIBOR%E5%8E%86%E5%8F%B2%E5%88%A9%E7%8E%87">http://data.bank.hexun.com/yhcj/cj.aspx?r=0000000001000000&amp;t=12&amp;page=24</a></li>
+<li><a href="%E8%B4%B7%E6%AC%BE%E5%9F%BA%E5%87%86%E5%88%A9%E7%8E%87%E6%9F%A5%E8%AF%A2">http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/125838/125888/index.html</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E5%80%BA%E5%88%B8%E4%BF%A1%E6%81%AF%E7%BD%91-%E4%B8%AD%E5%80%BA%E6%94%B6%E7%9B%8A%E7%8E%87">http://yield.chinabond.com.cn/cbweb-mn/yield_main?locale=zh_CN</a></li>
+<li><a href="%E8%B4%B7%E6%AC%BE%E5%88%A9%E7%8E%87%E5%92%8CLPR">http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/index.html</a></li>
+<li><a href="%E9%93%B6%E8%A1%8C%E6%8B%86%E5%80%9F%E5%88%A9%E7%8E%87">http://data.bank.hexun.com/yhcj/cj.aspx</a></li>
+</ul>
+<h3 id="海关信息查询">海关信息查询</h3>
+<ul>
+<li><a href="%E6%B5%B7%E5%85%B3%E6%80%BB%E7%BD%B2%E6%94%BF%E5%BA%9C%E6%9C%8D%E5%8A%A1%E7%AA%97%E5%8F%A3">http://customs.gjzwfw.gov.cn</a></li>
+<li><a href="%E9%80%9A%E5%85%B3%E6%B5%81%E8%BD%AC%E7%8A%B6%E6%80%81">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/tglzztPC/index.html</a></li>
+<li><a href="%E8%88%B1%E5%8D%95%E9%80%9A%E5%85%B3%E7%8A%B6%E6%80%81%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/cdtgztPC/index.html</a></li>
+<li><a href="%E8%BF%9B%E5%87%BA%E5%8F%A3%E5%95%86%E5%93%81%E7%A8%8E%E7%8E%87%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/jckspslPC/index.html</a></li>
+<li><a href="%E6%9C%AC%E5%9B%BD%E5%AD%90%E7%9B%AE%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/bengzmPC/index.html</a></li>
+<li><a href="%E7%A8%8E%E5%88%99%E5%95%86%E5%93%81%E5%93%81%E7%9B%AE%E6%B3%A8%E9%87%8A">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/szsmzsPC/index.html</a></li>
+<li><a href="%E5%BD%92%E7%B1%BB%E5%86%B3%E5%AE%9A%E8%A3%81%E5%AE%9A">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/gljdcdPC/index.html</a></li>
+<li><a href="%E9%87%8D%E7%82%B9%E5%95%86%E5%93%81%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/zhongdspcxPC/index.html</a></li>
+<li><a href="%E7%A8%8E%E7%9B%AE%E7%A8%8E%E5%8F%B7%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/smshPC/index.html</a></li>
+<li><a href="%E8%88%B1%E5%8D%95%E4%BF%A1%E6%81%AF">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/cdxxPC/index.html</a></li>
+<li><a href="%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%AC%E7%A4%BA">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/qyxigsPC/index.html</a></li>
+</ul>
+<h3 id="商标专利">商标专利</h3>
+<ul>
+<li><a href="%E5%9B%BD%E5%AE%B6%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83">https://www.cnipa.gov.cn/col/col1510/index.html</a></li>
+<li><a href="%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2%E5%8F%8A%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F">http://pss-system.cnipa.gov.cn/sipopublicsearch/portal/uiIndex.shtml</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E5%8F%8A%E5%A4%9A%E5%9B%BD%E4%B8%93%E5%88%A9%E5%AE%A1%E6%9F%A5%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2">http://cpquery.cnipa.gov.cn</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E4%B8%93%E5%88%A9%E5%85%AC%E5%B8%83%E5%85%AC%E5%91%8A">http://epub.cnipa.gov.cn</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E6%9F%A5%E8%AF%A2">http://sbj.cnipa.gov.cn/sbcx/</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E6%B3%A8%E5%86%8C%E5%AE%A1%E6%9F%A5%E5%86%B3%E5%AE%9A%E6%96%87%E4%B9%A6">http://wssq.sbj.cnipa.gov.cn:9080/tmsve/zccw_getMain.xhtml</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E5%BC%82%E8%AE%AE%E5%86%B3%E5%AE%9A%E6%96%87%E4%B9%A6">http://wssq.sbj.cnipa.gov.cn:9080/tmsve/yycw_getMain.xhtml</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E8%AF%84%E5%AE%A1%E8%A3%81%E5%AE%9A/%E5%86%B3%E5%AE%9A%E6%96%87%E4%B9%A6">http://wssq.sbj.cnipa.gov.cn:9080/tmsve/pingshen_getMain.xhtml</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E6%B3%A8%E5%86%8C%E8%AF%81%E6%98%8E%E5%85%AC%E7%A4%BA">http://wsgs.sbj.cnipa.gov.cn:9080/tmpu/</a></li>
+<li><a href="%E5%95%86%E6%A0%87%E5%85%AC%E5%91%8A">http://wsgg.sbj.cnipa.gov.cn:9080/tmann/annInfoView/homePage.html</a></li>
+</ul>
+<h3 id="动产抵押查询">动产抵押查询</h3>
+<ul>
+<li><a href="%E5%85%A8%E5%9B%BD%E5%B8%82%E5%9C%BA%E7%9B%91%E7%AE%A1%E5%8A%A8%E4%BA%A7%E6%8A%B5%E6%8A%BC%E7%99%BB%E8%AE%B0%E4%B8%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F">http://dcdy.gsxt.gov.cn/loginSydq/index.xhtml?isNotLogin=1</a></li>
+</ul>
+<h3 id="国家科技成果库登记结果查询">国家科技成果库登记结果查询</h3>
+<ul>
+<li><a href="%E5%9B%BD%E5%AE%B6%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E5%BA%93%E7%99%BB%E8%AE%B0%E7%BB%93%E6%9E%9C%E6%9F%A5%E8%AF%A2">https://www.tech110.net/portal.php?mod=list&amp;catid=538</a></li>
+</ul>
+<h3 id="征信报告查询">征信报告查询</h3>
+<ul>
+<li><a href="%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%93%B6%E8%A1%8C%E5%BE%81%E4%BF%A1%E4%B8%AD%E5%BF%83">http://www.pbccrc.org.cn/</a></li>
+</ul>
+<h3 id="海外银行函证">海外银行函证</h3>
+<ul>
+<li><a href="comformation">https://zs.confirmation.com/</a></li>
+</ul>
+<h3 id="诉讼">诉讼</h3>
+<ul>
+<li><a href="%E5%85%A8%E5%9B%BD%E6%B3%95%E9%99%A2%E8%A2%AB%E6%89%A7%E8%A1%8C%E4%BA%BA%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2">http://zhixing.court.gov.cn/search/</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%A3%81%E5%88%A4%E6%96%87%E4%B9%A6%E7%BD%91">http://wenshu.court.gov.cn/</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E6%89%A7%E8%A1%8C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%BD%91">http://zxgk.court.gov.cn/</a></li>
+</ul>
+<h2 id="事务所信息查询">事务所信息查询</h2>
+<ul>
+<li><a href="%E6%B3%A8%E5%86%8C%E4%BC%9A%E8%AE%A1%E5%B8%88%E8%A1%8C%E4%B8%9A%E7%BB%9F%E4%B8%80%E7%9B%91%E7%AE%A1%E5%B9%B3%E5%8F%B0">http://acc.mof.gov.cn/</a> - 注册会计师信息、会计师事务所信息、会计师事务所重名查询、从事证券服务业务会计师事务所备案名录等</li>
+<li><a href="%E4%BC%9A%E8%AE%A1%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%8E%92%E5%90%8D">https://www.cicpa.org.cn/ztzl1/swszhpm/pingjia_1/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E7%AA%97%E5%8F%A3">http://mof.gjzwfw.gov.cn</a></li>
+<li><a href="%E4%BB%A3%E7%90%86%E8%AE%B0%E8%B4%A6%E6%9C%BA%E6%9E%84%E6%9F%A5%E8%AF%A2">http://app.gjzwfw.gov.cn/jmopen/webapp/html5/dljzjgcx/index.html</a></li>
+</ul>
+<h2 id="税收法规查询">税收法规查询</h2>
+<ul>
+<li><a href="%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E6%80%BB%E5%B1%80">http://www.chinatax.gov.cn/chinatax/n810346/index.html</a></li>
+<li><a href="%E7%A8%8E%E6%94%B6%E6%94%BF%E7%AD%96%E5%BA%93">http://www.chinatax.gov.cn/chinatax/n810341/n810825/index.html?title=</a></li>
+<li><a href="%E4%B8%AD%E7%A8%8E%E7%AD%94%E7%96%91%E5%AE%98%E7%BD%91">http://www.shui12366.com/index</a> -
+税收政策、行业税收、税收优惠、法院判例</li>
+<li><a href="%E5%9B%BD%E5%AE%B6%E7%A8%8E%E5%8A%A1%E6%80%BB%E5%B1%80%E5%85%A8%E5%9B%BD%E5%A2%9E%E5%80%BC%E7%A8%8E%E5%8F%91%E7%A5%A8%E6%9F%A5%E9%AA%8C%E5%B9%B3%E5%8F%B0">https://inv-veri.chinatax.gov.cn</a></li>
+<li><a href="%E4%BF%A1%E7%94%A8A%E7%BA%A7%E7%BA%B3%E7%A8%8E%E4%BA%BA%E6%9F%A5%E8%AF%A2">http://hd.chinatax.gov.cn/nszx/InitCredit.html</a></li>
+<li><a href="%E9%87%8D%E5%A4%A7%E7%A8%8E%E6%94%B6%E8%BF%9D%E6%B3%95%E5%A4%B1%E4%BF%A1%E6%A1%88%E4%BB%B6%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2">http://www.chinatax.gov.cn/chinatax/c101249/n2020011502/index.html</a></li>
+<li><a href="%E6%B6%89%E7%A8%8E%E4%B8%93%E4%B8%9A%E6%9C%8D%E5%8A%A1%E6%9C%BA%E6%9E%84%E6%9F%A5%E8%AF%A2">https://12366.chinatax.gov.cn/sszyfw/bulletinBoard/main</a></li>
+<li><a href="%E5%87%BA%E5%8F%A3%E9%80%80%E7%A8%8E%E7%8E%87%E6%9F%A5%E8%AF%A2">http://www.chinatax.gov.cn/n810346/index.html</a></li>
+<li><a href="%E7%A8%8E%E6%94%B6%E6%9D%A1%E7%BA%A6">http://www.chinatax.gov.cn/chinatax/n810341/n810770/index.html</a></li>
+<li><a href="%E7%A8%8E%E5%8A%A1%E5%85%AC%E6%8A%A5">http://www.chinatax.gov.cn/chinatax/n810341/n810765/index.html</a></li>
+</ul>
+<h2 id="处罚信息">处罚信息</h2>
+<ul>
+<li><a href="%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E4%BF%A1%E6%81%AF">https://www.investor.org.cn/was5/web/search?channelid=223359</a></li>
+<li><a href="%E6%8C%82%E7%89%8C%E5%85%AC%E5%8F%B8%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E4%BF%A1%E6%81%AF">https://www.investor.org.cn/was5/web/search?channelid=223359</a></li>
+<li><a href="%E4%B8%AD%E4%BB%8B%E6%9C%BA%E6%9E%84%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E4%BF%A1%E6%81%AF">https://www.investor.org.cn/was5/web/search?channelid=223359</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E5%B8%82%E5%9C%BA%E7%9B%91%E7%9D%A3%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A%E6%96%87%E4%B9%A6%E7%BD%91">http://cfws.samr.gov.cn</a></li>
+<li><a href="%E8%B5%84%E4%BA%A7%E8%AF%84%E4%BC%B0%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E8%AF%9A%E4%BF%A1%EF%BC%88%E5%A4%84%E7%BD%9A%EF%BC%89%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2">http://47.94.11.33:8035/CreditArchives/CreditArchivesInfoSelect</a></li>
+</ul>
+<h1 id="法规学习">法规学习</h1>
+<p>[[https://tujiabing-1258622425.cos.ap-chengdu.myqcloud.com/image_2022-01-05-15-53-33.png)
+会计准则、应用指南、准则解释、实施问答、应用案例、证监会会计监管风险提示合集(截止2021年)
+[<a href="%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1x9puWTGh-E-_Umwei6jTkw?pwd=dc3w</a>
+提取码：dc3w</p>
+<ul>
+<li><a href="%E6%8A%95%E8%B5%84%E9%93%B6%E8%A1%8C%E4%B8%9A%E5%8A%A1%E6%B3%95%E8%A7%84%E6%B1%87%E7%BC%96">http://www.tzyhj.cn/rule.html</a></li>
+</ul>
+<h2 id="准则">准则</h2>
+<ul>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99">http://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99%E8%A7%A3%E9%87%8A">http://kjs.mof.gov.cn/zt/kjzzss/qykjzzjs/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E5%8F%91%E5%B8%83%E6%94%B6%E5%85%A5%E5%87%86%E5%88%99%E3%80%81%E7%A7%9F%E8%B5%81%E5%87%86%E5%88%99%E3%80%81%E8%82%A1%E4%BB%BD%E6%94%AF%E4%BB%98%E5%87%86%E5%88%99%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B">http://kjs.mof.gov.cn/zt/kjzzss/srzzzq/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E6%94%B6%E5%85%A5%E5%87%86%E5%88%99%E5%AE%9E%E6%96%BD%E9%97%AE%E7%AD%94">http://kjs.mof.gov.cn/zt/kjzzss/sswd/srzzsswd/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E5%80%9F%E6%AC%BE%E8%B4%B9%E7%94%A8%E5%87%86%E5%88%99%E5%AE%9E%E6%96%BD%E9%97%AE%E7%AD%94">http://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/</a></li>
+<li><a href="%E8%B4%A2%E6%94%BF%E9%83%A8-%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E5%AE%9E%E6%96%BD%E9%97%AE%E7%AD%94">http://www.mof.gov.cn/gongzhongcanyu/zixunfankui/</a></li>
+<li><a href="%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99%E5%8F%8A%E5%BA%94%E7%94%A8%E6%8C%87%E5%8D%972021%E5%B9%B45%E6%9C%88%E4%BF%AE%E8%AE%A2-%E4%B8%8B%E8%BD%BD">https://wwe.lanzoui.com/ib3yQropyid</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E6%B3%A8%E5%86%8C%E4%BC%9A%E8%AE%A1%E5%B8%88%E5%AE%A1%E8%AE%A1%E5%87%86%E5%88%992019-%E4%B8%8B%E8%BD%BD">https://pan.baidu.com/s/1YNI5eK_kx1BnJmdZ53pPHQ</a>
+-（提取码：f4d9）-2019年发布的18项中国注册会计师审计准则+2020发布的5项中国注册会计师审计准则问题解答</li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E6%B3%A8%E5%86%8C%E4%BC%9A%E8%AE%A1%E5%B8%88%E5%AE%A1%E8%AE%A1%E5%87%86%E5%88%99%E5%BA%94%E7%94%A8%E6%8C%87%E5%8D%97-%E4%B8%8B%E8%BD%BD">https://www.lanzoui.com/i7um6ch</a></li>
+<li><a href="%E5%9B%BD%E9%99%85%E8%B4%A2%E5%8A%A1%E6%8A%A5%E5%91%8A%E5%87%86%E5%88%99%EF%BC%88IFRS%EF%BC%89%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%E6%9C%AC%E5%AF%B9%E7%85%A7%E6%9F%A5%E8%AF%A2%E7%BD%91%E7%AB%99">http://www.casplus.com/standard/standard.asp#ifrs</a></li>
+<li><a href="%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95%E2%80%94%E2%80%94%E5%8F%91%E8%A1%8C%E7%B1%BB%E7%AC%AC5%E5%8F%B7">http://www.csrc.gov.cn/csrc/c101802/c7118278/content.shtml</a></li>
+<li></li>
+</ul>
+<h2 id="h股上市规则">H股上市规则</h2>
+<p>[<a href="H%E8%82%A1%E4%B8%8A%E5%B8%82%E8%A7%84%E5%88%99%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89">https://wwds.lanzouq.com/iz4FM14fcyqd</a></p>
+<h2 id="其它">其它</h2>
+<ul>
+<li><a href="%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95------%E4%BC%9A%E8%AE%A1%E7%B1%BB%E7%AC%AC1%E5%8F%B7">http://www.csrc.gov.cn/newsite/ztzl/jggzsyzy/202011/t20201113_386201.html</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E7%9B%91%E4%BC%9A%E5%8F%91%E8%A1%8C%E5%AE%A1%E6%A0%B8%E4%B8%9A%E5%8A%A1%E9%97%AE%E7%AD%94">http://www.csrc.gov.cn/pub/newsite/fxjgb/fxbzcfg/fxbfxjgwd/202006/t20200610_377997.html</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E7%9B%91%E4%BC%9A%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99">http://www.csrc.gov.cn/pub/newsite/kjb/kjbzcgf/xsjzj/sjpgjggz/</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%94%BF%E5%BA%9C%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80">http://www.csrc.gov.cn/csrc/c101925/zfxxgk_zdgk.shtml?channelid=29ae08ca97d44d6ea365874aa02d44f6</a></li>
+<li>[http://www.bicpa.org.cn/zyfwz/zyfw/index.html](北京注册会计师协会专业技术委员会
+专家提示)</li>
+<li><a href="%E5%BE%B7%E5%8B%A4%E5%8F%91%E5%B8%83%E4%BC%9A%E8%AE%A1%E7%A0%94%E7%A9%B6">http://www.casplus.com/home.asp</a></li>
+</ul>
+<h1 id="网课">网课</h1>
+<ul>
+<li>
+<p><a href="%E7%91%9E%E5%8D%8E%E4%BC%9A%E8%AE%A1%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E5%90%88%E4%BC%99%E4%BA%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%A1%E8%AE%A1%E5%AE%9E%E6%93%8D">https://www.bilibili.com/video/BV1Ts411L7mz?from=search&amp;seid=4193060424620229640</a>
+B站上提供的审计实操课程。</p>
+</li>
+<li>
+<p><a href="%E4%B8%AD%E5%AE%A1%E4%BC%97%E7%8E%AF%E9%99%88%E5%A5%95%E8%94%9A%E3%80%8A%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95-%E4%BC%9A%E8%AE%A1%E7%B1%BB%E7%AC%AC2%E5%8F%B7%E3%80%8B%E3%80%8A21%E5%B9%B4%E8%B4%A2%E6%94%BF%E9%83%A8%E5%8F%91%E5%B8%83%E6%A1%88%E4%BE%8B%E3%80%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94%E8%A6%81%E7%82%B9%E3%80%8B">https://www.bilibili.com/video/BV1434y1r7e3</a></p>
+</li>
+<li>
+<p><a href="%E5%AE%A1%E8%AE%A1%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87%E8%AF%BE">https://space.bilibili.com/229695603/channel/detail?cid=86210</a>
+B站上讲解用excel常用函数以及VBA工具提高效率。</p>
+</li>
+<li>
+<p><a href="IT%E5%AE%A1%E8%AE%A1%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C">https://www.bilibili.com/video/BV1sF411i7LG</a> -
+python,sql网课教程</p>
+</li>
+<li>
+<p><a href="%E5%A4%A9%E8%81%8C%E5%9B%BD%E9%99%85%E5%85%AC%E5%BC%80%E8%AF%BE-%E8%B4%A2%E5%AE%A1Excel%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A">https://www.bilibili.com/video/BV17t4y1K7yT</a>
+&ndash;excel免费实操课</p>
+</li>
+<li>
+<p><a href="%E5%A4%A9%E8%81%8C%E5%9B%BD%E9%99%85%E5%85%AC%E5%BC%80%E8%AF%BE-%E8%B4%A2%E5%AE%A1Word%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A">https://www.bilibili.com/video/BV1s14y1c769</a> &ndash;word免费课程</p>
+</li>
+<li>
+<p><a href="%E4%B8%8A%E6%B5%B7%E8%AF%81%E5%88%B8%E4%BA%A4%E6%98%93%E6%89%80%E5%85%AC%E5%BC%80%E8%AF%BE">https://pujiang.sse.com.cn/course/explore/open?code=GKKJGXSYZC</a></p>
+</li>
+<li>
+<p><a href="%E5%8C%97%E4%BA%A4%E6%89%80%E5%AE%98%E6%96%B9%E5%9F%B9%E8%AE%AD%E8%AF%BE%E4%BB%B60927%EF%BC%88112%E9%A1%B5%EF%BC%89">https://www.lanzouw.com/inde1ulwule</a>
+密码：00</p>
+</li>
+<li>
+<p><a href="%E5%8C%97%E4%BA%AC%E8%AF%81%E5%88%B8%E4%BA%A4%E6%98%93%E6%89%80%E6%96%B0%E6%94%BF%E8%A7%A3%E8%AF%BB-%E4%B8%AD%E9%87%91%E5%85%AC%E5%8F%B8-2021.9">https://www.lanzouw.com/ikRhqulwuyh</a>
+密码:00</p>
+</li>
+<li>
+<p><a href="%E5%8F%8A%E6%99%93%E6%85%A7%E8%80%81%E5%B8%88%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82">https://liarn.ke.qq.com/#tab=1&amp;category=-1</a>
+-底稿法编制现金流量表</p>
+</li>
+<li>
+<p><a href="%E5%85%A8%E5%9B%BD%E4%B8%AD%E5%B0%8F%E4%BC%81%E4%B8%9A%E8%82%A1%E8%BD%AC%E7%B3%BB%E7%BB%9F-%E5%9F%B9%E8%AE%AD%E5%9B%AD%E5%9C%B0">http://www.neeq.com.cn/investor_guide/train_area.html</a>
+-包含会计准则、北交所上市法规等视频</p>
+</li>
+<li>
+<p><a href="%E6%96%B0%E7%A7%9F%E8%B5%81%E5%87%86%E5%88%99%EF%BC%88%E4%B8%8A%EF%BC%89">https://video.neeq.com.cn/sv/43d0c81f-182ed763488/43d0c81f-182ed763488.mp4</a>
+&ndash;KPMG执业技术部合伙人-新租赁准则（上）</p>
+</li>
+<li>
+<p><a href="%E6%96%B0%E7%A7%9F%E8%B5%81%E5%87%86%E5%88%99%EF%BC%88%E4%B8%8B%EF%BC%89">https://video.neeq.com.cn/sv/4a31233e-182ed7634b6/4a31233e-182ed7634b6.mp4</a>
+&ndash;KPMG执业技术部合伙人-新租赁准则（下）
+<a href="PPT%E4%B8%8B%E8%BD%BD">http://www.neeq.com.cn/kjl/200012801.html</a></p>
+</li>
+</ul>
+<h1 id="书籍">书籍</h1>
+<ul>
+<li><a href="%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6">https://weread.qq.com/</a>
+-微信读书移动端APP，可以免费看很多正版书籍，适合通勤路上学习。</li>
+<li><a href="jiumo%E6%90%9C%E4%B9%A6">https://www.jiumodiary.com/</a> -免费下载中文书籍</li>
+<li>[http://libgen.rs/](Library Genesis) -免费下载英文书籍</li>
+<li><a href="%E8%AE%A9%E6%95%B0%E5%AD%97%E8%AF%B4%E8%AF%9D">https://book.douban.com/subject/26746460/</a>
+-作者以浅显易懂的语言、幽默诙谐的比喻和旁征博引的故事引领我们开启一段奇妙的阅读旅程。</li>
+<li><a href="%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99%E5%86%85%E5%9C%A8%E9%80%BB%E8%BE%91">https://book.douban.com/subject/26871620/</a>
+-理解会计准则原理的不错的书。</li>
+<li><a href="%E5%AE%A1%E8%AE%A1excel%E6%8A%80%E8%83%BD%E6%89%8B%E5%86%8C">https://wwe.lanzoui.com/iB6l3rpmbaf</a>
+-详细讲解了审计工作中需要用到的Excel基本技能，比较推荐。</li>
+<li><a href="%E5%AE%A1%E8%AE%A1%E6%95%88%E7%8E%87%E6%89%8B%E5%86%8C">https://book.douban.com/subject/34886553/</a>
+-讲解了Excel函数和Excel VBA制作一些审计工具。</li>
+<li><a href="%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B62010%EF%BD%9E2019%E6%B1%87%E7%BC%96">https://bbs.esnai.com/thread-5413973-1-1.html</a>
+-审计实务问题汇编</li>
+<li><a href="%E4%B8%AD%E5%AE%A1%E4%BC%97%E7%8E%AF%E7%A0%94%E7%A9%B6">https://wwe.lanzoui.com/iBRuSrpljuh</a></li>
+<li><a href="%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E6%89%A7%E8%A1%8C%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99%E6%A1%88%E4%BE%8B%E8%A7%A3%E6%9E%90%EF%BC%882020%EF%BC%89">https://wwe.lanzoui.com/i3PgOrpljob</a></li>
+<li><a href="IPO%E5%AE%A1%E6%A0%B8%E9%97%AE%E7%AD%94%E6%B1%87%E7%BC%9620210716">https://wwe.lanzoui.com/i0tYwrpljna</a></li>
+<li><a href="%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%AE%A1%E8%AE%A1%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98200%E6%A1%88%E4%BE%8B">https://www.aliyundrive.com/s/bSk7pyuSdqQ</a>
+-(提取码：gkt0)</li>
+<li><a href="%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E5%AE%A1%E8%AE%A1%E4%B8%AD%E5%AF%B9%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%80%83%E8%99%91">https://book.douban.com/subject/30587232/</a></li>
+<li><a href="%E4%B8%AD%E5%9B%BD%E8%AF%81%E7%9B%91%E4%BC%9A%E5%85%B3%E4%BA%8E%E4%BC%9A%E8%AE%A1%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E4%BB%8E%E4%BA%8B%E8%AF%81%E5%88%B8%E6%9C%8D%E5%8A%A1%E4%B8%9A%E5%8A%A1%E6%A3%80%E6%9F%A5%E5%B7%A5%E4%BD%9C%E6%8C%87%E5%BC%95">https://pan.baidu.com/s/1pJ7h6ZBAvRStgGi9nYSYEg</a>
+提取码：z6jn</li>
+<li><a href="%E7%83%AD%E7%82%B9%E9%9A%BE%E7%82%B9%E4%BC%9A%E8%AE%A1%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%98%E7%A0%94%E7%A9%B6%EF%BC%882021%EF%BC%89-%E5%A4%A9%E8%81%8C%E5%9B%BD%E9%99%85">https://wwe.lanzoui.com/iz8wMvo3ugj</a></li>
+<li><a href="%E8%B4%A2%E5%8A%A1%E7%82%BC%E9%87%91%E6%9C%AF">https://wwe.lanzoui.com/ipeEpvo491e</a>
+-主要介绍通过行业信息以及报表数据识别是否有造假</li>
+<li><a href="IT%E5%AE%A1%E8%AE%A1%EF%BC%9A%E7%94%A8SQL+Python%E6%8F%90%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87">https://book.douban.com/subject/35922721/</a>
+-主要介绍利用SQL+Python进行数据分析</li>
+</ul>
+<h1 id="自媒体">自媒体</h1>
+<h2 id="微信公众号">微信公众号</h2>
+<ul>
+<li>会计雅苑 - 审计行业热点资讯（每日更新）</li>
+<li>审计之家 - 审计行业热点资讯（每日更新）</li>
+<li>季丰的会计师驿站 - 行业资讯(每日更新)</li>
+<li>逆行的狗 - 效率工具、个人感悟、IT审计（每日更新）</li>
+<li>田川不是四川 -审计实务及漫画（更新频率较低）</li>
+<li>效率视界 -审计工具(每周更新)</li>
+<li>茶瓜子的休闲馆 -vba实用工具(每周更新)</li>
+<li>行走的审计汪 -审计实务（每日更新）</li>
+<li>数据化审计 -信息技术在审计中的运用(每周更新)</li>
+<li>世外数豆人 -投行效率工具(每周更新)</li>
+<li>关锁匠 -IT审计资讯(更新频率较低)</li>
+<li>会计小王子 -财务中级考试(更新频率较低)</li>
+</ul>
+<h2 id="微博">微博</h2>
+<ul>
+<li>待大家提供(本人不怎么用微博)</li>
+</ul>
+<h2 id="b站">B站</h2>
+<ul>
+<li>
+<p><a href="nigo81">https://space.bilibili.com/229695603</a>
+-逆行的狗的B站号，信息技术、效率软件</p>
+</li>
+<li>
+<p><a href="Aton%E5%AE%A1%E8%AE%A1dogge">https://b23.tv/iurZKxQ</a>
+-审计底稿、CPA、面试等相关视频</p>
+</li>
+<li>
+<p>待大家提供</p>
+</li>
+</ul>
+<h1 id="其它-1">其它</h1>
+<ul>
+<li><a href="%E5%90%84%E4%BC%9A%E8%AE%A1%E7%A7%91%E7%9B%AE%E5%AE%A1%E8%AE%A1%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93">https://wwe.lanzoui.com/idPyVi8jtfe</a>
+-林铖总结的每个科目关注点、需要资料、提高效率方法。</li>
+<li><a href="%E4%BC%9A%E8%AE%A1%E8%A7%86%E9%87%8E%E8%AE%BA%E5%9D%9B%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91%E6%B1%87%E6%80%BB">https://wwe.lanzoui.com/b01nyhiod</a>
+-(密码:1mki)论坛CPA业务探讨版块问答的汇总。</li>
+<li><a href="%E5%90%88%E5%B9%B6%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E5%8A%A1--%E5%A4%8D%E6%9D%82%E8%82%A1%E6%9D%83%E7%BB%93%E6%9E%84%E4%B8%8E%E6%88%90%E6%9C%AC%E6%B3%95%E5%90%88%E5%B9%B6">https://wwe.lanzoui.com/ib5c2ronong</a>
+-及晓慧老师分享的合并报表课件。</li>
+<li><a href="%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8-%E5%BA%95%E7%A8%BF%E6%B3%95%E8%AF%BE%E4%BB%B6.pptx">https://wwe.lanzoui.com/ia4Vnvo3l2b</a> &ndash;
+及晓慧老师的现金流量表课件。</li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/">← IT审计案例：某集团数据治理审计</a></div>
+    <div><a href="https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/">IT审计  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

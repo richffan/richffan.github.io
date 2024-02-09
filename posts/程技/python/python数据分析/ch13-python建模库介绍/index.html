@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="第十三章 Python 建模库介绍 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>第十三章 Python 建模库介绍</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            第十三章 Python 建模库介绍
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            6607 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            14 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#131-pandas与模型代码的接口">13.1 pandas与模型代码的接口</a></li>
+    <li><a href="#132-用patsy创建模型描述">13.2 用Patsy创建模型描述</a>
+      <ul>
+        <li><a href="#1321-用patsy公式进行数据转换">13.2.1 用Patsy公式进行数据转换</a></li>
+        <li><a href="#1322-分类数据和patsy">13.2.2 分类数据和Patsy</a></li>
+      </ul>
+    </li>
+    <li><a href="#133-statsmodels介绍">13.3 statsmodels介绍</a>
+      <ul>
+        <li><a href="#1331-估计线性模型">13.3.1 估计线性模型</a></li>
+        <li><a href="#1332-估计时间序列过程">13.3.2 估计时间序列过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#134-scikit-learn介绍">13.4 scikit-learn介绍</a></li>
+    <li><a href="#135-继续学习">13.5 继续学习</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。</p>
+<p>开发模型选用什么库取决于应用本身。许多统计问题可以用简单方法解决，比如普通的最小二乘回归，其它问题可能需要复杂的机器学习方法。幸运的是，Python已经成为了运用这些分析方法的语言之一，因此读完此书，你可以探索许多工具。</p>
+<p>本章中，我会回顾一些pandas的特点，在你胶着于pandas数据规整和模型拟合和评分时，它们可能派上用场。然后我会简短介绍两个流行的建模工具，statsmodels和scikit-learn。这二者每个都值得再写一本书，我就不做全面的介绍，而是建议你学习两个项目的线上文档和其它基于Python的数据科学、统计和机器学习的书籍。</p>
+<h2 id="131-pandas与模型代码的接口">13.1 pandas与模型代码的接口</h2>
+<p>模型开发的通常工作流是使用pandas进行数据加载和清洗，然后切换到建模库进行建模。**开发模型的重要一环是机器学习中的“特征工程”。**它可以描述从原始数据集中提取信息的任何数据转换或分析，这些数据集可能在建模中有用。本书中学习的数据聚合和GroupBy工具常用于特征工程中。</p>
+<p>优秀的特征工程超出了本书的范围，我会尽量直白地介绍一些用于数据操作和建模切换的方法。</p>
+<p>pandas与其它分析库通常是靠NumPy的数组联系起来的。将DataFrame转换为NumPy数组，可以使用.values属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">10</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">11</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">np</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">12</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x0&#39;</span>: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x1&#39;</span>: [<span style="color:#099">0.01</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>, <span style="color:#099">0.25</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span>, <span style="color:#099">0.</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;y&#39;</span>: [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>, <span style="color:#099">0.</span>, <span style="color:#099">3.6</span>, <span style="color:#099">1.3</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">13</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">13</span>]: 
+</span></span><span style="display:flex;"><span>   x0    x1    y
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">1</span>  <span style="color:#099">0.01</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>  <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">3</span>  <span style="color:#099">0.25</span>  <span style="color:#099">3.6</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>  <span style="color:#099">1.3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#099">5</span>  <span style="color:#099">0.00</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">14</span>]: data<span style="color:#000;font-weight:bold">.</span>columns
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">14</span>]: Index([<span style="color:#d14">&#39;x0&#39;</span>, <span style="color:#d14">&#39;x1&#39;</span>, <span style="color:#d14">&#39;y&#39;</span>], dtype<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;object&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">15</span>]: data<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">15</span>]: 
+</span></span><span style="display:flex;"><span>array([[ <span style="color:#099">1.</span>  ,  <span style="color:#099">0.01</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">2.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>,  <span style="color:#099">0.</span>  ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">3.</span>  ,  <span style="color:#099">0.25</span>,  <span style="color:#099">3.6</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">4.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span> ,  <span style="color:#099">1.3</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">5.</span>  ,  <span style="color:#099">0.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.</span>  ]])
+</span></span></code></pre></div><p>要转换回DataFrame，可以传递一个二维ndarray，可带有列名：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">16</span>]: df2 <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(data<span style="color:#000;font-weight:bold">.</span>values, columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;one&#39;</span>, <span style="color:#d14">&#39;two&#39;</span>, <span style="color:#d14">&#39;three&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">17</span>]: df2
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">17</span>]: 
+</span></span><span style="display:flex;"><span>   one   two  three
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>  <span style="color:#099">1.0</span>  <span style="color:#099">0.01</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">2.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>    <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">3.0</span>  <span style="color:#099">0.25</span>    <span style="color:#099">3.6</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">4.0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>    <span style="color:#099">1.3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">5.0</span>  <span style="color:#099">0.00</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>
+</span></span></code></pre></div><blockquote>
+<p>笔记：最好当数据是均匀的时候使用.values属性。例如，全是数值类型。如果数据是不均匀的，结果会是Python对象的ndarray：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">18</span>]: df3 <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>copy()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">19</span>]: df3[<span style="color:#d14">&#39;strings&#39;</span>] <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;c&#39;</span>, <span style="color:#d14">&#39;d&#39;</span>, <span style="color:#d14">&#39;e&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">20</span>]: df3
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">20</span>]: 
+</span></span><span style="display:flex;"><span>  x0    x1    y strings
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">1</span>  <span style="color:#099">0.01</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>       a
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>  <span style="color:#099">0.0</span>       b
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">3</span>  <span style="color:#099">0.25</span>  <span style="color:#099">3.6</span>       c
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>  <span style="color:#099">1.3</span>       d
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#099">5</span>  <span style="color:#099">0.00</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>       e
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">21</span>]: df3<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">21</span>]: 
+</span></span><span style="display:flex;"><span>array([[<span style="color:#099">1</span>, <span style="color:#099">0.01</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>, <span style="color:#d14">&#39;a&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>, <span style="color:#099">0.0</span>, <span style="color:#d14">&#39;b&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#099">3</span>, <span style="color:#099">0.25</span>, <span style="color:#099">3.6</span>, <span style="color:#d14">&#39;c&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#099">4</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span>, <span style="color:#099">1.3</span>, <span style="color:#d14">&#39;d&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#099">5</span>, <span style="color:#099">0.0</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>, <span style="color:#d14">&#39;e&#39;</span>]], dtype<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">object</span>)
+</span></span></code></pre></div></blockquote>
+<p>对于一些模型，你可能只想使用列的子集。我建议你使用loc，用values作索引：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">22</span>]: model_cols <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;x0&#39;</span>, <span style="color:#d14">&#39;x1&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">23</span>]: data<span style="color:#000;font-weight:bold">.</span>loc[:, model_cols]<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">23</span>]: 
+</span></span><span style="display:flex;"><span>array([[ <span style="color:#099">1.</span>  ,  <span style="color:#099">0.01</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">2.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">3.</span>  ,  <span style="color:#099">0.25</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">4.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">5.</span>  ,  <span style="color:#099">0.</span>  ]])
+</span></span></code></pre></div><p>一些库原生支持pandas，会自动完成工作：从DataFrame转换到NumPy，将模型的参数名添加到输出表的列或Series。其它情况，你可以手工进行“元数据管理”。</p>
+<p>在第12章，我们学习了pandas的Categorical类型和pandas.get_dummies函数。假设数据集中有一个非数值列：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">24</span>]: data[<span style="color:#d14">&#39;category&#39;</span>] <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Categorical([<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:                                   categories<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">25</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">25</span>]: 
+</span></span><span style="display:flex;"><span>   x0    x1    y category
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">1</span>  <span style="color:#099">0.01</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>        a
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>  <span style="color:#099">0.0</span>        b
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">3</span>  <span style="color:#099">0.25</span>  <span style="color:#099">3.6</span>        a
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>  <span style="color:#099">1.3</span>        a
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#099">5</span>  <span style="color:#099">0.00</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>        b
+</span></span></code></pre></div><p>如果我们想替换category列为虚变量，我们可以创建虚变量，删除category列，然后添加到结果：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">26</span>]: dummies <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>get_dummies(data<span style="color:#000;font-weight:bold">.</span>category, prefix<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;category&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">27</span>]: data_with_dummies <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>drop(<span style="color:#d14">&#39;category&#39;</span>, axis<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>)<span style="color:#000;font-weight:bold">.</span>join(dummies)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">28</span>]: data_with_dummies
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">28</span>]: 
+</span></span><span style="display:flex;"><span>   x0    x1    y  category_a  category_b
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">1</span>  <span style="color:#099">0.01</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>  <span style="color:#099">0.0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">3</span>  <span style="color:#099">0.25</span>  <span style="color:#099">3.6</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>  <span style="color:#099">1.3</span>           <span style="color:#099">1</span>           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#099">5</span>  <span style="color:#099">0.00</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>           <span style="color:#099">0</span>           <span style="color:#099">1</span>
+</span></span></code></pre></div><p>用虚变量拟合某些统计模型会有一些细微差别。当你不只有数字列时，使用Patsy（下一节的主题）可能更简单，更不容易出错。</p>
+<h2 id="132-用patsy创建模型描述">13.2 用Patsy创建模型描述</h2>
+<p><code>Patsy</code>是Python的一个库，使用简短的字符串“公式语法”描述统计模型（尤其是线性模型），可能是受到了R和S统计编程语言的公式语法的启发。</p>
+<p>Patsy适合描述statsmodels的线性模型，因此我会关注于它的主要特点，让你尽快掌握。Patsy的公式是一个特殊的字符串语法，如下所示：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">~</span> x0 <span style="color:#000;font-weight:bold">+</span> x1
+</span></span></code></pre></div><p>a+b不是将a与b相加的意思，而是为模型创建的设计矩阵。patsy.dmatrices函数接收一个公式字符串和一个数据集（可以是DataFrame或数组的字典），为线性模型创建设计矩阵：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">29</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x0&#39;</span>: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x1&#39;</span>: [<span style="color:#099">0.01</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>, <span style="color:#099">0.25</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span>, <span style="color:#099">0.</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;y&#39;</span>: [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>, <span style="color:#099">0.</span>, <span style="color:#099">3.6</span>, <span style="color:#099">1.3</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">30</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">30</span>]: 
+</span></span><span style="display:flex;"><span>   x0    x1    y
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#099">1</span>  <span style="color:#099">0.01</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>  <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>   <span style="color:#099">3</span>  <span style="color:#099">0.25</span>  <span style="color:#099">3.6</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>  <span style="color:#099">1.3</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#099">5</span>  <span style="color:#099">0.00</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">31</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">patsy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">32</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;y ~ x0 + x1&#39;</span>, data)
+</span></span></code></pre></div><p>现在有：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">33</span>]: y
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">33</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>     y
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">3.6</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">1.3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.0</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;y&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">34</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">34</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>  Intercept  x0     x1
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">1</span>   <span style="color:#099">0.01</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">2</span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">3</span>   <span style="color:#099">0.25</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">4</span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">5</span>   <span style="color:#099">0.00</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;x0&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;x1&#39;</span> (column <span style="color:#099">2</span>)
+</span></span></code></pre></div><p>这些Patsy的DesignMatrix实例是NumPy的ndarray，带有附加元数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">35</span>]: np<span style="color:#000;font-weight:bold">.</span>asarray(y)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">35</span>]: 
+</span></span><span style="display:flex;"><span>array([[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">0.</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">3.6</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.3</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.</span> ]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">36</span>]: np<span style="color:#000;font-weight:bold">.</span>asarray(X)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">36</span>]: 
+</span></span><span style="display:flex;"><span>array([[ <span style="color:#099">1.</span>  ,  <span style="color:#099">1.</span>  ,  <span style="color:#099">0.01</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>  ,  <span style="color:#099">2.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>  ,  <span style="color:#099">3.</span>  ,  <span style="color:#099">0.25</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>  ,  <span style="color:#099">4.</span>  , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.1</span> ],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>  ,  <span style="color:#099">5.</span>  ,  <span style="color:#099">0.</span>  ]])
+</span></span></code></pre></div><p>你可能想Intercept是哪里来的。这是线性模型（比如普通最小二乘回归）的惯例用法。添加 +0 到模型可以不显示intercept：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">37</span>]: patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;y ~ x0 + x1 + 0&#39;</span>, data)[<span style="color:#099">1</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">37</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>  x0     x1
+</span></span><span style="display:flex;"><span>   <span style="color:#099">1</span>   <span style="color:#099">0.01</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">2</span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.01</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">3</span>   <span style="color:#099">0.25</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">4</span>  <span style="color:#000;font-weight:bold">-</span><span style="color:#099">4.10</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">5</span>   <span style="color:#099">0.00</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;x0&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;x1&#39;</span> (column <span style="color:#099">1</span>)
+</span></span></code></pre></div><p>Patsy对象可以直接传递到算法（比如numpy.linalg.lstsq）中，它执行普通最小二乘回归：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">38</span>]: coef, resid, _, _ <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>linalg<span style="color:#000;font-weight:bold">.</span>lstsq(X, y)
+</span></span></code></pre></div><p>模型的元数据保留在design_info属性中，因此你可以重新附加列名到拟合系数，以获得一个Series，例如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">39</span>]: coef
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">39</span>]: 
+</span></span><span style="display:flex;"><span>array([[ <span style="color:#099">0.3129</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0791</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.2655</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">40</span>]: coef <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>Series(coef<span style="color:#000;font-weight:bold">.</span>squeeze(), index<span style="color:#000;font-weight:bold">=</span>X<span style="color:#000;font-weight:bold">.</span>design_info<span style="color:#000;font-weight:bold">.</span>column_names)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">41</span>]: coef
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">41</span>]: 
+</span></span><span style="display:flex;"><span>Intercept    <span style="color:#099">0.312910</span>
+</span></span><span style="display:flex;"><span>x0          <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.079106</span>
+</span></span><span style="display:flex;"><span>x1          <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.265464</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><h3 id="1321-用patsy公式进行数据转换">13.2.1 用Patsy公式进行数据转换</h3>
+<p>你可以将Python代码与patsy公式结合。在评估公式时，库将尝试查找在封闭作用域内使用的函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">42</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;y ~ x0 + np.log(np.abs(x1) + 1)&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">43</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">43</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>  Intercept  x0  np<span style="color:#000;font-weight:bold">.</span>log(np<span style="color:#000;font-weight:bold">.</span>abs(x1) <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">1</span>                 <span style="color:#099">0.00995</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">2</span>                 <span style="color:#099">0.00995</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">3</span>                 <span style="color:#099">0.22314</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">4</span>                 <span style="color:#099">1.62924</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>   <span style="color:#099">5</span>                 <span style="color:#099">0.00000</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;x0&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;np.log(np.abs(x1) + 1)&#39;</span> (column <span style="color:#099">2</span>)
+</span></span></code></pre></div><p>常见的变量转换包括标准化（平均值为0，方差为1）和中心化（减去平均值）。Patsy有内置的函数进行这样的工作：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">44</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;y ~ standardize(x0) + center(x1)&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">45</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">45</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>  Intercept  standardize(x0)  center(x1)
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>         <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.41421</span>        <span style="color:#099">0.78</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>         <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.70711</span>        <span style="color:#099">0.76</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0.00000</span>        <span style="color:#099">1.02</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0.70711</span>       <span style="color:#000;font-weight:bold">-</span><span style="color:#099">3.33</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1.41421</span>        <span style="color:#099">0.77</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;standardize(x0)&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;center(x1)&#39;</span> (column <span style="color:#099">2</span>)
+</span></span></code></pre></div><p>作为建模的一步，你可能拟合模型到一个数据集，然后用另一个数据集评估模型。另一个数据集可能是剩余的部分或是新数据。当执行中心化和标准化转变，用新数据进行预测要格外小心。因为你必须使用平均值或标准差转换新数据集，这也称作状态转换。</p>
+<p>patsy.build_design_matrices函数可以使用原始样本数据集的保存信息，来转换新数据，：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">46</span>]: new_data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x0&#39;</span>: [<span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>, <span style="color:#099">9</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;x1&#39;</span>: [<span style="color:#099">3.1</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5</span>, <span style="color:#099">0</span>, <span style="color:#099">2.3</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;y&#39;</span>: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">47</span>]: new_X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>build_design_matrices([X<span style="color:#000;font-weight:bold">.</span>design_info], new_data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">48</span>]: new_X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">48</span>]: 
+</span></span><span style="display:flex;"><span>[DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">4</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>   Intercept  standardize(x0)  center(x1)
+</span></span><span style="display:flex;"><span>           <span style="color:#099">1</span>          <span style="color:#099">2.12132</span>        <span style="color:#099">3.87</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#099">1</span>          <span style="color:#099">2.82843</span>        <span style="color:#099">0.27</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#099">1</span>          <span style="color:#099">3.53553</span>        <span style="color:#099">0.77</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#099">1</span>          <span style="color:#099">4.24264</span>        <span style="color:#099">3.07</span>
+</span></span><span style="display:flex;"><span>   Terms:
+</span></span><span style="display:flex;"><span>     <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#d14">&#39;standardize(x0)&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#d14">&#39;center(x1)&#39;</span> (column <span style="color:#099">2</span>)]
+</span></span></code></pre></div><p>因为Patsy中的加号不是加法的意义，当你按照名称将数据集的列相加时，你必须用特殊I函数将它们封装起来：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">49</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;y ~ I(x0 + x1)&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">50</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">50</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">5</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>  Intercept  I(x0 <span style="color:#000;font-weight:bold">+</span> x1)
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>        <span style="color:#099">1.01</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>        <span style="color:#099">1.99</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>        <span style="color:#099">3.25</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>       <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.10</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>        <span style="color:#099">5.00</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;I(x0 + x1)&#39;</span> (column <span style="color:#099">1</span>)
+</span></span></code></pre></div><p>Patsy的patsy.builtins模块还有一些其它的内置转换。请查看线上文档。</p>
+<p>分类数据有一个特殊的转换类，下面进行讲解。</p>
+<h3 id="1322-分类数据和patsy">13.2.2 分类数据和Patsy</h3>
+<p>非数值数据可以用多种方式转换为模型设计矩阵。完整的讲解超出了本书范围，最好和统计课一起学习。</p>
+<p>当你在Patsy公式中使用非数值数据，它们会默认转换为虚变量。如果有截距，会去掉一个，避免共线性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">51</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;key1&#39;</span>: [<span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;key2&#39;</span>: [<span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;v1&#39;</span>: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>],
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>:     <span style="color:#d14">&#39;v2&#39;</span>: [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">2.5</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5</span>, <span style="color:#099">4.0</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.2</span>, <span style="color:#099">0.2</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.7</span>]
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">....</span>: })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">52</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;v2 ~ key1&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">53</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">53</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">8</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>  Intercept  key1[T<span style="color:#000;font-weight:bold">.</span>b]
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key1&#39;</span> (column <span style="color:#099">1</span>)
+</span></span></code></pre></div><p>如果你从模型中忽略截距，每个分类值的列都会包括在设计矩阵的模型中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">54</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;v2 ~ key1 + 0&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">55</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">55</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">8</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>  key1[a]  key1[b]
+</span></span><span style="display:flex;"><span>        <span style="color:#099">1</span>        <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">1</span>        <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">0</span>        <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">0</span>        <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">1</span>        <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">0</span>        <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">1</span>        <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#099">0</span>        <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key1&#39;</span> (columns <span style="color:#099">0</span>:<span style="color:#099">2</span>)
+</span></span></code></pre></div><p>使用C函数，数值列可以截取为分类量：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">56</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;v2 ~ C(key2)&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">57</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">57</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">8</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>  Intercept  C(key2)[T<span style="color:#099">.1</span>]
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;C(key2)&#39;</span> (column <span style="color:#099">1</span>)
+</span></span></code></pre></div><p>当你在模型中使用多个分类名，事情就会变复杂，因为会包括key1:key2形式的相交部分，它可以用在方差（ANOVA）模型分析中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">58</span>]: data[<span style="color:#d14">&#39;key2&#39;</span>] <span style="color:#000;font-weight:bold">=</span> data[<span style="color:#d14">&#39;key2&#39;</span>]<span style="color:#000;font-weight:bold">.</span>map({<span style="color:#099">0</span>: <span style="color:#d14">&#39;zero&#39;</span>, <span style="color:#099">1</span>: <span style="color:#d14">&#39;one&#39;</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">59</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">59</span>]: 
+</span></span><span style="display:flex;"><span>  key1  key2  v1   v2
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>    a  zero   <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>    a   one   <span style="color:#099">2</span>  <span style="color:#099">0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    b  zero   <span style="color:#099">3</span>  <span style="color:#099">2.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>    b   one   <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>    a  zero   <span style="color:#099">5</span>  <span style="color:#099">4.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>    b   one   <span style="color:#099">6</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>    a  zero   <span style="color:#099">7</span>  <span style="color:#099">0.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">7</span>    b  zero   <span style="color:#099">8</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">60</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;v2 ~ key1 + key2&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">61</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">61</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">8</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>  Intercept  key1[T<span style="color:#000;font-weight:bold">.</span>b]  key2[T<span style="color:#000;font-weight:bold">.</span>zero]
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key1&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key2&#39;</span> (column <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">62</span>]: y, X <span style="color:#000;font-weight:bold">=</span> patsy<span style="color:#000;font-weight:bold">.</span>dmatrices(<span style="color:#d14">&#39;v2 ~ key1 + key2 + key1:key2&#39;</span>, data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">63</span>]: X
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">63</span>]: 
+</span></span><span style="display:flex;"><span>DesignMatrix <span style="color:#000;font-weight:bold">with</span> shape (<span style="color:#099">8</span>, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>  Intercept  key1[T<span style="color:#000;font-weight:bold">.</span>b]  key2[T<span style="color:#000;font-weight:bold">.</span>zero]
+</span></span><span style="display:flex;"><span>key1[T<span style="color:#000;font-weight:bold">.</span>b]:key2[T<span style="color:#000;font-weight:bold">.</span>zero]
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">0</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>                       <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">0</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">0</span>             <span style="color:#099">1</span>                       <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#099">1</span>          <span style="color:#099">1</span>             <span style="color:#099">1</span>                       <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  Terms:
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;Intercept&#39;</span> (column <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key1&#39;</span> (column <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key2&#39;</span> (column <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#39;key1:key2&#39;</span> (column <span style="color:#099">3</span>)
+</span></span></code></pre></div><p>Patsy提供转换分类数据的其它方法，包括以特定顺序转换。请参阅线上文档。</p>
+<h2 id="133-statsmodels介绍">13.3 statsmodels介绍</h2>
+<p>statsmodels是Python进行拟合多种统计模型、进行统计试验和数据探索可视化的库。Statsmodels包含许多经典的统计方法，但没有贝叶斯方法和机器学习模型。</p>
+<p>statsmodels包含的模型有：</p>
+<ul>
+<li>线性模型，广义线性模型和健壮线性模型</li>
+<li>线性混合效应模型</li>
+<li>方差（ANOVA）方法分析</li>
+<li>时间序列过程和状态空间模型</li>
+<li>广义矩估计</li>
+</ul>
+<p>下面，我会使用一些基本的statsmodels工具，探索Patsy公式和pandasDataFrame对象如何使用模型接口。</p>
+<h3 id="1331-估计线性模型">13.3.1 估计线性模型</h3>
+<p>statsmodels有多种线性回归模型，包括从基本（比如普通最小二乘）到复杂（比如迭代加权最小二乘法）的。</p>
+<p>statsmodels的线性模型有两种不同的接口：基于数组和基于公式。它们可以通过API模块引入：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">statsmodels.api</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">sm</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">statsmodels.formula.api</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">smf</span>
+</span></span></code></pre></div><p>为了展示它们的使用方法，我们从一些随机数据生成一个线性模型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">dnorm</span>(mean, variance, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">isinstance</span>(size, <span style="color:#0086b3">int</span>):
+</span></span><span style="display:flex;"><span>        size <span style="color:#000;font-weight:bold">=</span> size,
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> mean <span style="color:#000;font-weight:bold">+</span> np<span style="color:#000;font-weight:bold">.</span>sqrt(variance) <span style="color:#000;font-weight:bold">*</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#000;font-weight:bold">*</span>size)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># For reproducibility</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>seed(<span style="color:#099">12345</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>N <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>c_[dnorm(<span style="color:#099">0</span>, <span style="color:#099">0.4</span>, size<span style="color:#000;font-weight:bold">=</span>N),
+</span></span><span style="display:flex;"><span>          dnorm(<span style="color:#099">0</span>, <span style="color:#099">0.6</span>, size<span style="color:#000;font-weight:bold">=</span>N),
+</span></span><span style="display:flex;"><span>          dnorm(<span style="color:#099">0</span>, <span style="color:#099">0.2</span>, size<span style="color:#000;font-weight:bold">=</span>N)]
+</span></span><span style="display:flex;"><span>eps <span style="color:#000;font-weight:bold">=</span> dnorm(<span style="color:#099">0</span>, <span style="color:#099">0.1</span>, size<span style="color:#000;font-weight:bold">=</span>N)
+</span></span><span style="display:flex;"><span>beta <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">0.1</span>, <span style="color:#099">0.3</span>, <span style="color:#099">0.5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>dot(X, beta) <span style="color:#000;font-weight:bold">+</span> eps
+</span></span></code></pre></div><p>这里，我使用了“真实”模型和可知参数beta。此时，dnorm可用来生成正态分布数据，带有特定均值和方差。现在有：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">66</span>]: X[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">66</span>]: 
+</span></span><span style="display:flex;"><span>array([[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.1295</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.2128</span>,  <span style="color:#099">0.5042</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">0.3029</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.4357</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.2542</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3285</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0253</span>,  <span style="color:#099">0.1384</span>],
+</span></span><span style="display:flex;"><span>       [<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3515</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.7196</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.2582</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.2433</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3738</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5226</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">67</span>]: y[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">67</span>]: array([ <span style="color:#099">0.4279</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.6735</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0909</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.4895</span>,<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.1289</span>])
+</span></span></code></pre></div><p>像之前Patsy看到的，线性模型通常要拟合一个截距。sm.add_constant函数可以添加一个截距的列到现存的矩阵：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">68</span>]: X_model <span style="color:#000;font-weight:bold">=</span> sm<span style="color:#000;font-weight:bold">.</span>add_constant(X)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">69</span>]: X_model[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">69</span>]: 
+</span></span><span style="display:flex;"><span>array([[ <span style="color:#099">1.</span>    , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.1295</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.2128</span>,  <span style="color:#099">0.5042</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>    ,  <span style="color:#099">0.3029</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.4357</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.2542</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>    , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3285</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0253</span>,  <span style="color:#099">0.1384</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>    , <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3515</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.7196</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.2582</span>],
+</span></span><span style="display:flex;"><span>       [ <span style="color:#099">1.</span>    ,  <span style="color:#099">1.2433</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.3738</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5226</span>]])
+</span></span></code></pre></div><p>sm.OLS类可以拟合一个普通最小二乘回归：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">70</span>]: model <span style="color:#000;font-weight:bold">=</span> sm<span style="color:#000;font-weight:bold">.</span>OLS(y, X)
+</span></span></code></pre></div><p>这个模型的fit方法返回了一个回归结果对象，它包含估计的模型参数和其它内容：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">71</span>]: results <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>fit()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">72</span>]: results<span style="color:#000;font-weight:bold">.</span>params
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">72</span>]: array([ <span style="color:#099">0.1783</span>,  <span style="color:#099">0.223</span> ,  <span style="color:#099">0.501</span> ])
+</span></span></code></pre></div><p>对结果使用summary方法可以打印模型的详细诊断结果：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">73</span>]: <span style="color:#0086b3">print</span>(results<span style="color:#000;font-weight:bold">.</span>summary())
+</span></span><span style="display:flex;"><span>OLS Regression Results                            
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">==============================================================================</span>
+</span></span><span style="display:flex;"><span>Dep<span style="color:#000;font-weight:bold">.</span> Variable:                      y   R<span style="color:#000;font-weight:bold">-</span>squared:                       <span style="color:#099">0.430</span>
+</span></span><span style="display:flex;"><span>Model:                            OLS   Adj<span style="color:#000;font-weight:bold">.</span> R<span style="color:#000;font-weight:bold">-</span>squared:                  <span style="color:#099">0.413</span>
+</span></span><span style="display:flex;"><span>Method:                 Least Squares   F<span style="color:#000;font-weight:bold">-</span>statistic:                     <span style="color:#099">24.42</span>
+</span></span><span style="display:flex;"><span>Date:                Mon, <span style="color:#099">25</span> Sep <span style="color:#099">2017</span>   Prob (F<span style="color:#000;font-weight:bold">-</span>statistic):           <span style="color:#099">7.44e-12</span>
+</span></span><span style="display:flex;"><span>Time:                        <span style="color:#099">14</span>:<span style="color:#099">06</span>:<span style="color:#099">15</span>   Log<span style="color:#000;font-weight:bold">-</span>Likelihood:                <span style="color:#000;font-weight:bold">-</span><span style="color:#099">34.305</span>
+</span></span><span style="display:flex;"><span>No<span style="color:#000;font-weight:bold">.</span> Observations:                 <span style="color:#099">100</span>   AIC:                             <span style="color:#099">74.61</span>
+</span></span><span style="display:flex;"><span>Df Residuals:                      <span style="color:#099">97</span>   BIC:                             <span style="color:#099">82.42</span>
+</span></span><span style="display:flex;"><span>Df Model:                           <span style="color:#099">3</span>                                         
+</span></span><span style="display:flex;"><span>Covariance Type:            nonrobust                                         
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">==============================================================================</span>
+</span></span><span style="display:flex;"><span>                 coef    std err          t      P<span style="color:#000;font-weight:bold">&gt;|</span>t<span style="color:#000;font-weight:bold">|</span>      [<span style="color:#099">0.025</span>      <span style="color:#099">0.975</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">------------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>x1             <span style="color:#099">0.1783</span>      <span style="color:#099">0.053</span>      <span style="color:#099">3.364</span>      <span style="color:#099">0.001</span>       <span style="color:#099">0.073</span>       <span style="color:#099">0.283</span>
+</span></span><span style="display:flex;"><span>x2             <span style="color:#099">0.2230</span>      <span style="color:#099">0.046</span>      <span style="color:#099">4.818</span>      <span style="color:#099">0.000</span>       <span style="color:#099">0.131</span>       <span style="color:#099">0.315</span>
+</span></span><span style="display:flex;"><span>x3             <span style="color:#099">0.5010</span>      <span style="color:#099">0.080</span>      <span style="color:#099">6.237</span>      <span style="color:#099">0.000</span>       <span style="color:#099">0.342</span>       <span style="color:#099">0.660</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">==============================================================================</span>
+</span></span><span style="display:flex;"><span>Omnibus:                        <span style="color:#099">4.662</span>   Durbin<span style="color:#000;font-weight:bold">-</span>Watson:                   <span style="color:#099">2.201</span>
+</span></span><span style="display:flex;"><span>Prob(Omnibus):                  <span style="color:#099">0.097</span>   Jarque<span style="color:#000;font-weight:bold">-</span>Bera (JB):                <span style="color:#099">4.098</span>
+</span></span><span style="display:flex;"><span>Skew:                           <span style="color:#099">0.481</span>   Prob(JB):                        <span style="color:#099">0.129</span>
+</span></span><span style="display:flex;"><span>Kurtosis:                       <span style="color:#099">3.243</span>   Cond<span style="color:#000;font-weight:bold">.</span> No<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1.74</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">==============================================================================</span>
+</span></span><span style="display:flex;"><span>Warnings:
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>] Standard Errors assume that the covariance matrix of the errors <span style="color:#000;font-weight:bold">is</span> correctly 
+</span></span><span style="display:flex;"><span>specified<span style="color:#000;font-weight:bold">.</span>
+</span></span></code></pre></div><p>这里的参数名为通用名x1, x2等等。假设所有的模型参数都在一个DataFrame中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">74</span>]: data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(X, columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;col0&#39;</span>, <span style="color:#d14">&#39;col1&#39;</span>, <span style="color:#d14">&#39;col2&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">75</span>]: data[<span style="color:#d14">&#39;y&#39;</span>] <span style="color:#000;font-weight:bold">=</span> y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">76</span>]: data[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">76</span>]: 
+</span></span><span style="display:flex;"><span>       col0      col1      col2         y
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.129468</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.212753</span>  <span style="color:#099">0.504225</span>  <span style="color:#099">0.427863</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">0.302910</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.435742</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.254180</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.673480</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.328522</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.025302</span>  <span style="color:#099">0.138351</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.090878</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.351475</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.719605</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.258215</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.489494</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">1.243269</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.373799</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.522629</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.128941</span>
+</span></span></code></pre></div><p>现在，我们使用statsmodels的公式API和Patsy的公式字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">77</span>]: results <span style="color:#000;font-weight:bold">=</span> smf<span style="color:#000;font-weight:bold">.</span>ols(<span style="color:#d14">&#39;y ~ col0 + col1 + col2&#39;</span>, data<span style="color:#000;font-weight:bold">=</span>data)<span style="color:#000;font-weight:bold">.</span>fit()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">78</span>]: results<span style="color:#000;font-weight:bold">.</span>params
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">78</span>]: 
+</span></span><span style="display:flex;"><span>Intercept    <span style="color:#099">0.033559</span>
+</span></span><span style="display:flex;"><span>col0         <span style="color:#099">0.176149</span>
+</span></span><span style="display:flex;"><span>col1         <span style="color:#099">0.224826</span>
+</span></span><span style="display:flex;"><span>col2         <span style="color:#099">0.514808</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">79</span>]: results<span style="color:#000;font-weight:bold">.</span>tvalues
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">79</span>]: 
+</span></span><span style="display:flex;"><span>Intercept    <span style="color:#099">0.952188</span>
+</span></span><span style="display:flex;"><span>col0         <span style="color:#099">3.319754</span>
+</span></span><span style="display:flex;"><span>col1         <span style="color:#099">4.850730</span>
+</span></span><span style="display:flex;"><span>col2         <span style="color:#099">6.303971</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>观察下statsmodels是如何返回Series结果的，附带有DataFrame的列名。当使用公式和pandas对象时，我们不需要使用add_constant。</p>
+<p>给出一个样本外数据，你可以根据估计的模型参数计算预测值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">80</span>]: results<span style="color:#000;font-weight:bold">.</span>predict(data[:<span style="color:#099">5</span>])
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">80</span>]: 
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.002327</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.141904</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>    <span style="color:#099">0.041226</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.323070</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>   <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.100535</span>
+</span></span><span style="display:flex;"><span>dtype: float64
+</span></span></code></pre></div><p>statsmodels的线性模型结果还有其它的分析、诊断和可视化工具。除了普通最小二乘模型，还有其它的线性模型。</p>
+<h3 id="1332-估计时间序列过程">13.3.2 估计时间序列过程</h3>
+<p>statsmodels的另一模型类是进行时间序列分析，包括自回归过程、卡尔曼滤波和其它态空间模型，和多元自回归模型。</p>
+<p>用自回归结构和噪声来模拟一些时间序列数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>init_x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">random</span>
+</span></span><span style="display:flex;"><span>values <span style="color:#000;font-weight:bold">=</span> [init_x, init_x]
+</span></span><span style="display:flex;"><span>N <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>b0 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.8</span>
+</span></span><span style="display:flex;"><span>b1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.4</span>
+</span></span><span style="display:flex;"><span>noise <span style="color:#000;font-weight:bold">=</span> dnorm(<span style="color:#099">0</span>, <span style="color:#099">0.1</span>, N)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(N):
+</span></span><span style="display:flex;"><span>    new_x <span style="color:#000;font-weight:bold">=</span> values[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">*</span> b0 <span style="color:#000;font-weight:bold">+</span> values[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">*</span> b1 <span style="color:#000;font-weight:bold">+</span> noise[i]
+</span></span><span style="display:flex;"><span>    values<span style="color:#000;font-weight:bold">.</span>append(new_x)
+</span></span></code></pre></div><p>这个数据有AR(2)结构（两个延迟），参数是0.8和-0.4。拟合AR模型时，你可能不知道滞后项的个数，因此可以用较多的滞后量来拟合这个模型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">82</span>]: MAXLAGS <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">83</span>]: model <span style="color:#000;font-weight:bold">=</span> sm<span style="color:#000;font-weight:bold">.</span>tsa<span style="color:#000;font-weight:bold">.</span>AR(values)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">84</span>]: results <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>fit(MAXLAGS)
+</span></span></code></pre></div><p>结果中的估计参数首先是截距，其次是前两个参数的估计值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">85</span>]: results<span style="color:#000;font-weight:bold">.</span>params
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">85</span>]: array([<span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0062</span>,  <span style="color:#099">0.7845</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.4085</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.0136</span>,  <span style="color:#099">0.015</span> ,  <span style="color:#099">0.0143</span>])
+</span></span></code></pre></div><p>更多的细节以及如何解释结果超出了本书的范围，可以通过statsmodels文档学习更多。</p>
+<h2 id="134-scikit-learn介绍">13.4 scikit-learn介绍</h2>
+<p>scikit-learn是一个广泛使用、用途多样的Python机器学习库。它包含多种标准监督和非监督机器学习方法和模型选择和评估、数据转换、数据加载和模型持久化工具。这些模型可以用于分类、聚合、预测和其它任务。</p>
+<p>机器学习方面的学习和应用scikit-learn和TensorFlow解决实际问题的线上和纸质资料很多。本节中，我会简要介绍scikit-learn API的风格。</p>
+<p>写作此书的时候，scikit-learn并没有和pandas深度结合，但是有些第三方包在开发中。尽管如此，pandas非常适合在模型拟合前处理数据集。</p>
+<p>举个例子，我用一个Kaggle竞赛的经典数据集，关于泰坦尼克号乘客的生还率。我们用pandas加载测试和训练数据集：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">86</span>]: train <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;datasets/titanic/train.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">87</span>]: test <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;datasets/titanic/test.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">88</span>]: train[:<span style="color:#099">4</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">88</span>]: 
+</span></span><span style="display:flex;"><span>   PassengerId  Survived  Pclass  \
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>            <span style="color:#099">1</span>         <span style="color:#099">0</span>       <span style="color:#099">3</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>            <span style="color:#099">2</span>         <span style="color:#099">1</span>       <span style="color:#099">1</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>            <span style="color:#099">3</span>         <span style="color:#099">1</span>       <span style="color:#099">3</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>            <span style="color:#099">4</span>         <span style="color:#099">1</span>       <span style="color:#099">1</span>   
+</span></span><span style="display:flex;"><span>                                                Name     Sex   Age  SibSp  \
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>                            Braund, Mr<span style="color:#000;font-weight:bold">.</span> Owen Harris    male  <span style="color:#099">22.0</span>      <span style="color:#099">1</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  Cumings, Mrs<span style="color:#000;font-weight:bold">.</span> John Bradley (Florence Briggs Th<span style="color:#000;font-weight:bold">...</span>  female  <span style="color:#099">38.0</span>      <span style="color:#099">1</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>                             Heikkinen, Miss<span style="color:#000;font-weight:bold">.</span> Laina  female  <span style="color:#099">26.0</span>      <span style="color:#099">0</span>   
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>       Futrelle, Mrs<span style="color:#000;font-weight:bold">.</span> Jacques Heath (Lily May Peel)  female  <span style="color:#099">35.0</span>      <span style="color:#099">1</span>   
+</span></span><span style="display:flex;"><span>   Parch            Ticket     Fare Cabin Embarked  
+</span></span><span style="display:flex;"><span><span style="color:#099">0</span>      <span style="color:#099">0</span>         A<span style="color:#000;font-weight:bold">/</span><span style="color:#099">5</span> <span style="color:#099">21171</span>   <span style="color:#099">7.2500</span>   NaN        S  
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>      <span style="color:#099">0</span>          PC <span style="color:#099">17599</span>  <span style="color:#099">71.2833</span>   C85        C  
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>      <span style="color:#099">0</span>  STON<span style="color:#000;font-weight:bold">/</span>O2<span style="color:#000;font-weight:bold">.</span> <span style="color:#099">3101282</span>   <span style="color:#099">7.9250</span>   NaN        S  
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>      <span style="color:#099">0</span>            <span style="color:#099">113803</span>  <span style="color:#099">53.1000</span>  C123        S
+</span></span></code></pre></div><p>statsmodels和scikit-learn通常不能接收缺失数据，因此我们要查看列是否包含缺失值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">89</span>]: train<span style="color:#000;font-weight:bold">.</span>isnull()<span style="color:#000;font-weight:bold">.</span>sum()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">89</span>]: 
+</span></span><span style="display:flex;"><span>PassengerId      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Survived         <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Pclass           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Name             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Sex              <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Age            <span style="color:#099">177</span>
+</span></span><span style="display:flex;"><span>SibSp            <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Parch            <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Ticket           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Fare             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Cabin          <span style="color:#099">687</span>
+</span></span><span style="display:flex;"><span>Embarked         <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>dtype: int64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">90</span>]: test<span style="color:#000;font-weight:bold">.</span>isnull()<span style="color:#000;font-weight:bold">.</span>sum()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">90</span>]: 
+</span></span><span style="display:flex;"><span>PassengerId      <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Pclass           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Name             <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Sex              <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Age             <span style="color:#099">86</span>
+</span></span><span style="display:flex;"><span>SibSp            <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Parch            <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Ticket           <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>Fare             <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>Cabin          <span style="color:#099">327</span>
+</span></span><span style="display:flex;"><span>Embarked         <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>dtype: int64
+</span></span></code></pre></div><p>在统计和机器学习的例子中，根据数据中的特征，一个典型的任务是预测乘客能否生还。模型现在训练数据集中拟合，然后用样本外测试数据集评估。</p>
+<p>我想用年龄作为预测值，但是它包含缺失值。缺失数据补全的方法有多种，我用的是一种简单方法，用训练数据集的中位数补全两个表的空值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">91</span>]: impute_value <span style="color:#000;font-weight:bold">=</span> train[<span style="color:#d14">&#39;Age&#39;</span>]<span style="color:#000;font-weight:bold">.</span>median()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">92</span>]: train[<span style="color:#d14">&#39;Age&#39;</span>] <span style="color:#000;font-weight:bold">=</span> train[<span style="color:#d14">&#39;Age&#39;</span>]<span style="color:#000;font-weight:bold">.</span>fillna(impute_value)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">93</span>]: test[<span style="color:#d14">&#39;Age&#39;</span>] <span style="color:#000;font-weight:bold">=</span> test[<span style="color:#d14">&#39;Age&#39;</span>]<span style="color:#000;font-weight:bold">.</span>fillna(impute_value)
+</span></span></code></pre></div><p>现在我们需要指定模型。我增加了一个列IsFemale，作为“Sex”列的编码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">94</span>]: train[<span style="color:#d14">&#39;IsFemale&#39;</span>] <span style="color:#000;font-weight:bold">=</span> (train[<span style="color:#d14">&#39;Sex&#39;</span>] <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;female&#39;</span>)<span style="color:#000;font-weight:bold">.</span>astype(<span style="color:#0086b3">int</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">95</span>]: test[<span style="color:#d14">&#39;IsFemale&#39;</span>] <span style="color:#000;font-weight:bold">=</span> (test[<span style="color:#d14">&#39;Sex&#39;</span>] <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;female&#39;</span>)<span style="color:#000;font-weight:bold">.</span>astype(<span style="color:#0086b3">int</span>)
+</span></span></code></pre></div><p>然后，我们确定一些模型变量，并创建NumPy数组：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">96</span>]: predictors <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;Pclass&#39;</span>, <span style="color:#d14">&#39;IsFemale&#39;</span>, <span style="color:#d14">&#39;Age&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">97</span>]: X_train <span style="color:#000;font-weight:bold">=</span> train[predictors]<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">98</span>]: X_test <span style="color:#000;font-weight:bold">=</span> test[predictors]<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">99</span>]: y_train <span style="color:#000;font-weight:bold">=</span> train[<span style="color:#d14">&#39;Survived&#39;</span>]<span style="color:#000;font-weight:bold">.</span>values
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">100</span>]: X_train[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">100</span>]: 
+</span></span><span style="display:flex;"><span>array([[  <span style="color:#099">3.</span>,   <span style="color:#099">0.</span>,  <span style="color:#099">22.</span>],
+</span></span><span style="display:flex;"><span>       [  <span style="color:#099">1.</span>,   <span style="color:#099">1.</span>,  <span style="color:#099">38.</span>],
+</span></span><span style="display:flex;"><span>       [  <span style="color:#099">3.</span>,   <span style="color:#099">1.</span>,  <span style="color:#099">26.</span>],
+</span></span><span style="display:flex;"><span>       [  <span style="color:#099">1.</span>,   <span style="color:#099">1.</span>,  <span style="color:#099">35.</span>],
+</span></span><span style="display:flex;"><span>       [  <span style="color:#099">3.</span>,   <span style="color:#099">0.</span>,  <span style="color:#099">35.</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">101</span>]: y_train[:<span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">101</span>]: array([<span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>])
+</span></span></code></pre></div><p>我不能保证这是一个好模型，但它的特征都符合。我们用scikit-learn的LogisticRegression模型，创建一个模型实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">102</span>]: <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.linear_model</span> <span style="color:#000;font-weight:bold">import</span> LogisticRegression
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">103</span>]: model <span style="color:#000;font-weight:bold">=</span> LogisticRegression()
+</span></span></code></pre></div><p>与statsmodels类似，我们可以用模型的fit方法，将它拟合到训练数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">104</span>]: model<span style="color:#000;font-weight:bold">.</span>fit(X_train, y_train)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">104</span>]: 
+</span></span><span style="display:flex;"><span>LogisticRegression(C<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1.0</span>, class_weight<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, dual<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">False</span>, fit_intercept<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>,
+</span></span><span style="display:flex;"><span>          intercept_scaling<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>, max_iter<span style="color:#000;font-weight:bold">=</span><span style="color:#099">100</span>, multi_class<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ovr&#39;</span>, n_jobs<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>,
+</span></span><span style="display:flex;"><span>          penalty<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;l2&#39;</span>, random_state<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, solver<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;liblinear&#39;</span>, tol<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0.0001</span>,
+</span></span><span style="display:flex;"><span>          verbose<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, warm_start<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">False</span>)
+</span></span></code></pre></div><p>现在，我们可以用model.predict，对测试数据进行预测：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">105</span>]: y_predict <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>predict(X_test)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">106</span>]: y_predict[:<span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">106</span>]: array([<span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">0</span>])
+</span></span></code></pre></div><p>如果你有测试数据集的真是值，你可以计算准确率或其它错误度量值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(y_true <span style="color:#000;font-weight:bold">==</span> y_predict)<span style="color:#000;font-weight:bold">.</span>mean()
+</span></span></code></pre></div><p>在实际中，模型训练经常有许多额外的复杂因素。许多模型有可以调节的参数，有些方法（比如交叉验证）可以用来进行参数调节，避免对训练数据过拟合。这通常可以提高预测性或对新数据的健壮性。</p>
+<p>交叉验证通过分割训练数据来模拟样本外预测。基于模型的精度得分（比如均方差），可以对模型参数进行网格搜索。有些模型，如logistic回归，有内置的交叉验证的估计类。例如，logisticregressioncv类可以用一个参数指定网格搜索对模型的正则化参数C的粒度：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">107</span>]: <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.linear_model</span> <span style="color:#000;font-weight:bold">import</span> LogisticRegressionCV
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">108</span>]: model_cv <span style="color:#000;font-weight:bold">=</span> LogisticRegressionCV(<span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">109</span>]: model_cv<span style="color:#000;font-weight:bold">.</span>fit(X_train, y_train)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">109</span>]: 
+</span></span><span style="display:flex;"><span>LogisticRegressionCV(Cs<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>, class_weight<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, cv<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, dual<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">False</span>,
+</span></span><span style="display:flex;"><span>           fit_intercept<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>, intercept_scaling<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1.0</span>, max_iter<span style="color:#000;font-weight:bold">=</span><span style="color:#099">100</span>,
+</span></span><span style="display:flex;"><span>           multi_class<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ovr&#39;</span>, n_jobs<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>, penalty<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;l2&#39;</span>, random_state<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>,
+</span></span><span style="display:flex;"><span>           refit<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">True</span>, scoring<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>, solver<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;lbfgs&#39;</span>, tol<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0.0001</span>, verbose<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>)
+</span></span></code></pre></div><p>要手动进行交叉验证，你可以使用cross_val_score帮助函数，它可以处理数据分割。例如，要交叉验证我们的带有四个不重叠训练数据的模型，可以这样做：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">110</span>]: <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.model_selection</span> <span style="color:#000;font-weight:bold">import</span> cross_val_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">111</span>]: model <span style="color:#000;font-weight:bold">=</span> LogisticRegression(C<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">112</span>]: scores <span style="color:#000;font-weight:bold">=</span> cross_val_score(model, X_train, y_train, cv<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">113</span>]: scores
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">113</span>]: array([ <span style="color:#099">0.7723</span>,  <span style="color:#099">0.8027</span>,  <span style="color:#099">0.7703</span>,  <span style="color:#099">0.7883</span>])
+</span></span></code></pre></div><p>默认的评分指标取决于模型本身，但是可以明确指定一个评分。交叉验证过的模型需要更长时间来训练，但会有更高的模型性能。</p>
+<h2 id="135-继续学习">13.5 继续学习</h2>
+<p>我只是介绍了一些Python建模库的表面内容，现在有越来越多的框架用于各种统计和机器学习，它们都是用Python或Python用户界面实现的。</p>
+<p>这本书的重点是数据规整，有其它的书是关注建模和数据科学工具的。其中优秀的有：</p>
+<ul>
+<li>Andreas Mueller and Sarah Guido (O’Reilly)的 《Introduction to Machine Learning with Python》</li>
+<li>Jake VanderPlas (O’Reilly)的 《Python Data Science Handbook》</li>
+<li>Joel Grus (O’Reilly) 的 《Data Science from Scratch: First Principles》</li>
+<li>Sebastian Raschka (Packt Publishing) 的《Python Machine Learning》</li>
+<li>Aurélien Géron (O’Reilly) 的《Hands-On Machine Learning with Scikit-Learn and TensorFlow》</li>
+</ul>
+<p>虽然书是学习的好资源，但是随着底层开源软件的发展，书的内容会过时。最好是不断熟悉各种统计和机器学习框架的文档，学习最新的功能和API。</p>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/">← 第十一章 时间序列</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/">第十二章 Pandas 高级应用  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

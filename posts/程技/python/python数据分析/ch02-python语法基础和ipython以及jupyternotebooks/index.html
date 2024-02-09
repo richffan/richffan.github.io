@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="第二章 Python 语法基础，IPython 和 Jupyter Notebooks - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>第二章 Python 语法基础，IPython 和 Jupyter Notebooks</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            第二章 Python 语法基础，IPython 和 Jupyter Notebooks
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            12666 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            26 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-python解释器">2.1 Python解释器</a></li>
+    <li><a href="#22-ipython基础">2.2 IPython基础</a>
+      <ul>
+        <li><a href="#221-运行ipython-shell">2.2.1 运行IPython Shell</a></li>
+        <li><a href="#222-运行jupyter-notebook">2.2.2 运行Jupyter Notebook</a></li>
+        <li><a href="#223-tab补全">2.2.3 Tab补全</a></li>
+        <li><a href="#224-自省">2.2.4 自省</a></li>
+        <li><a href="#225-run命令">2.2.5 %run命令</a></li>
+        <li><a href="#226-中断运行的代码">2.2.6 中断运行的代码</a></li>
+        <li><a href="#227-从剪贴板执行程序">2.2.7 从剪贴板执行程序</a></li>
+        <li><a href="#228-键盘快捷键">2.2.8 键盘快捷键</a></li>
+        <li><a href="#229-魔术命令">2.2.9 魔术命令</a></li>
+        <li><a href="#2210-集成matplotlib">2.2.10 集成Matplotlib</a></li>
+      </ul>
+    </li>
+    <li><a href="#23-python语法基础">2.3 Python语法基础</a>
+      <ul>
+        <li><a href="#231-语言的语义">2.3.1 语言的语义</a></li>
+        <li><a href="#232-使用缩进而不是括号">2.3.2 使用缩进，而不是括号</a></li>
+        <li><a href="#233-万物皆对象">2.3.3 万物皆对象</a></li>
+        <li><a href="#234-注释">2.3.4 注释</a></li>
+        <li><a href="#235-函数和对象方法调用">2.3.5 函数和对象方法调用</a></li>
+        <li><a href="#236-变量和参数传递">2.3.6 变量和参数传递</a></li>
+        <li><a href="#237-动态引用强类型">2.3.7 动态引用，强类型</a></li>
+        <li><a href="#238-属性和方法">2.3.8 属性和方法</a></li>
+        <li><a href="#239-鸭子类型">2.3.9 鸭子类型</a></li>
+        <li><a href="#2310-引入">2.3.10 引入</a></li>
+        <li><a href="#2311-二元运算符和比较运算符">2.3.11 二元运算符和比较运算符</a></li>
+        <li><a href="#2312-可变与不可变对象">2.3.12 可变与不可变对象</a></li>
+        <li><a href="#2313-标量类型">2.3.13 标量类型</a></li>
+        <li><a href="#2314-数值类型">2.3.14 数值类型</a></li>
+        <li><a href="#2315-字符串">2.3.15 字符串</a></li>
+        <li><a href="#2316-字节和unicode">2.3.16 字节和Unicode</a></li>
+        <li><a href="#2317-布尔值">2.3.17 布尔值</a></li>
+        <li><a href="#2318-类型转换">2.3.18 类型转换</a></li>
+        <li><a href="#2319-none">2.3.19 None</a></li>
+        <li><a href="#2320-日期和时间">2.3.20 日期和时间</a></li>
+        <li><a href="#2321-控制流">2.3.21 控制流</a></li>
+        <li><a href="#2322-ifelif和else">2.3.22 if、elif和else</a></li>
+        <li><a href="#2324-for循环">2.3.24 for循环</a></li>
+        <li><a href="#2325-while循环">2.3.25 While循环</a></li>
+        <li><a href="#2326-pass">2.3.26 pass</a></li>
+        <li><a href="#2327-range">2.3.27 range</a></li>
+        <li><a href="#2328-三元表达式">2.3.28 三元表达式</a></li>
+      </ul>
+    </li>
+    <li><a href="#24-参考资料">2.4 参考资料</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <blockquote>
+<p>我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，原来通用的科学计算拓展到了计算机科学家、物理学家和其它研究领域的工作人员。学习 Python 和成为软件工程师的优秀书籍也有了。</p>
+</blockquote>
+<p>因为这本书是专注于 Python 数据处理的，对于一些 Python 的数据结构和库的特性难免不足。因此，本章和第 3 章的内容只够你能学习本书后面的内容。</p>
+<p><strong>在我来看，没有必要为了数据分析而去精通 Python</strong>。我鼓励你使用<code>IPython shell</code>和<code>Jupyter</code>试验示例代码，并学习不同类型、函数和方法的文档。虽然我已尽力让本书内容循序渐进，但读者偶尔仍会碰到没有之前介绍过的内容。</p>
+<p>本书大部分内容关注的是<strong>基于表格的分析和处理大规模数据集的数据准备工具</strong>。为了使用这些工具，必须首先将混乱的数据规整为整洁的<code>表格</code>（或<code>结构化</code>）形式。幸好，Python 是一个理想的语言，可以快速整理数据。Python 使用得越熟练，越容易准备新数据集以进行分析。</p>
+<p>最好在 IPython 和 Jupyter 中亲自尝试本书中使用的工具。当你学会了如何启动 Ipython 和 Jupyter，我建议你跟随示例代码进行练习。与任何键盘驱动的操作环境一样，记住常见的命令也是学习曲线的一部分。</p>
+<blockquote>
+<p>笔记：本章没有介绍Python的某些概念，如类和面向对象编程，你可能会发现它们在Python数据分析中很有用。 为了加强Python知识，我建议你学习官方Python教程，https://docs.python.org/3/，或是通用的Python教程书籍，比如：</p>
+<ul>
+<li>Python Cookbook，第3版，David Beazley和Brian K. Jones著（O’Reilly）</li>
+<li>流畅的Python，Luciano Ramalho著 (O’Reilly)</li>
+<li>高效的Python，Brett Slatkin著 (Pearson)</li>
+</ul>
+</blockquote>
+<h2 id="21-python解释器">2.1 Python解释器</h2>
+<p>Python是解释性语言。Python解释器同一时间只能运行一个程序的一条语句。标准的交互Python解释器可以在命令行中通过键入<code>python</code>命令打开：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wugenqiang<span style="color:#3c5d5d;font-weight:bold">@bogon</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#000;font-weight:bold">%</span> python
+</span></span><span style="display:flex;"><span>Python <span style="color:#099">3.8.3</span> (default, Jul  <span style="color:#099">2</span> <span style="color:#099">2020</span>, <span style="color:#099">11</span>:<span style="color:#099">26</span>:<span style="color:#099">31</span>) 
+</span></span><span style="display:flex;"><span>[Clang <span style="color:#099">10.0.0</span> ] :: Anaconda, Inc<span style="color:#000;font-weight:bold">.</span> on darwin
+</span></span><span style="display:flex;"><span>Type <span style="color:#d14">&#34;help&#34;</span>, <span style="color:#d14">&#34;copyright&#34;</span>, <span style="color:#d14">&#34;credits&#34;</span> <span style="color:#000;font-weight:bold">or</span> <span style="color:#d14">&#34;license&#34;</span> <span style="color:#000;font-weight:bold">for</span> more information<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(a)
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>
+</span></span></code></pre></div><p><code>&gt;&gt;&gt;</code>提示输入代码。要退出Python解释器返回终端，可以输入<code>exit()</code>或按Ctrl-D。</p>
+<p>运行Python程序只需调用Python的同时，使用一个<code>.py</code>文件作为它的第一个参数。假设创建了一个<code>hello_world.py</code>文件，它的内容是：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Hello world&#39;</span>)
+</span></span></code></pre></div><p>你可以用下面的命令运行它（<code>hello_world.py</code>文件必须位于终端的工作目录）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wugenqiang<span style="color:#3c5d5d;font-weight:bold">@bogon</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#000;font-weight:bold">%</span> python hello_world<span style="color:#000;font-weight:bold">.</span>py
+</span></span><span style="display:flex;"><span>Hello world
+</span></span></code></pre></div><p>一些Python程序员总是这样执行Python代码的，从事数据分析和科学计算的人却会使用IPython，一个强化的Python解释器，或Jupyter notebooks，一个网页代码笔记本，它原先是IPython的一个子项目。在本章中，我介绍了如何使用IPython和Jupyter，在附录A中有更深入的介绍。当你使用<code>%run</code>命令，IPython会同样执行指定文件中的代码，结束之后，还可以与结果交互：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wugenqiang<span style="color:#3c5d5d;font-weight:bold">@bogon</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#000;font-weight:bold">%</span> ipython
+</span></span><span style="display:flex;"><span>Python <span style="color:#099">3.8.3</span> (default, Jul  <span style="color:#099">2</span> <span style="color:#099">2020</span>, <span style="color:#099">11</span>:<span style="color:#099">26</span>:<span style="color:#099">31</span>) 
+</span></span><span style="display:flex;"><span>Type <span style="color:#d14">&#39;copyright&#39;</span>, <span style="color:#d14">&#39;credits&#39;</span> <span style="color:#000;font-weight:bold">or</span> <span style="color:#d14">&#39;license&#39;</span> <span style="color:#000;font-weight:bold">for</span> more information
+</span></span><span style="display:flex;"><span>IPython <span style="color:#099">7.16.1</span> <span style="color:#000;font-weight:bold">--</span> An enhanced Interactive Python<span style="color:#000;font-weight:bold">.</span> Type <span style="color:#d14">&#39;?&#39;</span> <span style="color:#000;font-weight:bold">for</span> help<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">1</span>]: <span style="color:#000;font-weight:bold">%</span>run hello_world<span style="color:#000;font-weight:bold">.</span>py
+</span></span><span style="display:flex;"><span>Hello world
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">2</span>]:
+</span></span></code></pre></div><p>IPython默认采用序号的格式<code>In [2]:</code>，与标准的<code>&gt;&gt;&gt;</code>提示符不同。</p>
+<h2 id="22-ipython基础">2.2 IPython基础</h2>
+<p>在本节中，我们会教你打开运行<code>IPython shell</code>和<code>jupyter notebook</code>，并介绍一些基本概念。</p>
+<h3 id="221-运行ipython-shell">2.2.1 运行IPython Shell</h3>
+<p>你可以用<code>ipython</code>在命令行打开<code>IPython Shell</code>，就像打开普通的Python解释器：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wugenqiang<span style="color:#3c5d5d;font-weight:bold">@bogon</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#000;font-weight:bold">%</span> ipython
+</span></span><span style="display:flex;"><span>Python <span style="color:#099">3.8.3</span> (default, Jul  <span style="color:#099">2</span> <span style="color:#099">2020</span>, <span style="color:#099">11</span>:<span style="color:#099">26</span>:<span style="color:#099">31</span>) 
+</span></span><span style="display:flex;"><span>Type <span style="color:#d14">&#39;copyright&#39;</span>, <span style="color:#d14">&#39;credits&#39;</span> <span style="color:#000;font-weight:bold">or</span> <span style="color:#d14">&#39;license&#39;</span> <span style="color:#000;font-weight:bold">for</span> more information
+</span></span><span style="display:flex;"><span>IPython <span style="color:#099">7.16.1</span> <span style="color:#000;font-weight:bold">--</span> An enhanced Interactive Python<span style="color:#000;font-weight:bold">.</span> Type <span style="color:#d14">&#39;?&#39;</span> <span style="color:#000;font-weight:bold">for</span> help<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">1</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">2</span>]: a
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">2</span>]: <span style="color:#099">5</span>
+</span></span></code></pre></div><p>你可以通过输入代码并按Return（或Enter），运行任意Python语句。当你只输入一个变量，它会显示代表的对象：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">5</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">np</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">6</span>]: data <span style="color:#000;font-weight:bold">=</span> {i : np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn() <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">7</span>)}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">7</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">7</span>]: 
+</span></span><span style="display:flex;"><span>{<span style="color:#099">0</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.20470765948471295</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">1</span>: <span style="color:#099">0.47894333805754824</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">2</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.5194387150567381</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">3</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.55573030434749</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">4</span>: <span style="color:#099">1.9657805725027142</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#099">5</span>: <span style="color:#099">1.3934058329729904</span>,
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>: <span style="color:#099">0.09290787674371767</span>}
+</span></span></code></pre></div><p>前两行是Python代码语句；第二条语句创建一个名为<code>data</code>的变量，它引用一个新创建的Python字典。最后一行打印<code>data</code>的值。</p>
+<p>许多Python对象被格式化为更易读的形式，或称作<code>pretty-printed</code>，它与普通的<code>print</code>不同。如果在标准Python解释器中打印上述<code>data</code>变量，则可读性要降低：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">numpy.random</span> <span style="color:#000;font-weight:bold">import</span> randn
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> data <span style="color:#000;font-weight:bold">=</span> {i : randn() <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">7</span>)}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">print</span>(data)
+</span></span><span style="display:flex;"><span>{<span style="color:#099">0</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.5948255432744511</span>, <span style="color:#099">1</span>: <span style="color:#099">0.10569006472787983</span>, <span style="color:#099">2</span>: <span style="color:#099">1.972367135977295</span>,
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>: <span style="color:#099">0.15455217573074576</span>, <span style="color:#099">4</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">0.24058577449429575</span>, <span style="color:#099">5</span>: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1.2904897053651216</span>,
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>: <span style="color:#099">0.3308507317325902</span>}
+</span></span></code></pre></div><p>IPython还支持执行任意代码块（通过一个<code>华丽的复制-粘贴方法</code>）和整段Python脚本的功能。你也可以使用Jupyter notebook运行大代码块，接下来就会看到。</p>
+<h3 id="222-运行jupyter-notebook">2.2.2 运行Jupyter Notebook</h3>
+<p>notebook是Jupyter项目的重要组件之一，它是一个代码、文本（有标记或无标记）、数据可视化或其它输出的交互式文档。Jupyter Notebook需要与内核互动，内核是Jupyter与其它编程语言的交互编程协议。Python的Jupyter内核是使用IPython。要启动Jupyter，在命令行中输入<code>jupyter notebook</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wugenqiang<span style="color:#3c5d5d;font-weight:bold">@bogon</span> <span style="color:#000;font-weight:bold">~</span> <span style="color:#000;font-weight:bold">%</span> jupyter notebook
+</span></span><span style="display:flex;"><span>[I <span style="color:#099">13</span>:<span style="color:#099">03</span>:<span style="color:#099">35.196</span> NotebookApp] JupyterLab extension loaded <span style="color:#000;font-weight:bold">from</span> <span style="color:#000;font-weight:bold">/</span>Users<span style="color:#000;font-weight:bold">/</span>wugenqiang<span style="color:#000;font-weight:bold">/</span>opt<span style="color:#000;font-weight:bold">/</span>anaconda3<span style="color:#000;font-weight:bold">/</span>lib<span style="color:#000;font-weight:bold">/</span>python3<span style="color:#099">.8</span><span style="color:#000;font-weight:bold">/</span>site<span style="color:#000;font-weight:bold">-</span>packages<span style="color:#000;font-weight:bold">/</span>jupyterlab
+</span></span><span style="display:flex;"><span>[I <span style="color:#099">13</span>:<span style="color:#099">03</span>:<span style="color:#099">35.196</span> NotebookApp] JupyterLab application directory <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">/</span>Users<span style="color:#000;font-weight:bold">/</span>wugenqiang<span style="color:#000;font-weight:bold">/</span>opt<span style="color:#000;font-weight:bold">/</span>anaconda3<span style="color:#000;font-weight:bold">/</span>share<span style="color:#000;font-weight:bold">/</span>jupyter<span style="color:#000;font-weight:bold">/</span>lab
+</span></span><span style="display:flex;"><span>[I <span style="color:#099">13</span>:<span style="color:#099">03</span>:<span style="color:#099">35.201</span> NotebookApp] 启动notebooks 在本地路径: <span style="color:#000;font-weight:bold">/</span>Users<span style="color:#000;font-weight:bold">/</span>wugenqiang
+</span></span><span style="display:flex;"><span>[I <span style="color:#099">13</span>:<span style="color:#099">03</span>:<span style="color:#099">35.202</span> NotebookApp] 本程序运行在: http:<span style="color:#000;font-weight:bold">//</span>localhost:<span style="color:#099">8888</span><span style="color:#000;font-weight:bold">/</span><span style="color:#a61717;background-color:#e3d2d2">?</span>token<span style="color:#000;font-weight:bold">=</span><span style="color:#099">6e539</span>f33818a9dbc9bf9111464bb15bfd853453256fb053d
+</span></span></code></pre></div><p>在多数平台上，Jupyter会自动打开默认的浏览器（除非指定了<code>--no-browser</code>）。或者，可以在启动notebook之后，手动打开网页<code>http://localhost:8888/</code>。图2-1展示了Google Chrome中的notebook。</p>
+<blockquote>
+<p>笔记：许多人使用Jupyter作为本地的计算环境，但它也可以部署到服务器上远程访问。这里不做介绍，如果需要的话，鼓励读者自行到网上学习。</p>
+</blockquote>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240.png" alt="&amp;#x56FE;2-1 Jupyter notebook&amp;#x542F;&amp;#x52A8;&amp;#x9875;&amp;#x9762;"></p>
+<p>要新建一个notebook，点击按钮New，选择“Python3”或“conda[默认项]”。如果是第一次，点击空格，输入一行Python代码。然后按Shift-Enter执行。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009130635012.png" alt="&amp;#x56FE;2-2 Jupyter&amp;#x65B0;notebook&amp;#x9875;&amp;#x9762;"></p>
+<p>当保存notebook时（File目录下的Save and Checkpoint），会创建一个后缀名为<code>.ipynb</code>的文件。这是一个自包含文件格式，包含当前笔记本中的所有内容（包括所有已评估的代码输出）。可以被其它Jupyter用户加载和编辑。要加载存在的notebook，把它放到启动notebook进程的相同目录内。你可以用本书的示例代码练习，见图2-3。</p>
+<p>虽然Jupyter notebook和IPython shell使用起来不同，本章中几乎所有的命令和工具都可以通用。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009131115546.png" alt="&amp;#x56FE;2-3 Jupyter&amp;#x67E5;&amp;#x770B;&amp;#x4E00;&amp;#x4E2A;&amp;#x5B58;&amp;#x5728;&amp;#x7684;notebook&amp;#x7684;&amp;#x9875;&amp;#x9762;"></p>
+<h3 id="223-tab补全">2.2.3 Tab补全</h3>
+<p>从外观上，IPython shell和标准的Python解释器只是看起来不同。IPython shell的进步之一是具备其它IDE和交互计算分析环境都有的tab补全功能。在shell中输入表达式，按下Tab，会搜索已输入变量（对象、函数等等）的命名空间：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">1</span>]: an_apple <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">27</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">2</span>]: an_example <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">42</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">3</span>]: an<span style="color:#000;font-weight:bold">&lt;</span>Tab<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>an_apple    <span style="color:#000;font-weight:bold">and</span>         an_example  <span style="color:#0086b3">any</span>
+</span></span></code></pre></div><p>在这个例子中，IPython呈现出了之前两个定义的变量和Python的关键字和内建的函数<code>any</code>。当然，你也可以补全任何对象的方法和属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">3</span>]: b <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">4</span>]: b<span style="color:#000;font-weight:bold">.&lt;</span>Tab<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>b<span style="color:#000;font-weight:bold">.</span>append  b<span style="color:#000;font-weight:bold">.</span>count   b<span style="color:#000;font-weight:bold">.</span>insert  b<span style="color:#000;font-weight:bold">.</span>reverse
+</span></span><span style="display:flex;"><span>b<span style="color:#000;font-weight:bold">.</span>clear   b<span style="color:#000;font-weight:bold">.</span>extend  b<span style="color:#000;font-weight:bold">.</span>pop     b<span style="color:#000;font-weight:bold">.</span>sort
+</span></span><span style="display:flex;"><span>b<span style="color:#000;font-weight:bold">.</span>copy    b<span style="color:#000;font-weight:bold">.</span>index   b<span style="color:#000;font-weight:bold">.</span>remove
+</span></span></code></pre></div><p>同样也适用于模块：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">1</span>]: <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">datetime</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">2</span>]: datetime<span style="color:#000;font-weight:bold">.&lt;</span>Tab<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>datetime<span style="color:#000;font-weight:bold">.</span>date          datetime<span style="color:#000;font-weight:bold">.</span>MAXYEAR       datetime<span style="color:#000;font-weight:bold">.</span>timedelta
+</span></span><span style="display:flex;"><span>datetime<span style="color:#000;font-weight:bold">.</span>datetime      datetime<span style="color:#000;font-weight:bold">.</span>MINYEAR       datetime<span style="color:#000;font-weight:bold">.</span>timezone
+</span></span><span style="display:flex;"><span>datetime<span style="color:#000;font-weight:bold">.</span>datetime_CAPI datetime<span style="color:#000;font-weight:bold">.</span>time          datetime<span style="color:#000;font-weight:bold">.</span>tzinfo
+</span></span></code></pre></div><p>在Jupyter notebook和新版的IPython（5.0及以上），自动补全功能是下拉框的形式。</p>
+<blockquote>
+<p>笔记：注意，默认情况下，IPython会隐藏下划线开头的方法和属性，比如魔术方法和内部的“私有”方法和属性，以避免混乱的显示（和让新手迷惑！）这些也可以tab补全，但是你必须首先键入一个下划线才能看到它们。如果你喜欢总是在tab补全中看到这样的方法，你可以IPython配置中进行设置。可以在IPython文档中查找方法。</p>
+</blockquote>
+<p>除了补全命名、对象和模块属性，Tab还可以补全其它的。当输入看似文件路径时（即使是Python字符串），按下Tab也可以补全电脑上对应的文件信息：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">7</span>]: datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/&lt;</span>Tab<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>movies<span style="color:#000;font-weight:bold">.</span>dat    datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>README
+</span></span><span style="display:flex;"><span>datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>ratings<span style="color:#000;font-weight:bold">.</span>dat   datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>users<span style="color:#000;font-weight:bold">.</span>dat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">7</span>]: path <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;datasets/movielens/&lt;Tab&gt;</span>
+</span></span><span style="display:flex;"><span>datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>movies<span style="color:#000;font-weight:bold">.</span>dat    datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>README
+</span></span><span style="display:flex;"><span>datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>ratings<span style="color:#000;font-weight:bold">.</span>dat   datasets<span style="color:#000;font-weight:bold">/</span>movielens<span style="color:#000;font-weight:bold">/</span>users<span style="color:#000;font-weight:bold">.</span>dat
+</span></span></code></pre></div><p>结合<code>%run</code>，tab补全可以节省许多键盘操作。</p>
+<p>另外，tab补全可以补全函数的关键词参数（包括等于号=）。见图2-4。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009133943466.png" alt="&amp;#x56FE;2-4 Jupyter notebook&amp;#x4E2D;&amp;#x81EA;&amp;#x52A8;&amp;#x8865;&amp;#x5168;&amp;#x51FD;&amp;#x6570;&amp;#x5173;&amp;#x952E;&amp;#x8BCD;"></p>
+<p>后面会仔细地学习函数。</p>
+<h3 id="224-自省">2.2.4 自省</h3>
+<p>在变量前后使用问号？，可以显示对象的信息：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">8</span>]: b <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">9</span>]: b<span style="color:#a61717;background-color:#e3d2d2">?</span>
+</span></span><span style="display:flex;"><span>Type:       <span style="color:#0086b3">list</span>
+</span></span><span style="display:flex;"><span>String Form:[<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>Length:     <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>Docstring:
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">list</span>() <span style="color:#000;font-weight:bold">-&gt;</span> new empty <span style="color:#0086b3">list</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">list</span>(iterable) <span style="color:#000;font-weight:bold">-&gt;</span> new <span style="color:#0086b3">list</span> initialized <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">iterable</span><span style="color:#d14">&#39;s items</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">10</span>]: <span style="color:#0086b3">print</span><span style="color:#a61717;background-color:#e3d2d2">?</span>
+</span></span><span style="display:flex;"><span>Docstring:
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(value, <span style="color:#000;font-weight:bold">...</span>, sep<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39; &#39;</span>, end<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span>, file<span style="color:#000;font-weight:bold">=</span>sys<span style="color:#000;font-weight:bold">.</span>stdout, flush<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">False</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Prints the values to a stream, <span style="color:#000;font-weight:bold">or</span> to sys<span style="color:#000;font-weight:bold">.</span>stdout by default<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>Optional keyword arguments:
+</span></span><span style="display:flex;"><span>file:  a file<span style="color:#000;font-weight:bold">-</span>like <span style="color:#0086b3">object</span> (stream); defaults to the current sys<span style="color:#000;font-weight:bold">.</span>stdout<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>sep:   string inserted between values, default a space<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>end:   string appended after the last value, default a newline<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>flush: whether to forcibly flush the stream<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>Type:      builtin_function_or_method
+</span></span></code></pre></div><p>这可以作为对象的自省。如果对象是一个函数或实例方法，定义过的文档字符串，也会显示出信息。假设我们写了一个如下的函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">add_numbers</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Add two numbers together
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Returns
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    -------
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    the_sum : type of arguments
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> a <span style="color:#000;font-weight:bold">+</span> b
+</span></span></code></pre></div><p>然后使用<code>?</code>符号，就可以显示如下的文档字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">11</span>]: add_numbers<span style="color:#a61717;background-color:#e3d2d2">?</span>
+</span></span><span style="display:flex;"><span>Signature: add_numbers(a, b)
+</span></span><span style="display:flex;"><span>Docstring:
+</span></span><span style="display:flex;"><span>Add two numbers together
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Returns
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">-------</span>
+</span></span><span style="display:flex;"><span>the_sum : <span style="color:#0086b3">type</span> of arguments
+</span></span><span style="display:flex;"><span>File:      <span style="color:#000;font-weight:bold">&lt;</span>ipython<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">input</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">9</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">6</span>a548a216e27<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>Type:      function
+</span></span></code></pre></div><p>使用<code>??</code>会显示函数的源码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">12</span>]: add_numbers<span style="color:#a61717;background-color:#e3d2d2">??</span>
+</span></span><span style="display:flex;"><span>Signature: add_numbers(a, b)
+</span></span><span style="display:flex;"><span>Source:
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">add_numbers</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Add two numbers together
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Returns
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    -------
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    the_sum : type of arguments
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>File:      <span style="color:#000;font-weight:bold">&lt;</span>ipython<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">input</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">9</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">6</span>a548a216e27<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>Type:      function
+</span></span></code></pre></div><p><code>?</code>还有一个用途，就是像Unix或Windows命令行一样搜索IPython的命名空间。字符与通配符结合可以匹配所有的名字。例如，我们可以获得所有包含<code>load</code>的顶级<code>NumPy</code>命名空间：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">13</span>]: np<span style="color:#000;font-weight:bold">.*</span>load<span style="color:#000;font-weight:bold">*</span><span style="color:#a61717;background-color:#e3d2d2">?</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>__loader__
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>load
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>loads
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>loadtxt
+</span></span><span style="display:flex;"><span>np<span style="color:#000;font-weight:bold">.</span>pkgload
+</span></span></code></pre></div><h3 id="225-run命令">2.2.5 %run命令</h3>
+<p>你可以用<code>%run</code>命令运行所有的Python程序。假设有一个文件<code>ipython_script_test.py</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">f</span>(x, y, z):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> (x <span style="color:#000;font-weight:bold">+</span> y) <span style="color:#000;font-weight:bold">/</span> z
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> f(a, b, c)
+</span></span></code></pre></div><p>可以如下运行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">14</span>]: <span style="color:#000;font-weight:bold">%</span>run ipython_script_test<span style="color:#000;font-weight:bold">.</span>py
+</span></span></code></pre></div><p>这段脚本运行在空的命名空间（没有import和其它定义的变量），因此结果和普通的运行方式<code>python script.py</code>相同。文件中所有定义的变量（import、函数和全局变量，除非抛出异常），都可以在IPython shell中随后访问：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">15</span>]: c
+</span></span><span style="display:flex;"><span>Out [<span style="color:#099">15</span>]: <span style="color:#099">7.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">16</span>]: result
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">16</span>]: <span style="color:#099">1.4666666666666666</span>
+</span></span></code></pre></div><p>如果一个Python脚本需要命令行参数（在<code>sys.argv</code>中查找），可以在文件路径之后传递，就像在命令行上运行一样。</p>
+<blockquote>
+<p>笔记：如果想让一个脚本访问IPython已经定义过的变量，可以使用<code>%run -i</code>。</p>
+</blockquote>
+<p>在Jupyter notebook中，你也可以使用<code>%load</code>，它将脚本导入到一个代码格中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">%</span>load ipython_script_test<span style="color:#000;font-weight:bold">.</span>py
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">f</span>(x, y, z):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> (x <span style="color:#000;font-weight:bold">+</span> y) <span style="color:#000;font-weight:bold">/</span> z
+</span></span><span style="display:flex;"><span>    a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>
+</span></span><span style="display:flex;"><span>    c <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#000;font-weight:bold">=</span> f(a, b, c)
+</span></span></code></pre></div><h3 id="226-中断运行的代码">2.2.6 中断运行的代码</h3>
+<p>代码运行时按Ctrl-C，无论是%run或长时间运行命令，都会导致<code>KeyboardInterrupt</code>。这会导致几乎所有Python程序立即停止，除非一些特殊情况。</p>
+<blockquote>
+<p>警告：当Python代码调用了一些编译的扩展模块，按Ctrl-C不一定将执行的程序立即停止。在这种情况下，你必须等待，直到控制返回Python解释器，或者在更糟糕的情况下强制终止Python进程。</p>
+</blockquote>
+<h3 id="227-从剪贴板执行程序">2.2.7 从剪贴板执行程序</h3>
+<p>如果使用Jupyter notebook，你可以将代码复制粘贴到任意代码格执行。在IPython shell中也可以从剪贴板执行。假设在其它应用中复制了如下代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>    x <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">8</span>
+</span></span></code></pre></div><p>最简单的方法是使用<code>%paste</code>和<code>%cpaste</code>函数。<code>%paste</code>可以直接运行剪贴板中的代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">17</span>]: <span style="color:#000;font-weight:bold">%</span>paste
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>    x <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">## -- End pasted text --</span>
+</span></span></code></pre></div><p><code>%cpaste</code>功能类似，但会给出一条提示：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">18</span>]: <span style="color:#000;font-weight:bold">%</span>cpaste
+</span></span><span style="display:flex;"><span>Pasting code; enter <span style="color:#d14">&#39;--&#39;</span> alone on the line to stop <span style="color:#000;font-weight:bold">or</span> use Ctrl<span style="color:#000;font-weight:bold">-</span>D<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>:x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>:y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>:    x <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>:
+</span></span><span style="display:flex;"><span>:    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">8</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#000;font-weight:bold">--</span>
+</span></span></code></pre></div><p>使用<code>%cpaste</code>，你可以粘贴任意多的代码再运行。你可能想在运行前，先看看代码。如果粘贴了错误的代码，可以用Ctrl-C中断。</p>
+<h3 id="228-键盘快捷键">2.2.8 键盘快捷键</h3>
+<p>IPython有许多键盘快捷键进行导航提示（类似Emacs文本编辑器或UNIX bash Shell）和交互shell的历史命令。表2-1总结了常见的快捷键。图2-5展示了一部分，如移动光标。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135236313.png" alt="&amp;#x56FE;2-5 IPython shell&amp;#x4E2D;&amp;#x4E00;&amp;#x4E9B;&amp;#x5FEB;&amp;#x6377;&amp;#x952E;&amp;#x7684;&amp;#x8BF4;&amp;#x660E;"></p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135249138.png" alt="&amp;#x8868;2-1 IPython&amp;#x7684;&amp;#x6807;&amp;#x51C6;&amp;#x5FEB;&amp;#x6377;&amp;#x952E;"></p>
+<p>Jupyter notebooks有另外一套庞大的快捷键。因为它的快捷键比IPython的变化快，建议你参阅Jupyter notebook的帮助文档。</p>
+<h3 id="229-魔术命令">2.2.9 魔术命令</h3>
+<p>IPython中特殊的命令（Python中没有）被称作“魔术”命令。这些命令可以使普通任务更便捷，更容易控制IPython系统。魔术命令是在指令前添加百分号%前缀。例如，可以用<code>%timeit</code>（这个命令后面会详谈）测量任何Python语句，例如矩阵乘法，的执行时间：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">20</span>]: a <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>random<span style="color:#000;font-weight:bold">.</span>randn(<span style="color:#099">100</span>, <span style="color:#099">100</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">20</span>]: <span style="color:#000;font-weight:bold">%</span>timeit np<span style="color:#000;font-weight:bold">.</span>dot(a, a)
+</span></span><span style="display:flex;"><span><span style="color:#099">10000</span> loops, best of <span style="color:#099">3</span>: <span style="color:#099">20.9</span> µs per loop
+</span></span></code></pre></div><p>魔术命令可以被看做IPython中运行的命令行。许多魔术命令有“命令行”选项，可以通过？查看：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">21</span>]: <span style="color:#000;font-weight:bold">%</span>debug<span style="color:#a61717;background-color:#e3d2d2">?</span>
+</span></span><span style="display:flex;"><span>Docstring:
+</span></span><span style="display:flex;"><span>::
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">%</span>debug [<span style="color:#000;font-weight:bold">--</span>breakpoint FILE:LINE] [statement [statement <span style="color:#000;font-weight:bold">...</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Activate the interactive debugger<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This magic command support two ways of activating debugger<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>One <span style="color:#000;font-weight:bold">is</span> to activate debugger before executing code<span style="color:#000;font-weight:bold">.</span>  This way, you
+</span></span><span style="display:flex;"><span>can <span style="color:#0086b3">set</span> a <span style="color:#000;font-weight:bold">break</span> point, to step through the code <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">the</span> point<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>You can use this mode by giving statements to execute <span style="color:#000;font-weight:bold">and</span> optionally
+</span></span><span style="display:flex;"><span>a breakpoint<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The other one <span style="color:#000;font-weight:bold">is</span> to activate debugger <span style="color:#000;font-weight:bold">in</span> post<span style="color:#000;font-weight:bold">-</span>mortem mode<span style="color:#000;font-weight:bold">.</span>  You can
+</span></span><span style="display:flex;"><span>activate this mode simply running <span style="color:#000;font-weight:bold">%</span>debug without <span style="color:#0086b3">any</span> argument<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>If an exception has just occurred, this lets you inspect its stack
+</span></span><span style="display:flex;"><span>frames interactively<span style="color:#000;font-weight:bold">.</span>  Note that this will always work only on the last
+</span></span><span style="display:flex;"><span>traceback that occurred, so you must call this quickly after an
+</span></span><span style="display:flex;"><span>exception that you wish to inspect has fired, because <span style="color:#000;font-weight:bold">if</span> another one
+</span></span><span style="display:flex;"><span>occurs, it clobbers the previous one<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>If you want IPython to automatically do this on every exception, see
+</span></span><span style="display:flex;"><span>the <span style="color:#000;font-weight:bold">%</span>pdb magic <span style="color:#000;font-weight:bold">for</span> more details<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>positional arguments:
+</span></span><span style="display:flex;"><span>  statement             Code to run <span style="color:#000;font-weight:bold">in</span> debugger<span style="color:#000;font-weight:bold">.</span> You can omit this <span style="color:#000;font-weight:bold">in</span> cell
+</span></span><span style="display:flex;"><span>                        magic mode<span style="color:#000;font-weight:bold">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>optional arguments:
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">--</span>breakpoint <span style="color:#000;font-weight:bold">&lt;</span>FILE:LINE<span style="color:#000;font-weight:bold">&gt;</span>, <span style="color:#000;font-weight:bold">-</span>b <span style="color:#000;font-weight:bold">&lt;</span>FILE:LINE<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>                        Set <span style="color:#000;font-weight:bold">break</span> point at LINE <span style="color:#000;font-weight:bold">in</span> FILE<span style="color:#000;font-weight:bold">.</span>
+</span></span></code></pre></div><p>魔术函数默认可以不用百分号，只要没有变量和函数名相同。这个特点被称为“自动魔术”，可以用<code>%automagic</code>打开或关闭。</p>
+<p>一些魔术函数与Python函数很像，它的结果可以赋值给一个变量：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">22</span>]: <span style="color:#000;font-weight:bold">%</span>pwd
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">22</span>]: <span style="color:#d14">&#39;/home/wesm/code/pydata-book</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">23</span>]: foo <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">%</span>pwd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">24</span>]: foo
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">24</span>]: <span style="color:#d14">&#39;/home/wesm/code/pydata-book&#39;</span>
+</span></span></code></pre></div><p>IPython的文档可以在shell中打开，我建议你用<code>%quickref</code>或<code>%magic</code>学习下所有特殊命令。表2-2列出了一些可以提高生产率的交互计算和Python开发的IPython指令。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135615001.png" alt="&amp;#x8868;2-2 &amp;#x4E00;&amp;#x4E9B;&amp;#x5E38;&amp;#x7528;&amp;#x7684;IPython&amp;#x9B54;&amp;#x672F;&amp;#x547D;&amp;#x4EE4;"></p>
+<h3 id="2210-集成matplotlib">2.2.10 集成Matplotlib</h3>
+<p>IPython在<code>分析计算</code>领域能够流行的原因之一是它非常好的集成了数据可视化和其它用户界面库，比如matplotlib。不用担心以前没用过matplotlib，本书后面会详细介绍。<code>%matplotlib</code>魔术函数配置了IPython shell和Jupyter notebook中的matplotlib。这点很重要，其它创建的图不会出现（notebook）或获取session的控制，直到结束（shell）。</p>
+<p>在IPython shell中，运行<code>%matplotlib</code>可以进行设置，可以创建多个绘图窗口，而不会干扰控制台session：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">26</span>]: <span style="color:#000;font-weight:bold">%</span>matplotlib
+</span></span><span style="display:flex;"><span>Using matplotlib backend: Qt4Agg
+</span></span></code></pre></div><p>在JUpyter中，命令有所不同（图2-6）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">26</span>]: <span style="color:#000;font-weight:bold">%</span>matplotlib inline
+</span></span></code></pre></div><p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009135720084.png" alt="&amp;#x56FE;2-6 Jupyter&amp;#x884C;&amp;#x5185;matplotlib&amp;#x4F5C;&amp;#x56FE;"></p>
+<h2 id="23-python语法基础">2.3 Python语法基础</h2>
+<blockquote>
+<p>🐹 在本节中，将概述基本的Python概念和语言机制。在下一章，将详细介绍Python的数据结构、函数和其它内建工具。</p>
+</blockquote>
+<h3 id="231-语言的语义">2.3.1 语言的语义</h3>
+<p>Python的语言设计强调的是可读性、简洁和清晰。有些人称Python为“可执行的伪代码”。</p>
+<h3 id="232-使用缩进而不是括号">2.3.2 使用缩进，而不是括号</h3>
+<p>Python使用空白字符（tab和空格）来组织代码，而不是像其它语言，比如R、C++、JAVA和Perl那样使用括号。看一个排序算法的<code>for</code>循环：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> array:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&lt;</span> pivot:
+</span></span><span style="display:flex;"><span>        less<span style="color:#000;font-weight:bold">.</span>append(x)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        greater<span style="color:#000;font-weight:bold">.</span>append(x)
+</span></span></code></pre></div><p><strong>冒号标志着缩进代码块的开始</strong>，冒号之后的所有代码的缩进量必须相同，直到代码块结束。不管是否喜欢这种形式，使用空白符是Python程序员开发的一部分，在我看来，这可以让python的代码可读性大大优于其它语言。虽然期初看起来很奇怪，经过一段时间，你就能适应了。</p>
+<blockquote>
+<p>笔记：我强烈建议你使用四个空格作为默认的缩进，可以使用tab代替四个空格。许多文本编辑器的设置是使用制表位替代空格。某些人使用tabs或不同数目的空格数，常见的是使用两个空格。大多数情况下，四个空格是大多数人采用的方法，因此建议你也这样做。</p>
+</blockquote>
+<p>你应该已经看到，Python的语句不需要用分号结尾。但是，分号却可以用来给同在一行的语句切分：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>; b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>; c <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>
+</span></span></code></pre></div><blockquote>
+<p>Python不建议将多条语句放到一行，这会降低代码的可读性。</p>
+</blockquote>
+<h3 id="233-万物皆对象">2.3.3 万物皆对象</h3>
+<p>Python语言的一个重要特性就是它的对象模型的一致性。每个数字、字符串、数据结构、函数、类、模块等等，都是在Python解释器的自有“盒子”内，它被认为是Python对象。每个对象都有类型（例如，字符串或函数）和内部数据。在实际中，这可以让语言非常灵活，因为函数也可以被当做对象使用。</p>
+<h3 id="234-注释">2.3.4 注释</h3>
+<p>任何前面带有井号#的文本都会被Python解释器忽略。这通常被用来添加注释。有时，你会想排除一段代码，但并不删除。简便的方法就是将其注释掉：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>results <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> line <span style="color:#000;font-weight:bold">in</span> file_handle:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># keep the empty lines for now</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># if len(line) == 0:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">#   continue</span>
+</span></span><span style="display:flex;"><span>    results<span style="color:#000;font-weight:bold">.</span>append(line<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;foo&#39;</span>, <span style="color:#d14">&#39;bar&#39;</span>))
+</span></span></code></pre></div><p>也可以在执行过的代码后面添加注释。一些人习惯在代码之前添加注释，前者这种方法有时也是有用的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Reached this line&#34;</span>)  <span style="color:#998;font-style:italic"># Simple status report</span>
+</span></span></code></pre></div><h3 id="235-函数和对象方法调用">2.3.5 函数和对象方法调用</h3>
+<p>你可以用圆括号调用函数，传递零个或几个参数，或者将返回值给一个变量：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> f(x, y, z)
+</span></span><span style="display:flex;"><span>g()
+</span></span></code></pre></div><p>几乎Python中的每个对象都有附加的函数，称作方法，可以用来访问对象的内容。可以用下面的语句调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>obj<span style="color:#000;font-weight:bold">.</span>some_method(x, y, z)
+</span></span></code></pre></div><p>函数可以使用位置和关键词参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> f(a, b, c, d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5</span>, e<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;foo&#39;</span>)
+</span></span></code></pre></div><p>后面会有更多介绍。</p>
+<h3 id="236-变量和参数传递">2.3.6 变量和参数传递</h3>
+<p>当在Python中创建变量（或名字），你就在等号右边创建了一个对这个变量的引用。考虑一个整数列表：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">8</span>]: a <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span></code></pre></div><p>假设将a赋值给一个新变量b：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">9</span>]: b <span style="color:#000;font-weight:bold">=</span> a
+</span></span></code></pre></div><p>在有些方法中，这个赋值会将数据[1, 2, 3]也复制。在Python中，a和b实际上是同一个对象，即原有列表[1, 2, 3]（见图2-7）。你可以在a中添加一个元素，然后检查b：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">10</span>]: a<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">11</span>]: b
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">11</span>]: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>]
+</span></span></code></pre></div><p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140116449.png" alt="&amp;#x56FE;2-7 &amp;#x5BF9;&amp;#x540C;&amp;#x4E00;&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x53CC;&amp;#x91CD;&amp;#x5F15;&amp;#x7528;"></p>
+<p>理解Python的引用的含义，数据是何时、如何、为何复制的，是非常重要的。尤其是当你用Python处理大的数据集时。</p>
+<blockquote>
+<p>笔记：赋值也被称作绑定，我们是把一个名字绑定给一个对象。变量名有时可能被称为绑定变量。</p>
+</blockquote>
+<p>当你将对象作为参数传递给函数时，新的局域变量创建了对原始对象的引用，而不是复制。如果在函数里绑定一个新对象到一个变量，这个变动不会反映到上一层。因此可以改变可变参数的内容。假设有以下函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">append_element</span>(some_list, element):
+</span></span><span style="display:flex;"><span>    some_list<span style="color:#000;font-weight:bold">.</span>append(element)
+</span></span></code></pre></div><p>然后有：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">27</span>]: data <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">28</span>]: append_element(data, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">29</span>]: data
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">29</span>]: [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>]
+</span></span></code></pre></div><h3 id="237-动态引用强类型">2.3.7 动态引用，强类型</h3>
+<p>与许多编译语言（如JAVA和C++）对比，Python中的对象引用不包含附属的类型。下面的代码是没有问题的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">12</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">13</span>]: <span style="color:#0086b3">type</span>(a)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">13</span>]: <span style="color:#0086b3">int</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">14</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;foo&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">15</span>]: <span style="color:#0086b3">type</span>(a)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">15</span>]: <span style="color:#0086b3">str</span>
+</span></span></code></pre></div><p>变量是在特殊命名空间中的对象的名字，类型信息保存在对象自身中。一些人可能会说Python不是“类型化语言”。这是不正确的，看下面的例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [16]: &#39;5&#39; + 5
+</span></span><span style="display:flex;"><span>---------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>TypeError                                 Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>&lt;ipython-input-16-f9dbf5f0b234&gt; in &lt;module&gt;()
+</span></span><span style="display:flex;"><span>----&gt; 1 &#39;5&#39; + 5
+</span></span><span style="display:flex;"><span>TypeError: must be str, not int
+</span></span></code></pre></div><p>在某些语言中，例如Visual Basic，字符串‘5’可能被默许转换（或投射）为整数，因此会产生10。但在其它语言中，例如JavaScript，整数5会被投射成字符串，结果是联结字符串‘55’。在这个方面，Python被认为是强类型化语言，意味着每个对象都有明确的类型（或类），默许转换只会发生在特定的情况下，例如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [17]: a = 4.5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [18]: b = 2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># String formatting, to be visited later
+</span></span><span style="display:flex;"><span>In [19]: print(&#39;a is {0}, b is {1}&#39;.format(type(a), type(b)))
+</span></span><span style="display:flex;"><span>a is &lt;class &#39;float&#39;&gt;, b is &lt;class &#39;int&#39;&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [20]: a / b
+</span></span><span style="display:flex;"><span>Out[20]: 2.25
+</span></span></code></pre></div><p>知道对象的类型很重要，最好能让函数可以处理多种类型的输入。你可以用<code>isinstance</code>函数检查对象是某个类型的实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [21]: a = 5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [22]: isinstance(a, int)
+</span></span><span style="display:flex;"><span>Out[22]: True
+</span></span></code></pre></div><p><code>isinstance</code>可以用类型元组，检查对象的类型是否在元组中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [23]: a = 5; b = 4.5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [24]: isinstance(a, (int, float))
+</span></span><span style="display:flex;"><span>Out[24]: True
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [25]: isinstance(b, (int, float))
+</span></span><span style="display:flex;"><span>Out[25]: True
+</span></span></code></pre></div><h3 id="238-属性和方法">2.3.8 属性和方法</h3>
+<p>Python的对象通常都有属性（其它存储在对象内部的Python对象）和方法（对象的附属函数可以访问对象的内部数据）。可以用<code>obj.attribute_name</code>访问属性和方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [1]: a = &#39;foo&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [2]: a.&lt;Press Tab&gt;
+</span></span><span style="display:flex;"><span>a.capitalize  a.format      a.isupper     a.rindex      a.strip
+</span></span><span style="display:flex;"><span>a.center      a.index       a.join        a.rjust       a.swapcase
+</span></span><span style="display:flex;"><span>a.count       a.isalnum     a.ljust       a.rpartition  a.title
+</span></span><span style="display:flex;"><span>a.decode      a.isalpha     a.lower       a.rsplit      a.translate
+</span></span><span style="display:flex;"><span>a.encode      a.isdigit     a.lstrip      a.rstrip      a.upper
+</span></span><span style="display:flex;"><span>a.endswith    a.islower     a.partition   a.split       a.zfill
+</span></span><span style="display:flex;"><span>a.expandtabs  a.isspace     a.replace     a.splitlines
+</span></span><span style="display:flex;"><span>a.find        a.istitle     a.rfind       a.startswith
+</span></span></code></pre></div><p>也可以用<code>getattr</code>函数，通过名字访问属性和方法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [27]: getattr(a, &#39;split&#39;)
+</span></span><span style="display:flex;"><span>Out[27]: &lt;function str.split&gt;
+</span></span></code></pre></div><p>在其它语言中，访问对象的名字通常称作“反射”。本书不会大量使用<code>getattr</code>函数和相关的<code>hasattr</code>和<code>setattr</code>函数，使用这些函数可以高效编写原生的、可重复使用的代码。</p>
+<h3 id="239-鸭子类型">2.3.9 鸭子类型</h3>
+<p>经常地，你可能不关心对象的类型，只关心对象是否有某些方法或用途。这通常被称为“鸭子类型”，来自“走起来像鸭子、叫起来像鸭子，那么它就是鸭子”的说法。例如，你可以通过验证一个对象是否遵循迭代协议，判断它是可迭代的。对于许多对象，这意味着它有一个<code>__iter__</code>魔术方法，其它更好的判断方法是使用<code>iter</code>函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">isiterable</span>(obj):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">iter</span>(obj)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">except</span> <span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#998;font-style:italic"># not iterable</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span></code></pre></div><p>这个函数会返回字符串以及大多数Python集合类型为<code>True</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In [29]: isiterable(&#39;a string&#39;)
+</span></span><span style="display:flex;"><span>Out[29]: True
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [30]: isiterable([1, 2, 3])
+</span></span><span style="display:flex;"><span>Out[30]: True
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [31]: isiterable(5)
+</span></span><span style="display:flex;"><span>Out[31]: False
+</span></span></code></pre></div><p>我总是用这个功能编写可以接受多种输入类型的函数。常见的例子是编写一个函数可以接受任意类型的序列（list、tuple、ndarray）或是迭代器。你可先检验对象是否是列表（或是NUmPy数组），如果不是的话，将其转变成列表：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(x, <span style="color:#0086b3">list</span>) <span style="color:#000;font-weight:bold">and</span> isiterable(x):
+</span></span><span style="display:flex;"><span>    x <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>(x)
+</span></span></code></pre></div><h3 id="2310-引入">2.3.10 引入</h3>
+<p>在Python中，模块就是一个有<code>.py</code>扩展名、包含Python代码的文件。假设有以下模块：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># some_module.py</span>
+</span></span><span style="display:flex;"><span>PI <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.14159</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">f</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">g</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> a <span style="color:#000;font-weight:bold">+</span> b
+</span></span></code></pre></div><p>如果想从同目录下的另一个文件访问<code>some_module.py</code>中定义的变量和函数，可以：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">some_module</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> some_module<span style="color:#000;font-weight:bold">.</span>f(<span style="color:#099">5</span>)
+</span></span><span style="display:flex;"><span>pi <span style="color:#000;font-weight:bold">=</span> some_module<span style="color:#000;font-weight:bold">.</span>PI
+</span></span></code></pre></div><p>或者：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">some_module</span> <span style="color:#000;font-weight:bold">import</span> f, g, PI
+</span></span><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> g(<span style="color:#099">5</span>, PI)
+</span></span></code></pre></div><p>使用<code>as</code>关键词，你可以给引入起不同的变量名：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">some_module</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">sm</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">some_module</span> <span style="color:#000;font-weight:bold">import</span> PI <span style="color:#000;font-weight:bold">as</span> pi, g <span style="color:#000;font-weight:bold">as</span> gf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r1 <span style="color:#000;font-weight:bold">=</span> sm<span style="color:#000;font-weight:bold">.</span>f(pi)
+</span></span><span style="display:flex;"><span>r2 <span style="color:#000;font-weight:bold">=</span> gf(<span style="color:#099">6</span>, pi)
+</span></span></code></pre></div><h3 id="2311-二元运算符和比较运算符">2.3.11 二元运算符和比较运算符</h3>
+<p>大多数二元数学运算和比较都不难想到：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">32</span>]: <span style="color:#099">5</span> <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">32</span>]: <span style="color:#000;font-weight:bold">-</span><span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">33</span>]: <span style="color:#099">12</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">21.5</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">33</span>]: <span style="color:#099">33.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">34</span>]: <span style="color:#099">5</span> <span style="color:#000;font-weight:bold">&lt;=</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">34</span>]: <span style="color:#000;font-weight:bold">False</span>
+</span></span></code></pre></div><p>表2-3列出了所有的二元运算符。</p>
+<p>要判断两个引用是否指向同一个对象，可以使用<code>is</code>方法。<code>is not</code>可以判断两个对象是不同的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">35</span>]: a <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">36</span>]: b <span style="color:#000;font-weight:bold">=</span> a
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">37</span>]: c <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>(a)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">38</span>]: a <span style="color:#000;font-weight:bold">is</span> b
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">38</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">39</span>]: a <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> c
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">39</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><p>因为<code>list</code>总是创建一个新的Python列表（即复制），我们可以断定c是不同于a的。使用<code>is</code>比较与<code>==</code>运算符不同，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">40</span>]: a <span style="color:#000;font-weight:bold">==</span> c
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">40</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><p><code>is</code>和<code>is not</code>常用来判断一个变量是否为<code>None</code>，因为只有一个<code>None</code>的实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">41</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">42</span>]: a <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">42</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140420508.png" alt="&amp;#x8868;2-3 &amp;#x4E8C;&amp;#x5143;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;"></p>
+<h3 id="2312-可变与不可变对象">2.3.12 可变与不可变对象</h3>
+<p>Python中的大多数对象，比如列表、字典、NumPy数组，和用户定义的类型（类），都是可变的。意味着这些对象或包含的值可以被修改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">43</span>]: a_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;foo&#39;</span>, <span style="color:#099">2</span>, [<span style="color:#099">4</span>, <span style="color:#099">5</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">44</span>]: a_list[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">3</span>, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">45</span>]: a_list
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">45</span>]: [<span style="color:#d14">&#39;foo&#39;</span>, <span style="color:#099">2</span>, (<span style="color:#099">3</span>, <span style="color:#099">4</span>)]
+</span></span></code></pre></div><p>其它的，例如字符串和元组，是不可变的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">46</span>]: a_tuple <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">3</span>, <span style="color:#099">5</span>, (<span style="color:#099">4</span>, <span style="color:#099">5</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">47</span>]: a_tuple[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;four&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>                                 Traceback (most recent call last)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span>ipython<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">input</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">47</span><span style="color:#000;font-weight:bold">-</span>b7966a9ae0f1<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">----&gt;</span> <span style="color:#099">1</span> a_tuple[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;four&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#d14">&#39;tuple&#39;</span> <span style="color:#0086b3">object</span> does <span style="color:#000;font-weight:bold">not</span> support item assignment
+</span></span></code></pre></div><p>记住，可以修改一个对象并不意味就要修改它。这被称为副作用。例如，当写一个函数，任何副作用都要在文档或注释中写明。如果可能的话，我推荐避免副作用，采用不可变的方式，即使要用到可变对象。</p>
+<h3 id="2313-标量类型">2.3.13 标量类型</h3>
+<p>Python的标准库中有一些内建的类型，用于处理数值数据、字符串、布尔值，和日期时间。这些单值类型被称为标量类型，本书中称其为标量。表2-4列出了主要的标量。日期和时间处理会另外讨论，因为它们是标准库的<code>datetime</code>模块提供的。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140525481.png" alt="&amp;#x8868;2-4 Python&amp;#x7684;&amp;#x6807;&amp;#x91CF;"></p>
+<h3 id="2314-数值类型">2.3.14 数值类型</h3>
+<p>Python的主要数值类型是<code>int</code>和<code>float</code>。<code>int</code>可以存储任意大的数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">48</span>]: ival <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">17239871</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">49</span>]: ival <span style="color:#000;font-weight:bold">**</span> <span style="color:#099">6</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">49</span>]: <span style="color:#099">26254519291092456596965462913230729701102721</span>
+</span></span></code></pre></div><p>浮点数使用Python的<code>float</code>类型。每个数都是双精度（64位）的值。也可以用科学计数法表示：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">50</span>]: fval <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7.243</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">51</span>]: fval2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6.78e-5</span>
+</span></span></code></pre></div><p>不能得到整数的除法会得到浮点数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">52</span>]: <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">52</span>]: <span style="color:#099">1.5</span>
+</span></span></code></pre></div><p>要获得C-风格的整除（去掉小数部分），可以使用底除运算符//：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">53</span>]: <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">//</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">53</span>]: <span style="color:#099">1</span>
+</span></span></code></pre></div><h3 id="2315-字符串">2.3.15 字符串</h3>
+<p>许多人是因为Python强大而灵活的字符串处理而使用Python的。你可以用单引号或双引号来写字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;one way of writing a string&#39;</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;another way&#34;</span>
+</span></span></code></pre></div><p>对于有换行符的字符串，可以使用三引号，&lsquo;&lsquo;&lsquo;或&quot;&ldquo;&ldquo;都行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>c <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">This is a longer string that
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">spans multiple lines
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span></code></pre></div><p>字符串<code>c</code>实际包含四行文本，&ldquo;&ldquo;&ldquo;后面和lines后面的换行符。可以用<code>count</code>方法计算<code>c</code>中的新的行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">55</span>]: c<span style="color:#000;font-weight:bold">.</span>count(<span style="color:#d14">&#39;</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">55</span>]: <span style="color:#099">3</span>
+</span></span></code></pre></div><p>Python的字符串是不可变的，不能修改字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">56</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;this is a string&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">57</span>]: a[<span style="color:#099">10</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;f&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>                                 Traceback (most recent call last)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span>ipython<span style="color:#000;font-weight:bold">-</span><span style="color:#0086b3">input</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">57</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">5</span>ca625d1e504<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">----&gt;</span> <span style="color:#099">1</span> a[<span style="color:#099">10</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;f&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#d14">&#39;str&#39;</span> <span style="color:#0086b3">object</span> does <span style="color:#000;font-weight:bold">not</span> support item assignment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">58</span>]: b <span style="color:#000;font-weight:bold">=</span> a<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;string&#39;</span>, <span style="color:#d14">&#39;longer string&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">59</span>]: b
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">59</span>]: <span style="color:#d14">&#39;this is a longer string&#39;</span>
+</span></span></code></pre></div><p>经过以上的操作，变量<code>a</code>并没有被修改：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">60</span>]: a
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">60</span>]: <span style="color:#d14">&#39;this is a string&#39;</span>
+</span></span></code></pre></div><p>许多Python对象使用<code>str</code>函数可以被转化为字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">61</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5.6</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">62</span>]: s <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(a)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">63</span>]: <span style="color:#0086b3">print</span>(s)
+</span></span><span style="display:flex;"><span><span style="color:#099">5.6</span>
+</span></span></code></pre></div><p>字符串是一个序列的Unicode字符，因此可以像其它序列，比如列表和元组（下一章会详细介绍两者）一样处理：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">64</span>]: s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;python&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">65</span>]: <span style="color:#0086b3">list</span>(s)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">65</span>]: [<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;y&#39;</span>, <span style="color:#d14">&#39;t&#39;</span>, <span style="color:#d14">&#39;h&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;n&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">66</span>]: s[:<span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">66</span>]: <span style="color:#d14">&#39;pyt&#39;</span>
+</span></span></code></pre></div><p>语法<code>s[:3]</code>被称作切片，适用于许多Python序列。后面会更详细的介绍，本书中用到很多切片。</p>
+<p>反斜杠是转义字符，意思是它备用来表示特殊字符，比如换行符\n或Unicode字符。要写一个包含反斜杠的字符串，需要进行转义：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">67</span>]: s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;12</span><span style="color:#d14">\\</span><span style="color:#d14">34&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">68</span>]: <span style="color:#0086b3">print</span>(s)
+</span></span><span style="display:flex;"><span><span style="color:#099">12</span>\<span style="color:#099">34</span>
+</span></span></code></pre></div><p>如果字符串中包含许多反斜杠，但没有特殊字符，这样做就很麻烦。幸好，可以在字符串前面加一个r，表明字符就是它自身：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">69</span>]: s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">r</span><span style="color:#d14">&#39;this\has\no\special\characters&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">70</span>]: s
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">70</span>]: <span style="color:#d14">&#39;this</span><span style="color:#d14">\\</span><span style="color:#d14">has</span><span style="color:#d14">\\</span><span style="color:#d14">no</span><span style="color:#d14">\\</span><span style="color:#d14">special</span><span style="color:#d14">\\</span><span style="color:#d14">characters&#39;</span>
+</span></span></code></pre></div><p>r表示raw。</p>
+<p>将两个字符串合并，会产生一个新的字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">71</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;this is the first half &#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">72</span>]: b <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;and this is the second half&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">73</span>]: a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">73</span>]: <span style="color:#d14">&#39;this is the first half and this is the second half&#39;</span>
+</span></span></code></pre></div><p>字符串的模板化或格式化，是另一个重要的主题。Python 3拓展了此类的方法，这里只介绍一些。字符串对象有<code>format</code>方法，可以替换格式化的参数为字符串，产生一个新的字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">74</span>]: template <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;</span><span style="color:#d14">{0:.2f}</span><span style="color:#d14"> </span><span style="color:#d14">{1:s}</span><span style="color:#d14"> are worth US$</span><span style="color:#d14">{2:d}</span><span style="color:#d14">&#39;</span>
+</span></span></code></pre></div><p>在这个字符串中，</p>
+<ul>
+<li><code>{0:.2f}</code>表示格式化第一个参数为带有两位小数的浮点数。</li>
+<li><code>{1:s}</code>表示格式化第二个参数为字符串。</li>
+<li><code>{2:d}</code>表示格式化第三个参数为一个整数。</li>
+</ul>
+<p>要替换参数为这些格式化的参数，我们传递<code>format</code>方法一个序列：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">75</span>]: template<span style="color:#000;font-weight:bold">.</span>format(<span style="color:#099">4.5560</span>, <span style="color:#d14">&#39;Argentine Pesos&#39;</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">75</span>]: <span style="color:#d14">&#39;4.56 Argentine Pesos are worth US$1&#39;</span>
+</span></span></code></pre></div><p>字符串格式化是一个很深的主题，有多种方法和大量的选项，可以控制字符串中的值是如何格式化的。推荐参阅Python官方文档。</p>
+<p>这里概括介绍字符串处理，第8章的数据分析会详细介绍。</p>
+<h3 id="2316-字节和unicode">2.3.16 字节和Unicode</h3>
+<p>在Python 3及以上版本中，Unicode是一级的字符串类型，这样可以更一致的处理ASCII和Non-ASCII文本。在老的Python版本中，字符串都是字节，不使用Unicode编码。假如知道字符编码，可以将其转化为Unicode。看一个例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">76</span>]: val <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;español&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">77</span>]: val
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">77</span>]: <span style="color:#d14">&#39;español&#39;</span>
+</span></span></code></pre></div><p>可以用<code>encode</code>将这个Unicode字符串编码为UTF-8：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">78</span>]: val_utf8 <span style="color:#000;font-weight:bold">=</span> val<span style="color:#000;font-weight:bold">.</span>encode(<span style="color:#d14">&#39;utf-8&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">79</span>]: val_utf8
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">79</span>]: <span style="color:#d14">b</span><span style="color:#d14">&#39;espa</span><span style="color:#d14">\xc3\xb1</span><span style="color:#d14">ol&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">80</span>]: <span style="color:#0086b3">type</span>(val_utf8)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">80</span>]: <span style="color:#0086b3">bytes</span>
+</span></span></code></pre></div><p>如果你知道一个字节对象的Unicode编码，用<code>decode</code>方法可以解码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">81</span>]: val_utf8<span style="color:#000;font-weight:bold">.</span>decode(<span style="color:#d14">&#39;utf-8&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">81</span>]: <span style="color:#d14">&#39;español&#39;</span>
+</span></span></code></pre></div><p>虽然UTF-8编码已经变成主流，但因为历史的原因，你仍然可能碰到其它编码的数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">82</span>]: val<span style="color:#000;font-weight:bold">.</span>encode(<span style="color:#d14">&#39;latin1&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">82</span>]: <span style="color:#d14">b</span><span style="color:#d14">&#39;espa</span><span style="color:#d14">\xf1</span><span style="color:#d14">ol&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">83</span>]: val<span style="color:#000;font-weight:bold">.</span>encode(<span style="color:#d14">&#39;utf-16&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">83</span>]: <span style="color:#d14">b</span><span style="color:#d14">&#39;</span><span style="color:#d14">\xff\xfe</span><span style="color:#d14">e</span><span style="color:#d14">\x00</span><span style="color:#d14">s</span><span style="color:#d14">\x00</span><span style="color:#d14">p</span><span style="color:#d14">\x00</span><span style="color:#d14">a</span><span style="color:#d14">\x00\xf1\x00</span><span style="color:#d14">o</span><span style="color:#d14">\x00</span><span style="color:#d14">l</span><span style="color:#d14">\x00</span><span style="color:#d14">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">84</span>]: val<span style="color:#000;font-weight:bold">.</span>encode(<span style="color:#d14">&#39;utf-16le&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">84</span>]: <span style="color:#d14">b</span><span style="color:#d14">&#39;e</span><span style="color:#d14">\x00</span><span style="color:#d14">s</span><span style="color:#d14">\x00</span><span style="color:#d14">p</span><span style="color:#d14">\x00</span><span style="color:#d14">a</span><span style="color:#d14">\x00\xf1\x00</span><span style="color:#d14">o</span><span style="color:#d14">\x00</span><span style="color:#d14">l</span><span style="color:#d14">\x00</span><span style="color:#d14">&#39;</span>
+</span></span></code></pre></div><p>工作中碰到的文件很多都是字节对象，盲目地将所有数据编码为Unicode是不可取的。</p>
+<p>虽然用的不多，你可以在字节文本的前面加上一个b：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">85</span>]: bytes_val <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">b</span><span style="color:#d14">&#39;this is bytes&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">86</span>]: bytes_val
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">86</span>]: <span style="color:#d14">b</span><span style="color:#d14">&#39;this is bytes&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">87</span>]: decoded <span style="color:#000;font-weight:bold">=</span> bytes_val<span style="color:#000;font-weight:bold">.</span>decode(<span style="color:#d14">&#39;utf8&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">88</span>]: decoded  <span style="color:#998;font-style:italic"># this is str (Unicode) now</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">88</span>]: <span style="color:#d14">&#39;this is bytes&#39;</span>
+</span></span></code></pre></div><h3 id="2317-布尔值">2.3.17 布尔值</h3>
+<p>Python中的布尔值有两个，True和False。比较和其它条件表达式可以用True和False判断。布尔值可以与and和or结合使用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">89</span>]: <span style="color:#000;font-weight:bold">True</span> <span style="color:#000;font-weight:bold">and</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">89</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">90</span>]: <span style="color:#000;font-weight:bold">False</span> <span style="color:#000;font-weight:bold">or</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">90</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><h3 id="2318-类型转换">2.3.18 类型转换</h3>
+<p>str、bool、int和float也是函数，可以用来转换类型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">91</span>]: s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;3.14159&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">92</span>]: fval <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">float</span>(s)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">93</span>]: <span style="color:#0086b3">type</span>(fval)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">93</span>]: <span style="color:#0086b3">float</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">94</span>]: <span style="color:#0086b3">int</span>(fval)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">94</span>]: <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">95</span>]: <span style="color:#0086b3">bool</span>(fval)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">95</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">96</span>]: <span style="color:#0086b3">bool</span>(<span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">96</span>]: <span style="color:#000;font-weight:bold">False</span>
+</span></span></code></pre></div><h3 id="2319-none">2.3.19 None</h3>
+<p>None是Python的空值类型。如果一个函数没有明确的返回值，就会默认返回None：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">97</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">98</span>]: a <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">98</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">99</span>]: b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">100</span>]: b <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">100</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><p>None也常常作为函数的默认参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">add_and_maybe_multiply</span>(a, b, c<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>):
+</span></span><span style="display:flex;"><span>    result <span style="color:#000;font-weight:bold">=</span> a <span style="color:#000;font-weight:bold">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> c <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">None</span>:
+</span></span><span style="display:flex;"><span>        result <span style="color:#000;font-weight:bold">=</span> result <span style="color:#000;font-weight:bold">*</span> c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> result
+</span></span></code></pre></div><p>另外，None不仅是一个保留字，还是唯一的NoneType的实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">101</span>]: <span style="color:#0086b3">type</span>(<span style="color:#000;font-weight:bold">None</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">101</span>]: NoneType
+</span></span></code></pre></div><h3 id="2320-日期和时间">2.3.20 日期和时间</h3>
+<p>Python内建的<code>datetime</code>模块提供了<code>datetime</code>、<code>date</code>和<code>time</code>类型。<code>datetime</code>类型结合了<code>date</code>和<code>time</code>，是最常使用的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">102</span>]: <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime, date, time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">103</span>]: dt <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2011</span>, <span style="color:#099">10</span>, <span style="color:#099">29</span>, <span style="color:#099">20</span>, <span style="color:#099">30</span>, <span style="color:#099">21</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">104</span>]: dt<span style="color:#000;font-weight:bold">.</span>day
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">104</span>]: <span style="color:#099">29</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">105</span>]: dt<span style="color:#000;font-weight:bold">.</span>minute
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">105</span>]: <span style="color:#099">30</span>
+</span></span></code></pre></div><p>根据<code>datetime</code>实例，你可以用<code>date</code>和<code>time</code>提取出各自的对象：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">106</span>]: dt<span style="color:#000;font-weight:bold">.</span>date()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">106</span>]: datetime<span style="color:#000;font-weight:bold">.</span>date(<span style="color:#099">2011</span>, <span style="color:#099">10</span>, <span style="color:#099">29</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">107</span>]: dt<span style="color:#000;font-weight:bold">.</span>time()
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">107</span>]: datetime<span style="color:#000;font-weight:bold">.</span>time(<span style="color:#099">20</span>, <span style="color:#099">30</span>, <span style="color:#099">21</span>)
+</span></span></code></pre></div><p><code>strftime</code>方法可以将datetime格式化为字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">108</span>]: dt<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#39;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y %H:%M&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">108</span>]: <span style="color:#d14">&#39;10/29/2011 20:30&#39;</span>
+</span></span></code></pre></div><p><code>strptime</code>可以将字符串转换成<code>datetime</code>对象：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">109</span>]: datetime<span style="color:#000;font-weight:bold">.</span>strptime(<span style="color:#d14">&#39;20091031&#39;</span>, <span style="color:#d14">&#39;%Y%m</span><span style="color:#d14">%d</span><span style="color:#d14">&#39;</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">109</span>]: datetime<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2009</span>, <span style="color:#099">10</span>, <span style="color:#099">31</span>, <span style="color:#099">0</span>, <span style="color:#099">0</span>)
+</span></span></code></pre></div><p>表2-5列出了所有的格式化命令。</p>
+<p><img src="https://gitee.com/wugenqiang/images/raw/master/01/1240-20201009140738116.png" alt="&amp;#x8868;2-5 Datetime&amp;#x683C;&amp;#x5F0F;&amp;#x5316;&amp;#x6307;&amp;#x4EE4;&amp;#xFF08;&amp;#x4E0E;ISO C89&amp;#x517C;&amp;#x5BB9;&amp;#xFF09;"></p>
+<p>当你聚类或对时间序列进行分组，替换datetimes的time字段有时会很有用。例如，用0替换分和秒：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">110</span>]: dt<span style="color:#000;font-weight:bold">.</span>replace(minute<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, second<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">110</span>]: datetime<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2011</span>, <span style="color:#099">10</span>, <span style="color:#099">29</span>, <span style="color:#099">20</span>, <span style="color:#099">0</span>)
+</span></span></code></pre></div><p>因为<code>datetime.datetime</code>是不可变类型，上面的方法会产生新的对象。</p>
+<p>两个datetime对象的差会产生一个<code>datetime.timedelta</code>类型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">111</span>]: dt2 <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2011</span>, <span style="color:#099">11</span>, <span style="color:#099">15</span>, <span style="color:#099">22</span>, <span style="color:#099">30</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">112</span>]: delta <span style="color:#000;font-weight:bold">=</span> dt2 <span style="color:#000;font-weight:bold">-</span> dt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">113</span>]: delta
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">113</span>]: datetime<span style="color:#000;font-weight:bold">.</span>timedelta(<span style="color:#099">17</span>, <span style="color:#099">7179</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">114</span>]: <span style="color:#0086b3">type</span>(delta)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">114</span>]: datetime<span style="color:#000;font-weight:bold">.</span>timedelta
+</span></span></code></pre></div><p>结果<code>timedelta(17, 7179)</code>指明了<code>timedelta</code>将17天、7179秒的编码方式。</p>
+<p>将<code>timedelta</code>添加到<code>datetime</code>，会产生一个新的偏移<code>datetime</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">115</span>]: dt
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">115</span>]: datetime<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2011</span>, <span style="color:#099">10</span>, <span style="color:#099">29</span>, <span style="color:#099">20</span>, <span style="color:#099">30</span>, <span style="color:#099">21</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">116</span>]: dt <span style="color:#000;font-weight:bold">+</span> delta
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">116</span>]: datetime<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2011</span>, <span style="color:#099">11</span>, <span style="color:#099">15</span>, <span style="color:#099">22</span>, <span style="color:#099">30</span>)
+</span></span></code></pre></div><h3 id="2321-控制流">2.3.21 控制流</h3>
+<p>Python有若干内建的关键字进行条件逻辑、循环和其它控制流操作。</p>
+<h3 id="2322-ifelif和else">2.3.22 if、elif和else</h3>
+<p>if是最广为人知的控制流语句。它检查一个条件，如果为True，就执行后面的语句：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;It&#39;</span>s negative<span style="color:#d14">&#39;)</span>
+</span></span></code></pre></div><p><code>if</code>后面可以跟一个或多个<code>elif</code>，所有条件都是False时，还可以添加一个<code>else</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;It&#39;</span>s negative<span style="color:#d14">&#39;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">elif</span> x <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Equal to zero&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">elif</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">&lt;</span> x <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Positive but smaller than 5&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Positive and larger than or equal to 5&#39;</span>)
+</span></span></code></pre></div><p>如果某个条件为True，后面的<code>elif</code>就不会被执行。当使用and和or时，复合条件语句是从左到右执行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">117</span>]: a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>; b <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">118</span>]: c <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">8</span>; d <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">119</span>]: <span style="color:#000;font-weight:bold">if</span> a <span style="color:#000;font-weight:bold">&lt;</span> b <span style="color:#000;font-weight:bold">or</span> c <span style="color:#000;font-weight:bold">&gt;</span> d:
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:     <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Made it&#39;</span>)
+</span></span><span style="display:flex;"><span>Made it
+</span></span></code></pre></div><p>在这个例子中，<code>c &gt; d</code>不会被执行，因为第一个比较是True：</p>
+<p>也可以把比较式串在一起：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">120</span>]: <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">120</span>]: <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><h3 id="2324-for循环">2.3.24 for循环</h3>
+<p>for循环是在一个集合（列表或元组）中进行迭代，或者就是一个迭代器。for循环的标准语法是：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> value <span style="color:#000;font-weight:bold">in</span> collection:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># do something with value</span>
+</span></span></code></pre></div><p>你可以用continue使for循环提前，跳过剩下的部分。看下面这个例子，将一个列表中的整数相加，跳过None：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">None</span>, <span style="color:#099">4</span>, <span style="color:#000;font-weight:bold">None</span>, <span style="color:#099">5</span>]
+</span></span><span style="display:flex;"><span>total <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> value <span style="color:#000;font-weight:bold">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>    total <span style="color:#000;font-weight:bold">+=</span> value
+</span></span></code></pre></div><p>可以用<code>break</code>跳出for循环。下面的代码将各元素相加，直到遇到5：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">0</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">1</span>]
+</span></span><span style="display:flex;"><span>total_until_5 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> value <span style="color:#000;font-weight:bold">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> value <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">break</span>
+</span></span><span style="display:flex;"><span>    total_until_5 <span style="color:#000;font-weight:bold">+=</span> value
+</span></span></code></pre></div><p>break只中断for循环的最内层，其余的for循环仍会运行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">121</span>]: <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">4</span>):
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:     <span style="color:#000;font-weight:bold">for</span> j <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">4</span>):
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:         <span style="color:#000;font-weight:bold">if</span> j <span style="color:#000;font-weight:bold">&gt;</span> i:
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:             <span style="color:#000;font-weight:bold">break</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:         <span style="color:#0086b3">print</span>((i, j))
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">.....</span>:
+</span></span><span style="display:flex;"><span>(<span style="color:#099">0</span>, <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">1</span>, <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">1</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">2</span>, <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">2</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">2</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">3</span>, <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">3</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">3</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#099">3</span>, <span style="color:#099">3</span>)
+</span></span></code></pre></div><p>如果集合或迭代器中的元素序列（元组或列表），可以用for循环将其方便地拆分成变量：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> a, b, c <span style="color:#000;font-weight:bold">in</span> iterator:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># do something</span>
+</span></span></code></pre></div><h3 id="2325-while循环">2.3.25 While循环</h3>
+<p>while循环指定了条件和代码，当条件为False或用break退出循环，代码才会退出：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">256</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">while</span> x <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> total <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">500</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">break</span>
+</span></span><span style="display:flex;"><span>    total <span style="color:#000;font-weight:bold">+=</span> x
+</span></span><span style="display:flex;"><span>    x <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">//</span> <span style="color:#099">2</span>
+</span></span></code></pre></div><h3 id="2326-pass">2.3.26 pass</h3>
+<p>pass是Python中的非操作语句。代码块不需要任何动作时可以使用（作为未执行代码的占位符）；因为Python需要使用空白字符划定代码块，所以需要pass：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;negative!&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">elif</span> x <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># TODO: put something smart here</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;positive!&#39;</span>)
+</span></span></code></pre></div><h3 id="2327-range">2.3.27 range</h3>
+<p>range函数返回一个迭代器，它产生一个均匀分布的整数序列：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">122</span>]: <span style="color:#0086b3">range</span>(<span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">122</span>]: <span style="color:#0086b3">range</span>(<span style="color:#099">0</span>, <span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">123</span>]: <span style="color:#0086b3">list</span>(<span style="color:#0086b3">range</span>(<span style="color:#099">10</span>))
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">123</span>]: [<span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>, <span style="color:#099">9</span>]
+</span></span></code></pre></div><p>range的三个参数是（起点，终点，步进）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">124</span>]: <span style="color:#0086b3">list</span>(<span style="color:#0086b3">range</span>(<span style="color:#099">0</span>, <span style="color:#099">20</span>, <span style="color:#099">2</span>))
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">124</span>]: [<span style="color:#099">0</span>, <span style="color:#099">2</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span>, <span style="color:#099">10</span>, <span style="color:#099">12</span>, <span style="color:#099">14</span>, <span style="color:#099">16</span>, <span style="color:#099">18</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">125</span>]: <span style="color:#0086b3">list</span>(<span style="color:#0086b3">range</span>(<span style="color:#099">5</span>, <span style="color:#099">0</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>))
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">125</span>]: [<span style="color:#099">5</span>, <span style="color:#099">4</span>, <span style="color:#099">3</span>, <span style="color:#099">2</span>, <span style="color:#099">1</span>]
+</span></span></code></pre></div><p>可以看到，range产生的整数不包括终点。range的常见用法是用序号迭代序列：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>seq <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#0086b3">len</span>(seq)):
+</span></span><span style="display:flex;"><span>    val <span style="color:#000;font-weight:bold">=</span> seq[i]
+</span></span></code></pre></div><p>可以使用list来存储range在其他数据结构中生成的所有整数，默认的迭代器形式通常是你想要的。下面的代码对0到99999中3或5的倍数求和：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">100000</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># % is the modulo operator</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> i <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">or</span> i <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">5</span> <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">+=</span> i
+</span></span></code></pre></div><p>虽然range可以产生任意大的数，但任意时刻耗用的内存却很小。</p>
+<h3 id="2328-三元表达式">2.3.28 三元表达式</h3>
+<p>Python中的三元表达式可以将if-else语句放到一行里。语法如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>value <span style="color:#000;font-weight:bold">=</span> true<span style="color:#000;font-weight:bold">-</span>expr <span style="color:#000;font-weight:bold">if</span> condition <span style="color:#000;font-weight:bold">else</span> false<span style="color:#000;font-weight:bold">-</span>expr
+</span></span></code></pre></div><p><code>true-expr</code>或<code>false-expr</code>可以是任何Python代码。它和下面的代码效果相同：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> condition:
+</span></span><span style="display:flex;"><span>    value <span style="color:#000;font-weight:bold">=</span> true<span style="color:#000;font-weight:bold">-</span>expr
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    value <span style="color:#000;font-weight:bold">=</span> false<span style="color:#000;font-weight:bold">-</span>expr
+</span></span></code></pre></div><p>下面是一个更具体的例子：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>In [<span style="color:#099">126</span>]: x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>In [<span style="color:#099">127</span>]: <span style="color:#d14">&#39;Non-negative&#39;</span> <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#099">0</span> <span style="color:#000;font-weight:bold">else</span> <span style="color:#d14">&#39;Negative&#39;</span>
+</span></span><span style="display:flex;"><span>Out[<span style="color:#099">127</span>]: <span style="color:#d14">&#39;Non-negative&#39;</span>
+</span></span></code></pre></div><p>和if-else一样，只有一个表达式会被执行。因此，三元表达式中的if和else可以包含大量的计算，但只有True的分支会被执行。因此，三元表达式中的if和else可以包含大量的计算，但只有True的分支会被执行。</p>
+<p>虽然使用三元表达式可以压缩代码，但会降低代码可读性。</p>
+<h2 id="24-参考资料">2.4 参考资料</h2>
+<ul>
+<li>
+<p>📕 <a href="https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version/">《利用Python进行数据分析-第2版-中文译版》</a></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/images/01/20200821110801.png" alt="image-20200821110800287"></p>
+</li>
+<li>
+<p>🎬 <a href="https://www.bilibili.com/video/BV1cA411v7VG">《利用Python进行数据分析 配套视频》</a></p>
+</li>
+<li>
+<p>🚝 <a href="https://github.com/wesm/pydata-book">Gihub《Python数据分析》配套源码</a></p>
+</li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/">← 第九章 绘图可视化</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/">第五章 Pandas 入门  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

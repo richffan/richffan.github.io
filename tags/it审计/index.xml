@@ -1,87 +1,82 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IT审计 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/it%E5%AE%A1%E8%AE%A1/</link>
-    <description>IT审计 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 18 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/it%E5%AE%A1%E8%AE%A1/" rel="self" type="application/rss+xml" /><item>
-  <title>IT审计案例：某集团数据治理审计</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/</link>
-  <pubDate>Wed, 18 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/</guid>
-  <description><![CDATA[某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网+的大形势之下，对系统的要求会越来越高，因此]]></description>
-</item>
-<item>
-  <title>审计军火库</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/</link>
-  <pubDate>Wed, 18 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/</guid>
-  <description><![CDATA[工具 财务审计工具 审计工具箱 快递截图、工商截图、询证函处理、地址复核、海关查询、公告下载、地址补全集合成一个exe文件。 tools for auditor Excel VBA编写的一]]></description>
-</item>
-<item>
-  <title>IT审计</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/</link>
-  <pubDate>Tue, 15 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/</guid>
-  <description><![CDATA[1. 到底什么是IT审计？IT审计是检查和评估自动信息处理系统和相关的非自动处理流程及两者之间的接口关系。是独立于信息系统本身、信息系统相关开发]]></description>
-</item>
-<item>
-  <title>IT审计操作流程</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/</link>
-  <pubDate>Tue, 15 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/</guid>
-  <description><![CDATA[一、审计计划阶段计划阶段是整个审计过程的起点。其主要工作包括： （1）了解被审系统基本情况了解被审系统基本情况是实施任何信息系统审计的必经程序]]></description>
-</item>
-<item>
-  <title>IT审计的实务操作</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%AE%9E%E5%8A%A1%E6%93%8D%E4%BD%9C/</link>
-  <pubDate>Tue, 15 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%AE%9E%E5%8A%A1%E6%93%8D%E4%BD%9C/</guid>
-  <description><![CDATA[目录 1、 IT审计的计划 2、 IT控制的识别与测试 3、 抽样与获取审计证据 4、 IT控制的评价、缺陷与整改 5、 底稿的撰写与审阅]]></description>
-</item>
-<item>
-  <title>信息系统（IT）审计要点</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/</link>
-  <pubDate>Tue, 15 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/</guid>
-  <description><![CDATA[01信息系统审计全景 着信息技术的发展，企业运营的方方面面都离不开信息化系统的支持，随之而来的风险也与日俱增，审计师首先要关注信息安全，还要关]]></description>
-</item>
-<item>
-  <title>duckdb从入门到精通：安装篇</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/</link>
-  <pubDate>Fri, 05 May 2023 14:19:09 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/</guid>
-  <description><![CDATA[DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合]]></description>
-</item>
-<item>
-  <title>duckdb从入门到精通：数据导入</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</link>
-  <pubDate>Fri, 05 May 2023 14:19:09 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</guid>
-  <description><![CDATA[数据导入这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件实际上，duckdb 可以不导入到数]]></description>
-</item>
-<item>
-  <title>IT审计可以扔掉mysql了，新神器duckdb来临！</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/</link>
-  <pubDate>Fri, 05 May 2023 14:19:09 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/</guid>
-  <description><![CDATA[一个朋友给我推荐了一个数据 duckdb 让我去试用下。 我试用后，感觉作为平时在本地进行数据分析的 IT 审计来说，完全可以丢掉mysql,sqlserver这]]></description>
-</item>
-<item>
-  <title>IT审计可能使用到的数据库及工具</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/</link>
-  <pubDate>Wed, 03 May 2023 14:19:09 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/</guid>
-  <description><![CDATA[数据库 duckdb 官网 mysql 官网 clickhouse 官网 sqlserver 官网 数据库工具 dbeaver 官网 sql studio 官网 navicat 官网]]></description>
-</item>
-</channel>
+    <title>IT审计 on 樊刹</title>
+    <link>https://richfan.site/tags/it%E5%AE%A1%E8%AE%A1/</link>
+    <description>Recent content in IT审计 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/it%E5%AE%A1%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IT审计案例：某集团数据治理审计</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%A1%88%E4%BE%8B%E6%9F%90%E9%9B%86%E5%9B%A2%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E5%AE%A1%E8%AE%A1/</guid>
+      <description>某企业是一个综合性跨国性的集团化公司，信息系统建设起步早，各系统各业务线智能化程度较高，在互联网+的大形势之下，对系统的要求会越来越高，因此，需要对集团整个系统</description>
+    </item>
+    <item>
+      <title>审计军火库</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E5%AE%A1%E8%AE%A1%E5%86%9B%E7%81%AB%E5%BA%93/</guid>
+      <description>工具 财务审计工具 审计工具箱 快递截图、工商截图、询证函处理、地址复核、海关查询、公告下载、地址补全集合成一个exe文件。 tools for auditor Excel VBA编写的一系列工具（点击“克隆</description>
+    </item>
+    <item>
+      <title>IT审计</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1/</guid>
+      <description>1. 到底什么是IT审计？ IT审计是检查和评估自动信息处理系统和相关的非自动处理流程及两者之间的接口关系。是独立于信息系统本身、信息系统相关开发、使用人员的第三方－</description>
+    </item>
+    <item>
+      <title>IT审计操作流程</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/</guid>
+      <description>一、审计计划阶段 计划阶段是整个审计过程的起点。其主要工作包括： （1）了解被审系统基本情况 了解被审系统基本情况是实施任何信息系统审计的必经程序，对基本情况的了解有</description>
+    </item>
+    <item>
+      <title>IT审计的实务操作</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%AE%9E%E5%8A%A1%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%AE%9E%E5%8A%A1%E6%93%8D%E4%BD%9C/</guid>
+      <description>目录 1、 IT审计的计划 2、 IT控制的识别与测试 3、 抽样与获取审计证据 4、 IT控制的评价、缺陷与整改 5、 底稿的撰写与审阅</description>
+    </item>
+    <item>
+      <title>信息系统（IT）审计要点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9Fit%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9/</guid>
+      <description>01信息系统审计全景 着信息技术的发展，企业运营的方方面面都离不开信息化系统的支持，随之而来的风险也与日俱增，审计师首先要关注信息安全，还要关注信息系统的稳定性和</description>
+    </item>
+    <item>
+      <title>duckdb从入门到精通：安装篇</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/</link>
+      <pubDate>Fri, 05 May 2023 14:19:09 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E5%AE%89%E8%A3%85%E7%AF%87/</guid>
+      <description>DuckDB是一个开源免费的高性能的列式数据库系统，类似 SQLite 易用，又具备 clickhouse 的性能。 作为平时使用自己笔记本做数据分析的学生、分析师来说，非常适合使用，性能比 mysql 快百倍</description>
+    </item>
+    <item>
+      <title>duckdb从入门到精通：数据导入</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</link>
+      <pubDate>Fri, 05 May 2023 14:19:09 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/duckdb%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A_%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</guid>
+      <description>数据导入 这里我们都以 csv 文件举例，如果你需要导入 excel 文件，需要先转换成 csv 文件（后面我们会介绍 xlsx2csv 工具）。 读取文件 实际上，duckdb 可以不导入到数据库中，就可以直接查</description>
+    </item>
+    <item>
+      <title>IT审计可以扔掉mysql了，新神器duckdb来临！</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/</link>
+      <pubDate>Fri, 05 May 2023 14:19:09 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E4%BB%A5%E6%89%94%E6%8E%89mysql%E4%BA%86_%E6%96%B0%E7%A5%9E%E5%99%A8duckdb%E6%9D%A5%E4%B8%B4/</guid>
+      <description>一个朋友给我推荐了一个数据 duckdb 让我去试用下。 我试用后，感觉作为平时在本地进行数据分析的 IT 审计来说，完全可以丢掉mysql,sqlserver这些数据库了。 先说下 duckdb</description>
+    </item>
+    <item>
+      <title>IT审计可能使用到的数据库及工具</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 03 May 2023 14:19:09 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%A1%E8%AE%A1/it%E5%AE%A1%E8%AE%A1%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E5%B7%A5%E5%85%B7/</guid>
+      <description>数据库 duckdb 官网 mysql 官网 clickhouse 官网 sqlserver 官网 数据库工具 dbeaver 官网 sql studio 官网 navicat 官网</description>
+    </item>
+  </channel>
 </rss>

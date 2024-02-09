@@ -1,87 +1,320 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/python/</link>
-    <description>python - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/python/" rel="self" type="application/rss+xml" /><item>
-  <title>9款最佳Python脚本：让工作自动化起来！</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
-  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</guid>
-  <description><![CDATA[一、自动化文件管理 1.在目录中对文件进行排序 1 2 3 4 5 6 7 8 9 10 11 12 # Python脚本用于按文件扩展名对目录中的文件进行排序 import os from shutil import move def sort_files(directory_path):]]></description>
-</item>
-<item>
-  <title>1 顺序表</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
-  <description><![CDATA[突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，]]></description>
-</item>
-<item>
-  <title>2 单链表</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
-  <description><![CDATA[单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。 链表的基本元素有： 节点：包括数]]></description>
-</item>
-<item>
-  <title>3 栈</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</guid>
-  <description><![CDATA[栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。 3.1 栈的初始化 1 2 3 4 def __init__(self): self.stack = [] # 栈列表 self.size = 20 # 栈大小 self.top = -1 # 栈顶位置]]></description>
-</item>
-<item>
-  <title>6 小时 Python 入门</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
-  <description><![CDATA[以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python1、官网下载 Python 进入官网（https://www.python.org），点击 D]]></description>
-</item>
-<item>
-  <title>Anaconda 入门指南</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
-  <description><![CDATA[一、下载安装 Anaconda1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好]]></description>
-</item>
-<item>
-  <title>Jupyter notebook 使用指南</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
-  <description><![CDATA[前言在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，]]></description>
-</item>
-<item>
-  <title>Jupyter添加目录toc</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
-  <description><![CDATA[最近在使用Jupyter notebook的时候感觉到，没有个目录真心难受，当想查找需要的函数的时候，不能很快速的找到，这个时候，要是有个目录]]></description>
-</item>
-<item>
-  <title>Pandas常用操作</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>PyCharm 优化使用</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
-  <pubDate>Mon, 25 Sep 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
-  <description><![CDATA[设置 Python 路径（解释器设置）1、打开设置对话框 点击File &ndash;&gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &ndash;&gt; Project Interpr]]></description>
-</item>
-</channel>
+    <title>python on 樊刹</title>
+    <link>https://richfan.site/tags/python/</link>
+    <description>Recent content in python on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9款最佳Python脚本：让工作自动化起来！</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</guid>
+      <description>一、自动化文件管理 1.在目录中对文件进行排序 # Python脚本用于按文件扩展名对目录中的文件进行排序 import os from shutil import move def sort_files(directory_path): for filename in os.listdir(directory_path): if os.path.isfile(os.path.join(directory_path, filename)): file_extension = filename.split(&amp;#39;.&amp;#39;)[-1] destination_directory = os.path.join(directory_path, file_extension) if not os.path.exists(destination_directory): os.makedirs(destination_directory) move(os.path.join(directory_path, filename), os.path.join(destination_directory, filename)</description>
+    </item>
+    <item>
+      <title>1 顺序表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
+      <description>突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，或者不想这么干的话，</description>
+    </item>
+    <item>
+      <title>2 单链表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <description>单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。 链表的基本元素有： 节点：包括数据域和指针域，数据域</description>
+    </item>
+    <item>
+      <title>3 栈</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</guid>
+      <description>栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。 3.1 栈的初始化 def __init__(self): self.stack = [] # 栈列表 self.size = 20 # 栈大小 self.top = -1 # 栈顶位置 3.2 元素进栈 # 元素进栈 def push(self, element): self.stack.append(element)</description>
+    </item>
+    <item>
+      <title>6 小时 Python 入门</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
+      <description>以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python 1、官网下载 Python 进入官网（https://www.python.org），点击 Downloads，选择要下载的</description>
+    </item>
+    <item>
+      <title>Anaconda 入门指南</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>一、下载安装 Anaconda 1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好了, 安装完成之后会多几个应用： Anaconda Navigtor</description>
+    </item>
+    <item>
+      <title>Jupyter notebook 使用指南</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，还有 Spyder、T</description>
+    </item>
+    <item>
+      <title>Jupyter添加目录toc</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
+      <description>最近在使用Jupyter notebook的时候感觉到，没有个目录真心难受，当想查找需要的函数的时候，不能很快速的找到，这个时候，要是有个目录就好很多了，很不幸的</description>
+    </item>
+    <item>
+      <title>Pandas常用操作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PyCharm 优化使用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
+      <description>设置 Python 路径（解释器设置） 1、打开设置对话框 点击File &amp;ndash;&amp;gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &amp;ndash;&amp;gt; Project Interpreter，在右侧 Project Interpreter</description>
+    </item>
+    <item>
+      <title>Python 王国 ✨</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/readme/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/readme/</guid>
+      <description>Python 入门学习笔记 对于还没入门的小伙伴们，推荐先跟6 小时 Python 入门学习笔记这篇文档敲一遍，行云流水之后对 Python 有了初步的认识，继而根据下面章节深入学习： 1 - Python 基础 2 - 函数 3</description>
+    </item>
+    <item>
+      <title>Python 语法</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</guid>
+      <description>1 - Python 基础 2 - 函数 3 - 高级特性 4 - 函数式编程 5 - 模块 6 - 面向对象编程 7 - 面向对象高级编程 8 - 错误、调试和测试 9 - IO 编程 10 - 进程和线程 11 - 正则表达式</description>
+    </item>
+    <item>
+      <title>第一章 Python 基础</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/</guid>
+      <description>Python 非常适合初学者用来进入计算机编程领域。Python 属于非常高级的语言，掌握了这门高级语言，就对计算机编程的核心思想——抽象有了初步理解。如果希望继续深入学习计</description>
+    </item>
+    <item>
+      <title>第一章 准备工作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</guid>
+      <description>1.1 本书的内容 Python 数据分析这本书讲的是利用 Python 进行数据控制、处理、整理、分析等方面的具体细节和基本要点。作者介绍 Python 编程和用于数据处理的库和工具环境，掌握这些，可以让你</description>
+    </item>
+    <item>
+      <title>第七章 数据清洗和准备</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/</guid>
+      <description>在数据分析和建模的过程中，相当多的时间要用在数据准备上：加载、清理、转换以及重塑。这些工作会占到分析师时间的80%或更多。有时，存储在文件和数据库中的数据的格式</description>
+    </item>
+    <item>
+      <title>第七章 面向对象高级编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/</guid>
+      <description>数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承、定制类、元类等概念</description>
+    </item>
+    <item>
+      <title>第三章 Python 的数据结构、函数和文件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>🐹 本章讨论Python的内置功能，这些功能本书会用到很多。虽然扩展库，比如pandas和Numpy，使处理大数据集很方便，但它们是和Python的内置数据处理工</description>
+    </item>
+    <item>
+      <title>第三章 高级特性</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</guid>
+      <description>掌握了 Python 的数据类型、语句和函数，基本上就可以编写出很多有用的程序了。 比如构造一个1, 3, 5, 7, ..., 99的列表，可以通过循环实现： L = [] n = 1 while n &amp;lt;= 99: L.append(n) n = n + 2 print(L) 🔍 使</description>
+    </item>
+    <item>
+      <title>第九章 IO 编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/</guid>
+      <description>IO在计算机中指Input/Output，也就是输入和输出。由于程序和运行时数据是在内存中驻留，由CPU这个超快的计算核心来执行，涉及到数据交换的地方，通常是磁</description>
+    </item>
+    <item>
+      <title>第九章 绘图可视化</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description>信息可视化（也叫绘图）是数据分析中最重要的工作之一。它可能是探索过程的一部分，例如，帮助我们找出异常值、必要的数据转换、得出有关模型的idea等。另外，做一个可</description>
+    </item>
+    <item>
+      <title>第二章 Python 语法基础，IPython 和 Jupyter Notebooks</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/</guid>
+      <description>我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，原来通用的科学计算拓</description>
+    </item>
+    <item>
+      <title>第二章 函数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/</guid>
+      <description>我们知道圆的面积计算公式为： $$ S = πr^2 $$ 当我们知道半径r的值时，就可以根据公式计算出面积。 假设我们需要计算 3 个不同大小的圆的面积： r1 = 12.34 r2 = 9.08 r3 = 73.1 s1 = 3.14 *</description>
+    </item>
+    <item>
+      <title>第五章 Pandas 入门</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/</guid>
+      <description>pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值计算工具NumPy和</description>
+    </item>
+    <item>
+      <title>第五章 模块</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/</guid>
+      <description>我们知道，一个文件里代码越来越长的时候，就会越来越不容易维护。 为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少</description>
+    </item>
+    <item>
+      <title>第八章 数据规整：聚合、合并和重塑</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/</guid>
+      <description>在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的层次化索引，它广泛用</description>
+    </item>
+    <item>
+      <title>第八章 错误、调试和测试</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/</guid>
+      <description>在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug，bug是必须修复的</description>
+    </item>
+    <item>
+      <title>第六章 数据加载、存储与文件格式</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</guid>
+      <description>访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。 输入输出通常可以划分为几个大类：读取</description>
+    </item>
+    <item>
+      <title>第六章 面向对象编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</guid>
+      <description>面向对象编程——Object Oriented Programming，简称 OOP，是一种程序设计思想。OOP 把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。 面向过</description>
+    </item>
+    <item>
+      <title>第十一章 时间序列</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/</guid>
+      <description>时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点观察或测量到的任何事</description>
+    </item>
+    <item>
+      <title>第十一章 正则表达式</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>字符串是编程时涉及到的最多的一种数据结构，对字符串进行操作的需求几乎无处不在。比如判断一个字符串是否是合法的Email地址，虽然可以编程提取@前后的子串，再分别</description>
+    </item>
+    <item>
+      <title>第十三章 Python 建模库介绍</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/</guid>
+      <description>本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。 开发模型选用什么库取</description>
+    </item>
+    <item>
+      <title>第十二章 Pandas 高级应用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</guid>
+      <description>前面的章节关注于不同类型的数据规整流程和NumPy、pandas与其它库的特点。随着时间的发展，pandas发展出了更多适合高级用户的功能。本章就要深入学习pa</description>
+    </item>
+    <item>
+      <title>第十四章 数据分析案例</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/</guid>
+      <description>本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它数据集，也包括你的。</description>
+    </item>
+    <item>
+      <title>第十章 数据聚合与分组运算</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/</guid>
+      <description>对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分组统计或生成透视表。</description>
+    </item>
+    <item>
+      <title>第十章 进程和线程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</guid>
+      <description>很多同学都听说过，现代操作系统比如Mac OS X，UNIX，Linux，Windows等，都是支持“多任务”的操作系统。 什么叫“多任务”呢？简单地说，就是操作系统可</description>
+    </item>
+    <item>
+      <title>第四章 Numpy 基础</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
+      <description>NumPy（Numerical Python的简称）是Python数值计算最重要的基础包。大多数提供科学计算的包都是用NumPy的数组作为构建基础。 NumPy的部</description>
+    </item>
+    <item>
+      <title>第四章 函数式编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
+      <description>函数是 Python 内建支持的一种封装，我们通过把大段代码拆成函数，通过一层一层的函数调用，就可以把复杂任务分解成简单的任务，这种分解可以称之为面向过程的程序设计。函数就是</description>
+    </item>
+    <item>
+      <title>附录A-NumPy高级应用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</guid>
+      <description>在这篇附录中，我会深入NumPy库的数组计算。这会包括ndarray更内部的细节，和更高级的数组操作和算法。 本章包括了一些杂乱的章节，不需要仔细研究。 A.1 ndar</description>
+    </item>
+    <item>
+      <title>附录B-更多关于IPython的内容</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/</guid>
+      <description>第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控制台或在jupyte</description>
+    </item>
+    <item>
+      <title>审计技能|Python语句（四）：常用查询函数</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 15 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</guid>
+      <description>1.分组聚合函数（groupby） 类似SQL的groupby那样的数据透视功能。可以使用pandas库的groupby函数来实现分组聚合操作。 举例： 有一个A表，</description>
+    </item>
+    <item>
+      <title>审计技能|Python语句（四）：常用查询函数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 15 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</guid>
+      <description>1.分组聚合函数（groupby） 类似SQL的groupby那样的数据透视功能。可以使用pandas库的groupby函数来实现分组聚合操作。 举例： 有一个A表，</description>
+    </item>
+    <item>
+      <title>python数据分析专用数据库，与pandas结合，10倍提速&#43;极致体验</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</guid>
+      <description>前言 你有想过在 pandas 中直接使用 sql吗？我知道许多小伙伴已经知道一些库也可以做到这种体验，不过他们的性能太差劲了(基于sqlite，或其他服务端数据库)。 今天我要介</description>
+    </item>
+    <item>
+      <title>数据库连接轻松搞定：Python 数据库推荐</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</guid>
+      <description>SQLite3：轻巧便捷的数据库连接 首先，让我们认识一下 SQLite3 这个轻巧便捷的库。它是 Python 中自带的数据库模块，适用于小型应用和快速原型开发。 让我们来看看 SQLite3 的魔法： import sqlite3 ##</description>
+    </item>
+    <item>
+      <title>ExcelToPDF</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/exceltopdf/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/exceltopdf/</guid>
+      <description>&lt;h2 id=&#34;excel-to-pdf&#34;&gt;Excel To PDF&lt;/h2&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>税务筹划 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92/</link>
-    <description>税务筹划 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92/" rel="self" type="application/rss+xml" /><item>
-  <title>税务筹划第一式：股权架构设计</title>
-  <link>http://richfan.site/%E7%A8%8E%E6%8A%80/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92%E7%AC%AC%E4%B8%80%E5%BC%8F%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</link>
-  <pubDate>Wed, 23 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8E%E6%8A%80/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92%E7%AC%AC%E4%B8%80%E5%BC%8F%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</guid>
-  <description><![CDATA[税务筹划是纳税人在税法规定的范围内，通过对自身股权架构、业务经营、投资等活动的事先安排和筹划，合法地降低、延迟甚至免除自身的税收负担，从而取]]></description>
-</item>
-</channel>
+    <title>税务筹划 on 樊刹</title>
+    <link>https://richfan.site/tags/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92/</link>
+    <description>Recent content in 税务筹划 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>税务筹划第一式：股权架构设计</title>
+      <link>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92%E7%AC%AC%E4%B8%80%E5%BC%8F%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E7%A8%8E%E5%8A%A1%E7%AD%B9%E5%88%92%E7%AC%AC%E4%B8%80%E5%BC%8F%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</guid>
+      <description>税务筹划是纳税人在税法规定的范围内，通过对自身股权架构、业务经营、投资等活动的事先安排和筹划，合法地降低、延迟甚至免除自身的税收负担，从而取得税后利益的最大化。</description>
+    </item>
+  </channel>
 </rss>

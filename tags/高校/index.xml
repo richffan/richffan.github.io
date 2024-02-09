@@ -1,23 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>高校 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/%E9%AB%98%E6%A0%A1/</link>
-    <description>高校 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E9%AB%98%E6%A0%A1/" rel="self" type="application/rss+xml" /><item>
-  <title>高校审计的现状和主要关注点</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
-  <description><![CDATA[目前，审计机关对高校的审计有两种：一种是对高校校长的任期经济责任审计，另一种则是对高校的财务审计。但这两种审计，每年都很少，而当前高校在收费]]></description>
-</item>
-<item>
-  <title>民办高校审计，要审哪些东西？怎么审？</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</link>
-  <pubDate>Sun, 22 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</guid>
-  <description><![CDATA[一般情况下，只有大型企业、财团或权贵才有资格和能力创办私营高校，也就是有营业执照的私营非盈利机构。 这类高校的内审也应像企业一样，也可以从财务]]></description>
-</item>
-</channel>
+    <title>高校 on 樊刹</title>
+    <link>https://richfan.site/tags/%E9%AB%98%E6%A0%A1/</link>
+    <description>Recent content in 高校 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/%E9%AB%98%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高校审计的现状和主要关注点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>目前，审计机关对高校的审计有两种：一种是对高校校长的任期经济责任审计，另一种则是对高校的财务审计。但这两种审计，每年都很少，而当前高校在收费和经费开支特别是科研</description>
+    </item>
+    <item>
+      <title>民办高校审计，要审哪些东西？怎么审？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</guid>
+      <description>一般情况下，只有大型企业、财团或权贵才有资格和能力创办私营高校，也就是有营业执照的私营非盈利机构。 这类高校的内审也应像企业一样，也可以从财务视角出发，虽说它是非</description>
+    </item>
+  </channel>
 </rss>

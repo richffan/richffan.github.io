@@ -1,15 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>社保 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/%E7%A4%BE%E4%BF%9D/</link>
-    <description>社保 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 14 Aug 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E7%A4%BE%E4%BF%9D/" rel="self" type="application/rss+xml" /><item>
-  <title>人社部：员工自愿放弃社保，将向单位追责！（附：10种人可不用缴社保）</title>
-  <link>http://richfan.site/%E7%A8%8E%E6%8A%80/%E4%BA%BA%E7%A4%BE%E9%83%A8%E5%91%98%E5%B7%A5%E8%87%AA%E6%84%BF%E6%94%BE%E5%BC%83%E7%A4%BE%E4%BF%9D%E5%B0%86%E5%90%91%E5%8D%95%E4%BD%8D%E8%BF%BD%E8%B4%A3%E9%99%8410%E7%A7%8D%E4%BA%BA%E5%8F%AF%E4%B8%8D%E7%94%A8%E7%BC%B4%E7%A4%BE%E4%BF%9D/</link>
-  <pubDate>Mon, 14 Aug 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8E%E6%8A%80/%E4%BA%BA%E7%A4%BE%E9%83%A8%E5%91%98%E5%B7%A5%E8%87%AA%E6%84%BF%E6%94%BE%E5%BC%83%E7%A4%BE%E4%BF%9D%E5%B0%86%E5%90%91%E5%8D%95%E4%BD%8D%E8%BF%BD%E8%B4%A3%E9%99%8410%E7%A7%8D%E4%BA%BA%E5%8F%AF%E4%B8%8D%E7%94%A8%E7%BC%B4%E7%A4%BE%E4%BF%9D/</guid>
-  <description><![CDATA[人社保官方表示：员工自愿放弃社保，用人单位不能免责！ 按照国家有关规定，用人单位和职工应当参加基本养老保险制度并按时足额缴纳基本养老保险费，这]]></description>
-</item>
-</channel>
+    <title>社保 on 樊刹</title>
+    <link>https://richfan.site/tags/%E7%A4%BE%E4%BF%9D/</link>
+    <description>Recent content in 社保 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/%E7%A4%BE%E4%BF%9D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人社部：员工自愿放弃社保，将向单位追责！（附：10种人可不用缴社保）</title>
+      <link>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E4%BA%BA%E7%A4%BE%E9%83%A8%E5%91%98%E5%B7%A5%E8%87%AA%E6%84%BF%E6%94%BE%E5%BC%83%E7%A4%BE%E4%BF%9D%E5%B0%86%E5%90%91%E5%8D%95%E4%BD%8D%E8%BF%BD%E8%B4%A3%E9%99%8410%E7%A7%8D%E4%BA%BA%E5%8F%AF%E4%B8%8D%E7%94%A8%E7%BC%B4%E7%A4%BE%E4%BF%9D/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8E%E6%8A%80/%E4%BA%BA%E7%A4%BE%E9%83%A8%E5%91%98%E5%B7%A5%E8%87%AA%E6%84%BF%E6%94%BE%E5%BC%83%E7%A4%BE%E4%BF%9D%E5%B0%86%E5%90%91%E5%8D%95%E4%BD%8D%E8%BF%BD%E8%B4%A3%E9%99%8410%E7%A7%8D%E4%BA%BA%E5%8F%AF%E4%B8%8D%E7%94%A8%E7%BC%B4%E7%A4%BE%E4%BF%9D/</guid>
+      <description>人社保官方表示：员工自愿放弃社保，用人单位不能免责！ 按照国家有关规定，用人单位和职工应当参加基本养老保险制度并按时足额缴纳基本养老保险费，这既是用人单位和职工的</description>
+    </item>
+  </channel>
 </rss>

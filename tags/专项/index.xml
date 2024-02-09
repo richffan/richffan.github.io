@@ -1,87 +1,495 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>专项 - 标签 - 樊刹</title>
-    <link>http://richfan.site/tags/%E4%B8%93%E9%A1%B9/</link>
-    <description>专项 - 标签 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/tags/%E4%B8%93%E9%A1%B9/" rel="self" type="application/rss+xml" /><item>
-  <title>销售审计：10大核心关注点（实用总结）</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%94%80%E5%94%AE%E5%AE%A1%E8%AE%A110%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9%E5%AE%9E%E7%94%A8%E6%80%BB%E7%BB%93/</link>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%94%80%E5%94%AE%E5%AE%A1%E8%AE%A110%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9%E5%AE%9E%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
-  <description><![CDATA[01 价格管理所需资料： 销售价目表、折扣政策、销售订单。 审计思路： 检查销售订单或者销售合同的价格与公司的价目表是否一致；检查是否存在低于正常毛率]]></description>
-</item>
-<item>
-  <title>采购审计：访谈提纲模板、审计方案</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A1%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2%E6%A8%A1%E6%9D%BF%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
-  <pubDate>Fri, 03 Nov 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A1%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2%E6%A8%A1%E6%9D%BF%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
-  <description><![CDATA[基 础 信 息 审计项目：XX采购专项审计 访谈主题：采购管理整体情况 访谈时间：2023年11月X日 15:30-16:30 访谈地点：XX市 XX大厦XX层XX 被访谈人：XX]]></description>
-</item>
-<item>
-  <title>“三重一大”事项决策流程图</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E4%BA%8B%E9%A1%B9%E5%86%B3%E7%AD%96%E6%B5%81%E7%A8%8B%E5%9B%BE/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E4%BA%8B%E9%A1%B9%E5%86%B3%E7%AD%96%E6%B5%81%E7%A8%8B%E5%9B%BE/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>【行政事业单位】纪检巡察财务审查关键点</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E8%B4%A2%E5%8A%A1%E5%AE%A1%E6%9F%A5%E5%85%B3%E9%94%AE%E7%82%B9/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E8%B4%A2%E5%8A%A1%E5%AE%A1%E6%9F%A5%E5%85%B3%E9%94%AE%E7%82%B9/</guid>
-  <description><![CDATA[一、行政事业单位财会检查要点行政事业单位财会核算的特点是业务单一，账目简单，适用的是行政事业单位财务规则、政府会计准则制度等，有《预算法》、]]></description>
-</item>
-<item>
-  <title>财务专用章、公章、合同专用章、发票专用章，有关印章的最全风险汇总</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%B4%A2%E5%8A%A1%E4%B8%93%E7%94%A8%E7%AB%A0%E5%85%AC%E7%AB%A0%E5%90%88%E5%90%8C%E4%B8%93%E7%94%A8%E7%AB%A0%E5%8F%91%E7%A5%A8%E4%B8%93%E7%94%A8%E7%AB%A0%E6%9C%89%E5%85%B3%E5%8D%B0%E7%AB%A0%E7%9A%84%E6%9C%80%E5%85%A8%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%B4%A2%E5%8A%A1%E4%B8%93%E7%94%A8%E7%AB%A0%E5%85%AC%E7%AB%A0%E5%90%88%E5%90%8C%E4%B8%93%E7%94%A8%E7%AB%A0%E5%8F%91%E7%A5%A8%E4%B8%93%E7%94%A8%E7%AB%A0%E6%9C%89%E5%85%B3%E5%8D%B0%E7%AB%A0%E7%9A%84%E6%9C%80%E5%85%A8%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</guid>
-  <description><![CDATA[一、公司印章分哪几种，分别有什么用途?公司印章主要分为五种： （1）公章，用于公司对外事务的处理，工商、税务、银行等外部事务处理事需要加盖。 （]]></description>
-</item>
-<item>
-  <title>采购专项审计流程：3个阶段49个重要审计关注点</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B3%E4%B8%AA%E9%98%B6%E6%AE%B549%E4%B8%AA%E9%87%8D%E8%A6%81%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B3%E4%B8%AA%E9%98%B6%E6%AE%B549%E4%B8%AA%E9%87%8D%E8%A6%81%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
-  <description><![CDATA[一、对公司采购制度完善性检查、评价审计准备 1、制度与流程： （1）收集公司采购管理制度，评价相关的采购管理控制措施是否完备，采购活动各阶段是否]]></description>
-</item>
-<item>
-  <title>地方审计部门发现的科技创新领域审计结果部分汇总</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9C%B0%E6%96%B9%E5%AE%A1%E8%AE%A1%E9%83%A8%E9%97%A8%E5%8F%91%E7%8E%B0%E7%9A%84%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E9%A2%86%E5%9F%9F%E5%AE%A1%E8%AE%A1%E7%BB%93%E6%9E%9C%E9%83%A8%E5%88%86%E6%B1%87%E6%80%BB/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9C%B0%E6%96%B9%E5%AE%A1%E8%AE%A1%E9%83%A8%E9%97%A8%E5%8F%91%E7%8E%B0%E7%9A%84%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E9%A2%86%E5%9F%9F%E5%AE%A1%E8%AE%A1%E7%BB%93%E6%9E%9C%E9%83%A8%E5%88%86%E6%B1%87%E6%80%BB/</guid>
-  <description><![CDATA[1.北京审计：科技资源开放共享与科技成果转化不到位，市属高校科技园入驻企业质量不高（二）国际科技创新中心重点项目推进及资金投入方面 审计调查了]]></description>
-</item>
-<item>
-  <title>高校审计的现状和主要关注点</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
-  <description><![CDATA[目前，审计机关对高校的审计有两种：一种是对高校校长的任期经济责任审计，另一种则是对高校的财务审计。但这两种审计，每年都很少，而当前高校在收费]]></description>
-</item>
-<item>
-  <title>公司印章风险汇总</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8F%B8%E5%8D%B0%E7%AB%A0%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8F%B8%E5%8D%B0%E7%AB%A0%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</guid>
-  <description><![CDATA[一、公司印章分哪几种，分别有什么用途?公司印章主要分为五种： （1）公章，用于公司对外事务的处理，工商、税务、银行等外部事务处理事需要加盖。 （]]></description>
-</item>
-<item>
-  <title>固定资产审计的9个方面</title>
-  <link>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E7%9A%849%E4%B8%AA%E6%96%B9%E9%9D%A2/</link>
-  <pubDate>Thu, 26 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E7%9A%849%E4%B8%AA%E6%96%B9%E9%9D%A2/</guid>
-  <description><![CDATA[对于固定资产的审计，一方面，由于固定资产使用期长、价值大、更新慢，增减变化发生的频率较之流动资产来说要小得多，相对来说，发生数量上的差错或弊]]></description>
-</item>
-</channel>
+    <title>专项 on 樊刹</title>
+    <link>https://richfan.site/tags/%E4%B8%93%E9%A1%B9/</link>
+    <description>Recent content in 专项 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/tags/%E4%B8%93%E9%A1%B9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>销售审计：10大核心关注点（实用总结）</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%94%80%E5%94%AE%E5%AE%A1%E8%AE%A110%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9%E5%AE%9E%E7%94%A8%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%94%80%E5%94%AE%E5%AE%A1%E8%AE%A110%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9%E5%AE%9E%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
+      <description>01 价格管理 所需资料： 销售价目表、折扣政策、销售订单。 审计思路： 检查销售订单或者销售合同的价格与公司的价目表是否一致；检查是否存在低于正常毛率的销售；检查定制化的</description>
+    </item>
+    <item>
+      <title>采购审计：访谈提纲模板、审计方案</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A1%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2%E6%A8%A1%E6%9D%BF%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A1%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2%E6%A8%A1%E6%9D%BF%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
+      <description>基 础 信 息 审计项目：XX采购专项审计 访谈主题：采购管理整体情况 访谈时间：2023年11月X日 15:30-16:30 访谈地点：XX市 XX大厦XX层XX 被访谈人：XX公司/XX事业部/X</description>
+    </item>
+    <item>
+      <title>“三重一大”事项决策流程图</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E4%BA%8B%E9%A1%B9%E5%86%B3%E7%AD%96%E6%B5%81%E7%A8%8B%E5%9B%BE/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E4%BA%8B%E9%A1%B9%E5%86%B3%E7%AD%96%E6%B5%81%E7%A8%8B%E5%9B%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>【行政事业单位】纪检巡察财务审查关键点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E8%B4%A2%E5%8A%A1%E5%AE%A1%E6%9F%A5%E5%85%B3%E9%94%AE%E7%82%B9/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E8%B4%A2%E5%8A%A1%E5%AE%A1%E6%9F%A5%E5%85%B3%E9%94%AE%E7%82%B9/</guid>
+      <description>一、行政事业单位财会检查要点 行政事业单位财会核算的特点是业务单一，账目简单，适用的是行政事业单位财务规则、政府会计准则制度等，有《预算法》、《会计法》等相关法规</description>
+    </item>
+    <item>
+      <title>事业单位往来款管理内审常见问题及定性依据</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%BE%80%E6%9D%A5%E6%AC%BE%E7%AE%A1%E7%90%86%E5%86%85%E5%AE%A1%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%AE%9A%E6%80%A7%E4%BE%9D%E6%8D%AE/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%BE%80%E6%9D%A5%E6%AC%BE%E7%AE%A1%E7%90%86%E5%86%85%E5%AE%A1%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%AE%9A%E6%80%A7%E4%BE%9D%E6%8D%AE/</guid>
+      <description>摘 要： 随着事业单位改革的不断推进，事业单位开展销售产品、提供服务等经济活动增多，往来款项核算与管理的重要性凸显，特别是事业单位在面对内审、财务检查、巡视和巡察中</description>
+    </item>
+    <item>
+      <title>人力资源审计怎么做？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%AE%A1%E8%AE%A1%E6%80%8E%E4%B9%88%E5%81%9A/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%AE%A1%E8%AE%A1%E6%80%8E%E4%B9%88%E5%81%9A/</guid>
+      <description>人力资源审计是一种确保企业管理中与人力资源有关的受托经济责任全面有效履行的专门控制机制。企业人力资源审计的主要内容理应与企业人力资源管理全流程的各项工作内容相一</description>
+    </item>
+    <item>
+      <title>企业合同风险清单</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BC%81%E4%B8%9A%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BC%81%E4%B8%9A%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E6%B8%85%E5%8D%95/</guid>
+      <description>序号 风险名称 风险描述 1 资信调查风险 资信调查风险。忽视对合同相对人的主体资格审查，合同相对人不具有相应民事权利能力和民事行为能力，或不具备特定资质，或与无权代理人</description>
+    </item>
+    <item>
+      <title>公司印章风险汇总</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8F%B8%E5%8D%B0%E7%AB%A0%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8F%B8%E5%8D%B0%E7%AB%A0%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</guid>
+      <description>一、公司印章分哪几种，分别有什么用途? 公司印章主要分为五种： （1）公章，用于公司对外事务的处理，工商、税务、银行等外部事务处理事需要加盖。 （2）财务专用章，用于</description>
+    </item>
+    <item>
+      <title>合同风险的23个坑！10大事项，2个细节</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E7%9A%8423%E4%B8%AA%E5%9D%9110%E5%A4%A7%E4%BA%8B%E9%A1%B92%E4%B8%AA%E7%BB%86%E8%8A%82/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%90%88%E5%90%8C%E9%A3%8E%E9%99%A9%E7%9A%8423%E4%B8%AA%E5%9D%9110%E5%A4%A7%E4%BA%8B%E9%A1%B92%E4%B8%AA%E7%BB%86%E8%8A%82/</guid>
+      <description>签合同，总是有些细节需要特别注意，不然不是给自己挖坑，就是给别人捡漏！ 本篇文章与大家一起分享一下，关于合同，你都需要注意什么！ 增值税下签合同注意的2个细节 在增值</description>
+    </item>
+    <item>
+      <title>固定资产审计的9个方面</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E7%9A%849%E4%B8%AA%E6%96%B9%E9%9D%A2/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E7%9A%849%E4%B8%AA%E6%96%B9%E9%9D%A2/</guid>
+      <description>对于固定资产的审计，一方面，由于固定资产使用期长、价值大、更新慢，增减变化发生的频率较之流动资产来说要小得多，相对来说，发生数量上的差错或弊端也较少，因此，审计</description>
+    </item>
+    <item>
+      <title>地方审计部门发现的科技创新领域审计结果部分汇总</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9C%B0%E6%96%B9%E5%AE%A1%E8%AE%A1%E9%83%A8%E9%97%A8%E5%8F%91%E7%8E%B0%E7%9A%84%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E9%A2%86%E5%9F%9F%E5%AE%A1%E8%AE%A1%E7%BB%93%E6%9E%9C%E9%83%A8%E5%88%86%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9C%B0%E6%96%B9%E5%AE%A1%E8%AE%A1%E9%83%A8%E9%97%A8%E5%8F%91%E7%8E%B0%E7%9A%84%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E9%A2%86%E5%9F%9F%E5%AE%A1%E8%AE%A1%E7%BB%93%E6%9E%9C%E9%83%A8%E5%88%86%E6%B1%87%E6%80%BB/</guid>
+      <description>1.北京审计：科技资源开放共享与科技成果转化不到位，市属高校科技园入驻企业质量不高 （二）国际科技创新中心重点项目推进及资金投入方面 审计调查了市科委、中关村管委会</description>
+    </item>
+    <item>
+      <title>巡视巡察审计查账：基本方法、技巧</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E6%9F%A5%E8%B4%A6%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E6%9F%A5%E8%B4%A6%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%E6%8A%80%E5%B7%A7/</guid>
+      <description>纪检监察案件查账主要针对涉嫌违纪违法的检查对象和党员领导干部，查账的目的是查清违纪违法事实。巡视巡察主要通过查阅账目发现疑点并通过巡察“12+N”种方式予以验证</description>
+    </item>
+    <item>
+      <title>纪检巡察审计检查“十点必看”</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E6%A3%80%E6%9F%A5%E5%8D%81%E7%82%B9%E5%BF%85%E7%9C%8B/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%AA%E6%A3%80%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E6%A3%80%E6%9F%A5%E5%8D%81%E7%82%B9%E5%BF%85%E7%9C%8B/</guid>
+      <description>巡察工作主要围绕“党的政治纪律、组织纪律、廉洁纪律、群众纪律、工作纪律、生活纪律”等“六项纪律”的内容开展。财务审查是整个巡察的一部分，属于政治巡察，主要是通过</description>
+    </item>
+    <item>
+      <title>纪检监察办案中常见的36种财务违规问题及其整改措施全清单</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%AA%E6%A3%80%E7%9B%91%E5%AF%9F%E5%8A%9E%E6%A1%88%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%8436%E7%A7%8D%E8%B4%A2%E5%8A%A1%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B6%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E5%85%A8%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%AA%E6%A3%80%E7%9B%91%E5%AF%9F%E5%8A%9E%E6%A1%88%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%8436%E7%A7%8D%E8%B4%A2%E5%8A%A1%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B6%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E5%85%A8%E6%B8%85%E5%8D%95/</guid>
+      <description>1、针对国有资产管理不善，固定资产底数不清问题 整改措施：一是修订《医院国有资产管理办法》，规范国有资产的管理。二是委托北京XX会计师事务所清查医院国有资产，建立</description>
+    </item>
+    <item>
+      <title>财务专用章、公章、合同专用章、发票专用章，有关印章的最全风险汇总</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%B4%A2%E5%8A%A1%E4%B8%93%E7%94%A8%E7%AB%A0%E5%85%AC%E7%AB%A0%E5%90%88%E5%90%8C%E4%B8%93%E7%94%A8%E7%AB%A0%E5%8F%91%E7%A5%A8%E4%B8%93%E7%94%A8%E7%AB%A0%E6%9C%89%E5%85%B3%E5%8D%B0%E7%AB%A0%E7%9A%84%E6%9C%80%E5%85%A8%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%B4%A2%E5%8A%A1%E4%B8%93%E7%94%A8%E7%AB%A0%E5%85%AC%E7%AB%A0%E5%90%88%E5%90%8C%E4%B8%93%E7%94%A8%E7%AB%A0%E5%8F%91%E7%A5%A8%E4%B8%93%E7%94%A8%E7%AB%A0%E6%9C%89%E5%85%B3%E5%8D%B0%E7%AB%A0%E7%9A%84%E6%9C%80%E5%85%A8%E9%A3%8E%E9%99%A9%E6%B1%87%E6%80%BB/</guid>
+      <description>一、公司印章分哪几种，分别有什么用途? 公司印章主要分为五种： （1）公章，用于公司对外事务的处理，工商、税务、银行等外部事务处理事需要加盖。 （2）财务专用章，用于</description>
+    </item>
+    <item>
+      <title>采购专项审计流程：3个阶段49个重要审计关注点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B3%E4%B8%AA%E9%98%B6%E6%AE%B549%E4%B8%AA%E9%87%8D%E8%A6%81%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%87%87%E8%B4%AD%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B3%E4%B8%AA%E9%98%B6%E6%AE%B549%E4%B8%AA%E9%87%8D%E8%A6%81%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>一、对公司采购制度完善性检查、评价 审计准备 1、制度与流程： （1）收集公司采购管理制度，评价相关的采购管理控制措施是否完备，采购活动各阶段是否都有相关的管理规范。</description>
+    </item>
+    <item>
+      <title>高校审计的现状和主要关注点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%92%8C%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>目前，审计机关对高校的审计有两种：一种是对高校校长的任期经济责任审计，另一种则是对高校的财务审计。但这两种审计，每年都很少，而当前高校在收费和经费开支特别是科研</description>
+    </item>
+    <item>
+      <title>人事部门的业务，该怎么审？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E4%BA%8B%E9%83%A8%E9%97%A8%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%AF%A5%E6%80%8E%E4%B9%88%E5%AE%A1/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E4%BA%8B%E9%83%A8%E9%97%A8%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%AF%A5%E6%80%8E%E4%B9%88%E5%AE%A1/</guid>
+      <description>有同行邀请开展人力资源审计，题目太大，小编就唠唠对人事部门的审计吧。 因为：人力资源审计确实高大上，但审计它时，很务虚，而对人事部门开展审计，更具有实操性。 如果你</description>
+    </item>
+    <item>
+      <title>人力资源管理审计：3大阶段90个具体审计方法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A13%E5%A4%A7%E9%98%B6%E6%AE%B590%E4%B8%AA%E5%85%B7%E4%BD%93%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A13%E5%A4%A7%E9%98%B6%E6%AE%B590%E4%B8%AA%E5%85%B7%E4%BD%93%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</guid>
+      <description>人力资源管理审计各阶段实务方法 审计目标： 1.对人力资源流程有个全面的理解； 2.评价人力资源流程和相关内部控制的效果和效率； 3.对支持人力资源流程的信息系统的可靠</description>
+    </item>
+    <item>
+      <title>行政人事管理审计关注点与方法探讨</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%BA%E4%BA%8B%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9%E4%B8%8E%E6%96%B9%E6%B3%95%E6%8E%A2%E8%AE%A8/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E8%A1%8C%E6%94%BF%E4%BA%BA%E4%BA%8B%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A1%E5%85%B3%E6%B3%A8%E7%82%B9%E4%B8%8E%E6%96%B9%E6%B3%95%E6%8E%A2%E8%AE%A8/</guid>
+      <description>行政人事部作为一家公司有效运营不可或缺的组成部分，其制度流程的完善性、执行力都对公司的发展起着重要作用，因此在对项目公司进行全面审计时，行政管理方面的专项审计也</description>
+    </item>
+    <item>
+      <title>“三公”经费审计存在的问题及治理对策</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E5%85%AC%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A1%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E6%B2%BB%E7%90%86%E5%AF%B9%E7%AD%96/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E5%85%AC%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A1%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E6%B2%BB%E7%90%86%E5%AF%B9%E7%AD%96/</guid>
+      <description>行政事业单位“三公”经费是指财政拨款开支的公务接待费、公务用车购置及运行费、因公出国（境）经费，是维护行政事业单位正常运行的基本经费的组成部分。从性质上看，“三</description>
+    </item>
+    <item>
+      <title>专项审计的流程及要点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E7%9A%84%E6%B5%81%E7%A8%8B%E5%8F%8A%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E7%9A%84%E6%B5%81%E7%A8%8B%E5%8F%8A%E8%A6%81%E7%82%B9/</guid>
+      <description>专项审计的流程及要点目录 目 录 ……………………………………………………………………………1 工作流程图 ……………………………………………………………………………2 专</description>
+    </item>
+    <item>
+      <title>事业单位固定资产审计检查要点分析</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E6%A3%80%E6%9F%A5%E8%A6%81%E7%82%B9%E5%88%86%E6%9E%90/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E6%A3%80%E6%9F%A5%E8%A6%81%E7%82%B9%E5%88%86%E6%9E%90/</guid>
+      <description>一、固定资产配置环节 重点关注： 是否严格落实过“紧日子”要求，新增固定资产的功能、数量、价格等是否与单位职能和实际需要相匹配，是否存在重复购置或者存在大量闲置资产</description>
+    </item>
+    <item>
+      <title>固定资产审计要点、问题清单及审计依据！</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95%E5%8F%8A%E5%AE%A1%E8%AE%A1%E4%BE%9D%E6%8D%AE/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95%E5%8F%8A%E5%AE%A1%E8%AE%A1%E4%BE%9D%E6%8D%AE/</guid>
+      <description>​一、固定资产审计要点 （一）固定资产管理制度审计 1．有没有固定资产管理制度？何时建立的制度？何时修订的？是否按照上级要求制定本单位固定资产管理实施细则？有关规定</description>
+    </item>
+    <item>
+      <title>国有房产使用管理专项审计：问题建议、整改落实报告</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BD%E6%9C%89%E6%88%BF%E4%BA%A7%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E9%97%AE%E9%A2%98%E5%BB%BA%E8%AE%AE%E6%95%B4%E6%94%B9%E8%90%BD%E5%AE%9E%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%BD%E6%9C%89%E6%88%BF%E4%BA%A7%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E9%97%AE%E9%A2%98%E5%BB%BA%E8%AE%AE%E6%95%B4%E6%94%B9%E8%90%BD%E5%AE%9E%E6%8A%A5%E5%91%8A/</guid>
+      <description>根据《XXX国有房产管理使用情况专项审计调查》（X审调报﹝202X﹞X号）发现的主要问题和调查建议，现将整改落实情况报告如下： 一、高度重视，精心组织 我局针对审计</description>
+    </item>
+    <item>
+      <title>审计人做巡视巡察工作，如何认识、发现并聚焦问题？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AE%A1%E8%AE%A1%E4%BA%BA%E5%81%9A%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%B7%A5%E4%BD%9C%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%8F%91%E7%8E%B0%E5%B9%B6%E8%81%9A%E7%84%A6%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AE%A1%E8%AE%A1%E4%BA%BA%E5%81%9A%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%B7%A5%E4%BD%9C%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%8F%91%E7%8E%B0%E5%B9%B6%E8%81%9A%E7%84%A6%E9%97%AE%E9%A2%98/</guid>
+      <description>巡视巡察工作的方针16个字：“发现问题，形成震慑，推动改革，促进发展”，它分前后两篇，把发现问题作为首要职责、基本职责，把推动解决问题作为目标。巡视巡察作为全面</description>
+    </item>
+    <item>
+      <title>巡视巡察工作中如何通过查阅资料精准发现问题</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E6%9F%A5%E9%98%85%E8%B5%84%E6%96%99%E7%B2%BE%E5%87%86%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E6%9F%A5%E9%98%85%E8%B5%84%E6%96%99%E7%B2%BE%E5%87%86%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98/</guid>
+      <description>一、查阅资料的种类 1.贯彻上级精神的资料 上级决策部署有很多，首先要把监督检查的重点内容选择好，重点要把上级对被巡视巡察党组织的特殊要求、以及被巡视巡察党组织贯彻</description>
+    </item>
+    <item>
+      <title>巡视巡察报告的问题底稿应包括哪些内容？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E6%8A%A5%E5%91%8A%E7%9A%84%E9%97%AE%E9%A2%98%E5%BA%95%E7%A8%BF%E5%BA%94%E5%8C%85%E6%8B%AC%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E6%8A%A5%E5%91%8A%E7%9A%84%E9%97%AE%E9%A2%98%E5%BA%95%E7%A8%BF%E5%BA%94%E5%8C%85%E6%8B%AC%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9/</guid>
+      <description>巡察工作质量的高低取决于巡察报告的水平，而问题底稿作为巡察报告的支撑材料，既是巡察过程和结果的书面证明，也是回应有关质疑的有力证据。因此建立巡察报告问题底稿制度</description>
+    </item>
+    <item>
+      <title>工会审计巡察：三方面28个问题清单、整改情况报告</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E5%AE%A1%E8%AE%A1%E5%B7%A1%E5%AF%9F%E4%B8%89%E6%96%B9%E9%9D%A228%E4%B8%AA%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E5%AE%A1%E8%AE%A1%E5%B7%A1%E5%AF%9F%E4%B8%89%E6%96%B9%E9%9D%A228%E4%B8%AA%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5%E6%8A%A5%E5%91%8A/</guid>
+      <description>根据XX统一部署，202X年X月X日至X月X日，XX巡察组对X总工会党组进行了常规巡察。202X年X月X日，XX巡察组向X总工会党组反馈了巡察意见。X总工会党组</description>
+    </item>
+    <item>
+      <title>工程结算审核与结算审计的区别！</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E7%BB%93%E7%AE%97%E5%AE%A1%E6%A0%B8%E4%B8%8E%E7%BB%93%E7%AE%97%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E7%BB%93%E7%AE%97%E5%AE%A1%E6%A0%B8%E4%B8%8E%E7%BB%93%E7%AE%97%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>以政府投资为主的工程项目结算，社会中介机构的结算审核与审计机关的结算审计，究竟有什么区别，他们之间是什么关系，长期困扰建筑界和审计界相关人士。本文从九个方面，系</description>
+    </item>
+    <item>
+      <title>工程结算常见的弄虚作假与最详尽的审计方法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E7%BB%93%E7%AE%97%E5%B8%B8%E8%A7%81%E7%9A%84%E5%BC%84%E8%99%9A%E4%BD%9C%E5%81%87%E4%B8%8E%E6%9C%80%E8%AF%A6%E5%B0%BD%E7%9A%84%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E7%BB%93%E7%AE%97%E5%B8%B8%E8%A7%81%E7%9A%84%E5%BC%84%E8%99%9A%E4%BD%9C%E5%81%87%E4%B8%8E%E6%9C%80%E8%AF%A6%E5%B0%BD%E7%9A%84%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</guid>
+      <description>一、常见的弄虚作假 1、利用审计依据做文章 特征：抓住合同、招标文件或其他相关规定的矛盾和表达不清之处做文章，扩大矛盾外延，突出调增成本之处。 2、肢解定额子目 特征：</description>
+    </item>
+    <item>
+      <title>工程资料清单</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E8%B5%84%E6%96%99%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E8%B5%84%E6%96%99%E6%B8%85%E5%8D%95/</guid>
+      <description>任何一个项目从施工到竣工都是需要有完善的施工资料和流程，具体所需要的资料包括开工前资料. 质量验收资料. 实验资料. 材料. 产品. 构配件等合格证资料. 施工过程资料. 必</description>
+    </item>
+    <item>
+      <title>建设项目全过程跟踪审计5阶段35个核心要点（以高校为例）</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E5%85%A8%E8%BF%87%E7%A8%8B%E8%B7%9F%E8%B8%AA%E5%AE%A1%E8%AE%A15%E9%98%B6%E6%AE%B535%E4%B8%AA%E6%A0%B8%E5%BF%83%E8%A6%81%E7%82%B9%E4%BB%A5%E9%AB%98%E6%A0%A1%E4%B8%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E5%85%A8%E8%BF%87%E7%A8%8B%E8%B7%9F%E8%B8%AA%E5%AE%A1%E8%AE%A15%E9%98%B6%E6%AE%B535%E4%B8%AA%E6%A0%B8%E5%BF%83%E8%A6%81%E7%82%B9%E4%BB%A5%E9%AB%98%E6%A0%A1%E4%B8%BA%E4%BE%8B/</guid>
+      <description>随着国家及社会对高等教育办学要求的不断提高，高校围绕“改善育人环境、提升育人质量、推动学校发展”等方面的工程建设投资不断加大，如何确保有限的建设资金发挥更大的办</description>
+    </item>
+    <item>
+      <title>高校科研经费审计4大问题发现、原因、治理对策</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E7%A0%94%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A14%E5%A4%A7%E9%97%AE%E9%A2%98%E5%8F%91%E7%8E%B0%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%90%86%E5%AF%B9%E7%AD%96/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E7%A0%94%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A14%E5%A4%A7%E9%97%AE%E9%A2%98%E5%8F%91%E7%8E%B0%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%90%86%E5%AF%B9%E7%AD%96/</guid>
+      <description>一、科研经费审计中发现的主要问题 （一）票实不符，虚列支出，多手段套取科研资金 对多所高校的科研经费审计中基本都发现此类问题，尤其在横向课题经费管理使用中存在的问题</description>
+    </item>
+    <item>
+      <title>三类20项巡视巡察审计发现问题对应整改措施清单</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E7%B1%BB20%E9%A1%B9%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98%E5%AF%B9%E5%BA%94%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E7%B1%BB20%E9%A1%B9%E5%B7%A1%E8%A7%86%E5%B7%A1%E5%AF%9F%E5%AE%A1%E8%AE%A1%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98%E5%AF%B9%E5%BA%94%E6%95%B4%E6%94%B9%E6%8E%AA%E6%96%BD%E6%B8%85%E5%8D%95/</guid>
+      <description>一、针对执行中央“八项规定”不严问题 1、“不严格执行《党政机关接待管理规定》，超标准、超范围重复接待仍然存在等问题”的问题 整改措施： (1)完善制度，细化管理。修</description>
+    </item>
+    <item>
+      <title>民办高校审计，要审哪些东西？怎么审？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B0%91%E5%8A%9E%E9%AB%98%E6%A0%A1%E5%AE%A1%E8%AE%A1%E8%A6%81%E5%AE%A1%E5%93%AA%E4%BA%9B%E4%B8%9C%E8%A5%BF%E6%80%8E%E4%B9%88%E5%AE%A1/</guid>
+      <description>一般情况下，只有大型企业、财团或权贵才有资格和能力创办私营高校，也就是有营业执照的私营非盈利机构。 这类高校的内审也应像企业一样，也可以从财务视角出发，虽说它是非</description>
+    </item>
+    <item>
+      <title>消防验收中常见的130个问题</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B6%88%E9%98%B2%E9%AA%8C%E6%94%B6%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84130%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B6%88%E9%98%B2%E9%AA%8C%E6%94%B6%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84130%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
+      <description>1建筑防火 一、土建防火封堵不到位 1、给水管道穿越楼板、墙体部位未封堵。 2、电气管、桥架穿越越楼板、墙体部位未封堵。 3、穿越平层及竖向的桥架内未采用防火封堵。 4、</description>
+    </item>
+    <item>
+      <title>科技专项审计应关注的六方面18项内容</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%A7%91%E6%8A%80%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E5%BA%94%E5%85%B3%E6%B3%A8%E7%9A%84%E5%85%AD%E6%96%B9%E9%9D%A218%E9%A1%B9%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%A7%91%E6%8A%80%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E5%BA%94%E5%85%B3%E6%B3%A8%E7%9A%84%E5%85%AD%E6%96%B9%E9%9D%A218%E9%A1%B9%E5%86%85%E5%AE%B9/</guid>
+      <description>原标题：开展科技专项审计应关注的重点内容 科技专项审计是审计机关针对国家和地区出台的重大科技政策和重要科技相关制度落实情况，国家和地区的财政科技资金使用情况，以及</description>
+    </item>
+    <item>
+      <title>高校科技成果转化情况审计研究</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E8%BD%AC%E5%8C%96%E6%83%85%E5%86%B5%E5%AE%A1%E8%AE%A1%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E8%BD%AC%E5%8C%96%E6%83%85%E5%86%B5%E5%AE%A1%E8%AE%A1%E7%A0%94%E7%A9%B6/</guid>
+      <description>科技成果转化是指为提高生产力水平而对科学研究与技术开发所产生的具有实用价值的科技成果所进行的后续试验、开发、应用、推广直至形成新产品、新工艺、新材料，发展新产业</description>
+    </item>
+    <item>
+      <title>如何开展行政事业单位预算执行审计？</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%A6%82%E4%BD%95%E5%BC%80%E5%B1%95%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E9%A2%84%E7%AE%97%E6%89%A7%E8%A1%8C%E5%AE%A1%E8%AE%A1/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%A6%82%E4%BD%95%E5%BC%80%E5%B1%95%E8%A1%8C%E6%94%BF%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E9%A2%84%E7%AE%97%E6%89%A7%E8%A1%8C%E5%AE%A1%E8%AE%A1/</guid>
+      <description>如何开展行政事业单位预算执行审计？行政事业单位预算执行审计是各级审计机关财政预算执行审计中最基础的工作，是财政审计大格局下重要的审计内容。通常情况下,行政事业单</description>
+    </item>
+    <item>
+      <title>审计查出阻碍“放管服”改革问题及破解之法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AE%A1%E8%AE%A1%E6%9F%A5%E5%87%BA%E9%98%BB%E7%A2%8D%E6%94%BE%E7%AE%A1%E6%9C%8D%E6%94%B9%E9%9D%A9%E9%97%AE%E9%A2%98%E5%8F%8A%E7%A0%B4%E8%A7%A3%E4%B9%8B%E6%B3%95/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AE%A1%E8%AE%A1%E6%9F%A5%E5%87%BA%E9%98%BB%E7%A2%8D%E6%94%BE%E7%AE%A1%E6%9C%8D%E6%94%B9%E9%9D%A9%E9%97%AE%E9%A2%98%E5%8F%8A%E7%A0%B4%E8%A7%A3%E4%B9%8B%E6%B3%95/</guid>
+      <description>原文标题：大数据助推打通“放管服”改革“中梗阻” 近年来，中央持续推出“放管服”改革举措，推动政府职能转变，重塑政府和市场的关系，优化市场营商环境，极大地激发了市</description>
+    </item>
+    <item>
+      <title>深化“放管服”改革审计探析</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B7%B1%E5%8C%96%E6%94%BE%E7%AE%A1%E6%9C%8D%E6%94%B9%E9%9D%A9%E5%AE%A1%E8%AE%A1%E6%8E%A2%E6%9E%90/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B7%B1%E5%8C%96%E6%94%BE%E7%AE%A1%E6%9C%8D%E6%94%B9%E9%9D%A9%E5%AE%A1%E8%AE%A1%E6%8E%A2%E6%9E%90/</guid>
+      <description>深化“放管服”改革审计探析 “放管服”改革政策措施落实审计（简称“放管服”改革审计）是重大政策措施落实跟踪审计的重点和热点。为更好地促进政府转变职能，发挥审计在推</description>
+    </item>
+    <item>
+      <title>纵向课题和横向课题有什么区别</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%B5%E5%90%91%E8%AF%BE%E9%A2%98%E5%92%8C%E6%A8%AA%E5%90%91%E8%AF%BE%E9%A2%98%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%BA%B5%E5%90%91%E8%AF%BE%E9%A2%98%E5%92%8C%E6%A8%AA%E5%90%91%E8%AF%BE%E9%A2%98%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</guid>
+      <description>本篇导读： 高校老师、科研院校、科研单位等，对于课题方面肯定是很熟悉了。 课题的形成是一个由感觉到、意识到的问题经过概括、提炼、转化到确定问题的过程，确定问题意味着</description>
+    </item>
+    <item>
+      <title>存货审计18个常见问题</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AD%98%E8%B4%A7%E5%AE%A1%E8%AE%A118%E4%B8%AA%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%AD%98%E8%B4%A7%E5%AE%A1%E8%AE%A118%E4%B8%AA%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>导读: 存货属于流动资产的范畴，在企业活动资金中占有很大比重，流动性弱，种类杂、数量多、收发频繁，在企业中滞留时间长，变现能力慢，在管理和核算上存在一定难度，容易</description>
+    </item>
+    <item>
+      <title>一份详细的食堂审计方案</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%80%E4%BB%BD%E8%AF%A6%E7%BB%86%E7%9A%84%E9%A3%9F%E5%A0%82%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%80%E4%BB%BD%E8%AF%A6%E7%BB%86%E7%9A%84%E9%A3%9F%E5%A0%82%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
+      <description>按服务提供的对象分，食堂分为外包食堂、内部食堂。外包食堂供应商尚需提供外包费用给公司，羊毛出在羊身上，外包食堂的价格以及菜肴的质量较差。当然也不排除内部食堂的员</description>
+    </item>
+    <item>
+      <title>高校食堂平抑资金管理审计思路探析</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E9%A3%9F%E5%A0%82%E5%B9%B3%E6%8A%91%E8%B5%84%E9%87%91%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E9%A3%9F%E5%A0%82%E5%B9%B3%E6%8A%91%E8%B5%84%E9%87%91%E7%AE%A1%E7%90%86%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90/</guid>
+      <description>为应对因市场物价上涨引起的学生食堂经营压力骤增的形势,维持学院的安全稳定，教育部等五部门《关于进一步加强高等学校学生食堂工作的意见》（以下简称“《意见》”）应运</description>
+    </item>
+    <item>
+      <title>投资项目竣工决算审计应关注的8大重点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8A%95%E8%B5%84%E9%A1%B9%E7%9B%AE%E7%AB%A3%E5%B7%A5%E5%86%B3%E7%AE%97%E5%AE%A1%E8%AE%A1%E5%BA%94%E5%85%B3%E6%B3%A8%E7%9A%848%E5%A4%A7%E9%87%8D%E7%82%B9/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8A%95%E8%B5%84%E9%A1%B9%E7%9B%AE%E7%AB%A3%E5%B7%A5%E5%86%B3%E7%AE%97%E5%AE%A1%E8%AE%A1%E5%BA%94%E5%85%B3%E6%B3%A8%E7%9A%848%E5%A4%A7%E9%87%8D%E7%82%B9/</guid>
+      <description>竣工决算审计是政府投资项目管理的最后一道关口，是项目全过程造价管理的关键环节，也是审计机关需要积极防控的重要审计风险点。 近年来，建设工程领域查处的很多重大腐败案</description>
+    </item>
+    <item>
+      <title>工会经费巡察查出15项违规问题和整改情况</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%B7%A1%E5%AF%9F%E6%9F%A5%E5%87%BA15%E9%A1%B9%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%92%8C%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%B7%A1%E5%AF%9F%E6%9F%A5%E5%87%BA15%E9%A1%B9%E8%BF%9D%E8%A7%84%E9%97%AE%E9%A2%98%E5%92%8C%E6%95%B4%E6%94%B9%E6%83%85%E5%86%B5/</guid>
+      <description>1、关于“超范围列支工会经费”的问题 整改情况：因我单位离退休干部较多，为便于管理，在2016年经咨询省总工会（培训会上）和区总工会，得到的意见均为在工会经费充足</description>
+    </item>
+    <item>
+      <title>因公出国（境）费审计要点探析（附详细案例）</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%A0%E5%85%AC%E5%87%BA%E5%9B%BD%E5%A2%83%E8%B4%B9%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9%E6%8E%A2%E6%9E%90%E9%99%84%E8%AF%A6%E7%BB%86%E6%A1%88%E4%BE%8B/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%9B%A0%E5%85%AC%E5%87%BA%E5%9B%BD%E5%A2%83%E8%B4%B9%E5%AE%A1%E8%AE%A1%E8%A6%81%E7%82%B9%E6%8E%A2%E6%9E%90%E9%99%84%E8%AF%A6%E7%BB%86%E6%A1%88%E4%BE%8B/</guid>
+      <description>2011年初全国“两会”上，200多名全国人大代表和全国政协委员分别在议案和提案中提出“三公消费”问题。2011年3月国务院常务会议承诺当年公开“三公”经费支出</description>
+    </item>
+    <item>
+      <title>差旅费专项审计报告范例</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%AE%E6%97%85%E8%B4%B9%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A%E8%8C%83%E4%BE%8B/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%AE%E6%97%85%E8%B4%B9%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A%E8%8C%83%E4%BE%8B/</guid>
+      <description>导读：根据《内部审计管理制度》及领导安排，总经办审计组对母公司的差旅费进行专项审计，审计过程中我们实施了适当的、必要的审计程序，按照既定的审计方案，结合公司实际</description>
+    </item>
+    <item>
+      <title>公务支出公款消费审计的八项36类重点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8A%A1%E6%94%AF%E5%87%BA%E5%85%AC%E6%AC%BE%E6%B6%88%E8%B4%B9%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%85%AB%E9%A1%B936%E7%B1%BB%E9%87%8D%E7%82%B9/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%85%AC%E5%8A%A1%E6%94%AF%E5%87%BA%E5%85%AC%E6%AC%BE%E6%B6%88%E8%B4%B9%E5%AE%A1%E8%AE%A1%E7%9A%84%E5%85%AB%E9%A1%B936%E7%B1%BB%E9%87%8D%E7%82%B9/</guid>
+      <description>一、行政事业单位公务支出、公款消费预算管理方面 （1）重点检查内容： 第一，“ 三公” 经费、会议费、培训费和楼堂馆所建设维护经费等公务支出预算编制、审核报批、执行和决</description>
+    </item>
+    <item>
+      <title>21个科技结题专项审计、高企专项审计相关问题问答</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/21%E4%B8%AA%E7%A7%91%E6%8A%80%E7%BB%93%E9%A2%98%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E9%AB%98%E4%BC%81%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E9%97%AE%E7%AD%94/</link>
+      <pubDate>Sat, 12 Aug 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/21%E4%B8%AA%E7%A7%91%E6%8A%80%E7%BB%93%E9%A2%98%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E9%AB%98%E4%BC%81%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E9%97%AE%E7%AD%94/</guid>
+      <description>江苏省注协2022年8月26日专家网上答疑汇总 省注协于2022年8月26日组织了第三期注册会计师行业专家网上答疑活动。本期答疑专家为行业二期高端人才北京兴华会计</description>
+    </item>
+    <item>
+      <title>物资采购审计6大要素，55个核心关注点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%89%A9%E8%B5%84%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A16%E5%A4%A7%E8%A6%81%E7%B4%A055%E4%B8%AA%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Sat, 12 Aug 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E7%89%A9%E8%B5%84%E9%87%87%E8%B4%AD%E5%AE%A1%E8%AE%A16%E5%A4%A7%E8%A6%81%E7%B4%A055%E4%B8%AA%E6%A0%B8%E5%BF%83%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>物资采购审计6大要素 （1）审“该不该买”，即对采购计划的审查。 要审查采购计划是否进行可行性论证（特别是金额较大的采购项目），采购计划不合理，会影响企业的预期效益</description>
+    </item>
+    <item>
+      <title>高校科研经费审计思路与方法研究</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E7%A0%94%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Sat, 12 Aug 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E9%AB%98%E6%A0%A1%E7%A7%91%E7%A0%94%E7%BB%8F%E8%B4%B9%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6/</guid>
+      <description>高校是国家人才培养的摇篮，教学和科研是高校培养新型人才的两大支柱。作为高校的基本职能之一，科研可以提升教学水平、完善高校建设、促进科技创新。但随着高校科研经费投</description>
+    </item>
+    <item>
+      <title>投资项目竣工决算审计应关注的8大重点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/8-key-points-that-should-be-paid-attention-to-in-the-audit-of-the-final-accounts-of-investment-projects/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/8-key-points-that-should-be-paid-attention-to-in-the-audit-of-the-final-accounts-of-investment-projects/</guid>
+      <description>竣工决算审计是政府投资项目管理的最后一道关口，是项目全过程造价管理的关键环节，也是审计机关需要积极防控的重要审计风险点。 近年来，建设工程领域查处的很多重大腐败案</description>
+    </item>
+    <item>
+      <title>工会系统经费管理使用负面清单</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E7%B3%BB%E7%BB%9F%E7%BB%8F%E8%B4%B9%E7%AE%A1%E7%90%86%E4%BD%BF%E7%94%A8%E8%B4%9F%E9%9D%A2%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Wed, 26 Jul 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E4%BC%9A%E7%B3%BB%E7%BB%9F%E7%BB%8F%E8%B4%B9%E7%AE%A1%E7%90%86%E4%BD%BF%E7%94%A8%E8%B4%9F%E9%9D%A2%E6%B8%85%E5%8D%95/</guid>
+      <description>一、工会经费使用方面 （一）用于为会员及职工开展活动方面。 1.严禁职工活动超标准、超范围发放奖励。 2.严禁违反规定乱设奖项。 3.严禁以现金奖励代替实物奖励。 4.严</description>
+    </item>
+    <item>
+      <title>一文弄清围标串标审计：审计线索、审计程序、案例解析</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%80%E6%96%87%E5%BC%84%E6%B8%85%E5%9B%B4%E6%A0%87%E4%B8%B2%E6%A0%87%E5%AE%A1%E8%AE%A1%E5%AE%A1%E8%AE%A1%E7%BA%BF%E7%B4%A2%E5%AE%A1%E8%AE%A1%E7%A8%8B%E5%BA%8F%E6%A1%88%E4%BE%8B%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%80%E6%96%87%E5%BC%84%E6%B8%85%E5%9B%B4%E6%A0%87%E4%B8%B2%E6%A0%87%E5%AE%A1%E8%AE%A1%E5%AE%A1%E8%AE%A1%E7%BA%BF%E7%B4%A2%E5%AE%A1%E8%AE%A1%E7%A8%8B%E5%BA%8F%E6%A1%88%E4%BE%8B%E8%A7%A3%E6%9E%90/</guid>
+      <description>一、所需资料 成套完整的招标、采购比价资料、供应商考察资料、供应商工商信息资料、供应商职工花名册。 二、审计程序 访谈采购人员，了解是否存在采购制度流程，以及对采购制</description>
+    </item>
+    <item>
+      <title>分清什么是：预算价、标底价、招标控制价、投标价、评标价、合同价、结算价</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%88%86%E6%B8%85%E4%BB%80%E4%B9%88%E6%98%AF%E9%A2%84%E7%AE%97%E4%BB%B7%E6%A0%87%E5%BA%95%E4%BB%B7%E6%8B%9B%E6%A0%87%E6%8E%A7%E5%88%B6%E4%BB%B7%E6%8A%95%E6%A0%87%E4%BB%B7%E8%AF%84%E6%A0%87%E4%BB%B7%E5%90%88%E5%90%8C%E4%BB%B7%E7%BB%93%E7%AE%97%E4%BB%B7/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%88%86%E6%B8%85%E4%BB%80%E4%B9%88%E6%98%AF%E9%A2%84%E7%AE%97%E4%BB%B7%E6%A0%87%E5%BA%95%E4%BB%B7%E6%8B%9B%E6%A0%87%E6%8E%A7%E5%88%B6%E4%BB%B7%E6%8A%95%E6%A0%87%E4%BB%B7%E8%AF%84%E6%A0%87%E4%BB%B7%E5%90%88%E5%90%8C%E4%BB%B7%E7%BB%93%E7%AE%97%E4%BB%B7/</guid>
+      <description>建筑行业施工过程涉及资金的地方非常多，有预算价、标底价、招标控制价、投标价、评标价、合同价、结算价等等，是不是完全分不清什么意思？别着急，小编来给你大家解释一下</description>
+    </item>
+    <item>
+      <title>十种 “化整为零规避招标”的情形及审计依据</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%8D%81%E7%A7%8D-%E5%8C%96%E6%95%B4%E4%B8%BA%E9%9B%B6%E8%A7%84%E9%81%BF%E6%8B%9B%E6%A0%87%E7%9A%84%E6%83%85%E5%BD%A2%E5%8F%8A%E5%AE%A1%E8%AE%A1%E4%BE%9D%E6%8D%AE/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%8D%81%E7%A7%8D-%E5%8C%96%E6%95%B4%E4%B8%BA%E9%9B%B6%E8%A7%84%E9%81%BF%E6%8B%9B%E6%A0%87%E7%9A%84%E6%83%85%E5%BD%A2%E5%8F%8A%E5%AE%A1%E8%AE%A1%E4%BE%9D%E6%8D%AE/</guid>
+      <description>《政府采购法》第二十八条规定，采购人不得将应当以公开招标方式采购的货物或者服务化整为零或者以其他任何方式规避公开招标采购。如何准确理解“化整为零规避招标”呢？我</description>
+    </item>
+    <item>
+      <title>印章管理的风险点及关键管控要点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E7%9A%84%E9%A3%8E%E9%99%A9%E7%82%B9%E5%8F%8A%E5%85%B3%E9%94%AE%E7%AE%A1%E6%8E%A7%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%8D%B0%E7%AB%A0%E7%AE%A1%E7%90%86%E7%9A%84%E9%A3%8E%E9%99%A9%E7%82%B9%E5%8F%8A%E5%85%B3%E9%94%AE%E7%AE%A1%E6%8E%A7%E8%A6%81%E7%82%B9/</guid>
+      <description>一、概述 规定了公司印章管理，旨在加强和规范公司及各分子公司印章的刻制、使用、销毁等管理过程。 二、相关制度 印章管理办法。 三、职责分工 各印章使用部门： 提出印章使用申</description>
+    </item>
+    <item>
+      <title>工程项目招投标常见问题的审计思路及方法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E5%8F%8A%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E5%8F%8A%E6%96%B9%E6%B3%95/</guid>
+      <description>随着经济社会的不断发展，为了保证采购过程的合法合规，建设项目普遍实行招投标程序，但由于招投标环节牵扯到各方的经济利益，极易产生暗箱操作，因此，开展招投标程序审计</description>
+    </item>
+    <item>
+      <title>招投标中100种常见违规行为</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E4%B8%AD100%E7%A7%8D%E5%B8%B8%E8%A7%81%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E4%B8%AD100%E7%A7%8D%E5%B8%B8%E8%A7%81%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA/</guid>
+      <description>工程招投标中，招标人与投标人、投标人与投标人、投标人与评审专家之间，投标人为了成功中标，不惜违法采用所谓“潜规则”，本文总结100种典型串通行为，供大家参考！ 招</description>
+    </item>
+    <item>
+      <title>招投标全流程操作要点解析（从正确解读招标文件开始）</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%85%A8%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C%E8%A6%81%E7%82%B9%E8%A7%A3%E6%9E%90%E4%BB%8E%E6%AD%A3%E7%A1%AE%E8%A7%A3%E8%AF%BB%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%85%A8%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C%E8%A6%81%E7%82%B9%E8%A7%A3%E6%9E%90%E4%BB%8E%E6%AD%A3%E7%A1%AE%E8%A7%A3%E8%AF%BB%E6%8B%9B%E6%A0%87%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B/</guid>
+      <description>从标书制作到标书信息整理 ，再到商务和技术资料的更新、归档，每一步都关乎着投标最后的结果。千万不要因为前期准备工作的原因而被丧失投标资格，因此招标文件的解读至关重</description>
+    </item>
+    <item>
+      <title>招投标常见的”专业行话53个”</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B8%93%E4%B8%9A%E8%A1%8C%E8%AF%9D53%E4%B8%AA/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B8%93%E4%B8%9A%E8%A1%8C%E8%AF%9D53%E4%B8%AA/</guid>
+      <description>流标 “流标”一词中的“流”字与“流拍”、甚至更为耳熟的“流产”中的“流”字大体有相同的意思，意即招标失败。 围标 即围攻夺标之意，这是一种更大范围、更高程度的串通投</description>
+    </item>
+    <item>
+      <title>招投标常见违法违规行为及审计方法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA%E5%8F%8A%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%8A%95%E6%A0%87%E5%B8%B8%E8%A7%81%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA%E5%8F%8A%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%B3%95/</guid>
+      <description>常见的违规行为 一、应招未招，依法必须进行招标的项目而不招标，直接发包。 按照《必须招标的工程项目规定》（国家发改委16号令）要求“施工单项合同估算价在400万元人</description>
+    </item>
+    <item>
+      <title>招标采购基本术语盘点</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%A0%87%E9%87%87%E8%B4%AD%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD%E7%9B%98%E7%82%B9/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%8B%9B%E6%A0%87%E9%87%87%E8%B4%AD%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD%E7%9B%98%E7%82%B9/</guid>
+      <description>1.资格预审 资格预审一般是指在招标投标中对技术复杂、投资规模较大且潜在投标人比较多的招标项目中，招标人组织资格审查委员会对资格预审申请人的投标资格进行预先审查，</description>
+    </item>
+    <item>
+      <title>浅谈招投标审计的重点及审计程序</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B5%85%E8%B0%88%E6%8B%9B%E6%8A%95%E6%A0%87%E5%AE%A1%E8%AE%A1%E7%9A%84%E9%87%8D%E7%82%B9%E5%8F%8A%E5%AE%A1%E8%AE%A1%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Tue, 16 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E6%B5%85%E8%B0%88%E6%8B%9B%E6%8A%95%E6%A0%87%E5%AE%A1%E8%AE%A1%E7%9A%84%E9%87%8D%E7%82%B9%E5%8F%8A%E5%AE%A1%E8%AE%A1%E7%A8%8B%E5%BA%8F/</guid>
+      <description>在财务审计实务中，我们经常会遇到审计招投标的情况，尤其是国有企业领导离任审计，通常都要对其任期内是否按照国家有关法律规定执行招投标进行审查，那么在审计招投标时有</description>
+    </item>
+    <item>
+      <title>“三重一大”审计思路与方法</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 06 May 2023 12:43:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7%E5%AE%A1%E8%AE%A1%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/</guid>
+      <description>1996年，第十四届中央纪委第六次全会公报最早提出“三重一大”，对党员领导干部在政治纪律方面提出的四条要求的第二条纪律要求。具体表述如下：认真贯彻民主集中制原则</description>
+    </item>
+    <item>
+      <title>人力资源审计：我的最新审计方案</title>
+      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%AE%A1%E8%AE%A1%E6%88%91%E7%9A%84%E6%9C%80%E6%96%B0%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E4%B8%93%E9%A1%B9%E5%AE%A1%E8%AE%A1%E6%8C%87%E5%8D%97/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%AE%A1%E8%AE%A1%E6%88%91%E7%9A%84%E6%9C%80%E6%96%B0%E5%AE%A1%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
+      <description>一、审计的目的 根据集团审计监察部的年度审计计划和统一安排 ,审计部将于20XX年3月11日开始,对XX集团人力资源部20XX年1月至20XX年1月的人力资源规划与</description>
+    </item>
+  </channel>
 </rss>

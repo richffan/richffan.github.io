@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="6 小时 Python 入门 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>6 小时 Python 入门</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            6 小时 Python 入门
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            3507 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            7 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一安装-python">一、安装 Python</a></li>
+    <li><a href="#二安装代码编辑器-pycharm">二、安装代码编辑器 PyCharm</a></li>
+    <li><a href="#三helloworld">三、HelloWorld</a></li>
+    <li><a href="#四python-语法">四、Python 语法</a></li>
+    <li><a href="#五入门练习题">五、入门练习题</a>
+      <ul>
+        <li><a href="#1打印-10-个-">1.打印 10 个 *</a></li>
+        <li><a href="#2打印价格">2.打印价格</a></li>
+        <li><a href="#3描述医院病人的信息">3.描述医院病人的信息</a></li>
+        <li><a href="#4接收用户输入打印问候信息">4.接收用户输入，打印问候信息</a></li>
+        <li><a href="#5打印年龄">5.打印年龄</a></li>
+        <li><a href="#6字符串打印">6.字符串打印</a></li>
+        <li><a href="#7格式化字符串">7.格式化字符串</a></li>
+        <li><a href="#8字符串方法使用">8.字符串方法使用</a></li>
+        <li><a href="#9算术运算符">9.算术运算符</a></li>
+        <li><a href="#10引入数学模块">10.引入数学模块</a></li>
+        <li><a href="#11条件语句的使用">11.条件语句的使用</a></li>
+        <li><a href="#12打印天气">12.打印天气</a></li>
+        <li><a href="#13打印名字是否符合要求">13.打印名字是否符合要求</a></li>
+        <li><a href="#14判断体重">14.判断体重</a></li>
+        <li><a href="#15打印-1---5">15.打印 1 - 5</a></li>
+        <li><a href="#16猜数秘密号码">16.猜数（秘密号码）</a></li>
+        <li><a href="#17car-game">17.Car game</a></li>
+        <li><a href="#18for-循环使用">18.for 循环使用</a></li>
+        <li><a href="#19计算价格总量">19.计算价格总量</a></li>
+        <li><a href="#20嵌套循环">20.嵌套循环</a></li>
+        <li><a href="#21list">21.List</a></li>
+        <li><a href="#22list-中找最大值">22.List 中找最大值</a></li>
+        <li><a href="#23访问矩阵中的各项">23.访问矩阵中的各项</a></li>
+        <li><a href="#24数组中常用函数调用">24.数组中常用函数调用</a></li>
+        <li><a href="#25元组">25.元组</a></li>
+        <li><a href="#26使用字典">26.使用字典</a></li>
+        <li><a href="#27输出表情符号">27.输出表情符号</a></li>
+        <li><a href="#28函数">28.函数</a></li>
+        <li><a href="#29异常处理">29.异常处理</a></li>
+        <li><a href="#30注释">30.注释</a></li>
+        <li><a href="#31类的使用">31.类的使用</a></li>
+        <li><a href="#32继承的使用">32.继承的使用</a></li>
+        <li><a href="#33调用模块使用">33.调用模块使用</a></li>
+        <li><a href="#34从整个模块中导入特定的函数">34.从整个模块中导入特定的函数</a></li>
+        <li><a href="#35从包中导入特定的函数">35.从包中导入特定的函数</a></li>
+        <li><a href="#36生成随机值">36.生成随机值</a></li>
+        <li><a href="#37寻找目录路径">37.寻找目录路径</a></li>
+        <li><a href="#38表格中读取信息">38.表格中读取信息</a></li>
+        <li><a href="#39csv-文件导入数据">39.CSV 文件导入数据</a></li>
+        <li><a href="#40决策树">40.决策树</a></li>
+      </ul>
+    </li>
+    <li><a href="#六参考资料">六、参考资料</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <blockquote>
+<p>以下操作均在 Windows 环境下进行操作，先说明一下哈</p>
+</blockquote>
+<h2 id="一安装-python">一、安装 Python</h2>
+<p>1、官网下载 Python</p>
+<p>进入官网（<a href="https://www.python.org/">https://www.python.org</a>），点击 Downloads，选择要下载的版本：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517223149.png" alt="image-20200517223148826"></p>
+<p>2、安装 Python</p>
+<p>安装时注意下图勾选部分一定要勾选：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517223528.png" alt="image-20200517223527044"></p>
+<h2 id="二安装代码编辑器-pycharm">二、安装代码编辑器 PyCharm</h2>
+<p>1、官网下载 PyCharm</p>
+<p>进入官网（<a href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm</a>），点击 Downloads，选择要下载的版本：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517223349.png" alt="image-20200517223348661"></p>
+<p>2、安装 PyCharm</p>
+<p>设置安装路径之后，一直点 next 即可。</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517224624.png" alt="image-20200517224622654"></p>
+<p>3、优化 PyCharm 使用</p>
+<ul>
+<li><a href="Python/PyCharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8.md">PyCharm 优化使用</a></li>
+</ul>
+<h2 id="三helloworld">三、HelloWorld</h2>
+<p>创建第一个项目 HelloWorld &ndash;&gt; 创建文件 app.py &ndash;&gt; 写入代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;HelloWorld&#34;</span>)
+</span></span></code></pre></div><p>效果图：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200517225659.png" alt="image-20200517225658342"></p>
+<h2 id="四python-语法">四、Python 语法</h2>
+<p>看语法部分之前，推荐直接看下面入门练习题，潜移默化中对 Python 基本语法会有一定了解之后，再回来看这一部分，会更加熟悉 Python 的使用！</p>
+<ul>
+<li><a href="Python/Python%E8%AF%AD%E6%B3%95.md">Python 语法使用要熟记于心</a></li>
+</ul>
+<h2 id="五入门练习题">五、入门练习题</h2>
+<h3 id="1打印-10-个-">1.打印 10 个 *</h3>
+<blockquote>
+<p>使用到表达式</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;*&#39;</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">10</span>)
+</span></span></code></pre></div><h3 id="2打印价格">2.打印价格</h3>
+<blockquote>
+<p>使用到变量</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>price <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(price)
+</span></span></code></pre></div><h3 id="3描述医院病人的信息">3.描述医院病人的信息</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Time        : 2020/5/18
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Author      : WuGenQiang
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@File        : hospital
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Description : 描述医院病人的信息
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>full_name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;John Smith&#39;</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>
+</span></span><span style="display:flex;"><span>is_new <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span></code></pre></div><h3 id="4接收用户输入打印问候信息">4.接收用户输入，打印问候信息</h3>
+<blockquote>
+<p>使用输入函数 input() 进行输入</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;what is your name?&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Hi &#39;</span> <span style="color:#000;font-weight:bold">+</span> name)
+</span></span></code></pre></div><p>测试：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518092806.png" alt="image-20200518092805760"></p>
+<h3 id="5打印年龄">5.打印年龄</h3>
+<blockquote>
+<p>使用到强制类型转换</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>birth_year <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;Birth year: &#39;</span>)
+</span></span><span style="display:flex;"><span>age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2019</span> <span style="color:#000;font-weight:bold">-</span> <span style="color:#0086b3">int</span>(birth_year)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(age)
+</span></span></code></pre></div><p>使用 type() 打印数据类型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">type</span>(birth_year))
+</span></span></code></pre></div><h3 id="6字符串打印">6.字符串打印</h3>
+<blockquote>
+<p>三种字符串表达形式</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>course_1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Python for &#34;Beginners&#34;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1)
+</span></span><span style="display:flex;"><span>course_2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Python is my &#39;love&#39;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_2)
+</span></span><span style="display:flex;"><span>course_3 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">Hi John
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">welcome to python world!
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_3)
+</span></span></code></pre></div><p>效果呈现：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200518100440.png" alt="image-20200518100439122"></p>
+<p>获取 course_1 的第一个索引值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#099">0</span>])
+</span></span></code></pre></div><p>获取 course_1 的最后一个索引值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>])
+</span></span></code></pre></div><p>那么获取倒数第二个索引值呢：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2</span>])
+</span></span></code></pre></div><p>返回索引为 0 - 2 的值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#099">0</span>:<span style="color:#099">3</span>])
+</span></span></code></pre></div><p>返回索引 0 以及 0 之后的所有字符：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#099">0</span>:])
+</span></span></code></pre></div><p>返回索引小于 5 的所有字符：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[:<span style="color:#099">5</span>])
+</span></span></code></pre></div><p>返回所有字符：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[:])
+</span></span></code></pre></div><p>返回从第 2 位开始，不包括最后一位字符的字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course_1[<span style="color:#099">1</span>:<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>])
+</span></span></code></pre></div><h3 id="7格式化字符串">7.格式化字符串</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>first <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;WuGenQiang&#39;</span>
+</span></span><span style="display:flex;"><span>last <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;happy&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 字符串拼接</span>
+</span></span><span style="display:flex;"><span>message <span style="color:#000;font-weight:bold">=</span> first <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39; [&#39;</span> <span style="color:#000;font-weight:bold">+</span> last <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;] is a coder&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 格式化字符串</span>
+</span></span><span style="display:flex;"><span>msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">f</span><span style="color:#d14">&#39;</span><span style="color:#d14">{</span>first<span style="color:#d14">}</span><span style="color:#d14"> [</span><span style="color:#d14">{</span>last<span style="color:#d14">}</span><span style="color:#d14">] is a coder&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(message)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(msg)
+</span></span></code></pre></div><h3 id="8字符串方法使用">8.字符串方法使用</h3>
+<p>（1）len() 函数：求字符串长度</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>course <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Python for Beginners&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 字符串长度</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">len</span>(course))
+</span></span></code></pre></div><p>（2）upper() 函数：转换成大写字母</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 转换成大写字母</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course<span style="color:#000;font-weight:bold">.</span>upper())
+</span></span></code></pre></div><p>（3）lower() 函数：转换成小写字母</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 转换成小写字母</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course<span style="color:#000;font-weight:bold">.</span>lower())
+</span></span></code></pre></div><p>（4）find() 函数</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 找字符返回第一个匹配的索引值</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course<span style="color:#000;font-weight:bold">.</span>find(<span style="color:#d14">&#39;n&#39;</span>))
+</span></span></code></pre></div><p>找不到返回 -1，并且区分大小写</p>
+<p>（5）replace() 函数</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 替换字符</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(course<span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;Beginners&#39;</span>, <span style="color:#d14">&#39;Absolute Beginners&#39;</span>))
+</span></span></code></pre></div><p>（6）in 使用：产生布尔值 False or True</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 判断字符串是否在字符串里</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Python&#39;</span> <span style="color:#000;font-weight:bold">in</span> course)
+</span></span></code></pre></div><h3 id="9算术运算符">9.算术运算符</h3>
+<p>举例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#099">10</span> <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#099">10</span> <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#099">10</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 10 的 3 次方</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#099">10</span> <span style="color:#000;font-weight:bold">**</span> <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(x)
+</span></span></code></pre></div><p>思索下面 x 为多少：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">**</span> <span style="color:#099">2</span>
+</span></span></code></pre></div><p>答案是 22，因为取幂运算符是优先的，所以先算 2 的 2 次方</p>
+<ul>
+<li>取绝对值</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2.9</span>))
+</span></span></code></pre></div><h3 id="10引入数学模块">10.引入数学模块</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">math</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(math<span style="color:#000;font-weight:bold">.</span>floor(<span style="color:#099">2.9</span>))
+</span></span></code></pre></div><h3 id="11条件语句的使用">11.条件语句的使用</h3>
+<blockquote>
+<p>使用 if - elif - else</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>is_hot <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>is_cold <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> is_hot:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;It&#39;s a hot day&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">elif</span> is_cold:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;It&#39;s a cold day&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;It&#39;s a lovely day&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Enjoy your day&#34;</span>)
+</span></span></code></pre></div><p>当条件多个并且是 &ldquo;and&rdquo; 的关系时，使用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>has_high_income <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>has_good_credit <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> has_good_credit <span style="color:#000;font-weight:bold">and</span> has_high_income:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Eligible for loan&#34;</span>)
+</span></span></code></pre></div><p>若当条件多个并且是 &ldquo;or&rdquo; 的关系时，使用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>has_high_income <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>has_good_credit <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> has_good_credit <span style="color:#000;font-weight:bold">or</span> has_high_income:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Eligible for loan&#34;</span>)
+</span></span></code></pre></div><p>如何使用 &ldquo;not&rdquo;，看下面：(not 相当于取反)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>has_good_credit <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>has_criminal_record <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> has_good_credit <span style="color:#000;font-weight:bold">and</span> <span style="color:#000;font-weight:bold">not</span> has_criminal_record:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Eligible for loan&#34;</span>)
+</span></span></code></pre></div><h3 id="12打印天气">12.打印天气</h3>
+<blockquote>
+<p>使用比较运算符</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temperature <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">30</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> temperature <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;It&#39;s a hot day&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;It&#39;s a cold day&#34;</span>)
+</span></span></code></pre></div><h3 id="13打印名字是否符合要求">13.打印名字是否符合要求</h3>
+<blockquote>
+<p>使用比较运算符</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;James&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">len</span>(name) <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">3</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Name must be at least 3 character&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">elif</span> <span style="color:#0086b3">len</span>(name) <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">50</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Name must be a maximum of 50 character&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Name looks good&#34;</span>)
+</span></span></code></pre></div><h3 id="14判断体重">14.判断体重</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>weight <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;weight: &#39;</span>))
+</span></span><span style="display:flex;"><span>unit <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;(L)bs or (K)g: &#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> unit<span style="color:#000;font-weight:bold">.</span>upper() <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;L&#34;</span>:
+</span></span><span style="display:flex;"><span>    converted <span style="color:#000;font-weight:bold">=</span> weight <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">0.45</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#34;You are </span><span style="color:#d14">{</span>converted<span style="color:#d14">}</span><span style="color:#d14"> kilos&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    converted <span style="color:#000;font-weight:bold">=</span> weight <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">0.45</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#34;You are </span><span style="color:#d14">{</span>converted<span style="color:#d14">}</span><span style="color:#d14"> pounds&#34;</span>)
+</span></span></code></pre></div><h3 id="15打印-1---5">15.打印 1 - 5</h3>
+<blockquote>
+<p>使用到 while 循环语句或者 for 循环语句</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">while</span> i <span style="color:#000;font-weight:bold">&lt;=</span> <span style="color:#099">5</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(i)
+</span></span><span style="display:flex;"><span>    i <span style="color:#000;font-weight:bold">=</span> i <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Done&#34;</span>)
+</span></span></code></pre></div><h3 id="16猜数秘密号码">16.猜数（秘密号码）</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>secret_number <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9</span>
+</span></span><span style="display:flex;"><span>guess_count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>guess_limit <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">while</span> guess_count <span style="color:#000;font-weight:bold">&lt;</span> guess_limit:
+</span></span><span style="display:flex;"><span>    guess <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;Guess: &#39;</span>))
+</span></span><span style="display:flex;"><span>    guess_count <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> guess <span style="color:#000;font-weight:bold">==</span> secret_number:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;You won!&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">break</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Sorry, you failed&#39;</span>)
+</span></span></code></pre></div><h3 id="17car-game">17.Car game</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>command <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>started <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">True</span>:
+</span></span><span style="display:flex;"><span>    command <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;&gt; &#34;</span>)<span style="color:#000;font-weight:bold">.</span>lower()
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> command <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;start&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> started:
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Car is already started!&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            started <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Car started...&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">elif</span> command <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;stop&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> started:
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Car is already stopped!&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            started <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Car stopped.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">elif</span> command <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;help&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">        start - to start the car
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">        stop - to stop the car
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">        quit - to quit
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">        &#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">elif</span> command <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;quit&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Sorry, I don&#39;t understand that!&#34;</span>)
+</span></span></code></pre></div><h3 id="18for-循环使用">18.for 循环使用</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 打印 Python</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> <span style="color:#d14">&#39;Python&#39;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> [<span style="color:#d14">&#39;Mosh&#39;</span>, <span style="color:#d14">&#39;John&#39;</span>, <span style="color:#d14">&#39;Sarah&#39;</span>]:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>]:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 使用范围函数 range, range(10) 表示 0 - 9</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># range(5, 10) 表示 5 - 9</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">5</span>, <span style="color:#099">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># range(5, 10, 2) 表示 5 - 9, 但是 step = 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">5</span>, <span style="color:#099">10</span>, <span style="color:#099">2</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(item)
+</span></span></code></pre></div><h3 id="19计算价格总量">19.计算价格总量</h3>
+<blockquote>
+<p>使用到 for 循环</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prices <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">10</span>, <span style="color:#099">20</span>, <span style="color:#099">30</span>]
+</span></span><span style="display:flex;"><span>total <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> price <span style="color:#000;font-weight:bold">in</span> prices:
+</span></span><span style="display:flex;"><span>    total <span style="color:#000;font-weight:bold">+=</span> price
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#34;Total: </span><span style="color:#d14">{</span>total<span style="color:#d14">}</span><span style="color:#d14">&#34;</span>)
+</span></span></code></pre></div><h3 id="20嵌套循环">20.嵌套循环</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">4</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> y <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">3</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#39;(</span><span style="color:#d14">{</span>x<span style="color:#d14">}</span><span style="color:#d14">, </span><span style="color:#d14">{</span>y<span style="color:#d14">}</span><span style="color:#d14">)&#39;</span>)
+</span></span></code></pre></div><p><strong>画个大大的 &ldquo;F&rdquo;</strong></p>
+<ul>
+<li>方式一：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> x_count <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;x&#39;</span> <span style="color:#000;font-weight:bold">*</span> x_count)
+</span></span></code></pre></div><ul>
+<li>方式二：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> x_count <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>    output <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> count <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(x_count):
+</span></span><span style="display:flex;"><span>        output <span style="color:#000;font-weight:bold">+=</span> <span style="color:#d14">&#39;x&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(output)
+</span></span></code></pre></div><h3 id="21list">21.List</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>names <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;John&#39;</span>, <span style="color:#d14">&#39;Bob&#39;</span>, <span style="color:#d14">&#39;Mosh&#39;</span>, <span style="color:#d14">&#39;Sarah&#39;</span>, <span style="color:#d14">&#39;Mary&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(names)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(names[:])
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(names[<span style="color:#099">2</span>:])
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 输出第一个索引值</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(names[<span style="color:#099">0</span>])
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 输出最后一个索引值</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(names[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>])
+</span></span></code></pre></div><h3 id="22list-中找最大值">22.List 中找最大值</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">3</span>, <span style="color:#099">6</span>, <span style="color:#099">2</span>, <span style="color:#099">8</span>, <span style="color:#099">4</span>, <span style="color:#099">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">max</span> <span style="color:#000;font-weight:bold">=</span> numbers[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> number <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> number <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#0086b3">max</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">max</span> <span style="color:#000;font-weight:bold">=</span> number
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">max</span>)
+</span></span></code></pre></div><h3 id="23访问矩阵中的各项">23.访问矩阵中的各项</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>matrix <span style="color:#000;font-weight:bold">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#099">7</span>, <span style="color:#099">8</span>, <span style="color:#099">9</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>matrix[<span style="color:#099">0</span>][<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(matrix[<span style="color:#099">0</span>][<span style="color:#099">1</span>])
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> row <span style="color:#000;font-weight:bold">in</span> matrix:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> row:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(item)
+</span></span></code></pre></div><h3 id="24数组中常用函数调用">24.数组中常用函数调用</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">5</span>, <span style="color:#099">2</span>, <span style="color:#099">1</span>, <span style="color:#099">7</span>, <span style="color:#099">4</span>]
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 排序(升序)</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>sort()
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 逆序</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>reverse()
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 复制拷贝</span>
+</span></span><span style="display:flex;"><span>numbers2 <span style="color:#000;font-weight:bold">=</span> numbers<span style="color:#000;font-weight:bold">.</span>copy()
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers2)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 移除 1</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>remove(<span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 清空</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>clear()
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 末尾加入 20</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#099">20</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 在特定位置插入 12</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>insert(<span style="color:#099">0</span>, <span style="color:#099">12</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 末尾删除</span>
+</span></span><span style="display:flex;"><span>numbers<span style="color:#000;font-weight:bold">.</span>pop()
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 返回 5 的索引地址</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers<span style="color:#000;font-weight:bold">.</span>index(<span style="color:#099">12</span>))
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 输出 50 是否在 numbers 中</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#099">50</span> <span style="color:#000;font-weight:bold">in</span> numbers)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 输出数字的数量</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers<span style="color:#000;font-weight:bold">.</span>count(<span style="color:#099">12</span>))
+</span></span></code></pre></div><ul>
+<li>末尾加入数据</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">2</span>, <span style="color:#099">2</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">1</span>]
+</span></span><span style="display:flex;"><span>uniques <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> number <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> number <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> uniques:
+</span></span><span style="display:flex;"><span>        uniques<span style="color:#000;font-weight:bold">.</span>append(number)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(uniques)
+</span></span></code></pre></div><h3 id="25元组">25.元组</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(numbers[<span style="color:#099">0</span>])
+</span></span></code></pre></div><p>注意：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>coordinates <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># x = coordinates[0]</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># y = coordinates[1]</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># z = coordinates[2]</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 与上面相同结果</span>
+</span></span><span style="display:flex;"><span>x, y, z <span style="color:#000;font-weight:bold">=</span> coordinates
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(x)
+</span></span></code></pre></div><h3 id="26使用字典">26.使用字典</h3>
+<ul>
+<li>案例</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>customer <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;name&#34;</span>: <span style="color:#d14">&#34;John Smith&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;age&#34;</span>: <span style="color:#099">30</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;is_verified&#34;</span>: <span style="color:#000;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>customer[<span style="color:#d14">&#34;name&#34;</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Jack Smith&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(customer[<span style="color:#d14">&#34;name&#34;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(customer<span style="color:#000;font-weight:bold">.</span>get(<span style="color:#d14">&#34;name&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(customer<span style="color:#000;font-weight:bold">.</span>get(<span style="color:#d14">&#34;host&#34;</span>, <span style="color:#d14">&#34;123.12.1.1&#34;</span>))
+</span></span></code></pre></div><ul>
+<li>读号码</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>phone <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;Phone: &#34;</span>)
+</span></span><span style="display:flex;"><span>digits_mapping <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;1&#34;</span>: <span style="color:#d14">&#34;One&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;2&#34;</span>: <span style="color:#d14">&#34;Two&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;3&#34;</span>: <span style="color:#d14">&#34;Three&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;4&#34;</span>: <span style="color:#d14">&#34;Four&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;5&#34;</span>: <span style="color:#d14">&#34;Five&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>output <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> ch <span style="color:#000;font-weight:bold">in</span> phone:
+</span></span><span style="display:flex;"><span>    output <span style="color:#000;font-weight:bold">+=</span> digits_mapping<span style="color:#000;font-weight:bold">.</span>get(ch, <span style="color:#d14">&#34;!&#34;</span>) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(output)
+</span></span></code></pre></div><h3 id="27输出表情符号">27.输出表情符号</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>words <span style="color:#000;font-weight:bold">=</span> message<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 调用表情符号</span>
+</span></span><span style="display:flex;"><span>emojis <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;:)&#34;</span>: <span style="color:#d14">&#34;😄&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#d14">&#34;:(&#34;</span>: <span style="color:#d14">&#34;😣&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>output <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> word <span style="color:#000;font-weight:bold">in</span> words:
+</span></span><span style="display:flex;"><span>    output <span style="color:#000;font-weight:bold">+=</span> emojis<span style="color:#000;font-weight:bold">.</span>get(word, word) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(output)
+</span></span></code></pre></div><p>使用函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># !/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Time        : 2020/5/20
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Author      : WuGenQiang
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@File        : testList
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Description : 
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">emoji_converter</span>(message):
+</span></span><span style="display:flex;"><span>    words <span style="color:#000;font-weight:bold">=</span> message<span style="color:#000;font-weight:bold">.</span>split(<span style="color:#d14">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 调用表情符号</span>
+</span></span><span style="display:flex;"><span>    emojis <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;:)&#34;</span>: <span style="color:#d14">&#34;😄&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#d14">&#34;:(&#34;</span>: <span style="color:#d14">&#34;😣&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    output <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> word <span style="color:#000;font-weight:bold">in</span> words:
+</span></span><span style="display:flex;"><span>        output <span style="color:#000;font-weight:bold">+=</span> emojis<span style="color:#000;font-weight:bold">.</span>get(word, word) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> output
+</span></span><span style="display:flex;"><span>message <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> emoji_converter(message)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(result)
+</span></span></code></pre></div><h3 id="28函数">28.函数</h3>
+<ul>
+<li>先定义函数，然后才能使用：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet_user</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Hi, function!&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Start&#34;</span>)
+</span></span><span style="display:flex;"><span>greet_user()
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Finished&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>传参：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet_user</span>(name):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#39;Hi, </span><span style="color:#d14">{</span>name<span style="color:#d14">}</span><span style="color:#d14">&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Start&#34;</span>)
+</span></span><span style="display:flex;"><span>greet_user(<span style="color:#d14">&#34;John&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;Finished&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>打印数的平方</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">square</span>(number):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> number <span style="color:#000;font-weight:bold">*</span> number
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#000;font-weight:bold">=</span> square(<span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(result)
+</span></span></code></pre></div><h3 id="29异常处理">29.异常处理</h3>
+<ul>
+<li>出现异常，打印错误信息</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span>:
+</span></span><span style="display:flex;"><span>    age <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;Age: &#39;</span>))
+</span></span><span style="display:flex;"><span>    income <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20000</span>
+</span></span><span style="display:flex;"><span>    risk <span style="color:#000;font-weight:bold">=</span> income <span style="color:#000;font-weight:bold">/</span> age
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(age)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">except</span> <span style="color:#900;font-weight:bold">ZeroDivisionError</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Age cannot be 0.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">except</span> <span style="color:#900;font-weight:bold">ValueError</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Invalid value&#39;</span>)
+</span></span></code></pre></div><h3 id="30注释">30.注释</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 这是注释：print Sky is blue</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;Sky is blue&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 计算和返回数的平方</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">square</span>(number):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> number <span style="color:#000;font-weight:bold">*</span> number
+</span></span></code></pre></div><h3 id="31类的使用">31.类的使用</h3>
+<ul>
+<li>示例 1：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Point</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 初始化</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, x, y):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>x <span style="color:#000;font-weight:bold">=</span> x
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>y <span style="color:#000;font-weight:bold">=</span> y
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">move</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;move&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">draw</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;draw&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># point1 = Point()</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># point1.draw()</span>
+</span></span><span style="display:flex;"><span>point2 <span style="color:#000;font-weight:bold">=</span> Point(<span style="color:#099">10</span>, <span style="color:#099">20</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># point2.x = 20</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(point2<span style="color:#000;font-weight:bold">.</span>x)
+</span></span></code></pre></div><ul>
+<li>示例 2：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Person</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name):
+</span></span><span style="display:flex;"><span>        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">talk</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">f</span><span style="color:#d14">&#34;Hi, I am </span><span style="color:#d14">{</span><span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name<span style="color:#d14">}</span><span style="color:#d14">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># john = Person()</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># john.talk()</span>
+</span></span><span style="display:flex;"><span>john <span style="color:#000;font-weight:bold">=</span> Person(<span style="color:#d14">&#34;John Smith&#34;</span>)
+</span></span><span style="display:flex;"><span>john<span style="color:#000;font-weight:bold">.</span>talk()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bob <span style="color:#000;font-weight:bold">=</span> Person(<span style="color:#d14">&#34;Bob Smith&#34;</span>)
+</span></span><span style="display:flex;"><span>bob<span style="color:#000;font-weight:bold">.</span>talk()
+</span></span></code></pre></div><h3 id="32继承的使用">32.继承的使用</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 继承性讲解</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Mammal</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># Mammal: 哺乳动物</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">walk</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;walk&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span>(Mammal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">bark</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;bark&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Cat</span>(Mammal):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dog1 <span style="color:#000;font-weight:bold">=</span> Dog()
+</span></span><span style="display:flex;"><span>dog1<span style="color:#000;font-weight:bold">.</span>walk()
+</span></span><span style="display:flex;"><span>dog1<span style="color:#000;font-weight:bold">.</span>bark()
+</span></span></code></pre></div><h3 id="33调用模块使用">33.调用模块使用</h3>
+<p>先创建 converters.py：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">lbs_to_kg</span>(weight):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> weight <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">0.45</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">kg_to_lbs</span>(weight):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> weight <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">0.45</span>
+</span></span></code></pre></div><p>然后在需要调用的 py 文件中这样写：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">converters</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(converters<span style="color:#000;font-weight:bold">.</span>kg_to_lbs(<span style="color:#099">70</span>))
+</span></span></code></pre></div><p>初步实现，然后根据需求完成自己的项目吧！</p>
+<h3 id="34从整个模块中导入特定的函数">34.从整个模块中导入特定的函数</h3>
+<p>不需要模块名作为前缀</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># import converters</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">converters</span> <span style="color:#000;font-weight:bold">import</span> kg_to_lbs
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(kg_to_lbs(<span style="color:#099">100</span>))
+</span></span></code></pre></div><p>由此，我们可以为之前写的一些功能实现写一个工具文件，包含着各种要实现的功能函数：</p>
+<p>比如这样：</p>
+<p>举例：实现求最大数</p>
+<ul>
+<li>（1）创建 utils.py 工具文件，写入：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">find_max</span>(numbers):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">max</span> <span style="color:#000;font-weight:bold">=</span> numbers[<span style="color:#099">0</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> number <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">if</span> number <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#0086b3">max</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0086b3">max</span> <span style="color:#000;font-weight:bold">=</span> number
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">max</span>
+</span></span></code></pre></div><ul>
+<li>（2）调用使用：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># import utils</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">utils</span> <span style="color:#000;font-weight:bold">import</span> find_max
+</span></span><span style="display:flex;"><span>numbers <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">10</span>, <span style="color:#099">3</span>, <span style="color:#099">6</span>, <span style="color:#099">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(find_max(numbers))
+</span></span></code></pre></div><h3 id="35从包中导入特定的函数">35.从包中导入特定的函数</h3>
+<p>举例：</p>
+<p>创建 Python 包 ecommerce，包中创建文件 shhipping.py，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">calc_shipping</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#34;calc shipping&#34;</span>)
+</span></span></code></pre></div><p>调用：</p>
+<ul>
+<li>第一种方式：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">ecommerce.shipping</span>
+</span></span><span style="display:flex;"><span>ecommerce<span style="color:#000;font-weight:bold">.</span>shipping<span style="color:#000;font-weight:bold">.</span>calc_shipping()
+</span></span></code></pre></div><ul>
+<li>第二种方式：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">ecommerce.shipping</span> <span style="color:#000;font-weight:bold">import</span> calc_shipping
+</span></span><span style="display:flex;"><span>calc_shipping()
+</span></span></code></pre></div><ul>
+<li>第三种方式：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">ecommerce</span> <span style="color:#000;font-weight:bold">import</span> shipping
+</span></span><span style="display:flex;"><span>shipping<span style="color:#000;font-weight:bold">.</span>calc_shipping()
+</span></span></code></pre></div><h3 id="36生成随机值">36.生成随机值</h3>
+<ul>
+<li>举例 1：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">random</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">3</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">#打印随机值</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(random<span style="color:#000;font-weight:bold">.</span>random())
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">#指定范围的随机数</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(random<span style="color:#000;font-weight:bold">.</span>randint(<span style="color:#099">10</span>, <span style="color:#099">20</span>))
+</span></span></code></pre></div><ul>
+<li>举例 2：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">random</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>members <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;John&#39;</span>, <span style="color:#d14">&#39;Mary&#39;</span>, <span style="color:#d14">&#39;Mosh&#39;</span>]
+</span></span><span style="display:flex;"><span>leader <span style="color:#000;font-weight:bold">=</span> random<span style="color:#000;font-weight:bold">.</span>choice(members)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(leader)
+</span></span></code></pre></div><ul>
+<li>举例 3：1 - 6 间自动生成 2 个随机值</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">random</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dice</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">roll</span>(<span style="color:#999">self</span>):
+</span></span><span style="display:flex;"><span>        first <span style="color:#000;font-weight:bold">=</span> random<span style="color:#000;font-weight:bold">.</span>randint(<span style="color:#099">1</span>, <span style="color:#099">6</span>)
+</span></span><span style="display:flex;"><span>        second <span style="color:#000;font-weight:bold">=</span> random<span style="color:#000;font-weight:bold">.</span>randint(<span style="color:#099">1</span>, <span style="color:#099">6</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> first, second
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dice <span style="color:#000;font-weight:bold">=</span> Dice()
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(dice<span style="color:#000;font-weight:bold">.</span>roll())
+</span></span></code></pre></div><h3 id="37寻找目录路径">37.寻找目录路径</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">pathlib</span> <span style="color:#000;font-weight:bold">import</span> Path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>path <span style="color:#000;font-weight:bold">=</span> Path(<span style="color:#d14">&#34;ecommerce&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(path<span style="color:#000;font-weight:bold">.</span>exists())
+</span></span></code></pre></div><p>如果有会输出 True，没有的话就会输出 False，那就使用下面命令创建一个新的目录</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>path<span style="color:#000;font-weight:bold">.</span>mkdir()
+</span></span></code></pre></div><p>删除目录</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>path<span style="color:#000;font-weight:bold">.</span>rmdir
+</span></span></code></pre></div><p>搜索文件，打印生成器对象</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">pathlib</span> <span style="color:#000;font-weight:bold">import</span> Path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>path <span style="color:#000;font-weight:bold">=</span> Path()
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(path<span style="color:#000;font-weight:bold">.</span>glob(<span style="color:#d14">&#39;*.*&#39;</span>))
+</span></span></code></pre></div><p>实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">pathlib</span> <span style="color:#000;font-weight:bold">import</span> Path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>path <span style="color:#000;font-weight:bold">=</span> Path()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> file <span style="color:#000;font-weight:bold">in</span> path<span style="color:#000;font-weight:bold">.</span>glob(<span style="color:#d14">&#39;*.py&#39;</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(file)
+</span></span></code></pre></div><p>显示目录下所有文件</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">pathlib</span> <span style="color:#000;font-weight:bold">import</span> Path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>path <span style="color:#000;font-weight:bold">=</span> Path()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> file <span style="color:#000;font-weight:bold">in</span> path<span style="color:#000;font-weight:bold">.</span>glob(<span style="color:#d14">&#39;*&#39;</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(file)
+</span></span></code></pre></div><h3 id="38表格中读取信息">38.表格中读取信息</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">openpyxl</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">xl</span>
+</span></span><span style="display:flex;"><span>wb <span style="color:#000;font-weight:bold">=</span> xl<span style="color:#000;font-weight:bold">.</span>load_workbook(<span style="color:#d14">&#39;transactions.xlsx&#39;</span>)
+</span></span><span style="display:flex;"><span>sheet <span style="color:#000;font-weight:bold">=</span> wb[<span style="color:#d14">&#39;Sheet1&#39;</span>]
+</span></span><span style="display:flex;"><span>cell <span style="color:#000;font-weight:bold">=</span> sheet[<span style="color:#d14">&#39;A1&#39;</span>]
+</span></span><span style="display:flex;"><span>cell <span style="color:#000;font-weight:bold">=</span> sheet<span style="color:#000;font-weight:bold">.</span>cell(<span style="color:#099">1</span>, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(cell<span style="color:#000;font-weight:bold">.</span>value)
+</span></span></code></pre></div><p>查看数据有多少行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(sheet<span style="color:#000;font-weight:bold">.</span>max_row)
+</span></span></code></pre></div><p>实现图表显示：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Time        : 2020/5/18
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Author      : WuGenQiang
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@File        : app
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Description : 
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">openpyxl</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">xl</span>
+</span></span><span style="display:flex;"><span>wb <span style="color:#000;font-weight:bold">=</span> xl<span style="color:#000;font-weight:bold">.</span>load_workbook(<span style="color:#d14">&#39;test.xlsx&#39;</span>)
+</span></span><span style="display:flex;"><span>sheet <span style="color:#000;font-weight:bold">=</span> wb[<span style="color:#d14">&#39;Sheet1&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#cell = sheet[&#39;A1&#39;]</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#cell = sheet.cell(1, 1)</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#print(cell.value)</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(sheet<span style="color:#000;font-weight:bold">.</span>max_row)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">openpyxl.chart</span> <span style="color:#000;font-weight:bold">import</span> BarChart, Reference
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> row <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">1</span>, sheet<span style="color:#000;font-weight:bold">.</span>max_row <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>):
+</span></span><span style="display:flex;"><span>    cell <span style="color:#000;font-weight:bold">=</span> sheet<span style="color:#000;font-weight:bold">.</span>cell(row, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(cell<span style="color:#000;font-weight:bold">.</span>value)
+</span></span><span style="display:flex;"><span>    corrected_price <span style="color:#000;font-weight:bold">=</span> cell<span style="color:#000;font-weight:bold">.</span>value <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">0.9</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>    corrected_price_cell <span style="color:#000;font-weight:bold">=</span> sheet<span style="color:#000;font-weight:bold">.</span>cell(row, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>    corrected_price_cell<span style="color:#000;font-weight:bold">.</span>value <span style="color:#000;font-weight:bold">=</span> corrected_price
+</span></span><span style="display:flex;"><span>values <span style="color:#000;font-weight:bold">=</span> Reference(sheet,
+</span></span><span style="display:flex;"><span>          min_row<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>,
+</span></span><span style="display:flex;"><span>          max_row<span style="color:#000;font-weight:bold">=</span>sheet<span style="color:#000;font-weight:bold">.</span>max_row,
+</span></span><span style="display:flex;"><span>          min_col<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>,
+</span></span><span style="display:flex;"><span>          max_col<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>chart <span style="color:#000;font-weight:bold">=</span> BarChart()
+</span></span><span style="display:flex;"><span>chart<span style="color:#000;font-weight:bold">.</span>add_data(values)
+</span></span><span style="display:flex;"><span>sheet<span style="color:#000;font-weight:bold">.</span>add_chart(chart, <span style="color:#d14">&#39;E2&#39;</span>)
+</span></span><span style="display:flex;"><span>wb<span style="color:#000;font-weight:bold">.</span>save(<span style="color:#d14">&#39;test2.xlsx&#39;</span>)
+</span></span></code></pre></div><p>效果图：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200526165658.png" alt="image-20200526165657549"></p>
+<p>优化：子函数调用版</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Time        : 2020/5/18
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Author      : WuGenQiang
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@File        : app
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">@Description : 
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">openpyxl</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">xl</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">openpyxl.chart</span> <span style="color:#000;font-weight:bold">import</span> BarChart, Reference
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">process_workbook</span>(filename):
+</span></span><span style="display:flex;"><span>    wb <span style="color:#000;font-weight:bold">=</span> xl<span style="color:#000;font-weight:bold">.</span>load_workbook(filename)
+</span></span><span style="display:flex;"><span>    sheet <span style="color:#000;font-weight:bold">=</span> wb[<span style="color:#d14">&#39;Sheet1&#39;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># cell = sheet[&#39;A1&#39;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># cell = sheet.cell(1, 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># print(cell.value)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(sheet<span style="color:#000;font-weight:bold">.</span>max_row)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> row <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">1</span>, sheet<span style="color:#000;font-weight:bold">.</span>max_row <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>):
+</span></span><span style="display:flex;"><span>        cell <span style="color:#000;font-weight:bold">=</span> sheet<span style="color:#000;font-weight:bold">.</span>cell(row, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(cell<span style="color:#000;font-weight:bold">.</span>value)
+</span></span><span style="display:flex;"><span>        corrected_price <span style="color:#000;font-weight:bold">=</span> cell<span style="color:#000;font-weight:bold">.</span>value <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">0.9</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>        corrected_price_cell <span style="color:#000;font-weight:bold">=</span> sheet<span style="color:#000;font-weight:bold">.</span>cell(row, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>        corrected_price_cell<span style="color:#000;font-weight:bold">.</span>value <span style="color:#000;font-weight:bold">=</span> corrected_price
+</span></span><span style="display:flex;"><span>    values <span style="color:#000;font-weight:bold">=</span> Reference(sheet,
+</span></span><span style="display:flex;"><span>                       min_row<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>,
+</span></span><span style="display:flex;"><span>                       max_row<span style="color:#000;font-weight:bold">=</span>sheet<span style="color:#000;font-weight:bold">.</span>max_row,
+</span></span><span style="display:flex;"><span>                       min_col<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>,
+</span></span><span style="display:flex;"><span>                       max_col<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>    chart <span style="color:#000;font-weight:bold">=</span> BarChart()
+</span></span><span style="display:flex;"><span>    chart<span style="color:#000;font-weight:bold">.</span>add_data(values)
+</span></span><span style="display:flex;"><span>    sheet<span style="color:#000;font-weight:bold">.</span>add_chart(chart, <span style="color:#d14">&#39;E2&#39;</span>)
+</span></span><span style="display:flex;"><span>    wb<span style="color:#000;font-weight:bold">.</span>save(filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>process_workbook(<span style="color:#d14">&#39;test.xlsx&#39;</span>)
+</span></span></code></pre></div><h3 id="39csv-文件导入数据">39.CSV 文件导入数据</h3>
+<blockquote>
+<p>数据集下载：<a href="https://wugenqiang.github.io/NoteBook/Python/6%E5%B0%8F%E6%97%B6Python%E5%85%A5%E9%97%A8/vgsales.csv">vgsales.csv</a></p>
+</blockquote>
+<h4 id="整体输出数据">整体输出数据</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#从CSV文件导入数据，存储在df中</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;vgsales.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>df
+</span></span></code></pre></div><p>效果：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531195557.png" alt="image-20200531195556447"></p>
+<h4 id="获取数据集的形状">获取数据集的形状</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic">#获取数据集的形状</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#000;font-weight:bold">.</span>shape
+</span></span></code></pre></div><p>效果：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531200757.png" alt="image-20200531200756673"></p>
+<h4 id="分段输出数据">分段输出数据</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic">#描述方法</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#000;font-weight:bold">.</span>describe()
+</span></span></code></pre></div><p>效果：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531201608.png" alt="image-20200531201607125"></p>
+<h4 id="获取值">获取值</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#000;font-weight:bold">.</span>values
+</span></span></code></pre></div><p>效果：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531202109.png" alt="image-20200531202108365"></p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200531204832.png" alt="image-20200531204830570"></p>
+<h4 id="清洁数据">清洁数据</h4>
+<p>删除数据举例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#从CSV文件导入数据，存储在df中</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;vgsales.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> df<span style="color:#000;font-weight:bold">.</span>drop(columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;JP_Sales&#39;</span>])
+</span></span><span style="display:flex;"><span>x
+</span></span></code></pre></div><p>获取某一列数据：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#从CSV文件导入数据，存储在df中</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;vgsales.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> df[<span style="color:#d14">&#39;JP_Sales&#39;</span>]
+</span></span><span style="display:flex;"><span>y
+</span></span></code></pre></div><h3 id="40决策树">40.决策树</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.tree</span> <span style="color:#000;font-weight:bold">import</span> DecisionTreeClassifier
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#从CSV文件导入数据，存储在df中</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;vgsales.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> df<span style="color:#000;font-weight:bold">.</span>drop(columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;JP_Sales&#39;</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> df[<span style="color:#d14">&#39;JP_Sales&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#树分类器</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#000;font-weight:bold">=</span> DecisionTreeClassifier()
+</span></span><span style="display:flex;"><span>model<span style="color:#000;font-weight:bold">.</span>fit(x, y)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#调用模型预测</span>
+</span></span><span style="display:flex;"><span>predictions <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>predict([[<span style="color:#099">41.49</span>, <span style="color:#099">29.02</span>], [<span style="color:#099">29.08</span>, <span style="color:#099">3.58</span>]])
+</span></span><span style="display:flex;"><span>predictions
+</span></span></code></pre></div><p>可能数据不对，可以使用其他测试数据</p>
+<h4 id="测量数据精确度">测量数据精确度</h4>
+<p>数据被分为两组：训练和测试</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.tree</span> <span style="color:#000;font-weight:bold">import</span> DecisionTreeClassifier
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.model_selection</span> <span style="color:#000;font-weight:bold">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sklearn.metrics</span> <span style="color:#000;font-weight:bold">import</span> accuracy_score
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#从CSV文件导入数据，存储在df中</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#39;vgsales.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#000;font-weight:bold">=</span> df<span style="color:#000;font-weight:bold">.</span>drop(columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#39;JP_Sales&#39;</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#000;font-weight:bold">=</span> df[<span style="color:#d14">&#39;JP_Sales&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#培训和测试数据输入输出集</span>
+</span></span><span style="display:flex;"><span>x_train, x_test, y_train, y_test <span style="color:#000;font-weight:bold">=</span> train_test_split(x, y, test_size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0.2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#树分类器</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#000;font-weight:bold">=</span> DecisionTreeClassifier()
+</span></span><span style="display:flex;"><span>model<span style="color:#000;font-weight:bold">.</span>fit(x_train, y_train)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#调用模型预测</span>
+</span></span><span style="display:flex;"><span>predictions <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>predict(x_test)
+</span></span><span style="display:flex;"><span>score <span style="color:#000;font-weight:bold">=</span> accuracy_score(y_test, predictions)
+</span></span><span style="display:flex;"><span>score
+</span></span></code></pre></div><h2 id="六参考资料">六、参考资料</h2>
+<p><a href="https://www.bilibili.com/video/BV1h64y1M7UC">[1] 2020 最新 Python 教程 6 小时入门</a></p>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div></div>
+    <div></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="第二章 函数 - https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/">
+    <meta name="author" content="richfan - https://richfan.site/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>第二章 函数</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://richfan.site/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": true
+	}
+</div>
+    <h1 class="title">
+        
+            第二章 函数
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-09-25&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            8495 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            17 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/%E7%A8%8B%E6%8A%80">程技</a>
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/python">python</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-调用函数">2.1 调用函数</a>
+      <ul>
+        <li><a href="#211-内置函数">2.1.1 内置函数</a></li>
+        <li><a href="#212-数据类型转换">2.1.2 数据类型转换</a></li>
+      </ul>
+    </li>
+    <li><a href="#22-定义函数">2.2 定义函数</a>
+      <ul>
+        <li><a href="#221-def-定义">2.2.1 def 定义</a></li>
+        <li><a href="#222-空函数">2.2.2 空函数</a></li>
+        <li><a href="#223-参数检查">2.2.3 参数检查</a></li>
+        <li><a href="#224-返回多个值">2.2.4 返回多个值</a></li>
+      </ul>
+    </li>
+    <li><a href="#23-函数的参数">2.3 函数的参数</a>
+      <ul>
+        <li><a href="#231-位置参数">2.3.1 位置参数</a></li>
+        <li><a href="#232-默认参数">2.3.2 默认参数</a></li>
+        <li><a href="#233-可变参数">2.3.3 可变参数</a></li>
+        <li><a href="#234-关键字参数">2.3.4 关键字参数</a></li>
+        <li><a href="#235-命名关键字参数">2.3.5 命名关键字参数</a></li>
+        <li><a href="#236-参数组合">2.3.6 参数组合</a></li>
+      </ul>
+    </li>
+    <li><a href="#24-递归函数">2.4 递归函数</a></li>
+    <li><a href="#25-参考资料">2.5 参考资料</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>我们知道圆的面积计算公式为：
+$$
+S = πr^2
+$$
+当我们知道半径<code>r</code>的值时，就可以根据公式计算出面积。</p>
+<p>假设我们需要计算 3 个不同大小的圆的面积：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>r1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12.34</span>
+</span></span><span style="display:flex;"><span>r2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9.08</span>
+</span></span><span style="display:flex;"><span>r3 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">73.1</span>
+</span></span><span style="display:flex;"><span>s1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.14</span> <span style="color:#000;font-weight:bold">*</span> r1 <span style="color:#000;font-weight:bold">*</span> r1
+</span></span><span style="display:flex;"><span>s2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.14</span> <span style="color:#000;font-weight:bold">*</span> r2 <span style="color:#000;font-weight:bold">*</span> r2
+</span></span><span style="display:flex;"><span>s3 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.14</span> <span style="color:#000;font-weight:bold">*</span> r3 <span style="color:#000;font-weight:bold">*</span> r3
+</span></span></code></pre></div><p>当代码出现有规律的重复的时候，你就需要当心了，每次写<code>3.14 * x * x</code>不仅很麻烦，而且，如果要把<code>3.14</code>改成<code>3.14159265359</code>的时候，得全部替换。</p>
+<p>有了函数，我们就不再每次写<code>s = 3.14 * x * x</code>，而是写成更有意义的函数调用<code>s = area_of_circle(x)</code>，而函数<code>area_of_circle</code>本身只需要写一次，就可以多次调用。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">area_of_circle</span>(r):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> r<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">3.14</span><span style="color:#000;font-weight:bold">*</span>r<span style="color:#000;font-weight:bold">**</span><span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>R<span style="color:#000;font-weight:bold">=</span>[<span style="color:#099">12.34</span>,<span style="color:#099">9.08</span>,<span style="color:#099">73.1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> r <span style="color:#000;font-weight:bold">in</span> R:
+</span></span><span style="display:flex;"><span>    s<span style="color:#000;font-weight:bold">=</span>area_of_circle(r)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(s)
+</span></span></code></pre></div><p>基本上所有的高级语言都支持函数，Python 也不例外。Python 不但能非常灵活地定义函数，而且本身内置了很多有用的函数，可以直接调用。</p>
+<p>!&gt; 注：抽象是数学中非常常见的概念，借助抽象，我们才能不关心底层的具体计算过程，而直接在更高的层次上思考问题。写计算机程序也是一样，函数就是最基本的一种代码抽象的方式。</p>
+<h2 id="21-调用函数">2.1 调用函数</h2>
+<h3 id="211-内置函数">2.1.1 内置函数</h3>
+<p>Python 内置了很多有用的函数，我们可以直接调用。</p>
+<p>要调用一个函数，需要知道函数的名称和参数，比如求绝对值的函数<code>abs</code>，只有一个参数。可以直接从 Python 的官方网站查看文档：</p>
+<p><a href="https://docs.python.org/3/library/functions.html#abs">https://docs.python.org/3/library/functions.html#abs</a></p>
+<p>也可以在交互式命令行通过<code>help(abs)</code>查看<code>abs</code>函数的帮助信息。</p>
+<p>调用<code>abs</code>函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">20</span>)) <span style="color:#998;font-style:italic">#20</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#099">20</span>)) <span style="color:#998;font-style:italic">#20</span>
+</span></span></code></pre></div><p>调用函数的时候，如果传入的参数数量不对，会报<code>TypeError</code>的错误，并且 Python 会明确地告诉你：<code>abs()</code>有且仅有 1 个参数，但给出了两个：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#099">1</span>, <span style="color:#099">2</span>))
+</span></span></code></pre></div><p>报错：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;E:/ML/PycharmProjects/HelloWorld/app.py&#34;</span>, line <span style="color:#099">11</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#099">1</span>, <span style="color:#099">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#0086b3">abs</span>() takes exactly one argument (<span style="color:#099">2</span> given)
+</span></span></code></pre></div><p>如果传入的参数数量是对的，但参数类型不能被函数所接受，也会报<code>TypeError</code>的错误，并且给出错误信息：<code>str</code>是错误的参数类型：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#d14">&#39;a&#39;</span>))
+</span></span></code></pre></div><p>报错：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;E:/ML/PycharmProjects/HelloWorld/app.py&#34;</span>, line <span style="color:#099">11</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#0086b3">abs</span>(<span style="color:#d14">&#39;a&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: bad operand <span style="color:#0086b3">type</span> <span style="color:#000;font-weight:bold">for</span> <span style="color:#0086b3">abs</span>(): <span style="color:#d14">&#39;str&#39;</span>
+</span></span></code></pre></div><p>而<code>max</code>函数<code>max()</code>可以接收任意多个参数，并返回最大的那个：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">max</span>(<span style="color:#099">1</span>, <span style="color:#099">2</span>)) <span style="color:#998;font-style:italic"># 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">max</span>(<span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">5</span>)) <span style="color:#998;font-style:italic"># 3</span>
+</span></span></code></pre></div><h3 id="212-数据类型转换">2.1.2 数据类型转换</h3>
+<p>Python 内置的常用函数还包括数据类型转换函数：int 把其他数据类型转换为整数 / float / str / bool</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">int</span>(<span style="color:#d14">&#39;123&#39;</span>) <span style="color:#998;font-style:italic"># 123</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">int</span>(<span style="color:#099">12.34</span>) <span style="color:#998;font-style:italic"># 12</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">float</span>(<span style="color:#d14">&#39;12.34&#39;</span>) <span style="color:#998;font-style:italic"># 12.34</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">str</span>(<span style="color:#099">1.23</span>) <span style="color:#998;font-style:italic"># &#39;1.23&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">str</span>(<span style="color:#099">100</span>) <span style="color:#998;font-style:italic"># &#39;100&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">bool</span>(<span style="color:#099">1</span>) <span style="color:#998;font-style:italic"># True</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">bool</span>(<span style="color:#d14">&#39;&#39;</span>) <span style="color:#998;font-style:italic"># False</span>
+</span></span></code></pre></div><p>函数名其实就是指向一个函数对象的引用，完全可以把函数名赋给一个变量，相当于给这个函数起了一个“别名”：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">abs</span> <span style="color:#998;font-style:italic"># 变量a指向abs函数</span>
+</span></span><span style="display:flex;"><span>a(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>) <span style="color:#998;font-style:italic"># 所以也可以通过a调用abs函数 输出：1</span>
+</span></span></code></pre></div><blockquote>
+<p>✏️ 练习题：</p>
+</blockquote>
+<p>请利用 Python 内置的<code>hex()</code>函数把一个整数转换成十六进制表示的字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#0086b3">hex</span>(<span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>())))
+</span></span></code></pre></div><h2 id="22-定义函数">2.2 定义函数</h2>
+<h3 id="221-def-定义">2.2.1 def 定义</h3>
+<p>在Python中，定义一个函数要使用<code>def</code>语句，依次写出函数名、括号、括号中的参数和冒号<code>:</code>，然后，在缩进块中编写函数体，函数的返回值用<code>return</code>语句返回。</p>
+<p>我们以自定义一个求绝对值的<code>my_abs</code>函数为例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">my_abs</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">-</span>x
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(my_abs(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">99</span>))
+</span></span></code></pre></div><p>!&gt; 请注意，函数体内部的语句在执行时，一旦执行到<code>return</code>时，函数就执行完毕，并将结果返回。因此，函数内部通过条件判断和循环可以实现非常复杂的逻辑。</p>
+<p>如果没有<code>return</code>语句，函数执行完毕后也会返回结果，只是结果为<code>None</code>。<code>return None</code>可以简写为<code>return</code>。</p>
+<p>在 Python 交互环境中定义函数时，注意 Python 会出现<code>...</code>的提示。函数定义结束后需要按两次回车重新回到<code>&gt;&gt;&gt;</code>提示符下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200628200631.png" alt="image-20200628200630220"></p>
+<p>如果你已经把<code>my_abs()</code>的函数定义保存为<code>abstest.py</code>文件了，那么，可以在该文件的当前目录下启动 Python 解释器，用<code>from abstest import my_abs</code>来导入<code>my_abs()</code>函数，注意<code>abstest</code>是文件名（不含<code>.py</code>扩展名）：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200628200736.png" alt="image-20200628200735560"></p>
+<h3 id="222-空函数">2.2.2 空函数</h3>
+<p>如果想定义一个什么事也不做的空函数，可以用<code>pass</code>语句：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">nop</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p><code>pass</code>语句什么都不做，那有什么用？实际上<code>pass</code>可以用来作为占位符，比如现在还没想好怎么写函数的代码，就可以先放一个<code>pass</code>，让代码能运行起来。</p>
+<p><code>pass</code>还可以用在其他语句里，比如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> age <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#099">18</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><p>缺少了<code>pass</code>，代码运行就会有语法错误。</p>
+<h3 id="223-参数检查">2.2.3 参数检查</h3>
+<p>调用函数时，如果参数个数不对，Python 解释器会自动检查出来，并抛出<code>TypeError</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_abs(<span style="color:#099">1</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: my_abs() takes <span style="color:#099">1</span> positional argument but <span style="color:#099">2</span> were given
+</span></span></code></pre></div><p>但是如果参数类型不对，Python 解释器就无法帮我们检查。试试<code>my_abs</code>和内置函数<code>abs</code>的差别：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_abs(<span style="color:#d14">&#39;A&#39;</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">in</span> my_abs
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: unorderable types: <span style="color:#0086b3">str</span>() <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#0086b3">int</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">abs</span>(<span style="color:#d14">&#39;A&#39;</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: bad operand <span style="color:#0086b3">type</span> <span style="color:#000;font-weight:bold">for</span> <span style="color:#0086b3">abs</span>(): <span style="color:#d14">&#39;str&#39;</span>
+</span></span></code></pre></div><p>当传入了不恰当的参数时，内置函数<code>abs</code>会检查出参数错误，而我们定义的<code>my_abs</code>没有参数检查，会导致<code>if</code>语句出错，出错信息和<code>abs</code>不一样。所以，这个函数定义不够完善。</p>
+<p>让我们修改一下<code>my_abs</code>的定义，对参数类型做检查，只允许整数和浮点数类型的参数。数据类型检查可以用内置函数<code>isinstance()</code>实现：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">my_abs</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#0086b3">isinstance</span>(x, (<span style="color:#0086b3">int</span>, <span style="color:#0086b3">float</span>)):
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">raise</span> <span style="color:#900;font-weight:bold">TypeError</span>(<span style="color:#d14">&#39;bad operand type&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">-</span>x
+</span></span></code></pre></div><p>添加了参数检查后，如果传入错误的参数类型，函数就可以抛出一个错误：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_abs(<span style="color:#d14">&#39;A&#39;</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">3</span>, <span style="color:#000;font-weight:bold">in</span> my_abs
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: bad operand <span style="color:#0086b3">type</span>
+</span></span></code></pre></div><p>错误和异常处理将在后续讲到。</p>
+<h3 id="224-返回多个值">2.2.4 返回多个值</h3>
+<p>函数可以返回多个值吗？答案是肯定的。</p>
+<p>比如在游戏中经常需要从一个点移动到另一个点，给出坐标、位移和角度，就可以计算出新的坐标：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">math</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">move</span>(x, y, step, angle<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>):
+</span></span><span style="display:flex;"><span>    nx <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">+</span> step <span style="color:#000;font-weight:bold">*</span> math<span style="color:#000;font-weight:bold">.</span>cos(angle)
+</span></span><span style="display:flex;"><span>    ny <span style="color:#000;font-weight:bold">=</span> y <span style="color:#000;font-weight:bold">-</span> step <span style="color:#000;font-weight:bold">*</span> math<span style="color:#000;font-weight:bold">.</span>sin(angle)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> nx, ny
+</span></span></code></pre></div><p><code>import math</code>语句表示导入<code>math</code>包，并允许后续代码引用<code>math</code>包里的<code>sin</code>、<code>cos</code>等函数。</p>
+<p>然后，我们就可以同时获得返回值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x, y <span style="color:#000;font-weight:bold">=</span> move(<span style="color:#099">100</span>, <span style="color:#099">100</span>, <span style="color:#099">60</span>, math<span style="color:#000;font-weight:bold">.</span>pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">6</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(x, y) <span style="color:#998;font-style:italic"># 151.96152422706632 70.0</span>
+</span></span></code></pre></div><p>但其实这只是一种假象，Python 函数返回的仍然是单一值：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>r <span style="color:#000;font-weight:bold">=</span> move(<span style="color:#099">100</span>, <span style="color:#099">100</span>, <span style="color:#099">60</span>, math<span style="color:#000;font-weight:bold">.</span>pi <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">6</span>)
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(r) <span style="color:#998;font-style:italic"># (151.96152422706632, 70.0)</span>
+</span></span></code></pre></div><p>原来返回值是一个 tuple！但是，在语法上，返回一个 tuple 可以省略括号，而多个变量可以同时接收一个 tuple，按位置赋给对应的值，所以，Python 的函数返回多值其实就是返回一个 tuple，但写起来更方便。</p>
+<blockquote>
+<p>✏️ 小结：</p>
+</blockquote>
+<ul>
+<li>定义函数时，需要确定<code>函数名</code>和<code>参数个数</code>；</li>
+<li>如果有必要，可以先对参数的<code>数据类型</code>做检查；</li>
+<li>函数体内部可以用<code>return</code>随时返回函数结果；</li>
+<li>函数执行完毕也没有<code>return</code>语句时，自动<code>return None</code>。</li>
+<li>函数可以同时返回多个值，但其实就是一个<code>tuple</code>。</li>
+</ul>
+<blockquote>
+<p>✏️ 练习题：</p>
+</blockquote>
+<p>请定义一个函数<code>quadratic(a, b, c)</code>，接收 3 个参数，返回一元二次方程 $ax^2+bx+c=0$ 的两个解。</p>
+<p>提示：</p>
+<p>一元二次方程的求根公式为：
+$$
+x=\dfrac{-b±\sqrt{b^2-4ac}}{2a}
+$$
+计算平方根可以调用<code>math.sqrt()</code>函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">math</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(math<span style="color:#000;font-weight:bold">.</span>sqrt(<span style="color:#099">2</span>)) <span style="color:#998;font-style:italic"># 1.4142135623730951</span>
+</span></span></code></pre></div><p>粗略的定义函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">math</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">quadratic</span>(a,b,c):
+</span></span><span style="display:flex;"><span>    delta<span style="color:#000;font-weight:bold">=</span>b<span style="color:#000;font-weight:bold">**</span><span style="color:#099">2</span><span style="color:#000;font-weight:bold">-</span><span style="color:#099">4</span><span style="color:#000;font-weight:bold">*</span>a<span style="color:#000;font-weight:bold">*</span>c
+</span></span><span style="display:flex;"><span>    x1<span style="color:#000;font-weight:bold">=</span>(<span style="color:#000;font-weight:bold">-</span>b<span style="color:#000;font-weight:bold">+</span>math<span style="color:#000;font-weight:bold">.</span>sqrt(delta))<span style="color:#000;font-weight:bold">/</span>(<span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>a)
+</span></span><span style="display:flex;"><span>    x2<span style="color:#000;font-weight:bold">=</span>(<span style="color:#000;font-weight:bold">-</span>b<span style="color:#000;font-weight:bold">-</span>math<span style="color:#000;font-weight:bold">.</span>sqrt(delta))<span style="color:#000;font-weight:bold">/</span>(<span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>a)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x1,x2
+</span></span><span style="display:flex;"><span>x<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;enter a:&#39;</span>))
+</span></span><span style="display:flex;"><span>y<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;enter b:&#39;</span>))
+</span></span><span style="display:flex;"><span>z<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;enter c:&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;quadratic(x,y,z)&#39;</span>, quadratic(x, y, z))
+</span></span></code></pre></div><p>当然后期还要细化，因为有些没有考虑！</p>
+<h2 id="23-函数的参数">2.3 函数的参数</h2>
+<p>**定义函数的时候，我们把参数的名字和位置确定下来，函数的接口定义就完成了。**对于函数的调用者来说，只需要知道如何传递正确的参数，以及函数将返回什么样的值就够了，函数内部的复杂逻辑被封装起来，调用者无需了解。</p>
+<p>Python 的函数定义非常简单，但灵活度却非常大。除了正常定义的必选参数外，还可以使用<code>默认参数</code>、<code>可变参数</code>和<code>关键字参数</code>，使得函数定义出来的接口，不但能处理复杂的参数，还可以简化调用者的代码。</p>
+<h3 id="231-位置参数">2.3.1 位置参数</h3>
+<p>我们先写一个计算 $x^2$ 的函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">power</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">*</span> x
+</span></span></code></pre></div><p>对于<code>power(x)</code>函数，参数<code>x</code>就是一个位置参数。</p>
+<p>当我们调用<code>power</code>函数时，必须传入有且仅有的一个参数<code>x</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(power(<span style="color:#099">5</span>)) <span style="color:#998;font-style:italic"># 25</span>
+</span></span></code></pre></div><p>如果要计算 x 的 n 次方，可以把<code>power(x)</code>修改为<code>power(x, n)</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">power</span>(x, n):
+</span></span><span style="display:flex;"><span>    s <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">while</span> n <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        n <span style="color:#000;font-weight:bold">=</span> n <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        s <span style="color:#000;font-weight:bold">=</span> s <span style="color:#000;font-weight:bold">*</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> s
+</span></span></code></pre></div><p>修改后的<code>power(x, n)</code>函数有两个参数：<code>x</code>和<code>n</code>，这两个参数都是位置参数，调用函数时，传入的两个值按照位置顺序依次赋给参数<code>x</code>和<code>n</code>。</p>
+<h3 id="232-默认参数">2.3.2 默认参数</h3>
+<p>新的<code>power(x, n)</code>函数定义没有问题，但是，旧的调用代码失败了，原因是我们增加了一个参数，导致旧的代码因为缺少一个参数而无法正常调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> power(<span style="color:#099">5</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: power() missing <span style="color:#099">1</span> required positional argument: <span style="color:#d14">&#39;n&#39;</span>
+</span></span></code></pre></div><p>Python 的错误信息很明确：调用函数<code>power()</code>缺少了一个位置参数<code>n</code>。</p>
+<p>这个时候，默认参数就排上用场了。由于我们经常计算 $x^2$，所以，完全可以把第二个参数 n 的默认值设定为 2：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">power</span>(x, n<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>):
+</span></span><span style="display:flex;"><span>    s <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">while</span> n <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        n <span style="color:#000;font-weight:bold">=</span> n <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        s <span style="color:#000;font-weight:bold">=</span> s <span style="color:#000;font-weight:bold">*</span> x
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> s
+</span></span></code></pre></div><p>这样，当我们调用<code>power(5)</code>时，相当于调用<code>power(5, 2)</code>：</p>
+<p>而对于<code>n &gt; 2</code>的其他情况，就必须明确地传入 n，比如<code>power(5, 3)</code>。</p>
+<p>从上面的例子可以看出，默认参数可以简化函数的调用。设置默认参数时，有几点要注意：</p>
+<ul>
+<li>一是必选参数在前，默认参数在后，否则 Python 的解释器会报错（思考一下为什么默认参数不能放在必选参数前面）；</li>
+<li>二是如何设置默认参数。当函数有多个参数时，把变化大的参数放前面，变化小的参数放后面。变化小的参数就可以作为默认参数。</li>
+</ul>
+<p>使用默认参数有什么好处？最大的好处是能降低调用函数的难度。</p>
+<p>举个例子，我们写个一年级小学生注册的函数，需要传入<code>name</code>和<code>gender</code>两个参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">enroll</span>(name, gender):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;name:&#39;</span>, name)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;gender:&#39;</span>, gender)
+</span></span></code></pre></div><p>这样，调用<code>enroll()</code>函数只需要传入两个参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> enroll(<span style="color:#d14">&#39;Sarah&#39;</span>, <span style="color:#d14">&#39;F&#39;</span>)
+</span></span><span style="display:flex;"><span>name: Sarah
+</span></span><span style="display:flex;"><span>gender: F
+</span></span></code></pre></div><p>如果要继续传入年龄、城市等信息怎么办？这样会使得调用函数的复杂度大大增加。</p>
+<p>我们可以把年龄和城市设为默认参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">enroll</span>(name, gender, age<span style="color:#000;font-weight:bold">=</span><span style="color:#099">6</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Beijing&#39;</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;name:&#39;</span>, name)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;gender:&#39;</span>, gender)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;age:&#39;</span>, age)
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;city:&#39;</span>, city)
+</span></span></code></pre></div><p>这样，大多数学生注册时不需要提供年龄和城市，只提供必须的两个参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> enroll(<span style="color:#d14">&#39;Sarah&#39;</span>, <span style="color:#d14">&#39;F&#39;</span>)
+</span></span><span style="display:flex;"><span>name: Sarah
+</span></span><span style="display:flex;"><span>gender: F
+</span></span><span style="display:flex;"><span>age: <span style="color:#099">6</span>
+</span></span><span style="display:flex;"><span>city: Beijing
+</span></span></code></pre></div><p>只有与默认参数不符的学生才需要提供额外的信息：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>enroll(<span style="color:#d14">&#39;Bob&#39;</span>, <span style="color:#d14">&#39;M&#39;</span>, <span style="color:#099">7</span>)
+</span></span><span style="display:flex;"><span>enroll(<span style="color:#d14">&#39;Adam&#39;</span>, <span style="color:#d14">&#39;M&#39;</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Tianjin&#39;</span>)
+</span></span></code></pre></div><p>可见，默认参数降低了函数调用的难度，而一旦需要更复杂的调用时，又可以传递更多的参数来实现。无论是简单调用还是复杂调用，函数只需要定义一个。</p>
+<p>有多个默认参数时，调用的时候，既可以按顺序提供默认参数，比如调用<code>enroll('Bob', 'M', 7)</code>，意思是，除了<code>name</code>，<code>gender</code>这两个参数外，最后 1 个参数应用在参数<code>age</code>上，<code>city</code>参数由于没有提供，仍然使用默认值。</p>
+<p>也可以不按顺序提供部分默认参数。当不按顺序提供部分默认参数时，需要把参数名写上。比如调用<code>enroll('Adam', 'M', city='Tianjin')</code>，意思是，<code>city</code>参数用传进去的值，其他默认参数继续使用默认值。</p>
+<p>默认参数很有用，但使用不当，也会掉坑里。默认参数有个最大的坑，演示如下：</p>
+<p>先定义一个函数，传入一个 list，添加一个<code>END</code>再返回：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">add_end</span>(L<span style="color:#000;font-weight:bold">=</span>[]):
+</span></span><span style="display:flex;"><span>    L<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#d14">&#39;END&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> L
+</span></span></code></pre></div><p>当你正常调用时，结果似乎不错：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>])
+</span></span><span style="display:flex;"><span>[<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#d14">&#39;END&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end([<span style="color:#d14">&#39;x&#39;</span>, <span style="color:#d14">&#39;y&#39;</span>, <span style="color:#d14">&#39;z&#39;</span>])
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;x&#39;</span>, <span style="color:#d14">&#39;y&#39;</span>, <span style="color:#d14">&#39;z&#39;</span>, <span style="color:#d14">&#39;END&#39;</span>]
+</span></span></code></pre></div><p>当你使用默认参数调用时，一开始结果也是对的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end()
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;END&#39;</span>]
+</span></span></code></pre></div><p>但是，再次调用<code>add_end()</code>时，结果就不对了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end()
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;END&#39;</span>, <span style="color:#d14">&#39;END&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end()
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;END&#39;</span>, <span style="color:#d14">&#39;END&#39;</span>, <span style="color:#d14">&#39;END&#39;</span>]
+</span></span></code></pre></div><p>默认参数是<code>[]</code>，但是函数似乎每次都“记住了”上次添加了<code>'END'</code>后的 list。</p>
+<p>原因解释如下：</p>
+<p>⭐ Python 函数在定义的时候，默认参数<code>L</code>的值就被计算出来了，即<code>[]</code>，因为默认参数<code>L</code>也是一个变量，它指向对象<code>[]</code>，每次调用该函数，如果改变了<code>L</code>的内容，则下次调用时，默认参数的内容就变了，不再是函数定义时的<code>[]</code>了。</p>
+<p>🚩 <strong>定义默认参数要牢记一点：默认参数必须指向不变对象！</strong></p>
+<p>要修改上面的例子，我们可以用<code>None</code>这个不变对象来实现：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">add_end</span>(L<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> L <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">None</span>:
+</span></span><span style="display:flex;"><span>        L <span style="color:#000;font-weight:bold">=</span> []
+</span></span><span style="display:flex;"><span>    L<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#d14">&#39;END&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> L
+</span></span></code></pre></div><p>现在，无论调用多少次，都不会有问题：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end()
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;END&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> add_end()
+</span></span><span style="display:flex;"><span>[<span style="color:#d14">&#39;END&#39;</span>]
+</span></span></code></pre></div><p>为什么要设计<code>str</code>、<code>None</code>这样的不变对象呢？因为不变对象一旦创建，对象内部的数据就不能修改，这样就减少了由于修改数据导致的错误。此外，由于对象不变，多任务环境下同时读取对象不需要加锁，同时读一点问题都没有。我们在编写程序时，如果可以设计一个不变对象，那就尽量设计成不变对象。</p>
+<h3 id="233-可变参数">2.3.3 可变参数</h3>
+<p>在 Python 函数中，还可以定义可变参数。顾名思义，可变参数就是传入的参数个数是可变的，可以是 1 个、2 个到任意个，还可以是 0 个。</p>
+<p>我们以数学题为例子，给定一组数字 a，b，c……，请计算 $a^2 + b^2 + c^2 + …$</p>
+<p>要定义出这个函数，我们必须确定输入的参数。由于参数个数不确定，我们首先想到可以把 a，b，c…… 作为一个 list 或 tuple 传进来，这样，函数可以定义如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">calc</span>(numbers):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">+</span> n <span style="color:#000;font-weight:bold">*</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">sum</span>
+</span></span></code></pre></div><p>但是调用的时候，需要先组装出一个 list 或 tuple：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>])) <span style="color:#998;font-style:italic"># 14</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc((<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">7</span>))) <span style="color:#998;font-style:italic"># 84</span>
+</span></span></code></pre></div><p>如果利用可变参数，调用函数的方式可以简化成这样：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc(<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>)) <span style="color:#998;font-style:italic"># 14</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc(<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">7</span>)) <span style="color:#998;font-style:italic"># 84</span>
+</span></span></code></pre></div><p>所以，我们把函数的参数改为可变参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">calc</span>(<span style="color:#000;font-weight:bold">*</span>numbers):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> n <span style="color:#000;font-weight:bold">in</span> numbers:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">sum</span> <span style="color:#000;font-weight:bold">+</span> n <span style="color:#000;font-weight:bold">*</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> <span style="color:#0086b3">sum</span>
+</span></span></code></pre></div><p>定义可变参数和定义一个 list 或 tuple 参数相比，仅仅在参数前面加了一个<code>*</code>号。在函数内部，参数<code>numbers</code>接收到的是一个 tuple，因此，函数代码完全不变。但是，调用该函数时，可以传入任意个参数，包括 0 个参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc(<span style="color:#099">1</span>, <span style="color:#099">2</span>)) <span style="color:#998;font-style:italic"># 5</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc()) <span style="color:#998;font-style:italic"># 0</span>
+</span></span></code></pre></div><p>❓ 如果已经有一个 list 或者 tuple，要调用一个可变参数怎么办？可以这样做：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nums <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc(nums[<span style="color:#099">0</span>], nums[<span style="color:#099">1</span>], nums[<span style="color:#099">2</span>])) <span style="color:#998;font-style:italic"># 14</span>
+</span></span></code></pre></div><p>这种写法当然是可行的，问题是太繁琐，所以 Python 允许你在 list 或 tuple 前面加一个<code>*</code>号，把 list 或 tuple 的元素变成可变参数传进去：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nums <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(calc(<span style="color:#000;font-weight:bold">*</span>nums)) <span style="color:#998;font-style:italic"># 14</span>
+</span></span></code></pre></div><p><code>*nums</code>表示把<code>nums</code>这个list的所有元素作为可变参数传进去。这种写法相当有用，而且很常见。</p>
+<h3 id="234-关键字参数">2.3.4 关键字参数</h3>
+<p>可变参数允许你传入 0 个或任意个参数，这些可变参数在函数调用时自动组装为一个 tuple。而关键字参数允许你传入 0 个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个 dict。请看示例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, <span style="color:#000;font-weight:bold">**</span>kw):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;name:&#39;</span>, name, <span style="color:#d14">&#39;age:&#39;</span>, age, <span style="color:#d14">&#39;other:&#39;</span>, kw)
+</span></span></code></pre></div><p>函数<code>person</code>除了必选参数<code>name</code>和<code>age</code>外，还接受关键字参数<code>kw</code>。在调用该函数时，可以只传入必选参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Michael&#39;</span>, <span style="color:#099">30</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># name: Michael age: 30 other: {}</span>
+</span></span></code></pre></div><p>也可以传入任意个数的关键字参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Bob&#39;</span>, <span style="color:#099">35</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Beijing&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># name: Bob age: 35 other: {&#39;city&#39;: &#39;Beijing&#39;}</span>
+</span></span><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Adam&#39;</span>, <span style="color:#099">45</span>, gender<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;M&#39;</span>, job<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Engineer&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># name: Adam age: 45 other: {&#39;gender&#39;: &#39;M&#39;, &#39;jo</span>
+</span></span></code></pre></div><p>关键字参数有什么用？它可以扩展函数的功能。比如，在<code>person</code>函数里，我们保证能接收到<code>name</code>和<code>age</code>这两个参数，但是，如果调用者愿意提供更多的参数，我们也能收到。试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。</p>
+<p>和可变参数类似，也可以先组装出一个 dict，然后，把该 dict 转换为关键字参数传进去：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>extra <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;city&#39;</span>: <span style="color:#d14">&#39;Beijing&#39;</span>, <span style="color:#d14">&#39;job&#39;</span>: <span style="color:#d14">&#39;Engineer&#39;</span>}
+</span></span><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, city<span style="color:#000;font-weight:bold">=</span>extra[<span style="color:#d14">&#39;city&#39;</span>], job<span style="color:#000;font-weight:bold">=</span>extra[<span style="color:#d14">&#39;job&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># name: Jack age: 24 other: {&#39;city&#39;: &#39;Beijing&#39;, &#39;job&#39;: &#39;Engineer&#39;}</span>
+</span></span></code></pre></div><p>当然，上面复杂的调用可以用简化的写法：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>extra <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;city&#39;</span>: <span style="color:#d14">&#39;Beijing&#39;</span>, <span style="color:#d14">&#39;job&#39;</span>: <span style="color:#d14">&#39;Engineer&#39;</span>}
+</span></span><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, <span style="color:#000;font-weight:bold">**</span>extra)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># name: Jack age: 24 other: {&#39;city&#39;: &#39;Beijing&#39;, &#39;job&#39;: &#39;Engineer&#39;}</span>
+</span></span></code></pre></div><p><code>**extra</code>表示把<code>extra</code>这个 dict 的所有 key-value 用关键字参数传入到函数的<code>**kw</code>参数，<code>kw</code>将获得一个 dict，注意<code>kw</code>获得的 dict 是<code>extra</code>的一份拷贝，对<code>kw</code>的改动不会影响到函数外的<code>extra</code>。</p>
+<h3 id="235-命名关键字参数">2.3.5 命名关键字参数</h3>
+<p>对于关键字参数，函数的调用者可以传入任意不受限制的关键字参数。至于到底传入了哪些，就需要在函数内部通过<code>kw</code>检查。</p>
+<p>仍以<code>person()</code>函数为例，我们希望检查是否有<code>city</code>和<code>job</code>参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, <span style="color:#000;font-weight:bold">**</span>kw):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> <span style="color:#d14">&#39;city&#39;</span> <span style="color:#000;font-weight:bold">in</span> kw:
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic"># 有city参数</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> <span style="color:#d14">&#39;job&#39;</span> <span style="color:#000;font-weight:bold">in</span> kw:
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic"># 有job参数</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">pass</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;name:&#39;</span>, name, <span style="color:#d14">&#39;age:&#39;</span>, age, <span style="color:#d14">&#39;other:&#39;</span>, kw)
+</span></span></code></pre></div><p>但是调用者仍可以传入不受限制的关键字参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Beijing&#39;</span>, addr<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Chaoyang&#39;</span>, zipcode<span style="color:#000;font-weight:bold">=</span><span style="color:#099">123456</span>)
+</span></span></code></pre></div><p>如果要限制关键字参数的名字，就可以用命名关键字参数，例如，只接收<code>city</code>和<code>job</code>作为关键字参数。这种方式定义的函数如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, <span style="color:#000;font-weight:bold">*</span>, city, job):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(name, age, city, job)
+</span></span></code></pre></div><p>和关键字参数<code>**kw</code>不同，命名关键字参数需要一个特殊分隔符<code>*</code>，<code>*</code>后面的参数被视为命名关键字参数。</p>
+<p>调用方式如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Beijing&#39;</span>, job<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Engineer&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Jack 24 Beijing Engineer</span>
+</span></span></code></pre></div><p>如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符<code>*</code>了：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, <span style="color:#000;font-weight:bold">*</span>args, city, job):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(name, age, args, city, job)
+</span></span></code></pre></div><p>命名关键字参数必须传入参数名，这和位置参数不同。如果没有传入参数名，调用将报错：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, <span style="color:#d14">&#39;Beijing&#39;</span>, <span style="color:#d14">&#39;Engineer&#39;</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">TypeError</span>: person() takes <span style="color:#099">2</span> positional arguments but <span style="color:#099">4</span> were given
+</span></span></code></pre></div><p>由于调用时缺少参数名<code>city</code>和<code>job</code>，Python 解释器把这 4 个参数均视为位置参数，但<code>person()</code>函数仅接受 2 个位置参数。</p>
+<p>命名关键字参数可以有缺省值，从而简化调用：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, <span style="color:#000;font-weight:bold">*</span>, city<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Beijing&#39;</span>, job):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(name, age, city, job)
+</span></span></code></pre></div><p>由于命名关键字参数<code>city</code>具有默认值，调用时，可不传入<code>city</code>参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> person(<span style="color:#d14">&#39;Jack&#39;</span>, <span style="color:#099">24</span>, job<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Engineer&#39;</span>)
+</span></span><span style="display:flex;"><span>Jack <span style="color:#099">24</span> Beijing Engineer
+</span></span></code></pre></div><p>使用命名关键字参数时，要特别注意，如果没有可变参数，就必须加一个<code>*</code>作为特殊分隔符。如果缺少<code>*</code>，Python 解释器将无法识别位置参数和命名关键字参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">person</span>(name, age, city, job):
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 缺少 *，city和job被视为位置参数</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">pass</span>
+</span></span></code></pre></div><h3 id="236-参数组合">2.3.6 参数组合</h3>
+<p>在 Python 中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这 5 种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。</p>
+<p>比如定义一个函数，包含上述若干种参数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">f1</span>(a, b, c<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, <span style="color:#000;font-weight:bold">*</span>args, <span style="color:#000;font-weight:bold">**</span>kw):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;a =&#39;</span>, a, <span style="color:#d14">&#39;b =&#39;</span>, b, <span style="color:#d14">&#39;c =&#39;</span>, c, <span style="color:#d14">&#39;args =&#39;</span>, args, <span style="color:#d14">&#39;kw =&#39;</span>, kw)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">f2</span>(a, b, c<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, <span style="color:#000;font-weight:bold">*</span>, d, <span style="color:#000;font-weight:bold">**</span>kw):
+</span></span><span style="display:flex;"><span>    <span style="color:#0086b3">print</span>(<span style="color:#d14">&#39;a =&#39;</span>, a, <span style="color:#d14">&#39;b =&#39;</span>, b, <span style="color:#d14">&#39;c =&#39;</span>, c, <span style="color:#d14">&#39;d =&#39;</span>, d, <span style="color:#d14">&#39;kw =&#39;</span>, kw)
+</span></span></code></pre></div><p>在函数调用的时候，Python 解释器自动按照参数位置和参数名把对应的参数传进去。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f1(<span style="color:#099">1</span>, <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 0 args = () kw = {}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>f1(<span style="color:#099">1</span>, <span style="color:#099">2</span>, c<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 3 args = () kw = {}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>f1(<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 3 args = (&#39;a&#39;, &#39;b&#39;) kw = {}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>f1(<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, x<span style="color:#000;font-weight:bold">=</span><span style="color:#099">99</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 3 args = (&#39;a&#39;, &#39;b&#39;) kw = {&#39;x&#39;: 99}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>f2(<span style="color:#099">1</span>, <span style="color:#099">2</span>, d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">99</span>, ext<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">None</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 0 d = 99 kw = {&#39;ext&#39;: None}</span>
+</span></span></code></pre></div><p>最神奇的是通过一个 tuple 和 dict，你也可以调用上述函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>args <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>)
+</span></span><span style="display:flex;"><span>kw <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;d&#39;</span>: <span style="color:#099">99</span>, <span style="color:#d14">&#39;x&#39;</span>: <span style="color:#d14">&#39;#&#39;</span>}
+</span></span><span style="display:flex;"><span>f1(<span style="color:#000;font-weight:bold">*</span>args, <span style="color:#000;font-weight:bold">**</span>kw)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 3 args = (4,) kw = {&#39;d&#39;: 99, &#39;x&#39;: &#39;#&#39;}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>args <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>)
+</span></span><span style="display:flex;"><span>kw <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;d&#39;</span>: <span style="color:#099">88</span>, <span style="color:#d14">&#39;x&#39;</span>: <span style="color:#d14">&#39;#&#39;</span>}
+</span></span><span style="display:flex;"><span>f2(<span style="color:#000;font-weight:bold">*</span>args, <span style="color:#000;font-weight:bold">**</span>kw)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a = 1 b = 2 c = 3 d = 88 kw = {&#39;x&#39;: &#39;#&#39;}</span>
+</span></span></code></pre></div><p>所以，对于任意函数，都可以通过类似<code>func(*args, **kw)</code>的形式调用它，无论它的参数是如何定义的。</p>
+<blockquote>
+<p>虽然可以组合多达 5 种参数，但不要同时使用太多的组合，否则函数接口的可理解性很差。</p>
+</blockquote>
+<blockquote>
+<p>小结</p>
+</blockquote>
+<ul>
+<li>
+<p>Python 的函数具有非常灵活的参数形态，既可以实现简单的调用，又可以传入非常复杂的参数。</p>
+</li>
+<li>
+<p>默认参数一定要用不可变对象，如果是可变对象，程序运行时会有逻辑错误！</p>
+</li>
+<li>
+<p>要注意定义可变参数和关键字参数的语法：</p>
+</li>
+<li>
+<p><code>*args</code>是可变参数，args 接收的是一个tuple；</p>
+</li>
+<li>
+<p><code>**kw</code>是关键字参数，kw 接收的是一个dict。</p>
+</li>
+<li>
+<p>以及调用函数时如何传入可变参数和关键字参数的语法：</p>
+<ul>
+<li>可变参数既可以直接传入：<code>func(1, 2, 3)</code>，又可以先组装 list 或 tuple，再通过<code>*args</code>传入：<code>func(*(1, 2, 3))</code>；</li>
+<li>关键字参数既可以直接传入：<code>func(a=1, b=2)</code>，又可以先组装 dict，再通过<code>**kw</code>传入：<code>func(**{'a': 1, 'b': 2})</code>。</li>
+<li>使用<code>*args</code>和<code>**kw</code>是 Python 的习惯写法，当然也可以用其他参数名，但最好使用习惯用法。</li>
+</ul>
+</li>
+<li>
+<p>命名的关键字参数是为了限制调用者可以传入的参数名，同时可以提供默认值。</p>
+</li>
+<li>
+<p>定义命名的关键字参数在没有可变参数的情况下不要忘了写分隔符<code>*</code>，否则定义的将是位置参数。</p>
+</li>
+</ul>
+<blockquote>
+<p>✏️ 练习题：</p>
+</blockquote>
+<p>接收一个或多个数并计算乘积</p>
+<p>以下函数允许计算两个数的乘积，请稍加改造，变成可接收一个或多个数并计算乘积：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">product</span>(x, y):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">*</span> y
+</span></span></code></pre></div><h2 id="24-递归函数">2.4 递归函数</h2>
+<blockquote>
+<p>在函数内部，可以调用其他函数。如果一个函数在内部调用自身本身，这个函数就是递归函数。</p>
+</blockquote>
+<p>举个例子，我们来计算阶乘<code>n! = 1 x 2 x 3 x ... x n</code>，用函数<code>fact(n)</code>表示，可以看出：</p>
+<p>$fact(n)=n!=1×2×3×⋅⋅⋅×(n−1)×n=(n−1)!×n=fact(n−1)×n$</p>
+<p>所以，<code>fact(n)</code>可以表示为<code>n x fact(n-1)</code>，只有 n = 1 时需要特殊处理。</p>
+<p>于是，<code>fact(n)</code>用递归的方式写出来就是：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fact</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> n<span style="color:#000;font-weight:bold">==</span><span style="color:#099">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> n <span style="color:#000;font-weight:bold">*</span> fact(n <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span>)
+</span></span></code></pre></div><p>如果我们计算<code>fact(5)</code>，可以根据函数定义看到计算过程如下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200703160052.png" alt="image-20200703160050927"></p>
+<p>!&gt; 递归函数的优点是定义简单，逻辑清晰。理论上，所有的递归函数都可以写成循环的方式，但循环的逻辑不如递归清晰。</p>
+<p>使用递归函数需要注意防止栈溢出。在计算机中，函数调用是通过栈（stack）这种数据结构实现的，每当进入一个函数调用，栈就会加一层栈帧，每当函数返回，栈就会减一层栈帧。由于栈的大小不是无限的，所以，递归调用的次数过多，会导致栈溢出。可以试试<code>fact(1000)</code>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> fact(<span style="color:#099">1000</span>)
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">&lt;</span>module<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">4</span>, <span style="color:#000;font-weight:bold">in</span> fact
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#d14">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#099">4</span>, <span style="color:#000;font-weight:bold">in</span> fact
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">RuntimeError</span>: maximum recursion depth exceeded <span style="color:#000;font-weight:bold">in</span> comparison
+</span></span></code></pre></div><p>解决递归调用栈溢出的方法是通过<strong>尾递归</strong>优化，事实上尾递归和循环的效果是一样的，所以，把循环看成是一种特殊的尾递归函数也是可以的。</p>
+<p>🔴 尾递归是指，<strong>在函数返回的时候，调用自身本身，并且，return 语句不能包含表达式</strong>。这样，编译器或者解释器就可以把尾递归做优化，使递归本身无论调用多少次，都只占用一个栈帧，不会出现栈溢出的情况。</p>
+<p>上面的<code>fact(n)</code>函数由于<code>return n * fact(n - 1)</code>引入了乘法表达式，所以就不是尾递归了。要改成尾递归方式，需要多一点代码，主要是要把每一步的乘积传入到递归函数中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fact</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> fact_iter(n, <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fact_iter</span>(num, product):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> num <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> product
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> fact_iter(num <span style="color:#000;font-weight:bold">-</span> <span style="color:#099">1</span>, num <span style="color:#000;font-weight:bold">*</span> product)
+</span></span></code></pre></div><p>可以看到，<code>return fact_iter(num - 1, num * product)</code>仅返回递归函数本身，<code>num - 1</code>和<code>num * product</code>在函数调用前就会被计算，不影响函数调用。</p>
+<p><code>fact(5)</code>对应的<code>fact_iter(5, 1)</code>的调用如下：</p>
+<p><img src="https://gitee.com/wugenqiang/PictureBed/raw/master/NoteBook/20200703160637.png" alt="image-20200703160635854"></p>
+<p>尾递归调用时，如果做了优化，栈不会增长，因此，无论多少次调用也不会导致栈溢出。</p>
+<p>😏😏 遗憾的是，大多数编程语言没有针对尾递归做优化，Python 解释器也没有做优化，所以，即使把上面的<code>fact(n)</code>函数改成尾递归方式，也会导致栈溢出。</p>
+<blockquote>
+<p>🔔 小结</p>
+</blockquote>
+<ul>
+<li>使用递归函数的优点是逻辑简单清晰，缺点是过深的调用会导致栈溢出。</li>
+<li>针对尾递归优化的语言可以通过尾递归防止栈溢出。尾递归事实上和循环是等价的，没有循环语句的编程语言只能通过尾递归实现循环。</li>
+<li>Python 标准的解释器没有针对尾递归做优化，任何递归函数都存在栈溢出的问题。</li>
+</ul>
+<blockquote>
+<p>✏️ 练习题：</p>
+</blockquote>
+<p><a href="http://baike.baidu.com/view/191666.htm">汉诺塔</a>的移动可以用递归函数非常简单地实现。</p>
+<p>请编写<code>move(n, a, b, c)</code>函数，它接收参数<code>n</code>，表示 3 个柱子 A、B、C 中第 1 个柱子 A 的盘子数量，然后打印出把所有盘子从 A 借助 B 移动到 C 的方法，例如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">move</span>(n,a,b,c):
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">if</span> n<span style="color:#000;font-weight:bold">==</span><span style="color:#099">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(a,<span style="color:#d14">&#39;--&gt;&#39;</span>,c)   <span style="color:#998;font-style:italic">#如果只有一个盘子，直接从a柱移动到c柱</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">else</span>: 
+</span></span><span style="display:flex;"><span>        move(n<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>,a,c,b)    <span style="color:#998;font-style:italic">#将a柱上的n-1个盘子通过c柱移动到b柱</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0086b3">print</span>(a,<span style="color:#d14">&#39;--&gt;&#39;</span>,c)   <span style="color:#998;font-style:italic">#移动完n-1个盘子之后，a柱剩下的最大盘子直接从a柱移到c柱</span>
+</span></span><span style="display:flex;"><span>        move(n<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>,b,a,c)    <span style="color:#998;font-style:italic">#b柱上的n-1个盘子通过a柱移动到c柱</span>
+</span></span><span style="display:flex;"><span>move(<span style="color:#099">3</span>,<span style="color:#d14">&#39;a&#39;</span>,<span style="color:#d14">&#39;b&#39;</span>,<span style="color:#d14">&#39;c&#39;</span>)
+</span></span></code></pre></div><h2 id="25-参考资料">2.5 参考资料</h2>
+<ul>
+<li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017105145133280">廖雪峰 - Python 3.x - 函数</a></li>
+<li><a href="https://docs.python.org/3/library/functions.html">Python 官网内置函数</a></li>
+<li><a href="https://veal98.github.io/CS-Wiki/#/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Python/Python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2-%E5%87%BD%E6%95%B0?id=%F0%9F%93%90-%E5%87%BD%E6%95%B0">CS - WiKi</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/">← 第九章 IO 编程</a></div>
+    <div><a href="https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/">第五章 模块  →</a></div>
+</div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        京ICP备2022007001号
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

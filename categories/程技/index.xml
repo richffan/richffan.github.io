@@ -1,87 +1,1426 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>程技 - 分类 - 樊刹</title>
-    <link>http://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
-    <description>程技 - 分类 | 樊刹</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://richfan.site/categories/%E7%A8%8B%E6%8A%80/" rel="self" type="application/rss+xml" /><item>
-  <title>【VBA案例001】实现VLOOKUP功能</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</guid>
-  <description><![CDATA[VBA实现VLOOKUP函数功能 数据 VBA 姓名 年龄 姓名 年龄 潘全桂 24 荆琛泽 霍栋保 35 吉栋松 荆琛泽 24 百里刚晓 越伦信 25 农康雪 吉栋松 34 越伦信 桂真顺 27 霍栋保]]></description>
-</item>
-<item>
-  <title>【VBA案例002】一对多查询</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</guid>
-  <description><![CDATA[一对多查询的方法有很多，这里附上VBA代码，详细过程请看文章最后的视频。 方法一： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 Sub 单元格循环()]]></description>
-</item>
-<item>
-  <title>【VBA案例003】模糊查询</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
-  <description><![CDATA[大家好，模糊查询，在平时工作中会经常遇到。 本期呢，会将模糊查询的两个最常用的方法分享给大家。 1、instr函数 2、like运算符 在开始之前，]]></description>
-</item>
-<item>
-  <title>【VBA案例004】自动填充表单</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</guid>
-  <description><![CDATA[大家好！今天我们分享一个有关VBA自动填充表单的案例，帮助大家简化表单填写的过程，提高工作效率。 我们经常需要填写大量重复的表单，例如报销单、]]></description>
-</item>
-<item>
-  <title>【VBA案例005】自动汇总表单</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</guid>
-  <description><![CDATA[大家好！书接上文。 有时候，我们需要处理多个工作簿，每个工作簿中包含一些特定的信息。为了将这些信息汇总到一个表中，我们可能需要手动打开每个工作]]></description>
-</item>
-<item>
-  <title>【VBA案例006】数据去重</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</guid>
-  <description><![CDATA[大家好！你是否在为数据去重感到烦恼？ 今天，我们将分享两种高效的 VBA 方法，帮助你轻松应对数据去重难题。 举个例子。 我们要对以下数据的产品和型号进行]]></description>
-</item>
-<item>
-  <title>【VBA案例007】多条件汇总</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
-  <description><![CDATA[大家好！今天回答一位网友的问题。 就是用VBA进行多条件汇总，来实现数据透视表的效果，并且要对结果进行排序。 先来看例子。 假如我们有一份产品信息]]></description>
-</item>
-<item>
-  <title>【VBA案例008】多条件查询</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
-  <description><![CDATA[大家好！今天分享的案例是多条件查询。 这个查询在进销存或者库存管理中特别常用，如果你准备或者正在做一个自己的管理查询工具，这个方法一定要会。先]]></description>
-</item>
-<item>
-  <title>【VBA案例009】合并单元格汇总</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</guid>
-  <description><![CDATA[大家好！今天分享一下遇到合并单元格的处理思路。 工作中，为了方便查看数据，很多朋友习惯性的把单元格合并起来，这样使得表格看起来清晰美观了不少。]]></description>
-</item>
-<item>
-  <title>【VBA案例010】下拉多选</title>
-  <link>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</link>
-  <pubDate>Mon, 23 Oct 2023 00:00:00 &#43;0000</pubDate>
-  <author>作者</author>
-  <guid>http://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</guid>
-  <description><![CDATA[大家好！今天将为大家介绍在Excel中如何实现下拉多选功能，让数据输入更加灵活高效。 下拉多选功能不仅提高了数据输入的灵活性，还减少了输入错误]]></description>
-</item>
-</channel>
+    <title>程技 on 樊刹</title>
+    <link>https://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
+    <description>Recent content in 程技 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/categories/%E7%A8%8B%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【VBA案例001】实现VLOOKUP功能</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</guid>
+      <description>VBA实现VLOOKUP函数功能 数据 VBA 姓名 年龄 姓名 年龄 潘全桂 24 荆琛泽 霍栋保 35 吉栋松 荆琛泽 24 百里刚晓 越伦信 25 农康雪 吉栋松 34 越伦信 桂真顺 27 霍栋保 百里刚晓 19 潘全桂 农康</description>
+    </item>
+    <item>
+      <title>【VBA案例002】一对多查询</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</guid>
+      <description>一对多查询的方法有很多，这里附上VBA代码，详细过程请看文章最后的视频。 方法一： Sub 单元格循环() Dim i, j, k, irow Dim cel As Range Dim t As Double t = Timer Sheets(&amp;#34;查询&amp;#</description>
+    </item>
+    <item>
+      <title>【VBA案例003】模糊查询</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
+      <description>大家好，模糊查询，在平时工作中会经常遇到。 本期呢，会将模糊查询的两个最常用的方法分享给大家。 1、instr函数 2、like运算符 在开始之前，我建议先把上一期的【</description>
+    </item>
+    <item>
+      <title>【VBA案例004】自动填充表单</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</guid>
+      <description>大家好！今天我们分享一个有关VBA自动填充表单的案例，帮助大家简化表单填写的过程，提高工作效率。 我们经常需要填写大量重复的表单，例如报销单、数据输入表格等，并且</description>
+    </item>
+    <item>
+      <title>【VBA案例005】自动汇总表单</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</guid>
+      <description>大家好！书接上文。 有时候，我们需要处理多个工作簿，每个工作簿中包含一些特定的信息。为了将这些信息汇总到一个表中，我们可能需要手动打开每个工作簿，然后复制粘贴所需</description>
+    </item>
+    <item>
+      <title>【VBA案例006】数据去重</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</guid>
+      <description>大家好！你是否在为数据去重感到烦恼？ 今天，我们将分享两种高效的 VBA 方法，帮助你轻松应对数据去重难题。 举个例子。 我们要对以下数据的产品和型号进行数据去重，保留唯一值</description>
+    </item>
+    <item>
+      <title>【VBA案例007】多条件汇总</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
+      <description>大家好！今天回答一位网友的问题。 就是用VBA进行多条件汇总，来实现数据透视表的效果，并且要对结果进行排序。 先来看例子。 假如我们有一份产品信息表，需要对它的所有产</description>
+    </item>
+    <item>
+      <title>【VBA案例008】多条件查询</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>大家好！今天分享的案例是多条件查询。 这个查询在进销存或者库存管理中特别常用，如果你准备或者正在做一个自己的管理查询工具，这个方法一定要会。先来看一下数据。 比如说</description>
+    </item>
+    <item>
+      <title>【VBA案例009】合并单元格汇总</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</guid>
+      <description>大家好！今天分享一下遇到合并单元格的处理思路。 工作中，为了方便查看数据，很多朋友习惯性的把单元格合并起来，这样使得表格看起来清晰美观了不少。但这样做的同时，会给</description>
+    </item>
+    <item>
+      <title>【VBA案例010】下拉多选</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</guid>
+      <description>大家好！今天将为大家介绍在Excel中如何实现下拉多选功能，让数据输入更加灵活高效。 下拉多选功能不仅提高了数据输入的灵活性，还减少了输入错误的可能性，为我们的数</description>
+    </item>
+    <item>
+      <title>【VBA案例011】合并工作表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B011%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E8%A1%A8/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B011%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E8%A1%A8/</guid>
+      <description>大家好！终于放假了，知了祝大家双节快乐！~ 今天分享的案例非常的经典，它让我首次见识了VBA的魅力。也是从那会儿开始，命运的齿轮开始转动，走上了学习VBA的道路。</description>
+    </item>
+    <item>
+      <title>【VBA案例012】合并工作簿</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B012%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B012%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！这次分享的是非常经典的案例：合并工作簿。 相信大家已经很熟悉这个问题了，就是把多个工作簿里的工作表合并到同一个sheet里。 这次同样分享两个方法，以下是V</description>
+    </item>
+    <item>
+      <title>【VBA案例013】多个工作簿所有Sheet汇总到一个工作簿中</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B013%E5%A4%9A%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E6%89%80%E6%9C%89sheet%E6%B1%87%E6%80%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B013%E5%A4%9A%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E6%89%80%E6%9C%89sheet%E6%B1%87%E6%80%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD/</guid>
+      <description>大家好！昨天视频放错了，今天重新发一下。图片 这次分享的是合并系列的最后一个案例：汇总工作簿。 打个比方：把多个工作簿中的每个Sheet，汇总到一个工作簿里，汇总完</description>
+    </item>
+    <item>
+      <title>【VBA案例014】拆分工作表（上）</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B014%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8A/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B014%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8A/</guid>
+      <description>大家好！如何按照表中的某一列，拆分成独立的Sheet? 如下： 这是一个特别常见常用的问题，本期分享本人用的最多的两个方法中的第一个。 因为确实不太容易理解，所以分为</description>
+    </item>
+    <item>
+      <title>【VBA案例015】拆分工作表（下）</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B015%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8B/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B015%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8B/</guid>
+      <description>大家好！书接上文，继续聊一聊拆分工作表的第二个方法。 众所周知，字典中的值不仅可以是数字、字符串，还可以是数组和对象！ 上一个方法是将数组装到了字典里，这第二个方法</description>
+    </item>
+    <item>
+      <title>【VBA案例016】拆分工作簿</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B016%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B016%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！ 通过本次和之前几次的分享。对工作表、工作簿的拆分、合并都做了最基础的介绍以及案例演示。 而面对实际工作中经常遇到的工作表、工作簿的合并拆分问题，相信大家通</description>
+    </item>
+    <item>
+      <title>【VBA案例017】合并单元格</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B017%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B017%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <description>大家好！ 合并单元格是经常遇到的操作，在WPS中，提供了非常好用的快捷按钮。遗憾的是Excel里并没有这个一键合并单元格的功能。 今天分享用VBA合并单元格的两个最</description>
+    </item>
+    <item>
+      <title>【VBA案例018】取消合并单元格</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B018%E5%8F%96%E6%B6%88%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B018%E5%8F%96%E6%B6%88%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <description>大家好！ 上一篇内容分享了，用VBA合并单元格的两个方法。本期就来看一下如何取消合并的单元格。 同样的，WPS内置了一键取消合并单元格并填充内容的功能，而Excel</description>
+    </item>
+    <item>
+      <title>【VBA案例019】合并单元格自适应大小</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B019%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B019%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</guid>
+      <description>大家好！ 如果你是文职类工作，可能会遇到下面这种情况： 经常面对各种各样的表格，并且很多都是制式的，里边又充满个各种各样的格式，其中就有今天的主角儿：合并单元格。 而</description>
+    </item>
+    <item>
+      <title>【VBA案例020】整合工作簿</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B020%E6%95%B4%E5%90%88%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B020%E6%95%B4%E5%90%88%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！今天回答一位粉丝朋友的提问。 问题是：将多个工作簿中的所有工作表合并汇总，要求名称相同的工作表内容要合并在一起，名称不同的要单独作为一个工作表。 为此，我模</description>
+    </item>
+    <item>
+      <title>9款最佳Python脚本：让工作自动化起来！</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/9%E6%AC%BE%E6%9C%80%E4%BD%B3python%E8%84%9A%E6%9C%AC%E8%AE%A9%E5%B7%A5%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%B5%B7%E6%9D%A5/</guid>
+      <description>一、自动化文件管理 1.在目录中对文件进行排序 # Python脚本用于按文件扩展名对目录中的文件进行排序 import os from shutil import move def sort_files(directory_path): for filename in os.listdir(directory_path): if os.path.isfile(os.path.join(directory_path, filename)): file_extension = filename.split(&amp;#39;.&amp;#39;)[-1] destination_directory = os.path.join(directory_path, file_extension) if not os.path.exists(destination_directory): os.makedirs(destination_directory) move(os.path.join(directory_path, filename), os.path.join(destination_directory, filename)</description>
+    </item>
+    <item>
+      <title>1 顺序表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1-%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
+      <description>突发奇想，想用Python把数据结构的知识再过一遍，所以就开始从顺序表从头来一遍，Python内置了一些功能，感觉只需要定义方法调用就好了，或者不想这么干的话，</description>
+    </item>
+    <item>
+      <title>2 单链表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2-%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <description>单链表是一种链式的数据结构，链表中的数据用结点表示，保持了数据之间的逻辑关系，但存储空间不一定是按照顺序存储。 链表的基本元素有： 节点：包括数据域和指针域，数据域</description>
+    </item>
+    <item>
+      <title>3 栈</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3-%E6%A0%88/</guid>
+      <description>栈是一种数据结构，只能从一端插入和删除操作，遵循着先进后出原则存储数据。 3.1 栈的初始化 def __init__(self): self.stack = [] # 栈列表 self.size = 20 # 栈大小 self.top = -1 # 栈顶位置 3.2 元素进栈 # 元素进栈 def push(self, element): self.stack.append(element)</description>
+    </item>
+    <item>
+      <title>6 小时 Python 入门</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/6%E5%B0%8F%E6%97%B6python%E5%85%A5%E9%97%A8/</guid>
+      <description>以下操作均在 Windows 环境下进行操作，先说明一下哈 一、安装 Python 1、官网下载 Python 进入官网（https://www.python.org），点击 Downloads，选择要下载的</description>
+    </item>
+    <item>
+      <title>Anaconda 入门指南</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/anaconda%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>一、下载安装 Anaconda 1、下载地址：Anaconda 推荐下载 python3 版本, 毕竟未来 python2 是要停止维护的。 2、安装 Anaconda 按照安装程序提示一步步安装就好了, 安装完成之后会多几个应用： Anaconda Navigtor</description>
+    </item>
+    <item>
+      <title>Git 的使用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/git/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/git/</guid>
+      <description>1 前言 1.1 Git 与 GitHub 的来历 Linux 之父 Linus 在 1991 年创建开源的 Linux 操作系统之后，多年来依靠全世界广大热心志愿者的共同建设，经过长足发展，现已成为世界上最大的服务器系统。系统创建之初</description>
+    </item>
+    <item>
+      <title>Jupyter notebook 使用指南</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>前言 在我们的日常学习中，能够编写和运行 Python 文件的程序很多，比如 Python 安装自带的 IDE、程序员喜爱的Pycharm、数据科学全家桶 Anaconda，还有 Spyder、T</description>
+    </item>
+    <item>
+      <title>Jupyter添加目录toc</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/anaconda/jupyter%E6%B7%BB%E5%8A%A0toc/</guid>
+      <description>最近在使用Jupyter notebook的时候感觉到，没有个目录真心难受，当想查找需要的函数的时候，不能很快速的找到，这个时候，要是有个目录就好很多了，很不幸的</description>
+    </item>
+    <item>
+      <title>Pandas常用操作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PyCharm 优化使用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pycharm%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8/</guid>
+      <description>设置 Python 路径（解释器设置） 1、打开设置对话框 点击File &amp;ndash;&amp;gt; settings，弹出设置对话框 2、设置 Python 路径（解释器设置） 点击 Project &amp;ndash;&amp;gt; Project Interpreter，在右侧 Project Interpreter</description>
+    </item>
+    <item>
+      <title>Python pandas数据分析基础100问(有重复)</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</guid>
+      <description>题目来自B站上看的一个讲爬虫的老师发的视频，不过代码没完全照那人的来，由于在平板上写的代码，就没有执行结果，感兴趣自行到B站搜原视频。 import pandas as pd 1、将list转为</description>
+    </item>
+    <item>
+      <title>Python 王国 ✨</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/readme/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/readme/</guid>
+      <description>Python 入门学习笔记 对于还没入门的小伙伴们，推荐先跟6 小时 Python 入门学习笔记这篇文档敲一遍，行云流水之后对 Python 有了初步的认识，继而根据下面章节深入学习： 1 - Python 基础 2 - 函数 3</description>
+    </item>
+    <item>
+      <title>Python 语法</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E8%AF%AD%E6%B3%95/</guid>
+      <description>1 - Python 基础 2 - 函数 3 - 高级特性 4 - 函数式编程 5 - 模块 6 - 面向对象编程 7 - 面向对象高级编程 8 - 错误、调试和测试 9 - IO 编程 10 - 进程和线程 11 - 正则表达式</description>
+    </item>
+    <item>
+      <title>第一章 Python 基础</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch1-python%E5%9F%BA%E7%A1%80/</guid>
+      <description>Python 非常适合初学者用来进入计算机编程领域。Python 属于非常高级的语言，掌握了这门高级语言，就对计算机编程的核心思想——抽象有了初步理解。如果希望继续深入学习计</description>
+    </item>
+    <item>
+      <title>第一章 准备工作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</guid>
+      <description>1.1 本书的内容 Python 数据分析这本书讲的是利用 Python 进行数据控制、处理、整理、分析等方面的具体细节和基本要点。作者介绍 Python 编程和用于数据处理的库和工具环境，掌握这些，可以让你</description>
+    </item>
+    <item>
+      <title>第七章 数据清洗和准备</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch07-%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97%E5%92%8C%E5%87%86%E5%A4%87/</guid>
+      <description>在数据分析和建模的过程中，相当多的时间要用在数据准备上：加载、清理、转换以及重塑。这些工作会占到分析师时间的80%或更多。有时，存储在文件和数据库中的数据的格式</description>
+    </item>
+    <item>
+      <title>第七章 面向对象高级编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch7-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/</guid>
+      <description>数据封装、继承和多态只是面向对象程序设计中最基础的 3 个概念。在 Python 中，面向对象还有很多高级特性，允许我们写出非常强大的功能。 我们会讨论多重继承、定制类、元类等概念</description>
+    </item>
+    <item>
+      <title>第三章 Python 的数据结构、函数和文件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch03-python%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>🐹 本章讨论Python的内置功能，这些功能本书会用到很多。虽然扩展库，比如pandas和Numpy，使处理大数据集很方便，但它们是和Python的内置数据处理工</description>
+    </item>
+    <item>
+      <title>第三章 高级特性</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch3-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</guid>
+      <description>掌握了 Python 的数据类型、语句和函数，基本上就可以编写出很多有用的程序了。 比如构造一个1, 3, 5, 7, ..., 99的列表，可以通过循环实现： L = [] n = 1 while n &amp;lt;= 99: L.append(n) n = n + 2 print(L) 🔍 使</description>
+    </item>
+    <item>
+      <title>第九章 IO 编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch9-io%E7%BC%96%E7%A8%8B/</guid>
+      <description>IO在计算机中指Input/Output，也就是输入和输出。由于程序和运行时数据是在内存中驻留，由CPU这个超快的计算核心来执行，涉及到数据交换的地方，通常是磁</description>
+    </item>
+    <item>
+      <title>第九章 绘图可视化</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch09-%E7%BB%98%E5%9B%BE%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description>信息可视化（也叫绘图）是数据分析中最重要的工作之一。它可能是探索过程的一部分，例如，帮助我们找出异常值、必要的数据转换、得出有关模型的idea等。另外，做一个可</description>
+    </item>
+    <item>
+      <title>第二章 Python 语法基础，IPython 和 Jupyter Notebooks</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch02-python%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E5%92%8Cipython%E4%BB%A5%E5%8F%8Ajupyternotebooks/</guid>
+      <description>我们现在使用的库，有 pandas、scikit-learn 和 statsmodels，2017年，数据科学、数据分析和机器学习的资源已经很多，原来通用的科学计算拓</description>
+    </item>
+    <item>
+      <title>第二章 函数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch2-%E5%87%BD%E6%95%B0/</guid>
+      <description>我们知道圆的面积计算公式为： $$ S = πr^2 $$ 当我们知道半径r的值时，就可以根据公式计算出面积。 假设我们需要计算 3 个不同大小的圆的面积： r1 = 12.34 r2 = 9.08 r3 = 73.1 s1 = 3.14 *</description>
+    </item>
+    <item>
+      <title>第五章 Pandas 入门</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch05-pandas%E5%85%A5%E9%97%A8/</guid>
+      <description>pandas是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas经常和其它工具一同使用，如数值计算工具NumPy和</description>
+    </item>
+    <item>
+      <title>第五章 模块</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch5-%E6%A8%A1%E5%9D%97/</guid>
+      <description>我们知道，一个文件里代码越来越长的时候，就会越来越不容易维护。 为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少</description>
+    </item>
+    <item>
+      <title>第八章 数据规整：聚合、合并和重塑</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch08-%E6%95%B0%E6%8D%AE%E8%A7%84%E6%95%B4%E8%81%9A%E5%90%88%E5%90%88%E5%B9%B6%E5%92%8C%E9%87%8D%E5%A1%91/</guid>
+      <description>在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。 首先，我会介绍pandas的层次化索引，它广泛用</description>
+    </item>
+    <item>
+      <title>第八章 错误、调试和测试</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch8-%E9%94%99%E8%AF%AF%E8%B0%83%E8%AF%95%E5%92%8C%E6%B5%8B%E8%AF%95/</guid>
+      <description>在程序运行过程中，总会遇到各种各样的错误。 有的错误是程序编写有问题造成的，比如本来应该输出整数结果输出了字符串，这种错误我们通常称之为bug，bug是必须修复的</description>
+    </item>
+    <item>
+      <title>第六章 数据加载、存储与文件格式</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch06-%E6%95%B0%E6%8D%AE%E5%8A%A0%E8%BD%BD%E5%AD%98%E5%82%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</guid>
+      <description>访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍pandas的数据输入与输出，虽然别的库中也有不少以此为目的的工具。 输入输出通常可以划分为几个大类：读取</description>
+    </item>
+    <item>
+      <title>第六章 面向对象编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch6-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</guid>
+      <description>面向对象编程——Object Oriented Programming，简称 OOP，是一种程序设计思想。OOP 把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。 面向过</description>
+    </item>
+    <item>
+      <title>第十一章 时间序列</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch11-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/</guid>
+      <description>时间序列（time series）数据是一种重要的结构化数据形式，应用于多个领域，包括金融学、经济学、生态学、神经科学、物理学等。在多个时间点观察或测量到的任何事</description>
+    </item>
+    <item>
+      <title>第十一章 正则表达式</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch11-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>字符串是编程时涉及到的最多的一种数据结构，对字符串进行操作的需求几乎无处不在。比如判断一个字符串是否是合法的Email地址，虽然可以编程提取@前后的子串，再分别</description>
+    </item>
+    <item>
+      <title>第十三章 Python 建模库介绍</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch13-python%E5%BB%BA%E6%A8%A1%E5%BA%93%E4%BB%8B%E7%BB%8D/</guid>
+      <description>本书中，我已经介绍了Python数据分析的编程基础。因为数据分析师和科学家总是在数据规整和准备上花费大量时间，这本书的重点在于掌握这些功能。 开发模型选用什么库取</description>
+    </item>
+    <item>
+      <title>第十二章 Pandas 高级应用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch12-pandas%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</guid>
+      <description>前面的章节关注于不同类型的数据规整流程和NumPy、pandas与其它库的特点。随着时间的发展，pandas发展出了更多适合高级用户的功能。本章就要深入学习pa</description>
+    </item>
+    <item>
+      <title>第十四章 数据分析案例</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch14-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/</guid>
+      <description>本书正文的最后一章，我们来看一些真实世界的数据集。对于每个数据集，我们会用之前介绍的方法，从原始数据中提取有意义的内容。展示的方法适用于其它数据集，也包括你的。</description>
+    </item>
+    <item>
+      <title>第十章 数据聚合与分组运算</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch10-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%E4%B8%8E%E5%88%86%E7%BB%84%E8%BF%90%E7%AE%97/</guid>
+      <description>对数据集进行分组并对各组应用一个函数（无论是聚合还是转换），通常是数据分析工作中的重要环节。在将数据集加载、融合、准备好之后，通常就是计算分组统计或生成透视表。</description>
+    </item>
+    <item>
+      <title>第十章 进程和线程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch10-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</guid>
+      <description>很多同学都听说过，现代操作系统比如Mac OS X，UNIX，Linux，Windows等，都是支持“多任务”的操作系统。 什么叫“多任务”呢？简单地说，就是操作系统可</description>
+    </item>
+    <item>
+      <title>第四章 Numpy 基础</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch04-numpy%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A2%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
+      <description>NumPy（Numerical Python的简称）是Python数值计算最重要的基础包。大多数提供科学计算的包都是用NumPy的数组作为构建基础。 NumPy的部</description>
+    </item>
+    <item>
+      <title>第四章 函数式编程</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ch4-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
+      <description>函数是 Python 内建支持的一种封装，我们通过把大段代码拆成函数，通过一层一层的函数调用，就可以把复杂任务分解成简单的任务，这种分解可以称之为面向过程的程序设计。函数就是</description>
+    </item>
+    <item>
+      <title>附录A-NumPy高级应用</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95a-numpy%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/</guid>
+      <description>在这篇附录中，我会深入NumPy库的数组计算。这会包括ndarray更内部的细节，和更高级的数组操作和算法。 本章包括了一些杂乱的章节，不需要仔细研究。 A.1 ndar</description>
+    </item>
+    <item>
+      <title>附录B-更多关于IPython的内容</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E9%99%84%E5%BD%95b-%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8Eipython%E7%9A%84%E5%86%85%E5%AE%B9/</guid>
+      <description>第2章中，我们学习了IPython shell和Jupyter notebook的基础。本章中，我们会探索IPython更深层次的功能，可以从控制台或在jupyte</description>
+    </item>
+    <item>
+      <title>MySQL常用函数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
+      <description>1、数学函数 ABS(x) --返回x的绝对值 BIN(x) --返回x的二进制（OCT返回八进制，HEX返回十六进制） CEILING(x) --返回大于x的最小整数值 EXP(x) --返回值e（自然对数的底）的x次方 FLOOR(x)</description>
+    </item>
+    <item>
+      <title>Pandas最常用的15个函数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</guid>
+      <description>Pandas是一个功能强大的数据处理库，它提供了大量的函数和方法，用于数据的读取、清洗、转换、分析和可视化。下面是Pandas中最常用的15个函数及其代码示例：</description>
+    </item>
+    <item>
+      <title>python数据分析专用数据库，与pandas结合，10倍提速&#43;极致体验</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8Epandas%E7%BB%93%E5%90%8810%E5%80%8D%E6%8F%90%E9%80%9F&#43;%E6%9E%81%E8%87%B4%E4%BD%93%E9%AA%8C/</guid>
+      <description>前言 你有想过在 pandas 中直接使用 sql吗？我知道许多小伙伴已经知道一些库也可以做到这种体验，不过他们的性能太差劲了(基于sqlite，或其他服务端数据库)。 今天我要介</description>
+    </item>
+    <item>
+      <title>数据库连接轻松搞定：Python 数据库推荐</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 12 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9Apython-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A8%E8%8D%90/</guid>
+      <description>SQLite3：轻巧便捷的数据库连接 首先，让我们认识一下 SQLite3 这个轻巧便捷的库。它是 Python 中自带的数据库模块，适用于小型应用和快速原型开发。 让我们来看看 SQLite3 的魔法： import sqlite3 ##</description>
+    </item>
+    <item>
+      <title>QEMU - QuickStart</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/qemu-quickstart/</link>
+      <pubDate>Sun, 06 Aug 2023 18:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/qemu-quickstart/</guid>
+      <description>https://cyan-io.github.io/ Intro QEMU是一款跨平台的开源虚拟机工具，因为无GUI配置工具，有一定使用门槛 根据冯诺依曼结构，一个计算机可分为： 运算器 控制器 存储器 输入设备 输出设备 使用QEMU</description>
+    </item>
+    <item>
+      <title>emoji</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/emoji/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/emoji/</guid>
+      <description>🛐 宗教场所 place of worship ⚛️ 原子符号 atom symbol 🕉️ 奥姆 om ✡️ 六芒星 star of David ☸️ 法轮 wheel of dharma ☯️ 阴阳 yin yang ✝️ 十字架 latin cross ☦️ 东正教十字架 orthodox cross ☪️ 星月 star and crescent ☮️ 和平符号 pease symbol 🕎烛台 menorah 🔯带</description>
+    </item>
+    <item>
+      <title>live_max_online</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/live_max_online/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/live_max_online/</guid>
+      <description>-- step0 建表 -- drop table cm.tb_live_logs; create table cm.tb_live_logs ( live_id int, user_id int, ts datetime, type varchar(10) ); -- step1 插入数据 insert into cm.tb_live_logs (live_id, user_id, ts, type) values (901,1001,&amp;#39;2022-10-01 12:00:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1002,&amp;#39;2022-10-01 12:01:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1003,&amp;#39;2022-10-01 12:01:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1004,&amp;#39;2022-10-01 12:02:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1005,&amp;#39;2022-10-01 12:02:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1006,&amp;#39;2022-10-01 12:03:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1007,&amp;#39;2022-10-01 12:03:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1008,&amp;#39;2022-10-01 12:05:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1009,&amp;#39;2022-10-01 12:05:00&amp;#39;,&amp;#39;IN&amp;#39;), (901,1010,&amp;#39;2022-10-01 12:06:03&amp;#39;,&amp;#39;IN&amp;#39;), (902,1101,&amp;#39;2022-10-01 12:00:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1102,&amp;#39;2022-10-01 12:01:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1103,&amp;#39;2022-10-01 12:01:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1104,&amp;#39;2022-10-01 12:02:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1105,&amp;#39;2022-10-01 12:29:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1106,&amp;#39;2022-10-01 12:30:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1107,&amp;#39;2022-10-01 12:31:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1108,&amp;#39;2022-10-01 12:32:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1109,&amp;#39;2022-10-01 12:39:00&amp;#39;,&amp;#39;IN&amp;#39;), (902,1110,&amp;#39;2022-10-01 12:06:03&amp;#39;,&amp;#39;IN&amp;#39;), (901,1001,&amp;#39;2022-10-01 12:03:03&amp;#39;,&amp;#39;OUT&amp;#39;), (901,1002,&amp;#39;2022-10-01 12:01:00&amp;#39;,&amp;#39;OUT&amp;#39;), (901,1003,&amp;#39;2022-10-01</description>
+    </item>
+    <item>
+      <title>MySQL常用30种SQL查询语句优化方法</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/mysql-commonly-uses-30-sql-query-statement-optimization-methods/</guid>
+      <description>引言 在开发和维护MySQL数据库时，优化SQL查询语句是提高数据库性能和响应速度的关键。通过合理优化SQL查询，可以减少数据库的负载，提高查询效率，为用户提供更</description>
+    </item>
+    <item>
+      <title>SQL每日一题(20230814)</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-20230814/</guid>
+      <description>SQL每日一题(20230814) 题目 有如下两张表G0227A（客户表） Id Name 1 曹操 2 关于 3 刘备 4 张飞 G0227B（订单表） Id CustomerId 1 3 2 1 查询G0227B表（订单表</description>
+    </item>
+    <item>
+      <title>SQL每日一题F0215，多种方法及思路讲解</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f0215-a-variety-of-methods-and-ideas-explained/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f0215-a-variety-of-methods-and-ideas-explained/</guid>
+      <description>SQL每日一题F0215，多种方法及思路讲解 CREATE TABLE F0215 ( StuID INT, CID VARCHAR(10), Course INT ) INSERT INTO F0215 VALUES (1,&amp;#39;001&amp;#39;,67), (1,&amp;#39;002&amp;#39;,89), (1,&amp;#39;003&amp;#39;,94), (2,&amp;#39;001&amp;#39;,95), (2,&amp;#39;002&amp;#39;,88), (2,&amp;#39;004&amp;#39;,78), (3,&amp;#39;001&amp;#39;,94), (3,&amp;#39;002&amp;#39;,77), (3,&amp;#39;003&amp;#39;,90) select * from f0215 /* 查询出既学过&amp;#39;001&amp;#39;课程，也学过&amp;#39</description>
+    </item>
+    <item>
+      <title>SQL每日一题F1021，while循环操作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1021-while-loop-operation/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1021-while-loop-operation/</guid>
+      <description>SQL每日一题F1021，while循环操作 /* 写一个查询语句要求 求出整数1到100之间排除55后的和 预计结果是4995 该如何写这个查询？ 要求：使用while循环</description>
+    </item>
+    <item>
+      <title>SQL每日一题F1025，复杂逻辑处理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1025-complex-logic-processing/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1025-complex-logic-processing/</guid>
+      <description>SQL每日一题F1025，复杂逻辑处理 create table F1025 ( id int, num int ) insert into F1025 values(1,5); insert into F1025 values(2,11); insert into F1025 values(3,0); insert into F1025 values(4,-2); insert into F1025 values(5,2); insert into F1025 values(6,9); insert into F1025 values(7,1); insert into F1025 values(8,-4); insert into F1025 values(9,-7); &amp;ndash; Q：要求当Num中的数据同时大</description>
+    </item>
+    <item>
+      <title>SQL每日一题F1028，关联子查询</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1028-correlation-subquery/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/sql-daily-question-f1028-correlation-subquery/</guid>
+      <description>SQL每日一题F1028，关联子查询 create table F1028A (aid varchar(20), bid varchar(20) ) insert into F1028A values (&amp;lsquo;跑步&amp;rsquo;,&amp;lsquo;张三&amp;rsquo;); insert into F1028A values (&amp;lsquo;游泳</description>
+    </item>
+    <item>
+      <title>top10_sql_skills</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/top10_sql_skills/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/top10_sql_skills/</guid>
+      <description>-- 01 -- bad create table cm.tb_user( id int, name varchar(255), age int, gender varchar(16) ); -- good create table cm.tb_user( id int primary key, name varchar(255), age int, gender varchar(16), store_time datetime default now() ); -- 02 -- bad create table cm.tb_user( id int primary key , name varchar(255) not null default &amp;#39;NULL&amp;#39;, age int, gender varchar(16), create_time datetime default now(), update_time datetime default now() ); -- good create table cm.tb_user( id int primary key , name varchar(255) not</description>
+    </item>
+    <item>
+      <title>查询连续登陆3天的用户id和登陆天数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/online_users_with_3_consecutive_days/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/online_users_with_3_consecutive_days/</guid>
+      <description>-- 查询连续登陆3天的用户id和登陆天数 -- step1:用户登录日期去重 select distinct user_id, date(visit_time) as dt from cm.tb_user_logs; -- step2:用row_number()计数 select *, row_number() over (PARTITION by user_id order by dt) as xrank from (select distinct user_id,</description>
+    </item>
+    <item>
+      <title>求占据前90%销售额的商品类型</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/90_percent_contribution_goods/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/90_percent_contribution_goods/</guid>
+      <description>-- 求占据前90%销售额的商品类型 -- step0. 准备数据 create table cm.tb_sale_amount( good_category int comment &amp;#39;商品类型ID&amp;#39;, sale_date date comment &amp;#39;销售日期&amp;#39;, amount int comment &amp;#39;销售额&amp;#39;,</description>
+    </item>
+    <item>
+      <title>给定用户登录表，求表中每一天的3天留存率</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/3days_alive_users/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/sql/3days_alive_users/</guid>
+      <description>-- 给定用户登录表，求表中每一天的&amp;#34;3天留存率&amp;#34; -- step 0 表准备，用户ID，登录时间 create table cm.tb_user_logs( user_id int, visit_time datetime ); insert into cm.tb_user_logs (user_id, visit_time) values (1001, &amp;#39;2022-10-01 08:01:23&amp;#39;), (1001, &amp;#39;2022-10-01 08:11:15&amp;#39;), (1002, &amp;#39;2022-10-01 08:22:19&amp;#39;), (1003, &amp;#39;2022-10-01 09:00:53&amp;#39;), (1002, &amp;#39;2022-10-02 18:00:13&amp;#39;), (1004, &amp;#39;2022-10-02 13:30:43&amp;#39;), (1004,</description>
+    </item>
+    <item>
+      <title>WSL（适用于 Linux 的 Windows 子系统）Kali在线安装</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 27 Jul 2023 18:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/wsl%E9%80%82%E7%94%A8%E4%BA%8E-linux-%E7%9A%84-windows-%E5%AD%90%E7%B3%BB%E7%BB%9Fkali%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85/</guid>
+      <description>WSL-Kali安装说明：https://www.kali.org/docs/wsl/win-kex/ WSL-Kali软件安装：https://blog.csd</description>
+    </item>
+    <item>
+      <title>a段落处理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/a%E6%AE%B5%E8%90%BD%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/a%E6%AE%B5%E8%90%BD%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;a段落处理&#34;&gt;a段落处理&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>b表单处理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/b%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/b%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;b表单处理&#34;&gt;b表单处理&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>c数字</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/c%E6%95%B0%E5%AD%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/c%E6%95%B0%E5%AD%97/</guid>
+      <description>&lt;h2 id=&#34;c数字&#34;&gt;c数字&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>d文字</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/d%E6%96%87%E5%AD%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/d%E6%96%87%E5%AD%97/</guid>
+      <description>&lt;h2 id=&#34;d文字&#34;&gt;d文字&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>e大纲</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/e%E5%A4%A7%E7%BA%B2/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/e%E5%A4%A7%E7%BA%B2/</guid>
+      <description>&lt;h2 id=&#34;e大纲&#34;&gt;e大纲&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>fExcel贴数</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/fexcel%E8%B4%B4%E6%95%B0/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/fexcel%E8%B4%B4%E6%95%B0/</guid>
+      <description>&lt;h2 id=&#34;fexcel贴数&#34;&gt;fExcel贴数&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>g批注</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/g%E6%89%B9%E6%B3%A8/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/g%E6%89%B9%E6%B3%A8/</guid>
+      <description>&lt;h2 id=&#34;g批注&#34;&gt;g批注&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>h行列校验</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/h%E8%A1%8C%E5%88%97%E6%A0%A1%E9%AA%8C/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/h%E8%A1%8C%E5%88%97%E6%A0%A1%E9%AA%8C/</guid>
+      <description>&lt;h2 id=&#34;h行列校验&#34;&gt;h行列校验&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>i多表处理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/i%E5%A4%9A%E8%A1%A8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/i%E5%A4%9A%E8%A1%A8%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;i多表处理&#34;&gt;i多表处理&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>JsonConverter</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/jsonconverter/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/jsonconverter/</guid>
+      <description>&lt;h2 id=&#34;jsonconverter&#34;&gt;JsonConverter&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>j页面设置</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/j%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/j%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;h2 id=&#34;j页面设置&#34;&gt;j页面设置&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>k访谈提纲</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/k%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/k%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2/</guid>
+      <description>&lt;h2 id=&#34;k访谈提纲&#34;&gt;k访谈提纲&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>底稿小帮手代码</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/</guid>
+      <description>&lt;h2 id=&#34;a段落处理&#34;&gt;a段落处理&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>更新</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E6%9B%B4%E6%96%B0/</guid>
+      <description>&lt;h2 id=&#34;更新&#34;&gt;更新&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>类模块</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E7%B1%BB%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E7%B1%BB%E6%A8%A1%E5%9D%97/</guid>
+      <description>&lt;h2 id=&#34;类模块&#34;&gt;类模块&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>史上最全的数据透视表用法</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/excel/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/excel/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8%E7%94%A8%E6%B3%95/</guid>
+      <description>数据透视表是Excel中最实用最常用的功能，没有之一。今天小编对数据透视表进行一次全面的整理，共五大类，23个技巧。 目录 一、基本操作 1、创建数据透视表 2、更改数</description>
+    </item>
+    <item>
+      <title>国内AI集锦</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</guid>
+      <description>• 科大讯飞（讯飞星火）：https://xinghuo.xfyun.cn/ • 百度（文心一言）https://yiyan.baidu.com/welcome • 阿里</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH01-Go语言介绍与安装</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch01-go%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch01-go%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/</guid>
+      <description>1. Go 语言介绍 1.1 Go 语言的发展 Go 语言又称 Golang，起源于 2007 年，来自于谷歌内部的一个项目，于 2009 年正式对外发布。创始团队有三人，都是计算机界的大佬： Robert Griesem</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH02-Go语言基本语法和结构</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch02-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8C%E7%BB%93%E6%9E%84/</guid>
+      <description>1. 命名规范 1.1 文件 Go 语言中，源文件以 .go 格式保存，例如 main.go，且文件名只能由小写字母组成，若有多个单词，可以用下划线 _ 进行拼接，例如 my_file.go。 1.2</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH03-Go语言基本数据类型</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch03-go%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>1. 常量 1.1 常量的定义 常量是一种特殊的变量，被初始化之后就无法再改变。 Go 语言中，常量的类型只能是布尔型，数字型（整型、浮点型和复数）和字符串型。 常量可以使用关键字 const</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH04-Go语言流程控制</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch04-go%E8%AF%AD%E8%A8%80%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch04-go%E8%AF%AD%E8%A8%80%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
+      <description>前言 流程控制是每门语言控制程序逻辑和执行顺序的重要组成部分，Go 语言中常见的流程控制有 if，for，switch；break、continue 和 goto 是为了简化流程</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH05-数组和切片</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch05-%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/</guid>
+      <description>数组 初始化 数组可以保存指定长度的多个数据，且这些数据的类型都相同，数据类型可以是原始类型，如整型和字符串等，也可以是自定义类型。 数组通过索引来访问元素，索引从 0</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH06-Map</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch06-map/</guid>
+      <description>声明和初始化 Map map 是一种特殊的数据结构，通过键 key 和值 value 来保存数据，可以快速地根据 key 找到其对应的 value，与 python 中的字典和 Java 中的 HashMap 类似。 map 是引用类型，声明方式如下：</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH07-结构体和方法</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch07-%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E6%96%B9%E6%B3%95/</guid>
+      <description>Go 语言通过 定义结构体来支持用户自定义类型。一个结构体代表现实世界中的一个实体，类似于 Java 中的实体类。当要定义一个类型时，这个类型包含很多属性，例如定义一个用户类型</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH08-接口</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch08-%E6%8E%A5%E5%8F%A3/</guid>
+      <description>1. 使用接口的原因 我们来看一段代码： type Cat struct{} func (c Cat) Say() string { return &amp;#34;喵喵喵&amp;#34; } type Dog struct{} func (d Dog) Say() string { return &amp;#34;汪汪汪&amp;#34; } func main() { c := Cat{} fmt.Print</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH09-反射</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch09-%E5%8F%8D%E5%B0%84/</guid>
+      <description>反射是用程序检查其所拥有的结构，尤其是类型的一种能力。反射可以在运行时（不必在编译时）检查类型和变量，例如大小、变量、方法和动态调用这些方法。 方法和类型的反射 reflect</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH10-函数高级特性</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch10-%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</guid>
+      <description>传递变长参数 如果函数最后一个参数采用 ...type 的形式，那么这个函数就可以处理一个变长参数（长度可以为 0），这样的函数被称为变参函数，如： func myFunc(a int, args ...int) 如果参数存储在切片 arr 中</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH11-错误处理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch11-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</guid>
+      <description>Go 没有像 Java 那样的 try/catch 异常处理机制，而是用 defer/panic/recover 机制来处理异常。 Go 语言的设计者认为 try/catch 机制使用过于泛滥，而且从底层向高层抛出错误太耗费资源，因此他给 Go 语言设计了一种返回值</description>
+    </item>
+    <item>
+      <title>Golang入门笔记-CH12-并发</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/golang/golang%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0-ch12-%E5%B9%B6%E5%8F%91/</guid>
+      <description>基本概念 线程和进程 进程 ：是程序在操作系统中的一次执行过程，系统进行资源分配和调度的一个 独立单位 。 线程 ：是进程的一个执行实体，是 CPU 调度和分派的 基本单位 ，它是比进程</description>
+    </item>
+    <item>
+      <title>2022年我在使用这些vim插件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/vim-plugs-2022/</link>
+      <pubDate>Mon, 27 Jun 2022 15:07:39 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/vim-plugs-2022/</guid>
+      <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;&#xA;&lt;p&gt;从第一次接触 &lt;code&gt;vim&lt;/code&gt; 已逾期 10 年, 期间大部分都是一些简单操作,&#xA;最近一两年开始深度使用 &lt;code&gt;vim&lt;/code&gt;, 目前使用 &lt;code&gt;neovim&lt;/code&gt; 版本.&#xA;本文将记录一些笔者觉得好用的一些 &lt;code&gt;Plugin&lt;/code&gt;, 本文也将持续更新.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>butterfly</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/butterfly/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/butterfly/</guid>
+      <description>&lt;h2 id=&#34;hexo-butterfly-魔改&#34;&gt;hexo butterfly 魔改&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>docsify</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/docsify/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/docsify/</guid>
+      <description>&lt;p&gt;Docsify&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/emoji/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/emoji/</guid>
+      <description>&lt;p&gt;Emoji&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ExcelToPDF</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/exceltopdf/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/exceltopdf/</guid>
+      <description>&lt;h2 id=&#34;excel-to-pdf&#34;&gt;Excel To PDF&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>使用Git将文件夹上传到Github以及使用Git LFS上传大文件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8git-lfs%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;GIT&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>审计工具</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;审计工具&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>博客搭建工具</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;博客搭建工具&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>博客部署</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</guid>
+      <description>我的网站 主要采用静态搭建，如Hexo、Gridea、NotionNext、GitHub Pages、Obsidian、Sharepoint。 - **一、&amp;lt;ht</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（25）: gzip</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-25-gzip/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-25-gzip/</guid>
+      <description>减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩</description>
+    </item>
+    <item>
+      <title>Docker 技术整理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</link>
+      <pubDate>Tue, 01 Sep 2020 22:11:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</guid>
+      <description>&lt;h3 id=&#34;一概述&#34;&gt;一、概述&lt;/h3&gt;&#xA;&lt;h4 id=&#34;11-什么是docker&#34;&gt;1.1 什么是docker&lt;/h4&gt;&#xA;&lt;p&gt;Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</link>
+      <pubDate>Wed, 01 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</guid>
+      <description>安装 ARCHLINUX官网 ARCOLINUX官网 UBUNTU官网 DEBIAN官网 使用 总结</description>
+    </item>
+    <item>
+      <title>windows重装</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/windows/windows%E9%87%8D%E8%A3%85/</link>
+      <pubDate>Wed, 01 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/windows/windows%E9%87%8D%E8%A3%85/</guid>
+      <description>更新 软件 日常 WinRAR 7ZIP 微信 office 编程 vscode Dbeaver duckdb 设计 Photoshop Acrobat Illustrator 图压 审计 鼎信诺 悦审 云审 新纪元 魔法 clash for windows</description>
+    </item>
+    <item>
+      <title>shell速查表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
+      <pubDate>Sat, 08 Sep 2018 11:48:24 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
+      <description>&lt;h3 id=&#34;1-变量&#34;&gt;1. 变量&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$msg&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>nginx配置记录</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 08 Feb 2018 09:19:09 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;h3 id=&#34;启用https&#34;&gt;启用https&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>linux下修改按键ESC&lt;=&gt;CAPSLOCK和Control=&gt;ALT_R</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
+      <pubDate>Fri, 20 Oct 2017 17:38:49 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
+      <description>&lt;p&gt;使用 &lt;code&gt;vim&lt;/code&gt; 过程中发现 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;ctrl&lt;/code&gt; 按键很难按，小拇指没有那么长啊～～，而 &lt;code&gt;caps_lock&lt;/code&gt; 和 &lt;code&gt;alt_r&lt;/code&gt;(右alt) 很少用。&lt;/p&gt;&#xA;&lt;p&gt;本教程将 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;caps_lock&lt;/code&gt; 两个按键交换， &lt;code&gt;alt_r&lt;/code&gt;(右alt) 改为 &lt;code&gt;ctrl&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 25 Sep 2017 19:15:00 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</guid>
+      <description>&lt;p&gt;很久很久以前，有一群人，他们决定用8个可以开合的晶体管来组合成不同的状态，以表示世界上的万物。他们认为8个开关状态作为原子单位很好，于是他们把这称为&amp;quot;字节&amp;quot;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker报错集锦</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E6%8A%A5%E9%94%99%E9%9B%86%E9%94%A6/</link>
+      <pubDate>Mon, 25 Sep 2017 10:03:50 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E6%8A%A5%E9%94%99%E9%9B%86%E9%94%A6/</guid>
+      <description>&lt;h3 id=&#34;docker创建容器&#34;&gt;docker创建容器&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>CentOS7使用Firewalld</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</link>
+      <pubDate>Tue, 19 Sep 2017 09:53:53 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7%E4%BD%BF%E7%94%A8firewalld/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;&#xA;&lt;p&gt;FirewallD 提供了支持网络/防火墙区域(zone)定义网络链接以及接口安全等级的动态防火墙管理工具。它支持 IPv4, IPv6 防火墙设置以及以太网桥接，并且拥有运行时配置和永久配置选项。它也支持允许服务或者应用程序直接添加防火墙规则的接口。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker备份恢复之save与export</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-save-%E4%B8%8E-docker-export/</link>
+      <pubDate>Mon, 18 Sep 2017 22:38:52 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-save-%E4%B8%8E-docker-export/</guid>
+      <description>&lt;h3 id=&#34;docker-save&#34;&gt;docker save&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>sudo命令免密码设置</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 11 Sep 2017 09:30:55 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;如果某台linux只有自己在使用，比如个人系统，每次调用 &lt;code&gt;sudo&lt;/code&gt; 时都需要输入密码，长期下来着实厌烦，因此本文介绍如何配置 &lt;code&gt;sudo&lt;/code&gt; 命令，使其在运行时不需要输入密码。&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>600 条最强 Linux 命令总结</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 06 Sep 2017 23:01:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;600条最强Linux命令&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>搭建Maven私服-Nexus</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</link>
+      <pubDate>Wed, 06 Sep 2017 23:01:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E6%90%AD%E5%BB%BAmaven%E7%A7%81%E6%9C%8D-nexus/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Maven 私服，可以代理远程仓库和部署自己或第三方构件。本文介绍使用最广泛搭建 Maven 私服的工具： Sonatype Nexus。&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>CentOS7安装配置匿名访问Samba</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</link>
+      <pubDate>Mon, 03 Jul 2017 19:40:14 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Samba&lt;/strong&gt;，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件   &amp;ndash;wikipedia&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;本文就以 CentOS7 搭建 Samba 匿名完全访问（读/写）为目标，实现一个局域网内的文件共享平台。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解决粘贴到vim缩进错乱问题</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%A7%A3%E5%86%B3%E7%B2%98%E8%B4%B4%E5%88%B0vim%E7%BC%A9%E8%BF%9B%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 01 Jun 2017 19:45:24 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%A7%A3%E5%86%B3%E7%B2%98%E8%B4%B4%E5%88%B0vim%E7%BC%A9%E8%BF%9B%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;h3 id=&#34;遇见&#34;&gt;遇见&lt;/h3&gt;&#xA;&lt;p&gt;当我使用vim，想要粘贴下面这段脚本到 xx.sh 文件中&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>进入docker容器命令制作</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BF%9B%E5%85%A5docker%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4%E5%88%B6%E4%BD%9C/</link>
+      <pubDate>Thu, 01 Jun 2017 17:25:11 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BF%9B%E5%85%A5docker%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4%E5%88%B6%E4%BD%9C/</guid>
+      <description>&lt;h3 id=&#34;通过attach进入容器&#34;&gt;通过attach进入容器&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>docker数据管理</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 23 May 2017 21:43:06 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>&lt;h3 id=&#34;数据卷&#34;&gt;数据卷&lt;/h3&gt;&#xA;&lt;p&gt;数据卷是一个可供一个或多个容器使用的特殊目录，它绕过 UFS，可以提供很多有用的特性：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数据卷可以在容器之间共享和重用&lt;/li&gt;&#xA;&lt;li&gt;对数据卷的修改会立马生效&lt;/li&gt;&#xA;&lt;li&gt;对数据卷的更新，不会影响镜像&lt;/li&gt;&#xA;&lt;li&gt;数据卷默认会一直存在，即使容器被删除&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>docker容器</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E5%AE%B9%E5%99%A8/</link>
+      <pubDate>Tue, 23 May 2017 21:29:38 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E5%AE%B9%E5%99%A8/</guid>
+      <description>&lt;h3 id=&#34;容器&#34;&gt;容器&lt;/h3&gt;&#xA;&lt;p&gt;镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。&lt;/p&gt;&#xA;&lt;p&gt;容器的实质是进程，但与直接在宿主执行的进程不同，容器进程运行于属于自己的独立的 命名空间。因此容器可以拥有自己的 root 文件系统、自己的网络配置、自己的进程空间，甚至自己的用户 ID 空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样。这种特性使得容器封装的应用比直接在宿主运行更加安全。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker仓库</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E4%BB%93%E5%BA%93/</link>
+      <pubDate>Tue, 23 May 2017 21:15:52 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E4%BB%93%E5%BA%93/</guid>
+      <description>&lt;h3 id=&#34;docker-hub&#34;&gt;Docker Hub&lt;/h3&gt;&#xA;&lt;p&gt;目前 Docker 官方维护了一个公共仓库 &lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;，其中已经包括了超过 15,000 的镜像。大部分需求，都可以通过在 Docker Hub 中直接下载镜像来实现。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（58）: sort</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-58-sort/</link>
+      <pubDate>Tue, 23 May 2017 11:44:12 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-58-sort/</guid>
+      <description>&lt;p&gt;sort是在Linux里非常常用的一个命令，管排序的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CentOS修改DNS/GW/IP</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</link>
+      <pubDate>Tue, 23 May 2017 09:53:52 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</guid>
+      <description>&lt;h3 id=&#34;1修改dns&#34;&gt;1.修改DNS&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;解决方案一：&lt;/strong&gt;&#xA;修改网卡的DNS的配置文件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dockerfile指令详解</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 22 May 2017 19:11:42 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Dockerfile&lt;/code&gt; 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker镜像</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Fri, 19 May 2017 16:47:33 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E9%95%9C%E5%83%8F/</guid>
+      <description>&lt;h3 id=&#34;what&#34;&gt;What&lt;/h3&gt;&#xA;&lt;p&gt;Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。&lt;/p&gt;&#xA;&lt;p&gt;因为镜像包含操作系统完整的 root 文件系统，其体积往往是庞大的，因此在 Docker 设计时，就充分利用 Union FS 的技术，将其设计为分层存储的架构。所以严格来说，镜像并非是像一个 ISO 那样的打包文件，镜像只是一个虚拟的概念，其实际体现并非由一个文件组成，而是由一组文件系统组成，或者说，由多层文件系统联合组成。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>docker初体验</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Fri, 19 May 2017 16:32:23 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+      <description>&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;&#xA;&lt;h4 id=&#34;笔者环境&#34;&gt;笔者环境&lt;/h4&gt;&#xA;&lt;p&gt;操作系统：deepin 15.4 Desktop 64Bit&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linux无损调整分区大小</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</link>
+      <pubDate>Wed, 17 May 2017 22:00:42 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;summary&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;系统环境: Red Hat 4.8.5-11&lt;/li&gt;&#xA;&lt;li&gt;情况：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;home：500G&lt;/li&gt;&#xA;&lt;li&gt;root：50G&lt;/li&gt;&#xA;&lt;li&gt;root分区不够用&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;思路：把home分区的空间划一部分到root分区&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>解决linux下zip文件解压乱码</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%A7%A3%E5%86%B3linux%E4%B8%8Bzip%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Tue, 25 Apr 2017 09:10:40 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%A7%A3%E5%86%B3linux%E4%B8%8Bzip%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E4%B9%B1%E7%A0%81/</guid>
+      <description>&lt;h3 id=&#34;原因&#34;&gt;原因&lt;/h3&gt;&#xA;&lt;p&gt;由于zip格式并没有指定编码格式，Windows下生成的zip文件中的编码是GBK/GB2312等，因此，导致这些zip文件在Linux下解压时出现乱码问题，因为Linux下的默认编码是UTF8。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vim命令速查表</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/vim%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
+      <pubDate>Mon, 06 Mar 2017 11:23:36 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/vim%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
+      <description>&lt;p&gt;去年上半年开始全面使用linux进行开发和娱乐了，现在已经回不去windows了。&lt;/p&gt;&#xA;&lt;p&gt;话归正传，在linux上一直使用vim，慢慢熟悉了它的命令，才终于领悟了什么是编辑器之神。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何在linux中搭建ftp服务</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 06 Mar 2017 08:47:48 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1/</guid>
+      <description>&lt;h3 id=&#34;什么是-ftp&#34;&gt;什么是 FTP&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;FTP&lt;/code&gt; 是文件传输协议File Transfer Protocol的缩写。顾名思义，FTP用于计算机之间通过网络进行文件传输。你可以通过FTP在计算机账户间进行文件传输，也可以在账户和桌面计算机之间传输文件，或者访问在线软件归档。但是，需要注意的是多数的FTP站点的使用率非常高，可能需要多次重连才能连接上。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（57）: sftp</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/</link>
+      <pubDate>Sun, 05 Mar 2017 16:29:38 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-57-sftp/</guid>
+      <description>&lt;p&gt;sFTP（安全文件传输程序）是一种安全的交互式文件传输程序，其工作方式与 FTP（文件传输协议）类似。 然而，sFTP 比 FTP 更安全；它通过加密 SSH 传输处理所有操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（56）: tailf</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/</link>
+      <pubDate>Mon, 20 Feb 2017 15:11:06 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-56-tailf/</guid>
+      <description>tailf 一个实时监听文件或日志的强大的命令 命令格式 $ tailf [option] file 命令描述 tailf 将会打印出一个文件的最后10行,等待并持续输出此文件的增长，它和tail -f相似，不同之处是当文件</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（55）: crontab</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/</link>
+      <pubDate>Mon, 23 Jan 2017 10:44:50 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-55-crontab/</guid>
+      <description>前一天学习了 at 命令是针对仅运行一次的任务，循环运行的例行性计划任务，linux系统则是由 cron (crond) 这个系统服务来控制的。Linux 系统上面原本就有非常多的计划性工作，</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（54）: at</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-54-at/</link>
+      <pubDate>Sun, 22 Jan 2017 10:23:44 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-54-at/</guid>
+      <description>在windows系统中，windows提供了计划任务这一功能，在控制面板 -&amp;gt; 性能与维护 -&amp;gt; 任务计划， 它的功能就是安排自动运行的任务。 通过&amp;rsquo;添加任务计划&amp;</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（53）: watch</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-53-watch/</link>
+      <pubDate>Sat, 21 Jan 2017 10:12:30 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-53-watch/</guid>
+      <description>watch是一个非常实用的命令，基本所有的Linux发行版都带有这个小工具，如同名字一样，watch可以帮你监测一个命令的运行结果，省得你一遍遍的手动运行。在L</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（52）: ps</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-52-ps/</link>
+      <pubDate>Fri, 20 Jan 2017 09:46:16 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-52-ps/</guid>
+      <description>Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（51）: wc</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-51-wc/</link>
+      <pubDate>Thu, 19 Jan 2017 09:33:59 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-51-wc/</guid>
+      <description>Linux系统中的wc(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出。 命令格式 $ wc [选项]文件... 命令功能 统计指定</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（50）: grep</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-50-grep/</link>
+      <pubDate>Wed, 18 Jan 2017 10:12:46 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-50-grep/</guid>
+      <description>Linux系统中grep命令是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹 配的行打印出来。grep全称是Global Regular Expression Print，表示全局正则表</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（49）: cal</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-49-cal/</link>
+      <pubDate>Tue, 17 Jan 2017 09:38:32 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-49-cal/</guid>
+      <description>cal命令可以用来显示公历（阳历）日历。公历是现在国际通用的历法，又称格列历，通称阳历。“阳历”又名“太阳历”，系以地球绕行太阳一周为一年，为西方各国所通用，故</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（48）: date</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-48-date/</link>
+      <pubDate>Mon, 16 Jan 2017 14:39:27 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-48-date/</guid>
+      <description>在linux环境中，不管是编程还是其他维护，时间是必不可少的，也经常会用到时间的运算，熟练运用date命令来表示自己想要表示的时间，肯定可以给自己的工作带来诸多</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（47）: diff</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-47-diff/</link>
+      <pubDate>Sun, 15 Jan 2017 14:08:08 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-47-diff/</guid>
+      <description>diff 命令是 linux上非常重要的工具，用于比较文件的内容，特别是比较两个版本不同的文件以找到改动的地方。diff在命令行中打印每一个行的改动。最新版本的diff还</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（46）: ln</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-46-ln/</link>
+      <pubDate>Sat, 14 Jan 2017 11:00:33 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-46-ln/</guid>
+      <description>ln是linux中又一个非常重要命令，它的功能是为某一个文件在另外一个位置建立一个同步的链接.当我们需要在不同的目录，用到相同的文件时，我们不需要在每一个需要的</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（45）: scp</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-45-scp/</link>
+      <pubDate>Fri, 13 Jan 2017 10:53:48 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-45-scp/</guid>
+      <description>scp是secure copy的简写，用于在Linux下进行远程拷贝文件的命令，和它类似的命令有cp，不过cp只是在本机进行拷贝不能跨服务器，而且scp传输是加密</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（44）: rcp</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-44-rcp/</link>
+      <pubDate>Thu, 12 Jan 2017 10:36:06 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-44-rcp/</guid>
+      <description>rcp代表“remote file copy”（远程文件拷贝）。该命令用于在计算机之间拷贝文件。rcp命令有两种格式。第一种格式用于文件到文件的拷贝；第二种格式用于把文件</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（43）: telnet</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-43-telnet/</link>
+      <pubDate>Thu, 12 Jan 2017 09:24:01 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-43-telnet/</guid>
+      <description>telnet命令通常用来远程登录。telnet程序是基于TELNET协议的远程登录客户端程序。Telnet协议是TCP/IP协议族中的一员，是Internet远</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（42）: ss</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-42-ss/</link>
+      <pubDate>Wed, 11 Jan 2017 10:34:47 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-42-ss/</guid>
+      <description>ss是Socket Statistics的缩写。顾名思义，ss命令可以用来获取socket统计信息，它可以显示和netstat类似的内容。但ss的优势在于它能够显</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（41）: netstat</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-41-netstat/</link>
+      <pubDate>Tue, 10 Jan 2017 09:54:16 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-41-netstat/</guid>
+      <description>netstat命令用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。netstat是在内核中访问网络及相关信息的</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（40）: traceroute</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-40-traceroute/</link>
+      <pubDate>Mon, 09 Jan 2017 10:56:53 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-40-traceroute/</guid>
+      <description>通过traceroute我们可以知道信息从你的计算机到互联网另一端的主机是走的什么路径。当然每次数据包由某一同样的出发点（source）到达某一同样的目的地(d</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（39）: ping</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-39-ping/</link>
+      <pubDate>Sun, 08 Jan 2017 10:24:50 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-39-ping/</guid>
+      <description>Linux系统的ping命令是常用的网络命令，它通常用来测试与目标主机的连通性，我们经常会说“ping一下某机器，看是不是开着”、不能打开网页时会说“你先pin</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（38）: route</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-38-route/</link>
+      <pubDate>Sat, 07 Jan 2017 10:16:34 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-38-route/</guid>
+      <description>Linux系统的route命令用于显示和操作IP路由表（show / manipulate the IP routing table）。要实现两个不同的子网之间的通信，需要一台连接两个网络的路由器，或者同时位</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（37）: ifconfig</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-37-ifconfig/</link>
+      <pubDate>Fri, 06 Jan 2017 09:57:01 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-37-ifconfig/</guid>
+      <description>许多windows非常熟悉ipconfig命令行工具，它被用来获取网络接口配置信息并对此进行修改。Linux系统拥有一个类似的工具，也就是ifconfig(in</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（36）: lsof</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-36-lsof/</link>
+      <pubDate>Thu, 05 Jan 2017 10:28:13 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-36-lsof/</guid>
+      <description>lsof（list open files）是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（35）: iostat</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-35-iostat/</link>
+      <pubDate>Wed, 04 Jan 2017 10:10:02 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-35-iostat/</guid>
+      <description>Linux系统中的 iostat是I/O statistics（输入/输出统计）的缩写，iostat工具将对系统的磁盘操作活动进行监视。它的特点是汇报磁盘活动统计情</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（34）: vmstat</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-34-vmstat/</link>
+      <pubDate>Tue, 03 Jan 2017 09:46:57 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-34-vmstat/</guid>
+      <description>vmstat是Virtual Meomory Statistics（虚拟内存统计）的缩写，可对操作系统的虚拟内存、进程、CPU活动进行监控。他是对系统的整体情况进行统计，不足之</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（33）: free</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-33-free/</link>
+      <pubDate>Mon, 02 Jan 2017 21:43:26 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-33-free/</guid>
+      <description>free命令可以显示Linux系统中空闲的、已用的物理内存及swap内存,及被内核使用的buffer。在Linux系统监控的工具中，free命令是最经常使用的命</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（32）: top</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-32-top/</link>
+      <pubDate>Sun, 01 Jan 2017 19:31:28 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-32-top/</guid>
+      <description>top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。下面详细介绍它的使用方法。top是一个动</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（31）: du</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-31-du/</link>
+      <pubDate>Sat, 31 Dec 2016 14:36:01 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-31-du/</guid>
+      <description>Linux du命令也是查看使用空间的，但是与df命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的. 命令格式 $ du [选项][文件</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（30）: df</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-30-df/</link>
+      <pubDate>Fri, 30 Dec 2016 14:23:31 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-30-df/</guid>
+      <description>linux中df命令的功能是用来检查linux服务器的文件系统的磁盘空间占用情况。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。 命令格式 $</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（29）: /etc/group文件详解</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-29-group/</link>
+      <pubDate>Thu, 29 Dec 2016 14:13:05 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-29-group/</guid>
+      <description>Linux /etc/group文件与/etc/passwd和/etc/shadow文件都是有关于系统管理员对用户和用户组管理时相关的文件。linux /etc/group</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（28）: chown</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-28-chown/</link>
+      <pubDate>Wed, 28 Dec 2016 09:51:30 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-28-chown/</guid>
+      <description>chown将指定文件的拥有者改为指定的用户或组，用户可以是用户名或者用户ID；组可以是组名或者组ID；文件是以空格分开的要改变权限的文件列表，支持通配符。系统管</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（27）: chgrp</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-27-chgrp/</link>
+      <pubDate>Tue, 27 Dec 2016 09:40:06 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-27-chgrp/</guid>
+      <description>在lunix系统里，文件或目录的权限的掌控以拥有者及所诉群组来管理。可以使用chgrp指令取变更文件与目录所属群组，这种方式采用群组名称或群组识别码都可以。Ch</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（26）: chmod</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-26-chmod/</link>
+      <pubDate>Mon, 26 Dec 2016 20:22:43 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-26-chmod/</guid>
+      <description>chmod命令用于改变linux系统文件或目录的访问权限。用它控制文件或目录的访问权限。该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（24）: tar</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-24-tar/</link>
+      <pubDate>Sat, 24 Dec 2016 10:24:17 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-24-tar/</guid>
+      <description>通过SSH访问服务器，难免会要用到压缩，解压缩，打包，解包等，这时候tar命令就是是必不可少的一个功能强大的工具。linux中最流行的tar是麻雀虽小，五脏俱全</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（23）: 用SecureCRT来上传和下载文件</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-23-securecrt/</link>
+      <pubDate>Fri, 23 Dec 2016 09:48:15 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-23-securecrt/</guid>
+      <description>用SSH管理linux服务器时经常需要远程与本地之间交互文件.而直接用SecureCRT自带的上传下载功能无疑是最方便的，SecureCRT下的文件传输协议有A</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（22）: find命令的参数详解</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-22-find-args/</link>
+      <pubDate>Thu, 22 Dec 2016 11:44:14 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-22-find-args/</guid>
+      <description>find一些常用参数的一些常用实例和一些具体用法和注意事项。 使用name选项 文件名选项是find命令最常用的选项，要么单独使用该选项，要么和其他选项一起使用。可</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（21）: find命令之xargs</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-21-find-xargs/</link>
+      <pubDate>Wed, 21 Dec 2016 11:08:01 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-21-find-xargs/</guid>
+      <description>在使用 find命令的-exec选项处理匹配到的文件时， find命令将所有匹配到的文件一起传递给exec执行。但有些系统对能够传递给exec的命令长度有限制，这样</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（20）: find命令之exec</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-20-find-exec/</link>
+      <pubDate>Tue, 20 Dec 2016 10:47:32 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-20-find-exec/</guid>
+      <description>find是我们很常用的一个Linux命令，但是我们一般查找出来的并不仅仅是看看而已，还会有进一步的操作，这个时候exec的作用就显现出来了 命令介绍 -exec 参数后面跟的</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（19）: find命令概览</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-19-find/</link>
+      <pubDate>Mon, 19 Dec 2016 15:19:10 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-19-find/</guid>
+      <description>Linux下find命令在目录结构中搜索文件，并执行指定的操作。Linux下find命令提供了相当多的查找条件，功能很强大。由于find具有强大的功能，所以它的</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（18）: locate</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-18-locate/</link>
+      <pubDate>Sun, 18 Dec 2016 15:09:28 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-18-locate/</guid>
+      <description>locate 让使用者可以很快速的搜寻档案系统内是否有指定的档案。其方法是先建立一个包括系统内所有档案名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入档</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（17）: whereis</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-17-whereis/</link>
+      <pubDate>Sat, 17 Dec 2016 10:42:58 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-17-whereis/</guid>
+      <description>whereis命令只能用于程序名的搜索，而且只搜索二进制文件（参数-b）、man说明文件（参数-m）和源代码文件（参数-s）。如果省略参数，则返回所有信息。 和f</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（16）: which</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-16-which/</link>
+      <pubDate>Fri, 16 Dec 2016 11:25:49 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-16-which/</guid>
+      <description>我们经常在linux要查找某个文件，但不知道放在哪里了，可以使用下面的一些命令来搜索： which 查看可执行文件的位置。 whereis 查看文件的位置。 locate 配合数据库查看文件位置。 find 实际</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（15）: tail</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-15-tail/</link>
+      <pubDate>Thu, 15 Dec 2016 15:00:26 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-15-tail/</guid>
+      <description>tail 命令从指定点开始将文件写到标准输出.使用tail命令的-f选项可以方便的查阅正在改变的日志文件,tail -f filename会把filename里最尾部的内容显</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（14）: head</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-14-head/</link>
+      <pubDate>Wed, 14 Dec 2016 14:35:49 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-14-head/</guid>
+      <description>head 与 tail 就像它的名字一样的浅显易懂，它是用来显示开头或结尾某个数量的文字区块，head 用来显示档案的开头至标准输出中，而 tail 想当然尔就是看档案的结尾。 命令格式 head [参</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（13）: less</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-13-less/</link>
+      <pubDate>Tue, 13 Dec 2016 21:46:14 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-13-less/</guid>
+      <description>less 工具也是对文件或其它输出进行分页显示的工具，应该说是linux正统查看文件内容的工具，功能极其强大。less 的用法比起 more 更加的有弹性。在 more 的时候，我们并没有办</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（12）: more</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-12-more/</link>
+      <pubDate>Mon, 12 Dec 2016 21:29:39 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-12-more/</guid>
+      <description>more命令，功能类似 cat ，cat命令是整个文件的内容从上到下显示在屏幕上。 more会以一页一页的显示方便使用者逐页阅读，而最基本的指令就是按空白键（space）</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（11）: nl</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-11-nl/</link>
+      <pubDate>Sun, 11 Dec 2016 21:11:48 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-11-nl/</guid>
+      <description>nl命令在linux系统中用来计算文件中行号。nl 可以将输出的文件内容自动的加上行号！其默认的结果与 cat -n 有点不太一样， nl 可以将行号做比较多的显示设计，包括位数与</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（10）: cat</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-10-cat/</link>
+      <pubDate>Sat, 10 Dec 2016 10:52:50 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-10-cat/</guid>
+      <description>cat命令的用途是连接文件或标准输入并打印。这个命令常用来显示文件内容，或者将几个文件连接起来显示，或者从标准输入读取内容并显示，它常与重定向符号配合使用。 命令</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（9）: touch</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-9-touch/</link>
+      <pubDate>Fri, 09 Dec 2016 07:15:12 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-9-touch/</guid>
+      <description>linux的touch命令不常用，一般在使用make的时候可能会用到，用来修改文件时间戳，或者新建一个不存在的文件。 命令格式 $ touch [选项]... 文件... 命令功能</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（8）: cp</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-8-cp/</link>
+      <pubDate>Thu, 08 Dec 2016 16:31:43 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-8-cp/</guid>
+      <description>cp命令用来复制文件或者目录，是Linux系统中最常用的命令之一。一般情况下，shell会设置一个别名，在命令行下复制文件时，如果目标文件已经存在，就会询问是否</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（7）: mv</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-7-mv/</link>
+      <pubDate>Wed, 07 Dec 2016 15:55:20 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-7-mv/</guid>
+      <description>mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），是Linux系统下常用的命令，经常用来备份文件或者目录 命令格式 $ mv [选项] 源文</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（6）: rmdir</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-6-rmdir/</link>
+      <pubDate>Tue, 06 Dec 2016 15:24:32 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-6-rmdir/</guid>
+      <description>今天学习一下linux中命令： rmdir命令。rmdir是常用的命令，该命令的功能是删除空目录，一个目录被删除之前必须是空的。（注意，rm - r dir命令可代替r</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（5）: rm</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-5-rm/</link>
+      <pubDate>Mon, 05 Dec 2016 13:40:38 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-5-rm/</guid>
+      <description>rm是常用的命令，该命令的功能为删除一个目录中的一个或多个文件或目录，它也可以将某个目录及其下的所有文件及子目录均删除。对于链接文件，只是删除了链接，原有文件均</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（4）: mkdir</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-4-mkdir/</link>
+      <pubDate>Sun, 04 Dec 2016 09:27:32 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-4-mkdir/</guid>
+      <description>linux mkdir 命令用来创建指定的名称的目录，要求创建目录的用户在当前目录中具有写权限，并且指定的目录名不能是当前目录中已有的目录。 命令格式 $ mkdir [选项] 目录... 命令功能 通</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（3）: pwd</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-3-pwd/</link>
+      <pubDate>Sat, 03 Dec 2016 09:15:52 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-3-pwd/</guid>
+      <description>Linux中用 pwd 命令来查看”当前工作目录“的完整路径。 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。 在不太确定当前位置时，就会使用pwd来判定当前</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（2）: cd</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-2-cd/</link>
+      <pubDate>Fri, 02 Dec 2016 11:04:55 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-2-cd/</guid>
+      <description>&lt;p&gt;　　Linux cd 命令可以说是Linux中最基本的命令语句，其他的命令语句要进行操作，都是建立在使用 cd 命令上的。所以，学习Linux 常用命令，首先就要学好 cd 命令的使用方法技巧。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每天一个linux命令（1）: ls</title>
+      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-1-ls/</link>
+      <pubDate>Thu, 01 Dec 2016 09:38:59 +0000</pubDate>
+      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux-command/linux-command-1-ls/</guid>
+      <description>ls命令是linux下最常用的命令。ls命令就是list的缩写，缺省下ls用来打印出当前目录的清单，如果ls指定其他目录，那么就会显示指定目录里的文件及文件夹清</description>
+    </item>
+  </channel>
 </rss>
