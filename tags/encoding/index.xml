@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>encoding on 樊刹</title>
+    <title>encoding on 中文文档</title>
     <link>https://richfan.site/tags/encoding/</link>
-    <description>Recent content in encoding on 樊刹</description>
+    <description>Recent content in encoding on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Mon, 25 Sep 2017 19:15:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/encoding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[转]字符编解码的故事（ASCII，ANSI，Unicode，Utf-8区别）</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Mon, 25 Sep 2017 19:15:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/%E8%BD%AC-%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9A%84%E6%95%85%E4%BA%8Basciiansiunicodeutf-8%E5%8C%BA%E5%88%AB/</guid>
       <description>&lt;p&gt;很久很久以前，有一群人，他们决定用8个可以开合的晶体管来组合成不同的状态，以表示世界上的万物。他们认为8个开关状态作为原子单位很好，于是他们把这称为&amp;quot;字节&amp;quot;。&lt;/p&gt;</description>
     </item>
   </channel>

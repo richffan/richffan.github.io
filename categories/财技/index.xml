@@ -1,1370 +1,166 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>财技 on 樊刹</title>
+    <title>财技 on 中文文档</title>
     <link>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
-    <description>Recent content in 财技 on 樊刹</description>
+    <description>Recent content in 财技 on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <language>zh</language>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/categories/%E8%B4%A2%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>陈版主答疑-202308</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202308/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202308/</guid>
-      <description>中国会计视野论坛中国会计视野论坛 - 陈版主答疑陈版主答疑 话题总数：320 1 、求助陈版主，回购自身股份的披露、求助陈版主，回购自身股份的披露 提问人： liuweisheng 时间： 2023-08-01 07:51: 甲持</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202309</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202309/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202309/</guid>
-      <description>中国会计视野论坛中国会计视野论坛 - 陈版主答疑陈版主答疑 话题总数：227 1 、收入总额法净额法、收入总额法净额法 PPT 提问人： mlccpa 时间： 2023-09-23 15:14: 如果按净额法确认收入的话，开发</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202310</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202310/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202310/</guid>
-      <description>中国会计视野论坛中国会计视野论坛 - 陈版主答疑陈版主答疑 话题总数：279 1 、求助陈版主，会员费的处理、求助陈版主，会员费的处理 提问人： liuweisheng 时间： 2023-10-01 09:21: A公司收入会员费</description>
-    </item>
-    <item>
       <title>会计凭证常见错误</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</guid>
-      <description>一、费用类不规范点及规范附件明细 1、办公用品费 购买办公用品只有发票，没有其他单据:批量购买办公用品，没有采购入库和各部门领用单。经审批的请购单、发票、入库单、支</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</guid>
+      <description>一、费用类不规范点及规范附件明细# 1、办公用品费# 购买办公用品只有发票，没有其他单据:批量购买办公用品，没有采购入库和各部门领用单。经审批的请购单、发票、入库单、支出凭单、银行回单等相关资料。&#xA;2、差旅费# 只有差旅费报销单没有行程单等记录&#xA;出差工作计划书(出差行程单)、发票、差旅报销单、银行回单等相关资料。&#xA;3、车辆修理费、汽油费# 只有修理费、汽油费发票，企业没有车辆经审批的汽车修理清单、发票、支出凭单、银行回单等相关资料。&#xA;4、税款缴纳# 只有银行回单，未有申报表或税收缴款书纳税申报表主表或网上打印、支出凭单、税收缴款书或银行代扣款回单等相关资料。&#xA;5、劳保用品# 批量购买劳保用品，没有采购入库和各部门领用单;各部门领用劳保用品未有部门领用单或者单据部门不全经审批的请购单、发票、入库单、支出凭单、银行回单等相关资料。&#xA;6、广告费# 只有发票和合同，未有照片或者其他广告样本等辅助证明资料经审批的合同、发票、相关的照片、支出凭单等相关资料。&#xA;7、会务费# 只有会议费发票，未有会议议程、签到表、会议照片等证明资料。&#xA;经审批会议预算、合同、会议结算清单、发票、会议议程签到表、会议照片、支出凭单等相关资料。&#xA;8、运费、快递费# 快递费月结没有与快递、物流公司签署合同:月结单没有核对记录及内部审批记录&#xA;委托运输协议、运费结算单、发票、支出凭单等相关资料&#xA;二、供应链类常见不规范点及规范附件# 1、预付款# 预付款只付银行回单，未后附合同,采购合同、采购付款单等相关资料&#xA;2、预付款核销# 未后附相关单据。采购合同、原材料采购入库单、收货报告单、发票、采购付款单等相关资料。&#xA;3、货到付款# 未后附采购合同、原材料采购入库单、收货报告单。以供应商的送货单为入库单，未有企业自己的入库单。采购合同、原材料采购入库单、收货报告单、发票、采购付款单等相关资料。&#xA;4、采购入库# 以供应商的送货单为入库单，未有企业自己的入库单。退料单单据未齐全，采购入库单、采购收货报告单等相关资料&#xA;三、产品生产不规范点及规范附件# 1、生产领用# 原材料领用单，单据上的信息要素不齐全，不便于会计和税务核算所用。&#xA;《生产耗用表》、原材料领用单，&#xA;2、产品入库结转# 产品入库单，单据上的信息要素不齐全，不便于会计和税务核算所用。&#xA;《生产成本表》、产品入库单。&#xA;四、产品销售不规范点及规范附件# 1、销售收入确认、销售成本结转# 销售收入确认和结转成本附件只有发票，没有其他单据作为附件。&#xA;发票、销售出库单表、销售单、销售成本结转等相关资料&#xA;五、产品研发不规范点及规范附件# 1、研发领料单，相关单据要素不齐全# 比如未有具体研发部门及研发项目。研发领料单、研发采购合同，采购入库单，领用单。&#xA;2、研发费用分摊# 附件所附研发费用分摊明细表，研发费用分摊依据不明确标准不统一&#xA;研发费用分摊表、研发费用分摊依据等资料。&#xA;六、资产类常见不规范点及规范附件# 1、资产购买# 只有固定资产发票，没有其他单据:&#xA;没有固定资产部门领用单，无法确定具体使用部门和日期。经审批的请购单、合同、发票、入库单/验收单、资产照片支出凭单等相关资料。&#xA;2、资产修理# 只有修理发票，没有修理固定资产其他单据。&#xA;经审批的单据、修理报告单、发票、支出凭单等相关资料。&#xA;3、资产清理或盈亏处理# 固定资产清理和盘亏单据上相关信息处理不完全，不能为会计核算提供相关齐全要素。&#xA;经审批的签呈、溢缺明细表等相关资料。&#xA;4、固定资产折旧的计提# 采用系统的，未将系统每月固定资产折旧打印出来作为附件固定资产折旧计提表等相关资料。&#xA;5、低值易耗品# 只有采购低值易耗品发票，未有相关的入库及部门领用单据经审批的请购单(签呈)、合同、发票、入库单、支出凭单等相关资料。</description>
     </item>
     <item>
       <title>企业没有工会，也要交工会经费吗？</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%81%E4%B8%9A%E6%B2%A1%E6%9C%89%E5%B7%A5%E4%BC%9A%E4%B9%9F%E8%A6%81%E4%BA%A4%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%90%97/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%81%E4%B8%9A%E6%B2%A1%E6%9C%89%E5%B7%A5%E4%BC%9A%E4%B9%9F%E8%A6%81%E4%BA%A4%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%90%97/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%81%E4%B8%9A%E6%B2%A1%E6%9C%89%E5%B7%A5%E4%BC%9A%E4%B9%9F%E8%A6%81%E4%BA%A4%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%90%97/</guid>
-      <description>企业没有工会，也要交工会经费吗？工会经费如何进行财税处理？申报有哪些注意事项？一起来看看吧~ 01 未成立工会需要缴纳工会经费吗？ 答复内容： 根据《江西省总工会 江西省财</description>
-    </item>
-    <item>
-      <title>瑞华研究-第一章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_1/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_1/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 前 言 《瑞华研究 2010 ～ 2019 汇编本》主要总结了我们在 2009 ～ 2018 年年报审 计中遇到的一些有代表性的典型案例，供大家在执业过程中参考。使用中请务必 注意以下几</description>
-    </item>
-    <item>
-      <title>瑞华研究-第三章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_3/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_3/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 第三章 长期股权投资和企业合并业务问答 第一节 股权转让损益确认和长期股权投资确认问题 问题 3 - 1 - 1 （以土地使用权对联营企业投资的会计处理） 问题</description>
-    </item>
-    <item>
-      <title>瑞华研究-第二章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_2/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_2/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 第二章 利润类业务问答 第一节 收入确认以及建造合同相关问题 问题 2 - 1 - 1 （租售结合的合同是否适用建造合同会计模式） 问题： 如下文“背景”资料所述</description>
-    </item>
-    <item>
-      <title>瑞华研究-第五章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_5/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_5/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 第五章 信息披露和列报业务问答 第一节 报表列报和披露的相关问题 问题 5 - 1 - 1 （拟清算经营活动，但不予以注销的公司，是否可以以持续经营假设编制财</description>
-    </item>
-    <item>
-      <title>瑞华研究-第六章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_6/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_6/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 第六章 审计技术问题和其他问题 第一节 其他会计技术问题 问题 6 - 1 - 1 （ A+H 股上市公司境内外准则差异的处理） 问题： 基于下文“背景”资料，A公司A股</description>
-    </item>
-    <item>
-      <title>瑞华研究-第四章</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_4/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6_4/</guid>
-      <description>瑞华研究（ 2010 ～ 2019 ）汇 编 第四章 特殊业务问答 第一节 金融工具和套期会计的相关问题 问题 4 - 1 - 1 （《购销合同》是销售业务还是贸易型融资业务） 问题： 如下文背景所述，企业签</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201001</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201001/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201001/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1 、请问陈版：对于募集资金运用方面的问题 **提问人：**圆圆 CPA 梦梦 时间： 2010-01-01 09:26:58 请问陈版：对</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201002</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201002/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201002/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 140 、子公司未分配利润转增资本，母公司如何做账？ 提问人： sgywincpa 时间： 2010-02-01 01:13:54 借：长期股权投资－成本</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201003</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201003/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201003/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 274 、无形资产摊销 **提问人：**紫水晶紫水晶 123 时间： 2010-03-01 09:48:04 企业以前年度评估增值入账的土地价</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201004</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201004/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201004/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 461 、清算企业的会计核算 提问人： xb429 时间： 2010-04-01 06:36:49 最近接受一企业清算审计，清算企业的会计核算财政</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201005</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201005/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201005/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 626 、求教陈老师，超额亏损的连续抵销分录如何编制？ **提问人：**我爱会计人我爱会计人 时间</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201006</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201006/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201006/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 765 、应收票据贴现现金流量表列报的探讨 **提问人：**下天山下天山 时间： 2010-06-01 11:24:01 应收票据（银行</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201007</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201007/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201007/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 876 、请教陈版，外币资本折算的问题 **提问人：**着火的月亮着火的月亮 时间： 2010-07-01 12:22:48 境外公司A</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201008</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201008/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201008/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1065 、求助版主 提问人： yahmm 时间： 2010-08-01 09:52:53 A、B两公司均执行会计准则。A和B均为同一母公司 A公司拟</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201009</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201009/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201009/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1238 、请教陈版主，开办费出现负数如何处理？ 提问人： byzjb 浮躁浮躁 时间： 2010-09-01 11:02:51 一外资企业，执行 01 年</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201010</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201010/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201010/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1406 、关于非同一控制下企业合并问题。 提问人： lingduyu 时间： 2010-10-01 21:01:44 在企业会计准则讲解 2008 的企业合并一章</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201011</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201011/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201011/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1558 、陈版：有限责任公司能否撤销已宣告股利？如果已得到股东同意，如何做会计处理？ **提问人</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201012</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201012/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2010/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201012/</guid>
-      <description>中国会计视野论坛-陈版主答疑2010-2019.09. 话题总数：2041 1774 、公司分立继存公司验资报告 提问人： wzjdcpa 时间： 2010-12-01 10:24:23 适用于公司分立继存有限责任公司验资报告格</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201101</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201101/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201101/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 1 、分次出资验资业务探讨 提问人： yfdzxp 时间： 2011-11-01 15:10:18 本人审计知识极欠缺。关于分次出资。想问一下验资的时候需要给事务所、工</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201102</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201102/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201102/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 提问人： donglj2010 时间： 2011-02-01 09:52:41 各位好，请问下土地使用权的摊销起始期如何确定？ 回答人： chenyiwei 在新准则下，一般根据土地使用权证上注</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201103</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201103/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201103/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 552 、报告披露-求助陈版 提问人： alisonli123 时间： 2011-03-01 00:16:41 今年的上市交易编报规则里面对于应收账款的披露提到： 单项重大并单项计提坏</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201104</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201104/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201104/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 852 、请教陈版，关于企业合并的问题 提问人： pp20080128 时间： 2011-04-01 12:02:06 陈版你好，请教一个关于企业合并的问题。A公司为一家经营电器连</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201105</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201105/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201105/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 1084 、工会经费、职工教育经费的问题 提问人： deanezheng 时间： 2011-05-01 21:51:39 国有企业，年报审计时，被审计单位实行工资总额管理，合并总额没</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201106</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201106/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201106/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 1350 、股权变动下，报表合并问题？ 提问人： 1091 时间： 2011-06-01 10:57:44 例：母公司长期股权投资 80 万元，占子公司股比80%，年末母公司出</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201107</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201107/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201107/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 1585 、无形资产的确认 提问人： nikankan 时间： 2011-07-01 09:48:08 如果对该块土地已经实施了控制，比如已经对该块土地加以使用了，尽管还未办理过</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201108</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201108/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201108/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 1865 、非同一控制下合并的商誉的确认 提问人：曹雨田曹雨田 时间： 2011-08-01 23:29:10 对非同一控制下合并，按评估值收购，合并报表是否需要</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201109</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201109/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201109/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 2153 、中注协发布《企业内部控制审计指南》征求意见稿 提问人： ying0518 时间： 2011-09-01 21:20:20 准则中定义的内部控制缺陷为值得关注的内部控制</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201110</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201110/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201110/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 2380 、审计助理新手上路，求审计工作底稿范例 提问人：花修罗花修罗 时间： 2011-10-01 08:45:31 审计助理新手上路，思路很不清楚，不知道底稿</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201111</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201111/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201111/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 2554 、原始财务报表与申报财务报表差异比较表需要提供母公司比较表吗？ 提问人： zoeandlj 时间： 2011-11-01 10:56:02 需要提供 回答人： chenyiwei 是的，需要</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201112</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201112/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2011/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201112/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2011 话题总数：3135 2827 、求陈版主：增资验资的问题 提问人： lisa-vip 时间： 2011-12-01 08:46:09 陈版主您好！我在实务中遇到一个事件：股东会决议通过了本期利润分配</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201201</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201201/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201201/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 1 、四大为我公司做的管理建议书 提问人： nankemeng 时间： 2012-06-25 12:01:25 学习了 回答人： chenyiwei 警告：请注意不要连续发布无意义的灌水帖刷屏。谢</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201202</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201202/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201202/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 294 、生产线技术改造 **提问人：**镰刀收割黑夜镰刀收割黑夜 时间： 2012-02-01 08:22:29 如何判断生产线技术改造，财务处理上从固定资产</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201203</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201203/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201203/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 608 、请教陈版主：关于出租地下车位使用权的会计处理 提问人： sdongco 时间： 2012-03-01 00:27:28 应该是全额确认销售收入 车位在房产开发商的账面</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201204</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201204/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201204/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 897 、上市公司监管指引 提问人： zhongzhao433 时间： 2012-04-01 12:45:02 二、相关上市公司不得采用资本公积金转增股本同时缩股以弥补公司亏损的方式规</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201205</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201205/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201205/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 1150 、房地产开发企业利息资本化问题 提问人： ZCXXXX 时间： 2012-05-01 23:07:33 房地产开发企业在什么情况下可以进行利息资本化？可以设立“开发</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201206</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201206/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201206/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 1390 、如何确定长期股权投资的价值 提问人： qjr1124 时间： 2012-06-01 15:09:11 回复 doucunchaod 的帖子 人家已经有审计单位了，当然拒绝你的审计，不是重复了</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201207</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201207/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201207/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 1568 、股权收购中购买方如何确定。 提问人： xiongmao12 时间： 2012-07-01 12:33:54 回复 distancecut 的帖子 我把您所说的问题具体赋予数值，我认为更好理解。A持</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201208</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201208/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201208/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 1805 、债务重组&amp;ndash;重组后债务公允价值的计算 提问人： rainy418 时间： 2012-08-01 10:40:50 A银行与B公司达成债务重组协议，约定B公司</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201209</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201209/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201209/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 2012 、关于贷款卡 提问人： kekesongzi87 时间： 2012-09-01 09:39:30 企业贷款卡上有有一笔已结清不良信贷一千多万，欠息一百多万，审计时该如何处理？ 回</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201210</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201210/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201210/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 2183 、如何理解为好 提问人： liubin988513 时间： 2012-10-01 05:47:03 也有会计师事务所新设立了具有法人资格的咨询机构，如果新设立的咨询机构与原事务</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201211</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201211/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201211/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 2376 、原始报表的模拟合并口径 **提问人：**无名竖子无名竖子 时间： 2012-11-01 09:48:14 问题： 假设A公司IPo申报期间为2009-2</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201212</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201212/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2012/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201212/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2012 话题总数：2850 2620 、请教陈版一个信托业务的问题 提问人： lbwl 时间： 2012-12-01 10:23:37 现在我公司和一个信托想做一个业务，我先说下这个业务的模式，就是</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201302</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201301/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201301/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1 、陵园所收取的一次性管理费，记入“长期应付款”，现进行改制审计，应怎样调整？ 提问人： leon007 时间： 2013-08-21 10:42:17 参考陈版的意见</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201303</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201302/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201302/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 315 、母公司用自己的账户通过银行代子公司发放工资，后子公司再还款，可以吗？ 提问人： zzx20080218 时间： 2013-02-01 08:54:00 甲公司是乙公司的母公</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201304</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201303/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201303/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 489 、求教陈版及各位，合并时如何看待内外部交易类型不同的情况 提问人： leonzc 时间： 2013-03-01 09:44:39 如题 比如，甲公司将价值 50 万的固定资</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201305</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201304/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201304/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 768 、如何认定是否为关联方交易 提问人： hanyin 时间： 2013-04-01 15:26:07 企业会计准则第 36 号——关联方披露对关联方有相关定义，关联方交易肯</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201306</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201305/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201305/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 974 、不动产投资房产和土地分离的问题 提问人： reochen 时间： 2013-05-01 00:14:49 回复 reochen 的帖子 首先要了解清楚的一个问题是：当地是否允许将房产</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201307</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201306/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201306/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1182 、关于金融资产的分类 提问人： zico9999 时间： 2013-06-01 20:43:47 求教陈版： 1 、金融资产分为四大类，长期股权投资属于哪一大类？ 2 、应交税</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201308</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201307/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201307/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1327 、关于工程承包收入的确认 提问人： bestxulin 时间： 2013-07-01 09:30:16 有一建筑公司下面有一挂靠工程，工程以公司的名义签订，但实际是以挂靠</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201309</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201308/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201308/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1460 、请教陈版，手机游戏的独家代理版权金 提问人： yang1234 时间： 2013-08-01 16:23:03 我们理解，在同时满足下列条件的情况下，手机游戏的运营授</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201310</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201309/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201309/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1607 、合作投机利润的账务处理 提问人： snowbaby123123 时间： 2013-09-01 09:27:10 A企业与B单位合作，一起进行期货投资业务，由B单位将相应保证金转入</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201311</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201310/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201310/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1773 、请教一个关于无形资产出资成立公司的问题 提问人： liubin988513 时间： 2013-10-01 16:20:48 如属于成立合营企业，账面价值为 20 万的无形资产作价为</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201312</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201311/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201311/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 1882 、物业公司计提佣金怎么做会计分录？ 提问人： footopion 时间： 2013-11-01 16:44:05 个人认为， 1 、首先要考虑物业公司财务核算采用酬金制，还是</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201312</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201312/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2013/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201312/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2013 话题总数：2326 2089 、请教陈版主关联交易及投资性房地产相关问题 提问人： han_jian_guang 时间： 2013-12-01 22:52:54 1.关联交易问题：母子公司之间的交易算作关联交易</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201401</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201401/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201401/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1 、急需:财会函[2000]7 号《关于编制合并会计报告中利润分配问题的请示的复函》.谢谢.急. 提问人： zhxyp 时间： 2014-03-08</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201402</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201402/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201402/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 252 、如果成立公司工商取消验资，那么将来什么情况下还需要验资呢？股改验资还要作吗？ **提问人：**会计人员会计人员</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201403</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201403/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201403/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 425 、基于融资目的开立的无真实交易背景的银行承兑汇票探讨 提问人： sdtianjh 时间： 2014-03-01 19:25:07 版主，可能我没有说清楚。甲企业与其关联</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201404</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201404/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201404/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 650 、债权转让涉税问题 提问人： jackiechen8623 时间： 2014-04-01 10:06:48 A企业与B企业属于同一控制下企业，A公司与B公司属于同业竞争企业，为了解</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201405</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201405/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201405/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 855 、项目中遇到的一点疑惑 提问人： qd6zf 时间： 2014-05-01 20:46:28 非常感谢，很专业，学习了。这家企业实力还是蛮强大的，在国际上排名，并</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201406</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201406/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201406/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1031 、国有企业公司制改制的会计处理问题 **提问人：**清茶一杯清茶一杯 时间： 2014-06-01 17:28:51 陈版，国有企业以 2013 年 6 月 30 日为基准</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201407</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201407/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201407/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1161 、同一控制下企业合并报表问题咨询 **提问人：**乱世太子乱世太子 时间： 2014-07-01 11:18:28 老师：我指的仅仅是子公司归属于母公司</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201408</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201408/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201408/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1250 、股份增发 提问人： Wolf9966 时间： 2014-08-01 10:31:37 谢谢老师。 对于第二种情况，若A公司账面净资产是 100 万元，现评估值为 200 万元，按5%来</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201409</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201409/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201409/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1452 、请教陈版~外币报表折算差额 提问人： zilei66 时间： 2014-09-01 10:56:27 A公司 12 年 1 月 1 日通过非同一控制企业合并取得C公司（境外）60</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201410</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201410/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201410/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1611 、非平价购入债券作为交易性金融资产的处理 提问人： caesarxf 时间： 2014-10-01 14:28:55 个人理解，交易性金融资产持有周期短，没有用实际利率</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201411</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201411/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201411/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1796 、请教陈老师，商誉的本质！谢谢！ **提问人：**心海拂清风心海拂清风 时间： 2014-11-01 07:42:02 1 商誉有哪些特殊的性质及其本质！</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201412</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201412/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2014/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201412/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2014 话题总数：2657 1990 、！！！有土地使用权证但无地上房产权证的资产能否注资 提问人： lemonantree 时间： 2014-12-01 09:20:48 有土地使用权证但无地上房产权证的资产能</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201501</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201501/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201501/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1 、餐饮业如何审计 提问人： haowangjiao76 时间： 2015-04-10 08:25:00 非常感谢分享 回答人： chenyiwei 另外，对餐饮业的审计，也可以参考证监会发行部 2012 年发布</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201502</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201502/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201502/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 262 、非同一控制下处置全资子公司过渡期损益如何进行账务处理？ 提问人： qy0503 时间： 2015-02-01 01:40:22 请教版主和各位前辈：如果非同一控制</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201503</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201503/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201503/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 411 、代持股份 提问人： kenshin0225 时间： 2015-03-01 15:46:43 陈版主， 有关代持在审计报告中的披露及其他事项想请教下~ 代持相关： B公司注册/实收</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201504</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201504/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201504/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 645 、请问”资本公积-财政拨入“在所有者权益变动表中哪一项下列示？非常感谢！ 提问人： cfcfj 时间： 2015-04-01 19:33:42 因为不是所有者投入</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201505</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201505/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201505/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 826 、合并报表期初数 提问人： XK2410 时间： 2015-05-01 00:07:18 A、B公司分别成立于 2014 年以前，母公司W持有 2 家子公司100%股权， 2014 年 7 月</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201506</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201506/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201506/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1017 、非同比例增资的合并报表处理？ 提问人： lc33cs 时间： 2015-06-01 09:50:29 母公司原持有子公司80%股权，现对子公司进行增资，但部分少数</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201507</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201507/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201507/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1224 、非安装产品销售收入确认 提问人： xueyou654 时间： 2015-07-01 21:23:34 版主，实务中，我看几家事务所对上市公司或IPO公司的收入确认是按发</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201508</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201508/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201508/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1373 、关于明股实债的会计处理（含合并报表处理） 提问人：匆匆太匆匆匆匆太匆匆 时间： 2015-08-01 11:28:52 集团设立全资子公司A，运营数年</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201509</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201509/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201509/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1598 、政府无偿划拨的土地，如何处理？ 提问人：紫色清风紫色清风 11 时间： 2015-09-01 10:12:37 A公司是一家污泥处理企业，某市政府为支持该</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201510</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201510/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201510/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 1808 、各个上市公司通常都会在哪里披露各自对并购基金的账务处理呢？ 提问人：姜国驸马姜国驸马 时间： 2015-10-01 00:15:35 我在会计师事务所</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201511</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201511/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201511/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 2038 、关于国有企业引进股东进行资产评估增值涉税问题 提问人：清茶一杯清茶一杯 时间： 2015-11-01 18:58:52 回答人： chenyiwei 你的问题表述不清楚，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201512</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201512/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2015/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201512/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2015 话题总数：2657 2333 、关于固定资产提前报废的处理 提问人：蒋桔蒋桔 时间： 2015-12-01 09:35:21 某公司本年年中报废了一台重要的设备，该设备账面价值 1000 万元</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201601</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201601/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201601/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 1 、应收账款集中度很低的公司的审计 提问人： xueyou654 时间： 2016-09-27 23:34:34 版主，请问对客户是很牛的国企或大型超市等很难很询证函的，应</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201602</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201602/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201602/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 352 、长期应收款问题 提问人： angelflying 时间： 2016-02-01 07:34:24 公司一项目合同规定竣工验收合格后 7 年收回, 但现在已施工 4 年尚未竣工, 已根据</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201603</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201603/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201603/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 563 、请教陈版主，我公司将办公楼入股的会计处理 提问人： jizhangren 时间： 2016-03-01 10:06:26 版主好，我公司打算用自有办公楼投资入股一家公司，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201604</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201604/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201604/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 908 、本年收回或转回坏账准备金额，是否包含本金收回对应的坏账准备？ 提问人： uniwinjz 时间： 2016-04-01 05:57:55 请教陈版及各位大侠，附注中披</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201605</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201605/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201605/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 1197 、关于分期出资取得长投的处理 提问人： ljj567567 时间： 2016-05-03 09:36:07 陈版，麻烦回复一下。。急，首先想知道是按什么入账@chenyi</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201606</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201606/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201606/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 1512 、请教合并不同行业因科目不同怎么处理？ 提问人： yltata 时间： 2016-06-01 07:35:47 集团下有融资租赁公司，小贷公司，担保公司，广告公司，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201607</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201607/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201607/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 1771 、孙公司持有母公司股份的交叉持股问题请教 提问人： chenyiwei 时间： 2016-07-01 17:52:39 因为此次合并范围包括B和C，所以没有特殊的处理问题</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201608</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201608/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201608/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 1985 、请教境外非同一控制下企业合并账务处理，涉及或有对价 提问人： vincencham 时间： 2016-08-01 10:26:51 收购境外企业的个人股权，包括其持有的两</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201609</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201609/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201609/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 2305 、协议控制 提问人：大葱拌牛肉大葱拌牛肉 时间： 2016-09-01 07:12:21 请问协议控制如何编制抵消分录呢？ 回答人： chenyiwei 协议控制的情况比较复</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201610</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201610/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201610/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 2548 、祝陈版主及各位老师们节日快乐！ 提问人：我爱新视野我爱新视野 时间： 2016-10-01 13:25:55 回答人： chenyiwei 谢谢！ 2549 、考虑增值税情况下 买一</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201611</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201611/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201611/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 2818 、残保金等处理 提问人：心海拂清风心海拂清风 时间： 2016-11-01 09:10:03 问题： 1 、残保金计入管理费用我觉得，我看到有新三板公司计入</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201612</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201612/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2016/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201612/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2016 话题总数：3570 3184 、期后关联方资金占用是否需要做期后事项披露？ 提问人： TomyRen 时间： 2016-12-01 09:03:20 期后关联方资金占用是否需要做期后事项披露？期后</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201701</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201701/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201701/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 1 、POS机刷卡账务处理问题 提问人： xueyou654 时间： 2017-06-18 12:53:52 @chenyiwei 陈版主，请问楼主这个问题如何处理，谢谢。 回答人： chenyiwei 该款项是银行</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201702</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201702/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201702/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 396 、少数股东损益 **提问人：**胖保罗胖保罗 时间： 2017-02-02 07:42:31 请教陈版， 母子公司逆流交易存货时， 第一年会产生一笔调整分录</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201703</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201703/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201703/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 761 、请教陈版主，关于政府补贴 提问人： jlt_kc 时间： 2017-03-01 00:06:36 请教陈版主，问题是这样的： 企业与政府协议，企业按名义价格拿地，但</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201704</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201704/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201704/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 1291 、股份支付 提问人： zd241 时间： 2017-04-01 02:08:28 陈老师，ipo公司股改前为了以后业务推广拟引进一央企持股20%-30%，增资的价</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201705</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201705/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201705/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 1676 、持股比例虽低于20%，但能够控制能否合并 提问人： banqi79 时间： 2017-05-01 21:56:49 A公司为集团公司，持有B（上市公司）15%的股份</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201706</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201706/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201706/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 1919 、在一季度发放年终奖金计入一季度损益，而不计入上年度损益 提问人： hhgroup 时间： 2017-06-01 09:41:48 各位大侠： 002315 焦点科技《关于深圳证券</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201707</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201707/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201707/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 2218 、关于非暂时性控制 提问人： cherishfei 时间： 2017-07-01 00:44:00 请教陈版及各位大侠！同一控制下合并的 “控制并非暂时性，是指参与合并的各方</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201708</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201708/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201708/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 2450 、请问陈老师，园区按已缴纳的流转税给的财政补贴是“其他收益”还是“营业外收入”？ 提问人： apple_xia 时间： 2017-08-03 11:07:28 请问陈老师</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201709</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201709/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201709/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 2773 、关于或有事项的披露问题？ 提问人： bcjbcjbcj 时间： 2017-09-01 09:25:57 附注中或有事项的披露中对于对外担保的披露问题： 最高额保障合同，合</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201710</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201710/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201710/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 3052 、低值易耗品处置会计分录问题 提问人： wufaxian 时间： 2017-10-01 08:38:12 企业有一批货架，这批货架共用 20 个，每个购入价为 500 元，经过几年摊</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201711</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201711/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201711/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 3284 、募集资金置换时点 提问人： xflcpa123 时间： 2017-11-01 09:22:08 谢谢回复！ 如若在上市重组前已经得到集团和本企业的批准并进行部分项目建设 ，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201712</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201712/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2017/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201712/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2017 话题总数：4129 3659 、请教陈版！是否构成日后调整事项 提问人： zryhzwg 时间： 2017-12-01 03:59:28 陈版主好： 国有企业在“三供一业”分离移交过程中，移交对象为</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201801</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201801/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201801/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 1 、长期待摊费用的摊销方法 提问人：呼叫帮助呼叫帮助 时间： 2018-07-10 21:37:42 第一项工程是对办公楼进行装修，办公楼是租的，上一手租</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201802</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201802/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201802/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 655 、求助陈版，关于无需支付的应付账款的思考。 提问人： 768895149 时间： 2018-02-01 00:17:54 求助陈版，以下情况对应的考虑是否合适准确： 1 ）发</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201803</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201803/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201803/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 998 、请教陈总，关于处置长投及母公司账面资产负债的账务处理问题 提问人：火柴火柴 1314 时间： 2018-03-01 10:01:39 陈总： 背景： 某上市公司S</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201804</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201804/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201804/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 1537 、同一控制下企业合并，对于子公司资不抵债的其他应收款需要计提减值准备么 提问人： akt_888 时间： 2018-04-01 10:06:02 请教陈版：同一控制下</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201805</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201805/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201805/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 1907 、还款金套餐销售财务税务处理问题 提问人： eleanora 时间： 2018-05-01 05:42:14 求教个业务的财务税务处理问题： 有一种还款金套餐销售，比如存</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201806</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201806/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201806/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 2328 、请教陈版：参股地产基金的核算方式（合伙型或契约型） 提问人： 2017 秋秋 invest 时间： 2018-06-01 10:00:54 陈老师，工作中遇到这个问题，辛苦</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201807</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201807/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201807/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 2647 、如何区分以公允价值计量且其变动计入其他综合收益的金融资产是债权投资还是权益投资？ 提问人： jian1847 时间： 2018-07-01 11:40:30 如题，讲</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201808</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201808/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201808/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 2941 、关于法定盈余公积的疑问 提问人：安好安好 时间： 2018-08-01 08:35:11 请教陈版及各位：按照公司法第一百六十六条 “公司分配当年税后利</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201809</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201809/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201809/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 2971 、租赁期内有免租期 同时后续租赁费有变动的 如何在分摊 提问人： lxj08099 时间： 2018-09-06 11:01:21 租赁了一家酒店 租赁期为 20 年，第1-5年为</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201810</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201810/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201810/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 2981 、【驴子新作】上市公司并购重组中对赌协议的规范会计处理——基于新金融工具准则 提问人：吴琼吴琼 jhon 时间： 2018-10-06 23:53:36 请教各</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201811</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201811/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201811/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 3009 、新金融工具下减值准准备相关问题 提问人： devin92 时间： 2018-11-01 20:52:01 新准则中划分为以摊余成本计量的金融资产及以公允价值计量且其</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201812</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201812/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2018/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201812/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2018 话题总数：3071 3038 、请教陈版：坏账准备的估计 提问人：跨度防护跨度防护 时间： 2018-12-02 14:27:31 案例：（ 1 ） 2018 年 8 月 15 日，A与B达成债务重组协议，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201901</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201901/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201901/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 1 、上市公司与公众利益实体（如新三板挂牌企业）的 CPA 签字轮换比较 目录 1 、上市公司与公众利益实体（如新三板挂牌企业）</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201902</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201902/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201902/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 581 、计学撮要问题 1-3-7 提问人：cpab时间：2019-02-01 08:19:39 问题 1-3-7 资产组内净流动资产的变动对减值测试中现金流量</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201903</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201903/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201903/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 892 、按子公司中归属于母公司的所有者权益还是按所有者权益合计确认长投？ 提问人：Cinly123 时间：2019-03</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201904</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201904/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201904/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 1501 、安全生产费确认递延所得税资产问题 提问人：等待也是一种幸时间：2019-04-01 00:27:06 1502 、处置超额亏损的联营企业</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201905</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201905/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201905/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 1969 、信用期的规定 提问人：安好时间：2019-05-01 03:10:39 请教陈版及各位老师，关联方交易形成的应收账款，如果超过了</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201906</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201906/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201906/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 2382 、求教陈老师，溢价购买国债的会计分录怎么做 提问人：wufaxian 时间：2019-06-01 06:49:39 按 103 元购买 10000 张面</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201907</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201907/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201907/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 2730 、合并财务报表 _ 比较报表 _IFRS &amp;amp; PRC GAAP 提问人：taoshuang1990 时间：2019-07-01 08:56:54 请教版主及各位大</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201908</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201908/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201908/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 3041 、商业保险 提问人： 709046552 时间：2019-08-01 06:07:23 陈版，我公司为员工购买商业保险，是按照应付职工福利费处理还是计</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201909</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201909/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201909/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 3474 、请教陈版如何理解所得税负债的计税基础 提问人：yangfanyue 时间：2019-09-01 11:04:05 资产的计税基础是</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201910</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201910/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201910/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 3929 、公交计次月卡收入、成本确认问题 提问人：xzwcy 时间：2019-10-02 10:45:34 a 公司为月卡销售公司，b 公司为公</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201911</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201911/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201911/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 4314 、基金 提问人：jiuzhou010 时间：2019-11-01 06:30:22 陈老师，如果投资私募基金，普通合伙人，在投资委员</description>
-    </item>
-    <item>
-      <title>陈版主答疑-201912</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201912/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2019/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-201912/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2019 话题总数：5615 4874 、合并资产负债表抵消分录完成后股本数与母公司个别报表股本数一致？ 提问人：wufaxian 时间：2019-12-</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202001</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202001/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202001/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 11 、从科创板案例看：科研项目相关政府补助是否应该计入经常性损益？、从科创板案例看：科研项目相关政府补助是否应该计</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202002</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202002/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202002/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 515515 、受限的存单是放银行存款还是其他货币资金、受限的存单是放银行存款还是其他货币资金?? **提问人：**laura</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202003</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202003/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202003/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 11351135 、求教陈版！购买少数股权资本公积确认时点。、求教陈版！购买少数股权资本公积确认时点。 提问人：上善若水乔上善若水</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202004</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202004/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202004/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 18141814 、发现被骗后，收入成本如何处理、发现被骗后，收入成本如何处理 提问人：审计小黑黑审计小黑黑 时间：2020-04-</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202005</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202005/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202005/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 24662466 、请教陈老师：公司名称于、请教陈老师：公司名称于 11 月月 22 日变更是否属于期后事项？日变更是否属于期后事项？ 提问人</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202006</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202006/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202006/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 29372937 、商业银行票据贴现属于贷款吗？、商业银行票据贴现属于贷款吗？ 提问人：ZCXXXXZCXXXX 时间：2020-0</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202007</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202007/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202007/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 34393439 、母公司股改后，母公司资本公积和留存收益转为股本，合并前子公司留存收、母公司股改后，母公司资本公积和留存收益转</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202008</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202008/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202008/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 39053905 、、[[请教陈版主，销售折扣的会计处理请教陈版主，销售折扣的会计处理]] 提问人：shenjiao199shen</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202009</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202009/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202009/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 42614261 、求助陈版主、求助陈版主::关于递延收益的纳税调整关于递延收益的纳税调整 提问人：lcx2456lcx2456 时</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202010</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202010/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202010/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 47064706 、不准备长期持有长投分红所得税处理、不准备长期持有长投分红所得税处理 提问人：Ming829Ming829 时间：</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202011</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202011/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202011/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 50385038 、经销商工程差价如何处理、经销商工程差价如何处理 提问人：caixiaofeng123caixiaofeng12</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202012</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202012/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2020/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202012/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2020 话题总数：6028 54885488 、所得税会计问题、所得税会计问题 提问人：xuekuaiji13xuekuaiji13 时间：2020-12-01</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202101</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202101/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202101/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 1 、少数股、少数股 东权 益年末年初之差一定等于少数股益年末年初之差一定等于少数股 东损 益益 吗 ？？ **提问人：**安好</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202102</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202102/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202102/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 481 、一家公司成立基金、一家公司成立基金，，母基金成立子基金母基金成立子基金，，子基金投子基金投 资 公司公司 提问人：</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202103</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202103/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202103/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 738 、政府平台公司收地方政府指派、政府平台公司收地方政府指派 购买动车组应 如何列如何列 报 提问人： wenquan0826 时间： 2021-03-01 01:16:00 20X8</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202104</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202104/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202104/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 1240 、非政策性搬、非政策性搬迁迁 补偿处 置收益和企置收益和企 业 所得税的所得税的 计 算算 提问人： bigxia07 时间： 2021-04-01 07:50:00 公司与地方拆</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202105</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202105/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202105/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 1652、请 教教 陈 版版，，子公司永子公司永 续债 在合并在合并 报 表是否表是否 应为债务 提问人： mizan 时间： 2021-05-01 13:33:06 子公司发行了</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202106</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202106/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202106/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 2029 、同控下企、同控下企 业 合并恢合并恢复复留存收益留存收益 问题 **提问人：**慕慕 颜 韵韵 时间： 2021-06-01 07:27:02 请教陈老师： 对于</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202107</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202107/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202107/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 2412、联营 企企 业 的投的投 资 其他其他 权 益工具投益工具投 资 的未分配利的未分配利 润变动 能能 够 确确 认为 投投 资 收益收益</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202108</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202108/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202108/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 2854、请 教教 陈 版想版想，，企企 业购买银 行不良行不良 资产 ，，通常通常 应该 如何核算如何核算？？ 提问人： gpqg 时间： 2021-08-01</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202109</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202109/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202109/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 3249 、公、公 产 房使用房使用 权 是否是否适适用于租用于租 赁 准准 则 提问人： liujing_619619 时间： 2021-09-01 09:07:09 请教陈版主：客户承租的公产房是否租</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202110</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202110/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202110/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 3602 、港、港 资 企企 业 在在 华 代表代表 处问题 咨咨 询 提问人： sodom2011 时间： 2021-10-01 01:08:26 客户是一家港资企业在华的代表处采用《企业会计制度</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202111</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202111/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202111/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 3914 、破、破 产 重整重整 专项审计 以及重整期以及重整期 间经营损 益益 审计 中中 资产 减减 值 、固定、固定 资产 折旧、共益折旧、共</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202112</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202112/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2021/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202112/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2021 话题总数：4890 4320 、收、收 购 房地房地 产项 目公司的合并目公司的合并 报 表表 问题 提问人： flamehaze34 时间： 2021-12-01 00:19:57 陈版主，您好！ 现想咨询您一个收购房</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202201</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202201/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202201/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 1 、土地熟化、土地熟化 **提问人：**阿王呀阿王呀 时间： 2022-12-14 14:37:04 我碰到的情况是，企业只负责投入熟化资金，不参与五通一</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202202</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202202/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202202/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 404 、新租、新租 赁 准准 则 下的租下的租 赁 期期 **提问人：**安好安好 时间： 2022-02-01 19:38:12 请教陈版，各子公司都是租赁集团母公司的</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202203</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202203/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202203/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 715 、代客、代客 户 承担承担 费 用是否用是否构构成可成可 变对 价价 **提问人：**刘刘小牛快小牛快跑跑 时间： 2022-03-01 01:03:31 陈版主，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202204</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202204/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202204/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 1233、 对进 入注入注 销 清算清算 结 算子公司投算子公司投 资报 表列示表列示 问题 提问人： 691071920 时间： 2022-04-01 06:31:38 子公司进入注销清算</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202205</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202205/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202205/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 1629、 拟IPO 企企 业 股股 权 代持代持涉涉及到及到哪哪些会些会 计问题 提问人： EYMARTIN 时间： 2022-05-01 09:41:52 论坛的好友们，我最近在写</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202206</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202206/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202206/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 1974 、求助、求助 ppp 混合模式混合模式，，不同付款方式下合同不同付款方式下合同 资产 分分 摊 的的 问题 提问人： wx_5f5b2a5d0586 时间： 2022-06-01 09:11:04 案</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202207</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202207/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202207/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 2306、增增 值 税税 规 定与定与 实务 中的中的 处 理理 提问人： Ryan_q 时间： 2022-07-01 08:13:13 @chenyiwei，陈版主，有一税务与会计</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202208</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202208/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202208/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 2712 、求助、求助关关于于 债转 股股 提问人： vindicator666 时间： 2022-08-01 09:22:23 请教陈版： 我公司A现有一个全资子公司B，实收资本 3000 万元，因为长</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202209</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202209/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202209/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 3065 、里程牌法、里程牌法 提问人： lv1025280320 时间： 2022-09-01 09:51:44 请教陈版： 企业应当分析合同中约定的不同里程碑节点是否能恰当代表履约进度</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202210</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202210/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202210/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 3443 、母公司用未、母公司用未 资 本化的本化的 软 件著作件著作 权 投投 资 子公司如何子公司如何 账务处 理理？？ 提问人： ZHUCF@123456 时间：</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202211</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202211/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202211/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 3815、 请 教教 陈 版主版主，关，关于供于供 应 商商 现 金折扣是否金折扣是否 应该进项 税税 转 出出？？ 提问人： habi52 时间： 2022-11-01 14:07:56</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202212</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202212/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2022/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202212/</guid>
-      <description>中国会计视野论坛-陈版主答疑 2022 话题总数：4610 4220、 请 教教关关于租金于租金减减免免 - 新租新租 赁 提问人： lcjlcj22 时间： 2022-12-01 00:27:37 请教陈版关于新租赁，租赁合同约定了后续 3</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202301</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202301/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202301/</guid>
-      <description>中国会中国会 计视 野野 论坛-陈 版主答疑版主答疑 话题总数：365 1 、【 环 境系境系 统 集成集成 业务-时 段段 or时 点】点】 提问人： jdm0109 时间： 2023-01-16 13:18: @chenyiwei 回答人： chenyiwei 这种情况一般按时</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202302</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202302/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202302/</guid>
-      <description>中国会中国会 计视 野野 论坛-陈 版主答疑版主答疑 话题总数：434 1 、求助、求助 陈 版版：： 权 益法下益法下 顺 流交易中流交易中，， 资产 接收方接收方 资产 减减 值对 未未 实现损 益</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202303</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202303/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202303/</guid>
-      <description>中国会中国会 计视 野野 论坛-陈 版主答疑版主答疑 话题总数：394 1、 处 置交易性金融置交易性金融 资产 确，确，公允价公允价 值变动损 益益 结转问题 提问人： nan2 时间： 2023-03-01 00:38: 请教大</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202304</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202304/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202304/</guid>
-      <description>中国会计视野论坛-陈版主答疑 话题总数：170 1、资 金集中管理金集中管理 提问人：一云一云 时间： 2023-04-01 00:27: 陈老师： 解释 15 号：在集团母公司、成员单位和财务公司的资产负债表中</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202305</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202305/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202305/</guid>
-      <description>中国会计视野论坛 - 陈版主答疑 话题总数：327 1 、请教陈版关于电商公司推广费的核算。、请教陈版关于电商公司推广费的核算。 提问人： yechengcheng 时间： 2023-05-04 15:43: 在当期确认推广成本时，</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202306</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202306/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202306/</guid>
-      <description>中国会计视野论坛 - 陈版主答疑 话题总数：299 1 、关于固定资产改良事项求教陈版、关于固定资产改良事项求教陈版 提问人：审计审计 SJ123 时间： 2023-06-01 10:42: 被审单位属于物流企业，名下</description>
-    </item>
-    <item>
-      <title>陈版主答疑-202307</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202307/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/2023/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91-202307/</guid>
-      <description>中国会计视野论坛 - 陈版主答疑 话题总数：320 1 、转租赁资产处置收益的确认、转租赁资产处置收益的确认 提问人： litufu 时间： 2023-07-01 09:33: 背景：A公司向B公司租赁 6 幢楼，租赁期 20 年</description>
-    </item>
-    <item>
-      <title>合并报表抵消分录原理通俗解读系列（一）内部交易抵消</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</guid>
-      <description>合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权益抵消、内部往来抵消</description>
-    </item>
-    <item>
-      <title>合并报表抵消分录原理通俗解读系列（三）之长投权益抵消</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
-      <description>有些小伙伴反馈《合并报表抵消分录原理通俗解读系列（二）之长投权益抵消》案例有些地方还是比较模糊，小编将上篇推送文章又进行了更加细致的修改，放到今日文章推送的第二</description>
-    </item>
-    <item>
-      <title>合并报表抵消分录原理通俗解读系列（二）之长投权益抵消</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
-      <description>从上篇文章《合并报表抵消分录原理通俗解读系列（一）内部交易抵消》我们知道，合并报表的抵消分录至少包括三个部分，分别是长投权益抵消、内部往来抵消、内部交易抵消，今</description>
-    </item>
-    <item>
-      <title>合并报表抵消分录原理通俗解读系列（五）之长投权益抵消</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
-      <description>阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过，不影响您的正常阅读</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%81%E4%B8%9A%E6%B2%A1%E6%9C%89%E5%B7%A5%E4%BC%9A%E4%B9%9F%E8%A6%81%E4%BA%A4%E5%B7%A5%E4%BC%9A%E7%BB%8F%E8%B4%B9%E5%90%97/</guid>
+      <description>企业没有工会，也要交工会经费吗？工会经费如何进行财税处理？申报有哪些注意事项？一起来看看吧~&#xA;01 未成立工会需要缴纳工会经费吗？# 答复内容：&#xA;根据《江西省总工会 江西省财政厅 国家税务总局江西省税务局关于印发&amp;lt;江西省工会经费征缴管理办法&amp;gt;的通知》（赣工通字〔2019〕14号）规定：&#xA;第二条 在本省行政区域内从事生产经营的企业和本省行政区域内的事业单位、机关、其他社会组织为工会经费和工会筹备金的缴纳义务人。 建立工会组织的企业、事业单位、机关、其他组织拨缴工会经费；未建立工会组织的企业、事业单位、机关、其他组织在筹建工会组织期间拨缴工会筹备金(工会经费和工会筹备金，以下简称工会经费)。 …… 未成立工会组织的，自开办或者设立之日起满一年后的第一个月，向主管税务机关办理缴纳工会筹备金手续，在筹建工会组织期间缴纳工会筹备金。&#xA;其实并不是江西地方规定，根据《中华全国总工会办公厅关于规范建会筹备金收缴管理的通知》（厅字〔2021〕20号）第一条规定：&#xA;根据《中华人民共和国工会法》和《中国工会章程》的有关规定，上级工会应加大工作力度，帮助和指导尚未组建工会的企业、事业单位、机关和其他社会组织（以下统称筹建单位）的职工筹建工会组织。&#xA;自上级工会批准筹建工会的次月起，筹建单位每月按全部职工工资总额的2%向上级工会拨缴建会筹备金。实行委托代收建会筹备金的，上级工会应向代收部门提供筹建单位的名称、职工人数、工资总额、建会筹备金等信息。&#xA;也就是说，无论企业有没有成立工会，都需要缴纳工会经费。&#xA;02 工会经费如何计算？如何返还？# 依据《中华全国总工会办公厅关于实施小额缴费工会组织工会经费全额返还支持政策的通知》（厅字〔2022〕47号）规定：&#xA;自2023年1月1日起，继续实施小额缴费工会组织工会经费全额返还支持政策。在2023年至2024年（暂定2年）期间，对全年上缴工会经费低于1万元（不含）的小额缴费工会组织上缴的工会经费，予以全额返还。&#xA;工会经费，也就是工会活动经费，其实准确的说，建立工会组织的单位，拨付活动经费叫工会经费，未成立工会的拨付的叫工会筹备金。&#xA;很多人认为未成立工会不用缴纳工会经费，主要是因为《中华人民共和国工会法》第五章“工会的经费和财产”第四十二条“工会经费的来源”第二款的规定：建立工会组织的企业、事业单位、机关按每月全部职工工资总额的2%向工会拨缴经费。&#xA;为什么我说工会经费计算的基数是应发工资？&#xA;其实不然。在实际中，全国各省基本都有类似规定，没有成立工会的企业、事业单位基本都是需要按照工资总额缴纳筹备金的。只是说具体细节有所差异，比如有些地方规定企业开办成立满6个月开始，有些地方又是满12个月。&#xA;其实这也是保障职工权益，促进建立工会的好事。&#xA;现在很多地方都开展了委托税务代征工会经费。至于为什么采取这种方式来，那不用多说。税务局对企业信息掌握全面，有利于工会经费收缴，保证经费足额到位，同时也有助于企业在申报税款时一并缴纳工会经费，简化流程，提高效率。&#xA;（一）具体缴纳方式有哪些呢？# 一、先缴后返# 总的来说就是先全额缴纳，然后再返还。具体来说&#xA;建立工会组织的单位，先按每月全部职工工资薪金总额的2%计算出工会经费全额向工会组织拨缴，或者向受委托代收工会经费的税务机关缴纳。&#xA;上级工会组再按规定比例「一般为60%」转拨给缴费企业基层工会。&#xA;未建立工会组织的单位，按每月全部职工工资薪金总额的2%计算出工会建会筹备金全额向上级工会组织拨缴，或者向受委托代收工会经费的税务机关缴纳。&#xA;在规定时间内成立工会组织的上级工会再按规定比例「一般为60%」转拨给缴费企业基层工会，在规定时间内未成立工会组织的，以前缴纳的工会建会筹备金不再返还。&#xA;如果你向税务局申报的是按照工资总额2%计算的工会经费，那就是这种方式。&#xA;二、分级拨缴# 按每月全部职工工资薪金总额的2%计算出工会经费后，按当地规定比例「一般为40%」向受委托代收工会经费的税务机关缴纳。留成部分「一般为60%」由企业同时拨付给其所在的基层工会，未设立基层工会的，待建立工会组织后由各单位拨付本单位工会。&#xA;如果你向税务申报的是按照工资总额0.8%「2%*40%」计算的工会经费，那就是这种方式。&#xA;比如山东、辽宁就是这种操作方式。&#xA;建立工会组织的单位，按全部职工工资总额2%拨缴的工会经费，准予税前扣除，其中40%部分向税务部门缴纳，60%部分由各单位按月拨付本单位工会。&#xA;借：管理费用—工会经费 工资总额2% 贷：应付职工薪酬—工会经费 工资总额2%&#xA;借：应付职工薪酬&amp;ndash;工会经费 工资总额2% 贷：银行存款 工资总额2%&#xA;未建立工会组织的单位，按全部职工工资总额的2%计提建会筹备金，准予税前扣除，其中40%部分向税务缴纳，60%部分待建立工会组织后由各单位拨付本单位工会。&#xA;借：管理费用—工会经费 工资总额2% 贷：应付职工薪酬—工会经费 工资总额2%&#xA;借：应付职工薪酬—工会经费 工资总额2% 贷：银行存款 工资总额2%40% 贷：其他应付款—工会 工资总额2%*60%&#xA;工会经费拨付给工会后，工会单独设账核算。&#xA;（二）工会经费不能“任性花”# 《办法》要求基层工会在工会经费开支中，应严格执行以下规定：&#xA;一、不准使用工会经费请客送礼。 二、不准违反工会经费使用规定, 滥发奖金、津贴、补贴。 三、不准使用工会经费从事高消费性娱乐和健身活动。 四、不准单位行政利用工会账户,违规设立“小金库”。 五、不准将工会账户并入单位行政账户,使工会经费开支失去控制。 六、不准截留、挪用工会经费。 七、不准用工会经费参与非法集资活动，或为非法集资活动提供经济担保。 八、不准用工会经费报销与工会活动无关的费用。 （三）取得合法、有效的扣除凭证也是扣除的条件# 在企业所得税扣除方面，根据《中华人民共和国企业所得税法实施条例》第四十一条“企业拨缴的工会经费，不超过工资薪金总额2%的部分，准予扣除。</description>
     </item>
     <item>
       <title>合并报表抵消分录原理通俗解读系列（八） 之从长期股权投资税会处理差异讲起</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
-      <description>阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过。 前面文章《合并报表</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AB-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
+      <description>阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过。&#xA;前面文章《合并报表抵消分录原理通俗解读系列（六）长投权益抵消》中，我们通过注会教材案列对同一控制下合并抵消分录进行了分析解读，今天这篇文章，小编再将非同一控制下企业合并抵消分录的案例拿过来进行分析，从实务角度对长股投合并抵消原理进行另类解读。&#xA;一、长投权益抵消分录的实质案例再解读【非同控】&#xA;在以前文章中，我们知道了长投权益的抵消共包括两个部分，即“余额的抵消”和“发生额的抵消”。&#xA;“余额的抵消”就是指母公司的长期股权投资与子公司的所有者权益的抵消，是为了在合并层面还原资产的真实性才做的抵消。&#xA;“发生额的抵消”就是指损益的抵消，即母公司的投资收益与子公司的利润分配项目的抵消，目的在于在合并层面还原利润的真实性才做的抵消。&#xA;今天小编拿注会教材非同控合并案例进行再次验证，今天推送的第二篇文章（合并报表抵消分录原理通俗解读系列（九））会把同控合并与非同控合并进行比对分析解读。&#xA;非同控合并思路特殊之处—公允调整：即按公允价值对子公司的财务报表进行调整，这是“购买法”——按公允并账并表的核心。&#xA;注意几个问题：&#xA;1、只有非同控合并涉及“公允调整”，上篇讲到的同控合并不涉及公允调整的问题；&#xA;2、“公允调整”的根据是资产评估增减值，因为购买法强调对子公司单独主体的资产负债重新核实确认其真正的价值，从而需对其估值；&#xA;3、此处的“公允调整”的调整是在合并报表上进行的，即所谓的调表不调账，相当于将各项资产、负债的公众价值变动“模拟入账”；&#xA;4、由于企业并未调整账务，所以后续每年出合并报表时均需将上期所做的“公允调整”分录再做一遍，同时以购买日的公允价值为基础对后续涉及评估增减值的资产负债做“模拟入账”调整。&#xA;【背景探索】目前在会计实务中，仅限于以下两种情况可以对企业的账面价值进行评估调整： 1、非公司制国有企业改建为公司制企业，通常是改建为有限责任公司，也可能是按照《公司法》的规定“一步到位”直接改建为股份有限公司；&#xA;2、在非同一控制下的企业合并中一次性被其他企业收购100%股权的企业。&#xA;3、在不能根据资产评估结果调整账务的情形中，当存在重大的资产评估减值，可作为是否存在减值迹象的参考，应考虑相关资产是否需要计提减值准备。&#xA;【例27-16】甲公司20×1年1月1日以定向增发公司普通股票的方式，购买取得A公司70%的股权。甲公司当日资产负债表和A公司当日资产负债表及估值确认的資产负债数据如表27-9所示。甲公司定向增发普通股股票10000万股(每股面值为1元)，甲公司普通股股票面值每股为1元，市场价格每股为2.95元。甲公司和A公司均为非金融企业，甲公司并购A公司属于非同一控制下的企业合并，假定不考虑所得税、甲公司增该普通股股票所发生的审计以及发行等相关的费用。&#xA;A甲公司单体报表中的账务处理&#xA;将购买取得A公司70%的股权作为长期股权投资入账，其账务处理如下：&#xA;借：长期股权投资—A公司 29500①&#xA;[实付公允对价29500&amp;gt;所持公允份额25200，谁大跟谁，多出即新增的合并商誉，少则入损益-营业外收入]&#xA;贷：股本10000&#xA;资本公积19500 [若有中介费用，单独走管理费用；若为交易费用则冲资本公积]&#xA;一、购买日资产负债表的编制&#xA;1、购买日子公司“公允”资产负债表&#xA;【只编这一张表-充分体现“购买法”的精髓】&#xA;将被合并方的资产负债按照公允价值进行调整：&#xA;借：存货1100&#xA;固定资产3000 贷：应收票据及应收账款100&#xA;资本公积-股本溢价4000 2、购买日成本法抵消分录&#xA;二、购买日后财务报表的编制&#xA;A公司在购买日股东权益总额为32000万元，其中，股本为20000万元、资本公积为8000万元、盈余公积为1200万元、未分配利润为2800万元。&#xA;A公司购买日应收账款账面价值为3920万元、公允价值为3820万元；存货的账面价值为20000万元、公允价值为21100万元；固定资产账面价值为18000万元、公允价值为21000万元。&#xA;A公司20×1年12月31日股东权益总额为38000万元，其中，股本为20000万元、资本公积为8000万元、盈余公积为3200万元、未分配利润为6800万元。A公司20×1年全年实现净利润10500万元，A公司当年提取盈余公积2000万元、向股东分配现金股利4500万元。&#xA;截至20×1年12月31日，应收账款按购买日确认的金额收回，确认的坏账已核销；购买日存货公允价值增值部分，当年已全部实现对外销售；购买日固定资产原价公允价值增加系公司用办公楼增值，该办公楼采用的折旧方法为年限平均法，该办公楼剩余折旧年限为20年，假定该办公楼增加的公允价值在未来20年内平均销。&#xA;1、资产负债表日调整公允资产负债表和利润表[所有财务报表公允化]&#xA;①购买日公允分录：&#xA;借：存货1100&#xA;固定资产3000 贷：应收票据及应收账款100&#xA;资本公积-股本溢价4000 ②按公允持续计算分录【教材上面没有，小编将此还原】：&#xA;①补提折旧差额=补提资产金额3000/20=150&#xA;②补提折旧差额=21000/201-18000/201=150&#xA;甲公司20×1年年末编制合并财务报表时相关项目计算如下:&#xA;A公司调整后本年净利润＝10500（子公司账面净利润）&#xA;+[100(购买日应收账款公允价值减值的实现而调减资产减值损失)&#xA;-1100(购买日存货公允价值增値的实现而调増营业成本)&#xA;-150(固定资产公允价值增值计算的折旧而调增管理费用)]&#xA;＝9350(万元)&#xA;【损益调整原则：&#xA;资产评估增值做减法，评估减值做加法；负债调整方向反之】&#xA;理解：资产增值后续通过转成本费用方式减少损益，反之亦然 原理：评估增减值时，购买日一次性将差值部分进权益，未影响合并日报表损益；待到资产负债表日将持有期间的发生额按照此公允价逐步体现为报表损益（最终的结果），账面损益与公允损益的差额做损益调整。&#xA;权益法下甲公司的投资收益＝9350×70％＝6545(万元)&#xA;少数股东损益＝9350×30％＝2805(万元)&#xA;【注：若是成本法，则直接用统一会计政策下的账面净利润，不必再作调整】&#xA;权益法下甲公司长股投年末余额＝29500（购买日账面价值）&#xA;+6545（子公司公允净利润*70%）&#xA;-4500(子公司分派股利)×70％&#xA;＝32895(万元) 少数股东权益的年末余额＝10800（购买日公允净资产*30%）&#xA;+2805（子公司公允净利润*30%）&#xA;-4500(子公司分派股利)×30％&#xA;＝12255(万元) 2.</description>
+    </item>
+    <item>
+      <title>合并报表抵消分录原理通俗解读系列（二）之长投权益抵消</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+      <description>从上篇文章《合并报表抵消分录原理通俗解读系列（一）内部交易抵消》我们知道，合并报表的抵消分录至少包括三个部分，分别是长投权益抵消、内部往来抵消、内部交易抵消，今天我们继续讨论长投权益的抵消原理。&#xA;一、长期股权投资与所有者权益的恩怨情仇（合并日）# 小伙伴们都知道，长期股权投资是投资方账上核算的会计科目，站在投资方角度，它代表的是投资方的投资资产。&#xA;如果我们换个角度，站到被投资方来看，这个长期股权投资其实核算的被投资方净资产在投资方所占的份额。&#xA;那站到集团角度呢？假如投资方与被投资方是母子公司关系，那么母公司的长期股权投资与子公司的净资产即所有者权益其实都是虚的，这是因为两个公司分别站在各自主体角度进行的会计处理，在集团合并层面不应存在，所以就要进行合并抵消处理。这样说起来有些空洞，下面我们来举例说明下。&#xA;举个栗子：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司当期出资100万元成立的全资子公司（即100%控股）。A、B公司当期未发生其他经济业务。&#xA;1、站到母公司A的角度，其账务处理如下&#xA;借：长期股权投资100&#xA;贷：银行存款 100&#xA;2、站到子公司B的角度，其账务处理如下&#xA;借：银行存款 100&#xA;贷：实收资本 100&#xA;3、站到集团的角度，其合并抵消分录如下&#xA;借：实收资本 100&#xA;贷：长期股权投资 100&#xA;对于上述1、2角度所作的分录，小伙伴们应该都能理解，那么第3笔分录抵消原理是什么？为什么要做这笔抵消分录呢？&#xA;从审计实务出发，有过审计实务经验的小伙伴都清楚，在做合并抵消分录前，我们需要将母公司A和子公司B各自的单体报表过到合并底稿中进行简单加总，即对1、2分录简单合并如下：&#xA;借：长期股权投资100&#xA;贷：实收资本 100&#xA;站在集团合并层面，银行存款100万元已自动抵消掉，其实很好理解，这部分资金在集团看来不过是从自己的A公司拿到B公司而已，钱没多没少，所以银行存款要抵消掉，这事毫无争议。&#xA;那么这笔简单合并分录中，母公司A有一项资产长投100万元，子公司B有一项权益100万元，如果不进行抵消，那么在集团看来，有一笔资产100万，有一笔权益100万。这是真的吗？&#xA;在投资者看来，这其实不是真的。因为集团内部根本没有发生实质性的经济业务，只是发生了一起合并事项，这样就导致集团增加一项资产和权益。如果这能得到承认，那么所有的公司一旦资产不足，可以通过合并的方式将资产不断虚增，最后企业的合并报表根本没法看了，已经严重扭曲了其真实性。&#xA;所以，我们需要将这部分进行合并抵消处理，以便客观真实的反应集团的资产和权益。&#xA;二、合并日后合并抵消分录如何处理？# 第一部分我们从合并日当天合并双方的会计处理来分析了合并抵消的实质，那么在合并日以后继续发生交易时，合并账务又该如何处理呢？&#xA;实际上，只有合并日当天，子公司的所有者权益、母公司的长期股权投资、少数股东权益才能全部抵消干净；在合并日以后，子公司实现的利润、其他资本公积、其他综合收益的增加，严格来讲都没有抵消掉。为什么会这样子呢？我们再继续讨论下合并日后合并抵消分录的账务处理。&#xA;如果我们接上面的例子继续深化下：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司当期出资100万元成立的全资子公司（即100%控股）。在合并当天至当期期末子公司发生净利润20万元，不考虑其他经济业务。&#xA;（一）简单粗暴，直接硬抵消# 1、站到母公司A的角度，其账务处理如下# 借：长期股权投资 100&#xA;贷：银行存款 100（合并日当天）&#xA;借：长期股权投资 0&#xA;贷：投资收益 0（子公司实现净利润&#xA;-成本法下不涉及此分录，除非权益法）&#xA;注：母公司实现控制后，账面按照成本法进行核算，即子公司发生的损益，对母公司的长投账面不产生影响，母公司的长投账面价值一直都是100万元。&#xA;2、站到子公司B的角度，其账务处理如下# 借：银行存款 100&#xA;贷：实收资本 100（合并日当天）&#xA;借：损益类科目 20&#xA;贷：未分配利润 20（子公司B实现净利润）&#xA;注：子公司由于形成净利润，故所有者权益此时共100+20=120万元。&#xA;3、站到集团的角度，其合并抵消分录如下# 借：实收资本 100&#xA;未分配利润-年末 20（子公司实现净利润） 贷：长期股权投资 100（合并日当天）&#xA;此时我们发现合并层面的抵消分录借贷方不平，根本没法抵消。这时理论上要求我们转换成权益法下的会计分录，再考虑抵消的问题。其实权益法下主要影响的是母公司的账务处理，那么我们需要将上述分录重新做一遍。&#xA;（二）迂回战术，改为权益法再抵消# 1、站到母公司A的角度，其账务处理如下# 借：长期股权投资 100&#xA;贷：银行存款 100（合并日当天）&#xA;借：长期股权投资 20</description>
     </item>
     <item>
       <title>合并报表抵消分录原理通俗解读系列（六） 之从长期股权投资税会处理差异讲起</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
-      <description>阅读提示：从第（六）篇开始的系列文章，小编将带领小伙伴回溯到合并报表的源头-长期股权投资，并从会计、审计和税务角度进行实务解读,某些观点可能会刷新一些财务或审计</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%85%AD-%E4%B9%8B%E4%BB%8E%E9%95%BF%E6%9C%9F%E8%82%A1%E6%9D%83%E6%8A%95%E8%B5%84%E7%A8%8E%E4%BC%9A%E5%A4%84%E7%90%86%E5%B7%AE%E5%BC%82%E8%AE%B2%E8%B5%B7/</guid>
+      <description>阅读提示：从第（六）篇开始的系列文章，小编将带领小伙伴回溯到合并报表的源头-长期股权投资，并从会计、审计和税务角度进行实务解读,某些观点可能会刷新一些财务或审计人员的认知，解读部分的内容小编按照楷体书写(建议从电脑端打开)，已经理解的小伙伴可以直接略过，不影响您的正常阅读。&#xA;通过前面《合并报表抵消分录原理通俗解读系列（一）~（五）》系列文章对合并报表抵消分录的学习与铺垫，小编打算回溯控股合并的源头-长期股权投资，由简入繁，慢慢将案例加深难度，让小伙伴们真正理解和掌握合并抵消分录的精髓。&#xA;一、前言# 所谓基础不牢，地动山摇。今天小编先带领小伙伴们倒回去重新理解下长期股权投资账务处理的实质。当然，小编将从会计、审计和税务角度进行讲解——一个站在企业内部视角，一个是站在企业外部视角。&#xA;为什么要这样子费劲来讲呢？所谓横看成岭侧成峰，远近高低各不同。不管是从事企业财务的小伙伴或是在事务所做审计的小朋友，还是刚刚从事税审工作的小白，各自站的角度不一样，对业务处理的理解也就不一样。小编今天打破常规，尝试从不同角度对长期股权投资进行接地气的通俗解读，让小伙伴们真正理解到长投与合并报表的实质。&#xA;注意：由于长投知识繁杂，小编今天这篇文章先从财务角度以总结对比的方式带小伙伴们重温一下长股投的基础知识，从而为后面不断深入的系列文章做好铺垫。&#xA;二、从长投的税会处理差异来看合并报表的抵消实质# 回归到企业单体报表，站在单个企业主体角度，企业当期取得长投，小伙伴们下意识第一反应是啥？没错，是分类——控制or非控制，同一控制or非同一控制。其实是三种情况：同控合并形成长投、非同控合并形成长投和非合并形成长投。&#xA;（一）长股投的账务处理原则# 长投知识点太过庞杂，小编计划用2个表格和8组概念来总结下这三种情况下账务处理的要诀：&#xA;（一）计量方法# 此表涉及几组概念的辨析：&#xA;1、第一组-初始计量VS后续计量&#xA;*初始计量：取得一项资产时确认记录的方法&#xA;*后续计量：取得该项资产后记录它后续发生变化直到到消失的过程&#xA;2、第二组-同控合并VS非同控合并&#xA;*同控合并：集团内合并，合并前后均受同一控制&#xA;*非同控合并：集团外合并，合并前非关联关系&#xA;3、第三组-初始计量方法：权益结合法VS购买法&#xA;*权益结合法：不属于交易，作价不公允，相当于你的钱从左口袋移到右口袋，本质是资产、负债的内部转移，按账面价值并账并表，不产生损益&#xA;*购买法：属于交易，作价公允，以市价为基础，相当于从集团外买来的，采用市场认可的公允价值计量，按公允价值并账并表，会产生损益&#xA;4、第四组-后续计量方法：成本法VS权益法&#xA;*成本法：对于形成控股合并的企业而言，只有被投资公司支付股利时才确认投资收益&#xA;*权益法：对于不形成控股合并的企业而言，只要被投资公司实现利润就要投资收益&#xA;（二）初始确认# 此表涉及几组概念的辨析：&#xA;5、第五组-合并日VS购买日&#xA;*合并日：同控合并形成控制的那一天，需按照合并方会计政策对被合并方净资产的账面价值进行调整，权益结合法-账面价值并账并表；&#xA;*购买日：非同控合并形成控制的那一天，购买法-公允价值并账并表&#xA;实质判断-购买方实际取得控制权的日期，形式判断-以法律手续办妥日或款项结算日&#xA;6、第六组-初始投资成本&#xA;*同控合并初始投资成本=合并当日被合并方账面净资产[会计政策调整一致后-合并方视角]*投资股份份额%=被合并方在最终控制方合并报表中账面价值份额+最终控制方收购被合并方当时形成的商誉[站在最终控制方角度-老大视角]（注：此处为“旧商誉”，同控合并不形成新商誉）&#xA;*非同控合并初始投资成本=购买方付出对价的公允价值=支付价款/付出资产的含税公允价值+发行权益证券的公允价值+发生/承担负债的公允价值（注：此处多支付公允价值即为形成的新商誉）&#xA;7、第七组-投资份额比对：调权益VS调损益&#xA;*同控合并份额比对调权益=合并方付出对价账面价值-被合并方账面净资产份额，依次调整“资本公积（资本溢价/股本溢价）-&amp;gt;盈余公积-&amp;gt;未分配利润”&#xA;*非同控合并份额比对调损益=购买方付出对价公允价值-被审计单位的可辨认净资产公允价值份额,正数则作商誉，已计入长投，不再调整；负数则同时增加长投成本和营业外收入[长投成本谁大跟谁]&#xA;8、第八组-支付对价差额：账面转移0VS 处置损益&#xA;*同控合并支付对价差额：付出对价资产按账面转移，不涉及损益&#xA;*非同控合并支付对价差额：&#xA;①营业外收支：固定/无形资产投资，相当于处置资产公允-账面差额&#xA;②投资收益：长股投/金融资产，相当于处置资产公允-账面差额&#xA;③其他业务收入：投资性房地产，公允进收入，账面转成本&#xA;④主营业务收入：存货，公允进收入，账面转成本&#xA;通过上面2个表格和8组概念的讲解，小伙伴们应该对长股投有了初步的理解和认识，下面小编先从财务/审计角度对其中一些处理方法的原理进行进一步探讨，希望能加深小伙伴们对长投更深入的认识。&#xA;（二）长股投不同处理方式的原理解读# 1、在初始计量方法中，为何要区分权益结合法和购买法？二者不同处理方式的原理是什么？&#xA;权益结合法的经济实质是合并企业与被合并企业之间股东权益的整合，仅针对同控合并形成的长投而言，是一项不存在购买性质的交易；采用权益结合法进行会计处理的前提是，企业合并各方的所有股东联合起来控制全部的净资产，共担风险、共享收益，体现的是一种联合行为。&#xA;所以，权益结合法下在企业单体报表中看来，合并双方经会计政策调整后的账面净资产的差异类似于集团内部单项资产的评估增值或减值，此时影响的权益调整——“资本公积-资本/股本溢价”-“盈余公积”-“未分配利润”。&#xA;购买法即合并企业购买被合并企业净资产的一种资产交易行为，针对的是非同控合并及非合并形成的长投，并且该交易与从外界直接购入的机器设备、存货等资产没有区别；采用购买法进行会计处理的前提是，合并企业通过购买方式取得对经济资源的控制权，而被合并方丧失对企业的经营管理决策权，体现的是一种交易行为。&#xA;所以，购买法下在企业单体报表中看来，购买方付出的对价多(即付出对价公允价值&amp;gt;被购买单位净资产公允价值份额)，体现为被投资单位的企业整体价值的增值-商誉；反之，则体现为购买方白捡了个大便宜，花小钱买来大宝贝，少花的钱就是一项营业外收入。&#xA;2、在后续计量方法中，为何要区分成本法和权益法？二者不同处理方式的原理是什么？&#xA;投资企业对被投资方进行投资而购买其发行的股票，就会成为被投资方的股东，从而占有被投资方权益份额。所谓的后续计量问题是合并方投资后，如果被投资方的所有者权益发生变动（比如被投资方实现盈亏、分配现金股利、实现其他综合收益等），作为投资方来讲，其用长股投核算体现的占有被投资方所有者权益部分该如何处理呢？&#xA;无非分为两种情况，即你动我不动和你动我也动。&#xA;你动我不动——成本法核心，即投资方仅按照初始投资成本来核算长期股权投资，不会随被投资方而变动。非合并形成的长投采用此法——重大影响/共同控制。&#xA;你动我也动——权益法核心，即投资方的长期股权投资的价值随被投资方所有者权益的变动而变动。控股合并形成的长投采用此法——同控合并/非同控合并。&#xA;那么为何又要区分这两种方法呢？&#xA;看过之前文章的小伙伴们已经知道，在做合并报表抵消分录时，原始做法就有一笔“成本法转权益法”调整后再做抵消，小编也介绍了一种利用成本法直接抵消的做法——二者殊途同归，最终只承认被投资单位累计实现的净利润。也就是说，在编制合并报表时，不管是成本法直接抵消还是转权益法后再抵消，最终都不影响合并报表的结果。所以，单从这方面看来，这样的区分意义不大。&#xA;在备考CPA时，有些小伙伴可能听老师讲过：之所以这样做，原理就在于控股合并在年末时会编制合并报表，这是最完美的“权益法”报表，所以平时就可以简化处理；同时由于重大影响和共同控制情况下，年末不编制合并报表，那平时就必须很精准。这种说法给我们传递出这样一种信息，即权益法才是最终被集团合并报表所认可的，成本法核算只是暂时的。&#xA;我们可以再深入思考一点，为什么会这样呢？&#xA;①成本法不合适-母公司易操作利润&#xA;由于成本法需要根据子公司宣告分配股利才能做投资收益处理，母公司可以通过对子公司实施控制，根据自身的现金或利润状况，决定子公司股利分配的时机，从而以自己喜好的收益水平来报告收益。比如母公司可以要求子公司只在母公司自己的经营发生亏损或萧条的年份支付股利。所以，如果采用成本法编制合并报表，母公司容易操纵利润。&#xA;②权益法更合理-控制体现权益&#xA;从理论上来说，股权被认为是代表股东应享有或分担的被投资单位的利益或损失，由于控制体现了真正的权益，当被控制方权益发生变动（如实现净利润），投资方控制的权益也应发生变动（即增加长投和投资收益，后续转损益进而影响留存收益）,所以理论上确实应该用权益法比较合理。&#xA;所以，综上两点，合并报表最终是按照权益法编制的。&#xA;③成本法简便易行-适合母公司单体&#xA;首先，对母公司来说，既然通过股权投资控制了子公司，当对外提供财务信息时，应当提供合并报表而非个别报表。在合并财务报表中按照权益法核算，体现了对子公司投资计价的权益基础。平时为了简化核算，在个别报表中可以不再采用权益法计价。&#xA;其次，由于子公司受母公司“控制”，平时采用成本法核算对子公司的股权投资，当母公司想通过此项投资增加其报表利润时，就必须让子公司宣告分配现金股利。这样按成本法能提高投资方所确认的投资收益的质量，使投资方的业绩更加真实。</description>
+    </item>
+    <item>
+      <title>合并报表抵消分录原理通俗解读系列（三）之长投权益抵消</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%89%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+      <description>有些小伙伴反馈《合并报表抵消分录原理通俗解读系列（二）之长投权益抵消》案例有些地方还是比较模糊，小编将上篇推送文章又进行了更加细致的修改，放到今日文章推送的第二篇，有需要的小伙伴可以自行查阅。&#xA;在上篇文章《合并报表抵消分录原理通俗解读系列（二）长投权益抵消》的末尾，我们了解到，不管用成本法直接抵消还是转权益法调整后再抵消，子公司实现净利润未分配的部分最终都无法抵消，既然这样，我们可否利用成本法直接抵消，而不必先转为权益法再进行抵消这种多此一举的方式进行呢？今天我们将继续讨论长投权益的抵消原理。&#xA;一、长投权益抵消究竟抵消的是什么？# 在上篇文章中，小伙伴们已经知道了，长期股权投资实际是投资方账上核算的被投资方净资产的份额，在合并层面看来母公司的长期股权投资与子公司的所有者权益都是虚的，为反应资产的真实性，所以我们要将二者进行抵消，即资产余额的抵消。&#xA;有的小伙伴可能会问，这个只是长投权益抵消分录其中之一，还涉及损益的抵消，这又该如何理解呢？长投权益的抵消共包括两个部分，小编将其分为“余额的抵消”和“发生额的抵消”。&#xA;“余额的抵消”就是指母公司的长期股权投资与子公司的所有者权益的抵消，是为了在合并层面还原资产的真实性才做的抵消。&#xA;“发生额的抵消”就是指损益的抵消，即母公司的投资收益与子公司的利润分配项目的抵消，目的在于在合并层面还原利润的真实性才做的抵消。&#xA;口说无凭，下面我们还是用上篇文章中的例子说明下。&#xA;举个栗子：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司当期出资100万元成立的全资子公司（即100%控股）。A、B公司在合并当天至当期期末子公司发生净利润20万元，提取盈余公积2万元，子公司宣告分配10万股利，剩余未分配利润8万元，不考虑其他经济业务。&#xA;1、母公司成本法账务处理分录# 借：长期股权投资 100&#xA;贷：银行存款 100（合并日当天）&#xA;借：应收股利 10&#xA;贷：投资收益 10&#xA;2、子公司账务处理分录# 借：银行存款 100&#xA;贷：实收资本 100（合并日当天）&#xA;借：损益类科目 20（子公司内部结转平）&#xA;贷：未分配利润-年末20（实现净利润）&#xA;借：未分配利润-提取盈余公积 2&#xA;-应付普通股股利 10 贷：盈余公积 2&#xA;应付股利 10&#xA;3、将母子公司分录直接合并后# ①借：长期股权投资 100&#xA;贷：实收资本 100（合并日当天）&#xA;②借：应收股利 10&#xA;贷：应付股利 10（子公司分配净利润）&#xA;③贷：投资收益 10（母公司收到股利分配）&#xA;④贷：盈余公积 2&#xA;⑤贷：未分配利润-年末 8（实现净利润未分配部分）&#xA;站在集团角度，针对直接合并的第①笔（权益抵消）和第②笔分录（往来抵消），我们直接做相反的会计分录，属于资产余额的抵消，此处不再赘述，详情可查看合并抵消系列（二）权益的抵消文章；针对第③-⑤笔就是这篇文章讲的损益的抵消了，做相反分录如下：&#xA;借：实收资本 100&#xA;盈余公积 2&#xA;投资收益 10&#xA;年初未分配利润 0&#xA;贷：长期股权投资 100&#xA;提取盈余公积 2&#xA;应付普通股股利 10 此时，这笔合并抵消已经平了。这里有几个问题需要澄清说明下：&#xA;（1）有些小伙伴可能发现第⑤笔分录没有涉及在合并抵消中，其实这就是我们上篇文章中讲到的合并抵消的实质：最终不管用成本法直接抵消还是转权益法调整后再抵消，子公司实现净利润未分配的部分最终都无法抵消。# （2）提取盈余公积和应付普通股股利是如何出现的呢？这两个科目其实是子公司未分配利润的二级科目，分别等于本期子公司提取的盈余公积和子公司本期分配的利润。这两个报销项目的出现其实是将盈余公积替换为“未分配利润-提取盈余公积”体现，将投资收益替换为“未分配利润-应付普通股股利”体现。# 这样合并抵消后所剩的分录还有啥呢？我们发现剩下的其实就是：&#xA;贷：未分配利润-年末 8</description>
     </item>
     <item>
       <title>合并报表抵消分录原理通俗解读系列（四）之长投权益抵消</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
-      <description>阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直接忽略，不影响您的正</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E5%9B%9B%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+      <description>阅读提示：这篇文章对合并抵消分录原理的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，审计实务界的大佬们可以直接忽略，不影响您的正常阅读。&#xA;在上篇文章《合并报表抵消分录原理通俗解读系列（三）长投权益抵消》中，我们了解到，不管用成本法直接抵消还是转权益法调整后再抵消，子公司实现净利润未分配的部分最终都无法抵消。这样在审计实务中，小伙伴们完全可以利用成本法直接抵消，而不必先转为权益法后再进行抵消，方便简洁了许多。但是有些小伙伴问道，按照成本法做出合并抵消分录后，我们又该如何佐证其正确性呢？&#xA;今天我们将继续讨论长投权益的抵消原理，并从实务角度来佐证数据的准确性。&#xA;一、长投权益抵消分录完成后如何佐证其准确性？# 在上篇文章中，我们知道了长投权益的抵消共包括两个部分，即“余额的抵消”和“发生额的抵消”。&#xA;“余额的抵消”就是指母公司的长期股权投资与子公司的所有者权益的抵消，是为了在合并层面还原资产的真实性才做的抵消。&#xA;“发生额的抵消”就是指损益的抵消，即母公司的投资收益与子公司的利润分配项目的抵消，目的在于在合并层面还原利润的真实性才做的抵消。&#xA;按照成本法做出合并抵消分录后，我们又该如何佐证其正确性呢？小编还是拿之前的案例进行举例说明。&#xA;举个栗子：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司当期出资100万元成立的全资子公司（即100%控股）。A、B公司在合并当天至当期期末子公司发生净利润20万元，提取盈余公积2万元，子公司宣告分配10万股利，剩余未分配利润8万元，不考虑其他经济业务。&#xA;按照成本法直接做抵消分录如下：&#xA;借：实收资本 100（子公司账面数据）&#xA;盈余公积 2（子公司账面数据）&#xA;投资收益 10（母公司账面数据）&#xA;年初未分配利润 0（数据来源于上期“未分配利润-年末”）&#xA;贷：长期股权投资 100（母公司账面数据）&#xA;提取盈余公积 2（子公司账面数据）&#xA;应付普通股股利 10（子公司账面数据）&#xA;以上就是我们上篇文章介绍的成本法直接做的抵消分录，那么这笔抵消分录到底对不对呢？如果按照上篇文章的思路，再按照权益法调整后进行验证岂不是又回到了最初的做法，这肯定不是我们审计实务中所希望的结果。那么我们又该如何进行数据佐证呢？&#xA;我们还是回归到合并报表的原始编制分录来理解下，回到母子公司所做的会计分录上：&#xA;1、母公司成本法账务处理分录# (1)借：长期股权投资 100&#xA;贷：银行存款 100（合并日当天）&#xA;(2)借：应收股利 10&#xA;贷：投资收益 10（宣告分配股利）&#xA;2、子公司账务处理分录# (3)借：银行存款 100&#xA;贷：实收资本 100（合并日当天）&#xA;(4)借：损益类科目 20（子公司内部结转平）&#xA;贷：未分配利润-年末20（实现净利润）&#xA;(5)借：未分配利润-提取盈余公积 2&#xA;-应付普通股股利 10 贷：盈余公积 2（提供盈余公积）&#xA;应付股利 10（宣告分配股利）&#xA;3、将母子公司分录直接合并后# ①借：长期股权投资 100&#xA;贷：实收资本 100（合并日当天）&#xA;②借：应收股利 10&#xA;贷：应付股利 10（子公司宣告分配净利润）&#xA;③贷：投资收益 10（母公司收到股利分配）&#xA;④贷：盈余公积 2（子公司提取盈余公积）&#xA;⑤贷：未分配利润-年末 8（实现净利润未分配部分）&#xA;我们来分析下直接合并后的结果，站在集团角度，我们直接做相反的会计分录：&#xA;（1）针对直接合并的第①笔做权益抵消，还原真实的投资资产价值；&#xA;（2）第②笔分录做往来抵消，属于资产余额的抵消；&#xA;（3）第③笔做损益的抵消即母公司投资收益与子公司分配股利的抵消，这笔分录实质是将母公司的投资收益科目抵消，还原为未分配利润的二级科目中来体现，不影响合并报表数据；</description>
     </item>
     <item>
-      <title>商誉这点事儿</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%95%86%E8%AA%89%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/</link>
+      <title>合并报表抵消分录原理通俗解读系列（五）之长投权益抵消</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%95%86%E8%AA%89%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/</guid>
-      <description>一、明白商誉这点事 商誉的金额等于并购方付出的对价-所享有被并购方净资产公允价值的份额，这个差额就是商誉。在个报层面上，商誉体现在长期股权投资的初始投资成本中，即</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%BA%94%E4%B9%8B%E9%95%BF%E6%8A%95%E6%9D%83%E7%9B%8A%E6%8A%B5%E6%B6%88/</guid>
+      <description>阅读提示：这篇文章对合并抵消分录的实务解读可能有些颠覆一些财务或审计人员的认知，解读部分的内容小编按照楷体书写，已经理解的小伙伴可以直接略过，不影响您的正常阅读。&#xA;上篇文章《合并报表抵消分录原理通俗解读系列（四）长投权益抵消》中，我们按照成本法做出合并抵消分录后，又通过案例佐证了准确性，初步明白了合并抵消原理的实质。有小伙伴在后台留言，问到案例中未涉及资本公积、其他综合收益等权益科目，那么这些项目在合并报表抵消分录时又再扮演什么样的角色呢？&#xA;今天小编拿注会教材案例进一步解读，从实务角度继续讨论长投权益的抵消原理。&#xA;一、长投权益抵消分录的实质案例再解读# 在上篇文章中，我们知道了长投权益的抵消共包括两个部分，即“余额的抵消”和“发生额的抵消”。&#xA;“余额的抵消”就是指母公司的长期股权投资与子公司的所有者权益的抵消，是为了在合并层面还原资产的真实性才做的抵消。&#xA;“发生额的抵消”就是指损益的抵消，即母公司的投资收益与子公司的利润分配项目的抵消，目的在于在合并层面还原利润的真实性才做的抵消。&#xA;按照成本法做出合并抵消分录后，我们也利用公式佐证了正确性。今天小编拿注会教材案例进行再次验证。&#xA;注会教材案例-【同一控制下企业合并】：&#xA;【例27-14】甲公司20×2年1月1日以28600万元的价格取得A公司80%的股，使其成为子公司。甲公司与A公司均为同一控制下的企业，且均为非金融企业。A公司采用的会计政策与甲公司一致。由于A公司与甲公司均为同一控制下的企业，按同一控制下企业合并的规定进行处理。A公司净资产的公允价值为35000万元。甲公司在购买A公司过程中发生审计、法律服务等相关费用120万元。上述价款均以银行存款支付。&#xA;A公司20×2年1月1日资产负债表，A公司股东权益总额为32000万元，其中，股本为20000万元，资本公积为8000万元，盈余公积为1200万元，未分配利润为2800万元，合并后，甲公司在A公司股东权益中所拥有的份额为25600万元。&#xA;A公司20×2年12月31日，股东权益总额38000万元，其中，股本20000万元，经公司董事会提议并经股东会批准，20×2年提取盈余公积2000万元，向股东分配宣告分派现金股利4500万元。&#xA;本例中，A公司当年实现净利润10500万元，经公司董事会提议并经股东会批准，20×2年提取盈余公积2000万元，向股东宣告分派现金股利4500万元。甲公司对A公司长期股权投资取得时的账面价值为25600万元，20×2年12月31日仍为25600万元，甲公司当年确认投资收益3600万元。&#xA;编制合并日合并资产负债表时，假定不考虑留存收益恢复因素（注意：留存收益恢复问题后续文章会进一步解读）。则按照上篇文章所讲的成本法直接做抵消分录如下：&#xA;1、合并日抵消分录：# 借：实收资本 20000（子公司账面数据）&#xA;盈余公积 1200（子公司账面数据）&#xA;资本公积 8000（子公司账面数据）&#xA;未分配利润-年末 2800（子公司账面数据）&#xA;投资收益 0（母公司账面数据）&#xA;年初未分配利润 0（数据来源于上期“未分配利润-年末”）&#xA;贷：长期股权投资 25600（母公司账面数据）&#xA;资本公积 3000（母公司账面权益，不参与抵消） 少数股东权益 6400（子公司账面权益32000*[1-80%]） 提取盈余公积 0（子公司账面数据-非当期发生）&#xA;应付普通股股利 0（子公司账面数据-非当期发生）&#xA;此时合并抵消分录已经平了，可能有些小伙伴们已经发现了，这笔抵消分录多出两笔以前文章中未提到的两个科目，那这两笔分录究竟是不是该抵消掉呢？答案是肯定的，不做进去，抵消分录根本不平嘛。但是，我们需要理解其原理，不仅知其然，也要知其所以然。小编带领小伙伴们还是回归到合并抵消的本质来分析下：&#xA;注会教材案例背景下，该笔未分配利润是否应该抵消？为何必须要抵消呢？我们还是回到母子公司单体所作的会计分录来进行分析：&#xA;1、母公司合并当日# 借：长期股权投资 25600（子公司账面净资产*份额）&#xA;资本公积-股本溢价 3000（倒挤差额） 贷：银行存款 28600（母公司支付账面对价）&#xA;借：管理费用 120（中介费用）&#xA;贷：银行存款 120&#xA;小伙伴们有没有发现，按照同一合并下取得长期股权投资在初始计量时采用“权益结合法”进行处理的原则，母公司单体在做账务处理时已按照子公司的账面净资产的份额列示到长期股权投资中了。站在集团角度来看，母公司列示的长股投和子公司列示的净资产存在资产虚增部分，所以必须要将此部分进行抵消掉。这就是我们前面所讲的“余额的抵消”，目的在于还原资产的真实性。具体数据验证如下：&#xA;（注意：关于长股投权益结合法和购买法的账务处理原理实务解读，可参考今天推送的第二篇文章《合并报表抵消分录原理通俗解读系列（六）之从长期股权投资税会处理差异讲起》）&#xA;母公司长期股权投资数25600&#xA;=子公司账面净资产32000*持股份额80%&#xA;=（股本为20000+资本公积为8000+盈余公积为120+未分配利润2800）*80%&#xA;少数股东权益数6400&#xA;=子公司账面净资产32000*持股份额20%&#xA;=（股本为20000+资本公积为8000+盈余公积为120+未分配利润2800）*20%&#xA;在合并日母公司付出的对价中是否包括子公司的资本公积和未分配利润数呢？&#xA;这个问题的答案取决于母公司单体在合并日所作的会计分录或报表项目中是否有包括这两笔金额。怎么理解呢？我们一一来分析。&#xA;注意：对于未分配利润的合并抵消问题，小编这里再啰嗦几句，给存在疑惑的小朋友做下解读：在上篇文章中，小伙伴们都理解了，子公司实现的净利润在合并层面是得到认可的，如果按照上述需要做进合并抵消分录的做法，那岂不是和之前的结论矛盾了？&#xA;其实是不矛盾的。&#xA;首先，“子公司实现的净利润在合并层面是得到认可的”这句话的真正理解应当是“子公司合并日后实现的累积净利润在合并层面是得到认可的”。以前文章所举的案例中，我们假设母公司新投资成立子公司，在合并日那天子公司压根没有利润，所以也就不存在这笔未分配利润的抵消了。&#xA;其次，注会教材的这个案例不是从新投资设立子公司讲起，而是在被合并单位经营期间实施合并事项，与我们以前文章的案例背景不一样，所以要重新进行分析理解。&#xA;2、资产负债表日抵消分录：# 借：实收资本 20000（子公司账面数据）&#xA;资本公积 8000（子公司账面数据）&#xA;盈余公积 3200（子公司账面数据=1200+2000）</description>
     </item>
     <item>
-      <title>现金流量表附表编制原理解析（一）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E7%BC%96%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%80/</link>
+      <title>合并报表抵消分录原理通俗解读系列（一）内部交易抵消</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E7%BC%96%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%80/</guid>
-      <description>今天推文写一下现金流量附表，主要从以下三个方面进行沟通： 1、 现金流量附表概述 2、 现金流量附表结构 3、 现金流量附表编制方法 针对于现金流量表附表的推文，计划发两篇，</description>
-    </item>
-    <item>
-      <title>现金流量表附表编制原理解析（三）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%89/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%89/</guid>
-      <description>现金流量附表的编制方法—具体案例分析 一、不属于经营活动的投资、筹资损益（四大损益） （1）处置固定资产、无形资产和其他长期资产的损失（收益以”-”号填列） （2）固</description>
-    </item>
-    <item>
-      <title>现金流量表附表编制原理解析（二）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E6%8C%87%E5%AE%9A%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E4%BA%8C/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E6%8C%87%E5%AE%9A%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E4%BA%8C/</guid>
-      <description>现金流量附表可以在录入凭证的时候指定，也可以根据科目余额、发生额分析填列，那在录入凭证时什么类型的凭证需要指定附表项目? 这里对需要指定附表项目的情况做了一下总结</description>
-    </item>
-    <item>
-      <title>现金流量附表原理解析（四）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/</guid>
-      <description>今天主要整理一下现金流量附表中每一个项目的取数逻辑。 1、净利润 该项目根据利润表净利润数填列，与利润表的净利润数据一致。 2、资产减值准备 本期计提的各项资产减值准备</description>
-    </item>
-    <item>
-      <title>间接法编制现金流量表（一）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%80/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%80/</guid>
-      <description>企业财务人员编制现金流时，大部分是通过erp软件，在录入凭证时，通过指定现金流量项目，然后出具现金流量表，这个工作在录入凭证的过程中完成的，这就需要财务人员对经</description>
-    </item>
-    <item>
-      <title>间接法编制现金流量表（一）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%89/</link>
-      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%89/</guid>
-      <description>企业在生产经营过程中，支出主要包括材料、人工、费用。从现金流角度上，人工主要体现为支付给职工以及为职工支付的现金。支付给职工以及为职工支付的现金，能如实反映本期</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%90%88%E5%B9%B6%E6%8A%A5%E8%A1%A8%E6%8A%B5%E6%B6%88%E5%88%86%E5%BD%95%E5%8E%9F%E7%90%86%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB%E7%B3%BB%E5%88%97%E4%B8%80%E5%86%85%E9%83%A8%E4%BA%A4%E6%98%93%E6%8A%B5%E6%B6%88/</guid>
+      <description>合并报表的抵消分录至少包括三个部分，分别是长投和权益的抵消，内部往来的抵消，内部交易的抵消，小编后续会出合并抵消原理的系列专题，分别从长投权益抵消、内部往来抵消、内部交易抵消进行解读，今天我们先讨论内部交易的抵消原理。 首先明确一点，内部交易分为顺流交易和逆流交易，其原理一样，只不过逆流交易多出一笔少数股东的会计处理。下面我们先从顺流交易讲起。 举个栗子：假设A公司与B公司是母子关系，A公司系B公司的母公司，B公司系A公司的全资子公司。A公司本期单体利润表的营业收入100万元，系向B公司销售产品取得的销售收入，该批产品的销售成本为80万元，A公司销售毛利率20%。B公司购进该批商品财务入账100万元，同事在本期将该批购进商品的60%实现销售，其销售收入为78万元，结转销售成本为60万元，B公司销售毛利率为30%，列示于B公司的单体利润表中；剩余的该批商品40%则形成B公司的期末存货40万元，列示于B公司的单体资产负债表中。&#xA;一、审计理论中合并抵消分录如何处理？# 在编制合并财务报表时，其抵消处理如下： 借：营业收入100 贷：营业成本 92 存货 8 为方便理解合并抵消原理，我们需要把母子公司双方的分录写出来：&#xA;1、母公司的销售处理# ①借：银行存款100 贷：营业收入100 ——此笔系母公司确认收入分录&#xA;②借：营业成本80 贷：库存商品80 ——此笔系母公司结转成本分录&#xA;2、子公司的采购处理# ③借：库存商品100 贷：银行存款100&#xA;3、子公司在销售的时候# ④借：银行存款78 贷：营业收入78 ——此笔系子公司确认收入分录 ⑤借：营业成本60 贷：库存商品60 ——此笔系子公司结转成本分录&#xA;对于上述的内部交易分录，我们按照常规理解方式来写抵消分录： 1、针对第①笔母公司销售收入的确认，站在合并层面，母公司不能确认收入，所以应该抵消营业收入100万元，即借记营业收入100万元（母公司）； 2、针对第②笔母公司销售成本的结转，站在合并层面，母公司应该结转成本为80*60%=48万元，而母公司结转了80万元(第②笔)，子公司结转了60(第⑤笔)，所以在合并报表中应该冲减营业成本=80+60-48=92万元，即借记营业成本92万元（母公司）; 3、同理，存货作为营业成本的对方科目，也应当结转48万元的存货，即剩余的存货金额为80-48=32万元，所以在合并报表中应该继续确认存货=48-（80+60-100）=8万元，即贷记存货8万元（子公司） 。 这就是上面那笔合并抵消分录的由来，大多数小伙伴应该都是这样理解的。&#xA;二、审计实务中合并抵消分录如何处理？# 在审计实务中我们根本不需要这么麻烦的计算，而且上述举例仅是针对一笔销售。实务中往往存在很多笔销售业务，那又该如何处理呢？ 审计实务中我们就要采用另一种方法，母公司确认收入100万元，结转成本80万元，所以母公司的销售毛利率是20%（[100-80]/100）;子公司的存货还剩下40万元（100-60）,对应的存货中隐含的毛利=4020%=8万元，所以存货应抵消8万元。 在审计实务抵消时，就是看母子公司之间的毛利率计算去抵消存货，营业成本进行倒挤，分录如下： 借：营业收入100 （母公司内部交易确认的销售收入） 贷：营业成本 92 （倒挤成本=100-8=92万元） 存货 8 （计算隐含毛利=100（1-60%）*20%=8万元）&#xA;三、审计实务中合并抵消分录如何理解其原理？# 我们通过比对以上方法可以发现，审计实务中处理方法简单、实用、高效，但是这样会计处理的原理是什么？我们又该如何理解呢？虽然在审计实务中很多项目经理、审计师都在用，但很少有人告诉你这样做的原理是什么。下面小编敢为人先，让我们一起尝试掀开这层神秘的面纱，看看它的庐山真面目~&#xA;（一）还原真正的合并分录# 为理解这个原理，我们还需要回到母子公司的原始分录，首先将母子公司的会计分录进行简单合并，我们得到以下合并分录： 借：营业成本140 银行存款78 贷：营业收入178 库存商品40 ——严格来讲，这笔合并分录是不对的&#xA;其实这笔分录是不完全的，因为我们少了一个母公司A的库存商品的形成分录，即生产或购买形成的库存商品分录如下： 0借：库存商品80 贷：生产成本/银行存款80 为方便理解，我们引入这个第0笔分录，它是我们在考虑合并分录时需要考虑的，那么真正的合并分录为： 借：营业成本140 银行存款78 库存商品40 贷：营业收入178 生产成本80 ——“生产成本”科目最终已在母公司内部会计处理中被抵消掉，不会出现在合并抵消分录中。&#xA;注:引入第0笔分录，目的是在于方便小伙伴们理解，第1笔分录中的库存商品80万，已在母公司内部结转成本时余额为0了，最终将不存在于合并分录中。&#xA;（二）拆分出存货中增值毛利# 我们可以将这笔合并分录进行拆分，以便于理解这个原理。我们知道母公司销售给子公司的存货中含有增值毛利成分，我们将此部分单独分开列示，则可以将库存商品一分为二： 借：营业成本140 （应该冲减营业成本=80+60-48=92万）</description>
     </item>
     <item>
       <title>间接法编制现金流量表（二）</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%BA%8C/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%BA%8C/</link>
       <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%BA%8C/</guid>
-      <description>购买商品、接受劳务支付的现金，也是企业比较常见的业务，通过分析，我们清楚，购买商品、接受劳务支付的现金主要包括前期采购本期支付、本期采购本期支付、本期预付和一些</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%BA%8C/</guid>
+      <description>购买商品、接受劳务支付的现金，也是企业比较常见的业务，通过分析，我们清楚，购买商品、接受劳务支付的现金主要包括前期采购本期支付、本期采购本期支付、本期预付和一些其他的特殊事项。&#xA;特殊事项主要包括应收冲应付、应收票据背书支付货款等。&#xA;前期采购本期支付我们可以通过应付帐款、应付票据的变化进行反映，从资产负债表角度上，主要体现为应付帐款、应付票据的期初-期末，但这里不包含本期以非现金资产清偿债务、债务转为资本导致的应付帐款、应付票据的减少。&#xA;本期采购本期支付主要体现为本期购买的全部存货-本期赊销部分的存货+本期的增值税进项税额，进项税额不包含特殊业务导致进项税额的增加部分。本期购入的全部存货可以体现为本期期末存货-本期期初存货+本期减少存货-本期非购买活动导致的存货增加-本期发生的制造成本；其中本期减少存货主要表现为本期主营业务成本、其他业务支出等因素导致的存货减少。本期赊销部分的存货可以用本期应付帐款、应付票据的增加来体现。主要计算的方法为应付帐款、应付票据的期末-期初。&#xA;本期预付主要表现为本期预付的增加数；在资产负债表中体现为预付账款的期末-期初；但如果企业在账务处理中，在预付中也反映购买一些投资设备的预付，我们需要剔除。&#xA;本期发生的制造成本是指自制存货的制造成本。自制存货的制造成本包括付现成本和非付现成本。非付现成本不带来现金流出。付现成本中支付的工资、福利费在“支付给职工以及为职工支付的现金”项目中反映；付现成本中的水电费、维修费、车间办公费等在“支付的其他与经营活动有关的现金”项目中反映，由于自制存货的制造成本已包含在本期存货成本和本期销售成本中，应该剔除。&#xA;本期存货改变用途、特殊业务导致存货减少是指存货发生非正常损失、对外投资、捐赠及上述特殊业务导致的减少，未产生现金流量，应该剔除。</description>
+    </item>
+    <item>
+      <title>间接法编制现金流量表（一）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%80/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%80/</guid>
+      <description>企业财务人员编制现金流时，大部分是通过erp软件，在录入凭证时，通过指定现金流量项目，然后出具现金流量表，这个工作在录入凭证的过程中完成的，这就需要财务人员对经济业务非常熟悉，能正确的指定具体的流量项目。&#xA;这也是我们常说的直接法编制现金流量表。&#xA;而审计在对账务进行审计的时候，也会出具一套现金流量表，而审计的主要方法就是通过审定的资产负债表、利润表结合企业的科目余额表、具体的业务凭证来编制现金流量表。&#xA;我们说，编制现金流量表以收付实现制为依据，收到了现金或支付了现金，根据款项的性质🈯定流量。&#xA;现金的流入和流出指的是具体的发生额，取得了资产负债表、利润表等资料，那如何进行编制呢?&#xA;销售商品、提供劳务是企业最常见的业务，那我们如何通过间接法进行计算呢?&#xA;销售商品、提供劳务收到的现金，需要从收入、应收票据、应收账款、合同资产和预收账款科目中去分析。按照间接法来编制，基本分析思路如下：&#xA;首先，销售商品、提供劳务收到的现金所对应的凭证无非这几类，现销业务、赊销业务，收回货款，收到预收款。具体凭证如下：&#xA;确认收入时：&#xA;借：货币资金（应收账款）&#xA;贷：营业收入&#xA;贷：应交税费–应交增值税–销项税&#xA;收回货款或预收款时：&#xA;借：货币资金&#xA;贷：应收账款/应收票据（预收账款）&#xA;通过几个数字来总结：&#xA;假设a公司应收账款、预收账款本期期初余额均为80，应付账款余额为0。&#xA;本期发生的经济业务如下：&#xA;1、本期向b公司销售一批存货，确认收入100元，销项税金13元，确认应收账款113元。月末，收回欠款50元！&#xA;2、a公司从b公司采购一批设备，应付30元，经过与b协商，直接用b对a的欠款冲本次的应付款。在a的账面上做了一笔应收冲应付30元。元&#xA;3、预收一笔c公司货款100。&#xA;经过三项业务后，应收账款期末余额为113，应付账款余额为0，预收账款余额为180，应交税费–应交增值税–销项税余额为13，营业收入发生额为100&#xA;分析：如果通过录入凭证指定流量的方式，我们很容易发现，销售商品提供劳务收到的现金为150。&#xA;那如果我们通过资产负债表和利润表怎么来计算销售商品提供劳务收到的现金呢?&#xA;销售商品、提供劳务收到现金无非体现为收入的增加（包含销项税）、应收的减少或预收的增加，而应收冲应付不体现现金流，而影响了应收账款，所以需要调整。那我们计算如下：&#xA;100+13+100-33–30=150&#xA;公式总结如下：&#xA;收入项目+销项税+资产负债表项目差额–其他调整项&#xA;收入项目来自于利润表，销项税来自于资产负债表。&#xA;资产负债表的项目差额的计算方法为资产类项目的期初减期末，负债类项目差额为期末减期初。&#xA;其他调整项目，主要是分析填列。当应收账款、应收票据入账，对方科目并非收入时，我们抓取资产负债表中期初期末的钆差项，无法真实反映销售上收到的现金</description>
+    </item>
+    <item>
+      <title>间接法编制现金流量表（一）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%89/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%97%B4%E6%8E%A5%E6%B3%95%E7%BC%96%E5%88%B6%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E4%B8%89/</guid>
+      <description>企业在生产经营过程中，支出主要包括材料、人工、费用。从现金流角度上，人工主要体现为支付给职工以及为职工支付的现金。支付给职工以及为职工支付的现金，能如实反映本期企业为获取职工劳动而支付的报酬。&#xA;从资产负债表的角度上，支付给职工以及为职工支付的现金，主要体现为应付职工薪酬科目的借方发生额。这里所谓的应付职工薪酬的借方发生额是指以现金、银行或其他转账而支付的部分，这里需要剔除应付职工薪酬借方发生额中的非付现部分。&#xA;应付职工薪酬，核算公司应承担的所有职工的薪酬，包括工资、奖金、福利、社会保险费、公积金、辞退福利等。一般情况下，应付职工薪酬贷方发生表示计提数，借方发生表示实发数，但前提是严格执行会计准则的核算标准。&#xA;假设：&#xA;应付职工薪酬贷方发生额，均为本期需计提的成本和费用，或需要资本化的金额；对方科目一般为管理费用、销售费用、生产成本、制造费用、研发支出、在建工程科目。&#xA;应付职工薪酬借方发生额，均为本期实际支付给职工的现金或为职工支付的现金&#xA;如果上述情况成立：&#xA;通过公式表示为：应付职工薪酬的年初余额+本期计提的薪酬-本期支付的职工薪酬=期末应付职工薪酬；&#xA;另外，支付的个税需要反映在支付给职工以及为职工支付的现金。但支付的工会经费不在此项目反映，需要列示在支付的其他与经营活动有关的现金项目中反映。&#xA;一般情况下：&#xA;应付职工薪酬借方发生额（付现部分）+应交税费-个人所得税（期初-期末）=支付给职工以及为职工支付的现金&#xA;也可以这样计算：&#xA;本期支付给职工及为职工支付的工资&#xA;=生产成本、制造费用、管理费用的薪酬-应付职工薪酬（期末数-期初数） +（应付职工薪酬计入在建工程期末数-应付职工薪酬计入在建工程期初数）</description>
+    </item>
+    <item>
+      <title>商誉这点事儿</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%95%86%E8%AA%89%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%95%86%E8%AA%89%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/</guid>
+      <description>一、明白商誉这点事# 商誉的金额等于并购方付出的对价-所享有被并购方净资产公允价值的份额，这个差额就是商誉。在个报层面上，商誉体现在长期股权投资的初始投资成本中，即长期股权投资的初始投资成本包含了商誉的金额。&#xA;每年年度终了，需要对商誉进行减值测试，测试商誉的可回收金额，通过商誉的账面价值与可回收金额的对比，来确认商誉是否发生了减值。&#xA;那商誉有可能存在哪些减值迹象呢？&#xA;1、现金流或经营利润持续恶化或明显低于形成商誉时的预期，特别是被并购方未实现承诺的业绩。&#xA;2、所处行业产能过剩，相关产业政策、产品与服务的市场状态或市场竞争程度发生明显的不利变化。&#xA;3、相关业务技术壁垒较低或技术快速进步，产品或服务易被模仿或升级换代，盈利现状难以维持。&#xA;4、核心团队发生明显不利变化，且短期内难以恢复。&#xA;5、与特定行政许可、特许经营资质、特定合同项目等资质存在密切关联的商誉，相关资质的市场惯例已经发生变化，如放开经营资质的行政许可、特许经营或特定合同到期无法续签等问题。&#xA;6、客观环境的变化导致市场投资报酬率在当期已经明显提高，且没有证据表明在短期内会下降。&#xA;7、经营所在的国家或地区风险突出，如面临外汇管制、恶性通货膨胀、宏观经济恶化等。&#xA;总结一下：上述七种情况表明，如果承诺业绩未达标、核心技术被替代、行业基本面发生不利变化、特定许可到期等，商誉几乎是要提减值的。不提减值的合理原因很难解释。&#xA;具体参见证监会2018年出具的《会计监管风险提示第8号—商誉减值》&#xA;在合并层面上，我们编制合并报表的一般方法是模拟权益法，那合并层面上长期股权投资的金额=所享有被合并方净资产公允价值的份额+商誉。&#xA;在个别报表层面，按照《企业会计准则第8号—资产减值》，长期股权投资可能会发生减值，减值的会计处理为：借：资产减值损失贷：长期股权投资减值准备；&#xA;在个报层面，长期股权投资减值后，首先体现为商誉的减值，从而影响合并层面长期股权投资的金额与商誉的列报。&#xA;个别报表层面的长期股权投资减值与合并层面的商誉减值是分开处理的。在个别层面上，对长期股权投资计提减值准备，而在合并层面，需要对商誉进行单独的减值测试。&#xA;在实际工作中，如果在个报层面长期股权投资进行了减值，在编制合并报表的时候，首先应以购买日确认的商誉金额进行减值测试，然后比较在个报层面上长期股权投资的减值金额（个别报表层面商誉的减值金额）与合并层面上商誉的减值金额孰高孰低，然后再去考虑在合并层面上商誉是否需要进一步减值。&#xA;个别报表中的长期股权投资减值与合并层面的商誉减值都是按照账面价值与可回收金额进行比较，在个别报表中，长期股权投资减值按照《企业会计准则第8号—资产减值》处理。当可回收金额低于账面价值时，需要确认减值。&#xA;可回收金额按长期股权投资的公允价值-处置费用后的金额与资产预计未来现金流量的孰高者。&#xA;在合并层面，商誉减值需要把被合并企业当成一个资产组进行减值测试，判断是否发生减值的方法与个报中对长期股权投资进行减值的方法一致。&#xA;长期股权投资可回收金额与被合并方整体资产组的可回收金额的变动具有一致性。&#xA;如果对子公司整体评估估价作为长期股权投资或商誉的可回收金额，则两个金额具有一致性。但在实务中，也存在两个金额不一致的情况。&#xA;在个报层面长期股权投资的可回收金额与合并层面商誉的可回收金额具有一致性，其一致性主要体现为长期股权投资的可回收金额=被合并方整体资产组（含商誉）的可回收金额*持股比例或者被合并方整体资产组（含商誉）的可回收金额=长期股权投资的可回收金额/持股比例。&#xA;商誉减值分商誉部分减值、商誉全部减值、商誉超额减值。&#xA;二、商誉部分减值案例# 2019年1月1日，A公司以240万元购买了B公司80%的股权（属于非同一控制下的企业合并），在购买日，B公司可辨认净资产的公允价值为225万（评估后），其中，股本100万，资本公积 10万 ，盈余公积11.5万，未分配利润103.5。B企业2019年实现净利润-22.5万元（公允价值下的净利润），那么，2019年年底B公司年底的公允价下的净资产为202.5万元&#xA;案例分析&#xA;在购买日，A公司长期股权投资的初始投资为240万元，在合并层面上确认的商誉为60万（240-22580%），这个商誉包含在初始投资成本240万里（22580%+60）。B企业包含少数股东的全部商誉为60/80%=75万&#xA;年末，对个报中的长投与合并层面的商誉进行减值测试。假设2019年底，长期股权投资的可回收金额为210万，长期股权投资的初始投资成本240万，此时，A企业个别报表层面应确认长期股权投资减值损失3万（240万-210万），会计处理为：&#xA;借：资产减值损失 30万&#xA;贷：长期股权投资减值准备 30&#xA;此时，A企业的个别报表上反应的对B公司的长期股权投资为210万。&#xA;A企业编制合并报表时，如果采用模拟权益法进行编制，首先需要将长期股权投资由成本法转换为权益法，B企业2019年实现净利润-22.5万，则在模拟权益法的时候，则归属于母公司A的部分为-18万，长投在个报层面计提了减值准备30万，则模拟权益法后的长投金额为192万。调整分录为：&#xA;借：投资收益 -18&#xA;贷：长期股权投资 -18&#xA;则在合并层面上的抵销分录如下：&#xA;借：B公司净资产 202.5&#xA;商誉 30 贷：长期股权投资 192&#xA;少数股东权益 40.5 由此可见，在合并层面上确认了商誉30万，而在购买日的时候，确认的商誉为60万，由于长期股权投资减值，则在2019年底的合并层面确认商誉为30万。&#xA;此时，合并层面的商誉是否发生了减值，则需要做减值测试，根据商誉的减值测试方法，首先需要对不包含商誉的资产组进行减值测试，计算可回收金额，并与账面价值进行比较。然后对包含商誉的资产组进行减值测试，计算可回收金额，比较含商誉的资产组的账面价值与其可回收金额进行比较。针对于合并方整体资产组的减值测试，可以直接根据包含商誉的资产组的账面价值与其可回收金额进行比较，若减值，首先是商誉减值，商誉减值至0后，再有减值，就是可辨认净资产组的减值。&#xA;在本案例中，2019年年末，B公司可辨认净资产的账面价值为202.5万，B公司资产组的回收金额为262.5万（含商誉的资产组），那262.5是如何计算的呢？我们说被合并方整体资产组（含商誉）的可回收金额=长期股权投资的可回收金额/持股比例，所以计算出含商誉的整体资产组的可回收金额为262.5；可回收金额262.5大于B公司可辨认净资产的账面价值202.5，所以B公司资产组未减值；然后比较含商誉资产组的账面价值277.5万（202.5+60/80%）与其可回收金额262.5比较，发现减值了15万（277.5-262.5），经过计算，商誉整体减值15万，而A公司占B公司80%的股份，所以在合并层面上商誉减值12万（15*80%），但在上面的合并分录中，合并层面已经确认了商誉减值30万（60-30），根据谨慎性原则，不再对多计提的减值准备进行冲回，从准则角度分析，商誉属于非流动资产，所以商誉减值不能转回。&#xA;三、商誉一般出现于非同一控制下的企业合并中。无并购，无商誉。商誉是体现了对收购公司的未来收益的预期。# 商誉的数额是基于对收购公司未来的业绩的预测得到的。举个例子，A公司并购了B公司，确认了10000万元商誉，预测未来每年净利润1000万元。但几年后发现，这些商誉给A公司创造的价值远超10000万元，那这些商誉就物有所值，不会发生减值。那如果，若发现买来的B公司盈利不及预期，达不到每年1000万元的净利润，那这些商誉就不值10000万元，那就可能产生商誉减值。商誉减值是指对企业合并中形成的商誉进行减值测试后，相应确认的减值损失。&#xA;在非同一控制下收购时，收购对价高于被收购公司净资产公允价值份额的差额在合并层面上确认为商誉。当被收购公司持续为收购方创造预期收益时，收购形成的商誉物有所值；当被收购方无法实现预期收益时，商誉应计提减值。商誉减值一方面减少了收购方合并层面净资产，另外一方面直接冲减了收购方合并层面当期的净利润。&#xA;根据规定，通过非同一控制下的收购形成的商誉，公司应当至少在每年年度终了进行减值测试，通过可回收金额与其账面价值对比，以确认商誉是否发生了减值。&#xA;可回收金额是指资产的公允价值减去处置费用后的净额与资产预计未来现金流的现值，两者之间孰高者。&#xA;商誉减值经常会由资产评估事务所出具商誉评估报告。&#xA;怎么做商誉减值测试&#xA;将相关资产组（含商誉）的账面价值与可回收金额进行对比。可回收金额根据分配了商誉的资产组的未来现金流量的预计现值确定，与资产组账面价值进行比较，确定是否应提减值。&#xA;对未来现金流量的现值进行预计时，预计未来资产组产生的现金流量，同时选择恰当的折现率确定未来现金流量的现值。&#xA;商誉减值测试时的相关参数&#xA;商誉减值测试时的相关参数包括：营业收入预测增长率、折现率、其他影响未来现金流量现值的主要参数以及预期未来现金流量现值等。&#xA;会计师事务所对资产评估事务所出具的商誉减值测试报告进行核查，会计师事务所主要从以下几个方面进行核查&#xA;1、了解商誉减值测试相关的 关键内部控制，评价这些控制的设计、确定是都得到执行，并测试相关内部控制运行的有效性 2、复核管理层对未来现金流量现值的预测；结合发行人实际经营结果评价预测的准确性 3、查阅评估事务所出具的商誉减值测试评估报告；复核评价估值模型、使用的关键假设及相关参数的合理性。 4、查询客户所在的行业及行业数据 5、访谈管理层，了解未来战略 </description>
+    </item>
+    <item>
+      <title>现金流量表附表编制原理解析（二）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E6%8C%87%E5%AE%9A%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E4%BA%8C/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E6%8C%87%E5%AE%9A%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%E4%BA%8C/</guid>
+      <description>现金流量附表可以在录入凭证的时候指定，也可以根据科目余额、发生额分析填列，那在录入凭证时什么类型的凭证需要指定附表项目?&#xA;这里对需要指定附表项目的情况做了一下总结：&#xA;从凭证的角度上，进行分析。&#xA;从凭证中是否有现金科目、凭证中是否有损益类科目、主表项目是否涉及经营活动产生的现金流量，从三个维度来判断是否需要指定现金流量附表项目。&#xA;凭证中是否只有那些影响了净利润但不产生经营活动现金流量或产生了经营活动现金流量但不影响净利润的凭证才需要指定附表项目。&#xA;系统根据凭证分录是否包含现金或损益类科目以及现金科目的主表项目是否指定为经营活动现金流量来判断是否需要指定附表。&#xA;附表项目调整：是指附表项目之间的调整，两个附表项目一个调增，一个调减，附表项目流量金额总额不变。主要是为了处理有些根据企业实际情况需要指定附表但是根据系统的处理逻辑却又不需要指定附表的情况。（一般调整是为了使现金流量附表某些项目的金额与其它报表或科目余额表的相关项目的金额一致，如：“固定资产折旧&amp;hellip;”项目 与 “累计折旧”科目的发生额一致）</description>
+    </item>
+    <item>
+      <title>现金流量表附表编制原理解析（三）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%89/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%89/</guid>
+      <description>现金流量附表的编制方法—具体案例分析&#xA;一、不属于经营活动的投资、筹资损益（四大损益）# （1）处置固定资产、无形资产和其他长期资产的损失（收益以”-”号填列）&#xA;（2）固定资产报废损失（收益以”-”号填列）&#xA;（3）公允价值变动损失（收益以”-”号填列）&#xA;（4）投资损失（收益以”-”号填列）&#xA;以上这些业务均属于非经营活动产生的净利润；在企业算净利润之前，是需要减除这些，如果以上是损失，则会造成企业净利润减少；但实际对我经营活动产生的现金流量净额为0。所以，如果上述项目减少了我的净利润，则我就需要调增，如果是收益，增加了我的净利润，则我就需要调减。&#xA;如果是损失则减少了利润，所以要调增，如果是收益，则需要调减。&#xA;案例：&#xA;企业处置了一台设备，原值10万，计提了9万的折旧，最后销售了1.5万；（不考虑增值税及清理费用）&#xA;借：固定资产清理1&#xA;借：累计折旧 9&#xA;贷：固定资产 10&#xA;借：银行存款 1.5&#xA;贷：固定资产清理 1.5&#xA;借：固定资产清理 0.5&#xA;贷：资产处置损益 0.5&#xA;分析:原值与累计折旧转入固定资产清理只有1万，但我实际销售了1.5万，这个差异会导致净利润增加0.5万。&#xA;请注意：此时的资产处置损益在贷方，表示收益，表示增加了净利润。那在现金流量附表中需要用减去，即-0.5万。（处置固定资产、无形资产和其他长期资产的损失（收益以”-”号填列）），那最终得出的经营活动产生的现金流量净额才能是0。&#xA;净利润：0.5&#xA;加：处置固定资产损失（减收益）-0.5万&#xA;经营活动产生的现金流量净额=0.5-0.5=0&#xA;二、不属于经营活动的投资、筹资损益（财务费用）# 在财务费用中，在利润表中列示的财务费用为所有的财务费用；但在财务费用中，有很多发生的财务费用与企业的日常经营活动有关的，比如银行手续费，这类的无需做调整。&#xA;需要调整的是筹资范畴所发生的财务费用，比如贴现息、筹资、投资的利息、手续费等。&#xA;财务费用会减少企业的净利润，但如果不属于经营活动的，那对经营活动产生的现金流量净额就为0，那就需要在现金流量附表中把这个财务费用加上，最终，经营活动产生的现金流量净额才能是0。&#xA;案例：企业支付借款利息&#xA;借：财务费用 1万&#xA;贷：应付利息 1万&#xA;借：应付利息 1万&#xA;贷：银行存款 1万（筹资活动现金流出—分配股利、利润和偿付利息所支付的现金）&#xA;净利润金额：-1&#xA;加：财务费用 1万&#xA;经营活动产生的现金流量净额-1+1=0&#xA;三、确认经营损益但未实际收付现金项目（减值准备/折旧/摊销）# （1）资产减值准备&#xA;（2）信用减值准备&#xA;（3）固定资产折旧、投资性房地产折旧、油气资产折旧、生产性生物资产折旧&#xA;（4）无形资产摊销&#xA;（5）长期待摊费用摊销&#xA;以上经济业务减少了企业净利润，但不涉及现金流，所以需要调增。&#xA;案例:&#xA;借：管理费用 100&#xA;贷：累计折旧 100&#xA;净利润：-100&#xA;加：固定资产折旧 100&#xA;经营活动产生的现金流量净额：-100+100=0&#xA;四、已确认经营损益但未实际收付现金的项目（递延所得税资产/负债）# （1）递延所得税资产减少（增加以”-”号填列）&#xA;（2）递延所得税负债增加（减少以”-”号填列）&#xA;以上业务会影响企业净利润，但却不涉及现金流，所以需要调整。&#xA;递延所得税负债：由会计与税法上的纳税差异导致的，未来需要缴纳的所得税。&#xA;案例：&#xA;一个固定资产原值800万，会计上折旧年限为10年，税法上折旧年限为8年。税法与会计的折旧方法相同，都采用直线法计提折旧，假设不考虑预计净残值，那税法上每年折旧额为100万，而会计上每年折旧为80万，产生了20万的差异，假设，企业税前会计利润为1亿，企业所得税税率25%，应纳税暂时性差异20万，确认递延所得税负债5万。&#xA;借：所得税费用 2500</description>
+    </item>
+    <item>
+      <title>现金流量表附表编制原理解析（一）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E7%BC%96%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%80/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8%E9%99%84%E8%A1%A8%E7%BC%96%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E4%B8%80/</guid>
+      <description>今天推文写一下现金流量附表，主要从以下三个方面进行沟通： 1、 现金流量附表概述&#xA;2、 现金流量附表结构&#xA;3、 现金流量附表编制方法&#xA;针对于现金流量表附表的推文，计划发两篇，本文为第一篇。后续会更新第二篇，通过具体案例对原理进行解读。 现金流量附表概述&#xA;大家都清楚，现金流量表包含两部分，即现金流量主表和现金流量附表（现金流量补充资料），现金流量主表是根据直接法直接编制，在报表上直接填列各个项目的金额，而主表上各个项目也比较直观、通俗、易懂。&#xA;现金流量附表是根据间接法进行编制的，是以净利润为起点，通过一些报表项目的加减运算，最后计算出经营活动产生的现金流量净额。&#xA;通过这句话，可以看出来，现金流量附表是把净利润与经营活动产生的现金流量净额进行比较，可以让企业财务报表的使用者去了解净利润与经营活动现金净流量的差异，产生差异的原因、从而分析企业净利润的质量。&#xA;现金流量附表的结构&#xA;现金流量附表的结构从上到下我们能看出：&#xA;以净利润为起点，通过一些项目的调整，最后得出经营活动产生的现金流量净额。&#xA;在现金流量表的思维中，净利润是由经营活动净利润、投资活动净利润、筹资活动净利润三部分组成。这三部分与现金流量主表中经营活动产生的现金流量净额、投资活动产生的现金流量净额、筹资活动产生的现金流量净额相对应。&#xA;企业实际中，非常关注经营活动产生的现金流量净额，附表就是通过净利润来倒算经营活动产生的现金流量净额。&#xA;编制现金流量附表的具体步骤：&#xA;第一步：需要将净利润调整为经营活动产生的净利润。需要将投资活动、筹资活动产生的净利润找出来，然后剔除。&#xA;第二步：将净利润调整为经营活动产生的净利润之后，还需要找出经营活动中，与利润有关但与现金无关、或与利润无关但与现金有关的项目，然后进行调整。&#xA;目的是将权责发生制下的净利润调整为收付实现制下的净利润，最终得出经营活动产生的现金流量净额。&#xA;现金流量附表的编制方法&#xA;首先需要将现金流量附表的报表项目做一下分类：&#xA;首先是净利润，在分类中仍归属于净利润。&#xA;其次是资产减值准备、信用减值准备、固定资产折旧、投资性房地产累计折旧、油气资产折旧、生产性生物资产折旧、无形资产摊销、长期待摊费用摊销这些属于已确认经营损益，但实际没有收付现金的项目。针对这类业务，减少了企业净利润，但不涉及现金流，所以在现金流量附表中需要进行调增。净利润调减，通过负数表示，而不影响经营活动现金流，即经营活动现金流为0，表达式为：-100+100=0&#xA;固定资产报废、处置固定资产、无形资产和其他长期资产、公允价值变动损益、财务费用、投资损失这些属于不属于经营活动的投资、筹资活动的损益。如果增加了净利润，则需要调减，如果减少了净利润，则需要调增。例如，如果资产处置收益是贷方数，则表示增加了企业净利润，则现金流量附表则需要减少。&#xA;递延所得税资产的减少、递延所得税负债的增加、存货的减少属于影响了经营损益，但实际未收付现金的项目。&#xA;经营性应收项目、经营性应付项目属于实际收付了现金，但实际未确认经营损益的项目。&#xA;净利润经过上述调整后，最终得出经营活动产生的现金流量净额。</description>
+    </item>
+    <item>
+      <title>现金流量附表原理解析（四）</title>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/</link>
+      <pubDate>Tue, 15 Aug 2023 11:12:00 +0000</pubDate>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E9%99%84%E8%A1%A8%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%9B%9B/</guid>
+      <description>今天主要整理一下现金流量附表中每一个项目的取数逻辑。&#xA;1、净利润# 该项目根据利润表净利润数填列，与利润表的净利润数据一致。&#xA;2、资产减值准备# 本期计提的各项资产减值准备发生额累计数，与利润表中的资产减值损失金额一致。&#xA;3、信用减值准备# 与利润表的信用减值损失的金额一致。&#xA;4、固定资产折旧、无形资产摊销# 与账上固定资产累计折旧、无形资产累计摊销的发生额一致。&#xA;5、处置固定资产、无形资产和其他长期资产的损失(减：收益)# 根据固定资产清理及营业外支出(或收入)明细账分析填列。&#xA;6、固定资产报废损失# 根据固定资产清理及营业外支出明细账分析填列。&#xA;7、财务费用# 分析填列，填列不属于经营活动的部分。反映的是投资、筹资过程中发生的财务费用；一般情况下，银行存款利息收入、手续费支出、经营票据贴现，我们认为是经营活动，除此外，基本为非经营活动。&#xA;8、投资损失(减：收益)# =投资收益(借方余额正号填列，贷方余额负号填列)，与利润表中的投资收益金额一致。&#xA;9、存货的减少(减：增加)# =期初存货价值-期末存货价值-本期计提的存货跌价准备&#xA;或者=期初存货账面原值-期末存货账面原值+期末存货跌价准备-期初存货跌价准备–本期计提的存货跌价准备&#xA;10、经营性应收项目的减少(减：增加)# =应收账款(期初数-期末数)+应收票据(期初数-期末数)+预付账款(期初数-期末数)+其他应收款(期初数-期末数)+其他流动资产(期初数-期末数)-坏账准备期末余额&#xA;11、经营性应付项目的增加(减：减少)# =应付账款(期末数-期初数)+预收账款(期末数-期初数)+应付票据(期末数-期初数)+应付职工薪酬(期末数-期初数)+专项应付款(期末数-期初数)+应交税费(期末数-期初数)+其他应付款(期末数-期初数)+其他流动负债（期末数-期初数）+递延收益（期末数-期初数）+预计负债（期末数-期初数）&#xA;12、递延所得税资产的减少# 期初递延所得税资产-期末递延所得税资产&#xA;13、递延所得税负债的增加# 期末递延所得税负债-期初递延所得税负债</description>
     </item>
     <item>
       <title>长期挂账的其他应收款如何平账？</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%95%BF%E6%9C%9F%E6%8C%82%E8%B4%A6%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%A6%82%E4%BD%95%E5%B9%B3%E8%B4%A6/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%95%BF%E6%9C%9F%E6%8C%82%E8%B4%A6%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%A6%82%E4%BD%95%E5%B9%B3%E8%B4%A6/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%95%BF%E6%9C%9F%E6%8C%82%E8%B4%A6%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%A6%82%E4%BD%95%E5%B9%B3%E8%B4%A6/</guid>
-      <description>在企业经营过程中，难免会有因为处理不及时而造成金额不小的其他应收款长期挂账。这些挂账会给企业带来税收和经营隐患，尽早处理尽早排雷。 一、其他应收款长期未清理容易引</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E9%95%BF%E6%9C%9F%E6%8C%82%E8%B4%A6%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%A6%82%E4%BD%95%E5%B9%B3%E8%B4%A6/</guid>
+      <description>在企业经营过程中，难免会有因为处理不及时而造成金额不小的其他应收款长期挂账。这些挂账会给企业带来税收和经营隐患，尽早处理尽早排雷。&#xA;一、其他应收款长期未清理容易引发的风险# 1.税务风险# 数据异常，容易被查。比如大量的资金转到股东的个人账户上，账面长期挂其他应收款;收入部分和公户进账的金额不一致，以未收到发票为由，不确认成本的同时迟迟不确认收入等。按规定，股东借款超过一年没有归还，而且不能证明是用于生产经营的，税务会将之视作分红，应按 20%的税率缴纳个税。如果股东从公司借款，手续不完整，极易触发刑事责任。&#xA;2.注销风险# 企业注销前要清理账面的往来情况，不清理不能注销。即使是简易注销，之后也是要补充资料的，注销之后要保留三年的财务资料，注销之后被查也会受到处罚。&#xA;3.企业经营风险# 把复杂杂乱的收入计入其他应收款，可能会出现虚列费用、隐藏收入、股东套现、隐匿资金等情况。长期不对账、不清理遗留问题，造成账务问题堆积，易导致错误记账，造成企业损失。&#xA;二、其他应收款清理的方法# （一）第1步：核对其他应收款的明细账，对账确认# 1.垫付员工的费用，和员工进行核对确认；&#xA;2.未提供发票的供应商，和供应商核对发票金额；&#xA;3.和关联公司核对往来款项；&#xA;4.和股东确认是否归还借款；&#xA;5.其他的事项，和相应当事人核对。&#xA;（二）第2步：催促还款# （三）第3步：不能还款的，另设方法# 个人欠款要一直催促还款;&#xA;确定对方由于注销、吊销等原因不能开具发票的，可以直接确认成本或费用，并根据国家税务总局关于发布《企业所得税税前扣除凭证管理办法》的公告 国家税务总局公告2018年第28号 第十四条，保留证据链；&#xA;关联公司之间的往来款，由于种种原因不能还款，可以签署代付款协议，和其他应付款(也欠关联公司的金额)抵消；&#xA;属于薪酬、分红的，补报个税，按时缴纳个税；&#xA;实在收不回来的款项，可根据会计政策计提坏账，保留催收证据（工作邮件、往来信息、律师函等）；&#xA;其他不能还款的，具体分析。会计入账必须依据相应的凭证，不得随意调账。&#xA;（四）第4步:建立台账，分析账龄，一般不要超过3个月，避免催收困难，造成损失。# 三、企业定期自查方法# 为防范长期挂账风险，企业应定期自查账务：&#xA;1.每月与供应商、客户、内部员工、股东等核对往来款项，确定各种款项的真实情况。没有核销的及时取得凭证进行核销。没有收到发票的及时催促对方开票，其他原因的垫付款及时催促还款。&#xA;2.逐笔自查是否有分录录入错误。&#xA;其他应收款可以记录的收入有：①应收的各种赔偿款和罚款。比如企业遭受损失之后个人该赔偿的金额或者保险公司应赔偿的金额；②向员工代垫付的各种款项；③帮其他公司垫付的款项；④应收的出租包装物租金；⑤给员工的备用金。比如给公司采买人员一些固定金额的备用金，还有出差人员提前给的差旅费等；⑥公司支付的押金。比如公司租入设备和办公场所、或者包装物支付的押金；⑦预付账款转入或者其他的各种应收款项。&#xA;需要注意的是，“其他应收款—其他”只能记录偶尔发生的项目，列支金额过大容易引起怀疑。&#xA;3.严格执行财务管理制度，不虚列成本费用，不隐匿收入。对实在无法取得合法凭证的支出，应在汇算清缴时进行纳税调增。&#xA;4.关注银行对应的转入转出金额查看是否与记账一致。银行账户是税收检查的重点，如果有不能说明缘由的转账记录，一定要及时获取转账依据。</description>
     </item>
     <item>
       <title>固定资产未入账怎么处理？</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E6%9C%AA%E5%85%A5%E8%B4%A6%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E6%9C%AA%E5%85%A5%E8%B4%A6%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/</link>
       <pubDate>Sat, 12 Aug 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E6%9C%AA%E5%85%A5%E8%B4%A6%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/</guid>
-      <description>固定资产未入账怎么处理？ 解答： 固定资产未入账，产生的原因可能有多种情形。 因此，如果在企业固定资产盘点中发现有固定资产未入账的，即实物有但是账面没有的固定资产，首</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%9B%BA%E5%AE%9A%E8%B5%84%E4%BA%A7%E6%9C%AA%E5%85%A5%E8%B4%A6%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/</guid>
+      <description>固定资产未入账怎么处理？ 解答：&#xA;固定资产未入账，产生的原因可能有多种情形。&#xA;因此，如果在企业固定资产盘点中发现有固定资产未入账的，即实物有但是账面没有的固定资产，首先需要查明原因。&#xA;一、当年造成的# （一）新购入未入账的# 实务中，经常存在购买固定资产，实物已经到货甚至已经投入使用了，但是供应商因为各种原因没有开具发票等，导致购进方没有及时确认固定资产入账。&#xA;对于已经达到预定可使用状态、但尚未办理竣工决算的固定资产，《固定资产》准则应用指南规定：应按照估计价值确认为固定资产，并计提折旧；待办理了竣工决算后，再按实际成本调整原来的暂估价值，但是不需要调整原已计提的折旧额。&#xA;国税函[2010]79号规定：企业固定资产投入使用后，由于工程款项尚未结清未取得全额发票的，可暂按合同规定的金额计入固定资产计税基础，待取得发票后调整。但该项调整应在固定资产投入使用后12个月内进行。&#xA;因此，不管是否收到发票，对于已经达到预定使用状态的固定资产，会计核算应暂估入账，然后按会计准则规定分期折旧。如果存在税会差异，再在企业所得税汇算清缴时做纳税调整。&#xA;（二）当年接受捐赠的# 当年接受捐赠的，可能也是没有发票的，实务中也存在部分人没有及时做固定资产确认。&#xA;对于当年接受捐赠的，不管有无发票，都应在达到固定资产预定使用状态时确认，然后分期折旧。&#xA;（三）当年建造的但成本费用化# 实务中，由于部分会计人员对业务不了解等，把自行建造固定资产的成本，错误地费用化或计入了生产成本（制造费用）、研发支出等，最后导致存在实物的固定资产但账面没有的情况出现。&#xA;对于该情况下的固定资产未入账，应及时更正，确认固定资产，并冲减错误计入的费用、成本等。&#xA;（四）一次性计入成本费用的# 部分会计人员，错误地把税法规定的固定资产一次性税前扣除，当着会计处理方法，在新购入固定资产时会计核算也一次性的计入成本费用。&#xA;（五）当年错误的会计更正# 对于当年固定资产未入账造成的会计差错，不但需要更正确认固定资产，还需要从固定资产开始使用的次月计提折旧。如果发现时，固定资产未入账但已经使用数月的，应按规定补提折旧。&#xA;二、以前年度造成的固定资产盘盈# 企业固定资产盘盈的可能性是极小的，企业出现了固定资产的盘盈必定是企业以前会计期间少计、漏计而产生的，应当作为前期差错进行更正处理，会计准则这样规定在一定程度上是减少企业人为的调剂利润的可能性。&#xA;企业在财产清查中盘盈的固定资产，应作为前期差错处理。执行《企业会计准则》的，盘盈的固定资产先要通过“以前年度损益调整”科目核算，固定资产按照重置成本法计价入账。&#xA;盘盈的固定资产，应按以下规定确定其入账价值：&#xA;如果同类或类似固定资产存在活跃市场的，按同类或类似固定资产的市场价格，减去按该项资产的新旧程度估计的价值损耗后的余额，作为入账价值；&#xA;如果同类或类似固定资产不存在活跃市场的，按该项固定资产的预计未来现金流量的现值，作为入账价值。&#xA;盘点结果如果与账面记录不符，应查明原因，并根据企业内控制度规定的管理权限，经股东大会或董事会，或经理(厂长)会议或类似机构批准后，在期末结账前处理完毕。&#xA;（1）发生固定资产盘盈# 借：固定资产&#xA;贷：累计折旧&#xA;以前年度损益调整&#xA;（2）调整企业所得税（视情况，如固定资产系前期接受捐赠所得）：# 借：以前年度损益调整&#xA;贷：应交税费—应交所得税&#xA;（3）将“以前年度损益调整”科目余额调整到“利润分配”等科目# 借：以前年度损益调整&#xA;贷：利润分配—未分配利润&#xA;盈余公积（视情况）</description>
     </item>
     <item>
       <title>其他应收款和其他应付款风险分析</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%92%8C%E5%85%B6%E4%BB%96%E5%BA%94%E4%BB%98%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%92%8C%E5%85%B6%E4%BB%96%E5%BA%94%E4%BB%98%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 26 Jul 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%92%8C%E5%85%B6%E4%BB%96%E5%BA%94%E4%BB%98%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/</guid>
-      <description>往来款中“其他应收款”和“其他应付款”会计科目是比较特殊的存在，而且会蕴含着很大的税务风险。总体来说，这两个会计科目内容较多且较为复杂。在财务人员眼里，经常会将</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%85%B6%E4%BB%96%E5%BA%94%E6%94%B6%E6%AC%BE%E5%92%8C%E5%85%B6%E4%BB%96%E5%BA%94%E4%BB%98%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/</guid>
+      <description>往来款中“其他应收款”和“其他应付款”会计科目是比较特殊的存在，而且会蕴含着很大的税务风险。总体来说，这两个会计科目内容较多且较为复杂。在财务人员眼里，经常会将经营过程中的各类事项在该科目核算，但是在税务方面，这两个科目是重点检查对象，很多税收风险都是在这两个科目中暴露出来的。&#xA;其他应付款# （一）核算内容# 其他应付款属于负债类科目，一般来说反映的是除应付账款、应付票据、预收账款以外的各种应付、暂收款项。它是指与企业主营业务没有直接关系的的应付、暂收其他单位或个人的款项。主要核算内容如下：&#xA;类型 内容 租金 应付经营租入固定资产或包装物的租金 存入保证金 包括商品质量保证金、招标保证金、经销商保证金、股权转让保证金、收入包装物押金等 预提费用 如预提广告费、运输费、管理费、销售折让等费用支出 职工统筹退休金、离职补偿金、员工持股计划等 —— 借款或投资款 欠股东或者关联方的借款等 其他单位或个人暂垫款 —— 其他应付、暂收款项等 —— 需要注意的是，企业向老板股东或其他个人和公司用于生产经营的周转资金的借款，通常在其他应付款进行核算。建议正常的借款在“短期借款”科目进行核算，双方签订借款协议，约定借款金额、利率、还款日期、支付方式等，然后相应的利息支出在“财务费用”科目列支，当然利息支出在企业所得税税前扣除是需要借款方开具正式票据的，并且不超过同期金融机构的贷款利率，如果是关联方的话，还需要关注债资比问题。&#xA;（二）涉税风险# 1.利用其他应付款隐匿收入# 将不需要开票的销售收入计入“其他应付款”的贷方，企业在发出货物的同时不结转销售成本，导致存货虚增，存货余额较大，存货周转率会下降。在“其他应付款”中往往老板或股东名下存在较大余额，一家企业在缺乏周转资金的时候一般会向股东和老板借款，这是正常现象，但往往其实并不是真正的借款，而是隐瞒收入的一种方式，实务工作中常表现为用私账收款，账面上缺乏现金流，于是向老板借款。&#xA;例如，甲公司为一家制造型企业，主营汽车配件生产，每年有近千万的材料出售，并通过老板私账进行收款，同时甲公司大部分工人工资均通过老板私账支付，若甲公司账面缺乏现金流的情况下，再向老板个人借入资金，同时计入“其他应付款—个人”科目。经过税务金三系统比对，甲公司被查出数据指标异常，其中主要表现为电费率较高、存货余额较高、存货周转率异常，一般来说，单个指标异常风险较低，但多个指标异常显示甲公司隐瞒收入，这种情况下企业是很难解释和应对的，最终甲公司补缴了相应税款。&#xA;2.预收账款挂账其他应付款，延期确认收入# 房地产企业、建筑安装企业在收到预收款时，就产生了纳税义务，此时应该预缴税款，收到预收款时，财务需要通过“预收账款”科目进行反映。&#xA;例如，税务机关在检查一家房地产公司时发现，有大量现金进账，均挂在个人名下，经询问财务人员，财务人员回复该款项为向股东个人借入的款项 ，税务人员查阅同期“预收账款”科目发现，很少有售房款入账，因此，税务人员判定为该款项为房屋预收款，为了延期纳税，而挂在股东个人名下。于是税务机关要求企业提供同期售房合同等资料，最后财务人员不得不承认该笔款项为预售房屋款项。&#xA;3.价外费用挂账其他应付款，延期确认收入# 乙公司为一家智能眼镜企业，其商业模式是发展全国各地的代理商，在与代理商签订合同时，代理商支付款项给乙公司，同时乙公司给予一定数量的货物。此外，乙公司还要求代理商支付一定的保证金，但保证金以货物形式返还。公司财务人员收到保证金后，计入“其他应付款”科目。&#xA;上述案例中，该保证金实质就是货款的一种支付形式，而且在代理商支付货款后其纳税义务已经发生，否则会有税务风险，最后老板也统一将这笔保证金正常纳税。&#xA;4.实质为虚开发票的不能支付的款项# 丙公司为一家设立在苏北某市的做纸包装和木包装的一家企业，原料是农户种植的树木，向农户收购后开具农产品收购发票用于增值税抵扣，向农户支付款项来源于个人借款，税务风险指标里反映已开具发票的农户个人的身份证号部分只有15位身份证号码，且部分农户已经去世。&#xA;从上述案例来看，容易判断出丙公司存在虚开农产品增值税发票的嫌疑，而且财务报表中“其他应付款—老板”科目下余额较大，显然是丙公司开具了很多成本发票之后没有钱支付给老板，造成后果就是“其他应付款”余额越来越大，这种情况下，税务风险较大。&#xA;（三）内控自查# 对于“其他应付款”科目来说，企业在日常经营过程中，需要注意以下事项： 1.入账依据是否符合现行制度的规定。查明是否有将应付账款、应付票据、预收账款和短期借款等其他一些不属于“其他应付款”范围的内容在“其他应付款”中进行核算。&#xA;2.相关经济业务是否真实、合法。查明企业有无将应属于企业本期收益和费用的项目通过“其他应付款”科目核算，或在“其他应付款”科目项下坐收坐支。&#xA;3.长期挂账的其他应付款，查明原因，并做出记录。&#xA;4.检查债权人不明确和数据异常的“其他应付款”项目。&#xA;5.检查应付股东、高级管理人员、董事、联营企业和关联企业的款项。企业有无利用其他应付款截留收入、虚挂费用或隐瞒盈亏。&#xA;6.出现借方余额的“其他应付款”项目，查明原因，必要时作重分类调整。&#xA;其他应收款# （一）核算内容# 其他应收款是指企业除应收票据、应收账款、预付账款以外的其他各种应收、暂付款项。反映了企业尚未收回的其他应收款项。主要核算内容如下：一是应收的各种赔款、罚款、补贴款；二是应收的各类政策性退税、待抵扣的税金；三是应向职工收取的各种垫付款项，如公司为员工垫付的医药费等；四是备用金，如向企业各职能科室、车间等部门科室拨出的备用款项；五是支出的各类保证金，如租入包装物支付的押金等；六是预付账款转入，这里的预付款项分两种情况，一种是有确凿证据表明其不符合预付账款性质的金额，另一种是因供货单位破产、撤销等原因已无望再收到所购货物的金额；七是本部与子分公司之间的资金往来。 需要注意的是，在新会计准则下，“其他应收款”科目在原来核算内容的基础上，增加了“其他各种应收、暂付款项”这一项。因此，在实务工作中，企业有很多不大好解释业务，比如销售回扣返利、有无发票的活动支出、特殊的劳务费用、老板挪用的资金、收不回来的款项等，都能以“其他应收款”的名目，违反会计制度进行处理。久而久之，“其他应收款”科目就变成了一个五彩斑斓、数目巨大的大坑。&#xA;（二）涉税风险# 1.民营企业“家财务”的风险# 实践中，很多老板认为公司的钱就是自己的钱，随意从公司取钱，财务无法凭票入账，于是长期挂账“其他应收款”。&#xA;从刑事角度来看，公司账户将资金转入管理人员、股东账户，有可能构成职务侵占罪（刑法第271条）、挪用资金罪（刑法第272条）；从民法角度来看，我国实行银行账户实名制，原则上账户名义人就是账户资金的权利人。同时，根据《会计法》、《税收征收管理法》、《企业会计基本准则》等相关规定，公司应当使用单位账户对外开展经营行为，公司账户与管理人员、股东账户之间不得进行非法的资金往来，以保证公司财产的独立性和正常的经济秩序。&#xA;因此，根据公司法规定，股东对公司的债务是以出资额承担有限责任，但股东随意与公司进行大量的、频繁的资金往来，极易造成公司与股东之间的资产混同，从而导致股东对公司债务承担连带责任，所以股东应该谨慎处理自己资金账户和公司资金账户之间的关系。&#xA;例如，A公司为一家生产地板的企业，在审核时发现，“其他应收款”项下挂有老板娘个人款项，且金额较大，资金管理很随意，老板娘常私下给供应商付款，导致账面上供应商的应付账款无法消化。类似于这种情况在中小企业中很普遍，这种情况存在很大税收风险。&#xA;2.股东向公司借款# 《财政部 国家税务总局关于规范个人投资者个人所得税征收管理的通知》（财税〔2003〕158号）规定，纳税年度内个人投资者从其投资企业(个人独资企业、合伙企业除外)借款，在该纳税年度终了后既不归还，又未用于企业生产经营的，其未归还的借款可视为企业对个人投资者的红利分配，依照“利息、股息、红利所得”项目计征个人所得税。这里的年度终了，不是指一年，例如12月30日借款，12月31日没有归还，这种情况税务局有权对于这部分借款征收个人所得税。&#xA;《财政部 国家税务总局关于企业为个人购买房屋或其他财产征收个人所得税问题的批复》（财税〔2008〕83号）第1条规定，根据《中华人民共和国个人所得税法》和《财政部 国家税务总局关于规范个人投资者个人所得税征收管理的通知》(财税〔2003〕158号)的有关规定，符合以下情形的房屋或其他财产，不论所有权人是否将财产无偿或有偿交付企业使用，其实质均为企业对个人进行了实物性质的分配，应依法计征个人所得税。主要包括：一是企业出资购买房屋及其他财产，将所有权登记为投资者个人、投资者家庭成员或企业其他人员的；二是企业投资者个人、投资者家庭成员或企业其他人员向企业借款用于购买房屋及其他财产，将所有权登记为投资者、投资者家庭成员或企业其他人员，且借款年度终了后未归还借款的。&#xA;3.员工、高管向公司借款# 为规避个人所得税和社会保险费，企业在支付销售人员和高管工资薪金时，对于超过现行申报工资的金额通过“其他应收款”或现金处理。员工借支的备用金或与公司经营相关的备用金，年底没有进行清理。&#xA;这种情况下，建议企业年底尽快处理，让员工取得相应的票据来进行冲账。全面营改增后，借款属于“金融服务”中的贷款服务，因此企业无偿为个人提供借款还应当视同销售，应当缴纳增值税。&#xA;4.关联方借款# 根据财税〔2019〕20号文规定，对企业集团内单位（含企业集团）之间的资金无偿借贷行为是免征增值税的。需要注意的是，现在企业集团已取消登记，只要通过国家企业信用信息公示系统向社会公示，即可认定为集团。可以看出，增值税可以适用免税规定，但企业所得税呢？如果资金的出借方，同时存在比较大额的金融借款，那么金融借款的利息中，属于被关联方无偿占用资金对应的利息，很可能被认定为是与取得经营收入无关的支出，不允许税前扣除。即使税前扣除，也需要一方计利息收入一方计利息支出。&#xA;5.抽逃注册资本# 在原先《公司法》规定的注册资本实行实缴制情况下，或者许多公司未来扩大注册资本申请银行贷款的需要，往往通过注册代理公司垫资，等到公司注册完成后进行撤资。&#xA;在注册的公司账上往往体现为“其他应收款—某某股东或老板”，即使目前实行认缴制，且认缴没有期限的限制，但很多企业为了资质和招投标，还是有巨额实收资本的需求。因此，会存在验资完毕后抽逃的行为。&#xA;根据《公司法》第3条规定，公司以其全部财产对公司债务承担无限责任，而股东以其出资或者认购的股份为限承担有限责任。由此可见，公司的资产是实现公司债权人权益的重要保障，股东抽逃出资的行为一定程度上严重侵害了债权人利益的实现。同时，抽逃出资的行为是一种民事欺诈行为，理应获得赔偿。&#xA;（三）内控自查# 对于“其他应收款”科目来说，企业在日常经营过程中，需要注意以下事项： 1.</description>
     </item>
     <item>
       <title>会计凭证附件明细表</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E9%99%84%E4%BB%B6%E6%98%8E%E7%BB%86%E8%A1%A8/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E9%99%84%E4%BB%B6%E6%98%8E%E7%BB%86%E8%A1%A8/</link>
       <pubDate>Sat, 01 Jul 2023 11:12:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E9%99%84%E4%BB%B6%E6%98%8E%E7%BB%86%E8%A1%A8/</guid>
-      <description></description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E4%BC%9A%E8%AE%A1%E5%87%AD%E8%AF%81%E9%99%84%E4%BB%B6%E6%98%8E%E7%BB%86%E8%A1%A8/</guid>
+      <description> </description>
     </item>
     <item>
       <title>常见原始凭证的分类与规范</title>
-      <link>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%A7%8B%E5%87%AD%E8%AF%81%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E8%A7%84%E8%8C%83/</link>
+      <link>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%A7%8B%E5%87%AD%E8%AF%81%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E8%A7%84%E8%8C%83/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%A7%8B%E5%87%AD%E8%AF%81%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E8%A7%84%E8%8C%83/</guid>
-      <description>第一节 原始凭证的分类 经审核无误的原始凭证，是编制记账凭证的基本依据，是编制财务报表的起点，在财务工作中有着无可替代的重要地位。 根据取得来源、填制手续等方面的不同</description>
+      <guid>https://richfan.site/%E8%B4%A2%E6%8A%80/%E4%BC%9A%E8%AE%A1/%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%A7%8B%E5%87%AD%E8%AF%81%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E8%A7%84%E8%8C%83/</guid>
+      <description>第一节 原始凭证的分类# 经审核无误的原始凭证，是编制记账凭证的基本依据，是编制财务报表的起点，在财务工作中有着无可替代的重要地位。&#xA;根据取得来源、填制手续等方面的不同，原始凭证有四种分类方法。&#xA;（一）按取得来源不同，可分为自制原始凭证和外来原始凭证。# 自制原始凭证是本单位内部发生经济业务时，由经办人填制的凭证。外来原始凭证是与外单位发生经济业务时，从外部取得的凭证。&#xA;（二）按填制手续不同，可分为一次凭证、累计凭证和汇总凭证。# 一次凭证是指填制手续一次完成，一次记录一项或若干项经济业务的原始凭证。外来原始凭证和自制原始凭证中的收料单、发货单等等都是一次凭证。累计凭证是在一定时期内，在一张凭证上，连续多次记录不断重复发生的同类经济业务，随时计算累计数及结余数的原始凭证——它的主要作用在于按计划或限额对物料领用进行控制。根据物料清单/维修工单编制的限额领料单是典型的累计凭证。汇总凭证是将一定时期内记录同类经济业务的若干张原始凭证粘贴汇总起来编制的原始凭证。例如：工资结算汇总表、收货汇总表、发出材料汇总表等等。费用报销单、差旅费报销单属于汇总原始凭证。&#xA;（三）按外在表现形式，可以分为票、表、证、单、书、据等。# 1、票，即发票，是企业经济活动中最重要、出现频率最高的原始凭证，主要是指单位和个人在经营活动中，购销双方证明其经济业务的书面凭证，是财务核算的法定凭证，还是相关部门进行审核、检查的重要依据。发票正上方居中位置通常有“国家税务总局XX省税务局监制”印章。&#xA;注意：若对结算价格有异议，不要轻易认证对方开具的增值税专用发票，否则有可能在发生经济纠纷时处于不利的地位。另外，双方办理结算时，除了发票之外，还应当有合同、结算清单作为佐证。款项支付情况要靠收据、转账记录等作为凭据。企业双方的对账应当包括货物收发、发票开具、款项收付三个方面。&#xA;发票的种类主要有以下几种：&#xA;（1）专用发票（纸质）。纸质专用发票单联尺寸为24cm*14cm。增值税一般纳税人和小规模纳税人都可以作为销售方对外开具专用发票。但原则上只有一般纳税人购买方可以依据票面税额（增值税专用发票、通行费电子普通发票）或计算税额（农产品发票）认证抵扣增值税税额。它是抵扣链条以票控税的最重要一环。&#xA;增值税专用发票由基本联次或者基本联次附加其他联次构成，分为三联版和六联版等几种。基本联次为三联：第一联为记账联，是销售方记账凭证；第二联为抵扣联，是购买方扣税凭证；第三联为发票联，是购买方记账凭证。其他联次用途，由纳税人自行确定。&#xA;（2）增值税普通发票（纸质）。主要形式有折叠、卷式。主要适用于受票方不得抵扣税款的情形。&#xA;纸质的增值税普通发票由基本联次或者基本联次附加其他联次构成，分为两联版和五联版两种。基本联次为两联：第一联为记账联，是销售方记账凭证；第二联为发票联，是购买方记账凭证。其他联次用途，由纳税人自行确定。卷式发票有57mm×177.8mm、76mm×177.8mm两种规格，均为单联，常用于餐饮、超市及一些生活服务业。4S店普通发票主要是在个人和事业单位维修车辆时向其开具。&#xA;（3）机动车销售统一发票（纸质）。发票尺寸为24.1cm×17.7cm。从事机动车零售业务的单位和个人，在销售机动车（不包括销售旧机动车）收取款项时，开具机动车销售统一发票。注意：4S店向二级经销商销售机动车，通常开具增值税专用发票，只有面向终端用户时（也就是办理上户手续的主体），才开具本类发票。&#xA;（4）二手车销售统一发票（纸质）。二手车经销企业、经纪机构和拍卖企业，在销售、中介和拍卖二手车收取款项时，必须开具《二手车销售统一发票》。&#xA;（5）定额发票（纸质）。定额发票是税局专门印制的，不用填开的，有固定数额而没有抬头的发票。就是通常讲的“手撕票”。通常只有核定征收的个体工商户才能领取。&#xA;（6）专业发票。如航空运输的《航空运输电子客票行程单》、客运的《旅客运输机打发票》、过路过桥费机打发票、火车票等等。注意，部分专业发票，如火车票，无国家税务总局监章。&#xA;增值税专用发票、增值税普通发票、增值税普通发票（卷票）、增值税电子普通发票、增值税电子普通发票（通行费）、机动车销售统一发票、二手车销售统一发票、货物运输业增值税专用发票可以到国家税务总局增值税发票查验平台查询真伪，航空行程单可以到信天游（http://www.travelsky.com/）查询真伪，平推发票、定额发票等可以到各省税务局“普通发票信息”中查询。&#xA;2023年5月17日财政部会计司发布了《电子凭证会计数据标准深化试点操作指南》，对铁路客票、航空行程单电子格式做出了规范。&#xA;（7）电子发票和全电发票。这两种发票特殊之处是目前对于大多数公司需要保留电子存档和根据电子文件打印的纸质发票。&#xA;前述第（1）至第（6）项发票除了定额发票外，大部分将在近期从纸质过渡到全电。&#xA;2、表，如《工资发放表》、《折旧摊销计算》、《成本结转计算表》等。注意，即使通过银行转账发放的工资，也应当有员工签字的工资表或工资条以证明双方对工资金额的确认。&#xA;3、证，如售付汇凭证、完税证明、国内信用证等。对支付给我国境外的单位或个人的非购货款，可以按纳税人所在地主管税务部门开具的售付汇凭证为合法有效凭证。单位和个人从中国境外取得的与纳税有关的发票或者凭证，税务部门可以要求其提供境外公证机构或者法定鉴证机构的确认证明，经审核确认，可作为合法的记账凭证。&#xA;4、单，费用报销单、差旅费报销单、支出凭单、付款申请单、资产采购申请单、货物交接签收单、结算清单、银行回单等等。通常情况下费用报销单等汇总原始凭证在编制记账凭证时以单个汇总原始凭证作为整体计数。银行对账单不是原始凭证。&#xA;5、书，如各种缴款书。主要有税收缴款书、社会保险费专用缴款书、非税收入一般缴款书等，都是税收、社会保险费、非税收入支出的重要凭据。&#xA;6、据，如财政收据。财政收据是发票以外使用量较大的一种合法凭证，由财政部门监制，供行政事业单位及代收费单位收取各项规费时使用。无财政部门监章的自制收据无法替代发票，如以此入账计入成本费用，则属于“白条入账”。&#xA;根据财政部《财政票据管理办法》（中华人民共和国财政部令第104号）第七条的规定，财政票据主要包括以下类型：&#xA;(一)非税收入类票据# 1.非税收入通用票据，是指行政事业单位依法收取政府非税收入时开具的通用凭证。&#xA;2.非税收入专用票据，是指特定的行政事业单位依法收取特定的政府非税收入时开具的专用凭证。主要包括行政事业性收费票据、政府性基金票据、国有资源(资产)收入票据、罚没票据等。&#xA;3.非税收入一般缴款书，是指实施政府非税收入收缴管理制度改革的行政事业单位收缴政府非税收入时开具的通用凭证。&#xA;(二)结算类票据# 资金往来结算票据，是指行政事业单位在发生暂收、代收和单位内部资金往来结算时开具的凭证。&#xA;(三)其他财政票据# 1.公益事业捐赠票据，是指国家机关、公益性事业单位、公益性社会团体和其他公益性组织依法接受公益性捐赠时开具的凭证。&#xA;2.医疗收费票据，是指非营利医疗卫生机构从事医疗服务取得医疗收入时开具的凭证。&#xA;3.社会团体会费票据，是指依法成立的社会团体向会员收取会费时开具的凭证。&#xA;4.其他应当由财政部门管理的票据。&#xA;财政电子票据的真伪可以在财政部全国财政电子票据查验平台（网址：http://pjcy.mof.gov.cn/#/home）上确认，不过与增值税发票查验平台相比，该平台仅可查询最近一年内开具的电子票据。&#xA;（四）按所起作用，可分为通知凭证、执行凭证和计算凭证。# 通知凭证是对某项经济业务起通知或指示作用的凭证，对这类凭证的管理，不能完全等同于其他原始凭证，因为其不能证明经济业务已经完成。例如：物资订货单、扣款通知等等。执行凭证是对某项经济业务执行后填制的原始凭证，可以证明经济业务已经完成。例如：入库单、出库单、各种收据等等。计算凭证也是某项经济业务完成后填制的原始凭证，可以证明经济业务已经完成。但是，该凭证上的数字是按照一定的方法计算后形成的。例如：工资结算汇总表、辅助生产费用分配表、制造费用分配表等等。&#xA;第二节 对记账凭证所附原始凭证的规范# 按照《会计基础工作规范》的要求，原始凭证至少应包含以下内容：凭证的名称；填制凭证的日期；填制凭证单位名称或者填制人姓名；经办人员的签名或者盖章；接受凭证单位名称；经济业务内容；数量、单价和金额。在实务中，原始凭证须成为记账凭证会计分录严谨的支撑证据。&#xA;不少公司记账凭证所附的原始凭证不规范，现将常见的原始凭证需要规范的内容罗列如下。&#xA;费用类别 不规范点 规范方案 1、办公用品费 1、购买办公用品只有发票，无其他单据。2、批量购买办公用品，没有采购入库和各部门领用单。 经审批的请购单、发票、入库单、支出凭单、银行回单等相关资料 2、差旅费 只有差旅费报销单没有行程单等记录。 出差申请单（含计划）、差旅报销单（含相关发票）、出差情况报告、银行回单等相关资料 3、车辆修理费/汽油费 只有修理费/汽油费发票，企业没有车辆。 经审批的汽车修理清单、发票、支出凭单、银行回单等相关资料，私车公用的应签订协议 4、税款缴纳 只有银行回单，未有申报表或税收缴款书。 支出凭单、纳税申报表主表、税收缴款书、完税证明等 5、劳保用品 1、批量购买劳保用品，没有采购入库和各部门领用单。2、各部门领用劳保用品未有部门领用单或者单据部门不全 经审批的请购单、发票、入库单、支出凭单、银行回单等相关资料 6、广告费 只有发票和合同，未有照片或者其他广告样本等辅助证明资料。 经审批的合同、发票、广告展示现场相关的照片（通常场景中附手持当日人民日报）、支出凭单等相关资料 7、会务费 只有会议费发票未有，会议议程、签到表、会议照片等证明资料。 经审批会议预算、合同、会议结算清单、发票、会议议程、签到表、会议照片、支出凭单、会议纪要等相关资料 8、运费/快递费 1、快递费月结没有与快递/物流公司签署合同。2、月结单没有核对记录 运输协议、运费结算单或快递费明细、发票、支出凭单等相关资料 供应链类 一、原料采购 不规范点 规范附件明细 1、预付款 预付款只付银行回单，未后附合同。 采购合同、采购付款单等相关资料，合同资料较多的可另行装订登记合同台账 2、预付款核销 未后附相关单据 采购合同、供应商送货单、原材料采购入库单、收货质量检测报告单、发票、采购付款单等相关资料 3、货到付款 1、未后附采购合同、原材料采购入库单、收货报告单。2、以供应商的送货单为入库单，未有企业自己的入库单。 采购合同、供应商送货单、原材料采购入库单、收货报告单、发票、采购付款单等相关资料 4、采购入库 1、以供应商的送货单为入库单，未有企业自己的入库单。2、退料单单据未齐全。 供应商送货单、采购入库单、采购收货质量检验报告单、发票等相关资料。特别注意，发生采购退货的必须由对方库管等经办人在退货出库单上签收。 二、产品/工程 不规范点 规范附件明细 1、生产领用 原材料领用单，单据上的信息要素不齐全，不便于会计和税务核算所用。 《生产耗用表》、原材料领用单 2、产品入库结转 产品入库单，单据上的信息要素不齐全，不便于会计和税务核算所用。 《生产成本表》、产品入库单 3、工程成本结算 按对方提供的发票金额直接计入工程成本，与付款差异部分挂应付或预付 工程结算清单、工程款付款申请、合同（如合同较厚可只记录合同编号）、发票（汇算清缴前非必须，总包方汇算清缴后发票与结算差异不超过合同总价10%的部分也可以直接计入成本。提前开具的发票不可直接计入成本（成本金额应按工程结算单计价） 三、产品销售 不规范点 规范附件明细 1、销售收入确认 销售收入确认附件只有发票，没有其他单据作为附件。 发票、销售出库汇总表、销售出库单、对方签收的结算单/交接单、对方入库单等。如对方发生销售退回，务必要对方出具我方收到退货的单据。 2、销售成本结转 结转成本无附件 销售成本结转表等相关资料 资产类 固定资产低值易耗品 不规范点 规范附件明细 1、资产购买 1、只有固定资产发票，没有其他单据。2、没有固定资产部门领用单，无法确定具体使用部门和日期。 经审批的请购单、合同、发票、入库单/验收单、资产照片、支出凭单、固定资产卡片等相关资料 2、资产修理 只有修理发票，没有修理固定资产其他单据。 经审批的单据、修理报告单、发票、支出凭单等相关资料 3、资产清理或盈亏处理 固定资产清理和盘亏单据上相关信息处理不完全，不能为会计核算提供相关齐全要素。 经审批的签呈、溢缺明细表等相关资料（参见《企业资产损失所得税税前扣除管理办法》，其他资金短缺、存货损失等亦参考该办法 4、固定资产折旧的计提 采用系统汇总的数据，未将系统每月固定资产折旧明细打印出来作为附件 固定资产折旧计提表等相关资料 5、低值易耗品 只有采购低值易耗品发票，未有相关的入库及部门领用单据。 经审批的请购单（签呈）、合同、发票、入库单、支出凭单等相关资料 6、资产损失 列出损失清单直接入账 按照《企业资产损失所得税税前扣除管理办法》完善资料、登记台账，并保留备查。 费用计提 不规范点 规范附件明细 1、薪资及绩效计提 相关月份暂估薪资会计处理，未有相关附件。 薪资及绩效计提表等相关资料，如发放现金须有领取人签字，原则上不可代领 2、年终奖金的计提 年终奖计提未有具体计提依据相关资料 年终奖计提表等相关资料，如发放现金须有领取人签字，原则上不可代领。金额较大的还应附有股东会决议等资料。 3、税费计提 税费计提未有相关附件附在会计分录后 各项税费计算表等相关资料，增值税计算表、附加税计算表 4、坏账准备的计提 只对应收账款计提坏账准备，未有其他应收款坏账计提资料 坏账准备计提明细表（应收、其他应收）等相关资料 5、费用摊销 费用摊销依据不明确，或分摊依据不合理。 摊销明细表等相关资料 第三节 原始凭证相关印章使用的规范# 企业的基本印章包括公章、法人章、财务专用章、发票专用章、合同专用章，除了这五种需要在公安部门备案的之外，业务、财务等部门还有一些自制的用于流程管控的印章（如业务部门的出入库专用章等）。</description>
     </item>
   </channel>
 </rss>

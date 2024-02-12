@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on 樊刹</title>
+    <title>linux on 中文文档</title>
     <link>https://richfan.site/tags/linux/</link>
-    <description>Recent content in linux on 樊刹</description>
+    <description>Recent content in linux on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Tue, 01 Sep 2020 22:11:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 技术整理</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</link>
       <pubDate>Tue, 01 Sep 2020 22:11:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</guid>
-      <description>&lt;h3 id=&#34;一概述&#34;&gt;一、概述&lt;/h3&gt;&#xA;&lt;h4 id=&#34;11-什么是docker&#34;&gt;1.1 什么是docker&lt;/h4&gt;&#xA;&lt;p&gt;Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议&lt;/p&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/docker-%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/</guid>
+      <description>&lt;h3 id=&#39;一概述&#39;&gt;一、概述&lt;a href=&#39;#%e4%b8%80%e6%a6%82%e8%bf%b0&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;h4 id=&#39;11-什么是docker&#39;&gt;1.1 什么是docker&lt;a href=&#39;#11-%e4%bb%80%e4%b9%88%e6%98%afdocker&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&lt;p&gt;Docker 诞生于 2013 年初，由 dotCloud 公司（后改名为 Docker Inc）基于 Go 语言实现并开源的项目。此项目后来加入 Linux基金会，遵从了 Apache 2.0 协议&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</link>
       <pubDate>Wed, 01 Jan 2020 10:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</guid>
-      <description>安装 ARCHLINUX官网 ARCOLINUX官网 UBUNTU官网 DEBIAN官网 使用 总结</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/system/linux/archlinux/</guid>
+      <description>安装# ARCHLINUX官网 ARCOLINUX官网 UBUNTU官网 DEBIAN官网 使用# 总结# </description>
     </item>
     <item>
       <title>shell速查表</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
       <pubDate>Sat, 08 Sep 2018 11:48:24 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
-      <description>&lt;h3 id=&#34;1-变量&#34;&gt;1. 变量&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$msg&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
+      <description>&lt;h3 id=&#39;1-变量&#39;&gt;1. 变量&lt;a href=&#39;#1-%e5%8f%98%e9%87%8f&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;msg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo $msg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>linux下修改按键ESC&lt;=&gt;CAPSLOCK和Control=&gt;ALT_R</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
       <pubDate>Fri, 20 Oct 2017 17:38:49 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
       <description>&lt;p&gt;使用 &lt;code&gt;vim&lt;/code&gt; 过程中发现 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;ctrl&lt;/code&gt; 按键很难按，小拇指没有那么长啊～～，而 &lt;code&gt;caps_lock&lt;/code&gt; 和 &lt;code&gt;alt_r&lt;/code&gt;(右alt) 很少用。&lt;/p&gt;&#xA;&lt;p&gt;本教程将 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;caps_lock&lt;/code&gt; 两个按键交换， &lt;code&gt;alt_r&lt;/code&gt;(右alt) 改为 &lt;code&gt;ctrl&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
     <item>
       <title>sudo命令免密码设置</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 11 Sep 2017 09:30:55 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/sudo%E5%91%BD%E4%BB%A4%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;如果某台linux只有自己在使用，比如个人系统，每次调用 &lt;code&gt;sudo&lt;/code&gt; 时都需要输入密码，长期下来着实厌烦，因此本文介绍如何配置 &lt;code&gt;sudo&lt;/code&gt; 命令，使其在运行时不需要输入密码。&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>600 条最强 Linux 命令总结</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 06 Sep 2017 23:01:31 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/600-%E6%9D%A1%E6%9C%80%E5%BC%BA-linux-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;600条最强Linux命令&lt;/p&gt;</description>
     </item>
   </channel>

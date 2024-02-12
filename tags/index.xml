@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 樊刹</title>
+    <title>Tags on 中文文档</title>
     <link>https://richfan.site/tags/</link>
-    <description>Recent content in Tags on 樊刹</description>
+    <description>Recent content in Tags on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>专项</title>
-      <link>https://richfan.site/tags/%E4%B8%93%E9%A1%B9/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E4%B8%93%E9%A1%B9/</guid>
-      <description></description>
-    </item>
     <item>
       <title>销售</title>
       <link>https://richfan.site/tags/%E9%94%80%E5%94%AE/</link>
@@ -23,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>审计</title>
-      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</link>
-      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</guid>
+      <title>专项</title>
+      <link>https://richfan.site/tags/%E4%B8%93%E9%A1%B9/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E4%B8%93%E9%A1%B9/</guid>
       <description></description>
     </item>
     <item>
@@ -37,10 +30,10 @@
       <description></description>
     </item>
     <item>
-      <title>审计共性问题</title>
-      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <title>审计</title>
+      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>内控</title>
-      <link>https://richfan.site/tags/%E5%86%85%E6%8E%A7/</link>
-      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%86%85%E6%8E%A7/</guid>
+      <title>审计共性问题</title>
+      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%85%B1%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
       <description></description>
     </item>
     <item>
@@ -62,6 +55,13 @@
       <link>https://richfan.site/tags/%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E5%AE%A1%E8%AE%A1/</link>
       <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E5%AE%A1%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>内控</title>
+      <link>https://richfan.site/tags/%E5%86%85%E6%8E%A7/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%86%85%E6%8E%A7/</guid>
       <description></description>
     </item>
     <item>
@@ -86,76 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>三重一大</title>
-      <link>https://richfan.site/tags/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>事业单位</title>
-      <link>https://richfan.site/tags/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>人力</title>
-      <link>https://richfan.site/tags/%E4%BA%BA%E5%8A%9B/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E4%BA%BA%E5%8A%9B/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>印章</title>
-      <link>https://richfan.site/tags/%E5%8D%B0%E7%AB%A0/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%8D%B0%E7%AB%A0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>合同</title>
-      <link>https://richfan.site/tags/%E5%90%88%E5%90%8C/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%90%88%E5%90%8C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>土地</title>
-      <link>https://richfan.site/tags/%E5%9C%9F%E5%9C%B0/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%9C%9F%E5%9C%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>工会</title>
-      <link>https://richfan.site/tags/%E5%B7%A5%E4%BC%9A/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%B7%A5%E4%BC%9A/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>招投标</title>
-      <link>https://richfan.site/tags/%E6%8B%9B%E6%8A%95%E6%A0%87/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E6%8B%9B%E6%8A%95%E6%A0%87/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>科研</title>
-      <link>https://richfan.site/tags/%E7%A7%91%E7%A0%94/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E7%A7%91%E7%A0%94/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>纪检</title>
-      <link>https://richfan.site/tags/%E7%BA%AA%E6%A3%80/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E7%BA%AA%E6%A3%80/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>财政</title>
       <link>https://richfan.site/tags/%E8%B4%A2%E6%94%BF/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
@@ -170,10 +100,66 @@
       <description></description>
     </item>
     <item>
-      <title>资产</title>
-      <link>https://richfan.site/tags/%E8%B5%84%E4%BA%A7/</link>
+      <title>高校</title>
+      <link>https://richfan.site/tags/%E9%AB%98%E6%A0%A1/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E8%B5%84%E4%BA%A7/</guid>
+      <guid>https://richfan.site/tags/%E9%AB%98%E6%A0%A1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工会</title>
+      <link>https://richfan.site/tags/%E5%B7%A5%E4%BC%9A/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%B7%A5%E4%BC%9A/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>合同</title>
+      <link>https://richfan.site/tags/%E5%90%88%E5%90%8C/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%90%88%E5%90%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>纪检</title>
+      <link>https://richfan.site/tags/%E7%BA%AA%E6%A3%80/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E7%BA%AA%E6%A3%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>科研</title>
+      <link>https://richfan.site/tags/%E7%A7%91%E7%A0%94/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E7%A7%91%E7%A0%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人力</title>
+      <link>https://richfan.site/tags/%E4%BA%BA%E5%8A%9B/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E4%BA%BA%E5%8A%9B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>三重一大</title>
+      <link>https://richfan.site/tags/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E4%B8%89%E9%87%8D%E4%B8%80%E5%A4%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>事业单位</title>
+      <link>https://richfan.site/tags/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>土地</title>
+      <link>https://richfan.site/tags/%E5%9C%9F%E5%9C%B0/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%9C%9F%E5%9C%B0/</guid>
       <description></description>
     </item>
     <item>
@@ -184,10 +170,24 @@
       <description></description>
     </item>
     <item>
-      <title>高校</title>
-      <link>https://richfan.site/tags/%E9%AB%98%E6%A0%A1/</link>
+      <title>印章</title>
+      <link>https://richfan.site/tags/%E5%8D%B0%E7%AB%A0/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E9%AB%98%E6%A0%A1/</guid>
+      <guid>https://richfan.site/tags/%E5%8D%B0%E7%AB%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>招投标</title>
+      <link>https://richfan.site/tags/%E6%8B%9B%E6%8A%95%E6%A0%87/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E6%8B%9B%E6%8A%95%E6%A0%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>资产</title>
+      <link>https://richfan.site/tags/%E8%B5%84%E4%BA%A7/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E8%B5%84%E4%BA%A7/</guid>
       <description></description>
     </item>
     <item>
@@ -195,20 +195,6 @@
       <link>https://richfan.site/tags/%E4%B8%80%E8%B5%B7%E5%BC%80%E5%AE%A1%E8%AE%A1%E5%BA%95%E7%A8%BF%E7%B3%BB%E5%88%97/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E4%B8%80%E8%B5%B7%E5%BC%80%E5%AE%A1%E8%AE%A1%E5%BA%95%E7%A8%BF%E7%B3%BB%E5%88%97/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>陈版主答疑</title>
-      <link>https://richfan.site/tags/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E9%99%88%E7%89%88%E4%B8%BB%E7%AD%94%E7%96%91/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>公务</title>
-      <link>https://richfan.site/tags/%E5%85%AC%E5%8A%A1/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%85%AC%E5%8A%A1/</guid>
       <description></description>
     </item>
     <item>
@@ -223,6 +209,13 @@
       <link>https://richfan.site/tags/%E5%B7%A5%E7%A8%8B/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E5%B7%A5%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>公务</title>
+      <link>https://richfan.site/tags/%E5%85%AC%E5%8A%A1/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%85%AC%E5%8A%A1/</guid>
       <description></description>
     </item>
     <item>
@@ -254,17 +247,17 @@
       <description></description>
     </item>
     <item>
-      <title>消防</title>
-      <link>https://richfan.site/tags/%E6%B6%88%E9%98%B2/</link>
-      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E6%B6%88%E9%98%B2/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>董监高</title>
       <link>https://richfan.site/tags/%E8%91%A3%E7%9B%91%E9%AB%98/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E8%91%A3%E7%9B%91%E9%AB%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>消防</title>
+      <link>https://richfan.site/tags/%E6%B6%88%E9%98%B2/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E6%B6%88%E9%98%B2/</guid>
       <description></description>
     </item>
     <item>
@@ -296,17 +289,17 @@
       <description></description>
     </item>
     <item>
-      <title>实务</title>
-      <link>https://richfan.site/tags/%E5%AE%9E%E5%8A%A1/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%AE%9E%E5%8A%A1/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>审计实务宝典</title>
       <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E5%8A%A1%E5%AE%9D%E5%85%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>实务</title>
+      <link>https://richfan.site/tags/%E5%AE%9E%E5%8A%A1/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%AE%9E%E5%8A%A1/</guid>
       <description></description>
     </item>
     <item>
@@ -387,10 +380,10 @@
       <description></description>
     </item>
     <item>
-      <title>瑞华研究</title>
-      <link>https://richfan.site/tags/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E7%91%9E%E5%8D%8E%E7%A0%94%E7%A9%B6/</guid>
+      <title>房产</title>
+      <link>https://richfan.site/tags/%E6%88%BF%E4%BA%A7/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E6%88%BF%E4%BA%A7/</guid>
       <description></description>
     </item>
     <item>
@@ -398,13 +391,6 @@
       <link>https://richfan.site/tags/%E4%BC%81%E4%B8%9A%E6%89%80%E5%BE%97%E7%A8%8E/</link>
       <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E4%BC%81%E4%B8%9A%E6%89%80%E5%BE%97%E7%A8%8E/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>房产</title>
-      <link>https://richfan.site/tags/%E6%88%BF%E4%BA%A7/</link>
-      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E6%88%BF%E4%BA%A7/</guid>
       <description></description>
     </item>
     <item>
@@ -478,7 +464,7 @@
       <description></description>
     </item>
     <item>
-      <title>Windows</title>
+      <title>windows</title>
       <link>https://richfan.site/tags/windows/</link>
       <pubDate>Thu, 27 Jul 2023 18:00:00 +0000</pubDate>
       <guid>https://richfan.site/tags/windows/</guid>
@@ -555,17 +541,17 @@
       <description></description>
     </item>
     <item>
-      <title>审计工具</title>
-      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
-      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>经责</title>
       <link>https://richfan.site/tags/%E7%BB%8F%E8%B4%A3/</link>
       <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
       <guid>https://richfan.site/tags/%E7%BB%8F%E8%B4%A3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>审计工具</title>
+      <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     <item>

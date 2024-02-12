@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>审计工具 on 樊刹</title>
+    <title>审计工具 on 中文文档</title>
     <link>https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
-    <description>Recent content in 审计工具 on 樊刹</description>
+    <description>Recent content in 审计工具 on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Wed, 23 Feb 2022 17:56:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>审计工具</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Wed, 23 Feb 2022 17:56:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/%E5%AE%A1%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid>
       <description>&lt;p&gt;审计工具&lt;/p&gt;</description>
     </item>
   </channel>

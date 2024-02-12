@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>磁盘分区 on 樊刹</title>
+    <title>磁盘分区 on 中文文档</title>
     <link>https://richfan.site/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/</link>
-    <description>Recent content in 磁盘分区 on 樊刹</description>
+    <description>Recent content in 磁盘分区 on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Wed, 17 May 2017 22:00:42 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux无损调整分区大小</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</link>
       <pubDate>Wed, 17 May 2017 22:00:42 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</guid>
-      <description>&lt;h3 id=&#34;summary&#34;&gt;summary&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;系统环境: Red Hat 4.8.5-11&lt;/li&gt;&#xA;&lt;li&gt;情况：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;home：500G&lt;/li&gt;&#xA;&lt;li&gt;root：50G&lt;/li&gt;&#xA;&lt;li&gt;root分区不够用&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;思路：把home分区的空间划一部分到root分区&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E6%97%A0%E6%8D%9F%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA%E5%A4%A7%E5%B0%8F/</guid>
+      <description>&lt;h3 id=&#39;summary&#39;&gt;summary&lt;a href=&#39;#summary&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;系统环境: Red Hat 4.8.5-11&lt;/li&gt;&#xA;&lt;li&gt;情况：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;home：500G&lt;/li&gt;&#xA;&lt;li&gt;root：50G&lt;/li&gt;&#xA;&lt;li&gt;root分区不够用&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;思路：把home分区的空间划一部分到root分区&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

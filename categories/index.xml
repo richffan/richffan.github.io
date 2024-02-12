@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 樊刹</title>
+    <title>Categories on 中文文档</title>
     <link>https://richfan.site/categories/</link>
-    <description>Recent content in Categories on 樊刹</description>
+    <description>Recent content in Categories on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -37,17 +37,17 @@
       <description></description>
     </item>
     <item>
-      <title>财技</title>
-      <link>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>程技</title>
       <link>https://richfan.site/categories/%E7%A8%8B%E6%8A%80/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/categories/%E7%A8%8B%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>财技</title>
+      <link>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/%E8%B4%A2%E6%8A%80/</guid>
       <description></description>
     </item>
     <item>
@@ -62,6 +62,13 @@
       <link>https://richfan.site/categories/%E9%A3%9F%E6%8A%80/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/categories/%E9%A3%9F%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theme</title>
+      <link>https://richfan.site/categories/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/categories/theme/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>centos on 樊刹</title>
+    <title>centos on 中文文档</title>
     <link>https://richfan.site/tags/centos/</link>
-    <description>Recent content in centos on 樊刹</description>
+    <description>Recent content in centos on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Tue, 23 May 2017 09:53:52 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS修改DNS/GW/IP</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</link>
       <pubDate>Tue, 23 May 2017 09:53:52 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</guid>
-      <description>&lt;h3 id=&#34;1修改dns&#34;&gt;1.修改DNS&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;解决方案一：&lt;/strong&gt;&#xA;修改网卡的DNS的配置文件&lt;/p&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos%E4%BF%AE%E6%94%B9dns-gw-ip/</guid>
+      <description>&lt;h3 id=&#39;1修改dns&#39;&gt;1.修改DNS&lt;a href=&#39;#1%e4%bf%ae%e6%94%b9dns&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;解决方案一：&lt;/strong&gt;&#xA;修改网卡的DNS的配置文件&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emoji on 樊刹</title>
+    <title>emoji on 中文文档</title>
     <link>https://richfan.site/tags/emoji/</link>
-    <description>Recent content in emoji on 樊刹</description>
+    <description>Recent content in emoji on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emoji</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/emoji/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/emoji/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/emoji/</guid>
-      <description>🛐 宗教场所 place of worship ⚛️ 原子符号 atom symbol 🕉️ 奥姆 om ✡️ 六芒星 star of David ☸️ 法轮 wheel of dharma ☯️ 阴阳 yin yang ✝️ 十字架 latin cross ☦️ 东正教十字架 orthodox cross ☪️ 星月 star and crescent ☮️ 和平符号 pease symbol 🕎烛台 menorah 🔯带</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/emoji/</guid>
+      <description>🛐 宗教场所 place of worship&#xA;⚛️ 原子符号 atom symbol&#xA;🕉️ 奥姆 om&#xA;✡️ 六芒星 star of David&#xA;☸️ 法轮 wheel of dharma&#xA;☯️ 阴阳 yin yang&#xA;✝️ 十字架 latin cross&#xA;☦️ 东正教十字架 orthodox cross&#xA;☪️ 星月 star and crescent&#xA;☮️ 和平符号 pease symbol&#xA;🕎烛台 menorah&#xA;🔯带中间点的六芒星 dotted six-pointed star</description>
     </item>
   </channel>
 </rss>

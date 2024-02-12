@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nginx on 樊刹</title>
+    <title>nginx on 中文文档</title>
     <link>https://richfan.site/tags/nginx/</link>
-    <description>Recent content in nginx on 樊刹</description>
+    <description>Recent content in nginx on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Thu, 08 Feb 2018 09:19:09 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nginx配置记录</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 08 Feb 2018 09:19:09 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;h3 id=&#34;启用https&#34;&gt;启用https&lt;/h3&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/nginx%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;h3 id=&#39;启用https&#39;&gt;启用https&lt;a href=&#39;#%e5%90%af%e7%94%a8https&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>博客 on 樊刹</title>
+    <title>博客 on 中文文档</title>
     <link>https://richfan.site/tags/%E5%8D%9A%E5%AE%A2/</link>
-    <description>Recent content in 博客 on 樊刹</description>
+    <description>Recent content in 博客 on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客部署</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</guid>
-      <description>我的网站 主要采用静态搭建，如Hexo、Gridea、NotionNext、GitHub Pages、Obsidian、Sharepoint。 - **一、&amp;lt;ht</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/blog/blog-deployment/</guid>
+      <description>我的网站# 主要采用静态搭建，如Hexo、Gridea、NotionNext、GitHub Pages、Obsidian、Sharepoint。 - **一、&amp;lt;https://richfan.site&amp;gt;** - 博客内容：待定 - 部署平台：Vercel - 部署程序：NotionNext - 部署主题：Heo - **二、&amp;lt;https://richffan.github.io&amp;gt;** - 博客内容：美食 - 部署平台：Github Pages - 部署程序：Gridea - 部署主题：Fog - **三、&amp;lt;https://fanrich.github.io&amp;gt;** - 博客内容：待定 - 部署平台：Github Pages - 部署程序：Obsidian - 部署主题：Obsidian - **四、&amp;lt;https://richfan.link&amp;gt;** - 博客内容：待定 - 部署平台：Github Pages - 部署程序：Obsidian - 部署主题：Obsidian - **五、&amp;lt;https://richfan.eu.org&amp;gt;** - 博客内容：审计 - 部署平台：Github Pages - 部署程序：Hexo - 部署主题：3-hexo - **六、&amp;lt;https://fanrich.eu.org&amp;gt;** - 博客内容：编程 - 部署平台：Github Pages - 部署程序：Hexo - 部署主题：3-hexo - **七、&amp;lt;https://richffan.sharepoint.com&amp;gt;** - 博客内容：待定 - 部署平台：Sharepoint - 部署程序：Sharepoint - 部署主题：Sharepoint 服务器# 名称 网址 Github Pages https://github.</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on 樊刹</title>
+    <title>AI on 中文文档</title>
     <link>https://richfan.site/tags/ai/</link>
-    <description>Recent content in AI on 樊刹</description>
+    <description>Recent content in AI on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>国内AI集锦</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</link>
       <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</guid>
-      <description>• 科大讯飞（讯飞星火）：https://xinghuo.xfyun.cn/ • 百度（文心一言）https://yiyan.baidu.com/welcome • 阿里</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/%E5%9B%BD%E5%86%85ai%E9%9B%86%E9%94%A6/</guid>
+      <description>• 科大讯飞（讯飞星火）：https://xinghuo.xfyun.cn/&#xA;• 百度（文心一言）https://yiyan.baidu.com/welcome&#xA;• 阿里（通义千问）https://qianwen.aliyun.com/&#xA;• 抖音（云雀大模型）https://www.doubao.com/&#xA;• 360 （360智脑）https://ai.360.com/&#xA;• 智谱 AI（GLM大模型）https://chatglm.cn/&#xA;• 中科院（紫东太初大模型）https://xihe.mindspore.cn/&#xA;• 百川智能（百川大模型）https://www.baichuan-ai.com/&#xA;• 商汤（日日新大模型）https://techday.sensetime.com/&#xA;• MiniMax（ABAB大模型）https://api.minimax.chat/&#xA;• 上海人工智能实验室（书生通用大模型）https://intern-ai.org.cn/&#xA;• 华为（盘古大模型）https://www.huaweicloud.com/product/pangu.html</description>
     </item>
   </channel>
 </rss>

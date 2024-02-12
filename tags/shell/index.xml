@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shell on 樊刹</title>
+    <title>shell on 中文文档</title>
     <link>https://richfan.site/tags/shell/</link>
-    <description>Recent content in shell on 樊刹</description>
+    <description>Recent content in shell on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Sat, 08 Sep 2018 11:48:24 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>shell速查表</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</link>
       <pubDate>Sat, 08 Sep 2018 11:48:24 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
-      <description>&lt;h3 id=&#34;1-变量&#34;&gt;1. 变量&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0086b3&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$msg&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/shell%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
+      <description>&lt;h3 id=&#39;1-变量&#39;&gt;1. 变量&lt;a href=&#39;#1-%e5%8f%98%e9%87%8f&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;msg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo $msg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

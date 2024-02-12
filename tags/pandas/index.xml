@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pandas on 樊刹</title>
+    <title>pandas on 中文文档</title>
     <link>https://richfan.site/tags/pandas/</link>
-    <description>Recent content in pandas on 樊刹</description>
+    <description>Recent content in pandas on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python pandas数据分析基础100问(有重复)</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</guid>
-      <description>题目来自B站上看的一个讲爬虫的老师发的视频，不过代码没完全照那人的来，由于在平板上写的代码，就没有执行结果，感兴趣自行到B站搜原视频。 import pandas as pd 1、将list转为</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/python-pandas%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80100%E9%97%AE%E6%9C%89%E9%87%8D%E5%A4%8D/</guid>
+      <description>题目来自B站上看的一个讲爬虫的老师发的视频，不过代码没完全照那人的来，由于在平板上写的代码，就没有执行结果，感兴趣自行到B站搜原视频。&#xA;import pandas as pd 1、将list转为dataframe&#xA;ls = [(&amp;#34;join&amp;#34;, 25, &amp;#34;male&amp;#34;), (&amp;#34;lisa&amp;#34;, 29, &amp;#34;female&amp;#34;), (&amp;#34;david&amp;#34;, 27, &amp;#34;male&amp;#34;)``df = pd.DataFrame(ls, columns=[&amp;#34;name&amp;#34;, &amp;#34;age&amp;#34;, &amp;#34;gender&amp;#34;])``display(df) 2、从csv文件中读取数据&#xA;df = pd.read_csv(&amp;#34;filenpath&amp;#34;, encoding=&amp;#34;utf8&amp;#34;)``# filepath_or_buffer: filepath 文件路径``# usecols: 需要读取的行列表``# nrows: 读取的行数``# na_values: 空值``# encoding: 编码格式 3、将dataframe导入到mysql&#xA;from sqlalchemy import create_engine``from sqlclchemy.type import *``df = pd.DataFrame() # 数据集``# 创建引擎``conn = create_engine(&amp;#34;mysql+mysqlconnector://username:password@127.0.0.1:3306/db_name&amp;#34;)``# 写入到数据库``df.to_sql(&amp;#34;table_name&amp;#34;, engine) 4、查看一个dataframe的行数、列数&#xA;# 行``df.shape[0]``# 列``df.shape[1] 5、查看dataframe的列名&#xA;df.columns # serise格式``df.columns.tolist() # list格式 6、查看dataframe索引&#xA;df.index # series格式``df.index.tolist() 7、查看pandas库的版本号</description>
     </item>
     <item>
       <title>Pandas最常用的15个函数</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</link>
       <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</guid>
-      <description>Pandas是一个功能强大的数据处理库，它提供了大量的函数和方法，用于数据的读取、清洗、转换、分析和可视化。下面是Pandas中最常用的15个函数及其代码示例：</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/python/pandas/pandas%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8415%E4%B8%AA%E5%87%BD%E6%95%B0/</guid>
+      <description>Pandas是一个功能强大的数据处理库，它提供了大量的函数和方法，用于数据的读取、清洗、转换、分析和可视化。下面是Pandas中最常用的15个函数及其代码示例：&#xA;read_csv()：用于读取CSV文件中的数据并创建DataFrame对象。 import pandas as pd df = pd.read_csv(&amp;#39;data.csv&amp;#39;) print(df) head()：用于查看DataFrame中的前几行数据，默认显示前5行。 print(df.head()) tail()：用于查看DataFrame中的后几行数据，默认显示后5行。 print(df.tail()) info()：用于查看DataFrame的基本信息，包括列名、数据类型、非空值数量等。 print(df.info()) describe()：用于生成DataFrame中数值列的统计摘要，包括计数、均值、标准差、最小值、25%分位数、中位数、75%分位数和最大值。 print(df.describe()) shape：用于获取DataFrame的形状，即行数和列数。 print(df.shape) columns：用于获取DataFrame的列名。 print(df.columns) fillna()：用于填充DataFrame中的缺失值。 df.fillna(0, inplace=True) print(df) groupby()：用于对DataFrame进行分组操作。 grouped = df.groupby(&amp;#39;category&amp;#39;) print(grouped.mean()) sort_values()：用于对DataFrame按照指定列进行排序。 sorted_df = df.sort_values(&amp;#39;column_name&amp;#39;) print(sorted_df) drop_duplicates()：用于移除DataFrame中的重复行。 df.drop_duplicates(inplace=True) print(df) value_counts()：用于计算DataFrame中某一列的唯一值计数。 print(df[&amp;#39;column_name&amp;#39;].value_counts()) apply()：用于对DataFrame的某一列或多列应用自定义函数。 def custom_function(x): # 自定义处理逻辑 return x * 2 df[&amp;#39;column_name&amp;#39;] = df[&amp;#39;column_name&amp;#39;].apply(custom_function) print(df) merge()：用于合并两个DataFrame对象。 merged_df = pd.merge(df1, df2, on=&amp;#39;key_column&amp;#39;) print(merged_df) plot()：用于绘制DataFrame中的数据图表。 df.plot(x=&amp;#39;column_name1&amp;#39;, y=&amp;#39;column_name2&amp;#39;, kind=&amp;#39;line&amp;#39;) plt.show() 通过掌握这些常用函数，您可以更加高效地使用Pandas进行数据处理和分析。它们提供了基本的数据操作和转换功能，为您的数据工作提供了便利。&#xA;总结：本文介绍了Pandas中最常用的15个函数，并提供了相应的代码示例。这些函数涵盖了数据读取、查看、描述统计、缺失值处理、分组、排序、去重、计数、自定义函数应用、合并和可视化等常见的数据处理任务。掌握这些函数将帮助您更加熟练地使用Pandas进行数据分析和处理。</description>
     </item>
   </channel>
 </rss>

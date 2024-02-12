@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emacs on 樊刹</title>
+    <title>emacs on 中文文档</title>
     <link>https://richfan.site/tags/emacs/</link>
-    <description>Recent content in emacs on 樊刹</description>
+    <description>Recent content in emacs on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Fri, 20 Oct 2017 17:38:49 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux下修改按键ESC&lt;=&gt;CAPSLOCK和Control=&gt;ALT_R</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</link>
       <pubDate>Fri, 20 Oct 2017 17:38:49 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/linux%E4%B8%8B%E4%BF%AE%E6%94%B9%E6%8C%89%E9%94%AEesc-capslock%E5%92%8Ccontrol-alt-r/</guid>
       <description>&lt;p&gt;使用 &lt;code&gt;vim&lt;/code&gt; 过程中发现 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;ctrl&lt;/code&gt; 按键很难按，小拇指没有那么长啊～～，而 &lt;code&gt;caps_lock&lt;/code&gt; 和 &lt;code&gt;alt_r&lt;/code&gt;(右alt) 很少用。&lt;/p&gt;&#xA;&lt;p&gt;本教程将 &lt;code&gt;esc&lt;/code&gt; 和 &lt;code&gt;caps_lock&lt;/code&gt; 两个按键交换， &lt;code&gt;alt_r&lt;/code&gt;(右alt) 改为 &lt;code&gt;ctrl&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
   </channel>

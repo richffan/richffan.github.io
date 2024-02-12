@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>流程 on 樊刹</title>
+    <title>流程 on 中文文档</title>
     <link>https://richfan.site/tags/%E6%B5%81%E7%A8%8B/</link>
-    <description>Recent content in 流程 on 樊刹</description>
+    <description>Recent content in 流程 on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Fri, 22 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/%E6%B5%81%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>审计流程</title>
-      <link>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B/</link>
+      <link>https://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B/</guid>
-      <description></description>
+      <guid>https://richfan.site/%E5%AE%A1%E6%8A%80/%E5%AE%A1%E8%AE%A1%E6%B5%81%E7%A8%8B/</guid>
+      <description> </description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>samba on 樊刹</title>
+    <title>samba on 中文文档</title>
     <link>https://richfan.site/tags/samba/</link>
-    <description>Recent content in samba on 樊刹</description>
+    <description>Recent content in samba on 中文文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh</language>
     <lastBuildDate>Mon, 03 Jul 2017 19:40:14 +0000</lastBuildDate>
     <atom:link href="https://richfan.site/tags/samba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS7安装配置匿名访问Samba</title>
-      <link>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</link>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</link>
       <pubDate>Mon, 03 Jul 2017 19:40:14 +0000</pubDate>
-      <guid>https://richfan.site/posts/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</guid>
-      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Samba&lt;/strong&gt;，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件   &amp;ndash;wikipedia&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;本文就以 CentOS7 搭建 Samba 匿名完全访问（读/写）为目标，实现一个局域网内的文件共享平台。&lt;/p&gt;</description>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/linux/centos7-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8C%BF%E5%90%8D%E8%AE%BF%E9%97%AEsamba/</guid>
+      <description>&lt;h3 id=&#39;介绍&#39;&gt;介绍&lt;a href=&#39;#%e4%bb%8b%e7%bb%8d&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Samba&lt;/strong&gt;，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件   &amp;ndash;wikipedia&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;本文就以 CentOS7 搭建 Samba 匿名完全访问（读/写）为目标，实现一个局域网内的文件共享平台。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
