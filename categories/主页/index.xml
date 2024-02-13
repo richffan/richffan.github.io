@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theme on 中文文档</title>
-    <link>https://richfan.site/categories/theme/</link>
-    <description>Recent content in Theme on 中文文档</description>
+    <title>主页 on 樊刹</title>
+    <link>https://richfan.site/categories/%E4%B8%BB%E9%A1%B5/</link>
+    <description>Recent content in 主页 on 樊刹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://richfan.site/categories/theme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://richfan.site/categories/%E4%B8%BB%E9%A1%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Shadocs theme documentation</title>
+      <title>樊刹</title>
       <link>https://richfan.site/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://richfan.site/</guid>
-      <description> Theme onboarding </description>
+      <description>专业# 学习# 考证# </description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 [{
       "id": "1",
-      "rootTitleIndex": "",
+      "rootTitleIndex": "0",
       "rootTitle": "Homepage",
       "rootTitleIcon": "fa-solid fa-house-chimney fa-lg",
       "rootTitlePath": "/en/",
@@ -8,4 +8,4 @@
       "permalink": "/en/",
       "permalinkTitle": "Homepage",
       "title": "Homepage",
-      "content":""}]
+      "content":" Theme onboarding "}]
