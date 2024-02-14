@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPO案例之税务洞察 on 樊刹</title>
+    <link>https://richfan.site/%E6%8A%95%E6%8A%80/ipo%E6%A1%88%E4%BE%8B%E4%B9%8B%E7%A8%8E%E5%8A%A1%E6%B4%9E%E5%AF%9F/</link>
+    <description>Recent content in IPO案例之税务洞察 on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/%E6%8A%95%E6%8A%80/ipo%E6%A1%88%E4%BE%8B%E4%B9%8B%E7%A8%8E%E5%8A%A1%E6%B4%9E%E5%AF%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自然人股东借款出资相关税务风险</title>
+      <link>https://richfan.site/%E6%8A%95%E6%8A%80/ipo%E6%A1%88%E4%BE%8B%E4%B9%8B%E7%A8%8E%E5%8A%A1%E6%B4%9E%E5%AF%9F/%E8%87%AA%E7%84%B6%E4%BA%BA%E8%82%A1%E4%B8%9C%E5%80%9F%E6%AC%BE%E5%87%BA%E8%B5%84%E7%9B%B8%E5%85%B3%E7%A8%8E%E5%8A%A1%E9%A3%8E%E9%99%A9/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E6%8A%95%E6%8A%80/ipo%E6%A1%88%E4%BE%8B%E4%B9%8B%E7%A8%8E%E5%8A%A1%E6%B4%9E%E5%AF%9F/%E8%87%AA%E7%84%B6%E4%BA%BA%E8%82%A1%E4%B8%9C%E5%80%9F%E6%AC%BE%E5%87%BA%E8%B5%84%E7%9B%B8%E5%85%B3%E7%A8%8E%E5%8A%A1%E9%A3%8E%E9%99%A9/</guid>
+      <description>在企业IPO上市审核过程中，会面临业务、财务、法务等诸多方面的问题，其中税务事项亦是IPO成功与否的决定性因素之一，以及投资者和监管方关心和关注的重要方面。在前期发布的相关文章中，我们对IPO问询函中涉税问题的总体数据进行了统计和分析，也针对问询频率和关注度较高的十大税务问题进行了专题分析。&#xA;为了帮助拟IPO企业和相关机构在实际工作中更好地识别涉税问题的主要风险点，天职国际税务团队继续组织对IPO实务案例进行深入研究。接下来我们将不定期发布我们的研究成果——“IPO案例之税务洞察”专题文章，通过分析IPO市场的典型案例，对案例中的涉税事项进行分析，归纳重点风险，供读者参考，敬请关注。&#xA;※特别提示※&#xA;在对IPO企业历史沿革中股东及高管的资金流水进行核查时，经常出现自然人股东借款问题，IPO企业及相关专业机构需要对其中可能存在的法律风险、财务风险等做出合理解释。从税务角度来看，自然人股东与企业之间的借款行为还存在不可小觑的税务风险，涉及个人所得税、增值税等多个税种，股东借款相关的税务处理不当可能造成企业和个人补缴税费及滞纳金甚至罚款，从而构成对IPO的实质性障碍。&#xA;我们建议IPO企业对自然人股东借款产生的税务风险予以关注，必要时咨询专业税务服务机构予以协助，共同寻求解决方案，以求合理并最大幅度降低此类事项对IPO的负面影响。&#xA;本文案例援引自证券交易所IPO问询函件，内容有所删改&#xA;01 案例背景# A公司成立于2016年8月初，股东为自然人丁、戊。设立公司时因资金缺乏，由股东丁、戊分别从B公司借款1200万元和800万元，完成公司注册资本的实缴和验资。出资完成后，2016年8月底，由A公司向股东丁、戊提供借款，股东丁、戊向B公司偿还前述2000万元的借款。&#xA;&amp;mdash;mermaid# title: 图1：A公司成立初期借还款示意图# flowchart TD; subgraph &amp;ldquo;2016年8月底，A公司向股东丁和戊提供借款，用以偿还外部借款&amp;rdquo; E[A公司] &amp;ndash;&amp;gt;|借款1200万| F[丁] E[A公司] &amp;ndash;&amp;gt;|借款1200万| J[戊] F &amp;ndash;&amp;gt;|还款1200万| H[B公司] J &amp;ndash;&amp;gt;|还款800万| H[B公司] end subgraph &amp;ldquo;2016年8月初，股东丁和戊从外部借款成立A公司&amp;rdquo; A[B公司] &amp;ndash;&amp;gt;|借款1200万| B[丁] A[B公司] &amp;ndash;&amp;gt;|借款800万| C[戊] B &amp;ndash;&amp;gt;|&amp;ldquo;出资1200万，持股60%&amp;quot;| D[A公司] C &amp;ndash;&amp;gt;|&amp;ldquo;出资800万，持股40%&amp;quot;| D[A公司] end# A公司设立后，股东丁、戊于2016年10月和2017年4月将全部股权分别转让给自然人甲、乙，同时将对A公司的欠款按股权比例一并转让给甲和乙，丁和戊退出A公司。股权和借款结构调整如下：&#xA;&amp;mdash;mermaid# title: 图2：股权及借款结构调整示意图# flowchart LR; subgraph TWO direction BT D[甲] &amp;ndash;&amp;gt;|60%| F[A公司] E[乙] &amp;ndash;&amp;gt;|40%| F[A公司] F -.借款1200万.-&amp;gt; D F -.借款800万.-&amp;gt; E end subgraph ONE direction BT A[丁] &amp;ndash;&amp;gt;|60%| C[A公司] B[戊] &amp;ndash;&amp;gt;|40%| C[A公司] C -.</description>
+    </item>
+  </channel>
+</rss>

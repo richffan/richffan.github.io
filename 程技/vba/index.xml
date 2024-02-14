@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VBA on 樊刹</title>
+    <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/</link>
+    <description>Recent content in VBA on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/%E7%A8%8B%E6%8A%80/vba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【VBA案例001】实现VLOOKUP功能</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B001%E5%AE%9E%E7%8E%B0vlookup%E5%8A%9F%E8%83%BD/</guid>
+      <description>VBA实现VLOOKUP函数功能# 数据 VBA 姓名 年龄 姓名 年龄 潘全桂 24 荆琛泽 霍栋保 35 吉栋松 荆琛泽 24 百里刚晓 越伦信 25 农康雪 吉栋松 34 越伦信 桂真顺 27 霍栋保 百里刚晓 19 潘全桂 农康雪 33 桂真顺 直接附上VBA代码：# &amp;#39;Option Explicit Sub 单元格循环() Dim cel As Range Dim cel2 As Range Dim t As Double t = Timer [e6:e13] = &amp;#34;&amp;#34; For Each cel In Range(&amp;#34;a6:a13&amp;#34;) For Each cel2 In Range(&amp;#34;d6:d13&amp;#34;) If cel.Value = cel2.Value Then cel2.Offset(0, 1).</description>
+    </item>
+    <item>
+      <title>【VBA案例002】一对多查询</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B002%E4%B8%80%E5%AF%B9%E5%A4%9A%E6%9F%A5%E8%AF%A2/</guid>
+      <description>一对多查询的方法有很多，这里附上VBA代码，详细过程请看文章最后的视频。&#xA;方法一：# Sub 单元格循环() Dim i, j, k, irow Dim cel As Range Dim t As Double t = Timer Sheets(&amp;#34;查询&amp;#34;).Range(&amp;#34;a6:d65536&amp;#34;).ClearContents Dim str As String str = Sheets(&amp;#34;查询&amp;#34;).Range(&amp;#34;b3&amp;#34;) k = 5 With Sheets(&amp;#34;数据源&amp;#34;) For Each cel In .Range(&amp;#34;a2:d&amp;#34; &amp;amp; .[a65536].End(3).Row) &amp;#39;xlup If cel.Value = str Then k = k + 1 For j = 1 To 4 Sheets(&amp;#34;查询&amp;#34;).Cells(k, j) = cel.Offset(0, j - 1) Next End If Next End With MsgBox Format(Timer - t, &amp;#34;0.</description>
+    </item>
+    <item>
+      <title>【VBA案例003】模糊查询</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B003%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
+      <description>大家好，模糊查询，在平时工作中会经常遇到。&#xA;本期呢，会将模糊查询的两个最常用的方法分享给大家。&#xA;1、instr函数 2、like运算符&#xA;在开始之前，我建议先把上一期的【VBA案例002】一对多查询看一遍。因为本次内容是基于上次的文件衍生出来的。并且代码也大同小异。&#xA;先附上VBA代码，详细内容，请看文章最后的视频哦！~&#xA;方法一：# Sub 单元格循环() Dim i, j, k, irow Dim cel As Range Dim t As Double t = Timer Sheets(&amp;#34;查询&amp;#34;).Range(&amp;#34;a6:d65536&amp;#34;).ClearContents Dim str As String str = Sheets(&amp;#34;查询&amp;#34;).Range(&amp;#34;b3&amp;#34;) k = 5 With Sheets(&amp;#34;数据源&amp;#34;) For Each cel In .Range(&amp;#34;a2:d&amp;#34; &amp;amp; .[a65536].End(3).Row) &amp;#39;xlup &amp;#39;If cel.Value = str Then &amp;#39;If InStr(cel.Value, str) &amp;gt; 0 Then If cel.Value Like &amp;#34;*&amp;#34; &amp;amp; str &amp;amp; &amp;#34;*&amp;#34; Then k = k + 1 For j = 1 To 4 Sheets(&amp;#34;查询&amp;#34;).</description>
+    </item>
+    <item>
+      <title>【VBA案例004】自动填充表单</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B004%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95/</guid>
+      <description>大家好！今天我们分享一个有关VBA自动填充表单的案例，帮助大家简化表单填写的过程，提高工作效率。&#xA;我们经常需要填写大量重复的表单，例如报销单、数据输入表格等，并且每个表单都有各自的字段需要填写。手动逐个填写这些表单既耗时又容易出错。&#xA;使用VBA自动填充表单可以极大地简化这一过程，让我们能够更专注于其他重要的工作。&#xA;譬如说，现在有两个表格，一个是人员清单，另一个的表单。&#xA;现在要做的是，将人员清单中的每一行信息，填到表单里，并导出为一个单独的工作簿。&#xA;下面是VBA的代码分享，你也可以观看下方的视频解析：&#xA;方法一：# Sub 表格填充() Dim i, j, k Dim xinXiSht As Worksheet Dim qingDanSht As Worksheet Set xinXiSht = ThisWorkbook.Worksheets(&amp;#34;信息卡&amp;#34;) Set qingDanSht = ThisWorkbook.Worksheets(&amp;#34;人员清单&amp;#34;) With qingDanSht For i = 2 To .Range(&amp;#34;a&amp;#34; &amp;amp; .Rows.Count).End(xlUp).Row For j = 1 To 5 xinXiSht.Range(&amp;#34;c&amp;#34; &amp;amp; j + 4) = .Cells(i, j) Next j xinXiSht.Copy ActiveWorkbook.SaveAs ThisWorkbook.Path &amp;amp; &amp;#34;\&amp;#34; &amp;amp; .Range(&amp;#34;a&amp;#34; &amp;amp; i) &amp;amp; &amp;#34;.xlsx&amp;#34; ActiveWorkbook.Close True Next i End With End Sub 方法二：# Sub 表格填充优化() Dim i, j, k Dim xinXiSht As Worksheet Dim qingDanSht As Worksheet Set xinXiSht = ThisWorkbook.</description>
+    </item>
+    <item>
+      <title>【VBA案例005】自动汇总表单</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B005%E8%87%AA%E5%8A%A8%E6%B1%87%E6%80%BB%E8%A1%A8%E5%8D%95/</guid>
+      <description>大家好！书接上文。&#xA;有时候，我们需要处理多个工作簿，每个工作簿中包含一些特定的信息。为了将这些信息汇总到一个表中，我们可能需要手动打开每个工作簿，然后复制粘贴所需的数据。但这样做既费时又容易出错。&#xA;所以，使用VBA依然可以解决这个问题。极大地简化这一过程，让我们能够更专注于其他重要的工作。&#xA;举个例子，现在我们有100个工作簿。&#xA;需要从里边提取员工信息汇总到一个表里边。&#xA;猜猜看，用VBA处理这些需要多久？&#xA;下面是VBA的代码分享，你也可以观看下方的视频解析：&#xA;公共函数：&#xA;Private Function filelist(folderspec, Optional pstr = &amp;#34;*.txt&amp;#34;) On Error GoTo errline Dim fs, f, f1, fc, i, farr Set fs = CreateObject(&amp;#34;Scripting.FileSystemObject&amp;#34;) Set f = fs.GetFolder(folderspec) Set fc = f.Files ReDim farr(1 To fc.Count) For Each f1 In fc If f1.Name Like pstr And Not f1.Name Like &amp;#34;*~$*&amp;#34; Then i = i + 1 farr(i) = f1.Name End If Next ReDim Preserve farr(1 To i) filelist = farr errline: End Function 方法一：# Sub 方法一() Dim i, j, k Dim filePath As String, fileAr filePath = ThisWorkbook.</description>
+    </item>
+    <item>
+      <title>【VBA案例006】数据去重</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B006%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D/</guid>
+      <description>大家好！你是否在为数据去重感到烦恼？&#xA;今天，我们将分享两种高效的 VBA 方法，帮助你轻松应对数据去重难题。&#xA;举个例子。&#xA;我们要对以下数据的产品和型号进行数据去重，保留唯一值。&#xA;以下是VBA代码，你也可以直接观看下方的视频解析：&#xA;方法一：# Sub 方法一() Range(&amp;#34;f1:h18&amp;#34;).RemoveDuplicates Array(1, 2), xlYes End Sub 方法二：# Sub 方法二第一次出现的值() Dim i, j, k Dim ar, br() ar = Range(&amp;#34;a1:c18&amp;#34;) ReDim br(1 To UBound(ar), 1 To UBound(ar, 2)) Dim d As Object, kw$ Set d = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) &amp;#39;d.CompareMode = vbTextCompare &amp;#39;不区分大小写 For i = 1 To UBound(ar) kw = ar(i, 1) &amp;amp; ar(i, 2) If Not d.exists(kw) Then k = k + 1 For j = 1 To UBound(br, 2) br(k, j) = ar(i, j) Next j d(kw) = &amp;#34;&amp;#34; End If Next i [f1].</description>
+    </item>
+    <item>
+      <title>【VBA案例007】多条件汇总</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B007%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
+      <description>大家好！今天回答一位网友的问题。&#xA;就是用VBA进行多条件汇总，来实现数据透视表的效果，并且要对结果进行排序。&#xA;先来看例子。&#xA;假如我们有一份产品信息表，需要对它的所有产品和型号进行汇总。左侧是原始数据，右侧是处理结果。&#xA;我们来通过三个不同的方法，来解决这个问题。其中方法一：最容易理解，适合对字典刚入门的情况。方法二：具有有一定的难度，需要对字典有更加深刻的了解。方法三：作为拓展内容。&#xA;以下是VBA代码，你也可以直接观看下方的视频解析：&#xA;方法一：# Sub 方法一() Dim i, j, k Dim ar Dim d1 As Object, d2 As Object, d3 As Object Set d1 = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) Set d2 = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) Set d3 = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) ar = Range(&amp;#34;a1:c&amp;#34; &amp;amp; [a65536].End(3).Row) For i = 2 To UBound(ar) d1(ar(i, 1)) = &amp;#34;&amp;#34; d2(ar(i, 2)) = &amp;#34;&amp;#34; d3(ar(i, 1) &amp;amp; ar(i, 2)) = d3(ar(i, 1) &amp;amp; ar(i, 2)) + ar(i, 3) Next i [f2].</description>
+    </item>
+    <item>
+      <title>【VBA案例008】多条件查询</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B008%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>大家好！今天分享的案例是多条件查询。&#xA;这个查询在进销存或者库存管理中特别常用，如果你准备或者正在做一个自己的管理查询工具，这个方法一定要会。先来看一下数据。&#xA;比如说，现在有一份产品信息表。&#xA;我们要做的是在查询页面，输入参数后，查询出所有满足条件的内容。其中参数可以不填，不填就表示要查询所有内容。&#xA;本期将使用2个方法来实现效果，以下是VBA代码，详细视频解析在文末。&#xA;方法一：# Sub 方法一() Dim i, j, k Dim ar, br() With Sheet2 ar = .Range(&amp;#34;a1:f&amp;#34; &amp;amp; .[a65536].End(3).Row) End With ReDim br(1 To UBound(ar), 1 To UBound(ar, 2)) Dim customer, product, startDate As Date, endDate As Date With Sheet1 customer = IIf(.[b2] = &amp;#34;&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;,&amp;#34; &amp;amp; .[b2] &amp;amp; &amp;#34;,&amp;#34;) product = IIf(.[d2] = &amp;#34;&amp;#34;, &amp;#34;&amp;#34;, &amp;#34;,&amp;#34; &amp;amp; .[d2] &amp;amp; &amp;#34;,&amp;#34;) startDate = IIf(.[f2] = &amp;#34;&amp;#34;, #1/1/1900#, .</description>
+    </item>
+    <item>
+      <title>【VBA案例009】合并单元格汇总</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B009%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E6%B1%87%E6%80%BB/</guid>
+      <description>大家好！今天分享一下遇到合并单元格的处理思路。&#xA;工作中，为了方便查看数据，很多朋友习惯性的把单元格合并起来，这样使得表格看起来清晰美观了不少。但这样做的同时，会给以后的计算增加很多困难。&#xA;比如下边：要计算产品的总库存。&#xA;当我们要对合并单元格进行汇总统计的时候，总会遇到很多问题。其实只要你明白合并单元格的底层逻辑之后，问题就会变的简单起来。&#xA;合并单元格：其实只保留了区域左上角的一个值，其他位置都是空的。&#xA;明白原理之后，我们再来看下VBA代码，详细解析请看文末视频。&#xA;Sub 汇总() Dim i, j, k Dim ar ar = Range(&amp;#34;a1:c&amp;#34; &amp;amp; [c65536].End(3).Row) Dim d As Object, kw$ Set d = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) &amp;#39;d.CompareMode = vbTextCompare &amp;#39;不区分大小写 For i = 2 To UBound(ar) If ar(i, 1) = &amp;#34;&amp;#34; Then ar(i, 1) = ar(i - 1, 1) d(ar(i, 1)) = d(ar(i, 1)) + ar(i, 3) Next [F2].Resize(d.Count) = Application.WorksheetFunction.Transpose(d.keys) [g2].Resize(d.Count) = Application.WorksheetFunction.Transpose(d.items) End Sub 原始链接 </description>
+    </item>
+    <item>
+      <title>【VBA案例010】下拉多选</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B010%E4%B8%8B%E6%8B%89%E5%A4%9A%E9%80%89/</guid>
+      <description>大家好！今天将为大家介绍在Excel中如何实现下拉多选功能，让数据输入更加灵活高效。&#xA;下拉多选功能不仅提高了数据输入的灵活性，还减少了输入错误的可能性，为我们的数据处理工作带来了更高的效率。&#xA;也许你见过使用表单控件的方式实现下拉多选，但是通过数据验证和VBA，我们同样能够轻松创建具有下拉多选功能的工作表。&#xA;以下是VBA代码，详细解析请看文末视频。&#xA;Private Sub Worksheet_Change(ByVal Target As Range) Dim rngDV As Range Dim oldVal As String Dim newVal As String Dim fenGeFu As String If Target.CountLarge &amp;gt; 1 Then Exit Sub fenGeFu = &amp;#34;,&amp;#34; &amp;#39;规定用逗号分隔 On Error Resume Next Set rngDV = Cells.SpecialCells(xlCellTypeAllValidation) If rngDV Is Nothing Then Exit Sub If Intersect(Target, rngDV) Is Nothing Then Exit Sub Application.EnableEvents = False newVal = Target.Value Application.Undo oldVal = Target.Value Target.</description>
+    </item>
+    <item>
+      <title>【VBA案例011】合并工作表</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B011%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E8%A1%A8/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B011%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E8%A1%A8/</guid>
+      <description>大家好！终于放假了，知了祝大家双节快乐！~&#xA;今天分享的案例非常的经典，它让我首次见识了VBA的魅力。也是从那会儿开始，命运的齿轮开始转动，走上了学习VBA的道路。&#xA;它就是：合并工作表。&#xA;问题很简单：就是把一个工作簿里的所有sheet合并到一个总表里边。&#xA;如下图：将 4个班级的信息合并。&#xA;以下是VBA代码（长按复制，可向右托动），详细解析请看文末视频。&#xA;方法一：复制粘贴# Sub 复制粘贴() Dim sht As Worksheet Dim zongSht As Worksheet Set zongSht = Worksheets(&amp;#34;总表&amp;#34;) Dim rowsCount, zongRows For Each sht In Worksheets If sht.Name &amp;lt;&amp;gt; &amp;#34;总表&amp;#34; Then With sht rowsCount = .[a65536].End(3).Row zongRows = zongSht.[a65536].End(3).Row + 1 .Range(&amp;#34;a2:d&amp;#34; &amp;amp; rowsCount).Copy zongSht.Range(&amp;#34;a&amp;#34; &amp;amp; zongRows) End With End If Next End Sub 方法二：数组# Sub 数组() Dim sht As Worksheet Dim zongSht As Worksheet Set zongSht = Worksheets(&amp;#34;总表&amp;#34;) Dim rowsCount, zongRows Dim tmpAr For Each sht In Worksheets If sht.</description>
+    </item>
+    <item>
+      <title>【VBA案例012】合并工作簿</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B012%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B012%E5%90%88%E5%B9%B6%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！这次分享的是非常经典的案例：合并工作簿。&#xA;相信大家已经很熟悉这个问题了，就是把多个工作簿里的工作表合并到同一个sheet里。&#xA;这次同样分享两个方法，以下是VBA代码。详细解析请看文末的视频。&#xA;自定义函数：&#xA;Private Function filelist(folderspec, Optional pstr = &amp;#34;*.txt&amp;#34;) On Error GoTo errline Dim fs, f, f1, fc, i, farr Set fs = CreateObject(&amp;#34;Scripting.FileSystemObject&amp;#34;) Set f = fs.GetFolder(folderspec) Set fc = f.Files ReDim farr(1 To fc.Count) For Each f1 In fc If f1.Name Like pstr And Not f1.Name Like &amp;#34;*~$*&amp;#34; Then i = i + 1 farr(i) = f1.Name End If Next ReDim Preserve farr(1 To i) filelist = farr errline: End Function 方法一：复制粘贴# Sub 复制粘贴() Dim i, j, k Dim fileAr fileAr = filelist(ThisWorkbook.</description>
+    </item>
+    <item>
+      <title>【VBA案例013】多个工作簿所有Sheet汇总到一个工作簿中</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B013%E5%A4%9A%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E6%89%80%E6%9C%89sheet%E6%B1%87%E6%80%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B013%E5%A4%9A%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E6%89%80%E6%9C%89sheet%E6%B1%87%E6%80%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD/</guid>
+      <description>大家好！昨天视频放错了，今天重新发一下。图片&#xA;这次分享的是合并系列的最后一个案例：汇总工作簿。&#xA;打个比方：把多个工作簿中的每个Sheet，汇总到一个工作簿里，汇总完之后是所有的Sheet都在同一个工作簿里。&#xA;这次使用了Dir函数，以下是VBA代码。详细解析请看文末的视频。&#xA;&amp;lsquo;Dir函数：返回的是指定路径下【文件】或者【文件夹】的名称。如果不存在，就返回 &amp;quot;&amp;quot; 字符串 &amp;lsquo;Dir 函数一般搭配 do while 循环遍历文件，结束的条件就是Dir返回空值。&#xA;&amp;lsquo;举例： &amp;lsquo;fileName1 = Dir(&amp;ldquo;E:\test*.xlsx&amp;rdquo;) 查找E盘test文件夹里边的xlsx工作簿，将第一个工作簿名称返回 &amp;lsquo;fileName2 = Dir 查找下一个，并且不需要写参数 &amp;lsquo;fileName3 = Dir 查找下一个，并且不需要写参数 &amp;lsquo;fileName4 = Dir 查找下一个，并且不需要写参数 &amp;lsquo;&amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip; &amp;lsquo;当返回 &amp;quot;&amp;quot; 的时候说明查找完了。如果直接 fileName_N = Dir 就会报错，需要重新指定参数&#xA;Sub 汇总工作簿() Dim filePath, fileName Dim sht As Worksheet filePath = ThisWorkbook.Path &amp;amp; &amp;#34;\文件夹\&amp;#34; fileName = Dir(filePath &amp;amp; &amp;#34;*.xlsx&amp;#34;) Application.ScreenUpdating = False Do While fileName &amp;lt;&amp;gt; &amp;#34;&amp;#34; With Workbooks.Open(filePath &amp;amp; fileName) For Each sht In .</description>
+    </item>
+    <item>
+      <title>【VBA案例014】拆分工作表（上）</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B014%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8A/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B014%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8A/</guid>
+      <description>大家好！如何按照表中的某一列，拆分成独立的Sheet? 如下：&#xA;这是一个特别常见常用的问题，本期分享本人用的最多的两个方法中的第一个。&#xA;因为确实不太容易理解，所以分为两部分。&#xA;这个方法非常的实用，在其他地方也可以发挥很大的作用，所以墙裂推荐大家掌握！&#xA;以下是VBA代码。详细解析请看文末的视频。&#xA;Sub 数组装进字典() Dim i, j, k Dim ar, tmp() Dim d As Object, kw$ Set d = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) &amp;#39;d.CompareMode = vbTextCompare &amp;#39;不区分大小写 ar = Range(&amp;#34;a1:e&amp;#34; &amp;amp; [a65536].End(3).Row) Dim irow For i = 2 To UBound(ar) kw = ar(i, 4) If Not d.exists(kw) Then ReDim tmp(1 To 5000, 1 To UBound(ar, 2) + 1) For j = 1 To UBound(ar, 2) tmp(1, j) = ar(1, j) tmp(2, j) = ar(i, j) Next tmp(1, UBound(ar, 2) + 1) = 2 d(kw) = tmp Else tmp = d(kw) irow = tmp(1, UBound(ar, 2) + 1) + 1 For j = 1 To UBound(ar, 2) tmp(irow, j) = ar(i, j) Next tmp(1, UBound(ar, 2) + 1) = irow d(kw) = tmp End If Next i Dim dk For Each dk In d.</description>
+    </item>
+    <item>
+      <title>【VBA案例015】拆分工作表（下）</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B015%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8B/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B015%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E8%A1%A8%E4%B8%8B/</guid>
+      <description>大家好！书接上文，继续聊一聊拆分工作表的第二个方法。&#xA;众所周知，字典中的值不仅可以是数字、字符串，还可以是数组和对象！&#xA;上一个方法是将数组装到了字典里，这第二个方法想必大家已经猜到了，就是把对象装进字典里。&#xA;首先简单介绍一下Union函数的使用方法。Union：返回两个或多个区域的合并区域。&#xA;语法： Union(Arg1, Arg2, Arg3, Arg4, Arg5, Arg6, Arg7, Arg8, Arg9, Arg10, Arg11, Arg12, Arg13, Arg14, Arg15, Arg16, Arg17, Arg18, Arg19, Arg20, Arg21, Arg22, Arg23, Arg24, Arg25, Arg26, Arg27, Arg28, Arg29, Arg30) AS Range 参数： Arg1 必需 Range类型。 Arg2 必需 Range类型。 Arg3– Arg30 可选 Variant类型。 返回： Range类型。 另外一点需要强调的是，VBA中给对象变量赋值使用Set，并且Set不能省略。&#xA;以下是VBA代码。详细解析请看文末的视频。&#xA;Sub range装进字典() Dim i, j, k Dim ar, tmp() Dim d As Object, kw$ Set d = CreateObject(&amp;#34;Scripting.Dictionary&amp;#34;) &amp;#39;d.</description>
+    </item>
+    <item>
+      <title>【VBA案例016】拆分工作簿</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B016%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B016%E6%8B%86%E5%88%86%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！&#xA;通过本次和之前几次的分享。对工作表、工作簿的拆分、合并都做了最基础的介绍以及案例演示。&#xA;而面对实际工作中经常遇到的工作表、工作簿的合并拆分问题，相信大家通过对这几个案例的交汇融合，基本上都可以找到对应的解决方案。&#xA;今天分享的是拆分系列的最有一项内容：拆分工作簿。就是把一个工作簿中的所有Sheet拆分成一个一个的独立的工作簿。&#xA;通过今天的案例，你将掌握工作表对象的Move和Copy方法。听起来很陌生，其实是你经常在用的一个很普通的功能：&#xA;语法： Sheet.Copy([Before],[After])&amp;lsquo;参数可选，非必须 Sheet.Move([Before],[After])&amp;lsquo;参数可选，非必须 注意： 如果不填参数，将会把Sheet移动或复制到一个新的工作簿中 以下是VBA代码。详细解析请看文末的视频。&#xA;Option Explicit Sub 拆分工作簿() Dim sht As Worksheet Dim filePath filePath = ThisWorkbook.Path &amp;amp; &amp;#34;\&amp;#34; Application.ScreenUpdating = False For Each sht In ThisWorkbook.Worksheets If sht.Name &amp;lt;&amp;gt; &amp;#34;首页&amp;#34; Then &amp;#39;sht.Move sht.Copy ActiveWorkbook.SaveAs filePath &amp;amp; sht.Name &amp;amp; &amp;#34;.xlsx&amp;#34; ActiveWorkbook.Close End If Next Application.ScreenUpdating = True End Sub 原始链接 </description>
+    </item>
+    <item>
+      <title>【VBA案例017】合并单元格</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B017%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B017%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <description>大家好！&#xA;合并单元格是经常遇到的操作，在WPS中，提供了非常好用的快捷按钮。遗憾的是Excel里并没有这个一键合并单元格的功能。&#xA;今天分享用VBA合并单元格的两个最常用的方法，如果你是WPS用户，虽然不需要代码，但是编程的思路，还是有参考价值的。&#xA;以下是VBA代码。详细解析请看文末的视频。&#xA;方法一：# Sub union并集函数() Dim i Dim rng As Range Set rng = [a2] Application.DisplayAlerts = False For i = 2 To 20 If Range(&amp;#34;a&amp;#34; &amp;amp; i + 1) = Range(&amp;#34;a&amp;#34; &amp;amp; i) Then Set rng = Union(rng, Range(&amp;#34;a&amp;#34; &amp;amp; i + 1)) Else rng.Merge Set rng = Range(&amp;#34;a&amp;#34; &amp;amp; i + 1) End If Next i Application.DisplayAlerts = True End Sub 方法二：# Sub 循环数组() Dim i, j, ar Dim start_row, end_row ar = [a1:a20] start_row = 2 Application.</description>
+    </item>
+    <item>
+      <title>【VBA案例018】取消合并单元格</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B018%E5%8F%96%E6%B6%88%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B018%E5%8F%96%E6%B6%88%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <description>大家好！&#xA;上一篇内容分享了，用VBA合并单元格的两个方法。本期就来看一下如何取消合并的单元格。&#xA;同样的，WPS内置了一键取消合并单元格并填充内容的功能，而Excel用户只能流下羡慕的泪水。&#xA;这次介绍两个方法，来实现和WPS一模一样的功能。&#xA;第一个方法：使用录制宏的操作，把平时手动取消合并的操作记录下来，并对代码加以修改，来达到目的。第二个方法：使用的循环单元格判断是否合并的方法，其中有几个常用的属性是我们必须要了解掌握的。&#xA;两个方法都比较简单。大家可以根据实际情况，酌情选择适用的方法。&#xA;以下是VBA代码。详细解析请看文末的视频。&#xA;方法一：# Sub 宏2() Range(&amp;#34;a1:a20&amp;#34;).UnMerge Range(&amp;#34;a1:a20&amp;#34;).SpecialCells(xlCellTypeBlanks).FormulaR1C1 = &amp;#34;=R[-1]C&amp;#34; Range(&amp;#34;a1:a20&amp;#34;).Value = Range(&amp;#34;a1:a20&amp;#34;).Value End Sub 方法二：# Sub 取消合并单元格() Dim cel As Range Dim mRng As Range Dim mRngVal For Each cel In Range(&amp;#34;a1:a20&amp;#34;) If cel.MergeCells Then Set mRng = cel.MergeArea mRngVal = mRng(1, 1) mRng.UnMerge mRng.Value = mRngVal End If Next End Sub 原始链接 </description>
+    </item>
+    <item>
+      <title>【VBA案例019】合并单元格自适应大小</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B019%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B019%E5%90%88%E5%B9%B6%E5%8D%95%E5%85%83%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E5%A4%A7%E5%B0%8F/</guid>
+      <description>大家好！&#xA;如果你是文职类工作，可能会遇到下面这种情况：&#xA;经常面对各种各样的表格，并且很多都是制式的，里边又充满个各种各样的格式，其中就有今天的主角儿：合并单元格。&#xA;而你的工作看似也不复杂，就是把合并单元格中显示不全的内容，通过调整单元格的大小来显示出来。&#xA;这种痛苦，只有手动调整过的人能懂。&#xA;所以，通过今天的案例讲解，将解决你的烦恼，文末视频对这个过程做了详细的讲解演示，希望对你有帮助。&#xA;以下是VBA代码。详细解析请看文末的视频。&#xA;调整合并单元格行高：&#xA;Sub 调整合并单元格行高() Dim cel As Range Dim rng As Range Dim n, r, c Dim mergeWidth, newHeight, celWidth Set rng = Range(&amp;#34;B4&amp;#34;) For Each cel In rng If cel.MergeCells Then With cel.MergeArea mergeWidth = 0 For Each c In .Columns &amp;#39;合并区域中的每一个单元格 mergeWidth = mergeWidth + c.ColumnWidth &amp;#39;新合并区域列宽=每一列列宽宽的和 Next .MergeCells = False &amp;#39;取消合并单元格 With .Cells(1) .WrapText = True &amp;#39;自动换行 celWidth = .ColumnWidth &amp;#39;记录取消合并后列宽，目的是调整回去 .</description>
+    </item>
+    <item>
+      <title>【VBA案例020】整合工作簿</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B020%E6%95%B4%E5%90%88%E5%B7%A5%E4%BD%9C%E7%B0%BF/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/vba%E6%A1%88%E5%88%97/vba%E6%A1%88%E4%BE%8B020%E6%95%B4%E5%90%88%E5%B7%A5%E4%BD%9C%E7%B0%BF/</guid>
+      <description>大家好！今天回答一位粉丝朋友的提问。&#xA;问题是：将多个工作簿中的所有工作表合并汇总，要求名称相同的工作表内容要合并在一起，名称不同的要单独作为一个工作表。&#xA;为此，我模拟了一份数据，结构如下图：&#xA;这个问题，其实是我之前分享的【案例011合并工作表】和【案例013汇总工作簿】的融合版。方法非常的相似。其实对于工作簿和工作表的合并与拆分的操作，之前的案例基本都分享完了。只要融会贯通，举一反三，相信这种问题将迎刃而解。&#xA;效果就不演示了，以下是VBA代码。详细解析请看文末的视频。&#xA;Option Explicit Sub 汇总合并工作簿() Dim shtName Dim sht As Worksheet For Each sht In ThisWorkbook.Worksheets shtName = shtName &amp;amp; &amp;#34;,&amp;#34; &amp;amp; sht.Name Next Dim filePath$, fileName As String filePath = ThisWorkbook.Path &amp;amp; &amp;#34;\文件夹\&amp;#34; fileName = Dir(filePath &amp;amp; &amp;#34;*.xlsx&amp;#34;) Dim row_count, thisRow_count Application.ScreenUpdating = False Do While fileName &amp;lt;&amp;gt; &amp;#34;&amp;#34; With Workbooks.Open(filePath &amp;amp; fileName) For Each sht In .Worksheets If InStr(&amp;#34;,&amp;#34; &amp;amp; shtName &amp;amp; &amp;#34;,&amp;#34;, &amp;#34;,&amp;#34; &amp;amp; sht.</description>
+    </item>
+    <item>
+      <title>a段落处理</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/a%E6%AE%B5%E8%90%BD%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/a%E6%AE%B5%E8%90%BD%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#39;a段落处理&#39;&gt;a段落处理&lt;a href=&#39;#a%e6%ae%b5%e8%90%bd%e5%a4%84%e7%90%86&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>b表单处理</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/b%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/b%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#39;b表单处理&#39;&gt;b表单处理&lt;a href=&#39;#b%e8%a1%a8%e5%8d%95%e5%a4%84%e7%90%86&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>c数字</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/c%E6%95%B0%E5%AD%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/c%E6%95%B0%E5%AD%97/</guid>
+      <description>&lt;h2 id=&#39;c数字&#39;&gt;c数字&lt;a href=&#39;#c%e6%95%b0%e5%ad%97&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>d文字</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/d%E6%96%87%E5%AD%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/d%E6%96%87%E5%AD%97/</guid>
+      <description>&lt;h2 id=&#39;d文字&#39;&gt;d文字&lt;a href=&#39;#d%e6%96%87%e5%ad%97&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>e大纲</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/e%E5%A4%A7%E7%BA%B2/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/e%E5%A4%A7%E7%BA%B2/</guid>
+      <description>&lt;h2 id=&#39;e大纲&#39;&gt;e大纲&lt;a href=&#39;#e%e5%a4%a7%e7%ba%b2&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>fExcel贴数</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/fexcel%E8%B4%B4%E6%95%B0/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/fexcel%E8%B4%B4%E6%95%B0/</guid>
+      <description>&lt;h2 id=&#39;fexcel贴数&#39;&gt;fExcel贴数&lt;a href=&#39;#fexcel%e8%b4%b4%e6%95%b0&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>g批注</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/g%E6%89%B9%E6%B3%A8/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/g%E6%89%B9%E6%B3%A8/</guid>
+      <description>&lt;h2 id=&#39;g批注&#39;&gt;g批注&lt;a href=&#39;#g%e6%89%b9%e6%b3%a8&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>h行列校验</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/h%E8%A1%8C%E5%88%97%E6%A0%A1%E9%AA%8C/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/h%E8%A1%8C%E5%88%97%E6%A0%A1%E9%AA%8C/</guid>
+      <description>&lt;h2 id=&#39;h行列校验&#39;&gt;h行列校验&lt;a href=&#39;#h%e8%a1%8c%e5%88%97%e6%a0%a1%e9%aa%8c&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>i多表处理</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/i%E5%A4%9A%E8%A1%A8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/i%E5%A4%9A%E8%A1%A8%E5%A4%84%E7%90%86/</guid>
+      <description>&lt;h2 id=&#39;i多表处理&#39;&gt;i多表处理&lt;a href=&#39;#i%e5%a4%9a%e8%a1%a8%e5%a4%84%e7%90%86&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>JsonConverter</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/jsonconverter/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/jsonconverter/</guid>
+      <description>&lt;h2 id=&#39;jsonconverter&#39;&gt;JsonConverter&lt;a href=&#39;#jsonconverter&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>j页面设置</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/j%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/j%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;h2 id=&#39;j页面设置&#39;&gt;j页面设置&lt;a href=&#39;#j%e9%a1%b5%e9%9d%a2%e8%ae%be%e7%bd%ae&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>k访谈提纲</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/k%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/k%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2/</guid>
+      <description>&lt;h2 id=&#39;k访谈提纲&#39;&gt;k访谈提纲&lt;a href=&#39;#k%e8%ae%bf%e8%b0%88%e6%8f%90%e7%ba%b2&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>底稿小帮手代码</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/</guid>
+      <description>&lt;h2 id=&#39;a段落处理&#39;&gt;a段落处理&lt;a href=&#39;#a%e6%ae%b5%e8%90%bd%e5%a4%84%e7%90%86&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>更新</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E6%9B%B4%E6%96%B0/</guid>
+      <description>&lt;h2 id=&#39;更新&#39;&gt;更新&lt;a href=&#39;#%e6%9b%b4%e6%96%b0&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>类模块</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E7%B1%BB%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/vba/%E5%BA%95%E7%A8%BF%E5%B0%8F%E5%B8%AE%E6%89%8B%E4%BB%A3%E7%A0%81/%E7%B1%BB%E6%A8%A1%E5%9D%97/</guid>
+      <description>&lt;h2 id=&#39;类模块&#39;&gt;类模块&lt;a href=&#39;#%e7%b1%bb%e6%a8%a1%e5%9d%97&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

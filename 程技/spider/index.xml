@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spider on 樊刹</title>
+    <link>https://richfan.site/%E7%A8%8B%E6%8A%80/spider/</link>
+    <description>Recent content in Spider on 樊刹</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 15 Aug 2023 17:56:00 +0000</lastBuildDate>
+    <atom:link href="https://richfan.site/%E7%A8%8B%E6%8A%80/spider/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>审计技能|Python语句（四）：常用查询函数</title>
+      <link>https://richfan.site/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 15 Aug 2023 17:56:00 +0000</pubDate>
+      <guid>https://richfan.site/%E7%A8%8B%E6%8A%80/spider/%E5%AE%A1%E8%AE%A1%E6%8A%80%E8%83%BD-python%E8%AF%AD%E5%8F%A5%E5%9B%9B%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E5%87%BD%E6%95%B0/</guid>
+      <description>1.分组聚合函数（groupby）# 类似SQL的groupby那样的数据透视功能。可以使用pandas库的groupby函数来实现分组聚合操作。&#xA;举例：&#xA;有一个A表，分别有甲项目和乙项目，甲项目连续两年的销售为50万元和54万元，乙项目连续两年的销售额为74万元和56万元。&#xA;现在求甲项目和乙项目的各自销售额之和，具体如下： 代码：&#xA;import pandas as pd ## 创建A表 data = {&amp;#39;项目名称&amp;#39;: [&amp;#39;甲项目&amp;#39;, &amp;#39;甲项目&amp;#39;, &amp;#39;乙项目&amp;#39;, &amp;#39;乙项目&amp;#39;], &amp;#39;销售额&amp;#39;: [50, 54, 74, 56]} df = pd.DataFrame(data) ## 按照“项目名称”进行聚合统计 grouped = df.groupby(&amp;#39;项目名称&amp;#39;) result = grouped.sum() ## 打印结果 print(result) 运行结果：&#xA;销售额 项目名称 乙项目 130 甲项目 104 2.时间转换函数(to_datetime)# 可以使用pandas库的to_datetime函数来实现时间转换操作。&#xA;举例：将分秒的时间转换为日期&#xA;Date Sales 2020-01-01 10:30:00 1000 2020-01-02 15:20:00 1500 2020-01-03 18:40:00 2000 代码：&#xA;import pandas as pd data = pd.DataFrame({&amp;#39;Date&amp;#39;: [&amp;#39;2020-01-01 10:30:00&amp;#39;, &amp;#39;2020-01-02 15:20:00&amp;#39;, &amp;#39;2020-01-03 18:40:00&amp;#39;], &amp;#39;Sales&amp;#39;: [1000, 1500, 2000]}) data[&amp;#39;Date&amp;#39;] = pd.</description>
+    </item>
+  </channel>
+</rss>
